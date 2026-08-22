@@ -107,3 +107,7 @@
 - **源文件最后一题末尾带body级sectPr**：deepcopy后插入成品中间导致Word报损坏——extract_blocks必须过滤sectPr。
 - **footer时序**：python-docx新文档footer必须在body.append内容**之前**调用is_linked_to_previous=False，否则footer part引用链断裂。
 - **图片r:embed重映射**：deepcopy的drawing r:embed仍指源文件rId，必须get_or_add_image重映射到目标doc。
+
+### 第3章排版修复第二轮（oMathPara转行内，2026-08-22）
+- **oMathPara块级公式→行内oMath**：源文件公式用块级oMathPara（另起一行居中），3.4要求「公式行内化，不可另起一行」——convert_omathpara_to_inline把oMathPara外壳去掉只保留内含oMath插入原位置（deepcopy oMath→insert→remove外壳），四卷共转2266个。oMathPara=0为合规。
+- **3.4新规则②详解合并须极谨慎**：只合并同一推理步骤内部的短句；不同推理步骤、分类讨论各分支、各小问解答一律独立成行——merge_detail_blocks的80字阈值过大会把不同步骤挤成一段（含多个「故选」「综上」即为违规），需在"；"+结论词处拆分回退。
