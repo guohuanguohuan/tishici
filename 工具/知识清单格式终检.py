@@ -258,6 +258,27 @@ def make_title_bold(doc, expected_title):
         run.bold = True
 
 
+def remove_trailing_empty_paragraphs(doc):
+    """删除正文末尾会单独挤出空白页的纯空段。"""
+    body = doc.element.body
+    removed = 0
+    while len(body) >= 2:
+        candidate = body[-2] if body[-1].tag == W + "sectPr" else body[-1]
+        if candidate.tag != W + "p":
+            break
+        has_content = (
+            any((t.text or "").strip() for t in candidate.findall(".//" + W + "t"))
+            or bool(candidate.findall(".//" + W + "drawing"))
+            or bool(candidate.findall(".//" + W + "pict"))
+            or bool(candidate.findall(".//" + M + "oMath"))
+        )
+        if has_content:
+            break
+        body.remove(candidate)
+        removed += 1
+    return removed
+
+
 def process(path_str):
     path = Path(path_str).resolve()
     expected_title = path.stem
@@ -278,13 +299,14 @@ def process(path_str):
         rebuild_footer(section)
     root = doc.element
     converted = convert_omathpara(root)
+    trailing_removed = remove_trailing_empty_paragraphs(doc)
     for p_el in root.findall(".//" + W + "p"):
         format_paragraph(p_el)
     reinforce_math_emphasis(root)
     tmp = path.with_name(path.stem + ".tmp.docx")
     doc.save(str(tmp))
     os.replace(tmp, path)
-    print(f"OK {path} 块级公式转行内={converted}")
+    print(f"OK {path} 块级公式转行内={converted} 尾部空段删除={trailing_removed}")
 
 
 if __name__ == "__main__":

@@ -119,25 +119,60 @@ def restructure_physics(src, dst):
     ]
     insert_headings_before(find_para(doc, old_headings[0]), [("12.1 电路中的能量转化", 0)])
     insert_headings_before(find_para(doc, old_headings[3]), [("12.2 闭合电路的欧姆定律", 0)])
+    # “电源的 U-I 图像”是教材 12.3 测量电动势和内阻的数据处理方法，
+    # 不能继续挂在 12.2，更不能把 12.3 留成空标题。
     insert_headings_before(
-        find_para(doc, old_headings[7]),
-        [("12.3 实验：电池电动势和内阻的测量", 0),
-         ("12.4 能源与可持续发展", 0)],
+        find_para(doc, old_headings[6]),
+        [("12.3 实验：电池电动势和内阻的测量", 0)],
     )
+    insert_headings_before(find_para(doc, old_headings[7]), [("12.4 能源与可持续发展", 0)])
     for prefix in old_headings:
         remove_para(find_para(doc, prefix))
     doc.save(dst)
 
 
+def replace_paragraph_text(p_el, text):
+    runs = p_el.findall("./" + W + "r")
+    if not runs:
+        r = OxmlElement("w:r")
+        p_el.append(r)
+        runs = [r]
+    first = runs[0]
+    for child in list(first):
+        if child.tag != W + "rPr":
+            first.remove(child)
+    t = OxmlElement("w:t")
+    t.text = text
+    first.append(t)
+    for run in runs[1:]:
+        p_el.remove(run)
+
+
+def fix_physics_final(src, dst):
+    """修正已填答成品的12.3挂靠及总控3.5完整命名。"""
+    doc = Document(src)
+    heading = find_para(doc, "12.3 实验：电池电动势和内阻的测量")
+    anchor = find_para(doc, "（1）公式：U =")
+    heading.getparent().remove(heading)
+    anchor.addprevious(heading)
+    expected_title = Path(dst).stem
+    first = next(p for p in body_paragraphs(doc) if paragraph_text(p).strip())
+    replace_paragraph_text(first, expected_title)
+    doc.core_properties.title = expected_title
+    doc.save(dst)
+
+
 def main():
-    if len(sys.argv) != 4 or sys.argv[1] not in ("math", "physics"):
-        raise SystemExit("用法：python 知识清单教材节重构.py math|physics 输入.docx 输出.docx")
+    if len(sys.argv) != 4 or sys.argv[1] not in ("math", "physics", "physics-final"):
+        raise SystemExit("用法：python 知识清单教材节重构.py math|physics|physics-final 输入.docx 输出.docx")
     mode, src, dst = sys.argv[1], sys.argv[2], sys.argv[3]
     Path(dst).parent.mkdir(parents=True, exist_ok=True)
     if mode == "math":
         restructure_math(src, dst)
-    else:
+    elif mode == "physics":
         restructure_physics(src, dst)
+    else:
+        fix_physics_final(src, dst)
     print(f"OK {mode}: {src} -> {dst}")
 
 
