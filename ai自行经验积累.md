@@ -98,3 +98,12 @@
 - **图片迁移必须重映射 r:embed**：deepcopy 题块后 drawing 的 a:blip r:embed 仍指向源文件的 rId（源 rId5→image1.png），但目标 doc 的 rId5 可能指向 numbering 等非图片 part——必须用 `doc.part.get_or_add_image(io.BytesIO(blob))` 注册到目标并重写 r:embed；源文件 rId→media 路径映射从 `word/_rels/document.xml.rels` 预提取。
 - **超纲判定新坑**：二项式定理章中「等差/等比数列」「裂项相消」属选必三第五章（本章之后），题面含「成等差数列」或详解必须用等比前n项和公式（48项幂和无法直加）即超纲；但「二进制」「回文数」等情境仅用组合数不涉数列公式不算超纲。
 - **B版教材 A(n,0)=1 约定**：B版选必二3.1.2明确「为了方便起见，也规定 Aₙ⁰=1」——排列数不等式 A(9,x)>6A(9,x-2) 中 x=2 合法（A(9,0)=1），原答案 {3,4,5,6,7} 漏 x=2，正确解集 {2,3,4,5,6,7}。
+
+### 第3章计数原理三卷重做轮排版修复（2026-08-22）
+- **原卷结构标题清洗**：源文件题块deepcopy会带入「题型一/二」「一、二、三」「（一）（二）」等结构标题，3.3要求全部删除替换为教材化标题——extract_blocks后必须过clean_block_titles过滤（正则匹配题型N/中文数字序号），否则成品残留原卷标题违规。
+- **标签横向合并**：源文件【答案】【难度】【知识点】各自单独占行，3.4要求横向合并成一行——merge_label_blocks收集连续标签段把后续run搬到首段末尾（全角空格分隔）。坑：答案被拆成多段（【答案】(1)900 / (2)648 / (3)379）时续段不以【标签】开头会中断合并——需先merge_answer_continuations把续段并入【答案】段，再merge_label_blocks。
+- **详解短句合并**：源文件详解每句话独立成段，3.4要求短句与前后合并——merge_detail_blocks从【分析】/【详解】开头段向后收集短段（总长<80字）合并；非标签短句向前合并到前段（前段末尾无标点加「；」）。坑：纯公式段（只有OMML无w:t）first_text返回空会误判——用para_text而非first_text判断，空文本无图段可继续合并。
+- **OMML公式内文本被拆为多个m:t**：`2<x≤9`拆为5个m:t（"2","<","x","≤","9"），纠错时必须遍历m:t逐个定位（把第一个`<`改`≤`），不能只操作w:t。
+- **源文件最后一题末尾带body级sectPr**：deepcopy后插入成品中间导致Word报损坏——extract_blocks必须过滤sectPr。
+- **footer时序**：python-docx新文档footer必须在body.append内容**之前**调用is_linked_to_previous=False，否则footer part引用链断裂。
+- **图片r:embed重映射**：deepcopy的drawing r:embed仍指源文件rId，必须get_or_add_image重映射到目标doc。
