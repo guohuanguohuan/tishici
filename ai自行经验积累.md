@@ -668,3 +668,10 @@ for omathpara in omathparas:
 7. **qn函数名与题号变量冲突**：from docx.oxml.ns import qn 后，脚本内qn作题号变量会遮蔽函数——用 `import qn as QN`。
 8. **oMathPara→inline安全转换**：用lxml deepcopy m:oMath→insert到oMathPara位置→remove外壳，保留命名空间完整；混合段（有文字）转行内、纯公式段保留块级并加m:jc=left。
 9. **孤儿media**：中档卷media=54但embed=37（讲部分图迁移了media但clean_block过滤后无引用）——构建时只迁移选中题块的图，讲部分的图不迁移即可避免。成品可用但体积偏大，可后续重打包清理。
+
+## 2026-08-22 提示词维护·git对象损坏外科修复（远端完好时优先方案，3.1手册补充）
+
+1. 症状：git show报"object file … is empty / unable to read tree"但log/status正常（坏对象=e688134的tree 444bdf19）。同步盘会抢objects下已存在路径：`git hash-object -w` 写回后数秒内再次被清零为0字节——loose对象修复路线在同盘无效。
+2. 外科修复（历史全保留，不用重建+push -f）：浅克隆 `git -c http.version=HTTP/1.1 clone --depth 1` 到 /tmp → 把克隆的 pack+idx 整体拷入 `.git/objects/pack/`（全新文件名，同步盘不抢）→ 删空对象文件 → `rm .git/index && git reset` 重建cache-tree → fsck --full 全绿。
+3. 两个要点：①index的cache-tree也指向坏对象，只修对象不重建索引，fsck仍报"invalid sha1 pointer in cache-tree"；②整仓clone大仓会early EOF断流，depth 1 + HTTP/1.1 稳定成功。
+4. 并行会话已把本会话未提交改动带上云的确认法：`git show 对侧提交 --stat` 看文件清单含本会话文件 + `git show origin/main:文件 | diff - 本地文件` 逐字节一致即已在云端，无需重复提交。
