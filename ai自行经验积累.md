@@ -90,3 +90,11 @@
 4. index 的 cache-tree 也指向坏对象，只修对象不重建索引 fsck 仍报「invalid sha1 pointer in cache-tree」；整仓 clone 大仓会 early EOF 断流。
 5. **同步盘还会删同步文件夹里的新成品**：当日 8 份三卷/知识清单成品被陆续删除——发现成品消失先 `git status` 查 D 项，`git checkout -- .` 全部恢复；GitHub 是唯一可靠层，成品一落地尽快提交推送。
 6. 并行会话已把本会话未提交改动带上云的确认法：`git show 对侧提交 --stat` 看文件清单含本会话文件 + `git show origin/main:文件 | diff - 本地文件` 一致即已在云端，无需重复提交。
+
+### 第3章计数原理三卷重做轮（简单29/中档66/冲刺6+落选125，2026-08-22）
+- **源文件最后一题末尾带body级sectPr**：extract_blocks 必须过滤题块中的 sectPr（`tagof(el)=='sectPr'`），否则 deepcopy 后插入成品中间导致 Word 报「文件可能已经损坏」——简单卷因 sectPr 恰在body末尾侥幸通过，中档/冲刺卷因后续还有内容而必崩。
+- **python-docx新文档footer坑**：`section.footer.is_linked_to_previous = False` 必须在 Document() 创建后、body.append 内容**之前**调用，否则 footer part 的 rId 引用链断裂（KeyError/InvalidXmlError）；footer 内 PAGE 域用 lxml SubElement 手动构建 fldChar begin/instrText/end。
+- **OMML公式内文本纠错**：`2<x≤9` 在 OMML 中被拆为 5 个 m:t（"2","<","x","≤","9"），`{3,4,5,6,7}` 拆为 9 个 m:t——文本替换不能只操作 w:t，必须遍历 m:t 逐个定位（如把第一个 `<` 改 `≤`、把 `3` 改 `2,3`）；先 `om.iter(MC+'t')` 拼接 full 判断完整公式再逐 t 修改。
+- **图片迁移必须重映射 r:embed**：deepcopy 题块后 drawing 的 a:blip r:embed 仍指向源文件的 rId（源 rId5→image1.png），但目标 doc 的 rId5 可能指向 numbering 等非图片 part——必须用 `doc.part.get_or_add_image(io.BytesIO(blob))` 注册到目标并重写 r:embed；源文件 rId→media 路径映射从 `word/_rels/document.xml.rels` 预提取。
+- **超纲判定新坑**：二项式定理章中「等差/等比数列」「裂项相消」属选必三第五章（本章之后），题面含「成等差数列」或详解必须用等比前n项和公式（48项幂和无法直加）即超纲；但「二进制」「回文数」等情境仅用组合数不涉数列公式不算超纲。
+- **B版教材 A(n,0)=1 约定**：B版选必二3.1.2明确「为了方便起见，也规定 Aₙ⁰=1」——排列数不等式 A(9,x)>6A(9,x-2) 中 x=2 合法（A(9,0)=1），原答案 {3,4,5,6,7} 漏 x=2，正确解集 {2,3,4,5,6,7}。
