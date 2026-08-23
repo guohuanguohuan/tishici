@@ -114,3 +114,9 @@
 - 知识清单λ₀类源缺字：定位段内ts偏移区间回填Unicode字符（λ₀），跨run模式需拼接后整体替换
 - 块定义后必须全量缝隙排查：讲块首横幅图常落在题块RANGES之外的缝隙段，漏收即三处皆失；修复=按锚点插回讲义首段前
 - deepcopy跨包必须显式执行rId重映射（死代码漏跑=整卷图全坏）；插入后双核验：rid∈rels 且 blob哈希∈来源媒体集合
+
+## 2026-08-23 物理选必2第3章页脚修复轮
+- 修复轮体检范围要自扩：登记"四件"缺陷实测发现落选题清单同缺陷（同轮产物同病）、知识清单更重（双页脚+evenAndOddHeaders+嵌套域）——凡页脚类缺陷必须六件全查，不只查登记件
+- 页脚重建zip手术模板：footer part整体替换（fldSimple PAGE/NUMPAGES＋「第/页（共/页）」run交替、jc=center、sz21、run级rFonts）＋sectPr三处（pgMar footer→720、插pgNumType start=1（pgMar之后schema序）、删非default footerReference）＋settings删evenAndOddHeaders＋rels/ContentTypes同步删件；正文零改动由基线diff证明（body逐元素签名比对+sectPr归一化diff双保险）
+- 守恒审计LCP前缀法：源/成品题块hard_norm（删分号空白、剥题号、滤栏目标记、剥例N头）最长公共前缀全含即保真；LCP截断的两侧尾部必须逐题人工定性（源尾夹讲块/标注行=切块假象；₃²类Unicode上下标=sSubSup等价形态；dump表格序号=转储计数差异，均非内容差异）
+- dump_docx.py线性化不识别sSubSup（L₂²→"L22"）：结构判定勿只看dump文本，须实查oMath子元素标签序列
