@@ -44,7 +44,7 @@
 
 ## 其他技术坑
 - Python `'' in s`恒True；qn()不支持v:前缀；脚注重序列化用保nsmap的lxml；修复后Word COM实际打开测试
-- 横幅图判定=仅讲块首元素+a:ext cy<100万EMU双条件；易错警示大图是教学内容保留；讲I实验组织标题原样保留
+- 横幅图判定=仅讲块首元素+a:ext cy<100万EMU双条件；易错警示大图是教学内容保留；讲I实验组织标题原样保留。**横幅本身也是讲部分组成图像：2.2①/任务C禁止删除（选必2第3章曾误删9横幅，用户指正后跨包恢复至源位）**
 - 混排源题块边界扩到下一真实题前再用结构标题截断；超纲判定必须开教材PDF逐级核对禁止凭记忆
 - 结构标题挂靠该节/题型第一道保留题前；某节全删则删标题；标题插用现有段deepcopy改runs；addprevious连调正序/addnext逆序；重插后折叠双空行；body游离sectPr切多节须归位
 - 裸排检查：组合第2题紧随第1题不加标题是合规；落选清单分组标题制不适用裸排判断；标题移动类修复后必须全量计数核对（曾丢29个标题只剩2）
@@ -120,3 +120,9 @@
 - 页脚重建zip手术模板：footer part整体替换（fldSimple PAGE/NUMPAGES＋「第/页（共/页）」run交替、jc=center、sz21、run级rFonts）＋sectPr三处（pgMar footer→720、插pgNumType start=1（pgMar之后schema序）、删非default footerReference）＋settings删evenAndOddHeaders＋rels/ContentTypes同步删件；正文零改动由基线diff证明（body逐元素签名比对+sectPr归一化diff双保险）
 - 守恒审计LCP前缀法：源/成品题块hard_norm（删分号空白、剥题号、滤栏目标记、剥例N头）最长公共前缀全含即保真；LCP截断的两侧尾部必须逐题人工定性（源尾夹讲块/标注行=切块假象；₃²类Unicode上下标=sSubSup等价形态；dump表格序号=转储计数差异，均非内容差异）
 - dump_docx.py线性化不识别sSubSup（L₂²→"L22"）：结构判定勿只看dump文本，须实查oMath子元素标签序列
+
+## 2026-08-23 物理选必2第3章横幅恢复轮（用户指正误删）
+- 恢复基线必须取git HEAD，禁止取同步文件夹现行版（可能已被用户Word手工改过——本轮初查因此误判任务C删2张，实删仅1pt圆点）；用户手动改动优先于成品规则，只提交不回退
+- Word手工保存会把media全部重编号（image1→image12等）：图片对账必须按md5哈希对，不按文件名/元组
+- Word界面插页码生成的是复杂域（fldChar+instrText），与fldSimple模板形态不同但渲染等价；docDefaults sz=21时run无w:sz也继承五号
+- 桌面副本也会被同步盘瞬时干扰（BadZipFile瞬态）：读档失败先重读再判损，勿急于重建
