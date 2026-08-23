@@ -1,0 +1,178 @@
+[b0.p0] P style=None outline=None eq=0 img=1/0 :: 
+[b1.p1] P style=None outline=None eq=0 img=0/0 :: 大招17  判二面角的锐钝问题（三种方法，法三百分百准确，但是耗时较长）
+[b2.p2] P style=None outline=None eq=0 img=1/0 :: 
+[b3.p3] P style=None outline=None eq=0 img=0/0 :: 法一：直接观察
+[b4.p4] P style=None outline=None eq=6 img=0/0 :: 设二面角的平面角为α，两个平面的法向量为n1,n2，求二面角的成角的余弦时，需要通过图形直观感知——也就是老师们常说的由图可知．当α为锐角时，cosα=|cos<n1,n2>|；当α为钝角时，cosα=-|cos<n1,n2>|．
+[b5.p5] P style=None outline=None eq=0 img=0/0 :: 法二：法向量内外分析（直接观察法的变形）
+[b6.p6] P style=None outline=None eq=0 img=0/0 :: 四种情况的分析
+[b7.p7] P style=None outline=None eq=0 img=4/0 :: 
+[b8.p8] P style=None outline=None eq=1 img=0/0 :: 当两个半平面的法向量同时都指向二面角的内侧或外侧时，二面角的平面角与两向量的夹角互补：cosα=-|cos<n1,n2>|．
+[b9.p9] P style=None outline=None eq=1 img=0/0 :: 当两个半平面的法向量一个指向外侧，一个指向内侧时，此时，二面角的平面角与两向量的夹角相等，cosα=|cos<n1,n2>|．
+[b10.p10] P style=None outline=None eq=0 img=0/0 :: 总结规律（同负异正）
+[b11.t0] TABLE rows=3 grid=['973', '3787', '3787'] width={'w': '5000', 'type': 'pct'}
+  R0C0: 
+  R0C1: n2内
+  R0C2: 外
+  R1C0: n1内
+  R1C1: cosα=-|cos<n1,n2>|
+  R1C2: cosα=|cos<n1,n2>|
+  R2C0: 外
+  R2C1: cosα=|cos<n1,n2>|
+  R2C2: cosα=-|cos<n1,n2>|
+[b12.p11] P style=None outline=None eq=0 img=0/0 :: 法三：同等异补（万能办法）
+[b13.p12] P style=None outline=None eq=6 img=0/0 :: 设平面α和β的法向量分别为m、n，在平面α和β内各取一点A、B（两点均不在二面角的棱上），则有：
+[b14.p13] P style=None outline=None eq=2 img=0/0 :: 当AB与两个法向量的夹角同为钝角或锐角，即AB⋅m,AB⋅n同号时，二面角的大小与两个法向量的夹角相等．
+[b15.p14] P style=None outline=None eq=2 img=0/0 :: 当AB与一个法向量的夹角为锐角、与另一个夹角为钝角，即AB⋅m,AB⋅n异号时，二面角的大小与两个法向量的夹角互补．
+[b16.p15] P style=None outline=None eq=0 img=0/0 :: 从而得名：同等异补，即向量与法向量同号时二面角大小即为法向量的夹角大小，异号时则互补．
+[b17.p16] P style=None outline=None eq=0 img=0/0 :: 注意：一般先用法一法二，如果不敢确定再用法三兜底
+[b18.p17] P style=None outline=1 eq=0 img=0/0 :: 【概念辨析：线面角与二面角】
+[b19.p18] P style=None outline=None eq=0 img=0/0 :: 共同点：均把空间角转化为方向向量与平面法向量的夹角。
+[b20.p19] P style=None outline=None eq=3 img=0/0 :: 线面角：设直线方向向量为 a，平面法向量为 n，则 sinθ=a·nanθ∈0,π2，无需判断锐钝。
+[b21.p20] P style=None outline=None eq=1 img=0/0 :: 二面角：设两平面法向量为 n1,n2，则二面角可能等于两法向量的夹角或其补角，必须结合“直接观察、法向量内外分析、同等异补”判断符号。
+[b22.p21] P style=None outline=None eq=0 img=1/1 :: 
+[b23.p22] P style=None outline=0 eq=0 img=0/1 :: 【题型：棱锥二面角判定】
+[b24.p23] P style=None outline=None eq=3 img=0/0 :: 【典例1】如图，在四棱锥P-ABCD中，AB//CD中，且∠BAP=∠CDP=90∘．
+[b25.p24] P style=None outline=None eq=2 img=0/0 :: （1）证明：平面PAB⊥面PAD：
+[b26.p25] P style=None outline=None eq=3 img=0/0 :: （2）若PA=PD=AB=DC，∠APD=90∘，求二面角A-PB-C的余弦值．
+[b27.p26] P style=None outline=2 eq=6 img=0/0 :: 【答案思路】（1）由已知可得AB⊥AP，CD⊥PD，再由AB//CD可得AB⊥PD，由线面垂直的判定定理可得AB⊥平面PAD，再由面面垂直的判定定理即可求证；
+[b28.p27] P style=None outline=None eq=11 img=0/0 :: （2）分别取AD，BC的中点O，E，连接OP，OE，证明OA,OE,OP两两垂直，如图建立空间直角坐标系，求得平面PCB的法向量为n和平面PAB的一个法向量为m，利用空间向量夹角公式以及同角三角函数基本关系即可求解．
+[b29.p28] P style=None outline=1 eq=3 img=0/0 :: 【答案】（1）平面 PAB⊥平面 PAD；（2）-33。
+[b30.t1] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【步骤1 证明面面垂直】（1）∵∠BAP=∠CDP=90°，∴PA⊥AB,PD⊥CD，又∵AB//CD，∴PD⊥AB。又∵PD∩PA=P,PD、PA⊂平面PAD，∴AB⊥平面PAD，又AB⊂平面PAB，平面PAB⊥平面PAD．【步骤2 建系求法向量】（2）取AD中点O，BC中点E，连接PO，OE，∵AB∥CD，∴四边形ABCD为平行四边形，∴OE∥AB，由（1）知，AB⊥平面PAD，∴OE⊥平面PAD，又PO、AD⊂平面PAD，∴OE⊥PO,OE⊥AD，又PA=PD，∴PO⊥AD，∴PO、OE、AD两两垂直．∴以O为坐标原点，建立如图所示的空间直角坐标系O-xyz．设PA=2，∴D(-2,0,0)、B(2,2,0)、P(0,0,2)、C(-2,2,0)，∴PD=(-2,0,-2)、PB=(2,2,-2)、BC=(-22,0,0)，设n=(x,y,z)为平面PBC的法向量，由n⋅PB=0,n⋅BC=0,得2x+2y-2z=0,-22x=0.
+  R0C1: 【步骤3 判断法向量方向】令y=1，则z=2，x=0，可得平面PBC的一个法向量n=(0,1,2)，（z>0，方向向上，由图可知指向二面角的外侧）∵∠ADP=90∘，∴PD⊥PA，又知AB⊥平面PAD，PD⊂平面PAD，∴PD⊥AB，又PA∩AB=A，∴PD⊥平面PAB，即DP是平面PAB的一个法向量，DP=(2,0,2)，（z>0，方向向上，由图可知指向二面角的外侧）【步骤4 计算二面角】∴cosα=-cos<DP,n>=-DP⋅n|DP|⋅|n|=-223=-33．（两个向量都是外侧，同负异正可得“-”）故二面角A-PB-C的平面角的余弦值为-33．
+[b31.p29] P style=None outline=None eq=0 img=0/0 :: 【题后反思】虽然法向量的选择不同，但是最终计算岀的结果是相同的．
+[b32.p30] P style=None outline=None eq=0 img=0/0 :: 【温馨提醒】高考对空间向量与立体几何的考查主要体现在以下几个方面：
+[b33.p31] P style=None outline=None eq=0 img=0/0 :: ①求异面直线所成的角，关键是转化为两直线的方向向量的夹角；
+[b34.p32] P style=None outline=None eq=0 img=0/0 :: ②求直线与平面所成的角，关键是转化为直线的方向向量和平面的法向量的夹角；
+[b35.p33] P style=None outline=None eq=0 img=0/0 :: ③求二面角，关键是转化为两平面的法向量的夹角，建立空间直角坐标系和表示出所需点的坐标是解题的关键，判断二面角是锐角还是钝角是一个易错点．
+[b36.p34] P style=None outline=None eq=0 img=0/0 :: 【举一反三】
+[b37.p35] P style=None outline=0 eq=0 img=0/0 :: 【题型：圆锥二面角求值】
+[b38.p36] P style=None outline=None eq=8 img=0/1 :: 1．如图，D为圆锥的顶点，O是圆锥底面的圆心，AE为底面直径，AE=AD．△ABC是底面的内接正三角形，P为DO上一点，PO=66DO．
+[b39.p37] P style=None outline=None eq=2 img=0/0 :: （1）证明：PA⊥平面PBC；
+[b40.p38] P style=None outline=None eq=1 img=0/0 :: （2）求二面角B-PC-E的余弦值．
+[b41.p39] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（1）法一：统一设定尺度，用勾股定理得到两条关键垂直关系，再判定线面垂直。
+[b42.p40] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（1）法二：建立空间直角坐标系，用两个点积为0验证线面垂直。
+[b43.p41] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（1）法三：先证明一条底面弦垂直相关平面，再利用勾股关系补足另一条垂线。
+[b44.p42] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（1）法四：选取空间基底，计算关键向量点积并判定线面垂直。
+[b45.p43] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（2）法一：求两个平面的法向量，用直接观察判定二面角为锐角，再取正余弦值。
+[b46.p44] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（2）法二：作出二面角的平面角，在直角三角形中求其余弦。
+[b47.p45] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（2）法三：确定点在另一平面上的正射影，用射影面积比求二面角余弦。
+[b48.p46] P style=None outline=1 eq=2 img=0/0 :: 【答案】（1）PA⊥平面 PBC；（2）255。
+[b49.t2] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】（1）【法一】：勾股运算法证明【步骤1 计算关键线段】由题设，知△DAE为等边三角形，设AE=1，则DO=32，CO=BO=12AE=12，∴PO=66DO=24，PC=PO2+OC2=64=PB=PA
+  R0C1: 【步骤2 判定线面垂直】又△ABC为等边三角形，则BAsin60∘=2OA，∴BA=32，PA2+PB2=34=AB2，则∠APB=90∘，∴PA⊥PB，同理PA⊥PC，又PC∩PB=P，∴PA⊥平面PBC；
+[b50.t3] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【法二】：空间直角坐标系法【步骤1 建立坐标系】不妨设AB=23，则AE=AD=ABsin60°=4，由圆锥性质知DO⊥平面ABC，∴DO=AD2-AO2=42-22=23，∴PO=66DO=2．∵O是△ABC的外心，因此AE⊥BC．在底面过O作BC的平行线与AB的交点为W，以O为原点，OW方向为x轴正方向，OE方向为y轴正方向，OD方向为z轴正方向，建立空间直角坐标系O-xyz，则A(0,-2,0)，B(3,1,0)，C(-3,1,0)，E(0,2,0)，P(0,0,2)．∴AP=(0,2,2)，BP=(-3,-1,2)，CP=(3,-1,2)．
+  R0C1: 【步骤2 验证线面垂直】故AP⋅BP=0-2+2=0，AP⋅CP=0-2+2=0．∴AP⊥BP，AP⊥CP．又BP∩CP=P，故AP⊥平面PBC．
+[b51.t4] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【法三】：【步骤1 证明关键垂直】∵△ABC是底面圆O的内接正三角形，且AE为底面直径，∴AE⊥BC．∵DO（即PO）垂直于底面，BC在底面内，∴PO⊥BC．又∵PO⊂平面PAE，AE⊂平面PAE，PO∩AE=O，∴BC⊥平面PAE．又∵PA⊂平面PAE，∴PA⊥BC．
+  R0C1: 【步骤2 构造直角关系】设AE∩BC=F，则F为BC的中点，连结PF．设DO=a，且PO=66DO，则AF=32a，PA=22a，PF=12a．因此PA2+PF2=AF2，从而PA⊥PF．又∵PF∩BC=F，∴PA⊥平面PBC．
+[b52.t5] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【法四】：空间基底向量法 【步骤1 表示基底向量】如图所示，圆锥底面圆O半径为R，连结DE，AE=AD=DE，易得OD=3R，
+  R0C1: 【步骤2 验证垂直关系】∵PO=66OD，∴PO=22R．以OA,OB,OD为基底，OD⊥平面ABC，则AP=AO+OP=-OA+66OD，BP=BO+OP=-OB+66OD，且OA⋅OB=-12R2，OA⋅OD=OB⋅OD=0∴AP⋅BP=-OA+66OD⋅-OB+66OD= OA⋅OB-OA⋅66OD-OB⋅66OD+16OD2=0．故AP⋅BP=0．∴AP⊥BP，即AP⊥BP．同理AP⊥CP．又BP∩CP=P，∴AP⊥平面PBC．
+[b53.t6] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】（2）【法一】：空间直角坐标系法【步骤1 建系求法向量】过O作ON∥BC交AB于点N，∵PO⊥平面ABC，以O为坐标原点，OA为x轴，ON为y轴建立如图所示的空间直角坐标系，则E(-12,0,0),P(0,0,24),B(-14,34,0),C(-14,-34,0)，PC=(-14,-34,-24)，PB=(-14,34,-24)，PE=(-12,0,-24)，设平面PCB的一个法向量为n=(x1,y1,z1)，由n⋅PC=0n⋅PB=0，得-x1-3y1-2z1=0-x1+3y1-2z1=0，令x1=2，得z1=-1,y1=0，∴n=(2,0,-1)，
+  R0C1: 【步骤2 求另一法向量并判角】设平面PCE的一个法向量为m=(x2,y2,z2)由m⋅PC=0m⋅PE=0，得-x2-3y2-2z2=0-2x2-2z2=0，令x2=1，得z2=-2,y2=33，∴m=(1,33,-2)故cos<m,n>=n⋅m|n|⋅|m|=223×103=255，设二面角B-PC-E的大小为θ，由图可知二面角为锐二面角，∴cosθ=255.
+[b54.t7] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【法二】【最优解】：几何法【步骤1 作出平面角】设BC∩AE=F，易知F是BC的中点，过F作FG∥AP交PE于G，取PC的中点H，联结GH，则HF∥PB．由PA⊥平面PBC，得FG⊥平面PBC．由（1）可得，BC2=PB2+PC2，得PB⊥PC．∴FH⊥PC，根据三垂线定理，得GH⊥PC．∴∠GHF是二面角B-PC-E的平面角．
+  R0C1: 【步骤2 计算平面角】设圆O的半径为r，则AF=ABsin60°=32r，AE=2r，EF=12r，EFAF=13，∴FG=14PA，FH=12PB=12PA，FGFH=12．在Rt△GFH中，tan∠GHF=FGFH=12，cos∠GHF=255．∴二面角B-PC-E的余弦值为255．
+[b55.t8] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【法三】：射影面积法 【步骤1 确定正射影】如图所示，在PE上取点H，使HE=14PE，设BC∩AE=N，连结NH．由（1）知NE=14AE，∴NH∥PA．故NH⊥平面PBC．∴，点H在面PBC上的射影为N．故由射影面积法可知二面角B-PC-E的余弦值为cosθ=S△PCNS△PCH．
+  R0C1: 【步骤2 计算面积比】在△PCE中，令PC=PE=62，则CE=1，易知S△PCE=54．∴S△PCH=34S△PCE=3516．又S△PCN=12S△PBC=38，故cosθ=S△PCNS△PCH=383516=255∴二面角B-PC-E的余弦值为255．
+[b56.p47] P style=None outline=None eq=0 img=0/0 :: 【难度】0.65
+[b57.p48] P style=None outline=None eq=0 img=0/0 :: 【知识点】面面角的向量求法
+[b58.p49] P style=None outline=None eq=4 img=0/0 :: 【方法总览】（1）要证明PA⊥平面PBC，只需证明PA⊥PB，PA⊥PC即可；
+[b59.p50] P style=None outline=None eq=6 img=0/0 :: （2）方法一：过O作ON∥BC交AB于点N，以O为坐标原点，OA为x轴，ON为y轴建立如图所示的空间直角坐标系，分别算出平面PCB的一个法向量n，平面PCE的一个法向量为m，利用公式cos<m,n>=n⋅m|n||m|计算即可得到答案.
+[b60.p51] P style=None outline=None eq=0 img=0/0 :: 【整体点评】本题以圆锥为载体，隐含条件是圆锥的轴垂直于底面，（1）方法一：利用勾股数进行运算证明，是在给出数据去证明垂直时的常用方法；方法二：选择建系利用空间向量法，给空间立体感较弱的学生提供了可行的途径；方法三：利用线面垂直，结合勾股定理可证出；方法四：利用空间基底解决问题，此解法在解答题中用的比较少；
+[b61.p52] P style=None outline=None eq=0 img=0/0 :: （2）方法一：建系利用空间向量法求解二面角，属于解答题中求角的常规方法；方法二：利用几何法，通过三垂线法作出二面角，求解三角形进行求解二面角，适合立体感强的学生；方法三：利用射影面积法求解二面角，提高解题速度.
+[b62.p53] P style=None outline=None eq=0 img=1/0 :: 
+[b63.p54] P style=None outline=0 eq=0 img=0/0 :: 【题型：棱锥二面角判定】
+[b64.p55] P style=None outline=None eq=0 img=0/0 :: 2．如图，四棱锥P-ABCD中，底面ABCD为平行四边形，∠DAB=60°,AB=2AD,PD⊥底面ABCD.
+[b65.p56] P style=None outline=None eq=0 img=1/0 :: 
+[b66.p57] P style=None outline=None eq=0 img=0/0 :: （1）证明：PA⊥BD；
+[b67.p58] P style=None outline=None eq=0 img=0/0 :: （2）若PD=AD，求二面角A-PB-C的余弦值．
+[b68.p59] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（1）用余弦定理与线面垂直补足两条垂线；（2）建系求两法向量，再用“同等异补”判定二面角与法向量夹角相等。
+[b69.p60] P style=None outline=1 eq=1 img=0/0 :: 【答案】（1）见解析 （2）-277
+[b70.t9] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【步骤1 证明线线垂直】（1）∵∠DAB=600，AB=2AD，由余弦定理得BD=3AD，从而BD2+AD2=AB2又∵PD⊥平面ABCD，BD⊂平面ABCD，∴PD⊥BD。故BD⊥AD，即BD⊥平面PAD，故PA ⊥BD
+  R0C1: 【步骤2 建系求法向量】（2）以D为坐标原点，AD的长为单位长，射线DA为X轴的正半轴建立空间坐标系则A（1，0，0），B（0，3，0），C（-1，3，0），P（0，0，1）设平面PAB的法向量n=(x,y,z)，则{n⋅AP=0n⋅AB=0⇒x-z=0x-3y=0，解得n=(3,1,3)平面PBC的法向量m=(x1,y1,z1)，则{m⋅PB=0n⋅BC=0⇒3y-z=0x=0，解得m=(0,-1,-3)【步骤3 同等异补判符号】取半平面 PAB 内点 A 与半平面 PBC 内点 C。∵AC·n=-3<0，AC·m=-3<0。∴两点积同号，由“同等异补”，二面角等于两法向量的夹角，故余弦取负值。cos〈m,n〉=-277
+[b71.p61] P style=None outline=None eq=0 img=0/0 :: 【难度】0.65
+[b72.p62] P style=None outline=None eq=0 img=0/0 :: 考点：本题考查线线垂直 二面角
+[b73.p63] P style=None outline=None eq=0 img=0/0 :: 点评：解决本题的关键是用向量法证明注意计算准确性
+[b74.p64] P style=None outline=None eq=0 img=0/0 :: 
+[b75.p65] P style=None outline=0 eq=0 img=0/0 :: 【题型：三棱锥二面角求值】
+[b76.p66] P style=None outline=None eq=10 img=0/0 :: 3．如图，在三棱锥S-ABC中，SB⊥底面ABC，且SB=AB=2，BC=6，∠ABC=π2，D、E分别是SA、SC的中点.
+[b77.p67] P style=None outline=None eq=0 img=1/0 :: 
+[b78.p68] P style=None outline=None eq=2 img=0/0 :: (1)求证：平面ACD⊥平面BCD；
+[b79.p69] P style=None outline=None eq=1 img=0/0 :: (2)求二面角S-BD-E的平面角的大小.
+[b80.p70] P style=None outline=2 eq=2 img=1/0 :: 【答案思路】（Ⅰ）已知SB、AB、BC两两互相垂直，故可建立空间直角坐标系如下图．根据线段长度可求出相应点的坐标，从而可推出AD⋅BC=0，AD⋅BD=0，则，∴平面ACD⊥平面BCD．
+[b81.p71] P style=None outline=None eq=0 img=0/0 :: （Ⅱ）求出两个平面的法向量，利用法向量夹角与二面角平面角的关系求出平面角的大小．
+[b82.p72] P style=None outline=1 eq=0 img=1/0 :: 【答案】（Ⅰ）证明过程详见解析；（Ⅱ）．
+[b83.t10] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【步骤1 建系证明面面垂直】（Ⅰ）．又因，∴建立如图所示的空间直角坐标系．∴A（2，0，0），B0,0,0，C0,6,0，D（1，0，1），，S（0，0，2）易得，AD=（-1，0，1），BC=（0，6，0），BD=（1，0，1）又AD⋅BC=0，AD⋅BD=0，∴AD⊥BC，AD⊥BD，∴AD⊥BC，AD⊥BD又又因，∴平面ACD⊥平面BCD．
+  R0C1: 【步骤2 求两个法向量】（Ⅱ）又设平面BDE的法向量为，则{BE⋅n=0BD⋅n=0,即62y+z=0x+z=0∴又因平面SBD的法向量为BC=（0，6，0）∴cosBC,n=BC⋅nBC⋅n=-26×83=-12【步骤3 判断锐钝并求值】由图可得二面角为锐角，∴二面角S-BD-E的平面角的大小为．
+[b84.p73] P style=None outline=None eq=0 img=0/0 :: 【难度】0.65
+[b85.p74] P style=None outline=None eq=0 img=0/0 :: 考点：平面与平面的垂直的证明二面角大小的求法．
+[b86.p75] P style=None outline=0 eq=0 img=0/0 :: 【题型：棱锥二面角求值】
+[b87.p76] P style=None outline=None eq=2 img=0/0 :: 4．如图，在四棱锥S-ABCD中，△ABC≌△SAB,∠SAB=∠ABC=90°,SA=AB=2AD=2,SD=CD=5,tan∠BCD=2.
+[b88.p77] P style=None outline=None eq=0 img=1/0 :: 
+[b89.p78] P style=None outline=None eq=2 img=0/0 :: （1）求证：平面SAB⊥平面SBC；
+[b90.p79] P style=None outline=None eq=2 img=0/0 :: （2）求证：AD//平面SBC；
+[b91.p80] P style=None outline=None eq=1 img=0/0 :: （3）求二面角A-SD-C的余弦值.
+[b92.p81] P style=None outline=2 eq=4 img=0/0 :: 【答案思路】（1）先利用线面垂直的判定定理与性质定理证得BC⊥平面SAB，再用面面垂直的判定定理证平面SAB⊥平面SBC；
+[b93.p82] P style=None outline=None eq=3 img=0/0 :: （2）先利用平行四边形证得AD//BC，再利用线面平行的判定定理证AD//平面SBC；
+[b94.p83] P style=None outline=None eq=4 img=0/0 :: （3）利用空间向量求二面角，先分别求得面SAD的法向量为AB=(0,2,0)，平面SCD的法向量n=(2,-1,1)，利用夹角公式即可求得.
+[b95.p84] P style=None outline=1 eq=1 img=0/0 :: 【答案】（1）证明见解析；（2）证明见解析；（3）-66.
+[b96.t11] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【步骤1 证明面面垂直】（1）∵∠SAB=90°，∴SA⊥AB，又SA=2AD=2,SD=5，由勾股定理知，SA⊥AD，又AB∩AD=A，∴SA⊥面ABCD，BC⊂面ABCD，∴SA⊥BC，又∠ABC=90°，即AB⊥BC，且SA∩AB=A，∴BC⊥平面SAB，又BC⊂面SBC，∴平面SAB⊥平面SBC.【步骤2 证明线面平行】（2）如图所示，过D作DE⊥BC，则DE//AB在直角△DEC中，∵tan∠BCD=2，CD=5，可得BE=CE=1，DE=2，∴DE=AB，∴四边形ABED为矩形，∴AD//BC，又AD⊄平面SBC, BC⊂平面SBC， ∴AD//平面SBC.
+  R0C1: 【步骤3 判断钝角并求值】（3）由题意可知二面角A-SD-C为钝角，设为θ.由（1），（2）可知，SA,AD,AB两两垂直，如图，以A坐标系原点，以AD,AB,AS为x,y,z轴建立空间直角坐标系，可知平面SAD的法向量为AB=(0,2,0)，设平面SCD的法向量n=(x,y,z)，又S(0,0,2), D(1,0,0), C(2,2,0), DS=(-1,0,2), DC=(1,2,0)，∴DS⋅n=0DC⋅n=0，即-x+2z=0x+2y=0，令x=2，得n=(2,-1,1)，∴cosθ=AB⋅n|AB||n|=-22×6=-66.∴二面角A-SD-C的余弦值为-66
+[b97.p85] P style=None outline=None eq=0 img=0/0 :: 【难度】0.4
+[b98.p86] P style=None outline=None eq=0 img=0/0 :: 【知识点】线面垂直证明线线垂直、求二面角、证明面面垂直、证明线面平行
+[b99.p87] P style=None outline=None eq=0 img=0/0 :: 【点睛】本题考查了证明面面垂直和线面平行，考查了线面平行的判定定理，线面垂直的判定与性质定理，面面垂直的判定定理，考查了面面角，解题的关键是建立空间直角坐标系，确定平面的法向量，属于中档题．
+[b100.p88] P style=None outline=0 eq=0 img=0/0 :: 【题型：动点二面角最值】
+[b101.p89] P style=None outline=None eq=9 img=0/0 :: 5．如图，在四棱锥P-ABCD中，底面ABCD为正方形，PA⊥底面ABCD，PA=AB=2，E，F分别在棱PB，BC上．
+[b102.p90] P style=None outline=None eq=0 img=1/0 ::   
+[b103.p91] P style=None outline=None eq=3 img=0/0 :: (1)当E为棱PB中点时，求证：AE⊥EF；
+[b104.p92] P style=None outline=None eq=4 img=0/0 :: (2)当F为棱BC中点时，求平面AEF与平面PDC所成的二面角余弦值的最大值．
+[b105.p93] P style=None outline=2 eq=4 img=0/0 :: 【答案思路】（1）以{AB,AD,AP}为正交基底建立空间坐标系A-xyz，设F(2,a,0)(0≤a≤2)，由AE⋅EF=0，即可证明；
+[b106.p94] P style=None outline=None eq=2 img=0/0 :: （2）分别求出平面AEF与平面PDC的法向量，由二面角的向量公式结合二次函数的性质即可得出答案.
+[b107.p95] P style=None outline=1 eq=0 img=0/0 :: 【答案】(1)证明见解析
+[b108.p96] P style=None outline=None eq=1 img=0/0 :: (2)31010．
+[b109.t12] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【步骤1 证明线线垂直】（1）∵底面ABCD为正方形，∴AB⊥AD，又∵PA⊥平面ABCD，AB，AD⊂平面ABCD，∴PA⊥AB，PA⊥AD．以{AB,AD,AP}为正交基底建立空间坐标系A-xyz，则A(0,0,0)，B(2,0,0)，C(2,2,0)，D(0,2,0)，P(0,0,2)．    当E为棱PB中点时，E(1,0,1)，设F(2,a,0)(0≤a≤2)，则AE=(1,0,1)，EF=(1,a,-1)，∴AE⋅EF=1×1+0×a+1×(-1)=0，∴AE⊥EF．【步骤2 参数化动点】（2）当F为棱BC中点时，F(2,1,0)，设E(b,0,2-b)(0≤b≤2)，则AE=(b,0,2-b)，AF=(2,1,0)，PD=(0,2,-2)，DC=(2,0,0)．
+  R0C1: 【步骤3 求两个法向量】设平面PCD的法向量为n1=x1,y1,z1，则PD⋅n1=2y1-2z1=0,DC⋅n1=2x1=0,取z1=1，则n1=(0,1,1)是平面PCD的一个法向量，设平面AEF的法向量为n2=x2,y2,z2，则AE⋅n2=bx2+(2-b)z2=0,AF⋅n2=2x2+y2=0,取z1=b，则n2=(b-2,-2(b-2),b)是平面AEF的一个法向量．【步骤4 求余弦最大值】设平面AEF与平面PDC所成角为α，则|cosα|=cosn1,n2=n1⋅n2n1⋅n2=|-2(b-2)+b|25(b-2)2+b2=4-b23b2-10b+10．令t=4-b∈[2,4]，则|cosα|=t23t2-14t+18=1218t2-14t+3，∴当1t=718，即b=107时，|cosα|取最大值31010．∴平面AEF与平面PDC所成的二面角余弦值的最大值为31010．
+[b110.p97] P style=None outline=None eq=0 img=0/0 :: 
+[b111.p98] P style=None outline=None eq=0 img=0/0 :: 【难度】0.65
+[b112.p99] P style=None outline=None eq=0 img=0/0 :: 【知识点】面面角的向量求法、空间位置关系的向量证明
+[b113.p100] P style=None outline=0 eq=0 img=0/0 :: 【题型：视图二面角求值】
+[b114.p101] P style=None outline=None eq=0 img=0/0 :: 6．已知四棱锥P-ABCD的直观图（如图(1)）及左视图（如图(2)），底面ABCD是边长为2的正方形，平面PAB⊥平面ABCD，PA=PB．
+[b115.p102] P style=None outline=None eq=0 img=1/0 :: 
+[b116.p103] P style=None outline=None eq=0 img=0/0 :: (1)求证：AD⊥PB；
+[b117.p104] P style=None outline=None eq=0 img=0/0 :: (2)求异面直线PD与AB所成角的余弦值；
+[b118.p105] P style=None outline=None eq=0 img=0/0 :: (3)求平面PAB与平面PCD所成锐二面角的大小.
+[b119.p106] P style=None outline=2 eq=0 img=0/0 :: 【答案思路】（1）取AB的中点O，连接PO，结合面面垂直的性质判断得到AD⊥平面PAB，然后证明AD⊥PB即可； 
+[b120.p107] P style=None outline=None eq=0 img=0/0 :: （2）过O作AD的平行线为x轴，以OB、OP所在直线分别为y、z轴，建立空间直角坐标系，再根据直线夹角的向量公式求解即可；
+[b121.p108] P style=None outline=None eq=0 img=0/0 :: （3）建立空间直角坐标系，然后表示平面的法向量，运用向量的夹角公式得到平面PAB与平面PCD所成锐二面角的大小.
+[b122.p109] P style=None outline=1 eq=2 img=0/0 :: 【答案】(1)证明见解析；(2)13；(3) π4．
+[b123.t13] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【步骤1 证明线线垂直】（1）取AB的中点O，连接PO，∵PA=PB，则PO⊥AB，又∵ 平面PAB⊥平面ABCD，平面PAB∩平面ABCD=AB，PO⊂平面PAB，∴PO⊥平面ABCD，∴PO⊥AD，而AD⊥AB，PO∩AB=O，∴AD⊥平面PAB，∴AD⊥PB． 
+  R0C1: 【步骤2 求异面直线夹角】（2）过O作AD的平行线为x轴，以OB、OP所在直线分别为y、z轴，建立如图空间直角坐标系，则A（0，-1，0），D（2，-1，0），B（0，1，0），C（2，1，0），P（0，0，2），则PD=2,-1,-2，AB=0,2,0，故cosPD,AB=PD⋅ABPD⋅AB=-222+-12+22×2=-13，即异面直线PD与AB所成角的余弦值为13． 【步骤3 求锐二面角】（3）易得平面PAB的一个法向量为n=1,0,0．设平面PCD的一个法向量为m=x,y,z，由（2）知PD=2,-1,-2，CD=0,-2,0，则m⋅PD=0m⋅CD=0，即2x-y-2z=0y=0，令x=1，则m=1,0,1，则cosm,n=m,nm⋅n=12×1=22，即平面PAB与平面PCD所成锐二面角的大小为π4.
+[b124.p110] P style=None outline=None eq=0 img=0/0 :: 【难度】0.85
+[b125.p111] P style=None outline=None eq=0 img=0/0 :: 【知识点】线面垂直证明线线垂直、面面角的向量求法、异面直线夹角的向量求法
+[b126.p112] P style=None outline=0 eq=0 img=0/0 :: 【题型：线面角向量求值】
+[b127.p113] P style=None outline=None eq=2 img=0/0 :: 7．如图，在三棱锥S-ABC中，E是线段SB上的一点，SA⊥AC,AE⊥BC，AB=BC=2，SA=AC=2.
+[b128.p114] P style=None outline=None eq=0 img=1/0 :: 
+[b129.p115] P style=None outline=None eq=0 img=0/0 :: (1)证明：SA⊥平面ABC；
+[b130.p116] P style=None outline=None eq=0 img=0/0 :: (2)若平面ACE⊥平面SBC，求直线SC与平面ACE所成角的大小.
+[b131.p117] P style=None outline=2 eq=1 img=0/0 :: 【答案思路】（1）先证明出，利用线面垂直的判定定理得到BC⊥平面SAB，证明出BC⊥SA，再用线面垂直的判定定理证明SA⊥平面ABC；
+[b132.p118] P style=None outline=None eq=0 img=0/0 :: （2）取AC的中点O，连接OB，以O为原点，OB，OC所在的直线分别为x轴､y轴，过点O与AS平行的直线为z轴，建立如图所示的空间直角坐标系，用向量法求解.
+[b133.p119] P style=None outline=1 eq=0 img=0/0 :: 【答案】(1)证明见解析
+[b134.p120] P style=None outline=None eq=1 img=0/0 :: (2)30∘
+[b135.t14] TABLE rows=1 grid=['4153', '4154'] width={'w': '8307', 'type': 'dxa'}
+  R0C0: 【详细解析】【步骤1 证明线面垂直】（1）∵AB=BC=2，AC=2，AB2+BC2=AC2，∴∠ABC=90°，即BC⊥AB.又∵AE⊥BC，AB∩AE=A，AE，AB⊂平面SAB，∴BC⊥平面SAB.又∵SA⊂平面SAB，∴BC⊥SA∵SA⊥AC，AC∩BC=C，AC，BC⊂平面ABC，∴SA⊥平面ABC.【步骤2 建系求法向量】（2）取AC的中点O，连接OB，则OB⊥AC.以O为原点，OB，OC所在的直线分别为x轴､y轴，过点O与AS平行的直线为z轴，建立如图所示的空间直角坐标系，则A（0，-1，0），B（1，0，0），C（0，1，0），S（0，-1，2）.
+  R0C1: 【步骤3 列向量并定参数】∴AC=020，BC=-110，BS=（-1，-1，2），SC=02-2设平面SBC的法向量为n=(x,y,z)则由n⋅BC=0n⋅BS=0得-x+y=0-x-y+2z=0令x=1，得n=1,1,1设BE=λBS，λ∈01，则CE=BE-BC=（1-λ，—1—λ，2λ）.设平面ACE的法向量为m=x',y',z'则由m⋅AC=0m⋅CE=0得2y'=01-λx'+-1-λy'+2λz'=0，令x'=1，得m=1,0,λ-12λ∵平面ACE⊥平面SBC，∴n⋅m=0，即1+λ-12λ=0解得λ=13，∴m=1,0,-1【步骤4 计算线面角】设直线SC与平面ACE所成角为θ，∴sinθ=|cosSC,m|=|SC⋅m||SC||m|=|0+0+2||1+0+1|×|0+4+4|=12，故直线SC与平面ACE所成角为30∘.
+[b136.p121] P style=None outline=None eq=0 img=0/0 :: 
+[b137.p122] P style=None outline=None eq=0 img=0/0 :: 【难度】0.65
+[b138.p123] P style=None outline=None eq=0 img=0/0 :: 【知识点】线面角的向量求法、证明线面垂直
+[b139.p124] P style=None outline=None eq=0 img=0/0 :: 【迁移说明】本题沿用“方向向量—法向量夹角”的共同原理；线面角规定为锐角或直角，计算时取绝对值，无需再判锐钝。
+[b140.p125] P style=None outline=None eq=0 img=0/0 :: 

@@ -1,0 +1,346 @@
+===== 80-180 =====
+0080: **第一步  平方后利用基本不等式，转化为关于 √x 的函数求最值**
+0081: 
+0082: 则$`\mu^{2} = \frac{1 + x + 2\sqrt{x}}{1 + x} = 1 + \frac{2\sqrt{x}}{1 + x}`$，因为$`x \geq 0`$，所以$`1 + x \geqslant 2\sqrt{x}`$，当且仅当$`x = 1`$时取等号，所以$`\mu^{2} = 1 + \frac{2\sqrt{x}}{1 + x} \leqslant 1 + \frac{1 + x}{1 + x} = 2`$，
+0083: 
+0084: 即$`0 < \mu \leqslant \sqrt{2}`$，所以$`k \in \lbrack\sqrt{2}, + \infty)`$，故答案为：$`\lbrack\sqrt{2}, + \infty)`$
+0085: 
+0086: 【典例2】已知$`\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}满足\left| \overrightarrow{a} \right| = 1，\left| \overrightarrow{b} \right| = 2，\left| \overrightarrow{c} \right| = 3，且\overrightarrow{a} \cdot (\overrightarrow{b} + \overrightarrow{c}) = \overrightarrow{b} \cdot \overrightarrow{c} + 1`$，则$`\left| \overrightarrow{b} - \overrightarrow{c} \right|`$的取值范围      .
+0087: 
+0088: **解析：**
+0089: 
+0090: **法一（辅助角公式）**
+0091: 
+0092: **第一步：建立坐标，转化已知条件**
+0093: 
+0094: 不妨令 $`\overset{\rightarrow}{c} = (3,0),\overset{\rightarrow}{b} = (2\cos\theta,2\sin\theta),\overset{\rightarrow}{a} = (\cos\alpha,\sin\alpha)`$，其中 $`\alpha,\theta \in \lbrack 0,2\pi)`$。
+0095: 
+0096: 由题设 $`\overset{\rightarrow}{a} \cdot (\overset{\rightarrow}{b} + \overset{\rightarrow}{c}) = \overset{\rightarrow}{b} \cdot \overset{\rightarrow}{c} + 1`$，可得
+0097: 
+0098: $`2\sin\theta\sin\alpha + (2\cos\theta + 3)\cos\alpha = 6\cos\theta + 1`$。
+0099: 
+0100: **第二步：利用辅助角公式求参数范围**
+0101: 
+0102: 当 $`\theta`$ 固定时，由辅助角公式，左边关于 $`\alpha`$ 的取值范围为
+0103: 
+0104: $`\lbrack - \sqrt{(2\sin\theta)^{2} + (2\cos\theta + 3)^{2}},\text{ }\sqrt{(2\sin\theta)^{2} + (2\cos\theta + 3)^{2}}\rbrack = \lbrack - \sqrt{13 + 12\cos\theta},\text{ }\sqrt{13 + 12\cos\theta}\rbrack`$。
+0105: 
+0106: 因此原等式有解的充要条件为 $`|6\cos\theta + 1| \leq \sqrt{13 + 12\cos\theta}`$。
+0107: 
+0108: 令 $`t = \cos\theta`$，则 $`(6t + 1)^{2} \leq 13 + 12t`$，即 $`36t^{2} \leq 12`$，所以 $`- \frac{\sqrt{3}}{3} \leq t \leq \frac{\sqrt{3}}{3}`$。
+0109: 
+0110: **第三步：用参数表示目标式**
+0111: 
+0112: $`{|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}|}^{2} = (2\cos\theta - 3)^{2} + (2\sin\theta)^{2} = 13 - 12\cos\theta = 13 - 12t`$。
+0113: 
+0114: **第四步：确定目标式的取值范围**
+0115: 
+0116: 由 $`- \frac{\sqrt{3}}{3} \leq t \leq \frac{\sqrt{3}}{3}`$，得 $`13 - 4\sqrt{3} \leq {|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}|}^{2} \leq 13 + 4\sqrt{3}`$。
+0117: 
+0118: 又 $`13 - 4\sqrt{3} = (2\sqrt{3} - 1)^{2},13 + 4\sqrt{3} = (2\sqrt{3} + 1)^{2}`$，所以 $`|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}| \in \lbrack 2\sqrt{3} - 1,2\sqrt{3} + 1\rbrack`$。
+0119: 
+0120: **法二（柯西不等式）**
+0121: 
+0122: **第一步  同法一建立坐标系，取 u=(2sinθ,2cosθ+3)，v=(sinα,cosα)**
+0123: 
+0124: 同法一建立平面直角坐标系，不妨令 $`\overset{\rightarrow}{c} = (3,0),\overset{\rightarrow}{b} = (2\cos\theta,2\sin\theta),\overset{\rightarrow}{a} = (\cos\alpha,\sin\alpha)`$，其中 $`\alpha,\theta \in \lbrack 0,2\pi)`$。
+0125: 
+0126: 由题设可得 $`2\sin\theta\sin\alpha + (2\cos\theta + 3)\cos\alpha = 6\cos\theta + 1`$。
+0127: 
+0128: **第二步  由柯西不等式 \|u·v\|≤\|u\|\|v\| 得到 cosθ 的范围（注：此处柯西即法一中辅助角的等价写法）**
+0129: 
+0130: 先证明二维柯西不等式。设 $`\overset{\rightarrow}{u} = (x_{1},x_{2}),\overset{\rightarrow}{v} = (y_{1},y_{2})`$。若其中有零向量，结论显然成立；否则设两向量的夹角为 $`\beta`$。
+0131: 
+0132: 根据向量数量积的定义，$`x_{1}y_{1} + x_{2}y_{2} = \overset{\rightarrow}{u} \cdot \overset{\rightarrow}{v} = |\overset{\rightarrow}{u}||\overset{\rightarrow}{v}|\cos\beta`$。
+0133: 
+0134: 因为 $`|\cos\beta| \leq 1`$，所以 $`|x_{1}y_{1} + x_{2}y_{2}| \leq \sqrt{x_{1}^{2} + x_{2}^{2}}\sqrt{y_{1}^{2} + y_{2}^{2}}`$，这就是二维柯西不等式。
+0135: 
+0136: 在本题中，取 $`\overset{\rightarrow}{u} = (2\sin\theta,2\cos\theta + 3),\overset{\rightarrow}{v} = (\sin\alpha,\cos\alpha)`$，则
+0137: 
+0138: $`\overset{\rightarrow}{u} \cdot \overset{\rightarrow}{v} = 2\sin\theta\sin\alpha + (2\cos\theta + 3)\cos\alpha = 6\cos\theta + 1`$，
+0139: 
+0140: $`|\overset{\rightarrow}{u}| = \sqrt{13 + 12\cos\theta},|\overset{\rightarrow}{v}| = \sqrt{\sin^{2}\alpha + \cos^{2}\alpha} = 1`$。
+0141: 
+0142: 由柯西不等式，$`|6\cos\theta + 1| \leq \sqrt{13 + 12\cos\theta}`$。两边平方，得 $`(6\cos\theta + 1)^{2} \leq 13 + 12\cos\theta`$。
+0143: 
+0144: 展开并整理，得 $`36\cos^{2}\theta + 12\cos\theta + 1 \leq 13 + 12\cos\theta`$，即 $`36\cos^{2}\theta \leq 12`$，所以 $`- \frac{\sqrt{3}}{3} \leq \cos\theta \leq \frac{\sqrt{3}}{3}`$。
+0145: 
+0146: 由于 $`\overset{\rightarrow}{v} = (\sin\alpha,\cos\alpha)`$ 可以表示任意单位向量，所以对上述区间内的每个 $`\cos\theta`$，均可选取适当的 $`\alpha`$ 使原等式成立，故该区间可以取遍。
+0147: 
+0148: 最后，$`{|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}|}^{2} = (2\cos\theta - 3)^{2} + 4\sin^{2}\theta = 13 - 12\cos\theta`$，从而 $`13 - 4\sqrt{3} \leq {|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}|}^{2} \leq 13 + 4\sqrt{3}`$。
+0149: 
+0150: 因此 $`|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}| \in \lbrack 2\sqrt{3} - 1,2\sqrt{3} + 1\rbrack`$。
+0151: 
+0152: **法三（直接向量法）**
+0153: 
+0154: **第一步  令 t=b·c，由向量夹角得 t=6cosγ，故 t∈\[-6,6\]**
+0155: 
+0156: 令 $`t = \overset{\rightarrow}{b} \cdot \overset{\rightarrow}{c}`$，并设 $`\overset{\rightarrow}{b}`$ 与 $`\overset{\rightarrow}{c}`$ 的夹角为 $`\gamma`$。则 $`t = |\overset{\rightarrow}{b}||\overset{\rightarrow}{c}|\cos\gamma = 6\cos\gamma`$，故 $`- 6 \leq t \leq 6`$。
+0157: 
+0158: 由题设 $`\overset{\rightarrow}{a} \cdot (\overset{\rightarrow}{b} + \overset{\rightarrow}{c}) = \overset{\rightarrow}{b} \cdot \overset{\rightarrow}{c} + 1`$，可得 $`\overset{\rightarrow}{a} \cdot (\overset{\rightarrow}{b} + \overset{\rightarrow}{c}) = t + 1`$。
+0159: 
+0160: **第二步  利用 \|a\|=1 及余弦有界性缩小 t 的范围为 \[-2√3,2√3\]**
+0161: 
+0162: 又 $`{|\overset{\rightarrow}{b} + \overset{\rightarrow}{c}|}^{2} = {|\overset{\rightarrow}{b}|}^{2} + {|\overset{\rightarrow}{c}|}^{2} + 2\overset{\rightarrow}{b} \cdot \overset{\rightarrow}{c} = 4 + 9 + 2t = 13 + 2t`$，所以 $`|\overset{\rightarrow}{b} + \overset{\rightarrow}{c}| = \sqrt{13 + 2t}`$。
+0163: 
+0164: 设 $`\overset{\rightarrow}{a}`$ 与 $`\overset{\rightarrow}{b} + \overset{\rightarrow}{c}`$ 的夹角为 $`\beta`$。因为 $`|\overset{\rightarrow}{a}| = 1`$，由数量积的定义得 $`t + 1 = \overset{\rightarrow}{a} \cdot (\overset{\rightarrow}{b} + \overset{\rightarrow}{c}) = |\overset{\rightarrow}{a}||\overset{\rightarrow}{b} + \overset{\rightarrow}{c}|\cos\beta = \sqrt{13 + 2t}\cos\beta`$。
+0165: 
+0166: 因为 $`0 \leq \cos^{2}\beta \leq 1`$，所以 $`(t + 1)^{2} = (13 + 2t)\cos^{2}\beta \leq 13 + 2t`$。整理得 $`t^{2} + 2t + 1 \leq 13 + 2t`$，即 $`t^{2} \leq 12`$，故 $`- 2\sqrt{3} \leq t \leq 2\sqrt{3}`$。
+0167: 
+0168: 反之，对任意 $`t \in \lbrack - 2\sqrt{3},2\sqrt{3}\rbrack`$，可先取 $`\cos\gamma = \frac{t}{6}`$，再取 $`\cos\beta = \frac{t + 1}{\sqrt{13 + 2t}}`$，因此该区间内的每个 $`t`$ 均可取得。
+0169: 
+0170: 由向量减法的模长公式，$`{|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}|}^{2} = {|\overset{\rightarrow}{b}|}^{2} + {|\overset{\rightarrow}{c}|}^{2} - 2\overset{\rightarrow}{b} \cdot \overset{\rightarrow}{c} = 13 - 2t`$。因为 $`- 2\sqrt{3} \leq t \leq 2\sqrt{3}`$，所以 $`13 - 4\sqrt{3} \leq {|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}|}^{2} \leq 13 + 4\sqrt{3}`$。
+0171: 
+0172: **第三步  用 t 表示 \|b-c\|²=13-2t，得到取值范围**
+0173: 
+0174: 注意到 $`13 - 4\sqrt{3} = (2\sqrt{3} - 1)^{2},13 + 4\sqrt{3} = (2\sqrt{3} + 1)^{2}`$，且 $`|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}| \geq 0`$，故 $`|\overset{\rightarrow}{b} - \overset{\rightarrow}{c}| \in \lbrack 2\sqrt{3} - 1,2\sqrt{3} + 1\rbrack`$。
+0175: 
+0176: **【举一反三】**
+0177: 
+0178: 3．若正$`\bigtriangleup ABC`$的边长为4，$`P`$为$`\bigtriangleup ABC`$所在平面内的动点，且$`PA = 1`$，则$`\overrightarrow{PB} \cdot \overrightarrow{PC}`$的取值范围是（    ）
+0179: 
+0180: A．$`\lbrack 3,15\rbrack`$ B．$`\lbrack 9 - 2\sqrt{3},9 + 2\sqrt{3}\rbrack`$
+===== 180-300 =====
+0180: A．$`\lbrack 3,15\rbrack`$ B．$`\lbrack 9 - 2\sqrt{3},9 + 2\sqrt{3}\rbrack`$
+0181: 
+0182: C．$`\lbrack 9 - 3\sqrt{3},9 + 3\sqrt{3}\rbrack`$ D．$`\lbrack 9 - 4\sqrt{3},9 + 4\sqrt{3}\rbrack`$
+0183: 
+0184: 【答案】D
+0185: 
+0186: 【难度】0.85
+0187: 
+0188: 【知识点】辅助角公式、数量积的坐标表示
+0189: 
+0190: 【分析】以$`A`$为坐标原点，以$`AB`$所在直线为$`x`$轴建立平面直角坐标系，则$`B(4,0)`$，$`C\left( 2,2\sqrt{3} \right)`$，由题意设$`P\left( \cos\theta,\text{sin}\theta \right)\left( 0 \leq \theta < 2\text{π} \right)`$，根据数量积的坐标运算结合三角函数求最值即可.
+0191: 
+0192: 【详解】由题知，
+0193: 
+0194: **第一步  以A为原点，AB为x轴建系，由PA=1设P(cosθ,sinθ)**
+0195: 
+0196: 以$`A`$为坐标原点，以$`AB`$所在直线为$`x`$轴建立平面直角坐标系，如图，
+0197: 
+0198: <img src="media/image4.png" style="width:1.76042in;height:1.38542in" alt="@@@91b6baca-0b3b-4f35-8745-9d2eb9544841" />  
+0199: 
+0200: 则$`B(4,0)`$，$`C\left( 2,2\sqrt{3} \right)`$，
+0201: 
+0202: 由题意设$`P\left( \cos\theta,\text{sin}\theta \right)\left( 0 \leq \theta < 2\text{π} \right)`$，
+0203: 
+0204: 则$`\overrightarrow{PB} = \left( 4 - \cos\theta, - \text{sin}\theta \right)`$，
+0205: 
+0206: $`\overrightarrow{PC} = \left( 2 - \cos\theta,2\sqrt{3} - \text{sin}\theta \right)`$，
+0207: 
+0208: ``` math
+0209: \therefore\overrightarrow{PB} \cdot \overrightarrow{PC} = \left( 4 - \cos\theta \right)\left( 2 - \cos\theta \right) - \text{sin}\theta\left( 2\sqrt{3} - \text{sin}\theta \right)
+0210: ```
+0211: 
+0212: **第二步  计算向量坐标，将数量积化为三角函数求最值**
+0213: 
+0214: ``` math
+0215: = 9 - 6\cos\theta - 2\sqrt{3}\text{sin}\theta = 9 - 2 \times 2\sqrt{3}\left( \frac{\sqrt{3}}{2}\cos\theta + \frac{1}{2}\text{sin}\theta \right)
+0216: ```
+0217: 
+0218: $`= 9 - 4\sqrt{3}\text{sin}\left( \theta + \frac{\text{π}}{3} \right)`$，
+0219: 
+0220: $`\because 0 \leq \theta < 2\text{π}`$，
+0221: 
+0222: $`\therefore\frac{\text{π}}{3} \leq \theta + \frac{\text{π}}{3} < \frac{7\text{π}}{3}`$，
+0223: 
+0224: 可得$`9 - 4\sqrt{3}\text{sin}\left( \theta + \frac{\text{π}}{3} \right) \in \left\lbrack 9 - 4\sqrt{3},9 + 4\sqrt{3} \right\rbrack`$.
+0225: 
+0226: 故选：D
+0227: 
+0228: 【2023江苏南通海安高级中学阶段检测】
+0229: 
+0230: 4．如图，正方形$`ABCD`$的边长为$`2,P`$是正方形$`ABCD`$的内切圆上任意一点，$`\overrightarrow{AP} = \lambda\overrightarrow{AB} + \mu\overrightarrow{AD}(\lambda,\mu \in R)`$，则下列结论错误的是（    ）
+0231: 
+0232: <img src="media/image5.png" style="width:1.4375in;height:1.27083in" alt="@@@3197a825-b7b5-4c00-a3ff-ecd7002763cd" />
+0233: 
+0234: A．$`\overrightarrow{AP} \cdot \overrightarrow{AB}`$的最大值为4
+0235: 
+0236: B．$`\lambda - \mu`$的最大值为$`\frac{\sqrt{2}}{2}`$
+0237: 
+0238: C．$`\overrightarrow{AP} \cdot \overrightarrow{BD}`$的最大值为2
+0239: 
+0240: D．$`\lambda + \mu`$的最大值为$`1 + \frac{\sqrt{2}}{2}`$
+0241: 
+0242: 【答案】C
+0243: 
+0244: 【难度】0.65
+0245: 
+0246: 【知识点】求含sinx(型)函数的值域和最值、求cosx（型）函数的最值、辅助角公式、数量积的坐标表示
+0247: 
+0248: 【分析】建立平面直角坐标系，求向量$`\overrightarrow{AP},\overrightarrow{AB},\overrightarrow{AD},\overrightarrow{BD}`$的坐标，根据数量积的坐标运算结合三角函数的性质判断AC，由向量相等求$`\lambda,\mu`$，结合三角函数性质求$`\lambda + \mu`$，$`\lambda - \mu`$的最值.
+0249: 
+0250: 【详解】以*A*为坐标原点建立直角坐标系，如图所示，则$`B(2,0)`$，$`D(0,2)`$，
+0251: 
+0252: **第一步  以A为原点建系，由内切圆方程设P(1+cosθ,1+sinθ)**
+0253: 
+0254: 内切圆的方程为$`(x - 1)^{2} + (y - 1)^{2} = 1`$，
+0255: 
+0256: 可设$`P\left( 1 + \cos\theta,1 + \sin\theta \right)`$，
+0257: 
+0258: **第二步  分别计算各选项表达式，化为三角函数后一一判断**
+0259: 
+0260: 则$`\overrightarrow{AP} = \left( 1 + \cos\theta,1 + \sin\theta \right),\overrightarrow{AB} = (2,0)`$，$`\overrightarrow{BD} = ( - 2,2)`$，
+0261: 
+0262: 所以$`\overrightarrow{AP} \cdot \overrightarrow{AB} = 2 + 2\cos\theta \leq 4`$，当$`\theta = 0`$，即$`P`$为$`BC`$的中点时取等号，
+0263: 
+0264: 所以$`\overrightarrow{AP} \cdot \overrightarrow{AB}`$的最大值为4，A正确；
+0265: 
+0266: 因为$`\overrightarrow{AP} \cdot \overrightarrow{BD} = - 2 - 2\cos\theta + 2 + 2\sin\theta = 2\sin\theta - 2\cos\theta = 2\sqrt{2}\sin\left( \theta - \frac{\pi}{4} \right)`$，
+0267: 
+0268: 所以$`\overrightarrow{AP} \cdot \overrightarrow{BD} = 2\sqrt{2}\sin\left( \theta - \frac{\pi}{4} \right) \leq 2\sqrt{2}`$，当$`\theta = \frac{\text{3π}}{4}`$，即$`P\left( 1 - \frac{\sqrt{2}}{2},1 + \frac{\sqrt{2}}{2} \right)`$时等号成立，
+0269: 
+0270: 所以$`\overrightarrow{AP} \cdot \overrightarrow{BD}`$的最大值为$`2\sqrt{2}`$，C错误，
+0271: 
+0272: 由$`\overrightarrow{AP} = \lambda\overrightarrow{AB} + \mu\overrightarrow{AD}`$，可得$`\left( 1 + \cos\theta,1 + \sin\theta \right) = (2\lambda,0) + (0,2\mu) = (2\lambda,2\mu)`$，
+0273: 
+0274: 得$`\lambda = \frac{1}{2}\left( 1 + \cos\theta \right)`$，$`\mu = \frac{1}{2}\left( 1 + \sin\theta \right)`$，
+0275: 
+0276: $`\lambda - \mu = \frac{\sqrt{2}}{2}\cos\left( \theta + \frac{\text{π}}{4} \right)`$，$`\lambda + \mu = 1 + \frac{\sqrt{2}}{2}\sin\left( \theta + \frac{\text{π}}{4} \right)`$，
+0277: 
+0278: 当$`\theta = - \frac{\text{π}}{4}`$，即$`P\left( 1 + \frac{\sqrt{2}}{2},1 - \frac{\sqrt{2}}{2} \right)`$时，所以所以$`\lambda - \mu`$的最大值为$`\frac{\sqrt{2}}{2}`$， B正确，
+0279: 
+0280: 当$`\theta = \frac{\text{π}}{4}`$，即$`P\left( 1 + \frac{\sqrt{2}}{2},1 + \frac{\sqrt{2}}{2} \right)`$时，所以所以$`\lambda + \mu`$的最大值为$`1 + \frac{\sqrt{2}}{2}`$，D正确，
+0281: 
+0282: 故选：C.
+0283: 
+0284: 【典例3】【2023山东潍坊四县高三下5月模拟改编】已知点*P*是圆$`C:(x - 3)^{2} + (y - 4)^{2} = r^{2}`$上一点，$`A( - 1,0)`$，$`B(1,0)`$，当$`r = 1`$时，$`|PA|^{2} + |PB|^{2}`$的最小值为\_\_\_\_\_\_\_\_\_\_\_\_\_.
+0285: 
+0286: 【大招指引】本题求$`|PA|^{2} + |PB|^{2}`$，其中*P*点是动点，并且在圆*C*，从而可以利用三角换元的特点，设*P*点的坐标为$`\left( 3 + \sin\alpha,4 + \cos\alpha \right)`$($`\alpha`$为参数)，然后表示$`|PA|^{2} + |PB|^{2} = 12\sin\alpha + 16\cos\alpha + 54 = 20\sin(\alpha + \theta) + 54`$，在用同角三角函数求最值的方法进行求解.
+0287: 
+0288: **第一步  利用圆的参数方程，设P(3+sinα,4+cosα)**
+0289: 
+0290: 【解析】设*P*点的坐标为$`\left( 3 + \sin\alpha,4 + \cos\alpha \right)`$($`\alpha`$为参数)，则$`\overrightarrow{PA} = \left( - 4 - \sin\alpha, - 4 - \cos\alpha \right)`$，$`\overrightarrow{PB} = \left( - 2 - \sin\alpha, - 4 - \cos\alpha \right)`$，所以$`|PA|^{2} + |PB|^{2} = 12\sin\alpha + 16\cos\alpha + 54 = 20\sin(\alpha + \theta) + 54`$，其中$`\tan\theta = \frac{4}{3}`$，所以当$`\sin(\alpha + \theta) = - 1`$时，$`|PA|^{2} + |PB|^{2}`$取得最小值，且最小值为34，
+0291: 
+0292: **第二步  用坐标表示PA²+PB²，化为三角函数求最小值**
+0293: 
+0294: 【题后反思】（1）圆心为$`(a,b)`$，半径为$`r`$的圆上的点$`P(x,y)`$可设为$`\left\{ \begin{array}{r}
+0295: x = a + r\cos\theta \\
+0296: y = b + r\sin\theta
+0297: \end{array} \right.\ (\theta 为参数)`$，（2）长轴为$`a`$且短轴为$`b`$的椭圆上的点$`P(x,y)`$可设为$`\left\{ \begin{array}{r}
+0298: x = a\cos\theta \\
+0299: y = b\sin\theta
+0300: \end{array} \right.\ (\theta 为参数)`$，其中，$`\theta`$的几何意义是：（横椭圆为例）以$`a`$为半径所作圆上一点和椭圆中心的连线与$`x`$轴正半轴的夹角.
+===== 300-420 =====
+0300: \end{array} \right.\ (\theta 为参数)`$，其中，$`\theta`$的几何意义是：（横椭圆为例）以$`a`$为半径所作圆上一点和椭圆中心的连线与$`x`$轴正半轴的夹角.
+0301: 
+0302: **【举一反三】**
+0303: 
+0304: 【2022辽宁省期末】
+0305: 
+0306: 5．已知椭圆$`C_{1}`$：$`\frac{x^{2}}{a_{1}^{2}} + \frac{y^{2}}{b_{1}^{2}} = 1\left( a_{1} > b_{1} > 0 \right)`$与双曲线$`C_{2}`$：$`\frac{x^{2}}{a_{2}^{2}} - \frac{y^{2}}{b_{2}^{2}} = 1\left( a_{2} > b_{2} > 0 \right)`$有相同的焦点$`F_{1}`$、$`F_{2}`$，椭圆$`C_{1}`$的离心率为$`e_{1}`$，双曲线$`C_{2}`$的离心率为$`e_{2}`$，点*P*为椭圆$`C_{1}`$与双曲线$`C_{2}`$的交点，且$`\angle F_{1}PF_{2} = \frac{\pi}{3}`$，则$`\frac{2}{\text{e}_{1}} + \frac{3}{\text{e}_{2}}`$的最大值为（    ）
+0307: 
+0308: A．$`\sqrt{7}`$ B．$`2\sqrt{7}`$ C．$`4\sqrt{3}`$ D．$`4\sqrt[4]{3}`$
+0309: 
+0310: 【答案】B
+0311: 
+0312: 【难度】0.65
+0313: 
+0314: 【知识点】求椭圆的离心率或离心率的取值范围、求双曲线的离心率或离心率的取值范围
+0315: 
+0316: 【分析】不妨设点$`P`$为第一象限的交点，结合椭圆与双曲线的定义得到$`PF_{1} = a_{1} + a_{2},PF_{2} = a_{1} - a_{2}`$，进而结合余弦定理得到$`a_{1}^{2} + 3a_{2}^{2} = 4c^{2}`$，即$`\frac{1}{e_{1}^{2}} + \frac{3}{e_{2}^{2}} = 4`$，令$`\frac{1}{e_{1}} = 2\cos\theta,\frac{1}{e_{2}} = \frac{2\sqrt{3}}{3}\sin\theta,`$然后结合三角函数即可求出结果.
+0317: 
+0318: 【详解】<img src="media/image6.png" style="width:1.65625in;height:1.375in" alt="@@@5774420b-f381-4bcd-96a8-662102def2da" />  
+0319: 
+0320: **第一步  由椭圆和双曲线定义解出PF₁=a₁+a₂，PF₂=a₁-a₂**
+0321: 
+0322: 不妨设点$`P`$为第一象限的交点，则
+0323: 
+0324: 由椭圆的定义可得$`PF_{1} + PF_{2} = 2a_{1}`$，
+0325: 
+0326: 由双曲线的定义可得$`PF_{1} - PF_{2} = 2a_{2}`$，
+0327: 
+0328: 所以$`PF_{1} = a_{1} + a_{2},PF_{2} = a_{1} - a_{2}`$，
+0329: 
+0330: 因此$`\cos\frac{\pi}{3} = \frac{PF_{1}^{2} + PF_{2}^{2} - F_{1}F_{2}^{2}}{2PF_{1} \cdot PF_{2}}`$，即$`\frac{1}{2} = \frac{\left( a_{1} + a_{2} \right)^{2} + \left( a_{1} - a_{2} \right)^{2} - (2c)^{2}}{2\left( a_{1} + a_{2} \right) \cdot \left( a_{1} - a_{2} \right)}`$，
+0331: 
+0332: **第二步  利用余弦定理建立离心率关系式 1/e₁²+3/e₂²=4**
+0333: 
+0334: 所以$`a_{1}^{2} + 3a_{2}^{2} = 4c^{2}`$，即$`\frac{1}{e_{1}^{2}} + \frac{3}{e_{2}^{2}} = 4`$，令$`\frac{1}{e_{1}} = 2\cos\theta,\frac{1}{e_{2}} = \frac{2\sqrt{3}}{3}\sin\theta,`$
+0335: 
+0336: **第三步  三角换元：令 1/e₁=2cosθ，√3/e₂=2sinθ，求 2/e₁+3/e₂ 最大值**
+0337: 
+0338: 因此$`\frac{2}{\text{e}_{1}} + \frac{3}{\text{e}_{2}} = 4\cos\theta + 2\sqrt{3}\sin\theta = 2\sqrt{7}\sin(\theta + \varphi)`$，其中$`\tan\varphi = \frac{2\sqrt{3}}{3}`$，
+0339: 
+0340: 所以当$`\sin(\theta + \varphi) = 1`$时，$`\frac{2}{\text{e}_{1}} + \frac{3}{\text{e}_{2}}`$有最大值，最大值为$`2\sqrt{7}`$，
+0341: 
+0342: 故选：B.
+0343: 
+0344: 【点睛】一、椭圆的离心率是椭圆最重要的几何性质，求椭圆的离心率(或离心率的取值范围)，常见有两种方法：
+0345: 
+0346: ①求出*a*，*c*，代入公式$`e = \frac{c}{a}`$；
+0347: 
+0348: ②只需要根据一个条件得到关于*a*，*b*，*c*的齐次式，结合*b<sup>2</sup>*＝*a<sup>2</sup>*－*c<sup>2</sup>*转化为*a*，*c*的齐次式，然后等式(不等式)两边分别除以*a*或*a<sup>2</sup>*转化为关于*e*的方程(不等式)，解方程(不等式)即可得*e*(*e*的取值范围)．
+0349: 
+0350: 二、双曲线的离心率是双曲线最重要的几何性质，求双曲线的离心率(或离心率的取值范围)，常见有两种方法：
+0351: 
+0352: ①求出*a*，*c*，代入公式$`e = \frac{c}{a}`$；
+0353: 
+0354: ②只需要根据一个条件得到关于*a*，*b*，*c*的齐次式，结合*b<sup>2</sup>*＝*c<sup>2</sup>*－*a<sup>2</sup>*转化为*a*，*c*的齐次式，然后等式(不等式)两边分别除以*a*或*a<sup>2</sup>*转化为关于*e*的方程(不等式)，解方程(不等式)即可得*e*(*e*的取值范围)．
+0355: 
+0356: 【2022福建省月考】
+0357: 
+0358: 6．已知点$`P`$在椭圆$`\frac{x^{2}}{9} + \frac{y^{2}}{3} = 1`$上运动，点$`Q`$在圆$`{(x - 1)}^{2} + y^{2} = \frac{5}{8}`$上运动，则$`|PQ|`$的最小值为（    ）
+0359: 
+0360: A．$`2`$ B．$`\frac{\sqrt{10}}{2}`$ C．$`2 - \frac{\sqrt{10}}{4}`$ D．$`\frac{\sqrt{10}}{4}`$
+0361: 
+0362: 【答案】D
+0363: 
+0364: 【难度】0.85
+0365: 
+0366: 【知识点】求平面两点间的距离、由标准方程确定圆心和半径、根据椭圆的有界性求范围或最值
+0367: 
+0368: 【分析】先求出点$`P`$到圆心$`A(1,0)`$的距离的最小值，然后减去圆的半径可得答案
+0369: 
+0370: 【详解】
+0371: 
+0372: 法一（三角换元）设 $`P(3\cos\theta,\sqrt{3}\sin\theta),\theta \in \lbrack 0,2\pi)`$，圆心为 $`A(1,0)`$。
+0373: 
+0374: **第一步  用椭圆参数方程设P(3cosθ,√3 sinθ)，求AP²**
+0375: 
+0376: 则 $`AP^{2} = (3\cos\theta - 1)^{2} + 3\sin^{2}\theta = 6\cos^{2}\theta - 6\cos\theta + 4 = 6(\cos\theta - \frac{1}{2})^{2} + \frac{5}{2} \geq \frac{5}{2}`$。
+0377: 
+0378: **第二步  化简为关于cosθ的二次函数，求最小值后减圆半径**
+0379: 
+0380: 所以 $`AP_{\min} = \frac{\sqrt{10}}{2}`$。圆的半径为 $`\frac{\sqrt{10}}{4}`$，故 $`PQ_{\min} = \frac{\sqrt{10}}{2} - \frac{\sqrt{10}}{4} = \frac{\sqrt{10}}{4}`$。
+0381: 
+0382: 法二（原解法）
+0383: 
+0384: **第一步  由椭圆方程消去y，将AP²表示为x的二次函数（原解法）**
+0385: 
+0386: 设点$`P(x,y)`$，则$`\frac{x^{2}}{9} + \frac{y^{2}}{3} = 1`$，得$`y^{2} = 3 - \frac{x^{2}}{3}`$，
+0387: 
+0388: 圆$`{(x - 1)}^{2} + y^{2} = \frac{5}{8}`$的圆心$`A(1,0)`$，半径为$`\frac{\sqrt{10}}{4}`$，
+0389: 
+0390: 则$`|AP|^{2} = {(x - 1)}^{2} + y^{2} = x^{2} - 2x + 1 + 3 - \frac{x^{2}}{3}`$
+0391: 
+0392: $`= \frac{2}{3}x^{2} - 2x + 4,x \in \lbrack - 3,3\rbrack`$，
+0393: 
+0394: 令$`h(x) = \frac{2}{3}x^{2} - 2x + 4,x \in \lbrack - 3,3\rbrack`$，对称轴为$`x = \frac{3}{2}`$，
+0395: 
+0396: 所以当$`x = \frac{3}{2}`$时，$`h(x)`$取得最小值$`h\left( \frac{3}{2} \right) = \frac{2}{3} \times \left( \frac{3}{2} \right)^{2} - 2 \times \frac{3}{2} + 4 = \frac{5}{2}`$，
+0397: 
+0398: 所以$`|AP|`$的最小值为$`\frac{\sqrt{10}}{2}`$，
+0399: 
+0400: 所以$`|PQ|`$的最小值为$`\frac{\sqrt{10}}{2} - \frac{\sqrt{10}}{4} = \frac{\sqrt{10}}{4}`$，
+0401: 
+0402: 故选：D
+0403: 
+0404: 【典例4】已知实数$`x,y`$满足$`{(2x - y)}^{2} + 4y^{2} = 1,则2x + y`$的最大值为 .
+0405: 
+0406: 【大招指引】观察本题形式，是平方和的类型，于是可以利用三角换元法，可令$`\left\{ \begin{array}{r}
+0407: 2x - y = \cos\theta \\
+0408: 2y = \sin\theta
+0409: \end{array} \right.\ ,\theta \in \lbrack 0,2\pi)`$，再用三角形式表示*x*,*y*.
+0410: 
+0411: **第一步  由(2x-y)²+4y²=1，令2x-y=cosθ，2y=sinθ，θ∈\[0,2π)**
+0412: 
+0413: 【解析】由于$`{(2x - y)}^{2} + 4y^{2} = 1`$，$`\therefore`$令$`\left\{ \begin{array}{r}
+0414: 2x - y = \cos\theta \\
+0415: 2y = \sin\theta
+0416: \end{array} \right.\ ,\theta \in \lbrack 0,2\pi)`$，则原式$`2x + y = \sin\theta + \cos\theta \leq \sqrt{2}`$
+0417: 
+0418: **第二步  用参数表示目标式2x+y=sinθ+cosθ，由辅助角公式得最大值为√2**
+0419: 
+0420: 【题后反思】1、本题由于$`x,y \in R`$，因而$`\theta \in \lbrack 0,2\pi)`$
