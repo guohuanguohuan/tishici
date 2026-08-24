@@ -67,14 +67,14 @@ def fix(path, out):
     s2 = re.sub(r'(<w:sectPr[^>]*>)', r'\1<w:footerReference w:type="default" r:id="%s"/>' % keep_rid, s2, count=1)
     # pgSz → A4
     s2 = re.sub(r'<w:pgSz[^/]*/>', '<w:pgSz w:w="11906" w:h="16838"/>', s2)
-    # pgMar → 全 720（footer 同值）
-    s2 = re.sub(r'<w:pgMar[^/]*/>', '<w:pgMar w:top="720" w:right="720" w:bottom="720" w:left="720" w:header="720" w:footer="720" w:gutter="0"/>', s2)
+    # pgMar → 全 850（1.5cm，footer 同值，2026-08-25对齐现行公共规则§7）
+    s2 = re.sub(r'<w:pgMar[^/]*/>', '<w:pgMar w:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"/>', s2)
     # 删 titlePg / even refs
     s2 = s2.replace('<w:titlePg/>', '')
     # pgNumType start=1（schema 位：pgMar 之后）
     s2 = re.sub(r'<w:pgNumType[^/]*/>', '', s2)
-    s2 = s2.replace('<w:pgMar w:top="720" w:right="720" w:bottom="720" w:left="720" w:header="720" w:footer="720" w:gutter="0"/>',
-                    '<w:pgMar w:top="720" w:right="720" w:bottom="720" w:left="720" w:header="720" w:footer="720" w:gutter="0"/><w:pgNumType w:start="1"/>')
+    s2 = s2.replace('<w:pgMar w:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"/>',
+                    '<w:pgMar w:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"/><w:pgNumType w:start="1"/>')
     doc = doc[:m.start()] + s2 + doc[m.end():]
 
     # 4) settings：删 evenAndOddHeaders
