@@ -139,3 +139,10 @@
 - 转投暂存装配：从落选题清单按「【原位置】…超纲」锚点提块，跨包重映射图，题号重编1-N；来源行保留（附来源章+原位置）。
 - Word COM 用 pywin32 而非 PowerShell COM 测开（PS 传参异常会误报「文档损坏」，曾误导整轮排查）；PowerShell 数组 + 中文路径 + Join-Path 易错，改用 python win32com。
 - 桌面脚本勿起标准库名（bisect.py 撞 stdlib 改名 locate_bad.py）。
+
+## 2026-08-25 选必1整册任务（第1章融合汇编轮）
+- 进阶轮判定口径定型：大招素材归属以文件夹为准（模块7整体归选必1第1章，不按前序内容转投）；大学概念技巧（叉乘、极点极线、仿射变换）按超纲③删讲部分、有课标内解法的题保留改解析；轨迹判定线：圆/球/直线本章可用，圆锥曲线转投解析几何章
+- 旧三卷升级SEQ映射必须实配「题型标题→题号」：同卷有双题组合（简8/9、简16/17），跨卷题号易错位——装配后用题号连续性断言校验
+- 跨包大量追加旧底包（落选题清单）会触发Word「文件损坏」（单块皆好、累积触发，与docPr重复/zip重名无关）：解法=OpenAndRepair+SaveAs管线定稿，文本守恒零损失（仅U+2212−、U+2032′归一化），修后footer_fix重建简单域+zip补件标识前缀
+- python-docx此版API：part.get_or_add_image(io.BytesIO(blob))[0]→rId；emf/wmf兜底Part(PackURI,content_type,blob,package)+relate_to；Word COM必须Documents.Open大写O、PrintOut前先ActivePrinter='PDFCreator'、参数只传Background
+- 讲练件讲块（大招讲义）内部"1．xxx"编号条目会被题号正则误判，题量计数用「题型标题后首个含【答案】的块」法；页脚件标识前缀在footer_fix产出后用zip手术插入第一run
