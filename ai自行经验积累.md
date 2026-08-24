@@ -147,3 +147,4 @@
 - python-docx此版API：part.get_or_add_image(io.BytesIO(blob))[0]→rId；emf/wmf兜底Part(PackURI,content_type,blob,package)+relate_to；Word COM必须Documents.Open大写O、PrintOut前先ActivePrinter='PDFCreator'、参数只传Background
 - 讲练件讲块（大招讲义）内部"1．xxx"编号条目会被题号正则误判，题量计数用「题型标题后首个含【答案】的块」法；页脚件标识前缀在footer_fix产出后用zip手术插入第一run
 - **落选题清单docx全量存档废止→删除台账.md（用户2026-08-25拍板）**：依据＝参考源文件已全部入库GitHub（`git -c core.quotepath=false ls-files`核实1171件，中文路径默认转义会查不到）；旧清单docx作历史存档不再扩充；转投暂存保持全量docx不变；守恒口径改为「成品＋台账登记行，全文由git源文件保真」
+- **亲算分级＋PDF抽查（用户2026-08-25拍板，公共规则§3/§14）**：保留题/候选/超纲②边界题全量解题验算，确定删除题只读题干＋解析骨架登记（禁止为淘汰题验算答案）；PDF检查每轮首件全件、其余前5页抽查，页脚/边距逐件全量校验仍由排版自检⑤XML层承担
