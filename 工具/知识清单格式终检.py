@@ -291,10 +291,12 @@ def process(path_str):
         section.orientation = WD_ORIENT.PORTRAIT
         section.page_width = Mm(210)
         section.page_height = Mm(297)
-        section.top_margin = Mm(12.7)
-        section.bottom_margin = Mm(12.7)
-        section.left_margin = Mm(12.7)
-        section.right_margin = Mm(12.7)
+        section.top_margin = Mm(15)
+        section.bottom_margin = Mm(15)
+        section.left_margin = Mm(15)
+        section.right_margin = Mm(15)
+        section.header_distance = Mm(15)
+        section.footer_distance = Mm(15)
         section.gutter = Mm(0)
         rebuild_footer(section)
     root = doc.element

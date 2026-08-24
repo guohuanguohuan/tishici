@@ -98,8 +98,8 @@ def audit(mode: str, source: Path, final: Path) -> None:
         fail_if(not size or size[0].get(f"{{{NS['w']}}}w") != "11906" or
                 size[0].get(f"{{{NS['w']}}}h") != "16838", "纸张不是 A4 纵向", errors)
         if mar:
-            vals = [mar[0].get(f"{{{NS['w']}}}{key}") for key in ("top", "right", "bottom", "left")]
-            fail_if(any(abs(int(value) - 720) > 1 for value in vals), f"页边距不是 12.7 mm：{vals}", errors)
+            vals = [mar[0].get(f"{{{NS['w']}}}{key}") for key in ("top", "right", "bottom", "left", "header", "footer")]
+            fail_if(any(abs(int(value) - 850) > 1 for value in vals), f"页边距不是 1.5 cm（850缇）：{vals}", errors)
 
     current_heading = None
     image_sections: list[str | None] = []
