@@ -21,14 +21,20 @@ def build(paths):
         els = body_elements(src)
         starts = [(i, q) for i, tag, text in els if tag == 'p' and (q := is_qstart(text)) is not None]
         rows = []
+        groups = {}
         for k, (i, q) in enumerate(starts):
             j = starts[k+1][0] - 1 if k + 1 < len(starts) else els[-1][0]
             block = '\n'.join(t for ii, tag, t in els if i <= ii <= j and t is not None)
             first = next((t.strip() for ii, tag, t in els if ii == i and t), '')[:36].replace('|', '／')
-            rows.append('| {} | {} | {} | {}-{} | {} | {} | {} | {} |'.format(
+            kp = label_val(block, '知识点') or '（无标签）'
+            ans = label_val(block, '答案')
+            if '【答案】' not in block:
+                ans = '⚠无答案块（讲块内部条目或答案在表格内，人工判定是否入台账）'
+            groups.setdefault(kp, []).append(str(q))
+            rows.append('| {} | {} | {} | {}-{} | {} | {} | {} | {} | {} |'.format(
                 os.path.basename(src), q, first.replace('\n', ' '), i, j,
-                label_val(block, '答案'), label_val(block, '难度'),
-                label_val(block, '知识点'), block.count('【图】')))
+                ans, label_val(block, '难度'), kp, block.count('【图】'),
+                ' | '.join([''] * len(JUDGE_COLS))))
         total += len(rows)
         lines.append('## {}（题块 {}）'.format(os.path.basename(src), len(rows)))
         lines.append('')
@@ -36,6 +42,14 @@ def build(paths):
                      ' | '.join(JUDGE_COLS) + ' |')
         lines.append('|' + '---|' * (8 + len(JUDGE_COLS)))
         lines.extend(rows)
+        lines.append('')
+        lines.append('### 组合归组草稿（按原【知识点】标签分组——仅起点参考）')
+        lines.append('')
+        lines.append('> 真实归组按判别特征亲自定（各总控选题规则：五维度硬门槛）；'
+                     '源标签常偏细/偏粗，本分组只提供分堆起点，不构成组合结论。')
+        lines.append('')
+        for kp in sorted(groups, key=lambda k: -len(groups[k])):
+            lines.append('- **{}**（{}题）：{}'.format(kp, len(groups[kp]), '、'.join(groups[kp])))
         lines.append('')
     return lines, total
 

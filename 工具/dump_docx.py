@@ -4,9 +4,10 @@
   python dump_docx.py <docx路径> <输出txt路径>          # 全量转储（原行为）
   python dump_docx.py --index <docx路径> <输出md路径>    # 题块索引：题号/元素区间/首句/标签/图数（会话先读索引再定点切片，省上下文）
   python dump_docx.py --slice <docx路径> 起:末 <输出txt> # 只转储体元素序号[起,末]（含端点）——按索引的区间定点读取
+  python dump_docx.py --indexdir <目录> <输出md路径>     # 目录级批量普查草稿（文件/题块数/图数/首句/字节，供素材普查档案回填）
 元素序号＝body 直接子元素（段落与表格都计数）的 0 基序号，索引与切片共用同一序号体系。
 可复用工具：数学物理单元同步（题目台账/亲算/修复轮定位用）"""
-import sys, re
+import sys, re, os
 from docx import Document
 from lxml import etree
 
@@ -150,9 +151,13 @@ def is_qstart(text):
         return t[:8]
     return None
 
+def md_safe(s):
+    """markdown 表格安全化：竖线换全角（OMML 绝对值线性化会产生 |）。"""
+    return (s or '').replace('|', '｜')
+
 def label_val(block_text, name, maxlen=24):
     m = re.search('【'+name+'】\\s*([^\\n【]{0,%d})' % maxlen, block_text)
-    return m.group(1).strip() if m else ''
+    return md_safe(m.group(1).strip() if m else '')
 
 def make_index(src, dst):
     els = body_elements(src)
@@ -212,12 +217,46 @@ def make_slice(src, rng, dst):
         f.write('\n'.join(lines))
     print('OK slice %s [%d:%d] -> %s  行数=%d' % (src, a, b, dst, len(lines)))
 
+def make_indexdir(root, dst):
+    """目录级批量普查草稿：文件｜题块数｜图数｜首块首句｜字节数（供素材普查档案回填）。"""
+    rows = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames.sort()
+        for fn in sorted(filenames):
+            if not fn.lower().endswith('.docx') or fn.startswith('~$'):
+                continue
+            p = os.path.join(dirpath, fn)
+            rel = os.path.relpath(p, root).replace('\\', '／')
+            try:
+                els = body_elements(p)
+                qs, imgs, first = 0, 0, ''
+                for i, tag, text in els:
+                    if tag != 'p' or text is None:
+                        continue
+                    if is_qstart(text) is not None:
+                        qs += 1
+                        if not first:
+                            first = text.strip()[:30].replace('|', '／')
+                    imgs += text.count('【图】')
+                rows.append('| %s | %d | %d | %s | %d |' % (rel, qs, imgs, first, os.path.getsize(p)))
+            except Exception as e:
+                rows.append('| %s | 错误 | | %s | %d |' % (rel, str(e)[:24], os.path.getsize(p)))
+    with open(dst, 'w', encoding='utf-8') as f:
+        f.write('# 批量普查草稿：%s\n\n' % root)
+        f.write('> 由 工具/dump_docx.py --indexdir 生成；供 素材普查/素材普查-*.md 回填——'
+                '机械列直接取用，结构坑位与归属两列须开卷/按文件夹人工补。\n\n')
+        f.write('| 相对路径 | 题块数 | 图数 | 首块首句(30字) | 字节数 |\n|---|---|---|---|---|\n')
+        f.write('\n'.join(rows))
+    print('OK indexdir %s -> %s  文件数=%d' % (root, dst, len(rows)))
+
 def main():
     args = sys.argv[1:]
     if args and args[0] == '--index':
         make_index(args[1], args[2])
     elif args and args[0] == '--slice':
         make_slice(args[1], args[2], args[3])
+    elif args and args[0] == '--indexdir':
+        make_indexdir(args[1], args[2])
     else:
         src, dst = args[0], args[1]
         doc = Document(src)
