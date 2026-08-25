@@ -31,7 +31,11 @@ PRE_BDR = {W + t for t in (
 
 CTRL = {M + 'f': M + 'fPr', M + 'sSub': M + 'sSubPr', M + 'sSup': M + 'sSupPr',
         M + 'sSubSup': M + 'sSubSupPr', M + 'd': M + 'dPr', M + 'rad': M + 'radPr',
-        M + 'nary': M + 'naryPr', M + 'bar': M + 'barPr', M + 'func': M + 'funcPr'}
+        M + 'nary': M + 'naryPr', M + 'bar': M + 'barPr', M + 'func': M + 'funcPr',
+        # 2026-08-25 补：m:acc（向量箭头/着重号）等罕见结构（第1章知识清单实测54处u残留即acc顶层漏挂）
+        M + 'acc': M + 'accPr', M + 'limLow': M + 'limLowPr', M + 'limUp': M + 'limUpPr',
+        M + 'box': M + 'boxPr', M + 'borderBox': M + 'borderBoxPr', M + 'groupChr': M + 'groupChrPr',
+        M + 'phant': M + 'phantPr', M + 'eqArr': M + 'eqArrPr', M + 'm': M + 'mPr'}
 
 
 def add_bdr(rpr):
