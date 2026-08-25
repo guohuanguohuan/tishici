@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 """dump_docx.py — docx 全文转储（按文档顺序，OMML 线性化保留结构分隔符）
-用法: python dump_docx.py <docx路径> [输出txt路径]
-可复用工具：数学物理单元同步（题目台账/亲算用）"""
+用法:
+  python dump_docx.py <docx路径> <输出txt路径>          # 全量转储（原行为）
+  python dump_docx.py --index <docx路径> <输出md路径>    # 题块索引：题号/元素区间/首句/标签/图数（会话先读索引再定点切片，省上下文）
+  python dump_docx.py --slice <docx路径> 起:末 <输出txt> # 只转储体元素序号[起,末]（含端点）——按索引的区间定点读取
+元素序号＝body 直接子元素（段落与表格都计数）的 0 基序号，索引与切片共用同一序号体系。
+可复用工具：数学物理单元同步（题目台账/亲算/修复轮定位用）"""
 import sys, re
 from docx import Document
 from lxml import etree
@@ -9,6 +13,14 @@ from lxml import etree
 W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 M = 'http://schemas.openxmlformats.org/officeDocument/2006/math'
 WC, MC = '{'+W+'}', '{'+M+'}'
+
+# 题块起始判定：全角「N．」开头且该段长度≥8（经验口径：小数/年份不起误报）
+QNUM_RE = re.compile(r'^(\d{1,3})．')
+QNUM_MINLEN = 8
+# 讲练一体栏目起始（也算块边界）
+MARK_RE = re.compile(r'^(【例题】|【典例\d*】|【举一反三】|【练习题】|【易错题)')
+# 结构/节标题行（索引里单独列出便于导航）
+HEAD_RE = re.compile(r'^\d+(\.\d+)+\s*\S')
 
 def tagof(el):
     return el.tag.split('}')[-1]
@@ -110,31 +122,127 @@ def para_text(p_el):
     walk(p_el)
     return ''.join(parts)
 
-def main():
-    src, dst = sys.argv[1], sys.argv[2]
+def body_elements(src):
+    """返回 [(元素序号, tag, 段落文本或None)]，表格计数为独立元素。"""
     doc = Document(src)
-    body = doc.element.body
-    lines = []
-    tbl_i = 0
-    for child in body.iterchildren():
+    out = []
+    for i, child in enumerate(doc.element.body.iterchildren()):
         ct = tagof(child)
         if ct == 'p':
-            t = para_text(child)
-            lines.append(t)
+            out.append((i, 'p', para_text(child)))
+        elif ct == 'tbl':
+            out.append((i, 'tbl', None))
+        elif ct == 'sectPr':
+            out.append((i, 'sectPr', None))
+        else:
+            out.append((i, ct, None))
+    return out
+
+def is_qstart(text):
+    if not text:
+        return None
+    t = text.strip()
+    if len(t) >= QNUM_MINLEN:
+        m = QNUM_RE.match(t)
+        if m:
+            return m.group(1)
+    if MARK_RE.match(t):
+        return t[:8]
+    return None
+
+def label_val(block_text, name, maxlen=24):
+    m = re.search('【'+name+'】\\s*([^\\n【]{0,%d})' % maxlen, block_text)
+    return m.group(1).strip() if m else ''
+
+def make_index(src, dst):
+    els = body_elements(src)
+    starts = []   # (元素序号, 题号/栏目名, 首句)
+    for i, tag, text in els:
+        if tag != 'p':
+            continue
+        q = is_qstart(text)
+        if q is not None:
+            first = text.strip().replace('|', '／')
+            starts.append((i, q, first[:40]))
+    # 块区间＝起点到下一起点前一个元素（无下一起点则到文末）
+    rows = []
+    for k, (i, q, first) in enumerate(starts):
+        j = starts[k+1][0] - 1 if k + 1 < len(starts) else els[-1][0]
+        block = '\n'.join(t for ii, tag, t in els if i <= ii <= j and t is not None)
+        rows.append('| {q} | {a}-{b} | {first} | {ans} | {diff} | {kp} | {img} | {det} |'.format(
+            q=q, a=i, b=j, first=first,
+            ans=label_val(block, '答案'), diff=label_val(block, '难度'),
+            kp=label_val(block, '知识点'), img=block.count('【图】'),
+            det='有' if '【详解】' in block else ''))
+    # 结构/节标题导航行
+    heads = ['| {a} | {t} |'.format(a=i, t=text.strip().replace('|', '／')[:36])
+             for i, tag, text in els if tag == 'p' and text and HEAD_RE.match(text.strip()) and len(text.strip()) < 40]
+    with open(dst, 'w', encoding='utf-8') as f:
+        f.write('# 题块索引：%s\n\n' % src)
+        f.write('> 用法：先读本表定位（元素区间），再 `dump_docx.py --slice 原docx 起:末 输出.txt` 定点读取；'
+                '标签/图数由文本层提取，仅供导航，判定以原文为准。\n\n')
+        f.write('| 题号/栏目 | 元素区间 | 首句(40字) | 答案 | 原难度 | 原知识点 | 图数 | 详解 |\n|---|---|---|---|---|---|---|---|\n')
+        f.write('\n'.join(rows))
+        f.write('\n\n## 结构/节标题行\n\n| 元素序号 | 文本 |\n|---|---|\n')
+        f.write('\n'.join(heads))
+    print('OK index %s -> %s  题块=%d 标题行=%d' % (src, dst, len(rows), len(heads)))
+
+def make_slice(src, rng, dst):
+    a, b = rng.split(':')
+    a, b = int(a), int(b)
+    doc = Document(src)
+    lines = []
+    tbl_i = 0
+    for i, child in enumerate(doc.element.body.iterchildren()):
+        if i < a or i > b:
+            continue
+        ct = tagof(child)
+        if ct == 'p':
+            lines.append('[%d] %s' % (i, para_text(child)))
         elif ct == 'tbl':
             tbl_i += 1
-            lines.append(f'───表格{tbl_i}───')
+            lines.append('[%d] ───表格%d───' % (i, tbl_i))
             for tr in child.findall(WC+'tr'):
                 cells = []
                 for tc in tr.findall(WC+'tc'):
                     ctxt = ' '.join(para_text(p) for p in tc.findall('.//'+WC+'p'))
                     cells.append(ctxt.strip())
                 lines.append(' | '.join(cells))
-            lines.append(f'───表格{tbl_i}结束───')
     with open(dst, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))
-    n = len([l for l in lines if l.strip()])
-    print(f'OK {src} -> {dst}  非空行数={n} 表格数={tbl_i}')
+    print('OK slice %s [%d:%d] -> %s  行数=%d' % (src, a, b, dst, len(lines)))
+
+def main():
+    args = sys.argv[1:]
+    if args and args[0] == '--index':
+        make_index(args[1], args[2])
+    elif args and args[0] == '--slice':
+        make_slice(args[1], args[2], args[3])
+    else:
+        src, dst = args[0], args[1]
+        doc = Document(src)
+        body = doc.element.body
+        lines = []
+        tbl_i = 0
+        for child in body.iterchildren():
+            ct = tagof(child)
+            if ct == 'p':
+                t = para_text(child)
+                lines.append(t)
+            elif ct == 'tbl':
+                tbl_i += 1
+                lines.append(f'───表格{tbl_i}───')
+                for tr in child.findall(WC+'tr'):
+                    cells = []
+                    for tc in tr.findall(WC+'tc'):
+                        ctxt = ' '.join(para_text(p) for p in tc.findall('.//'+WC+'p'))
+                        cells.append(ctxt.strip())
+                    lines.append(' | '.join(cells))
+                lines.append(f'───表格{tbl_i}结束───')
+        with open(dst, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+        n = len([l for l in lines if l.strip()])
+        print(f'OK {src} -> {dst}  非空行数={n} 表格数={tbl_i}')
 
 if __name__ == '__main__':
     main()
