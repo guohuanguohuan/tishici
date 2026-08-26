@@ -83,9 +83,7 @@ def fix_file(path, mode):
         return jc0, ind0, wpg, len(bad), 0
     out = xml
     njc = len(JC.findall(out))
-    # 封面件/册目录页的标题行居中属配页件版式（公共规则§7左对齐条款括注），不参与左对齐规整
-    if '·封面' not in os.path.basename(path) and '·册目录页' not in os.path.basename(path):
-        out = JC.sub(r'\1left\2', out)
+    out = JC.sub(r'\1left\2', out)
     nind = len(re.findall(r'<w:ind [^>]*/>', out))
     out = re.sub(r'<w:ind [^>]*/>', '', out)
     # 删除垃圾图所在 run（含drawing的整个w:r）
@@ -115,6 +113,9 @@ def fix_file(path, mode):
                 zo.writestr(n, out)
             elif n == 'word/_rels/document.xml.rels':
                 zo.writestr(n, rels)
+            elif re.match(r'word/(footer|header)\d+\.xml$', n):
+                # 页脚/页眉段落一律左对齐（§7无豁免条款）
+                zo.writestr(n, JC.sub(r'\1left\2', blob[n].decode('utf-8')).encode('utf-8'))
             else:
                 zo.writestr(n, blob[n])
     os.replace(tmp, path)
