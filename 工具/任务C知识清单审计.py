@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""任务 C 知识清单的结构、图片与基础版式审计。"""
+"""任务C知识清单审计.py — 任务C知识清单的结构、图片与基础版式审计。
+用法: python 工具/任务C知识清单审计.py <math|physics> <源文件.docx> <成品.docx>
+输出: stdout 打印「PASS + 图片数」或以 SystemExit 给出 FAIL 逐行清单；只适配内置 CASES 两张清单（数学选必2第3章/物理必修3第12章），源件仅用于图片保真比对。"""
 from __future__ import annotations
 
 import hashlib

@@ -2,6 +2,8 @@
 """按目标教材目录重构数学/物理知识清单的节标题。
 
 仅调整结构标题与挂靠位置，不改题目、答案、公式、表格或图片。
+用法: python 工具/知识清单教材节重构.py <math|physics|physics-final> <输入.docx> <输出.docx>
+  math=删「一、二、三」源结构标题并按选必2第3章目录插节标题；physics=插必修3第12章四节标题并删旧条目标题；physics-final=仅把12.3标题移回正确挂靠并把文内/core title改为输出文件名。
 """
 from __future__ import annotations
 
