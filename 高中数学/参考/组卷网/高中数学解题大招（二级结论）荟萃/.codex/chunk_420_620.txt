@@ -1,0 +1,204 @@
+===== 420-520 =====
+0420: 【题后反思】1、本题由于$`x,y \in R`$，因而$`\theta \in \lbrack 0,2\pi)`$
+0421: 
+0422: 2、此处$`\sin\theta + \cos\theta \leq \sqrt{2}`$，可利用柯西不等式直接得到，也可用三角函数的辅助角公式.
+0423: 
+0424: **【举一反三】**
+0425: 
+0426: 7．若$`x、y`$为实数，且$`x^{2} + 2xy - y^{2} = 7`$，则$`x^{2} + y^{2}`$的最小值为\_\_\_\_\_\_\_\_\_\_\_．
+0427: 
+0428: 【答案】$`\frac{7\sqrt{2}}{2}`$
+0429: 
+0430: 【难度】0.65
+0431: 
+0432: 【知识点】函数的最大值和最小值
+0433: 
+0434: 【详解】
+0435: 
+0436: 法一（三角换元）令 $`x = r\cos\theta,y = r\sin\theta(r \geq 0)`$，则 $`x^{2} + y^{2} = r^{2}`$。
+0437: 
+0438: **第一步  令x=rcosθ，y=rsinθ(r≥0)，用三角表示约束条件**
+0439: 
+0440: 由 $`x^{2} + 2xy - y^{2} = 7`$，得 $`r^{2}(\cos^{2}\theta + 2\sin\theta\cos\theta - \sin^{2}\theta) = r^{2}(\cos 2\theta + \sin 2\theta) = 7`$。
+0441: 
+0442: **第二步  由 cos2θ+sin2θ≤√2 及约束为正，求得 r² 的最小值**
+0443: 
+0444: 因为 $`\cos 2\theta + \sin 2\theta \leq \sqrt{2}`$，且由约束知 $`\cos 2\theta + \sin 2\theta > 0`$，所以 $`r^{2} \geq \frac{7}{\sqrt{2}} = \frac{7\sqrt{2}}{2}`$；等号可以取得。
+0445: 
+0446: 因此 $`(x^{2} + y^{2})_{\min} = \frac{7\sqrt{2}}{2}`$。
+0447: 
+0448: 法二（原解法）
+0449: 
+0450: **第一步  将约束等式两边同除(x²+y²)，令 t=x/y，化为一元函数求最值（原解法）**
+0451: 
+0452: 因为$`\frac{7}{x^{2} + y^{2}} = \frac{x^{2} + 2xy - y^{2}}{x^{2} + y^{2}} = 1 + 2 \times \frac{xy - y^{2}}{x^{2} + y^{2}} = 1 + 2 \times \frac{\frac{x}{y} - 1}{{(\frac{x}{y})}^{2} + 1}`$，令$`\frac{x}{y} - 1 = t,`$
+0453: 
+0454: 则$`\frac{7}{x^{2} + y^{2}} = 1 + 2 \times \frac{t}{{(t + 1)}^{2} + 1} = 1 + \frac{2}{t + \frac{2}{t} + 2} \leq 1 + \frac{2}{2\sqrt{2} + 2} = \sqrt{2}`$，
+0455: 
+0456: 所以$`x^{2} + y^{2} \geq \frac{7}{\sqrt{2}} = \frac{7\sqrt{2}}{2}`$.
+0457: 
+0458: 8．实数$`x,y`$满足$`x \geq 1,y \geq 1`$，且$`{(\log_{a}x)}^{2} + {(\log_{a}y)}^{2} = \log_{a}(ax^{2}) + \log_{a}(ay^{2})`$，当$`a > 1`$时，则$`\log_{a}(xy)`$的范围是\_\_\_\_\_\_\_\_\_\_\_\_\_.
+0459: 
+0460: 【答案】$`\left\lbrack 1 + \sqrt{3},2 + 2\sqrt{2} \right\rbrack`$
+0461: 
+0462: 【难度】0.4
+0463: 
+0464: 【知识点】对数的运算性质的应用、辅助角公式、三角恒等变换的化简问题
+0465: 
+0466: 【分析】令$`u = \log_{a}x,v = \log_{a}y,`$可将问题转化为：已知$`u \geq 0,v \geq 0`$，且$`{(u - 1)}^{2} + {(v - 1)}^{2} = 4,`$求$`u + v`$的范围”，
+0467: 
+0468: 【详解】令$`u = \log_{a}x,v = \log_{a}y,`$由$`x \geq 1,y \geq 1`$可得$`u \geq 0,v \geq 0`$.
+0469: 
+0470: **第一步  令 u=log_a x，v=log_a y，将原条件化为 (u-1)²+(v-1)²=4**
+0471: 
+0472: 则$`{(\log_{a}x)}^{2} + {(\log_{a}y)}^{2} = \log_{a}(ax^{2}) + \log_{a}(ay^{2}) \Leftrightarrow u^{2} + v^{2} = 1 + 2u + 1 + 2v`$
+0473: 
+0474: $`\Leftrightarrow (u - 1)^{2} + (v - 1)^{2} = 4`$.令$`u = 1 + 2\cos\theta,v = 1 + 2\sin\theta,\theta \in \left\lbrack 0,2\text{π} \right\rbrack`$，则 $`u + v = 2 + 2\cos\theta + 2\sin\theta`$ $`= 2 + 2\sqrt{2}\sin(\theta + \frac{\text{π}}{4})`$
+0475: 
+0476: **第二步  利用圆约束三角换元：u=1+2cosθ，v=1+2sinθ**
+0477: 
+0478: 由$`u \geq 0,v \geq 0`$得$`\cos\theta \geq - \frac{1}{2},\sin\theta \geq - \frac{1}{2}`$ ∴  $`- \frac{\text{π}}{6} \leq \theta \leq \frac{2\text{π}}{3},\frac{\text{π}}{12} \leq \theta + \frac{\text{π}}{4} \leq \frac{11}{12}\text{π}`$
+0479: 
+0480: **第三步  由 u≥0,v≥0 确定θ范围，求 u+v 的最大最小值**
+0481: 
+0482: ∴当$`\sin(\theta + \frac{\text{π}}{4}) = 1`$时，$`{(u + v)}_{\max} = 2 + 2\sqrt{2}`$
+0483: 
+0484: 当$`\sin(\theta + \frac{\text{π}}{4}) = \sin\frac{\text{π}}{12}`$或$`\sin\frac{11}{12}\text{π}`$时，$`\sin\frac{\pi}{12} = \sin\left( \frac{\pi}{4} - \frac{\pi}{6} \right) = \frac{\sqrt{6} - \sqrt{2}}{4} = \sin\frac{11\pi}{12}`$,$`{(u + v)}_{\min} = 1 + \sqrt{3}`$ ，∴$`1 + \sqrt{3} \leq u + v \leq 2 + 2\sqrt{2}`$
+0485: 
+0486: 故$`\log_{a}(xy)`$的范围是$`\left\lbrack 1 + \sqrt{3},2 + 2\sqrt{2} \right\rbrack`$.
+0487: 
+0488: 故答案为：$`\left\lbrack 1 + \sqrt{3},2 + 2\sqrt{2} \right\rbrack`$
+0489: 
+0490: <img src="media/image7.png" style="width:5.77078in;height:0.48934in" alt="@@@6582e90b95b64acbb0034b4724f233f1" />
+0491: 
+0492: 【2023安徽亳州一中高三最后一卷】
+0493: 
+0494: 9．已知平面向量$`\overrightarrow{a}`$、$`\overrightarrow{b}`$、$`\overrightarrow{c}`$满足$`\left| \overrightarrow{a} \right| = \left| \overrightarrow{b} \right| = \overrightarrow{a} \cdot \overrightarrow{b} = 2`$，$`\left| \overrightarrow{a} - \overrightarrow{c} \right| = 1`$，$`\overrightarrow{c} = x\overrightarrow{a} + y\overrightarrow{b}`$，则$`x + y`$的取值范围是（    ）
+0495: 
+0496: A．$`\left\lbrack 1 - \frac{\sqrt{3}}{3},1 + \frac{\sqrt{3}}{3} \right\rbrack`$ B．$`\left\lbrack 1 - \frac{2\sqrt{3}}{3},1 + \frac{2\sqrt{3}}{3} \right\rbrack`$
+0497: 
+0498: C．$`\left\lbrack - \frac{\sqrt{3}}{3},\frac{\sqrt{3}}{3} \right\rbrack`$ D．$`\left\lbrack - \frac{2\sqrt{3}}{3},\frac{2\sqrt{3}}{3} \right\rbrack`$
+0499: 
+0500: 【答案】A
+0501: 
+0502: 【难度】0.65
+0503: 
+0504: 【知识点】求含sinx(型)函数的值域和最值、辅助角公式、已知模求数量积
+0505: 
+0506: 【分析】由已知可得$`\overrightarrow{a} - \overrightarrow{c} = (1 - x)\overrightarrow{a} - y\overrightarrow{b}`$，利用平面向量数量积的运算可得$`(2x + y - 2)^{2} + \left( \sqrt{3}y \right)^{2} = 1`$，设$`\left\{ \begin{array}{r}
+0507: 2x + y - 2 = \sin\theta \\
+0508: \sqrt{3}y = \cos\theta
+0509: \end{array} \right.\`$，可得出$`x + y = \frac{\sqrt{3}}{3}\sin\left( \theta + \frac{\text{π}}{6} \right) + 1`$，结合正弦型函数的值域可得出$`x + y`$的取值范围.
+0510: 
+0511: 【详解】因为平面向量$`\overrightarrow{a}`$、$`\overrightarrow{b}`$、$`\overrightarrow{c}`$满足$`\left| \overrightarrow{a} \right| = \left| \overrightarrow{b} \right| = \overrightarrow{a} \cdot \overrightarrow{b} = 2`$，$`\left| \overrightarrow{a} - \overrightarrow{c} \right| = 1`$，$`\overrightarrow{c} = x\overrightarrow{a} + y\overrightarrow{b}`$，
+0512: 
+0513: **第一步  由 \|a\|=\|b\|=a·b=2 得夹角为 π/3，利用向量运算建立方程**
+0514: 
+0515: 则$`\overrightarrow{a} - \overrightarrow{c} = (1 - x)\overrightarrow{a} - y\overrightarrow{b}`$，
+0516: 
+0517: 所以，$`\left| \overrightarrow{a} - \overrightarrow{c} \right|^{2} = \left\lbrack (1 - x)\overrightarrow{a} - y\overrightarrow{b} \right\rbrack^{2} = (1 - x)^{2}{\overrightarrow{a}}^{2} - 2(1 - x)y\overrightarrow{a} \cdot \overrightarrow{b} + y^{2}{\overrightarrow{b}}^{2}`$
+0518: 
+0519: $`= 4(1 - x)^{2} + 4(x - 1)y + 4y^{2} = 1`$，
+0520: 
+===== 520-620 =====
+0520: 
+0521: 即$`4x^{2} + 4xy + 4y^{2} - 8x - 4y + 3 = 0`$，即$`(2x + y)^{2} - 4(2x + y) + 4 + 3y^{2} = 1`$，
+0522: 
+0523: 即$`(2x + y - 2)^{2} + \left( \sqrt{3}y \right)^{2} = 1`$，
+0524: 
+0525: **第二步  配方得 (2x+y-2)²+3y²=1，三角换元求 x+y 的范围**
+0526: 
+0527: 令$`\left\{ \begin{array}{r}
+0528: 2x + y - 2 = \sin\theta \\
+0529: \sqrt{3}y = \cos\theta
+0530: \end{array} \right.\`$，则$`\left\{ \begin{array}{r}
+0531: 2x + y - 2 = \sin\theta \\
+0532: y = \frac{\sqrt{3}}{3}\cos\theta
+0533: \end{array} \right.\`$，
+0534: 
+0535: 上述两个等式相加可得$`2(x + y) = \sin\theta + \frac{\sqrt{3}}{3}\cos\theta + 2`$，
+0536: 
+0537: 则$`x + y = \frac{\sqrt{3}}{3}\sin\left( \theta + \frac{\text{π}}{6} \right) + 1 \in \left\lbrack 1 - \frac{\sqrt{3}}{3},1 + \frac{\sqrt{3}}{3} \right\rbrack`$.
+0538: 
+0539: 故选：A.
+0540: 
+0541: 【2023湖南邵阳二中全真模拟】
+0542: 
+0543: 10．已知点$`P`$在单位圆$`x^{2} + y^{2} = 1`$上，点$`A(2,0)`$，点$`B(0,2)`$，则$`\overrightarrow{PA} \cdot \overrightarrow{PB}`$的取值范围是（    ）
+0544: 
+0545: A．$`\lbrack - 1,3\rbrack`$ B．$`\lbrack 1,3\rbrack`$
+0546: 
+0547: C．$`\left\lbrack - 2\sqrt{2} + 1,2\sqrt{2} + 1 \right\rbrack`$ D．$`\left\lbrack 1,2\sqrt{2} + 1 \right\rbrack`$
+0548: 
+0549: 【答案】C
+0550: 
+0551: 【难度】0.65
+0552: 
+0553: 【知识点】求含sinx(型)函数的值域和最值、辅助角公式、数量积的坐标表示、向量在几何中的其他应用
+0554: 
+0555: 【分析】设$`P\left( \cos\theta,\sin\theta \right)`$，求$`\overrightarrow{PA},\overrightarrow{PB}`$的坐标，利用数量积的坐标运算公式求$`\overrightarrow{PA} \cdot \overrightarrow{PB}`$，通过三角恒等变换，结合正弦函数性质求其范围.
+0556: 
+0557: 【详解】设$`P\left( \cos\theta,\sin\theta \right)`$，
+0558: 
+0559: **第一步  由单位圆设 P(cosθ,sinθ)，写出向量 PA 和 PB 的坐标**
+0560: 
+0561: 所以$`\overrightarrow{PA} = \left( 2 - \cos\theta, - \sin\theta \right)`$，$`\overrightarrow{PB} = \left( - \cos\theta,2 - \sin\theta \right)`$，
+0562: 
+0563: 所以$`\overrightarrow{PA} \cdot \overrightarrow{PB} = - 2\cos\theta + \cos^{2}\theta - 2\sin\theta + \sin^{2}\theta`$
+0564: 
+0565: **第二步  计算数量积 PA·PB，化为三角函数求范围**
+0566: 
+0567: 所以$`\overrightarrow{PA} \cdot \overrightarrow{PB} = - 2\cos\theta - 2\sin\theta + 1 = - 2\sqrt{2}\sin\left( \theta + \frac{\text{π}}{4} \right) + 1 \in \left\lbrack - 2\sqrt{2} + 1,2\sqrt{2} + 1 \right\rbrack`$，
+0568: 
+0569: 故选：C.
+0570: 
+0571: 【2023山东泰安肥城高考适应性】
+0572: 
+0573: 11．已知$`|\overrightarrow{a}| = |\overrightarrow{b}| = |\overrightarrow{c}| = 1,\overrightarrow{a} \cdot \overrightarrow{b} = - \frac{1}{2}`$，$`\overrightarrow{c} = x\overrightarrow{a} + y\overrightarrow{b}(x,y \in R)`$，则$`x - y`$的最小值为（    ）
+0574: 
+0575: A．$`- 2`$ B．$`- \frac{2\sqrt{3}}{3}`$ C．$`- \sqrt{3}`$ D．$`- 1`$
+0576: 
+0577: 【答案】B
+0578: 
+0579: 【难度】0.65
+0580: 
+0581: 【知识点】辅助角公式、平面向量基本定理的应用、向量夹角的计算、数量积的坐标表示
+0582: 
+0583: 【分析】利用数量积定义可得$`\overrightarrow{a},\overrightarrow{b}`$的夹角为$`\theta\text{=}\frac{2\text{π}}{3}`$，不妨设$`\overrightarrow{a}\text{=(1,0),}\overrightarrow{b}\text{=}\left( - \frac{1}{2}，\frac{\sqrt{3}}{2} \right)`$，$`\overrightarrow{c} = (\cos\alpha,\sin\alpha),\alpha \in \left\lbrack 0,2\text{π} \right)`$，即可得$`\left\{ \begin{array}{r}
+0584: x = \cos\alpha + \frac{\sqrt{3}}{3}\sin\alpha \\
+0585: y = \frac{2\sqrt{3}}{3}\sin\alpha
+0586: \end{array} \right.\`$，再利用辅助角公式可得$`x - y = \frac{2\sqrt{3}}{3}\cos(\alpha + \frac{\text{π}}{6})`$，即可求得其最小值.
+0587: 
+0588: 【详解】设$`\overrightarrow{a},\overrightarrow{b}`$的夹角为$`\theta`$，$`\because\left| \overrightarrow{a} \right| = \left| \overrightarrow{b} \right| = 1`$，$`\overrightarrow{a} \cdot \overrightarrow{b} = - \frac{1}{2}`$，
+0589: 
+0590: **第一步  由 a·b=-1/2 得夹角为 2π/3，不妨设 a=(1,0)，b=(-1/2,√3/2)**
+0591: 
+0592: $`\therefore\cos\theta = - \frac{1}{2}`$，$`\because\theta \in \lbrack 0,\pi\rbrack`$，$`\therefore\theta\text{=}\frac{2\text{π}}{3}`$，又$`\left| \overrightarrow{c} \right| = 1`$，
+0593: 
+0594: 不妨设$`\overrightarrow{a}\text{=(1,0),}\overrightarrow{b}\text{=}\left( - \frac{1}{2}，\frac{\sqrt{3}}{2} \right)`$，$`\overrightarrow{c} = (\cos\alpha,\sin\alpha),\alpha \in \left\lbrack 0,2\text{π} \right)`$，
+0595: 
+0596: **第二步  由 \|c\|=1 设 c=(cosα,sinα)，由 c=xa+yb 解出 x,y**
+0597: 
+0598: $`\because\overrightarrow{c} = x\overrightarrow{a} + y\overrightarrow{b}\text{=}\left( x - \frac{y}{2},\frac{\sqrt{3}}{2}y \right)`$，所以$`\left\{ \begin{array}{r}
+0599: \cos\alpha = x - \frac{y}{2} \\
+0600: \sin\alpha = \frac{\sqrt{3}}{2}y
+0601: \end{array} \right.\`$，即$`\left\{ \begin{array}{r}
+0602: x = \cos\alpha + \frac{\sqrt{3}}{3}\sin\alpha \\
+0603: y = \frac{2\sqrt{3}}{3}\sin\alpha
+0604: \end{array} \right.\`$，
+0605: 
+0606: $`\therefore x - y = \cos\alpha - \frac{\sqrt{3}}{3}\sin\alpha = \sqrt{1 + \left( \frac{\sqrt{3}}{3} \right)^{2}}\cos(\alpha + \frac{\text{π}}{6}) = \frac{2\sqrt{3}}{3}\cos(\alpha + \frac{\text{π}}{6})`$，
+0607: 
+0608: **第三步  将 x-y 表示为 cosα 的函数，求最小值**
+0609: 
+0610: 由$`\alpha \in \left\lbrack 0,2\text{π} \right)`$ $`\therefore\alpha\text{+}\frac{\text{π}}{6} \in \left\lbrack \frac{\text{π}}{6}，\frac{13\text{π}}{6} \right)`$，
+0611: 
+0612: $`\therefore`$当$`\alpha\text{+}\frac{\text{π}}{6}\text{=}\frac{3\text{π}}{2}`$时，即$`\alpha\text{=}\frac{4\text{π}}{3}`$时，$`x - y`$有最小值$`- \frac{2\sqrt{3}}{3}`$．
+0613: 
+0614: 故选：B
+0615: 
+0616: 【2023福建宁德质检】
+0617: 
+0618: 12．在平面直角坐标系$`xOy`$中，点$`P`$为圆$`O:x^{2} + y^{2} = 1`$上的任一点，$`A(2,0),B( - 1,1)`$.若$`\overrightarrow{OP} = \lambda\overrightarrow{OA} + \mu\overrightarrow{OB}`$，则$`2\lambda + \mu`$的最大值为（    ）
+0619: 
+0620: A．$`\sqrt{3}`$ B．2 C．$`\sqrt{5}`$ D．$`\sqrt{6}`$

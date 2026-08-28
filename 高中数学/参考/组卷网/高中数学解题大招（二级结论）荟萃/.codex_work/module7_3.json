@@ -1,0 +1,3939 @@
+{
+  "source": "C:\\sync\\syncall\\教育行业\\k12相关\\高中阶段\\高中数学\\组卷网\\高中数学解题大招（二级结论）荟萃\\04_原始资料\\模块7立体几何\\模块7大招3运动中找不变量（完成）.docx",
+  "paragraphs": 73,
+  "tables": 11,
+  "sections": [
+    {
+      "index": 0,
+      "page_width": 7560945,
+      "page_height": 10692765,
+      "top_margin": 914400,
+      "bottom_margin": 914400,
+      "left_margin": 1143000,
+      "right_margin": 1143000
+    }
+  ],
+  "structural": {
+    "comments_part": false,
+    "footnotes_part": true,
+    "endnotes_part": true,
+    "tracked_insertions": 0,
+    "tracked_deletions": 0,
+    "math_objects": 391,
+    "math_paragraphs": 0,
+    "inline_drawings": 7,
+    "anchored_drawings": 9
+  },
+  "media": [
+    {
+      "name": "word/media/image1.png",
+      "bytes": 239,
+      "sha256": "42a055a6005cbfe5956afdeef51f716cf3486fbedb7bfacfc014f094d56fbcad"
+    },
+    {
+      "name": "word/media/image2.png",
+      "bytes": 25472,
+      "sha256": "14b434765b9271bff61082dca2fa9003ac4517c2d5fa70e0b60dcb94cf259344"
+    },
+    {
+      "name": "word/media/image3.png",
+      "bytes": 23417,
+      "sha256": "bc55387c8f59325458bc70f72634eeb20716d2b1e28c9b3abd9c74c0635ae8ea"
+    },
+    {
+      "name": "word/media/image4.png",
+      "bytes": 6152,
+      "sha256": "05b64d3adfebb6375160b7222204c4725f4dec084383a8db0d01a3d611424157"
+    },
+    {
+      "name": "word/media/image5.png",
+      "bytes": 4555,
+      "sha256": "32a4f23c08fcadbb6cf372bf6a320be51d9d4cfa24eec4261dd81ed1026532b7"
+    },
+    {
+      "name": "word/media/image6.png",
+      "bytes": 23299,
+      "sha256": "aad66ef4c63eb96f63062a52993bbccb344cdf3b830a12d7f3df6f048be669ee"
+    },
+    {
+      "name": "word/media/image7.png",
+      "bytes": 9688,
+      "sha256": "623b30db8e33aeea0fbd97650ef61136f9e74b2b8137077fe36310db50003930"
+    },
+    {
+      "name": "word/media/image8.png",
+      "bytes": 29152,
+      "sha256": "f60dca16e7d0e1ea4378cda14ae44cd61817104bd923b137bc5491b1cf201d27"
+    },
+    {
+      "name": "word/media/image12.png",
+      "bytes": 15527,
+      "sha256": "3a71915621d4f1b4069ae46ab4bfd12d90455ede511aec92fb410b4e1f4be690"
+    },
+    {
+      "name": "word/media/image13.png",
+      "bytes": 19495,
+      "sha256": "eae240dde7d7603a39d9b470732f2fc177a5c10803aa2a17d93a09447ce30f59"
+    },
+    {
+      "name": "word/media/image14.png",
+      "bytes": 6346,
+      "sha256": "dee73628ca64e32fed1ff92fd566d2bcc308e77a6715239bfbb5e53b43de013e"
+    },
+    {
+      "name": "word/media/image15.png",
+      "bytes": 8532,
+      "sha256": "79b53dd49704f0c44126057ab5a1f0f042c40e259da0d459aebc77521f47a0d4"
+    },
+    {
+      "name": "word/media/image16.png",
+      "bytes": 7238,
+      "sha256": "cd32a360657027ad9973482a7dd7f02f146adca49b65fbe4692668844261d1f6"
+    },
+    {
+      "name": "word/media/image9.png",
+      "bytes": 9928,
+      "sha256": "146ab82e7946882b011d24c3c667fad42fa61adb49504288962444e647fece0e"
+    },
+    {
+      "name": "word/media/image11.png",
+      "bytes": 30311,
+      "sha256": "3790535dd2e8cb706957534550e0a78e6b7aab831ed93037d489f13e248ea2fa"
+    },
+    {
+      "name": "word/media/image10.png",
+      "bytes": 55012,
+      "sha256": "94a9f604753517236a212d260d016465f5ec3d0fe902049b8903e11e70943940"
+    }
+  ],
+  "duplicate_media": [],
+  "blocks": [
+    {
+      "type": "paragraph",
+      "index": "b0.p0",
+      "text": "",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 1,
+      "anchored_images": 0,
+      "image_rel_ids": [
+        "rId7"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b1.p1",
+      "text": "       大招3   运动中找不变量（无法总结知识点，做题即可）",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b2.p2",
+      "text": "",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 1,
+      "anchored_images": 0,
+      "image_rel_ids": [
+        "rId8"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b3.p3",
+      "text": "【典例1】长方体ABCD-A1B1C1D1，AB=1，AD=2，AA1=3，P是棱DD1上动点，则△PA1C的面积最小时，DPPD1的值为多少",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 7,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b4.p4",
+      "text": "【答案】1/4",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b5.p5",
+      "text": "【不变量】点 P 到平面 ACC₁A₁ 的距离不变。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b6.p6",
+      "text": "【答案思路】先抓不变量：DD₁∥平面 ACC₁A₁，故 P 到该平面的距离恒定。将△PA₁C 的 S_min 转化为 P 到 A₁C 的距离最小；作垂线并利用相似△求得 DP∶PD₁=1∶4。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 1,
+      "image_rel_ids": [
+        "rId9"
+      ]
+    },
+    {
+      "type": "table",
+      "index": "b7.t0",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": "fixed",
+      "grid": [
+        "4233",
+        "4234"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析】【步骤1　确定不变量】求出点P到直线A1C距离的min，就能得到△PA1C面积的min．连接AC，A1C1，四棱柱ABCD-A1B1C1D1是长方体，\n∴DD1∥平面ACC1A1，而点P在棱DD1上，\n∴点P到平面ACC1A1的距离是定值（本题中的不变量）．\n∵直线A1C在平面ACC1A1中，\n∴点P到直线A1C的距离≥点P到平面ACC1A1的距离．\n【步骤2　构造最短距离】\n找棱DD1上有没有点P0，使得点P0到直线A1C的距离等于点P0到平面ACC1A1的距离．过点D作AC⊥DE，垂足为E．过点D1作A1C1⊥D1E1，垂足为E1．连接EE1，与A1C相交于Q．过点Q作QP0∥DE与DD1相交于P0",
+            "paragraphs": [
+              {
+                "index": "b7.t0.r0.c0.p0",
+                "text": "【详细解析】",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b7.t0.r0.c0.p1",
+                "text": "【步骤1　确定不变量】",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b7.t0.r0.c0.p2",
+                "text": "求出点P到直线A1C距离的min，就能得到△PA1C面积的min．连接AC，A1C1，四棱柱ABCD-A1B1C1D1是长方体，\n∴DD1∥平面ACC1A1，而点P在棱DD1上，\n∴点P到平面ACC1A1的距离是定值（本题中的不变量）．\n∵直线A1C在平面ACC1A1中，\n∴点P到直线A1C的距离≥点P到平面ACC1A1的距离．\n【步骤2　构造最短距离】\n找棱DD1上有没有点P0，使得点P0到直线A1C的距离等于点P0到平面ACC1A1的距离．过点D作AC⊥DE，垂足为E．过点D1作A1C1⊥D1E1，垂足为E1．连接EE1，与A1C相交于Q．过点Q作QP0∥DE与DD1相交于P0",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 27,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "【步骤3　验证垂直关系】\n∵DE⊥AC，DE⊥CC1，AC⊥CC1=C，\n∴DE⊥平面ACC1A1．\n∵QP0∥DE，\n∴QP0⊥平面ACC1A1，\n∴点P0到直线A1C的距离就等于点P0到平面ACC1A1的距离，也就是当点P运动到点P0时，△PA1C的面积最小．\n【步骤4　计算比例】\n∵△CQE∽△A1QE1，\n∴当△PA1C的面积最小时，\nDP0P0D1=EQQE1=CEA1E1=CEAE，而AE=ADcos∠DAE=AD2AC，CE=CDcos∠DCE=CD2AC，又AB=CD=1，AD=2，\n∴当△PA1C的面积最小时，DPPD1=CEAE=CD2AD2=14．",
+            "paragraphs": [
+              {
+                "index": "b7.t0.r0.c1.p0",
+                "text": "【步骤3　验证垂直关系】\n∵DE⊥AC，DE⊥CC1，AC⊥CC1=C，\n∴DE⊥平面ACC1A1．\n∵QP0∥DE，\n∴QP0⊥平面ACC1A1，\n∴点P0到直线A1C的距离就等于点P0到平面ACC1A1的距离，也就是当点P运动到点P0时，△PA1C的面积最小．\n【步骤4　计算比例】\n∵△CQE∽△A1QE1，\n∴当△PA1C的面积最小时，\nDP0P0D1=EQQE1=CEA1E1=CEAE，而AE=ADcos∠DAE=AD2AC，CE=CDcos∠DCE=CD2AC，又AB=CD=1，AD=2，\n∴当△PA1C的面积最小时，DPPD1=CEAE=CD2AD2=14．",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 22,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b8.p7",
+      "text": "",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b9.p8",
+      "text": "【举一反三】",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b10.p9",
+      "text": "1．如图，在平面四边形ABCD中，满足AB=BC,CD=AD，且AB+AD=10,BD=8，沿着BD把ABD折起，使点A到达点P的位置，且使PC=2，则三棱锥P-BCD体积的max为（    ）A．12  B．122\tC．1623 D．163",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 12,
+      "inline_images": 0,
+      "anchored_images": 1,
+      "image_rel_ids": [
+        "rId10"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b11.p10",
+      "text": "【答案】C",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b12.p11",
+      "text": "【难度】0.65",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b13.p12",
+      "text": "【不变量】边长不变",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b14.p13",
+      "text": "【答案思路】折叠不改变边长，故 PB+PD=10，P 的轨迹是以 B、D 为焦点的椭圆。把V_max 转化为 S(△PCE)_max，即EF最大，即椭圆上点 P 到 BD 的距离 PE 最大；由椭圆短半轴得 PE_max=3，最终 V_max=16√2/3。",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b15.p14",
+      "text": "【详细解析】（高考不用写步骤1之类的，能写更好）",
+      "style": null,
+      "outline_level": "2",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b16.t1",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": "fixed",
+      "grid": [
+        "2978",
+        "5449"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【步骤1　建立空间关系】【详解】在△BPD和△BCD中，{PB=BCPD=CDBD=BD，\n∴△BPD≌△BCD，则∠PBD=∠CBD，过P作PE⊥BD于E，连接CE，显然△BPE≌△BCE，则CE⊥BD，且PE=CE，∵PE∩CE=E，\n∴BD⊥平面PCE，",
+            "paragraphs": [
+              {
+                "index": "b16.t1.r0.c0.p0",
+                "text": "【步骤1　建立空间关系】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c0.p1",
+                "text": "【详解】在△BPD和△BCD中，{PB=BCPD=CDBD=BD，\n∴△BPD≌△BCD，则∠PBD=∠CBD，",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c0.p2",
+                "text": "过P作PE⊥BD于E，连接CE，显然△BPE≌△BCE，则CE⊥BD，且PE=CE，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 7,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c0.p3",
+                "text": "∵PE∩CE=E，\n∴BD⊥平面PCE，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c0.p4",
+                "text": "",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "【步骤2　转化体积最值】∴VP-BCD=VB-PCE+VD-PCE=13S△PCE⋅BD=83S△PCE，当S△PCE最大时，VP-BCD取得max，取PC的中点F，则EF⊥PC，∴S△PCE=12PC⋅EF=PE2-1，【步骤3　利用椭圆求最值】∵PB+PD=10,BD=8，\n∴点P在以B,D为焦点的椭圆上（不在左右顶点），其中长轴长为10，焦距长为8，∴PE的max为椭圆的短轴长的一半，故PEmax为52-42=3，∴SΔPCEmax为22，故VP-BCD的max为83×22 =1623.∴选：C.",
+            "paragraphs": [
+              {
+                "index": "b16.t1.r0.c1.p0",
+                "text": "【步骤2　转化体积最值】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c1.p1",
+                "text": "∴VP-BCD=VB-PCE+VD-PCE=13S△PCE⋅BD=83S△PCE，当S△PCE最大时，VP-BCD取得max，取PC的中点F，则EF⊥PC，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 6,
+                "inline_images": 0,
+                "anchored_images": 1,
+                "image_rel_ids": [
+                  "rId11"
+                ]
+              },
+              {
+                "index": "b16.t1.r0.c1.p2",
+                "text": "∴S△PCE=12PC⋅EF=PE2-1，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c1.p3",
+                "text": "【步骤3　利用椭圆求最值】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c1.p4",
+                "text": "∵PB+PD=10,BD=8，\n∴点P在以B,D为焦点的椭圆上（不在左右顶点），其中长轴长为10，焦距长为8，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c1.p5",
+                "text": "∴PE的max为椭圆的短轴长的一半，故PEmax为52-42=3，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c1.p6",
+                "text": "∴SΔPCEmax为22，故VP-BCD的max为83×22 =1623.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b16.t1.r0.c1.p7",
+                "text": "∴选：C.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b17.p15",
+      "text": "  ",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b18.p16",
+      "text": "【典例2】在直三棱柱 ABC-A₁B₁C₁ 中，侧面 AA₁B₁B 为正方形，棱 AB 与 BC 的长度均为 2。点 E、F 分别为 AC、CC₁ 的中点，点 D 在棱 A₁B₁ 上，直线 BF ⊥棱 A₁B₁。",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 1,
+      "image_rel_ids": [
+        "rId12"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b19.p17",
+      "text": "（1）求证：直线 BF ⊥直线 DE；",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b20.p18",
+      "text": "（2）当 B₁D 为何值时，平面 BB₁C₁C 与平面 DFE 所成二面角的sin最小？",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b21.p19",
+      "text": "【答案】（1）证明见解析；（2）1/2",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b22.p20",
+      "text": "【不变量】（1）点 D 沿棱 A₁B₁ 运动时，直线 DE 始终位于同一个固定垂面内；",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b23.p21",
+      "text": "（2）△ DEF 在侧面 BB₁C₁C 上的投影始终是固定△ B₁GF，且线段 EF 的长度不变。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b24.p22",
+      "text": "【第（1）问·法一答案思路】几何性质法：构造固定垂面，取BC中点为G，由 BF⊥平面 EGB₁D 推出 BF⊥DE。",
+      "style": null,
+      "outline_level": "2",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b25.t2",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": null,
+      "grid": [
+        "4261",
+        "4262"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析·第（1）问·法一】【步骤1　构造固定垂面】（1）【法一】固定垂面：证明随动直线始终位于同一垂直平面取 BC 的中点 G，连接 EG、GB₁，如图①。∵ E、G 分别为 AC、BC 的中点，\n∴ EG 与 AB、A₁B₁ 平行，故 E、G、B₁、D 四点共面。四边形 BCC₁B₁ 为正方形，F、G 分别为 CC₁、BC 的中点，\n∴直线 BF ⊥直线 GB₁。∵直线 BF ⊥棱 A₁B₁，直线 GB₁ 与棱 A₁B₁ 相交于点 B₁，且二者都在平面 EGB₁D 内，",
+            "paragraphs": [
+              {
+                "index": "b25.t2.r0.c0.p0",
+                "text": "【详细解析·第（1）问·法一】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c0.p1",
+                "text": "【步骤1　构造固定垂面】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c0.p2",
+                "text": "（1）【法一】固定垂面：证明随动直线始终位于同一垂直平面",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c0.p3",
+                "text": "取 BC 的中点 G，连接 EG、GB₁，如图①。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c0.p4",
+                "text": "∵ E、G 分别为 AC、BC 的中点，\n∴ EG 与 AB、A₁B₁ 平行，故 E、G、B₁、D 四点共面。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c0.p5",
+                "text": "四边形 BCC₁B₁ 为正方形，F、G 分别为 CC₁、BC 的中点，\n∴直线 BF ⊥直线 GB₁。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c0.p6",
+                "text": "∵直线 BF ⊥棱 A₁B₁，直线 GB₁ 与棱 A₁B₁ 相交于点 B₁，且二者都在平面 EGB₁D 内，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c0.p7",
+                "text": "",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "∴直线 BF ⊥平面 EGB₁D。直线 DE 在平面 EGB₁D 内，\n∴直线 BF ⊥直线 DE。",
+            "paragraphs": [
+              {
+                "index": "b25.t2.r0.c1.p0",
+                "text": "∴直线 BF ⊥平面 EGB₁D。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c1.p1",
+                "text": "直线 DE 在平面 EGB₁D 内，\n∴直线 BF ⊥直线 DE。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b25.t2.r0.c1.p2",
+                "text": "",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 1,
+                "anchored_images": 0,
+                "image_rel_ids": [
+                  "rId13"
+                ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b26.p23",
+      "text": "【第（1）问·法二答案思路】坐标法：建立空间直角坐标系，用向量点积 BF·DE=0 证明垂直。",
+      "style": null,
+      "outline_level": "2",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b27.t3",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": null,
+      "grid": [
+        "4261",
+        "4262"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析·第（1）问·法二】【法二】坐标向量 ∵三棱柱 ABC-A₁B₁C₁ 是直三棱柱，\n∴棱 BB₁ ⊥底面 ABC，⇒棱 BB₁ ⊥棱 AB。",
+            "paragraphs": [
+              {
+                "index": "b27.t3.r0.c0.p0",
+                "text": "【详细解析·第（1）问·法二】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b27.t3.r0.c0.p1",
+                "text": "【法二】坐标向量 ",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b27.t3.r0.c0.p2",
+                "text": "",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 1,
+                "anchored_images": 0,
+                "image_rel_ids": [
+                  "rId14"
+                ]
+              },
+              {
+                "index": "b27.t3.r0.c0.p3",
+                "text": "∵三棱柱 ABC-A₁B₁C₁ 是直三棱柱，\n∴棱 BB₁ ⊥底面 ABC，⇒棱 BB₁ ⊥棱 AB。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "棱 A₁B₁ 与棱 AB 平行，直线 BF ⊥棱 A₁B₁，\n∴直线 BF ⊥棱 AB。又\n∵直线 BB₁ 与 BF 相交于点 B，且都在侧面 BCC₁B₁ 内，\n∴棱 AB ⊥侧面 BCC₁B₁，故 BA、BC、BB₁ 两两垂直。以 B 为坐标原点，以 BA、BC、BB₁ 所在直线分别为 x 轴、y 轴、z 轴建立空间直角坐标系，如图②，则 B0,0,0，A2,0,0，C0,2,0，B10,0,2，A12,0,2，C10,2,2，E1,1,0，F0,2,1。由题意，设 Da,0,2，其中 0≤a≤2。∵向量 BF=0,2,1，向量 DE=1-a,1,-2，且 BF·DE=0×1-a+2×1+1×-2=0，\n∴直线 BF ⊥直线 DE。",
+            "paragraphs": [
+              {
+                "index": "b27.t3.r0.c1.p0",
+                "text": "棱 A₁B₁ 与棱 AB 平行，直线 BF ⊥棱 A₁B₁，\n∴直线 BF ⊥棱 AB。又\n∵直线 BB₁ 与 BF 相交于点 B，且都在侧面 BCC₁B₁ 内，\n∴棱 AB ⊥侧面 BCC₁B₁，故 BA、BC、BB₁ 两两垂直。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b27.t3.r0.c1.p1",
+                "text": "以 B 为坐标原点，以 BA、BC、BB₁ 所在直线分别为 x 轴、y 轴、z 轴建立空间直角坐标系，如图②，则 B0,0,0，A2,0,0，C0,2,0，B10,0,2，A12,0,2，C10,2,2，E1,1,0，F0,2,1。由题意，设 Da,0,2，其中 0≤a≤2。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 10,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b27.t3.r0.c1.p2",
+                "text": "∵向量 BF=0,2,1，向量 DE=1-a,1,-2，且 BF·DE=0×1-a+2×1+1×-2=0，\n∴直线 BF ⊥直线 DE。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b28.p24",
+      "text": "【第（2）问·法一答案思路】坐标+几何性质：利用固定投影面积，将二面角最值转化为点 D 到 EF 的距离最值。",
+      "style": null,
+      "outline_level": "2",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b29.t4",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": null,
+      "grid": [
+        "4261",
+        "4262"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析·第（2）问·法一】（2）【法一】固定投影面积与定长底边 取 BC 的中点 G。△ B₁GF 是△ DEF 在侧面 BB₁C₁C 上的投影。设二面角的平面角为 θ，则 cosθ=S△B1GFS△DEF二面角sin最小，只需使这个cos最大。△ DEF 在侧面 BB₁C₁C 上的投影是固定△ B₁GF，其面积为 32；线段 EF 的长度也固定。\n∴问题转化为求△ DEF 的最小面积，进一步转化为求点 D 到定直线 EF 的最小距离。根据空间向量的点到直线的距离公式，由（1）中证法2得",
+            "paragraphs": [
+              {
+                "index": "b29.t4.r0.c0.p0",
+                "text": "【详细解析·第（2）问·法一】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b29.t4.r0.c0.p1",
+                "text": "（2）【法一】固定投影面积与定长底边 ",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b29.t4.r0.c0.p2",
+                "text": "取 BC 的中点 G。△ B₁GF 是△ DEF 在侧面 BB₁C₁C 上的投影。设二面角的平面角为 θ，则 cosθ=S△B1GFS△DEF二面角sin最小，只需使这个cos最大。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b29.t4.r0.c0.p3",
+                "text": "△ DEF 在侧面 BB₁C₁C 上的投影是固定△ B₁GF，其面积为 32；线段 EF 的长度也固定。\n∴问题转化为求△ DEF 的最小面积，进一步转化为求点 D 到定直线 EF 的最小距离。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b29.t4.r0.c0.p4",
+                "text": "根据空间向量的点到直线的距离公式，由（1）中证法2得",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "d=DF2-DF·EFEF2=a2+5-a+123=63·a2-a+7。当 a=12 时，dmin=322 \nS△DEFmin=12·EF·dmin=12×3×322=364cosθ)_max=S_(△B₁GF)/(S_(△DEF))_min=(3/2)/(3√6/4)=√6/3。sinθmin=1-632=331D=12。∴当 B1D=12 时，平面 BB₁C₁C 与平面 DFE 所成二面角的sin最小。",
+            "paragraphs": [
+              {
+                "index": "b29.t4.r0.c1.p0",
+                "text": "d=DF2-DF·EFEF2=a2+5-a+123=63·a2-a+7。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b29.t4.r0.c1.p1",
+                "text": "当 a=12 时，dmin=322 \nS△DEFmin=12·EF·dmin=12×3×322=364cosθ)_max=S_(△B₁GF)/(S_(△DEF))_min=(3/2)/(3√6/4)=√6/3。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b29.t4.r0.c1.p2",
+                "text": "sinθmin=1-632=331D=12。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b29.t4.r0.c1.p3",
+                "text": "∴当 B1D=12 时，平面 BB₁C₁C 与平面 DFE 所成二面角的sin最小。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b30.p25",
+      "text": "【第（2）问·法二答案思路】坐标法：设平面 DFE 的法向量，表示二面角余弦并求函数最值。",
+      "style": null,
+      "outline_level": "2",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b31.t5",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": null,
+      "grid": [
+        "4261",
+        "4262"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析·第（2）问·法二】【步骤4　向量法求最值】（2）【法二】坐标向量求最值 根据第（1）问的法二，设平面 DFE 的一个法向量为 m=x,y,z。∵向量 EF=-1,1,1，向量 DE=1-a,1,-2，\n∴ m·EF=0m·DE=0，即 -x+y+z=01-ax+y-2z=0。",
+            "paragraphs": [
+              {
+                "index": "b31.t5.r0.c0.p0",
+                "text": "【详细解析·第（2）问·法二】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b31.t5.r0.c0.p1",
+                "text": "【步骤4　向量法求最值】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b31.t5.r0.c0.p2",
+                "text": "（2）【法二】坐标向量求最值 ",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b31.t5.r0.c0.p3",
+                "text": "根据第（1）问的法二，设平面 DFE 的一个法向量为 m=x,y,z。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b31.t5.r0.c0.p4",
+                "text": "∵向量 EF=-1,1,1，向量 DE=1-a,1,-2，\n∴ m·EF=0m·DE=0，即 -x+y+z=01-ax+y-2z=0。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "令 z=2-a，则 m=3,1+a,2-a。记所求二面角的平面角为 θ。侧面 BB₁C₁C 的一个法向量为 BA=2,0,0，\n∴ \ncosθ=m·BAmBA=622a2-2a+14=32a2-2a+14 a=12 时，2a2-2a+14 取得min 272，⇒ \ncosθmax=63nθ)_min=√(1-(√6/3)^2)=√3/3，此时 B1D=12。∴当 B1D=12 时，平面 BB₁C₁C 与平面 DFE 所成二面角的sin最小。",
+            "paragraphs": [
+              {
+                "index": "b31.t5.r0.c1.p0",
+                "text": "令 z=2-a，则 m=3,1+a,2-a。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b31.t5.r0.c1.p1",
+                "text": "记所求二面角的平面角为 θ。侧面 BB₁C₁C 的一个法向量为 BA=2,0,0，\n∴ \ncosθ=m·BAmBA=622a2-2a+14=32a2-2a+14 a=12 时，2a2-2a+14 取得min 272，⇒ \ncosθmax=63nθ)_min=√(1-(√6/3)^2)=√3/3，此时 B1D=12。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 8,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b31.t5.r0.c1.p2",
+                "text": "∴当 B1D=12 时，平面 BB₁C₁C 与平面 DFE 所成二面角的sin最小。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b32.p26",
+      "text": "【举一反三】",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b33.p27",
+      "text": "",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b34.p28",
+      "text": "2．如图，已知三棱柱ABC-A1B1C1中，AB=AC=2，A1A=A1B=A1C=22，∠BAC=90°，E是BC的中点，F是线段A1C1上一点.",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 8,
+      "inline_images": 0,
+      "anchored_images": 1,
+      "image_rel_ids": [
+        "rId15"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b35.p29",
+      "text": "(1)求证：AB⊥EF；",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 1,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b36.p30",
+      "text": "(2)设P是棱AA1上的动点（不包括边界），当△PBC的面积最小时，求棱锥P-ABC的体积.",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 4,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b37.p31",
+      "text": "【答案】(1)证明见解析(2)66",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 1,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b38.p32",
+      "text": "【难度】0.65",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b39.p33",
+      "text": "【答案思路】（1）先由等腰△及中点关系证明 A₁E⊥平面 ABC，进而得 AB⊥EF。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b40.p34",
+      "text": "（2）BC⊥平面 A₁AE，∴ S(△PBC)∝PE；当 PE⊥AA₁ 时 PE 最小，再求 P 到平面 ABC 的高，代入棱锥 V 公式得 V=√6/6。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b41.p35",
+      "text": "【不变量】点 P 沿棱 AA₁ 运动时，底边 BC 固定，且直线 BC 始终⊥线段 PE。∴△ PBC 的面积只随 PE 变化，可转化为点 P 到定点 E 的距离最小。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b42.t6",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": "fixed",
+      "grid": [
+        "3991",
+        "4476"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析】【步骤1　证明线线垂直】【详解】（1）连接A1E，AE∵A1B=A1C，E为BC中点，∴A1E⊥BC.又AB=AC，∠BAC=90°，∴AE⊥BC，且AE=BE=EC.∵A1A=A1B=A1C，∴△A1AE≌△A1BE，∴A1E⊥AE，又A1E⊥BC，BC∩AE=E，BC,AE⊂平面ABC，∴A1E⊥平面ABC，又AB⊂平面ABC，∴A1E⊥AB.",
+            "paragraphs": [
+              {
+                "index": "b42.t6.r0.c0.p0",
+                "text": "【详细解析】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p1",
+                "text": "【步骤1　证明线线垂直】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p2",
+                "text": "【详解】（1）连接A1E，AE",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p3",
+                "text": "∵A1B=A1C，E为BC中点，∴A1E⊥BC.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p4",
+                "text": "又AB=AC，∠BAC=90°，∴AE⊥BC，且AE=BE=EC.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p5",
+                "text": "∵A1A=A1B=A1C，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p6",
+                "text": "∴△A1AE≌△A1BE，∴A1E⊥AE，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p7",
+                "text": "又A1E⊥BC，BC∩AE=E，BC,AE⊂平面ABC，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p8",
+                "text": "∴A1E⊥平面ABC，又AB⊂平面ABC，∴A1E⊥AB.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c0.p9",
+                "text": "",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 1,
+                "anchored_images": 0,
+                "image_rel_ids": [
+                  "rId16"
+                ]
+              }
+            ]
+          },
+          {
+            "text": "【步骤2　完成第一问】由已知AB⊥AC，AC∥A1C1，∴AB⊥A1C1，又A1C1∩A1E=A1，A1C1,A1E⊂平面A1C1E，∴AB⊥平面A1C1E.而F∈A1C1，EF⊂平面A1C1E，∴AB⊥EF.【步骤3　转化面积最值】（2）由（1）可知A1E⊥BC，AE⊥BC.又A1E∩AE=E，A1E,AE⊂平面A1AE，∴BC⊥平面A1AE，又P∈AA1，PE⊂平面A1AE，∴BC⊥PE.∴S△PBC=12BC⋅PE，又∵P在棱A1A上移动，∴当PE⊥AA1时，PE最小，此时△PBC面积最小.【步骤4　计算棱锥体积】在Rt△A1EA中，A1A=22，AE=2，则A1E=6，∠EA1A=π6，∴AP=22.在△A1AE中，过P做PM⊥AE于M，则PM∥A1E，∴PMA1E=APAA1，PM⊥平面ABC，于是可得PM=64.∴VP-ABC=13×12×2×2×64=66.",
+            "paragraphs": [
+              {
+                "index": "b42.t6.r0.c1.p0",
+                "text": "【步骤2　完成第一问】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p1",
+                "text": "由已知AB⊥AC，AC∥A1C1，∴AB⊥A1C1，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p2",
+                "text": "又A1C1∩A1E=A1，A1C1,A1E⊂平面A1C1E，∴AB⊥平面A1C1E.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p3",
+                "text": "而F∈A1C1，EF⊂平面A1C1E，∴AB⊥EF.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p4",
+                "text": "【步骤3　转化面积最值】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p5",
+                "text": "（2）由（1）可知A1E⊥BC，AE⊥BC.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p6",
+                "text": "又A1E∩AE=E，A1E,AE⊂平面A1AE，∴BC⊥平面A1AE，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p7",
+                "text": "又P∈AA1，PE⊂平面A1AE，∴BC⊥PE.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p8",
+                "text": "∴S△PBC=12BC⋅PE，又∵P在棱A1A上移动，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p9",
+                "text": "∴当PE⊥AA1时，PE最小，此时△PBC面积最小.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p10",
+                "text": "【步骤4　计算棱锥体积】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p11",
+                "text": "在Rt△A1EA中，A1A=22，AE=2，则A1E=6，∠EA1A=π6，∴AP=22.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 6,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p12",
+                "text": "在△A1AE中，过P做PM⊥AE于M，则PM∥A1E，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p13",
+                "text": "∴PMA1E=APAA1，PM⊥平面ABC，于是可得PM=64.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b42.t6.r0.c1.p14",
+                "text": "∴VP-ABC=13×12×2×2×64=66.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b43.p36",
+      "text": "  ",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 1,
+      "anchored_images": 0,
+      "image_rel_ids": [
+        "rId17"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b44.p37",
+      "text": "\t\t\t3．如图，在正四面体A-BCD中，AF=13AD,E为AB中点，P是棱CD上的动点，则当异面直线BP与EF所成角的sin最小时，CPCD=（    ）A．56\tB．67\tC．78\tD．89",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 12,
+      "inline_images": 0,
+      "anchored_images": 1,
+      "image_rel_ids": [
+        "rId18"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b45.p38",
+      "text": "【答案】C",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b46.p39",
+      "text": "【难度】0.65",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b47.p40",
+      "text": "【答案思路】在 AD 上取 G，使 BG∥EF，把异面直线 BP、EF 的夹角转化为∠PBG。",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b48.p41",
+      "text": "再把 BG 投影到平面 BCD；夹角最小时，BP 与该投影方向重合，",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b49.p42",
+      "text": "最后在△BPC 中用sin定理求得 CP/CD=7/8。",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b50.p43",
+      "text": "【不变量】由中位线关系可以作出方向固定且∥ EF 的直线 BG。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b51.p44",
+      "text": "点 P 运动时，原异面直线所成的角始终可转化为直线 BP 与固定直线 BG 所成的角。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b52.t7",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": "fixed",
+      "grid": [
+        "4233",
+        "4234"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析】【步骤1　构造平行线】【详解】如图，作DG=13DA，则AF=FG.∵E为AB中点，∴EF是△ABG的中位线，则∠PBG是异面直线BP与EF所成的角.【步骤2　确定最小夹角】∴当BP与BG在平面BCD里的投影重合时，∠PBG最小，设AO⊥平面BCD，易知O为等边△BCD的重心，连接DO并延长，交BC于点M，作GH∥AO交DO于点H.∵DG=13DA,∴DH=13DO.",
+            "paragraphs": [
+              {
+                "index": "b52.t7.r0.c0.p0",
+                "text": "【详细解析】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p1",
+                "text": "【步骤1　构造平行线】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p2",
+                "text": "【详解】如图，作DG=13DA，则AF=FG.",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p3",
+                "text": "∵E为AB中点，∴EF是△ABG的中位线，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p4",
+                "text": "则∠PBG是异面直线BP与EF所成的角.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p5",
+                "text": "【步骤2　确定最小夹角】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p6",
+                "text": "∴当BP与BG在平面BCD里的投影重合时，∠PBG最小，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p7",
+                "text": "设AO⊥平面BCD，易知O为等边△BCD的重心，连接",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p8",
+                "text": "DO并延长，交BC于点M，作GH∥AO交DO于点H.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p9",
+                "text": "∵DG=13DA,∴DH=13DO.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c0.p10",
+                "text": "",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 1,
+                "anchored_images": 0,
+                "image_rel_ids": [
+                  "rId19"
+                ]
+              }
+            ]
+          },
+          {
+            "text": "【步骤3　计算线段比】设正四面体A-BCD的棱长为63，则BM=MC=33，MD=9.在△BCD中，∵O为重心，∴MO=3,OD=6.又DH=13DO,∴DH=2,OH=4，则MH=7,BH=BM2+MH2=76.在△BPC中，设\nCP=x.∵∠PCB=π3,sin∠PBC=776,cos∠PBC=3376，∴CPCD=CPCB=sin∠PBCsin∠BPC=sin∠PBCsinπ-∠BCP-∠PBC=sin∠PBCsinπ3+∠PBC，∴CPCD=77632×3376+12×776=78.∴选：C.",
+            "paragraphs": [
+              {
+                "index": "b52.t7.r0.c1.p0",
+                "text": "【步骤3　计算线段比】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c1.p1",
+                "text": "设正四面体A-BCD的棱长为63，则BM=MC=33，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c1.p2",
+                "text": "MD=9.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c1.p3",
+                "text": "在△BCD中，∵O为重心，∴MO=3,OD=6.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c1.p4",
+                "text": "又DH=13DO,∴DH=2,OH=4，则MH=7,BH=BM2+MH2=76.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c1.p5",
+                "text": "在△BPC中，设\nCP=x.∵∠PCB=π3,sin∠PBC=776,cos∠PBC=3376，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c1.p6",
+                "text": "∴CPCD=CPCB=sin∠PBCsin∠BPC=sin∠PBCsinπ-∠BCP-∠PBC=sin∠PBCsinπ3+∠PBC，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c1.p7",
+                "text": "∴CPCD=77632×3376+12×776=78.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b52.t7.r0.c1.p8",
+                "text": "∴选：C.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b53.p45",
+      "text": "",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b54.p46",
+      "text": "4．如图，在长方体ACBD-A1C1B1D1中，AB=3,BC=4,AA1=5,E,F为线段A1C1上的动点，且EF=1,P,Q为线段AC上的动点，且PQ=2,PF∥AA1,M为棱BB1上的动点，则下列判断正确的是（ ）",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 7,
+      "inline_images": 0,
+      "anchored_images": 1,
+      "image_rel_ids": [
+        "rId20"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b55.p47",
+      "text": "\t\t\tA．三棱锥M-EFQ的体积是定值，等于2512\tB．三棱锥C-EFM的体积不是定值，最小为2\t",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 4,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b56.p48",
+      "text": "\t\tC．四棱锥M-EFQP的体积是定值，等于254      D．四棱锥C-BB1FP的体积不是定值，最大为16",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 4,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b57.p49",
+      "text": "【答案】D",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b58.p50",
+      "text": "【难度】0.65",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b59.p51",
+      "text": "【答案思路】逐项抓“等底等高”：EF、PQ 为定长，且 M 到侧面 ACC₁A₁ 的距离不变，∴ A、B、C 对应的 V 均可直接判定为定值但数值不符。D 中设 PC=x，换底计算得 V=4x；由 2≤x≤4，故 V_max=16。",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b60.p52",
+      "text": "【不变量】线段 EF、PQ 的长度保持不变；平面 EFQ 始终是固定侧面 ACC₁A₁，点 M 沿与该平面平行的棱 BB₁ 运动，∴点 M 到平面 EFQ 的距离保持不变。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b61.t8",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": "fixed",
+      "grid": [
+        "4233",
+        "4234"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析】【步骤1　确定固定距离】【法一】等底等高找定值：抓住平行平面间距离及定长线段不随动点变化【分析】根据长方体的性质及锥体的体积公式逐项分析即得.【步骤2　判断A项】【详解】对于A：∵BB1//AA1，BB1⊂平面ACC1A1，AA1⊂平面ACC1A1，∴BB1//平面ACC1A1，∵M为棱BB1上的动点，点M到平面EFQ的距离等于B到AC的距离，∴点M到平面EFQ的距离d=AB×BCAC=3×49+16=125，∴VM-EFQ=13×12EF⋅AA1⋅d=16×1×5×125=2，体积为定值，故A错；",
+            "paragraphs": [
+              {
+                "index": "b61.t8.r0.c0.p0",
+                "text": "【详细解析】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p1",
+                "text": "【步骤1　确定固定距离】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p2",
+                "text": "【法一】等底等高找定值：抓住平行平面间距离及定长线段不随动点变化",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p3",
+                "text": "【分析】根据长方体的性质及锥体的体积公式逐项分析即得.",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p4",
+                "text": "【步骤2　判断A项】",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p5",
+                "text": "【详解】对于A：∵BB1//AA1，BB1⊂平面ACC1A1，AA1⊂平面ACC1A1，",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p6",
+                "text": "∴BB1//平面ACC1A1，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p7",
+                "text": "∵M为棱BB1上的动点，点M到平面EFQ的距离等于B到AC的距离，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 6,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p8",
+                "text": "∴点M到平面EFQ的距离d=AB×BCAC=3×49+16=125，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 4,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c0.p9",
+                "text": "∴VM-EFQ=13×12EF⋅AA1⋅d=16×1×5×125=2，体积为定值，故A错；",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "【步骤3　判断B、C项】对于B：\nVC-EFM=VM-EFC=13×12×1×5×125=2 ，体积为定值，故B错；对于C：\nVM-EFQP=VB-EFQP=13×121+2×5×125=6 ，故C错；【步骤4　判断D项】对于D：设PC=x2≤x≤4，\nVC-BB1FP=VB1-FPC+VB1-BPC=13S△FPC⋅d+13S△BPC⋅BB1=13×5x2×125+13×12×12x5×5=4x ，∴当x=4时，体积取得max16，故D对.∴选：D",
+            "paragraphs": [
+              {
+                "index": "b61.t8.r0.c1.p0",
+                "text": "【步骤3　判断B、C项】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c1.p1",
+                "text": "对于B：\nVC-EFM=VM-EFC=13×12×1×5×125=2 ，体积为定值，故B错；",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c1.p2",
+                "text": "对于C：\nVM-EFQP=VB-EFQP=13×121+2×5×125=6 ，故C错；",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c1.p3",
+                "text": "【步骤4　判断D项】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c1.p4",
+                "text": "对于D：设PC=x2≤x≤4，\nVC-BB1FP=VB1-FPC+VB1-BPC=13S△FPC⋅d+13S△BPC⋅BB1=13×5x2×125+13×12×12x5×5=4x ，",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c1.p5",
+                "text": "∴当x=4时，体积取得max16，故D对.",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 1,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b61.t8.r0.c1.p6",
+                "text": "∴选：D",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b62.p53",
+      "text": "5．如图，在长方体ABCD-A'B'C'D'中，点P,Q分别是棱BC,CD上的动点，BC=4,CD=3,CC'=23,直线CC'与平面PQC'所成的角为300，则ΔPQC'的面积的min是",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 8,
+      "inline_images": 0,
+      "anchored_images": 1,
+      "image_rel_ids": [
+        "rId21"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b63.p54",
+      "text": "\t\t\tA．1855\tB．8\tC．1633\tD．10",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 4,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b64.p55",
+      "text": "【答案】B",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b65.p56",
+      "text": "【难度】0.85",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b66.p57",
+      "text": "【答案思路】设 P(0,a,0)、Q(b,0,0)，由 CC′ 与平面 PQC′ 的夹角为 30°，",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b67.p58",
+      "text": "利用法向量得到 a²b²=4(a²+b²)。由 a²+b²≥2ab 得 ab≥8；",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b68.p59",
+      "text": "再利用同一四面体换底计算，求得 S(△PQC′)_min=8。",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b69.p60",
+      "text": "【不变量】竖棱 CC′ 的长度固定，且它与动平面 PQC′ 所成的角固定，",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b70.p61",
+      "text": "\t∴点 C 到动平面 PQC′ 的距离保持不变；同一四面体换底计算时，体积保持不变。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b71.p62",
+      "text": "\t法一：几何性质法，设CP=a，CQ=b，由答案思路和不变量可求出体积的取值范围。",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b72.p63",
+      "text": "\t法二：坐标法：",
+      "style": null,
+      "outline_level": null,
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b73.t9",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": "fixed",
+      "grid": [
+        "4233",
+        "4234"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【步骤1　建立坐标系】以C为原点，以CD，CB，CC′为坐标轴建立空间直角坐标系，如图所示：则 C0,0,0，C'0,0,23。设 P0,a,0，Qb,0,0，其中 0<a≤4，0<b≤3。于是 PC'=0,-a,23，QC'=-b,0,23，CC'=0,0,23。【步骤2　求平面法向量】设平面 PQC′ 的一个法向量为 n=x,y,z，则 n·PC'=0n·QC'=0，即 -ay+23z=0-bx+23z=0。令 z=1，得 n=23b,23a,1。",
+            "paragraphs": [
+              {
+                "index": "b73.t9.r0.c0.p0",
+                "text": "【步骤1　建立坐标系】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c0.p1",
+                "text": "以C为原点，以CD，CB，CC′为坐标轴建立空间直角坐标系，如图所示：",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c0.p2",
+                "text": "则 C0,0,0，C'0,0,23。设 P0,a,0，Qb,0,0，其中 0<a≤4，0<b≤3。于是 PC'=0,-a,23，QC'=-b,0,23，CC'=0,0,23。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 9,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c0.p3",
+                "text": "【步骤2　求平面法向量】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c0.p4",
+                "text": "设平面 PQC′ 的一个法向量为 n=x,y,z，则 n·PC'=0n·QC'=0，即 -ay+23z=0-bx+23z=0。令 z=1，得 n=23b,23a,1。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "【步骤3　利用夹角求范围】由线面角条件，cosn,CC'=112b2+12a2+1=12，\n∴ 12a2+12b2=3，即 a2b2=4a2+b2。又\n∵ a2+b2≥2ab，\n∴ ab≥8。当 ab=8 时，S△PQC=4，棱锥 C′-PQC 的体积最小。【步骤4　等体积换底】直线 CC′ 与动平面 PQC′ 所成的角固定为 30°，\n∴点 C 到平面 PQC′ 的距离保持为 d=CC'·sin30°=23×12=3一四面体换底计算，体积不变，即 VC'-PQC=VC-PQC'。\n∴ 13×4×23=13×S△PQC'×3，解得 S△PQC'=8。∴选B",
+            "paragraphs": [
+              {
+                "index": "b73.t9.r0.c1.p0",
+                "text": "【步骤3　利用夹角求范围】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c1.p1",
+                "text": "由线面角条件，cosn,CC'=112b2+12a2+1=12，\n∴ 12a2+12b2=3，即 a2b2=4a2+b2。又\n∵ a2+b2≥2ab，\n∴ ab≥8。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c1.p2",
+                "text": "当 ab=8 时，S△PQC=4，棱锥 C′-PQC 的体积最小。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 2,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c1.p3",
+                "text": "【步骤4　等体积换底】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c1.p4",
+                "text": "直线 CC′ 与动平面 PQC′ 所成的角固定为 30°，\n∴点 C 到平面 PQC′ 的距离保持为 d=CC'·sin30°=23×12=3一四面体换底计算，体积不变，即 VC'-PQC=VC-PQC'。\n∴ 13×4×23=13×S△PQC'×3，解得 S△PQC'=8。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 5,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b73.t9.r0.c1.p5",
+                "text": "∴选B",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b74.p64",
+      "text": "",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b75.p65",
+      "text": "6．已知四棱锥S-ABCD的底面是正方形，侧棱长均相等，E是线段AB上的点（不含端点），设SE与BC所成的角为θ1，SE与平面ABCD所成的角为θ2，二面角S-AB-C的平面角为θ3，则A．θ1≤θ2≤θ3\tB．θ3≤θ2≤θ1\tC．θ1≤θ3≤θ2\tD．θ2≤θ3≤θ1",
+      "style": null,
+      "outline_level": "0",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 15,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b76.p66",
+      "text": "【答案】D",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 1,
+      "image_rel_ids": [
+        "rId22"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b77.p67",
+      "text": "【难度】0.65",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b78.p68",
+      "text": "【答案思路】设 O 为底面中心、M 为 AB 中点，作辅助点 N，把 θ₁、θ₂、θ₃ 都放进垂直截面中比较。",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b79.p69",
+      "text": "由 SN≥SO、EO≥OM，得到 tanθ₁≥tanθ₃≥tanθ₂；三角函数在锐角范围内单调递增，故 θ₂≤θ₃≤θ₁。",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": true,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b80.p70",
+      "text": "【不变量】点 E 在线段 AB 上运动时，四棱锥的高、底面半边以及二面角 S-AB-C 的大小",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "paragraph",
+      "index": "b81.p71",
+      "text": "都不随点 E 改变，可把它作为固定比较角。",
+      "style": null,
+      "outline_level": "1",
+      "alignment": "left",
+      "spacing": {
+        "line": "300",
+        "lineRule": "auto"
+      },
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    },
+    {
+      "type": "table",
+      "index": "b82.t10",
+      "rows": 1,
+      "cols_per_row": [
+        2
+      ],
+      "width": {
+        "w": "5000",
+        "type": "pct"
+      },
+      "layout": "fixed",
+      "grid": [
+        "4233",
+        "4234"
+      ],
+      "borders": [
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "insideH",
+        "insideV"
+      ],
+      "content": [
+        [
+          {
+            "text": "【详细解析】【步骤1　确定比较基准】【详解】设O为正方形ABCD的中心，M为AB的中点。\n∵四条侧棱相等，\n∴SO⊥平面ABCD。当E=M时，θ1=θ2=θ3，结论成立。以下设E≠M。【步骤2　构造垂直截面】过E作EN∥BC，过O作ON⊥EN，垂足为N。由EN∥BC，OM∥BC，得EN∥OM；又由BC⊥AB，EN∥BC，ON⊥EN，得ON∥AB，⇒EM∥ON。\n∴四边形EMON为矩形，故EN=OM。",
+            "paragraphs": [
+              {
+                "index": "b82.t10.r0.c0.p0",
+                "text": "【详细解析】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b82.t10.r0.c0.p1",
+                "text": "【步骤1　确定比较基准】",
+                "style": null,
+                "outline_level": "2",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b82.t10.r0.c0.p2",
+                "text": "【详解】设O为正方形ABCD的中心，M为AB的中点。\n∵四条侧棱相等，\n∴SO⊥平面ABCD。当E=M时，θ1=θ2=θ3，结论成立。以下设E≠M。",
+                "style": null,
+                "outline_level": "3",
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": true,
+                "equations": 8,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b82.t10.r0.c0.p3",
+                "text": "【步骤2　构造垂直截面】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b82.t10.r0.c0.p4",
+                "text": "过E作EN∥BC，过O作ON⊥EN，垂足为N。由EN∥BC，OM∥BC，得EN∥OM；又由BC⊥AB，EN∥BC，ON⊥EN，得ON∥AB，⇒EM∥ON。\n∴四边形EMON为矩形，故EN=OM。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 12,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          },
+          {
+            "text": "【步骤3　比较三个角】∵SO⊥平面ABCD，\n∴SO⊥EN。又ON⊥EN，SO∩ON=O，故EN⊥平面SON，⇒SN⊥EN。\n∴θ1=∠SEN，θ2=∠SEO，θ3=∠SMO，于是\ntanθ1=SNEN=SNOM， tanθ2=SOEO， tanθ3=SOOM。∵SN≥SO，EO≥OM，\n∴tanθ1≥tanθ3≥tanθ2。三个角均为锐角，故θ2≤θ3≤θ1，选 D。",
+            "paragraphs": [
+              {
+                "index": "b82.t10.r0.c1.p0",
+                "text": "【步骤3　比较三个角】",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 0,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b82.t10.r0.c1.p1",
+                "text": "∵SO⊥平面ABCD，\n∴SO⊥EN。又ON⊥EN，SO∩ON=O，故EN⊥平面SON，⇒SN⊥EN。\n∴θ1=∠SEN，θ2=∠SEO，θ3=∠SMO，于是\ntanθ1=SNEN=SNOM， tanθ2=SOEO， tanθ3=SOOM。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 7,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              },
+              {
+                "index": "b82.t10.r0.c1.p2",
+                "text": "∵SN≥SO，EO≥OM，\n∴tanθ1≥tanθ3≥tanθ2。三个角均为锐角，故θ2≤θ3≤θ1，选 D。",
+                "style": null,
+                "outline_level": null,
+                "alignment": "left",
+                "spacing": {
+                  "line": "300",
+                  "lineRule": "auto"
+                },
+                "keep_next": false,
+                "equations": 3,
+                "inline_images": 0,
+                "anchored_images": 0,
+                "image_rel_ids": []
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "index": "b83.p72",
+      "text": "",
+      "style": null,
+      "outline_level": null,
+      "alignment": null,
+      "spacing": {},
+      "keep_next": false,
+      "equations": 0,
+      "inline_images": 0,
+      "anchored_images": 0,
+      "image_rel_ids": []
+    }
+  ]
+}
