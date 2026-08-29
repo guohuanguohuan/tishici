@@ -9,6 +9,9 @@
   【2026-08-29 页脚文案直白化升级（2026-08-28 拍板）：本部段文案「·本部第A–B页」→「·本部位于第A–B页」，
     区间语义不变；清旧段逻辑同步升级为「run边界回溯＋跨run整段摘除」，兼容旧版单run形态与Word重存后的
     跨多run分裂形态（选必1衔接件实测5-run分裂，旧单run正则会漏清致双段），幂等口径不变。】
+2026-08-29 增（D2工具升级，E3-F3/E1-S1六件PAGE域旧缓存治理）：盖章时把复杂域缓存结果run
+  （fldChar separate 与 end 之间的数字run）刷写为该件首页实测页码＝sectPr start 值——非刷新查看器
+  （静态预览类）不再显示旧布局残留页码；Word/WPS/PDF 渲染路径本就按页刷新，不受影响。
 盖章记录（各件页数/全册偏移/本部区间/部分数）打印供过程对账收录。
 封面/册目录页/使用说明页等配页件不传入即不计页、不被改写（只处理显式传入的件）。任何件内容改动后须对所在册
 重跑本工具（先内容后页码，页码最后盖）。
@@ -95,6 +98,13 @@ def update_total(ftr, total):
     assert re.fullmatch(r'\d+', _run_text(run)), f'总页数run非纯数字：{_run_text(run)!r}'
     return ftr[:p] + seg[:m.start()] + lit + seg[seg.find('</w:r>', m.start()) + len('</w:r>'):]
 
+def flush_page_cache(ftr, start):
+    """PAGE复杂域缓存结果run刷写为start（2026-08-29增，E3-F3/E1-S1治理；幂等：值同亦无副作用）。"""
+    pat = re.compile(r'(<w:fldChar w:fldCharType="separate"/></w:r><w:r>(?:(?!</w:r>).)*?<w:t[^>]*>)(\d+)(</w:t>)', re.S)
+    ftr2, n = pat.subn(lambda m: m.group(1) + str(start) + m.group(3), ftr)
+    assert n == 1, f'PAGE域缓存run数={n}（预期1）'
+    return ftr2
+
 def rewrite(path, start, total, pa, pb, pn):
     """start=全册起始页码；total=册总页数；pa/pb=该件在部分内的起/止页；pn=部分总页数。"""
     with zipfile.ZipFile(path) as z:
@@ -117,6 +127,7 @@ def rewrite(path, start, total, pa, pb, pn):
     assert nstrip <= 1, f'旧本部段清除数={nstrip} {path}'
     ftr = ftr.replace('页（共', '页（全册共')
     ftr = update_total(ftr, total)
+    ftr = flush_page_cache(ftr, start)
     assert 'NUMPAGES' not in ftr and 'fldSimple' not in ftr, f'域形态残留 {path}'
     bun = f'<w:r>{RPR}<w:t>·本部位于第{pa}–{pb}页（共{pn}页）</w:t></w:r>'
     ends = [m for m in re.finditer(r'<w:t[^>]*>页）</w:t></w:r>', ftr)]
