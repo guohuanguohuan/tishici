@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 """extract_structure.py — 讲练件结构提取：节标题/题型组/题块（含难度）/讲块位置
-用法: python extract_structure.py <docx> [out.json]"""
+用法: python extract_structure.py <docx> [out.json]
+2026-08-28 升级：题块判定签名由「块内含【难度】字段」改为「题号块 N．（档位）＋块内含【答案】」双锚定
+（难度前置拍板后标签行删【难度】，旧签名失效）；兼容旧件回退：块内仍有【难度】的按旧口径识别。
+输出指标口径不变（题块数/节标题数/题型标题数/题号连续性），供排版自检复用。"""
 import sys, io, zipfile, re, json
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 from lxml import etree
@@ -38,7 +41,8 @@ def structure(path):
             kind = 'qstart'
         items.append({'kind': kind, 'el': i, 'text': t, 'p': el})
 
-    # 题块判定：qstart 起到下一个 qstart/标题/表格 前，块内须含【难度】
+    # 题块判定：qstart 起到下一个 qstart/标题/表格 前；
+    # 新签名＝题号块「N．（档位）」或块内含【答案】；旧件回退＝块内含【难度】（三档词或数值）。
     n = len(items)
     qinfo = []  # {no, start, end(Exclusive), diff}
     i = 0
@@ -50,10 +54,11 @@ def structure(path):
                 j += 1
             block = [items[k]['text'] for k in range(i, j)]
             blk = '\n'.join(block)
-            md = re.search(r'【难度】(简单|中档|难)', blk)
-            mno = re.match(r'^(\d+)．', it['text'])
-            if md and mno:
-                qinfo.append({'no': int(mno.group(1)), 'start': it['el'], 'end': items[j-1]['el'] + 1 if j > i + 1 else it['el'] + 1, 'diff': md.group(1)})
+            mno = re.match(r'^(\d+)．(?:（(简单|中档|难)）)?', it['text'])
+            legacy = re.search(r'【难度】(简单|中档|难|[\d.]+)', blk)
+            if mno and ('【答案】' in blk or legacy):
+                diff = mno.group(2) or (legacy.group(1) if legacy else '')
+                qinfo.append({'no': int(mno.group(1)), 'start': it['el'], 'end': items[j-1]['el'] + 1 if j > i + 1 else it['el'] + 1, 'diff': diff})
                 i = j
                 continue
         i += 1
