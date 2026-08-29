@@ -1,20 +1,25 @@
 # -*- coding: utf-8 -*-
-"""块标签芯片.py — 2026-08-28 拍板「块标签底纹（方案甲）＋答案值标记＋并行解法标记」
+"""块标签芯片.py — 2026-08-28 拍板「块标签底纹（方案甲）＋答案值标记＋并行解法标记」；
+2026-08-29 成书形态拍板扩面：枚举由封闭五个改为「凡行内【×】栏目标签一律挂」。
 两阶段（spaces＝防连片补空格属内容改动，随 Pass1 对账；shade＝纯格式零字符，随 Pass2）：
   python 块标签芯片.py spaces <docx> <登记表md>    # 标签与相邻内容标记值间缺空格的补一个半角空格，逐处登记（登记数＝处理数）
-  python 块标签芯片.py shade  <docx> <计数报告txt>  # 拆 run 隔离并挂 w:shd clear/auto/C9C9C9、不加粗
- shade 范围：
-  ①块标签【答案】【知识点】【分析】【详解】【点睛】——只盖「【×】」本身（全件含表格内段落）；
+  python 块标签芯片.py shade  <docx> <计数报告txt> [--legacy]  # 拆 run 隔离并挂 w:shd clear/auto/C9C9C9、不加粗
+ shade 范围（2026-08-29 扩面口径）：
+  ①块标签＝凡行内【×】栏目标签（【答案】【知识点】【分析】【详解】【点睛】【编注】【大招指引】
+    【题后反思】【温馨提醒】【定义】【结论】及扫描发现的其余行内栏目标签，全件含表格内段落）
+    ——只盖「【×】」本身；黑名单不挂：【典例N】类（题干内栏目名，规格§3.8删除对象）、
+    【易错】【了解】（学史切片条目分类标记豁免——公共规则§7）；
   ②详解内并行解法起段标记（方法一/方法二/解法一/另解…，可带［］，允许段首小问编号(2)、
-    块标签、「解：/证明：」前缀）——只盖标记本身；【法一】/【整题法一】等非拍板枚举形态不挂；
+    块标签、「解：/证明：」前缀）——只盖标记本身；
   ③【答案】后的答案值（选项字母、填空/计算结果，含 OMML 公式区：m:r 与结构 ctrlPr 的 w:rPr
     挂 shd，分数整块覆盖）——只盖值本身、多值按「；」拆开各盖各的、值尾句读不盖；
     答案跨段续段（【答案】段无【知识点】时，下一标签前有实质内容的后续段）挂其前段。
-  详解序号①②③与选项A．B．不挂（拍板不采纳）。
+  详解序号①②③与选项A．B．不挂（拍板不采纳）。--legacy＝回退 2026-08-28 封闭五标签口径（兼容开关）。
  实现：每段先按未变动的 w:t 文本流算好全部挂灰区间，再按起点倒序逐个 isolate_runs 手术（只拆不并，
- 跨 oMath 的区间逐 run 分别挂灰，避免文字/公式交错序移动），区间互不重叠、文本不增删，坐标不受前次手术影响。
- 幂等：已是 C9C9C9 的 run 不重复计数。"""
+  跨 oMath 的区间逐 run 分别挂灰，避免文字/公式交错序移动），区间互不重叠、文本不增删，坐标不受前次手术影响。
+ 幂等：已是 C9C9C9 的 run 不重复计数。报告含「全挂核验」：逐标签文本出现数 vs 整标签已挂 run 数。"""
 import sys, io, zipfile, re, os, time
+from collections import Counter
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 from lxml import etree
 
@@ -25,11 +30,26 @@ def q(t): return '{%s}%s' % (W, t)
 def mq(t): return '{%s}%s' % (M, t)
 def tag(e): return etree.QName(e).localname
 
-LABELS = ['【答案】', '【知识点】', '【分析】', '【详解】', '【点睛】']
+LABELS = ['【答案】', '【知识点】', '【分析】', '【详解】', '【点睛】']   # 2026-08-28 封闭口径（--legacy 用）
+CHIP_RE = re.compile(r'【[^】]{1,16}】')          # 2026-08-29 扩面：凡行内【×】栏目标签
+CHIP_BLACKLIST = ('【易错】', '【了解】')          # 学史切片条目分类标记豁免（公共规则§7）
+CHIP_BLACKLIST_RE = re.compile(r'^【典例[^】]*】$')  # 题干内【典例N】栏目名——规格§3.8删除对象，不挂
 MARK_RE = re.compile(r'^(?:\(\d{1,2}\)|（\d{1,2}）)?(?:【[^】]{1,12}】)?(?:解：|证明：)?'
                      r'(［?(?:方法|解法)[一二三四五六七八九十]{1,3}］?|另解)')
 NEXT_LB = re.compile(r'【[^】]{1,12}】')
 FILL = 'C9C9C9'
+
+def chip_spans(t, legacy=False):
+    """段文本内全部可挂芯片标签区间 [(s, e, label)]（黑名单排除）。"""
+    out = []
+    for m in CHIP_RE.finditer(t):
+        lb = m.group(0)
+        if legacy and lb not in LABELS:
+            continue
+        if lb in CHIP_BLACKLIST or CHIP_BLACKLIST_RE.match(lb):
+            continue
+        out.append((m.start(), m.end(), lb))
+    return out
 
 def wtext(p):
     return ''.join(t.text or '' for t in p.iter(q('t')))
@@ -297,26 +317,20 @@ def value_spans(p):
     oms = [el for el, a, b in om_items if chip_end <= a and b <= region_end]
     return spans, oms
 
-def phase_shade(path, report):
+def phase_shade(path, report, legacy=False):
     z = zipfile.ZipFile(path)
     parts = {n: z.read(n) for n in z.namelist()}
     z.close()
     doc = etree.fromstring(parts['word/document.xml'])
     body = doc.find(q('body'))
-    cnt = {lb: 0 for lb in LABELS}
+    cnt = Counter()
     cnt['并行解法'] = 0; cnt['答案值文字run'] = 0; cnt['答案值公式块'] = 0
     ans_rows = 0; cont_rows = 0; warns = []
     for p in body.iter(q('p')):
         t = wtext(p)
         spans = []   # (s, e, kind, label)
-        for lb in LABELS:
-            start = 0
-            while True:
-                i = t.find(lb, start)
-                if i < 0:
-                    break
-                spans.append((i, i + len(lb), 'chip', lb))
-                start = i + 1
+        for s, e, lb in chip_spans(t, legacy):
+            spans.append((s, e, 'chip', lb))
         m = MARK_RE.match(t)
         if m:
             spans.append((m.start(1), m.end(1), 'marker', None))
@@ -384,16 +398,40 @@ def phase_shade(path, report):
                 cnt['答案值公式块'] += 1
     parts['word/document.xml'] = etree.tostring(doc, xml_declaration=True, encoding='UTF-8', standalone=True)
     save_parts(path, parts)
+    # 全挂核验（2026-08-29 扩面口径）：逐标签文本出现数 vs 整标签已挂 C9C9C9 run 数
+    occ = Counter()
+    for p in body.iter(q('p')):
+        for _, _, lb in chip_spans(wtext(p), legacy):
+            occ[lb] += 1
+    hungrun = Counter()
+    for r in doc.iter(q('r')):
+        rpr = r.find(q('rPr'))
+        shd = rpr.find(q('shd')) if rpr is not None else None
+        if shd is None or shd.get(q('fill')) != FILL:
+            continue
+        tx = ''.join(x.text or '' for x in r.findall(q('t')))
+        m = CHIP_RE.fullmatch(tx) if tx else None
+        if m and not (tx in CHIP_BLACKLIST or CHIP_BLACKLIST_RE.match(tx)):
+            if not legacy or tx in LABELS:
+                hungrun[tx] += 1
+    miss = {lb: (occ[lb], hungrun[lb]) for lb in occ if hungrun[lb] != occ[lb]}
     with open(report, 'w', encoding='utf-8') as f:
-        f.write('块标签芯片＋答案值标记 shade 计数：%s\n' % os.path.basename(path))
-        for lb in LABELS:
-            f.write('%s chip %d\n' % (lb, cnt[lb]))
+        f.write('块标签芯片＋答案值标记 shade 计数（%s口径）：%s\n'
+                % ('封闭五标签' if legacy else '2026-08-29 扩面·凡行内【×】栏目标签', os.path.basename(path)))
+        for lb in sorted(set(list(occ) + [k for k in cnt if k.startswith('【')])):
+            f.write('%s 出现 %d｜本轮新挂 %d｜整标签已挂run %d%s\n'
+                    % (lb, occ[lb], cnt[lb], hungrun[lb], '' if hungrun[lb] == occ[lb] else '  <-- 不等!!'))
         f.write('并行解法标记 %d\n' % cnt['并行解法'])
         f.write('答案行 %d；答案值文字run %d；答案值公式块 %d；跨段续值段 %d\n'
                 % (ans_rows, cnt['答案值文字run'], cnt['答案值公式块'], cont_rows))
+        if miss:
+            f.write('\n全挂核验不齐：%r\n' % miss)
+        else:
+            f.write('\n全挂核验：全部标签 出现数＝已挂run数 PASS\n')
         if warns:
             f.write('\n警告：\n' + '\n'.join('- ' + w for w in warns) + '\n')
-    print('chips', {k: v for k, v in cnt.items() if v}, '| 答案行', ans_rows, '| 警告', len(warns))
+    print('chips', {k: v for k, v in cnt.items() if v}, '| 答案行', ans_rows,
+          '| 全挂核验', 'PASS' if not miss else miss, '| 警告', len(warns))
     for w in warns:
         print('  !', w)
 
@@ -401,6 +439,6 @@ if __name__ == '__main__':
     if sys.argv[1] == 'spaces':
         phase_spaces(sys.argv[2], sys.argv[3])
     elif sys.argv[1] == 'shade':
-        phase_shade(sys.argv[2], sys.argv[3])
+        phase_shade(sys.argv[2], sys.argv[3], legacy=('--legacy' in sys.argv[4:4 + len(sys.argv)]))
     else:
         print(__doc__)

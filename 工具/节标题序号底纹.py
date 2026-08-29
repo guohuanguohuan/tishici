@@ -2,37 +2,39 @@
 #
 # 收编：2026-08-29 节序号底纹收口轮（来源：桌面一次性脚本 同步-数学选必1第2章清单-0828回扫/节序号底纹.py
 #       升级收编为常驻工具；升级点见 docstring「2026-08-29 收编注记」）
+# 2026-08-29 成书形态回扫轮（T代理）扩版：节·讲部·题型三标题同族底纹＋标题层级缩进挂载
 #
-"""节标题序号底纹.py — 教材节标题序号挂 C9C9C9 底纹＋加粗（可复用，幂等）
+"""节标题序号底纹.py — 节/讲部/题型标题序号挂 C9C9C9 底纹＋加粗＋标题层级缩进（可复用，幂等）
 
-口径注记（效力序见公共规则§7「题号难度块底纹」条款内「节标题序号底纹」扩展）：
-  · 2026-08-27 用户拍板「节标题序号底纹」（用户成品截图反馈教材节标题序号无底纹、开头层次感不足）：
-    教材节标题序号（章号＋节号，如「1.1.1」）加同款 C9C9C9 结构底纹＋加粗——结构锚加粗
-    （与条目号 2026-08-29「不加粗」口径相区分）；底纹只盖序号字符（含尾随半角空格）、
-    不盖标题文字；序号与标题文字同 run 时先拆出独立 run 再挂。
-  · 2026-08-28 用户拍板「知识清单件跟进」：知识清单件的教材节标题序号同款跟进（存量件回扫债）。
-  · 父级节标题（如「2.5」「9.1」二级）与叶节同款挂——选必1先例（讲练件终态 F2 补父级＋E1 复测、
-    试点件父级 1.1/1.2 同款）：父级与叶节同挂，恒等式「节标题序号底纹 run 数＝节标题总数」，
-    节标题数以 extract_structure 判定 section 为源（含二级与三级）。
-  · 条目题名行「N．」全角句点起段，与 N.N(.N) 半角点分序号天然不同形——条目号不属节标题口径
-    （其底纹按 2026-08-29 条目号底纹新口径另由 工具/条目号底纹.py 处置，本工具不碰条目题名行）。
-  · 2026-08-29 收编注记（节序号底纹收口轮）：①试点脚本的反向断言「条目号段不许挂底纹」已随
-    2026-08-29 条目号底纹拍板废止，改登记「条目号底纹 run 数改前后守恒」断言（不碰条目题名行的
-    实证）；②新增节标题段内「标题文字 run 剥遗留底纹」归一（存量件旧构建整行铺灰形态——
-    2026-08-28 标题字号梯子拍板「层级靠字号、整行灰冗余」，底纹只盖序号口径的存量归一），
-    剥除数逐处登记；③工具内断言全文 w:t 字符序列改前后恒等（零字符铁律）。
+口径注记（效力序见公共规则§7「题号难度块底纹」条款内「结构序号底纹」扩展）：
+  · 2026-08-27 用户拍板「节标题序号底纹」；2026-08-29 成书形态拍板扩为节·讲部·题型三标题同族
+    （原「题型标题不挂底纹」口径废止）：教材节标题序号、讲部标题序号（父号.k 方法讲解｜…）、
+    题型标题序号（父链续层 父号.j）一律加同款 C9C9C9 结构底纹＋随标题加粗；底纹只盖序号字符
+    （含尾随半角空格）、不盖标题文字；序号与标题文字同 run 时先拆出独立 run 再挂。
+  · 2026-08-29 成书形态拍板新增「标题层级缩进」（§7段落条款明示例外）：
+    节标题顶格（摘除 w:ind）／讲部标题缩进2字符（w:ind leftChars=200）／题型标题缩进4字符
+    （leftChars=400；节下直挂〔序号深度＝父节深度＋1，或旧手工编号同深〕缩进2字符=200）。
+    只动标题段，正文与题目段落一律不碰（顶格不变）。
+  · 父级节标题（如「2.5」「9.1」二级）与叶节同款挂——恒等式「结构序号底纹 run 数＝节＋讲部＋题型
+    标题总数」，三标题分型以 extract_structure（section/lecture/group）为源。
+  · 条目题名行「N．」全角句点起段，与 N.N(.N) 半角点分序号天然不同形——条目号不属本工具口径
+    （另由 工具/条目号底纹.py 处置，本工具不碰条目题名行，断言守恒）。
+  · 2026-08-29 收编注记：标题段内「标题文字 run 剥遗留底纹」归一（存量整行铺灰形态）；
+    工具内断言全文 w:t 字符序列改前后恒等（零字符铁律）＋条目号底纹 run 数守恒。
 
 判定与行为：
-  · 节标题源＝extract_structure 判定的 section 段（body 级段落，段首 N.N(.N) 半角点分序号＋
-    空白＋标题文字）；本工具仅处置序号匹配 ^\\d+(\\.\\d+){1,2} 的二/三级节标题——一级章号
-    「N 标题」不属节标题口径，跳过并逐处登记（条目题名行「N．」全角句点天然排除，另设断言）；
-  · 序号 run 文本终态＝「N.N(.N) 」（尾随半角空格随灰底，与试点件同款）；
+  · 标题源＝extract_structure 判定的 section（节）/lecture（讲部）/group（题型）段（body 级，
+    序号 N.N(.N)+ 半角点分〔1..6 层〕＋空白＋标题文字；讲部形「父号.k 方法讲解｜…」）；
+    一级章号「N 标题」不属节标题口径，跳过并逐处登记；
+  · 序号 run 文本终态＝「N.N(.N) 」（尾随半角空格随灰底）；
   · 已挂（序号独立 run 已 C9C9C9）→ 幂等跳过，仍补加粗（缺才补）；
   · 序号 run 已有其他 fill 底纹 → 报错人工处置（不静默覆盖）；
-  · 节标题段内其他 run 带 C9C9C9（遗留铺灰）→ 剥除并计数（标题文字无底纹口径）；
+  · 标题段内其他 run 带 C9C9C9（遗留铺灰）→ 剥除并计数（标题文字无底纹口径）；
+  · 缩进：按类型挂 w:ind leftChars（节摘除；讲部200；题型400/200——深度差＝题型层数−父节层数，
+    ≥2（讲部下题型）→400，否则（直挂/旧手工同深形）→200）；已同值幂等跳过；
   · 修改的 w:t 一律置 xml:space="preserve" 防吞空格。
-输出：登记 md（节号→节标题，含父级/叶级与逐处处置）＋stdout 恒等式断言
-（节标题序号底纹 run 数＝节标题数＝新挂＋幂等跳过）。
+输出：登记 md（三类型逐处：序号→标题、级别、缩进值、处置）＋stdout 恒等式断言
+  （结构序号底纹 run 数＝节数＋讲部数＋题型数＝新挂＋幂等跳过）。
 
 用法: python 节标题序号底纹.py <docx> <登记md>
 """
@@ -47,9 +49,12 @@ def q(t): return '{%s}%s' % (W, t)
 def tag(e): return etree.QName(e).localname
 
 FILL = 'C9C9C9'
-SECTNUM_RE = re.compile(r'^\d+(?:\.\d+){1,2} ?$')      # 序号 run 终态文本（尾随半角空格随灰底）
-SECHEAD_RE = re.compile(r'^(\d+(?:\.\d+){1,2})( ?)')   # 二/三级节序号＋至多一个尾随半角空格
-ENT_RE = re.compile(r'^\d+．')                          # 条目题名行（全角句点，天然排除）
+SECTNUM_RE = re.compile(r'^\d+(?:\.\d+){1,6} ?$')     # 序号 run 终态文本（尾随半角空格随灰底）
+SECHEAD_RE = re.compile(r'^(\d+(?:\.\d+){1,6})( ?)')  # 父链续层序号（1..6层）＋至多一个尾随半角空格
+ENT_RE = re.compile(r'^\d+．')                         # 条目题名行（全角句点，天然排除）
+LECT_RE = re.compile(r'^\d+(?:\.\d+)*\s*方法讲解[｜|]')
+
+IND_BY_KIND = {'节': None, '讲部': 200}   # 节＝摘除 w:ind；讲部＝200；题型按深度差 400/200
 
 def para_runs(p):
     return [c for c in p if tag(c) == 'r']
@@ -72,7 +77,7 @@ def doc_text(doc):
     return ''.join(t.text or '' for t in doc.iter(q('t')))
 
 def ent_shaded_count(doc):
-    """条目号底纹 run 数（body 级条目题名行的独立「N．」C9C9C9 run，与条目号底纹.py/四类计数同源口径）。"""
+    """条目号底纹 run 数（body 级条目题名行的独立「N．」C9C9C9 run，与条目号底纹.py/六类计数同源口径）。"""
     n = 0
     body = doc.find(q('body'))
     for p in body:
@@ -109,35 +114,96 @@ def ensure_anchor_rpr(r):
 
 def isolate_and_shade(p, numlen):
     """把段首 [0,numlen) 字符隔离为独立 run 并挂底纹（缺才挂，幂等）。
+    序号跨多 run（如「1.1」＋「.1 」）时：边界拆分后把序号段合并回收首个文本 run
+    （字符合并、顺序不变、零字符增删；标题文字其余部分留在独立 run 并剥底纹）。
     返回 (序号run元素, 是否新挂底纹, 是否补加粗, 序号run文本)。"""
     runs = para_runs(p)
+    covered = []   # [(run, text)] 累计覆盖 [0,numlen)
     off = 0
-    target = None
     for r in runs:
-        txt = run_text(r)
-        a, b = off, off + len(txt)
-        if a == 0 and b >= numlen and txt:
-            target = r
-            if b > numlen:
-                # 序号与标题文字同 run：拆分为 [序号]＋[其余]（其余 run 剥底纹，标题文字不盖灰）
-                rest = txt[numlen:]
-                set_run_text(r, txt[:numlen])
-                nr = copy.deepcopy(r)
-                set_run_text(nr, rest)
-                nrpr = nr.find(q('rPr'))
-                if nrpr is not None:
-                    nshd = nrpr.find(q('shd'))
-                    if nshd is not None:
-                        nrpr.remove(nshd)
-                r.addnext(nr)
-            break
-        off = b
+        tx = run_text(r)
+        if not tx:
+            continue
+        covered.append((r, tx))
+        off += len(tx)
         if off >= numlen:
             break
-    assert target is not None, '序号未落在首个文本run内（序号跨多 run 需人工归并）'
+    assert covered and off >= numlen, '序号未落在文本run内（序号跨 run 碎裂超限需人工归并）'
+    first_r, first_tx = covered[0]
+    # 末个覆盖 run 越界拆分：拆出序号段之后的标题文字（剥底纹独立 run）
+    total = sum(len(tx) for _, tx in covered)
+    last_r, last_tx = covered[-1]
+    if total > numlen:
+        cut = numlen - (total - len(last_tx))
+        rest = last_tx[cut:]
+        set_run_text(last_r, last_tx[:cut])
+        nr = copy.deepcopy(last_r)
+        set_run_text(nr, rest)
+        nrpr = nr.find(q('rPr'))
+        if nrpr is not None:
+            nshd = nrpr.find(q('shd'))
+            if nshd is not None:
+                nrpr.remove(nshd)
+        last_r.addnext(nr)
+    # 多 run 序号合并回收首 run（只动 run 边界不动文字流）
+    if len(covered) > 1:
+        set_run_text(first_r, ''.join(tx for _, tx in covered)[:numlen])
+        for r, _ in covered[1:]:
+            p.remove(r)
+    target = first_r
     assert run_text(target) and len(run_text(target)) == numlen
     shd_added, bold_added = ensure_anchor_rpr(target)
     return target, shd_added, bold_added, run_text(target)
+
+# ---------- 缩进挂载（2026-08-29 成书形态拍板：标题层级缩进；只动标题段） ----------
+PPR_AFTER_IND = ('contextualSpacing', 'mirrorIndents', 'suppressOverlap', 'jc', 'textDirection',
+                 'textAlignment', 'textboxTightWrap', 'outlineLvl', 'divId', 'cnfStyle', 'rPr',
+                 'sectPr', 'pPrChange')
+
+def set_indent(p, left_chars):
+    """标题段挂 w:ind leftChars=left_chars（leftChars=0/None → 摘除 w:ind 顶格）。
+    返回 (旧值或None, 是否改动)。幂等：已同值不动。"""
+    ppr = p.find(q('pPr'))
+    ind = ppr.find(q('ind')) if ppr is not None else None
+    if left_chars is None or left_chars == 0:
+        if ind is None:
+            return None, False
+        ppr.remove(ind)
+        return (ind.get(q('leftChars')) or ind.get(q('left')), True)
+    if ppr is None:
+        ppr = etree.Element(q('pPr')); p.insert(0, ppr)
+    if ind is not None:
+        old = ind.get(q('leftChars')) or ind.get(q('left'))
+        for a in (q('left'), q('start')):     # 摘绝对左缩进，只按字符缩进
+            if a in ind.attrib:
+                del ind.attrib[a]
+        ind.set(q('leftChars'), str(left_chars))
+        return old, (old != str(left_chars))
+    ind = etree.Element(q('ind'))
+    ind.set(q('leftChars'), str(left_chars))
+    anchor = None
+    for c in ppr:
+        if tag(c) in PPR_AFTER_IND:
+            anchor = c
+            break
+    if anchor is not None:
+        anchor.addprevious(ind)
+    else:
+        ppr.append(ind)
+    return None, True
+
+def indent_for(kind, num, cur_secnum, warns):
+    """按类型与序号深度算缩进字符数：节=None（顶格）；讲部=200；题型=400/200。"""
+    if kind == '节':
+        return None
+    if kind == '讲部':
+        return 200
+    d = num.count('.') + 1
+    if cur_secnum:
+        diff = d - (cur_secnum.count('.') + 1)
+        if diff >= 2:
+            return 400          # 讲部下题型（父号.j：深度＝父节＋2）
+    return 200                  # 节下直挂（＋1）或旧手工编号（＋0）——均按直挂 2 字符
 
 def main(path, regmd):
     z = zipfile.ZipFile(path)
@@ -147,30 +213,38 @@ def main(path, regmd):
     ent_before = ent_shaded_count(doc)
 
     st = structure(path)
-    secs = []      # (body索引, 节号, numlen)
-    skipped = []   # 一级章号等非节标题口径段（登记不处置）
+    heads = []     # (body索引, 类型, 序号, numlen)
+    skipped = []   # 一级章号等非标题口径段（登记不处置）
     for x in st['items']:
-        if x['kind'] != 'section':
+        if x['kind'] not in ('section', 'group', 'lecture'):
             continue
         m = SECHEAD_RE.match(x['text'])
+        kind = {'section': '节', 'group': '题型', 'lecture': '讲部'}[x['kind']]
+        if x['kind'] in ('section', 'group') and LECT_RE.match(x['text']):
+            kind = '讲部'   # 讲部形文本纠偏（无「：」曾误判 section；带「：」误判 group 同理）
         if not m:
             skipped.append(x['text'][:30])
             continue
-        assert not ENT_RE.match(x['text']), '条目题名行误入节标题口径: %r' % x['text'][:30]
-        secs.append((x['el'], m.group(1), m.end()))
+        assert not ENT_RE.match(x['text']), '条目题名行误入标题口径: %r' % x['text'][:30]
+        heads.append((x['el'], kind, m.group(1), m.end()))
 
     body = doc.find(q('body'))
     els = list(body)
-    secnums = [num for _, num, _ in secs]
+    secnums = [num for _, k, num, _ in heads if k == '节']
 
     rows = []
     n_new = n_already = n_strip = n_bold = 0
-    for eli, num, numlen in secs:
+    ind_changes = []
+    cur_secnum = None
+    for eli, kind, num, numlen in heads:
         p = els[eli]
         full = ''.join(t.text or '' for t in p.iter(q('t')))
         m = SECHEAD_RE.match(full)
-        assert m and m.group(1) == num, '节标题序号复检不一致: %r' % full[:30]
-        level = '父级' if any(sn != num and sn.startswith(num + '.') for sn in secnums) else '叶级'
+        assert m and m.group(1) == num, '标题序号复检不一致: %r' % full[:30]
+        if kind == '节':
+            cur_secnum = num
+        level = '父级' if kind == '节' and any(sn != num and sn.startswith(num + '.') for sn in secnums) else \
+                ('叶级' if kind == '节' else kind)
         target, shd_added, bold_added, rt = isolate_and_shade(p, numlen)
         assert SECTNUM_RE.match(rt), '序号run文本形态异常: %r' % rt
         n_new += (1 if shd_added else 0)
@@ -186,20 +260,26 @@ def main(path, regmd):
                 shd.getparent().remove(shd)
                 stripped += 1
         n_strip += stripped
+        # 缩进挂载（幂等）
+        chars = indent_for(kind, num, cur_secnum if kind != '节' else None, None)
+        oldind, ind_chg = set_indent(p, chars)
+        if ind_chg:
+            ind_changes.append((kind, num, oldind, chars))
         title = full[len(m.group(0)):].strip() or full.strip()
-        rows.append((num, level, title, rt, shd_added, bold_added, stripped))
+        rows.append((kind, num, level, title, rt, shd_added, bold_added, stripped, oldind, chars))
 
-    # 恒等式断言：每节标题段底纹 run 恰为序号 run 一个，总数＝节标题数
+    # 恒等式断言：每标题段底纹 run 恰为序号 run 一个，总数＝节＋讲部＋题型标题数
     total_shaded = 0
-    for eli, num, numlen in secs:
+    for eli, kind, num, numlen in heads:
         p = els[eli]
         shd_runs = [run_text(r) for r in p.iter(q('r'))
                     if shd_of(r) is not None and shd_of(r).get(q('fill')) == FILL]
         assert len(shd_runs) == 1 and SECTNUM_RE.match(shd_runs[0]), \
-            '节标题 b#%d 底纹run异常: %r' % (eli, shd_runs)
+            '标题 b#%d 底纹run异常: %r' % (eli, shd_runs)
         total_shaded += 1
-    n_secs = len(secs)
-    ok = (total_shaded == n_secs == n_new + n_already)
+    n_heads = len(heads)
+    n_by = {k: sum(1 for _, kk, _, _ in heads if kk == k) for k in ('节', '讲部', '题型')}
+    ok = (total_shaded == n_heads == n_new + n_already)
     # 零字符铁律断言＋条目号底纹守恒断言
     assert doc_text(doc) == before_text, '零字符铁律被破坏（w:t 字符序列变化）'
     ent_after = ent_shaded_count(doc)
@@ -224,21 +304,23 @@ def main(path, regmd):
 
     # 登记 md
     lines = []
-    lines.append('# 节标题序号底纹登记 — %s' % os.path.basename(path))
+    lines.append('# 结构序号底纹＋标题缩进登记 — %s' % os.path.basename(path))
     lines.append('')
-    lines.append('轮次：节序号底纹收口轮 2026-08-29（公共规则§7节标题序号底纹——2026-08-27 用户拍板＋')
-    lines.append('2026-08-28 知识清单件跟进的存量回扫；工具/节标题序号底纹.py 2026-08-29 收编，')
-    lines.append('选必1先例：父级与叶节同挂，恒等式＝节标题序号底纹 run 数＝节标题数；结构锚加粗、')
-    lines.append('底纹只盖序号含尾随半角空格、不盖标题文字；条目号「N．」不属本口径不碰）')
+    lines.append('轮次：成书形态回扫轮 2026-08-29（公共规则§7结构序号底纹——节·讲部·题型三标题同族＋')
+    lines.append('标题层级缩进：节顶格/讲部2字符/题型4字符（直挂2字符），只动标题段正文顶格不变；')
+    lines.append('恒等式＝结构序号底纹 run 数＝节数＋讲部数＋题型数；结构锚加粗、底纹只盖序号')
+    lines.append('含尾随半角空格、不盖标题文字；条目号「N．」不属本口径不碰；幂等可重跑）')
     lines.append('')
-    lines.append('节标题数 %d｜新挂 %d｜幂等跳过 %d｜补加粗 %d｜标题文字剥遗留底纹 %d｜'
-                 '恒等式（挂底纹 run 数 %d＝节标题数）%s｜零字符断言 通过｜条目号底纹守恒 %d＝%d 通过'
-                 % (n_secs, n_new, n_already, n_bold, n_strip, total_shaded,
+    lines.append('标题总数 %d（节 %d｜讲部 %d｜题型 %d）｜新挂 %d｜幂等跳过 %d｜补加粗 %d｜'
+                 '标题文字剥遗留底纹 %d｜缩进变更 %d 段｜恒等式（挂底纹 run 数 %d＝标题总数）%s｜'
+                 '零字符断言 通过｜条目号底纹守恒 %d＝%d 通过'
+                 % (n_heads, n_by['节'], n_by['讲部'], n_by['题型'], n_new, n_already, n_bold,
+                    n_strip, len(ind_changes), total_shaded,
                     '成立' if ok else '不成立!!', ent_before, ent_after))
     lines.append('')
-    lines.append('| 节号 | 级别 | 节标题 | 序号run | 处置 |')
-    lines.append('|---|---|---|---|---|')
-    for num, level, title, rt, shd_added, bold_added, stripped in rows:
+    lines.append('| 类型 | 序号 | 级别 | 标题 | 序号run | 缩进 | 处置 |')
+    lines.append('|---|---|---|---|---|---|---|')
+    for kind, num, level, title, rt, shd_added, bold_added, stripped, oldind, chars in rows:
         disp = '新挂' if shd_added else '已挂（幂等跳过）'
         extra = []
         if bold_added:
@@ -247,15 +329,20 @@ def main(path, regmd):
             extra.append('剥标题文字遗留底纹%d处' % stripped)
         if extra:
             disp += '（' + '＋'.join(extra) + '）'
-        lines.append('| %s | %s | %s | 「%s」 | %s |' % (num, level, title.replace('|', '\\|'), rt, disp))
+        ind_disp = '顶格(摘ind)' if chars is None else 'leftChars=%d' % chars
+        if oldind is not None and str(oldind) != str(chars if chars is not None else ''):
+            ind_disp += '（原%s）' % oldind
+        lines.append('| %s | %s | %s | %s | 「%s」 | %s | %s |'
+                     % (kind, num, level, title.replace('|', '\\|')[:40], rt, ind_disp, disp))
     if skipped:
         lines.append('')
-        lines.append('非节标题口径跳过段（一级章号等，登记不处置）：%s' % '；'.join(skipped))
+        lines.append('非标题口径跳过段（一级章号等，登记不处置）：%s' % '；'.join(skipped))
     lines.append('')
     open(regmd, 'w', encoding='utf-8').write('\n'.join(lines))
-    print('节标题数 %d｜新挂 %d｜幂等跳过 %d｜补加粗 %d｜剥标题文字遗留底纹 %d；'
+    print('标题总数 %d（节%d｜讲部%d｜题型%d）｜新挂 %d｜幂等跳过 %d｜补加粗 %d｜剥遗留 %d｜缩进变更 %d；'
           '恒等式（%d＝%d）%s；零字符断言通过；条目号底纹守恒 %d＝%d'
-          % (n_secs, n_new, n_already, n_bold, n_strip, total_shaded, n_secs,
+          % (n_heads, n_by['节'], n_by['讲部'], n_by['题型'], n_new, n_already, n_bold, n_strip,
+             len(ind_changes), total_shaded, n_heads,
              '成立 PASS' if ok else '不成立 CHECK', ent_before, ent_after))
     print('登记md -> %s' % regmd)
 

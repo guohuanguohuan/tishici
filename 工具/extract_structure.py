@@ -3,7 +3,12 @@
 用法: python extract_structure.py <docx> [out.json]
 2026-08-28 升级：题块判定签名由「块内含【难度】字段」改为「题号块 N．（档位）＋块内含【答案】」双锚定
 （难度前置拍板后标签行删【难度】，旧签名失效）；兼容旧件回退：块内仍有【难度】的按旧口径识别。
-输出指标口径不变（题块数/节标题数/题型标题数/题号连续性），供排版自检复用。"""
+输出指标口径不变（题块数/节标题数/题型标题数/题号连续性），供排版自检复用。
+2026-08-29 增（成书形态回扫轮·T代理）：新增 kind='lecture'（讲部标题——「父号.k 方法讲解｜主题名」，
+公共规则§6题型编号/§3.3讲部标题化）。此前该形态（无「：」）会被误判为 section——消费方
+（节标题序号底纹/六类底纹计数）已同步按三标题分型；旧消费方（标题字号梯子等）按
+kind=='section'/'group' 取集合，lecture 不入两集合（讲部标题五号加粗由内容代理按§3.3落，
+不落小四节级字号——行为变更见 T-工具改版报告）。题块判定签名与输出结构其余不变。"""
 import sys, io, zipfile, re, json
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 from lxml import etree
@@ -32,7 +37,9 @@ def structure(path):
             continue
         t = ptext(el)
         kind = 'para'
-        if re.match(r'^\d+(\.\d+)*\s+\S', t):
+        if re.match(r'^\d+(\.\d+)*\s*方法讲解[｜|]', t):
+            kind = 'lecture'    # 讲部标题 父号.k 方法讲解｜主题名（2026-08-29 成书形态拍板§6）
+        elif re.match(r'^\d+(\.\d+)*\s+\S', t):
             if '：' in t and re.match(r'^\d+(\.\d+)+\s', t):
                 kind = 'group'      # 题型标题 X.Y.Z 标题：题型
             else:
@@ -68,10 +75,13 @@ if __name__ == '__main__':
     s = structure(sys.argv[1])
     secs = [x for x in s['items'] if x['kind'] == 'section']
     grps = [x for x in s['items'] if x['kind'] == 'group']
+    lecs = [x for x in s['items'] if x['kind'] == 'lecture']
     qs = s['questions']
-    print('节标题 %d | 题型组 %d | 题块 %d（%d..%d）' % (len(secs), len(grps), len(qs), qs[0]['no'] if qs else 0, qs[-1]['no'] if qs else 0))
+    print('节标题 %d | 题型组 %d | 讲部 %d | 题块 %d（%d..%d）'
+          % (len(secs), len(grps), len(lecs), len(qs), qs[0]['no'] if qs else 0, qs[-1]['no'] if qs else 0))
     cont = [qs[k]['no'] for k in range(1, len(qs)) if qs[k]['no'] != qs[k-1]['no'] + 1]
     print('题号连续性断点:', cont if cont else '无（1..N 连续）' if qs and qs[0]['no'] == 1 else '异常')
     for x in secs: print(' 节', x['el'], x['text'])
+    for x in lecs: print(' 讲部', x['el'], x['text'])
     if len(sys.argv) > 2:
         json.dump(s, open(sys.argv[2], 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
