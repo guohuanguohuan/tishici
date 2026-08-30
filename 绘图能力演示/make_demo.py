@@ -93,9 +93,12 @@ face2 = Poly3DCollection([[P, B, C]], alpha=0.10, facecolor="#2ca02c")
 for coll in (base, face1, face2):
     ax.add_collection3d(coll)
 
-# 直角记号：PO ⊥ 底面，在 O 处画小方块
-s_ = 0.18
-ax.plot([0, s_, s_, 0], [-s_, -s_, 0, 0], [0, 0, 0, 0], color="0.4", lw=1.0)
+# 直角记号：PO ⊥ 底面 —— 小方块画在「PO 与底面前后方向」决定的竖直平面内，
+# 三边：沿底面方向、竖直边、回到垂线的横边（贴 PO 一侧开口，由虚线高线本身封口）
+s_ = 0.14
+ax.plot([0, 0], [0, -s_], [0, 0], color="0.25", lw=1.3)
+ax.plot([0, 0], [-s_, -s_], [0, s_], color="0.25", lw=1.3)
+ax.plot([0, 0], [-s_, 0], [s_, s_], color="0.25", lw=1.3)
 
 # 顶点标签
 lbl = dict(fontsize=13)
@@ -104,7 +107,8 @@ ax.text(B[0] + 0.08, B[1] - 0.18, B[2] - 0.12, r"$B$", **lbl)
 ax.text(C[0] + 0.10, C[1] + 0.10, C[2] - 0.12, r"$C$", **lbl)
 ax.text(D[0] - 0.22, D[1] + 0.08, D[2] - 0.12, r"$D$", **lbl)
 ax.text(P[0] - 0.10, P[1] - 0.05, P[2] + 0.10, r"$P$", **lbl)
-ax.text(O[0] + 0.06, O[1] - 0.28, O[2] - 0.05, r"$O$", fontsize=12)
+ax.text(-0.34, 0.12, 0.02, r"$O$", fontsize=12,
+        bbox=dict(facecolor="white", alpha=0.75, edgecolor="none", pad=1.2))
 
 ax.set_xlim(-1.4, 1.4)
 ax.set_ylim(-1.4, 1.4)
