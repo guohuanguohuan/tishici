@@ -168,7 +168,7 @@ def migrate(path, mapmd):
                 break
         if dp is None:
             blk_txt = '\n'.join(ptext(p) for p in qps)
-            if re.match(r'^\d+．（(简单|中档|难)）', ptext(els[i])):
+            if re.match(r'^\d+．（(简单|中档|难)(·(保60%|保80%|冲100%)·卡壳看答案)?)', ptext(els[i])):
                 skipped += 1
             elif '【答案】' in blk_txt:
                 errors.append('题%d 无【难度】字段且题号块无档位' % no)

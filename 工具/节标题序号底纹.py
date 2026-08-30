@@ -3,6 +3,7 @@
 # 收编：2026-08-29 节序号底纹收口轮（来源：桌面一次性脚本 同步-数学选必1第2章清单-0828回扫/节序号底纹.py
 #       升级收编为常驻工具；升级点见 docstring「2026-08-29 收编注记」）
 # 2026-08-29 成书形态回扫轮（T代理）扩版：节·讲部·题型三标题同族底纹＋标题层级缩进挂载
+# 2026-08-30 拍板执行轮（T2代理）缩进梯子改版：按号深区分＋缩进加倍（底纹逻辑不动）
 #
 """节标题序号底纹.py — 节/讲部/题型标题序号挂 C9C9C9 底纹＋加粗＋标题层级缩进（可复用，幂等）
 
@@ -11,12 +12,13 @@
     （原「题型标题不挂底纹」口径废止）：教材节标题序号、讲部标题序号（父号.k 方法讲解｜…）、
     题型标题序号（父链续层 父号.j）一律加同款 C9C9C9 结构底纹＋随标题加粗；底纹只盖序号字符
     （含尾随半角空格）、不盖标题文字；序号与标题文字同 run 时先拆出独立 run 再挂。
-  · 2026-08-29 成书形态拍板新增「标题层级缩进」（§7段落条款明示例外）：
-    节标题顶格（摘除 w:ind）／讲部标题缩进2字符（w:ind leftChars=200）／题型标题缩进4字符
-    （leftChars=400；节下直挂〔序号深度＝父节深度＋1，或旧手工编号同深〕缩进2字符=200）。
-    只动标题段，正文与题目段落一律不碰（顶格不变）。
-  · 父级节标题（如「2.5」「9.1」二级）与叶节同款挂——恒等式「结构序号底纹 run 数＝节＋讲部＋题型
-    标题总数」，三标题分型以 extract_structure（section/lecture/group）为源。
+  · 标题层级缩进——【2026-08-30 用户拍板加倍改版（原「节0/讲部2/题型4或直挂2」口径废止）】：
+    二级节标题（N.N）leftChars=0（即清 w:ind 顶格）／三级节标题（N.N.N）leftChars=200／
+    讲部标题 leftChars=400／节下直挂题型 leftChars=400／讲部下题型 leftChars=800
+    （层级与序号点数一致；题型归属判定按其前最近讲部——题型父号＝其前最近讲部序号即讲部下，
+    否则节下直挂）。只动标题段，正文与题目段落一律不碰（顶格不变）。
+  · 父级节标题（如「2.5」「9.1」二级）与叶节同款挂底纹——恒等式「结构序号底纹 run 数＝节＋讲部＋
+    题型标题总数」，三标题分型以 extract_structure（section/lecture/group）为源。
   · 条目题名行「N．」全角句点起段，与 N.N(.N) 半角点分序号天然不同形——条目号不属本工具口径
     （另由 工具/条目号底纹.py 处置，本工具不碰条目题名行，断言守恒）。
   · 2026-08-29 收编注记：标题段内「标题文字 run 剥遗留底纹」归一（存量整行铺灰形态）；
@@ -30,15 +32,16 @@
   · 已挂（序号独立 run 已 C9C9C9）→ 幂等跳过，仍补加粗（缺才补）；
   · 序号 run 已有其他 fill 底纹 → 报错人工处置（不静默覆盖）；
   · 标题段内其他 run 带 C9C9C9（遗留铺灰）→ 剥除并计数（标题文字无底纹口径）；
-  · 缩进：按类型挂 w:ind leftChars（节摘除；讲部200；题型400/200——深度差＝题型层数−父节层数，
-    ≥2（讲部下题型）→400，否则（直挂/旧手工同深形）→200）；已同值幂等跳过；
+  · 缩进（2026-08-30 梯子）：二级节摘 w:ind／三级节 leftChars=200／讲部 400／
+    题型按其前最近讲部判定归属——讲部下（父号＝最近讲部序号）800、节下直挂 400；
+    已同值幂等跳过；
   · 修改的 w:t 一律置 xml:space="preserve" 防吞空格。
 输出：登记 md（三类型逐处：序号→标题、级别、缩进值、处置）＋stdout 恒等式断言
   （结构序号底纹 run 数＝节数＋讲部数＋题型数＝新挂＋幂等跳过）。
 
 用法: python 节标题序号底纹.py <docx> <登记md>
 """
-import sys, os, re, zipfile, time, copy, tempfile
+import sys, os, re, zipfile, time, copy, tempfile, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from extract_structure import structure   # 注：该模块导入时会自重包 stdout
 from lxml import etree
@@ -54,7 +57,11 @@ SECHEAD_RE = re.compile(r'^(\d+(?:\.\d+){1,6})( ?)')  # 父链续层序号（1..
 ENT_RE = re.compile(r'^\d+．')                         # 条目题名行（全角句点，天然排除）
 LECT_RE = re.compile(r'^\d+(?:\.\d+)*\s*方法讲解[｜|]')
 
-IND_BY_KIND = {'节': None, '讲部': 200}   # 节＝摘除 w:ind；讲部＝200；题型按深度差 400/200
+IND_2SEC = None      # 二级节（N.N）＝清 w:ind 顶格（leftChars=0）
+IND_3SEC = 200       # 三级节（N.N.N）＝2字符
+IND_LECT = 400       # 讲部标题＝4字符
+IND_GRP_DIRECT = 400 # 节下直挂题型＝4字符
+IND_GRP_LECT = 800   # 讲部下题型＝8字符
 
 def para_runs(p):
     return [c for c in p if tag(c) == 'r']
@@ -192,18 +199,15 @@ def set_indent(p, left_chars):
         ppr.append(ind)
     return None, True
 
-def indent_for(kind, num, cur_secnum, warns):
-    """按类型与序号深度算缩进字符数：节=None（顶格）；讲部=200；题型=400/200。"""
+def indent_for(kind, num, last_lecture):
+    """2026-08-30 缩进梯子（按号深区分＋加倍）：二级节=None（清ind顶格）；三级节=200；
+    讲部=400；题型按其前最近讲部判定归属——父号＝最近讲部序号→讲部下800，否则节下直挂400。"""
     if kind == '节':
-        return None
+        return IND_2SEC if num.count('.') == 1 else IND_3SEC
     if kind == '讲部':
-        return 200
-    d = num.count('.') + 1
-    if cur_secnum:
-        diff = d - (cur_secnum.count('.') + 1)
-        if diff >= 2:
-            return 400          # 讲部下题型（父号.j：深度＝父节＋2）
-    return 200                  # 节下直挂（＋1）或旧手工编号（＋0）——均按直挂 2 字符
+        return IND_LECT
+    parent = num.rsplit('.', 1)[0]
+    return IND_GRP_LECT if (last_lecture is not None and parent == last_lecture) else IND_GRP_DIRECT
 
 def main(path, regmd):
     z = zipfile.ZipFile(path)
@@ -230,21 +234,23 @@ def main(path, regmd):
 
     body = doc.find(q('body'))
     els = list(body)
-    secnums = [num for _, k, num, _ in heads if k == '节']
 
     rows = []
     n_new = n_already = n_strip = n_bold = 0
     ind_changes = []
-    cur_secnum = None
+    last_lecture = None   # 题型归属判定锚：其前最近讲部序号
     for eli, kind, num, numlen in heads:
         p = els[eli]
         full = ''.join(t.text or '' for t in p.iter(q('t')))
         m = SECHEAD_RE.match(full)
         assert m and m.group(1) == num, '标题序号复检不一致: %r' % full[:30]
         if kind == '节':
-            cur_secnum = num
-        level = '父级' if kind == '节' and any(sn != num and sn.startswith(num + '.') for sn in secnums) else \
-                ('叶级' if kind == '节' else kind)
+            level = '二级' if num.count('.') == 1 else '三级'
+        elif kind == '讲部':
+            level = '讲部'
+        else:
+            level = '讲部下' if (last_lecture is not None
+                                 and num.rsplit('.', 1)[0] == last_lecture) else '直挂'
         target, shd_added, bold_added, rt = isolate_and_shade(p, numlen)
         assert SECTNUM_RE.match(rt), '序号run文本形态异常: %r' % rt
         n_new += (1 if shd_added else 0)
@@ -260,11 +266,13 @@ def main(path, regmd):
                 shd.getparent().remove(shd)
                 stripped += 1
         n_strip += stripped
-        # 缩进挂载（幂等）
-        chars = indent_for(kind, num, cur_secnum if kind != '节' else None, None)
+        # 缩进挂载（2026-08-30 梯子：二级节0/三级节200/讲部400/直挂题型400/讲部下题型800，幂等）
+        chars = indent_for(kind, num, last_lecture)
         oldind, ind_chg = set_indent(p, chars)
         if ind_chg:
             ind_changes.append((kind, num, oldind, chars))
+        if kind == '讲部':
+            last_lecture = num
         title = full[len(m.group(0)):].strip() or full.strip()
         rows.append((kind, num, level, title, rt, shd_added, bold_added, stripped, oldind, chars))
 
@@ -306,8 +314,9 @@ def main(path, regmd):
     lines = []
     lines.append('# 结构序号底纹＋标题缩进登记 — %s' % os.path.basename(path))
     lines.append('')
-    lines.append('轮次：成书形态回扫轮 2026-08-29（公共规则§7结构序号底纹——节·讲部·题型三标题同族＋')
-    lines.append('标题层级缩进：节顶格/讲部2字符/题型4字符（直挂2字符），只动标题段正文顶格不变；')
+    lines.append('轮次：0830拍板执行轮 2026-08-30（公共规则§7结构序号底纹——节·讲部·题型三标题同族＋')
+    lines.append('标题缩进梯子〔2026-08-30拍板加倍〕：二级节0（清ind）/三级节200/讲部400/')
+    lines.append('节下直挂题型400/讲部下题型800（归属按其前最近讲部），只动标题段正文顶格不变；')
     lines.append('恒等式＝结构序号底纹 run 数＝节数＋讲部数＋题型数；结构锚加粗、底纹只盖序号')
     lines.append('含尾随半角空格、不盖标题文字；条目号「N．」不属本口径不碰；幂等可重跑）')
     lines.append('')
@@ -317,6 +326,13 @@ def main(path, regmd):
                  % (n_heads, n_by['节'], n_by['讲部'], n_by['题型'], n_new, n_already, n_bold,
                     n_strip, len(ind_changes), total_shaded,
                     '成立' if ok else '不成立!!', ent_before, ent_after))
+    # 缩进梯子实测分布（2026-08-30）
+    lad = collections.Counter()
+    for kind, num, level, title, rt, sa, ba, st_, oldind, chars in rows:
+        lad[(kind, level, '顶格(清ind)' if chars is None else str(chars))] += 1
+    lines.append('')
+    lines.append('缩进梯子实测（leftChars值×段数）：' + '｜'.join(
+        '%s·%s %s×%d' % (k, lv, v, n) for (k, lv, v), n in sorted(lad.items())))
     lines.append('')
     lines.append('| 类型 | 序号 | 级别 | 标题 | 序号run | 缩进 | 处置 |')
     lines.append('|---|---|---|---|---|---|---|')
@@ -344,6 +360,8 @@ def main(path, regmd):
           % (n_heads, n_by['节'], n_by['讲部'], n_by['题型'], n_new, n_already, n_bold, n_strip,
              len(ind_changes), total_shaded, n_heads,
              '成立 PASS' if ok else '不成立 CHECK', ent_before, ent_after))
+    print('缩进梯子实测：' + '｜'.join(
+        '%s·%s %s×%d' % (k, lv, v, n) for (k, lv, v), n in sorted(lad.items())))
     print('登记md -> %s' % regmd)
 
 if __name__ == '__main__':

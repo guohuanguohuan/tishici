@@ -4,8 +4,8 @@
 
 输入：docx＋标题清单JSON（结构代理产出），每标题一项：
     [{"旧文本": "1.1.1 空间向量及其运算：空间向量的概念辨析", "类型": "节|讲部|题型", "新序号": "1.1.1.1",
-      "缩进": 200}, ...]   （「缩进」可选覆盖；缺省按类型：节0＝顶格摘 ind／讲部200／
-      题型＝400（序号深度＝父节＋2，讲部下）或200（＝父节＋1，节下直挂；旧手工同深形亦按直挂））
+      "缩进": 200}, ...]   （「缩进」可选覆盖；缺省按 2026-08-30 缩进梯子：二级节0＝顶格摘 ind／
+      三级节200／讲部400／题型＝800（父号＝其前最近讲部序号，讲部下）或400（节下直挂））
 行为：
   · 逐条匹配正文段（先全文精确匹配，再按「剥前导序号后的标题文字」唯一匹配）；一条恰配一段、
     一段至多一条；
@@ -208,7 +208,7 @@ def renumber(path, js, mapmd):
         assert not BARE_LECT_RE.match(tx), '裸「大招讲解/方法讲解」段残留: b#%d %r' % (i, tx[:30])
     # ⑤ 改写序号＋缩进（记录旧号）
     rows = []
-    cur_sec = None
+    last_lecture = None   # 题型归属判定锚：其前最近讲部序号（2026-08-30 缩进梯子同口径）
     for i, t, p, tx in matched:
         num = t['新序号']
         m = NUM_RE.match(tx)
@@ -219,15 +219,16 @@ def renumber(path, js, mapmd):
         after = ptext(p)
         expect = new_prefix + tx[old_end:]
         assert after == expect, '改写后文本异常: %r != %r' % (after[:40], expect[:40])
-        # 缩进
+        # 缩进（2026-08-30 拍板加倍梯子，与 工具/节标题序号底纹.py 同口径：
+        #   二级节0＝顶格摘ind／三级节200／讲部400／题型按其前最近讲部——讲部下800、节下直挂400）
         if t['类型'] == '节':
-            cur_sec = num
-            ind = 0
+            ind = 0 if num.count('.') == 1 else 200
         elif t['类型'] == '讲部':
-            ind = 200
+            ind = 400
+            last_lecture = num
         else:
-            d = num.count('.') + 1
-            ind = 400 if d - (cur_sec.count('.') + 1) >= 2 else 200
+            ind = 800 if (last_lecture is not None
+                          and num.rsplit('.', 1)[0] == last_lecture) else 400
         if t['缩进'] is not None:
             ind = t['缩进']
         set_indent(p, ind if ind else None)

@@ -61,7 +61,7 @@ def structure(path):
                 j += 1
             block = [items[k]['text'] for k in range(i, j)]
             blk = '\n'.join(block)
-            mno = re.match(r'^(\d+)．(?:（(简单|中档|难)）)?', it['text'])
+            mno = re.match(r'^(\d+)．(?:（((?:简单|中档|难)(?:·(?:保60%|保80%|冲100%)·卡壳看答案)?)）)?', it['text'])
             legacy = re.search(r'【难度】(简单|中档|难|[\d.]+)', blk)
             if mno and ('【答案】' in blk or legacy):
                 diff = mno.group(2) or (legacy.group(1) if legacy else '')

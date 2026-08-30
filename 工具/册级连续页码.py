@@ -7,18 +7,22 @@
 按装订顺序逐件：COM只读实测页数→累计偏移→sectPr写pgNumType start（全册级偏移）→页脚整段落重建：
   【2026-08-29 成书形态拍板文案改版（规格§3.1）】新文案串＝
     「全册第{PAGE}/{Y}页　{件标识}（位于{A}–{B}页·共{N}页）」
-    例「全册第258/357页　第2章·讲练（位于106–141页·共206页）」——
+    例「全册第258/357页　第2章·讲练（位于152–357页·共206页）」——
     X＝PAGE 复杂域唯一自动数（fldChar begin/separate/end＋instrText，缓存结果run刷写为该件首页
-    实测页码＝sectPr start 值）；Y/A–B/N 写死实测值（Y＝册总页数＝各件页数和；A–B＝该件在其部分内
-    起止页；N＝部分总页数；部分内跨件衔接：首件A=1、末件B=N、后件A=前件B+1）；「页」与件标识间
-    全角空格；A–B 用 EN DASH（–，U+2013）；件标识沿用既有页脚文本自动提取（旧串「第X章·件型」）。
+    实测页码＝sectPr start 值）；Y/A–B/N 写死实测值（Y＝册总页数＝各件页数和）。
+  【2026-08-30 用户拍板 A–B 语义改版（公共规则§7两级页码制）】A–B＝该件所在部分的全册起止页
+    （同部分各件同串）：A＝部分首件的全册起始页（＝部分首件 sectPr start）、B＝A＋N−1、
+    N＝部分总页数（部分内页码跨卷连续，部分总页数不变）；同部分各件页脚仅 X（PAGE 域）不同，
+    A–B/N 串完全相同。原「该件在其部分内的起止页（首件A=1、后件A=前件B+1）」口径废止。
+    「页」与件标识间全角空格；A–B 用 EN DASH（–，U+2013）；件标识沿用既有页脚文本自动提取。
   旧文案「件标识　第X页（全册共Y页）·本部位于第a–b页（共c页）」废止——整段重建天然清旧串，
     兼容旧版/新版两种起态，幂等可重跑（重盖时 Y/A–B/N 随新实测值整体重写）。
   机制保留：pgNumType start、settings.xml updateFields（缺失自动补写）、单 PAGE 复杂域、
     无 NUMPAGES/fldSimple 断言、页脚 run 五号宋体/Times New Roman、左对齐段。
 封面/册目录页/使用说明页等配页件不传入即不计页、不被改写（只处理显式传入的件）。任何件内容改动后
 须对所在册重跑本工具（先内容后页码，页码最后盖）。
-沿革：2026-08-26 两级页码制拍板→2026-08-28 文案直白化→2026-08-29 成书形态拍板本文案（旧串废止）。
+沿革：2026-08-26 两级页码制拍板→2026-08-28 文案直白化→2026-08-29 成书形态拍板本文案（旧串废止）
+  →2026-08-30 A–B 改部分全册起止页（同部分各件同串；原件级部分内起止口径废止）。
 """
 import zipfile, re, os, sys
 import win32com.client
@@ -106,7 +110,8 @@ def ensure_update_fields(settings_xml):
     return settings_xml.replace('</w:settings>', ins + '</w:settings>'), True
 
 def rewrite(path, start, total, pa, pb, pn):
-    """start=全册起始页码；total=册总页数；pa/pb=该件在部分内的起/止页；pn=部分总页数。"""
+    """start=全册起始页码；total=册总页数；pa/pb=该件所在部分的全册起止页（同部分各件同串，
+    pa＝部分首件start、pb＝pa＋pn−1）；pn=部分总页数。"""
     with zipfile.ZipFile(path) as z:
         names = z.namelist()
         blob = {n: z.read(n) for n in names}
@@ -127,7 +132,7 @@ def rewrite(path, start, total, pa, pb, pn):
     vis = _visible(ftr2)
     expect_head = '全册第'
     assert vis.startswith(expect_head), '页脚重建后前缀异常: %r' % vis[:20]
-    assert ('（位于%d%s%d页·共%d页）' % (pa, ENDASH, pb, pn)) in vis, '本部区间串缺失'
+    assert ('（位于%d%s%d页·共%d页）' % (pa, ENDASH, pb, pn)) in vis, '部分全册区间串缺失'
     assert '　' + tag + '（位于' in vis, '件标识段形态异常'
     assert 'NUMPAGES' not in ftr2 and 'fldSimple' not in ftr2, '域形态残留 %s' % path
     # settings.xml：updateFields 保障
@@ -171,24 +176,27 @@ def main():
     print(f'== 两级页码盖章：{book}（全册共{total}页，{len(parts)}个部分）==')
     rec = [f'# 两级页码盖章记录 — {book}',
            '',
-           f'盖章时间标记：基线实测（全册共{total}页，{len(parts)}个部分；Y={total}）',
+           f'盖章时间标记：基线实测（全册共{total}页，{len(parts)}个部分；Y={total}；'
+           'A–B＝部分全册起止页·同部分各件同串——2026-08-30改版口径）',
            '',
-           '| 部分 | 件 | 页数 | start（全册起始页码） | 件标识 | A–B（部分内） | N（部分页数） |',
+           '| 部分 | 件 | 页数 | start（全册起始页码） | 件标识 | A–B（部分全册区间） | N（部分页数） |',
            '|---|---|---|---|---|---|---|']
     off = 1
     pit = iter(pages)
     for gi, grp in enumerate(parts, 1):
         gp = [next(pit) for _ in grp]
         pn = sum(gp)
-        poff = 1
+        pa = off            # A＝部分首件的全册起始页（同部分各件同串）
+        pb = pa + pn - 1    # B＝A＋N−1
         for p, pg in zip(grp, gp):
-            tag = rewrite(p, off, total, poff, poff + pg - 1, pn)
-            print(f'  [部{gi}] {os.path.basename(p)[:44]} | {pg}页 | 全册起始页码={off} | {tag}（位于{poff}{ENDASH}{poff+pg-1}页·共{pn}页）')
+            tag = rewrite(p, off, total, pa, pb, pn)
+            print(f'  [部{gi}] {os.path.basename(p)[:44]} | {pg}页 | 全册起始页码={off} | {tag}（位于{pa}{ENDASH}{pb}页·共{pn}页）')
             rec.append('| %d | %s | %d | %d | %s | %d%s%d | %d |'
-                       % (gi, os.path.basename(p), pg, off, tag, poff, ENDASH, poff + pg - 1, pn))
-            off += pg; poff += pg
+                       % (gi, os.path.basename(p), pg, off, tag, pa, ENDASH, pb, pn))
+            off += pg
     rec.append('')
-    rec.append('恒等式：首件 start=1；后件 start=前件（start+页数）；各部分首件 A=1、末件 B=N、后件 A=前件B+1；Y=%d=各件页数和。' % total)
+    rec.append('恒等式：首件 start=1；后件 start=前件（start+页数）；'
+               'A＝部分首件sectPr start、B＝A＋N−1、N＝部分总页数（同部分各件页脚串相同、仅X不同）；Y=%d=各件页数和。' % total)
     if record_md:
         open(record_md, 'w', encoding='utf-8').write('\n'.join(rec) + '\n')
         print('盖章记录 -> %s' % record_md)
