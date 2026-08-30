@@ -3,6 +3,10 @@
 用法：python 全库对齐垃圾图回扫.py scan|fix [--only 目录]
 scan：只列命中不落盘；fix：左对齐规整＋安全垃圾图删除（双阈值＋像素空白核验）＋清理未引用媒体
 范围：高中数学/高中数学同步、高中物理/高中物理同步、大学数学/大学数学同步 的主目录docx（旧体系存档冻结件除外）
+改动登记（2026-08-30，FX4修0，公共规则§5工具升级门＋§7段落条款2026-08-30缩进梯子合法化）：
+  fix模式删除原L88「re.sub(r'<w:ind [^>]*/>','',out)」无条件剥w:ind一行——垃圾图清理职责与缩进无关，
+  w:ind 自2026-08-29/30成书形态拍板起系合法属性（标题缩进梯子＋册目录页层级缩进），fix模式不再剥除任何
+  w:ind；ind 计数仅作 scan 诊断保留。自测：带缩进样本（leftChars=400×8）跑fix断言w:ind零变化。
 """
 import zipfile, re, os, sys, io, shutil, tempfile
 
@@ -84,8 +88,9 @@ def fix_file(path, mode):
     out = xml
     njc = len(JC.findall(out))
     out = JC.sub(r'\1left\2', out)
+    # 2026-08-30 FX4修0：删除原「nind=…; out=re.sub(r'<w:ind [^>]*/>','',out)」剥w:ind逻辑——
+    # w:ind 系2026-08-29/30拍板后合法属性（标题缩进梯子/册目录页层级缩进），fix模式一律保留。
     nind = len(re.findall(r'<w:ind [^>]*/>', out))
-    out = re.sub(r'<w:ind [^>]*/>', '', out)
     # 删除垃圾图所在 run（含drawing的整个w:r）
     ng = 0
     for rid in bad:
@@ -127,7 +132,7 @@ def main():
     for f in files():
         jc, ind, wpg, bad, ng = fix_file(f, mode)
         if jc or ind or wpg or bad:
-            print(f'{os.path.basename(f)[:40]} | jc非左:{jc} ind:{ind} wpg组:{wpg} 垃圾图:{bad}' + (f' 已删run:{ng}' if mode == 'fix' else ''))
+            print(f'{os.path.basename(f)[:40]} | jc非左:{jc} ind计数(不剥除):{ind} wpg组:{wpg} 垃圾图:{bad}' + (f' 已删run:{ng}' if mode == 'fix' else ''))
         total['jc'] = total.get('jc', 0) + jc
         total['ind'] = total.get('ind', 0) + ind
         total['wpg'] = total.get('wpg', 0) + wpg
