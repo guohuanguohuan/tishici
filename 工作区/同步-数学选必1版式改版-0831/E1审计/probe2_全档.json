@@ -1,0 +1,172 @@
+{
+ "X1": {
+  "run_shd_all": {
+   "C9C9C9": 239
+  },
+  "para_line_all": {
+   "410": 132,
+   "280": 141,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 0,
+  "t21_texts": []
+ },
+ "I1": {
+  "run_shd_all": {
+   "C9C9C9": 237
+  },
+  "para_line_all": {
+   "410": 325,
+   "280": 57,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 14,
+  "t21_texts": []
+ },
+ "B": {
+  "run_shd_all": {
+   "C9C9C9": 664
+  },
+  "para_line_all": {
+   "410": 273,
+   "280": 857,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 1,
+  "t21_texts": []
+ },
+ "C": {
+  "run_shd_all": {
+   "C9C9C9": 715
+  },
+  "para_line_all": {
+   "410": 300,
+   "280": 782,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 0,
+  "t21_texts": []
+ },
+ "X2": {
+  "run_shd_all": {
+   "C9C9C9": 98
+  },
+  "para_line_all": {
+   "410": 37,
+   "280": 50,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 0,
+  "t21_texts": []
+ },
+ "I2": {
+  "run_shd_all": {
+   "C9C9C9": 750
+  },
+  "para_line_all": {
+   "410": 771,
+   "280": 89,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 15,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 65,
+  "t21_texts": []
+ },
+ "E": {
+  "run_shd_all": {
+   "C9C9C9": 756
+  },
+  "para_line_all": {
+   "410": 263,
+   "280": 854,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 75,
+  "t21_texts": []
+ },
+ "F": {
+  "run_shd_all": {
+   "C9C9C9": 720
+  },
+  "para_line_all": {
+   "410": 279,
+   "280": 788,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 0,
+  "t21_texts": []
+ },
+ "G": {
+  "run_shd_all": {
+   "C9C9C9": 555
+  },
+  "para_line_all": {
+   "410": 195,
+   "280": 568,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 42,
+  "t21_texts": []
+ },
+ "H": {
+  "run_shd_all": {
+   "C9C9C9": 795
+  },
+  "para_line_all": {
+   "410": 365,
+   "280": 927,
+   "other": 0
+  },
+  "ind_all": 0,
+  "oMathPara_standalone": 0,
+  "footer_jc": [
+   "left"
+  ],
+  "n21": 69,
+  "t21_texts": []
+ }
+}

@@ -1,0 +1,443 @@
+{
+ "封面": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": true,
+  "core_title": "人教B版选必1·封面",
+  "五要素": {
+   "高中同步讲练": true,
+   "人教B版选必1": true,
+   "数　学": true,
+   "版次：2026年08月": true,
+   "内部资料·仅供教学使用": true
+  },
+  "段数": 19
+ },
+ "使用说明": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": true,
+  "core_title": "人教B版选必1·使用说明",
+  "三要素关键词": {
+   "（档位·提分线·卡壳看答案）": false,
+   "卡壳超过10分钟": true,
+   "遮住答案重做": true,
+   "装订组合": true,
+   "方案A": true,
+   "方案B": true,
+   "方案C": true,
+   "〔基〕＝基础必会": true,
+   "〔进〕＝进阶汇总": true,
+   "衔接件": true,
+   "部分封面": true
+  },
+  "段数": 26,
+  "式样_题号块1．": {
+   "text": "1．",
+   "shd": "C9C9C9",
+   "color": null,
+   "sz": "24",
+   "b": true
+  },
+  "式样_答案值": {
+   "text": "（简单·保60%·卡壳看答案）",
+   "shd": null,
+   "color": null,
+   "sz": "24",
+   "b": true
+  },
+  "pBdr段数": 2
+ },
+ "错题1": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": true,
+  "core_title": "人教B版选必1·错题记录（第1章 空间向量与立体几何）",
+  "表头": [
+   "题号",
+   "错因",
+   "重做日期"
+  ],
+  "空行数(题号列空)": 40,
+  "题号列非空行": 1,
+  "示例行": true,
+  "提醒句底纹": [
+   "C9C9C9"
+  ],
+  "表格行总数": 42
+ },
+ "错题2": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": true,
+  "core_title": "人教B版选必1·错题记录（第2章 平面解析几何）",
+  "表头": [
+   "题号",
+   "错因",
+   "重做日期"
+  ],
+  "空行数(题号列空)": 40,
+  "题号列非空行": 1,
+  "示例行": true,
+  "提醒句底纹": [
+   "C9C9C9"
+  ],
+  "表格行总数": 42
+ },
+ "部分封面_第1章 空间向量与立体几何·衔接）.docx": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": false,
+  "core_title": "人教B版选必1·部分封面（第1章 空间向量与立体几何·衔接）",
+  "要素": {
+   "羿郭工作室": true,
+   "人教B版选必1": true,
+   "衔接": true,
+   "清单": true,
+   "讲练": true,
+   "【编注】": true,
+   "题": true,
+   "条": false
+  },
+  "大章号": true,
+  "inline图": 1,
+  "anchor": 0,
+  "统计行": "衔接29题·全部必会【编注】本部分为第1章衔接，共29题、全部必会——逐题过关后，再进入本章知识清单与讲练"
+ },
+ "部分封面_第1章 空间向量与立体几何·清单）.docx": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": false,
+  "core_title": "人教B版选必1·部分封面（第1章 空间向量与立体几何·清单）",
+  "要素": {
+   "羿郭工作室": true,
+   "人教B版选必1": true,
+   "衔接": false,
+   "清单": true,
+   "讲练": false,
+   "【编注】": true,
+   "题": true,
+   "条": true
+  },
+  "大章号": true,
+  "inline图": 1,
+  "anchor": 0,
+  "统计行": "47条〔基33·进14〕"
+ },
+ "部分封面_第1章 空间向量与立体几何·讲练）.docx": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": false,
+  "core_title": "人教B版选必1·部分封面（第1章 空间向量与立体几何·讲练）",
+  "要素": {
+   "羿郭工作室": true,
+   "人教B版选必1": true,
+   "衔接": false,
+   "清单": false,
+   "讲练": true,
+   "【编注】": true,
+   "题": true,
+   "条": false
+  },
+  "大章号": true,
+  "inline图": 1,
+  "anchor": 0,
+  "统计行": "140题：简单21｜中档104｜难15"
+ },
+ "部分封面_第2章 平面解析几何·衔接）.docx": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": false,
+  "core_title": "人教B版选必1·部分封面（第2章 平面解析几何·衔接）",
+  "要素": {
+   "羿郭工作室": true,
+   "人教B版选必1": true,
+   "衔接": true,
+   "清单": true,
+   "讲练": true,
+   "【编注】": true,
+   "题": true,
+   "条": false
+  },
+  "大章号": true,
+  "inline图": 1,
+  "anchor": 0,
+  "统计行": "衔接13题·全部必会【编注】本部分为第2章衔接，共13题、全部必会——逐题过关后，再进入本章知识清单与讲练"
+ },
+ "部分封面_第2章 平面解析几何·清单）.docx": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": false,
+  "core_title": "人教B版选必1·部分封面（第2章 平面解析几何·清单）",
+  "要素": {
+   "羿郭工作室": true,
+   "人教B版选必1": true,
+   "衔接": false,
+   "清单": true,
+   "讲练": false,
+   "【编注】": true,
+   "题": true,
+   "条": true
+  },
+  "大章号": true,
+  "inline图": 1,
+  "anchor": 0,
+  "统计行": "67条〔基38·进29〕"
+ },
+ "部分封面_第2章 平面解析几何·讲练）.docx": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 0,
+  "updateFields": false,
+  "core_title": "人教B版选必1·部分封面（第2章 平面解析几何·讲练）",
+  "要素": {
+   "羿郭工作室": true,
+   "人教B版选必1": true,
+   "衔接": false,
+   "清单": false,
+   "讲练": true,
+   "【编注】": true,
+   "题": true,
+   "条": false
+  },
+  "大章号": true,
+  "inline图": 1,
+  "anchor": 0,
+  "统计行": "339题：简单47｜中档246｜难46"
+ },
+ "册目录页": {
+  "pgSz": [
+   "11906",
+   "16838"
+  ],
+  "pgMar": {
+   "top": "850",
+   "right": "850",
+   "bottom": "850",
+   "left": "850",
+   "header": "850",
+   "footer": "850",
+   "gutter": "0"
+  },
+  "headerParts": [],
+  "footerParts": [],
+  "headerRefs": 0,
+  "footerRefs": 0,
+  "nonleft_paras": 0,
+  "w_ind_nonzero": 31,
+  "updateFields": true,
+  "core_title": "人教B版选必1·册目录页",
+  "段数": 35,
+  "缩进分布": {
+   "None": 4,
+   "420": 6,
+   "840": 25
+  },
+  "页码列": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "6",
+   "11",
+   "16",
+   "24",
+   "32",
+   "45",
+   "79",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "4",
+   "9",
+   "15",
+   "20",
+   "28",
+   "30",
+   "48",
+   "52",
+   "64",
+   "78",
+   "99",
+   "105",
+   "114",
+   "124",
+   "135"
+  ],
+  "assert_缩进420": 6,
+  "assert_缩进840": 25
+ }
+}

@@ -1,0 +1,183 @@
+{
+ "file": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx",
+ "sectPr_starts": [
+  "1"
+ ],
+ "pgSz": [
+  "11906",
+  "16838"
+ ],
+ "pgMar": {
+  "top": "850",
+  "right": "850",
+  "bottom": "850",
+  "left": "850",
+  "header": "283",
+  "footer": "850",
+  "gutter": "0"
+ },
+ "titlePg": false,
+ "footer_refs": [
+  "footer1.xml"
+ ],
+ "footers": [
+  {
+   "part": "word/footer1.xml",
+   "fldChar_kinds": [
+    "begin",
+    "separate",
+    "end"
+   ],
+   "instrText": [
+    " PAGE "
+   ],
+   "fldSimple": 0,
+   "NUMPAGES": false,
+   "text": "第1章·衔接（共20页）　第1页",
+   "sz_vals": [
+    "18"
+   ],
+   "jc": [
+    null
+   ],
+   "fonts": [
+    "Times New Roman"
+   ]
+  }
+ ],
+ "updateFields": true,
+ "evenAndOddHeaders": false,
+ "sz_hist": {
+  "18": 1112,
+  "24": 550,
+  "32": 13,
+  "28": 4
+ },
+ "sz_samples": {
+  "24": [
+   "初中要求",
+   "1",
+   "了解比例的基本性质、线段的比、成比例的线段；通过建筑、艺术上的实例了解黄金分割",
+   ".2",
+   "掌握基本事实：两条直线被一组平行线所截，所得的对应线段成比例",
+   ";",
+   "3",
+   "了解相似三角形的判定定理：两角分别相等的两个三角形相似；",
+   "两边成比例且夹角相等的两个三角形相似；三边成比例的两个三角形相似",
+   ".",
+   "了解相似三角形判定定理的证明",
+   "."
+  ],
+  "18": [
+   "【答案】",
+   "3/7",
+   "【知识点】",
+   "1.2.1 ",
+   "平行线分线段成比例定理、相似三角形的判定与性质",
+   "【编注】",
+   "【分析】",
+   "过点",
+   "作",
+   "交",
+   "于",
+   "，由平行线分线段成比例把"
+  ],
+  "28": [
+   "1.2.1 ",
+   "空间中的点、直线与空间向量",
+   "1.2.5 ",
+   "空间中的距离"
+  ],
+  "32": [
+   "人教",
+   "B",
+   "版选必",
+   "1 ",
+   "第",
+   "1",
+   "章",
+   "空间向量与立体几何",
+   "·",
+   "衔接件（",
+   "29",
+   "题）"
+  ]
+ },
+ "spacing_hist": {
+  "('410', 'atLeast')": 132,
+  "('280', 'atLeast')": 141
+ },
+ "body_para_count": 263,
+ "para_shading": {
+  "ADC2DA": 3,
+  "C6D4E3": 5
+ },
+ "qblock": {
+  "count": 29,
+  "shaded_N_only": 29,
+  "ann_unshaded": 29,
+  "bad": []
+ },
+ "run_shading": {
+  "C9C9C9": 239
+ },
+ "entry_shaded_unbold": 9,
+ "chip_runs": 129,
+ "blue_runs_nodes": 136,
+ "other_colors": {},
+ "body_ind_paras": 0,
+ "anchor": 0,
+ "inline": 57,
+ "oMath": 877,
+ "oMathPara": 0,
+ "w_ins": 0,
+ "w_del": 0,
+ "strike": 0,
+ "highlight": 0,
+ "pageBreakBefore": 0,
+ "keepNext": 0,
+ "w_br": 0,
+ "docDefaults": {
+  "sz": "24",
+  "ascii": "Times New Roman",
+  "eastAsia": "宋体",
+  "themeFont": false,
+  "pPr_spacing": {
+   "line": "410",
+   "lineRule": "atLeast",
+   "before": "0",
+   "after": "0"
+  }
+ },
+ "docGrid": {
+  "linePitch": "312"
+ },
+ "para_line": {
+  "410": 122,
+  "280": 141,
+  "other": 0
+ },
+ "fullwidth_blank_pairs": 0,
+ "formula_samples": [
+  {
+   "idx": 5,
+   "wtext": "若，则.",
+   "math": "l1//l2//l3 ‖ ABBC=DEEF"
+  },
+  {
+   "idx": 74,
+   "wtext": "点拨 本题求比值设求解简便些，也可采取相似三角形.",
+   "math": "AC=3"
+  },
+  {
+   "idx": 135,
+   "wtext": "【答案】 ； 【知识点】1.2.1 图形的性质",
+   "math": "553 ‖ 1813"
+  },
+  {
+   "idx": 208,
+   "wtext": "【编注】【分析】(1）作边上的高，由勾股定理求及面积，再用等积法求边上的高；(2）把三角形面积拆成以为顶点、以三边为底的三个小三角形面积之和求内切圆半径；(3）",
+   "math": "BC ‖ AD ‖ AD ‖ AC ‖ BE ‖ I ‖ r ‖ O ‖ AD ‖ Rt△OBD ‖ OB2=BD2+OD2 ‖ R"
+  }
+ ]
+}

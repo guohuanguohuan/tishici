@@ -1,0 +1,172 @@
+{
+ "file": "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx",
+ "sectPr_starts": [
+  "135"
+ ],
+ "pgSz": [
+  "11906",
+  "16838"
+ ],
+ "pgMar": {
+  "top": "850",
+  "right": "850",
+  "bottom": "850",
+  "left": "850",
+  "header": "283",
+  "footer": "850",
+  "gutter": "0"
+ },
+ "titlePg": false,
+ "footer_refs": [
+  "footer1.xml"
+ ],
+ "footers": [
+  {
+   "part": "word/footer1.xml",
+   "fldChar_kinds": [
+    "begin",
+    "separate",
+    "end"
+   ],
+   "instrText": [
+    " PAGE "
+   ],
+   "fldSimple": 0,
+   "NUMPAGES": false,
+   "text": "第2章·讲练（共197页）　第135页",
+   "sz_vals": [
+    "18"
+   ],
+   "jc": [
+    null
+   ],
+   "fonts": [
+    "Times New Roman"
+   ]
+  }
+ ],
+ "updateFields": true,
+ "evenAndOddHeaders": false,
+ "sz_hist": {
+  "18": 6067,
+  "24": 3146,
+  "21": 69,
+  "28": 2,
+  "32": 1
+ },
+ "sz_samples": {
+  "24": [
+   "2.8.1 ",
+   "直线与圆锥曲线的位置关系：位置关系判定（椭圆）",
+   "251．",
+   "（简单·保60%·卡壳看答案）",
+   "直线y＝x＋1与椭圆x2＋＝1的位置关系是（    ）",
+   "A",
+   "．相离",
+   "；",
+   "B",
+   "．相切",
+   "；",
+   "C"
+  ],
+  "18": [
+   "本节89题：简单5｜中档75｜难9",
+   "【编注】",
+   "题型通式：识别信号——题干给出直线与椭圆（或抛物线）的方程，要求判定位置关系、公",
+   "【编注】",
+   "【分析】",
+   "判断直线与椭圆位置关系：联立消元得3x²＋2x−1＝0，由判别式Δ＝16＞0知有",
+   "【答案】",
+   "C",
+   "【知识点】",
+   "2.8 ",
+   "讨论椭圆与直线的位置关系",
+   "【详解】"
+  ],
+  "28": [
+   "2.8 ",
+   "直线与圆锥曲线的位置关系（第251—339题）"
+  ],
+  "32": [
+   "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）"
+  ]
+ },
+ "spacing_hist": {
+  "('410', 'atLeast')": 365,
+  "('280', 'atLeast')": 927
+ },
+ "body_para_count": 1270,
+ "para_shading": {
+  "ADC2DA": 2,
+  "C6D4E3": 73
+ },
+ "qblock": {
+  "count": 89,
+  "shaded_N_only": 89,
+  "ann_unshaded": 89,
+  "bad": []
+ },
+ "run_shading": {
+  "C9C9C9": 795
+ },
+ "entry_shaded_unbold": 4,
+ "chip_runs": 506,
+ "blue_runs_nodes": 608,
+ "other_colors": {},
+ "body_ind_paras": 0,
+ "anchor": 0,
+ "inline": 69,
+ "oMath": 3511,
+ "oMathPara": 674,
+ "w_ins": 0,
+ "w_del": 0,
+ "strike": 0,
+ "highlight": 0,
+ "pageBreakBefore": 0,
+ "keepNext": 0,
+ "w_br": 0,
+ "docDefaults": {
+  "sz": "24",
+  "ascii": "Times New Roman",
+  "eastAsia": "宋体",
+  "themeFont": false,
+  "pPr_spacing": {
+   "before": "0",
+   "after": "0",
+   "line": "410",
+   "lineRule": "atLeast"
+  }
+ },
+ "docGrid": {
+  "linePitch": "360",
+  "type": "default"
+ },
+ "para_line": {
+  "410": 343,
+  "280": 927,
+  "other": 0
+ },
+ "fullwidth_blank_pairs": 0,
+ "formula_samples": [
+  {
+   "idx": 4,
+   "wtext": "251．（简单·保60%·卡壳看答案）直线y＝x＋1与椭圆x2＋＝1的位置关系是（    ）",
+   "math": "y22"
+  },
+  {
+   "idx": 386,
+   "wtext": "所以直线：，整理得，所以直线恒过定点.",
+   "math": "AB ‖ y-4t2-t+1=4tx-t ‖ y-1=4tx-14 ‖ AB ‖ P14,1"
+  },
+  {
+   "idx": 716,
+   "wtext": "两个等式作差得，整理可得，",
+   "math": "x12-x22a2+y12-y22b2=0 ‖ y12-y22x12-x22=-b2a2"
+  },
+  {
+   "idx": 1009,
+   "wtext": "【详解】(1)由题意得，解得所以双曲线C的方程为．",
+   "math": "4a2−9b2=1ba=3 ‖ a2=1,b2=3. ‖ x2−y23=1"
+  }
+ ]
+}

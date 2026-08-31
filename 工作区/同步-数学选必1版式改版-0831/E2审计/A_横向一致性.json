@@ -1,0 +1,1129 @@
+{
+ "X1": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "1",
+    "docGrid": {
+     "linePitch": "312"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【答案】": 29,
+   "【知识点】": 29,
+   "【分析】": 29,
+   "【详解】": 29,
+   "【点睛】": 1,
+   "【编注】": 12
+  },
+  "qnum_3seg": 0,
+  "qnum_2seg": 29,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 3,
+  "shd_C6D4E3": 5,
+  "shd_C9C9C9": 322,
+  "color_1F4E79": 136,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 57,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第1章·衔接（共20页）　第 PAGE 1页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "eastAsia": "宋体",
+     "hAnsi": "Times New Roman",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "line": "410",
+     "lineRule": "atLeast",
+     "before": "0",
+     "after": "0"
+    }
+   },
+   "default_para_styleId": [
+    "a"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 55
+ },
+ "I1": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "1",
+    "docGrid": {
+     "type": "default",
+     "linePitch": "312"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【编注】": 52,
+   "【定理】": 2,
+   "【拓展】": 1
+  },
+  "qnum_3seg": 0,
+  "qnum_2seg": 0,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 11,
+  "shd_C6D4E3": 0,
+  "shd_C9C9C9": 894,
+  "color_1F4E79": 729,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 30,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第1章·清单（共20页）　第 PAGE 1页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "hAnsi": "Times New Roman",
+     "eastAsia": "宋体",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    }
+   },
+   "default_para_styleId": [
+    "a"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 30
+ },
+ "B": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "1",
+    "docGrid": {
+     "type": "default",
+     "linePitch": "312"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【答案】": 61,
+   "【知识点】": 61,
+   "【分析】": 67,
+   "【详解】": 61,
+   "【点睛】": 21,
+   "【编注】": 60,
+   "【大招指引】": 1,
+   "【题后反思】": 2,
+   "【温馨提醒】": 1,
+   "【定义】": 1
+  },
+  "qnum_3seg": 61,
+  "qnum_2seg": 0,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 10,
+  "shd_C6D4E3": 52,
+  "shd_C9C9C9": 902,
+  "color_1F4E79": 396,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 126,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第1章·讲练（共156页）　第 PAGE 1页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "hAnsi": "Times New Roman",
+     "eastAsia": "宋体",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    }
+   },
+   "default_para_styleId": [
+    "a"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 113
+ },
+ "C": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "79",
+    "docGrid": {
+     "type": "default",
+     "linePitch": "312"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【答案】": 79,
+   "【知识点】": 79,
+   "【分析】": 81,
+   "【详解】": 79,
+   "【点睛】": 11,
+   "【编注】": 96,
+   "【大招指引】": 10,
+   "【题后反思】": 7,
+   "【温馨提醒】": 6
+  },
+  "qnum_3seg": 79,
+  "qnum_2seg": 0,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 2,
+  "shd_C6D4E3": 75,
+  "shd_C9C9C9": 883,
+  "color_1F4E79": 258,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 165,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第1章·讲练（共156页）　第 PAGE 79页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "hAnsi": "Times New Roman",
+     "eastAsia": "宋体",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    }
+   },
+   "default_para_styleId": [
+    "a"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 156
+ },
+ "X2": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "1",
+    "docGrid": null,
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【答案】": 13,
+   "【知识点】": 13,
+   "【分析】": 13,
+   "【详解】": 7,
+   "【编注】": 6
+  },
+  "qnum_3seg": 0,
+  "qnum_2seg": 13,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 2,
+  "shd_C6D4E3": 8,
+  "shd_C9C9C9": 243,
+  "color_1F4E79": 173,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 0,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第2章·衔接（共4页）　第 PAGE 1页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "eastAsia": "宋体",
+     "hAnsi": "Times New Roman",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    },
+    "jc": "left"
+   },
+   "default_para_styleId": [
+    "a"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 0
+ },
+ "I2": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "1",
+    "docGrid": {
+     "linePitch": "360"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【编注】": 71,
+   "【结论】": 4,
+   "【注】": 3
+  },
+  "qnum_3seg": 0,
+  "qnum_2seg": 0,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 21,
+  "shd_C6D4E3": 0,
+  "shd_C9C9C9": 836,
+  "color_1F4E79": 742,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 73,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第2章·清单（共40页）　第 PAGE 1页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "hAnsi": "Times New Roman",
+     "eastAsia": "宋体",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    }
+   },
+   "default_para_styleId": [
+    "a1"
+   ],
+   "heading3": {
+    "styleId": "31",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 73
+ },
+ "E": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "1",
+    "docGrid": {
+     "linePitch": "360"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【答案】": 92,
+   "【知识点】": 92,
+   "【分析】": 92,
+   "【详解】": 92,
+   "【点睛】": 30,
+   "【编注】": 78,
+   "【大招指引】": 10,
+   "【题后反思】": 11,
+   "【温馨提醒】": 10
+  },
+  "qnum_3seg": 92,
+  "qnum_2seg": 0,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 10,
+  "shd_C6D4E3": 68,
+  "shd_C9C9C9": 1110,
+  "color_1F4E79": 509,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 75,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第2章·讲练（共197页）　第 PAGE 1页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "hAnsi": "Times New Roman",
+     "eastAsia": "宋体",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    }
+   },
+   "default_para_styleId": [
+    "Normal"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 70
+ },
+ "F": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "48",
+    "docGrid": {
+     "linePitch": "360",
+     "type": "default"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【答案】": 90,
+   "【知识点】": 90,
+   "【分析】": 90,
+   "【详解】": 90,
+   "【点睛】": 20,
+   "【编注】": 76,
+   "【大招指引】": 11,
+   "【题后反思】": 11,
+   "【温馨提醒】": 11
+  },
+  "qnum_3seg": 90,
+  "qnum_2seg": 0,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 5,
+  "shd_C6D4E3": 69,
+  "shd_C9C9C9": 1195,
+  "color_1F4E79": 604,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 53,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第2章·讲练（共197页）　第 PAGE 48页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "hAnsi": "Times New Roman",
+     "eastAsia": "宋体",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    }
+   },
+   "default_para_styleId": [
+    "Normal"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 51
+ },
+ "G": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "99",
+    "docGrid": {
+     "linePitch": "360",
+     "type": "default"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【答案】": 68,
+   "【知识点】": 68,
+   "【分析】": 71,
+   "【详解】": 68,
+   "【点睛】": 13,
+   "【编注】": 57,
+   "【大招指引】": 5,
+   "【题后反思】": 5,
+   "【温馨提醒】": 5
+  },
+  "qnum_3seg": 68,
+  "qnum_2seg": 0,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 6,
+  "shd_C6D4E3": 52,
+  "shd_C9C9C9": 837,
+  "color_1F4E79": 402,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 42,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第2章·讲练（共197页）　第 PAGE 99页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "hAnsi": "Times New Roman",
+     "eastAsia": "宋体",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    }
+   },
+   "default_para_styleId": [
+    "Normal"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 41
+ },
+ "H": {
+  "sectPrs": [
+   {
+    "pgSz": [
+     "11906",
+     "16838"
+    ],
+    "pgMar": {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    "pgNumType_start": "135",
+    "docGrid": {
+     "linePitch": "360",
+     "type": "default"
+    },
+    "headerRefs": 1,
+    "footerRefs": 1,
+    "titlePg": false
+   }
+  ],
+  "tag_counts": {
+   "【答案】": 89,
+   "【知识点】": 89,
+   "【分析】": 89,
+   "【详解】": 89,
+   "【点睛】": 21,
+   "【编注】": 79,
+   "【大招指引】": 16,
+   "【题后反思】": 16,
+   "【温馨提醒】": 16
+  },
+  "qnum_3seg": 89,
+  "qnum_2seg": 0,
+  "qnum_bare": 0,
+  "shd_ADC2DA": 1,
+  "shd_C6D4E3": 73,
+  "shd_C9C9C9": 1217,
+  "color_1F4E79": 608,
+  "w_ind_nonzero": 0,
+  "w_br": 0,
+  "anchor": 0,
+  "inline": 69,
+  "footers": [
+   {
+    "part": "word/footer1.xml",
+    "instr": [
+     " PAGE "
+    ],
+    "fldchars": [
+     "begin",
+     "separate",
+     "end"
+    ],
+    "fldSimple": 0,
+    "NUMPAGES": 0,
+    "PAGE_fields": 1,
+    "run_szs": [
+     "18"
+    ],
+    "jcs": [
+     "left"
+    ],
+    "text": "第2章·讲练（共197页）　第 PAGE 135页",
+    "shd": 0
+   }
+  ],
+  "styles": {
+   "rPrDefault": {
+    "sz": "24",
+    "rFonts": {
+     "ascii": "Times New Roman",
+     "hAnsi": "Times New Roman",
+     "eastAsia": "宋体",
+     "cs": "Times New Roman"
+    },
+    "b": false
+   },
+   "pPrDefault": {
+    "spacing": {
+     "before": "0",
+     "after": "0",
+     "line": "410",
+     "lineRule": "atLeast"
+    }
+   },
+   "default_para_styleId": [
+    "Normal"
+   ],
+   "heading3": {
+    "styleId": "Heading3",
+    "name": "heading 3",
+    "rPr": {
+     "sz": "28",
+     "rFonts": {
+      "ascii": "Times New Roman",
+      "hAnsi": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman"
+     },
+     "b": true
+    },
+    "pPr": {
+     "jc": "left"
+    }
+   }
+  },
+  "updateFields": true,
+  "zip_members_media": 58
+ }
+}

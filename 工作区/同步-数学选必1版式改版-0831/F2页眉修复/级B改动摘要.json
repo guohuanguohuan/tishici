@@ -1,0 +1,92 @@
+{
+ "X1": {
+  "len_before": 1760,
+  "len_after": 484,
+  "left_kept": "羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·衔接",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "584805a868d604f9"
+ },
+ "I1": {
+  "len_before": 1753,
+  "len_after": 484,
+  "left_kept": "羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·清单",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "301ac991bba64938"
+ },
+ "B": {
+  "len_before": 1753,
+  "len_after": 484,
+  "left_kept": "羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·讲练",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "5b4d95092387f907"
+ },
+ "C": {
+  "len_before": 1763,
+  "len_after": 484,
+  "left_kept": "羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·讲练",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "4059c2f3b767123c"
+ },
+ "X2": {
+  "len_before": 1208,
+  "len_after": 547,
+  "left_kept": "羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "0cc42531205c34f1"
+ },
+ "I2": {
+  "len_before": 1745,
+  "len_after": 481,
+  "left_kept": "羿郭工作室·人教B版选必1 第2章 平面解析几何·清单",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "28812afa40fbabf9"
+ },
+ "E": {
+  "len_before": 1752,
+  "len_after": 481,
+  "left_kept": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "b0c1bcd4a5495c65"
+ },
+ "F": {
+  "len_before": 1762,
+  "len_after": 481,
+  "left_kept": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "d5c5fbb7d8cf48c0"
+ },
+ "G": {
+  "len_before": 1749,
+  "len_after": 481,
+  "left_kept": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "32899a5c3e92d824"
+ },
+ "H": {
+  "len_before": 1765,
+  "len_after": 481,
+  "left_kept": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练",
+  "only_changed": [
+   "word/header1.xml"
+  ],
+  "doc_sha_after": "bd459a08000e02ae"
+ }
+}
