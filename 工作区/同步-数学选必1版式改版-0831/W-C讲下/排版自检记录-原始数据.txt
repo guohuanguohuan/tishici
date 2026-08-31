@@ -1,0 +1,52 @@
+== ① 目录块与标题邻接 ==
+  邻接存疑[33]标题1.2.5.3 方法讲解｜四面体特殊模型与外接球补形（大招1 -> [（详见知识清单1.2.5条目39、40）]
+  邻接存疑[167]标题1.2.5.4 方法讲解｜直棱柱与圆柱的外接球模型（大招11 -> [定义：汉堡模型以“直三棱柱、圆柱”为载体，将不规则几何体放入其中利用公式求解．该]
+  邻接存疑[192]标题1.2.5.6 方法讲解｜面面垂直的外接球切瓜模型（大招12 -> [切瓜模型是有一侧面垂直底面的棱锥型，常见的是两个互相垂直的面都是特殊三角形且平面]
+  邻接存疑[214]标题1.2.5.7 方法讲解｜外接球折叠与双外心模型（大招13· -> [（详见知识清单1.2.5条目46）]
+  邻接存疑[828]标题1.2.5.31 方法讲解｜动点轨迹的确定（大招4·动点轨迹 -> [确定动点轨迹的两个方法]
+标题邻接存疑段=5（0=过）｜文内开头标题后首个标题=节1.2.5（挂靠链=1层，合规）
+题块序列：起62 终140 数79 断点0 重复0（62..140=79 过）
+标题总数=76（含文内开头标题与节标题=2；讲部+题型=74）
+== ③ 空行 ==
+纯空段=0｜连续空段对=0（题间空行应为0）
+== ④ 原卷栏目残留 ==
+栏目名残留=0（空=0过；「大招N·」在讲部标题括注内合法）
+== ⑤ 页脚/页眉/页面（XML级） ==
+footer部件数=1
+  word/footer1.xml: instrText=[' PAGE '] fldSimple=0 jc=['left']
+  word/header1.xml: 文本='羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·讲练1.2.5 空间中的距离（第62—140题）' STYLEREF域=[' STYLEREF "标题 3" ']
+pgSz=11906x16838 pgMar(top=850 bottom=850 left=850 right=850 header=283 footer=850 gutter=0)
+settings updateFields=True
+== ⑥ 样式残留与禁排属性 ==
+  w:ins=0
+  w:del=0
+  strike=0
+  highlight=0
+  colorFF0000=0
+  非自动色run=258
+  pageBreakBefore=0
+  keepNext=0
+  keepLines=0
+  手动分页br=0
+  w:br文本换行=0
+== ⑦ 序号链 ==
+序号链清单已输出（逐项过目：见下）
+  1.2.5 SECT
+  1.2.5.1 TYPE
+  1.2.5.2 TYPE
+  1.2.5.3 LECT
+  1.2.5.3.1 TYPE
+  1.2.5.3.2 TYPE
+  1.2.5.33 TYPE
+  1.2.5.34 TYPE
+  1.2.5.35 TYPE
+  1.2.5.36 TYPE
+  …共76项（人工过目断号：题型父链一致性与跳号核对见报告）
+== ⑧ 格式继承 ==
+rPrDefault: fonts={'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii': 'Times New Roman', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi': 'Times New Roman', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia': '宋体', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}cs': 'Times New Roman'} sz=24
+pPrDefault: spacing={'{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before': '0', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after': '0', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line': '410', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule': 'atLeast'}
+docGrid=<w:docGrid w:type="default" w:linePitch="312"/>（须非lines）
+run显式sz分计: {'18': 5461, '24': 2287, '28': 3, '32': 1}
+段落spacing分计: {('410', 'atLeast'): 300, ('280', 'atLeast'): 782}｜无spacing段=0（pPrDefault兜底）
+深蓝#1F4E79：文字run=90＋OMML等=168（合计XML计数=258）
+== §12 == 文件大小=5.3MB（<50MB免媒体审计）

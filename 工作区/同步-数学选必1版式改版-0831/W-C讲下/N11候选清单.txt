@@ -1,0 +1,205 @@
+=== STEM枚举组 ===
+zone=STEM start行6 数量1
+   [6]  len=15 obj=False A．3；B．2；C．6；D．6
+zone=STEM start行13 数量2
+   [13]  len=15 obj=False (1)求点N到直线AB的距离；
+   [14]  len=17 obj=False (2)求点C1到平面ABN的距离.
+zone=STEM start行28 数量1
+   [28]  len=21 obj=False (2)二面角F-AD-E的平面角的正切值．
+zone=STEM start行42 数量4
+   [42]  len=99 obj=False ①一顶点引出的三条棱两两垂直的三棱锥（因为形状像墙角，又称墙角模型）：如下图所示，可以补形成长方体．若SA=a，SB=b
+   [44]  len=99 obj=False ②底面为直角三角形，侧棱垂直于底面，垂足为三角形的非直角顶点的三棱锥（核心是SC与CA与AB垂直）：如下图所示，可以补形
+   [46]  len=100 obj=False ③对棱相等的三棱锥：如下图所示，可以把对棱作为长方体相对的两个面的面对角线，进而补形成长方体．若AB=CD=a，BC=A
+   [48]  len=96 obj=False ④顶点在底面的投影恰与底面三个顶点构成长方形的三棱锥：如下图所示，也可以补形成长方体，求出长方体的外接球半径即可得三棱锥
+zone=STEM start行68 数量1
+   [68]  len=23 obj=False A．36π；B．16π；C．16π3；D．4π
+zone=STEM start行76 数量1
+   [76]  len=15 obj=False A．1；B．3；C．2；D．6
+zone=STEM start行88 数量1
+   [88]  len=21 obj=False A．14；B．142；C．32；D．322
+zone=STEM start行133 数量1
+   [133]  len=24 obj=False A．10π；B．5π；C．5π2；D．55π12
+zone=STEM start行143 数量4
+   [143]  len=13 obj=False A．O1，O2，P三点共线
+   [144]  len=11 obj=False B．PO1⊥平面ABC
+   [145]  len=23 obj=False C．正三棱锥P-ABC外接球的体积为2732π
+   [146]  len=24 obj=False D．正三棱锥P-ABC内切球的表面积为6-23π
+zone=STEM start行191 数量1
+   [191]  len=15 obj=False A．3；B．2；C．2；D．1
+zone=STEM start行225 数量1
+   [225]  len=23 obj=False A．10π3；B．5π；C．6π；D．20π3
+zone=STEM start行242 数量1
+   [242]  len=24 obj=False A．23π；B．27π；C．72π；D．112π
+zone=STEM start行253 数量1
+   [253]  len=23 obj=False A．4π3；B．4π；C．12π；D．52π3
+zone=STEM start行268 数量1
+   [268]  len=30 obj=False A．212a3；B．26a3；C．5212a3；D．22a3
+zone=STEM start行315 数量1
+   [315]  len=19 obj=False A．23；B．46；C．32；D．64
+zone=STEM start行323 数量1
+   [323]  len=30 obj=False A．12+43    ；B．16+43 ；C．83；D．43
+zone=STEM start行340 数量1
+   [340]  len=26 obj=False A．136π；B．2512π；C．83π；D．23π
+zone=STEM start行348 数量2
+   [348]  len=131 obj=False ①等体积法：先将几何体（一般为棱锥）的内切球球心与几何体各个顶点用线段连接，如图所示，运用等体积法就有V=13S1r+1
+   [350]  len=81 obj=False ②平面化：通过找特殊截面（一般为球的截面刚好与几何体截面相切的截面），将立体几何问题转化为平面问题，从而通过求得某几何图
+zone=STEM start行379 数量1
+   [379]  len=17 obj=False A．2；B．22；C．3；D．23
+zone=STEM start行409 数量1
+   [409]  len=19 obj=False A．12；B．13；C．14；D．15
+zone=STEM start行430 数量1
+   [430]  len=19 obj=False A．13；B．43；C．16；D．23
+zone=STEM start行440 数量1
+   [440]  len=22 obj=False A．7π6；B．4π3；C．2π3；D．π2
+zone=STEM start行448 数量1
+   [448]  len=17 obj=False A．6；B．5；C．92；D．94
+zone=STEM start行498 数量1
+   [498]图 len=20 obj=True A．32π；B．63π；C．62π；D．
+zone=STEM start行515 数量1
+   [515]  len=25 obj=False A．81π；B．96π；C．108π；D．126π
+zone=STEM start行528 数量1
+   [528]图 len=12 obj=True A．；B．；C．3；D．
+zone=STEM start行543 数量1
+   [543]  len=20 obj=False A．33；B．26；C．612；D．66
+zone=STEM start行570 数量1
+   [570]  len=21 obj=False A．4π；B．6π；C．12π；D．24π
+zone=STEM start行583 数量1
+   [583]  len=19 obj=False A．π；B．2π；C．2π；D．22π
+zone=STEM start行603 数量1
+   [603]  len=17 obj=False A．4π3,4π；B．4π3,3π
+zone=STEM start行624 数量1
+   [624]  len=18 obj=False A．14；B．24；C．34；D．1
+zone=STEM start行638 数量1
+   [638]  len=18 obj=False A．8π9,2π；B．8π9,32π
+zone=STEM start行714 数量1
+   [714]  len=18 obj=False A．1；B．12；C．23；D．34
+zone=STEM start行771 数量1
+   [771]  len=23 obj=False A．2+2；B．2+3；C．7+2；D．7+1
+zone=STEM start行787 数量1
+   [787]  len=40 obj=False A．12π立方米；B．162π立方米；C．1623π立方米；D．1233π立方米
+zone=STEM start行805 数量1
+   [805]  len=16 obj=False A．1；B．2；C．3；D．32
+zone=STEM start行849 数量1
+   [849]  len=19 obj=False A．直线；B．圆；C．椭圆；D．抛物线
+zone=STEM start行872 数量1
+   [872]  len=19 obj=False A．直线；B．圆；C．椭圆；D．抛物线
+zone=STEM start行883 数量1
+   [883]  len=27 obj=False A．一条射线；B．一条直线；C．三条直线；D．四条直线
+zone=STEM start行984 数量2
+   [984]  len=19 obj=False (1)求证：直线 BF ⊥直线 DE；
+   [985]  len=44 obj=False (2)当 B₁D 为何值时，平面 BB₁C₁C 与平面 DFE 所成二面角的sin最小？
+zone=STEM start行1026 数量2
+   [1026]  len=12 obj=False (1)求证：AB⊥EF；
+   [1027]  len=46 obj=False (2)设P是棱AA1上的动点（不包括边界），当△PBC的面积最小时，求棱锥P-ABC的体积.
+zone=STEM start行1082 数量1
+   [1082]  len=19 obj=False A．a>b>c>d；B．a>b>d>c
+=== 全部短行(<25字, 排除LAB/枚举/图段) ===
+[27] zone=STEM len=20 求：(1)直线AB到平面EFCD的距离；
+[37] zone=LECT len=20 （详见知识清单1.2.5条目39、40）
+[52] zone=STEM len=17 （详见知识清单1.2.5条目43）
+[62] zone=ANS len=16 再由体对角线为外接球直径求半径。
+[78] zone=ANS len=22 求出正方体的棱长，即可求得该正四面体的棱长.
+[83] zone=ANS len=5 故选：C.
+[93] zone=ANS len=15 把四面体ABCD放到长方体中，
+[94] zone=ANS len=8 AB=CD=2，
+[95] zone=ANS len=8 其余棱长均为4，
+[96] zone=ANS len=18 设长方体的长、宽、高分别为a、b、c
+[98] zone=ANS len=14 解得a2+b2+c2=18，
+[99] zone=ANS len=12 设四面体外接球半径为R,
+[100] zone=ANS len=17 则2R2=a2+b2+c2=18，
+[101] zone=ANS len=8 即R=3 22.
+[102] zone=ANS len=4 故选:D
+[151] zone=ANS len=18 设内切球O1与平面ABC的切点为G,
+[158] zone=ANS len=15 故PO1⊥平面ABC，B正确;
+[166] zone=ANS len=22 解得a=3,所以R= 332,r=3-32,
+[169] zone=ANS len=7 故选：ABC.
+[172] zone=LECT len=17 （详见知识清单1.2.5条目44）
+[197] zone=LECT len=21 类型Ⅰ，△ABC与△BCD都是直角三角形；
+[218] zone=LECT len=17 （详见知识清单1.2.5条目46）
+[220] zone=LECT len=17 （详见知识清单1.2.5条目47）
+[238] zone=ANS len=10 故答案为：283π．
+[352] zone=STEM len=17 （详见知识清单1.2.5条目42）
+[354] zone=STEM len=17 （详见知识清单1.2.5条目45）
+[358] zone=STEM len=22 第1步：先画出四个表面的面积和整个锥体体积；
+[370] zone=ANS len=8 方法一：直接法．
+[389] zone=ANS len=21 ∴正方体玩具的棱长的最大值为2.故选：A.
+[414] zone=ANS len=23 正四面体的内切球半径等于这个正四面体高的14．
+[434] zone=ANS len=19 由对称性知其内切球球心O必在高AH上，
+[523] zone=ANS len=4 故选：A
+[537] zone=ANS len=17 而正四面体的四个顶点都在正方体上，
+[557] zone=ANS len=2 图1
+[564] zone=ANS len=2 图2
+[588] zone=ANS len=24 将三棱锥S-ABC补成正方体ABCD-LSMN，
+[594] zone=ANS len=19 设平面SPQ的法向量为n=x,y,z，
+[596] zone=ANS len=20 ∴平面SPQ的一个法向量n=2,2,1.
+[599] zone=ANS len=11 ∴该截面的面积为2π，
+[600] zone=ANS len=4 ∴选：C
+[604] zone=STEM len=20 ；C．16π9,4π；D．16π9,3π
+[609] zone=ANS len=11 ∵OD=12SA=1，
+[610] zone=ANS len=24 ∴OG2=OD2+DG2=12+232=119，
+[613] zone=ANS len=5 ∴选：D.
+[633] zone=ANS len=8 本题正确选项：A
+[639] zone=STEM len=19 ；C．2π3,32π；D．2π3,2π
+[646] zone=ANS len=5 ∴选：B．
+[656] zone=ANS len=23 ∵PA=CA=CB=2，∴外接球的半径R=3，
+[660] zone=ANS len=20 设平面CDE的一个法向量n=x,y,z，
+[664] zone=ANS len=8 ∴答案为：7π3
+[678] zone=ANS len=13 ∴V=4π333=43π.
+[682] zone=ANS len=17 ∵平面SPQ∩平面SBDN=SE，
+[698] zone=ANS len=13 ∴V=4π333=43π.
+[704] zone=ANS len=21 设平面SPQ的法向量为n=x，y ， z，
+[706] zone=ANS len=22 ∴平面SPQ的一个法向量n=2，2 ， 1.
+[719] zone=ANS len=24 当CM=23时（如图1），MN∥BC1∥AD1，
+[721] zone=ANS len=10 当23<CM<2时，
+[723] zone=ANS len=10 当0<CM<23时，
+[727] zone=ANS len=6 ∴选：BC.
+[737] zone=ANS len=16 ∴△AEF的周长的最小值为23.
+[750] zone=ANS len=13 ∴EH=14,BH=34，
+[751] zone=ANS len=24 ∴FG=3-34=334,EG=1+14=54,
+[753] zone=ANS len=8 故答案为：132
+[765] zone=ANS len=24 ∴ AA'=2AO=2PA⋅sin3α2=11.
+[766] zone=ANS len=8 故答案为：11.
+[775] zone=ANS len=20 ∴AD⊥平面PAB，又PA⊂平面PAB，
+[776] zone=ANS len=17 ∴AD⊥PA，同理可得BC⊥PB．
+[798] zone=ANS len=20 SO=SA2-OA2=62-22=42，
+[800] zone=ANS len=4 故选：C
+[813] zone=ANS len=22 根据题意得BD1=5,AD1=1,AB=2，
+[815] zone=ANS len=15 ∴扇形弧长为l=π2×2=π，
+[825] zone=ANS len=23 ∴要使△PEF的周长最小，只需PE+EF最小．
+[832] zone=ANS len=5 故选：D.
+[834] zone=LECT len=11 确定动点轨迹的两个方法
+[857] zone=ANS len=12 即cos∠APB1=33
+[861] zone=ANS len=7 ∴AB1⊥PO
+[862] zone=ANS len=19 又O为AB1中点，∴PO为AB1中垂线
+[863] zone=ANS len=13 ∴AP=PB1，令AP=x
+[864] zone=ANS len=23 则33=x2+x2-22x2 ⇒x2=3+32
+[866] zone=ANS len=24 由此可得：P点在以O为球心，PO长为半径的球面上
+[867] zone=ANS len=23 ∴ P点轨迹即为平面A1BCD1与球面的交线上
+[868] zone=ANS len=7 可知轨迹为圆.
+[878] zone=ANS len=23 ∵面BCE与圆柱的轴垂直    ∴P的轨迹为圆
+[879] zone=ANS len=4 ∴选：B
+[891] zone=ANS len=12 则点P的轨迹是四条直线，
+[892] zone=ANS len=5 ∴选:D.
+[908] zone=ANS len=13 故得BM=203=253．
+[909] zone=ANS len=8 故答案为：253
+[928] zone=ANS len=7 显然，m>0.
+[932] zone=ANS len=22 又m≠1且m>0，故0<m<1且1<m<2，
+[933] zone=ANS len=11 即m∈0,1∪1,2.
+[944] zone=ANS len=19 ∴O到AB的距离d=52-252=5.
+[946] zone=ANS len=5 如图所示.
+[951] zone=ANS len=17 h=102+10+102=210，
+[953] zone=ANS len=14 故答案为：5，65103π.
+[996] zone=ANS len=17 ∴直线 BF ⊥平面 EGB₁D。
+[1019] zone=ANS len=22 令 z=2-a，则 m=3,1+a,2-a。
+[1033] zone=ANS len=24 ∵A1B=A1C，E为BC中点，∴A1E⊥BC.
+[1035] zone=ANS len=13 ∵A1A=A1B=A1C，
+[1036] zone=ANS len=21 ∴△A1AE≌△A1BE，∴A1E⊥AE，
+[1045] zone=ANS len=24 又P∈AA1，PE⊂平面A1AE，∴BC⊥PE.
+[1051] zone=ANS len=24 ∴VP-ABC=13×12×2×2×64=66.
+[1063] zone=ANS len=21 ∵E为AB中点，∴EF是△ABG的中位线，
+[1064] zone=ANS len=20 则∠PBG是异面直线BP与EF所成的角.
+[1068] zone=ANS len=18 ∵DG=13DA,∴DH=13DO.
+[1071] zone=ANS len=5 MD=9.
+[1072] zone=ANS len=24 在△BCD中，∵O为重心，∴MO=3,OD=6.
+[1077] zone=ANS len=5 ∴选：C.
+[1083] zone=STEM len=20 ；C．b>a>d>c；D．c>d>b>a

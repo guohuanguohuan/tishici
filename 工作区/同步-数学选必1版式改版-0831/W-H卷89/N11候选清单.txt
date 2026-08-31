@@ -1,0 +1,218 @@
+=== STEM枚举组 ===
+zone=STEM start行6 数量1
+   [6]  len=21 obj=False A．相离；B．相切；C．相交；D．无法确定
+zone=STEM start行12 数量1
+   [12]  len=38 obj=False A．充分不必要条件B．必要不充分条件；C．充要条件；D．既不充分也不必要条件
+zone=STEM start行50 数量4
+   [50]  len=11 obj=False (1)求直线l的方程；
+   [51]  len=24 obj=False (2)若直线l与x轴交于点B，求证：AF=BF；
+   [52]  len=37 obj=False (3)若直线l与x轴交于点B，设法线m交x轴于M点，求线段BM的中点坐标；
+   [53]  len=82 obj=False (4)若经过点B−1,0的直线n与抛物线C:y2=4x相交于P、Q两个不同的点，是否存在直线n使得BP⋅BQ=20，又是
+zone=STEM start行86 数量2
+   [86]  len=21 obj=False (1)求证：直线y1y=x1+x与C相切；
+   [87]  len=45 obj=False (2)若O为坐标原点，OA⋅OB=−1，C在A，B处的切线交于点P，证明：点P在定直线上．
+zone=STEM start行155 数量1
+   [155]  len=42 obj=False A．x-y-3=0B．x+y-2=0；C．2x+3y-3=0；D．3x-y-10=0
+zone=STEM start行161 数量1
+   [161]  len=58 obj=False (2)已知P1,1是双曲线外一点，过P引双曲线x2-y22=1的两条切线PA,PB，A，B为切点，求直线AB的方程．
+zone=STEM start行173 数量1
+   [173]  len=46 obj=False A．x+23y−4=0B．x−23y−4=0；C．x+23y−2=0；D．x−23y+2=0
+zone=STEM start行191 数量1
+   [191]  len=32 obj=False A．295    B．303    C．355    D．305
+zone=STEM start行207 数量2
+   [207]  len=25 obj=False (1)证明：直线PA的方程为x1x3−y1y=1.
+   [208]  len=30 obj=False (2)设F为双曲线C的左焦点，证明：∠AFP+∠BFP=π.
+zone=STEM start行237 数量1
+   [237]  len=50 obj=False A．∠APB恒为锐角B．当AB垂直于x轴时，直线AP的斜率为12　C．的最小值为4D．存在点P，使得
+zone=STEM start行295 数量1
+   [295]  len=28 obj=False A．4    B．254    C．354    D．6
+zone=STEM start行311 数量2
+   [311]  len=12 obj=False (1)求抛物线E的方程；
+   [312]  len=53 obj=False (2)设动直线l与抛物线E相切于点P，与直线y=-1相交于点Q.求证：以PQ为直径的圆恒过y轴上的某定点.
+zone=STEM start行326 数量2
+   [326]  len=18 obj=False (1)求△APB的重心G的轨迹方程；
+   [327]  len=16 obj=False (2)求证：∠PFA=∠PFB.
+zone=STEM start行343 数量2
+   [343]  len=14 obj=False (1)证明：直线AB过定点：
+   [344]  len=49 obj=False (2)若以E(0，52)为圆心的圆与直线AB相切，且切点为线段AB的中点，求四边形ADBE的面积.
+zone=STEM start行429 数量1
+   [429]图 len=23 obj=True A．    B．    C．    D．135
+zone=STEM start行455 数量2
+   [455]  len=12 obj=False (1)求双曲线C的方程；
+   [456]  len=40 obj=False (2)若线段MN的垂直平分线与y轴交于点Q，且OQ=MQ，求O到直线MN的距离．
+zone=STEM start行478 数量2
+   [478]  len=13 obj=False (1)求实数k的取值范围；
+   [479]  len=28 obj=False (2)O是坐标原点，且△AOB的面积为2，求实数k的值．
+zone=STEM start行504 数量1
+   [504]  len=60 obj=False A．x22+y2=1      B．x23+y22=1    　C．x24+y23=1      D．x25+y24=1
+zone=STEM start行514 数量1
+   [514]  len=16 obj=False A．33B．22C．13D．24
+zone=STEM start行570 数量1
+   [570]  len=17 obj=False A．2；B．22；C．23；D．4
+zone=STEM start行584 数量1
+   [584]  len=13 obj=False A．3B．6C．9D．12
+zone=STEM start行594 数量1
+   [594]  len=34 obj=False A．p=2B．F为AD中点　C．|BD|=2|BF|D．|BF|=2
+zone=STEM start行642 数量1
+   [642]  len=18 obj=False A．8；B．10；C．14；D．16
+zone=STEM start行710 数量1
+   [710]  len=42 obj=False A．x-2y=0B．x+2y-4=0；C．2x+3y-14=0；D．x+2y-8=0
+zone=STEM start行765 数量2
+   [765]  len=73 obj=False ①直线与二次曲线联立方程后得到韦达定理：x1+x2=f(t)x1x2=g(t)⇒m(t)(x1+x2)=n(t)x1x2
+   [766]  len=43 obj=False ②利用点在椭圆方程上代换.注：在圆锥曲线大题中使用非对称处理时，要写出完整的转化过程.
+zone=STEM start行786 数量2
+   [786]  len=11 obj=False (1)求椭圆E的方程；
+   [787]  len=95 obj=False (2)若斜率为k的直线l于椭圆E交于不同的两点P，Q(均异于点A)，且直线AP与AQ的斜率之和等于2，问直线l是否经过某
+zone=STEM start行803 数量3
+   [803]  len=65 obj=False ①P1(1,1),P2(0,1),P3−1,32,P41,32；②P1(2,2),P2(0,−1),P32,−22,P4
+   [804]  len=35 obj=False (1)从①②中任选一个条件补充在上面的问题中，并求出椭圆C的标准方程；
+   [805]  len=115 obj=False (2)在（1）的条件下，设直线l不经过点P2且与椭圆C相交于A，B两点，直线P2A与直线P2B的斜率之和为1，过坐标原点
+zone=STEM start行864 数量2
+   [864]  len=11 obj=False (1)求椭圆C的方程；
+   [865]  len=61 obj=False (2)设P为第三象限内一点且在椭圆C上，直线PA与y轴交于点M，直线PB与x轴交于点N，求证：四边形ABNM的面积为定值
+zone=STEM start行921 数量2
+   [921]  len=11 obj=False (1)求椭圆Ω的方程；
+   [922]  len=15 obj=False (2)求证：OP⋅OQ为定值.
+zone=STEM start行941 数量2
+   [941]  len=11 obj=False (1)求椭圆E的方程；
+   [942]  len=61 obj=False (2)设A、B分别为椭圆E的左、右顶点，过定点T1,0的直线与椭圆E交于C、D两点，证明：直线AC，BD的交点在定直线上
+zone=STEM start行957 数量2
+   [957]  len=11 obj=False (1)求曲线C的方程；
+   [958]  len=27 obj=False (2)求证：点H在一条定直线上，并求出这条直线的方程.
+zone=STEM start行974 数量2
+   [974]  len=11 obj=False (1)求椭圆E的方程；
+   [975]  len=64 obj=False (2)设直线l:x=my−1(m∈R)交椭圆E于A、B两点，判断点G(−94,0)与以线段AB为直径的圆的位置关系，并说
+zone=STEM start行989 数量2
+   [989]  len=11 obj=False (1)求椭圆C的方程；
+   [990]  len=83 obj=False (2)设直线y＝kx＋3与椭圆C交于M，N两点，点A(2,0)．问在直线x＝3上是否存在点P，使得四边形PAMN是平行四
+zone=STEM start行1005 数量2
+   [1005]  len=11 obj=False (1)求曲线C的方程；
+   [1006]  len=73 obj=False (2)若点A1,0,H1,1，直线l:x=2，过点H的直线l1与C交于D、E两点，直线AD、AE与直线l分别交于点P、Q
+zone=STEM start行1029 数量3
+   [1029]  len=12 obj=False (1)求双曲线C的方程．
+   [1030]  len=60 obj=False (2)若l过原点，P为双曲线上异于A、B的一点，且直线PA、PB的斜率kPA、kPB均存在．求证：kPA⋅kPB为定值．
+   [1031]  len=82 obj=False (3)若l过双曲线的右焦点F1，是否存在x轴上的点M（m，0），使得直线l绕点F1无论怎样转动，都有MA⋅MB=0成立？
+zone=STEM start行1053 数量2
+   [1053]  len=30 obj=False (1)求双曲线C：x2a2−y2b2=1a>0,b>0方程；
+   [1054]  len=112 obj=False (2)设斜率分别为k1，k2的两条直线l1，l2均经过点Q2,1，且直线l1，l2与双曲线C分别交于A，B两点（A，B异
+zone=STEM start行1066 数量2
+   [1066]  len=13 obj=False (1)求双曲线C的离心率；
+   [1067]  len=81 obj=False (2)若直线l:y=kx+m与双曲线C相交于A，B两点（A，B均异于左、右顶点），且以AB为直径的圆过双曲线C的左顶点D
+zone=STEM start行1085 数量1
+   [1085]  len=9 obj=False ①将椭圆方程变形：
+zone=STEM start行1088 数量3
+   [1088]  len=24 obj=False ②设直线AB的方程为mx−x0+ny−y0=1；
+   [1089]  len=136 obj=False ③联立，齐次化：（∗）式化为b2x−x02+2b2x0x−x0mx−x0+ny−y0+a2y−y02+2a2y0(y−y
+   [1090]  len=68 obj=False ④上式两边除以x−x02，得1+2ny0a2y−y0x−x02+2nb2x0+2ma2y0⋅y−y0x−x0+ 1+2m
+zone=STEM start行1097 数量2
+   [1097]  len=12 obj=False (1)求抛物线C的方程；
+   [1098]  len=72 obj=False (2)求过点P3,−2的直线与抛物线C交于M、N两个不同的点(均与点A不重合)．设直线AM、AN的斜率分别为k1、k2，
+zone=STEM start行1107 数量2
+   [1107]  len=13 obj=False (1)求动点M的轨迹方程；
+   [1108]  len=75 obj=False (2)设点M的轨迹为曲线C，过点F作直线交曲线C于A、B两点，y轴上是否存在一定点Q，使得______？若存在，求出点Q
+zone=STEM start行1163 数量2
+   [1163]  len=12 obj=False (1)求双曲线的离心率；
+   [1164]  len=62 obj=False (2)若a=2，过点F1的直线交双曲线于A，B两点，线段AB的垂直平分线交y轴于点D（异于坐标原点O），求ABOD的最小
+zone=STEM start行1180 数量2
+   [1180]  len=10 obj=False (1)求椭圆的方程；
+   [1181]  len=44 obj=False (2)过右焦点F的直线l交椭圆于P、Q两点．当直线l的倾斜角为π6时，求△POQ的面积．
+zone=STEM start行1193 数量2
+   [1193]  len=14 obj=False (1)求抛物线C的标准方程；
+   [1194]  len=60 obj=False (2)D2,y是抛物线C上在第一象限内的一点，直线l′：y=x+m与C交于M，N两点，若△DMN的面积为m2，求m的值．
+zone=STEM start行1211 数量2
+   [1211]  len=19 obj=False (1)求点A关于M的所有共轭点的坐标；
+   [1212]  len=50 obj=False (2)设点P，Q在M上，且PQ∥OA，求点A关于M的所有共轭点和点P，Q所围成封闭图形面积的最大值.
+zone=STEM start行1228 数量3
+   [1228]  len=37 obj=False (1)若点E，F的纵坐标分别为y1，y2，用y1，y2和p表示点C的坐标.
+   [1229]  len=18 obj=False (2)证明：直线AB与抛物线Γ相切；
+   [1230]  len=31 obj=False (3)设直线AB与抛物线Γ相切于点G，求S△EFGS△ABC.
+zone=STEM start行1247 数量2
+   [1247]  len=17 obj=False (1)农艺园的最大面积能达到多少?
+   [1248]  len=98 obj=False (2)该荒漠上有一条直线型水沟刚好过点A，且与AB成45°角，现要对整条水沟进行加固改造，但考虑到今后农艺园内的水沟要重
+zone=STEM start行1272 数量2
+   [1272]  len=13 obj=False (1)求抛物线的标准方程．
+   [1273]  len=48 obj=False (2)在x轴上是否存在一点，使△ABC为正三角形？若存在，求出点C的坐标；若不存在，请说明理由．
+zone=STEM start行1292 数量2
+   [1292]  len=18 obj=False (1)若点T是MN的中点，求k的值；
+   [1293]  len=15 obj=False (2)求△OBN面积的最小值.
+=== 全部短行(<25字, 排除LAB/枚举/图段) ===
+[36] zone=ANS len=17 当Δ=0，即k=1时，l与C相切；
+[37] zone=ANS len=21 当Δ>0，即k<1且k≠0时，l与C相交；
+[38] zone=ANS len=17 当Δ<0，即k>1时，l与C相离.
+[42] zone=LECT len=20 高考大题标准解法：联立方程法（重根技巧）
+[61] zone=ANS len=24 此时，直线l与抛物线C有两个公共点，不合乎题意；
+[63] zone=ANS len=21 此时，直线l与抛物线C有且只有一个公共点；
+[82] zone=ANS len=10 （3）列出韦达定理；
+[84] zone=ANS len=12 （5）代入韦达定理求解.
+[94] zone=ANS len=13 故点P在定直线x=−1上．
+[96] zone=LECT len=15 （详见知识清单2.8条目61）
+[97] zone=LECT len=20 方法 1：设点法（坐标参数与整体代换法）
+[98] zone=LECT len=15 步骤一：建立几何元素的坐标表达
+[100] zone=LECT len=20 根据两点间距离公式，底边弦长 l 满足：
+[105] zone=LECT len=23 步骤二：构建阿基米德三角形 △ABQ 面积公式
+[113] zone=LECT len=23 S = 1/(8p) · |y1 - y2|3
+[114] zone=LECT len=15 步骤三：极值求解与几何条件闭环
+[121] zone=LECT len=13 步骤一：联立方程与韦达定理
+[126] zone=LECT len=13 步骤二：弦长条件的惊艳转化
+[130] zone=LECT len=12 步骤三：面积最值一气呵成
+[135] zone=LECT len=21 1. 小题（选择题与填空题）：直接“秒杀”
+[139] zone=LECT len=24 包装路线一：数量积（点乘）公式过渡法（应试推荐）
+[140] zone=LECT len=24 在写出交点坐标后，在卷面上自然写下以下推导过程：
+[143] zone=LECT len=13 代入向量坐标进行恒等变形：
+[146] zone=LECT len=19 包装路线二：点到直线距离公式顺水推舟法
+[148] zone=LECT len=13 高中解析几何核心方法论总结
+[197] zone=ANS len=24 即双曲线C的离心率e=1+25=355，故选C．
+[279] zone=ANS len=24 所以P、Q所在的直线方程为3x25+2y9=1．
+[291] zone=LECT len=15 （详见知识清单2.8条目58）
+[319] zone=ANS len=19 故以PQ为直径的圆恒过点M（0，1）.
+[358] zone=ANS len=19 综上，四边形ADBE的面积为3或42．
+[359] zone=ANS len=22 [方法二]【利用弦长公式结合面积公式求面积】
+[366] zone=ANS len=19 综上，四边形ADBE的面积为3或42．
+[367] zone=ANS len=20 [方法三]【结合抛物线的光学性质求面积】
+[376] zone=ANS len=22 [方法四]【结合弦长公式和向量的运算求面积】
+[381] zone=ANS len=19 因此，四边形ADBE的面积为3或42.
+[383] zone=ANS len=23 方法二：面积公式是计算三角形面积的最基本方法；
+[445] zone=LECT len=15 （详见知识清单2.8条目60）
+[447] zone=LECT len=15 （详见知识清单2.8条目59）
+[463] zone=ANS len=19 故双曲线C的方程为x22−y22=1．
+[552] zone=ANS len=24 显然，当θ=π4时，AB+DE取得最小值为16．
+[682] zone=ANS len=19 可得m=1，故直线AC恒过定点1,0．
+[692] zone=LECT len=15 （详见知识清单2.8条目63）
+[694] zone=LECT len=15 （详见知识清单2.8条目57）
+[696] zone=STEM len=20 （1）求以定点为中点的弦所在直线的方程．
+[697] zone=STEM len=20 （2）过定点的弦和平行弦的中点轨迹问题．
+[698] zone=STEM len=19 （3）求与中点弦有关的圆锥曲线的方程．
+[699] zone=STEM len=22 （4）圆锥曲线上的两点关于某直线对称的问题．
+[760] zone=LECT len=15 （详见知识清单2.8条目67）
+[764] zone=STEM len=5 具体办法：
+[769] zone=LECT len=18 （详见知识清单2.8条目63、64）
+[795] zone=ANS len=20 所以椭圆E的方程为：x24+y23=1.
+[798] zone=ANS len=20 所以椭圆E的方程为：x24+y23=1.
+[821] zone=ANS len=21 =2k+(t−1)−8kt4t2−4=1，
+[839] zone=STEM len=11 （Ⅰ）求椭圆E的方程；
+[840] zone=STEM len=11 （Ⅱ）求k1k2的值；
+[902] zone=ANS len=24 而（*）式中的x,y指的是点A或点B的横纵坐标，
+[904] zone=ANS len=20 ∴直线AB的斜率为−mn=12，是定值.
+[935] zone=ANS len=22 所以直线BD的方程为y=y2x2-1x-1.
+[953] zone=ANS len=24 所以直线AC与直线BD的交点恒在定直线x=4上.
+[964] zone=ANS len=23 其中p=2，所以圆心M的轨迹方程为x2=4y.
+[980] zone=ANS len=19 所以椭圆E的方程为x24+y22=1.
+[982] zone=ANS len=19 所以椭圆E的方程为x24+y22=1.
+[1015] zone=ANS len=17 故曲线C的方程为x2-y23=1；
+[1020] zone=ANS len=23 =-6-1 =6，所以PQ的中点为定点2,3.
+[1041] zone=ANS len=20 =x1−mx2−m+k2x1−2x2−2
+[1047] zone=ANS len=23 综上，存在M（－1，0），使得MA⋅MB=0．
+[1076] zone=ANS len=20 ∴直线l过定点，定点坐标为−103,0．
+[1079] zone=LECT len=18 （详见知识清单2.8条目65、66）
+[1116] zone=ANS len=14 所以，直线AB的斜率k存在．
+[1122] zone=ANS len=17 若选②，假设存在Q0,q满足题意，
+[1190] zone=ANS len=22 可得坐标原点到直线的距离d=263+9=2，
+[1220] zone=ANS len=15 =1039m24−9m2+36
+[1223] zone=ANS len=18 =12×10216−3m2×8310
+[1238] zone=ANS len=22 所以点C的坐标为y1y22p,y1+y22.
+[1257] zone=ANS len=24 把直线方程代入椭圆方程，得7x2+8x−8=0．
+[1259] zone=ANS len=19 所以暂时不加固的部分长为247 km．
+[1281] zone=ANS len=23 ∴在x轴上不存在一点C，使△ABC为正三角形．
+[1285] zone=ANS len=10 （3）写出韦达定理；
+[1287] zone=ANS len=12 （5）代入韦达定理求解.
+[1305] zone=ANS len=20 又O到直线的距离d=1−k1+k2，所以
