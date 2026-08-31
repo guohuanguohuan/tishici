@@ -1,0 +1,10 @@
+段spacing分桶：
+   ('body', ('280', 'atLeast')) 57
+   ('body', ('410', 'atLeast')) 181
+   ('title', ('410', 'atLeast')) 11
+正文段w:ind残留： 0
+段jc分桶： {'left': 249}
+非标题段run字号分桶（None=继承docDefaults 24）： {'18': 237, None: 16, '24': 1312, '21': 11}
+标题段run字号分桶（None=继承）： {'32': 7, '28': 24}
+深蓝#1F4E79：文字run=56 空run=6 OMML挂点(m:r+ctrlPr)=657
+解析档run（sz=18或继承）合规计数=237；正档（sz=24或继承）合规计数=1312

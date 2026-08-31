@@ -1,0 +1,305 @@
+=== STEM枚举组 ===
+zone=STEM start行9 数量1
+   [9]  len=69 obj=False A．若a=b，则a=b或a=-b；B．若a,b为相反向量，则a+b=0 ；C．零向量是没有方向的向量；D．若a,b是两个
+zone=STEM start行34 数量4
+   [34]  len=19 obj=False ①若p=xa+yb，则p与a，b共面；
+   [35]  len=19 obj=False ②若p与a，b共面，则p=xa+yb；
+   [36]  len=24 obj=False ③若MP=xMA+yMB，则P，M，A，B共面；
+   [37]  len=24 obj=False ④若P，M，A，B共面，则MP=xMA+yMB.
+zone=STEM start行39 数量1
+   [39]  len=22 obj=False A．①②③④；B．①③④；C．①③；D．②④
+zone=STEM start行48 数量1
+   [48]  len=50 obj=False A．a2=a2；B．a⋅ba⋅a=ba；C．a⋅b2=a2⋅b2；D．a-b2=a2-2a⋅b+b2
+zone=STEM start行81 数量1
+   [81]  len=17 obj=False A．3；B．2；C．1；D．3-2
+zone=STEM start行89 数量1
+   [89]  len=19 obj=False A．102；B．62；C．52；D．2
+zone=STEM start行99 数量1
+   [99]  len=60 obj=False A．a，2b，3c ；B．a+b，b+c，c+a ；C．a+b+c，b+c，c ；D．a+2b，2b+3c，3a-9c 
+zone=STEM start行109 数量1
+   [109]  len=68 obj=False A．OP=OA+OB+OC；B．OP=13OA+13OB+13OC；C．OP=34OA+18OB+18OC；D．OP=2
+zone=STEM start行121 数量2
+   [121]  len=19 obj=False (1)证明：A、E、C1、F四点共面．
+   [122]  len=27 obj=False (2)若EF=xAB+yAD+zAA1，求x+y+z．
+zone=STEM start行136 数量1
+   [136]  len=54 obj=False A．AC1=6；B．AC1⊥BD；C．向量B1C与AA1的夹角是60∘；D．BD1与AC所成角的余弦值为63
+zone=STEM start行155 数量3
+   [155]  len=11 obj=False (1)求各顶点的坐标；
+   [156]  len=19 obj=False (2)若点Q是PC的中点，求点Q坐标；
+   [157]  len=22 obj=False (3)若点M在线段PC上移动，写出点M坐标.
+zone=STEM start行172 数量1
+   [172]  len=43 obj=False A．(0,4,2)；B．(-2,0,0)；C．(0,-4,-2)；D．(2,0,-2)
+zone=STEM start行186 数量2
+   [186]  len=22 obj=False (1)若D为线段BC的中点，求线段AD的长；
+   [187]  len=47 obj=False (2)若AD=(2,a,1)，且AB⋅AD=1，求a的值，并求此时向量AB与AD夹角的余弦值．
+zone=STEM start行195 数量1
+   [195]  len=21 obj=False A．66；B．-66；C．±66；D．±6
+zone=STEM start行203 数量1
+   [203]  len=15 obj=False A．3；B．2；C．2；D．3
+zone=STEM start行209 数量2
+   [209]  len=33 obj=False (1)当PB=2AP，且点P关于y轴的对称点为M时，求PM的长度；
+   [210]  len=40 obj=False (2)当点P是面对角线AB的中点，点Q在面对角线DC上运动时，探究PQ的最小值.
+zone=STEM start行220 数量2
+   [220]  len=17 obj=False (1)若a∥b，求实数x，y的值；
+   [221]  len=23 obj=False (2)若a⊥b，且b=29，求实数x，y的值．
+zone=STEM start行230 数量4
+   [230]  len=35 obj=False (1)若a=1,2,3，b=[-1,1,2]，求a+b的斜60°坐标；
+   [231]  len=87 obj=False (2)在平行六面体ABCD-ABC1D1中，AB=AD=2，AA1=3，∠BAD=∠BAA1=∠DAA1=60∘，如图，
+   [233]  len=23 obj=False ①若BE=EB1，求向量ED1的斜60∘坐标；
+   [234]  len=23 obj=False ②若AM=2,t,0，且AM⊥AC1，求AM.
+zone=STEM start行248 数量1
+   [248]  len=25 obj=False A．62,2；B．62,3；C．1,2；D．2,3
+zone=STEM start行259 数量1
+   [259]  len=35 obj=False A．l⊥α；B．l//α；C．l与α相交但不垂直；D．l//α或l⊂α
+zone=STEM start行267 数量1
+   [267]  len=42 obj=False A．(1,0，－2)；B．(1,0,2)；C．(－1,0,2)；D．(2,0，－1)
+zone=STEM start行274 数量2
+   [274]  len=13 obj=False (1)EF//平面PAD；
+   [275]  len=21 obj=False (2)EF⊥平面PDC.（用向量方法证明）
+zone=STEM start行286 数量1
+   [286]  len=20 obj=False A．14；B．24；C．-24；D．12
+zone=STEM start行300 数量1
+   [300]  len=23 obj=False A．30°；B．45°；C．60°；D．90°
+zone=STEM start行328 数量4
+   [328]  len=18 obj=False A．AB1与CD1成角的余弦值为45
+   [329]  len=16 obj=False B．A1，B，C，D1四点不共面
+   [330]  len=22 obj=False C．弧A1D1上存在一点E，使得BE∥CD1
+   [331]  len=30 obj=False D．以C点为球心，5为半径的球面与曲池上底面的交线长为23π
+zone=STEM start行347 数量1
+   [347]  len=35 obj=False A．-1,2,-1；B．1,2,1；C．1,2,-1；D．-1,2,1
+zone=STEM start行353 数量1
+   [353]  len=38 obj=False A．P2,3,3；B．P-2,0,1；C．P-4,4,0；D．P3,-3,4
+zone=STEM start行364 数量1
+   [364]  len=17 obj=False (2)平面ADE∥平面B1C1F.
+zone=STEM start行379 数量2
+   [379]  len=20 obj=False (1)是否存在点E，使PC⊥平面BDE？
+   [380]  len=23 obj=False (2)是否存在点E，使平面PCD⊥平面AED？
+zone=STEM start行395 数量4
+   [395]  len=24 obj=False A．当Q为线段B1P的中点时，DQ⊥平面A1BD
+   [396]  len=26 obj=False B．当Q为线段B1P的三等分点时，DQ⊥平面A1BD
+   [397]  len=31 obj=False C．在线段B1P的延长线上，存在一点Q，使得DQ⊥平面A1BD
+   [398]  len=20 obj=False D．不存在点Q，使DQ与平面A1BD垂直
+zone=STEM start行423 数量5
+   [423]  len=17 obj=False ①三棱锥C1-PAC的体积是定值；
+   [426]  len=15 obj=False ②当直线BQ∥α时，DP=2；
+   [427]  len=26 obj=False ③当DP=3时，平面α截棱柱所得多边形的周长为72；
+   [428]  len=30 obj=False ④存在平面α，使得点A1到平面α距离是A到平面α距离的两倍．
+   [429]  len=15 obj=False A．1；B．2；C．3；D．4
+zone=STEM start行463 数量1
+   [463]  len=28 obj=False A．23,1；B．13,23；C．0,13；D．0,23
+zone=STEM start行567 数量2
+   [567]  len=31 obj=False (1)若O是四边形EBCF对角线的交点，求证：AO∥平面GCF
+   [568]  len=40 obj=False (2)若二面角A-EF-B的大小为23π，求直线AB与平面GCF所成角的正弦值．
+zone=STEM start行580 数量2
+   [580]  len=14 obj=False (1)证明：l⊥平面PDC；
+   [581]  len=41 obj=False (2)已知PD=AD=1，Q为l上的点，求PB与平面QCD所成角的正弦值的最大值．
+zone=STEM start行644 数量2
+   [644]  len=16 obj=False (1)求证：AE⊥平面ABCD；
+   [645]  len=50 obj=False (2)若∠ABE=60°，点F在EC上，且满足EF=2FC，求平面FAD与平面ADC的夹角的余弦值．
+zone=STEM start行658 数量2
+   [658]  len=17 obj=False (1)证明：平面PAB⊥面PAD：
+   [659]  len=40 obj=False (2)若PA=PD=AB=DC，∠APD=90∘，求二面角A-PB-C的余弦值．
+zone=STEM start行700 数量2
+   [700]  len=16 obj=False (1)求A到平面A1BC的距离；
+   [701]图 len=33 obj=True (2)设D为的中点，AA1=AB，平面A1BC⊥平面ABB1A1，
+zone=STEM start行762 数量2
+   [762]  len=12 obj=False (1)证明：BD⊥PA；
+   [763]  len=21 obj=False (2)求PD与平面PAB所成的角的正弦值.
+zone=STEM start行802 数量2
+   [802]  len=16 obj=False (1)证明：OE//平面PAC；
+   [803]  len=41 obj=False (2)若∠ABO=∠CBO=30°，PO=3，PA=5求二面角C-AE-B正弦值．
+zone=STEM start行944 数量2
+   [944]  len=33 obj=False (1)求证：AD⊥PB；(2)求异面直线PD与AB所成角的余弦值；
+   [945]  len=25 obj=False (3)求平面PAB与平面PCD所成锐二面角的大小.
+zone=STEM start行1010 数量2
+   [1010]  len=12 obj=False (1)求证：AC⊥OM；
+   [1011]  len=23 obj=False (2)求平面OMN与平面OBCD夹角的余弦值.
+zone=STEM start行1074 数量3
+   [1074]  len=19 obj=False (1)求证：平面CDF//平面AGH；
+   [1075]  len=21 obj=False (2)求异面直线AB与CE所成角的正切值；
+   [1076]  len=18 obj=False (3)求二面角C-DE-F的余弦值.
+=== 全部短行(<25字, 排除LAB/枚举/图段) ===
+[13] zone=ANS len=23 若a,b为相反向量，则它们的和为零向量，B对；
+[14] zone=ANS len=14 零向量的方向是任意的，C错；
+[23] zone=ANS len=10 故答案为：b-a-c
+[38] zone=STEM len=12 其中正确的是（    ）
+[112] zone=ANS len=16 方法二：根据共面定理的推论可得.
+[322] zone=ANS len=23 考点：1．线面垂直的判定；2．面面垂直的判定．
+[339] zone=ANS len=11 对于D，做如下俯视图：
+[363] zone=STEM len=16 求证：(1)FC1∥平面ADE；
+[407] zone=ANS len=17 （详见知识清单1.2.2条目31）
+[411] zone=ANS len=17 （详见知识清单1.2.2条目32）
+[413] zone=STEM len=17 （详见知识清单1.2.5条目41）
+[437] zone=ANS len=23 CC1⊂平面CAC1，∴DD1∥平面CAC1，
+[438] zone=ANS len=24 ∵P∈DD1，∴点P到平面CAC1的距离为定值，
+[440] zone=ANS len=22 即三棱锥C1-PAC的体积是定值，∴①正确；
+[441] zone=ANS len=22 对于②：如图，延长EF交DC的延长线于点M，
+[444] zone=ANS len=7 ∴FW∥BQ，
+[445] zone=ANS len=18 ∵F为BC的中点，则W为CQ的中点，
+[447] zone=ANS len=20 ∴△BEF≌△CMF，则MC=BE=1，
+[451] zone=ANS len=19 由②可知，CM=1，同理可知AN=1，
+[454] zone=ANS len=17 对于④：设截面α交棱AA1于点R，
+[458] zone=ANS len=15 ∴④错误．综上所述，①③正确.
+[459] zone=ANS len=5 ∴选：B.
+[468] zone=ANS len=7 ∴其棱长为1，
+[470] zone=ANS len=18 ∵平面AA1D1D∥平面BB1C1C
+[471] zone=ANS len=19 平面AMN∩平面AA1D1D=AD1,
+[472] zone=ANS len=18 平面AMN∩平面BB1C1C=MN,
+[473] zone=ANS len=8 ∴AD1∥MN，
+[474] zone=ANS len=8 易得MN∥BC1
+[475] zone=ANS len=10 ∴CN=CM=13，
+[476] zone=ANS len=6 ∴BM=23
+[477] zone=ANS len=19 ∴，当0<BM≤23时，截面为四边形，
+[478] zone=ANS len=15 当BM>23时，截面为五边形，
+[479] zone=ANS len=19 ∴所求的线段BM的取值范围为0，23.
+[480] zone=ANS len=5 ∴选：D.
+[487] zone=LECT len=17 （详见知识清单1.2.3条目33）
+[491] zone=STEM len=10 特点：连续两次投影。
+[597] zone=ANS len=10 ［方法三］：等体积法
+[608] zone=LECT len=7 法一：直接观察
+[614] zone=LECT len=10 总结规律（同负异正）
+[616] zone=LECT len=13 法三：同等异补（万能办法）
+[621] zone=LECT len=24 注意：一般先用法一法二，如果不敢确定再用法三兜底
+[627] zone=ANS len=20 投影（动作）和射影（结果）其实没啥区别。
+[628] zone=ANS len=17 （详见知识清单1.2.2条目30）
+[629] zone=ANS len=17 （详见知识清单1.2.4条目35）
+[633] zone=ANS len=18 补充：即使交线没有画出来也可以直接用
+[635] zone=ANS len=17 （详见知识清单1.2.4条目36）
+[636] zone=ANS len=17 （详见知识清单1.2.4条目37）
+[637] zone=ANS len=20 （详见知识清单1.2.4条目36、37）
+[639] zone=ANS len=4 使用提醒
+[664] zone=ANS len=13 ∴PA⊥AB,PD⊥CD，
+[665] zone=ANS len=9 又∵AB//CD，
+[666] zone=ANS len=7 ∴PD⊥AB。
+[667] zone=ANS len=22 又∵PD∩PA=P,PD、PA⊂平面PAD，
+[670] zone=ANS len=7 ∵AB∥CD，
+[671] zone=ANS len=15 ∴四边形ABCD为平行四边形，
+[672] zone=ANS len=22 ∴OE∥AB，由（1）知，AB⊥平面PAD，
+[673] zone=ANS len=10 ∴OE⊥平面PAD，
+[674] zone=ANS len=13 又PO、AD⊂平面PAD，
+[675] zone=ANS len=13 ∴OE⊥PO,OE⊥AD，
+[676] zone=ANS len=7 又PA=PD，
+[677] zone=ANS len=7 ∴PO⊥AD，
+[678] zone=ANS len=14 ∴PO、OE、AD两两垂直．
+[681] zone=ANS len=6 设PA=2，
+[684] zone=ANS len=21 设n=(x,y,z)为平面PBC的法向量，
+[688] zone=ANS len=10 ∵∠ADP=90∘，
+[689] zone=ANS len=7 ∴PD⊥PA，
+[690] zone=ANS len=20 又知AB⊥平面PAD，PD⊂平面PAD，
+[691] zone=ANS len=16 ∴PD⊥AB，又PA∩AB=A，
+[692] zone=ANS len=10 ∴PD⊥平面PAB，
+[694] zone=ANS len=23 （z>0，方向向上，由图可知指向二面角的外侧）
+[696] zone=ANS len=23 故二面角A-PB-C的平面角的余弦值为-33．
+[702] zone=STEM len=15 求二面角A-BD-C的正弦值．
+[714] zone=ANS len=8 ∵AA1=AB，
+[717] zone=ANS len=20 又AE,BB1⊂平面ABB1A1且相交，
+[718] zone=ANS len=13 ∴BC⊥平面ABB1A1，
+[719] zone=ANS len=15 ∴BC,BA,BB1两两垂直，
+[721] zone=ANS len=17 ∴AA1=AB=2，A1B=22，
+[723] zone=ANS len=14 ∴A1C的中点D1,1,1，
+[729] zone=ANS len=23 则cosm,n=m⋅nm⋅n=12×2=12，
+[730] zone=ANS len=24 ∴二面角A-BD-C的正弦值为1-122=32.
+[734] zone=ANS len=6 解得h=2，
+[737] zone=ANS len=8 ∵AA1=AB，
+[740] zone=ANS len=20 又AE,BB1⊂平面ABB1A1且相交，
+[741] zone=ANS len=13 ∴BC⊥平面ABB1A1，
+[742] zone=ANS len=15 ∴BC,BA,BB1两两垂直，
+[743] zone=ANS len=16 以B为原点，建立空间直角坐标系，
+[745] zone=ANS len=17 ∴AA1=AB=2，A1B=22，
+[746] zone=ANS len=6 ∴BC=2，
+[751] zone=ANS len=24 ∴二面角A-BD-C的正弦值为1-122=32.
+[771] zone=ANS len=24 ∵CD//AB,AD=CD=CB=1,AB=2，
+[772] zone=ANS len=14 ∴四边形ABCD为等腰梯形，
+[773] zone=ANS len=17 ∴AE=BF=12，则BE=32，
+[775] zone=ANS len=13 ∴AD2+BD2=AB2，
+[776] zone=ANS len=7 ∴AD⊥BD，
+[778] zone=ANS len=7 ∴PD⊥BD，
+[779] zone=ANS len=22 又PD∩AD=D，且PD,AD⊂平面PAD，
+[780] zone=ANS len=10 ∴BD⊥平面PAD，
+[781] zone=ANS len=11 又∵PA⊂平面PAD，
+[782] zone=ANS len=7 ∴BD⊥PA；
+[786] zone=ANS len=17 ∴sinθ=n⋅DPnDP=55。
+[794] zone=ANS len=15 设PD与平面PAB所成角为θ，
+[796] zone=ANS len=20 ∴PD与平面PAB所成角的正弦值为55.
+[816] zone=ANS len=15 ∵PO是三棱锥P-ABC的高，
+[817] zone=ANS len=22 ∴PO⊥平面ABC，AO,BO⊂平面ABC，
+[818] zone=ANS len=13 ∴PO⊥AO、PO⊥BO，
+[819] zone=ANS len=7 又PA=PB，
+[820] zone=ANS len=18 ∴△POA≅△POB，即OA=OB，
+[821] zone=ANS len=11 ∴∠OAB=∠OBA，
+[824] zone=ANS len=10 ∴∠ODA=∠OAD
+[825] zone=ANS len=17 ∴AO=DO，即AO=DO=OB，
+[826] zone=ANS len=18 ∴O为BD的中点，又E为PB的中点，
+[827] zone=ANS len=8 ∴OE//PD，
+[828] zone=ANS len=19 又OE⊄平面PAC，PD⊂平面PAC，
+[829] zone=ANS len=10 ∴OE//平面PAC
+[832] zone=ANS len=10 取n=AE×AB，则
+[836] zone=ANS len=12 ∴sinθ=11/13。
+[839] zone=ANS len=11 ∵PO=3，AP=5，
+[840] zone=ANS len=14 ∴OA=AP2-PO2=4，
+[841] zone=ANS len=15 又∠OBA=∠OBC=30°，
+[842] zone=ANS len=22 ∴BD=2OA=8，则AD=4，AB=43，
+[843] zone=ANS len=7 ∴AC=12，
+[845] zone=ANS len=10 ∴E33,1,32，
+[848] zone=ANS len=10 ∴n=0,-3,2；
+[850] zone=ANS len=15 令a=3，则c=-6，b=0，
+[851] zone=ANS len=10 ∴m=3,0,-6；
+[877] zone=ANS len=19 ∵O是△ABC的外心，因此AE⊥BC．
+[882] zone=ANS len=13 ∴AP⊥BP，AP⊥CP．
+[883] zone=ANS len=19 又BP∩CP=P，故AP⊥平面PBC．
+[887] zone=ANS len=18 又∵PA⊂平面PAE，∴PA⊥BC．
+[889] zone=ANS len=15 设DO=a，且PO=66DO，
+[890] zone=ANS len=22 则AF=32a，PA=22a，PF=12a．
+[891] zone=ANS len=22 因此PA2+PF2=AF2，从而PA⊥PF．
+[892] zone=ANS len=20 又∵PF∩BC=F，∴PA⊥平面PBC．
+[901] zone=ANS len=23 故AP⋅BP=0．∴AP⊥BP，即AP⊥BP．
+[910] zone=ANS len=12 ∴n=(2,0,-1)，
+[913] zone=ANS len=12 ∴m=(1,33,-2)
+[918] zone=ANS len=12 联结GH，则HF∥PB．
+[919] zone=ANS len=20 由PA⊥平面PBC，得FG⊥平面PBC．
+[921] zone=ANS len=22 ∴FH⊥PC，根据三垂线定理，得GH⊥PC．
+[922] zone=ANS len=20 ∴∠GHF是二面角B-PC-E的平面角．
+[926] zone=ANS len=12 cos∠GHF=255．
+[927] zone=ANS len=19 ∴二面角B-PC-E的余弦值为255．
+[932] zone=ANS len=16 ∴，点H在面PBC上的射影为N．
+[935] zone=ANS len=20 ∴S△PCH=34S△PCE=3516．
+[937] zone=ANS len=19 ∴二面角B-PC-E的余弦值为255．
+[955] zone=ANS len=11 ∴PO⊥平面ABCD，
+[956] zone=ANS len=22 ∴PO⊥AD，而AD⊥AB，PO∩AB=O，
+[957] zone=ANS len=10 ∴AD⊥平面PAB，
+[958] zone=ANS len=7 ∴AD⊥PB．
+[961] zone=ANS len=21 即异面直线PD与AB所成角的余弦值为13．
+[975] zone=ANS len=21 ∴ AC⊥BC，BC=AB2-AC2=3。
+[976] zone=ANS len=12 ∵ PA⊥平面 ABC，
+[977] zone=ANS len=15 ∴ PB=PA2+AB2=5，
+[978] zone=ANS len=13 PC=PA2+AC2=2。
+[981] zone=ANS len=12 cos∠BPC=210，
+[983] zone=ANS len=22 ∴ 二面角 C-PB-A 的余弦值为 64。
+[994] zone=ANS len=10 ∴ AE⊥平面BCD
+[996] zone=ANS len=19 ∴ E点即为点A在平面BCD内的射影，
+[997] zone=ANS len=22 ∴ △BDE为△ABD在平面BCD内的射影，
+[1000] zone=ANS len=23 ∴ S△ABD=12a2×154=158a2，
+[1003] zone=ANS len=20 而二面角A-BD-C与A-BD-E互补，
+[1004] zone=ANS len=20 ∴二面角 A-BD-C的余弦值为-55.
+[1005] zone=ANS len=8 故答案为：-55
+[1019] zone=ANS len=20 ∴四边形ODCB为正方形，∴OC=22，
+[1022] zone=ANS len=17 ∵CD⊂平面OCD，∴OA⊥CD，
+[1024] zone=ANS len=17 ∵OM⊂平面OAD，∴CD⊥OM；
+[1025] zone=ANS len=21 ∵OA=OD，M为AD中点，∴OM⊥AD，
+[1027] zone=ANS len=17 ∵AC⊂平面ACD，∴AC⊥OM.
+[1033] zone=ANS len=20 ∴四边形ODCB为正方形，∴OC=22，
+[1036] zone=ANS len=17 ∵CD⊂平面OCD，∴OA⊥CD，
+[1038] zone=ANS len=17 ∵OM⊂平面OAD，∴CD⊥OM；
+[1039] zone=ANS len=21 ∵OA=OD，M为AD中点，∴OM⊥AD，
+[1041] zone=ANS len=17 ∵AC⊂平面ACD，∴AC⊥OM.
+[1046] zone=ANS len=18 设平面OMN的法向量n=x,y,z，
+[1048] zone=ANS len=23 ∴cos<m,n>=m⋅nm⋅n=13=33，
+[1049] zone=ANS len=23 即平面OMN与平面OBCD夹角的余弦值为33.
+[1058] zone=ANS len=19 ∴二面角B1-MN-B的余弦值为13．
+[1061] zone=ANS len=11 连接A1C1，A1P，
+[1062] zone=ANS len=14 ∵MN//AC//A1C1，
+[1063] zone=ANS len=14 ∴θ=∠A1C1P或其补角，
+[1066] zone=ANS len=16 令t=2-λ，则t∈(1,2)，
+[1068] zone=ANS len=16 ∴cosθ∈(1010，22)．
+[1069] zone=ANS len=18 故答案为：13；(1010，22)．
+[1095] zone=STEM len=16 （Ⅰ）证明：CD⊥平面Α1ΟC；
