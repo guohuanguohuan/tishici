@@ -358,6 +358,9 @@ def main(argv):
     if st_el is None:
         action = 'created'
         sid = DEFAULT_STYLE_ID
+        create_style(styles_root)   # 2026-08-31 W10 缺陷修复：原版漏调 create_style——
+        # docstring 契约为「无该样式则新建」，实测 created 分支只改段落 pStyle 未写样式定义，
+        # 致下游 页眉面包屑挂载.py A2 前置依赖（styles.xml 须有标题3）中止。
     else:
         sid = st_el.get(q('styleId'))
         if style_needs_norm(st_el):
