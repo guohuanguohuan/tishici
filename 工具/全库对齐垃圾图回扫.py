@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
-"""全库对齐与垃圾图回扫（公共规则§5垃圾图清理＋§7左对齐无例外，2026-08-26首轮回扫）
-用法：python 全库对齐垃圾图回扫.py scan|fix [--only 目录]
+r"""全库对齐与垃圾图回扫（公共规则§5垃圾图清理＋§7左对齐无例外，2026-08-26首轮回扫）
+用法：python 全库对齐垃圾图回扫.py scan|fix [--root 提示词根]
 scan：只列命中不落盘；fix：左对齐规整＋安全垃圾图删除（双阈值＋像素空白核验）＋清理未引用媒体
 范围：高中数学/高中数学同步、高中物理/高中物理同步、大学数学/大学数学同步 的主目录docx（旧体系存档冻结件除外）
+ROOT（2026-08-31 F-工具补丁修，W-X1实测ROOT失配——旧硬编码 C:\sync\syncall\... 本机提示词根已
+迁移桌面，工具扫不到文件、输出空合计假成功）：默认由脚本位置向上推导提示词根（脚本位于
+提示词根/工具/ 下），--root <路径> 可显式覆盖；推导值启动时打印自查。扫描/判定逻辑零改动。
 改动登记（2026-08-30，FX4修0，公共规则§5工具升级门＋§7段落条款2026-08-30缩进梯子合法化）：
   fix模式删除原L88「re.sub(r'<w:ind [^>]*/>','',out)」无条件剥w:ind一行——垃圾图清理职责与缩进无关，
   w:ind 自2026-08-29/30成书形态拍板起系合法属性（标题缩进梯子＋册目录页层级缩进），fix模式不再剥除任何
@@ -10,7 +13,7 @@ scan：只列命中不落盘；fix：左对齐规整＋安全垃圾图删除（�
 """
 import zipfile, re, os, sys, io, shutil, tempfile
 
-ROOT = r'C:\sync\syncall\ai\ai相关\提示词'
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # 脚本位于 提示词根/工具/ 下
 DIRS = ['高中数学/高中数学同步', '高中物理/高中物理同步', '大学数学/大学数学同步']
 
 def files():
@@ -127,9 +130,17 @@ def fix_file(path, mode):
     return njc, nind, wpg, len(bad), ng
 
 def main():
-    mode = sys.argv[1] if len(sys.argv) > 1 else 'scan'
+    global ROOT
+    argv = sys.argv[1:]
+    if '--root' in argv:
+        k = argv.index('--root')
+        ROOT = os.path.abspath(argv[k + 1])
+        del argv[k:k + 2]
+    mode = argv[0] if argv else 'scan'
+    fs = files()
+    print('ROOT=%s（模式=%s，扫描%d件）' % (ROOT, mode, len(fs)))   # 推导值自查：失配即此处可见
     total = {}
-    for f in files():
+    for f in fs:
         jc, ind, wpg, bad, ng = fix_file(f, mode)
         if jc or ind or wpg or bad:
             print(f'{os.path.basename(f)[:40]} | jc非左:{jc} ind计数(不剥除):{ind} wpg组:{wpg} 垃圾图:{bad}' + (f' 已删run:{ng}' if mode == 'fix' else ''))

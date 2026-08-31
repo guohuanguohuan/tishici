@@ -1,0 +1,51 @@
+第1跑 退出码=0
+{"文件": "回归B-E卷-in.docx", "标题段跳过": 79, "正文段": 184, "解析段": 854, "题号块数": 92, "待人工": 0, "410段": 263, "280段": 854}
+zip成员级DIFF: 0=幂等（89成员）
+第2跑 退出码=0
+{"文件": "回归B-E卷-跑1.docx", "标题段跳过": 79, "正文段": 184, "解析段": 854, "题号块数": 92, "待人工": 0, "410段": 263, "280段": 854}
+zip成员级DIFF: 0=幂等（89成员）
+第3跑 退出码=0
+{"文件": "回归B-E卷-跑2.docx", "标题段跳过": 79, "正文段": 184, "解析段": 854, "题号块数": 92, "待人工": 0, "410段": 263, "280段": 854}
+zip成员级DIFF: 0=幂等（89成员）
+任务B回归PASS：3连跑退出码全0＋断言零假失败＋成员级DIFF=0
+Traceback (most recent call last):
+  File "C:\Users\28120\Desktop\提示词\工作区\同步-数学选必1版式改版-0831\F-工具补丁\_回归B_site3.py", line 26, in <module>
+    DOC = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: not enough arguments for format string
+退出码=1
+
+Traceback (most recent call last):
+  File "C:\Users\28120\Desktop\提示词\工具\字号双档改版.py", line 619, in <module>
+    main()
+  File "C:\Users\28120\Desktop\提示词\工具\字号双档改版.py", line 615, in main
+    process(src, dst, qstart, qcount, jp)
+  File "C:\Users\28120\Desktop\提示词\工具\字号双档改版.py", line 398, in process
+    do_runs(el, '标题', stats_from=mstat.start() if mstat else None)
+  File "C:\Users\28120\Desktop\提示词\工具\字号双档改版.py", line 306, in do_runs
+    rc['标题行内统计段run切分'] += 1
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: '标题行内统计段run切分'
+
+site3合成件失败
+退出码=1
+
+Traceback (most recent call last):
+  File "C:\Users\28120\Desktop\提示词\工具\字号双档改版.py", line 620, in <module>
+    main()
+  File "C:\Users\28120\Desktop\提示词\工具\字号双档改版.py", line 616, in main
+    process(src, dst, qstart, qcount, jp)
+  File "C:\Users\28120\Desktop\提示词\工具\字号双档改版.py", line 466, in process
+    assert text_stream(doc) == stream_before, 'w:t/m:t 流发生变化——禁止落盘'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: w:t/m:t 流发生变化——禁止落盘
+
+site3合成件失败
+退出码=0
+{"文件": "回归B-site3合成.docx", "标题段跳过": 2, "正文段": 1, "解析段": 2, "题号块数": 1, "待人工": 0, "410段": 3, "280段": 2}
+标题行内统计段run切分 = 1
+切分后标题段run文本: ['2.1 直线的倾斜角与斜率（第1—20题）\u3000', '本节2', '0题：简单1｜中档12｜难6']
+  run '2.1 直线的倾斜角与斜率（第1—2' -> sz=None
+  run '本节2' -> sz=18
+  run '0题：简单1｜中档12｜难6' -> sz=18
+site3补充回归PASS：切分正确＋豁免段留T4＋断言零假失败＋文字零增删

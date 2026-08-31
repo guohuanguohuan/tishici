@@ -1,0 +1,16 @@
+①--root覆盖 退出码=0
+ROOT=C:\Users\28120\Desktop\提示词\工作区\同步-数学选必1版式改版-0831\F-工具补丁\回归C-root（模式=scan，扫描2件）
+回归C-带命中.docx | jc非左:1 ind计数(不剥除):0 wpg组:0 垃圾图:0
+合计: {'jc': 1, 'ind': 0, 'wpg': 0, 'bad': 0}
+①PASS
+
+②默认推导 退出码=0
+ROOT=C:\Users\28120\Desktop\提示词（模式=scan，扫描74件）
+人教B版选必1·册目录页.docx | jc非左:0 ind计数(不剥除):31 wpg组:0 垃圾图:0
+合计: {'jc': 0, 'ind': 31, 'wpg': 0, 'bad': 0}
+...(中间省略)...
+ROOT=C:\Users\28120\Desktop\提示词（模式=scan，扫描74件）
+人教B版选必1·册目录页.docx | jc非左:0 ind计数(不剥除):31 wpg组:0 垃圾图:0
+合计: {'jc': 0, 'ind': 31, 'wpg': 0, 'bad': 0}
+②PASS（默认ROOT正确推导至提示词根，74件全扫，合计落盘）
+任务C回归全部PASS

@@ -14,18 +14,21 @@
   · 退化题号块「N．」（无括注）：默认模式不加括注、只做底纹缩小＋加粗补齐；linkage
     模式按总控任务C补两段式括注（授权）。六类底纹计数恒等式不变：题号块底纹run数＝题量。
   · 题号识别（2026-08-31 重构）：「前缀消费」跨run法（题号数字run＋句点run碎裂形态，
-    经验文件2026-08-26技巧）＋题号序列门控（题号全件连续1..N、条目号随节重启，门控天然
+    经验文件2026-08-26技巧）＋题号序列门控（题号全件连续、条目号随节重启，门控天然
     区分——条目号另有 工具/条目号底纹.py，本工具不误伤）＋块内【答案】验证（与
     extract_structure 题块判定同源锚），三重判据缺一不认题。
+  · --qstart N（2026-08-31 F-工具补丁增，欠账A·W-F/G/H/C续卷件需求）：续卷起始题号，
+    默认1＝首卷口径不变；门控区间＝qstart..qstart+题量−1（分卷题号跨卷连续，公共规则§12）。
+    A1断言起点同步参数化（seq[0]==qstart）；其余逻辑零改动。
 
 断言（全过才落盘，任一不过抛异常不写文件）：
-  A1 题号序列 1..N 连续无重复（序列门控终检）；
+  A1 题号序列 qstart..qstart+N−1 连续无重复（序列门控终检；qstart默认1）；
   A2 每个认定题号块：run[0] 文本恰为「N．」、挂 C9C9C9＋b；run[1]（有括注时）文本恰为
      目标括注、无 shd、有 b；题干余文无灰无粗；门控认定数＝extract_structure 题块数；
   A3 零意外字符：每改写段落后期望文本（授权token替换）逐段精确相等；
   A4 幂等：二跑改写/拆run/补底纹/剥底纹计数全为0（登记md可复核）。
 
-用法: python 工具/题号块三段式.py <docx> <登记md> [--linkage]
+用法: python 工具/题号块三段式.py <docx> <登记md> [--linkage] [--qstart N]
 输出: 就地改写 docx（仅 word/document.xml）＋登记md（计数＋逐题映射表）＋stdout。
 """
 import sys, os, re, zipfile, time, copy, tempfile
@@ -250,7 +253,7 @@ def is_compliant(p, mode):
     return True
 
 
-def migrate(path, regmd, linkage=False):
+def migrate(path, regmd, linkage=False, qstart=1):
     mode = 'linkage' if linkage else 'base'
     z = zipfile.ZipFile(path)
     doc = etree.fromstring(z.read('word/document.xml'))
@@ -261,7 +264,7 @@ def migrate(path, regmd, linkage=False):
     n = len(els)
 
     rows, processed = [], set()
-    expected = 1
+    expected = qstart   # --qstart 续卷起始题号（默认1，首卷口径不变）
     seq = []
     c_rew = c_narrow = c_degr = c_skip = c_runs = c_shd = c_bold = c_merged = 0
     c_txt = 0
@@ -321,8 +324,8 @@ def migrate(path, regmd, linkage=False):
     n_q = len(seq)
     # ---- A1 序列断言 ----
     gaps = [(seq[k-1], seq[k]) for k in range(1, n_q) if seq[k] != seq[k-1] + 1]
-    assert not gaps and (not seq or seq[0] == 1), '题号序列门控失败: 起=%s 断点=%s' % (
-        seq[0] if seq else None, gaps[:5])
+    assert not gaps and (not seq or seq[0] == qstart), '题号序列门控失败: 起=%s 期望qstart=%s 断点=%s' % (
+        seq[0] if seq else None, qstart, gaps[:5])
     # ---- A2 形态断言（仅认定题号块）----
     for i in sorted(processed):
         c = els[i]
@@ -379,13 +382,14 @@ def migrate(path, regmd, linkage=False):
     L.append('口径：2026-08-31 N6——底纹只盖「N．」run（C9C9C9＋加粗），括注剥底纹、整块加粗维持；'
              + ('衔接件两段式「N．（衔接必会·卡壳看答案）」（总控任务C；旧三段式→两段式属授权文本变更，'
                 '逐处计数）。' if mode == 'linkage' else '三段式「N．（档位·提分线·卡壳看答案）」文本维持。')
-             + '识别＝前缀消费跨run＋题号序列门控（1..N）＋块内【答案】验证；幂等可重跑。')
+             + ('识别＝前缀消费跨run＋题号序列门控（qstart=%d，门控qstart..qstart+题量−1）＋块内【答案】验证；幂等可重跑。'
+                % qstart))
     L.append('')
-    L.append('题号块 %d（门控认定，序列1..%d连续A1过）｜文本改写 %d（授权）｜纯缩底纹 %d｜退化缩底纹 %d｜'
+    L.append('题号块 %d（门控认定，序列%s..%d连续A1过，qstart=%d）｜文本改写 %d（授权）｜纯缩底纹 %d｜退化缩底纹 %d｜'
              '幂等跳过 %d｜重建run %d｜多run归并 %d｜补底纹 %d｜补加粗 %d｜A2形态断言 %d 段全过｜'
              'extract交叉核对 %s'
-             % (n_q, seq[-1] if seq else 0, c_rew, c_narrow, c_degr, c_skip, c_runs, c_merged,
-                c_shd, c_bold, n_q,
+             % (n_q, seq[0] if seq else qstart, seq[-1] if seq else 0, qstart, c_rew, c_narrow,
+                c_degr, c_skip, c_runs, c_merged, c_shd, c_bold, n_q,
                 ('%d＝%d PASS' % (n_x, n_q)) if n_x >= 0 else '不可用（见异常）'))
     if mode == 'linkage':
         L.append('两段式改写 %d 处（授权文本变更，逐处见下表）' % grade_cnt['衔接必会'])
@@ -400,9 +404,10 @@ def migrate(path, regmd, linkage=False):
         L.append('| %d | %s | %s |' % (no, disp, tok))
     L.append('')
     open(regmd, 'w', encoding='utf-8').write('\n'.join(L))
-    print('题号块 %d（1..%d）｜改写 %d｜缩底纹 %d｜退化 %d｜幂等跳过 %d｜重建run %d｜补底纹 %d｜补加粗 %d｜'
+    print('题号块 %d（%s..%d，qstart=%d）｜改写 %d｜缩底纹 %d｜退化 %d｜幂等跳过 %d｜重建run %d｜补底纹 %d｜补加粗 %d｜'
           'A2断言 %d段全过｜交叉核对 %s'
-          % (n_q, seq[-1] if seq else 0, c_rew, c_narrow, c_degr, c_skip, c_runs, c_shd, c_bold,
+          % (n_q, seq[0] if seq else qstart, seq[-1] if seq else 0, qstart, c_rew, c_narrow,
+             c_degr, c_skip, c_runs, c_shd, c_bold,
              n_q, ('%d＝%d PASS' % (n_x, n_q)) if n_x >= 0 else 'N/A'))
     print('登记md -> %s' % regmd)
 
@@ -411,4 +416,9 @@ if __name__ == '__main__':
     argv = sys.argv[1:]
     linkage = '--linkage' in argv
     argv = [a for a in argv if a != '--linkage']
-    migrate(argv[0], argv[1], linkage=linkage)
+    qstart = 1
+    if '--qstart' in argv:
+        k = argv.index('--qstart')
+        qstart = int(argv[k + 1])
+        del argv[k:k + 2]
+    migrate(argv[0], argv[1], linkage=linkage, qstart=qstart)

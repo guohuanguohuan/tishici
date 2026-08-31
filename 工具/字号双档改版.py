@@ -251,6 +251,8 @@ def process(path_in, path_out, qstart=1, qcount=None, json_path=None):
         '待人工': [],
     }
     exempt_ids = set()   # 标题段豁免sz的run（T4负责）
+    exempt_keep = []     # 持活豁免run代理至断言结束：防lxml代理GC后id()地址回收致复核断言随机假失败
+                         # （2026-08-31 W-E实测：首跑3/复跑10处假失败；F-工具补丁入库，覆盖全部add位点）
 
     # ---------- 主遍历：分档分类 + 字号 + 行距 ----------
     zone = 'INIT'          # INIT/LECT/STEM/ANS
@@ -289,22 +291,23 @@ def process(path_in, path_out, qstart=1, qcount=None, json_path=None):
             if cls == '标题':
                 if stats_from is None:
                     rc['标题豁免run数(留T4)'] += 1
-                    exempt_ids.add(id(r))
+                    exempt_ids.add(id(r)); exempt_keep.append(r)
                     normalize_rfonts(r, rc)
                     off += tlen
                     continue
                 if off + tlen <= stats_from:
                     rc['标题豁免run数(留T4)'] += 1
-                    exempt_ids.add(id(r))
+                    exempt_ids.add(id(r)); exempt_keep.append(r)
                     normalize_rfonts(r, rc)
                     off += tlen
                     continue
                 if off < stats_from and t_el is not None and tlen > 0:
                     r = split_run_at(r, stats_from - off)
-                    rc['标题行内统计段run切分'] += 1
+                    # 2026-08-31 F-工具补丁审计修：原「rc['标题行内统计段run切分'] += 1」系错挂run计数
+                    # （键只在分类计数有初值——首触发即KeyError，本行与下行重复），删错行、保下行唯一计数
                     log['分类计数']['标题行内统计段run切分'] += 1
                     rc['标题豁免run数(留T4)'] += 1
-                    exempt_ids.add(id(rs[i]))
+                    exempt_ids.add(id(rs[i])); exempt_keep.append(rs[i])
                     off = stats_from
                     tlen = len(r.find(q('t')).text or '')
                 set_run_sz(r, SZ_ANS)
@@ -460,7 +463,9 @@ def process(path_in, path_out, qstart=1, qcount=None, json_path=None):
     log['docGrid'] = grid_log if grid_log else '无docGrid元素'
 
     # ---------- 断言：文字零增删 / 结构不变 ----------
-    assert text_stream(doc) == stream_before, 'w:t/m:t 流发生变化——禁止落盘'
+    # 2026-08-31 F-工具补丁审计修：原为列表级比对（text_stream(doc) == stream_before）——「标题行内
+    # 统计段run级切分」把1个w:t拆成2个时列表必不等而字符零增删，断言假失败；零字符判据改拼接流比对。
+    assert ''.join(text_stream(doc)) == ''.join(stream_before), 'w:t/m:t 字符流发生变化——禁止落盘'
     assert len(list(body.iter(q('p')))) == para_count_before, '段落数变化'
     assert len(list(body.iter(q('tbl')))) == tbl_count_before, '表格数变化'
 
