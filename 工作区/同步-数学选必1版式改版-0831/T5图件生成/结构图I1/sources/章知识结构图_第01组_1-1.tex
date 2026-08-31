@@ -1,0 +1,59 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{tikz}
+\begin{document}
+\definecolor{mmRootFill}{RGB}{14,94,44}
+\definecolor{mmLOneFill}{RGB}{234,148,136}
+\begin{tikzpicture}[
+  mmroot/.style={draw=black!75, line width=1.0pt, rounded corners=3.5pt, fill=mmRootFill, inner sep=5pt, font=\normalsize\bfseries},
+  mml1/.style={draw=black!55, line width=0.9pt, rounded corners=2.5pt, fill=mmLOneFill, inner sep=4.5pt, font=\small\bfseries, align=left, text width=4.8cm},
+  mml2/.style={draw=black!45, line width=0.8pt, rounded corners=2pt, fill=white, inner sep=4pt, font=\small, align=left, text width=6.2cm},
+]
+  %% 连线：根 → 一级 → 二级（节点填充不透明，盖住线头）
+  \draw[black!55, line width=0.9pt] (4.35, 8.4333) -- (4.8, 14.375);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 18.975);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 17.825);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 16.675);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 15.525);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 14.375);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 13.225);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 12.075);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 10.925);
+  \draw[black!55, line width=0.9pt] (4.8, 14.375) -- (10.5, 9.775);
+  \draw[black!55, line width=0.9pt] (4.35, 8.4333) -- (4.8, 8.05);
+  \draw[black!55, line width=0.9pt] (4.8, 8.05) -- (10.5, 8.625);
+  \draw[black!55, line width=0.9pt] (4.8, 8.05) -- (10.5, 7.475);
+  \draw[black!55, line width=0.9pt] (4.35, 8.4333) -- (4.8, 2.875);
+  \draw[black!55, line width=0.9pt] (4.8, 2.875) -- (10.5, 6.325);
+  \draw[black!55, line width=0.9pt] (4.8, 2.875) -- (10.5, 5.175);
+  \draw[black!55, line width=0.9pt] (4.8, 2.875) -- (10.5, 4.025);
+  \draw[black!55, line width=0.9pt] (4.8, 2.875) -- (10.5, 2.875);
+  \draw[black!55, line width=0.9pt] (4.8, 2.875) -- (10.5, 1.725);
+  \draw[black!55, line width=0.9pt] (4.8, 2.875) -- (10.5, 0.575);
+  \draw[black!55, line width=0.9pt] (4.8, 2.875) -- (10.5, -0.575);
+  %% 节点
+  \node[mmroot, anchor=east] at (4.35, 8.4333) {1.1 空间向量及其运算};
+  \node[mml1, anchor=west] at (4.6, 14.375) {1.1.1 空间向量及其运算};
+  \node[mml2, anchor=west] at (10.3, 18.975) {空间向量};
+  \node[mml2, anchor=west] at (10.3, 17.825) {空间向量的表示};
+  \node[mml2, anchor=west] at (10.3, 16.675) {几类特殊向量};
+  \node[mml2, anchor=west] at (10.3, 15.525) {空间向量的线性运算};
+  \node[mml2, anchor=west] at (10.3, 14.375) {空间向量共线的充要条件};
+  \node[mml2, anchor=west] at (10.3, 13.225) {空间向量的夹角};
+  \node[mml2, anchor=west] at (10.3, 12.075) {空间向量的数量积};
+  \node[mml2, anchor=west] at (10.3, 10.925) {投影向量};
+  \node[mml2, anchor=west] at (10.3, 9.775) {空间向量共面的充要条件};
+  \node[mml1, anchor=west] at (4.6, 8.05) {1.1.2 空间向量基本定理};
+  \node[mml2, anchor=west] at (10.3, 8.625) {空间向量基本定理};
+  \node[mml2, anchor=west] at (10.3, 7.475) {单位正交基底与正交分解};
+  \node[mml1, anchor=west] at (4.6, 2.875) {1.1.3 空间向量的坐标与空间直角坐标系};
+  \node[mml2, anchor=west] at (10.3, 6.325) {空间直角坐标系};
+  \node[mml2, anchor=west] at (10.3, 5.175) {画法：画空间直角坐标系时，一般使或，.};
+  \node[mml2, anchor=west] at (10.3, 4.025) {右手直角坐标系的定义};
+  \node[mml2, anchor=west] at (10.3, 2.875) {空间直角坐标系中的坐标};
+  \node[mml2, anchor=west] at (10.3, 1.725) {空间向量的坐标运算};
+  \node[mml2, anchor=west] at (10.3, 0.575) {空间向量的平行、垂直及模、夹角};
+  \node[mml2, anchor=west] at (10.3, -0.575) {空间两点间的距离公式};
+\end{tikzpicture}
+\end{document}

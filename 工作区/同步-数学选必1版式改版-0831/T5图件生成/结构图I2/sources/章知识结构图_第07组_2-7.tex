@@ -1,0 +1,37 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{tikz}
+\begin{document}
+\definecolor{mmRootFill}{RGB}{18,85,126}
+\definecolor{mmLOneFill}{RGB}{234,148,136}
+\begin{tikzpicture}[
+  mmroot/.style={draw=black!75, line width=1.0pt, rounded corners=3.5pt, fill=mmRootFill, inner sep=5pt, font=\normalsize\bfseries},
+  mml1/.style={draw=black!55, line width=0.9pt, rounded corners=2.5pt, fill=mmLOneFill, inner sep=4.5pt, font=\small\bfseries, align=left, text width=4.8cm},
+  mml2/.style={draw=black!45, line width=0.8pt, rounded corners=2pt, fill=white, inner sep=4pt, font=\small, align=left, text width=6.2cm},
+]
+  %% 连线：根 → 一级 → 二级（节点填充不透明，盖住线头）
+  \draw[black!55, line width=0.9pt] (4.35, 3.45) -- (4.8, 5.75);
+  \draw[black!55, line width=0.9pt] (4.8, 5.75) -- (10.5, 7.475);
+  \draw[black!55, line width=0.9pt] (4.8, 5.75) -- (10.5, 6.325);
+  \draw[black!55, line width=0.9pt] (4.8, 5.75) -- (10.5, 5.175);
+  \draw[black!55, line width=0.9pt] (4.8, 5.75) -- (10.5, 4.025);
+  \draw[black!55, line width=0.9pt] (4.35, 3.45) -- (4.8, 1.15);
+  \draw[black!55, line width=0.9pt] (4.8, 1.15) -- (10.5, 2.875);
+  \draw[black!55, line width=0.9pt] (4.8, 1.15) -- (10.5, 1.725);
+  \draw[black!55, line width=0.9pt] (4.8, 1.15) -- (10.5, 0.575);
+  \draw[black!55, line width=0.9pt] (4.8, 1.15) -- (10.5, -0.575);
+  %% 节点
+  \node[mmroot, anchor=east] at (4.35, 3.45) {2.7 抛物线及其方程};
+  \node[mml1, anchor=west] at (4.6, 5.75) {2.7.1 抛物线的标准方程};
+  \node[mml2, anchor=west] at (10.3, 7.475) {抛物线的定义};
+  \node[mml2, anchor=west] at (10.3, 6.325) {【微思考】在抛物线定义中，若去掉条件“l不经过点F”，点的轨迹还是抛物线吗？不是。当定点F在直线l上时，动点轨迹是与l垂直的直线};
+  \node[mml2, anchor=west] at (10.3, 5.175) {抛物线标准方程的几种形式};
+  \node[mml2, anchor=west] at (10.3, 4.025) {圆锥曲线的焦半径与第一焦半径公式};
+  \node[mml1, anchor=west] at (4.6, 1.15) {2.7.2 抛物线的几何性质};
+  \node[mml2, anchor=west] at (10.3, 2.875) {抛物线的简单几何性质};
+  \node[mml2, anchor=west] at (10.3, 1.725) {抛物线的焦点三角形及其性质};
+  \node[mml2, anchor=west] at (10.3, 0.575) {抛物线焦点弦的常考结论};
+  \node[mml2, anchor=west] at (10.3, -0.575) {抛物线的平均性质};
+\end{tikzpicture}
+\end{document}

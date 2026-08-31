@@ -1,0 +1,17 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{circuitikz}
+\begin{document}
+\begin{circuitikz}[line width=0.9pt, font=\small]
+  % 主回路：电源 → 开关 → A → Rx
+  \draw (0,0) to[battery1, l_=电源, invert] (0,3.6);
+  \draw (0,3.6) to[nos, l_=开关] (2.4,3.6);
+  \draw (2.4,3.6) to[ammeter, l_=$A$] (4.9,3.6);
+  \draw (4.9,3.6) -- (6.6,3.6);
+  \draw (6.6,3.6) to[R, l_=$R_x$] (6.6,0);
+  \draw (6.6,0) -- (0,0);
+  % 电压表 V 水平并联在 Rx 两端
+  \draw (6.6,3.6) -- (8.6,3.6) to[voltmeter, l_=$V$] (10.6,3.6) -- (10.6,0) -- (6.6,0);
+\end{circuitikz}
+\end{document}

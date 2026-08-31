@@ -465,15 +465,28 @@ def optics_refraction(*, n=1.5, theta1_deg=40.0, medium1="空气", medium2="玻�
 # ----------------------------- ⑤ 思维导图 -----------------------------
 
 def mindmap_tree(root, tree, *, font=r"\small", root_font=None,
-                 slot=1.15, x_l1=4.9, x_l2=10.6, root_x=3.4) -> dict:
+                 slot=1.15, x_l1=4.9, x_l2=10.6, root_x=3.4,
+                 root_fill="blue!12", l1_fill="gray!12", l2_fill="white",
+                 root_draw="black!70", l1_draw="black!60", l2_draw="black!45",
+                 l1_text_width=None, l2_text_width=None, root_anchor="center",
+                 l1_font=None, l2_font=None, extra_defs="") -> dict:
     """思维导图/知识结构（TikZ 树：节点框 + 连线，两级）。
 
     root: 根文本；tree: [(一级文本, [二级文本,...]) 或 一级文本, ...]。
     节点文本按 LaTeX 语法解释（支持 $...$ 数学式）。布局在 Python 侧计算：二级叶子
     （及无子项的一级）纵向均分槽位，一级节点取其子叶 y 均值；连线画在节点之前、
     node-to-node（TikZ 自动落边框），节点不透明填充盖住线头。
+
+    2026-08-31 T5 扩参（章知识结构图生成.py 用，默认值＝原字面输出、零行为变化）：
+    root_fill/l1_fill/l2_fill 与 root_draw/l1_draw/l2_draw＝三级节点的填充/边框色
+    （xcolor 表达式或 \\definecolor 定义的名，配合 extra_defs 注入定义行）；
+    l1_text_width/l2_text_width＝一级/二级节点定宽换行（cm，None＝不定宽）；
+    root_anchor＝根节点锚点（"east" 时根从 root_x 向左展开，容纳长节名）；
+    l1_font/l2_font＝各级字号覆盖；extra_defs＝置于 tikzpicture 首部的定义行。
     """
     root_font = root_font or font
+    l1_font = l1_font or font
+    l2_font = l2_font or font
     items = []           # (l1_text, [l2,...])
     for ch in tree:
         if isinstance(ch, (tuple, list)) and len(ch) == 2 \
@@ -503,10 +516,15 @@ def mindmap_tree(root, tree, *, font=r"\small", root_font=None,
             y_of_l1[i] = solo_y[i]
     y_root = sum(y_of_l1.values()) / len(y_of_l1)
 
-    L = [r"\begin{tikzpicture}["]
-    L.append(r"  mmroot/.style={draw=black!70, line width=1.0pt, rounded corners=3.5pt, fill=blue!12, inner sep=5pt, font=%s}," % root_font)
-    L.append(r"  mml1/.style={draw=black!60, line width=0.9pt, rounded corners=2.5pt, fill=gray!12, inner sep=4.5pt, font=%s, align=left}," % font)
-    L.append(r"  mml2/.style={draw=black!45, line width=0.8pt, rounded corners=2pt, fill=white, inner sep=4pt, font=%s, align=left}," % font)
+    L = []
+    if extra_defs:
+        L.append(extra_defs.rstrip())      # \definecolor 等定义行须在环境外
+    L.append(r"\begin{tikzpicture}[")
+    L.append(r"  mmroot/.style={draw=%s, line width=1.0pt, rounded corners=3.5pt, fill=%s, inner sep=5pt, font=%s}," % (root_draw, root_fill, root_font))
+    tw1 = (", text width=%scm" % _fmt(float(l1_text_width))) if l1_text_width else ""
+    tw2 = (", text width=%scm" % _fmt(float(l2_text_width))) if l2_text_width else ""
+    L.append(r"  mml1/.style={draw=%s, line width=0.9pt, rounded corners=2.5pt, fill=%s, inner sep=4.5pt, font=%s, align=left%s}," % (l1_draw, l1_fill, l1_font, tw1))
+    L.append(r"  mml2/.style={draw=%s, line width=0.8pt, rounded corners=2pt, fill=%s, inner sep=4pt, font=%s, align=left%s}," % (l2_draw, l2_fill, l2_font, tw2))
     L.append(r"]")
     # 连线先画：从父节点名到子节点名（TikZ node-to-node 自动落在边框上）。
     # 由于父节点尚不存在，先用坐标连线（父中心→子中心），节点后画、不透明填充
@@ -522,7 +540,9 @@ def mindmap_tree(root, tree, *, font=r"\small", root_font=None,
                             _fmt(x_l2 + 0.2), _fmt(yy)))
     # 节点（后画，盖住线头）
     L.append(r"  %% 节点")
-    L.append(r"  \node[mmroot] at (%s, %s) {%s};" % (_fmt(root_x), _fmt(y_root), root))
+    L.append(r"  \node[mmroot%s] at (%s, %s) {%s};"
+             % ("" if root_anchor == "center" else ", anchor=%s" % root_anchor,
+                _fmt(root_x), _fmt(y_root), root))
     for i, (t1, subs) in enumerate(items):
         L.append(r"  \node[mml1, anchor=west] at (%s, %s) {%s};"
                  % (_fmt(x_l1), _fmt(y_of_l1[i]), t1))
@@ -688,12 +708,15 @@ def _compass_dir(dx, dy) -> str:
 # 统一渲染出口
 # =========================================================================
 
-def render(spec, out_png, *, dpi=150, grayscale_check=True, timeout=300):
+def render(spec, out_png, *, dpi=150, grayscale_check=True, timeout=300,
+           keep_pdf=False):
     """统一出口：写源文件（sources/ 子目录，源码即图可入 git）→ ASCII 中转名编译
     → gswin64c 转 PNG → 灰度检查 → 中文名落盘。返回 Path(out_png)。
 
     spec: 模板函数返回的字典（backend=tikz/asy + source）。
     质量数据（bg/text_L/contrast/ink_frac/源文件路径）写入模块变量 LAST_REPORT。
+    keep_pdf=True 时另把编译产物 PDF 复制为 out_png 同名 .pdf（2026-08-31 T5 增参，
+    供矢量再导出；默认 False 保持原行为）。
     """
     out = Path(out_png)
     backend = spec["backend"]
@@ -720,6 +743,8 @@ def render(spec, out_png, *, dpi=150, grayscale_check=True, timeout=300):
         _pdf_to_png(pdf, png_tmp, dpi, env, timeout)
         rep = check_grayscale(png_tmp) if grayscale_check else {}
         shutil.copyfile(str(png_tmp), str(out))         # 中文最终名（Python 层改名，安全）
+        if keep_pdf:
+            shutil.copyfile(str(pdf), str(out.with_suffix(".pdf")))
 
     LAST_REPORT.clear()
     LAST_REPORT.update(rep)

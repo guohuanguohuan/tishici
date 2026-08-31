@@ -1,0 +1,28 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+\definecolor{acc}{RGB}{18,85,126}
+\begin{tikzpicture}[>=Stealth, line width=1.0pt, scale=1.0]
+  % 平面直角坐标系（图内零文字）
+  \draw[->] (-5.2, 0) -- (6.0, 0);
+  \draw[->] (0, -3.4) -- (0, 3.6);
+  % 椭圆（倾斜，含焦点与割线）
+  \begin{scope}[rotate around={-16:(2.15, 1.25)}]
+    \draw[line width=1.3pt] (2.15, 1.25) ellipse [x radius=2.45, y radius=1.02];
+    \fill (2.15-1.98, 1.25) circle (1.9pt);
+    \fill (2.15+1.98, 1.25) circle (1.9pt);
+  \end{scope}
+  \draw[dashed, black!55] (-2.9, 3.15) -- (6.6, -0.75);
+  % 双曲线（左右支）
+  \draw[line width=1.2pt, acc] plot[domain=-2.05:2.05, samples=61] ({-2.85 - 0.62*\x*\x/4}, \x);
+  \draw[line width=1.2pt, acc] plot[domain=-2.05:2.05, samples=61] ({-1.55 + 0.62*\x*\x/4}, \x);
+  \fill (-3.55, 0) circle (1.9pt);  \fill (-0.85, 0) circle (1.9pt);
+  % 抛物线（开口向右）
+  \draw[line width=1.2pt] plot[domain=-2.3:2.3, samples=61] ({1.05 + 0.28*\x*\x}, \x-2.25);
+  \fill (1.75, -2.25) circle (1.9pt);
+\end{tikzpicture}
+\end{document}

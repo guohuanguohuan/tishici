@@ -1,0 +1,110 @@
+{
+ "P3/B.docx": {
+  "pages": 78,
+  "sampled_physical": [
+   1,
+   40,
+   78
+  ],
+  "adjusted": [
+   1,
+   40,
+   78
+  ],
+  "expected": [
+   1,
+   40,
+   78
+  ]
+ },
+ "P3/C.docx": {
+  "pages": 76,
+  "sampled_physical": [
+   1,
+   38,
+   76
+  ],
+  "adjusted": [
+   79,
+   116,
+   154
+  ],
+  "expected": [
+   79,
+   116,
+   154
+  ]
+ },
+ "P6/E.docx": {
+  "pages": 50,
+  "sampled_physical": [
+   1,
+   25,
+   50
+  ],
+  "adjusted": [
+   1,
+   25,
+   50
+  ],
+  "expected": [
+   1,
+   25,
+   50
+  ]
+ },
+ "P6/F.docx": {
+  "pages": 53,
+  "sampled_physical": [
+   1,
+   27,
+   53
+  ],
+  "adjusted": [
+   51,
+   77,
+   103
+  ],
+  "expected": [
+   51,
+   77,
+   103
+  ]
+ },
+ "P6/G.docx": {
+  "pages": 38,
+  "sampled_physical": [
+   1,
+   19,
+   38
+  ],
+  "adjusted": [
+   104,
+   122,
+   141
+  ],
+  "expected": [
+   104,
+   122,
+   141
+  ]
+ },
+ "P6/H.docx": {
+  "pages": 64,
+  "sampled_physical": [
+   1,
+   32,
+   64
+  ],
+  "adjusted": [
+   142,
+   173,
+   205
+  ],
+  "expected": [
+   142,
+   173,
+   205
+  ]
+ }
+}

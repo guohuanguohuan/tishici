@@ -1,0 +1,33 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{tikz}
+\begin{document}
+\definecolor{mmRootFill}{RGB}{18,85,126}
+\definecolor{mmLOneFill}{RGB}{234,148,136}
+\begin{tikzpicture}[
+  mmroot/.style={draw=black!75, line width=1.0pt, rounded corners=3.5pt, fill=mmRootFill, inner sep=5pt, font=\normalsize\bfseries},
+  mml1/.style={draw=black!55, line width=0.9pt, rounded corners=2.5pt, fill=mmLOneFill, inner sep=4.5pt, font=\small\bfseries, align=left, text width=4.8cm},
+  mml2/.style={draw=black!45, line width=0.8pt, rounded corners=2pt, fill=white, inner sep=4pt, font=\small, align=left, text width=6.2cm},
+]
+  %% 连线：根 → 一级 → 二级（节点填充不透明，盖住线头）
+  \draw[black!55, line width=0.9pt] (4.35, 2.875) -- (4.8, 4.6);
+  \draw[black!55, line width=0.9pt] (4.8, 4.6) -- (10.5, 5.175);
+  \draw[black!55, line width=0.9pt] (4.8, 4.6) -- (10.5, 4.025);
+  \draw[black!55, line width=0.9pt] (4.35, 2.875) -- (4.8, 1.15);
+  \draw[black!55, line width=0.9pt] (4.8, 1.15) -- (10.5, 2.875);
+  \draw[black!55, line width=0.9pt] (4.8, 1.15) -- (10.5, 1.725);
+  \draw[black!55, line width=0.9pt] (4.8, 1.15) -- (10.5, 0.575);
+  \draw[black!55, line width=0.9pt] (4.8, 1.15) -- (10.5, -0.575);
+  %% 节点
+  \node[mmroot, anchor=east] at (4.35, 2.875) {2.5 椭圆及其方程};
+  \node[mml1, anchor=west] at (4.6, 4.6) {2.5.1 椭圆的标准方程};
+  \node[mml2, anchor=west] at (10.3, 5.175) {把平面内与两个定点，的距离的和等于常数（大于|F₁F₂|），即|MF₁|+|MF₂|=2a（据教材补写）的点的轨迹叫做椭圆．这两个定点叫做椭圆的焦点，两个焦点之间的距离叫做椭圆的焦距，焦距的一半称为半焦距．};
+  \node[mml2, anchor=west] at (10.3, 4.025) {椭圆的标准方程};
+  \node[mml1, anchor=west] at (4.6, 1.15) {2.5.2 椭圆的几何性质};
+  \node[mml2, anchor=west] at (10.3, 2.875) {椭圆的简单几何性质};
+  \node[mml2, anchor=west] at (10.3, 1.725) {椭圆的焦点三角形};
+  \node[mml2, anchor=west] at (10.3, 0.575) {焦点三角形的内心};
+  \node[mml2, anchor=west] at (10.3, -0.575) {椭圆的第三定义};
+\end{tikzpicture}
+\end{document}
