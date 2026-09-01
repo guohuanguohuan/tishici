@@ -167,7 +167,7 @@ def build_anchor(inline, rel_height):
     a.set('behindDoc', '0')
     a.set('locked', '0')
     a.set('layoutInCell', '1')
-    a.set('allowOverlap', '1')
+    a.set('allowOverlap', '0')  # 2026-09-01 SW补丁：置0防跨段锚定浮动图叠放（E1返工§6.2定案；§5锚定形态「结构上不可能压字」）
     sp = etree.Element(WP('simplePos'))
     sp.set('x', '0')
     sp.set('y', '0')
