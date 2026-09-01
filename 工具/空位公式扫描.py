@@ -1,22 +1,39 @@
 # -*- coding: utf-8 -*-
-"""空位公式扫描 v2：三签名版（2026-08-27 升级，公共规则§5「空位公式红旗扫描」现行口径）。
+"""空位公式扫描 v3：四签名版（2026-09-01 A'改制轮·工具债③·T3 升级，落实看板六增签债；
+v2＝2026-08-27 三签名版，公共规则§5「空位公式红旗扫描」现行口径）。
 
 检测「行内公式掉位堆积」缺陷家族（欧拉线题109段缺陷、讲练下62题「5式并1块堆段尾」等）：
 
   签名① 双逗空位【主判据】——段落线性化（文字＋⟦公式⟧交错流）中出现两个全角逗号
           相邻（中间至多空白）且无任何公式隔开＝公式掉位主判据。
+          v3增：「．」收尾变体——全角逗号/句点两两相邻（，，／，．／．，）同判（成对标点
+          间至多空白在合法中文内永不出现）。
   签名② 段尾公式簇【弱判据·须人工核验】——段尾文字以「）」收尾后仍堆积 ≥2 个独立
           式子碎片。碎片按线性化结构切分计数：等号/逗号/分号边界各断开一件，坐标
           括号式整体各计一件；掉位公式被并进单个 oMath 块同样计入，块数不作计数单位
           （62题5式并1块即此变体——旧版按 oMath 块数计数即漏）。
+          v3增：「．」收尾变体——段尾文字以全角句点「．」（或半角.）收尾后堆积碎片同判。
   签名③ 量词空位【弱判据·须人工核验】——量词名词（点/直线/向量/平面/曲线/圆/函数/
           数列及同族延伸）后紧跟全角逗号且中间无名号符号＝单空位掉位弱判据
           （62题「已知点，平面过原点，且垂直于向量」空位之间隔有文字、双逗不相邻，
           ①不触发，靠本签名兜住）。
+          v3增：词表扩锥/柱/台/焦点族——棱柱/棱锥/棱台（known语境制）＋焦点（excl制，
+          左/右焦点复合词排除）；「．」收尾变体——名词后紧跟全角句点同判（句末空位形态，
+          按known语境门控：已知/设/若/定/句读边界后的「已知点．」照报，「…叫做共面向量．」
+          类定义句句末裸名词不报）。
+  签名④ 多赋值粘连【弱判据·须人工核验】——单 oMath 块线性化内出现「前置等式尾元直接
+          粘连下一方程首元」（公共规则§5单公式块多式连排禁令检测特征：rE=、)E=、I₁E=类）
+          且该无分隔片段含 ≥2 个等号＝多式粘连红旗；链式等号（PA=PB=PC，粘连边界前置
+          字符为「=」）不判。嵌套变体（外层块内嵌独立方程）按块内线性化签名同款覆盖。
+
+  v3线性化增补：w:drawing/w:pict/w:object（行内公式图片/图件）计为公式对象（H①=1盲区
+  误报根因——段内 oMath=0 不必然缺式，图片公式在位即占公式区，①③不再跨图片误报、
+  ②段尾图片簇照常计碎片）；公式区/图件子树整体消费不重复计、图内文本框文字不进文字层。
+  层级制题号签名（§6编号唯一层形）：题号定位兼容「1.1.1-5．」层级制与「5．」旧全局双形态。
 
 命中＝红旗：必须对照源文件交错模板定位核验（回填走 工具/空位公式回填.py），禁止未定位
-即以「扫描误报」为由放过。本工具只读不改；②③为弱判据输出带「须人工核验」标记，
-但①②③计数一律真实输出。线性化命名空间/压扁逻辑与 回填.py 同款（m:t 全拼接），
+即以「扫描误报」为由放过。本工具只读不改；②③④为弱判据输出带「须人工核验」标记，
+但①②③④计数一律真实输出。线性化命名空间/压扁逻辑与 回填.py 同款（m:t 全拼接），
 可先用 dump_docx.py --slice 定点复核命中段全文。
 
 用法：python 工具/空位公式扫描.py <docx> [docx ...]
@@ -36,31 +53,38 @@ EXCERPT_LEN = 100          # 摘录上限（字）
 WS = '[ \u3000\t]'         # 半角空格／全角空格／制表
 
 # —— 签名③量词名词：核心＝公共规则§5列举（点/直线/向量/平面/曲线/圆/函数/数列）
-#    ＋同族锥线三类（椭圆/双曲线/抛物线）。模式：
+#    ＋同族锥线三类（椭圆/双曲线/抛物线）＋焦点（2026-09-01 看板增签：词表扩锥/柱/台/焦点）。模式：
 #      'excl'——前邻字符属排除集即不报（构成原点/交点/奇函数等单位向量类复合词，或
 #              数字限定的一/两点等泛指短语，非掉位形态）；
 #      'known'——延伸名（立体几何载体/方程/球，纯叙述中泛用极易误报）：只在前邻字符
 #              属引导语境白名单（已知/设/若…、句读边界）时才报——恰好截住「已知X，
 #              …」式掉位主语形态。
-QUANT_NOUNS_EXCL = ('双曲线', '抛物线', '椭圆', '曲线', '直线', '向量', '平面',
+QUANT_NOUNS_EXCL = ('双曲线', '抛物线', '椭圆', '焦点', '曲线', '直线', '向量', '平面',
                     '圆', '函数', '数列', '点')
-QUANT_NOUNS_KNOWN = ('四面体', '平行六面体', '正方体', '长方体', '四棱锥',
-                     '三棱锥', '三棱柱', '圆锥', '圆柱', '圆台', '球', '方程')
+QUANT_NOUNS_KNOWN = ('平行六面体', '四面体', '正方体', '长方体', '四棱锥', '三棱锥',
+                     '三棱柱', '棱锥', '棱柱', '棱台', '圆锥', '圆柱', '圆台', '球', '方程')
 # 复合名词/泛指短语排除（前邻字）。全局集＝决定词、量词、系动词、连接成分——
 # 的/一/在/个/条/两/为/是/成/共/关…（「四点共圆」「一条直线」「相关平面」「高考热点」
 # 类完整短语非掉位形态）；「已知X／设X／若X／给定X」语境的引导字不在排除集，
 # 保证掉位主语形态可命中。字母数字希腊符号由 _SYM_PREV 统一拦（O点/B点＝带名号）。
-_GLOBAL_EXCL = set('的一在个条只支位次批类种为是成作取得到有与及或并也又均即'
+_GLOBAL_EXCL = set('的一在于个条只支位次批类种为是成作取得到有与及或并也又均即'
                    '就都还使令从对当向朝往沿替给帮跟同关相共整较更最太挺满全部彼此相互其中之这那该此某任另'
                    '其些热少高低长短大小左右里中等')
-# 各名词专属复合词尾字：原点/焦点/切点…奇偶函数、单位/法/零/投影/共线/方向向量、半圆等。
+# 各名词专属复合词尾字：原点/交点/焦点/切点…奇偶函数、单位/法/零/投影/共线/方向向量、半圆、
+# 左/右焦点（v3增签：焦点族复合词）等。
 _QUANT_EXCL_PREV = {
     '点': {'原', '交', '焦', '顶', '定', '切', '端', '起', '终', '基', '分', '动', '殊',
            '热', '优', '零', '一', '二', '两', '三', '四', '五', '六', '七', '八', '九', '十', '几'},
     '函数': {'奇', '偶', '标'},
     '向量': {'法', '零', '投', '影'},
     '圆': {'半', '切', '内', '外', '接', '同', '弧', '补', '扇', '面', '圆'},
+    '焦点': {'左', '右'},
 }
+
+
+# '于'介词排除的例外：垂直/平行于向量必须带名号，裸「于向量，」恒为掉位形态（62题历史
+# 形态保真）；「相交于直线」类完整动词短语照旧被'于'排除。
+_ON_ALLOW = {'向量'}
 
 
 def _excl_for(q):
@@ -70,41 +94,63 @@ _SYM_PREV = re.compile(
     r'[A-Za-z0-9α-ωΑ-Ωа-яＡ-Ｚａ-ｚ０-９°′″∆∇∞±∓×÷≠≤≥≈]')
 # known 延伸名的语境白名单：仅「已知X／设X／若X／给定X」与句读/串首后允许裸名——
 # 其余叙述性泛用（补成正方体，/内切球，等）不报。
-_KNOWN_PREV_OK = set('知设若定。；：？！')
+_KNOWN_PREV_OK = set('知设若定。；：？！．')
 
 
 def _compile_quant():
+    """v3双尾态：逗号尾＝excl门控（v2口径不变）；句点尾「．」＝known语境门控（知/设/若/定/
+    句读边界）——「叫做共面向量．」类定义句句末裸名词不报，「已知点．」式掉位主语照报。"""
     pats = []
     for q in QUANT_NOUNS_EXCL:
         pats.append((q, 'excl', _excl_for(q),
                      re.compile(re.escape(q) + WS + r'{0,2}，')))
+        pats.append((q, 'known', _KNOWN_PREV_OK,
+                     re.compile(re.escape(q) + WS + r'{0,2}．')))
     for q in QUANT_NOUNS_KNOWN:
         pats.append((q, 'known', _KNOWN_PREV_OK,
-                     re.compile(re.escape(q) + WS + r'{0,2}，')))
+                     re.compile(re.escape(q) + WS + r'{0,2}[，．]')))
     return pats
 
 
 _QUANT_PATS = _compile_quant()
 
-_COMMA_PAIR = re.compile(r'，' + WS + r'{0,4}，')   # 签名①：全角逗号对（间隔至多空白）
+_COMMA_PAIR = re.compile(r'[，．]' + WS + r'{0,4}[，．]')   # 签名①：全角逗号/句点对（间隔至多空白）
 
 # —— 签名②碎片切分用：坐标括号式（圆/方括号对，内部至少一个逗号的元组/向量形态）
 _COORD_RE = re.compile(r'[（(\[][^（()）\[\]{}]*[,，][^（()）\[\]{}]*[）)\]]')
 _FRAG_SEP_RE = re.compile(r'[,，;；]')
 _PLACE = '\u2999'   # ⦙ 坐标式占位符
 _EQ_RE = re.compile(r'[=＝]')
+# —— 签名④多赋值粘连（§5单公式块多式连排禁令）：值起点粘连双分支——
+#    A：等号/运算符后的数值直接粘连下一方程首元（「a=1b=2c=3」类：值1后无分隔接b=）；
+#    B：右括号后直接粘连下一方程首元（「…）E=」类）。
+#    字母尾粘连（rE=/I₁E=类）与链式等价（λa=λOA=MN、∠OO₁E=∠OO₂E）在线性化层不可区分，
+#    不在本签名判（块内结构级OMML复核与②段尾碎片计数承担），文档已注明局限。
+_ADHESION_RE = re.compile(r'(?<=[=＝+＋\-−×⋅·/÷^])\d+[A-Za-z][₀-₉]?[=＝]'
+                          r'|[）)\]][A-Za-z][₀-₉]?[=＝]')
+_IMG_MARK = '\u25AD'   # ▭ 图件（行内公式图片）线性化占位
 
 
 def paragraph_seq(p):
-    """段落交错序列 [(kind, text)]，kind='t' 文字 / 'm' 公式线性化（文档序）。"""
+    """段落交错序列 [(kind, text)]，kind='t' 文字 / 'm' 公式线性化（文档序）。
+    v3：oMath 与 w:drawing/w:pict/w:object 子树整体消费——图件计为公式对象（H①=1盲区
+    误报根因修复）、不重复计、图内文本框文字不进文字层。"""
     seq = []
-    for child in p.iter():
-        qn = etree.QName(child)
-        if qn.namespace == W and qn.localname == 't' and child.text:
-            seq.append(('t', child.text))
-        elif qn.namespace == M and qn.localname == 'oMath':
-            lin = ''.join(t.text or '' for t in child.iter(f'{{{M}}}t'))
-            seq.append(('m', lin))
+
+    def walk(el):
+        for child in el:
+            qn = etree.QName(child)
+            if qn.namespace == W and qn.localname == 't' and child.text:
+                seq.append(('t', child.text))
+            elif qn.namespace == M and qn.localname == 'oMath':
+                lin = ''.join(t.text or '' for t in child.iter(f'{{{M}}}t'))
+                seq.append(('m', lin))
+            elif qn.namespace == W and qn.localname in ('drawing', 'pict', 'object'):
+                seq.append(('m', _IMG_MARK))
+            else:
+                walk(child)
+
+    walk(p)
     return seq
 
 
@@ -160,7 +206,9 @@ def scan_paragraph(seq):
             a, b = mo.span()
             prev = full[a - 1] if a > 0 else '\x00'
             if mode == 'excl':
-                if prev != '\x00' and (prev in charset or _SYM_PREV.match(prev)):
+                if prev == '于' and q in _ON_ALLOW:
+                    pass            # 「于向量，」＝掉位形态（62题历史形态），不排除
+                elif prev != '\x00' and (prev in charset or _SYM_PREV.match(prev)):
                     continue
             else:   # known 延伸名：仅语境白名单（含串首）后放行
                 if prev != '\x00' and prev not in charset:
@@ -192,7 +240,7 @@ def scan_paragraph(seq):
         note = f'{len(pairs)}处' if len(pairs) > 1 else ''
         excerpt = (('…' if lo > 0 else '') + full[lo:hi] + ('…' if hi < len(full) else ''))[:EXCERPT_LEN]
         hits['①'] = [f'[{note}]{excerpt}']
-    # 签名②段尾公式簇：段尾为公式堆积、其前文字以「）」收尾，碎片≥2
+    # 签名②段尾公式簇：段尾为公式堆积、其前文字以「）」/「．」收尾（v3：＋句点收尾变体），碎片≥2
     j = len(seq) - 1
     while j >= 0 and seq[j][0] == 'm':
         j -= 1
@@ -200,11 +248,25 @@ def scan_paragraph(seq):
     if tail_lins:
         tail_text = seq[j][1] if j >= 0 and seq[j][0] == 't' else ''
         frags = fragment_count(''.join(tail_lins))
-        if frags >= 2 and tail_text.rstrip().endswith(('）', ')')):
+        if frags >= 2 and tail_text.rstrip().endswith(('）', ')', '．', '.')):
             stem_tail = tail_text.rstrip()[-20:]
             pile = ''.join(tail_lins)[:EXCERPT_LEN - len(stem_tail) - 8]
             hits.setdefault('②', []).append(
                 f'碎片={frags}｜…)「{stem_tail}」+⟦{pile}⟧')
+    # 签名④多赋值粘连：单oMath块内无分隔片段≥2等号＋粘连边界（§5单块多式连排禁令；链式等号不判）
+    adh, adh_ex = 0, ''
+    for k, s in seq:
+        if k != 'm' or not s or _IMG_MARK in s:
+            continue
+        for part in _FRAG_SEP_RE.split(s):
+            if len(_EQ_RE.findall(part)) >= 2:
+                ms = _ADHESION_RE.findall(part)
+                if ms:
+                    adh += len(ms)
+                    if not adh_ex:
+                        adh_ex = part[:60]
+    if adh:
+        hits['④'] = [f'粘连={adh}处|⟦{adh_ex}⟧'[:EXCERPT_LEN]]
     return hits
 
 
@@ -212,6 +274,7 @@ _SIG_LABEL = {
     '①': '双逗空位[主]',
     '②': '段尾公式簇[弱·须人工核验]',
     '③': '量词空位[弱·须人工核验]',
+    '④': '多赋值粘连[弱·须人工核验]',
 }
 
 
@@ -232,7 +295,7 @@ def _body_index_map(root):
     return m
 
 
-_QNUM_RE = re.compile(r'^(\d{1,3})．')
+_QNUM_RE = re.compile(r'^(\d{1,3}(?:\.\d{1,3}){1,3}-\d{1,3}|\d{1,3})．')   # 层级制＋旧全局双形态
 _MARK_RE = re.compile(r'^(【例题】|【典例\d*】|【举一反三】|【练习题】|【易错题)')
 QNUM_MINLEN = 8            # 与 dump_docx 同款经验口径：小数/年份不起误报
 
@@ -242,7 +305,7 @@ def scan_file(path):
     with zipfile.ZipFile(path) as z:
         root = etree.fromstring(z.read('word/document.xml'))
     bimap = _body_index_map(root)
-    rows, counts = [], {'①': 0, '②': 0, '③': 0}
+    rows, counts = [], {'①': 0, '②': 0, '③': 0, '④': 0}
     cur_q = None
     for pi, p in enumerate(root.iter(WT_P)):
         seq = paragraph_seq(p)
@@ -263,7 +326,7 @@ def scan_file(path):
         loc.append(bimap.get(id(p), ''))
         loc.append(f'p#{pi}')
         base = '/'.join(x for x in loc if x)
-        for key in ('①', '②', '③'):
+        for key in ('①', '②', '③', '④'):
             if key in sig:
                 counts[key] += 1
                 ev = sig[key][0]
@@ -280,7 +343,7 @@ def main():
     if len(sys.argv) < 2:
         print(__doc__)
         return 1
-    grand = {'①': 0, '②': 0, '③': 0}
+    grand = {'①': 0, '②': 0, '③': 0, '④': 0}
     grand_paras = set()
     for path in sys.argv[1:]:
         name = path.replace('\\', '/').split('/')[-1]
@@ -294,14 +357,15 @@ def main():
             print('  HIT | ' + line)
         print(f'  小计[{name}] 命中段落事件: '
               f'①双逗空位={counts["①"]} ②段尾公式簇(须人工核验)={counts["②"]} '
-              f'③量词空位(须人工核验)={counts["③"]} 合计={sum(counts.values())}')
+              f'③量词空位(须人工核验)={counts["③"]} ④多赋值粘连(须人工核验)={counts["④"]} '
+              f'合计={sum(counts.values())}')
         for k in grand:
             grand[k] += counts[k]
         for cur_q, pi, _, _line in rows:
             grand_paras.add((path, pi))
-    print(f'TOTAL ①={grand["①"]} ②={grand["②"]} ③={grand["③"]} '
+    print(f'TOTAL ①={grand["①"]} ②={grand["②"]} ③={grand["③"]} ④={grand["④"]} '
           f'事件合计={sum(grand.values())} 命中段落={len(grand_paras)}')
-    print('说明：①主判据命中即须回源定位；②③弱判据须人工核验——对照源文件交错顺序确认，'
+    print('说明：①主判据命中即须回源定位；②③④弱判据须人工核验——对照源文件交错顺序确认，'
           '禁止未定位即以「扫描误报」放过。')
     return 0
 

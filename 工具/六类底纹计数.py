@@ -15,22 +15,38 @@
 #   ④修复历史 bug：报告写进目标件（两参签名误用防护——report 路径＝docx/同文件即拒绝）；
 #     「C9C9C9 挂点总数恒差1」——旧公式漏加 chip/marker run 且未扫段级/段落标记挂点，
 #     现改为全挂点分桶构造性恒等（Σ桶＝document.xml 原始 w:shd 计数）。
-"""六类底纹计数.py — 三色板底纹分色计数与恒等式核验（只读，不改文件）：
+# 2026-09-01 A'改制轮（T6代理，工具债⑦）——扩七类＋修看板备忘六三笔缺陷：
+#   ⑦解析块段落底纹：带题件解析块全部段落段级 w:pPr/w:shd fill=#F2F2F2（PDF灰≈242），
+#     恒等式＝浅底段落数＝解析块段落清点数（结构清点＝标签行/分析/详解/点睛/编注/
+#     大招指引/题后反思/温馨提醒/题型通式句触发，题号块·标题·条目号·表格为边界）；
+#     知识清单件全件白底——F2F2F2 任何挂点＝违规；run级/tcPr/OMML 挂 F2F2F2＝违规
+#     （浅底只挂段级 pPr）；浅底0段且带题件＝「改制前形态」注记（不阻断，清点数照出）；
+#   修③（I1第一子层56≠59）：（N）序号与【定理】【拓展】类芯片分属相邻两个灰底 run、
+#     lead 串接「（1）【定理】」旧全式不匹配——lead 全式放宽为「序号＋零或多个【×】芯片」；
+#   修①加固：报告/目标路径比对加 normcase（Windows 大小写不敏感）＋ samefile 双保险；
+#   修②验证：分桶恒等已修（08-31），本轮以独立 regex/lxml 双路计数复核（I1=894、B=902）；
+#   题号/条目号签名加「节号-序号．」层级制前向兼容（改制轮口径C——落盘后即可计数）。
+"""七类底纹计数（载体文件名沿用「六类底纹计数.py」——公共规则§7点名；旧名
+  四类底纹计数.py 保留为兼容入口）— 四色板底纹分色计数与恒等式核验（只读，不改文件）：
   ①标题整行底纹（章/节，段级 #ADC2DA）  ②标题整行底纹（讲部/题型，段级 #C6D4E3）
-  ③内容标记族（run级 #C9C9C9）：题号块（新形只盖N．＋过渡旧形）、块标签（含行内小标签
+  ③内容标记族（run级 #C9C9C9）：题号块（新形只盖N．/节号-序号．＋过渡旧形）、块标签（含行内小标签
       与并行解法标记——跨run分裂标签按字符级灰底蒙版整chip识别）、条目号、条目第一子层、
       答案值/需背（含 OMML m:r/ctrlPr 挂点）
-  恒等式（公共规则§7自检⑦现行口径，2026-08-31 N4/N5）：
+  ⑦解析块段落底纹（段级 #F2F2F2，PDF灰≈242）：恒等式＝浅底段落数＝解析块段落清点数
+  恒等式（公共规则§7自检⑦现行口径，2026-09-01 七类版）：
       题号块底纹run数＝题量（文件名口径并记）；标题整行底纹段数＝章+节+讲部+题型标题数
       （章标题与文内开头标题一并入计，按色分记 ADC2DA/C6D4E3）；块标签run数＝标签计数；
-      条目号run数＝条目计数；第一子层run数＝第一子层计数；内容标记覆盖＝题块数。
+      条目号run数＝条目计数；第一子层run数＝第一子层计数；内容标记覆盖＝题块数；
+      解析块浅底段数＝解析块段落清点数（带题件；清单件全件白底）。
   违规：A6A6A6/D9D9D9（document+headers/footers+styles 全包扫描）＝0；w:bdr＝0；
       段级 C9C9C9 误挂＝0；run级 #ADC2DA/#C6D4E3 误挂＝0；新格式旧结构序号run残留＝0；
       加粗类（题号块须加粗；块标签/条目号/子层不加粗；标题整行加粗——effective 解析含样式链）。
   改版前件（未检出段级标题底纹）：标题整行底纹恒等式标「不适用（改版前）」，旧结构序号
-  run 计数转登记口径（不阻断）；六类 C9C9C9 族恒等式照常全断言。
-  表内非标签灰底（导航表头 run 等）与 tcPr 级底纹、空文本灰底 run 单独登记，不入六类。
-  清单件判定：文件名含「知识清单」——题号块与覆盖恒等式不适用，条目号/第一子层照查。
+  run 计数转登记口径（不阻断）；C9C9C9 族恒等式照常全断言。浅底0段且带题件：
+  ⑦行标「改制前形态（未检出浅底）」并照出清点数（不阻断；浅底挂载后>0段即硬断言）。
+  表内非标签灰底（导航表头 run 等）与 tcPr 级底纹、空文本灰底 run 单独登记，不入七类。
+  清单件判定：文件名含「知识清单」——题号块与覆盖恒等式不适用，条目号/第一子层照查，
+  F2F2F2 任何挂点（段级含）＝违规（知识清单全件白底）。
 用法: python 六类底纹计数.py <docx> <报告txt>（report 拒绝 .docx 等成品扩展名与同路径，
       防两参签名误用把报告写进目标件；旧名 四类底纹计数.py 同 CLI 兼容入口）"""
 import sys, zipfile, re, os, io
@@ -46,6 +62,7 @@ def tag(e): return etree.QName(e).localname
 FILL_CONTENT = 'C9C9C9'      # ③内容标记族（PDF灰≈201）
 FILL_TITLE1 = 'ADC2DA'       # ①章/节标题整行底纹（≈190）
 FILL_TITLE2 = 'C6D4E3'       # ②讲部/题型标题整行底纹（≈209）
+FILL_LIGHT = 'F2F2F2'        # ⑦解析块段落底纹（≈242；浅底只挂段级 pPr）
 LEGACY_FILLS = ('A6A6A6', 'D9D9D9')
 PRODUCT_EXT = ('.docx', '.docm', '.doc', '.xlsx', '.xls', '.pptx', '.ppt', '.pdf', '.zip')
 
@@ -55,21 +72,30 @@ CHIP_BLACKLIST = ('【易错】', '【了解】')
 CHIP_BLACKLIST_RE = re.compile(r'^【典例[^】]*】$')
 MARK_RE = re.compile(r'^(?:\(\d{1,2}\)|（\d{1,2}）)?(?:【[^】]{1,12}】)?(?:解：|证明：)?'
                      r'(［?(?:方法|解法)[一二三四五六七八九十]{1,3}］?|另解)[：:]?$')
+# 题号头两种线制：连续制「N．」／层级制「节号-序号．」（A'改制轮口径C——同步线层级制）
+NUM_HEAD = r'(?:\d+|\d+(?:\.\d+)+-\d+)'
 # 题号块段落前缀（三段式/两段式/过渡旧单段；退化件裸 N．经题块起点识别不靠本式）
 QBLOCK_HEAD_RE = re.compile(
-    r'^\d+．（(?:(?:简单|中档|难)(?:·(?:保60%|保80%|冲100%))?·卡壳看答案'
+    r'^' + NUM_HEAD + r'．（(?:(?:简单|中档|难)(?:·(?:保60%|保80%|冲100%))?·卡壳看答案'
     r'|衔接必会·卡壳看答案|(?:简单|中档|难))')
-QNUM_LEGACY_RE = re.compile(     # 过渡期旧形：整块「N．（档位[·提分线·卡壳看答案]）」一个run
-    r'^\d+．（(?:(?:简单|中档|难)(?:·(?:保60%|保80%|冲100%)·卡壳看答案)?|衔接必会·卡壳看答案)）$')
+QNUM_LEGACY_RE = re.compile(     # 过渡期旧形：整块「号．（档位[·提分线·卡壳看答案]）」一个run
+    r'^' + NUM_HEAD + r'．（(?:(?:简单|中档|难)(?:·(?:保60%|保80%|冲100%)·卡壳看答案)?|衔接必会·卡壳看答案)）$')
 SECTNUM_RE = re.compile(r'^\d+(?:\.\d+){1,6} ?$')   # 旧结构序号 run（N4 废除形态）
 LECTURE_RE = re.compile(r'^\d+(?:\.\d+)*\s*方法讲解[｜|]')
 CHAP_RE = re.compile(r'^第\d+章')
-MERGED_SEC_RE = re.compile(r'（第\d+[—–-]\d+题）')   # N11 节标题行内合并统计段
-ENT_RE = re.compile(r'^\d+．')
+MERGED_SEC_RE = re.compile(r'（第\d+[—–-]\d+题）|本节\d+题')   # N11 节标题行内合并统计段（旧式区间括注＋层级制新式「本节N题」——A'改制轮③删区间括注后两式并认，2026-09-01 E3修）
+ENT_RE = re.compile(r'^' + NUM_HEAD + r'．')          # 条目/题号起段（两种线制并认）
 SUB_RE = re.compile(r'^（\d+）')
 CIRC_RE = re.compile(r'^[①②③④⑤⑥⑦⑧⑨⑩]')
 HEAD_RE = re.compile(r'^\d+(?:\.\d+){1,6}(?:\s|方法讲解)')
 NUMDOT_RE = re.compile(r'^\d+．$')
+# lead 全式（段首连续灰底 run 串接文本）——序号后允许零或多个【×】芯片（2026-09-01 修③：
+# I1 实测（N）与【定理】/【拓展】芯片分属相邻两个灰底 run，「（1）【定理】」旧全式漏计3处）
+LEAD_NUM_RE = re.compile(r'^(?:\d+|\d+(?:\.\d+)+-\d+)．(?:【[^】]{1,16}】)*$')
+LEAD_SUB_RE = re.compile(r'^（\d+）(?:【[^】]{1,16}】)*$')
+# ⑦解析块浅底：清点触发标签（§7解析块段落底纹款适用面）＋边界
+ANA_LABELS = ('【答案】', '【知识点】', '【分析】', '【详解】', '【点睛】',
+              '【编注】', '【大招指引】', '【题后反思】', '【温馨提醒】')
 
 def ptext(p):
     return ''.join(t.text or '' for t in p.iter(q('t')))
@@ -146,11 +172,41 @@ def para_shading(p, styles_fill):
                 return f, False
     return None, False
 
+ANCHOR_STYLE_IDS = ('JieMingMao', '节名锚')   # 2026-09-01 E1：T5节名锚段专用样式（§7锚段非标题、无底纹无边框）
+DEEP_BLUE = '1F4E79'   # 2026-09-01 E1：答案值分型深蓝（口径E——公式型剥灰保蓝；覆盖判据灰底或深蓝任一在位）
+
+def deep_blue(rpr):
+    if rpr is None:
+        return False
+    c = rpr.find(q('color'))
+    return c is not None and c.get(q('val')) == DEEP_BLUE
+
+def anchor_style_set(styles_bytes):
+    """styles.xml字节 → 节名锚样式 styleId 集合（styleId 字面＋w:name=节名锚 双判；None＝空集）。"""
+    ids = set()
+    if not styles_bytes:
+        return ids
+    root = etree.fromstring(styles_bytes)
+    for stl in root.iter(q('style')):
+        sid = stl.get(q('styleId')) or ''
+        nm = stl.find(q('name'))
+        if sid in ANCHOR_STYLE_IDS or (nm is not None and nm.get(q('val')) == '节名锚'):
+            ids.add(sid)
+    return ids
+
+def pstyle_of(el):
+    ppr = el.find(q('pPr'))
+    if ppr is None:
+        return None
+    ps = ppr.find(q('pStyle'))
+    return ps.get(q('val')) if ps is not None else None
+
 def classify_headings(els, ptexts):
     """标题分类（自含口径，不依赖 extract_structure 的 kind 分型）：
     文内开头标题（首个非空段）＝章；正文内 ^第N章＝章；「父号.k 方法讲解｜」＝讲部；
     含（第X—Y题）合并统计段的数码标题＝节（N11——先于题型判定防「本节N题：」冒号误判）；
-    数码＋「：」＝题型；其余数码起段＝节。返回 [(idx, kind, text)]。"""
+    数码＋「：」＝题型；其余数码起段＝节；节名锚段（节号 节名 文本形似节标题——2026-09-01 E1修：
+    锚段按§7系1pt白无底纹非标题载体，误判会致①漏挂/标题行非加粗双误报，调用方过滤）。返回 [(idx, kind, text)]。"""
     heads = []
     first = True
     for i, el in enumerate(els):
@@ -163,7 +219,10 @@ def classify_headings(els, ptexts):
             heads.append((i, 'chapter', t)); first = False; continue
         if LECTURE_RE.match(t):
             heads.append((i, 'lecture', t))
-        elif MERGED_SEC_RE.search(t) and re.match(r'^\d+(?:\.\d+)*[\s　]', t):
+        elif ((MERGED_SEC_RE.search(t) or re.search(r'本节\d+题', t))
+              and re.match(r'^\d+(?:\.\d+)*[\s　]', t)):
+            # 2026-09-01 E6：A'轮③删区间括注后（第X—Y题）信号消失，节标题行「本节N题：」的
+            # 冒号会误判题型——补「本节\d+题」节信号（先于题型判定，同②字号双档改版 RE_INSTATS 口径）
             heads.append((i, 'section', t))
         elif CHAP_RE.match(t):
             heads.append((i, 'chapter', t))
@@ -207,11 +266,43 @@ def entry_counts(els, ptexts, qstart_els):
             last_sub_no = no
     return n_ent, n_sub
 
+def analysis_census(els, ptexts, qstart_els, head_by_idx, anchor_idx=frozenset()):
+    """⑦解析块段落清点（§7解析块段落底纹款适用面，2026-09-01 七类版）：
+    触发＝段落以【答案】【知识点】【分析】【详解】【点睛】【编注】【大招指引】
+    【题后反思】【温馨提醒】任一起段（题型通式句即【编注】起段，天然覆盖）；
+    边界＝题号块（qstart/括注式）·标题段·条目号起段·表格（解析块无表格）
+    ·节名锚段（2026-09-01 E6：锚段系1pt白非内容载体，题块尾解析态误续段会致⑦清点虚增）；
+    触发后连续计入至下一边界。返回 (清点数, 清点段body序号集)。"""
+    n = 0
+    idxs = set()
+    in_ana = False
+    for i, el in enumerate(els):
+        if el.tag != q('p'):
+            in_ana = False                      # 表格断语境
+            continue
+        t = ptexts[i]
+        if (i in qstart_els or QBLOCK_HEAD_RE.match(t) or i in head_by_idx
+                or i in anchor_idx
+                or (ENT_RE.match(t) and not HEAD_RE.match(t))):
+            in_ana = False                      # 题号块/标题/条目号/节名锚边界
+        if not in_ana and t.startswith(ANA_LABELS):
+            in_ana = True
+        if in_ana:
+            n += 1
+            idxs.add(i)
+    return n, idxs
+
 def count(path, report):
-    # —— 两参签名误用防护（历史 bug：报告写进目标件）——
+    # —— 两参签名误用防护（历史 bug：报告写进目标件；2026-09-01 加 normcase/samefile 加固）——
     ap = os.path.abspath(path)
     rp = os.path.abspath(report)
-    if rp == ap or rp.lower().endswith(PRODUCT_EXT):
+    same = (os.path.normcase(rp) == os.path.normcase(ap))
+    if not same and os.path.exists(rp) and os.path.exists(ap):
+        try:
+            same = os.path.samefile(rp, ap)     # 8.3短名/符号链接等归一形态
+        except OSError:
+            pass
+    if same or rp.lower().endswith(PRODUCT_EXT):
         sys.stderr.write('拒绝：报告路径 %s 与目标件相同或为成品扩展名'
                          '（防报告写进目标件）——报告请用 .txt\n' % report)
         sys.exit(2)
@@ -227,7 +318,10 @@ def count(path, report):
     els = list(body)
     ptexts = {i: (ptext(el) if el.tag == q('p') else '') for i, el in enumerate(els)}
     qstart_els = {items[qu['start']]['el'] for qu in st['questions']}
-    heads = classify_headings(els, ptexts)
+    anchor_ids = anchor_style_set(part_bytes.get('word/styles.xml'))
+    anchor_idx = {i for i, el in enumerate(els)
+                  if el.tag == q('p') and pstyle_of(el) in anchor_ids}
+    heads = [h for h in classify_headings(els, ptexts) if h[0] not in anchor_idx]
     n_ch = sum(1 for h in heads if h[1] == 'chapter')
     n_sec = sum(1 for h in heads if h[1] == 'section')
     n_lec = sum(1 for h in heads if h[1] == 'lecture')
@@ -238,10 +332,12 @@ def count(path, report):
     nq_fn = int(m_fn.group(1)) if m_fn else None
     nq = len(st['questions'])
     nent, nsub = entry_counts(els, ptexts, qstart_els)
+    ncensus, census_idx = analysis_census(els, ptexts, qstart_els, head_by_idx, anchor_idx)
 
-    # —— 段级标题整行底纹（effective＝直挂＞样式链）——
+    # —— 段级标题整行底纹（effective＝直挂＞样式链）＋ ⑦段级浅底 ——
     t1_direct = t1_style = t2_direct = t2_style = 0
     t1_para_els, t2_para_els = set(), set()
+    light_para_els = set()          # ⑦段级 #F2F2F2（直挂或样式继承）
     p3_mis = 0            # 段级 C9C9C9 误挂（内容族无段级合法对象）
     for i, el in enumerate(els):
         if el.tag != q('p'):
@@ -251,6 +347,8 @@ def count(path, report):
             t1_para_els.add(i); t1_direct += direct; t1_style += (not direct)
         elif f == FILL_TITLE2:
             t2_para_els.add(i); t2_direct += direct; t2_style += (not direct)
+        elif f == FILL_LIGHT:
+            light_para_els.add(i)
         elif f == FILL_CONTENT:
             p3_mis += 1
     # 标题漏挂/非标题误挂（按色分记）
@@ -296,7 +394,7 @@ def count(path, report):
         lead_matched = False
         if lead_runs:
             if i in qstart_els or QBLOCK_HEAD_RE.match(para_t):
-                if NUMDOT_RE.fullmatch(lead_txt):
+                if LEAD_NUM_RE.fullmatch(lead_txt):
                     cls['题号块新形'] += 1; lead_matched = True
                     if any(not eff_bold(r, styles_bold) for r in lead_runs):
                         qd_new_bold += 1
@@ -304,11 +402,11 @@ def count(path, report):
                     cls['题号块旧形'] += 1; lead_matched = True
                     if any(not eff_bold(r, styles_bold) for r in lead_runs):
                         qd_old_bold += 1
-            elif NUMDOT_RE.fullmatch(lead_txt) and not in_tbl(el):
+            elif LEAD_NUM_RE.fullmatch(lead_txt) and not in_tbl(el):
                 cls['条目号'] += 1; lead_matched = True
                 if any(eff_bold(r, styles_bold) for r in lead_runs):
                     ent_bold += 1
-            elif re.fullmatch(r'（\d+）', lead_txt) and not in_tbl(el):
+            elif LEAD_SUB_RE.fullmatch(lead_txt) and not in_tbl(el):
                 cls['条目第一子层'] += 1; lead_matched = True
                 if any(eff_bold(r, styles_bold) for r in lead_runs):
                     sub_bold += 1
@@ -433,6 +531,11 @@ def count(path, report):
             raw_c9 += 1
     b = lambda bk: buckets.get((FILL_CONTENT, bk), 0)
     c9_total = sum(v for (f, _), v in buckets.items() if f == FILL_CONTENT)
+    light_b = lambda bk: buckets.get((FILL_LIGHT, bk), 0)
+    light_total = sum(v for (f, _), v in buckets.items() if f == FILL_LIGHT)
+    # ⑦浅底违规挂点：浅底只挂段级 pPr——run/pmark/tc/om/tbl/other 任一挂点＝违规；
+    # 清单件全件白底——任何 F2F2F2（段级含）＝违规
+    light_bad_mounts = light_total - light_b('para')
 
     # —— 旧灰残留全包扫描（document+headers/footers+styles 等 word/*.xml）——
     legacy_parts = []
@@ -444,7 +547,8 @@ def count(path, report):
     bdr_total = sum(1 for _ in doc.iter(q('bdr')))
     tc_shd = b('tc')
 
-    # —— ①覆盖恒等：每题块答案行（或跨段续值段）有答案值灰底 ——
+    # —— ①覆盖恒等：每题块答案行（或跨段续值段）有答案值灰底（2026-09-01 E1扩：口径E分型后
+    #     公式型答案值剥灰保深蓝——灰底run或深蓝run任一在位即覆盖） ——
     cov = 0
     nocov = []
     for qu in st['questions']:
@@ -460,12 +564,13 @@ def count(path, report):
                 continue
             for r in p.iter(q('r')):
                 txt = ''.join(x.text or '' for x in r.findall(q('t')))
-                if txt and not CHIP_RE.fullmatch(txt) and shd_fill(r.find(q('rPr'))) == FILL_CONTENT:
+                if txt and not CHIP_RE.fullmatch(txt) and \
+                        (shd_fill(r.find(q('rPr'))) == FILL_CONTENT or deep_blue(r.find(q('rPr')))):
                     hit = True; break
             if not hit:
                 for el in p.iter():
-                    if etree.QName(el).namespace == M and tag(el) in ('r', 'ctrlPr') \
-                            and shd_fill(el.find(q('rPr'))) == FILL_CONTENT:
+                    if etree.QName(el).namespace == M and tag(el) in ('r', 'ctrlPr') and \
+                            (shd_fill(el.find(q('rPr'))) == FILL_CONTENT or deep_blue(el.find(q('rPr')))):
                         hit = True; break
             if not hit and '【知识点】' not in t:
                 cj = ci + 1
@@ -475,7 +580,8 @@ def count(path, report):
                     for r in els[cj].iter(q('r')):
                         txt = ''.join(x.text or '' for x in r.findall(q('t')))
                         if txt and not CHIP_RE.fullmatch(txt) and not NUMDOT_RE.match(txt) \
-                                and shd_fill(r.find(q('rPr'))) == FILL_CONTENT:
+                                and (shd_fill(r.find(q('rPr'))) == FILL_CONTENT
+                                     or deep_blue(r.find(q('rPr')))):
                             hit = True; break
             break  # 每题只认首个【答案】行
         if hit:
@@ -486,8 +592,9 @@ def count(path, report):
     nq_block = cls['题号块新形'] + cls['题号块旧形']
     chip_total_occ = sum(lb_occ.values())
     L = []
-    L.append('六类底纹计数·三色签名（2026-08-31 N4/N5三色板）：%s' % os.path.basename(path))
-    L.append('模式: %s' % ('新三色板（检出段级标题底纹）' if new_format else
+    L.append('七类底纹计数·四色签名（2026-09-01 A\'改制轮七类版；C9C9C9/ADC2DA/C6D4E3/F2F2F2）：%s'
+             % os.path.basename(path))
+    L.append('模式: %s' % ('四色板（检出段级标题底纹）' if new_format else
                           '改版前（未检出段级标题底纹——标题整行底纹恒等式不适用，待欠账A W波铺开）'))
     L.append('①标题整行底纹 段级#%s %d 段（期望＝章/文内开头 %d＋节 %d＝%d）｜直挂 %d＋样式继承 %d｜'
              '章 %d｜节 %d｜漏挂 %d 段%s｜误挂非标题段 %d 段'
@@ -531,7 +638,28 @@ def count(path, report):
              % (b('run'), empty_shd, b('para'), b('pmark'), b('tc'), b('om_mr'), b('om_ctrl'),
                 b('tbl'), b('other'), c9_total, raw_c9,
                 '✓' if c9_total == raw_c9 else '←≠ 分桶缺口'))
-    L.append('登记不入六类：表内非标签灰底run %d｜tcPr底纹（导航表头等） %d｜空文本灰底run %d｜未归类 %d%s'
+    # —— ⑦解析块段落底纹（#F2F2F2，恒等式＝浅底段落数＝解析块段落清点数）——
+    light_para = len(light_para_els)
+    light_extra = sorted(light_para_els - census_idx)
+    light_miss = sorted(census_idx - light_para_els)
+    if is_qd:
+        L.append('⑦解析块浅底 段级#%s：清单件全件白底——全挂点 %d（期望 0）%s'
+                 % (FILL_LIGHT, light_total, '' if light_total == 0 else ' ←≠ 清单不得铺浅底'))
+    elif light_para == 0 and light_total == 0:
+        L.append('⑦解析块浅底 段级#%s：0 段＝解析块段落清点数 %d ——改制前形态（未检出浅底，'
+                 '恒等式不适用；浅底挂载后本行即硬断言）' % (FILL_LIGHT, ncensus))
+    else:
+        L.append('⑦解析块浅底 段级#%s %d 段＝解析块段落清点数 %d%s%s%s'
+                 % (FILL_LIGHT, light_para, ncensus,
+                    '' if light_para == ncensus else ' ←≠',
+                    ('｜清点未铺 %d 段（body序号样本 %s）' % (len(light_miss), light_miss[:8])) if light_miss else '',
+                    ('｜非解析块误铺 %d 段（body序号样本 %s）' % (len(light_extra), light_extra[:8])) if light_extra else ''))
+    L.append('   F2F2F2 全挂点分桶：段级 %d｜run %d｜段落标记 %d｜tcPr %d｜om_mr %d｜om_ctrl %d｜'
+             'tbl/tr %d｜其他 %d｜Σ %d｜段外挂点违规 %d（期望 0）'
+             % (light_b('para'), light_b('run'), light_b('pmark'), light_b('tc'),
+                light_b('om_mr'), light_b('om_ctrl'), light_b('tbl'), light_b('other'),
+                light_total, light_bad_mounts))
+    L.append('登记不入七类：表内非标签灰底run %d｜tcPr底纹（导航表头等） %d｜空文本灰底run %d｜未归类 %d%s'
              % (cls['表内其他'], tc_shd, empty_shd, len(odd),
                 ('｜样本 %r' % odd[:6]) if odd else ''))
 
@@ -540,10 +668,16 @@ def count(path, report):
                and chip_hit == chip_total_occ and chip_bold == 0
                and p3_mis == 0 and run_t1_t2_mis == 0
                and not legacy_parts and bdr_total == 0 and not odd
-               and c9_total == raw_c9)
+               and c9_total == raw_c9
+               and light_bad_mounts == 0)
+    # ⑦浅底门：清单件全件白底（任何挂点违规）；带题件＝浅底段数＝清点数，
+    # 或改制前形态（全件 0 浅底——挂载前形态，不阻断、清点数照出）
     if is_qd:
-        base_ok = base_ok
+        base_ok = base_ok and light_total == 0
     else:
+        base_ok = base_ok and (light_para == ncensus
+                               or (light_para == 0 and light_total == 0))
+    if not is_qd:
         base_ok = base_ok and nq_block == nq and (nq_fn is None or nq == nq_fn) \
             and cov == nq and qd_new_bold + qd_old_bold == 0
     if new_format:
@@ -551,10 +685,10 @@ def count(path, report):
               and len(t1_para_els) == n_ch + n_sec and len(t2_para_els) == n_lec + n_grp
               and not t1_miss and not t2_miss and not t1_extra and not t2_extra
               and old_sectnum_residue == 0 and head_nobold == 0)
-        L.append('结论: ' + ('PASS 三色板齐＋六类恒等式成立' if ok else 'CHECK 见上'))
+        L.append('结论: ' + ('PASS 四色板齐＋七类恒等式成立' if ok else 'CHECK 见上'))
     else:
         ok = base_ok
-        L.append('结论: ' + ('PASS（改版前口径——六类C9C9C9族恒等式成立；标题整行底纹0段待W波）'
+        L.append('结论: ' + ('PASS（改版前口径——七类C9C9C9/浅底族恒等式成立；标题整行底纹0段待铺开）'
                              if ok else 'CHECK 见上'))
     out = '\n'.join(L)
     d = os.path.dirname(rp)

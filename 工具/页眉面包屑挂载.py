@@ -1,60 +1,79 @@
 # -*- coding: utf-8 -*-
 #
-# 沿革：2026-08-30 工具债清偿（看板工具债③）新建——公共规则§7页眉条款（2026-08-30 面包屑拍板）
-#   落地：成品件单行页眉右侧追加「当前节名」STYLEREF 复杂域（前置工程＝工具/节标题样式挂载.py
-#   已把教材节标题挂内置样式「标题3」）。存量件由页眉面包屑回扫轮统一补挂。
+# 沿革：2026-08-30 工具债③新建——页眉右停靠制表位＋STYLEREF"标题 3"面包屑（级B形态，随2026-09-01
+#   十项改制拍板退役）；2026-09-01 A'改制轮工具债⑥改版——「同串挂载＋节名锚挂载」（公共规则§7
+#   页面条款页脚款/页眉款/节名锚机制现行文本＝A'改制轮口径F/口径G）。旧「右停靠制表位＋
+#   STYLEREF "标题 3"」形态与「件标识（共N页）　第X页」旧页脚随本版整体退役。
 #
-"""页眉面包屑挂载.py — 页眉右侧挂「当前节名」STYLEREF 复杂域（只处理副本，断言不过不动输出文件）
+"""页眉面包屑挂载.py — 同串挂载＋节名锚挂载（只处理副本，断言不过不动输出文件）
 
-规格（公共规则§7页眉条款，2026-08-30拍板）：
-  · 在既有单行页眉段落末尾追加：右停靠制表位 ＋ 制表符 run ＋ STYLEREF 复杂域
-    （fldChar begin → w:instrText → fldChar separate → 缓存文本 run
-    （写该件第一个节标题实测文本）→ fldChar end；instrText 实测定值＝
-    「 STYLEREF "标题 3" 」——条款字面「STYLEREF 标题3」实测不解析，差异备案见上）；
-    域 run 字号小五与页眉一致
-    （直接深拷贝页眉既有文本 run 的 rPr，保证字体字号零偏差）；
-  · 段落保持 jc=left 不变；不新增页眉定义（件已有单页眉——断言仅 1 个 headerReference，
-    多于 1 个报错退出人工裁决）；不动页脚、不动正文。
-  · 制表位位置＝版心右缘，按该件 sectPr 实测动态计算：pgSz.w − pgMar.left − pgMar.right
-    （A4 11906 − 2×850 ＝ 10206 缇；拍板任务书拟值≈9026 与「A4减2×850」公式自相矛盾，
-    按版心右缘语义取公式实算值——实测见 报告-页眉面包屑.md）；无前导符（拍板：选无）。
+规格（公共规则§7页眉页脚同串/节名锚机制现行文本；A'改制轮口径F/口径G）：
+  1) 节名锚段：每个教材节标题段（挂「标题3」样式段落＝工具/节标题样式挂载.py的挂载对象）之前插入
+     一个专用样式「节名锚」段落——样式在 styles.xml 新建（styleId=JieMingMao、name=节名锚）：
+     1pt（sz=2半点）、白色#FFFFFF、非隐藏（无w:vanish——域行为实测注记①：隐藏形态STYLEREF不认）、
+     行距固定1磅（w:spacing line=20 lineRule=exact）、段前后0、无底纹无边框、jc=left；
+     basedOn＝该件styles.xml真实Normal styleId（禁字面量'Normal'悬空——2026-08-31样式挂载定论；
+     本册实测='a'）。锚段内容＝「节号 节名」（照节标题原文，剥离节级统计段「（第X—Y题）　本节N题…」）；
+     断言：锚段数＝节标题数（每节标题前恰一段，直接前驱）。
+  2) 页眉页脚同串重建（两部件整体替换为同一单段）：左对齐单行、9pt（sz=18半点）、中文宋体西文TNR——
+     串＝「羿郭工作室·册名 第X章 章名·件型（共N页）　当前节号节名　第X页」：
+       · 前段（羿郭工作室·册名 第X章 章名·件型）取自该件既有页眉文本（已在位同串件则截到「（共」前，
+         幂等）；旧左串页眉/「件标识（共N页）　第X页」旧页脚随整段重建退役；
+       · X＝PAGE复杂域（fldChar begin/separate/end＋w:instrText，禁fldSimple），域缓存＝该件sectPr现start值；
+       · 节名段＝STYLEREF复杂域（instrText＝ STYLEREF "节名锚" ），域缓存＝首锚段文本
+         （Word/打印/PDF链路必然重算；WPS/静态查看器可能显缓存——公共规则§7备案口径）；
+       · 件型段写死；N写'N'占位符（由 工具/册级连续页码.py 盖章阶段填部分总页数实测值）；
+       · 件型token参数化：--token 第X章·衔接／第X章·清单／第X章·讲练（同章各卷一致、分卷不加卷次
+         ——高中同步总控§5件标识对照；工具以token尾段校验既有页眉前段一致性）。
+  3) 版面：sectPr pgMar header=283、footer=850（缺省/杂值即改写）；全文恰1个headerReference＋
+     恰1个footerReference（default类型）；无首页不同（剔w:titlePg）、无奇偶页不同
+     （settings.xml剔evenAndOddHeaders）；settings.xml确保<w:updateFields w:val="true"/>。
+  4) 串宽实测断言：9pt按字符宽估算（CJK/全角/全角空格＝180缇、ASCII半角＝90缇；N/X按3位数字最坏值、
+     节名段按该件最长锚段文本），超版心宽（pgSz.w−pgMar.left−pgMar.right）即省略「羿郭工作室·」
+     品牌前缀（件型与章名保留）；另以Word COM实测行数断言输出（worst-case串行数=1；带前缀实测>1行
+     则自动降级省前缀重测，仍>1行＝断言失败退出码2）。
 
-前置依赖（不满足报错退出码 2）：文档正文须已有挂「标题3」（name heading 3/标题3）样式的段落——
-  先用 工具/节标题样式挂载.py 处理；本工具输入应是已挂样式件。
+安全断言（全过才写输出，任一不过退出码2、不产生输出文件）：
+  A1 单页眉单页脚——document.xml 恰1个headerReference＋恰1个footerReference且rels可解析到实际部件；
+  A2 节标题在位——正文挂「标题3」（name=heading 3/标题 3）样式段落≥1；
+  A3 只动五类目标件——输出包除 document.xml/styles.xml/settings.xml/页眉部件/页脚部件 外其余条目
+     逐一与输入字节相等；目标件中 document.xml 除锚段插入与sectPr三处版面参数外内容不变；
+  A4 结构自检——输出复检：锚段数＝节标题数且逐节标题直接前驱为锚段；锚样式basedOn＝真实Normal
+     styleId、sz=2、color=FFFFFF、line=20 exact、无vanish/shd/pBdr；页眉页脚各恰1段、jc=left、
+     全部run 18半点＋宋体/TNR、恰两组fldChar begin/separate/end（STYLEREF＋PAGE）、instrText集合
+     ＝{ STYLEREF "节名锚" ,  PAGE }、无fldSimple、无NUMPAGES、可见文本＝预期串（N占位）、
+     （共N页）占位恰1处；pgMar header=283/footer=850、无titlePg；settings含updateFields；
+  A5 串宽——字符宽估算＋COM实测行数＝1（断言输出落盘）。
+幂等：锚段已在位且计数相符→跳过插入；同串已在位（页眉含 STYLEREF "节名锚"）→前段截「（共」前推导，
+  重建确定性构造，重复挂载输出逐字节不变（zip成员级；N占位重置为'N'——盖章值以盖章为准，管线序＝
+  先挂载后盖章）。
 
-安全断言（全过才写输出，任一不过退出码 2、不产生输出文件）：
-  A1 单页眉——document.xml 恰有 1 个 headerReference 且 rels 可解析到实际部件；
-  A2 前置依赖——正文 pStyle＝标题3 styleId 的段落 ≥1（挂载计数落报告）；
-  A3 只动页眉部件——输出包除页眉部件外其余条目内容逐一不变（document.xml/页脚/styles 均字节原样）；
-  A4 域结构自检——重构后页眉复检：恰 1 组 fldChar begin/separate/end 且顺序正确、
-     instrText 含 STYLEREF 与 标题3、无 fldSimple、右停靠制表位在位、jc=left 保持、
-     左侧既有文本 run 逐字不变、追加 run 的 rPr 与页眉既有 run 一致（sz 同值）。
-幂等：页眉已含 STYLEREF 域（instrText 或 fldSimple 任一形态）则跳过，输出＝输入字节级拷贝、零改动。
-
-缓存风险备案（§7页眉条款口径）：STYLEREF 域缓存文本为挂载时写死的「该件第一个节标题」——
-  WPS/静态查看器可能显示缓存旧节名而不重算；Word/打印/PDF 导出链路必然重算，印制实物零风险；
-  中招回退预案＝右侧退化为静态件名文字或删右段（其余设计不动）。
-
-用法: python 页眉面包屑挂载.py <in.docx> <out.docx> [--verbose] [--dry-run]
+用法: python 页眉面包屑挂载.py <in.docx> <out.docx> --token 第2章·衔接 [--no-brand] [--verbose] [--dry-run]
+  --no-brand＝强制省略品牌前缀（同部分各卷前缀形态一致性：部分内任一卷实测放不下即各卷都省）
 """
-import sys, io, os, re, zipfile, copy
+import sys, io, os, re, zipfile
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 from lxml import etree
 
 W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 R = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
+XMLNS = 'http://www.w3.org/XML/1998/namespace'
 def q(t): return '{%s}%s' % (W, t)
 
-STYLE_NAME_CANDIDATES = ('heading 3', '标题3')
+STYLE_NAME_CANDIDATES = ('heading 3', '标题 3', '标题3')
 DEFAULT_STYLE_ID = 'Heading3'
-# 域指令实测定值（2026-08-30 选必1第2章讲练件48页实测）：STYLEREF 按样式名解析，
-#   styles.xml 内建名 name="heading 3"（中文 Word 界面名「标题 3」）——
-#   · 「STYLEREF 标题3」（条款字面，无空格）→ 渲染错误文本「错误!使用…将标题3应用于…」；
-#   · 「STYLEREF "heading 3"/"Heading 3"」（内建英文名）→ 同样不解析（中文 Word 实测）；
-#   · 「STYLEREF "标题 3"」（本地化名＋半角引号＋名内空格，即中文 Word 插入域的原生写法）→ 正确解析。
-#   本工具按实测可用形态落域；与条款字面「STYLEREF 标题3」的差异在 报告-页眉面包屑.md 备案。
-INSTR_TEXT = ' STYLEREF "标题 3" '
+ANCHOR_STYLE_ID = 'JieMingMao'
+ANCHOR_STYLE_NAME = '节名锚'
+INSTR_STYLEREF = ' STYLEREF "节名锚" '
+INSTR_PAGE = ' PAGE '
+N_PLACEHOLDER = 'N'
+HEADER_TWIPS = '283'   # 页眉距页顶0.5厘米（§7页眉款：页眉距＋单行行高≤上边距850缇）
+FOOTER_TWIPS = '850'   # 页脚距页底1.5厘米（与四边边距同值）
+RPR_HF = ('<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" '
+          'w:eastAsia="宋体" w:cs="Times New Roman"/>'
+          '<w:sz w:val="18"/><w:szCs w:val="18"/></w:rPr>')   # 同串9pt＝18半点（§7）
+BRAND = '羿郭工作室·'
 
 class ToolError(Exception):
     pass
@@ -62,171 +81,254 @@ class ToolError(Exception):
 def para_text(p):
     return ''.join(t.text or '' for t in p.iter(q('t')))
 
+# ---------------------------------------------------------------- 样式与节标题定位
+
 def find_heading3_style_id(styles_root):
-    """返回「标题3」样式的 styleId（按 name 候选匹配，styleId=Heading3 兜底）。"""
-    for st in styles_root.findall(q('style')):
-        nm = st.find(q('name'))
-        nv = (nm.get(q('val')) or '') if nm is not None else ''
-        if nv.strip().lower() in STYLE_NAME_CANDIDATES:
-            return st.get(q('styleId'))
+    for cand in (lambda nv: nv.strip().lower() in STYLE_NAME_CANDIDATES,
+                 lambda nv: nv.strip() in ('标题 3',)):
+        for st in styles_root.findall(q('style')):
+            nm = st.find(q('name'))
+            nv = (nm.get(q('val')) or '') if nm is not None else ''
+            if cand(nv):
+                return st.get(q('styleId'))
     for st in styles_root.findall(q('style')):
         if st.get(q('styleId')) == DEFAULT_STYLE_ID:
             return st.get(q('styleId'))
     return None
 
-def count_heading3_paras(doc_root, sid):
-    n = 0
-    for p in doc_root.find(q('body')).iter(q('p')):
-        ppr = p.find(q('pPr'))
-        if ppr is None:
+def find_normal_style_id(styles_root):
+    """真实Normal styleId：type=paragraph且default=1（name=normal优先）——禁字面量悬空（经验定论）。"""
+    by_name = None
+    for st in styles_root.findall(q('style')):
+        if st.get(q('type')) != 'paragraph':
             continue
-        ps = ppr.find(q('pStyle'))
-        if ps is not None and ps.get(q('val')) == sid:
-            n += 1
-    return n
-
-def first_heading3_text(doc_root, sid):
-    for p in doc_root.find(q('body')).iter(q('p')):
-        ppr = p.find(q('pPr'))
-        if ppr is None:
-            continue
-        ps = ppr.find(q('pStyle'))
-        if ps is not None and ps.get(q('val')) == sid:
-            return para_text(p)
+        nm = st.find(q('name'))
+        nv = (nm.get(q('val')) or '').strip().lower() if nm is not None else ''
+        if nv == 'normal':
+            by_name = st.get(q('styleId'))
+            if st.get(q('default')) == '1':
+                return st.get(q('styleId'))
+    if by_name:
+        return by_name
+    for st in styles_root.findall(q('style')):
+        if st.get(q('type')) == 'paragraph' and st.get(q('default')) == '1':
+            return st.get(q('styleId'))
     return None
 
-def header_ref(doc_root):
-    """返回 (type, rId) 列表。"""
+def section_paras(doc_root, sid3):
+    """正文（含表格内）全部挂标题3样式的段落，按文档序。"""
     out = []
-    for hr in doc_root.iter(q('headerReference')):
-        rid = hr.get('{%s}id' % R)
-        out.append((hr.get(q('type')) or 'default', rid))
+    if not sid3:
+        return out
+    for p in doc_root.find(q('body')).iter(q('p')):
+        ppr = p.find(q('pPr'))
+        if ppr is None:
+            continue
+        ps = ppr.find(q('pStyle'))
+        if ps is not None and ps.get(q('val')) == sid3:
+            out.append(p)
     return out
 
-def body_sect_pr(doc_root):
-    sp = doc_root.find(q('body')).findall(q('sectPr'))
-    return sp[-1] if sp else None
+_STAT_PAT = re.compile(r'（第\d+(?:[—–-]\d+)?题|　?本节\d+题')
+def anchor_text_of(title):
+    """锚段内容＝「节号 节名」＝节标题原文剥离节级统计段（「（第X—Y题）　本节N题…」）。"""
+    m = _STAT_PAT.search(title)
+    t = title[:m.start()] if m else title
+    return t.rstrip('　 ')
 
-def tab_position(doc_root):
-    """版心右缘（缇）＝ pgSz.w − pgMar.left − pgMar.right（取 body sectPr 实测值）。"""
-    sp = body_sect_pr(doc_root)
+def existing_anchor_paras(doc_root):
+    out = []
+    for p in doc_root.find(q('body')).iter(q('p')):
+        ppr = p.find(q('pPr'))
+        if ppr is None:
+            continue
+        ps = ppr.find(q('pStyle'))
+        if ps is not None and ps.get(q('val')) == ANCHOR_STYLE_ID:
+            out.append(p)
+    return out
+
+# ---------------------------------------------------------------- 串构造与串宽
+
+def make_run_xml(text):
+    return ('<w:r>%s<w:t xml:space="preserve">%s</w:t></w:r>'
+            % (RPR_HF, text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')))
+
+def field_runs_xml(instr, cache):
+    """复杂域五run：begin→instrText→separate→缓存文本→end（禁fldSimple——§7域形态）。"""
+    esc = lambda s: str(s).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    return ('<w:r>%s<w:fldChar w:fldCharType="begin"/></w:r>'
+            '<w:r>%s<w:instrText xml:space="preserve">%s</w:instrText></w:r>'
+            '<w:r>%s<w:fldChar w:fldCharType="separate"/></w:r>'
+            '<w:r>%s<w:t xml:space="preserve">%s</w:t></w:r>'
+            '<w:r>%s<w:fldChar w:fldCharType="end"/></w:r>'
+            % (RPR_HF, RPR_HF, esc(instr), RPR_HF, RPR_HF, esc(cache), RPR_HF))
+
+def samestring_para_xml(prefix, n_text, styleref_cache, page_cache):
+    """同串单段：前段（含件型）＋（共N页）＋全角空格＋STYLEREF节名域＋全角空格＋第X页（PAGE域）。"""
+    runs = (make_run_xml(prefix) + make_run_xml('（共%s页）' % n_text)
+            + make_run_xml('　') + field_runs_xml(INSTR_STYLEREF, styleref_cache)
+            + make_run_xml('　第') + field_runs_xml(INSTR_PAGE, page_cache)
+            + make_run_xml('页'))
+    # 2026-09-01 E2补丁：补 spacing 288 auto（与工具/字号双档改版.py 页眉页脚冻结形态对齐——
+    # 缺失时该段落继承 docDefaults line=410 atLeast，②check-only 判 spacing 偏离）
+    return ('<w:p><w:pPr><w:spacing w:before="0" w:after="0" w:line="288" w:lineRule="auto"/>'
+            '<w:jc w:val="left"/></w:pPr>%s</w:p>' % runs)
+
+def est_twips(s):
+    """9pt字符宽估算：CJK/全角＝180缇、ASCII半角＝90缇（保守：·—等按全角计）。"""
+    w = 0
+    for ch in s:
+        if ord(ch) >= 0x2E80 or ch in '·—…－（）　、；：，。？！「」『』':
+            w += 180
+        else:
+            w += 90
+    return w
+
+def usable_twips(doc_root):
+    sp = doc_root.find(q('body')).findall(q('sectPr'))
+    sp = sp[-1] if sp else None
     if sp is None:
-        raise ToolError('document.xml 无 body sectPr，无法计算版心右缘')
+        raise ToolError('document.xml 无 body sectPr')
     sz, mar = sp.find(q('pgSz')), sp.find(q('pgMar'))
     if sz is None or mar is None:
-        raise ToolError('sectPr 缺 pgSz/pgMar，无法计算版心右缘')
-    w  = int(sz.get(q('w')))
-    lf = int(mar.get(q('left'))); rt = int(mar.get(q('right')))
-    return w - lf - rt, (w, lf, rt)
+        raise ToolError('sectPr 缺 pgSz/pgMar')
+    return int(sz.get(q('w'))) - int(mar.get(q('left'))) - int(mar.get(q('right')))
 
-def has_styleref_field(hdr_root):
-    for it in hdr_root.iter(q('instrText')):
-        if 'STYLEREF' in (it.text or '').upper():
-            return True
-    for fs in hdr_root.iter(q('fldSimple')):
-        if 'STYLEREF' in (fs.get(q('instr')) or '').upper():
-            return True
-    return False
+def com_linecount(strings):
+    """Word COM实测行数：A4＋1.5cm边距版心、宋体/TNR 9pt单段，返回各串ComputeStatistics(wdStatisticLines)。
+    自建实例用完Quit（§1/§4⑧）。"""
+    import win32com.client
+    word = win32com.client.DispatchEx('Word.Application')
+    word.Visible = False
+    word.DisplayAlerts = 0
+    res = []
+    try:
+        doc = word.Documents.Add()
+        try:
+            ps = doc.PageSetup
+            ps.PaperSize = 7                     # wdPaperA4（实测本机 CentimetersToPoints 分发不可用，用点值直设）
+            cm = lambda c: c * 28.3465           # 1cm = 28.3465pt
+            ps.TopMargin = ps.BottomMargin = cm(1.5)
+            ps.LeftMargin = ps.RightMargin = cm(1.5)
+            for s in strings:
+                doc.Content.Delete()
+                rng = doc.Range(0, 0)
+                rng.InsertAfter(s)
+                r2 = doc.Range(0, len(s))
+                r2.Font.NameFarEast = '宋体'
+                r2.Font.Name = 'Times New Roman'
+                r2.Font.Size = 9
+                res.append(r2.ComputeStatistics(1))   # 1 = wdStatisticLines
+        finally:
+            doc.Close(False)
+    finally:
+        word.Quit()
+    return res
 
-def make_run(rpr, child):
-    r = etree.Element(q('r'))
-    if rpr is not None:
-        r.append(copy.deepcopy(rpr))
-    r.append(child)
-    return r
+# ---------------------------------------------------------------- 部件重建（字符串级手术）
 
-def build_header(hdr_root, sid_tab_pos, cached_text):
-    """在页眉第一段末尾追加：右停靠制表位＋制表符run＋STYLEREF复杂域。返回该段。"""
-    paras = hdr_root.findall(q('p'))
-    if not paras:
-        raise ToolError('页眉部件内无段落')
-    p = paras[0]
-    ppr = p.find(q('pPr'))
-    if ppr is None:
-        ppr = etree.Element(q('pPr'))
-        p.insert(0, ppr)
-    # 右停靠制表位（无前导符）——CT_PPr 序中 tabs 在 jc 之前
-    tabs = ppr.find(q('tabs'))
-    if tabs is None:
-        tabs = etree.Element(q('tabs'))
-        jc = ppr.find(q('jc'))
-        ppr.insert(list(ppr).index(jc) if jc is not None else len(list(ppr)), tabs)
-    for old in tabs.findall(q('tab')):
-        if old.get(q('val')) == 'right' and old.get(q('pos')) == str(sid_tab_pos):
-            break
-    else:
-        tb = etree.SubElement(tabs, q('tab'))
-        tb.set(q('val'), 'right')
-        tb.set(q('pos'), str(sid_tab_pos))
-    # 域 run 的 rPr＝页眉既有文本 run 的 rPr（深拷贝，保证字号字体零偏差）
-    rpr = None
-    for r in p.findall(q('r')):
-        if r.find(q('t')) is not None:
-            rpr = r.find(q('rPr'))
-            break
-    # 依序追加：制表符 run → begin → instrText → separate → 缓存文本 run → end
-    p.append(make_run(rpr, etree.Element(q('tab'))))
-    fb = etree.Element(q('fldChar')); fb.set(q('fldCharType'), 'begin')
-    p.append(make_run(rpr, fb))
-    it = etree.Element(q('instrText')); it.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
-    it.text = INSTR_TEXT
-    p.append(make_run(rpr, it))
-    fs = etree.Element(q('fldChar')); fs.set(q('fldCharType'), 'separate')
-    p.append(make_run(rpr, fs))
-    ct = etree.Element(q('t')); ct.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
-    ct.text = cached_text
-    p.append(make_run(rpr, ct))
-    fe = etree.Element(q('fldChar')); fe.set(q('fldCharType'), 'end')
-    p.append(make_run(rpr, fe))
+def replace_paras_with(part_xml, para_xml, root_close):
+    """删除部件内全部旧段（含自闭合空段与表格——整段退役），在根闭标签前插入新段。保留根元素声明。"""
+    pat = re.compile(r'<w:p\b[^>]*/>|<w:p\b[^>]*>.*?</w:p>|<w:tbl\b.*?</w:tbl>', re.S)
+    n_removed = len(pat.findall(part_xml))
+    xml2 = pat.sub('', part_xml)
+    xml2 = re.sub(r'<w:bookmarkStart\b[^>]*/>|<w:bookmarkEnd\b[^>]*/>', '', xml2)
+    if root_close not in xml2:
+        raise ToolError('部件根闭标签 %s 未找到' % root_close)
+    xml2 = xml2.replace(root_close, para_xml + root_close)
+    return xml2, n_removed
+
+def visible_text(part_xml):
+    return ''.join(re.findall(r'<w:t[^>]*>([^<]*)</w:t>', part_xml))
+
+def ensure_pgmar_and_notitlepg(doc_xml):
+    """sectPr：pgMar header=283/footer=850（缺省即补）；剔titlePg。返回(新xml, 改动标志)。"""
+    orig = doc_xml
+    def fix_sect(s):
+        s = re.sub(r'<w:titlePg/>|<w:titlePg>.*?</w:titlePg>', '', s, flags=re.S)
+        for attr, val in (('header', HEADER_TWIPS), ('footer', FOOTER_TWIPS)):
+            if re.search(r'w:%s="' % attr, s):
+                s = re.sub(r'(<w:pgMar[^>]*?)w:%s="\d+"' % attr, r'\1w:%s="%s"' % (attr, val), s)
+            elif '<w:pgMar ' in s:
+                s = re.sub(r'(<w:pgMar )', r'\1w:%s="%s" ' % (attr, val), s, count=1)
+        return s
+    parts = re.split(r'(<w:sectPr.*?</w:sectPr>)', doc_xml, flags=re.S)
+    for i in range(1, len(parts), 2):
+        parts[i] = fix_sect(parts[i])
+    return ''.join(parts), ''.join(parts) != orig
+
+def ensure_settings(settings_xml):
+    s = re.sub(r'<w:evenAndOddHeaders[^>]*/>', '', settings_xml)
+    if '<w:updateFields' not in s:
+        ins = '<w:updateFields w:val="true"/>'
+        s = s.replace('<w:compat', ins + '<w:compat', 1) if '<w:compat' in s else s.replace('</w:settings>', ins + '</w:settings>')
+    return s
+
+def ensure_anchor_style(styles_xml, normal_sid):
+    """styles.xml：节名锚样式在位（幂等＝同串规格重写；basedOn＝真实Normal styleId）。返回(新xml, 新建?)。"""
+    style_xml = ('<w:style w:type="paragraph" w:styleId="%s">'
+                 '<w:name w:val="%s"/><w:basedOn w:val="%s"/><w:qFormat/>'
+                 '<w:pPr><w:spacing w:before="0" w:after="0" w:line="20" w:lineRule="exact"/>'
+                 '<w:jc w:val="left"/></w:pPr>'
+                 '<w:rPr><w:color w:val="FFFFFF"/><w:sz w:val="2"/><w:szCs w:val="2"/></w:rPr>'
+                 '</w:style>') % (ANCHOR_STYLE_ID, ANCHOR_STYLE_NAME, normal_sid)
+    pat = re.compile(r'<w:style\b[^>]*w:styleId="%s"[^>]*>.*?</w:style>|<w:style\b[^>]*w:styleId="%s"[^>]*/>'
+                     % (re.escape(ANCHOR_STYLE_ID), re.escape(ANCHOR_STYLE_ID)), re.S)
+    existed = bool(pat.search(styles_xml))
+    styles2 = pat.sub('', styles_xml)
+    if '</w:styles>' not in styles2:
+        raise ToolError('styles.xml 根闭标签未找到')
+    return styles2.replace('</w:styles>', style_xml + '</w:styles>'), not existed
+
+def anchor_para_xml(text):
+    """节名锚段：样式＋直接格式双保险（1pt白、line=20 exact、非隐藏、无底纹无边框、无keepX/分页属性）。"""
+    esc = text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    return ('<w:p><w:pPr><w:pStyle w:val="%s"/>'
+            '<w:spacing w:before="0" w:after="0" w:line="20" w:lineRule="exact"/>'
+            '<w:jc w:val="left"/></w:pPr>'
+            '<w:r><w:rPr><w:color w:val="FFFFFF"/><w:sz w:val="2"/><w:szCs w:val="2"/></w:rPr>'
+            '<w:t xml:space="preserve">%s</w:t></w:r></w:p>') % (ANCHOR_STYLE_ID, esc)
+
+def build_anchor_element(text):
+    p = etree.Element(q('p'))
+    ppr = etree.SubElement(p, q('pPr'))
+    etree.SubElement(ppr, q('pStyle')).set(q('val'), ANCHOR_STYLE_ID)
+    sp = etree.SubElement(ppr, q('spacing'))
+    sp.set(q('before'), '0'); sp.set(q('after'), '0'); sp.set(q('line'), '20'); sp.set(q('lineRule'), 'exact')
+    etree.SubElement(ppr, q('jc')).set(q('val'), 'left')
+    r = etree.SubElement(p, q('r'))
+    rpr = etree.SubElement(r, q('rPr'))
+    etree.SubElement(rpr, q('color')).set(q('val'), 'FFFFFF')
+    etree.SubElement(rpr, q('sz')).set(q('val'), '2')
+    etree.SubElement(rpr, q('szCs')).set(q('val'), '2')
+    t = etree.SubElement(r, q('t')); t.set('{%s}space' % XMLNS, 'preserve'); t.text = text
     return p
 
-def verify_header(hdr_root, tab_pos, left_texts_before, base_rpr_sig):
-    """断言 A4：域结构/制表位/jc/左侧文本零变化/追加run格式一致。返回错误清单。"""
-    errs = []
-    p = hdr_root.findall(q('p'))[0]
-    ppr = p.find(q('pPr'))
-    jc = ppr.find(q('jc')) if ppr is not None else None
-    if jc is None or jc.get(q('val')) != 'left':
-        errs.append('jc=left 保持失败（实测 %s）' % (jc.get(q('val')) if jc is not None else None))
-    tabs = ppr.find(q('tabs')) if ppr is not None else None
-    hit = tabs is not None and any(
-        tb.get(q('val')) == 'right' and tb.get(q('pos')) == str(tab_pos) and tb.get(q('leader')) is None
-        for tb in tabs.findall(q('tab')))
-    if not hit:
-        errs.append('右停靠制表位（pos=%d，无前导符）不在位' % tab_pos)
-    ftypes = [fc.get(q('fldCharType')) for fc in p.iter(q('fldChar'))]
-    if ftypes != ['begin', 'separate', 'end']:
-        errs.append('fldChar 序列≠[begin,separate,end]（实测 %s）' % ftypes)
-    instrs = [it.text or '' for it in p.iter(q('instrText'))]
-    norm = instrs[0].replace('"', '').replace(' ', '') if instrs else ''
-    if len(instrs) != 1 or 'STYLEREF' not in norm.upper() or '标题3' not in norm:
-        errs.append('instrText 异常：%r' % instrs)
-    if len(list(hdr_root.iter(q('fldSimple')))) != 0:
-        errs.append('出现 fldSimple（禁用）')
-    # 左侧既有文本 run 逐字不变
-    left_now = [t.text or '' for t in p.iter(q('t'))][:-1]  # 末一个是新缓存文本
-    if left_now != left_texts_before:
-        errs.append('左侧既有文本变化：%r -> %r' % (left_texts_before, left_now))
-    # 追加 5 个 run 的 rPr 与基准一致
-    runs = p.findall(q('r'))
-    for r in runs[-5:]:
-        rp = r.find(q('rPr'))
-        sig = [(etree.QName(c).localname, tuple(sorted((k.split('}')[-1], v) for k, v in c.attrib.items())))
-               for c in rp] if rp is not None else None
-        if sig != base_rpr_sig:
-            errs.append('追加 run 的 rPr 与页眉基准不一致')
-            break
-    return errs
+# ---------------------------------------------------------------- 主流程
 
 def main(argv):
+    argv = list(argv)
+    token = None
+    if '--token' in argv:
+        i = argv.index('--token')
+        if i + 1 < len(argv) and not argv[i + 1].startswith('--'):
+            token = argv[i + 1]
+            del argv[i:i + 2]
+    for a in list(argv):
+        if a.startswith('--token='):
+            token = a.split('=', 1)[1]
+            argv.remove(a)
     args = [a for a in argv if not a.startswith('--')]
     flags = set(a for a in argv if a.startswith('--'))
     verbose = '--verbose' in flags
     dry = '--dry-run' in flags
-    if len(args) != 2:
+    no_brand = '--no-brand' in flags   # 同部分一致性：部分内他卷省前缀时本卷强制同形态
+    if len(args) != 2 or not token or '·' not in token:
         print(__doc__)
         return 1
     src, dst = args
+    token_suffix = token.split('·')[-1]   # 件型尾段（如「衔接」/「讲练」）
+    token_head = token.split('·')[0]      # 章段（如「第2章」）
     if os.path.abspath(src) == os.path.abspath(dst):
         print('[中止] 输出路径与输入相同——本工具只处理副本，禁止原地改写。')
         return 2
@@ -235,115 +337,209 @@ def main(argv):
         return 2
 
     zin = zipfile.ZipFile(src)
-    doc_root = etree.fromstring(zin.read('word/document.xml'))
-    styles_root = etree.fromstring(zin.read('word/styles.xml'))
+    try:
+        names = [n for n in zin.namelist() if not n.endswith('/')]
+        blob = {n: zin.read(n) for n in names}
+        doc_root = etree.fromstring(blob['word/document.xml'])
+        styles_root = etree.fromstring(blob['word/styles.xml'])
 
-    # ---- A1 单页眉 ----
-    refs = header_ref(doc_root)
-    if len(refs) != 1:
-        print('[中止] A1 headerReference 数=%d（要求恰 1 个单页眉件）——多页眉件需人工裁决，按安全纪律不动文件。' % len(refs))
-        return 2
-    htype, rid = refs[0]
-    rels_root = etree.fromstring(zin.read('word/_rels/document.xml.rels'))
-    hname = None
-    for rel in rels_root:
-        if rel.get('Id') == rid:
-            hname = 'word/' + rel.get('Target').lstrip('/')
-            break
-    if hname is None or hname not in zin.namelist():
-        print('[中止] A1 rels 中解析不到页眉部件（rId=%s）。' % rid)
-        return 2
+        # ---- A1 单页眉单页脚 ----
+        hrefs = [(hr.get(q('type')) or 'default', hr.get('{%s}id' % R)) for hr in doc_root.iter(q('headerReference'))]
+        frefs = [(fr.get(q('type')) or 'default', fr.get('{%s}id' % R)) for fr in doc_root.iter(q('footerReference'))]
+        if len(hrefs) != 1 or len(frefs) != 1:
+            print('[中止] A1 headerReference=%d、footerReference=%d（要求各恰1个）——多定义件需人工裁决。'
+                  % (len(hrefs), len(frefs)))
+            return 2
+        rels_root = etree.fromstring(blob['word/_rels/document.xml.rels'])
+        relmap = {rel.get('Id'): rel.get('Target') for rel in rels_root}
+        def part_of(rid):
+            tgt = relmap.get(rid)
+            return ('word/' + tgt.lstrip('/')) if tgt else None
+        hname, fname = part_of(hrefs[0][1]), part_of(frefs[0][1])
+        if not hname or hname not in blob or not fname or fname not in blob:
+            print('[中止] A1 rels解析不到页眉/页脚部件（%s / %s）。' % (hname, fname))
+            return 2
+        hdr_xml = blob[hname].decode('utf-8')
+        ftr_xml = blob[fname].decode('utf-8')
 
-    hdr_root = etree.fromstring(zin.read(hname))
+        # ---- A2 节标题在位 ----
+        sid3 = find_heading3_style_id(styles_root)
+        sec_paras = section_paras(doc_root, sid3)
+        if not sid3 or not sec_paras:
+            print('[中止] A2 正文无挂「标题3」样式段落（styleId=%s，计数=%d）——先跑 工具/节标题样式挂载.py。'
+                  % (sid3, len(sec_paras)))
+            return 2
+        titles = [para_text(p) for p in sec_paras]
+        anchors_txt = [anchor_text_of(t) for t in titles]
+        n_sec = len(sec_paras)
+        print('A2 节标题：styleId=%s，共%d个；锚段文本（剥统计段）首末=%r / %r'
+              % (sid3, n_sec, anchors_txt[0], anchors_txt[-1]))
 
-    # ---- 幂等 ----
-    if has_styleref_field(hdr_root):
-        with open(dst, 'wb') as f:
-            f.write(open(src, 'rb').read())
-        print('幂等：页眉已含 STYLEREF 域，跳过零改动（输出=输入字节级拷贝）-> %s' % dst)
+        # ---- Normal styleId（basedOn真实值）----
+        normal_sid = find_normal_style_id(styles_root)
+        if not normal_sid:
+            print('[中止] styles.xml 解析不到真实 Normal styleId——禁字面量悬空（经验定论），人工裁决。')
+            return 2
+        print('锚样式 basedOn＝真实 Normal styleId=%r（非字面量）' % normal_sid)
+
+        # ---- 锚段在位检查（幂等）----
+        exist_anchors = existing_anchor_paras(doc_root)
+        insert_needed = True
+        if exist_anchors:
+            if len(exist_anchors) == n_sec:
+                ok = all(a.getnext() is p for a, p in zip(exist_anchors, sec_paras))
+                if ok:
+                    insert_needed = False
+                    print('幂等：锚段已 %d 个且逐节标题直接前驱——跳过插入。' % n_sec)
+            if insert_needed and exist_anchors:
+                print('[中止] 既有锚段 %d 个与节标题数 %d 不符或前驱关系破坏——人工裁决。'
+                      % (len(exist_anchors), n_sec))
+                return 2
+
+        # ---- 前段推导（既有页眉文本；同串件截「（共」前）----
+        hdr_text = ''.join(re.findall(r'<w:t[^>]*>([^<]*)</w:t>', hdr_xml))
+        prefix_src = hdr_text.split('（共')[0].split('\t')[0]
+        had_brand = prefix_src.startswith(BRAND)
+        prefix_core = prefix_src[len(BRAND):] if had_brand else prefix_src   # 去既有品牌前缀（防双拼）
+        if not prefix_core.endswith(token_suffix) or token_head not in prefix_core:
+            print('[中止] 既有页眉前段 %r 与件型token %r 不符（应含章段且以件型尾段收尾）——人工裁决。'
+                  % (prefix_core, token))
+            return 2
+        print('前段（取自既有页眉，整体替换旧串；本位%s品牌前缀）＝%r'
+              % ('含' if had_brand else '不含', prefix_core))
+
+        # ---- 串宽估算＋前缀决策（--no-brand＝同部分一致性强制：部分内任一卷省前缀则各卷都省）----
+        usable = usable_twips(doc_root)
+        longest_anchor = max(anchors_txt, key=est_twips)
+        def worst(with_brand):
+            return (('羿郭工作室·' if with_brand else '') + prefix_core
+                    + '（共999页）　' + longest_anchor + '　第999页')
+        est_full, est_nopre = est_twips(worst(True)), est_twips(worst(False))
+        keep_brand = (est_full <= usable) and not no_brand
+        if no_brand:
+            print('--no-brand：同部分一致性强制省略品牌前缀（部分内他卷实测放不下时各卷同形态）。')
+        prefix = BRAND if keep_brand else ''
+        print('串宽估算：版心=%d缇；worst-case带前缀=%d缇、省前缀=%d缇（最长锚=%r，N/X按3位）→ %s'
+              % (usable, est_full, est_nopre, longest_anchor,
+                 '保留品牌前缀' if keep_brand else '省略「羿郭工作室·」前缀（§7：同串单行放不下时）'))
+        # COM实测行数断言（worst-case）
+        try:
+            lines = com_linecount([worst(True), worst(False)])
+        except Exception as e:
+            print('[中止] COM串宽实测失败：', e)
+            return 2
+        print('A5 COM实测行数（worst-case，宋体/TNR 9pt）：带前缀=%d行、省前缀=%d行（断言＝1）'
+              % (lines[0], lines[1]))
+        if keep_brand and lines[0] > 1:
+            keep_brand = lines[0] == 1
+            print('  带前缀COM实测>1行 → 降级省略品牌前缀。')
+        prefix = BRAND if keep_brand else ''
+        if (lines[0] if keep_brand else lines[1]) > 1:
+            print('[中止] A5 省前缀后COM实测仍>1行（%d）——串宽断言失败，人工裁决。'
+                  % (lines[0] if keep_brand else lines[1]))
+            return 2
+
+        # ---- sectPr现start（PAGE域缓存初值）----
+        mstart = re.search(r'<w:pgNumType w:start="(\d+)"/>', blob['word/document.xml'].decode('utf-8'))
+        start0 = mstart.group(1) if mstart else '1'
+
+        # ---- 同串重建（页眉＝页脚同内容）----
+        para = samestring_para_xml(prefix + prefix_core, N_PLACEHOLDER, anchors_txt[0], start0)
+        hdr2, n_h = replace_paras_with(hdr_xml, para, '</w:hdr>')
+        ftr2, n_f = replace_paras_with(ftr_xml, para, '</w:ftr>')
+        expect_vis = (prefix + prefix_core + '（共%s页）　%s　第%s页'
+                      % (N_PLACEHOLDER, anchors_txt[0], start0))
+        for tag, xml2, nrem in (('页眉', hdr2, n_h), ('页脚', ftr2, n_f)):
+            vis = visible_text(xml2)
+            assert vis == expect_vis, '%s可见文本异常: %r（预期 %r）' % (tag, vis, expect_vis)
+            assert xml2.count('fldCharType="begin"') == 2 and xml2.count('fldCharType="end"') == 2, tag + '域组数≠2'
+            assert 'fldSimple' not in xml2 and 'NUMPAGES' not in xml2, tag + '域形态残留'
+            assert INSTR_STYLEREF in xml2 and INSTR_PAGE in xml2, tag + 'instrText缺失'
+            print('同串重建（%s部件，退役旧段%d个）：可见文本＝%r' % (tag, nrem, vis))
+
+        # ---- styles / settings / document ----
+        styles2, style_new = ensure_anchor_style(blob['word/styles.xml'].decode('utf-8'), normal_sid)
+        print('锚样式%s：styleId=%s name=%s basedOn=%s（1pt白、line=20 exact、非隐藏、无底纹无边框）'
+              % ('新建' if style_new else '幂等重写', ANCHOR_STYLE_ID, ANCHOR_STYLE_NAME, normal_sid))
+        settings2 = ensure_settings(blob['word/settings.xml'].decode('utf-8'))
+
+        doc_changed = insert_needed
+        if insert_needed:
+            for p, txt in zip(sec_paras, anchors_txt):
+                p.addprevious(build_anchor_element(txt))
+            doc_xml2 = etree.tostring(doc_root, xml_declaration=True, encoding='UTF-8', standalone=True).decode('utf-8')
+        else:
+            doc_xml2 = blob['word/document.xml'].decode('utf-8')
+        doc_xml2, mar_changed = ensure_pgmar_and_notitlepg(doc_xml2)
+        doc_changed = doc_changed or mar_changed
+        n_title = blob['word/document.xml'].decode('utf-8').count('<w:titlePg')
+        if mar_changed or n_title:
+            print('sectPr版面：pgMar header=%s/footer=%s 强制、titlePg剔除%d处%s'
+                  % (HEADER_TWIPS, FOOTER_TWIPS, n_title, '（含锚段插入）' if insert_needed else ''))
+
+        if dry:
+            print('[dry-run] 不写输出。锚段%d个%s；同串=%r；N占位=%r；PAGE缓存=%s'
+                  % (n_sec, '' if insert_needed else '（已在位跳过）', expect_vis, N_PLACEHOLDER, start0))
+            return 0
+
+        # ---- A3/A4 输出复检（对将写入的xml串断言，再落盘）----
+        out_doc = etree.fromstring(doc_xml2.encode('utf-8'))
+        chk_anchors = existing_anchor_paras(out_doc)
+        assert len(chk_anchors) == n_sec, '锚段数%d≠节标题数%d' % (len(chk_anchors), n_sec)
+        assert all(a.getnext() is p for a, p in zip(chk_anchors, section_paras(out_doc, sid3))), '锚段-节标题前驱关系断裂'
+        chk_styles = etree.fromstring(styles2.encode('utf-8'))
+        st = None
+        for s_ in chk_styles.findall(q('style')):
+            if s_.get(q('styleId')) == ANCHOR_STYLE_ID:
+                st = s_
+        assert st is not None, '锚样式未在位'
+        assert st.find(q('basedOn')).get(q('val')) == normal_sid, 'basedOn≠真实Normal'
+        assert st.find(q('rPr')).find(q('sz')).get(q('val')) == '2'
+        assert st.find(q('rPr')).find(q('color')).get(q('val')) == 'FFFFFF'
+        spc = st.find(q('pPr')).find(q('spacing'))
+        assert spc.get(q('line')) == '20' and spc.get(q('lineRule')) == 'exact'
+        assert st.find(q('rPr')).find(q('vanish')) is None, '锚样式不得隐藏（STYLEREF不认）'
+        for a_p in chk_anchors:
+            assert a_p.find('.//%s' % q('vanish')) is None, '锚段含隐藏属性'
+            assert a_p.find(q('pPr')).find(q('shd')) is None and a_p.find(q('pPr')).find(q('pBdr')) is None, '锚段带底纹/边框'
+            assert a_p.find(q('pPr')).find(q('keepNext')) is None and a_p.find(q('pPr')).find(q('keepLines')) is None \
+                and a_p.find(q('pPr')).find(q('pageBreakBefore')) is None, '锚段带禁排属性（§7⑥）'
+        assert '<w:updateFields' in settings2 and 'evenAndOddHeaders' not in settings2
+        for xml2 in (hdr2, ftr2):
+            assert re.search(r'<w:jc w:val="left"/>', xml2) and xml2.count('<w:jc') == 1, '页眉/页脚对齐异常'
+            szs = re.findall(r'<w:sz w:val="(\d+)"/>', xml2)
+            assert szs and set(szs) == {'18'}, '同串run字号≠18半点: %r' % szs
+        print('A4 结构自检：PASS（锚段数=%d=节标题数且逐段直接前驱；两部件各2组复杂域、无fldSimple/'
+              'NUMPAGES、jc=left、全run 18半点；basedOn=%s；pgMar %s/%s；settings updateFields）'
+              % (n_sec, normal_sid, HEADER_TWIPS, FOOTER_TWIPS))
+
+        # ---- 落盘（保持成员原序）----
+        tmp = dst + '.tmp'
+        replace = {'word/document.xml': doc_xml2.encode('utf-8'),
+                   'word/styles.xml': styles2.encode('utf-8'),
+                   'word/settings.xml': settings2.encode('utf-8'),
+                   hname: hdr2.encode('utf-8'), fname: ftr2.encode('utf-8')}
+        with zipfile.ZipFile(tmp, 'w', zipfile.ZIP_DEFLATED) as zout:
+            for nm in names:
+                zout.writestr(nm, replace.get(nm, blob[nm]))
+        os.replace(tmp, dst)
+
+        # ---- A3 写盘后复检 ----
+        with zipfile.ZipFile(dst) as zchk:
+            bad = [n for n in names if n not in replace and zchk.read(n) != blob[n]]
+            missing = [n for n in names if n not in zchk.namelist()]
+            for nm, data in replace.items():
+                assert zchk.read(nm) == data, '写盘后回读不符：%s' % nm
+        if bad or missing:
+            print('[断言失败 A3] 输出包非预期改动：%s' % (bad + missing))
+            os.remove(dst)
+            return 2
+        print('A3 只动目标件：PASS（其余 %d 个条目与输入字节逐一相等）' % (len(names) - len(replace)))
+        print('完成 -> %s（锚段%d；同串页眉页脚；N占位=%r待盖章填值；PAGE缓存=%s）'
+              % (dst, n_sec, N_PLACEHOLDER, start0))
         return 0
-
-    # ---- A2 前置依赖：正文已有「标题3」样式段 ----
-    sid = find_heading3_style_id(styles_root)
-    n_h3 = count_heading3_paras(doc_root, sid) if sid else 0
-    if not sid or n_h3 == 0:
-        print('[中止] A2 前置依赖不满足：正文无挂「标题3」样式的段落（styleId=%s，计数=%d）'
-              '——先用 工具/节标题样式挂载.py 处理。' % (sid, n_h3))
-        return 2
-    first_txt = first_heading3_text(doc_root, sid)
-    print('前置依赖：「标题3」styleId=%s，正文挂载段 %d 个；首节标题（域缓存文本）＝%r' % (sid, n_h3, first_txt))
-
-    # ---- 制表位位置 ----
-    try:
-        tab_pos, geom = tab_position(doc_root)
-    except ToolError as e:
-        print('[中止]', e)
-        return 2
-    print('版心右缘＝pgSz.w %d − left %d − right %d ＝ %d 缇（右停靠制表位，无前导符）' % (geom[0], geom[1], geom[2], tab_pos))
-
-    # ---- 改造页眉 ----
-    p0 = hdr_root.findall(q('p'))[0]
-    left_texts_before = [t.text or '' for t in p0.iter(q('t'))]
-    rpr0 = None
-    for r in p0.findall(q('r')):
-        if r.find(q('t')) is not None:
-            rpr0 = r.find(q('rPr'))
-            break
-    base_rpr_sig = ([(etree.QName(c).localname, tuple(sorted((k.split('}')[-1], v) for k, v in c.attrib.items())))
-                     for c in rpr0] if rpr0 is not None else None)
-    try:
-        build_header(hdr_root, tab_pos, first_txt)
-    except ToolError as e:
-        print('[中止]', e)
-        return 2
-
-    # ---- A4 结构自检 ----
-    errs = verify_header(hdr_root, tab_pos, left_texts_before, base_rpr_sig)
-    if errs:
-        print('[断言失败 A4] 页眉重构自检不过：%d 项' % len(errs))
-        for e in errs:
-            print('   -', e)
-        return 2
-    print('断言 A4 域结构自检：PASS（fldChar begin/separate/end 配对、instrText=%r、无 fldSimple、'
-          '右停靠制表位 pos=%d、jc=left 保持、左侧文本逐字不变、追加 run rPr 与页眉基准一致）' % (INSTR_TEXT, tab_pos))
-
-    # ---- A3 只动页眉部件（写盘后对成品包逐条目复检）----
-    new_hdr = etree.tostring(hdr_root, xml_declaration=True, encoding='UTF-8', standalone=True)
-    src_zip_cache = {n: zin.read(n) for n in zin.namelist() if not n.endswith('/')}
-
-    if dry:
-        print('[dry-run] 不写输出。页眉部件=%s，制表位 pos=%d，缓存文本=%r' % (hname, tab_pos, first_txt))
-        return 0
-
-    # ---- 落盘 ----
-    zout = zipfile.ZipFile(dst, 'w', zipfile.ZIP_DEFLATED)
-    try:
-        for item in zin.infolist():
-            if item.filename.endswith('/'):
-                continue
-            data = new_hdr if item.filename == hname else src_zip_cache[item.filename]
-            zout.writestr(item.filename, data, compress_type=item.compress_type)
     finally:
-        zout.close()
-
-    # ---- A3 写盘后复检：输出包除页眉部件外逐条目与输入字节相等 ----
-    zchk = zipfile.ZipFile(dst)
-    try:
-        bad = [n for n in src_zip_cache
-               if n != hname and zchk.read(n) != src_zip_cache[n]]
-        missing = [n for n in src_zip_cache if n not in zchk.namelist()]
-    finally:
-        zchk.close()
-    if bad or missing:
-        print('[断言失败 A3] 输出包出现非预期改动：%s' % (bad + missing))
-        os.remove(dst)
-        return 2
-    print('断言 A3 只动页眉部件：PASS（其余 %d 个条目与输入字节逐一相等，document.xml/页脚/styles 不触碰）'
-          % (len(src_zip_cache) - 1))
-
-    print('输出 -> %s（替换 %s；未新增页眉定义，不动页脚）' % (dst, hname))
-    print('完成：页眉右侧 STYLEREF 复杂域挂载，域缓存文本＝%r（WPS/静态查看器可能显示缓存——Word/打印/PDF 链路重算，见 docstring 备案）' % first_txt)
-    return 0
+        zin.close()
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv[1:]))

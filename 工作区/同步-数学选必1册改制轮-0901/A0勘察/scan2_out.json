@@ -1,0 +1,641 @@
+{
+ "X1": {
+  "img_wp": {
+   "inline": 57,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 57
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('title', '28')": 2,
+   "('tiaomu', '24')": 9,
+   "('other', '24')": 44,
+   "('other', None)": 49,
+   "('title', '24')": 5,
+   "('qihao', '24')": 29,
+   "('label', '18')": 88,
+   "('other', '18')": 36
+  },
+  "pshd_other_by_class": {},
+  "pshd_AUTO_samples": [],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "a",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 0,
+   "含识别信号": 0
+  },
+  "ans_samples": [
+   "【答案】 3/7　【知识点】1.2.1 平行线分线段成比例定理、相似三角形的判定与性质",
+   "【答案】 1:3　【知识点】1.2.1 相似三角形的性质、平行四边形的性质"
+  ],
+  "tiaomu_form": {
+   "全角N．": 9,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "Heading3": 2
+  }
+ },
+ "I1": {
+  "img_wp": {
+   "inline": 30,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 30
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('other', '18')": 5,
+   "('other', None)": 24,
+   "('title', '28')": 10,
+   "('tiaomu', '24')": 47,
+   "('label', '18')": 52,
+   "('other', '24')": 110
+  },
+  "pshd_other_by_class": {},
+  "pshd_AUTO_samples": [],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "a",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 0,
+   "含识别信号": 0
+  },
+  "ans_samples": [],
+  "tiaomu_form": {
+   "全角N．": 47,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "Heading3": 10
+  }
+ },
+ "B": {
+  "img_wp": {
+   "inline": 126,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 126
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('other', '18')": 504,
+   "('title', '28')": 9,
+   "('title', '24')": 52,
+   "('label', '18')": 259,
+   "('qihao', '24')": 61,
+   "('other', '24')": 95,
+   "('other', None)": 88,
+   "('tiaomu', '24')": 2
+  },
+  "pshd_other_by_class": {},
+  "pshd_AUTO_samples": [],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "a",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 49,
+   "含识别信号": 0
+  },
+  "ans_samples": [
+   "【答案】 B　【知识点】1.1.1 向量的模、零向量与单位向量、相等向量、相反向量",
+   "【答案】 　【知识点】1.1.1 棱柱的结构特征和分类、空间向量加减运算的几何表示"
+  ],
+  "tiaomu_form": {
+   "全角N．": 2,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "Heading3": 9
+  }
+ },
+ "C": {
+  "img_wp": {
+   "inline": 165,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 165
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('title', '28')": 1,
+   "('title', '24')": 75,
+   "('label', '18')": 316,
+   "('qihao', '24')": 79,
+   "('other', '24')": 80,
+   "('other', None)": 112,
+   "('other', '18')": 410,
+   "('tiaomu', '24')": 8
+  },
+  "pshd_other_by_class": {},
+  "pshd_AUTO_samples": [],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "a",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 69,
+   "含识别信号": 0
+  },
+  "ans_samples": [
+   "【答案】 B　【知识点】1.2.5 点到平面距离的向量求法",
+   "【答案】 (1)4；(2).　【知识点】1.2.5 点到平面距离的向量求法、点到直线距离的向量求法"
+  ],
+  "tiaomu_form": {
+   "全角N．": 8,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "Heading3": 1
+  }
+ },
+ "X2": {
+  "img_wp": {
+   "inline": 0,
+   "anchor": 0,
+   "drawing_child_tags": {}
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('title', '28')": 1,
+   "('tiaomu', '24')": 2,
+   "('other', '24')": 12,
+   "('title', '24')": 8,
+   "('qihao', '24')": 13,
+   "('label', '18')": 33,
+   "('other', None)": 11,
+   "('other', '18')": 6
+  },
+  "pshd_other_by_class": {},
+  "pshd_AUTO_samples": [],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "a",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 0,
+   "含识别信号": 0
+  },
+  "ans_samples": [
+   "【答案】 (1)3；(2)；(3)3+2；(4)　【知识点】2.8 韦达定理与判别式",
+   "【答案】 21　【知识点】2.8 韦达定理与判别式"
+  ],
+  "tiaomu_form": {
+   "全角N．": 2,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "Heading3": 1
+  }
+ },
+ "I2": {
+  "img_wp": {
+   "inline": 73,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 73
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('other', '18')": 18,
+   "('other', None)": 43,
+   "('title', '28')": 20,
+   "('tiaomu', '24')": 67,
+   "('label', '18')": 71,
+   "('other', '24')": 290
+  },
+  "pshd_other_by_class": {
+   "AUTO/other": 135,
+   "AUTO/tiaomu": 3
+  },
+  "pshd_AUTO_samples": [
+   "（1）斜率",
+   "的几何含义为过点与点的直线的斜率．",
+   "例如：①的几何含义为过点与点的直线的斜率；②的几何含义为过点与点的直线的",
+   "（2）距离",
+   "①的几何含义为点与点的距离；②（a，b不同时为0）的几何含义为点到直线的"
+  ],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "a1",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 4,
+   "含识别信号": 0
+  },
+  "ans_samples": [],
+  "tiaomu_form": {
+   "全角N．": 67,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "31": 20
+  },
+  "i2_misc_shd": []
+ },
+ "E": {
+  "img_wp": {
+   "inline": 75,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 75
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('other', '18')": 334,
+   "('title', '28')": 10,
+   "('title', '24')": 68,
+   "('label', '18')": 399,
+   "('qihao', '24')": 92,
+   "('other', '24')": 80,
+   "('other', None)": 36,
+   "('tiaomu', '24')": 2
+  },
+  "pshd_other_by_class": {
+   "AUTO/qihao": 58,
+   "AUTO/other": 342,
+   "AUTO/label": 196,
+   "AUTO/tiaomu": 1
+  },
+  "pshd_AUTO_samples": [
+   "3．（中档·保80%·卡壳看答案）2020年12月4日，嫦娥五号探测器在",
+   "",
+   "A．；B．；C．；D．",
+   "【答案】 C　【知识点】2.2.1 直线的倾斜角",
+   "【分析】由五角星的内角为，可知，又平分第三颗小星的一个角，过作轴平行线，"
+  ],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "Normal",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 62,
+   "含识别信号": 62
+  },
+  "ans_samples": [
+   "【答案】 B　【知识点】2.1 求平面两点间的距离",
+   "【答案】 D　【知识点】2.2.1 直线的倾斜角"
+  ],
+  "tiaomu_form": {
+   "全角N．": 2,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "Heading3": 10
+  }
+ },
+ "F": {
+  "img_wp": {
+   "inline": 53,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 53
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('title', '28')": 5,
+   "('title', '24')": 69,
+   "('label', '18')": 384,
+   "('qihao', '24')": 90,
+   "('other', '24')": 92,
+   "('other', '18')": 381,
+   "('other', None)": 38,
+   "('tiaomu', '24')": 7
+  },
+  "pshd_other_by_class": {
+   "AUTO/qihao": 65,
+   "AUTO/label": 231,
+   "AUTO/other": 427,
+   "AUTO/tiaomu": 7
+  },
+  "pshd_AUTO_samples": [
+   "94．（中档·保80%·卡壳看答案）已知，且圆，圆．分别求这两圆外离、外",
+   "【答案】 时外离；时外切；时相交，时内切，时内含．　【知识点】2.3.4",
+   "【分析】由两圆的连心距与半径的和差关系求解．",
+   "【详解】，，半径为，，，，，，",
+   "所以，时外离；时外切；时相交，时内切，时内含．"
+  ],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "Normal",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 61,
+   "含识别信号": 61
+  },
+  "ans_samples": [
+   "【答案】 (1)内切；　(2)外切；　(3)相交.　【知识点】2.3.4 求平面两点间的距离、由标准方程确定圆心和半径、判断圆与圆的位置关系",
+   "【答案】 时外离；时外切；时相交，时内切，时内含．　【知识点】2.3.4 由圆的位置关系确定参数或范围"
+  ],
+  "tiaomu_form": {
+   "全角N．": 7,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "Heading3": 5
+  }
+ },
+ "G": {
+  "img_wp": {
+   "inline": 42,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 42
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('other', '-')": 62,
+   "('title', '-')": 52,
+   "('label', '18')": 285,
+   "('qihao', '-')": 68,
+   "('other', '18')": 258,
+   "('other', None)": 36,
+   "('tiaomu', '-')": 1
+  },
+  "pshd_other_by_class": {},
+  "pshd_AUTO_samples": [],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    null,
+    null
+   ]
+  },
+  "normal_id": {
+   "id": "a1",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 50,
+   "含识别信号": 50
+  },
+  "ans_samples": [
+   "【答案】 (1)线段　(2)线段的延长线，即以为顶点向外的射线　(3)线段的延长线，即以为顶点向外的射线　(4)轨迹不存在　(5)轨迹不存在",
+   "【答案】 C　【知识点】2.6.1 利用双曲线定义求点到焦点的距离及最值"
+  ],
+  "tiaomu_form": {
+   "全角N．": 1,
+   "半角N.": 0
+  },
+  "jie_pstyle": {
+   "(none)": 1
+  },
+  "g_jiebiaoti": [
+   {
+    "t": "2.6 双曲线及其方程",
+    "pstyle": "31",
+    "sz": "-",
+    "shd": null
+   },
+   {
+    "t": "2.6.1 双曲线的标准方程（第183—198题）　本节16题：简单6｜中档9｜难1",
+    "pstyle": "31",
+    "sz": "-",
+    "shd": null
+   },
+   {
+    "t": "2.6.2 双曲线的几何性质（第199—218题）　本节20题：简单5｜中档13｜难2",
+    "pstyle": "31",
+    "sz": "-",
+    "shd": null
+   },
+   {
+    "t": "2.7 抛物线及其方程",
+    "pstyle": "31",
+    "sz": "-",
+    "shd": null
+   },
+   {
+    "t": "2.7.1 抛物线的标准方程（第219—232题）　本节14题：简单5｜中档9｜难0",
+    "pstyle": "31",
+    "sz": "-",
+    "shd": null
+   },
+   {
+    "t": "2.7.2 抛物线的几何性质（第233—250题）　本节18题：简单1｜中档17｜难0",
+    "pstyle": "31",
+    "sz": "-",
+    "shd": null
+   }
+  ],
+  "g_styles_with_sz": [
+   {
+    "id": "1",
+    "name": "heading 1",
+    "sz": "28"
+   },
+   {
+    "id": "21",
+    "name": "heading 2",
+    "sz": "26"
+   },
+   {
+    "id": "31",
+    "name": "heading 3",
+    "sz": "28"
+   },
+   {
+    "id": "8",
+    "name": "heading 8",
+    "sz": "20"
+   },
+   {
+    "id": "9",
+    "name": "heading 9",
+    "sz": "20"
+   },
+   {
+    "id": "10",
+    "name": "标题 1 字符",
+    "sz": "28"
+   },
+   {
+    "id": "22",
+    "name": "标题 2 字符",
+    "sz": "26"
+   },
+   {
+    "id": "aa",
+    "name": "Title",
+    "sz": "52"
+   },
+   {
+    "id": "ab",
+    "name": "标题 字符",
+    "sz": "52"
+   },
+   {
+    "id": "ad",
+    "name": "副标题 字符",
+    "sz": "24"
+   },
+   {
+    "id": "33",
+    "name": "Body Text 3",
+    "sz": "16"
+   },
+   {
+    "id": "34",
+    "name": "正文文本 3 字符",
+    "sz": "16"
+   }
+  ]
+ },
+ "H": {
+  "img_wp": {
+   "inline": 69,
+   "anchor": 0,
+   "drawing_child_tags": {
+    "inline": 69
+   }
+  },
+  "sz_x_class": {
+   "('title', '32')": 1,
+   "('title', '28')": 1,
+   "('title', '24')": 73,
+   "('label', '18')": 397,
+   "('qihao', '24')": 89,
+   "('other', '24')": 154,
+   "('other', '18')": 507,
+   "('tiaomu', '24')": 6,
+   "('other', None)": 42
+  },
+  "pshd_other_by_class": {
+   "AUTO/qihao": 62,
+   "AUTO/label": 207,
+   "AUTO/other": 441,
+   "AUTO/tiaomu": 1
+  },
+  "pshd_AUTO_samples": [
+   "253．（中档·保80%·卡壳看答案）已知双曲线与点，讨论过点的直线的斜",
+   "【答案】 答案见解析　【知识点】2.8 讨论双曲线与直线的位置关系",
+   "【分析】讨论垂直于轴或与轴不垂直，然后设出直线方程，将直线与双曲线方程联",
+   "【详解】①当垂直于轴时，直线与双曲线相切，有一个公共点．",
+   "②当与轴不垂直时，设直线的方程为，"
+  ],
+  "docDef": {
+   "rPr_sz": "24",
+   "pPr_line": [
+    "410",
+    "atLeast",
+    "0",
+    "0"
+   ]
+  },
+  "normal_id": {
+   "id": "Normal",
+   "sz": null
+  },
+  "tongshi_check": {
+   "含通式": 61,
+   "含识别信号": 61
+  },
+  "ans_samples": [
+   "【答案】 C　【知识点】2.8 讨论椭圆与直线的位置关系",
+   "【答案】 A　【知识点】2.8 充分条件、必要条件、判断直线与抛物线的位置关系"
+  ],
+  "tiaomu_form": {
+   "全角N．": 4,
+   "半角N.": 2
+  },
+  "jie_pstyle": {
+   "(none)": 1,
+   "Heading3": 1
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "输入": "I2_工作.docx",
+ "总剥除sz+szCs": 0,
+ "分部件": {
+  "word/document.xml": {
+   "stripped_sz": 0,
+   "stripped_szCs": 0,
+   "empty_rpr_removed": 0,
+   "omath_count": 833
+  }
+ },
+ "oMath块数": 833
+}

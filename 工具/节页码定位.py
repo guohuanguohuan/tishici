@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 r"""节页码定位（公共规则§11册目录页件条款明文要求的节级页码生成工具；2026-08-27 按§5回扫纪律先建后用收编入工具文件夹）
-功能：定位讲练件内节标题「N.N（第X—Y题）」/「N.N.N（第X—Y题）」所在页，输出该节的部分内页码
+功能：定位讲练件内节标题所在页，输出该节的部分内页码
   （公共规则§7部分独立页码制·2026-08-31 N8：部分内页码＝件内页＋该件start−1；
   2026-08-27~30旧「全册连续页码」口径废止；start＝该件 sectPr <w:pgNumType w:start> 值，
   由 工具/册级连续页码.py 盖章落盘——从盖章记录（--record）或批量配置读）。
 签名兼容（2026-08-31 N11）：节标题行已与节级统计行合并为一行——「2.4 曲线与方程（第101—119题）　本节19题：
   简单1｜中档12｜难6」，行尾带统计段照常命中（统计段形态＝全角空格＋「本节N题…」）。
+层级制节标题签名（2026-09-01 A'改制轮·工具债③·T3）：题号层级制后节标题行区间括注改题量括注
+  （规格书§1口径C授权差异②）——「2.4 曲线与方程　本节19题：简单1｜中档12｜难6」（无「（第X—Y题）」）；
+  本工具双签名兼容：区间括注（旧式）与纯统计段（层级制新式）任一在位即命中，题型标题（无统计段）不误命中。
+批量0命中逐件独立报告（2026-09-01 工具债③·T3 强化）：批量模式任一件0命中不再「告警后丢弃该件」，
+  而是0命中件照常进输出（件级行＋空节表＋「0命中」注记行），退出码0——衔接件/知识清单无节标题不属错误；
+  --strict 恢复防呆口径（任一件0命中即非零退出，用于纯讲练件配置）。
 
 用法（单件模式）：
   python 工具/节页码定位.py <docx路径> <start> [--name 件名] [--json]
@@ -20,16 +26,15 @@ r"""节页码定位（公共规则§11册目录页件条款明文要求的节级
               #注释行与空行跳过）。
     —— --record＝册级连续页码.py --record 落盘的盖章记录md（按件名basename匹配 start/件标识/N；
        配置内未给 start 的件必须能从记录补齐，否则该件报错跳过）。
-    —— 批量模式0命中处置（2026-08-31修复顺延工具债）：单件告警跳过、其余正常出结果、退出码0——
-       衔接件/知识清单无「（第X—Y题）」节标题不属错误；--strict 恢复旧口径（任一0命中即非零退出，
-       用于纯讲练件配置的防呆）。
 
 输出：TSV行「件名\t节号\t节标题全文\t件内页\t部分内页码」打印到stdout（UTF-8）；批量模式先附件级行
-  「件名\t件级起始start\t件标识」；--json 改输出JSON（part_page＝部分内页码＝start+件内页−1）。
+  「件名\t件级起始start\t件标识」＋0命中件的「件名\t!0命中\t—\t—\t—」注记行；--json 改输出JSON
+  （part_page＝部分内页码＝start+件内页−1；0命中件 sections=[] 且 zero_hit=true）。
   件内页码1起算（物理页，Information(3) 不受 pgNumType 调整影响）。
 
 定位规则：Word COM（自建不可见实例，用完Quit，ReadOnly开卷、绝不保存——只读工具，不修改任何docx）遍历段落，
-  正则 ^\d+\.\d+(\.\d+)?[空格]+标题（第X[—–-]Y题）[可选行尾统计段]$（区间破折号兼容全角—/半角连字符）；
+  节标题正则＝节号（N.N / N.N.N）＋空格＋标题＋【旧式（第X[—–-]Y题）区间括注 或 新式「　本节N题…」统计段】
+  （区间破折号兼容全角—/半角连字符；两形态任一在位即命中、都缺即不认——防题型标题误命中）；
   同一节号只取首次出现（防重复）；跳过表格内段落（wdWithInTable 排除章首导航表的节号行，只认正文结构标题段）。
 
 与盖章流水线的接驳关系（§11册目录页件条款）：节级页码与部分内页码盖章串成同一条流水线——
@@ -48,17 +53,19 @@ except ImportError:
     print('错误：需要 pywin32（import win32com.client/pythoncom 失败）', file=sys.stderr)
     sys.exit(3)
 
-# 节标题正则：N.N / N.N.N + 标题 + （第X—Y题）收尾；破折号兼容全角—、en dash –、半角-；
-# 行尾可选统计段（2026-08-31 N11：节标题行与节级统计行合并，「（第X—Y题）　本节N题：…」照常命中）
-SEC_RE = re.compile(r'^(\d+\.\d+(?:\.\d+)?)[\s\u3000]+(.+?)（第(\d+)[—–\-](\d+)题）'
-                    r'(?:[\s\u3000]+本节\d+题.*)?[\s\u3000]*$')
+# 节标题正则（双签名）：节号 N.N/N.N.N + 标题 + 【（第X—Y题）区间括注｜纯统计段】任一在位；
+# 破折号兼容全角—、en dash –、半角-；层级制新式＝无区间括注、统计段「　本节N题：…」必在
+SEC_RE = re.compile(r'^(\d+\.\d+(?:\.\d+)?)[\s\u3000]+(.+?)'
+                    r'(?:（第(\d+)[—–\-](\d+)题）)?(?:[\s\u3000]+本节\d+题[：:].*)?[\s\u3000]*$')
+STATS_RE = re.compile(r'[\s\u3000]本节\d+题')   # 统计段在位判定（与区间括注二选一）
 WD_ACTIVE_END_PAGE = 3   # wdActiveEndPageNumber：物理页码（自件首页1起算，忽略pgNumType调整）
 WD_WITH_IN_TABLE = 12    # wdWithInTable
 REC_ROW = re.compile(r'^\|\s*(P\d+)\s*\|\s*([^|]+?)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*(\d+)\s*\|\s*$')
 
 
 def scan_doc(word, path):
-    """返回 (hits, page_total)：hits＝[(节号, 节标题全文, 件内页), ...] 按文中出现顺序，同节号只取表外首次出现。"""
+    """返回 (hits, page_total)：hits＝[(节号, 节标题全文, 件内页), ...] 按文中出现顺序，同节号只取表外首次出现。
+    双签名：区间括注（旧式）或统计段（层级制新式）任一在位才认节标题——防题型标题误命中。"""
     doc = word.Documents.Open(path, ReadOnly=True, AddToRecentFiles=False)
     try:
         doc.Repaginate()
@@ -68,6 +75,8 @@ def scan_doc(word, path):
             txt = rng.Text.rstrip('\r\x07\x0b\x0c \u3000')
             m = SEC_RE.match(txt)
             if not m:
+                continue
+            if not (m.group(3) or STATS_RE.search(txt)):   # 双签名都在缺 → 不是节标题（题型标题防误命中）
                 continue
             if rng.Information(WD_WITH_IN_TABLE):   # 表格内段落（章首导航表节号行）跳过
                 continue
@@ -184,8 +193,9 @@ def load_batch(cfg_path, record):
 
 
 def main():
-    ap = argparse.ArgumentParser(description='讲练件节标题「N.N（第X—Y题）」部分内页码定位（只读；'
-                                             '兼容N11节标题行尾统计段；批量0命中单件跳过不阻断）')
+    ap = argparse.ArgumentParser(description='讲练件节标题部分内页码定位（只读；双签名兼容：旧式「N.N 标题'
+                                             '（第X—Y题）」与层级制「N.N 标题　本节N题：…」；'
+                                             '批量0命中逐件独立报告不阻断）')
     ap.add_argument('docx', help='docx路径；或 @配置文件（.json/.tsv）批量模式')
     ap.add_argument('start', nargs='?', type=int,
                     help='单件模式：该件首页的部分内页码（sectPr pgNumType start值）；批量模式省略')
@@ -249,7 +259,8 @@ def main():
             if not hits and not batch:
                 # 单件模式：确有节可测，0命中即异常——诊断后非零退出
                 print(f'错误：{os.path.basename(path)} 节标题0命中（正则：{SEC_RE.pattern}）——'
-                      f'请核对件型/节标题格式（应为「N.N 标题（第X—Y题）」）', file=sys.stderr)
+                      f'请核对件型/节标题格式（应为「N.N 标题（第X—Y题）」或层级制「N.N 标题　本节N题：…」）',
+                      file=sys.stderr)
                 try:
                     for sty, head in diagnose_styles(word, path):
                         print(f'  [诊断] 样式「{sty}」：{head}', file=sys.stderr)
@@ -258,19 +269,21 @@ def main():
                 fatal = True
                 continue
             if not hits and batch:
-                # 批量模式0命中：单件告警跳过、不阻断（衔接件/知识清单无（第X—Y题）节标题不属错误）
-                print(f'警告：{os.path.basename(path)} 节标题0命中——跳过该件（衔接件/知识清单无'
-                      f'「（第X—Y题）」节标题不属错误；若该件确为讲练件请核对节标题格式）', file=sys.stderr)
+                # 批量模式0命中：逐件独立报告（不丢弃、不阻断）——衔接件/知识清单无节标题不属错误
+                print(f'注记：{os.path.basename(path)} 节标题0命中——已按独立空结果报告（衔接件/知识清单'
+                      f'无节级标题不属错误；若该件确为讲练件请核对节标题格式）', file=sys.stderr)
+                results.append((name, start, path, tag, [], pages))
                 if args.strict:
                     fatal = True
                 continue
             results.append((name, start, path, tag, hits, pages))
         if fatal:
             sys.exit(1)
-        # 输出
+        # 输出（0命中件照常逐件报告：件级行＋「!0命中」注记行）
         if args.json:
             payload = {'files': [
                 {'name': n, 'start': s, 'tag': t, 'path': p, 'in_file_pages': pg,
+                 'zero_hit': not h,
                  'sections': [{'no': no, 'title': tt, 'in_page': ip, 'part_page': s + ip - 1}
                               for no, tt, ip in h]}
                 for n, s, p, t, h, pg in results]}
@@ -278,9 +291,12 @@ def main():
         else:
             if batch:
                 print('# 件级（件名\t件级起始start\t件标识）')
-                for n, s, _, t, _, _ in results:
+                for n, s, _, t, h, _ in results:
                     print(f'{n}\t{s}\t{t or ""}')
                 print('# 节级（件名\t节号\t节标题全文\t件内页\t部分内页码）')
+                for n, _s, _p, _t, h, _pg in results:
+                    if not h:
+                        print(f'{n}\t!0命中\t—\t—\t—')
             for n, s, _, _, h, _ in results:
                 for no, tt, ip in h:
                     print(f'{n}\t{no}\t{tt}\t{ip}\t{s + ip - 1}')

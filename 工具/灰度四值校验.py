@@ -1,16 +1,19 @@
 # -*- coding: utf-8 -*-
-"""灰度三值校验.py — PDF侧三色板底纹灰度三值校验（公共规则§7「PDF灰度三值校验」＋§14，N5）。
-  三值：#ADC2DA→灰≈190（章/节标题整行底纹）、#C6D4E3→≈209（讲部/题型）、#C9C9C9→201（内容标记族），
-  各±容差（默认±8；三值带互有重叠〔201/209相距8〕——分色以矢量层为主、像素带为辅，三重定性沿用
-  2026-08-29 全库改色抽验先例：矢量层＋144dpi平台直方图）。
+"""灰度四值校验.py（原名 灰度三值校验.py，2026-09-01 A'改制轮工具债⑦升四值更名——
+  全库grep无任何可执行引用后安全更名，沿革见 git 历史）— PDF侧四色板底纹灰度四值校验
+  （公共规则§7「PDF灰度四值校验」＋§14，A'改制轮口径）。
+  四值：#ADC2DA→灰≈190（章/节标题整行底纹）、#C6D4E3→≈209（讲部/题型）、
+        #C9C9C9→201（内容标记族）、#F2F2F2→242（解析块段落浅底），
+  各±容差（默认±8；201/209两带相距8互有重叠——分色以矢量层为主、像素带为辅，三重定性沿用
+  2026-08-29 全库改色抽验先例：矢量层＋144dpi平台直方图；242带与白底255距离13、带外不误吞）。
   取样两路（兼容矢量PDF与渲染平台）：
-    ①矢量层（全部页，快）：page.get_drawings() 逐填充路径取 RGB→BT.601 灰；通道级±2 匹配三目标色，
-      三值各自命中矩形数/页码/面积；灰域[150,245]内非三目标色的填充色＝矢量离群（旧灰A6A6A6=166/
-      D9D9D9=217 等直接现形，比像素簇可靠）；
-    ②144dpi渲染平台（抽样页，默认前5页、--pages all 全量/可指定）：灰度直方图三值带像素计数＋峰位；
-      灰域[150,245]且不在任一带的连通像素簇（≥min_cluster 且 bbox 填充率≥0.25）＝离群像素簇清单
+    ①矢量层（全部页，快）：page.get_drawings() 逐填充路径取 RGB→BT.601 灰；通道级±2 匹配四目标色，
+      四值各自命中矩形数/页码/面积；灰域[150,250]内非四目标色的填充色＝矢量离群（旧灰A6A6A6=166/
+      D9D9D9=217、回调候选F7F7F7=247 等直接现形，比像素簇可靠）；
+    ②144dpi渲染平台（抽样页，默认前5页、--pages all 全量/可指定）：灰度直方图四值带像素计数＋峰位；
+      灰域[150,250]且不在任一带的连通像素簇（≥min_cluster 且 bbox 填充率≥0.25）＝离群像素簇清单
       （页码＋pt位置＋均值灰度）——供扫描件/位图底纹兜底。
-用法: python 灰度三值校验.py <pdf> [--report out.txt] [--dpi 144] [--tol 8]
+用法: python 灰度四值校验.py <pdf> [--report out.txt] [--dpi 144] [--tol 8]
                             [--pages 1-5|all|3,7] [--min-cluster 400]
 输出: 报告文本（stdout＋--report 落盘），供排版自检/§14校验引用；只读 PDF，不改任何文件。"""
 import sys, os, re, argparse
@@ -21,8 +24,9 @@ TARGETS = [  # (名称, hex, R,G,B, 设计灰)
     ('标题整行#ADC2DA（章/节）', 'ADC2DA', 173, 194, 218, 190),
     ('标题整行#C6D4E3（讲部/题型）', 'C6D4E3', 198, 212, 227, 209),
     ('内容标记族#C9C9C9', 'C9C9C9', 201, 201, 201, 201),
+    ('解析块浅底#F2F2F2', 'F2F2F2', 242, 242, 242, 242),
 ]
-GRAY_LO, GRAY_HI = 150.0, 245.0
+GRAY_LO, GRAY_HI = 150.0, 250.0
 
 def rgb_gray(r, g, b):
     return 0.299 * r + 0.587 * g + 0.114 * b
@@ -88,7 +92,8 @@ def main():
     doc = fitz.open(a.pdf)
     pymupdf_ver = (fitz.__doc__ or '').split()[1].rstrip(':') if fitz.__doc__ else '?'
     L = []
-    L.append('灰度三值校验（N5三色板；容差±%g；PyMuPDF %s）：%s' % (a.tol, pymupdf_ver, os.path.basename(a.pdf)))
+    L.append('灰度四值校验（四色板 190/209/201/242；容差±%g；PyMuPDF %s）：%s'
+             % (a.tol, pymupdf_ver, os.path.basename(a.pdf)))
     L.append('页数 %d｜渲染 dpi %d｜像素簇门槛 %d px' % (doc.page_count, a.dpi, a.min_cluster))
 
     # —— ①矢量层（全部页）——
@@ -114,7 +119,7 @@ def main():
                     vo = vec_out.setdefault(k, [0, []])
                     vo[0] += 1
                     vo[1].append(pno + 1)
-    L.append('—— 矢量层（全 %d 页）三值命中 ——' % doc.page_count)
+    L.append('—— 矢量层（全 %d 页）四值命中 ——' % doc.page_count)
     for name, hx, tr, tg, tb, g0 in TARGETS:
         v = vec[hx]
         pg = sorted(set(v['pages']))
@@ -122,13 +127,13 @@ def main():
                  % (hx, g0, v['n'], v['area'],
                     ('%s%s' % (pg[:8], '…' if len(pg) > 8 else '')) if pg else '（未检出）'))
     if vec_out:
-        L.append('  矢量离群填充色（灰域[%g,%g]非三目标，±2通道）——旧灰/杂色直接现形：'
+        L.append('  矢量离群填充色（灰域[%g,%g]非四目标，±2通道）——旧灰/杂色直接现形：'
                  % (GRAY_LO, GRAY_HI))
         for k, (n, pgs) in sorted(vec_out.items(), key=lambda kv: -kv[1][0])[:10]:
             g = rgb_gray(int(k[0:2], 16), int(k[2:4], 16), int(k[4:6], 16))
             L.append('    #%s（灰%.0f）×%d，页 %s' % (k, g, n, sorted(set(pgs))[:8]))
     else:
-        L.append('  矢量离群填充色：0（灰域无非三目标色填充）')
+        L.append('  矢量离群填充色：0（灰域无非四目标色填充）')
 
     # —— ②144dpi 渲染平台（抽样页）——
     rpages = parse_pages(a.pages, doc.page_count)
@@ -167,14 +172,14 @@ def main():
         L.append('  平台直方图峰（灰值:像素）：' + '；'.join('%d:%d' % kv for kv in pk))
     if out_clusters:
         out_clusters.sort(key=lambda c: -c[5])
-        L.append('  离群像素簇 %d 个（灰域[%g,%g]且不在任一三值带；页码＋pt位置＋px＋均值灰）：'
+        L.append('  离群像素簇 %d 个（灰域[%g,%g]且不在任一四值带；页码＋pt位置＋px＋均值灰）：'
                  % (len(out_clusters), GRAY_LO, GRAY_HI))
         for c in out_clusters[:12]:
             L.append('    第%d页 (%.0f,%.0f)-(%.0f,%.0f) %d px 均灰%.0f' % c)
     else:
         L.append('  离群像素簇：0（抽样页无带外整片底纹簇）')
-    L.append('结论: 矢量三值命中 %s｜矢量离群 %d 色｜像素簇 %d 个（三重定性：矢量层为主，'
-             '像素带/簇为辅；带互有重叠——201/209相距8）'
+    L.append('结论: 矢量四值命中 %s｜矢量离群 %d 色｜像素簇 %d 个（三重定性：矢量层为主，'
+             '像素带/簇为辅；带互有重叠——201/209相距8；242距白底255为13）'
              % ('/'.join(str(vec[hx]['n']) for _, hx, *_ in TARGETS), len(vec_out), len(out_clusters)))
     out = '\n'.join(L)
     print(out)
