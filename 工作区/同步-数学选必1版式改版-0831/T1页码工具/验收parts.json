@@ -1,8 +1,0 @@
-{
-  "book": "人教B版选必1（T1验收副本）",
-  "parts": [
-    {"tag": "第1章·讲练", "files": ["P3/B.docx", "P3/C.docx"]},
-    {"tag": "第2章·讲练", "files": ["P6/E.docx", "P6/F.docx", "P6/G.docx", "P6/H.docx"]}
-  ],
-  "skip_files": ["配页件_封面副本.docx"]
-}

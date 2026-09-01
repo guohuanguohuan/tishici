@@ -1,6 +1,0 @@
-== M1预检（N20） 2026-09-01T06:08:45 ==
-Python: 3.12.10 (C:\Users\28120\AppData\Local\Programs\Python\Python312\python.exe)
-pywin32: ?
-Word COM: 16.0 (Build 16.0.14334)
-开卷冒烟: 人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx -> 4页 OK
-预检结论: 全部通过
