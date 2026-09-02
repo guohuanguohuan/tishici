@@ -60,7 +60,7 @@ SEC_RE = re.compile(r'^(\d+\.\d+(?:\.\d+)?)[\s\u3000]+(.+?)'
 STATS_RE = re.compile(r'[\s\u3000]本节\d+题')   # 统计段在位判定（与区间括注二选一）
 WD_ACTIVE_END_PAGE = 3   # wdActiveEndPageNumber：物理页码（自件首页1起算，忽略pgNumType调整）
 WD_WITH_IN_TABLE = 12    # wdWithInTable
-REC_ROW = re.compile(r'^\|\s*(P\d+)\s*\|\s*([^|]+?)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*(\d+)\s*\|\s*$')
+REC_ROW = re.compile(r'^\|\s*(P\d+)\s*\|(?:\s*本\d+\s*\|)?\s*([^|]+?)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*(\d+)\s*\|\s*$')   # A2起记录含可选「本n」列
 
 
 def scan_doc(word, path):
