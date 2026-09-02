@@ -8,13 +8,39 @@
     题块＝号起段且块内含【答案】（讲部条目/清单条目不计题）；条目＝号起段且块内无【答案】。
   · 层级制核验：各节内题号/条目号序列连续无重复＋全件总数恒等＝文件名题量/条目数
     （文件名「（N题）」「（N条）」「（N题M条）」自动解析断言；清单件无条数时人工对规格书数）。
-  · 旧全局号照跑：1..N 全件连续提示（原口径不变）。"""
+  · 旧全局号照跑：1..N 全件连续提示（原口径不变）。
+2026-09-02 升级（A''成品轮·工具债）——题族前缀＝题型号「题型号-节内序号．」（组内起点＝节内
+  累进值，题族起始≠1属预期、仅条目族报告）；新增题型统计段恒等核验（§7⑦/§7排版①）：
+  ①各题型组统计段题数之和＝文件名题量；②「本节N题」各行之和＝文件名题量；③统计段区间端点
+  与题数一致。"""
 import sys, os, re
 from dump_docx import body_elements, QNUM_RE, QNUM_MINLEN
 
-HNUM_RE = re.compile(r'^(\d{1,3}(?:\.\d{1,3}){1,3})-(\d{1,3})．')   # 层级制「节号-序号．」
+HNUM_RE = re.compile(r'^(\d{1,3}(?:\.\d{1,3}){1,3})-(\d{1,3})．')   # 层级制「前缀-序号．」（A''题族前缀＝题型号）
 FN_Q_RE = re.compile(r'（(\d+)题')
 FN_E_RE = re.compile(r'（(\d+)条')
+GRPCNT_RE = re.compile(r'　(\d+)题：((?:\d+(?:\.\d+)+-\d+)(?:～(?:\d+(?:\.\d+)+-\d+))?)')
+SECSTAT_RE = re.compile(r'本节(\d+)题')
+
+def count统计段(path):
+    """A''题型统计段核验：返回 (组统计列表, 节统计列表, 问题清单)。"""
+    els = body_elements(path)
+    grp_stats, sec_stats, probs = [], [], []
+    for i, tag, text in els:
+        if tag != 'p' or not text:
+            continue
+        for m in GRPCNT_RE.finditer(text):
+            n = int(m.group(1)); rng = m.group(2)
+            a = rng.split('～')[0]
+            b = rng.split('～')[-1]
+            oa = int(a.rsplit('-', 1)[1]); ob = int(b.rsplit('-', 1)[1])
+            if ob - oa + 1 != n:
+                probs.append('题型统计段区间%s与题数%d不符' % (rng, n))
+            grp_stats.append((text[:24], n))
+        m2 = SECSTAT_RE.search(text)
+        if m2:
+            sec_stats.append(int(m2.group(1)))
+    return grp_stats, sec_stats, probs
 
 def _is_numstart(text):
     """号起段（双形态）→ ('hier', 节号, 序号) / ('old', None, N) / None。"""
@@ -64,8 +90,9 @@ def count成品(path):
         for k in range(1, len(seq)):
             if seq[k] != seq[k-1] + 1:
                 probs.append('%s族节%s 序列断点：%d→%d' % (fam, sec, seq[k-1], seq[k]))
-        if seq and seq[0] != 1:
-            probs.append('%s族节%s 起始=%d（≠1；跨卷续号件属预期，须配续卷口径核对）' % (fam, sec, seq[0], len(seq)))
+        if seq and seq[0] != 1 and fam == '条':
+            probs.append('条族节%s 起始=%d（≠1；跨卷续号件属预期，须配续卷口径核对）' % (sec, seq[0]))
+        # 题族A''形态：组内起点＝节内累进值，起始≠1属预期不入probs
     return q, e, hier, oldseq, probs
 
 def fn_counts(path):
@@ -136,6 +163,20 @@ def main():
             cont = [nums[k] for k in range(1, len(nums)) if nums[k] != nums[k-1] + 1]
             print('    [旧全局号] 题 %d..%d 连续性: %s' % (nums[0] if nums else 0, nums[-1] if nums else 0,
                                                            '连续' if not cont else '断点%s' % cont[:5]))
+        # A''：题型统计段恒等核验（§7⑦/§7排版①）
+        try:
+            gstats, sstats, gprobs = count统计段(p)
+            if gstats:
+                gs = sum(n for _t, n in gstats)
+                print('    [题型统计段] %d组 Σ%d题 %s%s' % (
+                    len(gstats), gs, 'PASS' if gs == q and not gprobs else 'CHECK',
+                    '' if not gprobs else '（' + '；'.join(gprobs[:4]) + '）'))
+            if sstats:
+                ss = sum(sstats)
+                print('    [节标题统计段] 本节N题行%d行 Σ%d %s' % (
+                    len(sstats), ss, 'PASS' if ss == q else 'FAIL≠题量%d' % q))
+        except Exception as ex:
+            print('    [题型统计段] 核验异常: %s' % ex)
     print('  合计: 题 %d｜条目 %d' % (total_c, total_e))
     if md_files:
         t, secs = count台账行(md_files[0])
