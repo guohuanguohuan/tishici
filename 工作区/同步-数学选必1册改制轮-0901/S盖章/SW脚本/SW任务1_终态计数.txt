@@ -1,9 +1,0 @@
-[I1] anchor=9 检查1→0=0 缺省补挂=0 他值=0 已0=9 | word/document.xml:n=9 | 断言全过
-[B] anchor=60 检查1→0=0 缺省补挂=0 他值=0 已0=60 | word/document.xml:n=60 | 断言全过
-[C] anchor=64 检查1→0=0 缺省补挂=0 他值=0 已0=64 | word/document.xml:n=64 | 断言全过
-[I2] anchor=30 检查1→0=0 缺省补挂=0 他值=0 已0=30 | word/document.xml:n=30 | 断言全过
-[E] anchor=39 检查1→0=0 缺省补挂=0 他值=0 已0=39 | word/document.xml:n=39 | 断言全过
-[F] anchor=43 检查1→0=0 缺省补挂=0 他值=0 已0=43 | word/document.xml:n=43 | 断言全过
-[G] anchor=31 检查1→0=0 缺省补挂=0 他值=0 已0=31 | word/document.xml:n=31 | 断言全过
-[H] anchor=34 检查1→0=0 缺省补挂=0 他值=0 已0=34 | word/document.xml:n=34 | 断言全过
-8件合计 anchor=310 改写=0（其中缺省补挂0）

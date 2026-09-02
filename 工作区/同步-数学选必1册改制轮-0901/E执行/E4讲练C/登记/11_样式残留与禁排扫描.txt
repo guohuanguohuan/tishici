@@ -1,9 +1,0 @@
-w:ins=0 w:del=0 w:strike=0 w:highlight=0
-w:pageBreakBefore=0 w:keepNext=0 w:keepLines=0 w:br=0
-非自动色run(白锚+深蓝外)=0
-页眉部件=1 页脚部件=1
-settings updateFields= True | evenAndOdd= False
-word/header1.xml 段数=1 jc=left断言 True | fldSimple=0 | instrText含STYLEREF= True
-word/footer1.xml 段数=1 jc=left断言 True | fldSimple=0 | instrText含STYLEREF= True
-pgSz=11906x16838 pgMar t=850 b=850 l=850 r=850 header=283 footer=850
-titlePg= False | pgNumType start= 79
