@@ -134,10 +134,11 @@ BOOKSEG_RE = re.compile(r'（共(?:N|\d+)页）(?:·本\d+/共\d+本)?')
 
 
 def set_book_seg(xml, n, m):
-    """同串「（共N页）」后写死「·本n/共M本」段（A'旧串无段则补插；已有则原位改值）。"""
+    """同串「（共N页）」后写死「·本n/共M本」段（A'旧串无段则补插——保留N已写死值；已有则原位改值）。"""
     if not re.search(r'·本\d+/共\d+本', xml):
-        xml2, cnt = re.subn(r'（共(?:N|\d+)页）', '（共N页）·本%d/共%d本' % (n, m), xml, count=1)
-        assert cnt == 1, '（共N页）段定位失败（本n/共M补插）'
+        mm = re.search(r'（共(N|\d+)页）', xml)
+        assert mm, '（共N页）段定位失败（本n/共M补插）'
+        xml2 = xml[:mm.start()] + '（共%s页）·本%d/共%d本' % (mm.group(1), n, m) + xml[mm.end():]
         return xml2
     xml2, cnt = re.subn(r'·本\d+/共\d+本', '·本%d/共%d本' % (n, m), xml, count=1)
     assert cnt == 1, '本n/共M段定位失败'
@@ -170,8 +171,6 @@ def check_samestring_skeleton(xml, where):
     assert 'NUMPAGES' not in xml, '%s 出现NUMPAGES（禁用）' % where
     assert xml.count(INSTR_STYLEREF) == 1, '%s STYLEREF节名锚域缺失' % where
     assert len(INSTR_PAGE_RE.findall(xml)) == 1, '%s PAGE域缺失' % where
-    _vis0 = ''.join(re.findall(r'<w:t[^>]*>([^<]*)</w:t>', xml))
-    _m0 = re.fullmatch(r'(.+?)（?:共|N)', _vis0)  # 仅预检宽（A'无本段骨架兼容）
     assert len(BOOKSEG_RE.findall(xml)) == 1, '%s（共N页）段缺失' % where
     assert len(re.findall(r'<w:jc w:val="left"/>', xml)) == 1, '%s jc=left单段异常' % where
     szs = set(re.findall(r'<w:sz w:val="(\d+)"/>', xml))
@@ -280,8 +279,8 @@ def rewrite(path, start, part_total, tag, book_n, total_m):
         assert 'NUMPAGES' not in xml and 'fldSimple' not in xml, nm + ' 域形态残留'
         assert ('（共%d页）' % part_total) in xml, nm + ' N写死缺失'
         vis = ''.join(re.findall(r'<w:t[^>]*>([^<]*)</w:t>', xml))
-        m = re.fullmatch(r'(.+)（共(\d+)页）　(.+)　第(\d+)页', vis)
-        assert m and int(m.group(2)) == part_total and int(m.group(4)) == start and m.group(1) and m.group(3), \
+        m = re.fullmatch(r'(.+)（共(\d+)页）·本(\d+)/共(\d+)本　(.+)　第(\d+)页', vis)
+        assert m and int(m.group(2)) == part_total and int(m.group(6)) == start and int(m.group(3)) == book_n and int(m.group(4)) == total_m and m.group(1) and m.group(5), \
             '%s 盖章后可见串形态异常: %r' % (nm, vis)
         assert m.group(1).endswith(tag.split('·')[-1]), \
             '%s 同串前段尾段%r与件型token %r 不符' % (nm, m.group(1)[-8:], tag)
@@ -305,8 +304,8 @@ def rewrite(path, start, part_total, tag, book_n, total_m):
         for nm in (hname, fname):
             f = z.read(nm).decode('utf-8')
             vis = ''.join(re.findall(r'<w:t[^>]*>([^<]*)</w:t>', f))
-            m = re.fullmatch(r'(.+)（共(\d+)页）　(.+)　第(\d+)页', vis)
-            assert m and int(m.group(2)) == part_total and int(m.group(4)) == start, \
+            m = re.fullmatch(r'(.+)（共(\d+)页）·本(\d+)/共(\d+)本　(.+)　第(\d+)页', vis)
+            assert m and int(m.group(2)) == part_total and int(m.group(3)) == book_n and int(m.group(4)) == total_m and int(m.group(6)) == start, \
                 '回读同串不符 %s: %r' % (nm, vis)
             assert locate_page_cache(f) == str(start), '%s 回读PAGE域缓存≠start' % nm
         d = z.read('word/document.xml').decode('utf-8')
