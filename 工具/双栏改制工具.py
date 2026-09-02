@@ -118,18 +118,23 @@ def find_header_end(body):
     return None
 
 
+INLINE_KIDS_WP = ('extent', 'effectExtent', 'docPr', 'cNvGraphicFramePr')   # wp: 命名空间子元素
+INLINE_KIDS_A = ('graphic',)                                                 # a: 命名空间子元素
+
+
 def convert_anchor(inline_parent, anchor):
-    """wp:anchor → wp:inline：重建 inline 外壳（extent 从 anchor 取），迁移子元素（docPr/graphic 等）。"""
-    extent = anchor.find(wq('extent'))
+    """wp:anchor → wp:inline：重建 inline 外壳，仅迁移 inline 合法子元素（白名单——
+    positionH/positionV/wrap*/simplePos 等锚定专属元素剥除，§5锚定机制废止）。"""
     inline = etree.Element(wq('inline'))
     inline.set('distT', '0'); inline.set('distB', '0')
     inline.set('distL', '0'); inline.set('distR', '0')
-    if extent is not None:
-        inline.append(copy.deepcopy(extent))
-    for ch in anchor:
-        if tag(ch) == 'extent':
-            continue
-        inline.append(copy.deepcopy(ch))
+    for nm in INLINE_KIDS_WP:
+        for ch in anchor.findall(wq(nm)):
+            inline.append(copy.deepcopy(ch))
+    for nm in INLINE_KIDS_A:
+        for ch in anchor.findall(aq(nm)):
+            inline.append(copy.deepcopy(ch))
+    assert inline.find(aq('graphic')) is not None, 'anchor 内无 a:graphic（迁移失败）'
     return inline
 
 
@@ -218,28 +223,28 @@ def process(path, args):
             p = p.getparent()
         if run is None or p is None:
             raise RuntimeError('%s anchor 宿主异常' % name)
+        drawing_host = anchor.getparent()          # w:drawing（anchor 的直接父）
+        if tag(drawing_host) != 'drawing':
+            raise RuntimeError('%s anchor 直接父非 w:drawing: %s' % (name, tag(drawing_host)))
         inline = convert_anchor(p, anchor)
         anchor_map.append((ptext(p)[:28],))
-        # 宿主段若只含该图（无其他文字/公式）→ 原位转（外壳替换）
-        p_txt = ptext(p)
+        # 宿主段若只含该图（无其他文字/公式）→ 原位转（drawing 内 anchor→inline）
         other = [e for e in p.iter() if tag(e) == 't' and (e.text or '').strip()]
         has_math = next(p.iter(q('oMath')), None) is not None
         if not other and not has_math:
-            anchor.getparent().replace(anchor, inline)
+            drawing_host.replace(anchor, inline)
             stats['inline'] += 1
         else:
-            # 图在文字段中 → 移独立段：新建段落（左对齐、无缩进、行距随全件）紧随宿主段之后
+            # 图在文字段中 → 图移独立段（w:r>w:drawing>wp:inline，左对齐无缩进）紧随宿主段；
+            # 宿主侧删除整个 w:drawing（残空 drawing 非法）；run 剩空壳合法
             newp = etree.Element(q('p'))
             ppr = etree.SubElement(newp, q('pPr'))
             jc = etree.SubElement(ppr, q('jc')); jc.set(q('val'), 'left')
             newr = etree.SubElement(newp, q('r'))
-            newr.append(inline)
+            drawing = etree.SubElement(newr, q('drawing'))
+            drawing.append(inline)
             p.addnext(newp)
-            # 原 run 删除（run 内除 anchor 外的 t 已并入宿主段文字——保守：仅当 run 只含 anchor）
-            if all(tag(c) in ('rPr',) or c is anchor for c in run):
-                run.getparent().remove(run)
-            else:
-                anchor.getparent().remove(anchor)
+            run.remove(drawing_host)
             stats['inline'] += 1
             stats['anchor_moved'] += 1
     # anchor 残留断言
@@ -266,6 +271,13 @@ def process(path, args):
         cand = None
         for j in range(head_end - 1, -1, -1):
             if tag(body[j]) == 'p':
+                ppr_j = body[j].find(q('pPr'))
+                sid_j = None
+                if ppr_j is not None:
+                    ps_j = ppr_j.find(q('pStyle'))
+                    sid_j = ps_j.get(q('val')) if ps_j is not None else None
+                if sid_j in ('JieMingMao', '节名锚'):
+                    continue          # 节名锚段不挂分节（锚属正文节、随节标题）
                 cand = body[j]
                 break
         if cand is None:
