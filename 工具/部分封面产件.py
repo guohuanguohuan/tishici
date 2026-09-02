@@ -58,6 +58,13 @@ STATS = {
     ("第2章 平面解析几何", "清单"): {"kind": "清单", "total": 67, "基": 38, "进": 29},
     ("第2章 平面解析几何", "讲练"): {"kind": "讲练", "total": 339, "简单": 47, "中档": 246, "难": 46},
 }
+# A''（2026-09-02）：大字区＝件型词全称映射＋各章部分动态序（分层卷落地后随派生增补）
+JIANXING_WORD = {"衔接": "衔 接", "清单": "知识清单", "讲练": "讲 练",
+                 "简单卷": "简单卷", "中档卷": "中档卷", "冲刺卷": "冲刺卷"}
+PARTS_OF_CHAPTER = {
+    "第1章 空间向量与立体几何": ["衔接", "知识清单", "讲练"],
+    "第2章 平面解析几何": ["衔接", "知识清单", "讲练"],
+}
 # 导读一句（创作位：【编注】起段、统计性文案一句为限——铁规①；数字与 STATS 内建核对）
 LEADS = {
     ("第1章 空间向量与立体几何", "衔接"):
@@ -200,7 +207,7 @@ def build_theme(chapter, out_dir, dpi=300):
 
 # ----------------------------- 封面 docx -----------------------------
 
-SZ = {"品牌": 28, "册名": 30, "大章号": 280, "章名": 56, "件型": 44,
+SZ = {"品牌": 28, "册名": 30, "章号行": 44, "章名": 56, "大字区": 160, "统计": 28,
       "统计": 28, "导读": 22, "空": 36}
 
 
@@ -266,10 +273,12 @@ def build_cover(chapter, jianxing, theme_png, out_dir):
     _para(doc, "羿郭工作室", SZ["品牌"], bold=True)
     _para(doc, BOOK, SZ["册名"], bold=True)
     _para(doc)
-    _para(doc)
-    _para(doc, CHAPTER_NO[chapter], SZ["大章号"], bold=True)      # 大章号突出（TNR）
+    _para(doc, "第" + CHAPTER_NO[chapter] + "章", SZ["章号行"], bold=True)   # A''：章号缩为普通要素行
     _para(doc, chapter, SZ["章名"], bold=True)
-    _para(doc, jianxing, SZ["件型"], bold=True)
+    _para(doc)
+    _para(doc, JIANXING_WORD[jianxing], SZ["大字区"], bold=True)            # A''：大字区＝件型词
+    parts_line = "本章部分：" + "→".join(PARTS_OF_CHAPTER[chapter])
+    _para(doc, parts_line, 28)                                              # A''：本章部分动态行
     _para(doc)
     pic_p = doc.add_paragraph()
     pic_p.alignment = WD_ALIGN_PARAGRAPH.LEFT

@@ -1,0 +1,34 @@
+\documentclass[border=8pt]{standalone}
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\begin{document}
+\definecolor{acc}{RGB}{18,85,126}
+\begin{tikzpicture}[>=Stealth, line width=1.0pt]
+  % 空间直角坐标系（图内零文字）
+  \coordinate (O) at (0.000, 0.000);
+  \draw[->, thick] (O) -- (6.400, 0.000);
+  \draw[->, thick] (O) -- (0.000, 4.900);
+  \draw[->, thick] (O) -- (-1.980, -1.512);
+  \fill[black!5] (-0.082, -0.483) -- (-1.677, -1.701) -- (0.622, -1.701) -- (2.217, -0.483) -- cycle;
+  % 平行六面体（被遮挡棱虚线——凸包轮廓法判定）
+  \draw[dashed, black!60] (-0.082, -0.483) -- (-1.677, -1.701);
+  \draw[dashed, black!60] (2.217, -0.483) -- (-0.082, -0.483);
+  \draw[dashed, black!60] (-1.677, 0.099) -- (0.622, 0.099);
+  \draw[dashed, black!60] (0.622, 0.099) -- (2.217, 1.317);
+  \draw[dashed, black!60] (-0.082, -0.483) -- (-0.082, 1.317);
+  \draw[dashed, black!60] (0.622, -1.701) -- (0.622, 0.099);
+  \draw (-1.677, -1.701) -- (0.622, -1.701);
+  \draw (0.622, -1.701) -- (2.217, -0.483);
+  \draw (-0.082, 1.317) -- (-1.677, 0.099);
+  \draw (2.217, 1.317) -- (-0.082, 1.317);
+  \draw (-1.677, -1.701) -- (-1.677, 0.099);
+  \draw (2.217, -0.483) -- (2.217, 1.317);
+  \draw[->, line width=2.6pt, acc] (0.052, -0.089) -- (-0.205, 1.598);
+  \fill[acc] (0.052, -0.089) circle (2.4pt);
+  \fill[black!12] (3.070, 2.648) -- (5.970, 2.648) -- (4.925, 3.050) -- (2.025, 3.050) -- cycle;
+  \draw[black!45] (3.070, 2.648) -- (5.970, 2.648) -- (4.925, 3.050) -- (2.025, 3.050) -- cycle;
+\end{tikzpicture}
+\end{document}
