@@ -2,10 +2,15 @@
 r"""题号块三段式.py — 层级制题号/条目号改版工具（A'改制轮·工具债③·T3，2026-09-01 核心升级；可复用，幂等）
 
 口径（公共规则§6编号唯一层形＋§7题号难度块底纹/条目号底纹条款现行文本）：
-  · 层级制（同步线）：题号块「节号-序号．（档位·提分线·卡壳看答案）」——节号＝题所在教材节标题节号
-    （内层节优先：节1.1.1之下不挂1.1）；序号＝节内连续（题族独立计数）；衔接件两段式同款
-    「节号-序号．（衔接必会·卡壳看答案）」（--linkage，无档位无提分线）。旧全局「N．」输入照跑
-    （重编为层级制——新旧双轨兼容）；已层级制输入幂等重跑。
+  · 层级制（同步线，2026-09-02 A''成品轮签名升级）：题号块「题型号-节内序号．（档位·提分线·
+    卡壳看答案）」——题型号＝该题所属题型组标题的父链序号（§6父链续层，如1.1.1.9；题型标题＝
+    C6D4E3整行底纹＋序号起段）；序号＝节内连续（题族独立计数、同节跨题型累进）；衔接件两段式
+    同款「题型号-节内序号．（衔接必会·卡壳看答案）」（--linkage）。旧全局「N．」与A'「节号-序号」
+    输入照跑（重编为A''题型号形态——三轨兼容）；已A''形态输入幂等重跑。
+  · 题型标题行末统计段（§7排版①）：每有题题型组标题行末追加「　N题：题号a」（单题）／
+    「　N题：题号a～题号b」（多题区间形，新号形态）；幂等识别已挂统计段；无题组不挂。
+  · 条目族维持「节号-序号．」（两形并存——§6编号唯一层形款）；题族门控节归属一律按位置
+    （cur_sec＝最近节标题），A'输入前缀节号与位置节一致性有断言。
   · 条目族（清单条目/讲部条目）独立节内连续「节号-序号．」：条目号底纹 C9C9C9 不加粗（纯序号锚，
     §7条目号底纹款），与题族分列计数、节内两族同号不判冲突；〔基〕/〔进〕标记位置照旧（号后）。
   · 底纹盖整个「节号-序号．」（run拆分处理跨run号）；括注不挂底纹、加粗维持整块（题族）；
@@ -59,6 +64,8 @@ QL_RE  = re.compile(r'^(%s)．（%s）' % (NUM_CORE, LINK_BODY))
 TITLE_RE = re.compile(r'^\d+(\.\d+)+\s')          # 节/讲部/题型标题（半角点分序号起段）
 LECT_RE = re.compile(r'^\d+(\.\d+)*\s*方法讲解[｜|]')
 SEC_TTL_RE = re.compile(r'^\d+\.\d+(\.\d+)?[\s\u3000]+\S')   # 节标题节号pattern（2~3级）
+GRP_TTL_RE = re.compile(r'^(\d+(?:\.\d+)+)[\s　]+\S')      # 题型标题序号起段（A''题型统计段锚）
+GRP_STATS_RE = re.compile(r'　\d+题：')                              # 已挂统计段幂等识别
 GRP_SHD = 'C6D4E3'                                  # 题型/讲部标题整行底纹（节标题负判据）
 SEC_SHDS = ('ADC2DA', 'adc2da')
 INTERVAL_RE = re.compile(r'（第[0-9．\-—–~～]+题）')           # 全局题号区间括注（删除对象）
@@ -425,6 +432,10 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
     seq, eseq = [], []                   # 认定序列（题/条目）：(节, 输出序号, 输入序号)
     hier_in = False
     cur_sec = None
+    cur_group = None                     # A''：当前题型组标题序号（题族前缀）
+    group_anchors = []                   # (idx, 题型号)——统计段挂载锚
+    group_nums = []                      # 当前组题号新号收集
+    group_seq = []                       # (题型号, [新号…]) 完整组序（末组统计段pass补录）
     sec_titles = []                      # (idx, 节号)
     c_q = c_e = c_rew = c_narrow = c_degr = c_skip = c_eskip = 0
     c_runs = c_shd = c_bold = c_merged = c_txt = c_iv = 0
@@ -458,7 +469,18 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
             cur_sec = sec_map[i]
             sec_titles.append((i, cur_sec))
             continue
-        if TITLE_RE.match(txt) or LECT_RE.match(txt):
+        if LECT_RE.match(txt):
+            continue
+        if TITLE_RE.match(txt):
+            # A''：题型标题（C6D4E3整行底纹）→ cur_group＋组登记（统计段挂载锚）
+            if ppr_shd_fill(c) == GRP_SHD:
+                gm = GRP_TTL_RE.match(txt)
+                if gm:
+                    if cur_group is not None:
+                        group_seq.append((cur_group, list(group_nums)))
+                    cur_group = gm.group(1)
+                    group_anchors.append((i, cur_group))
+                    group_nums = []
             continue
         form, tok, isec, iord, toklen, grade = question_form(txt)
         if form is None:
@@ -473,11 +495,20 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
         if mode == 'base' and form == 'ql':
             anomalies.append('第%d段为两段式形态但默认模式运行（衔接件形态×模式不符，跳过）: %s' % (i, txt[:30]))
             continue
-        # —— 节归属 ——
-        sec = isec if isec is not None else cur_sec
+        # —— 节归属（A''：题族一律按位置节 cur_sec——前缀解析仅条目族用） ——
+        if is_question:
+            sec = cur_sec
+            if isec is not None and isec != cur_sec and isec != cur_group:
+                raise RuntimeError("第%d段A'题号前缀节%s与位置节%s不符（节标题分区核对）: %s"
+                                   % (i, isec, cur_sec, txt[:30]))
+        else:
+            sec = isec if isec is not None else cur_sec
         if sec is None:
             raise RuntimeError('第%d段题号 %s 位于首个节标题之前，无节号可挂（层级制必需）: %s'
                                % (i, tok, txt[:30]))
+        if is_question and cur_group is None:
+            raise RuntimeError("第%d段题号 %s 之前无题型组标题（%s题型号前缀必需——C6D4E3标题判定）: %s"
+                               % (i, tok, AP, txt[:30]))
         # —— 输入序列门控（A1 素材）——
         if isec is None:   # 旧全局号：题族全件连续（qstart..），条目族无门控（随讲部/节重启）
             if is_question:
@@ -488,11 +519,11 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
         else:              # 层级制号：节内两族各自连续，起点＝续号映射（缺省1）——错位即硬失败
             hier_in = True
             if is_question:
-                exp_o = counters.get(isec, qstart_map.get(isec, 1))
+                exp_o = counters.get(sec, qstart_map.get(sec, 1))
                 if iord != exp_o:
-                    raise RuntimeError('第%d段层级制题号 %s 节内期望序号 %d（节%s）——若为续卷漏参，'
+                    raise RuntimeError('第%d段层级制题号 %s 节内期望序号 %d（节%s，位置节门控）——若为续卷漏参，'
                                        '请补 --sec-start/-continue；若为本卷缺号，先核漏认（块边界：【答案】/标题）'
-                                       % (i, tok, exp_o, isec))
+                                       % (i, tok, exp_o, sec))
             else:
                 exp_e = ecounters.get(isec, estart_map.get(isec, 1))
                 if iord != exp_e:
@@ -519,7 +550,8 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
         nxt = counters.get(sec, qstart_map.get(sec, 1))
         counters[sec] = nxt + 1
         seq.append((sec, nxt, int(iord) if iord is not None else int(tok)))
-        new_num = '%s-%d' % (sec, nxt)
+        new_num = '%s-%d' % (cur_group, nxt)   # A''：题型号-节内序号
+        group_nums.append(new_num)
         already = (tok == new_num) and _q_compliant(c)
         if already:
             c_skip += 1
@@ -551,6 +583,39 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
         processed.add(i)
 
     n_q, n_e = len(seq), len(eseq)
+    if cur_group is not None:
+        group_seq.append((cur_group, list(group_nums)))
+    _grp_rows = ['#GRP %s %s' % (g, ','.join(nums)) for g, nums in group_seq]
+
+    # ---- A'' 题型标题行末统计段挂载（§7排版①；幂等；无题组不挂） ----
+    c_gstat = 0
+    anchor_by_grp = dict((g, i) for i, g in group_anchors)
+    for grp, nums in group_seq:
+        if not nums:
+            continue                      # 无题组不挂
+        gi = anchor_by_grp.get(grp)
+        if gi is None:
+            continue
+        p_el = els[gi]
+        full = para_text(p_el)
+        if GRP_STATS_RE.search(full):
+            continue                      # 幂等：已挂
+        stat = ('　%d题：%s' % (len(nums), nums[0])) if len(nums) == 1 else                ('　%d题：%s～%s' % (len(nums), nums[0], nums[-1]))
+        rs = [r for r in p_el.findall(q('r')) if run_text(r)]
+        if not rs:
+            continue
+        last = rs[-1]
+        nr = copy.deepcopy(last)
+        for t in nr.findall(q('t')):
+            nr.remove(t)
+        t = etree.SubElement(nr, q('t'))
+        t.text = stat
+        t.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
+        last.addnext(nr)
+        c_gstat += 1
+    # 统计段题数之和＝题量 恒等断言
+    _gs = sum(len(nums) for _g, nums in group_seq)
+    assert _gs == n_q, '题型组统计段题数之和%d≠题量%d（组序与题族核对）' % (_gs, n_q)
 
     # ---- 统计段区间括注联动（授权差异②：删全局题号区间括注） ----
     if stats_sync:
@@ -679,6 +744,8 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
     L.append('')
     L.append('| 号 | 处置 | 终态 |')
     L.append('|---|---|---|')
+    for _ln in _grp_rows:            # A''：#GRP 机器行（题型组→题号集合，B'分层映射对照源）
+        L.append(_ln)
     for no, disp, tok in rows:
         L.append('| %s | %s | %s |' % (no, disp, tok))
     L.append('')
