@@ -1,0 +1,9 @@
+{
+ "xml_run1": true,
+ "xml_run2": true,
+ "com_pages": 17,
+ "pdf_pages": 17,
+ "pdf_check": true,
+ "idempotent_diff": [],
+ "record_equal": true
+}
