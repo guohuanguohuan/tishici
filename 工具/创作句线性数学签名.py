@@ -150,7 +150,7 @@ def main():
             convert_para(p, stats)
         flow_after = [t.text or '' for t in doc.iter(q('t'))] + \
                      [t.text or '' for t in doc.iter(mq('t'))]
-        assert sorted(flow_before) == sorted(flow_after), \
+        assert sorted(''.join(flow_before)) == sorted(''.join(flow_after)), \
             '%s 字符流不恒等（线性数学转换增删字符）' % path
         out.append('◆ %s（%s）' % (os.path.basename(path), args.priority))
         out.append('  线性数学→oMath：%d 片段%s' % (stats['片段→oMath'],
