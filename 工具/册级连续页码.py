@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
-r"""部分独立页码盖章（公共规则§7部分独立页码制·2026-08-31 N8改版；2026-09-01 A'改制轮工具债⑥适配同串形态）
+r"""部分独立页码盖章（公共规则§7部分独立页码制；2026-09-02 A''成品轮多sectPr＋本n/共M段版）
+  A''升级（2026-09-02）：
+  · 多sectPr适配——双栏制后每件2节（头部单栏节＋正文双栏节）：pgNumType start 只落首个（头部）节
+    sectPr（§7「册级连续页码start落头部节sectPr」），后续节清除 pgNumType（页码连续继承，防重启）；
+  · 同串加「本n/共M本」段——「…（共N页）·本n/共M本　节号节名　第X页」；n＝该件所属物理本序（默认＝
+    部分序号pi，每部分一物理本——同步线粒度；二次拆分/聚合经配置 book_map 覆盖）、M＝册内物理本总数
+    （默认＝部分总数；分层卷派生后随新配置重跑即联动）；两段随N一并写死；
+  · 串宽预检——同串可见字符估算宽度超页眉可用宽（10206缇＝510pt）时自动剥「羿郭工作室·」品牌前缀
+    （页眉部件；§7允许项），逐件登记；页脚不剥。
 
 用法：
   python 工具/册级连续页码.py --parts <parts.json> [--record <盖章记录.md>]
@@ -122,6 +130,37 @@ def set_part_total(xml, n):
     return xml2
 
 
+BOOKSEG_RE = re.compile(r'（共(?:N|\d+)页）(?:·本\d+/共\d+本)?')
+
+
+def set_book_seg(xml, n, m):
+    """同串「（共N页）」后写死「·本n/共M本」段（A'旧串无段则补插；已有则原位改值）。"""
+    if not re.search(r'·本\d+/共\d+本', xml):
+        xml2, cnt = re.subn(r'（共(?:N|\d+)页）', '（共N页）·本%d/共%d本' % (n, m), xml, count=1)
+        assert cnt == 1, '（共N页）段定位失败（本n/共M补插）'
+        return xml2
+    xml2, cnt = re.subn(r'·本\d+/共\d+本', '·本%d/共%d本' % (n, m), xml, count=1)
+    assert cnt == 1, '本n/共M段定位失败'
+    return xml2
+
+
+def est_width_pt(vis):
+    """同串可见文本估算宽度（pt）：全角≈9pt、半角≈4.5pt（9pt字号档）。"""
+    w = 0.0
+    for ch in vis:
+        w += 9.0 if ord(ch) > 0x2E80 else 4.5
+    return w
+
+
+HEADER_BUDGET_PT = 500.0   # 页眉可用宽（10206缇≈510pt，留裕量）
+
+
+def strip_brand(xml):
+    """页眉同串超宽时剥「羿郭工作室·」品牌前缀（§7允许项；只剥页眉、页脚不剥）。"""
+    xml2, cnt = re.subn(r'羿郭工作室·', '', xml, count=1)
+    return xml2, cnt
+
+
 def check_samestring_skeleton(xml, where):
     """同串骨架形态断言（页眉/页脚通用）：恰两组复杂域（STYLEREF＋PAGE）、无fldSimple/NUMPAGES、
     （共N页）在位、jc=left单段、9pt。"""
@@ -131,7 +170,9 @@ def check_samestring_skeleton(xml, where):
     assert 'NUMPAGES' not in xml, '%s 出现NUMPAGES（禁用）' % where
     assert xml.count(INSTR_STYLEREF) == 1, '%s STYLEREF节名锚域缺失' % where
     assert len(INSTR_PAGE_RE.findall(xml)) == 1, '%s PAGE域缺失' % where
-    assert len(re.findall(r'（共(?:N|\d+)页）', xml)) == 1, '%s（共N页）段缺失' % where
+    _vis0 = ''.join(re.findall(r'<w:t[^>]*>([^<]*)</w:t>', xml))
+    _m0 = re.fullmatch(r'(.+?)（?:共|N)', _vis0)  # 仅预检宽（A'无本段骨架兼容）
+    assert len(BOOKSEG_RE.findall(xml)) == 1, '%s（共N页）段缺失' % where
     assert len(re.findall(r'<w:jc w:val="left"/>', xml)) == 1, '%s jc=left单段异常' % where
     szs = set(re.findall(r'<w:sz w:val="(\d+)"/>', xml))
     assert szs == {'18'}, '%s 同串run字号≠18半点: %r' % (where, szs)
@@ -139,7 +180,8 @@ def check_samestring_skeleton(xml, where):
 
 
 def stamp_document(doc, start):
-    """document.xml：每个 sectPr 写 pgNumType start；pgMar footer 统一850；剔除 titlePg。"""
+    """document.xml（A''多sectPr）：首个（头部）sectPr 写 pgNumType start、后续节清除 pgNumType
+    （页码连续继承）；pgMar footer 统一850；剔除 titlePg。"""
     d = doc
     n_title = d.count('<w:titlePg')
     d = d.replace('<w:titlePg/>', '').replace('<w:titlePg>', '')
@@ -159,11 +201,15 @@ def stamp_document(doc, start):
     parts = re.split(r'(<w:sectPr.*?</w:sectPr>)', d, flags=re.S)
     n_sect = 0
     for i in range(1, len(parts), 2):
-        parts[i] = fix_sect(parts[i])
+        if n_sect == 0:
+            parts[i] = fix_sect(parts[i])      # 首个（头部）节：写 start
+        else:
+            parts[i] = re.sub(r'<w:pgNumType[^>]*/>', '', parts[i])   # 后续节：清除（连续继承）
+            parts[i] = re.sub(r'(<w:pgMar[^>]*?)w:footer="\d+"', r'w:footer="%d"' % FOOTER_TWIPS, parts[i])
         n_sect += 1
     d = ''.join(parts)
     starts = re.findall(r'<w:pgNumType w:start="(\d+)"/>', d)
-    assert n_sect >= 1 and all(int(x) == start for x in starts), 'pgNumType写入失败: %r' % starts
+    assert n_sect >= 1 and len(starts) == 1 and int(starts[0]) == start,         'pgNumType写入失败（期望唯一头部节start=%d）: %r' % (start, starts)
     return d, n_sect, n_title
 
 
@@ -205,9 +251,9 @@ def preflight(path):
                                      % (path, e))
 
 
-def rewrite(path, start, part_total, tag):
-    """逐件落盘：document.xml（start/footer850/去titlePg）＋页眉页脚两部件同串盖章
-    （X域缓存双写start＋N写死部分总页数）＋settings。外科手术式、确定性、幂等。"""
+def rewrite(path, start, part_total, tag, book_n, total_m):
+    """逐件落盘：document.xml（头部节start/footer850/去titlePg）＋页眉页脚两部件同串盖章
+    （X域缓存双写start＋N写死＋本n/共M段写死＋页眉超宽剥品牌前缀）＋settings。幂等。"""
     with zipfile.ZipFile(path) as z:
         names = z.namelist()
         blob = {n: z.read(n) for n in names}
@@ -216,11 +262,18 @@ def rewrite(path, start, part_total, tag):
     doc = blob['word/document.xml'].decode('utf-8')
     doc2, n_sect, n_title = stamp_document(doc, start)
     stamped = {}
+    stripped_brand = 0
     for nm in (hname, fname):
         xml = blob[nm].decode('utf-8')
         check_samestring_skeleton(xml, '%s %s' % (os.path.basename(path), nm))
         xml = set_part_total(xml, part_total)          # N写死（两部件同步）
+        xml = set_book_seg(xml, book_n, total_m)       # 本n/共M段写死（A''）
         xml = flush_page_cache(xml, start)             # X域缓存刷写（两处PAGE域同步＝start实测值）
+        # 串宽预检：页眉超预算剥品牌前缀（页脚版心同宽亦剥——页脚与页眉同宽预算）
+        vis_probe = ''.join(re.findall(r'<w:t[^>]*>([^<]*)</w:t>', xml))
+        if est_width_pt(vis_probe) > HEADER_BUDGET_PT and '羿郭工作室·' in vis_probe:
+            xml, cnt = strip_brand(xml)
+            stripped_brand += cnt
         stamped[nm] = xml
         # 盖章后域形态断言：恰两组复杂域（STYLEREF＋PAGE）、无NUMPAGES、无fldSimple
         assert xml.count('fldCharType="begin"') == 2 and xml.count('fldCharType="end"') == 2, nm + ' 域组数异常'
@@ -281,23 +334,27 @@ def load_parts(cfg_path):
         parts.append((tag, files))
     assert parts, 'parts 为空（无可盖章件）'
     skips = [norm(f) for f in cfg.get('skip_files', [])]
-    return book, parts, skips
+    bm = cfg.get('book_map')           # 可选：{部分序(int)→本序(int)}——二次拆分/聚合时覆盖默认（部分序=本序、M=部分总数）
+    book_map = {int(k): int(v) for k, v in bm.items()} if bm else None
+    return book, parts, skips, book_map
 
 
-def apply_stamps(parts, pages, verbose=True):
-    """按当前实测页数逐件盖章（部分内级联）；返回（记录行, 合计页数）。"""
+def apply_stamps(parts, pages, book_map=None, verbose=True):
+    """按当前实测页数逐件盖章（部分内级联；本n默认＝部分序、M默认＝部分总数——book_map可覆盖）。"""
     rec_rows, it, total = [], iter(pages), 0
+    total_m = len(parts) if not book_map else max(book_map.values())
     for pi, (tag, files) in enumerate(parts, 1):
         pg = [next(it) for _ in files]
         pn = sum(pg)
         start = 1
+        book_n = (book_map or {}).get(pi, pi)
         for f, p in zip(files, pg):
-            n_sect, n_title = rewrite(f, start, pn, tag)
+            n_sect, n_title = rewrite(f, start, pn, tag, book_n, total_m)
             if verbose:
-                print('  [P%d] %s | %d页 | start=%d | %s（共%d页） | 同串X缓存=页眉页脚两处%d | sectPr=%d titlePg剔%d'
-                      % (pi, os.path.basename(f)[:44], p, start, tag, pn, start, n_sect, n_title))
-            rec_rows.append('| P%d | %s | %d | %d | %s | %d |'
-                            % (pi, os.path.basename(f), p, start, tag, pn))
+                print('  [P%d·本%d/共%d] %s | %d页 | start=%d | %s（共%d页） | sectPr=%d titlePg剔%d'
+                      % (pi, book_n, total_m, os.path.basename(f)[:44], p, start, tag, pn, n_sect, n_title))
+            rec_rows.append('| P%d | 本%d | %s | %d | %d | %s | %d |'
+                            % (pi, book_n, os.path.basename(f), p, start, tag, pn))
             start += p
             total += p
     return rec_rows, total
@@ -311,7 +368,7 @@ def main():
     ap.add_argument('--record', help='盖章记录md落盘路径（供册目录页/装订单/节页码定位.py 同源引用）')
     args = ap.parse_args()
 
-    book, parts, skips = load_parts(args.parts)
+    book, parts, skips, book_map = load_parts(args.parts)
     for _, files in parts:
         for f in files:
             if not os.path.isfile(f):
@@ -332,7 +389,7 @@ def main():
     print('== 部分独立页码盖章（同串版）：%s（%d个部分／%d件）==' % (book, len(parts), len(flat)))
     converged = False
     for rnd in range(1, 6):
-        rec_rows, total = apply_stamps(parts, pages)
+        rec_rows, total = apply_stamps(parts, pages, book_map)
         pages2 = measure(flat)
         if pages2 == pages:
             print('  收敛：第%d轮盖章后复测页数与所盖数字一致（合计%d页）' % (rnd, total))
@@ -352,8 +409,8 @@ def main():
            '本记录不含时间戳，「先内容后页码」先后核对以本文件mtime为准',
            '（工具/册级连续页码.py --parts 生成；节页码定位.py按件名匹配start）。',
            '',
-           '| 部分 | 件 | 页数 | start | 件标识 | N（部分总页数） |',
-           '|---|---|---|---|---|---|'] + rec_rows + [
+           '| 部分 | 本 | 件 | 页数 | start | 件标识 | N（部分总页数） |',
+           '|---|---|---|---|---|---|---|'] + rec_rows + [
         '', '恒等式：每部分首件start=1；同部分后件start＝前件start+页数；N＝部分内各件页数之和（COM实测）；'
             '全册合计%d页＝各件页数和（配页件不计页）。' % total]
     if args.record:
