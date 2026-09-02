@@ -180,7 +180,7 @@ def set_cols(sectpr, num):
 
 def make_head_sectpr(template_body_sectpr):
     """构造头部节段落级 sectPr：type=continuous、cols=1、无 pgNumType/titlePg、页眉页脚引用移入。"""
-    sect = etree.Element(q('sectPr'))
+    sect = etree.Element(q('sectPr'), nsmap={'w': W})
     # 页眉页脚引用（从模板节拷贝——随后从模板节删除）
     for ref in ('headerReference', 'footerReference'):
         for el in template_body_sectpr.findall(q(ref)):
@@ -237,7 +237,7 @@ def process(path, args):
         else:
             # 图在文字段中 → 图移独立段（w:r>w:drawing>wp:inline，左对齐无缩进）紧随宿主段；
             # 宿主侧删除整个 w:drawing（残空 drawing 非法）；run 剩空壳合法
-            newp = etree.Element(q('p'))
+            newp = etree.Element(q('p'), nsmap={'w': W, 'wp': WP})
             ppr = etree.SubElement(newp, q('pPr'))
             jc = etree.SubElement(ppr, q('jc')); jc.set(q('val'), 'left')
             newr = etree.SubElement(newp, q('r'))
@@ -292,12 +292,12 @@ def process(path, args):
                 cand = body[j]
                 break
         if cand is None:
-            cand = etree.Element(q('p'))
+            cand = etree.Element(q('p'), nsmap={'w': W})
             body.insert(head_end, cand)
         head_sect = make_head_sectpr(body_sect)
         ppr = cand.find(q('pPr'))
         if ppr is None:
-            ppr = etree.Element(q('pPr'))
+            ppr = etree.Element(q('pPr'), nsmap={'w': W})
             cand.insert(0, ppr)
         ppr.append(head_sect)
         head_p = cand
@@ -313,7 +313,7 @@ def process(path, args):
     # 头部节 type=continuous（幂等）
     ty = hsect.find(q('type'))
     if ty is None:
-        ty = etree.Element(q('type'))
+        ty = etree.Element(q('type'), nsmap={'w': W})
         hsect.insert(0, ty)
     ty.set(q('val'), 'continuous')
 

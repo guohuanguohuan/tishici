@@ -204,7 +204,7 @@ def stamp_document(doc, start):
             parts[i] = fix_sect(parts[i])      # 首个（头部）节：写 start
         else:
             parts[i] = re.sub(r'<w:pgNumType[^>]*/>', '', parts[i])   # 后续节：清除（连续继承）
-            parts[i] = re.sub(r'(<w:pgMar[^>]*?)w:footer="\d+"', r'w:footer="%d"' % FOOTER_TWIPS, parts[i])
+            parts[i] = re.sub(r'(<w:pgMar[^>]*?)w:footer="\d+"', '\\1w:footer="%d"' % FOOTER_TWIPS, parts[i])
         n_sect += 1
     d = ''.join(parts)
     starts = re.findall(r'<w:pgNumType w:start="(\d+)"/>', d)
