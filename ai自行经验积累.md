@@ -71,17 +71,17 @@
 - 实验卷装配成熟管线（同包克隆+跨包双路重映射+题号重编+复制保真diff）；页脚重建zip手术模板（footer_fix.py已退役——由部分独立页码制＋册级连续页码.py取代，勿按件内自洽重建页脚；zip手术手法仍适用）；大commit推不上分块push
 - 续跑接管先找工作区本轮子文件夹定位分界；题号正则只认全角「．」；三卷装配要点（游离sectPr归位/选项正序合并/emf-wmf兜底/空段清理公式感知）分见「构建与重编号坑」「选项合并」条；页脚旧成品须按现行规范重建
 - drawing检测必须元素级find；oMath可为段级直接子元素；复合条目（N．名：正文）前插名行；块定义后全量缝隙排查（横幅图落块外即三处皆失）；修复轮体检范围自扩（同轮产物同病全查）；守恒审计LCP前缀法；dump线性化不识别sSubSup须实查oMath子元素
-- 恢复基线必须取git HEAD非同步盘现行版；Word手工保存media全重编号→对账按md5；fldSimple与复杂域不等价（已固化§7）；工作区副本遇外部占用干扰读档先重读（网络盘/杀毒/他进程占用仍适用）；trim_tail_empty公式感知、实验题判定宽严定案、format_fix大正文规整、Word COM用pywin32勿用PowerShell
+- 恢复基线取git HEAD非同步盘现行版；media重编号对账按md5；工作区副本遇占用先重读；Word COM用pywin32
 
-- 工具选择序：文件操作专用工具优先于shell；中文文件手术（替换/断言）一律python（utf-8按字符一脚本完）；grep仅字面量计数——可变区间通配.{0,n}文.{0,m}长行卡死（定宽可）、cut -c劈字节乱码、git log乱码加i18n.logOutputEncoding=utf-8；shell用git bash（Windows命令双斜杠）；断言先于写盘与提交
+- 工具选择序：文件操作专用工具优先shell；中文手术一律python一脚本完；grep仅字面量计数（通配长行卡死）；git bash；断言先于写盘提交
 ## 历轮条目（指针＋独有教训；§N均指公共规则）
-- 2026-08-25 物理11/12章实测/落选清单转删除台账/第1章重审整册——已固化§2/§3/§5/§7/§9；独有教训：
+- 2026-08-25 物理11/12章实测/落选清单转删除台账/第1章重审整册——已固化§2/§3/§5/§7/§9；教训：
 - 交接/RESTORE清单须逐题复核（起点非终稿）：恢复题集合与删除台账＋提取块三方交叉核对；extract块区间会误含相邻题——逐块扫「块内多题号」＋相邻块重叠，修复=截尾到次题号前；块内嵌入题扫描必做
 - 标签/克隆坑：run拆分标签正则只换一半（清后续纯数字run）；克隆模型段须iter()找w:t（findall直接子级找不到→克隆整段重复）；模型段选错→克隆后重写全部w:t
 - 空行折叠图/公式感知：drawing-only段ptext=''被当空段删——is_empty_p查blip/imagedata/oMath/drawing/pict；终检三误报＝lineRule multiple与auto同值陷阱、表格空单元格被空行检查误计（只查body直接子级）、whitespace-only run非内容字号不计
 - Word「文件可能已损坏」（跨包大量追加累积发作，与docPr重复/zip重名无关）→OpenAndRepair+SaveAs(FileFormat=16)；SaveAs2 FileFormat=17是PDF（误用成伪docx）；修后media同blob去重
 - 子代理批量亲算：输出纯JSON数组＋dup_existing跨池查重；临时dump监督删除
-- 判定先例：大招素材归属以文件夹为准；叉乘/极点极线/仿射变换按超纲③删讲部、有课标内解法的题保留改解析；轨迹判定＝圆/球/直线本章可用、圆锥曲线转投解析章；抛物线准线在教材2.7，椭圆/双曲线准线与统一定义/定比分点/夹角公式/反三角不在教材、题面出现即超纲③；纯解三角形转投必修4第9章
+- 判定先例：大招素材归属以文件夹为准；叉乘/极点极线/仿射按超纲③删讲部（有课标内解法保留改解析）；圆锥曲线准线等后续概念题面出现即超纲③；纯解三角形转投必修4第9章
 - API：get_or_add_image(io.BytesIO(blob))[0]→rId；emf/wmf兜底Part(PackURI,content_type,blob,package)+relate_to；COM须Documents.Open大写O、PrintOut前ActivePrinter='PDFCreator'、只传Background；新建docx默认Letter须XML改A4；单页件导PDF用ExportAsFixedFormat(path,17)；git查中文路径`git -c core.quotepath=false ls-files`
 - 衔接培优讲义双区结构：题目区典题无答案＋文末解答区；重复题干段（图与题干区MD5全同）去重、解析图保留；典题补【答案】【知识点】；四心文件答案内联
 - 大招docx切块两坑：年份开头题号被(?!\d)误杀；漏检题藏讲区/相邻题块——全文扫描^\d+．与【典例交叉核对题块集
