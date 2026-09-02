@@ -245,6 +245,17 @@ def process(path, args):
             drawing.append(inline)
             p.addnext(newp)
             run.remove(drawing_host)
+            # 宿主段空壳清理：图移走后宿主段无文字/无图/无公式 → 删除（防题干区空段残留）
+            if not ptext(p).strip()                     and next(p.iter(wq('inline')), None) is None                     and next(p.iter(wq('anchor')), None) is None                     and next(p.iter(q('oMath')), None) is None                     and p.find(q('pPr')) is None or (
+                    p.find(q('pPr')) is not None
+                    and p.find(q('pPr')).find(q('sectPr')) is None):
+                pass
+            if not ptext(p).strip()                     and next(p.iter(wq('inline')), None) is None                     and next(p.iter(wq('anchor')), None) is None                     and next(p.iter(q('oMath')), None) is None:
+                ppr_h = p.find(q('pPr'))
+                has_sect = ppr_h is not None and ppr_h.find(q('sectPr')) is not None
+                if not has_sect:
+                    body.remove(p)
+                    stats['empty_host_removed'] = stats.get('empty_host_removed', 0) + 1
             stats['inline'] += 1
             stats['anchor_moved'] += 1
     # anchor 残留断言
