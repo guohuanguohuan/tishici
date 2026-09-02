@@ -1,0 +1,1474 @@
+[
+ {
+  "idx": 1,
+  "docPr_id": "100022",
+  "docPr_name": "图片 100022",
+  "cx": 1610280,
+  "cy": 1803998,
+  "w_pt": 126.8,
+  "h_pt": 142.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-2．（中档·保80%·卡壳看答案）如图，正三棱柱中，各棱长均为4，N是的中点.ABC−A1B1C1CC1",
+  "para_txt_full": "1.2.5-2．（中档·保80%·卡壳看答案）如图，正三棱柱中，各棱长均为4，N是的中点.ABC−A1B1C1CC1"
+ },
+ {
+  "idx": 2,
+  "docPr_id": "100024",
+  "docPr_name": "图片 100024",
+  "cx": 2909160,
+  "cy": 3312620,
+  "w_pt": 229.1,
+  "h_pt": 260.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】建立如图所示的空间直角坐标系，",
+  "para_txt_full": "【详解】建立如图所示的空间直角坐标系，"
+ },
+ {
+  "idx": 3,
+  "docPr_id": "100063",
+  "docPr_name": "图片 100063",
+  "cx": 3744000,
+  "cy": 2306730,
+  "w_pt": 294.8,
+  "h_pt": 181.6,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-3．（中档·保80%·卡壳看答案）如图，在五面体中，∥，，，四边形为平行四边形，平面，．ABCDEFABDC",
+  "para_txt_full": "1.2.5-3．（中档·保80%·卡壳看答案）如图，在五面体中，∥，，，四边形为平行四边形，平面，．ABCDEFABDC∠BAD=π2CD=AD=2ABFEFA⊥ABCDFC=3,ED=7"
+ },
+ {
+  "idx": 4,
+  "docPr_id": "20001",
+  "docPr_name": "图片 100005",
+  "cx": 1104900,
+  "cy": 1638300,
+  "w_pt": 87.0,
+  "h_pt": 129.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "①一顶点引出的三条棱两两垂直的三棱锥（因为形状像墙角，又称墙角模型）：如下图所示，可以补形成长方体．若，，，则外接球半径",
+  "para_txt_full": "①一顶点引出的三条棱两两垂直的三棱锥（因为形状像墙角，又称墙角模型）：如下图所示，可以补形成长方体．若，，，则外接球半径．（核心是SA与SB与SC垂直）SA=aSB=bSC=cR=a2+b2+c22"
+ },
+ {
+  "idx": 5,
+  "docPr_id": "20003",
+  "docPr_name": "图片 100007",
+  "cx": 857250,
+  "cy": 1200150,
+  "w_pt": 67.5,
+  "h_pt": 94.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "②底面为直角三角形，侧棱垂直于底面，垂足为三角形的非直角顶点的三棱锥（核心是SC与CA与AB垂直）：如下图所示，可以补形",
+  "para_txt_full": "②底面为直角三角形，侧棱垂直于底面，垂足为三角形的非直角顶点的三棱锥（核心是SC与CA与AB垂直）：如下图所示，可以补形成长方体．若，，，则外接球半径．SC=aAB=bAC=cR=a2+b2+c22"
+ },
+ {
+  "idx": 6,
+  "docPr_id": "20005",
+  "docPr_name": "图片 100009",
+  "cx": 1047750,
+  "cy": 1190625,
+  "w_pt": 82.5,
+  "h_pt": 93.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "③对棱相等的三棱锥：如下图所示，可以把对棱作为长方体相对的两个面的面对角线，进而补形成长方体．若，，，则外接球半径．（核",
+  "para_txt_full": "③对棱相等的三棱锥：如下图所示，可以把对棱作为长方体相对的两个面的面对角线，进而补形成长方体．若，，，则外接球半径．（核心是对棱相等）AB=CD=aBC=AD=bAC=BD=cR=a2+b2+c222"
+ },
+ {
+  "idx": 7,
+  "docPr_id": "100064",
+  "docPr_name": "图片 100064",
+  "cx": 2611440,
+  "cy": 1819674,
+  "w_pt": 205.6,
+  "h_pt": 143.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-5．（中档·保80%·卡壳看答案）在正三棱锥中，，P到平面ABC的距离为2，则该三棱锥外接球的表面积为（ ）",
+  "para_txt_full": "1.2.5-5．（中档·保80%·卡壳看答案）在正三棱锥中，，P到平面ABC的距离为2，则该三棱锥外接球的表面积为（ ）P−ABCPA⊥PB"
+ },
+ {
+  "idx": 8,
+  "docPr_id": "100072",
+  "docPr_name": "图片 100072",
+  "cx": 1609210,
+  "cy": 1665085,
+  "w_pt": 126.7,
+  "h_pt": 131.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-6．（中档·保80%·卡壳看答案）已知正四面体的外接球的体积为， 则该正四面体的棱长为（    ）P-ABC",
+  "para_txt_full": "1.2.5-6．（中档·保80%·卡壳看答案）已知正四面体的外接球的体积为， 则该正四面体的棱长为（    ）P-ABC32π"
+ },
+ {
+  "idx": 9,
+  "docPr_id": "100073",
+  "docPr_name": "图片 100073",
+  "cx": 2151360,
+  "cy": 1726400,
+  "w_pt": 169.4,
+  "h_pt": 135.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-7．（中档·保80%·卡壳看答案）四面体中，，其余棱长均为，则该四面体外接球半径为（    ）ABCDAB=",
+  "para_txt_full": "1.2.5-7．（中档·保80%·卡壳看答案）四面体中，，其余棱长均为，则该四面体外接球半径为（    ）ABCDAB=CD=24"
+ },
+ {
+  "idx": 10,
+  "docPr_id": "100075",
+  "docPr_name": "图片 100075",
+  "cx": 1877412,
+  "cy": 1779884,
+  "w_pt": 147.8,
+  "h_pt": 140.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-9．（中档·保80%·卡壳看答案）已知三棱锥，满足，，两两垂直，且，是三棱锥外接球上一动点，求点到平面的距离",
+  "para_txt_full": "1.2.5-9．（中档·保80%·卡壳看答案）已知三棱锥，满足，，两两垂直，且，是三棱锥外接球上一动点，求点到平面的距离的最大值.S-ABCSASBSCSA=SB=SC=2QS-ABCQABC"
+ },
+ {
+  "idx": 11,
+  "docPr_id": "100076",
+  "docPr_name": "图片 100076",
+  "cx": 1352550,
+  "cy": 1295400,
+  "w_pt": 106.5,
+  "h_pt": 102.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】在中，设，，，,，因为点，点分别是，的中点，所以，，在中，，在中，，整理得，因为是边长为的正三角形，所以，又因为",
+  "para_txt_full": "【详解】在中，设，，，,，因为点，点分别是，的中点，所以，，在中，，在中，，整理得，因为是边长为的正三角形，所以，又因为，所以，由，解得，所以．又因为是边长为的正三角形，所以，所以，所以，，两两垂直，则球为以为棱的正方体的外接球，则外接球直径为，所以球的体积为,故答案为.△PAC∠PAC=θPA=PB=PC=2xEC="
+ },
+ {
+  "idx": 12,
+  "docPr_id": "100077",
+  "docPr_name": "图片 100077",
+  "cx": 2255333,
+  "cy": 2144066,
+  "w_pt": 177.6,
+  "h_pt": 168.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-12．（难·冲100%·卡壳看答案）已知正三棱锥的侧面均为等腰直角三角形，动点在其内切球上，动点在其外接球上",
+  "para_txt_full": "1.2.5-12．（难·冲100%·卡壳看答案）已知正三棱锥的侧面均为等腰直角三角形，动点在其内切球上，动点在其外接球上，且线段长度的最小值为，设该正三棱锥内切球的球心为，外接球的球心为，则（    ）P-ABCEFEF23-3O1O2"
+ },
+ {
+  "idx": 13,
+  "docPr_id": "100078",
+  "docPr_name": "图片 100078",
+  "cx": 4832280,
+  "cy": 4075923,
+  "w_pt": 380.5,
+  "h_pt": 320.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "得到如图所示的截面,大圆为外接球的最大截面,小圆为内切球的最大截面,O2O1",
+  "para_txt_full": "得到如图所示的截面,大圆为外接球的最大截面,小圆为内切球的最大截面,O2O1"
+ },
+ {
+  "idx": 14,
+  "docPr_id": "100068",
+  "docPr_name": "图片 100068",
+  "cx": 1420250,
+  "cy": 2225765,
+  "w_pt": 111.8,
+  "h_pt": 175.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "汉堡模型是直棱柱的外接球、圆柱的外接球模型，用找球心法(多面体的外接球的球心是过多面体的两个面的外心且分别垂直这两个面的",
+  "para_txt_full": "汉堡模型是直棱柱的外接球、圆柱的外接球模型，用找球心法(多面体的外接球的球心是过多面体的两个面的外心且分别垂直这两个面的直线的交点．一般情况下只作出一个面的垂线，然后设出球心用算术方法或代数方法即可解决问题．有时也作出两条垂线，交点即为球心．)解决．以直三棱柱为例，模型如下图，由对称性可知球心O的位置是△ABC的外心O"
+ },
+ {
+  "idx": 15,
+  "docPr_id": "100095",
+  "docPr_name": "图片 100095",
+  "cx": 2019300,
+  "cy": 2190750,
+  "w_pt": 159.0,
+  "h_pt": 172.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】取的中点，连接，设球半径为，则，，PCOAO,BORPC=2RPB=R",
+  "para_txt_full": "【详解】取的中点，连接，设球半径为，则，，PCOAO,BORPC=2RPB=R"
+ },
+ {
+  "idx": 16,
+  "docPr_id": "100109",
+  "docPr_name": "图片 100109",
+  "cx": 2377243,
+  "cy": 3362236,
+  "w_pt": 187.2,
+  "h_pt": 264.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "因为，，，且平面，平面，所以平面；又平面，所以，连接，则外接球半径为，所以外接球表面积为．AE⊥BDCE⊥BDAE∩CE",
+  "para_txt_full": "因为，，，且平面，平面，所以平面；又平面，所以，连接，则外接球半径为，所以外接球表面积为．AE⊥BDCE⊥BDAE∩CE=EAE⊂AECCE⊂AECBD⊥AECOE⊂AECBD⊥OEOBOB=OE2+BE2=43+1=213S=4π×2132=283π"
+ },
+ {
+  "idx": 17,
+  "docPr_id": "100124",
+  "docPr_name": "图片 100124",
+  "cx": 2944124,
+  "cy": 1659618,
+  "w_pt": 231.8,
+  "h_pt": 130.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-20．（中档·保80%·卡壳看答案）所有面都只由一种正多边形构成的多面体称为正多面体.已知一个正四面体和一个",
+  "para_txt_full": "1.2.5-20．（中档·保80%·卡壳看答案）所有面都只由一种正多边形构成的多面体称为正多面体.已知一个正四面体和一个正八面体的棱长都是（如图），把它们拼接起来，使它们一个表面重合，得到一个新多面体，则新多面体的体积为（    ）QPTRAEFBHCa"
+ },
+ {
+  "idx": 18,
+  "docPr_id": "100125",
+  "docPr_name": "图片 100125",
+  "cx": 3468337,
+  "cy": 1946630,
+  "w_pt": 273.1,
+  "h_pt": 153.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "连接、交于点，四棱锥的高为，四棱锥的体积为，BEFHOA-BFEHAOA-BFEHV=13⋅SBFEH⋅AO=13a2⋅",
+  "para_txt_full": "连接、交于点，四棱锥的高为，四棱锥的体积为，BEFHOA-BFEHAOA-BFEHV=13⋅SBFEH⋅AO=13a2⋅a2-(2a2)2=2a36"
+ },
+ {
+  "idx": 19,
+  "docPr_id": "100126",
+  "docPr_name": "图片 100126",
+  "cx": 2437200,
+  "cy": 2338938,
+  "w_pt": 191.9,
+  "h_pt": 184.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-21．（中档·保80%·卡壳看答案）已知四面体满足，，，且该四面体的体积为，则异面直线与所成角的大小为（  ",
+  "para_txt_full": "1.2.5-21．（中档·保80%·卡壳看答案）已知四面体满足，，，且该四面体的体积为，则异面直线与所成角的大小为（    ）A．B．C．或D．或ABCDAB⊥BCBC⊥CDAB=BC=CD=236ADBC45°60°45°60°60°30°"
+ },
+ {
+  "idx": 20,
+  "docPr_id": "100132",
+  "docPr_name": "图片 100132",
+  "cx": 2456484,
+  "cy": 2358783,
+  "w_pt": 193.4,
+  "h_pt": 185.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-24．（中档·保80%·卡壳看答案）在正方体中，是线段的中点，若四面体的外接球体积为，则正方体棱长为____",
+  "para_txt_full": "1.2.5-24．（中档·保80%·卡壳看答案）在正方体中，是线段的中点，若四面体的外接球体积为，则正方体棱长为______．ABCD-A1B1C1D1MA1C1M-ABD36π"
+ },
+ {
+  "idx": 21,
+  "docPr_id": "100133",
+  "docPr_name": "图片 100133",
+  "cx": 2086560,
+  "cy": 1655338,
+  "w_pt": 164.3,
+  "h_pt": 130.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-25．（中档·保80%·卡壳看答案）已知四面体的体积为3，从顶点出发的三条棱两两垂直，若，则该四面体外接球表",
+  "para_txt_full": "1.2.5-25．（中档·保80%·卡壳看答案）已知四面体的体积为3，从顶点出发的三条棱两两垂直，若，则该四面体外接球表面积的最小值为（    ）A．B．C．D．ABCDBBA,BC,BDBA=425π50π1256π1253π"
+ },
+ {
+  "idx": 22,
+  "docPr_id": "100136",
+  "docPr_name": "图片 100136",
+  "cx": 1584828,
+  "cy": 1499162,
+  "w_pt": 124.8,
+  "h_pt": 118.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-28．（难·冲100%·卡壳看答案）某些正多面体亦被称为“柏拉图多面体”，它们具有高度的对称性和次序感，结构",
+  "para_txt_full": "1.2.5-28．（难·冲100%·卡壳看答案）某些正多面体亦被称为“柏拉图多面体”，它们具有高度的对称性和次序感，结构完美．“柏拉图多面体”只存在正四面体、正六面体、正八面体、正十二面体、正二十面体5种．半正多面体亦被称为“阿基米德多面体”，它们是由边数不完全相同的正多边形为面围成的凸多面体．如图，将一个正四面体的每"
+ },
+ {
+  "idx": 23,
+  "docPr_id": "100137",
+  "docPr_name": "图片 100137",
+  "cx": 2334575,
+  "cy": 2306616,
+  "w_pt": 183.8,
+  "h_pt": 181.6,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-29．（中档·保80%·卡壳看答案）已知正方体的棱长为，为棱上的一点，且满足平面平面，则平面截四面体的外接球",
+  "para_txt_full": "1.2.5-29．（中档·保80%·卡壳看答案）已知正方体的棱长为，为棱上的一点，且满足平面平面，则平面截四面体的外接球所得截面的面积为（    ）ABCD-A1B1C1D12ECC1BDE⊥A1BDA1BDABCE"
+ },
+ {
+  "idx": 24,
+  "docPr_id": "100112",
+  "docPr_name": "图片 100112",
+  "cx": 1295400,
+  "cy": 1295400,
+  "w_pt": 102.0,
+  "h_pt": 102.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "①等体积法：先将几何体（一般为棱锥）的内切球球心与几何体各个顶点用线段连接，如图所示，运用等体积法就有（，，…为几何体各",
+  "para_txt_full": "①等体积法：先将几何体（一般为棱锥）的内切球球心与几何体各个顶点用线段连接，如图所示，运用等体积法就有（，，…为几何体各表面的面积），于是就有，其中r为几何体内切球的半径，V为几何体的体积，S为几何体的表面积．V=13S1r+13S2r+⋅⋅⋅S1S2r=3VS"
+ },
+ {
+  "idx": 25,
+  "docPr_id": "167",
+  "docPr_name": "图片 167",
+  "cx": 2237040,
+  "cy": 2370595,
+  "w_pt": 176.1,
+  "h_pt": 186.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】如图所示：",
+  "para_txt_full": "【详解】如图所示："
+ },
+ {
+  "idx": 26,
+  "docPr_id": "100143",
+  "docPr_name": "图片 100143",
+  "cx": 2606040,
+  "cy": 2606040,
+  "w_pt": 205.2,
+  "h_pt": 205.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "正四面体的内切球半径等于这个正四面体高的．14",
+  "para_txt_full": "正四面体的内切球半径等于这个正四面体高的．14"
+ },
+ {
+  "idx": 27,
+  "docPr_id": "90",
+  "docPr_name": "图片 90",
+  "cx": 1711439,
+  "cy": 1941334,
+  "w_pt": 134.8,
+  "h_pt": 152.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】如图，作出该圆锥与其内切球的轴截面图形，",
+  "para_txt_full": "【详解】如图，作出该圆锥与其内切球的轴截面图形，"
+ },
+ {
+  "idx": 28,
+  "docPr_id": "168",
+  "docPr_name": "图片 168",
+  "cx": 2330280,
+  "cy": 2228963,
+  "w_pt": 183.5,
+  "h_pt": 175.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】由题知，四棱锥是正四棱锥，球的球心在四棱锥的高上，过正四棱锥的高作组合体的轴截面如图：其中是斜高，为球面与侧面的",
+  "para_txt_full": "【详解】由题知，四棱锥是正四棱锥，球的球心在四棱锥的高上，过正四棱锥的高作组合体的轴截面如图：其中是斜高，为球面与侧面的切点．设，易知，所以，即，解得，故选D．P-ABCDOPHPE,PFAPH=hRtΔPAO∼RtΔPHFOAFH=POPF13=h-1h2+32h=94"
+ },
+ {
+  "idx": 29,
+  "docPr_id": "76",
+  "docPr_name": "图片 76",
+  "cx": 1171575,
+  "cy": 1543050,
+  "w_pt": 92.2,
+  "h_pt": 121.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】设圆锥的高为，底面半径为，则当球面与圆锥的侧面以及底面都相切时，轴截面如图，由可得：，即，圆锥的体积.当且仅当，",
+  "para_txt_full": "【详解】设圆锥的高为，底面半径为，则当球面与圆锥的侧面以及底面都相切时，轴截面如图，由可得：，即，圆锥的体积.当且仅当，即时取等号.该圆锥体积的最小值为.内切球体积为.该圆锥体积与其内切球体积比.故选：A.h△AOE~△ACFr=hh2-2hh-2=24π3"
+ },
+ {
+  "idx": 30,
+  "docPr_id": "170",
+  "docPr_name": "图片 170",
+  "cx": 3171600,
+  "cy": 2947962,
+  "w_pt": 249.7,
+  "h_pt": 232.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】由题意，当球内切于四棱锥，即与四棱锥各面均相切时球的半径最大，作出其侧视图，如图所示，易知球的半径.r=(2-2",
+  "para_txt_full": "【详解】由题意，当球内切于四棱锥，即与四棱锥各面均相切时球的半径最大，作出其侧视图，如图所示，易知球的半径.r=(2-2)a"
+ },
+ {
+  "idx": 31,
+  "docPr_id": "174",
+  "docPr_name": "图片 174",
+  "cx": 3035557,
+  "cy": 2963709,
+  "w_pt": 239.0,
+  "h_pt": 233.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "因为底面为长方形，且底面，所以两两垂直，故如图，补全四棱锥所在的长方体，则，即.又，，所以.所以该阳马的外接球与内切球表",
+  "para_txt_full": "因为底面为长方形，且底面，所以两两垂直，故如图，补全四棱锥所在的长方体，则，即.又，，所以.所以该阳马的外接球与内切球表面积之和为.故答案为：.ABCDMA⊥ABCDMA,AB,ADM-ABCDABCD-MNEF2R=MA2+AB2+BC2=23R=3VM-ABCD=13SM-ABCD表⋅r=13SABCD⋅MASM-"
+ },
+ {
+  "idx": 32,
+  "docPr_id": "169",
+  "docPr_name": "图片 169",
+  "cx": 2090755,
+  "cy": 1974941,
+  "w_pt": 164.6,
+  "h_pt": 155.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "设正四面体的棱长为，则其外接球和内切球的球心重合且在正四面体的内部，设球心为，如图，连接并延长交底面于，则底面，且为的中",
+  "para_txt_full": "设正四面体的棱长为，则其外接球和内切球的球心重合且在正四面体的内部，设球心为，如图，连接并延长交底面于，则底面，且为的中心，故，由可得，lOAOBCDHAH⊥BCDH△BCDBH=23×32l=33lRt△BHAAH=l2-13l2=63l"
+ },
+ {
+  "idx": 33,
+  "docPr_id": "91",
+  "docPr_name": "图片 91",
+  "cx": 1502280,
+  "cy": 2317803,
+  "w_pt": 118.3,
+  "h_pt": 182.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】圆锥与球的轴截面如图所示，为圆锥的顶点，为圆锥的底面直径，D，E为切点，连接，，则，，且过点，设球的半径为，由题",
+  "para_txt_full": "【详解】圆锥与球的轴截面如图所示，为圆锥的顶点，为圆锥的底面直径，D，E为切点，连接，，则，，且过点，设球的半径为，由题意可得，故，即，整理得，得．OSABOESDOE⊥SBSD⊥ABSDOOr△SDB∽△SEOSDSE=BDEO82(82-r)2-r2=4rr2+22r-16=0r=22"
+ },
+ {
+  "idx": 34,
+  "docPr_id": "100154",
+  "docPr_name": "图片 100154",
+  "cx": 2867400,
+  "cy": 2825438,
+  "w_pt": 225.8,
+  "h_pt": 222.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "设球心为P，球的半径为r，下底面半径为R，轴截面上球与圆锥母线的切点为Q，圆锥的轴截面如图：",
+  "para_txt_full": "设球心为P，球的半径为r，下底面半径为R，轴截面上球与圆锥母线的切点为Q，圆锥的轴截面如图："
+ },
+ {
+  "idx": 35,
+  "docPr_id": "100156",
+  "docPr_name": "图片 100156",
+  "cx": 4736200,
+  "cy": 4336521,
+  "w_pt": 372.9,
+  "h_pt": 341.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "由已知AB＝SA＝SB＝所以三角形SAB为等边三角形，故P是△SAB的中心，连接BP，则BP平分∠SBA，∴∠PBO＝3",
+  "para_txt_full": "由已知AB＝SA＝SB＝所以三角形SAB为等边三角形，故P是△SAB的中心，连接BP，则BP平分∠SBA，∴∠PBO＝30°；所以tan30°＝，即，即四面体的外接球的半径为．另正四面体可以从正方体中截得，如图：rRr=33R=33×32=32r=32"
+ },
+ {
+  "idx": 36,
+  "docPr_id": "100159",
+  "docPr_name": "图片 100159",
+  "cx": 2041991,
+  "cy": 2241210,
+  "w_pt": 160.8,
+  "h_pt": 176.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "在底面正三角形中，易求，，，又，由，即得，又，，，，又，可得即，即球的最大半径为.故选：C.BCDBE=3BG=23BE",
+  "para_txt_full": "在底面正三角形中，易求，，，又，由，即得，又，，，，又，可得即，即球的最大半径为.故选：C.BCDBE=3BG=23BE=233∴AG=AB2-BG2=4-43=263S△ABC=S△ABD=S△ACD=S△BCD=34×4=3VA-BCD=VO-BCD+VO-ABC+VO-ACD+VO-ABDR=3VA-BCDS△B"
+ },
+ {
+  "idx": 37,
+  "docPr_id": "175",
+  "docPr_name": "图片 175",
+  "cx": 3596040,
+  "cy": 2921782,
+  "w_pt": 283.2,
+  "h_pt": 230.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】如图，作平面，垂足为，过作于，连接，由平面，平面，得，同理，又，所以平面，而平面，所以，所以为二面角的平面角，所",
+  "para_txt_full": "【详解】如图，作平面，垂足为，过作于，连接，由平面，平面，得，同理，又，所以平面，而平面，所以，所以为二面角的平面角，所以，所以，SH⊥ABCHHHE⊥ABESESH⊥ABCAB⊂ABCSH⊥ABSH⊥EHSH∩EH=HAB⊥SEHSE⊂SEHAB⊥SE∠SEHS-AB-C∠SEH=π4HE=HS"
+ },
+ {
+  "idx": 38,
+  "docPr_id": "176",
+  "docPr_name": "图片 176",
+  "cx": 3132720,
+  "cy": 2619159,
+  "w_pt": 246.7,
+  "h_pt": 206.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "在直角中，以为轴建立平面直角坐标系，由，，∴，△ABCBC,BAx,yH(2,2)D(4,3)DH=(4-2)2+(3-",
+  "para_txt_full": "在直角中，以为轴建立平面直角坐标系，由，，∴，△ABCBC,BAx,yH(2,2)D(4,3)DH=(4-2)2+(3-2)2=5"
+ },
+ {
+  "idx": 39,
+  "docPr_id": "177",
+  "docPr_name": "图片 177",
+  "cx": 3682080,
+  "cy": 3022789,
+  "w_pt": 289.9,
+  "h_pt": 238.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "若如图2位置所示，则，解得，此时，∴，∴．故答案为：；．OR2-52+2=R2-5R=41OD=41-25=4SMMO=",
+  "para_txt_full": "若如图2位置所示，则，解得，此时，∴，∴．故答案为：；．OR2-52+2=R2-5R=41OD=41-25=4SMMO=SHOD=24=12SOOM=3222-232"
+ },
+ {
+  "idx": 40,
+  "docPr_id": "66",
+  "docPr_name": "图片 66",
+  "cx": 2163901,
+  "cy": 1971266,
+  "w_pt": 170.4,
+  "h_pt": 155.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-53．（中档·保80%·卡壳看答案）已知三棱锥中，平面，，点E，F分别是线段的中点，直线相交于点G，则过点G",
+  "para_txt_full": "1.2.5-53．（中档·保80%·卡壳看答案）已知三棱锥中，平面，，点E，F分别是线段的中点，直线相交于点G，则过点G的平面与截三棱锥的外接球O所得截面面积的取值范围为（    ）S-ABCSA⊥ABCSA=AB=BC=2,AC=22AB,BCAF,CEαS-ABC"
+ },
+ {
+  "idx": 41,
+  "docPr_id": "82",
+  "docPr_name": "图片 82",
+  "cx": 2230951,
+  "cy": 1940827,
+  "w_pt": 175.7,
+  "h_pt": 152.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-55．（中档·保80%·卡壳看答案）已知三棱锥中，平面ABC，，，点，分别是线段AB，BC的中点，直线AF，",
+  "para_txt_full": "1.2.5-55．（中档·保80%·卡壳看答案）已知三棱锥中，平面ABC，，，点，分别是线段AB，BC的中点，直线AF，CE相交于点，则过点的平面与截三棱锥的外接球所得截面面积的取值范围为（    ）S-ABCSA⊥SA=AB=BC=2AC=2EFGGαS-ABCO"
+ },
+ {
+  "idx": 42,
+  "docPr_id": "87",
+  "docPr_name": "图片 87",
+  "cx": 2292480,
+  "cy": 2407104,
+  "w_pt": 180.5,
+  "h_pt": 189.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "∴. V=4π333=43π",
+  "para_txt_full": "∴. V=4π333=43π"
+ },
+ {
+  "idx": 43,
+  "docPr_id": "100160",
+  "docPr_name": "图1_题119截面",
+  "cx": 2188283,
+  "cy": 2125894,
+  "w_pt": 172.3,
+  "h_pt": 167.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-58．（中档·保80%·卡壳看答案）已知正方体的边长为2，点在棱上，，点在棱上（点异于，两点），若平面截正方",
+  "para_txt_full": "1.2.5-58．（中档·保80%·卡壳看答案）已知正方体的边长为2，点在棱上，，点在棱上（点异于，两点），若平面截正方体所得的截面为五边形，则长的取值可能为（    ）ABCD-A1B1C1D1NCC1C1N=2NCMBCMBCAMNABCD-A1B1C1D1CM"
+ },
+ {
+  "idx": 44,
+  "docPr_id": "115",
+  "docPr_name": "图片 115",
+  "cx": 1688452,
+  "cy": 2218710,
+  "w_pt": 132.9,
+  "h_pt": 174.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-59．（中档·保80%·卡壳看答案）如图，设正三棱锥的侧棱长为，，分别是上的点，过作三棱锥的截面，则截面周长",
+  "para_txt_full": "1.2.5-59．（中档·保80%·卡壳看答案）如图，设正三棱锥的侧棱长为，，分别是上的点，过作三棱锥的截面，则截面周长的最小值为 .P-ABC2∠APB=40°E,FBP,CPA,E,F△AEF"
+ },
+ {
+  "idx": 45,
+  "docPr_id": "118",
+  "docPr_name": "图片 118",
+  "cx": 3541679,
+  "cy": 4340293,
+  "w_pt": 278.9,
+  "h_pt": 341.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【步骤2 筛选路径】若将底面沿展开和侧面展在同一个平面，连接，则与棱相交，符合题意，此时为这只蚂蚁爬行的最短路线，如图所",
+  "para_txt_full": "【步骤2 筛选路径】若将底面沿展开和侧面展在同一个平面，连接，则与棱相交，符合题意，此时为这只蚂蚁爬行的最短路线，如图所示，ABCBCBCC1B1EFEFBCEF"
+ },
+ {
+  "idx": 46,
+  "docPr_id": "122",
+  "docPr_name": "图片 122",
+  "cx": 5031720,
+  "cy": 3964385,
+  "w_pt": 396.2,
+  "h_pt": 312.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【步骤2 共线取小】则当、处于如图所示位置时，的周长最小，即的长，设，过点作，则，DE△ADEAA'∠APB=αPPO⊥",
+  "para_txt_full": "【步骤2 共线取小】则当、处于如图所示位置时，的周长最小，即的长，设，过点作，则，DE△ADEAA'∠APB=αPPO⊥AA'∠APO=32α"
+ },
+ {
+  "idx": 47,
+  "docPr_id": "123",
+  "docPr_name": "图片 123",
+  "cx": 1835640,
+  "cy": 1647369,
+  "w_pt": 144.5,
+  "h_pt": 129.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-62．（中档·保80%·卡壳看答案）如图，在四棱锥中，平面平面，底面是正方形，是边长为2的正三角形，E，F分",
+  "para_txt_full": "1.2.5-62．（中档·保80%·卡壳看答案）如图，在四棱锥中，平面平面，底面是正方形，是边长为2的正三角形，E，F分别是棱上的动点，则的最小值是（ ）P-ABCDPAB⊥ABCDABCD△PABPD,PCAE+EF+BF"
+ },
+ {
+  "idx": 48,
+  "docPr_id": "124",
+  "docPr_name": "图片 124",
+  "cx": 1892160,
+  "cy": 1492573,
+  "w_pt": 149.0,
+  "h_pt": 117.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【步骤2 连续展开】将平面展开到一个平面内如图，则的最小值即为展开图中的长．PAD,PCD,PBCAE+EF+BFAB",
+  "para_txt_full": "【步骤2 连续展开】将平面展开到一个平面内如图，则的最小值即为展开图中的长．PAD,PCD,PBCAE+EF+BFAB"
+ },
+ {
+  "idx": 49,
+  "docPr_id": "128",
+  "docPr_name": "图片 128",
+  "cx": 1718929,
+  "cy": 1565204,
+  "w_pt": 135.3,
+  "h_pt": 123.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-64．（中档·保80%·卡壳看答案）如图，圆锥的母线长为，底面圆的半径为，若一只蚂蚁从圆锥的点出发，沿表面爬",
+  "para_txt_full": "1.2.5-64．（中档·保80%·卡壳看答案）如图，圆锥的母线长为，底面圆的半径为，若一只蚂蚁从圆锥的点出发，沿表面爬到的中点处，则其爬行的最短路线长为，则圆锥的底面圆的半径为（    ）AB2rBACD5"
+ },
+ {
+  "idx": 50,
+  "docPr_id": "129",
+  "docPr_name": "图片 129",
+  "cx": 2224080,
+  "cy": 1975425,
+  "w_pt": 175.1,
+  "h_pt": 155.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【步骤1 展开半圆锥】【详解】如图为半圆锥的侧面展开图，",
+  "para_txt_full": "【步骤1 展开半圆锥】【详解】如图为半圆锥的侧面展开图，"
+ },
+ {
+  "idx": 51,
+  "docPr_id": "130",
+  "docPr_name": "图片 130",
+  "cx": 2572299,
+  "cy": 2096983,
+  "w_pt": 202.5,
+  "h_pt": 165.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-65．（中档·保80%·卡壳看答案）在《九章算术》中，将底面为矩形且有一条侧棱与底面垂直的四棱锥称为“阳马”",
+  "para_txt_full": "1.2.5-65．（中档·保80%·卡壳看答案）在《九章算术》中，将底面为矩形且有一条侧棱与底面垂直的四棱锥称为“阳马”．如图，在“阳马”中，底面，，是棱的中点，点是棱上的动点，则当的周长最小时，三棱锥外接球的表面积为（    ）A．B．  C． D．P-ABCDPA⊥ABCDAD=2AB=2PA=2FBCEAB△PE"
+ },
+ {
+  "idx": 52,
+  "docPr_id": "131",
+  "docPr_name": "图片 131",
+  "cx": 3133084,
+  "cy": 1440659,
+  "w_pt": 246.7,
+  "h_pt": 113.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【步骤2 翻折取小】如图，将四棱锥的侧面沿展开，使得与矩形在同一个平面内，当P，E，F三点共线时，取得最小值．P-ABC",
+  "para_txt_full": "【步骤2 翻折取小】如图，将四棱锥的侧面沿展开，使得与矩形在同一个平面内，当P，E，F三点共线时，取得最小值．P-ABCDPABAB△PABABCDPE+EF"
+ },
+ {
+  "idx": 53,
+  "docPr_id": "135",
+  "docPr_name": "图片 135",
+  "cx": 2257560,
+  "cy": 2061250,
+  "w_pt": 177.8,
+  "h_pt": 162.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "取连接交于点，则为中点，连接A1BAB1OOAB1PO",
+  "para_txt_full": "取连接交于点，则为中点，连接A1BAB1OOAB1PO"
+ },
+ {
+  "idx": 54,
+  "docPr_id": "138",
+  "docPr_name": "图片 138",
+  "cx": 1676261,
+  "cy": 975279,
+  "w_pt": 132.0,
+  "h_pt": 76.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】以、、分别为长方体的长宽高，如图：3a2aa",
+  "para_txt_full": "【详解】以、、分别为长方体的长宽高，如图：3a2aa"
+ },
+ {
+  "idx": 55,
+  "docPr_id": "140",
+  "docPr_name": "图片 140",
+  "cx": 1426346,
+  "cy": 1032245,
+  "w_pt": 112.3,
+  "h_pt": 81.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-71．（中档·保80%·卡壳看答案）如图所示，是平面内一定点，是平面外一定点，直线与平面所成角为45°.设平",
+  "para_txt_full": "1.2.5-71．（中档·保80%·卡壳看答案）如图所示，是平面内一定点，是平面外一定点，直线与平面所成角为45°.设平面内的动点到点､点距离分别为､，且.若点的轨迹是一条直线，___________；若点的轨迹是圆，则的取值范围是___________.AαBαABααCABd1d2d1,d2>0m=d1d2Cm=C"
+ },
+ {
+  "idx": 56,
+  "docPr_id": "141",
+  "docPr_name": "图片 141",
+  "cx": 2109041,
+  "cy": 1334913,
+  "w_pt": 166.1,
+  "h_pt": 105.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "以为坐标原点，，分别为，轴的正方向，作，以为轴正方向，建立空间直角坐标系.EEAEBxzEy⊥EAEyyE-xyz",
+  "para_txt_full": "以为坐标原点，，分别为，轴的正方向，作，以为轴正方向，建立空间直角坐标系.EEAEBxzEy⊥EAEyyE-xyz"
+ },
+ {
+  "idx": 57,
+  "docPr_id": "142",
+  "docPr_name": "图片 142",
+  "cx": 4894683,
+  "cy": 4894683,
+  "w_pt": 385.4,
+  "h_pt": 385.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "如图所示.",
+  "para_txt_full": "如图所示."
+ },
+ {
+  "idx": 58,
+  "docPr_id": "146",
+  "docPr_name": "图片 146",
+  "cx": 1237385,
+  "cy": 1580275,
+  "w_pt": 97.4,
+  "h_pt": 124.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【分析】 先抓不变量：DD₁∥平面 ACC₁A₁，故 P 到该平面的距离恒定。将△PA₁C 的 S_min 转化为 P ",
+  "para_txt_full": "【分析】 先抓不变量：DD₁∥平面 ACC₁A₁，故 P 到该平面的距离恒定。将△PA₁C 的 S_min 转化为 P 到 A₁C 的距离最小；作垂线并利用相似△求得 DP∶PD₁=1∶4。"
+ },
+ {
+  "idx": 59,
+  "docPr_id": "147",
+  "docPr_name": "图片 147",
+  "cx": 1688452,
+  "cy": 2107076,
+  "w_pt": 132.9,
+  "h_pt": 165.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-76．（中档·保80%·卡壳看答案）在直三棱柱 ABC-A₁B₁C₁ 中，侧面 AA₁B₁B 为正方形，棱 ",
+  "para_txt_full": "1.2.5-76．（中档·保80%·卡壳看答案）在直三棱柱 ABC-A₁B₁C₁ 中，侧面 AA₁B₁B 为正方形，棱 AB 与 BC 的长度均为 2。点 E、F 分别为 AC、CC₁ 的中点，点 D 在棱 A₁B₁ 上，直线 BF ⊥棱 A₁B₁。"
+ },
+ {
+  "idx": 60,
+  "docPr_id": "148",
+  "docPr_name": "图片 148",
+  "cx": 1578733,
+  "cy": 2430969,
+  "w_pt": 124.3,
+  "h_pt": 191.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "直线 DE 在平面 EGB₁D 内，∴直线 BF ⊥直线 DE。",
+  "para_txt_full": "直线 DE 在平面 EGB₁D 内，∴直线 BF ⊥直线 DE。"
+ },
+ {
+  "idx": 61,
+  "docPr_id": "149",
+  "docPr_name": "图片 149",
+  "cx": 1846935,
+  "cy": 2532540,
+  "w_pt": 145.4,
+  "h_pt": 199.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "以 B 为坐标原点，以 BA、BC、BB₁ 所在直线分别为 x 轴、y 轴、z 轴建立空间直角坐标系，如图②，则 ，，，",
+  "para_txt_full": "以 B 为坐标原点，以 BA、BC、BB₁ 所在直线分别为 x 轴、y 轴、z 轴建立空间直角坐标系，如图②，则 ，，，，，，，。由题意，设 ，其中 。B0,0,0A2,0,0C0,2,0B10,0,2A12,0,2C10,2,2E1,1,0F0,2,1Da,0,20≤a≤2"
+ },
+ {
+  "idx": 62,
+  "docPr_id": "150",
+  "docPr_name": "图片 150",
+  "cx": 2529630,
+  "cy": 1733006,
+  "w_pt": 199.2,
+  "h_pt": 136.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-77．（中档·保80%·卡壳看答案）如图，已知三棱柱中，，，，是的中点，是线段上一点.ABC-A1B1C1A",
+  "para_txt_full": "1.2.5-77．（中档·保80%·卡壳看答案）如图，已知三棱柱中，，，，是的中点，是线段上一点.ABC-A1B1C1AB=AC=2A1A=A1B=A1C=22∠BAC=90°EBCFA1C1"
+ },
+ {
+  "idx": 63,
+  "docPr_id": "153",
+  "docPr_name": "图片 153",
+  "cx": 1785980,
+  "cy": 1880035,
+  "w_pt": 140.6,
+  "h_pt": 148.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-78．（难·冲100%·卡壳看答案）如图，在正四面体中，为中点，是棱上的动点，则当异面直线与所成角的sin最",
+  "para_txt_full": "1.2.5-78．（难·冲100%·卡壳看答案）如图，在正四面体中，为中点，是棱上的动点，则当异面直线与所成角的sin最小时，（    ）A．B．C．D．A-BCDAF=13AD,EABPCDBPEFCPCD=56677889"
+ },
+ {
+  "idx": 64,
+  "docPr_id": "154",
+  "docPr_name": "图片 154",
+  "cx": 1389773,
+  "cy": 1536471,
+  "w_pt": 109.4,
+  "h_pt": 121.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": ".∵DG=13DA,∴DH=13DO",
+  "para_txt_full": ".∵DG=13DA,∴DH=13DO"
+ }
+]

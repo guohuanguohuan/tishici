@@ -1,0 +1,968 @@
+[
+ {
+  "idx": 1,
+  "docPr_id": "100007",
+  "docPr_name": "图片 100007",
+  "cx": 2458800,
+  "cy": 1629670,
+  "w_pt": 193.6,
+  "h_pt": 128.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "（1）平行线分线段成比例定理: 三条平行线截两条直线，截得的对应线段成比例",
+  "para_txt_full": "（1）平行线分线段成比例定理: 三条平行线截两条直线，截得的对应线段成比例"
+ },
+ {
+  "idx": 2,
+  "docPr_id": "100013",
+  "docPr_name": "图片 100013",
+  "cx": 2764800,
+  "cy": 1473798,
+  "w_pt": 217.7,
+  "h_pt": 116.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "① 相似三角形的对应边上的中线，高线和对应角的平分线成比例，都等于相似比；② 相似三角形的对应边成比例；③ 相似三角形周",
+  "para_txt_full": "① 相似三角形的对应边上的中线，高线和对应角的平分线成比例，都等于相似比；② 相似三角形的对应边成比例；③ 相似三角形周长的比等于相似比；④ 相似三角形面积的比等于相似比的平方．"
+ },
+ {
+  "idx": 3,
+  "docPr_id": "100015",
+  "docPr_name": "图片 100015",
+  "cx": 1807200,
+  "cy": 1298210,
+  "w_pt": 142.3,
+  "h_pt": 102.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "也可以用圆的切割线定理证明，是圆的切线，则.ABOBA2=BD⋅BC",
+  "para_txt_full": "也可以用圆的切割线定理证明，是圆的切线，则.ABOBA2=BD⋅BC"
+ },
+ {
+  "idx": 4,
+  "docPr_id": "100017",
+  "docPr_name": "图片 100017",
+  "cx": 2034000,
+  "cy": 1152963,
+  "w_pt": 160.2,
+  "h_pt": 90.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "已知，如图所示，是的内角的平分线，则.AD△ABC∠BACBAAC=BDDC",
+  "para_txt_full": "已知，如图所示，是的内角的平分线，则.AD△ABC∠BACBAAC=BDDC"
+ },
+ {
+  "idx": 5,
+  "docPr_id": "100019",
+  "docPr_name": "图片 100019",
+  "cx": 2563200,
+  "cy": 1447582,
+  "w_pt": 201.8,
+  "h_pt": 114.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "已知，如图所示，是中的外角的平分线，则.AD△ABC∠BAC∠CAFBAAC=BDDC",
+  "para_txt_full": "已知，如图所示，是中的外角的平分线，则.AD△ABC∠BAC∠CAFBAAC=BDDC"
+ },
+ {
+  "idx": 6,
+  "docPr_id": "100023",
+  "docPr_name": "图片 100023",
+  "cx": 1972800,
+  "cy": 1343791,
+  "w_pt": 155.3,
+  "h_pt": 105.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-1．（衔接必会·卡壳看答案）如图，在中，，，和相交于点，则.△ABCADAB=14AEAC=12BECDFD",
+  "para_txt_full": "1.2.1-1．（衔接必会·卡壳看答案）如图，在中，，，和相交于点，则.△ABCADAB=14AEAC=12BECDFDFDC="
+ },
+ {
+  "idx": 7,
+  "docPr_id": "100027",
+  "docPr_name": "图片 100027",
+  "cx": 3956400,
+  "cy": 2740489,
+  "w_pt": 311.5,
+  "h_pt": 215.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-3．（衔接必会·卡壳看答案）如图，分别为边的中点，则的值________.D，EAB，ACBPBE",
+  "para_txt_full": "1.2.1-3．（衔接必会·卡壳看答案）如图，分别为边的中点，则的值________.D，EAB，ACBPBE"
+ },
+ {
+  "idx": 8,
+  "docPr_id": "100029",
+  "docPr_name": "图片 100029",
+  "cx": 3956400,
+  "cy": 2740489,
+  "w_pt": 311.5,
+  "h_pt": 215.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】解：如图过点作，、是、的中点，，又，所以.EEF//AB∵EDACAB∴EF=12AD=12BD△EFP∽△BD",
+  "para_txt_full": "【详解】解：如图过点作，、是、的中点，，又，所以.EEF//AB∵EDACAB∴EF=12AD=12BD△EFP∽△BDPEFBD=EPBP=12∴BPBE=23"
+ },
+ {
+  "idx": 9,
+  "docPr_id": "100031",
+  "docPr_name": "图片 100031",
+  "cx": 2415600,
+  "cy": 2390633,
+  "w_pt": 190.2,
+  "h_pt": 188.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-4．（衔接必会·卡壳看答案）如图，是的中线，分别是的中点，则等于______.BD、CE△ABCP、QBD、",
+  "para_txt_full": "1.2.1-4．（衔接必会·卡壳看答案）如图，是的中线，分别是的中点，则等于______.BD、CE△ABCP、QBD、CEPQ:BC"
+ },
+ {
+  "idx": 10,
+  "docPr_id": "100033",
+  "docPr_name": "图片 100033",
+  "cx": 3272400,
+  "cy": 3238577,
+  "w_pt": 257.7,
+  "h_pt": 255.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】如图，连接，取中点，连接，因是的中线，则分别为的中点，EDBEFPF,QFBD,CE△ABCE,DAB,AC",
+  "para_txt_full": "【详解】如图，连接，取中点，连接，因是的中线，则分别为的中点，EDBEFPF,QFBD,CE△ABCE,DAB,AC"
+ },
+ {
+  "idx": 11,
+  "docPr_id": "100035",
+  "docPr_name": "图片 100035",
+  "cx": 2275200,
+  "cy": 2053815,
+  "w_pt": 179.1,
+  "h_pt": 161.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-5．（衔接必会·卡壳看答案）如图，四边形的对角线相交于点，，求证：.ABCDO∠BAC=∠CDB∠DAC=∠",
+  "para_txt_full": "1.2.1-5．（衔接必会·卡壳看答案）如图，四边形的对角线相交于点，，求证：.ABCDO∠BAC=∠CDB∠DAC=∠CBD"
+ },
+ {
+  "idx": 12,
+  "docPr_id": "100037",
+  "docPr_name": "图片 100037",
+  "cx": 3427200,
+  "cy": 1945795,
+  "w_pt": 269.9,
+  "h_pt": 153.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-6．（衔接必会·卡壳看答案）在中，，于点，若，则，.Rt△ABC∠BAC=90∘AD⊥BCDACAB=34A",
+  "para_txt_full": "1.2.1-6．（衔接必会·卡壳看答案）在中，，于点，若，则，.Rt△ABC∠BAC=90∘AD⊥BCDACAB=34ADAC=BDCD="
+ },
+ {
+  "idx": 13,
+  "docPr_id": "100039",
+  "docPr_name": "图片 100039",
+  "cx": 1789200,
+  "cy": 931756,
+  "w_pt": 140.9,
+  "h_pt": 73.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-7．（衔接必会·卡壳看答案）如图，在中，，，，，求：△ABC∠ACB=90∘CD⊥ABAD=6CD=23",
+  "para_txt_full": "1.2.1-7．（衔接必会·卡壳看答案）如图，在中，，，，，求：△ABC∠ACB=90∘CD⊥ABAD=6CD=23"
+ },
+ {
+  "idx": 14,
+  "docPr_id": "100041",
+  "docPr_name": "图片 100041",
+  "cx": 3045600,
+  "cy": 1929241,
+  "w_pt": 239.8,
+  "h_pt": 151.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】解：长为的直角边在斜边上的射影为，故由射影定理知斜边长为．三角形的面积为．故选：B.332-2.42=1.832",
+  "para_txt_full": "【详解】解：长为的直角边在斜边上的射影为，故由射影定理知斜边长为．三角形的面积为．故选：B.332-2.42=1.8321.8=5∴12×5×2.4=6"
+ },
+ {
+  "idx": 15,
+  "docPr_id": "100043",
+  "docPr_name": "图片 100043",
+  "cx": 1609200,
+  "cy": 1000577,
+  "w_pt": 126.7,
+  "h_pt": 78.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-9．（衔接必会·卡壳看答案）已知在梯形中，，，，，，则此梯形的面积为________．ABCDDC//AB∠",
+  "para_txt_full": "1.2.1-9．（衔接必会·卡壳看答案）已知在梯形中，，，，，，则此梯形的面积为________．ABCDDC//AB∠D=90∘AC⊥BCAB=10AC=6"
+ },
+ {
+  "idx": 16,
+  "docPr_id": "100045",
+  "docPr_name": "图片 100045",
+  "cx": 1476000,
+  "cy": 1962044,
+  "w_pt": 116.2,
+  "h_pt": 154.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-10．（衔接必会·卡壳看答案）已知直角三角形周长为，一锐角平分线分对边为3:5两部分．48cm",
+  "para_txt_full": "1.2.1-10．（衔接必会·卡壳看答案）已知直角三角形周长为，一锐角平分线分对边为3:5两部分．48cm"
+ },
+ {
+  "idx": 17,
+  "docPr_id": "100047",
+  "docPr_name": "图片 100047",
+  "cx": 1472400,
+  "cy": 1954861,
+  "w_pt": 115.9,
+  "h_pt": 153.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "(1)设，，则，过作，由题意可知，，，，又，，，，解得：（舍去），，，，，三边长分别为：，，．CD=3xBD=5xBC=",
+  "para_txt_full": "(1)设，，则，过作，由题意可知，，，，又，，，，解得：（舍去），，，，，三边长分别为：，，．CD=3xBD=5xBC=8xDDE⊥ABDE=3xBE=4x∴AE+AC+12x=48AE=AC∴AC=24-6xAB=24-2x∴(24-6x)2+(8x)2=(24-2x)2x1=0x2=2∴AB=20AC=12BC=1"
+ },
+ {
+  "idx": 18,
+  "docPr_id": "100049",
+  "docPr_name": "图片 100049",
+  "cx": 3434400,
+  "cy": 2984076,
+  "w_pt": 270.4,
+  "h_pt": 235.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-11．（衔接必会·卡壳看答案）如图，在中，为边上的高，过作，，，为垂足．求证：△ABCADBCDDE⊥ABD",
+  "para_txt_full": "1.2.1-11．（衔接必会·卡壳看答案）如图，在中，为边上的高，过作，，，为垂足．求证：△ABCADBCDDE⊥ABDF⊥ACEF"
+ },
+ {
+  "idx": 19,
+  "docPr_id": "100051",
+  "docPr_name": "图片 100051",
+  "cx": 2034000,
+  "cy": 1152963,
+  "w_pt": 160.2,
+  "h_pt": 90.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-12．（衔接必会·卡壳看答案）已知，如图所示，是的内角的平分线，求证：.AD△ABC∠BACBAAC=BDD",
+  "para_txt_full": "1.2.1-12．（衔接必会·卡壳看答案）已知，如图所示，是的内角的平分线，求证：.AD△ABC∠BACBAAC=BDDC"
+ },
+ {
+  "idx": 20,
+  "docPr_id": "100075",
+  "docPr_name": "图片 100075",
+  "cx": 2534400,
+  "cy": 1644923,
+  "w_pt": 199.6,
+  "h_pt": 129.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】方法1 过作与的延长线交于， 则; CCE∥DABAEBAAE=BDDC",
+  "para_txt_full": "【详解】方法1 过作与的延长线交于， 则; CCE∥DABAEBAAE=BDDC"
+ },
+ {
+  "idx": 21,
+  "docPr_id": "100055",
+  "docPr_name": "图片 100055",
+  "cx": 2563200,
+  "cy": 1447582,
+  "w_pt": 201.8,
+  "h_pt": 114.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-14．（衔接必会·卡壳看答案）已知，如图所示，是中的外角的平分线，求证：.AD△ABC∠BAC∠CAFBAA",
+  "para_txt_full": "1.2.1-14．（衔接必会·卡壳看答案）已知，如图所示，是中的外角的平分线，求证：.AD△ABC∠BAC∠CAFBAAC=BDDC"
+ },
+ {
+  "idx": 22,
+  "docPr_id": "100059",
+  "docPr_name": "图片 100059",
+  "cx": 2012400,
+  "cy": 1115231,
+  "w_pt": 158.5,
+  "h_pt": 87.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.1-15．（衔接必会·卡壳看答案）在中，是的平分线，，，，则____.△ABCAD∠BACAB-AC=5BD-C",
+  "para_txt_full": "1.2.1-15．（衔接必会·卡壳看答案）在中，是的平分线，，，，则____.△ABCAD∠BACAB-AC=5BD-CD=3DC=8AB="
+ },
+ {
+  "idx": 23,
+  "docPr_id": "1",
+  "docPr_name": "图片 1",
+  "cx": 2433600,
+  "cy": 1393740,
+  "w_pt": 191.6,
+  "h_pt": 109.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "（1）三角形的三条中线相交于一点，这个交点称为三角形的重心．",
+  "para_txt_full": "（1）三角形的三条中线相交于一点，这个交点称为三角形的重心．"
+ },
+ {
+  "idx": 24,
+  "docPr_id": "2",
+  "docPr_name": "图片 2",
+  "cx": 2372400,
+  "cy": 1360321,
+  "w_pt": 186.8,
+  "h_pt": 107.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "（1）三角形的三条角平分线相交于一点，是三角形的内心. ",
+  "para_txt_full": "（1）三角形的三条角平分线相交于一点，是三角形的内心. "
+ },
+ {
+  "idx": 25,
+  "docPr_id": "3",
+  "docPr_name": "图片 3",
+  "cx": 3193200,
+  "cy": 1767229,
+  "w_pt": 251.4,
+  "h_pt": 139.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "（2）三角形的内心在三角形的内部，它到三角形的三边的距离相等.",
+  "para_txt_full": "（2）三角形的内心在三角形的内部，它到三角形的三边的距离相等."
+ },
+ {
+  "idx": 26,
+  "docPr_id": "4",
+  "docPr_name": "图片 4",
+  "cx": 3052800,
+  "cy": 2007991,
+  "w_pt": 240.4,
+  "h_pt": 158.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "（1）三角形的三条高所在直线相交于一点，该点称为三角形的垂心.",
+  "para_txt_full": "（1）三角形的三条高所在直线相交于一点，该点称为三角形的垂心."
+ },
+ {
+  "idx": 27,
+  "docPr_id": "6",
+  "docPr_name": "图片 6",
+  "cx": 3117294,
+  "cy": 1814363,
+  "w_pt": 245.5,
+  "h_pt": 142.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "（1）三角形三边的垂直平分线所在直线相交于一点，该点称为三角形的外心.",
+  "para_txt_full": "（1）三角形三边的垂直平分线所在直线相交于一点，该点称为三角形的外心."
+ },
+ {
+  "idx": 28,
+  "docPr_id": "7",
+  "docPr_name": "图片 7",
+  "cx": 2973600,
+  "cy": 2681115,
+  "w_pt": 234.1,
+  "h_pt": 211.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "（2）三角形的外心到三个顶点的距离相等. ",
+  "para_txt_full": "（2）三角形的外心到三个顶点的距离相等. "
+ },
+ {
+  "idx": 29,
+  "docPr_id": "8",
+  "docPr_name": "图片 8",
+  "cx": 2922238,
+  "cy": 1735079,
+  "w_pt": 230.1,
+  "h_pt": 136.6,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-1．（衔接必会·卡壳看答案）求证分别为三边的中点，交于一点，且都被该点分成.D、E、F△ABCBC、CA、A",
+  "para_txt_full": "1.2.5-1．（衔接必会·卡壳看答案）求证分别为三边的中点，交于一点，且都被该点分成.D、E、F△ABCBC、CA、ABAD、BE、CFA2:1"
+ },
+ {
+  "idx": 30,
+  "docPr_id": "9",
+  "docPr_name": "图片 9",
+  "cx": 2897856,
+  "cy": 2002930,
+  "w_pt": 228.2,
+  "h_pt": 157.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "1.2.5-2．（衔接必会·卡壳看答案）已知中，于，于，与交于点，求证.△ABCAD⊥BCDBE⊥ACEADBEHCH⊥",
+  "para_txt_full": "1.2.5-2．（衔接必会·卡壳看答案）已知中，于，于，与交于点，求证.△ABCAD⊥BCDBE⊥ACEADBEHCH⊥AB"
+ },
+ {
+  "idx": 31,
+  "docPr_id": "13",
+  "docPr_name": "图片 13",
+  "cx": 2613600,
+  "cy": 1870667,
+  "w_pt": 205.8,
+  "h_pt": 147.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【分析】如图，设内切圆的半径为，,代入即可求出三角形的内切圆的半径.IrS△ABC=S△ABI+S△ACI+S△BCI",
+  "para_txt_full": "【分析】如图，设内切圆的半径为，,代入即可求出三角形的内切圆的半径.IrS△ABC=S△ABI+S△ACI+S△BCI"
+ },
+ {
+  "idx": 32,
+  "docPr_id": "14",
+  "docPr_name": "图片 14",
+  "cx": 2469600,
+  "cy": 1447282,
+  "w_pt": 194.5,
+  "h_pt": 114.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】如图，设内切圆的半径为，所以.IrS△ABC=S△ABI+S△ACI+S△BCI=12r⋅AB+12r⋅AC+1",
+  "para_txt_full": "【详解】如图，设内切圆的半径为，所以.IrS△ABC=S△ABI+S△ACI+S△BCI=12r⋅AB+12r⋅AC+12r⋅BC=12r⋅AB+AC+BC=12r⋅a+b+c=Sr=2Sa+b+c"
+ },
+ {
+  "idx": 33,
+  "docPr_id": "15",
+  "docPr_name": "图片 15",
+  "cx": 2005200,
+  "cy": 1414001,
+  "w_pt": 157.9,
+  "h_pt": 111.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】证明：如图，连并延长交于.为三角形的内心，故平分，（角平分线性质定理）AOBCD∵OAD∠BAC∴ABAC=BD",
+  "para_txt_full": "【详解】证明：如图，连并延长交于.为三角形的内心，故平分，（角平分线性质定理）AOBCD∵OAD∠BAC∴ABAC=BDDC"
+ },
+ {
+  "idx": 34,
+  "docPr_id": "16",
+  "docPr_name": "图片 16",
+  "cx": 1544656,
+  "cy": 1769665,
+  "w_pt": 121.6,
+  "h_pt": 139.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】(1)如图，作于.AD⊥BCD",
+  "para_txt_full": "【详解】(1)如图，作于.AD⊥BCD"
+ },
+ {
+  "idx": 35,
+  "docPr_id": "17",
+  "docPr_name": "图片 17",
+  "cx": 1522800,
+  "cy": 1723810,
+  "w_pt": 119.9,
+  "h_pt": 135.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "(2)如图，为内心，则到三边的距离均为，IIr",
+  "para_txt_full": "(2)如图，为内心，则到三边的距离均为，IIr"
+ },
+ {
+  "idx": 36,
+  "docPr_id": "18",
+  "docPr_name": "图片 18",
+  "cx": 1526370,
+  "cy": 1714885,
+  "w_pt": 120.2,
+  "h_pt": 135.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "(3)是等腰三角形，外心在上，连，则中，，解得.∵△ABC∴OADBORtΔOBDOD=AD-ROB2=BD2+OD2∴",
+  "para_txt_full": "(3)是等腰三角形，外心在上，连，则中，，解得.∵△ABC∴OADBORtΔOBDOD=AD-ROB2=BD2+OD2∴R2=(22-R)2+12R=928"
+ },
+ {
+  "idx": 37,
+  "docPr_id": "21",
+  "docPr_name": "图片 21",
+  "cx": 615600,
+  "cy": 841117,
+  "w_pt": 48.5,
+  "h_pt": 66.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "，BC=20cm，AB=40cm，cm．故答案为：．∵∠C=90°AC=203203",
+  "para_txt_full": "，BC=20cm，AB=40cm，cm．故答案为：．∵∠C=90°AC=203203"
+ },
+ {
+  "idx": 38,
+  "docPr_id": "22",
+  "docPr_name": "图片 22",
+  "cx": 2446789,
+  "cy": 1698145,
+  "w_pt": 192.7,
+  "h_pt": 133.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】、、为的高，点为三条高线的交点，即是垂心，、为的高，，，∴ ，在和中，∴，∴，∴为等腰直角三角形，∴．故答案为：",
+  "para_txt_full": "【详解】、、为的高，点为三条高线的交点，即是垂心，、为的高，，，∴ ，在和中，∴，∴，∴为等腰直角三角形，∴．故答案为：.ADCEBF△ABCHH∵ADCE△ABC∴∠AEH=90°∠ADB=90°∠AHE=∠ABD∵△HAE△BCE∠AHE=∠ABD∠AEH=∠CEBAH=BC△HAE≅△BCEHE=BE△HEB∠B"
+ },
+ {
+  "idx": 39,
+  "docPr_id": "25",
+  "docPr_name": "图片 25",
+  "cx": 2289600,
+  "cy": 1306011,
+  "w_pt": 180.3,
+  "h_pt": 102.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】解：连接,由题可知，是中位线，，四边形为直角梯形，，.故答案为：.MNMN∴MN=1MNCB∴△MNC∼△NCB",
+  "para_txt_full": "【详解】解：连接,由题可知，是中位线，，四边形为直角梯形，，.故答案为：.MNMN∴MN=1MNCB∴△MNC∼△NCBMNNC=NCBC,NC=2BN2=NC2+BC2=2+4=6∴BN=66"
+ },
+ {
+  "idx": 40,
+  "docPr_id": "26",
+  "docPr_name": "图片 26",
+  "cx": 2263925,
+  "cy": 1588399,
+  "w_pt": 178.3,
+  "h_pt": 125.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】证明：如图",
+  "para_txt_full": "【详解】证明：如图"
+ },
+ {
+  "idx": 41,
+  "docPr_id": "100061",
+  "docPr_name": "图片 100061",
+  "cx": 1778400,
+  "cy": 1734241,
+  "w_pt": 140.0,
+  "h_pt": 136.6,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "(1)是一个定值；(2)也是一个定值．∠OIH-∠ABC∠OIH+∠ACB",
+  "para_txt_full": "(1)是一个定值；(2)也是一个定值．∠OIH-∠ABC∠OIH+∠ACB"
+ },
+ {
+  "idx": 42,
+  "docPr_id": "100063",
+  "docPr_name": "图片 100063",
+  "cx": 4320000,
+  "cy": 4409627,
+  "w_pt": 340.2,
+  "h_pt": 347.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "，、、、、五点共圆，，，，，，是一个定值；(2)，也是一个定值．∴∠BOC=∠BIC=∠BHC∴BOIHC∴∠OBC=∠",
+  "para_txt_full": "，、、、、五点共圆，，，，，，是一个定值；(2)，也是一个定值．∴∠BOC=∠BIC=∠BHC∴BOIHC∴∠OBC=∠OCB=30°∠CIH=∠CBH=α∠OIC=180°-∠OBC=150°∴∠OIH=150°+α∴∠OIH-∠ABC=(150°+α)-(30°+α)=120°∴∠OIH-∠ABC∠OIH+∠ACB"
+ }
+]

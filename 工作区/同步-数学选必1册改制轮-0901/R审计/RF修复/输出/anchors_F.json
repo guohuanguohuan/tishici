@@ -1,0 +1,991 @@
+[
+ {
+  "idx": 1,
+  "docPr_id": "100007",
+  "docPr_name": "",
+  "cx": 3081600,
+  "cy": 2749531,
+  "w_pt": 242.6,
+  "h_pt": 216.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "如下图，当为圆O在x轴右侧交点，此时，显然直线垂直于x轴，在点右侧；Pr=1ABQ",
+  "para_txt_full": "如下图，当为圆O在x轴右侧交点，此时，显然直线垂直于x轴，在点右侧；Pr=1ABQ"
+ },
+ {
+  "idx": 2,
+  "docPr_id": "100009",
+  "docPr_name": "",
+  "cx": 3740400,
+  "cy": 2765890,
+  "w_pt": 294.5,
+  "h_pt": 217.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "如下图，当为圆O在x轴左侧交点，此时，显然直线也垂直于x轴，在点左侧；Pr=3ABQ",
+  "para_txt_full": "如下图，当为圆O在x轴左侧交点，此时，显然直线也垂直于x轴，在点左侧；Pr=3ABQ"
+ },
+ {
+  "idx": 3,
+  "docPr_id": "100011",
+  "docPr_name": "",
+  "cx": 2755276,
+  "cy": 3240000,
+  "w_pt": 217.0,
+  "h_pt": 255.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "D：由题意，与交于C且垂直平分，OPABOPAB",
+  "para_txt_full": "D：由题意，与交于C且垂直平分，OPABOPAB"
+ },
+ {
+  "idx": 4,
+  "docPr_id": "100007",
+  "docPr_name": "",
+  "cx": 4571622,
+  "cy": 1703968,
+  "w_pt": 360.0,
+  "h_pt": 134.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "特别地，在处理圆上的动点问题时，我们一般将关于圆上的动点的条件转化为关于圆心的条件（圆心位置固定，更易于找关系），然后加",
+  "para_txt_full": "特别地，在处理圆上的动点问题时，我们一般将关于圆上的动点的条件转化为关于圆心的条件（圆心位置固定，更易于找关系），然后加以处理．"
+ },
+ {
+  "idx": 5,
+  "docPr_id": "100017",
+  "docPr_name": "",
+  "cx": 1818000,
+  "cy": 1805799,
+  "w_pt": 143.1,
+  "h_pt": 142.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】如下图所示：",
+  "para_txt_full": "【详解】如下图所示："
+ },
+ {
+  "idx": 6,
+  "docPr_id": "100115",
+  "docPr_name": "",
+  "cx": 1368000,
+  "cy": 1300821,
+  "w_pt": 107.7,
+  "h_pt": 102.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.4-5．（中档·保80%·卡壳看答案）已知圆，为圆内一点，将圆折起使得圆周过点（如图），然后将纸片展开，得到一条折痕",
+  "para_txt_full": "2.4-5．（中档·保80%·卡壳看答案）已知圆，为圆内一点，将圆折起使得圆周过点（如图），然后将纸片展开，得到一条折痕，这样继续下去将会得到若干折痕，观察这些折痕围成的轮廓是一条圆锥曲线，则该圆锥曲线的方程为（    ）C:(x−2)2+y2=64F−2,0Fl"
+ },
+ {
+  "idx": 7,
+  "docPr_id": "100117",
+  "docPr_name": "",
+  "cx": 2230951,
+  "cy": 2035104,
+  "w_pt": 175.7,
+  "h_pt": 160.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "则点A在圆周上，折痕为线段的垂直平分线，如图所示：lAF",
+  "para_txt_full": "则点A在圆周上，折痕为线段的垂直平分线，如图所示：lAF"
+ },
+ {
+  "idx": 8,
+  "docPr_id": "100013",
+  "docPr_name": "",
+  "cx": 1962000,
+  "cy": 2305987,
+  "w_pt": 154.5,
+  "h_pt": 181.6,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "所以点的轨迹是以为直径的圆，则其圆心为，半径为，故可得点的轨迹方程为MOF12，012Mx-122+y2=14",
+  "para_txt_full": "所以点的轨迹是以为直径的圆，则其圆心为，半径为，故可得点的轨迹方程为MOF12，012Mx-122+y2=14"
+ },
+ {
+  "idx": 9,
+  "docPr_id": "100017",
+  "docPr_name": "",
+  "cx": 1414155,
+  "cy": 1140448,
+  "w_pt": 111.4,
+  "h_pt": 89.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.4-7．（中档·保80%·卡壳看答案），为椭圆上的两个动点，且，过原点作直线的垂线，求的轨迹方程.Q1Q2x22b2",
+  "para_txt_full": "2.4-7．（中档·保80%·卡壳看答案），为椭圆上的两个动点，且，过原点作直线的垂线，求的轨迹方程.Q1Q2x22b2+y2b2=1OQ1⊥OQ2OQ1Q2ODD"
+ },
+ {
+  "idx": 10,
+  "docPr_id": "100125",
+  "docPr_name": "",
+  "cx": 2282400,
+  "cy": 2395890,
+  "w_pt": 179.7,
+  "h_pt": 188.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.4-10．（中档·保80%·卡壳看答案）已知点、以及直线，设长为的线段在直线l上移动（如图所示），求直线和的交点M的",
+  "para_txt_full": "2.4-10．（中档·保80%·卡壳看答案）已知点、以及直线，设长为的线段在直线l上移动（如图所示），求直线和的交点M的轨迹方程．P−2,2Q0,2l:y=x2ABPAQB"
+ },
+ {
+  "idx": 11,
+  "docPr_id": "100127",
+  "docPr_name": "",
+  "cx": 2282400,
+  "cy": 2395890,
+  "w_pt": 179.7,
+  "h_pt": 188.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "∴轨迹的图形是双曲线，它的中心是点，焦点在直线上．−1,−1x=−1",
+  "para_txt_full": "∴轨迹的图形是双曲线，它的中心是点，焦点在直线上．−1,−1x=−1"
+ },
+ {
+  "idx": 12,
+  "docPr_id": "100005",
+  "docPr_name": "",
+  "cx": 2916000,
+  "cy": 1340839,
+  "w_pt": 229.6,
+  "h_pt": 105.6,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.4-15．（难·冲100%·卡壳看答案）双纽线，也称伯努利双纽线，伯努利双纽线的描述首见于1694年，雅各布·伯努利",
+  "para_txt_full": "2.4-15．（难·冲100%·卡壳看答案）双纽线，也称伯努利双纽线，伯努利双纽线的描述首见于1694年，雅各布·伯努利将其作为椭圆的一种类比来处理.椭圆是由到两个定点距离之和为定值的点的轨迹，而卡西尼卵形线则是由到两定点距离之乘积为定值的点的轨迹，当此定值使得轨迹经过两定点的中点时，轨迹便为伯努利双纽线.伯努利将这种"
+ },
+ {
+  "idx": 13,
+  "docPr_id": "100119",
+  "docPr_name": "",
+  "cx": 3816000,
+  "cy": 3031600,
+  "w_pt": 300.5,
+  "h_pt": 238.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "所以，即的最小值为.故选：DPM−PN≥PF2−13−PD−1=3−13PM−PN3−13",
+  "para_txt_full": "所以，即的最小值为.故选：DPM−PN≥PF2−13−PD−1=3−13PM−PN3−13"
+ },
+ {
+  "idx": 14,
+  "docPr_id": "100019",
+  "docPr_name": "",
+  "cx": 2044800,
+  "cy": 2056418,
+  "w_pt": 161.0,
+  "h_pt": 161.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "  的最小值为.故选：B∴|PA+PB|42−23",
+  "para_txt_full": "  的最小值为.故选：B∴|PA+PB|42−23"
+ },
+ {
+  "idx": 15,
+  "docPr_id": "100029",
+  "docPr_name": "",
+  "cx": 2268000,
+  "cy": 2255674,
+  "w_pt": 178.6,
+  "h_pt": 177.6,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】设的中点为，因为，故，由垂径定理，，故.即，所以，因为，且，故，即，故，故的轨迹方程为，所以的最小值为.MPQ3",
+  "para_txt_full": "【详解】设的中点为，因为，故，由垂径定理，，故.即，所以，因为，且，故，即，故，故的轨迹方程为，所以的最小值为.MPQ32,32AB⊥CDPN=12AC=ANAN2+MN2=AM2=4PN2+MN2=AM2=4NQ+QM2+NQ+QP2=42NQ2+2NQ⋅QM+NQ⋅QP+QM2+QP2=4QP=−QMQP=QM=2"
+ },
+ {
+  "idx": 16,
+  "docPr_id": "4",
+  "docPr_name": "",
+  "cx": 3168000,
+  "cy": 1077005,
+  "w_pt": 249.4,
+  "h_pt": 84.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "若点P在抛物线C上，则根据抛物线的定义有点P到焦点的距离等于到准线的距离．此时就可以将点P到焦点的距离与点P到准线的距离",
+  "para_txt_full": "若点P在抛物线C上，则根据抛物线的定义有点P到焦点的距离等于到准线的距离．此时就可以将点P到焦点的距离与点P到准线的距离互相转化（常用辅助线：连接抛物线上一点与焦点或过焦点作抛物线准线的垂线）．"
+ },
+ {
+  "idx": 17,
+  "docPr_id": "100015",
+  "docPr_name": "",
+  "cx": 2116800,
+  "cy": 2045286,
+  "w_pt": 166.7,
+  "h_pt": 161.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "因为，可知圆与圆内切于点，MM2=2=r2−rMM2A−2,0",
+  "para_txt_full": "因为，可知圆与圆内切于点，MM2=2=r2−rMM2A−2,0"
+ },
+ {
+  "idx": 18,
+  "docPr_id": "100005",
+  "docPr_name": "",
+  "cx": 3074400,
+  "cy": 2298876,
+  "w_pt": 242.1,
+  "h_pt": 181.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "如图，根据椭圆定义可得：，PA+PF1=2a−PF2+PA=10+PA−PF2",
+  "para_txt_full": "如图，根据椭圆定义可得：，PA+PF1=2a−PF2+PA=10+PA−PF2"
+ },
+ {
+  "idx": 19,
+  "docPr_id": "17",
+  "docPr_name": "",
+  "cx": 2696400,
+  "cy": 2187386,
+  "w_pt": 212.3,
+  "h_pt": 172.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】由于，所以，，故，设，当为短轴端点时，最大，此时为等边三角形，所以，x24+y23=1a=2b=3F1F2=2∠",
+  "para_txt_full": "【详解】由于，所以，，故，设，当为短轴端点时，最大，此时为等边三角形，所以，x24+y23=1a=2b=3F1F2=2∠F1PF2=θPθ△F1PF20<θ≤π3"
+ },
+ {
+  "idx": 20,
+  "docPr_id": "21",
+  "docPr_name": "",
+  "cx": 2876550,
+  "cy": 2486025,
+  "w_pt": 226.5,
+  "h_pt": 195.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "∴椭圆的离心率为．故选：A﹒12",
+  "para_txt_full": "∴椭圆的离心率为．故选：A﹒12"
+ },
+ {
+  "idx": 21,
+  "docPr_id": "24",
+  "docPr_name": "",
+  "cx": 3060000,
+  "cy": 2562750,
+  "w_pt": 240.9,
+  "h_pt": 201.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "设内切圆与、、的切点分别为M、N、T，可得，.由，，可得，可得T的坐标为，即Ⅰ的横坐标为a，故D正确；故选BCD.PF1",
+  "para_txt_full": "设内切圆与、、的切点分别为M、N、T，可得，.由，，可得，可得T的坐标为，即Ⅰ的横坐标为a，故D正确；故选BCD.PF1PF2F1F2|PM|=|PN|，F1M=F1TF2N=F2TPF1−PF2=F1M−F2N=F1T−F2T=2aF1F2=F1T+F2T=2cF2T=c−aa,0"
+ },
+ {
+  "idx": 22,
+  "docPr_id": "23",
+  "docPr_name": "",
+  "cx": 1400400,
+  "cy": 1687096,
+  "w_pt": 110.3,
+  "h_pt": 132.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "因为，，所以，，故选项D正确，故选ACD．a=2r1r2=4c=4b=c2−a2=23",
+  "para_txt_full": "因为，，所以，，故选项D正确，故选ACD．a=2r1r2=4c=4b=c2−a2=23"
+ },
+ {
+  "idx": 23,
+  "docPr_id": "26",
+  "docPr_name": "",
+  "cx": 2727000,
+  "cy": 3240000,
+  "w_pt": 214.7,
+  "h_pt": 255.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】设圆M与△的三边分别切于点D，P，E，设E为，如下图示：AF1F2(t,0)",
+  "para_txt_full": "【详解】设圆M与△的三边分别切于点D，P，E，设E为，如下图示：AF1F2(t,0)"
+ },
+ {
+  "idx": 24,
+  "docPr_id": "29",
+  "docPr_name": "",
+  "cx": 2563200,
+  "cy": 1514618,
+  "w_pt": 201.8,
+  "h_pt": 119.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "由勾股定理，，所以，解得．(c+2a)2+c2=(2c)2⇒c2=2a2+2ace2=2+2ee=3+1",
+  "para_txt_full": "由勾股定理，，所以，解得．(c+2a)2+c2=(2c)2⇒c2=2a2+2ace2=2+2ee=3+1"
+ },
+ {
+  "idx": 25,
+  "docPr_id": "100021",
+  "docPr_name": "",
+  "cx": 2966400,
+  "cy": 1942992,
+  "w_pt": 233.6,
+  "h_pt": 153.0,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.5.1-26．（中档·保80%·卡壳看答案）船上两根高7.5m的桅杆相距15m，一条30m长的绳子两端系在桅杆的顶上",
+  "para_txt_full": "2.5.1-26．（中档·保80%·卡壳看答案）船上两根高7.5m的桅杆相距15m，一条30m长的绳子两端系在桅杆的顶上，并按如图所示的方式绷紧．假设绳子位于两根桅杆所在的平面内，求绳子与甲板接触点P到桅杆AB的距离（精确到0.01m）．"
+ },
+ {
+  "idx": 26,
+  "docPr_id": "100007",
+  "docPr_name": "",
+  "cx": 3347085,
+  "cy": 860107,
+  "w_pt": 263.6,
+  "h_pt": 67.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "（2）在双曲线中，e=ca=2c2a=F1F2PF1−PF2",
+  "para_txt_full": "（2）在双曲线中，e=ca=2c2a=F1F2PF1−PF2"
+ },
+ {
+  "idx": 27,
+  "docPr_id": "100011",
+  "docPr_name": "",
+  "cx": 2138400,
+  "cy": 1310979,
+  "w_pt": 168.4,
+  "h_pt": 103.2,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】以为斜边的等腰直角三角形与椭圆有两个不同的交点，且，，，，．故答案为：F1F2PF1F2MNMN=13F1F2∴",
+  "para_txt_full": "【详解】以为斜边的等腰直角三角形与椭圆有两个不同的交点，且，，，，．故答案为：F1F2PF1F2MNMN=13F1F2∴N(13c,23c)∵NF1+NF2=(c3−c)2+(2c3)2+(c3+c)2+(2c3)2=2a22c3+25c3=2a∴e=ca=35+2=5−25−2"
+ },
+ {
+  "idx": 28,
+  "docPr_id": "100009",
+  "docPr_name": "",
+  "cx": 2700000,
+  "cy": 791685,
+  "w_pt": 212.6,
+  "h_pt": 62.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "因为直线与平行，直线与平行，于是两条直线的夹角α满足．y=k1x+b1a=1,k1y=k2x+b2b=1,k2cosα=",
+  "para_txt_full": "因为直线与平行，直线与平行，于是两条直线的夹角α满足．y=k1x+b1a=1,k1y=k2x+b2b=1,k2cosα=a⋅bab=1+k1k21+k12⋅1+k22"
+ },
+ {
+  "idx": 29,
+  "docPr_id": "47",
+  "docPr_name": "图片 100029",
+  "cx": 2145600,
+  "cy": 1731990,
+  "w_pt": 168.9,
+  "h_pt": 136.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.5.2-14．（中档·保80%·卡壳看答案）如图所示，A1，A2是椭圆C：的短轴端点，点M在椭圆上运动，且点M不与A",
+  "para_txt_full": "2.5.2-14．（中档·保80%·卡壳看答案）如图所示，A1，A2是椭圆C：的短轴端点，点M在椭圆上运动，且点M不与A1，A2重合，点N满足NA1⊥MA1，NA2⊥MA2，则＝x218＋y29＝1SΔMA1A2SΔNA1A2"
+ },
+ {
+  "idx": 30,
+  "docPr_id": "100003",
+  "docPr_name": "",
+  "cx": 1692000,
+  "cy": 1703168,
+  "w_pt": 133.2,
+  "h_pt": 134.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】如图, 设, 而, 则Q2cosα,sinαC0,2CQ2=4cos2α+sinα−22=−3sinα+232+",
+  "para_txt_full": "【详解】如图, 设, 而, 则Q2cosα,sinαC0,2CQ2=4cos2α+sinα−22=−3sinα+232+283⩽283"
+ },
+ {
+  "idx": 31,
+  "docPr_id": "100017",
+  "docPr_name": "",
+  "cx": 2736000,
+  "cy": 1567357,
+  "w_pt": 215.4,
+  "h_pt": 123.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.5.2-21．（中档·保80%·卡壳看答案）人造地球卫星绕地球运行遵循开普勒行星运动定律:如图，卫星在以地球的中心为",
+  "para_txt_full": "2.5.2-21．（中档·保80%·卡壳看答案）人造地球卫星绕地球运行遵循开普勒行星运动定律:如图，卫星在以地球的中心为焦点的椭圆轨道上绕地球运行时，其运行速度是变化的，速度的变化服从面积守恒规律，即卫星的向径(卫星与地心的连线)在相同的时间内扫过的面积相等设该椭圆的长轴长、焦距分别为，.某同学根据所学知识，得到下列结"
+ },
+ {
+  "idx": 32,
+  "docPr_id": "100019",
+  "docPr_name": "",
+  "cx": 2772000,
+  "cy": 2321726,
+  "w_pt": 218.3,
+  "h_pt": 182.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "综上，正确结论的序号是①③，共2个．故选．B",
+  "para_txt_full": "综上，正确结论的序号是①③，共2个．故选．B"
+ },
+ {
+  "idx": 33,
+  "docPr_id": "100011",
+  "docPr_name": "",
+  "cx": 3658064,
+  "cy": 3240000,
+  "w_pt": 288.0,
+  "h_pt": 255.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "如图，连接，设内切圆半径为，则，即，，∴，∴∴，∴．故答案为：；．MF1,MF2△PF1F2r12PF1r+12PF2r",
+  "para_txt_full": "如图，连接，设内切圆半径为，则，即，，∴，∴∴，∴．故答案为：；．MF1,MF2△PF1F2r12PF1r+12PF2r+12F1F2r=S△PF1F212(2a+2c)r=S△PF1F212F1F2r=S△MF1F2=12⋅2c⋅ra+cc=S△PF1F2S△MF1F2=PNMNMN=ca+cPNPM=1−ca+cP"
+ },
+ {
+  "idx": 34,
+  "docPr_id": "100009",
+  "docPr_name": "",
+  "cx": 2084400,
+  "cy": 2386487,
+  "w_pt": 164.1,
+  "h_pt": 187.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.5.2-24．（难·冲100%·卡壳看答案）“脸谱”是戏曲舞台演出时的化妆造型艺术，更是中国传统戏曲文化的重要载体如",
+  "para_txt_full": "2.5.2-24．（难·冲100%·卡壳看答案）“脸谱”是戏曲舞台演出时的化妆造型艺术，更是中国传统戏曲文化的重要载体如图，“脸谱”图形可近似看作由半圆和半椭圆组成的曲线C，其方程为．则下列说法正确的是（    ）x2+y2=4，y>0x24+y29=1，y≤0"
+ },
+ {
+  "idx": 35,
+  "docPr_id": "100015",
+  "docPr_name": "",
+  "cx": 2138400,
+  "cy": 2138400,
+  "w_pt": 168.4,
+  "h_pt": 168.4,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "2.5.2-26．（难·冲100%·卡壳看答案）椭圆C：的上、下顶点分别为A，C，如图，点B在椭圆上，平面四边形ABCD",
+  "para_txt_full": "2.5.2-26．（难·冲100%·卡壳看答案）椭圆C：的上、下顶点分别为A，C，如图，点B在椭圆上，平面四边形ABCD满足，且，则该椭圆的短轴长为_________．x218+y2b2=1∠BAD=∠BCD=90°S△ABC=2S△ADC"
+ },
+ {
+  "idx": 36,
+  "docPr_id": "100021",
+  "docPr_name": "",
+  "cx": 1522800,
+  "cy": 1108176,
+  "w_pt": 119.9,
+  "h_pt": 87.3,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "综上，动点的轨迹方程为．Px2+y2=9",
+  "para_txt_full": "综上，动点的轨迹方程为．Px2+y2=9"
+ },
+ {
+  "idx": 37,
+  "docPr_id": "100015",
+  "docPr_name": "",
+  "cx": 1864800,
+  "cy": 1385280,
+  "w_pt": 146.8,
+  "h_pt": 109.1,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】椭圆的两条互相垂直的切线的交点轨迹方程为，若恒为锐角，则直线与圆相离，故．又∵，∴，∴．Cx2+y2=a2+1∠",
+  "para_txt_full": "【详解】椭圆的两条互相垂直的切线的交点轨迹方程为，若恒为锐角，则直线与圆相离，故．又∵，∴，∴．Cx2+y2=a2+1∠APB3x+4y−10=0x2+y2=a2+1109+16>a2+1a>11<a<3e=ca=a2−1a=1−1a2∈0,63"
+ },
+ {
+  "idx": 38,
+  "docPr_id": "100017",
+  "docPr_name": "",
+  "cx": 1810362,
+  "cy": 1634599,
+  "w_pt": 142.5,
+  "h_pt": 128.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】若由向椭圆引两条切线，且与的夹角为钝角，那么为椭圆外部及其蒙日圆内部的阴影区域（不包括边界），如图所示．的蒙日圆",
+  "para_txt_full": "【详解】若由向椭圆引两条切线，且与的夹角为钝角，那么为椭圆外部及其蒙日圆内部的阴影区域（不包括边界），如图所示．的蒙日圆方程为，圆心到的距离为，故点到直线的距离的取值范围是．Ml1,l2l1l2MCx216+y29=1x2+y2=25Old=6212+12=6Ml1,11"
+ },
+ {
+  "idx": 39,
+  "docPr_id": "100019",
+  "docPr_name": "",
+  "cx": 2772000,
+  "cy": 2688506,
+  "w_pt": 218.3,
+  "h_pt": 211.7,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "又原点到直线的距离，∴，令，得到．故面积的取值范围为.OABd=1x024+y02=233y02+1S△OAB=12AB",
+  "para_txt_full": "又原点到直线的距离，∴，令，得到．故面积的取值范围为.OABd=1x024+y02=233y02+1S△OAB=12AB⋅d=2⋅y02+1y02+3t=y02+1∈1,2S△OAB=2tt2+2=2⋅1t+2t∈23,22△AOB23,22"
+ },
+ {
+  "idx": 40,
+  "docPr_id": "100027",
+  "docPr_name": "",
+  "cx": 2772000,
+  "cy": 2488120,
+  "w_pt": 218.3,
+  "h_pt": 195.9,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "对于D，若矩形的对角线所在直线为坐标轴时，如图，其面积最大，最大值为，D正确．故选：AD．MNGH12×23b×23b=",
+  "para_txt_full": "对于D，若矩形的对角线所在直线为坐标轴时，如图，其面积最大，最大值为，D正确．故选：AD．MNGH12×23b×23b=6b2"
+ },
+ {
+  "idx": 41,
+  "docPr_id": "100031",
+  "docPr_name": "",
+  "cx": 1000125,
+  "cy": 1000125,
+  "w_pt": 78.8,
+  "h_pt": 78.8,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "【详解】因为椭圆，所以，故，，如图，令，C:x24+y2=1a2=4,b2=1a=2,b=1c2=a2−b2=3PF1⋅",
+  "para_txt_full": "【详解】因为椭圆，所以，故，，如图，令，C:x24+y2=1a2=4,b2=1a=2,b=1c2=a2−b2=3PF1⋅PF2=m"
+ },
+ {
+  "idx": 42,
+  "docPr_id": "100035",
+  "docPr_name": "",
+  "cx": 2916000,
+  "cy": 2916000,
+  "w_pt": 229.6,
+  "h_pt": 229.6,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "如图，设点，则①，Px0,y0x02+y02=34",
+  "para_txt_full": "如图，设点，则①，Px0,y0x02+y02=34"
+ },
+ {
+  "idx": 43,
+  "docPr_id": "100037",
+  "docPr_name": "",
+  "cx": 2916000,
+  "cy": 2952911,
+  "w_pt": 229.6,
+  "h_pt": 232.5,
+  "positionV": {
+   "rel": "paragraph",
+   "offset": 0,
+   "align": null
+  },
+  "positionH": {
+   "rel": "column",
+   "offset": 0,
+   "align": null
+  },
+  "wrap": "wrapSquare",
+  "allowOverlap": "0",
+  "para_txt": "过圆上任意一点作椭圆的两条切线，则这两条切线互相垂直．x2+y2=a2+b2Qm,nx2a2+y2b2=1",
+  "para_txt_full": "过圆上任意一点作椭圆的两条切线，则这两条切线互相垂直．x2+y2=a2+b2Qm,nx2a2+y2b2=1"
+ }
+]
