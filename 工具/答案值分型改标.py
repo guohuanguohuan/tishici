@@ -1,18 +1,19 @@
 # -*- coding: utf-8 -*-
 """答案值分型改标.py — 2026-09-01 A'改制轮（T4·工具债⑤，口径E／公共规则§7答案值标记·分型标记款）。
-【答案】标签后答案值与需背内容（知识清单填空/讲部挖空等既有 C9C9C9 灰底标记）分型改标：
-  文字型（纯文字 run）＝C9C9C9 灰底＋深蓝 #1F4E79；公式型（值内含 OMML）＝剥该值灰底、纯深蓝；
-  混合型整值按公式型；多值各标各的（；;分隔＋子问 (N) 前缀边界）；值间分隔符与缝隙剥灰防连片；
+【答案】标签后答案值与需背内容（知识清单填空/讲部挖空等既有 C9C9C9 灰底标记）分型改标
+（2026-09-02 A''成品轮改造——深蓝 #1F4E79 全体系废止、统一灰底制）：
+  文字型（纯文字 run）＝C9C9C9 灰底＋剥深蓝；公式型（值内含 OMML）＝挂灰（OMML挂法：m:r/ctrlPr
+  的 w:rPr 内 w:shd、分数整块覆盖——同知识清单填空标记方案）＋剥深蓝；混合型整值按公式型；多值各标各的（；;分隔＋子问 (N) 前缀边界）；值间分隔符与缝隙剥灰防连片；
   答案跨段续值段（【答案】行后文字空白-only 含公式的段落）并入末值处理；
   与【答案】/【知识点】芯片间保留空格（缺则补一个半角空格并登记——唯一授权文字增量）；
   芯片【×】黑字不变（chip/题号/条目号/第一子层/并行解法标记 run 的 text·shd·color 指纹前后恒等断言）。
-  需背内容同款分型：值区以外的灰底标记按「连续灰底簇」清点——簇内含灰 OMML 即公式型剥灰保深蓝，
-  纯文字簇保灰底并确保深蓝；导航表头（tcPr 级 C9C9C9 单元格）内 run 不触碰；段首题号/条目号/（N）
+  需背内容同款分型：值区以外的灰底标记按「连续灰底簇」清点——簇内含灰 OMML 即公式型同挂灰（A''统一），
+  纯文字簇保灰底并剥深蓝；导航表头（tcPr 级 C9C9C9 单元格）内 run 不触碰；段首题号/条目号/（N）
   锚 run 不入簇。
-  恒等式＝文字型灰底run数＋公式型深蓝run数＝答案值数（值级计数，口径同 工具/块标签芯片.py 的
+  恒等式＝文字型灰底run数＋公式型挂灰oMath值数＝答案值数（值级计数，口径同 工具/块标签芯片.py 的
   「答案值文字run」按值计；文字型 rPr 相同且相邻的 run 拼回单 run，斜体变量等 rPr 差异依法保留
-  不硬并、多 run 值登记；公式型每值整值深蓝无灰底）；写盘后独立复核道重算恒等式。
-  全局剥离断言：处理后全文 m:r/ctrlPr 的 C9C9C9 挂点＝0（公式型的灰全剥；文字型值/簇不含 OMML）。
+  不硬并、多 run 值登记；公式型每值整值挂灰）；写盘后独立复核道重算恒等式。
+  全局断言（A''）：处理后全文 w:color val=1F4E79 挂点＝0（深蓝废止——run级与OMML级双扫）。
   幂等：二跑零改动；块边界参照 工具/extract_structure.py（题号兼容全局 N．与层级制 节号-序号．）；
   不动公式内容与字体（Cambria Math/PUA 不触碰——OMML定论）。
 用法: python 答案值分型改标.py <docx...> [--report 报告.txt] [--dry-run] [--verify] [--no-recite] [--detail N]
@@ -275,6 +276,17 @@ def ensure_color(rpr, val=BLUE):
     return False
 
 
+def strip_blue(rpr):
+    """A''深蓝废止：删除 w:color val=1F4E79（其他颜色值不碰）。返回是否删除。"""
+    if rpr is None:
+        return False
+    c = rpr.find(q('color'))
+    if c is not None and c.get(q('val')) == BLUE:
+        rpr.remove(c)
+        return True
+    return False
+
+
 def om_hosts(om):
     for e in om.iter():
         if etree.QName(e).namespace != M:
@@ -282,6 +294,21 @@ def om_hosts(om):
         t2 = tag(e)
         if t2 in ('r', 'ctrlPr'):
             yield e, t2
+
+
+def run_is_blue(r):
+    rpr = r.find(q('rPr'))
+    if rpr is None:
+        return False
+    c = rpr.find(q('color'))
+    return c is not None and c.get(q('val')) == BLUE
+
+
+def om_is_blue(om):
+    for host, _ in om_hosts(om):
+        if run_is_blue(host):
+            return True
+    return False
 
 
 def om_is_gray(om):
@@ -294,13 +321,13 @@ def om_is_gray(om):
 
 
 def treat_omath(om, stats):
-    """公式整块：剥全部 m:r/ctrlPr 的 w:rPr shd，确保深蓝。"""
+    """A''统一灰底（2026-09-02）：公式整块挂 C9C9C9（m:r/ctrlPr 的 w:rPr，分数整块覆盖——OMML挂法）＋剥深蓝。"""
     for host, kind in om_hosts(om):
         rpr = rpr_of(host)
-        if strip_shd(rpr):
-            stats['剥shd_' + ('mr' if kind == 'r' else 'ctrl')] += 1
-        if ensure_color(rpr):
-            stats['设深蓝_' + ('mr' if kind == 'r' else 'ctrl')] += 1
+        if ensure_shd(rpr):
+            stats['挂shd_' + ('mr' if kind == 'r' else 'ctrl')] += 1
+        if strip_blue(rpr):
+            stats['剥深蓝_' + ('mr' if kind == 'r' else 'ctrl')] += 1
 
 
 def merge_runs(runs, stats):
@@ -467,6 +494,19 @@ def count_omml_gray(doc):
     return n
 
 
+def count_omml_blue(doc):
+    """A''深蓝废止断言用：OMML 宿主 rPr 内 w:color val=1F4E79 挂点数（期望 0）。"""
+    n = 0
+    for rpr in doc.iter(q('rPr')):
+        par = rpr.getparent()
+        if par is None or etree.QName(par).namespace != M or tag(par) not in ('r', 'ctrlPr'):
+            continue
+        c = rpr.find(q('color'))
+        if c is not None and c.get(q('val')) == BLUE:
+            n += 1
+    return n
+
+
 def runs_in_span(p, s, e):
     """只读：w:t 流 [s,e) 覆盖的 run——(完全落入列表, 部分重叠数)。"""
     full_in, partial = [], 0
@@ -546,10 +586,10 @@ def process(path, args):
                     if pe > ps:
                         for r in isolate_runs(p, ps, pe, warn):
                             rpr = rpr_of(r)
-                            if strip_shd(rpr):
-                                stats['剥shd_run'] += 1
-                            if ensure_color(rpr):
-                                stats['设深蓝_run'] += 1
+                            if ensure_shd(rpr):
+                                stats['挂shd_run'] += 1
+                            if strip_blue(rpr):
+                                stats['剥深蓝_run'] += 1
                     for om in oms:
                         treat_omath(om, stats)
                     stats['公式型值'] += 1
@@ -559,7 +599,7 @@ def process(path, args):
                     for r in rs:
                         rpr = rpr_of(r)
                         ensure_shd(rpr)
-                        ensure_color(rpr)
+                        strip_blue(rpr)
                     stats['物理灰run'] += len(rs)
                     if len(rs) > 1:
                         stats['多run值'] += 1
@@ -642,7 +682,7 @@ def process(path, args):
                     rpr = el.find(q('rPr'))
                     shd = rpr.find(q('shd')) if rpr is not None else None
                     gray = shd is not None and shd.get(q('fill')) == FILL
-                    if not gray:
+                    if not gray and not run_is_blue(el):
                         k += 1
                         continue
                     chip = CHIP_RE.fullmatch(txt) and txt not in CHIP_BLACKLIST \
@@ -650,8 +690,8 @@ def process(path, args):
                     if chip or MARK_RUN_RE.match(txt) or id(el) in lead_excl:
                         k += 1
                         continue
-                else:  # 公式项：灰 OMML 可独立成簇起点
-                    if not om_is_gray(el):
+                else:  # 公式项：灰/蓝 OMML 可独立成簇起点（A''：纯蓝深蓝标记同入簇转灰）
+                    if not om_is_gray(el) and not om_is_blue(el):
                         k += 1
                         continue
                 j = k
@@ -666,11 +706,11 @@ def process(path, args):
                             and not CHIP_BLACKLIST_RE.match(t2)
                         if ch2 or MARK_RUN_RE.match(t2) or id(el2) in lead_excl:
                             break
-                        if shd2 is None or shd2.get(q('fill')) != FILL:
+                        if (shd2 is None or shd2.get(q('fill')) != FILL) and not run_is_blue(el2):
                             break
                         cluster.append((el2, 'r'))
                     else:
-                        if not om_is_gray(el2):
+                        if not om_is_gray(el2) and not om_is_blue(el2):
                             break
                         cluster.append((el2, 'om'))
                         has_om = True
@@ -681,17 +721,34 @@ def process(path, args):
                     for el3, k3 in cluster:
                         if k3 == 'r':
                             rpr3 = rpr_of(el3)
-                            if strip_shd(rpr3):
-                                stats['需背剥shd_run'] += 1
-                            ensure_color(rpr3)
+                            if ensure_shd(rpr3):
+                                stats['需背挂shd_run'] += 1
+                            if strip_blue(rpr3):
+                                stats['需背剥深蓝_run'] += 1
                         else:
                             treat_omath(el3, stats)
                 else:
                     recite['文字簇'] += 1
                     for el3, k3 in cluster:
-                        ensure_color(rpr_of(el3))
+                        rpr3 = rpr_of(el3)
+                        if ensure_shd(rpr3):
+                            stats['需背挂shd_run'] += 1
+                        if strip_blue(rpr3):
+                            stats['需背剥深蓝_run'] += 1
                 k = j
 
+    # A''全文兜底：簇外/值区外散点深蓝一律剥蓝（深蓝全体系废止；散点run按需背标记语境转灰——
+    # 保守口径：孤立蓝run若无灰底语境，仅剥蓝不挂灰（避免误扩标记面），登记计数供人工复核）
+    blue_orphan_run = 0
+    if not args.dry_run:
+        for r in doc.iter(q('r')):
+            par = r.getparent()
+            if par is None or tag(par) != 'p':
+                continue
+            rpr = r.find(q('rPr'))
+            if rpr is not None and strip_blue(rpr):
+                ensure_shd(rpr)          # A'蓝字即标记本体——换轴转灰底（非扩面）
+                blue_orphan_run += 1
     gray_om_after = count_omml_gray(doc)
     n_vals = stats['文字型值'] + stats['公式型值']
     lines = ['◆ %s' % basename]
@@ -699,23 +756,25 @@ def process(path, args):
                  % (len(blocks), n_vals, stats['文字型值'], stats['物理灰run'],
                     stats['公式型值'], '，dry-run 未写回' if args.dry_run else ''))
     if not args.no_recite:
-        lines.append('  需背簇 %d＝文字簇 %d＋公式簇 %d（公式簇剥灰保深蓝）'
+        lines.append('  需背簇 %d＝文字簇 %d＋公式簇 %d（A款统一灰底：公式簇挂灰OMML）'
                      % (recite['簇数'], recite['文字簇'], recite['公式簇']))
-    lines.append('  恒等式：文字型灰底run数 %d＋公式型深蓝run数 %d＝答案值数 %d %s'
+    lines.append('  恒等式：文字型灰底run数 %d＋公式型挂灰oMath值数 %d＝答案值数 %d %s'
                  % (stats['文字型值'], stats['公式型值'], n_vals,
                     '✓' if n_vals == stats['文字型值'] + stats['公式型值'] else '←≠'))
     lines.append('  run口径登记：文字型物理灰run %d（多run值 %d——斜体变量等 rPr 差异依法保留不硬并；'
                  '计数口径同 块标签芯片.py 按值计）｜合并run组 %d（未并 %d）'
                  % (stats['物理灰run'], stats['多run值'], stats['合并run组'],
                     stats['值rPr不一致未并'] + stats['值不相邻未并']))
-    lines.append('  剥离/补色：run剥灰 %d＋m:r剥灰 %d＋ctrlPr剥灰 %d＋分隔剥灰 %d＋需背run剥灰 %d｜'
-                 'run设蓝 %d＋m:r设蓝 %d＋ctrlPr设蓝 %d｜合并run组 %d（未并 %d）｜补空格 %d'
-                 % (stats['剥shd_run'], stats['剥shd_mr'], stats['剥shd_ctrl'], stats['剥shd_分隔'],
-                    stats['需背剥shd_run'], stats['设深蓝_run'], stats['设深蓝_mr'],
-                    stats['设深蓝_ctrl'], stats['合并run组'],
+    lines.append('  A2改标计数：run挂灰 %d＋m:r挂灰 %d＋ctrlPr挂灰 %d＋需背run挂灰 %d｜'
+                 'run剥深蓝 %d＋m:r剥深蓝 %d＋ctrlPr剥深蓝 %d＋需背run剥深蓝 %d＋分隔剥灰 %d｜合并run组 %d（未并 %d）｜补空格 %d'
+                 % (stats['挂shd_run'], stats['挂shd_mr'], stats['挂shd_ctrl'], stats.get('需背挂shd_run', 0),
+                    stats['剥深蓝_run'], stats['剥深蓝_mr'], stats['剥深蓝_ctrl'],
+                    stats['需背剥深蓝_run'], stats['剥shd_分隔'], stats['合并run组'],
                     stats['值rPr不一致未并'] + stats['值不相邻未并'], stats['补空格']))
-    lines.append('  全局断言：OMML灰挂点 前 %d→后 %d（期望 0）%s'
-                 % (gray_om_before, gray_om_after, '✓' if gray_om_after == 0 else '←≠'))
+    blue_om_after2 = count_omml_blue(doc)
+    lines.append('  全局断言：OMML深蓝挂点 后 %d（期望 0）%s｜散点蓝run转灰 %d｜OMML灰挂点 前 %d→后 %d'
+                 % (blue_om_after2, '✓' if blue_om_after2 == 0 else '←≠',
+                    blue_orphan_run, gray_om_before, gray_om_after))
     if args.detail:
         lines.append('  值明细（最多%d条）：' % args.detail)
         for bi, vi, ty, pv in vals[:args.detail]:
@@ -758,9 +817,9 @@ def verify(path, no_recite=False):
                             rpr = host.find(q('rPr'))
                             shd = rpr.find(q('shd')) if rpr is not None else None
                             col = rpr.find(q('color')) if rpr is not None else None
-                            if shd is not None and shd.get(q('fill')) == FILL:
+                            if shd is None or shd.get(q('fill')) != FILL:
                                 bad += 1
-                            if col is None or col.get(q('val')) != BLUE:
+                            if col is not None and col.get(q('val')) == BLUE:
                                 bad += 1
                     if pe > ps:
                         rs, part = runs_in_span(p, ps, pe)
@@ -768,7 +827,10 @@ def verify(path, no_recite=False):
                         for r in rs:
                             rpr = r.find(q('rPr'))
                             shd = rpr.find(q('shd')) if rpr is not None else None
-                            if shd is not None and shd.get(q('fill')) == FILL:
+                            col = rpr.find(q('color')) if rpr is not None else None
+                            if shd is None or shd.get(q('fill')) != FILL:
+                                bad += 1
+                            if col is not None and col.get(q('val')) == BLUE:
                                 bad += 1
                 else:
                     rs, part = runs_in_span(p, ps, pe)
@@ -783,15 +845,15 @@ def verify(path, no_recite=False):
                         col = rpr.find(q('color')) if rpr is not None else None
                         if shd is None or shd.get(q('fill')) != FILL:
                             bad += 1
-                        if col is None or col.get(q('val')) != BLUE:
+                        if col is not None and col.get(q('val')) == BLUE:
                             bad += 1
-    gray_om = count_omml_gray(doc)
+    blue_om = count_omml_blue(doc)
     n = W + F
-    ok = (bad == 0 and gray_om == 0)
-    return ('  复核（重开只读）：文字型灰底run数 %d＋公式型深蓝run数 %d＝答案值数 %d %s｜'
-            '文字型物理灰run %d（多run值 %d——rPr 差异保留登记）｜逐值违规 %d｜OMML灰挂点残留 %d（期望0）%s'
-            % (W, F, n, '✓' if W + F == n else '←≠', phys, multi, bad, gray_om,
-               '✓' if gray_om == 0 else '←≠')), ok
+    ok = (bad == 0 and blue_om == 0)
+    return ('  复核（重开只读）：文字型灰底run数 %d＋公式型挂灰oMath值数 %d＝答案值数 %d %s｜'
+            '文字型物理灰run %d（多run值 %d——rPr 差异保留登记）｜逐值违规 %d｜OMML深蓝挂点残留 %d（期望0）%s'
+            % (W, F, n, '✓' if W + F == n else '←≠', phys, multi, bad, blue_om,
+               '✓' if blue_om == 0 else '←≠')), ok
 
 
 def main():
