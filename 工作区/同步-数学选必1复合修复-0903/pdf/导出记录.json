@@ -1,0 +1,72 @@
+{
+ "X1": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 62.8,
+  "pages": 16,
+  "png_new": 16
+ },
+ "I1": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 54.8,
+  "pages": 14,
+  "png_new": 14
+ },
+ "B": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 149.6,
+  "pages": 53,
+  "png_new": 53
+ },
+ "C": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 156.4,
+  "pages": 60,
+  "png_new": 60
+ },
+ "X2": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 6,
+  "png_new": 0
+ },
+ "I2": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 87.6,
+  "pages": 28,
+  "png_new": 28
+ },
+ "E": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 88.6,
+  "pages": 49,
+  "png_new": 49
+ },
+ "F": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 141.2,
+  "pages": 52,
+  "png_new": 52
+ },
+ "G": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 87.1,
+  "pages": 37,
+  "png_new": 37
+ },
+ "H": {
+  "status": "OK",
+  "mode": "自动出件(尝试1)",
+  "seconds": 156.0,
+  "pages": 63,
+  "png_new": 63
+ }
+}
