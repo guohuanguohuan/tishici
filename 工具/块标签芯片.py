@@ -17,11 +17,17 @@
   详解序号①②③与选项A．B．不挂（拍板不采纳）。--legacy＝回退 2026-08-28 封闭五标签口径（兼容开关）。
  实现：每段先按未变动的 w:t 文本流算好全部挂灰区间，再按起点倒序逐个 isolate_runs 手术（只拆不并，
   跨 oMath 的区间逐 run 分别挂灰，避免文字/公式交错序移动），区间互不重叠、文本不增删，坐标不受前次手术影响。
- 幂等：已是 C9C9C9 的 run 不重复计数。报告含「全挂核验」：逐标签文本出现数 vs 整标签已挂 run 数。"""
+ 幂等：已是 C9C9C9 的 run 不重复计数。报告含「全挂核验」：逐标签文本出现数 vs 整标签已挂 run 数。
+ 2026-09-04 减法口径改造（选必1⓪复合修复轮子步2，工具债案6——附则《讲练件底纹减法》）：
+ 讲练件族（文件名含 讲练件/简单卷/中档卷/冲刺卷/实验卷）四类底纹已废止——shade 阶段对该族
+ 拒绝执行（防回挂；如需挂灰请确认对象非讲练件族或先撤附则）；spaces 阶段（防连片补空格，
+ 内容层）不受影响照常。"""
 import sys, io, zipfile, re, os, time
 from collections import Counter
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 from lxml import etree
+
+JLP_RE = re.compile(r'讲练件|简单卷|中档卷|冲刺卷|实验卷')   # 2026-09-04 减法口径：讲练件族 shade 禁行
 
 W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 M = 'http://schemas.openxmlformats.org/officeDocument/2006/math'
@@ -318,6 +324,11 @@ def value_spans(p):
     return spans, oms
 
 def phase_shade(path, report, legacy=False):
+    if JLP_RE.search(os.path.basename(path)):
+        sys.stderr.write('拒绝：%s 属讲练件族——四类底纹已废止（附则《讲练件底纹减法》2026-09-03甲案），'
+                         '本工具不再对其挂芯片/答案值灰底；如需剥除既有底纹用 工具/底纹去除器.py\n'
+                         % os.path.basename(path))
+        sys.exit(4)
     z = zipfile.ZipFile(path)
     parts = {n: z.read(n) for n in z.namelist()}
     z.close()

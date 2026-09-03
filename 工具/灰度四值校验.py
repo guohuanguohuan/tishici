@@ -14,8 +14,13 @@
       灰域[150,250]且不在任一带的连通像素簇（≥min_cluster 且 bbox 填充率≥0.25）＝离群像素簇清单
       （页码＋pt位置＋均值灰度）——供扫描件/位图底纹兜底。
 用法: python 灰度四值校验.py <pdf> [--report out.txt] [--dpi 144] [--tol 8]
-                            [--pages 1-5|all|3,7] [--min-cluster 400]
-输出: 报告文本（stdout＋--report 落盘），供排版自检/§14校验引用；只读 PDF，不改任何文件。"""
+                            [--pages 1-5|all|3,7] [--min-cluster 400] [--jlp]
+输出: 报告文本（stdout＋--report 落盘），供排版自检/§14校验引用；只读 PDF，不改任何文件。
+2026-09-04 减法口径改造（选必1⓪复合修复轮子步2，工具债案6——附则《讲练件底纹减法》甲案改文）：
+ --jlp＝讲练件族口径：201（#C9C9C9）来源断言改「条目号底纹＋第一子层底纹＋讲部条目需背灰底
+ 三源合计（＋导航表表头 §6 样式位 tcPr）」——矢量层 201 填充矩形逐个取覆盖文本归因分桶
+ （条目号式／第一子层式／导航表表头／讲部需背·待核），非四源清单逐项列出供人工过目；
+ 190/209/224 三值照旧。190/209/224 测量引擎零改动（冒烟＝同件改造前后读数一致）。"""
 import sys, os, re, argparse
 import fitz
 import numpy as np
@@ -87,6 +92,9 @@ def main():
     ap.add_argument('--tol', type=float, default=8)
     ap.add_argument('--pages', default='1-5')
     ap.add_argument('--min-cluster', type=int, default=400)
+    ap.add_argument('--jlp', action='store_true',
+                    help='讲练件族底纹减法口径：201 来源断言＝条目号＋第一子层＋讲部需背（＋导航表表头），'
+                         '并对矢量层 201 矩形逐条归因')
     a = ap.parse_args()
 
     doc = fitz.open(a.pdf)
@@ -95,10 +103,15 @@ def main():
     L.append('灰度四值校验（四色板 190/209/201/224；容差±%g；PyMuPDF %s）：%s'
              % (a.tol, pymupdf_ver, os.path.basename(a.pdf)))
     L.append('页数 %d｜渲染 dpi %d｜像素簇门槛 %d px' % (doc.page_count, a.dpi, a.min_cluster))
+    if a.jlp:
+        L.append('口径：讲练件族底纹减法（附则《讲练件底纹减法》甲案改文）——201灰度值＝条目号底纹＋'
+                 '第一子层底纹＋讲部条目需背内容灰底三源合计（＋导航表表头§6样式位），四类废止项贡献＝0；'
+                 '190/209/224 照旧')
 
     # —— ①矢量层（全部页）——
     vec = {hx: {'n': 0, 'area': 0.0, 'pages': []} for _, hx, _, _, _, _ in TARGETS}
     vec_out = {}   # hex -> [n, pages]
+    c9_rects = []  # --jlp：201 矩形收集（页码, rect）供归因
     for pno in range(doc.page_count):
         page = doc[pno]
         for d in page.get_drawings():
@@ -112,6 +125,8 @@ def main():
                 vec[hx]['n'] += 1
                 vec[hx]['area'] += abs(d['rect'])
                 vec[hx]['pages'].append(pno + 1)
+                if a.jlp and hx == 'C9C9C9':
+                    c9_rects.append((pno, d['rect']))
             else:
                 g = rgb_gray(*rgb)
                 if GRAY_LO <= g <= GRAY_HI:
@@ -134,6 +149,34 @@ def main():
             L.append('    #%s（灰%.0f）×%d，页 %s' % (k, g, n, sorted(set(pgs))[:8]))
     else:
         L.append('  矢量离群填充色：0（灰域无非四目标色填充）')
+
+    # —— --jlp：201 矢量矩形归因（减法口径三源＋导航表表头 §6 样式位） ——
+    if a.jlp:
+        RE_ENT = re.compile(r'^\d+(?:\.\d+)+-\d+．')
+        RE_SUB = re.compile(r'^（\d+）')
+        HDR_WORDS = ('节名', '题量', '题型组数', '简单/中档/难', '节内题号')
+        attr = {'条目号式': 0, '第一子层式': 0, '导航表表头': 0}
+        todo = []
+        for pno, rc in c9_rects:
+            page = doc[pno]
+            clip = fitz.Rect(rc.x0 - 1, rc.y0 - 1, rc.x1 + 1, rc.y1 + 1)
+            txt = re.sub(r'[\s　]+', '', page.get_text('text', clip=clip))
+            # PDF 文字层连字号归一（2010/2011/00AD 软连字符 → ASCII）再匹配条目号式
+            txt = txt.replace('\u2010', '-').replace('\u2011', '-').replace('\xad', '-')
+            if RE_ENT.match(txt):
+                attr['条目号式'] += 1
+            elif RE_SUB.match(txt):
+                attr['第一子层式'] += 1
+            elif any(w in txt for w in HDR_WORDS):
+                attr['导航表表头'] += 1
+            else:
+                todo.append((pno + 1, rc, txt[:24]))
+        L.append('—— 201 来源归因（--jlp 减法口径：条目号＋第一子层＋讲部条目需背＋导航表表头四源白名单）——')
+        L.append('  矢量201矩形 %d 个＝条目号式 %d＋第一子层式 %d＋导航表表头 %d＋待核 %d（讲部需背文字/公式区，'
+                 '逐条人工过目）' % (len(c9_rects), attr['条目号式'], attr['第一子层式'],
+                                     attr['导航表表头'], len(todo)))
+        for pno, rc, txt in todo[:24]:
+            L.append('    待核 第%d页 (%.0f,%.0f)-(%.0f,%.0f) %r' % (pno, rc.x0, rc.y0, rc.x1, rc.y1, txt))
 
     # —— ②144dpi 渲染平台（抽样页）——
     rpages = parse_pages(a.pages, doc.page_count)

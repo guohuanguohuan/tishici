@@ -16,12 +16,18 @@
   全局断言（A''）：处理后全文 w:color val=1F4E79 挂点＝0（深蓝废止——run级与OMML级双扫）。
   幂等：二跑零改动；块边界参照 工具/extract_structure.py（题号兼容全局 N．与层级制 节号-序号．）；
   不动公式内容与字体（Cambria Math/PUA 不触碰——OMML定论）。
+ 2026-09-04 减法口径改造（选必1⓪复合修复轮子步2，工具债案6——附则《讲练件底纹减法》甲案）：
+ 讲练件族（文件名含 讲练件/简单卷/中档卷/冲刺卷/实验卷）题目侧答案值灰底已废止——本工具
+ 对该族拒绝执行改标（防回挂；讲部条目区需背灰底为甲案保留项，由 底纹去除器.py/六类底纹计数.py
+ 的条目区口径守护）；--verify 对该族切换为减法终态断言＝【答案】值区灰底/深蓝逐值＝0。
 用法: python 答案值分型改标.py <docx...> [--report 报告.txt] [--dry-run] [--verify] [--no-recite] [--detail N]
   --verify 只读复核不改写；--no-recite 跳过需背簇（只处理【答案】值）；--detail N 值明细条数（默认25）。"""
 import sys, io, zipfile, os, re, time, argparse, difflib
 from collections import Counter
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 from lxml import etree
+
+JLP_RE = re.compile(r'讲练件|简单卷|中档卷|冲刺卷|实验卷')   # 2026-09-04 减法口径：讲练件族禁改标
 
 W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 M = 'http://schemas.openxmlformats.org/officeDocument/2006/math'
@@ -856,6 +862,57 @@ def verify(path, no_recite=False):
                '✓' if blue_om == 0 else '←≠')), ok
 
 
+def verify_jlp(path):
+    """讲练件族减法终态复核（只读，2026-09-04）：【答案】值区灰底/深蓝逐值＝0（附则减法②）。"""
+    z = zipfile.ZipFile(path)
+    doc = etree.fromstring(z.read('word/document.xml'))
+    z.close()
+    body = doc.find(q('body'))
+    els = list(body)
+    ptexts = {i: (ptext(el) if el.tag == q('p') else '') for i, el in enumerate(els)}
+    blocks = scan_blocks(els, ptexts)
+    n_vals = bad = 0
+    for s, e in blocks:
+        for k in range(s, e):
+            if els[k].tag != q('p') or lead_label(ptexts[k]) != '【答案】':
+                continue
+            p = els[k]
+            pieces, chip_end, region_end = parse_answer_para(p)
+            if pieces is None:
+                continue
+            for ci2 in find_continuations(els, ptexts, k, e):
+                for c in els[ci2]:
+                    if tag(c) in ('oMath', 'oMathPara'):
+                        pieces[-1][2].append(c)
+            for ps, pe, oms in pieces:
+                has_txt = pe > ps and ptexts[k][ps:pe].strip() != ''
+                if not has_txt and not oms:
+                    continue
+                n_vals += 1
+                for om in oms:
+                    for host, _kind in om_hosts(om):
+                        rpr = host.find(q('rPr'))
+                        shd = rpr.find(q('shd')) if rpr is not None else None
+                        col = rpr.find(q('color')) if rpr is not None else None
+                        if shd is not None and shd.get(q('fill')) == FILL:
+                            bad += 1
+                        if col is not None and col.get(q('val')) == BLUE:
+                            bad += 1
+                if pe > ps:
+                    rs, _part = runs_in_span(p, ps, pe)
+                    for r in rs:
+                        rpr = r.find(q('rPr'))
+                        shd = rpr.find(q('shd')) if rpr is not None else None
+                        col = rpr.find(q('color')) if rpr is not None else None
+                        if shd is not None and shd.get(q('fill')) == FILL:
+                            bad += 1
+                        if col is not None and col.get(q('val')) == BLUE:
+                            bad += 1
+    ok = bad == 0
+    return ('  复核（讲练件族·减法终态口径）：【答案】值区逐值 %d｜灰底/深蓝违规 %d（期望0）%s'
+            % (n_vals, bad, '✓' if ok else '←≠')), ok
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('files', nargs='+')
@@ -870,6 +927,20 @@ def main():
     for p in args.files:
         if not os.path.exists(p):
             out.append('◆ %s 不存在，跳过' % os.path.basename(p))
+            continue
+        if JLP_RE.search(os.path.basename(p)):
+            # 2026-09-04 减法口径：讲练件族禁改标（防回挂）；--verify 走减法终态断言
+            if args.verify:
+                out.append('◆ %s' % os.path.basename(p))
+                vline, ok = verify_jlp(p)
+                out.append(vline)
+                allok = allok and ok
+                out.append('')
+            else:
+                out.append('◆ %s 属讲练件族——题目侧答案值灰底已废止（附则《讲练件底纹减法》），'
+                           '本工具拒绝对其改标；如需剥除用 工具/底纹去除器.py' % os.path.basename(p))
+                out.append('')
+                allok = False
             continue
         if args.verify:
             out.append('◆ %s' % os.path.basename(p))
