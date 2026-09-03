@@ -1,0 +1,378 @@
+{
+ "X1": {
+  "n_para_sect": 1,
+  "para_sect_idx": [
+   0
+  ],
+  "n_body_sect": 1,
+  "last_child_is_sectPr": true,
+  "body_sect": {
+   "child_order": [
+    "type",
+    "pgSz",
+    "pgMar",
+    "cols",
+    "docGrid"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "2",
+   "cols_space": "425",
+   "cols_sep": "1",
+   "hdr": 0,
+   "ftr": 0,
+   "start": null
+  },
+  "head_sect": {
+   "child_order": [
+    "headerReference",
+    "footerReference",
+    "type",
+    "pgSz",
+    "pgMar",
+    "pgNumType",
+    "cols"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "1",
+   "cols_space": null,
+   "cols_sep": null,
+   "hdr": 1,
+   "ftr": 1,
+   "start": "1"
+  },
+  "head_carrier_idx": 0,
+  "head_carrier_text": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）",
+  "head_carrier_spacing": [
+   "410",
+   "atLeast"
+  ],
+  "head_carrier_sz": null,
+  "head_carrier_zero_text": false,
+  "deep": {},
+  "verdict": "PASS"
+ },
+ "I1": {
+  "n_para_sect": 1,
+  "para_sect_idx": [
+   2
+  ],
+  "n_body_sect": 1,
+  "last_child_is_sectPr": true,
+  "body_sect": {
+   "child_order": [
+    "type",
+    "pgSz",
+    "pgMar",
+    "cols",
+    "docGrid"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "2",
+   "cols_space": "425",
+   "cols_sep": "1",
+   "hdr": 0,
+   "ftr": 0,
+   "start": null
+  },
+  "head_sect": {
+   "child_order": [
+    "headerReference",
+    "footerReference",
+    "type",
+    "pgSz",
+    "pgMar",
+    "pgNumType",
+    "cols"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "1",
+   "cols_space": null,
+   "cols_sep": null,
+   "hdr": 1,
+   "ftr": 1,
+   "start": "1"
+  },
+  "head_carrier_idx": 2,
+  "head_carrier_text": "〔进〕＝进阶汇总：本章各题型常识/结论的汇总，方便复习，必须先做题再回看",
+  "head_carrier_spacing": [
+   "410",
+   "atLeast"
+  ],
+  "head_carrier_sz": null,
+  "head_carrier_zero_text": false,
+  "deep": {},
+  "verdict": "PASS"
+ },
+ "B": {
+  "n_para_sect": 1,
+  "para_sect_idx": [
+   3
+  ],
+  "n_body_sect": 1,
+  "last_child_is_sectPr": true,
+  "body_sect": {
+   "child_order": [
+    "type",
+    "pgSz",
+    "pgMar",
+    "cols",
+    "docGrid"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "2",
+   "cols_space": "425",
+   "cols_sep": "1",
+   "hdr": 0,
+   "ftr": 0,
+   "start": null
+  },
+  "head_sect": {
+   "child_order": [
+    "headerReference",
+    "footerReference",
+    "type",
+    "pgSz",
+    "pgMar",
+    "pgNumType",
+    "cols"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "1",
+   "cols_space": null,
+   "cols_sep": null,
+   "hdr": 1,
+   "ftr": 1,
+   "start": "1"
+  },
+  "head_carrier_idx": 3,
+  "head_carrier_text": "",
+  "head_carrier_spacing": [
+   "20",
+   "exact"
+  ],
+  "head_carrier_sz": "2",
+  "head_carrier_zero_text": true,
+  "deep": {
+   "head_seq": [
+    [
+     0,
+     "p",
+     "人教B版选必1 第1章 空间向量与立体几何·讲练件（140题"
+    ],
+    [
+     1,
+     "p",
+     "全件140题：简单21｜中档104｜难15"
+    ],
+    [
+     2,
+     "tbl",
+     [
+      "节名",
+      "节内题号",
+      "题量",
+      "简单/中档/难",
+      "题型组数"
+     ]
+    ],
+    [
+     3,
+     "p",
+     "(零字符段)"
+    ],
+    [
+     4,
+     "p",
+     "1.1 空间向量及其运算"
+    ]
+   ],
+   "nav_idx": 2,
+   "nav_in_header": true,
+   "carrier_after_nav": true,
+   "carrier_zero": true
+  },
+  "verdict": "PASS"
+ },
+ "X2": {
+  "n_para_sect": 1,
+  "para_sect_idx": [
+   0
+  ],
+  "n_body_sect": 1,
+  "last_child_is_sectPr": true,
+  "body_sect": {
+   "child_order": [
+    "type",
+    "pgSz",
+    "pgMar",
+    "cols"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "2",
+   "cols_space": "425",
+   "cols_sep": "1",
+   "hdr": 0,
+   "ftr": 0,
+   "start": null
+  },
+  "head_sect": {
+   "child_order": [
+    "headerReference",
+    "footerReference",
+    "type",
+    "pgSz",
+    "pgMar",
+    "pgNumType",
+    "cols"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "1",
+   "cols_space": null,
+   "cols_sep": null,
+   "hdr": 1,
+   "ftr": 1,
+   "start": "1"
+  },
+  "head_carrier_idx": 0,
+  "head_carrier_text": "人教B版选必1 第2章 平面解析几何·衔接件（13题）",
+  "head_carrier_spacing": [
+   "410",
+   "atLeast"
+  ],
+  "head_carrier_sz": null,
+  "head_carrier_zero_text": false,
+  "deep": {
+   "head_seq": [
+    [
+     0,
+     "p",
+     "人教B版选必1 第2章 平面解析几何·衔接件（13题）"
+    ],
+    [
+     1,
+     "p",
+     "2.8 直线与圆锥曲线的位置关系"
+    ]
+   ],
+   "nav_idx": null,
+   "nav_in_header": false
+  },
+  "verdict": "PASS"
+ },
+ "I2": {
+  "n_para_sect": 1,
+  "para_sect_idx": [
+   2
+  ],
+  "n_body_sect": 1,
+  "last_child_is_sectPr": true,
+  "body_sect": {
+   "child_order": [
+    "type",
+    "pgSz",
+    "pgMar",
+    "cols",
+    "docGrid"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "2",
+   "cols_space": "425",
+   "cols_sep": "1",
+   "hdr": 0,
+   "ftr": 0,
+   "start": null
+  },
+  "head_sect": {
+   "child_order": [
+    "headerReference",
+    "footerReference",
+    "type",
+    "pgSz",
+    "pgMar",
+    "pgNumType",
+    "cols"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "1",
+   "cols_space": null,
+   "cols_sep": null,
+   "hdr": 1,
+   "ftr": 1,
+   "start": "1"
+  },
+  "head_carrier_idx": 2,
+  "head_carrier_text": "〔进〕＝进阶汇总：本章各题型常识/结论的汇总，方便复习，必须先做题再回看",
+  "head_carrier_spacing": [
+   "410",
+   "atLeast"
+  ],
+  "head_carrier_sz": null,
+  "head_carrier_zero_text": false,
+  "deep": {},
+  "verdict": "PASS"
+ },
+ "E": {
+  "n_para_sect": 1,
+  "para_sect_idx": [
+   3
+  ],
+  "n_body_sect": 1,
+  "last_child_is_sectPr": true,
+  "body_sect": {
+   "child_order": [
+    "type",
+    "cols",
+    "docGrid",
+    "pgSz",
+    "pgMar"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "2",
+   "cols_space": "425",
+   "cols_sep": "1",
+   "hdr": 0,
+   "ftr": 0,
+   "start": null
+  },
+  "head_sect": {
+   "child_order": [
+    "headerReference",
+    "footerReference",
+    "type",
+    "pgSz",
+    "pgMar",
+    "pgNumType",
+    "cols"
+   ],
+   "type": "continuous",
+   "type_pos_ok": true,
+   "cols_num": "1",
+   "cols_space": null,
+   "cols_sep": null,
+   "hdr": 1,
+   "ftr": 1,
+   "start": "1"
+  },
+  "head_carrier_idx": 3,
+  "head_carrier_text": "",
+  "head_carrier_spacing": [
+   "20",
+   "exact"
+  ],
+  "head_carrier_sz": "2",
+  "head_carrier_zero_text": true,
+  "deep": {},
+  "verdict": "PASS"
+ }
+}

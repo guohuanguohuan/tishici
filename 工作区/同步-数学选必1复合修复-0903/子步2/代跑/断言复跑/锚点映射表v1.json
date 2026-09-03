@@ -1,0 +1,281 @@
+{
+ "X1": {
+  "file": "X1.docx",
+  "stem": "X1",
+  "anchor": {
+   "family": "条目号式",
+   "regex": "^1\\.2\\.1\\-1．平行线分线段成比",
+   "source": "1.2.1-1．平行线分线段成比例定理"
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": null,
+  "legends": [],
+  "stats_row_in_header": false,
+  "legends_in_header": [],
+  "navtbl": null,
+  "title": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）",
+  "has_break": true,
+  "blacklist": [],
+  "anchor_override_note": "2026-09-03子步1更正：v1题号块式锚点^1\\.2\\.1\\.1\\-1．因讲部条目占满首页落第2页；按前置步0「锚点＝正文首块机读特征」更正为实际首块（条目号式）。附则表行改写待主会话。"
+ },
+ "I1": {
+  "file": "I1.docx",
+  "stem": "I1",
+  "anchor": {
+   "family": "条目号式",
+   "regex": "^1\\.1\\.1\\-1．〔基〕空间向量",
+   "source": "1.1.1-1．〔基〕空间向量"
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": null,
+  "legends": [
+   "〔基〕＝基础必会：必须学完本条目，才能做本章题目",
+   "〔进〕＝进阶汇总：本章各题型常识/结论的汇总，方便复习，必须先做题再回看"
+  ],
+  "stats_row_in_header": false,
+  "legends_in_header": [
+   true,
+   true
+  ],
+  "navtbl": null,
+  "title": "人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）",
+  "has_break": true,
+  "blacklist": [
+   "〔基〕＝基础必会：必须学完本条目，才能做本章题目",
+   "〔进〕＝进阶汇总：本章各题型常识/结论的汇总，方便复习，必须先做题再回看"
+  ]
+ },
+ "B": {
+  "file": "B.docx",
+  "stem": "B",
+  "anchor": {
+   "family": "题号块式",
+   "regex": "^1\\.1\\.1\\.1\\-1．",
+   "source": "1.1.1.1-1．（简单·保60%·卡壳看答案）下列说法正确的是（    ）"
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": "全件140题：简单21｜中档104｜难15",
+  "legends": [],
+  "stats_row_in_header": true,
+  "legends_in_header": [],
+  "navtbl": {
+   "tblW": 10200,
+   "zone": "头部单栏区"
+  },
+  "title": "人教B版选必1 第1章 空间向量与立体几何·讲练件（140题）",
+  "has_break": true,
+  "blacklist": [
+   "全件140题：简单21｜中档104｜难15"
+  ]
+ },
+ "C": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx",
+  "stem": "人教B版选必1 第1章 空间向量与立体几何·讲练件",
+  "anchor": {
+   "family": "题号块式",
+   "regex": "^1\\.2\\.5\\.1\\-1．",
+   "source": "1.2.5.1-1．（简单·保60%·卡壳看答案）已知点，平面过原点，且垂直于向量，则点到平面的距离为（    ）"
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": null,
+  "legends": [],
+  "stats_row_in_header": false,
+  "legends_in_header": [],
+  "navtbl": null,
+  "title": "",
+  "has_break": false,
+  "blacklist": []
+ },
+ "X2": {
+  "file": "X2.docx",
+  "stem": "X2",
+  "anchor": {
+   "family": "题号块式",
+   "regex": "^2\\.8\\.1\\-1．",
+   "source": "2.8.1-1．（衔接必会·卡壳看答案）若是方程的两根，不解方程，求下列各式的值."
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": null,
+  "legends": [],
+  "stats_row_in_header": false,
+  "legends_in_header": [],
+  "navtbl": null,
+  "title": "人教B版选必1 第2章 平面解析几何·衔接件（13题）",
+  "has_break": true,
+  "blacklist": []
+ },
+ "I2": {
+  "file": "I2.docx",
+  "stem": "I2",
+  "anchor": {
+   "family": "条目号式",
+   "regex": "^2\\.1\\-1．〔基〕平面上的两",
+   "source": "2.1-1．〔基〕平面上的两点间的距离公式．"
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": null,
+  "legends": [
+   "〔基〕＝基础必会：必须学完本条目，才能做本章题目",
+   "〔进〕＝进阶汇总：本章各题型常识/结论的汇总，方便复习，必须先做题再回看"
+  ],
+  "stats_row_in_header": false,
+  "legends_in_header": [
+   true,
+   true
+  ],
+  "navtbl": null,
+  "title": "人教B版选必1 第2章 平面解析几何·知识清单（完成）",
+  "has_break": true,
+  "blacklist": [
+   "〔基〕＝基础必会：必须学完本条目，才能做本章题目",
+   "〔进〕＝进阶汇总：本章各题型常识/结论的汇总，方便复习，必须先做题再回看"
+  ]
+ },
+ "E": {
+  "file": "E.docx",
+  "stem": "E",
+  "anchor": {
+   "family": "题号块式",
+   "regex": "^2\\.1\\.1\\-1．",
+   "source": "2.1.1-1．（简单·保60%·卡壳看答案）点为平面直角坐标系内一点，线段PM的中点是，那么点M到原点O的距离为（    ）"
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": "全件339题：简单47｜中档246｜难46",
+  "legends": [],
+  "stats_row_in_header": true,
+  "legends_in_header": [],
+  "navtbl": {
+   "tblW": 10200,
+   "zone": "头部单栏区"
+  },
+  "title": "人教B版选必1 第2章 平面解析几何·讲练件（339题）",
+  "has_break": true,
+  "blacklist": [
+   "全件339题：简单47｜中档246｜难46"
+  ]
+ },
+ "F": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx",
+  "stem": "人教B版选必1 第2章 平面解析几何·讲练件",
+  "anchor": {
+   "family": "题号块式",
+   "regex": "^2\\.3\\.4\\.1\\-1．",
+   "source": "2.3.4.1-1．（中档·保80%·卡壳看答案）判断下列各组中两个圆的位置关系："
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": null,
+  "legends": [],
+  "stats_row_in_header": false,
+  "legends_in_header": [],
+  "navtbl": null,
+  "title": "",
+  "has_break": false,
+  "blacklist": []
+ },
+ "G": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx",
+  "stem": "人教B版选必1 第2章 平面解析几何·讲练件",
+  "anchor": {
+   "family": "题号块式",
+   "regex": "^2\\.6\\.1\\.1\\-1．",
+   "source": "2.6.1.1-1．（简单·保60%·卡壳看答案）已知A，B是平面内的两点，且，分别判断平面内满足下列条件的动点P是否存在，并说明理由．"
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": null,
+  "legends": [],
+  "stats_row_in_header": false,
+  "legends_in_header": [],
+  "navtbl": null,
+  "title": "",
+  "has_break": false,
+  "blacklist": []
+ },
+ "H": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx",
+  "stem": "人教B版选必1 第2章 平面解析几何（2.8）·讲练件",
+  "anchor": {
+   "family": "题号块式",
+   "regex": "^2\\.8\\.1\\-1．",
+   "source": "2.8.1-1．（简单·保60%·卡壳看答案）直线y＝x＋1与椭圆x2＋＝1的位置关系是（    ）"
+  },
+  "info_page": {
+   "w": 595.3000000000001,
+   "h": 841.9000000000001,
+   "ml": 42.5,
+   "mr": 42.5,
+   "mt": 42.5,
+   "mb": 42.5
+  },
+  "stats_row": null,
+  "legends": [],
+  "stats_row_in_header": false,
+  "legends_in_header": [],
+  "navtbl": null,
+  "title": "",
+  "has_break": false,
+  "blacklist": []
+ }
+}

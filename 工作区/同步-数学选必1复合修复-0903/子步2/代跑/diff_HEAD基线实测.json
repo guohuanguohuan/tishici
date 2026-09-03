@@ -1,0 +1,161 @@
+{
+ "X2": {
+  "member_list_eq": true,
+  "non_document_members_eq": true,
+  "changed_members": [
+   "word/document.xml"
+  ],
+  "stream_eq": true,
+  "stream_len": [
+   5426,
+   5426
+  ],
+  "counts_orig": {
+   "w:p": 88,
+   "w:tbl": 0,
+   "w:t": 493,
+   "m:t": 1912,
+   "m:oMath": 243,
+   "w:drawing": 0,
+   "sectPr": 2,
+   "w:shd": 773
+  },
+  "counts_fixed": {
+   "w:p": 88,
+   "w:tbl": 0,
+   "w:t": 493,
+   "m:t": 1912,
+   "m:oMath": 243,
+   "w:drawing": 0,
+   "sectPr": 2,
+   "w:shd": 773
+  },
+  "counts_eq": {
+   "w:p": [
+    88,
+    88,
+    true
+   ],
+   "w:tbl": [
+    0,
+    0,
+    true
+   ],
+   "w:t": [
+    493,
+    493,
+    true
+   ],
+   "m:t": [
+    1912,
+    1912,
+    true
+   ],
+   "m:oMath": [
+    243,
+    243,
+    true
+   ],
+   "w:drawing": [
+    0,
+    0,
+    true
+   ],
+   "sectPr": [
+    2,
+    2,
+    true
+   ],
+   "w:shd": [
+    773,
+    773,
+    true
+   ]
+  },
+  "baseline_bytes": 18354,
+  "current_bytes": 18371,
+  "current_sha256_12": "1135b7307567"
+ },
+ "B": {
+  "member_list_eq": true,
+  "non_document_members_eq": true,
+  "changed_members": [
+   "word/document.xml"
+  ],
+  "nav_present": [
+   true,
+   true
+  ],
+  "main_stream_eq_ex_nav": true,
+  "nav_stream_eq": true,
+  "main_stream_len": [
+   55277,
+   55277
+  ],
+  "counts_orig": {
+   "w:p": 1129,
+   "w:tbl": 2,
+   "w:t": 7421,
+   "m:t": 13525,
+   "m:oMath": 2964,
+   "w:drawing": 125,
+   "sectPr": 2,
+   "w:shd": 1076
+  },
+  "counts_fixed": {
+   "w:p": 1130,
+   "w:tbl": 2,
+   "w:t": 7421,
+   "m:t": 13525,
+   "m:oMath": 2964,
+   "w:drawing": 125,
+   "sectPr": 2,
+   "w:shd": 1076
+  },
+  "counts_eq": {
+   "w:p": [
+    1129,
+    1130,
+    false
+   ],
+   "w:tbl": [
+    2,
+    2,
+    true
+   ],
+   "w:t": [
+    7421,
+    7421,
+    true
+   ],
+   "m:t": [
+    13525,
+    13525,
+    true
+   ],
+   "m:oMath": [
+    2964,
+    2964,
+    true
+   ],
+   "w:drawing": [
+    125,
+    125,
+    true
+   ],
+   "sectPr": [
+    2,
+    2,
+    true
+   ],
+   "w:shd": [
+    1076,
+    1076,
+    true
+   ]
+  },
+  "baseline_bytes": 6164005,
+  "current_bytes": 6164034,
+  "current_sha256_12": "9753a17b99e8"
+ }
+}
