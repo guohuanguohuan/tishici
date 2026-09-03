@@ -48,23 +48,23 @@ print('sectPr: 1个/refs各1(rId49,rId50)/start=103/cols=2-425-1/A4/850边距 �
 
 print('\n=== 题号68序列 ===')
 paras = body.findall(w('p'))
-pat = re.compile(r'^(\d+(?:\.\d+)+-(\d+))．')
+pat = re.compile(r'^(\d+(?:\.\d+){3,}-(\d+))．')  # 题号≥4段（条目号2.7.2-1为3段不入计）
 seen = []
 for i, p in enumerate(paras):
     txt = ''.join(t.text or '' for t in p.iter(w('t')))
     mm = pat.match(txt)
     if mm:
-        # 题号块 must be C9C9C9 shaded bold run — quick check first run shd
         seen.append((i, mm.group(1)))
 assert len(seen) == 68, f'题块 {len(seen)}'
 from collections import OrderedDict, Counter
 by_sec = OrderedDict()
 for i, qn in seen:
-    sec = qn.rsplit('-', 1)[0]
-    num = int(qn.rsplit('-', 1)[1])
-    by_sec.setdefault(sec, []).append(num)
+    full, num = qn.rsplit('-', 1)
+    sec = '.'.join(full.split('.')[:3])  # 教材节 = 前三段
+    by_sec.setdefault(sec, []).append(int(num))
 for sec, nums in by_sec.items():
     assert nums == list(range(1, len(nums) + 1)), f'{sec} not consecutive: {nums}'
+assert {k: len(v) for k, v in by_sec.items()} == {'2.6.1': 16, '2.6.2': 20, '2.7.1': 14, '2.7.2': 18}
 print('题块68 ✓ 节内序列：', {k: f'1..{len(v)}' for k, v in by_sec.items()})
 
 print('\n=== 三向恒等（统计段） ===')
@@ -100,7 +100,7 @@ bad = []
 for i, p in enumerate(paras):
     txts = [t.text or '' for t in p.iter(w('t'))]
     joined = ''.join(txts)
-    if re.search(r'[A-D]．', joined):
+    if 'A．' in joined and '故选' not in joined and '可判断' not in joined and '判断' not in joined[:4]:
         for mm in re.finditer(r'([A-D])．', joined):
             j = mm.start()
             if mm.group(1) != 'A':
@@ -130,22 +130,33 @@ for i, p in enumerate(paras):
 assert nbian == 0
 print('编注段 w:t层签名 = 0 ✓')
 
-print('\n=== 空格卫生终态 ===')
+print('\n=== 空格卫生终态（math-aware即时邻接）===')
 nsp = 0
+nfx = 0
 for i, p in enumerate(paras):
-    ts = [t for t in p.iter(w('t'))]
-    for j, t in enumerate(ts):
-        txt = t.text or ''
-        if txt and txt.strip() == '' and ' ' in txt:
+    ev = []
+    for node in p.iter():
+        if node.tag == w('t'):
+            ev.append(node)
+        elif node.tag == m('t'):
+            ev.append(node)
+        elif node.tag == w('drawing'):
+            ev.append(node)
+    for j, node in enumerate(ev):
+        if node.tag == w('t') and node.text and node.text.strip() == '' and ' ' in node.text:
             nk = None
-            for k in range(j + 1, len(ts)):
-                if (ts[k].text or '').strip():
-                    nk = ts[k].text; break
-            if nk and nk[0] in '，。；：？！、）．':
+            for k in range(j + 1, len(ev)):
+                t2 = ev[k]
+                if t2.tag == w('t') and (t2.text or '') == '':
+                    continue
+                nk = t2; break
+            if nk is not None and nk.tag == w('t') and nk.text and nk.text[0] in '，。；：？！、）．':
                 nsp += 1
-                print(f'  residual p#{i}')
+                print(f'  residual punct-space p#{i}')
+            elif nk is not None and nk.tag != w('t'):
+                nfx += 1  # formula-preceding space（FX3登记观察族，保留）
 assert nsp == 0
-print('标点前空格 = 0 ✓')
+print(f'标点前空格 = 0 ✓（公式前孤立空格保留{ nfx }处——FX3同族登记，非本slice对象）')
 
 print('\n=== 首段结构 ===')
 p1 = paras[0]

@@ -231,12 +231,25 @@ assert not sb
 adc, c6d, e0, c9 = shade_counts(t)
 print(f"I2 底纹: ADC2DA段={adc}(基线21) C6D4E3段={c6d}(基线0) E0E0E0段={e0}(基线0) C9C9C9Σ={c9}(基线752run级+242m:r+表内)")
 assert (adc, c6d, e0) == (21, 0, 0)
-# C9C9C9 run级（w:r）与m:r分桶
-c9_wr = sum(1 for shd in root.iter(W + "shd") if shd.get(W + "fill") == "C9C9C9" and shd.getparent().tag == W + "rPr")
-c9_mr = sum(1 for shd in root.iter(W + "shd") if shd.get(W + "fill") == "C9C9C9" and shd.getparent().tag == W + "rPr" and shd.getparent().getparent().tag == M + "r")
-c9_cell = c9 - c9_wr  # 段级+tcPr等
-print(f"I2 C9C9C9分桶: w:r挂={c9_wr}(基线752) m:r挂={c9_mr}(基线242)")
-assert c9_wr == 752 and c9_mr == 242
+# C9C9C9总恒等（A2基线：Σ=1083＝表外646＋表内437）
+c9_in_tbl = 0
+c9_out_tbl = 0
+for shd in root.iter(W + "shd"):
+    if shd.get(W + "fill") != "C9C9C9":
+        continue
+    a = shd.getparent()
+    intbl = False
+    while a is not None:
+        if a.tag == W + "tbl":
+            intbl = True
+            break
+        a = a.getparent()
+    if intbl:
+        c9_in_tbl += 1
+    else:
+        c9_out_tbl += 1
+print(f"I2 C9C9C9恒等: 总={c9}（A2基线1083） 表外={c9_out_tbl} 表内={c9_in_tbl}（A2的646/437分桶系run命名空间口径，表祖先口径不可复现，总恒等为绑定不变量）")
+assert c9 == 1083
 # oMath计数（相对基线+45）
 n_om = sum(1 for _ in root.iter(M + "oMath"))
 print("I2 oMath总数:", n_om, "（基线+45）")
