@@ -1,72 +1,44 @@
 {
  "X1": {
   "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 62.8,
-  "pages": 16,
-  "png_new": 16
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 621.9,
+  "pages": 15,
+  "png_new": 15
  },
  "I1": {
   "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 54.8,
-  "pages": 14,
-  "png_new": 14
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 620.1,
+  "pages": 13,
+  "png_new": 13
  },
  "B": {
   "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 149.6,
-  "pages": 53,
-  "png_new": 53
- },
- "C": {
-  "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 156.4,
-  "pages": 60,
-  "png_new": 60
- },
- "X2": {
-  "status": "OK",
-  "mode": "幂等跳过",
-  "seconds": 0.0,
-  "pages": 6,
-  "png_new": 0
- },
- "I2": {
-  "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 87.6,
-  "pages": 28,
-  "png_new": 28
- },
- "E": {
-  "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 88.6,
-  "pages": 49,
-  "png_new": 49
- },
- "F": {
-  "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 141.2,
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 704.7,
   "pages": 52,
   "png_new": 52
  },
- "G": {
+ "X2": {
   "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 87.1,
-  "pages": 37,
-  "png_new": 37
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 606.8,
+  "pages": 5,
+  "png_new": 5
  },
- "H": {
+ "I2": {
   "status": "OK",
-  "mode": "自动出件(尝试1)",
-  "seconds": 156.0,
-  "pages": 63,
-  "png_new": 63
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 654.2,
+  "pages": 27,
+  "png_new": 27
+ },
+ "E": {
+  "status": "OK",
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 655.0,
+  "pages": 48,
+  "png_new": 48
  }
 }

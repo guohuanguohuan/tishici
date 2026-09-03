@@ -1,0 +1,40 @@
+文件: 人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx
+body直接子元素总数: 89
+段落级sectPr承载段下标: 0
+承载段文本: '人教B版选必1 第2章 平面解析几何·衔接件（13题）'
+承载段pPr除sectPr外子元素: ['pBdr', 'shd', 'spacing', 'jc']
+承载段其余run数: 1
+  邻域[0] p: '人教B版选必1 第2章 平面解析几何·衔接件（13题）'
+  邻域[1] p: '2.8 直线与圆锥曲线的位置关系'
+  邻域[2] p: '2.8 直线与圆锥曲线的位置关系\u3000本节13题'
+
+== H1 段落级显式分页 ==
+w:br 总数=0 类型分布={}
+pageBreakBefore 总数=0
+keepNext=0 keepLines=0 widowControl=0
+表格数（body直接子级）=0
+表格cantSplit=0
+
+== H2 全宽表落栏 ==
+body级表格数=0（X2应=0，衔接2无表仍现缺陷＝表非唯一成因）
+
+== H3 docGrid对照 ==
+头部节(段落级sectPr) docGrid: 无
+正文节(文末sectPr) docGrid: 无
+
+== H4 sectPr落位 ==
+承载段前一元素: None
+（若前元素为tbl而承载段缺失＝表后缺承载段缺陷）
+
+== H5 页眉页脚/titlePg对照 ==
+头部节: headerReference=[{'type': 'default', 'id': 'rId4'}] footerReference=[{'type': 'default', 'id': 'rId5'}] titlePg=False
+正文节: headerReference=[] footerReference=[] titlePg=False
+
+== 两节sectPr全量子元素对照 ==
+头部节: ["headerReference{'type': 'default', 'id': 'rId4'}", "footerReference{'type': 'default', 'id': 'rId5'}", "type{'val': 'continuous'}", "pgSz{'w': '11906', 'h': '16838'}", "pgMar{'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}", "pgNumType{'start': '1'}", "cols{'num': '1'}"]
+正文节: ["pgSz{'w': '11906', 'h': '16838'}", "pgMar{'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}", "cols{'num': '2', 'space': '425', 'sep': '1'}"]
+
+== 正文区前3段pPr原文 ==
+段['2.8 直线与圆锥曲线的位置关系'] pPr=<w:pPr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><w:pStyle w:val="JieMingMao"/><w:spacing w:before="0" w:after="0" w:line="20" w:lineRule="exact"/><w:jc w:val="left"/></w:pPr>
+段['2.8 直线与圆锥曲线的位置关系\u3000本节13题'] pPr=<w:pPr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><w:pStyle w:val="Heading3"/><w:shd w:val="clear" w:color="auto" w:fill="ADC2DA"/><w:spacing w:before="0" w:after="0" w:line="410" w:lineRule="atLeast"/><w:jc w:val="left"/></w
+段['2.8-1．一元二次方程的判别式'] pPr=<w:pPr xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><w:spacing w:before="0" w:after="0" w:line="410" w:lineRule="atLeast"/><w:jc w:val="left"/></w:pPr>

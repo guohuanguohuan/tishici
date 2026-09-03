@@ -1,0 +1,456 @@
+{
+ "X1": {
+  "member_list_eq": true,
+  "non_document_members_eq": true,
+  "changed_members": [
+   "word/document.xml"
+  ],
+  "stream_eq": true,
+  "stream_len": [
+   12473,
+   12473
+  ],
+  "counts_orig": {
+   "w:p": 265,
+   "w:tbl": 0,
+   "w:t": 1656,
+   "m:t": 1768,
+   "m:oMath": 882,
+   "w:drawing": 57,
+   "sectPr": 2,
+   "w:shd": 362
+  },
+  "counts_fixed": {
+   "w:p": 265,
+   "w:tbl": 0,
+   "w:t": 1656,
+   "m:t": 1768,
+   "m:oMath": 882,
+   "w:drawing": 57,
+   "sectPr": 2,
+   "w:shd": 362
+  },
+  "counts_eq": {
+   "w:p": [
+    265,
+    265,
+    true
+   ],
+   "w:tbl": [
+    0,
+    0,
+    true
+   ],
+   "w:t": [
+    1656,
+    1656,
+    true
+   ],
+   "m:t": [
+    1768,
+    1768,
+    true
+   ],
+   "m:oMath": [
+    882,
+    882,
+    true
+   ],
+   "w:drawing": [
+    57,
+    57,
+    true
+   ],
+   "sectPr": [
+    2,
+    2,
+    true
+   ],
+   "w:shd": [
+    362,
+    362,
+    true
+   ]
+  }
+ },
+ "I1": {
+  "member_list_eq": true,
+  "non_document_members_eq": true,
+  "changed_members": [
+   "word/document.xml"
+  ],
+  "stream_eq": true,
+  "stream_len": [
+   13030,
+   13030
+  ],
+  "counts_orig": {
+   "w:p": 387,
+   "w:tbl": 8,
+   "w:t": 1767,
+   "m:t": 1912,
+   "m:oMath": 396,
+   "w:drawing": 24,
+   "sectPr": 2,
+   "w:shd": 1364
+  },
+  "counts_fixed": {
+   "w:p": 387,
+   "w:tbl": 8,
+   "w:t": 1767,
+   "m:t": 1912,
+   "m:oMath": 396,
+   "w:drawing": 24,
+   "sectPr": 2,
+   "w:shd": 1364
+  },
+  "counts_eq": {
+   "w:p": [
+    387,
+    387,
+    true
+   ],
+   "w:tbl": [
+    8,
+    8,
+    true
+   ],
+   "w:t": [
+    1767,
+    1767,
+    true
+   ],
+   "m:t": [
+    1912,
+    1912,
+    true
+   ],
+   "m:oMath": [
+    396,
+    396,
+    true
+   ],
+   "w:drawing": [
+    24,
+    24,
+    true
+   ],
+   "sectPr": [
+    2,
+    2,
+    true
+   ],
+   "w:shd": [
+    1364,
+    1364,
+    true
+   ]
+  }
+ },
+ "B": {
+  "member_list_eq": true,
+  "non_document_members_eq": true,
+  "changed_members": [
+   "word/document.xml"
+  ],
+  "nav_present": [
+   true,
+   true
+  ],
+  "main_stream_eq_ex_nav": true,
+  "nav_stream_eq": true,
+  "main_stream_len": [
+   55277,
+   55277
+  ],
+  "counts_orig": {
+   "w:p": 1129,
+   "w:tbl": 2,
+   "w:t": 7421,
+   "m:t": 13525,
+   "m:oMath": 2964,
+   "w:drawing": 125,
+   "sectPr": 2,
+   "w:shd": 1076
+  },
+  "counts_fixed": {
+   "w:p": 1130,
+   "w:tbl": 2,
+   "w:t": 7421,
+   "m:t": 13525,
+   "m:oMath": 2964,
+   "w:drawing": 125,
+   "sectPr": 2,
+   "w:shd": 1076
+  },
+  "counts_eq": {
+   "w:p": [
+    1129,
+    1130,
+    false
+   ],
+   "w:tbl": [
+    2,
+    2,
+    true
+   ],
+   "w:t": [
+    7421,
+    7421,
+    true
+   ],
+   "m:t": [
+    13525,
+    13525,
+    true
+   ],
+   "m:oMath": [
+    2964,
+    2964,
+    true
+   ],
+   "w:drawing": [
+    125,
+    125,
+    true
+   ],
+   "sectPr": [
+    2,
+    2,
+    true
+   ],
+   "w:shd": [
+    1076,
+    1076,
+    true
+   ]
+  }
+ },
+ "X2": {
+  "member_list_eq": true,
+  "non_document_members_eq": true,
+  "changed_members": [
+   "word/document.xml"
+  ],
+  "stream_eq": true,
+  "stream_len": [
+   5426,
+   5426
+  ],
+  "counts_orig": {
+   "w:p": 88,
+   "w:tbl": 0,
+   "w:t": 493,
+   "m:t": 1912,
+   "m:oMath": 243,
+   "w:drawing": 0,
+   "sectPr": 2,
+   "w:shd": 773
+  },
+  "counts_fixed": {
+   "w:p": 88,
+   "w:tbl": 0,
+   "w:t": 493,
+   "m:t": 1912,
+   "m:oMath": 243,
+   "w:drawing": 0,
+   "sectPr": 2,
+   "w:shd": 773
+  },
+  "counts_eq": {
+   "w:p": [
+    88,
+    88,
+    true
+   ],
+   "w:tbl": [
+    0,
+    0,
+    true
+   ],
+   "w:t": [
+    493,
+    493,
+    true
+   ],
+   "m:t": [
+    1912,
+    1912,
+    true
+   ],
+   "m:oMath": [
+    243,
+    243,
+    true
+   ],
+   "w:drawing": [
+    0,
+    0,
+    true
+   ],
+   "sectPr": [
+    2,
+    2,
+    true
+   ],
+   "w:shd": [
+    773,
+    773,
+    true
+   ]
+  }
+ },
+ "I2": {
+  "member_list_eq": true,
+  "non_document_members_eq": true,
+  "changed_members": [
+   "word/document.xml"
+  ],
+  "stream_eq": true,
+  "stream_len": [
+   30175,
+   30175
+  ],
+  "counts_orig": {
+   "w:p": 873,
+   "w:tbl": 24,
+   "w:t": 4087,
+   "m:t": 7144,
+   "m:oMath": 1152,
+   "w:drawing": 65,
+   "sectPr": 2,
+   "w:shd": 1243
+  },
+  "counts_fixed": {
+   "w:p": 873,
+   "w:tbl": 24,
+   "w:t": 4087,
+   "m:t": 7144,
+   "m:oMath": 1152,
+   "w:drawing": 65,
+   "sectPr": 2,
+   "w:shd": 1243
+  },
+  "counts_eq": {
+   "w:p": [
+    873,
+    873,
+    true
+   ],
+   "w:tbl": [
+    24,
+    24,
+    true
+   ],
+   "w:t": [
+    4087,
+    4087,
+    true
+   ],
+   "m:t": [
+    7144,
+    7144,
+    true
+   ],
+   "m:oMath": [
+    1152,
+    1152,
+    true
+   ],
+   "w:drawing": [
+    65,
+    65,
+    true
+   ],
+   "sectPr": [
+    2,
+    2,
+    true
+   ],
+   "w:shd": [
+    1243,
+    1243,
+    true
+   ]
+  }
+ },
+ "E": {
+  "member_list_eq": true,
+  "non_document_members_eq": true,
+  "changed_members": [
+   "word/document.xml"
+  ],
+  "nav_present": [
+   true,
+   true
+  ],
+  "main_stream_eq_ex_nav": true,
+  "nav_stream_eq": true,
+  "main_stream_len": [
+   58467,
+   58467
+  ],
+  "counts_orig": {
+   "w:p": 1124,
+   "w:tbl": 1,
+   "w:t": 7163,
+   "m:t": 13564,
+   "m:oMath": 2420,
+   "w:drawing": 74,
+   "sectPr": 2,
+   "w:shd": 1354
+  },
+  "counts_fixed": {
+   "w:p": 1125,
+   "w:tbl": 1,
+   "w:t": 7163,
+   "m:t": 13564,
+   "m:oMath": 2420,
+   "w:drawing": 74,
+   "sectPr": 2,
+   "w:shd": 1354
+  },
+  "counts_eq": {
+   "w:p": [
+    1124,
+    1125,
+    false
+   ],
+   "w:tbl": [
+    1,
+    1,
+    true
+   ],
+   "w:t": [
+    7163,
+    7163,
+    true
+   ],
+   "m:t": [
+    13564,
+    13564,
+    true
+   ],
+   "m:oMath": [
+    2420,
+    2420,
+    true
+   ],
+   "w:drawing": [
+    74,
+    74,
+    true
+   ],
+   "sectPr": [
+    2,
+    2,
+    true
+   ],
+   "w:shd": [
+    1354,
+    1354,
+    true
+   ]
+  }
+ }
+}
