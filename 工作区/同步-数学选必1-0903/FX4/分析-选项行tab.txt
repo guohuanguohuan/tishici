@@ -1,0 +1,26 @@
+[76] OPT ␉␉␉␉A．1条；B．2条；C．3条；D．4条
+[163] OPT ␉␉A．；x216+y212=1␉B．x24+y2=1</w:r><w:r><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr><w:t xml:space="preserve">C．；x24+y23=1␉D．x216+y24=1
+[202] OPT ␉␉A．；x2+(y−12)2=1␉B．x2+(y−1)2=1</w:r><w:r><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr><w:t xml:space="preserve">C．；x2+(y−12)2=2␉D．x2+(y−1)2=2
+[271] OPT ␉␉␉␉A．{0,1}；B．{0,2}；C．(0,2)；D．(0,1)∪(1,2)
+[321] OPT ␉␉␉␉A．；5−10␉B．；10−5␉C．；13−3␉D．3−13
+[333] OPT ␉␉A．22−3；B．42−23</w:r><w:r><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr><w:t>C．22−1；D．42−2
+[375] OPT ␉␉A．；x23+y24=1␉B．x24+y23=1；C．x216+y215=1␉；D．x24+y2=1
+[399] OPT ␉␉A．；x24+y23=1␉B．x24+y23=1x≠±2</w:r><w:r><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="24"/><w:szCs w:val="24"/></w:rPr><w:t xml:space="preserve">C．；␉D．
+[427] OPT ␉␉␉␉A．1+19␉；B．1+25␉；C．5␉；D．6
+[453] OPT ␉␉␉␉A．10␉；B．15␉；C．20␉；D．25
+[482] OPT ␉␉␉␉A．；32␉B．；53␉C．；132␉D．43
+[489] OPT ␉␉␉␉A．；12␉B．；33␉C．；32␉D．63
+[500] OPT ␉␉A．当PF2⊥x轴时，∠PF1F2=30°␉B．离心率e=1+52
+[501] oth ␉␉C．；λ=5−12␉D．点I的横坐标为定值a
+[542] OPT ␉␉␉␉A．；[23,4)␉B．；[23,3)␉C．；[23,+∞)␉D．(23,3)
+[614] OPT ␉␉␉␉A．2π3␉；B．4π3␉；C．8π3␉；D．16π3
+[622] OPT ␉␉␉␉A．8π␉；B．16π␉；C．24π␉；D．32π
+[643] OPT ␉␉␉␉A．2,+∞␉；B．23,+∞␉；C．2,4␉；D．23,4
+[719] OPT ␉␉␉␉A．x220+y29=1␉；B．x220+y210=1␉；C．x220+y211=1␉；D．x220+y212=1
+[761] OPT ␉␉␉␉A．30°␉；B．45°␉；C．60°␉；D．90°
+[781] OPT ␉␉␉␉A．2␉B．3␉C．4␉D．52
+[793] OPT ␉␉␉␉A．1␉；B．2␉；C．3␉；D．6
+[798] OPT ␉␉␉␉A．2␉；B．3␉；C．2␉；D．3
+[845] OPT ␉␉␉␉A．①②␉；B．①③␉；C．②④␉；D．①③④
+[938] OPT ␉␉␉␉A．1␉B．3␉C．2␉D．5
+[1006] OPT ␉␉␉␉A．；23␉B．4␉C．；43␉D．8

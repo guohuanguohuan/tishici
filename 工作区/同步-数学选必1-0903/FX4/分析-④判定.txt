@@ -1,0 +1,40 @@
+== p[138]
+  oMath[0] eqArr=True | {x=x_(1)+(−√(10))+√(10)/3 ⟂ y=y_(1)+0+0/3)
+  oMath[1] eqArr=True | {x_(1)=3x ⟂ y_(1)=3y)
+== p[156]
+  oMath[0] eqArr=True | {y=y_(1)/my1-1(x+2) ⟂ y=y_(2)/my2-5(x-2))
+== p[216]
+  oMath[8] eqArr=False | k_(1)⋅k_(2)=y-1/x⋅y+1/x=-2
+== p[249]
+  oMath[2] eqArr=False | l:y=kx+2k=k(x+2)
+== p[256]
+  oMath[2] eqArr=False | k_(AB)k_(AC)=y-6/x⋅y+6/x=y^(2)-36/x^(2)=-4/9
+== p[326]
+  oMath[2] eqArr=False | |PF_(2))−|PD)=2a=4
+== p[456]
+  oMath[0] eqArr=False | |AF_(1))+|AF_(2))=2a=10
+  oMath[1] eqArr=False | |BF_(1))+|BF_(2))=2a=10
+== p[487]
+  oMath[3] eqArr=False | |MF_(1))+|MF_(2))/|F_(1)F_(2))=2a/2c=1/e=5/3
+== p[548]
+  oMath[0] eqArr=False | |AF_(1)|−|AF_(2)|=2a=2√(3)
+  oMath[4] eqArr=False | (c+t)−(c−t)=2√(3)⇒t=√(3)
+== p[608]
+  oMath[0] eqArr=True | {1/9m+1/9n=1 ⟂ 1/4n=1)
+  oMath[1] eqArr=True | {m=5 ⟂ n=4)
+== p[709]
+  oMath[0] eqArr=True | {2a=4√(3) ⟂ e=c/a=√(6)/3)
+  oMath[1] eqArr=True | {a=2√(3) ⟂ c=2√(2))
+  oMath[2] eqArr=False | b^(2)=a^(2)-c^(2)=12-8=4
+== p[744]
+  oMath[0] eqArr=True | {2×1/2⋅2a⋅b=120 ⟂ a^(2)+b^(2)=13^(2)=169 ⟂ a>b>0)⇒{a=12 ⟂ b=5)
+== p[765]
+  oMath[2] eqArr=False | c=√(a^(2)-b^(2))=√(25-25/2)=5√(2)/2
+  oMath[3] eqArr=False | |PF_(1))=|PF_(2))=5
+  oMath[4] eqArr=False | |F_(1)F_(2))=2c=5√(2)
+== p[964]
+  oMath[8] eqArr=False | e=c/a=√(a^(2)−1)/a=√(1−1/a^(2))∈(0,√(6)/3)
+== p[1009]
+  oMath[3] eqArr=True | {x^(2)/12+y^(2)/4=1 ⟂ y=kx+r)
+== p[1035]
+  oMath[0] eqArr=False | |PF_(1))+|PF_(2))=2a=4

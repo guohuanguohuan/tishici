@@ -1,0 +1,49 @@
+## 1、页眉页脚形态：jc/sz/字体（十件×2部件）
+X1 header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+X1 footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+I1 header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+I1 footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+B header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+B footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+C header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+C footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+X2 header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+X2 footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+I2 header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+I2 footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+E header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+E footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+F header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+F footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+G header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+G footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+H header1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+H footer1.xml: jc={'left'} sz={'18'} fonts=['Times New Roman', '宋体'] 段落数=1 w:tab=0
+
+## 2、C件恢复完整性：当前文件 vs 工作区head_C.docx留档（sha256+逐部件）
+当前C sha256=b5c7c8831f3ccf2896a0157a29a79656df7b60dfaf1205b0909666fe0d1a76e0
+留档   sha256=b5c7c8831f3ccf2896a0157a29a79656df7b60dfaf1205b0909666fe0d1a76e0
+整包一致=True
+成员集一致=True（176/176）
+逐部件差异数=0
+
+## 3、装订单19实体行↔实际文件映射核对
+  配页行 → 人教B版选必1·封面.docx 存在=True
+  配页行 → 人教B版选必1·使用说明.docx 存在=True
+  配页行 → 人教B版选必1·册目录页.docx 存在=True
+  部分封面行 → 人教B版选必1·部分封面（第1章 空间向量与立体几何·清单）.docx
+  部分封面行 → 人教B版选必1·部分封面（第1章 空间向量与立体几何·衔接）.docx
+  部分封面行 → 人教B版选必1·部分封面（第1章 空间向量与立体几何·讲练）.docx
+  部分封面行 → 人教B版选必1·部分封面（第2章 平面解析几何·清单）.docx
+  部分封面行 → 人教B版选必1·部分封面（第2章 平面解析几何·衔接）.docx
+  部分封面行 → 人教B版选必1·部分封面（第2章 平面解析几何·讲练）.docx
+  内容件行[X1] → 人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx 存在=True
+  内容件行[I1] → 人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）.docx 存在=True
+  内容件行[B] → 人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）.docx 存在=True
+  内容件行[C] → 人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx 存在=True
+  内容件行[X2] → 人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx 存在=True
+  内容件行[I2] → 人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx 存在=True
+  内容件行[E] → 人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx 存在=True
+  内容件行[F] → 人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx 存在=True
+  内容件行[G] → 人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx 存在=True
+  内容件行[H] → 人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx 存在=True

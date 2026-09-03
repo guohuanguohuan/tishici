@@ -1,0 +1,926 @@
+{
+ "X1": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "1.2.1 空间中的点、直线与空间向量",
+     "1"
+    ],
+    "display": "人教B版选必1 第1章 空间向量与立体几何·衔接（共16页）·本1/共6本　1.2.1 空间中的点、直线与空间向量　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 5746,
+    "sha16": "1c42e1b8b863bb67"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "1.2.1 空间中的点、直线与空间向量",
+     "1"
+    ],
+    "display": "人教B版选必1 第1章 空间向量与立体几何·衔接（共16页）·本1/共6本　1.2.1 空间中的点、直线与空间向量　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3439,
+    "sha16": "765c87b73a9edca8"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:hAnsi=\"TimesNewRoman\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:line=\"410\"w:lineRule=\"atLeast\"w:before=\"0\"w:after=\"0\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "1"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:sep=\"1\" w:space=\"425\" w:num=\"2\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "答案": 29,
+   "知识点": 29,
+   "编注": 12,
+   "分析": 29,
+   "详解": 29,
+   "点睛": 1
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "I1": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "1.1 空间向量及其运算",
+     "1"
+    ],
+    "display": "人教B版选必1 第1章 空间向量与立体几何·清单（共14页）·本2/共6本　1.1 空间向量及其运算　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3490,
+    "sha16": "b90f72ad3951c077"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "1.1 空间向量及其运算",
+     "1"
+    ],
+    "display": "人教B版选必1 第1章 空间向量与立体几何·清单（共14页）·本2/共6本　1.1 空间向量及其运算　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3490,
+    "sha16": "19d0f74a342d2ea0"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:hAnsi=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:before=\"0\"w:after=\"0\"w:line=\"410\"w:lineRule=\"atLeast\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "1"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:sep=\"1\" w:space=\"425\" w:num=\"2\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 52,
+   "微提醒": 1,
+   "定理": 2,
+   "证明：向量投影法": 1,
+   "常用结论": 1,
+   "证明": 1,
+   "拓展": 1
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "B": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "1.1 空间向量及其运算",
+     "1"
+    ],
+    "display": "人教B版选必1 第1章 空间向量与立体几何·讲练（共114页）·本3/共6本　1.1 空间向量及其运算　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3491,
+    "sha16": "aeaa4fdcfa73d64a"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "1.1 空间向量及其运算",
+     "1"
+    ],
+    "display": "人教B版选必1 第1章 空间向量与立体几何·讲练（共114页）·本3/共6本　1.1 空间向量及其运算　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3491,
+    "sha16": "ac9fee97a92d2f4e"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:hAnsi=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:before=\"0\"w:after=\"0\"w:line=\"410\"w:lineRule=\"atLeast\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "1"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:sep=\"1\" w:space=\"425\" w:num=\"2\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 60,
+   "答案": 61,
+   "知识点": 61,
+   "分析": 67,
+   "详解": 61,
+   "点睛": 21,
+   "方法点睛": 1,
+   "定义": 1,
+   "核心任务": 1,
+   "确定截面的主要依据": 1,
+   "两类基本方法": 1,
+   "作图流程": 1,
+   "法二": 8,
+   "法一": 8,
+   "法三": 3,
+   "法四": 2,
+   "最优解": 2,
+   "整体点评": 1,
+   "概念辨析：线面角与二面角": 1,
+   "高考答题规范": 1,
+   "步骤1 证明面面垂直": 1,
+   "步骤2 建系求法向量": 1,
+   "步骤3 判断法向量方向": 1,
+   "步骤4 计算二面角": 1,
+   "大招指引": 1,
+   "答案思路·整题法一": 1,
+   "答案思路·整题法二": 1,
+   "整题法一": 1,
+   "步骤1 等体积与建系": 2,
+   "步骤2 叉乘求法向量": 1,
+   "整题法二": 1,
+   "步骤2 方程求法向量": 3,
+   "题后反思": 2,
+   "温馨提醒": 1,
+   "答案思路·第（1）问": 2,
+   "步骤1 证明底面内垂直": 1,
+   "步骤2 推出空间内垂直": 1,
+   "步骤1 写出平面内向量": 1,
+   "步骤2 叉乘并求角": 1,
+   "步骤1 建系写坐标": 1,
+   "步骤1 证明三角形全等": 1,
+   "步骤2 确定中点并平行": 1,
+   "步骤1 直接求两法向量": 1,
+   "步骤2 求另一法向量": 1,
+   "步骤3 计算二面角": 1,
+   "步骤1 建系求向量": 1,
+   "步骤1 计算关键线段": 1,
+   "步骤2 判定线面垂直": 1,
+   "步骤1 建立坐标系": 1,
+   "步骤2 验证线面垂直": 1,
+   "步骤1 证明关键垂直": 1,
+   "步骤2 构造直角关系": 1,
+   "步骤1 表示基底向量": 1,
+   "步骤2 验证垂直关系": 1,
+   "步骤1 建系求法向量": 1,
+   "步骤1 作出平面角": 1,
+   "步骤2 计算平面角": 1,
+   "步骤1 确定正射影": 1,
+   "步骤2 计算面积比": 1,
+   "步骤1 证明线线垂直": 1,
+   "步骤2 求异面直线夹角": 1,
+   "步骤3 求锐二面角": 1,
+   "步骤1 求关键量": 1,
+   "步骤2 定三面角": 1,
+   "步骤3 用余弦定理": 1,
+   "步骤1 确定射影": 1,
+   "步骤2 面积求角": 1,
+   "法一答案思路": 1,
+   "法二答案思路": 1,
+   "步骤1 证明垂直": 2,
+   "步骤2 射影求角": 1,
+   "步骤2 建系求角": 1,
+   "步骤1 投影求角": 1
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "C": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "1.2.5 空间中的距离",
+     "54"
+    ],
+    "display": "人教B版选必1 第1章 空间向量与立体几何·讲练（共114页）·本3/共6本　1.2.5 空间中的距离　第54页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3488,
+    "sha16": "ddcff8a0f3ceb975"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "1.2.5 空间中的距离",
+     "54"
+    ],
+    "display": "人教B版选必1 第1章 空间向量与立体几何·讲练（共114页）·本3/共6本　1.2.5 空间中的距离　第54页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3488,
+    "sha16": "44130dfa17345ad7"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:hAnsi=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:before=\"0\"w:after=\"0\"w:line=\"410\"w:lineRule=\"atLeast\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "54"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:sep=\"1\" w:space=\"425\" w:num=\"2\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 96,
+   "答案": 79,
+   "知识点": 79,
+   "分析": 81,
+   "详解": 79,
+   "点睛": 11,
+   "步骤一 补成正方体": 1,
+   "步骤二 确定球半径": 1,
+   "大招指引": 10,
+   "步骤一 求球半径": 1,
+   "步骤二 还原正方体": 1,
+   "步骤一 补成长方体": 1,
+   "步骤二 求体对角线": 1,
+   "步骤一 求外接球半径": 1,
+   "步骤二 求球心面距": 1,
+   "步骤一 判断位置关系": 1,
+   "步骤二 求内外接球": 1,
+   "题后反思": 7,
+   "温馨提醒": 6,
+   "方法说明": 1,
+   "翻折方式": 1,
+   "不变关系": 1,
+   "解题关键": 1,
+   "常见考法": 1,
+   "处理原则": 1,
+   "步骤1 补成正方体": 1,
+   "步骤2 判定截面": 1,
+   "步骤3 面积最值": 1,
+   "答案思路·法一": 1,
+   "法一：补形求截圆": 1,
+   "步骤1 补形求球": 2,
+   "步骤2 确定圆心": 1,
+   "步骤3 求半径周长": 1,
+   "答案思路·法二": 1,
+   "法二：向量求截圆": 2,
+   "步骤2 建立坐标": 1,
+   "步骤3 求面距周长": 1,
+   "步骤1 比较展开": 1,
+   "步骤2 筛选路径": 1,
+   "步骤3 计算最短路": 1,
+   "步骤1 展开侧面": 1,
+   "步骤2 共线取小": 1,
+   "步骤1 证明垂直": 1,
+   "步骤2 连续展开": 1,
+   "步骤3 余弦计算": 1,
+   "步骤1 展开圆锥": 1,
+   "步骤2 余弦定角": 1,
+   "步骤1 展开半圆锥": 1,
+   "步骤2 确定最短线": 1,
+   "步骤3 弧长求半径": 1,
+   "步骤1 固定周长项": 1,
+   "步骤2 翻折取小": 1,
+   "步骤3 计算外接球": 1,
+   "法一": 3,
+   "步骤1 找轨迹": 2,
+   "步骤2 求结论": 2,
+   "答案思路法一": 1,
+   "答案思路法二": 1,
+   "法一：建系轨迹法": 1,
+   "步骤1 建系列式": 1,
+   "步骤2 分情况": 1,
+   "步骤3 总结答案": 1,
+   "法二：阿波罗尼斯球": 1,
+   "步骤1 看空间轨迹": 1,
+   "步骤2 求球心半径": 1,
+   "步骤3 求临界值": 1,
+   "步骤4 判交线类型": 1,
+   "步骤5 总结答案": 1,
+   "不变量": 4,
+   "步骤1确定不变量": 1,
+   "步骤2构造最短距离": 1,
+   "步骤3验证垂直关系": 1,
+   "步骤4计算比例": 1,
+   "第（1）问·法一答案思路": 1,
+   "步骤1构造固定垂面": 1,
+   "第（1）问·法二答案思路": 1,
+   "法二": 2,
+   "第（2）问·法一答案思路": 1,
+   "第（2）问·法二答案思路": 1,
+   "步骤4向量法求最值": 1,
+   "步骤1证明线线垂直": 1,
+   "步骤2完成第一问": 1,
+   "步骤3转化面积最值": 1,
+   "步骤4计算棱锥体积": 1,
+   "步骤1构造平行线": 1,
+   "步骤2确定最小夹角": 1,
+   "步骤3计算线段比": 1
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "X2": {
+  "file": "人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.8 直线与圆锥曲线的位置关系",
+     "1"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接（共6页）·本4/共6本　2.8 直线与圆锥曲线的位置关系　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3588,
+    "sha16": "c99f178320ad386b"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.8 直线与圆锥曲线的位置关系",
+     "1"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接（共6页）·本4/共6本　2.8 直线与圆锥曲线的位置关系　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3588,
+    "sha16": "c7ad55fb959e4c47"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:hAnsi=\"TimesNewRoman\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:before=\"0\"w:after=\"0\"w:line=\"410\"w:lineRule=\"atLeast\"/><w:jcw:val=\"left\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "1"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:num=\"2\" w:space=\"425\" w:sep=\"1\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 6,
+   "分析": 13,
+   "答案": 13,
+   "知识点": 13,
+   "详解": 7
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "I2": {
+  "file": "人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.1 坐标法",
+     "1"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·清单（共28页）·本5/共6本　2.1 坐标法　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3483,
+    "sha16": "6572c9d905945212"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.1 坐标法",
+     "1"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·清单（共28页）·本5/共6本　2.1 坐标法　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3483,
+    "sha16": "35a25ed65b5e88e8"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:hAnsi=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:before=\"0\"w:after=\"0\"w:line=\"410\"w:lineRule=\"atLeast\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "1"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:space=\"425\" w:num=\"2\" w:sep=\"1\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 71,
+   "核心结论": 1,
+   "证明要点": 1,
+   "注": 3,
+   "结论": 4,
+   "推导过程": 1,
+   "应用场景": 1,
+   "推导简述": 1,
+   "注意": 1,
+   "备考建议": 1,
+   "微思考": 1,
+   "证明": 1,
+   "性质证明": 1,
+   "性质①证明（点差法）": 1
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "E": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.1 坐标法",
+     "1"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本　2.1 坐标法　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3484,
+    "sha16": "368c8b774e87a6f3"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.1 坐标法",
+     "1"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本　2.1 坐标法　第1页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3484,
+    "sha16": "54e0f3a9a32b67c3"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:hAnsi=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:before=\"0\"w:after=\"0\"w:line=\"410\"w:lineRule=\"atLeast\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "1"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:space=\"425\" w:num=\"2\" w:sep=\"1\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 78,
+   "答案": 92,
+   "知识点": 92,
+   "分析": 92,
+   "详解": 92,
+   "点睛": 30,
+   "大招指引": 10,
+   "题后反思": 11,
+   "温馨提醒": 10
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "F": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.3.4 圆与圆的位置关系",
+     "50"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本　2.3.4 圆与圆的位置关系　第50页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3502,
+    "sha16": "0efa576b3548178f"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.3.4 圆与圆的位置关系",
+     "50"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本　2.3.4 圆与圆的位置关系　第50页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3502,
+    "sha16": "d2a6eabc1249f7c0"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:hAnsi=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:before=\"0\"w:after=\"0\"w:line=\"410\"w:lineRule=\"atLeast\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "50"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:space=\"425\" w:num=\"2\" w:sep=\"1\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 76,
+   "答案": 90,
+   "知识点": 90,
+   "分析": 90,
+   "详解": 90,
+   "点睛": 20,
+   "大招指引": 11,
+   "题后反思": 11,
+   "温馨提醒": 11,
+   "例证": 1
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "G": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.6 双曲线及其方程",
+     "103"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本　2.6 双曲线及其方程　第103页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 5805,
+    "sha16": "acfaa82170020a2f"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.6 双曲线及其方程",
+     "103"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本　2.6 双曲线及其方程　第103页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 5805,
+    "sha16": "b2ffa00b9536807b"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:hAnsi=\"TimesNewRoman\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/><w:langw:val=\"en-US\"w:eastAsia=\"zh-CN\"w:bidi=\"ar-SA\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:line=\"410\"w:lineRule=\"atLeast\"w:before=\"0\"w:after=\"0\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "103"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:space=\"425\" w:num=\"2\" w:sep=\"1\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 57,
+   "答案": 68,
+   "知识点": 68,
+   "分析": 71,
+   "详解": 68,
+   "点睛": 13,
+   "大招指引": 5,
+   "题后反思": 5,
+   "温馨提醒": 5,
+   "微思考": 1,
+   "不变量": 1,
+   "证明": 1
+  },
+  "updateFields": true,
+  "evenOdd": false
+ },
+ "H": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx",
+  "hf_parts": [
+   {
+    "part": "word/footer1.xml",
+    "kind": "footer",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.8 直线与圆锥曲线的位置关系",
+     "142"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本　2.8 直线与圆锥曲线的位置关系　第142页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3513,
+    "sha16": "157b7266384c7e67"
+   },
+   {
+    "part": "word/header1.xml",
+    "kind": "header",
+    "fld_begin": 2,
+    "fld_sep": 2,
+    "fld_end": 2,
+    "fldSimple": 0,
+    "NUMPAGES": false,
+    "instr_list": [
+     " STYLEREF \"节名锚\" ",
+     " PAGE "
+    ],
+    "instr_join": " STYLEREF \"节名锚\"  PAGE ",
+    "cached_vals": [
+     "2.8 直线与圆锥曲线的位置关系",
+     "142"
+    ],
+    "display": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本　2.8 直线与圆锥曲线的位置关系　第142页",
+    "pair_ok": true,
+    "instr_norm": "STYLEREF\"节名锚\"PAGE",
+    "bytes": 3513,
+    "sha16": "ecb79b7f9da34808"
+   }
+  ],
+  "rPrDefault": "<w:rPr><w:rFontsw:ascii=\"TimesNewRoman\"w:hAnsi=\"TimesNewRoman\"w:eastAsia=\"宋体\"w:cs=\"TimesNewRoman\"/><w:szw:val=\"24\"/><w:szCsw:val=\"24\"/></w:rPr>",
+  "pPrDefault": "<w:pPr><w:spacingw:before=\"0\"w:after=\"0\"w:line=\"410\"w:lineRule=\"atLeast\"/></w:pPr>",
+  "sect_count": 2,
+  "starts": [
+   "142"
+  ],
+  "cols": [
+   "<w:cols w:num=\"1\"/>",
+   "<w:cols w:space=\"425\" w:num=\"2\" w:sep=\"1\"/>"
+  ],
+  "pgMar": [
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>",
+   "<w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"850\" w:gutter=\"0\"/>"
+  ],
+  "label_tags": {
+   "编注": 79,
+   "分析": 89,
+   "答案": 89,
+   "知识点": 89,
+   "详解": 89,
+   "点睛": 21,
+   "大招指引": 16,
+   "题后反思": 16,
+   "温馨提醒": 16,
+   "整体点评": 1,
+   "例证二": 1
+  },
+  "updateFields": true,
+  "evenOdd": false
+ }
+}

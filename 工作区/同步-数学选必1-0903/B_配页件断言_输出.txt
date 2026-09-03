@@ -1,0 +1,128 @@
+====================================================================================================
+【人教B版选必1·封面.docx】 zip成员数=17 document.xml=3413B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=在（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 19} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=0 非零left=0（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=19 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+     pPrDefault=<w:pPr><w:spacing w:before="0" w:after="0" w:line="288" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=0 wp:inline=0 wp:anchor=0（零锚定PASS）
+====================================================================================================
+【人教B版选必1·使用说明.docx】 zip成员数=17 document.xml=15857B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=无（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 34} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=0 非零left=0（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=34 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-
+     pPrDefault=<w:pPr><w:spacing w:after="200" w:line="276" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=0 wp:inline=0 wp:anchor=0（零锚定PASS）
+====================================================================================================
+【人教B版选必1·册目录页.docx】 zip成员数=17 document.xml=13025B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=无（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 20} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=16 非零left=16（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=20 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-
+     pPrDefault=<w:pPr><w:spacing w:after="200" w:line="276" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=0 wp:inline=0 wp:anchor=0（零锚定PASS）
+====================================================================================================
+【人教B版选必1·部分封面（第1章 空间向量与立体几何·衔接）.docx】 zip成员数=18 document.xml=5202B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=无（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 13} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=0 非零left=0（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=13 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-
+     pPrDefault=<w:pPr><w:spacing w:after="200" w:line="276" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=1 wp:inline=1 wp:anchor=0（零锚定PASS）
+====================================================================================================
+【人教B版选必1·部分封面（第1章 空间向量与立体几何·清单）.docx】 zip成员数=18 document.xml=5221B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=无（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 13} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=0 非零left=0（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=13 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-
+     pPrDefault=<w:pPr><w:spacing w:after="200" w:line="276" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=1 wp:inline=1 wp:anchor=0（零锚定PASS）
+====================================================================================================
+【人教B版选必1·部分封面（第1章 空间向量与立体几何·讲练）.docx】 zip成员数=18 document.xml=5229B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=无（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 13} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=0 非零left=0（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=13 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-
+     pPrDefault=<w:pPr><w:spacing w:after="200" w:line="276" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=1 wp:inline=1 wp:anchor=0（零锚定PASS）
+====================================================================================================
+【人教B版选必1·部分封面（第2章 平面解析几何·衔接）.docx】 zip成员数=18 document.xml=5199B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=无（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 13} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=0 非零left=0（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=13 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-
+     pPrDefault=<w:pPr><w:spacing w:after="200" w:line="276" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=1 wp:inline=1 wp:anchor=0（零锚定PASS）
+====================================================================================================
+【人教B版选必1·部分封面（第2章 平面解析几何·清单）.docx】 zip成员数=18 document.xml=5218B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=无（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 13} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=0 非零left=0（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=13 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-
+     pPrDefault=<w:pPr><w:spacing w:after="200" w:line="276" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=1 wp:inline=1 wp:anchor=0（零锚定PASS）
+====================================================================================================
+【人教B版选必1·部分封面（第2章 平面解析几何·讲练）.docx】 zip成员数=18 document.xml=5226B
+  ①页眉页脚部件=0（无） document.xml内header/footerReference=0 | PASS
+  settings.xml：evenAndOddHeaders=无 updateFields=无（配页件无页码域，updateFields无需在位）
+  ②不计页：sectPr数=1 pgNumType=0 PAGE/fldSimple/NUMPAGES域=无 | PASS
+  ③sect#1 pgSzw:w="11906" w:h="16838"
+  ④sect#1 pgMarw:top="850" w:right="850" w:bottom="850" w:left="850" w:header="850" w:footer="850" w:gutter="0"
+     四边850：PASS（header=850,footer=850）
+  ⑤对齐：jc分布={'left': 13} 非left=0 | PASS
+  ⑤b缩进：w:ind总数=0 非零left=0（册目录页层级缩进例外；其他件应=0）
+  ⑥页数结构：段落数=13 手动分页符=0 全部w:br=0 lastRenderedPageBreak=0 sectPr=1 → 结构上1页
+  ⑦docDefaults：rPrDefault=<w:rPr><w:rFonts w:asciiTheme="minorHAnsi" w:eastAsiaTheme="minorEastAsia" w:hAnsiTheme="minorHAnsi" w:cstheme="minorBidi"/><w:sz w:val="22"/><w:szCs w:val="22"/><w:lang w:val="en-
+     pPrDefault=<w:pPr><w:spacing w:after="200" w:line="276" w:lineRule="auto"/></w:pPr>
+  ⑧图：media=1 wp:inline=1 wp:anchor=0（零锚定PASS）
+====================================================================================================
+完成：配页件10件断言（封面/使用说明/册目录页/部分封面×6）。

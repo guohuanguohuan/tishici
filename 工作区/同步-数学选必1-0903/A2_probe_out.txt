@@ -1,0 +1,82 @@
+==========================================================================================
+【X2】
+E0E0E0挂点分类={'pPr段级': 18}
+w:color=1F4E79 run数=0 样本=[]
+w:color=000000 run数=0 样本=[]
+sz=21 run数=0（正文顶层段）样例：
+数学区m:r sz=21数=0
+w:tab总数=0 选项行内tab=0 其他样例=[]
+孤儿图引（±5段窗）=0：[]
+==========================================================================================
+【I2】
+E0E0E0挂点分类={}
+w:color=1F4E79 run数=2 样本=[('|+|M', '2.5.1-1．〔基〕把平面内与两个定点F1，F2的距离的和'), ('|=2a', '2.5.1-1．〔基〕把平面内与两个定点F1，F2的距离的和')]
+w:color=000000 run数=2 样本=[('〔基〕＝基础必会：必须学完本条目，才能做', '〔基〕＝基础必会：必须学完本条目，才能做本章题目'), ('〔进〕＝进阶汇总：本章各题型常识/结论的', '〔进〕＝进阶汇总：本章各题型常识/结论的汇总，方便复习，必须')]
+sz=21 run数=36（正文顶层段）样例：
+   段53 纯文本 txt='' rPr=<w:rPr><w:rFonts w:eastAsia="宋体"/><w:noProof/><w:kern w:val="0"/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段75 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:eastAsia="宋体" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:kern w:val="0"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:u w:val="none"/></w:rPr>
+   段83 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:eastAsia="宋体" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:kern w:val="0"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:u w:val="none"/></w:rPr>
+   段88 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:eastAsia="宋体" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:kern w:val="0"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:u w:val="none"/></w:rPr>
+   段95 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:eastAsia="宋体" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:noProof/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段111 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:eastAsia="宋体" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:kern w:val="0"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:u w:val="none"/></w:rPr>
+数学区m:r sz=21数=0
+w:tab总数=0 选项行内tab=0 其他样例=[]
+孤儿图引（±5段窗）=0：[]
+==========================================================================================
+【E】
+E0E0E0挂点分类={'pPr段级': 161}
+w:color=1F4E79 run数=0 样本=[]
+w:color=000000 run数=0 样本=[]
+sz=21 run数=74（正文顶层段）样例：
+   段24 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:eastAsia="宋体" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:noProof/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段27 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段34 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段48 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体" w:cs="Times New Roman"/><w:kern w:val="0"/><w:u w:val="none"/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段152 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:noProof/><w:kern w:val="0"/></w:rPr>
+   段166 含图 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:noProof/><w:kern w:val="0"/></w:rPr>
+数学区m:r sz=21数=0
+w:tab总数=98 选项行内tab=98 其他样例=[]
+孤儿图引（±5段窗）=0：[]
+==========================================================================================
+【F】
+E0E0E0挂点分类={'pPr段级': 164}
+w:color=1F4E79 run数=0 样本=[]
+w:color=000000 run数=0 样本=[]
+sz=21 run数=0（正文顶层段）样例：
+数学区m:r sz=21数=0
+w:tab总数=125 选项行内tab=125 其他样例=[]
+孤儿图引（±5段窗）=1：[(851, '【详解】解：如图所示，')]
+==========================================================================================
+【G】
+E0E0E0挂点分类={'pPr段级': 118}
+w:color=1F4E79 run数=0 样本=[]
+w:color=000000 run数=0 样本=[]
+sz=21 run数=42（正文顶层段）样例：
+   段52 纯文本 txt='' rPr=<w:rPr><w:noProof/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段63 含图 txt='' rPr=<w:rPr><w:noProof/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段69 纯文本 txt='' rPr=<w:rPr><w:noProof/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段238 纯文本 txt='' rPr=<w:rPr><w:noProof/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段250 纯文本 txt='' rPr=<w:rPr><w:noProof/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段258 纯文本 txt='' rPr=<w:rPr><w:noProof/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+数学区m:r sz=21数=0
+w:tab总数=130 选项行内tab=129 其他样例=[(516, 1, '2.7.1.8-13．（中档·保80%·卡壳看答案）如图，在平面四边形ABCD中')]
+孤儿图引（±5段窗）=0：[]
+==========================================================================================
+【H】
+E0E0E0挂点分类={'pPr段级': 138, 'tcPr表格': 15, 'run级rPr': 45}
+  非段级样本: …="69B4C15F" w14:textId="77777777" w:rsidTr="009D0215"><w:trPr><w:tblHeader/></w:trPr><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:sz="6" w:space="0" w:color="E0E0E0"/><w:left w:val="single" w:sz…
+  非段级样本: …<w:tblHeader/></w:trPr><w:tc><w:tcPr><w:tcW w:w="0" w:type="auto"/><w:tcBorders><w:top w:val="single" w:sz="6" w:space="0" w:color="E0E0E0"/><w:left w:val="single" w:sz="6" w:space="0" w:color="E0E0E0"/><w:bottom w:val="single" w:…
+  非段级样本: …"/><w:tcBorders><w:top w:val="single" w:sz="6" w:space="0" w:color="E0E0E0"/><w:left w:val="single" w:sz="6" w:space="0" w:color="E0E0E0"/><w:bottom w:val="single" w:sz="6" w:space="0" w:color="E0E0E0"/><w:right w:val="single" w:s…
+w:color=1F4E79 run数=1 样本=[(' / ', '巧妙规避 Δ 计算（重根性质）：由于点 P(x₀, y₀) ')]
+w:color=000000 run数=0 样本=[]
+sz=21 run数=69（正文顶层段）样例：
+   段74 纯文本 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:eastAsia="宋体" w:hAnsi="Times New Roman" w:cs="Times New Roman"/><w:kern w:val="0"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:u w:val="none"/></w:rPr>
+   段144 纯文本 txt='' rPr=<w:rPr><w:rFonts w:eastAsia="宋体"/><w:noProof/><w:kern w:val="0"/><w:sz w:val="21"/><w:szCs w:val="21"/></w:rPr>
+   段193 含图 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:noProof/><w:kern w:val="0"/></w:rPr>
+   段193 含图 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:noProof/><w:kern w:val="0"/></w:rPr>
+   段193 含图 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:noProof/><w:kern w:val="0"/></w:rPr>
+   段193 含图 txt='' rPr=<w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"/><w:sz w:val="21"/><w:szCs w:val="21"/><w:noProof/><w:kern w:val="0"/></w:rPr>
+数学区m:r sz=21数=0
+w:tab总数=48 选项行内tab=48 其他样例=[]
+孤儿图引（±5段窗）=0：[]
+DONE

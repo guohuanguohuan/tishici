@@ -1,0 +1,110 @@
+########## 一、册目录页目录树逐行提取 ##########
+p00 ind_left=    - ind_firstLine=    - fill=     - bold=1 sz=['32'] tab=[] lead=['dot']
+     文字：人教B版选必1·册目录页
+p01 ind_left=    - ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：件／节（括注＝题量）
+p02 ind_left=    - ind_firstLine=    - fill=     - bold=1 sz=['24'] tab=[] lead=['dot']
+     文字：第1章 空间向量与立体几何1
+p03 ind_left=  420 ind_firstLine=    - fill=C9C9C9 bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：衔接件（29题·全部必会）　·本11
+p04 ind_left=  420 ind_firstLine=    - fill=C9C9C9 bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：知识清单（47条：基33·进14）　·本21
+p05 ind_left=  420 ind_firstLine=    - fill=C9C9C9 bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：讲练件（140题：简单21·中档104·难15）　·本31
+p06 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：1.1 空间向量及其运算（24题）2
+p07 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：1.2 空间向量在立体几何中的应用（116题）14
+p08 ind_left=    - ind_firstLine=    - fill=     - bold=1 sz=['24'] tab=[] lead=['dot']
+     文字：第2章 平面解析几何1
+p09 ind_left=  420 ind_firstLine=    - fill=C9C9C9 bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：衔接件（13题·全部必会）　·本41
+p10 ind_left=  420 ind_firstLine=    - fill=C9C9C9 bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：知识清单（67条：基38·进29）　·本51
+p11 ind_left=  420 ind_firstLine=    - fill=C9C9C9 bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：讲练件（339题：简单47·中档246·难46）　·本61
+p12 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：2.1 坐标法（1题）2
+p13 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：2.2 直线（38题）2
+p14 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：2.3 圆（61题）21
+p15 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：2.4 曲线与方程（19题）55
+p16 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：2.5 椭圆（63题）67
+p17 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：2.6 双曲线（36题）104
+p18 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：2.7 抛物线（32题）121
+p19 ind_left=  840 ind_firstLine=    - fill=     - bold=1 sz=['18'] tab=[] lead=['dot']
+     文字：2.8 直线与圆锥曲线的位置关系（89题）143
+
+########## 二、内容件实测：start/pgSz/节标题/统计段 ##########
+【X1】人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx
+  pgNumType start=['1'] headerReference=1 footerReference=1
+  全件统计行：None
+  节标题（双签名，表外，同节号首现）共0个：
+【I1】人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）.docx
+  pgNumType start=['1'] headerReference=1 footerReference=1
+  全件统计行：None
+  节标题（双签名，表外，同节号首现）共0个：
+【B】人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）.docx
+  pgNumType start=['1'] headerReference=1 footerReference=1
+  全件统计行：全件140题：简单21｜中档104｜难15
+  节标题（双签名，表外，同节号首现）共7个：
+    1.1.1    底纹=ADC2DA  1.1.1 空间向量及其运算　本节10题：简单6｜中档4｜难0
+    1.1.2    底纹=ADC2DA  1.1.2 空间向量基本定理　本节4题：简单2｜中档2｜难0
+    1.1.3    底纹=ADC2DA  1.1.3 空间向量的坐标与空间直角坐标系　本节10题：简单3｜中档7｜难0
+    1.2.1    底纹=ADC2DA  1.2.1 空间中的点、直线与空间向量　本节9题：简单2｜中档6｜难1
+    1.2.2    底纹=ADC2DA  1.2.2 空间中的平面与空间向量　本节7题：简单2｜中档5｜难0
+    1.2.3    底纹=ADC2DA  1.2.3 直线与平面的夹角　本节8题：简单1｜中档6｜难1
+    1.2.4    底纹=ADC2DA  1.2.4 二面角　本节13题：简单0｜中档13｜难0
+【C】人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx
+  pgNumType start=['54'] headerReference=1 footerReference=1
+  全件统计行：None
+  节标题（双签名，表外，同节号首现）共1个：
+    1.2.5    底纹=ADC2DA  1.2.5 空间中的距离　本节79题：简单5｜中档61｜难13
+【X2】人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx
+  pgNumType start=['1'] headerReference=1 footerReference=1
+  全件统计行：None
+  节标题（双签名，表外，同节号首现）共0个：
+【I2】人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx
+  pgNumType start=['1'] headerReference=1 footerReference=1
+  全件统计行：None
+  节标题（双签名，表外，同节号首现）共0个：
+【E】人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx
+  pgNumType start=['1'] headerReference=1 footerReference=1
+  全件统计行：全件339题：简单47｜中档246｜难46
+  节标题（双签名，表外，同节号首现）共8个：
+    2.1      底纹=ADC2DA  2.1 坐标法　本节1题：简单1｜中档0｜难0
+    2.2.1    底纹=ADC2DA  2.2.1 直线的倾斜角与斜率　本节6题：简单4｜中档2｜难0
+    2.2.2    底纹=ADC2DA  2.2.2 直线的方程　本节9题：简单2｜中档5｜难2
+    2.2.3    底纹=ADC2DA  2.2.3 两条直线的位置关系　本节13题：简单1｜中档11｜难1
+    2.2.4    底纹=ADC2DA  2.2.4 点到直线的距离　本节10题：简单0｜中档8｜难2
+    2.3.1    底纹=ADC2DA  2.3.1 圆的标准方程　本节14题：简单2｜中档11｜难1
+    2.3.2    底纹=ADC2DA  2.3.2 圆的一般方程　本节6题：简单1｜中档5｜难0
+    2.3.3    底纹=ADC2DA  2.3.3 直线与圆的位置关系　本节33题：简单0｜中档27｜难6
+【F】人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx
+  pgNumType start=['50'] headerReference=1 footerReference=1
+  全件统计行：None
+  节标题（双签名，表外，同节号首现）共4个：
+    2.3.4    底纹=ADC2DA  2.3.4 圆与圆的位置关系　本节8题：简单1｜中档6｜难1
+    2.4      底纹=ADC2DA  2.4 曲线与方程　本节19题：简单1｜中档12｜难6
+    2.5.1    底纹=ADC2DA  2.5.1 椭圆的标准方程　本节27题：简单3｜中档18｜难6
+    2.5.2    底纹=ADC2DA  2.5.2 椭圆的几何性质　本节36题：简单9｜中档18｜难9
+【G】人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx
+  pgNumType start=['103'] headerReference=1 footerReference=1
+  全件统计行：None
+  节标题（双签名，表外，同节号首现）共4个：
+    2.6.1    底纹=ADC2DA  2.6.1 双曲线的标准方程　本节16题：简单6｜中档9｜难1
+    2.6.2    底纹=ADC2DA  2.6.2 双曲线的几何性质　本节20题：简单5｜中档13｜难2
+    2.7.1    底纹=ADC2DA  2.7.1 抛物线的标准方程　本节14题：简单5｜中档9｜难0
+    2.7.2    底纹=ADC2DA  2.7.2 抛物线的几何性质　本节18题：简单1｜中档17｜难0
+【H】人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx
+  pgNumType start=['142'] headerReference=1 footerReference=1
+  全件统计行：None
+  节标题（双签名，表外，同节号首现）共1个：
+    2.8      底纹=ADC2DA  2.8 直线与圆锥曲线的位置关系　本节89题：简单5｜中档75｜难9
+
+数据已落盘 B_册目录核对_数据.json

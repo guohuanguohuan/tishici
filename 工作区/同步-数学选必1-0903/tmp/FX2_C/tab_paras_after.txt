@@ -1,0 +1,31 @@
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．3；B．2；C．«math»；D．1
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+1.2.5.9-21．（中档·保80%·卡壳看答案）已知四面体«math»满足«math»，«math»，«math»，且该四面体的体积为«math»，则异面直线«math»与«math»所成角的大小为（    ）A．；«math»；B．；«math»；C．«math»或«math»；D．«math»或«math»
+⇥⇥⇥1.2.5.10-22．（中档·保80%·卡壳看答案）已知四面体ABCD为正四面体，AB=4，E，F分别是AD，BC中点.若用一个与EF垂直，且与四面体的每一个面都相交的平面α去截该四面体，由此得到一个多边形截面，则该多边形截面面积最大值为（    ）A．；«math»；B．2；C．3；D．4
+1.2.5.11-23．（中档·保80%·卡壳看答案）已知四面体«math»的所有棱长均为10，点«math»在直线«math»上，则«math»到«math»的距离的最小值为（    ）A．；«math»B．；«math»C．；«math»；D．«math»
+1.2.5.13-25．（中档·保80%·卡壳看答案）已知四面体«math»的体积为3，从顶点«math»出发的三条棱«math»两两垂直，若«math»，则该四面体外接球表面积的最小值为（    ）A．；«math»；B．；«math»；C．；«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+1.2.5.18.1-31．（中档·保80%·卡壳看答案）在《九章算术》中，将四个面都是直角三角形的四面体称为鳖臑.在鳖臑«math»中，«math»平面«math»，«math»，且«math»，则其内切球表面积为（    ）A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．6；B．5；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．4π；B．6π；C．12π；D．24π
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．1
+⇥A．«math»；B．«math»；C．«math»；D．«math»
+⇥⇥⇥A．«math»立方米；B．«math»立方米；C．«math»立方米；D．«math»立方米
+⇥⇥⇥A．«math»；B．«math»；C．«math»；D．«math»
+1.2.5.30-65．（中档·保80%·卡壳看答案）在《九章算术》中，将底面为矩形且有一条侧棱与底面垂直的四棱锥称为“阳马”．如图，在“阳马”«math»中，«math»底面«math»，«math»，«math»是棱«math»的中点，点«math»是棱«math»上的动点，则当«math»的周长最小时，三棱锥«math»外接球的表面积为（    ）A．；«math»；B．«math» C．«math»；D．«math»
+A．直线；B．圆；C．椭圆；D．抛物线
+⇥⇥⇥A．一条射线；B．一条直线；C．三条直线；D．四条直线
+⇥⇥⇥1.2.5.35-78．（难·冲100%·卡壳看答案）如图，在正四面体«math»中，«math»为«math»中点，«math»是棱«math»上的动点，则当异面直线«math»与«math»所成角的sin最小时，«math»（    ）A．；«math»；B．；«math»；C．；«math»；D．«math»
+⇥A．«math»；B．«math»；C．«math»；D．«math»

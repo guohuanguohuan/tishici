@@ -1,0 +1,576 @@
+====================================================================================================
+【X2】人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx
+document.xml 段落总数=88, 文件大小=0.02 MB
+settings updateFields=true
+styles: 节名锚 styleId='JieMingMao', heading3 styleId='Heading3', heading2 styleId=None
+  节名锚样式rPr={"color": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}}
+  节名锚样式pPr={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "20", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "exact"}, "jc": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"}}
+  docDefaults rPrDefault={"rFonts": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia": "宋体", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}cs": "Times New Roman"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}}
+  docDefaults pPrDefault={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "410", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "atLeast"}, "jc": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"}}
+sectPr 总数=2
+  sect[0] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "1", "space": null, "sep": null}, "pgNumType_start": "1", "hdrRefs": [["default", "rId4"]], "ftrRefs": [["default", "rId5"]]}
+  sect[1] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "2", "space": "425", "sep": "1"}, "hdrRefs": [], "ftrRefs": []}
+  body末级sectPr存在=是
+引用的header/footer parts=['footer1.xml', 'header1.xml']
+包内全部header/footer parts=['word/footer1.xml', 'word/header1.xml']
+  [footer1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接（共6页）·本4/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.8 直线与圆锥曲线的位置关系\u3000第⟦I: PAGE ⟧1页'
+  [header1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接（共6页）·本4/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.8 直线与圆锥曲线的位置关系\u3000第⟦I: PAGE ⟧1页'
+evenAndOddHeaders=False titlePg数=0
+节名锚段数=1（样式'JieMingMao'）
+  锚[1] '2.8 直线与圆锥曲线的位置关系'
+节标题(样式heading3='Heading3')段数=1
+  节[2] '2.8 直线与圆锥曲线的位置关系'
+段级ADC2DA段数=2；段级C6D4E3段数=8
+--- ADC2DA 逐段定位（idx|pStyle|文本前60）---
+  ADC2DA[0] style=None '人教B版选必1 第2章 平面解析几何·衔接件（13题）'
+  ADC2DA[2] style=Heading3 '2.8 直线与圆锥曲线的位置关系'
+run级ADC2DA挂点=0（应为0）
+run级C6D4E3挂点=0（应为0）
+首个非空段[0]='人教B版选必1 第2章 平面解析几何·衔接件（13题）'
+--- 统计段（含「题：」的段落，截前80字）---
+  [12] '2.8.1 直线与圆锥曲线的位置关系：韦达定理求对称式的值\u30002题：2.8.1-1～2.8.1-2'
+  [25] '2.8.2 直线与圆锥曲线的位置关系：由已知根求另一根与参数\u30002题：2.8.2-3～2.8.2-4'
+  [36] '2.8.3 直线与圆锥曲线的位置关系：判别式与韦达定理综合定参\u30002题：2.8.3-5～2.8.3-6'
+  [50] '2.8.4 直线与圆锥曲线的位置关系：韦达定理与勾股定理求几何量\u30001题：2.8.4-7'
+  [57] '2.8.5 直线与圆锥曲线的位置关系：二元二次方程组的代入消元解法\u30002题：2.8.5-8～2.8.5-9'
+  [69] '2.8.6 直线与圆锥曲线的位置关系：换元法解二元二次方程组\u30001题：2.8.6-10'
+  [74] '2.8.7 直线与圆锥曲线的位置关系：对称型方程组的构造解法\u30001题：2.8.7-11'
+  [79] '2.8.8 直线与圆锥曲线的位置关系：联立消元与判别式求参数范围\u30002题：2.8.8-12～2.8.8-13'
+====================================================================================================
+【I2】人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx
+document.xml 段落总数=523, 文件大小=2.25 MB
+settings updateFields=true
+styles: 节名锚 styleId='JieMingMao', heading3 styleId='31', heading2 styleId='21'
+  节名锚样式rPr={"color": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}}
+  节名锚样式pPr={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "20", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "exact"}, "jc": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"}}
+  docDefaults rPrDefault={"rFonts": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia": "宋体", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}cs": "Times New Roman"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}}
+  docDefaults pPrDefault={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "410", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "atLeast"}}
+sectPr 总数=2
+  sect[0] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "1", "space": null, "sep": null}, "pgNumType_start": "1", "hdrRefs": [["default", "rId43"]], "ftrRefs": [["default", "rId40"]]}
+  sect[1] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "2", "space": "425", "sep": "1"}, "hdrRefs": [], "ftrRefs": []}
+  body末级sectPr存在=是
+引用的header/footer parts=['footer1.xml', 'header1.xml']
+包内全部header/footer parts=['word/footer1.xml', 'word/header1.xml']
+  [footer1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·清单（共28页）·本5/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.1 坐标法\u3000第⟦I: PAGE ⟧1页'
+  [header1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·清单（共28页）·本5/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.1 坐标法\u3000第⟦I: PAGE ⟧1页'
+evenAndOddHeaders=False titlePg数=0
+节名锚段数=20（样式'JieMingMao'）
+  锚[3] '2.1 坐标法'
+  锚[9] '2.2.1 直线的倾斜角与斜率'
+  锚[23] '2.2.2 直线的方程'
+  锚[55] '2.2.3 两条直线的位置关系'
+  锚[65] '2.2.4 点到直线的距离'
+  锚[90] '2.3.1 圆的标准方程'
+  锚[98] '2.3.2 圆的一般方程'
+  锚[113] '2.3.3 直线与圆的位置关系'
+  锚[148] '2.3.4 圆与圆的位置关系'
+  锚[155] '2.4 曲线与方程'
+  锚[169] '2.5 椭圆及其方程'
+  锚[171] '2.5.1 椭圆的标准方程'
+  锚[177] '2.5.2 椭圆的几何性质'
+  锚[229] '2.6 双曲线及其方程'
+  锚[231] '2.6.1 双曲线的标准方程'
+  锚[240] '2.6.2 双曲线的几何性质'
+  锚[310] '2.7 抛物线及其方程'
+  锚[312] '2.7.1 抛物线的标准方程'
+  锚[334] '2.7.2 抛物线的几何性质'
+  锚[366] '2.8 直线与圆锥曲线的位置关系'
+节标题(样式heading3='31')段数=20
+  节[4] '2.1 坐标法'
+  节[10] '2.2.1 直线的倾斜角与斜率'
+  节[24] '2.2.2 直线的方程'
+  节[56] '2.2.3 两条直线的位置关系'
+  节[66] '2.2.4 点到直线的距离'
+  节[91] '2.3.1 圆的标准方程'
+  节[99] '2.3.2 圆的一般方程'
+  节[114] '2.3.3 直线与圆的位置关系'
+  节[149] '2.3.4 圆与圆的位置关系'
+  节[156] '2.4 曲线与方程'
+  节[170] '2.5 椭圆及其方程'
+  节[172] '2.5.1 椭圆的标准方程'
+  节[178] '2.5.2 椭圆的几何性质'
+  节[230] '2.6 双曲线及其方程'
+  节[232] '2.6.1 双曲线的标准方程'
+  节[241] '2.6.2 双曲线的几何性质'
+  节[311] '2.7 抛物线及其方程'
+  节[313] '2.7.1 抛物线的标准方程'
+  节[335] '2.7.2 抛物线的几何性质'
+  节[367] '2.8 直线与圆锥曲线的位置关系'
+段级ADC2DA段数=21；段级C6D4E3段数=0
+--- ADC2DA 逐段定位（idx|pStyle|文本前60）---
+  ADC2DA[0] style=None '人教B版选必1 第2章 平面解析几何·知识清单（完成）'
+  ADC2DA[4] style=31 '2.1 坐标法'
+  ADC2DA[10] style=31 '2.2.1 直线的倾斜角与斜率'
+  ADC2DA[24] style=31 '2.2.2 直线的方程'
+  ADC2DA[56] style=31 '2.2.3 两条直线的位置关系'
+  ADC2DA[66] style=31 '2.2.4 点到直线的距离'
+  ADC2DA[91] style=31 '2.3.1 圆的标准方程'
+  ADC2DA[99] style=31 '2.3.2 圆的一般方程'
+  ADC2DA[114] style=31 '2.3.3 直线与圆的位置关系'
+  ADC2DA[149] style=31 '2.3.4 圆与圆的位置关系'
+  ADC2DA[156] style=31 '2.4 曲线与方程'
+  ADC2DA[170] style=31 '2.5 椭圆及其方程'
+  ADC2DA[172] style=31 '2.5.1 椭圆的标准方程'
+  ADC2DA[178] style=31 '2.5.2 椭圆的几何性质'
+  ADC2DA[230] style=31 '2.6 双曲线及其方程'
+  ADC2DA[232] style=31 '2.6.1 双曲线的标准方程'
+  ADC2DA[241] style=31 '2.6.2 双曲线的几何性质'
+  ADC2DA[311] style=31 '2.7 抛物线及其方程'
+  ADC2DA[313] style=31 '2.7.1 抛物线的标准方程'
+  ADC2DA[335] style=31 '2.7.2 抛物线的几何性质'
+  ADC2DA[367] style=31 '2.8 直线与圆锥曲线的位置关系'
+run级ADC2DA挂点=0（应为0）
+run级C6D4E3挂点=0（应为0）
+首个非空段[0]='人教B版选必1 第2章 平面解析几何·知识清单（完成）'
+--- 统计段（含「题：」的段落，截前80字）---
+====================================================================================================
+【E】人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx
+document.xml 段落总数=1029, 文件大小=2.19 MB
+settings updateFields=true
+styles: 节名锚 styleId='JieMingMao', heading3 styleId='Heading3', heading2 styleId='Heading2'
+  节名锚样式rPr={"color": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}}
+  节名锚样式pPr={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "20", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "exact"}, "jc": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"}}
+  docDefaults rPrDefault={"rFonts": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia": "宋体", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}cs": "Times New Roman"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}}
+  docDefaults pPrDefault={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "410", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "atLeast"}}
+sectPr 总数=2
+  sect[0] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "1", "space": null, "sep": null}, "pgNumType_start": "1", "hdrRefs": [["default", "rId281"]], "ftrRefs": [["default", "rId9"]]}
+  sect[1] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "2", "space": "425", "sep": "1"}, "hdrRefs": [], "ftrRefs": []}
+  body末级sectPr存在=是
+引用的header/footer parts=['footer1.xml', 'header1.xml']
+包内全部header/footer parts=['word/footer1.xml', 'word/header1.xml']
+  [footer1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.1 坐标法\u3000第⟦I: PAGE ⟧1页'
+  [header1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.1 坐标法\u3000第⟦I: PAGE ⟧1页'
+evenAndOddHeaders=False titlePg数=0
+节名锚段数=10（样式'JieMingMao'）
+  锚[2] '2.1 坐标法'
+  锚[13] '2.2 直线及其方程'
+  锚[15] '2.2.1 直线的倾斜角与斜率'
+  锚[65] '2.2.2 直线的方程'
+  锚[177] '2.2.3 两条直线的位置关系'
+  锚[332] '2.2.4 点到直线的距离'
+  锚[461] '2.3 圆及其方程'
+  锚[463] '2.3.1 圆的标准方程'
+  锚[620] '2.3.2 圆的一般方程'
+  锚[689] '2.3.3 直线与圆的位置关系'
+节标题(样式heading3='Heading3')段数=10
+  节[3] '2.1 坐标法\u3000本节1题：简单1｜中档0｜难0'
+  节[14] '2.2 直线及其方程'
+  节[16] '2.2.1 直线的倾斜角与斜率\u3000本节6题：简单4｜中档2｜难0'
+  节[66] '2.2.2 直线的方程\u3000本节9题：简单2｜中档5｜难2'
+  节[178] '2.2.3 两条直线的位置关系\u3000本节13题：简单1｜中档11｜难1'
+  节[333] '2.2.4 点到直线的距离\u3000本节10题：简单0｜中档8｜难2'
+  节[462] '2.3 圆及其方程'
+  节[464] '2.3.1 圆的标准方程\u3000本节14题：简单2｜中档11｜难1'
+  节[621] '2.3.2 圆的一般方程\u3000本节6题：简单1｜中档5｜难0'
+  节[690] '2.3.3 直线与圆的位置关系\u3000本节33题：简单0｜中档27｜难6'
+段级ADC2DA段数=11；段级C6D4E3段数=68
+--- ADC2DA 逐段定位（idx|pStyle|文本前60）---
+  ADC2DA[0] style=None '人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）'
+  ADC2DA[3] style=Heading3 '2.1 坐标法\u3000本节1题：简单1｜中档0｜难0'
+  ADC2DA[14] style=Heading3 '2.2 直线及其方程'
+  ADC2DA[16] style=Heading3 '2.2.1 直线的倾斜角与斜率\u3000本节6题：简单4｜中档2｜难0'
+  ADC2DA[66] style=Heading3 '2.2.2 直线的方程\u3000本节9题：简单2｜中档5｜难2'
+  ADC2DA[178] style=Heading3 '2.2.3 两条直线的位置关系\u3000本节13题：简单1｜中档11｜难1'
+  ADC2DA[333] style=Heading3 '2.2.4 点到直线的距离\u3000本节10题：简单0｜中档8｜难2'
+  ADC2DA[462] style=Heading3 '2.3 圆及其方程'
+  ADC2DA[464] style=Heading3 '2.3.1 圆的标准方程\u3000本节14题：简单2｜中档11｜难1'
+  ADC2DA[621] style=Heading3 '2.3.2 圆的一般方程\u3000本节6题：简单1｜中档5｜难0'
+  ADC2DA[690] style=Heading3 '2.3.3 直线与圆的位置关系\u3000本节33题：简单0｜中档27｜难6'
+run级ADC2DA挂点=0（应为0）
+run级C6D4E3挂点=0（应为0）
+首个非空段[0]='人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）'
+--- 统计段（含「题：」的段落，截前80字）---
+  [1] '全件339题：简单47｜中档246｜难46'
+  [3] '2.1 坐标法\u3000本节1题：简单1｜中档0｜难0'
+  [4] '2.1.1 坐标法：两点间距离与中点坐标公式的计算\u30001题：2.1.1-1'
+  [16] '2.2.1 直线的倾斜角与斜率\u3000本节6题：简单4｜中档2｜难0'
+  [17] '2.2.1.1 直线的倾斜角与斜率：倾斜角与斜率的概念、互求与计算\u30002题：2.2.1.1-1～2.2.1.1-2'
+  [37] '2.2.1.2 直线的倾斜角与斜率：斜率的几何意义与数形结合\u30002题：2.2.1.2-3～2.2.1.2-4'
+  [51] '2.2.1.3 直线的倾斜角与斜率：直线的方向向量\u30002题：2.2.1.3-5～2.2.1.3-6'
+  [66] '2.2.2 直线的方程\u3000本节9题：简单2｜中档5｜难2'
+  [70] '2.2.2.2 直线的方程：求直线方程与直线过定点（含截距分类）\u30002题：2.2.2.2-1～2.2.2.2-2'
+  [86] '2.2.2.1.1 直线的方程：含参直线恒过定点的证明\u30001题：2.2.2.1.1-3'
+  [93] '2.2.2.1.2 直线的方程：垂直条件与互反截距求直线方程（双小问）\u30001题：2.2.2.1.2-4'
+  [108] '2.2.2.3 直线的方程：与坐标轴围成图形的面积（长度）最值\u30002题：2.2.2.3-5～2.2.2.3-6'
+  [138] '2.2.2.4 直线的方程：由面积条件反求直线方程（开放题）\u30001题：2.2.2.4-7'
+  [146] '2.2.2.1.3 直线的方程：圆的切线系性质（集合与围成图形）\u30002题：2.2.2.1.3-8～2.2.2.1.3-9'
+  [178] '2.2.3 两条直线的位置关系\u3000本节13题：简单1｜中档11｜难1'
+  [179] '2.2.3.1 两条直线的位置关系：平行与垂直的判定和求参\u30002题：2.2.3.1-1～2.2.3.1-2'
+  [195] '2.2.3.2 两条直线的位置关系：位置关系在几何图形中的应用\u30002题：2.2.3.2-3～2.2.3.2-4'
+  [227] '2.2.3.3 两条直线的位置关系：三角形的心与直线（欧拉线）\u30001题：2.2.3.3-5'
+  [244] '2.2.3.4 两条直线的位置关系：对称问题\u30002题：2.2.3.4-6～2.2.3.4-7'
+  [258] '2.2.3.5 两条直线的位置关系：对称点与垂直直线综合\u30001题：2.2.3.5-8'
+  [269] '2.2.3.6 两条直线的位置关系：对称转化求线段和最值（将军饮马）\u30001题：2.2.3.6-9'
+  [282] '2.2.3.7 两条直线的位置关系：两直线的交点\u30002题：2.2.3.7-10～2.2.3.7-11'
+  [305] '2.2.3.8 两条直线的位置关系：直线夹角与过交点直线（方向向量法）\u30001题：2.2.3.8-12'
+  [320] '2.2.3.9 两条直线的位置关系：过交点的直线方程（两点式与垂直系）\u30001题：2.2.3.9-13'
+  [333] '2.2.4 点到直线的距离\u3000本节10题：简单0｜中档8｜难2'
+  [334] '2.2.4.1 点到直线的距离：距离公式的计算与求参（含平行线间距离）\u30002题：2.2.4.1-1～2.2.4.1-2'
+  [348] '2.2.4.2 点到直线的距离：向量投影法推导距离公式\u30001题：2.2.4.2-3'
+  [365] '2.2.4.3 点到直线的距离：距离的最值与范围（动直线）\u30001题：2.2.4.3-4'
+  [375] '2.2.4.4 点到直线的距离：新定义直线的判定\u30001题：2.2.4.4-5'
+  [387] '2.2.4.5.1 点到直线的距离：距离新定义问题\u30002题：2.2.4.5.1-6～2.2.4.5.1-7'
+  [419] '2.2.4.5.2 点到直线的距离：曼哈顿距离的轨迹与面积\u30002题：2.2.4.5.2-8～2.2.4.5.2-9'
+  [442] '2.2.4.6 点到直线的距离：新定义距离与最值（极距）\u30001题：2.2.4.6-10'
+  [464] '2.3.1 圆的标准方程\u3000本节14题：简单2｜中档11｜难1'
+  [465] '2.3.1.1 圆的标准方程：求圆的标准方程\u30002题：2.3.1.1-1～2.3.1.1-2'
+  [493] '2.3.1.2 圆的标准方程：实际情境中圆的方程（斐波那契螺旋）\u30001题：2.3.1.2-3'
+  [503] '2.3.1.3 圆的标准方程：点与圆的位置关系\u30001题：2.3.1.3-4'
+  [511] '2.3.1.4 圆的标准方程：圆的对称性\u30002题：2.3.1.4-5～2.3.1.4-6'
+  [532] '2.3.1.6 圆的标准方程：过圆心的直线（截距条件）\u30001题：2.3.1.6-7'
+  [543] '2.3.1.5.1 圆的标准方程：圆上点到定点（直线）的最值\u30002题：2.3.1.5.1-8～2.3.1.5.1-9'
+  [567] '2.3.1.5.2 圆的标准方程：斜率几何意义求分式型函数最值\u30001题：2.3.1.5.2-10'
+  [577] '2.3.1.5.3 圆的标准方程：绝对值曲线的识别与最值\u30001题：2.3.1.5.3-11'
+  [588] '2.3.1.5.4 圆的标准方程：圆上点的斜率与距离范围（双空）\u30001题：2.3.1.5.4-12'
+  [600] '2.3.1.7 圆的标准方程：两圆上双动点的距离最值\u30001题：2.3.1.7-13'
+  [611] '2.3.1.8 圆的标准方程：圆上双动点的数量积最值（转速模型）\u30001题：2.3.1.8-14'
+  [621] '2.3.2 圆的一般方程\u3000本节6题：简单1｜中档5｜难0'
+  [622] '2.3.2.1 圆的一般方程：一般式的辨析与互化（表示圆条件）\u30002题：2.3.2.1-1～2.3.2.1-2'
+  [637] '2.3.2.2.1 圆的一般方程：求圆的一般方程（待定系数与圆系）\u30002题：2.3.2.2.1-3～2.3.2.2.1-4'
+  [669] '2.3.2.2.2 圆的一般方程：过直线与圆交点的圆系方程\u30001题：2.3.2.2.2-5'
+  [681] '2.3.2.2.3 圆的一般方程：圆系中面积最小的圆\u30001题：2.3.2.2.3-6'
+  [690] '2.3.3 直线与圆的位置关系\u3000本节33题：简单0｜中档27｜难6'
+  [691] '2.3.3.1 直线与圆的位置关系：圆心角、弧长与面积计算\u30002题：2.3.3.1-1～2.3.3.1-2'
+  [718] '2.3.3.2 直线与圆的位置关系：正多边形逼近圆面积（割圆术）\u30001题：2.3.3.2-3'
+  [726] '2.3.3.3 直线与圆的位置关系：位置关系的判定与求参\u30002题：2.3.3.3-4～2.3.3.3-5'
+  [741] '2.3.3.4 直线与圆的位置关系：弦长与中点弦\u30002题：2.3.3.4-6～2.3.3.4-7'
+  [759] '2.3.3.5 直线与圆的位置关系：弦中点轨迹与到直线距离和最值\u30001题：2.3.3.5-8'
+  [773] '2.3.3.6 直线与圆的位置关系：定点定值与存在性问题\u30001题：2.3.3.6-9'
+  [783] '2.3.3.7 直线与圆的位置关系：切线的唯一性与切线方程\u30001题：2.3.3.7-10'
+  [792] '2.3.3.8 直线与圆的位置关系：切线问题\u30002题：2.3.3.8-11～2.3.3.8-12'
+  [820] '2.3.3.9 直线与圆的位置关系：圆的切点弦恒过定点\u30001题：2.3.3.9-13'
+  [827] '2.3.3.10 直线与圆的位置关系：直线截圆的垂直条件（韦达定理）\u30002题：2.3.3.10-14～2.3.3.10-15'
+  [853] '2.3.3.11 直线与圆的位置关系：切线长的数量积最值\u30001题：2.3.3.11-16'
+  [863] '2.3.3.12 直线与圆的位置关系：圆内接三角形（四边形）的面积\u30002题：2.3.3.12-17～2.3.3.12-18'
+  [881] '2.3.3.13 直线与圆的位置关系：实际应用（建系建模）\u30001题：2.3.3.13-19'
+  [893] '2.3.3.14.1 直线与圆的位置关系：阿氏圆的定义与参数（λ、m求解）\u30001题：2.3.3.14.1-20'
+  [905] '2.3.3.14.2 直线与圆的位置关系：三角形中的阿氏圆（面积与多选）\u30002题：2.3.3.14.2-21～2.3.3.14.2-22'
+  [930] '2.3.3.14.3 直线与圆的位置关系：阿氏圆比例转化求最值（构造相似）\u30002题：2.3.3.14.3-23～2.3.3.14.3-24'
+  [948] '2.3.3.14.4 直线与圆的位置关系：阿氏圆存在性问题（参数范围）\u30002题：2.3.3.14.4-25～2.3.3.14.4-26'
+  [963] '2.3.3.14.5 直线与圆的位置关系：阿波罗尼斯圆（距离比定轨迹）的应用\u30002题：2.3.3.14.5-27～2.3.3.14.5-28'
+  [985] '2.3.3.15.1 直线与圆的位置关系：隐圆的识别与应用\u30002题：2.3.3.15.1-29～2.3.3.15.1-30'
+  [1000] '2.3.3.15.2 直线与圆的位置关系：隐圆的位置约束与带状区域\u30002题：2.3.3.15.2-31～2.3.3.15.2-32'
+  [1018] '2.3.3.15.3 直线与圆的位置关系：任意点存在弦的角条件（隐圆直径圆）\u30001题：2.3.3.15.3-33'
+====================================================================================================
+【F】人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx
+document.xml 段落总数=1066, 文件大小=2.52 MB
+settings updateFields=true
+styles: 节名锚 styleId='JieMingMao', heading3 styleId='Heading3', heading2 styleId='Heading2'
+  节名锚样式rPr={"color": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}}
+  节名锚样式pPr={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "20", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "exact"}, "jc": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"}}
+  docDefaults rPrDefault={"rFonts": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia": "宋体", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}cs": "Times New Roman"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}}
+  docDefaults pPrDefault={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "410", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "atLeast"}}
+sectPr 总数=2
+  sect[0] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "1", "space": null, "sep": null}, "pgNumType_start": "50", "hdrRefs": [["default", "rId305"]], "ftrRefs": [["default", "rId9"]]}
+  sect[1] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "2", "space": "425", "sep": "1"}, "hdrRefs": [], "ftrRefs": []}
+  body末级sectPr存在=是
+引用的header/footer parts=['footer1.xml', 'header1.xml']
+包内全部header/footer parts=['word/footer1.xml', 'word/header1.xml']
+  [footer1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.3.4 圆与圆的位置关系\u3000第⟦I: PAGE ⟧50页'
+  [header1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.3.4 圆与圆的位置关系\u3000第⟦I: PAGE ⟧50页'
+evenAndOddHeaders=False titlePg数=0
+节名锚段数=5（样式'JieMingMao'）
+  锚[1] '2.3.4 圆与圆的位置关系'
+  锚[89] '2.4 曲线与方程'
+  锚[349] '2.5 椭圆及其方程'
+  锚[351] '2.5.1 椭圆的标准方程'
+  锚[652] '2.5.2 椭圆的几何性质'
+节标题(样式heading3='Heading3')段数=5
+  节[2] '2.3.4 圆与圆的位置关系\u3000本节8题：简单1｜中档6｜难1'
+  节[90] '2.4 曲线与方程\u3000本节19题：简单1｜中档12｜难6'
+  节[350] '2.5 椭圆及其方程'
+  节[352] '2.5.1 椭圆的标准方程\u3000本节27题：简单3｜中档18｜难6'
+  节[653] '2.5.2 椭圆的几何性质\u3000本节36题：简单9｜中档18｜难9'
+段级ADC2DA段数=6；段级C6D4E3段数=69
+--- ADC2DA 逐段定位（idx|pStyle|文本前60）---
+  ADC2DA[0] style=None '人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）'
+  ADC2DA[2] style=Heading3 '2.3.4 圆与圆的位置关系\u3000本节8题：简单1｜中档6｜难1'
+  ADC2DA[90] style=Heading3 '2.4 曲线与方程\u3000本节19题：简单1｜中档12｜难6'
+  ADC2DA[350] style=Heading3 '2.5 椭圆及其方程'
+  ADC2DA[352] style=Heading3 '2.5.1 椭圆的标准方程\u3000本节27题：简单3｜中档18｜难6'
+  ADC2DA[653] style=Heading3 '2.5.2 椭圆的几何性质\u3000本节36题：简单9｜中档18｜难9'
+run级ADC2DA挂点=0（应为0）
+run级C6D4E3挂点=0（应为0）
+首个非空段[0]='人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）'
+--- 统计段（含「题：」的段落，截前80字）---
+  [2] '2.3.4 圆与圆的位置关系\u3000本节8题：简单1｜中档6｜难1'
+  [3] '2.3.4.1 圆与圆的位置关系：位置关系判定与求参\u30002题：2.3.4.1-1～2.3.4.1-2'
+  [17] '2.3.4.2 圆与圆的位置关系：交点与公共弦\u30003题：2.3.4.2-3～2.3.4.2-5'
+  [66] '2.3.4.3 圆与圆的位置关系：两圆交点的直接求解\u30001题：2.3.4.3-6'
+  [73] '2.3.4.4 圆与圆的位置关系：公切线\u30002题：2.3.4.4-7～2.3.4.4-8'
+  [90] '2.4 曲线与方程\u3000本节19题：简单1｜中档12｜难6'
+  [98] '2.4.1.1 曲线与方程：轨迹方程（直接法）——等量关系直接列式\u30001题：2.4.1.1-1'
+  [114] '2.4.1.2 曲线与方程：轨迹方程（相关点法）——中点与重心\u30002题：2.4.1.2-2～2.4.1.2-3'
+  [141] '2.4.1.3 曲线与方程：定义法轨迹——中线与折叠情境\u30002题：2.4.1.3-4～2.4.1.3-5'
+  [172] '2.4.1.4 曲线与方程：垂足与垂直轨迹（定义法）\u30002题：2.4.1.4-6～2.4.1.4-7'
+  [199] '2.4.1.5 曲线与方程：向量条件轨迹\u30001题：2.4.1.5-8'
+  [207] '2.4.1.6 曲线与方程：交轨法求轨迹方程\u30002题：2.4.1.6-9～2.4.1.6-10'
+  [235] '2.4.1.7 曲线与方程：等轴双曲线的轨迹与定向直线\u30001题：2.4.1.7-11'
+  [251] '2.4.1.8 曲线与方程：轨迹方程（直接法、相关点法、定义法）\u30002题：2.4.1.8-12～2.4.1.8-13'
+  [268] '2.4.2 曲线与方程：由方程研究曲线\u30002题：2.4.2-14～2.4.2-15'
+  [292] '2.4.3 曲线与方程：含参曲线方程的多结论判断（多选）\u30001题：2.4.3-16'
+  [318] '2.4.4 曲线与方程：双曲线与圆的距离差最值（定义转化）\u30001题：2.4.4-17'
+  [330] '2.4.1.9 曲线与方程：动弦交点轨迹与最值（隐圆）\u30001题：2.4.1.9-18'
+  [341] '2.4.1.10 曲线与方程：垂直双弦中点轨迹与最值\u30001题：2.4.1.10-19'
+  [352] '2.5.1 椭圆的标准方程\u3000本节27题：简单3｜中档18｜难6'
+  [361] '2.5.1.1.1 椭圆的标准方程：椭圆定义及辨析\u30001题：2.5.1.1.1-1'
+  [372] '2.5.1.1.2 椭圆的标准方程：利用定义求方程（轨迹）\u30002题：2.5.1.1.2-2～2.5.1.1.2-3'
+  [396] '2.5.1.1.3 椭圆的标准方程：动圆相切条件下的椭圆轨迹\u30001题：2.5.1.1.3-4'
+  [410] '2.5.1.1.4 椭圆的标准方程：到焦点距离计算\u30001题：2.5.1.1.4-5'
+  [419] '2.5.1.1.5 椭圆的标准方程：到焦点（定点）距离最值\u30002题：2.5.1.1.5-6～2.5.1.1.5-7'
+  [432] '2.5.1.1.6 椭圆的标准方程：椭圆定义与焦点距离最值（多选辨析）\u30001题：2.5.1.1.6-8'
+  [440] '2.5.1.1.7 椭圆的标准方程：到焦点和定点距离和差最值\u30001题：2.5.1.1.7-9'
+  [450] '2.5.1.1.8 椭圆的标准方程：焦点三角形（周长与基础计算）\u30001题：2.5.1.1.8-10'
+  [458] '2.5.1.2.1 椭圆的标准方程：焦点三角形（面积与综合）\u30002题：2.5.1.2.1-11～2.5.1.2.1-12'
+  [479] '2.5.1.3.1 椭圆的标准方程：焦点三角形的内心（椭圆）\u30002题：2.5.1.3.1-13～2.5.1.3.1-14'
+  [497] '2.5.1.3.2 椭圆的标准方程：焦点三角形的内心（双曲线）\u30002题：2.5.1.3.2-15～2.5.1.3.2-16'
+  [539] '2.5.1.3.3 椭圆的标准方程：两内心的距离范围（双曲线）\u30001题：2.5.1.3.3-17'
+  [552] '2.5.1.3.4 椭圆的标准方程：内切圆与坐标轴相切求离心率\u30001题：2.5.1.3.4-18'
+  [564] '2.5.1.4 椭圆的标准方程：求椭圆上点的坐标\u30002题：2.5.1.4-19～2.5.1.4-20'
+  [578] '2.5.1.5 椭圆的标准方程：方程表示椭圆的条件（含参数范围）\u30001题：2.5.1.5-21'
+  [587] '2.5.1.6 椭圆的标准方程：依条件求椭圆标准方程\u30002题：2.5.1.6-22～2.5.1.6-23'
+  [610] '2.5.1.7 椭圆的标准方程：祖暅原理与椭球体积\u30002题：2.5.1.7-24～2.5.1.7-25'
+  [631] '2.5.1.8 椭圆的标准方程：椭圆定义实际应用\u30001题：2.5.1.8-26'
+  [640] '2.5.1.9 椭圆的标准方程：垂直动直线交点轨迹与距离范围\u30001题：2.5.1.9-27'
+  [653] '2.5.2 椭圆的几何性质\u3000本节36题：简单9｜中档18｜难9'
+  [654] '2.5.2.1 椭圆的几何性质：由方程求基本量（焦点、顶点、离心率等）\u30002题：2.5.2.1-1～2.5.2.1-2'
+  [682] '2.5.2.2 椭圆的几何性质：离心率求值与范围\u30003题：2.5.2.2-3～2.5.2.2-5'
+  [704] '2.5.2.3 椭圆的几何性质：由离心率（范围）求参数或方程\u30002题：2.5.2.3-6～2.5.2.3-7'
+  [716] '2.5.2.4 椭圆的几何性质：离心率与椭圆形状辨析\u30001题：2.5.2.4-8'
+  [725] '2.5.2.5 椭圆的几何性质：点与椭圆的位置关系\u30001题：2.5.2.5-9'
+  [732] '2.5.2.6 椭圆的几何性质：椭圆的对称性\u30002题：2.5.2.6-10～2.5.2.6-11'
+  [758] '2.5.2.7.1 椭圆的几何性质：顶点张角与角条件\u30002题：2.5.2.7.1-12～2.5.2.7.1-13'
+  [777] '2.5.2.9 椭圆的几何性质：短轴端点垂线构形与面积比\u30001题：2.5.2.9-14'
+  [790] '2.5.2.8.1 椭圆的几何性质：焦半径计算与最值\u30002题：2.5.2.8.1-15～2.5.2.8.1-16'
+  [802] '2.5.2.10 椭圆的几何性质：曲线交点（数形结合）\u30001题：2.5.2.10-17'
+  [810] '2.5.2.11 椭圆的几何性质：顶点向量数量积最值\u30001题：2.5.2.11-18'
+  [822] '2.5.2.12.1 椭圆的几何性质：顶点斜率积定值与范围\u30001题：2.5.2.12.1-19'
+  [829] '2.5.2.13 椭圆的几何性质：与圆组合的距离最值\u30001题：2.5.2.13-20'
+  [839] '2.5.2.14 椭圆的几何性质：椭圆实际应用（轨道等）\u30001题：2.5.2.14-21'
+  [860] '2.5.2.15 椭圆的几何性质：椭圆新定义题\u30002题：2.5.2.15-22～2.5.2.15-23'
+  [879] '2.5.2.16 椭圆的几何性质：新定义曲线的综合多选（脸谱）\u30001题：2.5.2.16-24'
+  [900] '2.5.2.17 椭圆的几何性质：类比推理——圆与椭圆的切线性质（大题）\u30001题：2.5.2.17-25'
+  [923] '2.5.2.18 椭圆的几何性质：椭圆综合难题（四点共圆等）\u30001题：2.5.2.18-26'
+  [935] '2.5.2.19.1 椭圆的几何性质：椭圆的蒙日圆（方程与逆用）\u30002题：2.5.2.19.1-27～2.5.2.19.1-28'
+  [958] '2.5.2.19.2 椭圆的几何性质：蒙日圆上的点与切线夹角条件\u30002题：2.5.2.19.2-29～2.5.2.19.2-30'
+  [979] '2.5.2.19.3 椭圆的几何性质：两切线夹角钝角与距离范围\u30001题：2.5.2.19.3-31'
+  [989] '2.5.2.19.4 椭圆的几何性质：圆上点两切线的面积范围\u30001题：2.5.2.19.4-32'
+  [1003] '2.5.2.19.5 椭圆的几何性质：垂直切线与直线交点最值\u30001题：2.5.2.19.5-33'
+  [1016] '2.5.2.19.6 椭圆的几何性质：蒙日圆定义多选\u30001题：2.5.2.19.6-34'
+  [1028] '2.5.2.19.7 椭圆的几何性质：蒙日圆定义大题（定值与一般证明）\u30002题：2.5.2.19.7-35～2.5.2.19.7-36'
+====================================================================================================
+【G】人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx
+document.xml 段落总数=767, 文件大小=2.37 MB
+settings updateFields=true
+styles: 节名锚 styleId='JieMingMao', heading3 styleId='31', heading2 styleId='21'
+  节名锚样式rPr={"color": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}}
+  节名锚样式pPr={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "20", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "exact"}, "jc": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"}}
+  docDefaults rPrDefault={"rFonts": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia": "宋体", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}cs": "Times New Roman"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}, "lang": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "en-US", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia": "zh-CN", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}bidi": "ar-SA"}}
+  docDefaults pPrDefault={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "410", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "atLeast", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0"}}
+sectPr 总数=2
+  sect[0] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "1", "space": null, "sep": null}, "pgNumType_start": "103", "hdrRefs": [["default", "rId49"]], "ftrRefs": [["default", "rId50"]]}
+  sect[1] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "2", "space": "425", "sep": "1"}, "hdrRefs": [], "ftrRefs": []}
+  body末级sectPr存在=是
+引用的header/footer parts=['footer1.xml', 'header1.xml']
+包内全部header/footer parts=['word/footer1.xml', 'word/header1.xml']
+  [footer1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.6 双曲线及其方程\u3000第⟦I: PAGE ⟧103页'
+  [header1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.6 双曲线及其方程\u3000第⟦I: PAGE ⟧103页'
+evenAndOddHeaders=False titlePg数=0
+节名锚段数=6（样式'JieMingMao'）
+  锚[1] '2.6 双曲线及其方程'
+  锚[3] '2.6.1 双曲线的标准方程'
+  锚[176] '2.6.2 双曲线的几何性质'
+  锚[383] '2.7 抛物线及其方程'
+  锚[385] '2.7.1 抛物线的标准方程'
+  锚[564] '2.7.2 抛物线的几何性质'
+节标题(样式heading3='31')段数=6
+  节[2] '2.6 双曲线及其方程'
+  节[4] '2.6.1 双曲线的标准方程\u3000本节16题：简单6｜中档9｜难1'
+  节[177] '2.6.2 双曲线的几何性质\u3000本节20题：简单5｜中档13｜难2'
+  节[384] '2.7 抛物线及其方程'
+  节[386] '2.7.1 抛物线的标准方程\u3000本节14题：简单5｜中档9｜难0'
+  节[565] '2.7.2 抛物线的几何性质\u3000本节18题：简单1｜中档17｜难0'
+段级ADC2DA段数=7；段级C6D4E3段数=52
+--- ADC2DA 逐段定位（idx|pStyle|文本前60）---
+  ADC2DA[0] style=None '人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）'
+  ADC2DA[2] style=31 '2.6 双曲线及其方程'
+  ADC2DA[4] style=31 '2.6.1 双曲线的标准方程\u3000本节16题：简单6｜中档9｜难1'
+  ADC2DA[177] style=31 '2.6.2 双曲线的几何性质\u3000本节20题：简单5｜中档13｜难2'
+  ADC2DA[384] style=31 '2.7 抛物线及其方程'
+  ADC2DA[386] style=31 '2.7.1 抛物线的标准方程\u3000本节14题：简单5｜中档9｜难0'
+  ADC2DA[565] style=31 '2.7.2 抛物线的几何性质\u3000本节18题：简单1｜中档17｜难0'
+run级ADC2DA挂点=0（应为0）
+run级C6D4E3挂点=0（应为0）
+首个非空段[0]='人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）'
+--- 统计段（含「题：」的段落，截前80字）---
+  [4] '2.6.1 双曲线的标准方程\u3000本节16题：简单6｜中档9｜难1'
+  [5] '2.6.1.1 双曲线的标准方程：双曲线定义及辨析\u30001题：2.6.1.1-1'
+  [20] '2.6.1.2 双曲线的标准方程：由定义求焦半径（含判支）\u30002题：2.6.1.2-2～2.6.1.2-3'
+  [35] '2.6.1.3 双曲线的标准方程：焦点三角形\u30002题：2.6.1.3-4～2.6.1.3-5'
+  [55] '2.6.1.4 双曲线的标准方程：线段和差最值（定义转化）\u30001题：2.6.1.4-6'
+  [67] '2.6.1.5 双曲线的标准方程：与圆相切的轨迹（定义法）\u30002题：2.6.1.5-7～2.6.1.5-8'
+  [87] '2.6.1.6 双曲线的标准方程：方程表示双曲线的条件（分类判别）\u30002题：2.6.1.6-9～2.6.1.6-10'
+  [108] '2.6.1.7 双曲线的标准方程：依条件（定义、焦点）求双曲线方程\u30001题：2.6.1.7-11'
+  [132] '2.6.1.8 双曲线的标准方程：双曲线轨迹方程\u30002题：2.6.1.8-12～2.6.1.8-13'
+  [149] '2.6.1.9 双曲线的标准方程：共焦点跨曲线定义综合\u30002题：2.6.1.9-14～2.6.1.9-15'
+  [165] '2.6.1.10 双曲线的标准方程：双曲线综合难题\u30001题：2.6.1.10-16'
+  [177] '2.6.2 双曲线的几何性质\u3000本节20题：简单5｜中档13｜难2'
+  [178] '2.6.2.1 双曲线的几何性质：由方程求基本量（实虚轴、顶点、渐近线）\u30001题：2.6.2.1-1'
+  [199] '2.6.2.2 双曲线的几何性质：渐近线方程及相关计算\u30002题：2.6.2.2-2～2.6.2.2-3'
+  [211] '2.6.2.3 双曲线的几何性质：由焦点到构造线的距离求渐近线\u30001题：2.6.2.3-4'
+  [220] '2.6.2.4 双曲线的几何性质：离心率求值与范围\u30002题：2.6.2.4-5～2.6.2.4-6'
+  [233] '2.6.2.5 双曲线的几何性质：焦点与渐近线的向量条件求离心率\u30001题：2.6.2.5-7'
+  [243] '2.6.2.6 双曲线的几何性质：正六边形模型求离心率\u30001题：2.6.2.6-8'
+  [256] '2.6.2.7 双曲线的几何性质：双曲线与蒙日圆交点的离心率\u30001题：2.6.2.7-9'
+  [272] '2.6.2.8 双曲线的几何性质：第三定义与斜率最值求离心率\u30001题：2.6.2.8-10'
+  [282] '2.6.2.9 双曲线的几何性质：圆与双曲线交点的斜率条件\u30001题：2.6.2.9-11'
+  [291] '2.6.2.10 双曲线的几何性质：通径上的张角条件求离心率\u30001题：2.6.2.10-12'
+  [300] '2.6.2.11 双曲线的几何性质：焦半径最值\u30001题：2.6.2.11-13'
+  [308] '2.6.2.12 双曲线的几何性质：依条件（渐近线、离心率、共焦点）求双曲线方程\u30002题：2.6.2.12-14～2.6.2.12-15'
+  [323] '2.6.2.13 双曲线的几何性质：等轴双曲线\u30001题：2.6.2.13-16'
+  [334] '2.6.2.14 双曲线的几何性质：双曲线对称性应用\u30001题：2.6.2.14-17'
+  [342] '2.6.2.15 双曲线的几何性质：向量数量积最值（双曲线）\u30001题：2.6.2.15-18'
+  [354] '2.6.2.16 双曲线的几何性质：双曲线实际应用\u30001题：2.6.2.16-19'
+  [369] '2.6.2.17 双曲线的几何性质：双曲线新定义题\u30001题：2.6.2.17-20'
+  [386] '2.7.1 抛物线的标准方程\u3000本节14题：简单5｜中档9｜难0'
+  [387] '2.7.1.1 抛物线的标准方程：抛物线定义及辨析\u30001题：2.7.1.1-1'
+  [394] '2.7.1.2 抛物线的标准方程：焦点、准线与标准方程互求\u30002题：2.7.1.2-2～2.7.1.2-3'
+  [406] '2.7.1.3 抛物线的标准方程：依条件求抛物线方程（参数p）\u30002题：2.7.1.3-4～2.7.1.3-5'
+  [420] '2.7.1.4 抛物线的标准方程：抛物线轨迹方程\u30002题：2.7.1.4-6～2.7.1.4-7'
+  [436] '2.7.1.5 抛物线的标准方程：抛物线实际应用建模\u30002题：2.7.1.5-8～2.7.1.5-9'
+  [458] '2.7.1.6 抛物线的标准方程：抛物线新定义题\u30001题：2.7.1.6-10'
+  [467] '2.7.1.7 抛物线的标准方程：立体几何中的圆锥曲线轨迹判定（多选）\u30002题：2.7.1.7-11～2.7.1.7-12'
+  [514] '2.7.1.8 抛物线的标准方程：立体几何中的圆锥曲线应用（折叠与最值）\u30002题：2.7.1.8-13～2.7.1.8-14'
+  [565] '2.7.2 抛物线的几何性质\u3000本节18题：简单1｜中档17｜难0'
+  [566] '2.7.2.1 抛物线的几何性质：焦半径计算（含焦点弦中位线）\u30001题：2.7.2.1-1'
+  [575] '2.7.2.2 抛物线的几何性质：抛物线性质综合判断\u30001题：2.7.2.2-2'
+  [583] '2.7.2.3 抛物线的几何性质：范围与最值（基础）\u30001题：2.7.2.3-3'
+  [591] '2.7.2.4 抛物线的几何性质：定义转化求最值（PA+PF型）\u30003题：2.7.2.4-4～2.7.2.4-6'
+  [619] '2.7.2.5 抛物线的几何性质：双根式距离和的定义转化（选填）\u30001题：2.7.2.5-7'
+  [633] '2.7.2.6 抛物线的几何性质：比例系数和最值（阿氏圆构造）\u30001题：2.7.2.6-8'
+  [643] '2.7.2.7 抛物线的几何性质：抛物线上动点的张角最值\u30001题：2.7.2.7-9'
+  [655] '2.7.2.8 抛物线的几何性质：几何图形计算（等腰、正三角形等）\u30001题：2.7.2.8-10'
+  [664] '2.7.2.9 抛物线的几何性质：与圆组合\u30002题：2.7.2.9-11～2.7.2.9-12'
+  [683] '2.7.2.10 抛物线的几何性质：数量积最值\u30001题：2.7.2.10-13'
+  [690] '2.7.2.11 抛物线的几何性质：定义的几何应用（多选）\u30001题：2.7.2.11-14'
+  [711] '2.7.2.13.1 抛物线的几何性质：焦点弦几何性质（定义法）\u30001题：2.7.2.13.1-15'
+  [725] '2.7.2.13.2 抛物线的几何性质：焦点弦与圆的平均性质\u30001题：2.7.2.13.2-16'
+  [740] '2.7.2.13.3 抛物线的几何性质：焦点弦的数量积定值\u30001题：2.7.2.13.3-17'
+  [751] '2.7.2.13.4 抛物线的几何性质：焦点弦性质多选（切线、中点射影）\u30001题：2.7.2.13.4-18'
+====================================================================================================
+【H】人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx
+document.xml 段落总数=1262, 文件大小=2.26 MB
+settings updateFields=true
+styles: 节名锚 styleId='JieMingMao', heading3 styleId='Heading3', heading2 styleId='Heading2'
+  节名锚样式rPr={"color": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "FFFFFF"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "2"}}
+  节名锚样式pPr={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "20", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "exact"}, "jc": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "left"}}
+  docDefaults rPrDefault={"rFonts": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}ascii": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}hAnsi": "Times New Roman", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}eastAsia": "宋体", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}cs": "Times New Roman"}, "sz": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}, "szCs": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val": "24"}}
+  docDefaults pPrDefault={"spacing": {"{http://schemas.openxmlformats.org/wordprocessingml/2006/main}before": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}after": "0", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}line": "410", "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}lineRule": "atLeast"}}
+sectPr 总数=2
+  sect[0] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "1", "space": null, "sep": null}, "pgNumType_start": "142", "hdrRefs": [["default", "rId374"]], "ftrRefs": [["default", "rId9"]]}
+  sect[1] {"pgSz": ["11906", "16838"], "pgMar": {"top": "850", "bottom": "850", "left": "850", "right": "850", "header": "283", "footer": "850", "gutter": "0"}, "cols": {"num": "2", "space": "425", "sep": "1"}, "hdrRefs": [], "ftrRefs": []}
+  body末级sectPr存在=是
+引用的header/footer parts=['footer1.xml', 'header1.xml']
+包内全部header/footer parts=['word/footer1.xml', 'word/header1.xml']
+  [footer1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.8 直线与圆锥曲线的位置关系\u3000第⟦I: PAGE ⟧142页'
+  [header1.xml] fldChar=['begin', 'separate', 'end', 'begin', 'separate', 'end'] instr=[' STYLEREF "节名锚" ', ' PAGE '] fldSimple=0 NUMPAGES域=False
+    run字号分布={'18': 15} 段落jc={'left'}
+    文字流='羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共205页）·本6/共6本\u3000⟦I: STYLEREF "节名锚" ⟧2.8 直线与圆锥曲线的位置关系\u3000第⟦I: PAGE ⟧142页'
+evenAndOddHeaders=False titlePg数=0
+节名锚段数=1（样式'JieMingMao'）
+  锚[1] '2.8 直线与圆锥曲线的位置关系'
+节标题(样式heading3='Heading3')段数=1
+  节[2] '2.8 直线与圆锥曲线的位置关系\u3000本节89题：简单5｜中档75｜难9'
+段级ADC2DA段数=2；段级C6D4E3段数=73
+--- ADC2DA 逐段定位（idx|pStyle|文本前60）---
+  ADC2DA[0] style=None '人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）'
+  ADC2DA[2] style=Heading3 '2.8 直线与圆锥曲线的位置关系\u3000本节89题：简单5｜中档75｜难9'
+run级ADC2DA挂点=0（应为0）
+run级C6D4E3挂点=0（应为0）
+首个非空段[0]='人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）'
+--- 统计段（含「题：」的段落，截前80字）---
+  [2] '2.8 直线与圆锥曲线的位置关系\u3000本节89题：简单5｜中档75｜难9'
+  [3] '2.8.1 直线与圆锥曲线的位置关系：位置关系判定（椭圆）\u30002题：2.8.1-1～2.8.1-2'
+  [18] '2.8.2 直线与圆锥曲线的位置关系：位置关系判定（双曲线、抛物线，含分类）\u30002题：2.8.2-3～2.8.2-4'
+  [47] '2.8.3.1 直线与圆锥曲线的位置关系：切线问题\u30002题：2.8.3.1-5～2.8.3.1-6'
+  [146] '2.8.5 直线与圆锥曲线的位置关系：过曲线上一点的切线方程（公式直套）\u30002题：2.8.5-7～2.8.5-8'
+  [163] '2.8.6 直线与圆锥曲线的位置关系：过椭圆外一点的两条切线（判别式法）\u30001题：2.8.6-9'
+  [176] '2.8.7 直线与圆锥曲线的位置关系：切线条件求离心率\u30002题：2.8.7-10～2.8.7-11'
+  [196] '2.8.8 直线与圆锥曲线的位置关系：双曲线两切线的夹角和证明\u30001题：2.8.8-12'
+  [209] '2.8.9 直线与圆锥曲线的位置关系：切线与焦点构形的坐标求解\u30001题：2.8.9-13'
+  [226] '2.8.4.1 直线与圆锥曲线的位置关系：椭圆切点弦的性质（多选与最值）\u30002题：2.8.4.1-14～2.8.4.1-15'
+  [254] '2.8.10 直线与圆锥曲线的位置关系：抛物线上的点向圆作切线的切点弦最值\u30001题：2.8.10-16'
+  [261] '2.8.4.2 直线与圆锥曲线的位置关系：两割线切线交点的轨迹（对偶）\u30001题：2.8.4.2-17'
+  [272] '2.8.4.3 直线与圆锥曲线的位置关系：抛物线的切线与阿基米德三角形（面积与定点）\u30001题：2.8.4.3-18'
+  [283] '2.8.12 直线与圆锥曲线的位置关系：抛物线切线与焦点弦的面积\u30001题：2.8.12-19'
+  [298] '2.8.13 直线与圆锥曲线的位置关系：抛物线切线的定点问题（直径圆）\u30001题：2.8.13-20'
+  [312] '2.8.14 直线与圆锥曲线的位置关系：动点双切线的重心轨迹与等角证明\u30001题：2.8.14-21'
+  [329] '2.8.15 直线与圆锥曲线的位置关系：动点双切线的切点弦定点（大题）\u30002题：2.8.15-22～2.8.15-23'
+  [386] '2.8.16 直线与圆锥曲线的位置关系：抛物线切线与焦点弦的综合最值\u30001题：2.8.16-24'
+  [410] '2.8.11.1 直线与圆锥曲线的位置关系：弦长计算（联立韦达）\u30003题：2.8.11.1-25～2.8.11.1-27'
+  [438] '2.8.18.1 直线与圆锥曲线的位置关系：等轴双曲线的弦长与外接圆条件\u30001题：2.8.18.1-28'
+  [455] '2.8.18.2 直线与圆锥曲线的位置关系：焦点弦与焦半径（椭圆、双曲线）\u30002题：2.8.18.2-29～2.8.18.2-30'
+  [474] '2.8.19 直线与圆锥曲线的位置关系：焦点弦定理求离心率\u30002题：2.8.19-31～2.8.19-32'
+  [495] '2.8.18.3 直线与圆锥曲线的位置关系：平行焦点弦与面积比\u30001题：2.8.18.3-33'
+  [506] '2.8.18.4 直线与圆锥曲线的位置关系：焦点弦倒数和定值\u30001题：2.8.18.4-34'
+  [517] '2.8.18.5 直线与圆锥曲线的位置关系：垂直焦点弦的面积与倒数最值\u30002题：2.8.18.5-35～2.8.18.5-36'
+  [541] '2.8.18.6 直线与圆锥曲线的位置关系：平行渐近线的焦点弦（新定义取整）\u30001题：2.8.18.6-37'
+  [551] '2.8.18.7 直线与圆锥曲线的位置关系：焦点弦与焦半径（抛物线）\u30003题：2.8.18.7-38～2.8.18.7-40'
+  [575] '2.8.18.8 直线与圆锥曲线的位置关系：焦点弦的斜率条件与性质多选\u30001题：2.8.18.8-41'
+  [585] '2.8.18.9 直线与圆锥曲线的位置关系：抛物线焦点弦的面积与比例反求\u30001题：2.8.18.9-42'
+  [597] '2.8.18.10 直线与圆锥曲线的位置关系：焦点弦三角形面积的范围\u30001题：2.8.18.10-43'
+  [606] '2.8.18.11 直线与圆锥曲线的位置关系：焦点弦条件反求（直线、方程、条数）\u30002题：2.8.18.11-44～2.8.18.11-45'
+  [623] '2.8.18.12 直线与圆锥曲线的位置关系：焦点弦综合（面积最值、范围）\u30002题：2.8.18.12-46～2.8.18.12-47'
+  [645] '2.8.21 直线与圆锥曲线的位置关系：定比分点法——弦上比值范围\u30001题：2.8.21-48'
+  [656] '2.8.22 直线与圆锥曲线的位置关系：割线与对称构形的恒过定点\u30001题：2.8.22-49'
+  [667] '2.8.23 直线与圆锥曲线的位置关系：焦点弦定比的λ+μ定值\u30001题：2.8.23-50'
+  [689] '2.8.25.1 直线与圆锥曲线的位置关系：中点弦（点差法、韦达法）\u30002题：2.8.25.1-51～2.8.25.1-52'
+  [705] '2.8.25.2 直线与圆锥曲线的位置关系：点差法开放题（写出一个满足条件的方程）\u30001题：2.8.25.2-53'
+  [715] '2.8.25.3 直线与圆锥曲线的位置关系：由中点弦条件反求椭圆方程\u30001题：2.8.25.3-54'
+  [726] '2.8.25.4 直线与圆锥曲线的位置关系：弦中点轨迹\u30002题：2.8.25.4-55～2.8.25.4-56'
+  [762] '2.8.29 直线与圆锥曲线的位置关系：定点问题（椭圆）\u30002题：2.8.29-57～2.8.29-58'
+  [812] '2.8.30 直线与圆锥曲线的位置关系：顶点连线构形的定点（大题）\u30001题：2.8.30-59'
+  [829] '2.8.31 直线与圆锥曲线的位置关系：定值问题（椭圆）\u30002题：2.8.31-60～2.8.31-61'
+  [848] '2.8.32 直线与圆锥曲线的位置关系：斜率和（积）定值与定点（超级韦达设线）\u30002题：2.8.32-62～2.8.32-63'
+  [866] '2.8.33 直线与圆锥曲线的位置关系：等角条件与AB斜率定值\u30002题：2.8.33-64～2.8.33-65'
+  [891] '2.8.34 直线与圆锥曲线的位置关系：焦点弦与顶点连线的交点定值\u30001题：2.8.34-66'
+  [911] '2.8.35 直线与圆锥曲线的位置关系：椭圆中的定直线\u30001题：2.8.35-67'
+  [926] '2.8.36 直线与圆锥曲线的位置关系：抛物线中的定直线（垂心）\u30001题：2.8.36-68'
+  [942] '2.8.37 直线与圆锥曲线的位置关系：数量积与角度（椭圆弦）\u30001题：2.8.37-69'
+  [956] '2.8.38 直线与圆锥曲线的位置关系：存在性问题（椭圆）\u30001题：2.8.38-70'
+  [971] '2.8.39 直线与圆锥曲线的位置关系：双曲线轨迹与定点（非对称韦达）\u30001题：2.8.39-71'
+  [994] '2.8.40 直线与圆锥曲线的位置关系：双曲线的定值与向量垂直定点（大题）\u30001题：2.8.40-72'
+  [1016] '2.8.41 直线与圆锥曲线的位置关系：定点定值（双曲线）\u30002题：2.8.41-73～2.8.41-74'
+  [1057] '2.8.42.1 直线与圆锥曲线的位置关系：定点定值（抛物线）\u30002题：2.8.42.1-75～2.8.42.1-76'
+  [1092] '2.8.43 直线与圆锥曲线的位置关系：对称问题（抛物线）\u30002题：2.8.43-77～2.8.43-78'
+  [1107] '2.8.44 直线与圆锥曲线的位置关系：双曲线弦长与渐近线综合\u30002题：2.8.44-79～2.8.44-80'
+  [1121] '2.8.45 直线与圆锥曲线的位置关系：双曲线弦长压轴\u30001题：2.8.45-81'
+  [1136] '2.8.46 直线与圆锥曲线的位置关系：劣构选条件综合题\u30002题：2.8.46-82～2.8.46-83'
+  [1166] '2.8.47 直线与圆锥曲线的位置关系：新定义综合（2.8）\u30002题：2.8.47-84～2.8.47-85'
+  [1199] '2.8.48 直线与圆锥曲线的位置关系：椭圆实际应用综合（2.8）\u30001题：2.8.48-86'
+  [1214] '2.8.49 直线与圆锥曲线的位置关系：椭圆上点到直线距离最值\u30001题：2.8.49-87'
+  [1223] '2.8.50 直线与圆锥曲线的位置关系：抛物线存在性（正三角形等）\u30001题：2.8.50-88'
+  [1241] '2.8.51 直线与圆锥曲线的位置关系：圆锥曲线之间的综合（跨曲线）\u30001题：2.8.51-89'
+DONE
