@@ -1,0 +1,26 @@
+== FIX1 sectPr fold ==
+FIX1: 段[0]标题删除；rId49/rId50/pgNumType(start=103)并入正文末sectPr；cols=2/425/1保留
+== FIX2 option separators ==
+tab fixes: R1(del tab before ；)=54 R2(tab→；)=12 R3(rm misplaced X．；)=10
+p#516: 题干内嵌选项分隔归一（12；B／B．；纠位／tab→；／；D）
+p#246/275: 选项间nbsp串→；×6
+p#728: 半角选项点A.→A．＋nbsp分隔→；×3
+p#743: 图选项半角点归一＋nbsp→；
+p#672: 长句选项粘连补；×3（A|B、B|C、C|D边界）
+p#754: B/C/D装配丢式源克隆修复（OMML自大招7源逐字克隆）＋分隔；×3
+pPr w:tabs停靠定义清除63（run级tab=0 ✓）
+== FIX3 sz21 ==
+sz/szCs=21剥除84元素（42run全为空run/图run/渲染缓存run——视觉零变化）
+== FIX4 编注oMath ==
+p#166: 5表达式文本直迁oMath
+p#234: b/a=tanθ转oMath；乱序碎片/a)²并回e²=1+(b/a)²（顺序复位）
+p#301: 3表达式文本直迁oMath
+p#324: |PO|²转oMath；|P＋F₁＋F₂断链碎片重建为|PF₁||PF₂|（等轴双曲线恒等式|PF₁||PF₂|=|PO|²亲算核验）
+p#726: x_A·x_B=p²重建为结构化oMath（sSub真下标）并纠值为p²/4（平均性质焦点弦m=p/2）
+p#744: M(0,2)转oMath；OA·碎片并入OA·OB=…oMath
+编注6段 w:t层线性数学签名复扫=0 ✓
+== FIX6 灰底缩回 ==
+p#135/140/182/360/392/447: 分隔标点与叙述词run去灰（值本体与OMML整块保留）
+p#91/236/326: 值内尾句点拆出灰底（3.→3＋.；2.→2＋.；证明见解析.→…＋.）
+== FIX7 空格卫生 ==
+标点前空格run删除: 14（8段，层敏感复扫；答题位nbsp白名单未动）

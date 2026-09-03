@@ -216,30 +216,23 @@ SPLITS = {
 n_math = 0
 for idx, seq in SPLITS.items():
     p = paras[idx]
-    before = wt_text(p)
-    # 目标run=段内文本最长且非【编注】/【分析】的run
-    target = None
-    for r in p.findall(f"{{{W}}}r"):
-        rt = "".join(t.text or "" for t in r.findall(f"{{{W}}}t"))
-        if rt and not rt.startswith("【"):
-            target = r if target is None or len(rt) > len("".join(t.text or "" for t in target.findall(f"{{{W}}}t"))) else target
-    chk(target is not None, f"E5 p#{idx} 目标run定位")
+    kids = [c for c in p if etree.QName(c).localname != "pPr"]
+    chk(len(kids) == 3, f"E5 p#{idx} 段结构=2标签+1复合run 实测{len(kids)}")
+    old_full = "".join(kids[2].itertext())
     joined = "".join(s for _, s in seq)
-    rt = "".join(t.text or "" for t in target.findall(f"{{{W}}}t"))
-    chk(rt == joined, f"E5 p#{idx} 切分拼接恒等（len={len(rt)}）")
-    rp = rpr_of(target)
-    parent = target.getparent()
-    pos = parent.index(target)
-    parent.remove(target)
+    chk(old_full == joined, f"E5 p#{idx} 切分拼接恒等（len={len(old_full)}）")
+    rp = kids[2].find(f"{{{W}}}rPr")  # 正文run的rPr（无shd）
+    pos = list(p).index(kids[1]) + 1
+    p.remove(kids[2])
     for k2, (kind, s) in enumerate(seq):
         if kind == "t":
             el = make_text_el(rp, s)
         else:
             el = make_math_el(s)
             n_math += 1
-        parent.insert(pos + k2, el)
-    after = wt_text(p)
-    chk(before == after, f"E5 p#{idx} round-trip字符流恒等")
+        p.insert(pos + k2, el)
+    after = "".join(p.itertext())
+    chk(after == "【编注】【分析】" + old_full, f"E5 p#{idx} round-trip字符流恒等")
 chk(n_math == 28, f"E5 新增oMath=28 实测{n_math}")
 
 # ============ E7. 灰底 ============
@@ -256,7 +249,8 @@ for r in p.findall(f"{{{W}}}r"):
             r.addnext(r3); r.addnext(r2)
             done = True
 chk(done, "E7 p#617 两值粘连run拆分")
-# p#319/p#976 「/3」错位移到oMath后
+# p#319/p#976 「/3」错位：oMath嵌在'/3'run内部（w:t后）——提升oMath至段级并置于run前
+# 修复后读序：【答案】 (1)y=(4x²−x+2)/3；  （原错序：【答案】 /3(1)y=…）
 for idx, frag in ((319, "/3"), (976, "/3=1")):
     p = paras[idx]
     hit = None
@@ -264,27 +258,32 @@ for idx, frag in ((319, "/3"), (976, "/3=1")):
         if "".join(t.text or "" for t in r.findall(f"{{{W}}}t")) == frag:
             hit = r; break
     chk(hit is not None, f"E7 p#{idx} 找到{frag!r}run")
-    sib = hit.getnext()
-    chk(sib is not None and etree.QName(sib).localname == "oMath", f"E7 p#{idx} {frag!r}后随oMath")
-    om2 = sib.getnext()
-    hit_parent = hit.getparent()
-    hit_parent.remove(hit)
-    om2.addnext(hit)
-    LOG.append(f"E7 p#{idx} {frag!r}移至oMath后")
+    om = hit.find(f"{{{M}}}oMath")
+    chk(om is not None, f"E7 p#{idx} {frag!r}run内嵌oMath")
+    hit.remove(om)
+    hit.addprevious(om)
+    chk(hit.getprevious() is om, f"E7 p#{idx} oMath已前置于{frag!r}run")
+    LOG.append(f"E7 p#{idx} {frag!r}错位修复（oMath前置）")
 
 # ============ E8. 空格卫生 ============
-# p#345: 「（设」前两个空格（单run双空格或两单空格run）删除
+# p#345: 「（设」前的空格（跨run连续空格链）删除——定位'（设'run向前收集
 p = paras[345]
 removed = 0
-for r in list(p.findall(f"{{{W}}}r")):
+for r in p.findall(f"{{{W}}}r"):
     ts = r.findall(f"{{{W}}}t")
-    if len(ts) == 1 and (ts[0].text or "") in (" ", "  "):
-        nxt = r.getnext()
-        if nxt is not None:
-            nt = nxt.findall(f"{{{W}}}t")
-            if nt and (nt[0].text or "").startswith("（设"):
-                removed += len(ts[0].text)
-                p.remove(r)
+    if len(ts) == 1 and (ts[0].text or "").startswith("（设"):
+        cur = r.getprevious()
+        while cur is not None:
+            cts = cur.findall(f"{{{W}}}t")
+            ctxt = "".join(t.text or "" for t in cts)
+            if len(cts) >= 1 and ctxt != "" and set(ctxt) == {" "}:
+                prev = cur.getprevious()
+                removed += len(ctxt)
+                p.remove(cur)
+                cur = prev
+            else:
+                break
+        break
 chk(removed == 2, f"E8 p#345 删（设）前空格数=2 实测{removed}")
 # 段尾空格 p#232/630/631
 for idx in (232, 630, 631):
