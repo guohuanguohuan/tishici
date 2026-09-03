@@ -1,0 +1,570 @@
+
+########## p#26 full text: '【详解】解：由双曲线定义可知：PF2-8=2a=10'
+--- oMath[0] text='PF2-8=2a=10'
+d[begChr=|,endChr=|]
+  d[begChr=|,endChr=|]
+    'P'
+    sSub
+      'F'
+      '2'
+  '-8'
+'=2a=10'
+
+########## p#51 full text: '【题后反思】本题也可以利用双曲线的定义进行求解：设PF1=m,PF2=n，由m-n=2a=6,m2+n2=4c2=100,得m⋅n=32．'
+--- oMath[0] text='PF1=m,PF2=n'
+'P'
+sSub
+  'F'
+  '1'
+'=m,P'
+sSub
+  'F'
+  '2'
+'=n'
+--- oMath[1] text='m-n=2a=6,m2+n2=4c2=100,'
+d[begChr={,endChr= ]
+  eqArr
+    'm-n=2a=6,'
+    sSup
+      'm'
+      '2'
+    '+'
+    sSup
+      'n'
+      '2'
+    '=4'
+    sSup
+      'c'
+      '2'
+    '=100,'
+--- oMath[2] text='m⋅n=32'
+'m⋅n=32'
+
+########## p#60 full text: '【分析】由题意可得点A(-5,0)为双曲线的左焦点，设点F为双曲线的右焦点，由双曲线的定义可得|PA|-|PF|=2a=8，然后求出|PF|-|PB|的最大值即可.'
+--- oMath[0] text='A(-5,0)'
+'A(-5,0)'
+--- oMath[2] text='|PA|-|PF|=2a=8'
+'|PA|-|PF|=2a=8'
+--- oMath[3] text='|PF|-|PB|'
+'|PF|-|PB|'
+
+########## p#62 full text: '由双曲线的定义可得|PA|-|PF|=2a=8，所以|PA|-|PB|=|PF|-|PB|+8，'
+--- oMath[0] text='|PA|-|PF|=2a=8'
+'|PA|-|PF|=2a=8'
+--- oMath[1] text='|PA|-|PB|=|PF|-|PB|+8'
+'|PA|-|PB|=|PF|-|PB|+8'
+
+########## p#119 full text: '(4)根据题意，设双曲线的方程为mx2-ny2=1，将(3,-42)和(94，5)两点坐标代入双曲线方程可得9m-32n=18116m-25n=1，解可得：m、n的值，将m、n的值代入双曲线方程即可得答案．'
+--- oMath[0] text='mx2-ny2=1'
+'m'
+sSup
+  'x'
+  '2'
+'-n'
+sSup
+  'y'
+  '2'
+'=1'
+--- oMath[1] text='(3,-42)'
+'(3,-4'
+rad
+  '2'
+')'
+--- oMath[2] text='(94'
+'('
+f
+  '9'
+  '4'
+--- oMath[4] text='9m-32n=18116m-25n=1'
+d[begChr={,endChr= ]
+  eqArr
+    '9m-32n=1'
+    f
+      '81'
+      '16'
+    'm-25n=1'
+
+########## p#130 full text: '双曲线经过(3,-42)和(94，5)两点，则有9m-32n=18116m-25n=1，解可得：m=-19，n=-116，'
+--- oMath[0] text='(3,-42)'
+'(3,-4'
+rad
+  '2'
+')'
+--- oMath[1] text='(94'
+'('
+f
+  '9'
+  '4'
+--- oMath[3] text='9m-32n=18116m-25n=1'
+d[begChr={,endChr= ]
+  eqArr
+    '9m-32n=1'
+    f
+      '81'
+      '16'
+    'm-25n=1'
+--- oMath[4] text='m=-19'
+'m=-'
+f
+  '1'
+  '9'
+--- oMath[5] text='n=-116'
+'n=-'
+f
+  '1'
+  '16'
+
+########## p#175 full text: '且|BA|min=2a=2，即MA2+MB2的最小值是8．故选：D.'
+--- oMath[0] text='|BA|min=2a=2'
+'|BA'
+sSub
+  '|'
+  'min'
+'=2a=2'
+--- oMath[1] text='MA2+MB2'
+'M'
+sSup
+  'A'
+  '2'
+'+M'
+sSup
+  'B'
+  '2'
+
+########## p#339 full text: '【详解】由双曲线的对称性以及PQ=F1F2可知，四边形PF1QF2为矩形，所以PF1-PF2=2a=8PF12+PF22=4c2=100，解得PF1PF2=18，'
+--- oMath[0] text='PQ=F1F2'
+d[begChr=|,endChr=|]
+  'PQ'
+'='
+d[begChr=|,endChr=|]
+  sSub
+    'F'
+    '1'
+  sSub
+    'F'
+    '2'
+--- oMath[1] text='PF1QF2'
+'P'
+sSub
+  'F'
+  '1'
+'Q'
+sSub
+  'F'
+  '2'
+--- oMath[2] text='PF1-PF2=2a=8PF12+PF22=4c2=100'
+d[begChr={,endChr= ]
+  eqArr
+    d[begChr=|,endChr=|]
+      d[begChr=|,endChr=|]
+        'P'
+        sSub
+          'F'
+          '1'
+      '-'
+      d[begChr=|,endChr=|]
+        'P'
+        sSub
+          'F'
+          '2'
+    '=2a=8'
+    sSup
+      d[begChr=|,endChr=|]
+        'P'
+        sSub
+          'F'
+          '1'
+      '2'
+    '+'
+    sSup
+      d[begChr=|,endChr=|]
+        'P'
+        sSub
+          'F'
+          '2'
+      '2'
+    '=4'
+    sSup
+      'c'
+      '2'
+    '=100'
+--- oMath[3] text='PF1PF2=18'
+d[begChr=|,endChr=|]
+  'P'
+  sSub
+    'F'
+    '1'
+d[begChr=|,endChr=|]
+  'P'
+  sSub
+    'F'
+    '2'
+'=18'
+
+########## p#443 full text: '【详解】以O为坐标原点，建立如图所示的平面直角坐标系，设抛物线的方程为x2=-2pyp>0，由题意设D15,h，h<0，B30,h-150，则152=-2ph302=-2ph-150，解得h=-50p=2.25，所以此抛物线顶端O到AB的距离为50+150=200m．故选:B．'
+--- oMath[1] text='x2=-2pyp>0'
+sSup
+  'x'
+  '2'
+'=-2py'
+d[]
+  'p>0'
+--- oMath[2] text='D15,h'
+'D'
+d[]
+  '15,'
+  'h'
+--- oMath[3] text='h<0'
+'h<0'
+--- oMath[4] text='B30,h-150'
+'B'
+d[]
+  '30,'
+  'h-'
+  '150'
+--- oMath[5] text='152=-2ph302=-2ph-150'
+d[begChr={,endChr= ]
+  eqArr
+    sSup
+      '15'
+      '2'
+    '=-2ph'
+    sSup
+      '30'
+      '2'
+    '=-2p'
+    d[]
+      'h-150'
+--- oMath[6] text='h=-50p=2.25'
+d[begChr={,endChr= ]
+  eqArr
+    'h=-50'
+    'p=2.25'
+--- oMath[9] text='50+150=200m'
+'50+150=200'
+d[]
+  'm'
+
+########## p#455 full text: '联立①②方程消元得-536(x-14)2=-180x2，解得x=20y=-5或x=14013y=-245169，可得点A的坐标为14013,-245169，'
+--- oMath[0] text='-536(x-14)2=-180x2'
+'-'
+f
+  '5'
+  '36'
+sSup
+  '(x-14)'
+  '2'
+'=-'
+f
+  '1'
+  '80'
+sSup
+  'x'
+  '2'
+--- oMath[1] text='x=20y=-5'
+d[begChr={,endChr= ]
+  eqArr
+    'x=20'
+    'y=-5'
+--- oMath[2] text='x=14013y=-245169'
+d[begChr={,endChr= ]
+  eqArr
+    'x='
+    f
+      '140'
+      '13'
+    'y=-'
+    f
+      '245'
+      '169'
+--- oMath[4] text='14013,-245169'
+d[]
+  f
+    '140'
+    '13'
+  ',-'
+  f
+    '245'
+    '169'
+
+########## p#456 full text: '联立①③方程消元得-180x2=-536(x-7)2，解得x=10y=-54或x=7013y=-245676，所以C7013,-245676，B10,-54'
+--- oMath[0] text='-180x2=-536(x-7)2'
+'-'
+f
+  '1'
+  '80'
+sSup
+  'x'
+  '2'
+'=-'
+f
+  '5'
+  '36'
+sSup
+  '(x-7)'
+  '2'
+--- oMath[1] text='x=10y=-54'
+d[begChr={,endChr= ]
+  eqArr
+    'x=10'
+    'y=-'
+    f
+      '5'
+      '4'
+--- oMath[2] text='x=7013y=-245676'
+d[begChr={,endChr= ]
+  eqArr
+    'x='
+    f
+      '70'
+      '13'
+    'y=-'
+    f
+      '245'
+      '676'
+--- oMath[3] text='C7013,-245676'
+'C'
+d[]
+  f
+    '70'
+    '13'
+  ',-'
+  f
+    '245'
+    '676'
+--- oMath[4] text='B10,-54'
+'B'
+d[]
+  '10,-'
+  f
+    '5'
+    '4'
+
+########## p#652 full text: '因为y2=4x,所以tan∠APB=2y116y4+3=2116y3+3y=2116y3+1y+1y+1y ≤244116y3⋅1y⋅1y⋅1y=1，则0<∠APB≤π4，当且仅当116y3=1y⇒y=2时取“=”，而y≠2，所以0<∠APB<π4.'
+--- oMath[0] text='y2=4x'
+sSup
+  'y'
+  '2'
+'=4x'
+--- oMath[1] text='tan∠APB=2y116y4+3=2116y3+3y=2116y3+1y+1y+1y'
+'tan'
+'∠APB='
+f
+  '2y'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '4'
+  '+3'
+'='
+f
+  '2'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '3'
+  '+'
+  f
+    '3'
+    'y'
+'='
+f
+  '2'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '3'
+  '+'
+  f
+    '1'
+    'y'
+  '+'
+  f
+    '1'
+...(truncated)
+--- oMath[2] text='≤244116y3⋅1y⋅1y⋅1y=1'
+'≤'
+f
+  '2'
+  '4'
+  rad
+    '4'
+    f
+      '1'
+      '16'
+    sSup
+      'y'
+      '3'
+    '⋅'
+    f
+      '1'
+      'y'
+    '⋅'
+    f
+      '1'
+      'y'
+    '⋅'
+    f
+      '1'
+      'y'
+'=1'
+--- oMath[3] text='0<∠APB≤π4'
+'0<∠APB≤'
+f
+  'π'
+  '4'
+--- oMath[4] text='116y3=1y⇒y=2'
+f
+  '1'
+  '16'
+sSup
+  'y'
+  '3'
+'='
+f
+  '1'
+  'y'
+'⇒y=2'
+--- oMath[5] text='y≠2'
+'y≠2'
+--- oMath[6] text='0<∠APB<π4'
+'0<∠APB<'
+f
+  'π'
+  '4'
+
+########## p#654 full text: '【点睛】本题核心的地方在“tan∠APB=2y116y4+3=2116y3+3y=2116y3+1y+1y+1y”这一步，首先分式“2y116y4+3=2116y3+3y”的处理，上下同除以y（一次）；其次在用基本不等式时，“2116y3+1y+1y+1y”这一步的拆分，三个式子一定要相同（1y），'
+--- oMath[0] text='tan∠APB=2y116y4+3=2116y3+3y=2116y3+1y+1y+1y'
+'tan'
+'∠APB='
+f
+  '2y'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '4'
+  '+3'
+'='
+f
+  '2'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '3'
+  '+'
+  f
+    '3'
+    'y'
+'='
+f
+  '2'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '3'
+  '+'
+  f
+    '1'
+    'y'
+  '+'
+  f
+    '1'
+...(truncated)
+--- oMath[1] text='2y116y4+3=2116y3+3y'
+f
+  '2y'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '4'
+  '+3'
+'='
+f
+  '2'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '3'
+  '+'
+  f
+    '3'
+    'y'
+--- oMath[2] text='2116y3+1y+1y+1y'
+f
+  '2'
+  f
+    '1'
+    '16'
+  sSup
+    'y'
+    '3'
+  '+'
+  f
+    '1'
+    'y'
+  '+'
+  f
+    '1'
+    'y'
+  '+'
+  f
+    '1'
+    'y'
+
+########## p#721 full text: '∵AE//x轴，∴∠EAF=60∘，由抛物线的定义可知，AE=AF，则ΔAEF为等边三角形，∴∠EFP=∠AEF=60∘，则∠PEF=30∘，∴AF=EF=2PF=2p=8，得p=4，A选项正确；'
+--- oMath[0] text='∵AE//x'
+'∵AE'
+'//'
+'x'
+--- oMath[1] text='∴∠EAF=60∘'
+'∴∠EAF='
+sSup
+  '60'
+  '∘'
+--- oMath[2] text='AE=AF'
+d[begChr=|,endChr=|]
+  'AE'
+'='
+d[begChr=|,endChr=|]
+  'AF'
+--- oMath[3] text='ΔAEF'
+'ΔAEF'
+--- oMath[4] text='∴∠EFP=∠AEF=60∘'
+'∴∠EFP=∠AEF='
+sSup
+  '60'
+  '∘'
+--- oMath[5] text='∠PEF=30∘'
+'∠PEF='
+sSup
+  '30'
+  '∘'
+--- oMath[6] text='∴AF=EF=2PF=2p=8'
+'∴'
+d[begChr=|,endChr=|]
+  'AF'
+'='
+d[begChr=|,endChr=|]
+  'EF'
+'=2'
+d[begChr=|,endChr=|]
+  'PF'
+'=2p=8'
+--- oMath[7] text='p=4'
+'p=4'

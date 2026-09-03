@@ -170,6 +170,17 @@ def fix_trailing(pidx):
 t1 = fix_trailing(143); t2 = fix_trailing(373); t3 = fix_trailing(982)
 log.append('修复5a 段尾空格剥除：p#143(%r) p#373(%r) p#982(%r)' % (t1, t2, t3))
 
+# p#261/268：段内容仅nbsp（视觉空段）——段尾nbsp按段尾空格slice清零（段落保留、视觉零变化）
+for pidx in (261, 268):
+    p = allp[pidx]
+    full = wt_text(p)
+    assert full.strip(' \u00A0') == '' and full != '', 'p#%d非纯nbsp空段: %r' % (pidx, full)
+    for t in p.iter(q('t')):
+        if t.text:
+            t.text = t.text.rstrip(' \u00A0')
+    assert wt_text(p) == '', 'p#%d清零失败' % pidx
+log.append('修复5a2 段尾nbsp剥除：p#261、p#268（纯nbsp空段，段落保留为空段——空段的结构性清零不属本slice，登记）')
+
 def fix_punct_space(pidx, punct_head):
     """删除紧邻全角标点run之前的独立空格run（层敏感：数学块隔断的不算）"""
     p = allp[pidx]
@@ -191,12 +202,12 @@ fix_punct_space(521, '．')
 fix_punct_space(1077, '，即（')
 log.append('修复5b 全角标点前空格run删除：p#137「 ⟧，因此」p#521「 ⟧．」p#1077「 ⟧，即（」')
 
-# 复扫断言（层敏感、含数学块隔断判定）
+# 复扫断言（层敏感、含数学块隔断判定；段尾含nbsp）
 PUNCT = '，。；：？！、．」）'
 bad = []
 for i, p in enumerate(allp):
     lm = lin_marks(p)
-    if lm != lm.rstrip(' '):
+    if lm != lm.rstrip(' \u00A0'):
         bad.append(('尾空格', i, lm[-14:]))
     for m in re.finditer(r' +([' + PUNCT + '])', lm):
         bad.append(('标点前空格', i, lm[max(0, m.start()-12):m.end()+6]))
@@ -288,15 +299,22 @@ for pidx, pref in ANCHORS.items():
 log.append('修复6锚定: 13段工具编号逐段内容锚定全部通过')
 
 # ============ 序列化与断言汇总 ============
-# 题号块计数（②类底纹）不变断言：题号run=92
+# 题号块计数（②类底纹精确口径：C9C9C9＋层级号＋段首＋三段式括注）
 nq = 0
-for r in root.iter(q('r')):
-    shd = r.find(q('rPr') + '/' + q('shd'))
-    if shd is not None and shd.get(q('fill')) == 'C9C9C9':
-        txt = ''.join(t.text or '' for t in r.findall(q('t')))
-        if re.match(r'^\d+(\.\d+)*(-\d+)?．$', txt):
-            nq += 1
-print('题号块C9C9C9 run数 =', nq)
+for p in allp:
+    lm = lin_marks(p)
+    m = re.match(r'^(\d+(?:\.\d+)*-\d+．)（(简单·保60%|中档·保80%|难·冲100%)·卡壳看答案）', lm)
+    if not m:
+        continue
+    first_r = p.find(q('r'))
+    if first_r is None:
+        continue
+    txt = ''.join(t.text or '' for t in first_r.findall(q('t')))
+    shd = first_r.find(q('rPr') + '/' + q('shd'))
+    if txt == m.group(1) and shd is not None and shd.get(q('fill')) == 'C9C9C9':
+        nq += 1
+print('题号块C9C9C9 run数（精确口径）＝', nq)
+assert nq == 92, '②类底纹题号块恒等式破坏'
 
 # ADC2DA段计数
 nadc = len([p for p in allp if (lambda s: s is not None and s.get(q('fill')) == 'ADC2DA')(p.find(q('pPr') + '/' + q('shd')))])

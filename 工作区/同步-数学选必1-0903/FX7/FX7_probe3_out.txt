@@ -1,0 +1,224 @@
+I2 段落数: 873
+========================= ① p#315 oMath 内 m:r 逐个（shd/color） =========================
+--- oMath block:
+    m:r [F] shd=None color=None sz=None
+    m:r [1] shd=None color=None sz=None
+--- oMath block:
+    m:r [F] shd=None color=None sz=None
+    m:r [2] shd=None color=None sz=None
+--- oMath block:
+    m:r [F₁] shd=None color=None sz=None
+--- oMath block:
+    m:r [F₂] shd=None color=None sz=None
+
+========================= ③ 【编注】段线性数学（w:t内为真阳性） =========================
+I2 p#12:
+    全文: 【编注】 用倾斜角刻画直线方向、范围0°≤α<180°，是定义斜率的前提；易错点：直线与x轴平行或重合时倾斜角为0°而非180°（关联条目：斜率的定义）。
+    w:t拼接: '【编注】 用倾斜角刻画直线方向、范围0°≤α<180°，是定义斜率的前提；易错点：直线与x轴平行或重合时倾斜角为0°而非180°（关联条目：斜率的定义）。'
+    w:t嫌疑: …'角刻画直线方向、范围0°≤α<180°，是定义斜率的前提；易错'…
+I2 p#22:
+    全文: 【编注】 k=tanα实现倾斜角与斜率互化；易错点：α=90°时正切不存在即斜率不存在（关联条目：斜率公式）。
+    w:t拼接: '【编注】 k=tanα实现倾斜角与斜率互化；易错点：α=90°时正切不存在即斜率不存在（关联条目：斜率公式）。'
+    w:t嫌疑: …'【编注】 k=tanα实现倾斜角与斜率互化；易错点'…
+I2 p#28:
+    全文: 【编注】 由方向向量n=(x,y)读斜率k=y/x（x≠0）；易错点：x=0时斜率不存在但方向向量仍存在（关联条目：直线的点斜式方程）。
+    w:t拼接: '【编注】 由方向向量n=(x,y)读斜率k=y/x（）；易错点：x=0时斜率不存在但方向向量仍存在（关联条目：直线的点斜式方程）。'
+    w:t嫌疑: …'【编注】 由方向向量n=(x,y)读斜率k=y/x（）；易错'…
+I2 p#210:
+    全文: 【编注】 几何法（d与r比）优先、代数法（Δ）相辅；易错点：求弦长时用弦心距、半弦长、半径的勾股关系最简（关联条目：点到直线的距离与两条平行直线间的距离）。
+    w:t拼接: '【编注】 几何法（d与r比）优先、代数法（Δ）相辅；易错点：求弦长时用弦心距、半弦长、半径的勾股关系最简（关联条目：点到直线的距离与两条平行直线间的距离）。'
+    w:t嫌疑: …'【编注】 几何法（d与r比）优先、代数法（Δ）相辅；易错'…
+I2 p#230:
+    全文: 【编注】 轨迹条件为到两定点距离之比λ（λ≠1）时直接写圆；λ=1时轨迹为中垂线；注意圆心在两定点连线上（关联条目：圆的标准方程）。
+    w:t拼接: '【编注】 轨迹条件为到两定点距离之比λ（λ≠1）时直接写圆；λ=1时轨迹为中垂线；注意圆心在两定点连线上（关联条目：圆的标准方程）。'
+    w:t嫌疑: …'为到两定点距离之比λ（λ≠1）时直接写圆；λ=1时轨迹为中垂线'…
+I2 p#316:
+    全文: 【编注】 识别椭圆轨迹的第一判据|MF₁|+|MF₂|=2a（2a>|F₁F₂|）；易错点：2a=|F₁F₂|时轨迹为线段、2a<|F₁F₂|时无轨迹（关联条目：椭圆的标准方程）。
+    w:t拼接: '【编注】 识别椭圆轨迹的第一判据|M|+|M|=2a（2a>||）；易错点：2a=||时轨迹为线段、2a<||时无轨迹（关联条目：椭圆的标准方程）。'
+    w:t嫌疑: …'第一判据|M|+|M|=2a（2a>||）；易错点：2a=||时'…
+I2 p#336:
+    全文: 【编注】 由a、b、c读顶点、焦点、范围与离心率；易错点：e=c/a∈(0,1)、e越大椭圆越扁（关联条目：椭圆的标准方程）。
+    w:t拼接: '【编注】 由a、b、c读顶点、焦点、范围与离心率；易错点：e=c/、e越大椭圆越扁（关联条目：椭圆的标准方程）。'
+    w:t嫌疑: …'、范围与离心率；易错点：e=c/、e越大椭圆越扁（关联条目：椭圆'…
+I2 p#364:
+    全文: 【编注】 焦点三角形中周长为定值2(a+c)，顶角θ下用|PF₁||PF₂|=2b²/(1+cosθ)与面积公式S=b²·tan(θ/2)速算（关联条目：椭圆的简单几何性质）。
+    w:t拼接: '【编注】 焦点三角形中周长为定值2(a+c)，顶角θ下用|P||P|=2/(1+cosθ)与面积公式S=·tan(θ/2)速算（关联条目：椭圆的简单几何性质）。'
+    w:t嫌疑: …'焦点三角形中周长为定值2(a+c)，顶角θ下用|P||P|=2/'…
+I2 p#394:
+    全文: 【编注】 用等面积法得内切圆半径r=S/(a+c)，椭圆中还有|IN|/|IP|=e的定比结论（关联条目：椭圆的焦点三角形）。
+    w:t拼接: '【编注】 用等面积法得内切圆半径r=S/(a+c)，椭圆中还有|IN|/|IP|=e的定比结论（关联条目：椭圆的焦点三角形）。'
+    w:t嫌疑: …' 用等面积法得内切圆半径r=S/(a+c)，椭圆中还有|IN|/'…
+I2 p#416:
+    全文: 【编注】 识别双曲线轨迹的第一判据||MF₁|−|MF₂||=2a（0<2a<|F₁F₂|）；易错点：2a=0时轨迹为中垂线、2a≥|F₁F₂|时为射线或无轨迹（关联条目：双曲线的标准方程）。
+    w:t拼接: '【编注】 识别双曲线轨迹的第一判据||M|−|M||=2a（0<2a<||）；易错点：2a=0时轨迹为中垂线、2a≥||时为射线或无轨迹（关联条目：双曲线的标准方程）。'
+    w:t嫌疑: …'判据||M|−|M||=2a（0<2a<||）；易错点：2a=0'…
+I2 p#487:
+    全文: 【编注】 实虚轴相等的特例、渐近线互相垂直且e=√2；易错点：方程x²−y²=λ（λ≠0）的渐近线恒为y=±x（关联条目：双曲线的几何性质）。
+    w:t拼接: '【编注】 实虚轴相等的特例、渐近线互相垂直且；易错点：方程λ（λ≠0）的渐近线恒为（关联条目：双曲线的几何性质）。'
+    w:t嫌疑: …'直且；易错点：方程λ（λ≠0）的渐近线恒为（关联条目：双曲线的'…
+I2 p#492:
+    全文: 【编注】 与椭圆对偶记忆：|PF₁||PF₂|=2b²/(1−cosθ)，面积S=b²·cot(θ/2)；易错点：分母与椭圆相反（关联条目：双曲线的几何性质）。
+    w:t拼接: '【编注】 与椭圆对偶记忆：|P||P|=2/(1−cosθ)，面积S=·cot(θ/2)；易错点：分母与椭圆相反（关联条目：双曲线的几何性质）。'
+    w:t嫌疑: …'/(1−cosθ)，面积S=·cot(θ/2)；易错点：分母与椭'…
+I2 p#569:
+    全文: 【编注】 焦点在y轴时用1/(k_PA·k_PB)=e²−1判别；切点与渐近线中点两扩展情形常用于小题速算（关联条目：双曲线的几何性质）。
+    w:t拼接: '【编注】 焦点在y轴时用1/(k_PA·k_判别；切点与渐近线中点两扩展情形常用于小题速算（关联条目：双曲线的几何性质）。'
+    w:t嫌疑: …'注】 焦点在y轴时用1/(k_PA·k_判别；切点与渐近线中点两'…
+I2 p#665:
+    全文: 【编注】 过焦点弦AB的倾斜角为θ时|AF|=p/(1−cosθ)、|AB|=2p/sin²θ、S=p²/(2sinθ)（关联条目：抛物线的简单几何性质）。
+    w:t拼接: '【编注】 过焦点弦AB的倾斜角为θ时|AF|=p/(1−cosθ)、|AB|=2p/siθ、S=/(2sinθ)（关联条目：抛物线的简单几何性质）。'
+    w:t嫌疑: …'−cosθ)、|AB|=2p/siθ、S=/(2sinθ)（关联'…
+I2 p#673:
+    全文: 【编注】 通径最短、y_A·y_B=−p²、1/|AF|+1/|BF|=2/p等结论小题直接套用（关联条目：抛物线的焦点三角形及其性质）。
+    w:t拼接: '【编注】 通径最短、y_A·y_B=−、1/|AF|+1/|BF|=2/p等结论小题直接套用（关联条目：抛物线的焦点三角形及其性质）。'
+    w:t嫌疑: …' 通径最短、y_A·y_B=−、1/|AF|+1/|BF|=2/'…
+I2 p#682:
+    全文: 【编注】 弦过对称轴上定点M(m,0)时x_A·x_B=m²、y_A·y_B=−2pm，可回避联立直接写积（关联条目：抛物线的焦点三角形及其性质）。
+    w:t拼接: '【编注】 弦过对称轴上定点M(m,0)时x_A·x_B=、y_A·y_B=−2pm，可回避联立直接写积（关联条目：抛物线的焦点三角形及其性质）。'
+    w:t嫌疑: …'注】 弦过对称轴上定点M(m,0)时x_A·x_B=、y_A·y'…
+I2 p#730:
+    全文: 【编注】 已知中点求弦斜率或反之直接互化k=∓b²x₀/(a²y₀)、k=p/y₀；大题须写点差法过程（关联条目：圆锥曲线的弦与弦长）。
+    w:t拼接: '【编注】 已知中点求弦斜率或反之直接互化k=∓/、k=p/；大题须写点差法过程（关联条目：圆锥曲线的弦与弦长）。'
+    w:t嫌疑: …'点求弦斜率或反之直接互化k=∓/、k=p/；大题须写点差法过程（'…
+I2 p#776:
+    全文: 【编注】 焦半径角度式AF=ep/(1∓ecosθ)与坐标式配套记忆；焦点在y轴时把cosθ换sinθ（关联条目：圆锥曲线的弦与弦长）。
+    w:t拼接: '【编注】 焦半径角度式AF=ep/(1∓ecosθ)与坐标式配套记忆；焦点在y轴时把cosθ换sinθ（关联条目：圆锥曲线的弦与弦长）。'
+    w:t嫌疑: …'【编注】 焦半径角度式AF=ep/(1∓ecosθ)与坐标式配套'…
+I2 p#799:
+    全文: 【编注】 弦端点两切线交点Q的模型；弦过定点P时Q在定直线x=a²/m上，焦点弦情形Q落在准线（关联条目：圆锥曲线的弦与弦长）。
+    w:t拼接: '【编注】 弦端点两切线交点Q的模型；弦过定点P时Q在定直线x=/m上，焦点弦情形Q落在准线（关联条目：圆锥曲线的弦与弦长）。'
+    w:t嫌疑: …'；弦过定点P时Q在定直线x=/m上，焦点弦情形Q落在准线（关联条'…
+I2 p#852:
+    全文: 【编注】 已知AM=λMB时用定比分点坐标公式直接写M；调和分割为成对出现的一对分点（关联条目：定比点差定理）。
+    w:t拼接: '【编注】 已知AM=λMB时用定比分点坐标公式直接写M；调和分割为成对出现的一对分点（关联条目：定比点差定理）。'
+    w:t嫌疑: …'【编注】 已知AM=λMB时用定比分点坐标公式直接写M；'…
+I2 p#867:
+    全文: 【编注】 二次齐次方程除以x²化为关于k=y/x的二次方程，两根即两直线斜率（关联条目：齐次式）。
+    w:t拼接: '【编注】 二次齐次方程除以化为关于k=y/x的二次方程，两根即两直线斜率（关联条目：齐次式）。'
+    w:t嫌疑: …'二次齐次方程除以化为关于k=y/x的二次方程，两根即两直线斜率（'…
+含嫌疑w:t的【编注】段数: 21
+
+========================= ④ sz=21 run 逐个 =========================
+I2 p#40 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#55 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#67 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#79 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#101 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#111 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#112 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#119 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#120 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#169 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#177 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#182 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#189 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#205 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#248 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#249 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#272 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#273 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#274 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#275 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#276 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#326 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#327 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#341 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#342 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#366 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#396 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#399 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#403 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#428 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#429 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#461 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#462 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#494 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#534 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#541 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#548 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#550 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#553 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#558 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#572 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#575 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#576 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#609 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#613 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#617 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#621 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#634 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#648 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#649 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#650 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#651 sz21: w:t='' img=True oMath=False m:t非空=False szCs=21
+I2 p#667 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#684 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#690 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#732 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#738 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#744 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#773 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#792 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#813 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#831 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#841 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#849 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+I2 p#861 sz21: w:t='' img=False oMath=False m:t非空=False szCs=21
+sz21 run总数: 65
+
+========================= ⑤ I2 空格卫生 =========================
+I2 p#30 ['w:t nbsp×4', '段尾空格(t)']: '（2）直线的斜率与直线方向向量的关系：若直线AB的一个方向向量为n=x,y，当x≠0时，斜率k=yx;当x=0时，斜率不存在.\xa0\xa0\xa0\xa0'
+I2 p#95 ['段尾空格(t)']: '⑥的证明法二： '
+I2 p#96 ['w:t双半空格']: '从几何意义上理解，到定点 (x₀, y₀) 的距离恒等于 |c| 的直线，本质上就是以 (x₀, y₀) 为圆心、以 |c| 为半径的圆的切线。利用向量的垂直性'
+I2 p#97 ['w:t双半空格', 'w:t全角前空格']: '确定切点坐标： 设圆心为 M(x₀, y₀)，半径 R = |c|。设切点为 P₀。若圆心到切点的向量 MP₀ 的方向角为 θ，则切点 P₀ 的参数化坐标可以写'
+I2 p#99 ['w:t双半空格']: '利用向量点积构建方程： 设切线上任意一点为 P(x, y)，则向量 P₀P 必然包含在切线上，且与法向量 n 严格垂直。根据向量数量积为零的性质：n · P₀P'
+I2 p#100 ['w:t双半空格']: '代数化简与三角恒等式： 展开上述代数式：(x - x₀) cos θ - c cos² θ + (y - y₀) sin θ - c sin² θ = 0提取公'
+I2 p#101 ['w:t双半空格']: '(x - x₀) cos θ + (y - y₀) sin θ - c = 0'
+I2 p#111 ['w:t nbsp×2', '段尾空格(t)']: '\xa0\xa0'
+I2 p#112 ['w:t nbsp×2', '段尾空格(t)']: '\xa0\xa0'
+I2 p#119 ['w:t nbsp×2', '段尾空格(t)']: '\xa0\xa0'
+I2 p#120 ['w:t nbsp×2', '段尾空格(t)']: '\xa0\xa0'
+I2 p#239 ['w:t双半空格']: '【证明要点】 为了便于研究其几何本质，我们可以通过平移坐标系，使该圆的圆心恰好作为坐标原点 O。由第一部分的推导可知，此时必须满足 λ²b - a = 0，即 '
+I2 p#254 ['w:t nbsp×2']: '证明\xa0\xa0不妨设Aa,0，Bb,0，Px,y，PA2+PB2=m，则PA2+PB2=x−a2+y2+x−b2+y2=m，可化为x2+y2−a+bx+a2+b2−m'
+I2 p#258 ['w:t nbsp×2']: '证明：\xa0\xa0不妨设Aa,0，Bb,0，Px,y，则PA⋅PB=a−x,−y⋅b−x,−y=x−a⋅x−b+y2=λ，整理为x2+y2−a+bx+ab−λ=0，即x'
+I2 p#326 ['w:t nbsp×2', '段尾空格(t)']: '\xa0\xa0'
+I2 p#327 ['w:t nbsp×2', '段尾空格(t)']: '\xa0\xa0'
+I2 p#374 ['w:t双半空格']: '设 P(x₀, y₀) 为椭圆 C: x²/a² + y²/b² = 1 (a > b > 0) 上任意一点（ ≠ 0y₀），F₁、 F₂分别为椭圆的左、右焦点'
+I2 p#376 ['w:t双半空格']: '【结论】 椭圆焦点三角形的面积公式为：S_ΔPF₁F₂ = b² · tan(θ/2)'
+I2 p#382 ['w:t双半空格']: '移项化简：2|PF₁||PF₂|(1 + cosθ) = 4(a² - c²) = 4b²，'
+I2 p#384 ['w:t双半空格']: '将此代入面积公式：S = (1/2) · [2b² / (1 + cosθ)] · sinθ = b² · [sinθ / (1 + cosθ)]。'
+I2 p#385 ['w:t双半空格']: '利用二倍角公式 sinθ = 2sin(θ/2)cos(θ/2) 且 1 + cosθ = 2cos²(θ/2)，化简可得：S = b² · tan(θ/2)。'
+I2 p#387 ['w:t双半空格']: '【结论】 |PF₁| · |PF₂| = b² / cos²(θ/2)'
+I2 p#428 ['w:t nbsp×2', '段尾空格(t)']: '\xa0\xa0'
+I2 p#429 ['w:t nbsp×2', '段尾空格(t)']: '\xa0\xa0'
+I2 p#500 ['w:t双半空格']: '设 P(x₀, y₀) 为双曲线 C: x²/a² - y²/b² = 1 (a > 0, b > 0) 上任意一点，F₁、 F₂分别为双曲线的左、右焦点，记 '
+I2 p#502 ['w:t双半空格']: '【结论】 双曲线焦点三角形的面积公式为：S_ΔPF₁F₂ = b² · cot(θ/2) = b² / tan(θ/2)'
+I2 p#503 ['w:t双半空格']: '【推导简述】 与椭圆推导类似，结合双曲线定义 ||PF₁| - |PF₂|| = 2a，利用余弦定理可得 |PF₁||PF₂| = 2b² / (1 - cos'
+I2 p#505 ['w:t双半空格']: '【结论】 |PF₁| · |PF₂| = b² / sin²(θ/2)'
+I2 p#512 ['w:t nbsp×1', '段尾空格(t)']: '\xa0'
+I2 p#520 ['w:t双半空格']: '|PF₁||PF₂| = b² / cos²(θ/2)'
+I2 p#521 ['w:t双半空格']: '|PF₁||PF₂| = b² / sin²(θ/2)'
+I2 p#523 ['w:t双半空格']: 'S = b² · tan(θ/2)'
+I2 p#524 ['w:t双半空格']: 'S = b² · cot(θ/2)'
+I2 p#734 ['w:t双半空格']: '证明  因为点Ax1,y1，Bx2,y2都在椭圆C:x2a2+y2b2=1(a>b>0)上，'
+I2 p#802 ['w:t双半空格', 'w:t全角前空格']: '设椭圆C:x2a2+y2b2=1a>b>0的弦为AB ，过A，B 两点做椭圆的切线 ，交于Q ，称 △ABQ 为阿基米德三角形， 则有:'
+I2 p#803 ['w:t双半空格']: '性质 1: 弦 AB 绕着定点 Pm，0 转动时， 则其所对顶点 Q 落在直线 x=a2m 上.其中， 当 P 点为左 (右) 焦点时， Q 点位于左 (右) '
+I2 p#804 ['w:t双半空格', 'w:t全角前空格']: '性质 2: Pm，0，直线 AQ，PQ，BQ 的斜率成等差数列， 即 2kPQ=kAQ+kBQ.性质 3: 当 P 点为焦点时， PQ⊥AB.'
+I2 p#807 ['w:t全角前空格']: '性质 3：由 AB 的方程 x/m+vy/b²=1 可得 k_AB=-b²/(mv)，又 k_PQ=mv/(a²-m²)。当 P 为焦点时，m²=c²=a²-b'
+I2 p#809 ['w:t双半空格', 'w:t全角前空格']: '设双曲线 C:x2a2-y2b2=1a，b>0 的弦为AB ，过A，B 两点做双曲线的切线 ，交于 Q 点，称 △ABQ 为阿基米德三角形， 则有:'
+I2 p#810 ['w:t双半空格']: '性质 1: 弦 AB 绕着定点 Pm，0 转动时， 则其所对顶点 Q 落在直线 x=a2m 上.其中， 当 P 点为左 (右) 焦点时， Q 点位于左 (右) '
+I2 p#811 ['w:t双半空格', 'w:t全角前空格']: '性质 2: Pm，0，直线 AQ，PQ，BQ 的斜率成等差数列， 即 2kPQ=kAQ+kBQ.性质 3: 当 P 点为焦点时， PQ⊥AB.'
+I2 p#817 ['w:t全角前空格']: '设抛物线为 y²=2px，其轴为 x 轴。设弦 AB 的两个端点为 A(p t₁²/2, p t₁)，B(p t₂²/2, p t₂)，两切线交于 Q，AB 的'
+I2 p#818 ['w:t全角前空格']: '这样设点，是因为抛物线上任意一点都满足 y²=2px。令 y=pt，则 x=pt²/2，所以可统一写成 (pt²/2, pt)，既避免根号和正负号讨论，也不会漏'
+I2 p#819 ['w:t双半空格']: '抛物线 y²=2px 在参数为 t 的点处的切线方程为 ty=x+pt²/2。于是 A、B 两点处的切线分别为 t₁y=x+pt₁²/2，/2t₂y=x+pt₂'
+I2 p#822 ['w:t双半空格', 'w:t全角前空格']: '②若阿基米德三角形的底边即弦 AB 过抛物线内的定点 C， 则另一顶点 Q 的轨迹为一条直线'
+I2 p#823 ['w:t双半空格', 'w:t全角前空格']: '③若直线 l 与抛物线没有公共点，以 l 上的点为顶点的阿基米德三角形的底边过定点 (若直线 l 方程为: ax+by+c=0， 则定点的坐标为 Cca，-bp'
+I2 p#824 ['w:t双半空格']: '④底边为 a 的阿基米德三角形的面积最大值为 a38p.（AB平行于准线的时候最大）'
+I2 p#825 ['w:t双半空格']: '⑤若阿基米德三角形的底边过焦点， 顶点 Q 的轨迹为准线， 且阿基米德三角形的面积最小值为 p2（此时底边平行于准线，可通过绘图直观理解）'
+I2 p#827 ['w:t双半空格', 'w:t全角前空格']: '⑧抛物线上任取一点 I (不与 A，B 重合)， 过 I 作抛物线切线交 QA，QB 于 S，T，连接 AI，BI， 则 △ABI 的面积是 △QST 面积的 '
+I2 p#844 ['w:t双半空格', 'w:t全角前空格']: '性质2证明：设 P(x0，y0)，则 x0²+y0²=a²+b²，椭圆 E：x²/a²+y²/b²=1。以下先按 x0y0≠0 证明；若斜率不存在或 x0、y0'
+I2 p#845 ['w:t双半空格', 'w:t全角前空格']: '①证明 C，O，D 三点共线。设过 P 的切线斜率为 k，切线方程为 y-y0=k(x-x0)，即 y=kx+m，其中 m=y0-kx0。椭圆的切线条件为 m²'
+I2 p#846 ['w:t全角前空格']: '②证明 AB∥CD。椭圆上一点 (x1，y1) 处的切线为 xx1/a²+yy1/b²=1。若该切线过 P，则 x0x1/a²+y0y1/b²=1。因此两个切点'
+I2 p#847 ['w:t双半空格', 'w:t全角前空格']: '另一方面，设 PA 的斜率为 k，PA 与圆的另一个交点为 C。由圆的割线交点公式可得 C=P-2(x0+ky0)/(1+k²)·(1，k)。再利用切线斜率方程'
+I2 p#849 ['w:t双半空格', 'w:t全角前空格']: '④证明 P 位于 y 轴时，弦 AB 最大。设 X=x0²。由 x0²+y0²=a²+b² 可知 0≤X≤a²+b²。将切点弦 x0x/a²+y0y/b²=1 '
+I2 p#860 ['w:t全角前空格']: '证明：若Ax1,y1，Bx2,y2，AP=λPB，则Px1+λx21+λ,y1+λy21+λ；AQ=-λQB则Qx1-λx21-λ,y1-λy21-λ，有x12'

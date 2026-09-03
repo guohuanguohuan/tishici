@@ -1,0 +1,182 @@
+========================= 空格命中段表格归属 =========================
+p#30: in_tbl=False | （2）直线的斜率与直线方向向量的关系：若直线AB的一个方向向量为n=x,y，当x≠0时，斜率k=yx;当x=0时，斜率不
+p#95: in_tbl=False | ⑥的证明法二： 
+p#96: in_tbl=False | 从几何意义上理解，到定点 (x₀, y₀) 的距离恒等于 |c| 的直线，本质上就是以 (x₀, y₀) 为圆心、以 |
+p#97: in_tbl=False | 确定切点坐标： 设圆心为 M(x₀, y₀)，半径 R = |c|。设切点为 P₀。若圆心到切点的向量 MP₀ 的方向角
+p#99: in_tbl=False | 利用向量点积构建方程： 设切线上任意一点为 P(x, y)，则向量 P₀P 必然包含在切线上，且与法向量 n 严格垂直。
+p#100: in_tbl=False | 代数化简与三角恒等式： 展开上述代数式：(x - x₀) cos θ - c cos² θ + (y - y₀) sin
+p#101: in_tbl=False | (x - x₀) cos θ + (y - y₀) sin θ - c = 0
+p#111: in_tbl=True |   
+p#112: in_tbl=True |   
+p#119: in_tbl=True |   
+p#120: in_tbl=True |   
+p#169: in_tbl=False | ①x2−x12+y2−y12的几何含义为点x1,y1与点x2,y2的距离；②|ax+by+c|a2+b2（a，b不同时为
+p#177: in_tbl=False | 图中折线段BAC代表曼哈顿距离，线段BC代表直线距离，而折线段BOC（图中用虚线表示的线段）和折线段BDEFC代表等价的
+p#182: in_tbl=False | ①等曼线所在直线的斜率为−1或1；②若点A到“等曼线”所在直线的距离为d，则m=2d．
+p#189: in_tbl=False | （2）确定圆的要素是圆心和半径，如图所示．
+p#205: in_tbl=False | ③如果圆M:x2+y2+C1x+D1y+E1=0与圆N:x2+y2+C2x+D2y+E2=0有两个交点，那么当λ≠−1时
+p#239: in_tbl=False | 【证明要点】 为了便于研究其几何本质，我们可以通过平移坐标系，使该圆的圆心恰好作为坐标原点 O。由第一部分的推导可知，此
+p#254: in_tbl=False | 证明  不妨设Aa,0，Bb,0，Px,y，PA2+PB2=m，则PA2+PB2=x−a2+y2+x−b2+y2=m，可
+p#258: in_tbl=False | 证明：  不妨设Aa,0，Bb,0，Px,y，则PA⋅PB=a−x,−y⋅b−x,−y=x−a⋅x−b+y2=λ，整理为
+p#326: in_tbl=True |   
+p#327: in_tbl=True |   
+p#374: in_tbl=False | 设 P(x₀, y₀) 为椭圆 C: x²/a² + y²/b² = 1 (a > b > 0) 上任意一点（ ≠ 0y
+p#376: in_tbl=False | 【结论】 椭圆焦点三角形的面积公式为：S_ΔPF₁F₂ = b² · tan(θ/2)
+p#382: in_tbl=False | 移项化简：2|PF₁||PF₂|(1 + cosθ) = 4(a² - c²) = 4b²，
+p#384: in_tbl=False | 将此代入面积公式：S = (1/2) · [2b² / (1 + cosθ)] · sinθ = b² · [sinθ 
+p#385: in_tbl=False | 利用二倍角公式 sinθ = 2sin(θ/2)cos(θ/2) 且 1 + cosθ = 2cos²(θ/2)，化简可
+p#387: in_tbl=False | 【结论】 |PF₁| · |PF₂| = b² / cos²(θ/2)
+p#428: in_tbl=True |   
+p#429: in_tbl=True |   
+p#500: in_tbl=False | 设 P(x₀, y₀) 为双曲线 C: x²/a² - y²/b² = 1 (a > 0, b > 0) 上任意一点，F
+p#502: in_tbl=False | 【结论】 双曲线焦点三角形的面积公式为：S_ΔPF₁F₂ = b² · cot(θ/2) = b² / tan(θ/2)
+p#503: in_tbl=False | 【推导简述】 与椭圆推导类似，结合双曲线定义 ||PF₁| - |PF₂|| = 2a，利用余弦定理可得 |PF₁||P
+p#505: in_tbl=False | 【结论】 |PF₁| · |PF₂| = b² / sin²(θ/2)
+p#512: in_tbl=True |  
+p#520: in_tbl=True | |PF₁||PF₂| = b² / cos²(θ/2)
+p#521: in_tbl=True | |PF₁||PF₂| = b² / sin²(θ/2)
+p#523: in_tbl=True | S = b² · tan(θ/2)
+p#524: in_tbl=True | S = b² · cot(θ/2)
+p#734: in_tbl=False | 证明  因为点Ax1,y1，Bx2,y2都在椭圆C:x2a2+y2b2=1(a>b>0)上，
+p#802: in_tbl=False | 设椭圆C:x2a2+y2b2=1a>b>0的弦为AB ，过A，B 两点做椭圆的切线 ，交于Q ，称 △ABQ 为阿基米德
+p#803: in_tbl=False | 性质 1: 弦 AB 绕着定点 Pm，0 转动时， 则其所对顶点 Q 落在直线 x=a2m 上.其中， 当 P 点为左 
+p#804: in_tbl=False | 性质 2: Pm，0，直线 AQ，PQ，BQ 的斜率成等差数列， 即 2kPQ=kAQ+kBQ.性质 3: 当 P 点为
+p#807: in_tbl=False | 性质 3：由 AB 的方程 x/m+vy/b²=1 可得 k_AB=-b²/(mv)，又 k_PQ=mv/(a²-m²)
+p#809: in_tbl=False | 设双曲线 C:x2a2-y2b2=1a，b>0 的弦为AB ，过A，B 两点做双曲线的切线 ，交于 Q 点，称 △ABQ
+p#810: in_tbl=False | 性质 1: 弦 AB 绕着定点 Pm，0 转动时， 则其所对顶点 Q 落在直线 x=a2m 上.其中， 当 P 点为左 
+p#811: in_tbl=False | 性质 2: Pm，0，直线 AQ，PQ，BQ 的斜率成等差数列， 即 2kPQ=kAQ+kBQ.性质 3: 当 P 点为
+p#817: in_tbl=False | 设抛物线为 y²=2px，其轴为 x 轴。设弦 AB 的两个端点为 A(p t₁²/2, p t₁)，B(p t₂²/2
+p#818: in_tbl=False | 这样设点，是因为抛物线上任意一点都满足 y²=2px。令 y=pt，则 x=pt²/2，所以可统一写成 (pt²/2, 
+p#819: in_tbl=False | 抛物线 y²=2px 在参数为 t 的点处的切线方程为 ty=x+pt²/2。于是 A、B 两点处的切线分别为 t₁y=
+p#822: in_tbl=False | ②若阿基米德三角形的底边即弦 AB 过抛物线内的定点 C， 则另一顶点 Q 的轨迹为一条直线
+p#823: in_tbl=False | ③若直线 l 与抛物线没有公共点，以 l 上的点为顶点的阿基米德三角形的底边过定点 (若直线 l 方程为: ax+by+
+p#824: in_tbl=False | ④底边为 a 的阿基米德三角形的面积最大值为 a38p.（AB平行于准线的时候最大）
+p#825: in_tbl=False | ⑤若阿基米德三角形的底边过焦点， 顶点 Q 的轨迹为准线， 且阿基米德三角形的面积最小值为 p2（此时底边平行于准线，可
+p#827: in_tbl=False | ⑧抛物线上任取一点 I (不与 A，B 重合)， 过 I 作抛物线切线交 QA，QB 于 S，T，连接 AI，BI， 则
+p#844: in_tbl=False | 性质2证明：设 P(x0，y0)，则 x0²+y0²=a²+b²，椭圆 E：x²/a²+y²/b²=1。以下先按 x0y
+p#845: in_tbl=False | ①证明 C，O，D 三点共线。设过 P 的切线斜率为 k，切线方程为 y-y0=k(x-x0)，即 y=kx+m，其中 
+
+========================= 灰底越界扫描（w:r挂C9C9C9，文本含标点/空格越界） =========================
+  I2 p#29 灰底run越界?: [（1）] in_tbl=False
+  I2 p#30 灰底run越界?: [（2）] in_tbl=False
+  I2 p#86 灰底run越界?: [（1）] in_tbl=False
+  I2 p#87 灰底run越界?: [（2）] in_tbl=False
+  I2 p#90 灰底run越界?: [（1）] in_tbl=False
+  I2 p#92 灰底run越界?: [（2）] in_tbl=False
+  I2 p#165 灰底run越界?: [（1）] in_tbl=False
+  I2 p#168 灰底run越界?: [（2）] in_tbl=False
+  I2 p#173 灰底run越界?: [（1）] in_tbl=False
+  I2 p#175 灰底run越界?: [（2）] in_tbl=False
+  I2 p#179 灰底run越界?: [（3）] in_tbl=False
+  I2 p#181 灰底run越界?: [（4）] in_tbl=False
+  I2 p#188 灰底run越界?: [（1）] in_tbl=False
+  I2 p#189 灰底run越界?: [（2）] in_tbl=False
+  I2 p#191 灰底run越界?: [（3）] in_tbl=False
+  I2 p#231 灰底run越界?: [（1）] in_tbl=False
+  I2 p#237 灰底run越界?: [（2）] in_tbl=False
+  I2 p#264 灰底run越界?: [（1）] in_tbl=False
+  I2 p#283 灰底run越界?: [（2）] in_tbl=False
+  I2 p#308 灰底run越界?: [（1）] in_tbl=False
+  I2 p#309 灰底run越界?: [（2）] in_tbl=False
+  I2 p#310 灰底run越界?: [（3）] in_tbl=False
+  I2 p#347 灰底run越界?: [，长轴长] in_tbl=True
+  I2 p#357 灰底run越界?: [轴，] in_tbl=True
+  I2 p#365 灰底run越界?: [（1）] in_tbl=False
+  I2 p#395 灰底run越界?: [（1）] in_tbl=False
+  I2 p#399 灰底run越界?: [（2）] in_tbl=False
+  I2 p#493 灰底run越界?: [（1）] in_tbl=False
+  I2 p#538 灰底run越界?: [（1）] in_tbl=False
+  I2 p#549 灰底run越界?: [（2）] in_tbl=False
+  I2 p#571 灰底run越界?: [（1）] in_tbl=False
+  I2 p#601 灰底run越界?: [不是。当定点] in_tbl=False
+  I2 p#601 灰底run越界?: [上时，动点轨迹是与] in_tbl=False
+  I2 p#630 灰底run越界?: [（1）] in_tbl=False
+  I2 p#632 灰底run越界?: [（2）] in_tbl=False
+  I2 p#634 灰底run越界?: [（3）] in_tbl=False
+  I2 p#666 灰底run越界?: [（1）] in_tbl=False
+  I2 p#670 灰底run越界?: [（2）] in_tbl=False
+  I2 p#674 灰底run越界?: [（1）] in_tbl=False
+  I2 p#683 灰底run越界?: [（1）] in_tbl=False
+  I2 p#689 灰底run越界?: [（2）] in_tbl=False
+  I2 p#731 灰底run越界?: [（1）] in_tbl=False
+  I2 p#737 灰底run越界?: [（2）] in_tbl=False
+  I2 p#743 灰底run越界?: [（3）] in_tbl=False
+  I2 p#751 灰底run越界?: [（1）] in_tbl=False
+  I2 p#761 灰底run越界?: [（2）] in_tbl=False
+  I2 p#767 灰底run越界?: [（3）] in_tbl=False
+  I2 p#780 灰底run越界?: [（1）] in_tbl=False
+  I2 p#782 灰底run越界?: [（2）] in_tbl=False
+  I2 p#784 灰底run越界?: [（3）] in_tbl=False
+  I2 p#801 灰底run越界?: [（1）] in_tbl=False
+  I2 p#808 灰底run越界?: [（2）] in_tbl=False
+  I2 p#812 灰底run越界?: [（3）] in_tbl=False
+  I2 p#830 灰底run越界?: [（1）] in_tbl=False
+  I2 p#839 灰底run越界?: [（2）] in_tbl=False
+C9C9C9 run总数=752, 越界候选=55
+  I2 p#7 m:r纯标点挂灰: [|]
+m:r挂灰总数=242
+
+========================= 21个编注段run级结构 =========================
+--- p#12 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 用倾斜角刻画直线方向、范围0°≤α<180°，是定义斜率的前提；易错点：直线与x轴平行或重合时倾斜角为0°而非180°（关联条目：斜率的定义）。'
+--- p#22 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' k=tanα实现倾斜角与斜率互化；易错点：α=90°时正切不存在即斜率不存在（关联条目：斜率公式）。'
+--- p#28 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 由方向向量n=(x,y)读斜率k=y/x（）；易错点：x=0时斜率不存在但方向向量仍存在（关联条目：直线的点斜式方程）。'
+--- p#210 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 几何法（d与r比）优先、代数法（Δ）相辅；易错点：求弦长时用弦心距、半弦长、半径的勾股关系最简（关联条目：点到直线的距离与两条平行直线间的距离）。'
+--- p#230 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 轨迹条件为到两定点距离之比λ（λ≠1）时直接写圆；λ=1时轨迹为中垂线；注意圆心在两定点连线上（关联条目：圆的标准方程）。'
+--- p#316 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 识别椭圆轨迹的第一判据|M|+|M|=2a（2a>||）；易错点：2a=||时轨迹为线段、2a<||时无轨迹（关联条目：椭圆的标准方程）。'
+--- p#336 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 由a、b、c读顶点、焦点、范围与离心率；易错点：e=c/、e越大椭圆越扁（关联条目：椭圆的标准方程）。'
+--- p#364 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 焦点三角形中周长为定值2(a+c)，顶角θ下用|P||P|=2/(1+cosθ)与面积公式S=·tan(θ/2)速算（关联条目：椭圆的简单几何性质）。'
+--- p#394 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 用等面积法得内切圆半径r=S/(a+c)，椭圆中还有|IN|/|IP|=e的定比结论（关联条目：椭圆的焦点三角形）。'
+--- p#416 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 识别双曲线轨迹的第一判据||M|−|M||=2a（0<2a<||）；易错点：2a=0时轨迹为中垂线、2a≥||时为射线或无轨迹（关联条目：双曲线的标准方程）。'
+--- p#487 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 实虚轴相等的特例、渐近线互相垂直且；易错点：方程λ（λ≠0）的渐近线恒为（关联条目：双曲线的几何性质）。'
+--- p#492 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 与椭圆对偶记忆：|P||P|=2/(1−cosθ)，面积S=·cot(θ/2)；易错点：分母与椭圆相反（关联条目：双曲线的几何性质）。'
+--- p#569 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 焦点在y轴时用1/(k_PA·k_判别；切点与渐近线中点两扩展情形常用于小题速算（关联条目：双曲线的几何性质）。'
+--- p#665 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 过焦点弦AB的倾斜角为θ时|AF|=p/(1−cosθ)、|AB|=2p/siθ、S=/(2sinθ)（关联条目：抛物线的简单几何性质）。'
+--- p#673 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 通径最短、y_A·y_B=−、1/|AF|+1/|BF|=2/p等结论小题直接套用（关联条目：抛物线的焦点三角形及其性质）。'
+--- p#682 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 弦过对称轴上定点M(m,0)时x_A·x_B=、y_A·y_B=−2pm，可回避联立直接写积（关联条目：抛物线的焦点三角形及其性质）。'
+--- p#730 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 已知中点求弦斜率或反之直接互化k=∓/、k=p/；大题须写点差法过程（关联条目：圆锥曲线的弦与弦长）。'
+--- p#776 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 焦半径角度式AF=ep/(1∓ecosθ)与坐标式配套记忆；焦点在y轴时把cosθ换sinθ（关联条目：圆锥曲线的弦与弦长）。'
+--- p#799 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 弦端点两切线交点Q的模型；弦过定点P时Q在定直线x=/m上，焦点弦情形Q落在准线（关联条目：圆锥曲线的弦与弦长）。'
+--- p#852 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 已知AM=λMB时用定比分点坐标公式直接写M；调和分割为成对出现的一对分点（关联条目：定比点差定理）。'
+--- p#867 (in_tbl=False)
+    R[C9C9C9] '【编注】'
+    R ' 二次齐次方程除以化为关于k=y/x的二次方程，两根即两直线斜率（关联条目：齐次式）。'
