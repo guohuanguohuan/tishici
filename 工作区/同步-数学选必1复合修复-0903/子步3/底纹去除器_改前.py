@@ -260,26 +260,6 @@ def classify2(doc):
                     keep['条目区OMML'] += 1
                 else:
                     strip['答案值OMML'].append(mel)
-    # —— 表内段落归集补丁（2026-09-04 子步3）：主环只遍历 body 子级段落，表内段落的
-    #    run/OMML C9 挂点此前不入任何分区（含表内 C9 时 A5 不闭合）。W4「表内一切
-    #    C9C9C9 保留」据此落实：表内 run/OMML 挂点全量归 keep（不剥）；表内【×】芯片
-    #    同属保留，单列计数仅供报表。——
-    chip_in_tbl = 0
-    for tel in body.iter(q('tbl')):
-        for tp in tel.iter(q('p')):
-            for r in tp.iter(q('r')):
-                if shd_fill(r.find(q('rPr'))) == C9:
-                    keep['表内run'] += 1
-            for mel in tp.iter():
-                if etree.QName(mel).namespace != M:
-                    continue
-                if tag(mel) in ('r', 'ctrlPr') and shd_fill(mel.find(q('rPr'))) == C9:
-                    keep['表内OMML'] += 1
-            tbl_text = ''.join(t.text or '' for t in tp.iter(q('t')))
-            for mm in CHIP_RE.finditer(tbl_text):
-                if mm.group(0) in CHIP_BLACKLIST or CHIP_BLACKLIST_RE.match(mm.group(0)):
-                    continue
-                chip_in_tbl += 1
     for tel in body.iter(q('tbl')):
         for shd in tel.iter(q('shd')):
             if shd.get(q('fill')) == C9:
@@ -345,7 +325,6 @@ def classify2(doc):
     return {
         'strip': strip, 'keep': keep, 'viol': viol, 'notes': notes, 'para_c9': para_c9,
         'chip_total': chip_total, 'chip_gray': chip_gray, 'chip_not_gray': chip_not_gray,
-        'chip_in_tbl': chip_in_tbl,
         'fill_para': fill_para, 'tcpr_c9': tcpr_c9,
         'partition': {'all_runs': n_all_runs, 'strip_runs': n_strip_runs,
                       'keep_runs': n_keep_runs, 'lead_keep_runs': n_lead_keep_runs,
