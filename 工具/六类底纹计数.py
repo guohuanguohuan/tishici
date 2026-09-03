@@ -90,7 +90,7 @@ QBLOCK_HEAD_RE = re.compile(
 QNUM_LEGACY_RE = re.compile(     # 过渡期旧形：整块「号．（档位[·提分线·卡壳看答案]）」一个run
     r'^' + NUM_HEAD + r'．（(?:(?:简单|中档|难)(?:·(?:保60%|保80%|冲100%)·卡壳看答案)?|衔接必会·卡壳看答案)）$')
 SECTNUM_RE = re.compile(r'^\d+(?:\.\d+){1,6} ?$')   # 旧结构序号 run（N4 废除形态）
-LECTURE_RE = re.compile(r'^\d+(?:\.\d+)*\s*方法讲解[｜|]')
+LECTURE_RE = re.compile(r'^\d+(?:\.\d+)*\s*(?:方法讲解|知识讲解)[｜|]')   # 知识讲解＝2026-09-04 子步3 清单权威源复制块讲部标题形态（§6 例外登记）
 # 讲练件族判定（底纹减法口径分支，2026-09-04 子步2）：附则《讲练件底纹减法》适用面
 JLP_RE = re.compile(r'讲练件|简单卷|中档卷|冲刺卷|实验卷')
 QNUM_LEAD_RE = re.compile(r'^' + NUM_HEAD + r'．')   # jlp 加粗维持断言：段首题号 token（非灰底依赖）
@@ -414,6 +414,7 @@ def count(path, report):
     chip_hit = marker_hit = 0
     chip_miss_sample = []
     lb_occ = {}
+    chip_lead_embedded = 0   # jlp：条目族 lead 内嵌芯片（lead 保留优先，不计 chip_hit）
     # 每段预计算：字符蒙版（shade/run序号）与段首连续灰底 run 串接文本
     for i, el in enumerate(els):
         if el.tag != q('p'):
@@ -492,6 +493,14 @@ def count(path, report):
             chip_spans.append(mm.span())
         chip_runs = set()
         for (a, bb) in chip_spans:
+            # jlp（讲练件族·底纹减法口径）：条目族 lead（题号块/条目号/第一子层）内嵌芯片
+            # 不属块标签挂灰——lead 保留优先、不拆 run（底纹去除器同口径，2026-09-04 子步3；
+            # 样本形：『（1）【定理】』lead 单 run 内含芯片）。非 jlp 件型行为不变。
+            if jlp and lead_matched and any(
+                    s0 <= a and bb <= s1 for k, (s0, s1) in ranges.items()
+                    if runs[k] in lead_runs):
+                chip_lead_embedded += 1
+                continue
             if all(mask[a:bb]):
                 chip_hit += 1
                 if any(ridx[j][1] for j in range(a, bb)):
@@ -547,13 +556,19 @@ def count(path, report):
                 odd.append(txt)
 
     # —— OMML 挂点（m:r / 结构 ctrlPr 的 w:rPr）；jlp 按条目区双值分列（甲案） ——
+    #   2026-09-04 子步3补丁：表内 OMML 挂点归 W4 保留（om_tbl），不计题目侧——
+    #   讲部补挂带入条目区表格（对比辨析/公式表）后原口径误计题目侧、期望0 假 CHECK。
     om_mr = om_ctrl = 0
     om_mr_entry = om_ctrl_entry = 0
+    om_tbl = 0
     for el in doc.iter():
         if etree.QName(el).namespace != M:
             continue
         tg = tag(el)
         if tg in ('r', 'ctrlPr') and shd_fill(el.find(q('rPr'))) == FILL_CONTENT:
+            if jlp and in_tbl(el):
+                om_tbl += 1
+                continue
             _entry = False
             if jlp:
                 _p = el.getparent()
@@ -687,8 +702,11 @@ def count(path, report):
                  '标签文字出现数 %d 保留）%s｜④并行解法标记run %d（期望 0）'
                  % (nq_block, chip_hit, chip_total_occ,
                     ('｜误挂样本 %r' % chip_miss_sample[:3]) if chip_hit else '', marker_hit))
-        L.append('   ②题目侧答案值灰底 run %d＋OMML m:r %d＋ctrlPr %d（期望全 0）'
-                 % (cls['内容标记'], om_mr, om_ctrl))
+        if chip_lead_embedded:
+            L[-1] = L[-1] + '｜lead内嵌芯片保留 %d（条目族口径）' % chip_lead_embedded
+        L.append('   ②题目侧答案值灰底 run %d＋OMML m:r %d＋ctrlPr %d（期望全 0）%s'
+                 % (cls['内容标记'], om_mr, om_ctrl,
+                    ('｜表内OMML保留 %d（W4）' % om_tbl) if om_tbl else ''))
         L.append('   题号块段数 %d＝题量 %d（文件名口径 %s）%s｜题号加粗维持：非加粗题号token run %d（期望 0）'
                  % (n_qblock_para, nq, nq_fn if nq_fn is not None else '（文件名无题量）',
                     '' if (n_qblock_para == nq and (nq_fn is None or nq == nq_fn)) else ' ←≠',

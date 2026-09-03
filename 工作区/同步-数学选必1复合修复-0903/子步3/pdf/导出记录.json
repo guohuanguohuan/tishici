@@ -1,0 +1,44 @@
+{
+ "B": {
+  "status": "OK",
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 732.1,
+  "pages": 62,
+  "png_new": 62
+ },
+ "C": {
+  "status": "OK",
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 712.8,
+  "pages": 61,
+  "png_new": 61
+ },
+ "E": {
+  "status": "OK",
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 672.2,
+  "pages": 55,
+  "png_new": 55
+ },
+ "F": {
+  "status": "OK",
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 704.3,
+  "pages": 56,
+  "png_new": 56
+ },
+ "G": {
+  "status": "OK",
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 677.2,
+  "pages": 45,
+  "png_new": 45
+ },
+ "H": {
+  "status": "OK",
+  "mode": "PS拦截渲染(尝试1)",
+  "seconds": 744.1,
+  "pages": 70,
+  "png_new": 70
+ }
+}

@@ -251,6 +251,7 @@ def assert2(pdf_path, info):
         tables = pg.find_tables().tables
     except Exception:
         tables = []
+    pg_drawings = pg.get_drawings()   # 2026-09-04 子步3：边线法导航表宽测量在 close 前取数
     doc.close()
     for name, txt, in_header in targets:
         key = nospc(txt[:12])
@@ -277,10 +278,62 @@ def assert2(pdf_path, info):
         pdf_note = ''
         pdf_ok = True
         if tables:
-            tb = max(tables, key=lambda t: t.bbox[2] - t.bbox[0])
-            tw = tb.bbox[2] - tb.bbox[0]
+            # 2026-09-04 子步3补丁：内容感知选表——讲部补挂后首页出现条目区表格（对比辨析表等），
+            # find_tables 可能把导航表与条目表/底纹行误并为单一大表（B卷首页实测 bbox 37~595×85~782）。
+            # 导航表按表头文本（节名＋题量）锁定且宽度须合基准；无合基准候选时改走边线法：
+            # 导航表 y 窗（表头「节名…题量」块顶～「合计」块底）内竖直边线对（长>15pt）的最外 x 跨度。
+            cand = None
+            for t in tables:
+                try:
+                    grid_txt = ''.join(''.join(cell or '' for cell in row) for row in t.extract())
+                except Exception:
+                    grid_txt = ''
+                if '节名' in grid_txt and '题量' in grid_txt:
+                    w_c = t.bbox[2] - t.bbox[0]
+                    if abs(w_c - w_ref) <= 2:
+                        cand = t
+                        break
+                    cand = cand or t   # 命中表头但宽度不合基准：留作记录，继续找
+            fb_note = ''
+            if cand is not None and abs(cand.bbox[2] - cand.bbox[0] - w_ref) <= 2:
+                tw = cand.bbox[2] - cand.bbox[0]
+            else:
+                # —— 边线法 ——
+                import re as _re
+                y0 = y1 = None
+                for b in blocks:
+                    tt = _re.sub(r'\s+', '', b[4])
+                    if y0 is None and '节名' in tt and '题量' in tt:
+                        y0 = b[1]
+                    if '合计' in tt:
+                        y1 = b[3]
+                tw = None
+                if y0 is not None and y1 is not None:
+                    vxs = []
+                    for d in pg_drawings:
+                        r = d['rect']
+                        if r.y1 < y0 - 2 or r.y0 > y1 + 2:
+                            continue
+                        for it in d['items']:
+                            if it[0] == 'l':
+                                l = it[1]
+                                if abs(l.y1 - l.y0) > 15:
+                                    vxs += [l.x0, l.x1]
+                            elif it[0] == 're':
+                                rr = it[1]
+                                if rr.height > 15 and rr.width < 6:
+                                    vxs += [rr.x0, rr.x1]
+                    if vxs:
+                        tw = max(vxs) - min(vxs)
+                if tw is None:
+                    pdf_ok = False
+                    pdf_note = ' 首页PDF导航表宽不可测（find_tables误并＋边线法失败）'
+                    rows.append(('章首导航表', 'FAIL',
+                                 'tblW=%d缇(基准%d缇±40) 落区=%s%s' % (w_tw, ref_tw, zone, pdf_note)))
+                    return rows
+                fb_note = '（边线法：find_tables误并回退）'
             pdf_ok = abs(tw - w_ref) <= 2
-            pdf_note = ' PDF表框宽=%.1f(基准%.1f±2)' % (tw, w_ref)
+            pdf_note = ' PDF表框宽=%.1f(基准%.1f±2)%s' % (tw, w_ref, fb_note)
         else:
             pdf_note = ' 首页PDF未检出表格块'
         rows.append(('章首导航表', 'PASS' if (xml_ok and pdf_ok) else 'FAIL',

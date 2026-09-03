@@ -78,7 +78,7 @@ LEAD_NUM_RE = re.compile(r'^(?:\d+|\d+(?:\.\d+)+-\d+)．(?:【[^】]{1,16}】)*$
 LEAD_SUB_RE = re.compile(r'^（\d+）(?:【[^】]{1,16}】)*$')
 ENT_RE = re.compile(r'^' + NUM_HEAD + r'．')
 HEAD_RE = re.compile(r'^\d+(?:\.\d+){1,6}(?:\s|方法讲解)')
-LECTURE_RE = re.compile(r'^\d+(?:\.\d+)*\s*方法讲解[｜|]')
+LECTURE_RE = re.compile(r'^\d+(?:\.\d+)*\s*(?:方法讲解|知识讲解)[｜|]')   # 知识讲解＝子步3新讲部形态（行为等价：同属非条目区）
 
 TEXT_TAGS = {q('t'), qm('t')}
 
