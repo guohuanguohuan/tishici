@@ -1,0 +1,58 @@
+{
+ "B": {
+  "alloc": [
+   5342,
+   736,
+   2912,
+   1216
+  ],
+  "mins2": [
+   736.0,
+   736.0,
+   1720.0,
+   1216.0
+  ],
+  "changes": {
+   "tblW": 0,
+   "layout": 0,
+   "ind": 0,
+   "grid": 4,
+   "tcW": 40,
+   "sz": 0,
+   "jc": 0,
+   "spacing": 0,
+   "ind_p": 0
+  },
+  "text_equal": true,
+  "sha_before": "0fa70a69b265",
+  "sha_after": "f768f87ef854"
+ },
+ "E": {
+  "alloc": [
+   4769,
+   736,
+   3353,
+   1348
+  ],
+  "mins2": [
+   736.0,
+   736.0,
+   1720.0,
+   1216.0
+  ],
+  "changes": {
+   "tblW": 0,
+   "layout": 0,
+   "ind": 0,
+   "grid": 4,
+   "tcW": 76,
+   "sz": 0,
+   "jc": 0,
+   "spacing": 0,
+   "ind_p": 0
+  },
+  "text_equal": true,
+  "sha_before": "757948b4a3d1",
+  "sha_after": "d08fcfbc7d5d"
+ }
+}

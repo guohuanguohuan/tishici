@@ -288,7 +288,9 @@ def assert2(pdf_path, info):
                     grid_txt = ''.join(''.join(cell or '' for cell in row) for row in t.extract())
                 except Exception:
                     grid_txt = ''
-                if '节名' in grid_txt and '题量' in grid_txt:
+                # 2026-09-04 子步6补丁：四列化后表头抽层把「题量」拆块（实测块文本「节名题」），
+                # 节名＋题量联合锁定失效——放宽为「节名」单锁（首页仅此一处含节名）。
+                if '节名' in grid_txt:
                     w_c = t.bbox[2] - t.bbox[0]
                     if abs(w_c - w_ref) <= 2:
                         cand = t
@@ -303,7 +305,7 @@ def assert2(pdf_path, info):
                 y0 = y1 = None
                 for b in blocks:
                     tt = _re.sub(r'\s+', '', b[4])
-                    if y0 is None and '节名' in tt and '题量' in tt:
+                    if y0 is None and '节名' in tt:   # 子步6：题量拆块，单锁节名
                         y0 = b[1]
                     if '合计' in tt:
                         y1 = b[3]
