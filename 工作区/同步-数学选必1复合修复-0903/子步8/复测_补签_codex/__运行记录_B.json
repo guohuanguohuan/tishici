@@ -1,0 +1,25 @@
+{
+ "configuration": "B",
+ "source": "C:\\提示词\\工具\\节页码定位.py",
+ "source_sha256": "844d244a3cb91d5ca8e7c2c17e35963d293aeff623478f76610f39e651bcde85",
+ "config": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\parts_mirror.json",
+ "record": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+ "command": [
+  "C:\\Users\\28120\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "C:\\提示词\\工具\\节页码定位.py",
+  "@C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\parts_mirror.json",
+  "--record",
+  "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+  "--json"
+ ],
+ "started_epoch": 1788500067.8321316,
+ "elapsed_seconds": 55.646,
+ "timeout_seconds": 180,
+ "timed_out": false,
+ "source_exit_code": 0,
+ "reported_exit_code": 0,
+ "stdout_bytes": 10528,
+ "stderr_bytes": 0,
+ "output_json": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置B.json",
+ "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置B.err"
+}
