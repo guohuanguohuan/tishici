@@ -1,0 +1,5 @@
+{"ev": "word_started", "pid": null, "ts": 1788507213.1082668}
+{"ev": "open_start", "file": "人教B版选必1·使用说明.docx", "ts": 1788507213.1101427}
+{"ev": "open_done", "file": "人教B版选必1·使用说明.docx", "pages": 1, "sections": 1, "sec": 0.18, "ts": 1788507213.2899601}
+{"ev": "all_done", "ts": 1788507213.305546}
+{"ev": "quit", "ts": 1788507213.3075464}

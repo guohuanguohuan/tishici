@@ -1,0 +1,590 @@
+[
+ {
+  "i": 0,
+  "type": "未归类",
+  "text": "人教B版选必1·册目录页",
+  "ind": null,
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "人教B版选必1·册目录页",
+    "b": true,
+    "sz": "32",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 1,
+  "type": "小注行",
+  "text": "页码＝所在本部分内页码（各本独立起算）",
+  "ind": null,
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "页码＝所在本部分内页码（各本独立起算）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 2,
+  "type": "章行",
+  "text": "第1章 空间向量与立体几何",
+  "ind": null,
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "第1章 空间向量与立体几何",
+    "b": true,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 3,
+  "type": "件级行",
+  "text": "衔接件（29题·全部必会）　·本14页\tP1",
+  "ind": {
+   "left": "420"
+  },
+  "pshd": "C9C9C9",
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "衔接件（29题·全部必会）　·本14页",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP1",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 4,
+  "type": "件级行",
+  "text": "知识清单（47条：基33·进14）　·本13页\tP1",
+  "ind": {
+   "left": "420"
+  },
+  "pshd": "C9C9C9",
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "知识清单（47条：基33·进14）　·本13页",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP1",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 5,
+  "type": "件级行",
+  "text": "讲练件（140题：简单21·中档104·难15）　·本121页\tP1",
+  "ind": {
+   "left": "420"
+  },
+  "pshd": "C9C9C9",
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "讲练件（140题：简单21·中档104·难15）　·本121页",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP1",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 6,
+  "type": "节级行",
+  "text": "1.1 空间向量及其运算（24题）\tP1",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "1.1 空间向量及其运算（24题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP1",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 7,
+  "type": "节级行",
+  "text": "1.2 空间向量在立体几何中的应用（116题）\tP17",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "1.2 空间向量在立体几何中的应用（116题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP17",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 8,
+  "type": "章行",
+  "text": "第2章 平面解析几何",
+  "ind": null,
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "第2章 平面解析几何",
+    "b": true,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 9,
+  "type": "件级行",
+  "text": "衔接件（13题·全部必会）　·本5页\tP1",
+  "ind": {
+   "left": "420"
+  },
+  "pshd": "C9C9C9",
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "衔接件（13题·全部必会）　·本5页",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP1",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 10,
+  "type": "件级行",
+  "text": "知识清单（67条：基38·进29）　·本28页\tP1",
+  "ind": {
+   "left": "420"
+  },
+  "pshd": "C9C9C9",
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "知识清单（67条：基38·进29）　·本28页",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP1",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 11,
+  "type": "件级行",
+  "text": "讲练件（339题：简单47·中档246·难46）　·本225页\tP1",
+  "ind": {
+   "left": "420"
+  },
+  "pshd": "C9C9C9",
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "讲练件（339题：简单47·中档246·难46）　·本225页",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP1",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 12,
+  "type": "节级行",
+  "text": "2.1 坐标法（1题）\tP1",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "2.1 坐标法（1题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP1",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 13,
+  "type": "节级行",
+  "text": "2.2 直线及其方程（38题）\tP2",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "2.2 直线及其方程（38题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP2",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 14,
+  "type": "节级行",
+  "text": "2.3 圆及其方程（61题）\tP25",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "2.3 圆及其方程（61题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP25",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 15,
+  "type": "节级行",
+  "text": "2.4 曲线与方程（19题）\tP60",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "2.4 曲线与方程（19题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP60",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 16,
+  "type": "节级行",
+  "text": "2.5 椭圆及其方程（63题）\tP73",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "2.5 椭圆及其方程（63题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP73",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 17,
+  "type": "节级行",
+  "text": "2.6 双曲线及其方程（36题）\tP112",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "2.6 双曲线及其方程（36题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP112",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 18,
+  "type": "节级行",
+  "text": "2.7 抛物线及其方程（32题）\tP134",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "2.7 抛物线及其方程（32题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP134",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ },
+ {
+  "i": 19,
+  "type": "节级行",
+  "text": "2.8 直线与圆锥曲线的位置关系（89题）\tP156",
+  "ind": {
+   "left": "840"
+  },
+  "pshd": null,
+  "tabs": [
+   {
+    "pos": "10206",
+    "val": "right",
+    "leader": "dot"
+   }
+  ],
+  "jc": "left",
+  "runs": [
+   {
+    "t": "2.8 直线与圆锥曲线的位置关系（89题）",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   },
+   {
+    "t": "\tP156",
+    "b": false,
+    "sz": "24",
+    "shd": null
+   }
+  ]
+ }
+]

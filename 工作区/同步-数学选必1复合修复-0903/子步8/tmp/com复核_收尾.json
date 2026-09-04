@@ -1,0 +1,29 @@
+{
+ "配页会话": {
+  "人教B版选必1·册目录页.docx": 1,
+  "人教B版选必1·使用说明.docx": 2
+ },
+ "成品抽测": {
+  "讲练2d(H)": {
+   "pages": 70,
+   "expect": 70,
+   "verdict": "零漂移✓",
+   "attempts": 1
+  },
+  "衔接2(X2)": {
+   "pages": 5,
+   "expect": 5,
+   "verdict": "零漂移✓",
+   "attempts": 1
+  },
+  "讲练2b(F)": {
+   "pages": 56,
+   "expect": 56,
+   "verdict": "零漂移✓",
+   "attempts": 1
+  }
+ },
+ "attempts": {
+  "配页": 1
+ }
+}

@@ -1,0 +1,7 @@
+{"ev": "word_started", "pid": null, "ts": 1788506484.4184964}
+{"ev": "open_start", "file": "人教B版选必1·册目录页.docx", "ts": 1788506484.4204955}
+{"ev": "open_done", "file": "人教B版选必1·册目录页.docx", "pages": 1, "sections": 1, "sec": 0.18, "ts": 1788506484.599037}
+{"ev": "open_start", "file": "人教B版选必1·使用说明.docx", "ts": 1788506484.6180718}
+{"ev": "open_done", "file": "人教B版选必1·使用说明.docx", "pages": 2, "sections": 1, "sec": 0.09, "ts": 1788506484.708987}
+{"ev": "all_done", "ts": 1788506484.7190263}
+{"ev": "quit", "ts": 1788506484.720019}

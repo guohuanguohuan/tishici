@@ -1,0 +1,11 @@
+== 六件级行段级 w:shd（python-docx 属性层）==
+PASS 段03: w:fill=C9C9C9 属性=['{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}color', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fill'] 裸属性=[] | 衔接件（29题·全部必会）　·本14页	P1
+PASS 段04: w:fill=C9C9C9 属性=['{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}color', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fill'] 裸属性=[] | 知识清单（47条：基33·进14）　·本13页	P1
+PASS 段05: w:fill=C9C9C9 属性=['{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}color', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fill'] 裸属性=[] | 讲练件（140题：简单21·中档104·难15）　·本121页	P1
+PASS 段09: w:fill=C9C9C9 属性=['{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}color', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fill'] 裸属性=[] | 衔接件（13题·全部必会）　·本5页	P1
+PASS 段10: w:fill=C9C9C9 属性=['{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}color', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fill'] 裸属性=[] | 知识清单（67条：基38·进29）　·本28页	P1
+PASS 段11: w:fill=C9C9C9 属性=['{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}color', '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}fill'] 裸属性=[] | 讲练件（339题：简单47·中档246·难46）　·本225页	P1
+== 全件 XML 层 w:shd 枚举＋裸 fill 扫描 ==
+w:shd 元素总数=944，其中带 w:fill= 的=944，带裸 fill= 的=0
+w:shd 上出现过的属性名: ['w:color', 'w:fill', 'w:themeFill', 'w:themeFillShade', 'w:themeFillTint', 'w:val']
+R1 总判: PASS

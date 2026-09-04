@@ -1,0 +1,79 @@
+段落总数(python-docx document.paragraphs) = 20
+行型计数 = {"未归类": 1, "小注行": 1, "章行": 2, "件级行": 6, "节级行": 10}
+---[00] 未归类 | ind=None pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 人教B版选必1·册目录页
+    RUN b=True sz=32 shd=None | 人教B版选必1·册目录页
+---[01] 小注行 | ind=None pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 页码＝所在本部分内页码（各本独立起算）
+    RUN b=False sz=24 shd=None | 页码＝所在本部分内页码（各本独立起算）
+---[02] 章行 | ind=None pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 第1章 空间向量与立体几何
+    RUN b=True sz=24 shd=None | 第1章 空间向量与立体几何
+---[03] 件级行 | ind={'left': '420'} pshd=C9C9C9 jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 衔接件（29题·全部必会）　·本14页	P1
+    RUN b=False sz=24 shd=None | 衔接件（29题·全部必会）　·本14页
+    RUN b=False sz=24 shd=None | 	P1
+---[04] 件级行 | ind={'left': '420'} pshd=C9C9C9 jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 知识清单（47条：基33·进14）　·本13页	P1
+    RUN b=False sz=24 shd=None | 知识清单（47条：基33·进14）　·本13页
+    RUN b=False sz=24 shd=None | 	P1
+---[05] 件级行 | ind={'left': '420'} pshd=C9C9C9 jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 讲练件（140题：简单21·中档104·难15）　·本121页	P1
+    RUN b=False sz=24 shd=None | 讲练件（140题：简单21·中档104·难15）　·本121页
+    RUN b=False sz=24 shd=None | 	P1
+---[06] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 1.1 空间向量及其运算（24题）	P1
+    RUN b=False sz=24 shd=None | 1.1 空间向量及其运算（24题）
+    RUN b=False sz=24 shd=None | 	P1
+---[07] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 1.2 空间向量在立体几何中的应用（116题）	P17
+    RUN b=False sz=24 shd=None | 1.2 空间向量在立体几何中的应用（116题）
+    RUN b=False sz=24 shd=None | 	P17
+---[08] 章行 | ind=None pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 第2章 平面解析几何
+    RUN b=True sz=24 shd=None | 第2章 平面解析几何
+---[09] 件级行 | ind={'left': '420'} pshd=C9C9C9 jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 衔接件（13题·全部必会）　·本5页	P1
+    RUN b=False sz=24 shd=None | 衔接件（13题·全部必会）　·本5页
+    RUN b=False sz=24 shd=None | 	P1
+---[10] 件级行 | ind={'left': '420'} pshd=C9C9C9 jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 知识清单（67条：基38·进29）　·本28页	P1
+    RUN b=False sz=24 shd=None | 知识清单（67条：基38·进29）　·本28页
+    RUN b=False sz=24 shd=None | 	P1
+---[11] 件级行 | ind={'left': '420'} pshd=C9C9C9 jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 讲练件（339题：简单47·中档246·难46）　·本225页	P1
+    RUN b=False sz=24 shd=None | 讲练件（339题：简单47·中档246·难46）　·本225页
+    RUN b=False sz=24 shd=None | 	P1
+---[12] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 2.1 坐标法（1题）	P1
+    RUN b=False sz=24 shd=None | 2.1 坐标法（1题）
+    RUN b=False sz=24 shd=None | 	P1
+---[13] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 2.2 直线及其方程（38题）	P2
+    RUN b=False sz=24 shd=None | 2.2 直线及其方程（38题）
+    RUN b=False sz=24 shd=None | 	P2
+---[14] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 2.3 圆及其方程（61题）	P25
+    RUN b=False sz=24 shd=None | 2.3 圆及其方程（61题）
+    RUN b=False sz=24 shd=None | 	P25
+---[15] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 2.4 曲线与方程（19题）	P60
+    RUN b=False sz=24 shd=None | 2.4 曲线与方程（19题）
+    RUN b=False sz=24 shd=None | 	P60
+---[16] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 2.5 椭圆及其方程（63题）	P73
+    RUN b=False sz=24 shd=None | 2.5 椭圆及其方程（63题）
+    RUN b=False sz=24 shd=None | 	P73
+---[17] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 2.6 双曲线及其方程（36题）	P112
+    RUN b=False sz=24 shd=None | 2.6 双曲线及其方程（36题）
+    RUN b=False sz=24 shd=None | 	P112
+---[18] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 2.7 抛物线及其方程（32题）	P134
+    RUN b=False sz=24 shd=None | 2.7 抛物线及其方程（32题）
+    RUN b=False sz=24 shd=None | 	P134
+---[19] 节级行 | ind={'left': '840'} pshd=None jc=left tabs=[{'pos': '10206', 'val': 'right', 'leader': 'dot'}]
+    TEXT: 2.8 直线与圆锥曲线的位置关系（89题）	P156
+    RUN b=False sz=24 shd=None | 2.8 直线与圆锥曲线的位置关系（89题）
+    RUN b=False sz=24 shd=None | 	P156
+=== 版式: pgSz=7560310x10692130 pgMar L539750 R539750 T539750 B539750 | cols=None

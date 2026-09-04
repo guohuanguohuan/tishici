@@ -1,0 +1,27 @@
+===== T2 图例同构断言（使用说明 ↔ 实物） =====
+✓ 行4题型级题号块: 实测=(True, '24', None) 期望=(True, '24', None) 源=实物H段160: b=True sz=24 shd=None
+✓ 行5衔接件题号块: 实测=(True, '24', 'C9C9C9') 期望=(True, '24', 'C9C9C9') 源=实物X1段033: b=True sz=24 shd=C9C9C9
+✓ 芯片【答案】行: 实测=(False, '24', None) 期望=(False, '24', None) 源=实物B/H芯片: b=False sz=24 shd=None
+✓ 讲部灰底行(大小/方向): 实测=[(False, '24', 'C9C9C9'), (False, '24', 'C9C9C9')] 期望=[(False, '24', 'C9C9C9'), (False, '24', 'C9C9C9')] 源=实物H讲部: b=False sz=24 shd=C9C9C9
+✓ 条目号2.4-13．: 实测=(False, '24', 'C9C9C9') 期望=(False, '24', 'C9C9C9') 源=实物I2条目号: C9C9C9 b=False sz=24
+✓ 第一子层（1）: 实测=(False, '24', 'C9C9C9') 期望=(False, '24', 'C9C9C9') 源=实物B（1）: C9C9C9 b=False sz=24
+✓ 题干底纹段: 实测=E0E0E0 期望=E0E0E0 源=§7题干底纹E0E0E0
+✓ 定理细框段(pBdr+灰底): 实测=(True, 'C9C9C9') 期望=(True, 'C9C9C9') 源=§7灰底＋细框双标记
+同构断言总判: PASS
+===== 使用说明 §11三要素 =====
+✓ ①视觉锚图例区(一、)
+✓ 〔基〕图例句
+✓ 〔进〕图例句
+✓ ②难度三档(二、)
+✓ 提分线三形态
+✓ 建议学习路径
+✓ 答案用法小节
+✓ ③件型用法(三、)
+✓ 衔接件必会说明
+✓ 部分封面用法
+✓ 装订组合方案A/B/C
+===== 两配页件 自检XML实测 =====
+册目录页 {"段落数": 20, "节数": 1, "页眉页脚部件数": 0, "w:ins": 0, "w:del": 0, "w:strike": 0, "w:highlight": 0, "非auto色w:color": 0, "pageBreakBefore": 0, "keepNext": 0, "keepLines": 0, "手动分页符w:br_page": 0, "pgSz": "7560310x10692130", "pgMar_LR_T_B": "539750/539750/539750/539750", "cols": null, "jc非left段数": 0, "titlePg": false}
+册目录页 rFonts枚举: ['w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"']
+使用说明 {"段落数": 33, "节数": 1, "页眉页脚部件数": 0, "w:ins": 0, "w:del": 0, "w:strike": 0, "w:highlight": 0, "非auto色w:color": 0, "pageBreakBefore": 0, "keepNext": 0, "keepLines": 0, "手动分页符w:br_page": 0, "pgSz": "7560310x10692130", "pgMar_LR_T_B": "539750/539750/539750/539750", "cols": null, "jc非left段数": 0, "titlePg": false}
+使用说明 rFonts枚举: ['w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="宋体"']
