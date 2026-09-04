@@ -157,6 +157,15 @@ def export_direct(src, out_pdf, log=print):
     return 'TIMEOUT', '直导两次失败', time.time() - t0
 
 
+def safe_copy(src, dst):
+    """容错拷贝：共享读字节复制（Word 锁件允许共享读，CopyFile2 遇锁即败）；保留 mtime。"""
+    with open(src, 'rb') as f:
+        data = f.read()
+    with open(dst, 'wb') as f:
+        f.write(data)
+    shutil.copystat(src, dst)
+
+
 def _cleanup_spool(before, keep_pdf=False):
     """§4⑨残留清查：删本任务新增 spool 件（.pdf/.inf/.PS与临时目录），不动他人文件。"""
     if not os.path.isdir(SPOOL):
@@ -231,7 +240,10 @@ def main():
             status, mode, secs = 'OK', '幂等跳过', 0.0
         else:
             local = os.path.join(copy_dir, code + '.docx')   # §14 本地副本
-            shutil.copy2(src, local)
+            try:
+                shutil.copy2(src, local)
+            except PermissionError:
+                safe_copy(src, local)   # Word锁件容错：共享读字节拷贝（FX-2实证点）
             print('[%s] 导出 %s ...' % (code, os.path.basename(src)))
             if direct:
                 status, mode, secs = export_direct(local, out_pdf)

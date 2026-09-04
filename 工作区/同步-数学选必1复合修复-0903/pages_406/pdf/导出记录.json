@@ -1,0 +1,135 @@
+{
+ "X1": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 14,
+  "png_new": 0
+ },
+ "I1": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 13,
+  "png_new": 0
+ },
+ "B": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 61,
+  "png_new": 0
+ },
+ "C": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 60,
+  "png_new": 0
+ },
+ "X2": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 5,
+  "png_new": 0
+ },
+ "I2": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 28,
+  "png_new": 0
+ },
+ "E": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 55,
+  "png_new": 0
+ },
+ "F": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 56,
+  "png_new": 0
+ },
+ "G": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 44,
+  "png_new": 0
+ },
+ "H": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 70,
+  "png_new": 0
+ },
+ "FM": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ },
+ "SM": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ },
+ "ML": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ },
+ "FQ1": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ },
+ "FQ2": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ },
+ "FQ3": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ },
+ "FQ4": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ },
+ "FQ5": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ },
+ "FQ6": {
+  "status": "OK",
+  "mode": "幂等跳过",
+  "seconds": 0.0,
+  "pages": 1,
+  "png_new": 0
+ }
+}
