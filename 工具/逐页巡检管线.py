@@ -127,6 +127,36 @@ def export_one(src, out_pdf, pages_from=None, pages_to=None, log=print):
     return 'TIMEOUT', '两次超时', time.time() - t0
 
 
+def export_direct(src, out_pdf, log=print):
+    """Word直导（ExportAsFixedFormat，wdExportFormatPDF=17）——无打印队列、无PDFCreator/GS依赖。
+    异常重试一次（换新实例）；同步COM调用不可轮询中断，挂死风险由外层帽与幂等续跑兜底。"""
+    src = os.path.abspath(src)
+    out_pdf = os.path.abspath(out_pdf)
+    t0 = time.time()
+    for attempt in (1, 2):
+        pythoncom.CoInitialize()
+        word = win32com.client.DispatchEx('Word.Application')
+        word.Visible = False
+        word.DisplayAlerts = 0
+        try:
+            d = word.Documents.Open(src, ReadOnly=True, AddToRecentFiles=False)
+            d.ExportAsFixedFormat(out_pdf, 17)
+            d.Close(False)
+            if os.path.exists(out_pdf) and os.path.getsize(out_pdf) > 0:
+                return 'OK', 'Word直导(尝试%d)' % attempt, time.time() - t0
+            log('  [直导无产物] 第%d次' % attempt)
+        except Exception as e:
+            log('  [直导异常] 第%d次: %r' % (attempt, e))
+        finally:
+            try:
+                word.Quit()
+            except Exception:
+                pass
+            pythoncom.CoUninitialize()
+        time.sleep(10)
+    return 'TIMEOUT', '直导两次失败', time.time() - t0
+
+
 def _cleanup_spool(before, keep_pdf=False):
     """§4⑨残留清查：删本任务新增 spool 件（.pdf/.inf/.PS与临时目录），不动他人文件。"""
     if not os.path.isdir(SPOOL):
@@ -179,6 +209,7 @@ def main():
         i += 1
     out = os.path.abspath(str(opts.get('--out', '.')))
     reexport = '--reexport' in opts
+    direct = '--direct' in opts   # Word直导主路径（无PDFCreator/GS依赖）；默认仍走打印链备胎
     dpi = int(opts.get('--dpi', 120))
     pdf_dir = os.path.join(out, 'pdf')
     pages_root = os.path.join(out, 'pages')
@@ -202,7 +233,10 @@ def main():
             local = os.path.join(copy_dir, code + '.docx')   # §14 本地副本
             shutil.copy2(src, local)
             print('[%s] 导出 %s ...' % (code, os.path.basename(src)))
-            status, mode, secs = export_one(local, out_pdf)
+            if direct:
+                status, mode, secs = export_direct(local, out_pdf)
+            else:
+                status, mode, secs = export_one(local, out_pdf)
             print('[%s] %s %s %.1fs' % (code, status, mode, secs))
         pages = 0
         made = 0
