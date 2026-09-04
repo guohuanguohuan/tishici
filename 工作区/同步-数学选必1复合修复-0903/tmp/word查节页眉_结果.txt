@@ -1,0 +1,7 @@
+节数=1
+节1: DifferentFirstPage=0 OddEven=0
+  页眉-首: Exists=False LinkToPrev=False 文本="(不存在)"
+  页眉-奇: Exists=True LinkToPrev=False 文本=" "
+  页眉-偶: Exists=False LinkToPrev=False 文本="(不存在)"
+  页脚-首: Exists=False 文本="(不存在)"
+  页脚-奇: Exists=True 文本=" "
