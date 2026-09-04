@@ -35,6 +35,7 @@ r"""节页码定位（公共规则§11册目录页件条款明文要求的节级
 定位规则：Word COM（自建不可见实例，用完Quit，ReadOnly开卷、绝不保存——只读工具，不修改任何docx）遍历段落，
   节标题正则＝节号（N.N / N.N.N）＋空格＋标题＋【旧式（第X[—–-]Y题）区间括注 或 新式「　本节N题…」统计段】
   （区间破折号兼容全角—/半角连字符；两形态任一在位即命中、都缺即不认——防题型标题误命中）；
+  2026-09-04补签：有子节的二级节裸标题（两签名都缺）限定「恰二级节号＋整段四号14.0pt」命中（节名锚1pt排除）；
   同一节号只取首次出现（防重复）；跳过表格内段落（wdWithInTable 排除章首导航表的节号行，只认正文结构标题段）。
 
 与盖章流水线的接驳关系（§11册目录页件条款）：节级页码与部分内页码盖章串成同一条流水线——
@@ -76,8 +77,16 @@ def scan_doc(word, path):
             m = SEC_RE.match(txt)
             if not m:
                 continue
-            if not (m.group(3) or STATS_RE.search(txt)):   # 双签名都在缺 → 不是节标题（题型标题防误命中）
-                continue
+            if not (m.group(3) or STATS_RE.search(txt)):   # 双签名都在缺 → 原则上不是节标题
+                # 2026-09-04 子步7补签：有子节的二级节裸标题（「1.1 空间向量及其运算」类）——
+                # 恰二级节号＋整段14.0pt（四号）才认；节名锚段1pt、正文/题型标题12pt借此排除
+                if m.group(1).count('.') != 1:
+                    continue
+                try:
+                    if float(rng.Font.Size) != 14.0:
+                        continue
+                except Exception:
+                    continue
             if rng.Information(WD_WITH_IN_TABLE):   # 表格内段落（章首导航表节号行）跳过
                 continue
             if m.group(1) in seen:                  # 同一节号只取首次出现

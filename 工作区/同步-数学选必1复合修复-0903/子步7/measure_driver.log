@@ -1,0 +1,19 @@
+X1=14 (2.5s)
+X1  COM= 14    2.5s (尝试1)
+I1=13 (2.8s)
+I1  COM= 13    2.8s (尝试1)
+B   尝试1 超时180s——清孤儿实例后重试
+  清孤儿WINWORD pid=23332 start=/Date(1788492110419)/
+B   尝试2 超时180s——清孤儿实例后重试
+  清孤儿WINWORD pid=28032 start=/Date(1788492290753)/
+B   尝试3 超时180s——清孤儿实例后重试
+  清孤儿WINWORD pid=18628 start=/Date(1788492471045)/
+Traceback (most recent call last):
+  File "C:\提示词\工作区\同步-数学选必1复合修复-0903\子步7\measure_driver_子步7.py", line 116, in <module>
+    main()
+  File "C:\提示词\工作区\同步-数学选必1复合修复-0903\子步7\measure_driver_子步7.py", line 102, in main
+    pages = measure_one(code, fn)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\提示词\工作区\同步-数学选必1复合修复-0903\子步7\measure_driver_子步7.py", line 62, in measure_one
+    raise RuntimeError('%s 三次尝试均失败' % code)
+RuntimeError: B 三次尝试均失败
