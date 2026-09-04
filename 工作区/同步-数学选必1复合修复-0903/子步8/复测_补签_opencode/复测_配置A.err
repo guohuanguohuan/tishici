@@ -2,5 +2,11 @@
  {
   "name": "讲练1上",
   "error": "TIMEOUT>180s"
+ },
+ {
+  "config": "A",
+  "name": "讲练1上",
+  "error": "TIMEOUT>180s final",
+  "note": "sha_equal=True"
  }
 ]

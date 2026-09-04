@@ -1,14 +1,13 @@
 {
- "status": "static_independent_checks_only_COM_blocked",
+ "status": "FAIL_A_COM_TIMEOUT_B_REAL_JSON",
  "source": {
   "path": "C:\\提示词\\工具\\节页码定位.py",
   "sha256": "844d244a3cb91d5ca8e7c2c17e35963d293aeff623478f76610f39e651bcde85",
   "expected_sha256": "844d244a3cb91d5ca8e7c2c17e35963d293aeff623478f76610f39e651bcde85",
   "sha256_matches": true,
-  "has_2026_09_04_bare_14pt_gate": true,
-  "has_sec_re": true,
-  "has_stats_re": true
+  "has_2026_09_04_bare_14pt_gate": true
  },
+ "reference": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\节页码_子步8.json",
  "record_entries": {
   "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx": {
    "part": "P1",
@@ -80,6 +79,241 @@
    "tag": "第2章·讲练",
    "part_total": 225
   }
+ },
+ "run_logs": {
+  "A": {
+   "configuration": "A",
+   "source": "C:\\提示词\\工具\\节页码定位.py",
+   "source_sha256": "844d244a3cb91d5ca8e7c2c17e35963d293aeff623478f76610f39e651bcde85",
+   "config": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\_输入_配置A.json",
+   "record": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+   "command": [
+    "C:\\Users\\28120\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "C:\\提示词\\工具\\节页码定位.py",
+    "@C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\_输入_配置A.json",
+    "--record",
+    "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+    "--json"
+   ],
+   "started_epoch": 1788500473.202732,
+   "elapsed_seconds": 180.02,
+   "timeout_seconds": 180,
+   "timed_out": true,
+   "source_exit_code": 1,
+   "reported_exit_code": 124,
+   "stdout_bytes": 0,
+   "stderr_bytes": 78,
+   "output_json": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置A.json",
+   "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置A.err"
+  },
+  "B": {
+   "configuration": "B",
+   "source": "C:\\提示词\\工具\\节页码定位.py",
+   "source_sha256": "844d244a3cb91d5ca8e7c2c17e35963d293aeff623478f76610f39e651bcde85",
+   "config": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\parts_mirror.json",
+   "record": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+   "command": [
+    "C:\\Users\\28120\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "C:\\提示词\\工具\\节页码定位.py",
+    "@C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\parts_mirror.json",
+    "--record",
+    "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+    "--json"
+   ],
+   "started_epoch": 1788500067.8321316,
+   "elapsed_seconds": 55.646,
+   "timeout_seconds": 180,
+   "timed_out": false,
+   "source_exit_code": 0,
+   "reported_exit_code": 0,
+   "stdout_bytes": 10528,
+   "stderr_bytes": 0,
+   "output_json": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置B.json",
+   "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置B.err"
+  }
+ },
+ "com_measurements": {
+  "A": {
+   "source_json_available": false,
+   "payload_status": "timeout",
+   "source_stdout_bytes": 0,
+   "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置A.err"
+  },
+  "B": {
+   "source_json_available": true,
+   "payload_status": "success",
+   "source_stdout_bytes": 10528,
+   "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置B.err"
+  }
+ },
+ "com_assertion_comparison": {
+  "B_vs_reference": {
+   "all_equal": true,
+   "by_alias": {
+    "衔接1": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）",
+       "present": true,
+       "section_count_expected": 2,
+       "section_count_actual": 2,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "衔接1"
+    },
+    "清单1": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）",
+       "present": true,
+       "section_count_expected": 2,
+       "section_count_actual": 2,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "清单1"
+    },
+    "讲练1上": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）",
+       "present": true,
+       "section_count_expected": 9,
+       "section_count_actual": 9,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "讲练1上"
+    },
+    "讲练1下": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）",
+       "present": true,
+       "section_count_expected": 1,
+       "section_count_actual": 1,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "讲练1下"
+    },
+    "衔接2": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第2章 平面解析几何·衔接件（13题）",
+       "present": true,
+       "section_count_expected": 1,
+       "section_count_actual": 1,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "衔接2"
+    },
+    "清单2": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第2章 平面解析几何·知识清单（完成）",
+       "present": true,
+       "section_count_expected": 6,
+       "section_count_actual": 6,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "清单2"
+    },
+    "讲练2a": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）",
+       "present": true,
+       "section_count_expected": 10,
+       "section_count_actual": 10,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "讲练2a"
+    },
+    "讲练2b": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）",
+       "present": true,
+       "section_count_expected": 5,
+       "section_count_actual": 5,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "讲练2b"
+    },
+    "讲练2c": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）",
+       "present": true,
+       "section_count_expected": 6,
+       "section_count_actual": 6,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "讲练2c"
+    },
+    "讲练2d": {
+     "equal": true,
+     "files": [
+      {
+       "name": "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）",
+       "present": true,
+       "section_count_expected": 1,
+       "section_count_actual": 1,
+       "field_differences": [],
+       "section_field_differences": [],
+       "equal": true
+      }
+     ],
+     "unexpected_output_names": [],
+     "alias": "讲练2d"
+    }
+   },
+   "actual_file_count": 10
+  },
+  "A_unavailable": true
  },
  "static_files": [
   {
@@ -29158,6 +29392,10 @@
    "bare_14pt_two_level_false_negative_candidates": []
   }
  ],
+ "static_check_summary": {
+  "pass": true,
+  "bad_by_alias": {}
+ },
  "clean_list_2_missing_check": {
   "alias": "清单2",
   "candidate_paragraphs_2.2": [],
@@ -29200,7 +29438,8 @@
     "part_page": 20
    }
   ],
-  "classification": "needs_COM_output_if_candidates_exist"
+  "classification": "no_candidate_section_title",
+  "conclusion": "配属签名漏配/工具缺陷；2.2=2、2.3=25取自讲练2a，不修改目录页数字。"
  },
  "original_vs_mirror_sha256": [
   {
@@ -29462,6 +29701,556 @@
    "nondecreasing": true
   }
  },
+ "B_part_page_order_control": {
+  "衔接1": {
+   "ordered_nos": [
+    "1.2.1",
+    "1.2.5"
+   ],
+   "part_pages": [
+    1,
+    7
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "清单1": {
+   "ordered_nos": [
+    "1.1",
+    "1.2"
+   ],
+   "part_pages": [
+    1,
+    5
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "讲练1上": {
+   "ordered_nos": [
+    "1.1",
+    "1.1.1",
+    "1.1.2",
+    "1.1.3",
+    "1.2",
+    "1.2.1",
+    "1.2.2",
+    "1.2.3",
+    "1.2.4"
+   ],
+   "part_pages": [
+    1,
+    1,
+    7,
+    11,
+    17,
+    17,
+    23,
+    31,
+    39
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "讲练1下": {
+   "ordered_nos": [
+    "1.2.5"
+   ],
+   "part_pages": [
+    62
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "衔接2": {
+   "ordered_nos": [
+    "2.8"
+   ],
+   "part_pages": [
+    1
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "清单2": {
+   "ordered_nos": [
+    "2.1",
+    "2.4",
+    "2.5",
+    "2.6",
+    "2.7",
+    "2.8"
+   ],
+   "part_pages": [
+    1,
+    9,
+    9,
+    12,
+    17,
+    20
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "讲练2a": {
+   "ordered_nos": [
+    "2.1",
+    "2.2",
+    "2.2.1",
+    "2.2.2",
+    "2.2.3",
+    "2.2.4",
+    "2.3",
+    "2.3.1",
+    "2.3.2",
+    "2.3.3"
+   ],
+   "part_pages": [
+    1,
+    2,
+    2,
+    5,
+    11,
+    18,
+    25,
+    25,
+    33,
+    36
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "讲练2b": {
+   "ordered_nos": [
+    "2.3.4",
+    "2.4",
+    "2.5",
+    "2.5.1",
+    "2.5.2"
+   ],
+   "part_pages": [
+    56,
+    60,
+    73,
+    73,
+    88
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "讲练2c": {
+   "ordered_nos": [
+    "2.6",
+    "2.6.1",
+    "2.6.2",
+    "2.7",
+    "2.7.1",
+    "2.7.2"
+   ],
+   "part_pages": [
+    112,
+    112,
+    120,
+    134,
+    134,
+    143
+   ],
+   "nondecreasing": true,
+   "available": true
+  },
+  "讲练2d": {
+   "ordered_nos": [
+    "2.8"
+   ],
+   "part_pages": [
+    156
+   ],
+   "nondecreasing": true,
+   "available": true
+  }
+ },
+ "bidirectional_python_docx_samples": {
+  "衔接1": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 3,
+     "text": "1.2.1 空间中的点、直线与空间向量　本节15题",
+     "classification": "signed_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "1.2.1",
+      "title": "1.2.1 空间中的点、直线与空间向量　本节15题",
+      "in_page": 1,
+      "part_page": 1
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 2,
+     "text": "1.2.1 空间中的点、直线与空间向量",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "1.2.1",
+      "title": "1.2.1 空间中的点、直线与空间向量　本节15题",
+      "in_page": 1,
+      "part_page": 1
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "清单1": {
+   "path": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\mirror\\人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 5,
+     "text": "1.1 空间向量及其运算",
+     "classification": "bare_two_level_14pt_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "1.1",
+      "title": "1.1 空间向量及其运算",
+      "in_page": 1,
+      "part_page": 1
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 4,
+     "text": "1.1 空间向量及其运算",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "1.1",
+      "title": "1.1 空间向量及其运算",
+      "in_page": 1,
+      "part_page": 1
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "讲练1上": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 5,
+     "text": "1.1 空间向量及其运算",
+     "classification": "bare_two_level_14pt_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "1.1",
+      "title": "1.1 空间向量及其运算",
+      "in_page": 1,
+      "part_page": 1
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 4,
+     "text": "1.1 空间向量及其运算",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "1.1",
+      "title": "1.1 空间向量及其运算",
+      "in_page": 1,
+      "part_page": 1
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "讲练1下": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 2,
+     "text": "1.2.5 空间中的距离　本节79题：简单5｜中档61｜难13",
+     "classification": "signed_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "1.2.5",
+      "title": "1.2.5 空间中的距离　本节79题：简单5｜中档61｜难13",
+      "in_page": 1,
+      "part_page": 62
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 1,
+     "text": "1.2.5 空间中的距离",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "1.2.5",
+      "title": "1.2.5 空间中的距离　本节79题：简单5｜中档61｜难13",
+      "in_page": 1,
+      "part_page": 62
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "衔接2": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 3,
+     "text": "2.8 直线与圆锥曲线的位置关系　本节13题",
+     "classification": "signed_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.8",
+      "title": "2.8 直线与圆锥曲线的位置关系　本节13题",
+      "in_page": 1,
+      "part_page": 1
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 2,
+     "text": "2.8 直线与圆锥曲线的位置关系",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.8",
+      "title": "2.8 直线与圆锥曲线的位置关系　本节13题",
+      "in_page": 1,
+      "part_page": 1
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "清单2": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 5,
+     "text": "2.1 坐标法",
+     "classification": "bare_two_level_14pt_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.1",
+      "title": "2.1 坐标法",
+      "in_page": 1,
+      "part_page": 1
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 4,
+     "text": "2.1 坐标法",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.1",
+      "title": "2.1 坐标法",
+      "in_page": 1,
+      "part_page": 1
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "讲练2a": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 5,
+     "text": "2.1 坐标法　本节1题：简单1｜中档0｜难0",
+     "classification": "signed_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.1",
+      "title": "2.1 坐标法　本节1题：简单1｜中档0｜难0",
+      "in_page": 1,
+      "part_page": 1
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 4,
+     "text": "2.1 坐标法",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.1",
+      "title": "2.1 坐标法　本节1题：简单1｜中档0｜难0",
+      "in_page": 1,
+      "part_page": 1
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "讲练2b": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 2,
+     "text": "2.3.4 圆与圆的位置关系　本节8题：简单1｜中档6｜难1",
+     "classification": "signed_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.3.4",
+      "title": "2.3.4 圆与圆的位置关系　本节8题：简单1｜中档6｜难1",
+      "in_page": 1,
+      "part_page": 56
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 1,
+     "text": "2.3.4 圆与圆的位置关系",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.3.4",
+      "title": "2.3.4 圆与圆的位置关系　本节8题：简单1｜中档6｜难1",
+      "in_page": 1,
+      "part_page": 56
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "讲练2c": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 2,
+     "text": "2.6 双曲线及其方程",
+     "classification": "bare_two_level_14pt_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.6",
+      "title": "2.6 双曲线及其方程",
+      "in_page": 1,
+      "part_page": 112
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 1,
+     "text": "2.6 双曲线及其方程",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.6",
+      "title": "2.6 双曲线及其方程",
+      "in_page": 1,
+      "part_page": 112
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  },
+  "讲练2d": {
+   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx",
+   "samples": [
+    {
+     "kind": "hit",
+     "paragraph_index": 2,
+     "text": "2.8 直线与圆锥曲线的位置关系　本节89题：简单5｜中档75｜难9",
+     "classification": "signed_hit",
+     "python_docx_expected_hit": true,
+     "python_docx_recomputed_first_occurrence_rule": true,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.8",
+      "title": "2.8 直线与圆锥曲线的位置关系　本节89题：简单5｜中档75｜难9",
+      "in_page": 1,
+      "part_page": 156
+     }
+    },
+    {
+     "kind": "difference",
+     "paragraph_index": 1,
+     "text": "2.8 直线与圆锥曲线的位置关系",
+     "classification": "section_anchor_1pt",
+     "python_docx_expected_hit": false,
+     "python_docx_recomputed_first_occurrence_rule": false,
+     "com_output_section_present_in_B": true,
+     "com_output_section": {
+      "no": "2.8",
+      "title": "2.8 直线与圆锥曲线的位置关系　本节89题：简单5｜中档75｜难9",
+      "in_page": 1,
+      "part_page": 156
+     }
+    }
+   ],
+   "has_hit_sample": true,
+   "has_difference_sample": true,
+   "independent_rule_consistent": true
+  }
+ },
  "x1_xml_check": {
   "path": "C:\\提示词\\高中数学\\高中数学同步\\人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx",
   "exists": true,
@@ -29487,8 +30276,8 @@
    "1.2.1.2-11．（衔接必会·卡壳看答案）如图，在中，为边上的高，过作，，，为垂足．求证："
   ],
   "joined_paragraph_labels": [
-   "1.2.1.2-6．",
    "1.2.1.2-6",
+   "1.2.1.2-6．",
    "1.2.1.2-7．",
    "1.2.1.2-8．",
    "1.2.1.2-9．",
@@ -29504,8 +30293,8 @@
    }
   ],
   "present_question_numbers_for_1.2.1.2": [
-   "1.2.1.2-6．",
    "1.2.1.2-6",
+   "1.2.1.2-6．",
    "1.2.1.2-7．",
    "1.2.1.2-8．",
    "1.2.1.2-9．",
@@ -29542,76 +30331,67 @@
   "probe_has_8": true,
   "probe_count": 20
  },
- "com": {
-  "A": {
-   "run_status": "blocked_at_DispatchEx",
-   "exit_code": 1,
-   "stdout_json_available": false,
-   "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置A.err",
-   "stderr": "��p\u0000y\u0000t\u0000h\u0000o\u0000n\u0000 \u0000:\u0000 \u0000\u0019��\u001a�W\u0000o\u0000r\u0000d\u0000 \u0000C\u0000O\u0000M\u0000/T�R1Y%�\u001a�(\u0000-\u00002\u00001\u00004\u00007\u00000\u00002\u00003\u00005\u00008\u00004\u0000,\u0000 \u0000'\u0000\u0007c�[�v{vU_\u001aO݋\nNX[(W\u00020�S���]���~bk\u00020'\u0000,\u0000 \u0000N\u0000o\u0000n\u0000e\u0000,\u0000 \u0000N\u0000o\u0000n\u0000e\u0000)\u0000\n\u0000\n\u0000@b(WMOn \u0000L�:\u00002\u0000 \u0000W[&{:\u0000 \u00001\u0000\n\u0000\n\u0000+\u0000 \u0000p\u0000y\u0000t\u0000h\u0000o\u0000n\u0000 \u0000'\u0000C\u0000:\u0000\\\u0000�c:y͋\\\u0000�]wQ\\\u0000��u�\u0001x�[MO.\u0000p\u0000y\u0000'\u0000 \u0000'\u0000@\u0000C\u0000:\u0000\\\u0000�c:y͋\\\u0000�]\\O:S\\\u0000\fTek-\u0000pef[\t��_1\u0000\nY\bT�O\nY-\u00000\u00009\u00000\u00003\u0000\\\u0000P[ek8\u0000\\\u0000\nYKm_\u0000e�~{_\u0000 \u0000.\u0000.\u0000.\u0000\n\u0000\n\u0000+\u0000 \u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000\n\u0000\n\u0000 \u0000 \u0000 \u0000 \u0000+\u0000 \u0000C\u0000a\u0000t\u0000e\u0000g\u0000o\u0000r\u0000y\u0000I\u0000n\u0000f\u0000o\u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000:\u0000 \u0000N\u0000o\u0000t\u0000S\u0000p\u0000e\u0000c\u0000i\u0000f\u0000i\u0000e\u0000d\u0000:\u0000 \u0000(\u0000\u0019��\u001a�W\u0000o\u0000r\u0000d\u0000 \u0000C\u0000O\u0000M\u0000/T�R1Y%�.\u0000.\u0000.\u0000\u00020'\u0000,\u0000 \u0000N\u0000o\u0000n\u0000e\u0000,\u0000 \u0000N\u0000o\u0000n\u0000e\u0000)\u0000:\u0000S\u0000t\u0000r\u0000i\u0000n\u0000g\u0000)\u0000 \u0000[\u0000]\u0000,\u0000 \u0000R\u0000e\u0000m\u0000o\u0000t\u0000e\u0000E\u0000x\u0000c\u0000e\u0000p\u0000t\u0000i\u0000o\u0000n\u0000\n\u0000\n\u0000 \u0000 \u0000 \u0000 \u0000+\u0000 \u0000F\u0000u\u0000l\u0000l\u0000y\u0000Q\u0000u\u0000a\u0000l\u0000i\u0000f\u0000i\u0000e\u0000d\u0000E\u0000r\u0000r\u0000o\u0000r\u0000I\u0000d\u0000 \u0000:\u0000 \u0000N\u0000a\u0000t\u0000i\u0000v\u0000e\u0000C\u0000o\u0000m\u0000m\u0000a\u0000n\u0000d\u0000E\u0000r\u0000r\u0000o\u0000r\u0000\n\u0000\n\u0000 \u0000\n\u0000\n\u0000"
+ "winword_snapshot_after_cleanup": [
+  {
+   "Id": 5988,
+   "SessionId": 1,
+   "Responding": true
   },
-  "B": {
-   "run_status": "blocked_at_DispatchEx",
-   "exit_code": 1,
-   "stdout_json_available": false,
-   "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\复测_配置B.err",
-   "stderr": "��p\u0000y\u0000t\u0000h\u0000o\u0000n\u0000 \u0000:\u0000 \u0000\u0019��\u001a�W\u0000o\u0000r\u0000d\u0000 \u0000C\u0000O\u0000M\u0000/T�R1Y%�\u001a�(\u0000-\u00002\u00001\u00004\u00007\u00000\u00002\u00003\u00005\u00008\u00004\u0000,\u0000 \u0000'\u0000\u0007c�[�v{vU_\u001aO݋\nNX[(W\u00020�S���]���~bk\u00020'\u0000,\u0000 \u0000N\u0000o\u0000n\u0000e\u0000,\u0000 \u0000N\u0000o\u0000n\u0000e\u0000)\u0000\n\u0000\n\u0000@b(WMOn \u0000L�:\u00002\u0000 \u0000W[&{:\u0000 \u00001\u0000\n\u0000\n\u0000+\u0000 \u0000p\u0000y\u0000t\u0000h\u0000o\u0000n\u0000 \u0000'\u0000C\u0000:\u0000\\\u0000�c:y͋\\\u0000�]wQ\\\u0000��u�\u0001x�[MO.\u0000p\u0000y\u0000'\u0000 \u0000'\u0000@\u0000C\u0000:\u0000\\\u0000�c:y͋\\\u0000�]\\O:S\\\u0000\fTek-\u0000pef[\t��_1\u0000\nY\bT�O\nY-\u00000\u00009\u00000\u00003\u0000\\\u0000P[ek7\u0000\\\u0000p\u0000a\u0000r\u0000t\u0000s\u0000_\u0000 \u0000.\u0000.\u0000.\u0000\n\u0000\n\u0000+\u0000 \u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000~\u0000\n\u0000\n\u0000 \u0000 \u0000 \u0000 \u0000+\u0000 \u0000C\u0000a\u0000t\u0000e\u0000g\u0000o\u0000r\u0000y\u0000I\u0000n\u0000f\u0000o\u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000 \u0000:\u0000 \u0000N\u0000o\u0000t\u0000S\u0000p\u0000e\u0000c\u0000i\u0000f\u0000i\u0000e\u0000d\u0000:\u0000 \u0000(\u0000\u0019��\u001a�W\u0000o\u0000r\u0000d\u0000 \u0000C\u0000O\u0000M\u0000/T�R1Y%�.\u0000.\u0000.\u0000\u00020'\u0000,\u0000 \u0000N\u0000o\u0000n\u0000e\u0000,\u0000 \u0000N\u0000o\u0000n\u0000e\u0000)\u0000:\u0000S\u0000t\u0000r\u0000i\u0000n\u0000g\u0000)\u0000 \u0000[\u0000]\u0000,\u0000 \u0000R\u0000e\u0000m\u0000o\u0000t\u0000e\u0000E\u0000x\u0000c\u0000e\u0000p\u0000t\u0000i\u0000o\u0000n\u0000\n\u0000\n\u0000 \u0000 \u0000 \u0000 \u0000+\u0000 \u0000F\u0000u\u0000l\u0000l\u0000y\u0000Q\u0000u\u0000a\u0000l\u0000i\u0000f\u0000i\u0000e\u0000d\u0000E\u0000r\u0000r\u0000o\u0000r\u0000I\u0000d\u0000 \u0000:\u0000 \u0000N\u0000a\u0000t\u0000i\u0000v\u0000e\u0000C\u0000o\u0000m\u0000m\u0000a\u0000n\u0000d\u0000E\u0000r\u0000r\u0000o\u0000r\u0000\n\u0000\n\u0000 \u0000\n\u0000\n\u0000"
+  {
+   "Id": 10308,
+   "SessionId": 1,
+   "Responding": true
+  },
+  {
+   "Id": 13320,
+   "SessionId": 1,
+   "Responding": true
+  },
+  {
+   "Id": 26168,
+   "SessionId": 1,
+   "Responding": true
+  },
+  {
+   "Id": 28012,
+   "SessionId": 1,
+   "Responding": true
   }
- },
- "winword_snapshots": {
-  "after_A": [
-   {
-    "Id": 5988,
-    "SessionId": 1,
-    "Responding": true
-   },
-   {
-    "Id": 10308,
-    "SessionId": 1,
-    "Responding": true
-   },
-   {
-    "Id": 13320,
-    "SessionId": 1,
-    "Responding": true
-   },
-   {
-    "Id": 26168,
-    "SessionId": 1,
-    "Responding": true
-   },
-   {
-    "Id": 28012,
-    "SessionId": 1,
-    "Responding": true
-   }
-  ],
-  "after_B": [
-   {
-    "Id": 5988,
-    "SessionId": 1,
-    "Responding": true
-   },
-   {
-    "Id": 10308,
-    "SessionId": 1,
-    "Responding": true
-   },
-   {
-    "Id": 13320,
-    "SessionId": 1,
-    "Responding": true
-   },
-   {
-    "Id": 26168,
-    "SessionId": 1,
-    "Responding": true
-   },
-   {
-    "Id": 28012,
-    "SessionId": 1,
-    "Responding": true
-   }
-  ]
+ ],
+ "assertion_summary": {
+  "1_old_signature_regression": {
+   "result": "FAIL_BLOCKED_A",
+   "B_vs_reference": true
+  },
+  "2_new_signature_positive": {
+   "result": "FAIL_BLOCKED_A",
+   "B_vs_reference": true
+  },
+  "3_negative_examples": {
+   "result": "FAIL_BLOCKED_A",
+   "static_rule_layer": true
+  },
+  "4_difference_self_check": {
+   "result": "PASS",
+   "false_negative_candidates": {}
+  },
+  "5_original_mirror_equivalence": {
+   "result": "FAIL_BLOCKED_A",
+   "B_vs_reference": true,
+   "all_ten_hash_pairs_equal": true
+  },
+  "6_section_page_monotonicity": {
+   "result": "FAIL_BLOCKED_A",
+   "B_actual": true
+  },
+  "7_bidirectional_recheck": {
+   "result": "FAIL_BLOCKED_A",
+   "B_actual": true
+  },
+  "8_X1_gap_diagnosis": {
+   "result": "PASS",
+   "product_has_7": true,
+   "probe_has_7": false
+  }
  }
 }
