@@ -1,0 +1,2229 @@
+{
+ "X1": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "header",
+    "num": 1,
+    "space": 425
+   },
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": true,
+  "content_w": 10206,
+  "tables": []
+ },
+ "I1": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "header",
+    "num": 1,
+    "space": 425
+   },
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": true,
+  "content_w": 10206,
+  "tables": [
+   {
+    "idx": 1,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 6,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：平面向量 | 新知识：空间向量",
+    "nested": 0,
+    "ctx": "【编注】对比辨析——空间向量与平面向量（旧知识：必修2第6章平面向量初步）："
+   },
+   {
+    "idx": 2,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1794,
+     8913
+    ],
+    "gridSum": 10707,
+    "rows": 6,
+    "cols": 2,
+    "firstRow": "特殊向量 | 定义",
+    "nested": 0,
+    "ctx": "向量不要求在同一直线上（平行或重合均可），且零向量与任意向量平行（衔接条目5）。"
+   },
+   {
+    "idx": 3,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     2130,
+     1080,
+     2882,
+     2535
+    ],
+    "gridSum": 8627,
+    "rows": 8,
+    "cols": 4,
+    "firstRow": "空间向量的线性运算 | 加法 |  | ",
+    "nested": 0,
+    "ctx": "数乘的法则与运算律均与平面向量一致，类比迁移即可；线性组合的运用见条目9与10。"
+   },
+   {
+    "idx": 4,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     630,
+     10077
+    ],
+    "gridSum": 10707,
+    "rows": 3,
+    "cols": 2,
+    "firstRow": "图示 | ",
+    "nested": 0,
+    "ctx": "易混点：几何角（如异面直线所成角）与向量夹角可能互补，运算前先分清求的是哪个角。"
+   },
+   {
+    "idx": 5,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：平面向量基本定理 | 新知识：空间向量基本定理",
+    "nested": 0,
+    "ctx": "辨析——空间向量基本定理与平面向量基本定理（旧知识：必修2第6章平面向量初步）："
+   },
+   {
+    "idx": 6,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 6,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：直线的方向向量 | 新知识：平面的法向量",
+    "nested": 0,
+    "ctx": "注】对比辨析——直线的方向向量与平面的法向量（旧知识：本章1.2.1条目20）："
+   },
+   {
+    "idx": 7,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：异面直线所成角与线面角 | 新知识：二面角",
+    "nested": 0,
+    "ctx": "【编注】对比辨析——三类空间角的向量求法（旧知识：本章1.2.1、1.2.3）："
+   },
+   {
+    "idx": 8,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 6,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：外接球 | 新知识：内切球",
+    "nested": 0,
+    "ctx": "外接球与内切球（均为本章1.2.5球类模型知识，外接球公式族见条目43至47）："
+   }
+  ]
+ },
+ "B": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "header",
+    "num": 1,
+    "space": 425
+   },
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": true,
+  "content_w": 10206,
+  "tables": [
+   {
+    "idx": 1,
+    "zone": "header",
+    "depth": 1,
+    "tblW": {
+     "w": 10200,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {},
+    "gridCol": [
+     3600,
+     1800,
+     1000,
+     2600,
+     1200
+    ],
+    "gridSum": 10200,
+    "rows": 10,
+    "cols": 5,
+    "firstRow": "节名 | 节内题号 | 题量 | 简单/中档/难 | 题型组数",
+    "nested": 0,
+    "ctx": "全件140题：简单21｜中档104｜难15"
+   },
+   {
+    "idx": 2,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 6,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：平面向量 | 新知识：空间向量",
+    "nested": 0,
+    "ctx": "【编注】对比辨析——空间向量与平面向量（旧知识：必修2第6章平面向量初步）："
+   },
+   {
+    "idx": 3,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1794,
+     8913
+    ],
+    "gridSum": 10707,
+    "rows": 6,
+    "cols": 2,
+    "firstRow": "特殊向量 | 定义",
+    "nested": 0,
+    "ctx": "向量不要求在同一直线上（平行或重合均可），且零向量与任意向量平行（衔接条目5）。"
+   },
+   {
+    "idx": 4,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     2130,
+     1080,
+     2882,
+     2535
+    ],
+    "gridSum": 8627,
+    "rows": 8,
+    "cols": 4,
+    "firstRow": "空间向量的线性运算 | 加法 |  | ",
+    "nested": 0,
+    "ctx": "数乘的法则与运算律均与平面向量一致，类比迁移即可；线性组合的运用见条目9与10。"
+   },
+   {
+    "idx": 5,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     630,
+     10077
+    ],
+    "gridSum": 10707,
+    "rows": 3,
+    "cols": 2,
+    "firstRow": "图示 | ",
+    "nested": 0,
+    "ctx": "易混点：几何角（如异面直线所成角）与向量夹角可能互补，运算前先分清求的是哪个角。"
+   },
+   {
+    "idx": 6,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：平面向量基本定理 | 新知识：空间向量基本定理",
+    "nested": 0,
+    "ctx": "辨析——空间向量基本定理与平面向量基本定理（旧知识：必修2第6章平面向量初步）："
+   },
+   {
+    "idx": 7,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 6,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：直线的方向向量 | 新知识：平面的法向量",
+    "nested": 0,
+    "ctx": "注】对比辨析——直线的方向向量与平面的法向量（旧知识：本章1.2.1条目20）："
+   },
+   {
+    "idx": 8,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：异面直线所成角与线面角 | 新知识：二面角",
+    "nested": 0,
+    "ctx": "【编注】对比辨析——三类空间角的向量求法（旧知识：本章1.2.1、1.2.3）："
+   },
+   {
+    "idx": 9,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 5000,
+     "type": "pct"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1198,
+     4624,
+     4624
+    ],
+    "gridSum": 10446,
+    "rows": 3,
+    "cols": 3,
+    "firstRow": " | 内 | 外",
+    "nested": 0,
+    "ctx": "总结规律（同负异正）"
+   }
+  ]
+ },
+ "C": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": [
+   {
+    "idx": 1,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": "fixed",
+    "cellMar": {
+     "left": 108,
+     "right": 108,
+     "top": 0,
+     "bottom": 0
+    },
+    "gridCol": [
+     2100,
+     4053,
+     4053
+    ],
+    "gridSum": 10206,
+    "rows": 6,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：外接球 | 新知识：内切球",
+    "nested": 0,
+    "ctx": "外接球与内切球（均为本章1.2.5球类模型知识，外接球公式族见条目43至47）："
+   }
+  ]
+ },
+ "X2": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "header",
+    "num": 1,
+    "space": 425
+   },
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": true,
+  "content_w": 10206,
+  "tables": []
+ },
+ "I2": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "header",
+    "num": 1,
+    "space": 425
+   },
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": true,
+  "content_w": 10206,
+  "tables": [
+   {
+    "idx": 1,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     7656
+    ],
+    "gridSum": 8736,
+    "rows": 4,
+    "cols": 2,
+    "firstRow": "前提条件 | 直线l与x轴相交",
+    "nested": 0,
+    "ctx": "斜率的前提；易错点：直线与x轴平行或重合时倾斜角为而非（关联条目：斜率的定义）。"
+   },
+   {
+    "idx": 2,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8145,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1933,
+     6212
+    ],
+    "gridSum": 8145,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "名称 | 点斜式方程",
+    "nested": 0,
+    "ctx": "用起点；易错点：斜率不存在的直线不能用点斜式表示（关联条目：直线的一般式方程）。"
+   },
+   {
+    "idx": 3,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     2896
+    ],
+    "gridSum": 3976,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "名称 | 斜截式方程",
+    "nested": 0,
+    "ctx": "距时最简形式；易错点：斜率不存在的直线不能表示（关联条目：直线在y轴上的截距）。"
+   },
+   {
+    "idx": 4,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     5064
+    ],
+    "gridSum": 6144,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "名称 | 两点式方程",
+    "nested": 0,
+    "ctx": "直接写方程；易错点：须且，水平线与竖直线都不适用（关联条目：直线的截距式方程）。"
+   },
+   {
+    "idx": 5,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     5126
+    ],
+    "gridSum": 6206,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "名称 | 截距式方程",
+    "nested": 0,
+    "ctx": "；易错点：且，过原点或平行于坐标轴的直线不能用（关联条目：直线在y轴上的截距）。"
+   },
+   {
+    "idx": 6,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     2295,
+     2823
+    ],
+    "gridSum": 6198,
+    "rows": 3,
+    "cols": 3,
+    "firstRow": "条件 |  | ",
+    "nested": 0,
+    "ctx": "提）；易错点：两斜率都不存在时两直线也平行、失效（关联条目：两直线的位置关系）。"
+   },
+   {
+    "idx": 7,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     718,
+     3775,
+     5712
+    ],
+    "gridSum": 10205,
+    "rows": 2,
+    "cols": 3,
+    "firstRow": "图示 |  | ",
+    "nested": 0,
+    "ctx": "为0另一条不存在；易错点：只记·会漏横竖垂直情形（关联条目：两直线的位置关系）。"
+   },
+   {
+    "idx": 8,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     2191,
+     4064
+    ],
+    "gridSum": 6255,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "几何元素及关系 | 代数表示",
+    "nested": 0,
+    "ctx": "方程组；易错点：方程组无解⇔平行、无数组解⇔重合（关联条目：两直线的位置关系）。"
+   },
+   {
+    "idx": 9,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     3205,
+     662,
+     873,
+     662
+    ],
+    "gridSum": 5402,
+    "rows": 3,
+    "cols": 4,
+    "firstRow": "方程组的解 | 一组 | 无数组 | 无解",
+    "nested": 0,
+    "ctx": "一对应；易错点：重合时公共点无数个、勿与平行混判（关联条目：两直线的交点坐标）。"
+   },
+   {
+    "idx": 10,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     566,
+     3985,
+     5654
+    ],
+    "gridSum": 10205,
+    "rows": 3,
+    "cols": 3,
+    "firstRow": " | 点到直线的距离 | 两条平行直线间的距离",
+    "nested": 0,
+    "ctx": "点：平行线距公式须先把两直线的x、y系数化为相同（关联条目：直线的一般式方程）。"
+   },
+   {
+    "idx": 11,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8325,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     890,
+     5509,
+     642,
+     642,
+     642
+    ],
+    "gridSum": 8325,
+    "rows": 4,
+    "cols": 4,
+    "firstRow": "位置关系 | 相交 | 相切 | 相离",
+    "nested": 0,
+    "ctx": "、半弦长、半径的勾股关系最简（关联条目：点到直线的距离与两条平行直线间的距离）。"
+   },
+   {
+    "idx": 12,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": 0,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1029,
+     2394,
+     2140,
+     1919,
+     1352,
+     1369
+    ],
+    "gridSum": 10203,
+    "rows": 3,
+    "cols": 6,
+    "firstRow": "位置关系 | 外离 | 外切 | 相交 | 内切 | 内含",
+    "nested": 0,
+    "ctx": "何法：若两圆的半径分别为，，两圆连心线的长为d，则两圆的位置关系的判断方法如下："
+   },
+   {
+    "idx": 13,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1750,
+     3400,
+     3400
+    ],
+    "gridSum": 8550,
+    "rows": 4,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：直线与圆的位置关系（2.3. | 新知识：圆与圆的位置关系（2.3.4",
+    "nested": 0,
+    "ctx": "比辨析——直线与圆、圆与圆位置关系判定的异同（旧知识：本章2.3.3条目25）："
+   },
+   {
+    "idx": 14,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1624,
+     2760,
+     2175
+    ],
+    "gridSum": 6559,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": " | 焦点在x轴上 | 焦点在y轴上",
+    "nested": 0,
+    "ctx": "量项下；易错点：a、b、c满足、勿与双曲线的相混（关联条目：双曲线的标准方程）。"
+   },
+   {
+    "idx": 15,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8325,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1737,
+     3597,
+     2991
+    ],
+    "gridSum": 8325,
+    "rows": 10,
+    "cols": 3,
+    "firstRow": "焦点的位置 | 焦点在x轴上 | 焦点在y轴上",
+    "nested": 0,
+    "ctx": "顶点、焦点、范围与离心率；易错点：、e越大椭圆越扁（关联条目：椭圆的标准方程）。"
+   },
+   {
+    "idx": 16,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1624,
+     2490,
+     2535
+    ],
+    "gridSum": 6649,
+    "rows": 6,
+    "cols": 3,
+    "firstRow": " | 焦点在x轴上 | 焦点在y轴上",
+    "nested": 0,
+    "ctx": "点位置看正项在哪个变量下；易错点：、勿与椭圆的相混（关联条目：椭圆的标准方程）。"
+   },
+   {
+    "idx": 17,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1750,
+     3400,
+     3400
+    ],
+    "gridSum": 8550,
+    "rows": 4,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：椭圆的标准方程（2.5.1条 | 新知识：双曲线的标准方程（2.6.1",
+    "nested": 0,
+    "ctx": "编注】对比辨析——双曲线与椭圆标准方程的异同（旧知识：本章2.5.1条目33）："
+   },
+   {
+    "idx": 18,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     660,
+     870,
+     2985,
+     3000
+    ],
+    "gridSum": 7515,
+    "rows": 9,
+    "cols": 3,
+    "firstRow": " | 焦点在x轴上 | 焦点在y轴上",
+    "nested": 0,
+    "ctx": "置颠倒——焦点在x轴为/a)x、在y轴为/b)x（关联条目：双曲线的标准方程）。"
+   },
+   {
+    "idx": 19,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 15,
+     "right": 15,
+     "top": 15,
+     "bottom": 15
+    },
+    "gridCol": [
+     1927,
+     3450,
+     2967
+    ],
+    "gridSum": 8344,
+    "rows": 8,
+    "cols": 3,
+    "firstRow": "核心性质 | 椭圆 (/ + / = 1) | 双曲线 (/ - / = 1)",
+    "nested": 0,
+    "ctx": "为了方便对比记忆，避免在考场上混淆公式，特将两者的核心秒杀结论归纳如下："
+   },
+   {
+    "idx": 20,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1750,
+     3400,
+     3400
+    ],
+    "gridSum": 8550,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：双曲线（2.6） | 新知识：抛物线（2.7.1本条目）",
+    "nested": 0,
+    "ctx": "【编注】对比辨析——抛物线与双曲线的异同（旧知识：本章2.6双曲线）："
+   },
+   {
+    "idx": 21,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8325,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     3104,
+     2027,
+     1597,
+     1597
+    ],
+    "gridSum": 8325,
+    "rows": 5,
+    "cols": 4,
+    "firstRow": "图形 | 标准方程 | 焦点坐标 | 准线方程",
+    "nested": 0,
+    "ctx": "点坐标是p/2不是p、焦点与准线关于顶点对称（关联条目：抛物线的简单几何性质）。"
+   },
+   {
+    "idx": 22,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1438,
+     1770,
+     1815,
+     2145,
+     1815
+    ],
+    "gridSum": 8983,
+    "rows": 7,
+    "cols": 5,
+    "firstRow": "p的几何意义 | y²=2px(p>0) | y²=-2px(p>0) | x²=2py(p>0) | x²=-2py(p>0)",
+    "nested": 0,
+    "ctx": "p是焦点到准线的距离、焦点到顶点为p/2（关联条目：抛物线标准方程的几种形式）。"
+   },
+   {
+    "idx": 23,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     2911,
+     2911,
+     2728
+    ],
+    "gridSum": 8550,
+    "rows": 4,
+    "cols": 3,
+    "firstRow": "位置关系 | 解的个数 | 的取值",
+    "nested": 0,
+    "ctx": "二次项系数与Δ检验的前提（关联条目：直线与圆锥曲线位置关系的判定与相切的辨析）。"
+   },
+   {
+    "idx": 24,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1750,
+     3400,
+     3400
+    ],
+    "gridSum": 8550,
+    "rows": 4,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：直线与圆（2.3.3条目25 | 新知识：直线与椭圆、双曲线、抛物线（",
+    "nested": 0,
+    "ctx": "比辨析——直线与圆锥曲线的单公共点与相切辨析（旧知识：本章2.3.3条目25）："
+   }
+  ]
+ },
+ "E": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "header",
+    "num": 1,
+    "space": 425
+   },
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": true,
+  "content_w": 10206,
+  "tables": [
+   {
+    "idx": 1,
+    "zone": "header",
+    "depth": 1,
+    "tblW": {
+     "w": 10200,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {},
+    "gridCol": [
+     3600,
+     1800,
+     1000,
+     2600,
+     1200
+    ],
+    "gridSum": 10200,
+    "rows": 19,
+    "cols": 5,
+    "firstRow": "节名 | 节内题号 | 题量 | 简单/中档/难 | 题型组数",
+    "nested": 0,
+    "ctx": "全件339题：简单47｜中档246｜难46"
+   },
+   {
+    "idx": 2,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     7656
+    ],
+    "gridSum": 8736,
+    "rows": 4,
+    "cols": 2,
+    "firstRow": "前提条件 | 直线l与x轴相交",
+    "nested": 0,
+    "ctx": "斜率的前提；易错点：直线与x轴平行或重合时倾斜角为而非（关联条目：斜率的定义）。"
+   },
+   {
+    "idx": 3,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8145,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1933,
+     6212
+    ],
+    "gridSum": 8145,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "名称 | 点斜式方程",
+    "nested": 0,
+    "ctx": "用起点；易错点：斜率不存在的直线不能用点斜式表示（关联条目：直线的一般式方程）。"
+   },
+   {
+    "idx": 4,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     2896
+    ],
+    "gridSum": 3976,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "名称 | 斜截式方程",
+    "nested": 0,
+    "ctx": "距时最简形式；易错点：斜率不存在的直线不能表示（关联条目：直线在y轴上的截距）。"
+   },
+   {
+    "idx": 5,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     5064
+    ],
+    "gridSum": 6144,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "名称 | 两点式方程",
+    "nested": 0,
+    "ctx": "直接写方程；易错点：须且，水平线与竖直线都不适用（关联条目：直线的截距式方程）。"
+   },
+   {
+    "idx": 6,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     5126
+    ],
+    "gridSum": 6206,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "名称 | 截距式方程",
+    "nested": 0,
+    "ctx": "；易错点：且，过原点或平行于坐标轴的直线不能用（关联条目：直线在y轴上的截距）。"
+   },
+   {
+    "idx": 7,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1080,
+     2295,
+     2823
+    ],
+    "gridSum": 6198,
+    "rows": 3,
+    "cols": 3,
+    "firstRow": "条件 |  | ",
+    "nested": 0,
+    "ctx": "提）；易错点：两斜率都不存在时两直线也平行、失效（关联条目：两直线的位置关系）。"
+   },
+   {
+    "idx": 8,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     718,
+     3775,
+     5712
+    ],
+    "gridSum": 10205,
+    "rows": 2,
+    "cols": 3,
+    "firstRow": "图示 |  | ",
+    "nested": 0,
+    "ctx": "为0另一条不存在；易错点：只记·会漏横竖垂直情形（关联条目：两直线的位置关系）。"
+   },
+   {
+    "idx": 9,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     2191,
+     4064
+    ],
+    "gridSum": 6255,
+    "rows": 5,
+    "cols": 2,
+    "firstRow": "几何元素及关系 | 代数表示",
+    "nested": 0,
+    "ctx": "方程组；易错点：方程组无解⇔平行、无数组解⇔重合（关联条目：两直线的位置关系）。"
+   },
+   {
+    "idx": 10,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     3205,
+     662,
+     873,
+     662
+    ],
+    "gridSum": 5402,
+    "rows": 3,
+    "cols": 4,
+    "firstRow": "方程组的解 | 一组 | 无数组 | 无解",
+    "nested": 0,
+    "ctx": "一对应；易错点：重合时公共点无数个、勿与平行混判（关联条目：两直线的交点坐标）。"
+   },
+   {
+    "idx": 11,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     566,
+     3985,
+     5654
+    ],
+    "gridSum": 10205,
+    "rows": 3,
+    "cols": 3,
+    "firstRow": " | 点到直线的距离 | 两条平行直线间的距离",
+    "nested": 0,
+    "ctx": "点：平行线距公式须先把两直线的x、y系数化为相同（关联条目：直线的一般式方程）。"
+   },
+   {
+    "idx": 12,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8325,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     890,
+     5509,
+     642,
+     642,
+     642
+    ],
+    "gridSum": 8325,
+    "rows": 4,
+    "cols": 4,
+    "firstRow": "位置关系 | 相交 | 相切 | 相离",
+    "nested": 0,
+    "ctx": "、半弦长、半径的勾股关系最简（关联条目：点到直线的距离与两条平行直线间的距离）。"
+   }
+  ]
+ },
+ "F": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": [
+   {
+    "idx": 1,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 10206,
+     "type": "dxa"
+    },
+    "tblInd": 0,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1029,
+     2394,
+     2140,
+     1919,
+     1352,
+     1369
+    ],
+    "gridSum": 10203,
+    "rows": 3,
+    "cols": 6,
+    "firstRow": "位置关系 | 外离 | 外切 | 相交 | 内切 | 内含",
+    "nested": 0,
+    "ctx": "何法：若两圆的半径分别为，，两圆连心线的长为d，则两圆的位置关系的判断方法如下："
+   },
+   {
+    "idx": 2,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1750,
+     3400,
+     3400
+    ],
+    "gridSum": 8550,
+    "rows": 4,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：直线与圆的位置关系（2.3. | 新知识：圆与圆的位置关系（2.3.4",
+    "nested": 0,
+    "ctx": "比辨析——直线与圆、圆与圆位置关系判定的异同（旧知识：本章2.3.3条目25）："
+   },
+   {
+    "idx": 3,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1624,
+     2760,
+     2175
+    ],
+    "gridSum": 6559,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": " | 焦点在x轴上 | 焦点在y轴上",
+    "nested": 0,
+    "ctx": "量项下；易错点：a、b、c满足、勿与双曲线的相混（关联条目：双曲线的标准方程）。"
+   },
+   {
+    "idx": 4,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8325,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1737,
+     3597,
+     2991
+    ],
+    "gridSum": 8325,
+    "rows": 10,
+    "cols": 3,
+    "firstRow": "焦点的位置 | 焦点在x轴上 | 焦点在y轴上",
+    "nested": 0,
+    "ctx": "顶点、焦点、范围与离心率；易错点：、e越大椭圆越扁（关联条目：椭圆的标准方程）。"
+   }
+  ]
+ },
+ "G": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": [
+   {
+    "idx": 1,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1624,
+     2490,
+     2535
+    ],
+    "gridSum": 6649,
+    "rows": 6,
+    "cols": 3,
+    "firstRow": " | 焦点在x轴上 | 焦点在y轴上",
+    "nested": 0,
+    "ctx": "点位置看正项在哪个变量下；易错点：、勿与椭圆的相混（关联条目：椭圆的标准方程）。"
+   },
+   {
+    "idx": 2,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1750,
+     3400,
+     3400
+    ],
+    "gridSum": 8550,
+    "rows": 4,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：椭圆的标准方程（2.5.1条 | 新知识：双曲线的标准方程（2.6.1",
+    "nested": 0,
+    "ctx": "编注】对比辨析——双曲线与椭圆标准方程的异同（旧知识：本章2.5.1条目33）："
+   },
+   {
+    "idx": 3,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     660,
+     870,
+     2985,
+     3000
+    ],
+    "gridSum": 7515,
+    "rows": 9,
+    "cols": 3,
+    "firstRow": " | 焦点在x轴上 | 焦点在y轴上",
+    "nested": 0,
+    "ctx": "置颠倒——焦点在x轴为/a)x、在y轴为/b)x（关联条目：双曲线的标准方程）。"
+   },
+   {
+    "idx": 4,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 15,
+     "right": 15,
+     "top": 15,
+     "bottom": 15
+    },
+    "gridCol": [
+     1927,
+     3450,
+     2967
+    ],
+    "gridSum": 8344,
+    "rows": 8,
+    "cols": 3,
+    "firstRow": "核心性质 | 椭圆 (/ + / = 1) | 双曲线 (/ - / = 1)",
+    "nested": 0,
+    "ctx": "为了方便对比记忆，避免在考场上混淆公式，特将两者的核心秒杀结论归纳如下："
+   },
+   {
+    "idx": 5,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1750,
+     3400,
+     3400
+    ],
+    "gridSum": 8550,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：双曲线（2.6） | 新知识：抛物线（2.7.1本条目）",
+    "nested": 0,
+    "ctx": "【编注】对比辨析——抛物线与双曲线的异同（旧知识：本章2.6双曲线）："
+   },
+   {
+    "idx": 6,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8325,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     3104,
+     2027,
+     1597,
+     1597
+    ],
+    "gridSum": 8325,
+    "rows": 5,
+    "cols": 4,
+    "firstRow": "图形 | 标准方程 | 焦点坐标 | 准线方程",
+    "nested": 0,
+    "ctx": "点坐标是p/2不是p、焦点与准线关于顶点对称（关联条目：抛物线的简单几何性质）。"
+   },
+   {
+    "idx": 7,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1438,
+     1770,
+     1815,
+     2145,
+     1815
+    ],
+    "gridSum": 8983,
+    "rows": 7,
+    "cols": 5,
+    "firstRow": "p的几何意义 | y²=2px(p>0) | y²=-2px(p>0) | x²=2py(p>0) | x²=-2py(p>0)",
+    "nested": 0,
+    "ctx": "p是焦点到准线的距离、焦点到顶点为p/2（关联条目：抛物线标准方程的几种形式）。"
+   }
+  ]
+ },
+ "H": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 2,
+    "space": 425
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": [
+   {
+    "idx": 1,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     2911,
+     2911,
+     2728
+    ],
+    "gridSum": 8550,
+    "rows": 4,
+    "cols": 3,
+    "firstRow": "位置关系 | 解的个数 | 的取值",
+    "nested": 0,
+    "ctx": "二次项系数与Δ检验的前提（关联条目：直线与圆锥曲线位置关系的判定与相切的辨析）。"
+   },
+   {
+    "idx": 2,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 8550,
+     "type": "dxa"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 120,
+     "right": 120,
+     "top": 120,
+     "bottom": 120
+    },
+    "gridCol": [
+     1750,
+     3400,
+     3400
+    ],
+    "gridSum": 8550,
+    "rows": 4,
+    "cols": 3,
+    "firstRow": "对比项 | 旧知识：直线与圆（2.3.3条目25 | 新知识：直线与椭圆、双曲线、抛物线（",
+    "nested": 0,
+    "ctx": "比辨析——直线与圆锥曲线的单公共点与相切辨析（旧知识：本章2.3.3条目25）："
+   },
+   {
+    "idx": 3,
+    "zone": "body",
+    "depth": 1,
+    "tblW": {
+     "w": 0,
+     "type": "auto"
+    },
+    "tblInd": null,
+    "layout": null,
+    "cellMar": {
+     "left": 15,
+     "right": 15,
+     "top": 15,
+     "bottom": 15
+    },
+    "gridCol": [
+     971,
+     1702,
+     5934
+    ],
+    "gridSum": 8607,
+    "rows": 5,
+    "cols": 3,
+    "firstRow": "核心分类 | 解题专用方法名称 | 核心代数优势与应用场景 ",
+    "nested": 0,
+    "ctx": "高中解析几何核心方法论总结"
+   }
+  ]
+ },
+ "封面": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ },
+ "使用说明": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ },
+ "册目录页": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ },
+ "部分封面1衔接": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ },
+ "部分封面1清单": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ },
+ "部分封面1讲练": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ },
+ "部分封面2衔接": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ },
+ "部分封面2清单": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ },
+ "部分封面2讲练": {
+  "pgw": 11906,
+  "ml": 850,
+  "mr": 850,
+  "sects": [
+   {
+    "zone": "body",
+    "num": 1,
+    "space": 720
+   }
+  ],
+  "has_break": false,
+  "content_w": 10206,
+  "tables": []
+ }
+}
