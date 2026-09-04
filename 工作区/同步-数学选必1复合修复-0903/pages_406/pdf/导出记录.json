@@ -8,24 +8,27 @@
  },
  "I1": {
   "status": "OK",
-  "mode": "幂等跳过",
-  "seconds": 0.0,
+  "mode": "Word直导(尝试1)",
+  "seconds": 14.5,
   "pages": 13,
-  "png_new": 0
+  "png_new": 13,
+  "note": "修订3回环重导（tmp/重导_A）"
  },
  "B": {
   "status": "OK",
-  "mode": "幂等跳过",
-  "seconds": 0.0,
+  "mode": "Word直导(尝试1)",
+  "seconds": 79.8,
   "pages": 61,
-  "png_new": 0
+  "png_new": 61,
+  "note": "修订3回环重导（tmp/重导_A）"
  },
  "C": {
   "status": "OK",
-  "mode": "幂等跳过",
-  "seconds": 0.0,
+  "mode": "Word直导(尝试1)",
+  "seconds": 67.6,
   "pages": 60,
-  "png_new": 0
+  "png_new": 60,
+  "note": "修订3回环重导（tmp/重导_B）"
  },
  "X2": {
   "status": "OK",
@@ -36,10 +39,11 @@
  },
  "I2": {
   "status": "OK",
-  "mode": "幂等跳过",
-  "seconds": 0.0,
+  "mode": "Word直导(尝试1)",
+  "seconds": 35.9,
   "pages": 28,
-  "png_new": 0
+  "png_new": 28,
+  "note": "修订3回环重导（tmp/重导_C）"
  },
  "E": {
   "status": "OK",
@@ -50,10 +54,11 @@
  },
  "F": {
   "status": "OK",
-  "mode": "幂等跳过",
-  "seconds": 0.0,
+  "mode": "Word直导(尝试1)",
+  "seconds": 82.6,
   "pages": 56,
-  "png_new": 0
+  "png_new": 56,
+  "note": "修订3回环重导（tmp/重导_C）"
  },
  "G": {
   "status": "OK",
@@ -64,10 +69,11 @@
  },
  "H": {
   "status": "OK",
-  "mode": "幂等跳过",
-  "seconds": 0.0,
+  "mode": "Word直导(尝试1)",
+  "seconds": 126.1,
   "pages": 70,
-  "png_new": 0
+  "png_new": 70,
+  "note": "修订3回环重导（tmp/重导_B）"
  },
  "FM": {
   "status": "OK",

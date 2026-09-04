@@ -73,7 +73,7 @@ except ImportError:
     sys.exit(3)
 
 W_NS = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
-FOOTER_TWIPS = 850   # 页脚距页底1.5厘米＝850缇（§7页面条款）
+FOOTER_TWIPS = 850   # 页脚距页底1.5厘米＝850缇（§7页面条款）；parts.json 可选 footer_twips{件basename:缇} 按件覆盖（0904选必1 C/H=567缇：页脚零占位实证——页脚整行沉进下边距空白区、不吃正文，页数回本）
 INSTR_STYLEREF = 'STYLEREF "节名锚"'
 INSTR_PAGE_RE = re.compile(r'<w:instrText[^>]*>[^<]*\bPAGE\b[^<]*</w:instrText>')
 
@@ -178,7 +178,7 @@ def check_samestring_skeleton(xml, where):
     return True
 
 
-def stamp_document(doc, start):
+def stamp_document(doc, start, footer_twips=FOOTER_TWIPS):
     """document.xml（A''多sectPr）：首个（头部）sectPr 写 pgNumType start、后续节清除 pgNumType
     （页码连续继承）；pgMar footer 统一850；剔除 titlePg。"""
     d = doc
@@ -192,9 +192,9 @@ def stamp_document(doc, start):
             s = re.sub(r'(<w:pgMar [^/]*/>)', r'\1<w:pgNumType w:start="%d"/>' % start, s, count=1)
         else:
             s = s.replace('</w:sectPr>', '<w:pgNumType w:start="%d"/></w:sectPr>' % start)
-        s = re.sub(r'(<w:pgMar[^>]*?)w:footer="\d+"', r'\1w:footer="%d"' % FOOTER_TWIPS, s)
+        s = re.sub(r'(<w:pgMar[^>]*?)w:footer="\d+"', r'\1w:footer="%d"' % footer_twips, s)
         if 'w:footer=' not in s and '<w:pgMar ' in s:
-            s = re.sub(r'(<w:pgMar )', r'\1w:footer="%d" ' % FOOTER_TWIPS, s, count=1)
+            s = re.sub(r'(<w:pgMar )', r'\1w:footer="%d" ' % footer_twips, s, count=1)
         return s
 
     parts = re.split(r'(<w:sectPr.*?</w:sectPr>)', d, flags=re.S)
@@ -204,7 +204,7 @@ def stamp_document(doc, start):
             parts[i] = fix_sect(parts[i])      # 首个（头部）节：写 start
         else:
             parts[i] = re.sub(r'<w:pgNumType[^>]*/>', '', parts[i])   # 后续节：清除（连续继承）
-            parts[i] = re.sub(r'(<w:pgMar[^>]*?)w:footer="\d+"', '\\1w:footer="%d"' % FOOTER_TWIPS, parts[i])
+            parts[i] = re.sub(r'(<w:pgMar[^>]*?)w:footer="\d+"', '\\1w:footer="%d"' % footer_twips, parts[i])
         n_sect += 1
     d = ''.join(parts)
     starts = re.findall(r'<w:pgNumType w:start="(\d+)"/>', d)
@@ -250,7 +250,7 @@ def preflight(path):
                                      % (path, e))
 
 
-def rewrite(path, start, part_total, tag, book_n, total_m):
+def rewrite(path, start, part_total, tag, book_n, total_m, footer_twips=FOOTER_TWIPS):
     """逐件落盘：document.xml（头部节start/footer850/去titlePg）＋页眉页脚两部件同串盖章
     （X域缓存双写start＋N写死＋本n/共M段写死＋页眉超宽剥品牌前缀）＋settings。幂等。"""
     with zipfile.ZipFile(path) as z:
@@ -259,7 +259,7 @@ def rewrite(path, start, part_total, tag, book_n, total_m):
     hname, fname = locate_hf(names, path)
 
     doc = blob['word/document.xml'].decode('utf-8')
-    doc2, n_sect, n_title = stamp_document(doc, start)
+    doc2, n_sect, n_title = stamp_document(doc, start, footer_twips)
     stamped = {}
     stripped_brand = 0
     for nm in (hname, fname):
@@ -311,7 +311,7 @@ def rewrite(path, start, part_total, tag, book_n, total_m):
         d = z.read('word/document.xml').decode('utf-8')
         s = z.read('word/settings.xml').decode('utf-8')
     assert ('<w:pgNumType w:start="%d"/>' % start) in d, '回读start不符'
-    assert 'w:footer="%d"' % FOOTER_TWIPS in d, '回读页脚距边不符'
+    assert 'w:footer="%d"' % footer_twips in d, '回读页脚距边不符'
     assert '<w:updateFields' in s, '回读updateFields缺失'
     return n_sect, n_title
 
@@ -333,12 +333,14 @@ def load_parts(cfg_path):
         parts.append((tag, files))
     assert parts, 'parts 为空（无可盖章件）'
     skips = [norm(f) for f in cfg.get('skip_files', [])]
+    fmcfg = cfg.get('footer_twips')
+    footer_map = {os.path.basename(str(k)).strip(): int(v) for k, v in fmcfg.items()} if fmcfg else {}
     bm = cfg.get('book_map')           # 可选：{部分序(int)→本序(int)}——二次拆分/聚合时覆盖默认（部分序=本序、M=部分总数）
     book_map = {int(k): int(v) for k, v in bm.items()} if bm else None
-    return book, parts, skips, book_map
+    return book, parts, skips, book_map, footer_map
 
 
-def apply_stamps(parts, pages, book_map=None, verbose=True):
+def apply_stamps(parts, pages, book_map=None, verbose=True, footer_map=None):
     """按当前实测页数逐件盖章（部分内级联；本n默认＝部分序、M默认＝部分总数——book_map可覆盖）。"""
     rec_rows, it, total = [], iter(pages), 0
     total_m = len(parts) if not book_map else max(book_map.values())
@@ -348,10 +350,11 @@ def apply_stamps(parts, pages, book_map=None, verbose=True):
         start = 1
         book_n = (book_map or {}).get(pi, pi)
         for f, p in zip(files, pg):
-            n_sect, n_title = rewrite(f, start, pn, tag, book_n, total_m)
+            ft = (footer_map or {}).get(os.path.basename(f), FOOTER_TWIPS)
+            n_sect, n_title = rewrite(f, start, pn, tag, book_n, total_m, ft)
             if verbose:
                 print('  [P%d·本%d/共%d] %s | %d页 | start=%d | %s（共%d页） | sectPr=%d titlePg剔%d'
-                      % (pi, book_n, total_m, os.path.basename(f)[:44], p, start, tag, pn, n_sect, n_title))
+                      % (pi, book_n, total_m, os.path.basename(f)[:44], p, start, tag, pn, n_sect, n_title) + (' 页脚%d缇' % ft if ft != FOOTER_TWIPS else ''))
             rec_rows.append('| P%d | 本%d | %s | %d | %d | %s | %d |'
                             % (pi, book_n, os.path.basename(f), p, start, tag, pn))
             start += p
@@ -367,7 +370,7 @@ def main():
     ap.add_argument('--record', help='盖章记录md落盘路径（供册目录页/装订单/节页码定位.py 同源引用）')
     args = ap.parse_args()
 
-    book, parts, skips, book_map = load_parts(args.parts)
+    book, parts, skips, book_map, footer_map = load_parts(args.parts)
     for _, files in parts:
         for f in files:
             if not os.path.isfile(f):
@@ -388,7 +391,7 @@ def main():
     print('== 部分独立页码盖章（同串版）：%s（%d个部分／%d件）==' % (book, len(parts), len(flat)))
     converged = False
     for rnd in range(1, 6):
-        rec_rows, total = apply_stamps(parts, pages, book_map)
+        rec_rows, total = apply_stamps(parts, pages, book_map, footer_map=footer_map)
         pages2 = measure(flat)
         if pages2 == pages:
             print('  收敛：第%d轮盖章后复测页数与所盖数字一致（合计%d页）' % (rnd, total))
