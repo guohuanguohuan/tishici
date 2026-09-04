@@ -1,0 +1,48 @@
+{
+ "P2P3": {
+  "tail_line": "==== P2/P3脚本项总判: 全绿 ====",
+  "has_全绿": true,
+  "count_✓": 150,
+  "count_✗": 0
+ },
+ "P3配页前检查": {
+  "has_①": true,
+  "has_③": true,
+  "has_⑤": true,
+  "has_⑥": true,
+  "has_PASS": true
+ },
+ "盖章记录": {
+  "has_修订3": false,
+  "has_时间戳字样": true,
+  "声明不含时间戳": true,
+  "n_lines": 23
+ },
+ "parts_footer_twips_keys": [
+  "人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx",
+  "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx"
+ ],
+ "mtime": {
+  "P2P3": "2026-09-05T02:15:25.418070",
+  "P3": "2026-09-05T02:18:34.466752",
+  "盖章": "2026-09-05T01:50:29.439576",
+  "parts": "2026-09-05T01:50:29.475575"
+ },
+ "window": "2026-09-04T00:00:00 <= mtime <= 2026-09-05T23:59:59",
+ "mtime_in_window": {
+  "P2P3": true,
+  "P3": true,
+  "盖章": true,
+  "parts": true
+ },
+ "item6_extra": {
+  "fulltext(w:t+m:t) 含解得x=-1z=2": true,
+  "fulltext 含解得x=−1z=2(U2212)": false,
+  "fulltext 含x=1z=-2": false,
+  "fulltext 含x=1z=−2": false,
+  "全件m:t 含解得x=-1z=2": false,
+  "全件m:t 含x=-1z=2": true,
+  "全件m:t 含x=1z=-2": false,
+  "全件m:t 含x=1z=−2": false
+ }
+}

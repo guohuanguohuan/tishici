@@ -1,0 +1,1092 @@
+{
+ "item1": {
+  "per_file": {
+   "X1": 14,
+   "I1": 13,
+   "B": 61,
+   "C": 60,
+   "X2": 5,
+   "I2": 28,
+   "E": 55,
+   "F": 56,
+   "G": 44,
+   "H": 70,
+   "FM": 1,
+   "SM": 1,
+   "ML": 1,
+   "FQ1": 1,
+   "FQ2": 1,
+   "FQ3": 1,
+   "FQ4": 1,
+   "FQ5": 1,
+   "FQ6": 1
+  },
+  "content_sum": 406,
+  "content_match_EXP": true,
+  "peiye_all_1": true,
+  "total": 415
+ },
+ "item2": {
+  "X1": {
+   "start_occurrences": 1,
+   "start_values": [
+    "1"
+   ],
+   "pgNumType_total": 1
+  },
+  "I1": {
+   "start_occurrences": 1,
+   "start_values": [
+    "1"
+   ],
+   "pgNumType_total": 1
+  },
+  "B": {
+   "start_occurrences": 1,
+   "start_values": [
+    "1"
+   ],
+   "pgNumType_total": 1
+  },
+  "C": {
+   "start_occurrences": 1,
+   "start_values": [
+    "62"
+   ],
+   "pgNumType_total": 1
+  },
+  "X2": {
+   "start_occurrences": 1,
+   "start_values": [
+    "1"
+   ],
+   "pgNumType_total": 1
+  },
+  "I2": {
+   "start_occurrences": 1,
+   "start_values": [
+    "1"
+   ],
+   "pgNumType_total": 1
+  },
+  "E": {
+   "start_occurrences": 1,
+   "start_values": [
+    "1"
+   ],
+   "pgNumType_total": 1
+  },
+  "F": {
+   "start_occurrences": 1,
+   "start_values": [
+    "56"
+   ],
+   "pgNumType_total": 1
+  },
+  "G": {
+   "start_occurrences": 1,
+   "start_values": [
+    "112"
+   ],
+   "pgNumType_total": 1
+  },
+  "H": {
+   "start_occurrences": 1,
+   "start_values": [
+    "156"
+   ],
+   "pgNumType_total": 1
+  }
+ },
+ "item3": {
+  "X1": {
+   "pgMar_count": 2,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    }
+   ]
+  },
+  "I1": {
+   "pgMar_count": 2,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    }
+   ]
+  },
+  "B": {
+   "pgMar_count": 2,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    }
+   ]
+  },
+  "C": {
+   "pgMar_count": 1,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "567",
+     "gutter": "0"
+    }
+   ]
+  },
+  "X2": {
+   "pgMar_count": 2,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    }
+   ]
+  },
+  "I2": {
+   "pgMar_count": 2,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    }
+   ]
+  },
+  "E": {
+   "pgMar_count": 2,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    },
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    }
+   ]
+  },
+  "F": {
+   "pgMar_count": 1,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    }
+   ]
+  },
+  "G": {
+   "pgMar_count": 1,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "850",
+     "gutter": "0"
+    }
+   ]
+  },
+  "H": {
+   "pgMar_count": 1,
+   "attrs": [
+    {
+     "top": "850",
+     "right": "850",
+     "bottom": "850",
+     "left": "850",
+     "header": "283",
+     "footer": "567",
+     "gutter": "0"
+    }
+   ]
+  }
+ },
+ "item4": {
+  "X1": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "人教B版选必1 第1章 空间向量与立体几何·衔接（共14页）·本1/共6本　1.2.1 空间中的点、直线与空间向量　第1页",
+   "footer_text": "人教B版选必1 第1章 空间向量与立体几何·衔接（共14页）·本1/共6本　1.2.1 空间中的点、直线与空间向量　第1页",
+   "header_match": {
+    "prefix": false,
+    "chap": "第1章 空间向量与立体几何",
+    "typ": "衔接",
+    "N": 14,
+    "ben": 1,
+    "page": 1
+   },
+   "footer_match": {
+    "prefix": false,
+    "chap": "第1章 空间向量与立体几何",
+    "typ": "衔接",
+    "N": 14,
+    "ben": 1,
+    "page": 1
+   },
+   "hf_identical": true
+  },
+  "I1": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "人教B版选必1 第1章 空间向量与立体几何·清单（共13页）·本2/共6本　1.1 空间向量及其运算　第1页",
+   "footer_text": "人教B版选必1 第1章 空间向量与立体几何·清单（共13页）·本2/共6本　1.1 空间向量及其运算　第1页",
+   "header_match": {
+    "prefix": false,
+    "chap": "第1章 空间向量与立体几何",
+    "typ": "清单",
+    "N": 13,
+    "ben": 2,
+    "page": 1
+   },
+   "footer_match": {
+    "prefix": false,
+    "chap": "第1章 空间向量与立体几何",
+    "typ": "清单",
+    "N": 13,
+    "ben": 2,
+    "page": 1
+   },
+   "hf_identical": true
+  },
+  "B": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "人教B版选必1 第1章 空间向量与立体几何·讲练（共121页）·本3/共6本　1.1 空间向量及其运算　第1页",
+   "footer_text": "人教B版选必1 第1章 空间向量与立体几何·讲练（共121页）·本3/共6本　1.1 空间向量及其运算　第1页",
+   "header_match": {
+    "prefix": false,
+    "chap": "第1章 空间向量与立体几何",
+    "typ": "讲练",
+    "N": 121,
+    "ben": 3,
+    "page": 1
+   },
+   "footer_match": {
+    "prefix": false,
+    "chap": "第1章 空间向量与立体几何",
+    "typ": "讲练",
+    "N": 121,
+    "ben": 3,
+    "page": 1
+   },
+   "hf_identical": true
+  },
+  "C": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·讲练（共121页）·本3/共6本　1.2.5 空间中的距离　第62页",
+   "footer_text": "羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·讲练（共121页）·本3/共6本　1.2.5 空间中的距离　第62页",
+   "header_match": {
+    "prefix": true,
+    "chap": "第1章 空间向量与立体几何",
+    "typ": "讲练",
+    "N": 121,
+    "ben": 3,
+    "page": 62
+   },
+   "footer_match": {
+    "prefix": true,
+    "chap": "第1章 空间向量与立体几何",
+    "typ": "讲练",
+    "N": 121,
+    "ben": 3,
+    "page": 62
+   },
+   "hf_identical": true
+  },
+  "X2": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接（共5页）·本4/共6本　2.8 直线与圆锥曲线的位置关系　第1页",
+   "footer_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接（共5页）·本4/共6本　2.8 直线与圆锥曲线的位置关系　第1页",
+   "header_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "衔接",
+    "N": 5,
+    "ben": 4,
+    "page": 1
+   },
+   "footer_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "衔接",
+    "N": 5,
+    "ben": 4,
+    "page": 1
+   },
+   "hf_identical": true
+  },
+  "I2": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·清单（共28页）·本5/共6本　2.1 坐标法　第1页",
+   "footer_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·清单（共28页）·本5/共6本　2.1 坐标法　第1页",
+   "header_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "清单",
+    "N": 28,
+    "ben": 5,
+    "page": 1
+   },
+   "footer_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "清单",
+    "N": 28,
+    "ben": 5,
+    "page": 1
+   },
+   "hf_identical": true
+  },
+  "E": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本　2.1 坐标法　第1页",
+   "footer_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本　2.1 坐标法　第1页",
+   "header_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "讲练",
+    "N": 225,
+    "ben": 6,
+    "page": 1
+   },
+   "footer_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "讲练",
+    "N": 225,
+    "ben": 6,
+    "page": 1
+   },
+   "hf_identical": true
+  },
+  "F": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本　2.3.4 圆与圆的位置关系　第56页",
+   "footer_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本　2.3.4 圆与圆的位置关系　第56页",
+   "header_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "讲练",
+    "N": 225,
+    "ben": 6,
+    "page": 56
+   },
+   "footer_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "讲练",
+    "N": 225,
+    "ben": 6,
+    "page": 56
+   },
+   "hf_identical": true
+  },
+  "G": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本　2.6 双曲线及其方程　第112页",
+   "footer_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本　2.6 双曲线及其方程　第112页",
+   "header_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "讲练",
+    "N": 225,
+    "ben": 6,
+    "page": 112
+   },
+   "footer_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "讲练",
+    "N": 225,
+    "ben": 6,
+    "page": 112
+   },
+   "hf_identical": true
+  },
+  "H": {
+   "headers": [
+    "word/header1.xml"
+   ],
+   "footers": [
+    "word/footer1.xml"
+   ],
+   "titlePg": false,
+   "evenAndOdd": false,
+   "header_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本　2.8 直线与圆锥曲线的位置关系　第156页",
+   "footer_text": "羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本　2.8 直线与圆锥曲线的位置关系　第156页",
+   "header_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "讲练",
+    "N": 225,
+    "ben": 6,
+    "page": 156
+   },
+   "footer_match": {
+    "prefix": true,
+    "chap": "第2章 平面解析几何",
+    "typ": "讲练",
+    "N": 225,
+    "ben": 6,
+    "page": 156
+   },
+   "hf_identical": true
+  }
+ },
+ "item5": {
+  "X1": {
+   "pages": 14,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 14
+   }
+  },
+  "I1": {
+   "pages": 13,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 13
+   }
+  },
+  "B": {
+   "pages": 61,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 61
+   }
+  },
+  "C": {
+   "pages": 60,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 60
+   }
+  },
+  "X2": {
+   "pages": 5,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 5
+   }
+  },
+  "I2": {
+   "pages": 28,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 28
+   }
+  },
+  "E": {
+   "pages": 55,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 55
+   }
+  },
+  "F": {
+   "pages": 56,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 56
+   }
+  },
+  "G": {
+   "pages": 44,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 44
+   }
+  },
+  "H": {
+   "pages": 70,
+   "bad_pages": [],
+   "match_count_hist": {
+    "2": 70
+   }
+  }
+ },
+ "item5_total_asserts": 812,
+ "item5_seams": {
+  "B->C": {
+   "a_last": 61,
+   "b_first_expect": 62,
+   "chain_ok": true
+  },
+  "E->F": {
+   "a_last": 55,
+   "b_first_expect": 56,
+   "chain_ok": true
+  },
+  "F->G": {
+   "a_last": 111,
+   "b_first_expect": 112,
+   "chain_ok": true
+  },
+  "G->H": {
+   "a_last": 155,
+   "b_first_expect": 156,
+   "chain_ok": true
+  }
+ },
+ "item6": {
+  "sig": "若PA⊥平面ABC",
+  "fulltext_hits": 1,
+  "doc_offsets": [
+   20573
+  ],
+  "para_indices": [
+   471
+  ],
+  "block": {
+   "para_range": [
+    471,
+    477
+   ],
+   "n_paras": 6,
+   "contains_halfwidth": false,
+   "contains_U2212": false,
+   "absent_halfwidth": true,
+   "absent_U2212": true,
+   "math_lin_around_解得": null,
+   "math_lin_len": 117
+  }
+ },
+ "item9": {
+  "装订单_rows": [
+   [
+    "1",
+    "封面",
+    "配页",
+    "不计页",
+    "—",
+    "随本1"
+   ],
+   [
+    "2",
+    "使用说明",
+    "配页",
+    "不计页",
+    "—",
+    "随本1"
+   ],
+   [
+    "3",
+    "册目录页",
+    "配页",
+    "不计页",
+    "—",
+    "随本1"
+   ],
+   [
+    "4",
+    "部分封面（第1章 空间向量与立体几何·衔接）",
+    "配页",
+    "不计页",
+    "P1",
+    "本1"
+   ],
+   [
+    "5",
+    "衔接件（29题）",
+    "14",
+    "P1 1–14",
+    "P1 第1章·衔接",
+    "本1"
+   ],
+   [
+    "6",
+    "部分封面（第1章 空间向量与立体几何·清单）",
+    "配页",
+    "不计页",
+    "P2",
+    "本2"
+   ],
+   [
+    "7",
+    "知识清单（47条：基33进14）",
+    "13",
+    "P2 1–13",
+    "P2 第1章·清单",
+    "本2"
+   ],
+   [
+    "8",
+    "部分封面（第1章 空间向量与立体几何·讲练）",
+    "配页",
+    "不计页",
+    "P3",
+    "本3"
+   ],
+   [
+    "9",
+    "讲练件（上）61题",
+    "61",
+    "P3 1–61",
+    "P3 第1章·讲练",
+    "本3"
+   ],
+   [
+    "10",
+    "讲练件（下）79题",
+    "60",
+    "P3 62–121",
+    "P3 第1章·讲练",
+    "本3"
+   ],
+   [
+    "11",
+    "部分封面（第2章 平面解析几何·衔接）",
+    "配页",
+    "不计页",
+    "P4",
+    "本4"
+   ],
+   [
+    "12",
+    "衔接件（13题）",
+    "5",
+    "P4 1–5",
+    "P4 第2章·衔接",
+    "本4"
+   ],
+   [
+    "13",
+    "部分封面（第2章 平面解析几何·清单）",
+    "配页",
+    "不计页",
+    "P5",
+    "本5"
+   ],
+   [
+    "14",
+    "知识清单（67条：基38进29）",
+    "28",
+    "P5 1–28",
+    "P5 第2章·清单",
+    "本5"
+   ],
+   [
+    "15",
+    "部分封面（第2章 平面解析几何·讲练）",
+    "配页",
+    "不计页",
+    "P6",
+    "本6"
+   ],
+   [
+    "16",
+    "讲练件（2.1—2.3.3）92题",
+    "55",
+    "P6 1–55",
+    "P6 第2章·讲练",
+    "本6"
+   ],
+   [
+    "17",
+    "讲练件（2.3.4—2.5.2）90题",
+    "56",
+    "P6 56–111",
+    "P6 第2章·讲练",
+    "本6"
+   ],
+   [
+    "18",
+    "讲练件（2.6.1—2.7.2）68题",
+    "44",
+    "P6 112–155",
+    "P6 第2章·讲练",
+    "本6"
+   ],
+   [
+    "19",
+    "讲练件（2.8）89题",
+    "70",
+    "P6 156–225",
+    "P6 第2章·讲练",
+    "本6"
+   ]
+  ],
+  "parts_tags_files": [
+   {
+    "tag": "第1章·衔接",
+    "n_files": 1,
+    "files": [
+     "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx"
+    ]
+   },
+   {
+    "tag": "第1章·清单",
+    "n_files": 1,
+    "files": [
+     "人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）.docx"
+    ]
+   },
+   {
+    "tag": "第1章·讲练",
+    "n_files": 2,
+    "files": [
+     "人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）.docx",
+     "人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx"
+    ]
+   },
+   {
+    "tag": "第2章·衔接",
+    "n_files": 1,
+    "files": [
+     "人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx"
+    ]
+   },
+   {
+    "tag": "第2章·清单",
+    "n_files": 1,
+    "files": [
+     "人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx"
+    ]
+   },
+   {
+    "tag": "第2章·讲练",
+    "n_files": 4,
+    "files": [
+     "人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx",
+     "人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx",
+     "人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx",
+     "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx"
+    ]
+   }
+  ],
+  "册目录页_lines": [
+   "人教B版选必1·册目录页",
+   "页码＝所在本部分内页码（各本独立起算）",
+   "第1章空间向量与立体几何",
+   "衔接件（29题·全部必会）·本14页P1",
+   "知识清单（47条：基33·进14）·本13页P1",
+   "讲练件（140题：简单21·中档104·难15）·本121页P1",
+   "1.1空间向量及其运算（24题）P1",
+   "1.2空间向量在立体几何中的应用（116题）P17",
+   "第2章平面解析几何",
+   "衔接件（13题·全部必会）·本5页P1",
+   "知识清单（67条：基38·进29）·本28页P1",
+   "讲练件（339题：简单47·中档246·难46）·本225页P1",
+   "2.1坐标法（1题）P1",
+   "2.2直线及其方程（38题）P2",
+   "2.3圆及其方程（61题）P25",
+   "2.4曲线与方程（19题）P60",
+   "2.5椭圆及其方程（63题）P73",
+   "2.6双曲线及其方程（36题）P112",
+   "2.7抛物线及其方程（32题）P134",
+   "2.8直线与圆锥曲线的位置关系（89题）P156"
+  ],
+  "本厚复核": {
+   "returncode": 0,
+   "stdout": "本1\t14页\t≤400:OK\n本2\t13页\t≤400:OK\n本3\t121页\t≤400:OK\n本4\t5页\t≤400:OK\n本5\t28页\t≤400:OK\n本6\t225页\t≤400:OK\n合计\t406页\t本数=6\n[PASS] 逐本均≤400页，本厚复核通过\n",
+   "stderr": ""
+  }
+ },
+ "item10": {
+  "X1": {
+   "changed_keys": [],
+   "extra": [],
+   "gone": [],
+   "all_equal": true
+  },
+  "I1": {
+   "changed_keys": [],
+   "extra": [],
+   "gone": [],
+   "all_equal": true
+  },
+  "B": {
+   "changed_keys": [],
+   "extra": [],
+   "gone": [],
+   "all_equal": true
+  },
+  "C": {
+   "changed_keys": [
+    "word/document.xml"
+   ],
+   "extra": [],
+   "gone": [],
+   "all_equal": false
+  },
+  "X2": {
+   "changed_keys": [],
+   "extra": [],
+   "gone": [],
+   "all_equal": true
+  },
+  "I2": {
+   "changed_keys": [],
+   "extra": [],
+   "gone": [],
+   "all_equal": true
+  },
+  "E": {
+   "changed_keys": [],
+   "extra": [],
+   "gone": [],
+   "all_equal": true
+  },
+  "F": {
+   "changed_keys": [],
+   "extra": [],
+   "gone": [],
+   "all_equal": true
+  },
+  "G": {
+   "changed_keys": [],
+   "extra": [],
+   "gone": [],
+   "all_equal": true
+  },
+  "H": {
+   "changed_keys": [
+    "word/document.xml"
+   ],
+   "extra": [],
+   "gone": [],
+   "all_equal": false
+  }
+ },
+ "item10_snap": {
+  "sha256": "f324436ab2dc77c0854e1b56ed69fe78effb8a9533f3d5a99ba0fab932dcabdb",
+  "mtime": "2026-09-04T22:37:06.015742"
+ },
+ "item10_backup_docx_mtime": {
+  "人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）.docx": "2026-09-04T22:05:16.994994",
+  "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx": "2026-09-04T11:49:32.387002",
+  "人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）.docx": "2026-09-04T22:05:16.925989",
+  "人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx": "2026-09-04T22:08:42.363226",
+  "人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx": "2026-09-04T22:05:17.118019",
+  "人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx": "2026-09-04T11:49:33.349172",
+  "人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx": "2026-09-04T11:49:33.801640",
+  "人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx": "2026-09-04T22:05:17.295726",
+  "人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx": "2026-09-04T11:49:34.353387",
+  "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx": "2026-09-04T21:57:45.509001"
+ },
+ "item12": {
+  "X1": {
+   "docx_mtime": "2026-09-05T01:33:06.496038",
+   "pdf_mtime": "2026-09-04T19:54:34.627333",
+   "pdf_ge_docx": false,
+   "first_para": "人教B版选必1第1章空间向量与立体几何·衔接件（29题）",
+   "first_para_in_pdf_p1": true
+  },
+  "I1": {
+   "docx_mtime": "2026-09-05T01:33:06.587727",
+   "pdf_mtime": "2026-09-05T01:36:36.896521",
+   "pdf_ge_docx": true,
+   "first_para": "人教B版选必1第1章空间向量与立体几何·知识清单（完成）",
+   "first_para_in_pdf_p1": true
+  },
+  "B": {
+   "docx_mtime": "2026-09-05T01:33:06.999712",
+   "pdf_mtime": "2026-09-05T01:36:16.426596",
+   "pdf_ge_docx": true,
+   "first_para": "人教B版选必1第1章空间向量与立体几何·讲练件（140题）",
+   "first_para_in_pdf_p1": true
+  },
+  "C": {
+   "docx_mtime": "2026-09-05T01:33:07.344448",
+   "pdf_mtime": "2026-09-05T01:38:17.853032",
+   "pdf_ge_docx": true,
+   "first_para": "1.2.5空间中的距离",
+   "first_para_in_pdf_p1": true
+  },
+  "X2": {
+   "docx_mtime": "2026-09-05T01:33:07.371447",
+   "pdf_mtime": "2026-09-04T20:04:41.447094",
+   "pdf_ge_docx": false,
+   "first_para": "人教B版选必1第2章平面解析几何·衔接件（13题）",
+   "first_para_in_pdf_p1": true
+  },
+  "I2": {
+   "docx_mtime": "2026-09-05T01:33:07.532801",
+   "pdf_mtime": "2026-09-05T01:43:07.895921",
+   "pdf_ge_docx": true,
+   "first_para": "人教B版选必1第2章平面解析几何·知识清单（完成）",
+   "first_para_in_pdf_p1": true
+  },
+  "E": {
+   "docx_mtime": "2026-09-05T01:33:07.773801",
+   "pdf_mtime": "2026-09-04T20:06:48.182377",
+   "pdf_ge_docx": false,
+   "first_para": "人教B版选必1第2章平面解析几何·讲练件（339题）",
+   "first_para_in_pdf_p1": true
+  },
+  "F": {
+   "docx_mtime": "2026-09-05T01:33:08.057630",
+   "pdf_mtime": "2026-09-05T01:42:26.544690",
+   "pdf_ge_docx": true,
+   "first_para": "2.3.4圆与圆的位置关系",
+   "first_para_in_pdf_p1": true
+  },
+  "G": {
+   "docx_mtime": "2026-09-05T01:33:08.281041",
+   "pdf_mtime": "2026-09-04T20:10:23.077188",
+   "pdf_ge_docx": false,
+   "first_para": "2.6双曲线及其方程",
+   "first_para_in_pdf_p1": true
+  },
+  "H": {
+   "docx_mtime": "2026-09-05T01:33:08.563588",
+   "pdf_mtime": "2026-09-05T01:40:29.581489",
+   "pdf_ge_docx": true,
+   "first_para": "2.8直线与圆锥曲线的位置关系",
+   "first_para_in_pdf_p1": true
+  }
+ }
+}

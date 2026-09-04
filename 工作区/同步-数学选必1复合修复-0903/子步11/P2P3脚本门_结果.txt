@@ -1,0 +1,163 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+== X1 ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距850缇: 850
+  ✓ pgNumType start=1 唯一: ['1']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本1+start1: '人教B版选必1 第1章 空间向量与立体几何·衔接（共14页）·本1/共6本\u30001.2.1 空间中的点、'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本1+start1: '人教B版选必1 第1章 空间向量与立体几何·衔接（共14页）·本1/共6本\u30001.2.1 空间中的点、'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=14: 实14
+  ✓ 页眉逐页在: 14/14
+  ✓ 页脚页码链 1..14 逐页+1
+  ✓ XML哈希==重盖前快照（内容零变动，旧PDF仍有效）: 差异[]
+== I1 ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距850缇: 850
+  ✓ pgNumType start=1 唯一: ['1']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本2+start1: '人教B版选必1 第1章 空间向量与立体几何·清单（共13页）·本2/共6本\u30001.1 空间向量及其运算'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本2+start1: '人教B版选必1 第1章 空间向量与立体几何·清单（共13页）·本2/共6本\u30001.1 空间向量及其运算'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=13: 实13
+  ✓ 页眉逐页在: 13/13
+  ✓ 页脚页码链 1..13 逐页+1
+  ✓ mtime: docx(01:33) ≤ pdf(01:36)
+== B ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距850缇: 850
+  ✓ pgNumType start=1 唯一: ['1']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本3+start1: '人教B版选必1 第1章 空间向量与立体几何·讲练（共121页）·本3/共6本\u30001.1 空间向量及其运'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本3+start1: '人教B版选必1 第1章 空间向量与立体几何·讲练（共121页）·本3/共6本\u30001.1 空间向量及其运'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=61: 实61
+  ✓ 页眉逐页在: 61/61
+  ✓ 页脚页码链 1..61 逐页+1
+  ✓ mtime: docx(01:33) ≤ pdf(01:36)
+== C ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '567', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距567缇: 567
+  ✓ pgNumType start=62 唯一: ['62']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本3+start62: '羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·讲练（共121页）·本3/共6本\u30001.2.5'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本3+start62: '羿郭工作室·人教B版选必1 第1章 空间向量与立体几何·讲练（共121页）·本3/共6本\u30001.2.5'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=60: 实60
+  ✓ 页眉逐页在: 60/60
+  ✓ 页脚页码链 62..121 逐页+1
+  ✓ mtime: docx(01:33) ≤ pdf(01:38)
+== X2 ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距850缇: 850
+  ✓ pgNumType start=1 唯一: ['1']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本4+start1: '羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接（共5页）·本4/共6本\u30002.8 直线与圆锥曲'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本4+start1: '羿郭工作室·人教B版选必1 第2章 平面解析几何·衔接（共5页）·本4/共6本\u30002.8 直线与圆锥曲'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=5: 实5
+  ✓ 页眉逐页在: 5/5
+  ✓ 页脚页码链 1..5 逐页+1
+  ✓ XML哈希==重盖前快照（内容零变动，旧PDF仍有效）: 差异[]
+== I2 ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距850缇: 850
+  ✓ pgNumType start=1 唯一: ['1']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本5+start1: '羿郭工作室·人教B版选必1 第2章 平面解析几何·清单（共28页）·本5/共6本\u30002.1 坐标法\u3000第'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本5+start1: '羿郭工作室·人教B版选必1 第2章 平面解析几何·清单（共28页）·本5/共6本\u30002.1 坐标法\u3000第'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=28: 实28
+  ✓ 页眉逐页在: 28/28
+  ✓ 页脚页码链 1..28 逐页+1
+  ✓ mtime: docx(01:33) ≤ pdf(01:43)
+== E ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距850缇: 850
+  ✓ pgNumType start=1 唯一: ['1']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本6+start1: '羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本\u30002.1 坐标法\u3000'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本6+start1: '羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本\u30002.1 坐标法\u3000'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=55: 实55
+  ✓ 页眉逐页在: 55/55
+  ✓ 页脚页码链 1..55 逐页+1
+  ✓ XML哈希==重盖前快照（内容零变动，旧PDF仍有效）: 差异[]
+== F ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距850缇: 850
+  ✓ pgNumType start=56 唯一: ['56']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本6+start56: '羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本\u30002.3.4 圆与'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本6+start56: '羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本\u30002.3.4 圆与'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=56: 实56
+  ✓ 页眉逐页在: 56/56
+  ✓ 页脚页码链 56..111 逐页+1
+  ✓ mtime: docx(01:33) ≤ pdf(01:42)
+== G ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '850', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距850缇: 850
+  ✓ pgNumType start=112 唯一: ['112']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本6+start112: '羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本\u30002.6 双曲线及'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本6+start112: '羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本\u30002.6 双曲线及'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=44: 实44
+  ✓ 页眉逐页在: 44/44
+  ✓ 页脚页码链 112..155 逐页+1
+  ✓ XML哈希==重盖前快照（内容零变动，旧PDF仍有效）: 差异[]
+== H ==
+  ✓ 四边850缇: {'top': '850', 'right': '850', 'bottom': '850', 'left': '850', 'header': '283', 'footer': '567', 'gutter': '0'}
+  ✓ 页眉距283: 283
+  ✓ 页脚距567缇: 567
+  ✓ pgNumType start=156 唯一: ['156']
+  ✓ 无titlePg
+  ✓ settings updateFields在
+  ✓ 页眉页脚部件各1: ['word/header1.xml']['word/footer1.xml']
+  ✓ header 同串形态+本6+start156: '羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本\u30002.8 直线与圆'
+  ✓ header 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ footer 同串形态+本6+start156: '羿郭工作室·人教B版选必1 第2章 平面解析几何·讲练（共225页）·本6/共6本\u30002.8 直线与圆'
+  ✓ footer 域形态（2复杂域/无fldSimple/无NUMPAGES）
+  ✓ PDF页数=70: 实70
+  ✓ 页眉逐页在: 70/70
+  ✓ 页脚页码链 156..225 逐页+1
+  ✓ mtime: docx(01:33) ≤ pdf(01:40)
+
+==== P2/P3脚本项总判: 全绿 ====

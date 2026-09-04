@@ -1,0 +1,22 @@
+{
+ "C": {
+  "len_old": 2578378,
+  "len_new": 2578378,
+  "prefix": 2578209,
+  "suffix": 166,
+  "ctx_before": "w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"",
+  "old_mid": "850",
+  "new_mid": "567",
+  "ctx_after": "\" w:gutter=\"0\"/><w:pgNumType w:start=\"62\"/><w:cols w:sep=\"1\" w:space=\"425\" w:num=\"2\"/><w:docGrid w:type=\"default\" w:line"
+ },
+ "H": {
+  "len_old": 8184746,
+  "len_new": 8184746,
+  "prefix": 8184576,
+  "suffix": 167,
+  "ctx_before": "w:pgSz w:w=\"11906\" w:h=\"16838\"/><w:pgMar w:top=\"850\" w:right=\"850\" w:bottom=\"850\" w:left=\"850\" w:header=\"283\" w:footer=\"",
+  "old_mid": "850",
+  "new_mid": "567",
+  "ctx_after": "\" w:gutter=\"0\"/><w:pgNumType w:start=\"156\"/><w:cols w:space=\"425\" w:num=\"2\" w:sep=\"1\"/><w:docGrid w:linePitch=\"360\" w:ty"
+ }
+}
