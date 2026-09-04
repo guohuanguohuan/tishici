@@ -1,0 +1,1151 @@
+{
+ "B": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）.docx",
+  "zones": {
+   "body": {
+    "num": 2,
+    "space": 425,
+    "content_w": 10206,
+    "col_w": 4890.5,
+    "pgw": 11906,
+    "ml": 850,
+    "mr": 850
+   },
+   "header": {
+    "num": 1,
+    "space": 425,
+    "content_w": 10206,
+    "col_w": 10206.0,
+    "pgw": 11906,
+    "ml": 850,
+    "mr": 850
+   }
+  },
+  "has_break": true,
+  "tables": [
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 108,
+    "marR": 108,
+    "limit": 4674,
+    "ncols": 3,
+    "rows": 6,
+    "sig": "对比项 | 旧知识：平面向量 | 新知识：空间向量",
+    "old_tblW": 4674,
+    "old_type": "dxa",
+    "content": [
+     2160.0,
+     3600.0,
+     11784.0
+    ],
+    "mins": [
+     240.0,
+     240.0,
+     264.0
+    ],
+    "alloc": [
+     575,
+     959,
+     3140
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 14,
+    "narrow_review": [
+     {
+      "col": 1,
+      "row": 4,
+      "est_lines": 4,
+      "alloc": 575,
+      "content105": 1890.0,
+      "cell": "加减、数乘与数量积"
+     },
+     {
+      "col": 2,
+      "row": 4,
+      "est_lines": 4,
+      "alloc": 959,
+      "content105": 3150.0,
+      "cell": "三角形／平行四边形法则与运算律"
+     },
+     {
+      "col": 2,
+      "row": 5,
+      "est_lines": 4,
+      "alloc": 959,
+      "content105": 3150.0,
+      "cell": "共线向量定理刻画平面内位置关系"
+     },
+     {
+      "col": 3,
+      "row": 5,
+      "est_lines": 3,
+      "alloc": 3140,
+      "content105": 6531.0,
+      "cell": "共线定理（条目5）与共面向量定理（条目9）并用，"
+     },
+     {
+      "col": 3,
+      "row": 6,
+      "est_lines": 4,
+      "alloc": 3140,
+      "content105": 10311.0,
+      "cell": "任意两个空间向量必共面，但“不共线”的两向量只张"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 2,
+    "rows": 6,
+    "sig": "特殊向量 | 定义",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     2160.0,
+     10800.0
+    ],
+    "mins": [
+     240.0,
+     360.0
+    ],
+    "alloc": [
+     775,
+     3875
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 21,
+    "narrow_review": [
+     {
+      "col": 1,
+      "row": 5,
+      "est_lines": 3,
+      "alloc": 775,
+      "content105": 1890.0,
+      "cell": "共线向量或平行向量"
+     },
+     {
+      "col": 2,
+      "row": 5,
+      "est_lines": 3,
+      "alloc": 3875,
+      "content105": 9450.0,
+      "cell": "若表示若干空间向量的有向线段所在的直线互相平行或"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 4,
+    "rows": 8,
+    "sig": "空间向量的线性运算 | 加法 |  | ",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     2160.0,
+     960.0,
+     2448.0,
+     1722.0
+    ],
+    "mins": [
+     240.0,
+     240.0,
+     360.0,
+     180.0
+    ],
+    "alloc": [
+     1378,
+     612,
+     1561,
+     1099
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [
+     {
+      "row": 1,
+      "col": 4,
+      "cx_cm": 2.42,
+      "cy_cm": 1.2
+     },
+     {
+      "row": 3,
+      "col": 4,
+      "cx_cm": 2.17,
+      "cy_cm": 1.82
+     }
+    ],
+    "img_shrink": [
+     {
+      "row": 1,
+      "col": 4,
+      "old_cx_cm": 2.42,
+      "old_cy_cm": 1.2,
+      "new_cx_cm": 1.48,
+      "new_cy_cm": 0.73
+     },
+     {
+      "row": 3,
+      "col": 4,
+      "old_cx_cm": 2.17,
+      "old_cy_cm": 1.82,
+      "new_cx_cm": 1.48,
+      "new_cy_cm": 1.24
+     }
+    ],
+    "kid_idx": 24,
+    "narrow_review": [
+     {
+      "col": 4,
+      "row": 7,
+      "est_lines": 3,
+      "alloc": 1099,
+      "content105": 2772.0,
+      "cell": "，"
+     },
+     {
+      "col": 4,
+      "row": 8,
+      "est_lines": 3,
+      "alloc": 1099,
+      "content105": 3013.5,
+      "cell": ""
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 2,
+    "rows": 3,
+    "sig": "图示 | ",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     480.0,
+     11568.0
+    ],
+    "mins": [
+     240.0,
+     360.0
+    ],
+    "alloc": [
+     520,
+     4130
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [
+     {
+      "row": 1,
+      "col": 2,
+      "cx_cm": 6.83,
+      "cy_cm": 2.33
+     }
+    ],
+    "img_shrink": [
+     {
+      "row": 1,
+      "col": 2,
+      "old_cx_cm": 6.83,
+      "old_cy_cm": 2.33,
+      "new_cx_cm": 6.83,
+      "new_cy_cm": 2.33
+     }
+    ],
+    "kid_idx": 30,
+    "narrow_review": [
+     {
+      "col": 2,
+      "row": 2,
+      "est_lines": 3,
+      "alloc": 4130,
+      "content105": 10122.0,
+      "cell": "已知两个非零向量，，在空间任取一点O，作，，则叫"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 108,
+    "marR": 108,
+    "limit": 4674,
+    "ncols": 3,
+    "rows": 5,
+    "sig": "对比项 | 旧知识：平面向量基本定理 | 新知识：空间向量基",
+    "old_tblW": 4674,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     3840.0,
+     11544.0
+    ],
+    "mins": [
+     240.0,
+     240.0,
+     240.0
+    ],
+    "alloc": [
+     496,
+     1043,
+     3135
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 139,
+    "narrow_review": [
+     {
+      "col": 2,
+      "row": 1,
+      "est_lines": 3,
+      "alloc": 1043,
+      "content105": 2520.0,
+      "cell": "旧知识：平面向量基本定理"
+     },
+     {
+      "col": 2,
+      "row": 2,
+      "est_lines": 3,
+      "alloc": 1043,
+      "content105": 2100.0,
+      "cell": "平面内两个不共线向量"
+     },
+     {
+      "col": 2,
+      "row": 3,
+      "est_lines": 4,
+      "alloc": 1043,
+      "content105": 3360.0,
+      "cell": "存在唯一的有序实数组（两个实数）"
+     },
+     {
+      "col": 2,
+      "row": 4,
+      "est_lines": 3,
+      "alloc": 1043,
+      "content105": 2520.0,
+      "cell": "平面内任意不共线向量均可"
+     },
+     {
+      "col": 3,
+      "row": 5,
+      "est_lines": 4,
+      "alloc": 3135,
+      "content105": 10101.0,
+      "cell": "“不共线”升级为“不共面”；判定三点共线用共线定"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 108,
+    "marR": 108,
+    "limit": 4674,
+    "ncols": 3,
+    "rows": 6,
+    "sig": "对比项 | 旧知识：直线的方向向量 | 新知识：平面的法向量",
+    "old_tblW": 4674,
+    "old_type": "dxa",
+    "content": [
+     1440.0,
+     5112.0,
+     9492.0
+    ],
+    "mins": [
+     240.0,
+     264.0,
+     264.0
+    ],
+    "alloc": [
+     496,
+     1462,
+     2716
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 442,
+    "narrow_review": [
+     {
+      "col": 1,
+      "row": 3,
+      "est_lines": 3,
+      "alloc": 496,
+      "content105": 1260.0,
+      "cell": "与图形的关系"
+     },
+     {
+      "col": 2,
+      "row": 2,
+      "est_lines": 3,
+      "alloc": 1462,
+      "content105": 3990.0,
+      "cell": "一条直线（一点与一个方向向量确定直线）"
+     },
+     {
+      "col": 2,
+      "row": 4,
+      "est_lines": 3,
+      "alloc": 1462,
+      "content105": 2940.0,
+      "cell": "不唯一，任意两个方向向量共线"
+     },
+     {
+      "col": 2,
+      "row": 5,
+      "est_lines": 4,
+      "alloc": 1462,
+      "content105": 4473.0,
+      "cell": "线线平行垂直、异面直线角（条目22、23、34）"
+     },
+     {
+      "col": 3,
+      "row": 6,
+      "est_lines": 4,
+      "alloc": 2716,
+      "content105": 8305.5,
+      "cell": "判定关系中“共线、垂直”互换：线面平行看数量积为"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 108,
+    "marR": 108,
+    "limit": 4674,
+    "ncols": 3,
+    "rows": 5,
+    "sig": "对比项 | 旧知识：异面直线所成角与 | 新知识：二面角",
+    "old_tblW": 4674,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     10320.0,
+     9840.0
+    ],
+    "mins": [
+     240.0,
+     528.0,
+     660.0
+    ],
+    "alloc": [
+     496,
+     2139,
+     2039
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 744,
+    "narrow_review": [
+     {
+      "col": 2,
+      "row": 4,
+      "est_lines": 5,
+      "alloc": 2139,
+      "content105": 9030.0,
+      "cell": "异面角取两方向向量夹角余弦的绝对值；线面角取方向"
+     },
+     {
+      "col": 3,
+      "row": 3,
+      "est_lines": 3,
+      "alloc": 2039,
+      "content105": 4410.0,
+      "cell": "过棱上一点在两个半平面内作棱的垂线得平面角"
+     },
+     {
+      "col": 3,
+      "row": 4,
+      "est_lines": 3,
+      "alloc": 2039,
+      "content105": 5040.0,
+      "cell": "二面角等于或互补于两法向量的夹角，须结合图形取舍"
+     },
+     {
+      "col": 3,
+      "row": 5,
+      "est_lines": 5,
+      "alloc": 2039,
+      "content105": 8610.0,
+      "cell": "线面角用正弦、其余角用余弦；二面角与法向量夹角“"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 3,
+    "rows": 3,
+    "sig": " | 内 | 外",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     576.0,
+     2448.0,
+     2448.0
+    ],
+    "mins": [
+     360.0,
+     360.0,
+     360.0
+    ],
+    "alloc": [
+     640,
+     2005,
+     2005
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 776,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   }
+  ],
+  "nav": [
+   {
+    "kid_idx": 2,
+    "zone": "header",
+    "tblW": 10206,
+    "type": "dxa",
+    "sig": "节名 | 题量 | 简单/中档/难 | 题型组数",
+    "note": "章首导航表——子步6对象，本工具跳过"
+   }
+  ],
+  "xiangjie_tables": []
+ },
+ "E": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx",
+  "zones": {
+   "body": {
+    "num": 2,
+    "space": 425,
+    "content_w": 10206,
+    "col_w": 4890.5,
+    "pgw": 11906,
+    "ml": 850,
+    "mr": 850
+   },
+   "header": {
+    "num": 1,
+    "space": 425,
+    "content_w": 10206,
+    "col_w": 10206.0,
+    "pgw": 11906,
+    "ml": 850,
+    "mr": 850
+   }
+  },
+  "has_break": true,
+  "tables": [
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 2,
+    "rows": 4,
+    "sig": "前提条件 | 直线l与x轴相交",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     8700.0
+    ],
+    "mins": [
+     240.0,
+     360.0
+    ],
+    "alloc": [
+     520,
+     4130
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 27,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 2,
+    "rows": 5,
+    "sig": "名称 | 点斜式方程",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     3660.0
+    ],
+    "mins": [
+     240.0,
+     360.0
+    ],
+    "alloc": [
+     966,
+     3684
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [
+     {
+      "row": 3,
+      "col": 2,
+      "cx_cm": 3.04,
+      "cy_cm": 2.38
+     }
+    ],
+    "img_shrink": [],
+    "kid_idx": 91,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 2,
+    "rows": 5,
+    "sig": "名称 | 斜截式方程",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     2904.0
+    ],
+    "mins": [
+     240.0,
+     396.0
+    ],
+    "alloc": [
+     1155,
+     3495
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [
+     {
+      "row": 3,
+      "col": 2,
+      "cx_cm": 2.43,
+      "cy_cm": 2.25
+     }
+    ],
+    "img_shrink": [],
+    "kid_idx": 97,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 2,
+    "rows": 5,
+    "sig": "名称 | 两点式方程",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     5496.0
+    ],
+    "mins": [
+     240.0,
+     360.0
+    ],
+    "alloc": [
+     691,
+     3959
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [
+     {
+      "row": 3,
+      "col": 2,
+      "cx_cm": 1.69,
+      "cy_cm": 1.46
+     }
+    ],
+    "img_shrink": [],
+    "kid_idx": 100,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 2,
+    "rows": 5,
+    "sig": "名称 | 截距式方程",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     5196.0
+    ],
+    "mins": [
+     240.0,
+     360.0
+    ],
+    "alloc": [
+     725,
+     3925
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [
+     {
+      "row": 3,
+      "col": 2,
+      "cx_cm": 2.04,
+      "cy_cm": 2.04
+     }
+    ],
+    "img_shrink": [],
+    "kid_idx": 103,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 3,
+    "rows": 3,
+    "sig": "条件 |  | ",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     1524.0,
+     3228.0
+    ],
+    "mins": [
+     240.0,
+     360.0,
+     360.0
+    ],
+    "alloc": [
+     782,
+     1241,
+     2627
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [
+     {
+      "row": 2,
+      "col": 2,
+      "cx_cm": 2.67,
+      "cy_cm": 2.44
+     },
+     {
+      "row": 2,
+      "col": 3,
+      "cx_cm": 3.45,
+      "cy_cm": 3.16
+     }
+    ],
+    "img_shrink": [
+     {
+      "row": 2,
+      "col": 2,
+      "old_cx_cm": 2.67,
+      "old_cy_cm": 2.44,
+      "new_cx_cm": 1.73,
+      "new_cy_cm": 1.58
+     }
+    ],
+    "kid_idx": 238,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 3,
+    "rows": 2,
+    "sig": "图示 |  | ",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     6624.0,
+     12240.0
+    ],
+    "mins": [
+     240.0,
+     360.0,
+     360.0
+    ],
+    "alloc": [
+     520,
+     1450,
+     2680
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [
+     {
+      "row": 1,
+      "col": 2,
+      "cx_cm": 2.1,
+      "cy_cm": 1.52
+     },
+     {
+      "row": 1,
+      "col": 3,
+      "cx_cm": 4.27,
+      "cy_cm": 3.09
+     }
+    ],
+    "img_shrink": [
+     {
+      "row": 1,
+      "col": 2,
+      "old_cx_cm": 2.1,
+      "old_cy_cm": 1.52,
+      "new_cx_cm": 2.1,
+      "new_cy_cm": 1.52
+     },
+     {
+      "row": 1,
+      "col": 3,
+      "old_cx_cm": 4.27,
+      "old_cy_cm": 3.09,
+      "new_cx_cm": 4.27,
+      "new_cy_cm": 3.09
+     }
+    ],
+    "kid_idx": 241,
+    "narrow_review": [
+     {
+      "col": 2,
+      "row": 2,
+      "est_lines": 4,
+      "alloc": 1450,
+      "content105": 5796.0,
+      "cell": "与的斜率都存在，分别为，，则"
+     },
+     {
+      "col": 3,
+      "row": 2,
+      "est_lines": 4,
+      "alloc": 2680,
+      "content105": 10710.0,
+      "cell": "与中的一条斜率不存在（倾斜角为），另一条斜率为零"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 2,
+    "rows": 5,
+    "sig": "几何元素及关系 | 代数表示",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     2484.0,
+     5676.0
+    ],
+    "mins": [
+     360.0,
+     360.0
+    ],
+    "alloc": [
+     1416,
+     3234
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 244,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 4,
+    "rows": 3,
+    "sig": "方程组的解 | 一组 | 无数组 | 无解",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     4572.0,
+     480.0,
+     720.0,
+     480.0
+    ],
+    "mins": [
+     360.0,
+     240.0,
+     240.0,
+     240.0
+    ],
+    "alloc": [
+     3090,
+     520,
+     520,
+     520
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 247,
+    "narrow_review": [],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 3,
+    "rows": 3,
+    "sig": " | 点到直线的距离 | 两条平行直线间的距离",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     480.0,
+     6384.0,
+     8772.0
+    ],
+    "mins": [
+     240.0,
+     360.0,
+     360.0
+    ],
+    "alloc": [
+     520,
+     1740,
+     2390
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 406,
+    "narrow_review": [
+     {
+      "col": 2,
+      "row": 3,
+      "est_lines": 4,
+      "alloc": 1740,
+      "content105": 5586.0,
+      "cell": "点到直线的距离"
+     },
+     {
+      "col": 3,
+      "row": 3,
+      "est_lines": 4,
+      "alloc": 2390,
+      "content105": 7675.5,
+      "cell": "两条平行直线与之间的距离"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   },
+   {
+    "kind": "栏内表",
+    "zone": "body",
+    "marL": 120,
+    "marR": 120,
+    "limit": 4650,
+    "ncols": 5,
+    "rows": 4,
+    "sig": "位置关系 | 相交 | 相切 | 相离",
+    "old_tblW": 4650,
+    "old_type": "dxa",
+    "content": [
+     960.0,
+     8508.0,
+     576.0,
+     576.0,
+     576.0
+    ],
+    "mins": [
+     240.0,
+     360.0,
+     360.0,
+     360.0,
+     396.0
+    ],
+    "alloc": [
+     520,
+     2174,
+     640,
+     640,
+     676
+    ],
+    "sz": 24,
+    "manual": false,
+    "cell_images": [],
+    "img_shrink": [],
+    "kid_idx": 809,
+    "narrow_review": [
+     {
+      "col": 1,
+      "row": 2,
+      "est_lines": 3,
+      "alloc": 520,
+      "content105": 1050.0,
+      "cell": "公共点个数"
+     },
+     {
+      "col": 2,
+      "row": 3,
+      "est_lines": 3,
+      "alloc": 2174,
+      "content105": 4641.0,
+      "cell": "几何法：设圆心到直线的距离"
+     },
+     {
+      "col": 2,
+      "row": 4,
+      "est_lines": 4,
+      "alloc": 2174,
+      "content105": 7444.5,
+      "cell": "代数法：由消元得到一元二次方程的判别式"
+     }
+    ],
+    "x0_ind": 0,
+    "x0_ok": true,
+    "w_ok": true,
+    "tonglan_defect": false
+   }
+  ],
+  "nav": [
+   {
+    "kid_idx": 2,
+    "zone": "header",
+    "tblW": 10206,
+    "type": "dxa",
+    "sig": "节名 | 题量 | 简单/中档/难 | 题型组数",
+    "note": "章首导航表——子步6对象，本工具跳过"
+   }
+  ],
+  "xiangjie_tables": []
+ }
+}
