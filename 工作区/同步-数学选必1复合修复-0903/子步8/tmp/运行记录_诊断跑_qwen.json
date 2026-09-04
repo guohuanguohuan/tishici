@@ -1,0 +1,91 @@
+{
+ "arm": "qwen",
+ "run": "diag-on-A",
+ "attempt": "2",
+ "command": [
+  "C:\\Users\\28120\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\诊断变体_节页码定位.py",
+  "@C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\_输入_配置A.json",
+  "--record",
+  "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+  "--json"
+ ],
+ "guard_seconds": 300,
+ "started": "16:25:22.409",
+ "elapsed_seconds": 308.81,
+ "timed_out": true,
+ "source_exit_code": null,
+ "diag_lines": 7,
+ "payload_lines": 0,
+ "per_item": {
+  "衔接1": {
+   "open_start": "16:25:24.198",
+   "open_done": null,
+   "scan_done": "16:25:25.598",
+   "open_s": null,
+   "scan_s": null,
+   "total_s": 1.4
+  },
+  "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx": {
+   "open_start": null,
+   "open_done": "16:25:24.464",
+   "scan_done": null,
+   "open_s": null,
+   "scan_s": null,
+   "total_s": null
+  },
+  "清单1": {
+   "open_start": "16:25:25.598",
+   "open_done": null,
+   "scan_done": "16:25:27.410",
+   "open_s": null,
+   "scan_s": null,
+   "total_s": 1.81
+  },
+  "人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）.docx": {
+   "open_start": null,
+   "open_done": "16:25:25.752",
+   "scan_done": null,
+   "open_s": null,
+   "scan_s": null,
+   "total_s": null
+  },
+  "讲练1上": {
+   "open_start": "16:25:27.411",
+   "open_done": null,
+   "scan_done": null,
+   "open_s": null,
+   "scan_s": null,
+   "total_s": null
+  }
+ },
+ "hanging_item": {
+  "mark": "open_start",
+  "name": "讲练1上",
+  "at": "16:25:27.411"
+ },
+ "winword_pids_before": [
+  5988,
+  10308,
+  13320,
+  26168,
+  28012
+ ],
+ "winword_pids_after": [
+  5988,
+  10308,
+  13320,
+  16148,
+  26168,
+  28012
+ ],
+ "winword_mine_after_diff": [
+  16148
+ ],
+ "winword_still_alive_killed": [
+  16148
+ ],
+ "log_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\复测_诊断跑_日志.txt",
+ "output_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\复测_诊断跑_输出.json",
+ "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\复测_诊断跑_stderr_qwen.txt"
+}

@@ -1,0 +1,20 @@
+--- 工具/节页码定位.py
++++ tmp/诊断变体_节页码定位.py
+@@ -68,6 +68,7 @@
+     """返回 (hits, page_total)：hits＝[(节号, 节标题全文, 件内页), ...] 按文中出现顺序，同节号只取表外首次出现。
+     双签名：区间括注（旧式）或统计段（层级制新式）任一在位才认节标题——防题型标题误命中。"""
+     doc = word.Documents.Open(path, ReadOnly=True, AddToRecentFiles=False)
++    print(f'[diag] open_done {os.path.basename(path)}', flush=True)
+     try:
+         doc.Repaginate()
+         hits, seen = [], set()
+@@ -259,7 +260,9 @@
+         fatal = False
+         for name, start, path, tag in items:
+             try:
++                print(f'[diag] open_start {name}', flush=True)
+                 hits, pages = scan_doc(word, path)
++                print(f'[diag] scan_done {name}', flush=True)
+             except pythoncom.com_error as e:
+                 print(f'错误：Word COM 开卷/遍历失败（{path}）：{e.excepinfo[2] if e.excepinfo else e}',
+                       file=sys.stderr)

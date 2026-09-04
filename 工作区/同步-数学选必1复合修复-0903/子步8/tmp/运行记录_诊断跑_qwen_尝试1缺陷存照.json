@@ -1,0 +1,46 @@
+{
+ "arm": "qwen",
+ "run": "diag-on-A",
+ "attempt": "1",
+ "command": [
+  "C:\\Users\\28120\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\诊断变体_节页码定位.py",
+  "@C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\复测_补签_codex\\_输入_配置A.json",
+  "--record",
+  "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+  "--json"
+ ],
+ "guard_seconds": 300,
+ "started": "16:19:23.468",
+ "elapsed_seconds": 308.79,
+ "timed_out": true,
+ "source_exit_code": null,
+ "diag_lines": 0,
+ "payload_lines": 0,
+ "per_item": {},
+ "hanging_item": null,
+ "winword_pids_before": [
+  5988,
+  10308,
+  13320,
+  26168,
+  28012
+ ],
+ "winword_pids_after": [
+  5988,
+  10308,
+  13320,
+  22760,
+  26168,
+  28012
+ ],
+ "winword_mine_after_diff": [
+  22760
+ ],
+ "winword_still_alive_killed": [
+  22760
+ ],
+ "log_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\复测_诊断跑_日志.txt",
+ "output_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\复测_诊断跑_输出.json",
+ "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\复测_诊断跑_stderr_qwen.txt"
+}
