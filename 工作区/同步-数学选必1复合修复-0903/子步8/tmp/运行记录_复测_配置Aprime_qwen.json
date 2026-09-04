@@ -1,0 +1,40 @@
+{
+ "arm": "qwen",
+ "configuration": "Aprime",
+ "command": [
+  "C:\\Users\\28120\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "C:\\提示词\\工具\\节页码定位.py",
+  "@C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\_输入_配置A_全同副本.json",
+  "--record",
+  "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步7\\盖章记录_子步7.md",
+  "--json"
+ ],
+ "guard_seconds": 180,
+ "attempt": 1,
+ "started_epoch": 1788504677.8011665,
+ "elapsed_seconds": 54.35,
+ "timed_out": false,
+ "source_exit_code": 0,
+ "stdout_bytes": 9992,
+ "stderr_bytes": 0,
+ "output_json": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\复测_配置Aprime.json",
+ "stderr_file": "C:\\提示词\\工作区\\同步-数学选必1复合修复-0903\\子步8\\tmp\\复测_配置Aprime_stderr_qwen.txt",
+ "winword_pids_before": [
+  5988,
+  10308,
+  13320,
+  26168,
+  28012
+ ],
+ "winword_pids_after": [
+  5988,
+  10308,
+  13320,
+  23556,
+  26168,
+  28012
+ ],
+ "winword_unexpected_residue_pids": [
+  23556
+ ]
+}
