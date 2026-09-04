@@ -139,3 +139,5 @@
 - lxml新建Element须带nsmap（否则ns0:前缀、正则类工具全盲；混合件可文本级归一验xmlns同URI）；heredoc补丁链会把组引用写成字节进源码——补丁后必扫<0x20
 - anchor→inline三坑：父是w:drawing非w:r、inline须包drawing外壳、子元素白名单分ns（wp四子＋a:graphic）、宿主空drawing/空段必清；头部节sectPr勿挂节名锚段；盖章域写值致临界件repaginate（收敛第2轮页数±1属预期）
 - Word残留实例累积锁COM导出——清本会话时段winword后秒过；PDF超时按§14降级勿死等
+
+- 2026-09-04 选必1⓪轮接管续跑——已固化§13「资格门先归因后顺延」＋K1臂执行类调用形态；教训：臂故障先归因三分（派发配置类/环境类/能力类）——配置类（qwen headless缺--yolo致shell/edit被deny、codex workspace-write沙箱令牌挡COM报0x80070520）修配置原地重试同臂即可复活，误判「臂不可用」直接顺延＝白烧臂（两起被用户点名）；复测/执行类调用形态以K1实证登记为准（qwen --yolo、codex danger-full-access、opencode权限件bash=allow/edit=deny）；任务书字母码须全册同一套（混用m_*.json码与自定义码致F3冲突）、批量配置相对路径按配置文件目录解析（裸件名配方全灭——绝对路径）、节号排序键用分量元组不用字典序（防2.10排2.2前）
