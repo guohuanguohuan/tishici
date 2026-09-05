@@ -67,7 +67,7 @@ def M(t):
 
 REF_RE = re.compile(r'如图|图[甲乙丙丁]|图所示')
 TITLE_FILLS = {'ADC2DA', 'C6D4E3'}   # 章/节、讲部/题型标题整行底纹
-ENTRY_SHD_FILL = 'C9C9C9'            # 条目号/题号块run级底纹（条目号非加粗＝条目题名行）
+ENTRY_SHD_FILL = 'C7C7C7'            # 条目号/题号块run级底纹（条目号非加粗＝条目题名行）
 
 
 # ---------- 基础函数 ----------
@@ -78,7 +78,7 @@ def para_text(p):
 
 def para_is_title(p):
     """条目/题型/讲部/章/节标题段判定：
-    ①pPr整行底纹ADC2DA/C6D4E3；②Heading/标题样式；③条目题名行（条目号run挂C9C9C9、
+    ①pPr整行底纹ADC2DA/C6D4E3；②Heading/标题样式；③条目题名行（条目号run挂C7C7C7、
     非加粗、以数字起——题号块加粗故不误判，块标签【×】以【起故不误判）。"""
     pPr = p.find(W('pPr'))
     if pPr is not None:

@@ -6,7 +6,7 @@ r"""底纹去除器.py — 2026-09-04 选必1版式复合修复轮·子步2新�
 适用面：讲练件（含派生分层卷/实验卷随骨架复制的同类标记）。衔接件/知识清单件/学史切片不适用
 （--audit-only 出零变化对照用，不对其执行剥除）。
 
-剥除（四类废止，全部 fill=C9C9C9 的 run 级 w:rPr/w:shd 与 OMML m:r、ctrlPr 的 w:rPr/w:shd 挂点）：
+剥除（四类废止，全部 fill=C7C7C7 的 run 级 w:rPr/w:shd 与 OMML m:r、ctrlPr 的 w:rPr/w:shd 挂点）：
   ①题号难度块底纹——题号块段（「题型号-节内序号．（档位…）」起段）段首连续灰底 run 串
     恰为「N．」新形或过渡旧形整块者；黑字白底、加粗维持（只删 w:shd 子元素，不动 rPr 其余属性）。
   ②题目侧答案值灰底——白名单外全部内容标记 run（【答案】值/需背/知识点值/空白尾巴 run 等）
@@ -17,22 +17,22 @@ r"""底纹去除器.py — 2026-09-04 选必1版式复合修复轮·子步2新�
   ④并行解法标记底纹——方法一/解法一/另解起段标记 run（MARK_RE 整 run 口径，同源计数工具）。
 
 保留（白名单禁触，计数变化=0 硬断言）：
-  W1 标题整行底纹（段级 #ADC2DA/#C6D4E3）与题干底纹（段级 #E0E0E0）——本器只删 C9C9C9 挂点，
-     段级 shd 一概不动（构造性豁免）；段级 C9C9C9 误挂若存在＝违规登记且不剥（交人工）。
+  W1 标题整行底纹（段级 #ADC2DA/#C6D4E3）与题干底纹（段级 #E0E0E0）——本器只删 C7C7C7 挂点，
+     段级 shd 一概不动（构造性豁免）；段级 C7C7C7 误挂若存在＝违规登记且不剥（交人工）。
   W2 条目号／条目第一子层 lead run（条目族）。
   W3 讲部条目区内需背灰底——条目区＝条目号「节号-序号．」起段（非题号块段、非标题）至下一条目号
      ／题号块／标题边界；区内非芯片灰底 run 与 OMML 挂点保留（甲案；区内芯片照③剥除）。
-  W4 表内一切 C9C9C9（run/tcPr/OMML——导航表表头等 §6 样式位）。
+  W4 表内一切 C7C7C7（run/tcPr/OMML——导航表表头等 §6 样式位）。
   〔基〕/〔进〕本无底纹。
 
 作用域断言（写盘前硬门，任一不过即拒写）：
-  A1 剥除挂点 fill 集合＝{C9C9C9} 精确枚举；
+  A1 剥除挂点 fill 集合＝{C7C7C7} 精确枚举；
   A2 白名单计数变化=0（W1段级四色分记、W2、W3、W4 逐项前后恒等）；
   A3 文字流零变更——w:t/m:t 文档序字符流前后全等；w:p/w:tbl/w:t/m:r/m:oMath/drawing/sectPr/w:r
      元素计数全等（不拆 run）；w:shd 减数＝剥除挂点数；
   A4 芯片 run 隔离断言——芯片 span 与保留区（条目区）非芯片文字同 run 时不剥该 run、登记 MANUAL
      （选必1六件实测芯片均为独立 run，本断言为兜底）；
-  A5 分区划分＝全体 C9C9C9 run/OMML 挂点的不交并（剥除∪保留，无遗漏无重复）。
+  A5 分区划分＝全体 C7C7C7 run/OMML 挂点的不交并（剥除∪保留，无遗漏无重复）。
 
 模式：
   默认          剥除并写 <out.docx>（容器其余成员逐字节复制，document.xml 仅删 w:shd 子元素）。
@@ -56,7 +56,7 @@ def qm(t): return '{%s}%s' % (M, t)
 def tag(e): return etree.QName(e).localname
 def ptext(p): return ''.join(t.text or '' for t in p.iter(q('t')))
 
-C9 = 'C9C9C9'
+FILL_C = 'C7C7C7'
 FILL_TITLE1 = 'ADC2DA'
 FILL_TITLE2 = 'C6D4E3'
 FILL_STEM = 'E0E0E0'
@@ -159,9 +159,9 @@ def classify2(doc):
                 f = pshd.get(q('fill'))
                 if f in fill_para:
                     fill_para[f] += 1
-                elif f == C9:
+                elif f == FILL_C:
                     para_c9 += 1
-                    viol.append('段级C9C9C9误挂 @body%d %r' % (i, ptexts[i][:30]))
+                    viol.append('段级C7C7C7误挂 @body%d %r' % (i, ptexts[i][:30]))
         zn = zone[i]
         runs = list(el.iter(q('r')))
         lead_txt = ''
@@ -170,7 +170,7 @@ def classify2(doc):
             t = ''.join(x.text or '' for x in r.findall(q('t')))
             if t == '':
                 continue
-            if shd_fill(r.find(q('rPr'))) == C9:
+            if shd_fill(r.find(q('rPr'))) == FILL_C:
                 lead_txt += t
                 lead_runs.append(r)
             else:
@@ -191,7 +191,7 @@ def classify2(doc):
         # 芯片（字符蒙版）
         chars, mask, ranges = [], [], {}
         for k, r in enumerate(runs):
-            sh = shd_fill(r.find(q('rPr'))) == C9
+            sh = shd_fill(r.find(q('rPr'))) == FILL_C
             s0 = len(chars)
             for x in r.findall(q('t')):
                 s = x.text or ''
@@ -232,7 +232,7 @@ def classify2(doc):
         # run 级分类
         for k, r in enumerate(runs):
             rpr = r.find(q('rPr'))
-            if shd_fill(rpr) != C9:
+            if shd_fill(rpr) != FILL_C:
                 continue
             if id(r) in lead_set and lead_kind in ('题号块', '条目号', '第一子层'):
                 continue                         # lead 已在①剥除或W2保留
@@ -253,7 +253,7 @@ def classify2(doc):
         for mel in el.iter():
             if etree.QName(mel).namespace != M:
                 continue
-            if tag(mel) in ('r', 'ctrlPr') and shd_fill(mel.find(q('rPr'))) == C9:
+            if tag(mel) in ('r', 'ctrlPr') and shd_fill(mel.find(q('rPr'))) == FILL_C:
                 if in_tbl(mel):
                     keep['表内OMML'] += 1
                 elif zone.get(i) == 'entry':
@@ -261,19 +261,19 @@ def classify2(doc):
                 else:
                     strip['答案值OMML'].append(mel)
     # —— 表内段落归集补丁（2026-09-04 子步3）：主环只遍历 body 子级段落，表内段落的
-    #    run/OMML C9 挂点此前不入任何分区（含表内 C9 时 A5 不闭合）。W4「表内一切
-    #    C9C9C9 保留」据此落实：表内 run/OMML 挂点全量归 keep（不剥）；表内【×】芯片
+    #    run/OMML FILL_C 挂点此前不入任何分区（含表内 FILL_C 时 A5 不闭合）。W4「表内一切
+    #    C7C7C7 保留」据此落实：表内 run/OMML 挂点全量归 keep（不剥）；表内【×】芯片
     #    同属保留，单列计数仅供报表。——
     chip_in_tbl = 0
     for tel in body.iter(q('tbl')):
         for tp in tel.iter(q('p')):
             for r in tp.iter(q('r')):
-                if shd_fill(r.find(q('rPr'))) == C9:
+                if shd_fill(r.find(q('rPr'))) == FILL_C:
                     keep['表内run'] += 1
             for mel in tp.iter():
                 if etree.QName(mel).namespace != M:
                     continue
-                if tag(mel) in ('r', 'ctrlPr') and shd_fill(mel.find(q('rPr'))) == C9:
+                if tag(mel) in ('r', 'ctrlPr') and shd_fill(mel.find(q('rPr'))) == FILL_C:
                     keep['表内OMML'] += 1
             tbl_text = ''.join(t.text or '' for t in tp.iter(q('t')))
             for mm in CHIP_RE.finditer(tbl_text):
@@ -282,14 +282,14 @@ def classify2(doc):
                 chip_in_tbl += 1
     for tel in body.iter(q('tbl')):
         for shd in tel.iter(q('shd')):
-            if shd.get(q('fill')) == C9:
+            if shd.get(q('fill')) == FILL_C:
                 par = shd.getparent()
                 if par is not None and tag(par) == 'tcPr':
                     tcpr_c9 += 1
     # 划分断言（A5）：run 级与 OMML 分别做不交并（命名空间区分——m:r 亦含 w:rPr）
     n_all_runs = 0
     for shd in doc.iter(q('shd')):
-        if shd.get(q('fill')) != C9:
+        if shd.get(q('fill')) != FILL_C:
             continue
         par = shd.getparent()
         if par is None or tag(par) != 'rPr':
@@ -301,7 +301,7 @@ def classify2(doc):
     for mel in doc.iter():
         if etree.QName(mel).namespace != M:
             continue
-        if tag(mel) in ('r', 'ctrlPr') and shd_fill(mel.find(q('rPr'))) == C9:
+        if tag(mel) in ('r', 'ctrlPr') and shd_fill(mel.find(q('rPr'))) == FILL_C:
             n_all_om += 1
     n_strip_runs = len(strip['题号块']) + len(strip['芯片run']) + len(strip['并行解法']) + len(strip['答案值run'])
     n_keep_runs = keep['表内run'] + keep['条目区需背run']
@@ -332,7 +332,7 @@ def classify2(doc):
             t = ''.join(x.text or '' for x in r.findall(q('t')))
             if t == '':
                 continue
-            if shd_fill(r.find(q('rPr'))) == C9:
+            if shd_fill(r.find(q('rPr'))) == FILL_C:
                 lead_txt += t
                 lead_runs.append(r)
             else:
@@ -371,7 +371,7 @@ def strip_shd(el_holder):
 
 def para_fill_counts(doc):
     """段级四色直挂计数（白名单 W1 前后恒等断言用）。"""
-    out = {FILL_TITLE1: 0, FILL_TITLE2: 0, FILL_STEM: 0, C9: 0}
+    out = {FILL_TITLE1: 0, FILL_TITLE2: 0, FILL_STEM: 0, FILL_C: 0}
     body = doc.find(q('body'))
     for p in body.iter(q('p')):
         ppr = p.find(q('pPr'))
@@ -472,12 +472,12 @@ def process(path, out_path=None, dry_run=False, audit_only=False):
     checks = {
         'A1_剥除fill集合精确C9': n_done == n_strip,
         'A2a_段级四色恒等': post_para_fill == pre_para_fill,
-        'A2b_白名单run级C9恒等': post_run_fill.get(C9, 0) == pre_run_fill.get(C9, 0) - (
+        'A2b_白名单run级C9恒等': post_run_fill.get(FILL_C, 0) == pre_run_fill.get(FILL_C, 0) - (
             len(cls['strip']['题号块']) + len(cls['strip']['芯片run'])
             + len(cls['strip']['并行解法']) + len(cls['strip']['答案值run'])),
-        'A2c_白名单OMML恒等': post_om_fill.get(C9, 0) == pre_om_fill.get(C9, 0) - len(cls['strip']['答案值OMML']),
-        'A2d_他色run级零变化': {k: v for k, v in post_run_fill.items() if k != C9} == {
-            k: v for k, v in pre_run_fill.items() if k != C9},
+        'A2c_白名单OMML恒等': post_om_fill.get(FILL_C, 0) == pre_om_fill.get(FILL_C, 0) - len(cls['strip']['答案值OMML']),
+        'A2d_他色run级零变化': {k: v for k, v in post_run_fill.items() if k != FILL_C} == {
+            k: v for k, v in pre_run_fill.items() if k != FILL_C},
         'A3a_文字流全等': post_stream == pre_stream,
         'A3b_元素计数恒等': all(post_counts[k] == pre_counts[k] for k in post_counts if k != 'w:shd'),
         'A3c_shd减数等于剥除数': pre_counts['w:shd'] - post_counts['w:shd'] == n_done,
@@ -550,12 +550,12 @@ def fmt_report(rep):
     L.append('| 保留·讲部条目区需背 run/OMML | %d/%d | %d/%d | 恒等（甲案保留） |'
              % (p['保留_条目区需背run'], p['保留_条目区OMML'], po['减后保留_条目区需背run'], po['减后保留_条目区OMML']))
     L.append('| 保留·表内 run/OMML/tcPr | %d/%d/%d | 同左 | 恒等 |' % (p['保留_表内run'], p['保留_表内OMML'], p['保留_表内tcPr']))
-    L.append('| C9C9C9 run级挂点总 | %d | %d | 减数=%d |'
-             % (p['run级fill分布'].get(C9, 0), po['run级fill分布'].get(C9, 0),
-                p['run级fill分布'].get(C9, 0) - po['run级fill分布'].get(C9, 0)))
-    L.append('| C9C9C9 OMML挂点总 | %d | %d | 减数=%d |'
-             % (p['OMMLfill分布'].get(C9, 0), po['OMMLfill分布'].get(C9, 0),
-                p['OMMLfill分布'].get(C9, 0) - po['OMMLfill分布'].get(C9, 0)))
+    L.append('| C7C7C7 run级挂点总 | %d | %d | 减数=%d |'
+             % (p['run级fill分布'].get(FILL_C, 0), po['run级fill分布'].get(FILL_C, 0),
+                p['run级fill分布'].get(FILL_C, 0) - po['run级fill分布'].get(FILL_C, 0)))
+    L.append('| C7C7C7 OMML挂点总 | %d | %d | 减数=%d |'
+             % (p['OMMLfill分布'].get(FILL_C, 0), po['OMMLfill分布'].get(FILL_C, 0),
+                p['OMMLfill分布'].get(FILL_C, 0) - po['OMMLfill分布'].get(FILL_C, 0)))
     L.append('| 段级C9误挂 | %d | — | 期望0，有则违规登记不剥 |' % p['段级C9误挂'])
     L.append('')
     ck = rep['checks']

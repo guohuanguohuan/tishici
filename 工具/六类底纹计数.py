@@ -37,7 +37,7 @@
 """七类底纹计数（载体文件名沿用「六类底纹计数.py」——公共规则§7点名；旧名
   四类底纹计数.py 保留为兼容入口）— 四色板底纹分色计数与恒等式核验（只读，不改文件）：
   ①标题整行底纹（章/节，段级 #ADC2DA）  ②标题整行底纹（讲部/题型，段级 #C6D4E3）
-  ③内容标记族（run级 #C9C9C9）：题号块（新形只盖N．/节号-序号．＋过渡旧形）、块标签（含行内小标签
+  ③内容标记族（run级 #C7C7C7——2026-09-06 22%灰真值更正，原 #C9C9C9 降为过渡残留签名）：题号块（新形只盖N．/节号-序号．＋过渡旧形）、块标签（含行内小标签
       与并行解法标记——跨run分裂标签按字符级灰底蒙版整chip识别）、条目号、条目第一子层、
       答案值/需背（含 OMML m:r/ctrlPr 挂点）
   ⑦题干底纹（段级 #E0E0E0，PDF灰≈224）：恒等式＝题干底纹段数＝题干段清点数
@@ -47,10 +47,12 @@
       条目号run数＝条目计数；第一子层run数＝第一子层计数；内容标记覆盖＝题块数；
       题干底纹段数＝题干段清点数（带题件；清单件全件白底）。
   违规：A6A6A6/D9D9D9（document+headers/footers+styles 全包扫描）＝0；w:bdr＝0；
-      段级 C9C9C9 误挂＝0；run级 #ADC2DA/#C6D4E3 误挂＝0；新格式旧结构序号run残留＝0；
+      段级 C7C7C7 误挂＝0；run级 #ADC2DA/#C6D4E3 误挂＝0；新格式旧结构序号run残留＝0；
       加粗类（题号块须加粗；块标签/条目号/子层不加粗；标题整行加粗——effective 解析含样式链）。
+  过渡残留签名 #C9C9C9（2026-09-06 CB-4）：单列计数登记（新件应＝0；④轮改色完成前存量旧件
+      视同合规、不阻断——CB-4 口径），入报告不入 base_ok。
   改版前件（未检出段级标题底纹）：标题整行底纹恒等式标「不适用（改版前）」，旧结构序号
-  run 计数转登记口径（不阻断）；C9C9C9 族恒等式照常全断言。浅底0段且带题件：
+  run 计数转登记口径（不阻断）；C7C7C7 族恒等式照常全断言。浅底0段且带题件：
   ⑦行标「改制前形态（未检出浅底）」并照出清点数（不阻断；浅底挂载后>0段即硬断言）。
   表内非标签灰底（导航表头 run 等）与 tcPr 级底纹、空文本灰底 run 单独登记，不入七类。
   清单件判定：文件名含「知识清单」——题号块与覆盖恒等式不适用，条目号/第一子层照查，
@@ -68,7 +70,8 @@ M = 'http://schemas.openxmlformats.org/officeDocument/2006/math'
 def q(t): return '{%s}%s' % (W, t)
 def tag(e): return etree.QName(e).localname
 
-FILL_CONTENT = 'C9C9C9'      # ③内容标记族（PDF灰≈201）
+FILL_CONTENT = 'C7C7C7'      # ③内容标记族（PDF灰≈199；2026-09-06 22%灰真值更正——原C9C9C9≈201降过渡签名）
+FILL_CONTENT_LEGACY = 'C9C9C9'   # 过渡残留签名（新件应＝0；存量过渡期登记不阻断——CB-4）
 FILL_TITLE1 = 'ADC2DA'       # ①章/节标题整行底纹（≈190）
 FILL_TITLE2 = 'C6D4E3'       # ②讲部/题型标题整行底纹（≈209）
 FILL_STEM = 'E0E0E0'        # ⑦题干底纹（≈224；A''口径——只挂段级 pPr；图段豁免）
@@ -377,7 +380,7 @@ def count(path, report):
     t1_direct = t1_style = t2_direct = t2_style = 0
     t1_para_els, t2_para_els = set(), set()
     stem_para_els = set()           # ⑦段级 #E0E0E0（直挂或样式继承）
-    p3_mis = 0            # 段级 C9C9C9 误挂（内容族无段级合法对象）
+    p3_mis = 0            # 段级 C7C7C7 误挂（内容族无段级合法对象）
     for i, el in enumerate(els):
         if el.tag != q('p'):
             continue
@@ -399,7 +402,7 @@ def count(path, report):
     t2_extra = sorted(t2_para_els - t2_expect)
     new_format = bool(t1_para_els or t2_para_els)
 
-    # —— run 级 C9C9C9 分类 + 字符级灰底蒙版（chip 跨 run 分裂识别）——
+    # —— run 级 C7C7C7 分类 + 字符级灰底蒙版（chip 跨 run 分裂识别）——
     cls = {'内容标记': 0, '讲部需背': 0, '题号块新形': 0, '题号块旧形': 0, '条目号': 0, '条目第一子层': 0,
            '表内其他': 0}
     qd_bold_missing = 0                      # jlp：题号块加粗维持断言（非加粗题号 token run 数）
@@ -586,9 +589,10 @@ def count(path, report):
                 else:
                     om_ctrl += 1
 
-    # —— 全挂点分桶构造性恒等（修「C9C9C9挂点总数恒差1」）——
+    # —— 全挂点分桶构造性恒等（修历史bug「C9C9C9挂点总数恒差1」；现口径 #C7C7C7 分桶）——
     buckets = {}
     raw_c9 = 0
+    raw_c9_legacy = 0
     for shd in doc.iter(q('shd')):
         f = shd.get(q('fill')) or ''
         par = shd.getparent()
@@ -616,6 +620,8 @@ def count(path, report):
         buckets[(f, bk)] = buckets.get((f, bk), 0) + 1
         if f == FILL_CONTENT:
             raw_c9 += 1
+        elif f == FILL_CONTENT_LEGACY:
+            raw_c9_legacy += 1
     b = lambda bk: buckets.get((FILL_CONTENT, bk), 0)
     c9_total = sum(v for (f, _), v in buckets.items() if f == FILL_CONTENT)
     stem_b = lambda bk: buckets.get((FILL_STEM, bk), 0)
@@ -631,6 +637,12 @@ def count(path, report):
             n = byt.count(('w:fill="%s"' % lf).encode())
             if n:
                 legacy_parts.append('%s:%s×%d' % (name, lf, n))
+    # 过渡残留签名 #C9C9C9 全包计数（新件应＝0；存量过渡期登记不阻断——CB-4）
+    legacy_c9_parts = []
+    for name, byt in part_bytes.items():
+        n = byt.count(('w:fill="%s"' % FILL_CONTENT_LEGACY).encode())
+        if n:
+            legacy_c9_parts.append('%s×%d' % (name, n))
     bdr_total = sum(1 for _ in doc.iter(q('bdr')))
     tc_shd = b('tc')
 
@@ -681,7 +693,8 @@ def count(path, report):
     nq_block = cls['题号块新形'] + cls['题号块旧形']
     chip_total_occ = sum(lb_occ.values())
     L = []
-    L.append("七类底纹计数·四色签名（2026-09-02 A''成品轮七类版；四色板 C9C9C9/ADC2DA/C6D4E3/E0E0E0）：%s"
+    L.append("七类底纹计数·四色签名（2026-09-02 A''成品轮七类版；2026-09-06 ③族真值更正——"
+             "四色板 C7C7C7/ADC2DA/C6D4E3/E0E0E0）：%s"
              % os.path.basename(path))
     L.append('模式: %s' % ('四色板（检出段级标题底纹）' if new_format else
                           '改版前（未检出段级标题底纹——标题整行底纹恒等式不适用，待欠账A W波铺开）'))
@@ -743,11 +756,15 @@ def count(path, report):
                 chip_bold, head_nobold, '新格式期望 0' if new_format else '改版前不检'))
     L.append('旧灰残留（全包 word/*.xml）：%s｜w:bdr %d（期望 0）'
              % ('；'.join(legacy_parts) if legacy_parts else 'A6A6A6/D9D9D9 全包 0', bdr_total))
-    L.append('C9C9C9 全挂点分桶（构造性恒等——修恒差1）：run %d｜run空文本 %d｜段级 %d｜段落标记 %d｜'
+    L.append('%s 全挂点分桶（构造性恒等——修历史bug恒差1）：run %d｜run空文本 %d｜段级 %d｜段落标记 %d｜'
              'tcPr %d｜om_mr %d｜om_ctrl %d｜tbl/tr %d｜其他 %d｜Σ %d＝document.xml 原始 %d %s'
-             % (b('run'), empty_shd, b('para'), b('pmark'), b('tc'), b('om_mr'), b('om_ctrl'),
+             % (FILL_CONTENT, b('run'), empty_shd, b('para'), b('pmark'), b('tc'), b('om_mr'), b('om_ctrl'),
                 b('tbl'), b('other'), c9_total, raw_c9,
                 '✓' if c9_total == raw_c9 else '←≠ 分桶缺口'))
+    L.append('过渡残留签名 #%s（新件应＝0；存量过渡期登记不阻断——CB-4）：document.xml 挂点 %d｜'
+             'word/*.xml 全包 %s'
+             % (FILL_CONTENT_LEGACY, raw_c9_legacy,
+                '；'.join(legacy_c9_parts) if legacy_c9_parts else '0'))
     # —— ⑦题干底纹（#E0E0E0，恒等式＝题干底纹段数＝题干段清点数；图段豁免）——
     stem_para = len(stem_para_els)
     stem_extra = sorted(stem_para_els - census_idx)
@@ -817,7 +834,7 @@ def count(path, report):
                             else ('PASS 四色板齐＋七类恒等式成立' if ok else 'CHECK 见上')))
     else:
         ok = base_ok
-        L.append('结论: ' + ('PASS（挂载前口径——七类C9C9C9/题干底纹族恒等式成立；标题整行底纹0段待铺开）'
+        L.append('结论: ' + ('PASS（挂载前口径——七类C7C7C7/题干底纹族恒等式成立；标题整行底纹0段待铺开）'
                              if ok else 'CHECK 见上'))
     out = '\n'.join(L)
     d = os.path.dirname(rp)

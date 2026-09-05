@@ -7,7 +7,7 @@
 第2章词化轮先例（0.94/0.85→简单、0.65→中档、0.4/0.15→难 的亲算落档归纳）：
   >=0.80 → 简单；0.50~0.79 → 中档；<0.50 → 难。全部数值映射写进映射表供复核。
 题号块与题干同 run 时先拆出独立 run（含跨 run 拼合「N」＋「．」的情形）；
-题号块 run 缺加粗/底纹的补 w:b＋w:shd C9C9C9（现行拍板色）。
+题号块 run 缺加粗/底纹的补 w:b＋w:shd C7C7C7（现行拍板色）。
 用法: python 难度前置.py <docx> <映射表md输出路径>
 输出: 迁移数/跳过数/异常清单；映射表「题号→档位（原值）」落盘。幂等：已迁移块自动跳过。"""
 import sys, io, zipfile, re, os, time
@@ -63,7 +63,7 @@ def insert_text_at(p, pos, s):
     return False
 
 def ensure_qnum_rpr(r):
-    """题号块 run 补加粗＋底纹 C9C9C9（缺才补）。"""
+    """题号块 run 补加粗＋底纹 C7C7C7（缺才补）。"""
     rpr = r.find(q('rPr'))
     if rpr is None:
         rpr = etree.Element(q('rPr')); r.insert(0, rpr)
@@ -71,7 +71,7 @@ def ensure_qnum_rpr(r):
         b = etree.Element(q('b')); rpr.insert(0, b)
     if rpr.find(q('shd')) is None:
         shd = etree.Element(q('shd'))
-        shd.set(q('val'), 'clear'); shd.set(q('color'), 'auto'); shd.set(q('fill'), 'C9C9C9')
+        shd.set(q('val'), 'clear'); shd.set(q('color'), 'auto'); shd.set(q('fill'), 'C7C7C7')
         rpr.append(shd)  # rPr 内 shd 序靠后（bdr 之后），追加即合法
 
 def expand_qnum(p, no, grade):

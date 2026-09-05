@@ -8,7 +8,7 @@ r"""底纹批量器.py — 2026-09-05 选必1成书修复路线·版式修订轮
      space=3 color=auto 黑）；章/节标题底纹 ADC2DA 与章标题底边框一律不动（守恒断言）；
      适用性核验：凡 C6D4E3 段须为讲部（知识讲解｜/方法讲解｜）或题型标题（父链续层序号起段），
      不符者登记不撤；
-  c) 详解区（题号块内【分析】【详解】【点睛】等解析块段落）run 级内容灰底 C9C9C9 一律去除。
+  c) 详解区（题号块内【分析】【详解】【点睛】等解析块段落）run 级内容灰底 C7C7C7 一律去除。
      白名单（不动）：清单条目/讲部条目需背内容与清单答案行——本器作用域限题号块内解析段，
      构造性不触白名单。衔接件/知识清单件不在《讲练件底纹减法》适用面——c) 对其仅审计登记
      （粘滞口径计数），不剥除。讲练件题目侧本轮前已为 0：复核断言（发现即剥并记数）。
@@ -73,10 +73,10 @@ def has_bar18(p):
 
 
 def rc9(p):
-    """段落内 run 级（rPr 父）C9C9C9 计数（含 oMath 内 w:rPr——与 ②-C 探针同口径）"""
+    """段落内 run 级（rPr 父）C7C7C7 计数（含 oMath 内 w:rPr——与 ②-C 探针同口径）"""
     n = 0
     for shd in p.iter(q('shd')):
-        if tag(shd.getparent()) == 'rPr' and (shd.get(q('fill')) or '').upper() == 'C9C9C9':
+        if tag(shd.getparent()) == 'rPr' and (shd.get(q('fill')) or '').upper() == 'C7C7C7':
             n += 1
     return n
 
@@ -86,9 +86,9 @@ def xj_clear_strip(els, dry, sticky_audit):
 
     分区状态机：题干区（题号块行＋未标注续段）／解析区（【分析|详解|点睛|编注】块＋
     解析已开前提下知识点值段之后的未标注详解公式段）／答案区（【答案】行＋值续段）／
-    知识点区（【知识点】行＋值段）。仅解析区剥 run 级 C9C9C9，其余区保护。
+    知识点区（【知识点】行＋值段）。仅解析区剥 run 级 C7C7C7，其余区保护。
     同轮复算粘滞口径计数并与外部审计值对证；差集按保护类分解（对平登记基线）。
-    硬断言：保护类零触碰（前＝后）、解析区零残留、全件 rPr C9C9C9 守恒（前＝后＋剥）。"""
+    硬断言：保护类零触碰（前＝后）、解析区零残留、全件 rPr C7C7C7 守恒（前＝后＋剥）。"""
     BUCKET_ORDER = ['题号块行', '题干区', '答案行', '答案值续段', '知识点行', '知识点值段', '知识点区余', '其他']
     bucket = {}
     targets = []
@@ -181,7 +181,7 @@ def xj_clear_strip(els, dry, sticky_audit):
                 bucket[k] = bucket.get(k, 0) + n
     for c in targets:
         for shd in list(c.iter(q('shd'))):
-            if tag(shd.getparent()) == 'rPr' and (shd.get(q('fill')) or '').upper() == 'C9C9C9':
+            if tag(shd.getparent()) == 'rPr' and (shd.get(q('fill')) or '').upper() == 'C7C7C7':
                 if not dry:
                     shd.getparent().remove(shd)
                 strip += 1
@@ -200,7 +200,7 @@ def xj_clear_strip(els, dry, sticky_audit):
             post_prot += n
     want_residue = strip if dry else 0
     assert ana_residue == want_residue, '解析区剥后残留 %d 处（应 %d）' % (ana_residue, want_residue)
-    assert pre_prot == post_prot, '保护类 C9C9C9 变动 %d→%d（禁触）' % (pre_prot, post_prot)
+    assert pre_prot == post_prot, '保护类 C7C7C7 变动 %d→%d（禁触）' % (pre_prot, post_prot)
     return {'strip': strip, 'ana_paras': ana_paras, 'sticky': sticky,
             'bucket': bucket, 'bucket_order': BUCKET_ORDER,
             'pre_total': pre_total, 'post_total': post_total,
@@ -279,7 +279,7 @@ def process(path, only, dry, xj_clear=False):
                        if tag(shd.getparent()) == 'pPr' and (shd.get(q('fill')) or '').upper() == 'ADC2DA')
         assert adc_pre == adc_post, '章/节标题底纹 ADC2DA 数量变动（禁触）: %d→%d' % (adc_pre, adc_post)
 
-    # ---- c) 解析区 run 级 C9C9C9 处置 ----
+    # ---- c) 解析区 run 级 C7C7C7 处置 ----
     #   讲练件：粘滞口径复核剥除（题目侧实测 0，发现即剥并记数）；
     #   衔接件：默认粘滞口径仅审计登记；--xj-clear 开启后按解析块界定剥除
     #           （答案行/知识点区/题号块/题干/条目区保护，同轮出对平差集分解）；
@@ -312,7 +312,7 @@ def process(path, only, dry, xj_clear=False):
                 if not (in_q and in_ana):
                     continue
                 for shd in list(c.iter(q('shd'))):
-                    if tag(shd.getparent()) == 'rPr' and (shd.get(q('fill')) or '').upper() == 'C9C9C9':
+                    if tag(shd.getparent()) == 'rPr' and (shd.get(q('fill')) or '').upper() == 'C7C7C7':
                         shd.getparent().remove(shd)
                         res['c'] += 1
         else:
@@ -338,16 +338,16 @@ def process(path, only, dry, xj_clear=False):
                     in_ana = True
                 if in_q and in_ana:
                     for shd in c.iter(q('shd')):
-                        if tag(shd.getparent()) == 'rPr' and (shd.get(q('fill')) or '').upper() == 'C9C9C9':
+                        if tag(shd.getparent()) == 'rPr' and (shd.get(q('fill')) or '').upper() == 'C7C7C7':
                             c_audit += 1
             if is_xj and xj_clear:
                 c_xj = xj_clear_strip(els, dry, c_audit)
                 res['c'] = c_xj['strip']
 
-    # 段级 C9C9C9 违规登记（不剥）
+    # 段级 C7C7C7 违规登记（不剥）
     for p in body.iter(q('p')):
-        if pfill(p) == 'C9C9C9':
-            notes.append('c) 段级 C9C9C9 误挂（违规登记不剥，交人工）: %r' % ptext(p)[:40])
+        if pfill(p) == 'C7C7C7':
+            notes.append('c) 段级 C7C7C7 误挂（违规登记不剥，交人工）: %r' % ptext(p)[:40])
 
     lines = []
     lines.append('## T6 底纹批量器（%s）— %s%s' % (
@@ -359,20 +359,20 @@ def process(path, only, dry, xj_clear=False):
         lines.append('b) 讲部/题型标题撤 C6D4E3＋挂左竖条：%d 段（跳过非标题 %d）；ADC2DA 守恒断言 PASS' % (res['b'], b_skipped))
     if 'c' in only:
         if is_jl:
-            lines.append('c) 详解区 run 级 C9C9C9 剥除：%d 处（讲练件题目侧复核%s）'
+            lines.append('c) 详解区 run 级 C7C7C7 剥除：%d 处（讲练件题目侧复核%s）'
                          % (res['c'], '＝0 PASS' if res['c'] == 0 else '＞0 已剥除并登记'))
         elif c_xj is not None:
             bd = '＋'.join('%s%d' % (k, c_xj['bucket'][k])
                            for k in c_xj['bucket_order'] if c_xj['bucket'].get(k)) or '无'
             lines.append('c) 衔接件解析块清灰（--xj-clear）：解析区剥除 %d 处（解析区段 %d 段）｜'
-                         '对平＝粘滞审计 %d − 块外保护 %d（%s）＝%d｜rPr C9C9C9 全件 前→后 %d→%d｜'
+                         '对平＝粘滞审计 %d − 块外保护 %d（%s）＝%d｜rPr C7C7C7 全件 前→后 %d→%d｜'
                          '保护类零触碰 %d→%d PASS｜解析区零残留 PASS'
                          % (c_xj['strip'], c_xj['ana_paras'], c_xj['sticky'],
                             c_xj['sticky'] - c_xj['strip'], bd, c_xj['strip'],
                             c_xj['pre_total'], c_xj['post_total'],
                             c_xj['pre_prot'], c_xj['post_prot']))
         else:
-            lines.append('c) 详解区 run 级 C9C9C9 审计（非讲练件不剥，附则适用面）：%d 处登记' % c_audit)
+            lines.append('c) 详解区 run 级 C7C7C7 审计（非讲练件不剥，附则适用面）：%d 处登记' % c_audit)
     for nt in notes[:10]:
         lines.append('  ! ' + nt)
     lines.append('')

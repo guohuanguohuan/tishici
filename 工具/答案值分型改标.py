@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 """答案值分型改标.py — 2026-09-01 A'改制轮（T4·工具债⑤，口径E／公共规则§7答案值标记·分型标记款）。
-【答案】标签后答案值与需背内容（知识清单填空/讲部挖空等既有 C9C9C9 灰底标记）分型改标
+【答案】标签后答案值与需背内容（知识清单填空/讲部挖空等既有 C7C7C7 灰底标记）分型改标
 （2026-09-02 A''成品轮改造——深蓝 #1F4E79 全体系废止、统一灰底制）：
-  文字型（纯文字 run）＝C9C9C9 灰底＋剥深蓝；公式型（值内含 OMML）＝挂灰（OMML挂法：m:r/ctrlPr
+  文字型（纯文字 run）＝C7C7C7 灰底＋剥深蓝；公式型（值内含 OMML）＝挂灰（OMML挂法：m:r/ctrlPr
   的 w:rPr 内 w:shd、分数整块覆盖——同知识清单填空标记方案）＋剥深蓝；混合型整值按公式型；多值各标各的（；;分隔＋子问 (N) 前缀边界）；值间分隔符与缝隙剥灰防连片；
   答案跨段续值段（【答案】行后文字空白-only 含公式的段落）并入末值处理；
   与【答案】/【知识点】芯片间保留空格（缺则补一个半角空格并登记——唯一授权文字增量）；
   芯片【×】黑字不变（chip/题号/条目号/第一子层/并行解法标记 run 的 text·shd·color 指纹前后恒等断言）。
   需背内容同款分型：值区以外的灰底标记按「连续灰底簇」清点——簇内含灰 OMML 即公式型同挂灰（A''统一），
-  纯文字簇保灰底并剥深蓝；导航表头（tcPr 级 C9C9C9 单元格）内 run 不触碰；段首题号/条目号/（N）
+  纯文字簇保灰底并剥深蓝；导航表头（tcPr 级 C7C7C7 单元格）内 run 不触碰；段首题号/条目号/（N）
   锚 run 不入簇。
   恒等式＝文字型灰底run数＋公式型挂灰oMath值数＝答案值数（值级计数，口径同 工具/块标签芯片.py 的
   「答案值文字run」按值计；文字型 rPr 相同且相邻的 run 拼回单 run，斜体变量等 rPr 差异依法保留
@@ -36,7 +36,7 @@ def q(t): return '{%s}%s' % (W, t)
 def mq(t): return '{%s}%s' % (M, t)
 def tag(e): return etree.QName(e).localname if isinstance(e.tag, str) else '?'
 
-FILL = 'C9C9C9'
+FILL = 'C7C7C7'
 BLUE = '1F4E79'
 FILL_TITLE1 = 'ADC2DA'
 FILL_TITLE2 = 'C6D4E3'
@@ -327,7 +327,7 @@ def om_is_gray(om):
 
 
 def treat_omath(om, stats):
-    """A''统一灰底（2026-09-02）：公式整块挂 C9C9C9（m:r/ctrlPr 的 w:rPr，分数整块覆盖——OMML挂法）＋剥深蓝。"""
+    """A''统一灰底（2026-09-02）：公式整块挂 C7C7C7（m:r/ctrlPr 的 w:rPr，分数整块覆盖——OMML挂法）＋剥深蓝。"""
     for host, kind in om_hosts(om):
         rpr = rpr_of(host)
         if ensure_shd(rpr):
@@ -625,7 +625,7 @@ def process(path, args):
                             if strip_shd(rpr_of(r)):
                                 stats['剥shd_分隔'] += 1
 
-    # —— 需背簇（值区以外；含表格内填空，导航表头 tcPr 级 C9C9C9 单元格跳过） ——
+    # —— 需背簇（值区以外；含表格内填空，导航表头 tcPr 级 C7C7C7 单元格跳过） ——
     recite = Counter()
     if not args.no_recite:
         body_idx = {id(el): i for i, el in enumerate(els)}

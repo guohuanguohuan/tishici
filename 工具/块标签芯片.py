@@ -3,7 +3,7 @@
 2026-08-29 成书形态拍板扩面：枚举由封闭五个改为「凡行内【×】栏目标签一律挂」。
 两阶段（spaces＝防连片补空格属内容改动，随 Pass1 对账；shade＝纯格式零字符，随 Pass2）：
   python 块标签芯片.py spaces <docx> <登记表md>    # 标签与相邻内容标记值间缺空格的补一个半角空格，逐处登记（登记数＝处理数）
-  python 块标签芯片.py shade  <docx> <计数报告txt> [--legacy]  # 拆 run 隔离并挂 w:shd clear/auto/C9C9C9、不加粗
+  python 块标签芯片.py shade  <docx> <计数报告txt> [--legacy]  # 拆 run 隔离并挂 w:shd clear/auto/C7C7C7、不加粗
  shade 范围（2026-08-29 扩面口径）：
   ①块标签＝凡行内【×】栏目标签（【答案】【知识点】【分析】【详解】【点睛】【编注】【大招指引】
     【题后反思】【温馨提醒】【定义】【结论】及扫描发现的其余行内栏目标签，全件含表格内段落）
@@ -17,7 +17,7 @@
   详解序号①②③与选项A．B．不挂（拍板不采纳）。--legacy＝回退 2026-08-28 封闭五标签口径（兼容开关）。
  实现：每段先按未变动的 w:t 文本流算好全部挂灰区间，再按起点倒序逐个 isolate_runs 手术（只拆不并，
   跨 oMath 的区间逐 run 分别挂灰，避免文字/公式交错序移动），区间互不重叠、文本不增删，坐标不受前次手术影响。
- 幂等：已是 C9C9C9 的 run 不重复计数。报告含「全挂核验」：逐标签文本出现数 vs 整标签已挂 run 数。
+ 幂等：已是 C7C7C7 的 run 不重复计数。报告含「全挂核验」：逐标签文本出现数 vs 整标签已挂 run 数。
  2026-09-04 减法口径改造（选必1⓪复合修复轮子步2，工具债案6——附则《讲练件底纹减法》）：
  讲练件族（文件名含 讲练件/简单卷/中档卷/冲刺卷/实验卷）四类底纹已废止——shade 阶段对该族
  拒绝执行（防回挂；如需挂灰请确认对象非讲练件族或先撤附则）；spaces 阶段（防连片补空格，
@@ -43,7 +43,7 @@ CHIP_BLACKLIST_RE = re.compile(r'^【典例[^】]*】$')  # 题干内【典例N�
 MARK_RE = re.compile(r'^(?:\(\d{1,2}\)|（\d{1,2}）)?(?:【[^】]{1,12}】)?(?:解：|证明：)?'
                      r'(［?(?:方法|解法)[一二三四五六七八九十]{1,3}］?|另解)')
 NEXT_LB = re.compile(r'【[^】]{1,12}】')
-FILL = 'C9C9C9'
+FILL = 'C7C7C7'
 
 def chip_spans(t, legacy=False):
     """段文本内全部可挂芯片标签区间 [(s, e, label)]（黑名单排除）。"""
@@ -72,7 +72,7 @@ def items(p):
     return out
 
 def set_shd(rpr):
-    """rPr 挂 shd C9C9C9（去旧 shd），并按拍板去加粗。返回是否新挂。"""
+    """rPr 挂 shd C7C7C7（去旧 shd），并按拍板去加粗。返回是否新挂。"""
     if rpr is None:
         return False
     old = rpr.find(q('shd'))
@@ -409,7 +409,7 @@ def phase_shade(path, report, legacy=False):
                 cnt['答案值公式块'] += 1
     parts['word/document.xml'] = etree.tostring(doc, xml_declaration=True, encoding='UTF-8', standalone=True)
     save_parts(path, parts)
-    # 全挂核验（2026-08-29 扩面口径）：逐标签文本出现数 vs 整标签已挂 C9C9C9 run 数
+    # 全挂核验（2026-08-29 扩面口径）：逐标签文本出现数 vs 整标签已挂 C7C7C7 run 数
     occ = Counter()
     for p in body.iter(q('p')):
         for _, _, lb in chip_spans(wtext(p), legacy):

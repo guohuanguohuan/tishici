@@ -11,7 +11,7 @@ r"""题号块三段式.py — 层级制题号/条目号改版工具（A'改制�
     「　N题：题号a～题号b」（多题区间形，新号形态）；幂等识别已挂统计段；无题组不挂。
   · 条目族维持「节号-序号．」（两形并存——§6编号唯一层形款）；题族门控节归属一律按位置
     （cur_sec＝最近节标题），A'输入前缀节号与位置节一致性有断言。
-  · 条目族（清单条目/讲部条目）独立节内连续「节号-序号．」：条目号底纹 C9C9C9 不加粗（纯序号锚，
+  · 条目族（清单条目/讲部条目）独立节内连续「节号-序号．」：条目号底纹 C7C7C7 不加粗（纯序号锚，
     §7条目号底纹款），与题族分列计数、节内两族同号不判冲突；〔基〕/〔进〕标记位置照旧（号后）。
   · 底纹盖整个「节号-序号．」（run拆分处理跨run号）；括注不挂底纹、加粗维持整块（题族）；
     题干粘连文字随拆分剥底纹剥加粗。退化题号块「节号-序号．」（无括注）：默认模式不加括注。
@@ -31,8 +31,8 @@ qstart..qstart+N−1 全件连续；层级制号＝节内连续，续卷按 --se
 断言（全过才落盘，任一不过抛异常不写文件）：
   A1 输入序列门控：旧全局号 qstart..qstart+N−1 连续无重复；层级制号各节两族序列连续、
      起点＝--sec-start/-continue 映射值（缺省1）；
-  A2 每个改写段：题族 run[0]恰为「节号-序号．」挂C9C9C9＋b、run[1]（有括注时）无shd有b、
-     退化/衔接同款；条目族 run[0]恰为「节号-序号．」挂C9C9C9且无b；余文无灰无粗（题族）；
+  A2 每个改写段：题族 run[0]恰为「节号-序号．」挂C7C7C7＋b、run[1]（有括注时）无shd有b、
+     退化/衔接同款；条目族 run[0]恰为「节号-序号．」挂C7C7C7且无b；余文无灰无粗（题族）；
   A3 零意外字符：改写段后期望文本（授权token替换＋区间括注删除）逐段精确相等；
   A5 文件名题量/条目数恒等（可解析或--expect给值时）＋extract_structure 题块数交叉核对；
   A4 幂等（登记md复核）：二跑文本改写/补底纹/剥底纹计数全为0。
@@ -49,7 +49,7 @@ from lxml import etree
 
 W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 XMLSPACE = '{http://www.w3.org/XML/1998/namespace}space'
-FILL = 'C9C9C9'
+FILL = 'C7C7C7'
 def q(t): return '{%s}%s' % (W, t)
 
 GRADE_MAP = {'简单': '简单·保60%', '中档': '中档·保80%', '难': '难·冲100%'}
@@ -127,7 +127,7 @@ def make_run(rpr, text, after):
 
 
 def ensure_num_rpr(r, bold=True):
-    """题号run 补（题族：加粗＋）底纹 C9C9C9（各自缺才补）；条目族 bold=False 剥加粗。
+    """题号run 补（题族：加粗＋）底纹 C7C7C7（各自缺才补）；条目族 bold=False 剥加粗。
     返回 (是否补/剥底纹, 是否补/剥加粗)。"""
     rpr = r.find(q('rPr'))
     if rpr is None:
@@ -273,7 +273,7 @@ def block_has_answer(els, i, n):
 
 
 def rewrite_question(p, mode, toklen, new_num, grade, form):
-    """题族改写：run[0]「节号-序号．」（C9C9C9＋b）→ run[1] 括注（b 无shd）→ run[2] 余文（无shd无b）。
+    """题族改写：run[0]「节号-序号．」（C7C7C7＋b）→ run[1] 括注（b 无shd）→ run[2] 余文（无shd无b）。
     跨run碎裂先归并回收首run；零意外字符（A3 逐段断言）。返回计数 dict。"""
     before = para_text(p)
     if mode == 'linkage':
@@ -323,7 +323,7 @@ def rewrite_question(p, mode, toklen, new_num, grade, form):
 
 
 def rewrite_entry(p, toklen, new_num):
-    """条目族改写：号run 文本换「节号-序号．」，确保 C9C9C9＋不加粗（§7条目号底纹款）；
+    """条目族改写：号run 文本换「节号-序号．」，确保 C7C7C7＋不加粗（§7条目号底纹款）；
     其余 run（〔基〕/题名/正文）不动。返回计数 dict。"""
     before = para_text(p)
     covered = consume_prefix_runs(p, toklen)
@@ -659,7 +659,7 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
         runs = [r for r in c.findall(q('r')) if run_text(r)]
         assert runs and run_text(runs[0]) == tok + '．', 'run[0]非独立号run: %r' % txt[:30]
         s = shd_of(runs[0])
-        assert s is not None and s.get(q('fill')) == FILL, '号run缺C9C9C9: %r' % txt[:30]
+        assert s is not None and s.get(q('fill')) == FILL, '号run缺C7C7C7: %r' % txt[:30]
         rpr = runs[0].find(q('rPr'))
         assert rpr is not None, '号run缺rPr: %r' % txt[:30]
         if form == 'bare' and not _block_ans_cached(els, i, n):
@@ -718,7 +718,7 @@ def migrate(path, regmd, linkage=False, qstart=1, sec_start=None, sec_start_entr
     L.append('# 题号块层级制改版登记 — %s（模式=%s，族=%s）' % (os.path.basename(path), mode, families))
     L.append('')
     L.append('口径：2026-09-01 A\'改制轮工具债③——题号/条目号「节号-序号．」层级制（节内连续、题族与条目族分列、'
-             '跨卷接续）；底纹盖整个号run（题族C9C9C9＋b、条目族C9C9C9不加粗）；节标题判据＝节号pattern＋'
+             '跨卷接续）；底纹盖整个号run（题族C7C7C7＋b、条目族C7C7C7不加粗）；节标题判据＝节号pattern＋'
              '28半点/ADC2DA/标题3（C6D4E3负判据）；' + ('衔接件两段式。' if mode == 'linkage' else
              '三段式「节号-序号．（档位·提分线·卡壳看答案）」。')
              + ('续号：--sec-start=%s --sec-start-entry=%s --sec-continue=%s；' % (sec_start, sec_start_entry, sec_continue)
@@ -764,7 +764,7 @@ def _block_ans_cached(els, i, n):
 
 
 def _q_compliant(p):
-    """幂等判定：run[0]恰为号token（含全角句点）挂C9C9C9＋rPr存在（细形态由A2断言兜底）。"""
+    """幂等判定：run[0]恰为号token（含全角句点）挂C7C7C7＋rPr存在（细形态由A2断言兜底）。"""
     runs = [r for r in p.findall(q('r')) if run_text(r)]
     if not runs:
         return False

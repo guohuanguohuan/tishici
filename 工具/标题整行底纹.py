@@ -17,13 +17,13 @@
     讲部/题型 #C6D4E3（转灰≈209）。
   · 顶格：标题段落 w:ind 一律摘除（N4——旧缩进梯子 0/200/400/800 全部拆除）。
   · 章标题段加 w:pBdr bottom 通栏细线（single sz=4 space=1 auto）。
-  · 拆除旧「结构序号底纹」形态：标题段内旧 run 级 C9C9C9 序号灰块剥除（序号随整行在底纹内、
+  · 拆除旧「结构序号底纹」形态：标题段内旧 run 级 C7C7C7 序号灰块剥除（序号随整行在底纹内、
     不单独挂灰）；标题段内其他 fill 的 run 级底纹不静默剥，登记告警。
   · 只改字号/底纹/ind/pBdr，不动 spacing/jc（行距归 T3 工具、对齐归左对齐管线）；
     条目题名行「N．」不属本口径（条目号底纹.py），断言守恒不误伤。
 
 断言（全过才落盘）：A1 每标题段 pPr shd fill∈{ADC2DA/C6D4E3} 且分型正确；A2 标题段内
-  C9C9C9 run 底纹＝0、w:ind＝0 段；A3 章标题 pBdr bottom 在位；A4 标题 run 字号/加粗全合规；
+  C7C7C7 run 底纹＝0、w:ind＝0 段；A3 章标题 pBdr bottom 在位；A4 标题 run 字号/加粗全合规；
   A5 零字符（w:t 全文字符序列恒等）；A6 条目号底纹 run 数守恒；A7 幂等（二跑全部计数=0）。
 
 用法: python 工具/标题整行底纹.py <docx> <登记md>
@@ -45,7 +45,7 @@ def tag(e): return etree.QName(e).localname
 
 FILL_CH_SEC = 'ADC2DA'   # 章/节（N5 三色板，转灰≈190）
 FILL_LEC_GRP = 'C6D4E3'  # 讲部/题型（转灰≈209）
-FILL_OLD_GRAY = 'C9C9C9' # 旧结构序号灰块（拆除对象）
+FILL_OLD_GRAY = 'C7C7C7' # 旧结构序号灰块（拆除对象）
 
 SZ = {'章': '32', '节': '28', '讲部': '24', '题型': '24'}
 FILL = {'章': FILL_CH_SEC, '节': FILL_CH_SEC, '讲部': FILL_LEC_GRP, '题型': FILL_LEC_GRP}
@@ -101,7 +101,7 @@ def shd_of(r):
 
 
 def ent_shaded_count(doc):
-    """条目号底纹 run 数（body 级条目题名行的独立「N．」C9C9C9 run——与条目号底纹.py同源口径）。"""
+    """条目号底纹 run 数（body 级条目题名行的独立「N．」C7C7C7 run——与条目号底纹.py同源口径）。"""
     n = 0
     for p in doc.find(q('body')):
         if p.tag != q('p'):
@@ -196,7 +196,7 @@ def ensure_chapter_border(p):
 
 
 def strip_old_gray(p):
-    """拆除标题段内旧 run 级 C9C9C9 序号灰块。返回 (剥除数, 其他fill告警数)。"""
+    """拆除标题段内旧 run 级 C7C7C7 序号灰块。返回 (剥除数, 其他fill告警数)。"""
     stripped = warned = 0
     for r in p.iter(q('r')):
         s = shd_of(r)
@@ -305,7 +305,7 @@ def main(path, regmd):
         for r in p.iter(q('r')):
             s = shd_of(r)
             assert s is None or s.get(q('fill')) != FILL_OLD_GRAY, \
-                'A2标题段残留C9C9C9 run底纹: %s' % ptext(p)[:30]
+                'A2标题段残留C7C7C7 run底纹: %s' % ptext(p)[:30]
             rpr = r.find(q('rPr'))
             if rpr is not None:
                 e = rpr.find(q('sz'))
@@ -342,7 +342,7 @@ def main(path, regmd):
     L.append('# 标题整行底纹登记 — %s' % os.path.basename(path))
     L.append('')
     L.append('口径：2026-08-31 N3/N4/N5——章32/节28/讲部·题型24半点加粗；整行底纹 章/节#ADC2DA、'
-             '讲部/题型#C6D4E3；标题段w:ind清零顶格；章标题pBdr bottom通栏细线；旧run级C9C9C9'
+             '讲部/题型#C6D4E3；标题段w:ind清零顶格；章标题pBdr bottom通栏细线；旧run级C7C7C7'
              '序号灰块拆除；不动spacing/jc；幂等可重跑（零改动时跳过重写字节不变）。')
     L.append('')
     L.append('标题段 %d（章 %d｜节 %d｜讲部 %d｜题型 %d）｜字号/加粗改动段 %d（run级字号改动＋加粗补齐 %d 处）｜'
@@ -350,7 +350,7 @@ def main(path, regmd):
              '其他fill run底纹告警 %d｜A5零字符 PASS｜A6条目号底纹守恒 %d＝%d PASS'
              % (len(heads), lad['章'], lad['节'], lad['讲部'], lad['题型'], c_size, c_bold,
                 c_shd, c_ind, c_gray, c_pbdr, warn_other, ent_before, ent_after))
-    L.append('三色fill实测：章/节段数×%s＝%d、讲部/题型段数×%s＝%d（run级C9C9C9在标题段内=0）'
+    L.append('三色fill实测：章/节段数×%s＝%d、讲部/题型段数×%s＝%d（run级C7C7C7在标题段内=0）'
              % (FILL_CH_SEC, lad['章'] + lad['节'], FILL_LEC_GRP, lad['讲部'] + lad['题型']))
     if anomalies:
         L.append('异常登记：' + '；'.join(anomalies))
