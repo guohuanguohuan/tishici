@@ -1,6 +1,13 @@
 # -*- coding: utf-8 -*-
 r"""首页断言集执行器.py — 2026-09-03 选必1版式复合修复轮·子步0新建（附则《双栏首页断言》前置步0＋④工具门；
 断言集执行器＝三族匹配＋①反向校验＋fail-closed；工具债案5d/6）。
+2026-09-06 收尾-B v3适配（注记）：①匹配层归一化（nospc）新增剔除 WJ(U+2060)/零宽/软连字＋数学字形
+（U+1D400–1D7FF）→ASCII 转写，断言①加块级拼行回退——T7/T9a 插符、OMML 数学斜体、块内拆行三类
+终态伪影不再败锚；②--run 新增 --mapping <json>：可直载附则注册锚点映射表（v3，权威源＝
+工作区/选必1成书修复-0905/②工具/报告/锚点映射表v3.json——PDF 终态实测定标；docx 侧 gen-mapping
+看不见文字层伪影，题名内嵌公式件以其自产表判①不可靠）；③gen-mapping 锚点定族更正为
+「文档序第一个条目号/题号块」（前置步0「锚点＝正文首块」；旧「带题件→题号块」预设系②-E 断言①
+假阴性 5/10 之根因，讲部补挂后讲练/衔接件首块＝条目号）。
 
 三模式：
   --gen-mapping   逐件读document.xml实测首块特征→锚点映射表v1（机读正则＋实际首块特征）＋黑名单反向校验；
@@ -14,6 +21,7 @@ fail-closed：首页可抽取块数=0或脚本异常＝不判定＝禁止交付�
   python 首页断言集执行器.py --gen-mapping --out <工作区根> 代号=docx路径...
   python 首页断言集执行器.py --make-p1     --out <工作区根> 代号=docx路径...
   python 首页断言集执行器.py --run         --out <工作区根> 代号=docx路径... [--negative <pdf路径> --neg-code X2]
+                                           [--mapping <附则注册锚点映射表json>（v3，2026-09-06收尾-B新增）]
 产物: <out>/锚点映射表v1.md / 锚点映射表v1.json / 首页PDF/<代号>_p1.pdf / 首页断言报告.md / 首页断言结果.json
 """
 import sys, io, os, re, json, time, zipfile
@@ -40,9 +48,39 @@ def ptext(p):
     return ''.join(t.text or '' for t in p.iter(q('t')))
 
 
+# 数学字母字形各族基址（拉丁/希腊/数字；U+1D400–1D7FF）→ASCII（2026-09-06 收尾-B v3 适配）
+_MATH_FAMILIES = (
+    (0x1D400, 52), (0x1D434, 52), (0x1D468, 52), (0x1D49C, 52), (0x1D4D0, 52),
+    (0x1D504, 52), (0x1D538, 52), (0x1D56C, 52), (0x1D5A0, 52), (0x1D5D4, 52),
+    (0x1D608, 52), (0x1D63C, 52),
+    (0x1D670, 10),
+    (0x1D6A8, 52), (0x1D6E2, 52), (0x1D71C, 52), (0x1D756, 52), (0x1D790, 52),
+    (0x1D7CE, 10), (0x1D7D8, 10), (0x1D7E2, 10), (0x1D7EC, 10), (0x1D7F6, 10),
+)
+
+
+def _math_to_ascii(s):
+    out = []
+    for ch in s:
+        o = ord(ch)
+        if 0x1D400 <= o <= 0x1D7FF:
+            for base, n in _MATH_FAMILIES:
+                if base <= o < base + n:
+                    i = o - base
+                    out.append(chr(ord('0') + i) if n == 10 else
+                               chr(ord('A') + i) if i < 26 else chr(ord('a') + i - 26))
+                    break
+            else:
+                out.append(ch)      # 字形块内例外/保留位（nabla 等字面）原样保留
+        else:
+            out.append(ch)
+    return ''.join(out)
+
+
 def nospc(s):
-    """去全部空白（PDF抽取会在数字与CJK间插空格、双栏行折行——断言一律在归一化文本上匹配）。"""
-    return re.sub(r'[\s　]+', '', s)
+    """断言归一化（2026-09-06 v3适配）：数学字形→ASCII＋去全部空白＋去WJ(U+2060)/零宽/软连字
+    （PDF抽取会在数字与CJK间插空格、双栏行折行，T7/T9a 往栏顶芯片插 WJ——断言一律在归一化文本上匹配）。"""
+    return re.sub(r'[\s\u2060\u200b\u200c\u200d\ufeff\u00ad]+', '', _math_to_ascii(s))
 
 
 def tbl_head_cells(tbl):
@@ -131,11 +169,12 @@ def inspect_docx(path):
                 legends.append(t)
                 legends_in_header.append(False)
     # 正文首块特征与锚点候选。
-    # 锚点选型：带题件（讲练件/衔接件）→题号块式（token短、恒处行首、双栏折行安全、永不出现在头部要素）；
-    # 清单件→条目号式；皆无→节标题统计行式（折行风险件退避）。首块特征栏仍实测登记。
+    # 锚点定族（2026-09-06 收尾-B v3 更正）：前置步0「锚点＝正文首块机读特征」——取文档序第一个
+    # 条目号/题号块之族；旧「带题件→题号块」预设系②-E 断言①假阴性 5/10 之根因（讲部补挂后
+    # 讲练/衔接件首块＝条目号、题号块落第2页）。首块特征栏仍实测登记。
     first_blocks = []
     anchor = None
-    first_tqh = first_tmh = first_secstat = None
+    first_token = first_tqh = first_tmh = first_secstat = None
     RE_QK = re.compile(r'^（(?:简单|中档|难|衔接必会)')
     for el in body_kids:
         if etree.QName(el).localname != 'p':
@@ -162,6 +201,12 @@ def inspect_docx(path):
                              'source': t}
         if mtok:
             tok = mtok.group(1)
+            if first_token is None:
+                first_token = ({'family': '题号块式', 'regex': r'^' + re.escape(tok), 'source': t}
+                               if RE_QK.match(t[len(tok):]) else
+                               {'family': '条目号式',
+                                'regex': r'^' + re.escape(tok) + re.escape(nospc(t[len(tok):len(tok) + 8])),
+                                'source': t})
             if first_tqh is None and RE_QK.match(t[len(tok):]):
                 first_tqh = {'family': '题号块式', 'regex': r'^' + re.escape(tok), 'source': t}
             elif first_tmh is None and not RE_QK.match(t[len(tok):]):
@@ -170,8 +215,7 @@ def inspect_docx(path):
                              'source': t}
         if first_tqh and first_tmh and first_secstat and len(first_blocks) >= 3:
             break
-    is_list = '知识清单' in os.path.basename(path)
-    anchor = (first_tmh if is_list else first_tqh) or first_secstat or first_tqh or first_tmh
+    anchor = first_token or first_secstat or first_tqh or first_tmh
     blacklist = set()
     if stats_row:
         blacklist.add(stats_row)
@@ -210,16 +254,19 @@ def body_blocks(pdf_path, page):
 
 
 def assert1(pdf_path, page, anchor_re, stem):
-    """断言①首页正文成立（去空白归一化行上匹配锚点正则）。返回 (结论, 细节)。"""
+    """断言①首页正文成立（去空白归一化行上匹配锚点正则；2026-09-06 v3适配：另试块级拼行——
+    锚点串被双栏折行劈开时仍可命中）。返回 (结论, 细节)。"""
     n_all, lines = body_blocks(pdf_path, page)
     if n_all == 0:
         return '不判定', '首页可抽取块数=0（fail-closed）'
     rx = re.compile(anchor_re)
+    stem_n = nospc(stem)
     for ln in lines:
-        for seg in ln['text'].split('\n'):
-            seg = nospc(seg)
+        segs = [nospc(seg) for seg in ln['text'].split('\n')]
+        segs.append(nospc(ln['text']))              # 块级拼行（拆行容错）
+        for seg in segs:
             if rx.match(seg):
-                if seg == nospc(stem):
+                if seg == stem_n:
                     return 'FAIL', '锚点块与文件名主干同串'
                 return 'PASS', '锚点命中: %s @y=%.0f' % (seg[:40], ln['bbox'][1])
     return 'FAIL', '首页正文区未见锚点块（块数=%d 正文区行数=%d）' % (n_all, len(lines))
@@ -441,8 +488,10 @@ def make_p1(pairs, out):
         print('[%s] 首页PDF裁剪完成 %dKB' % (code, os.path.getsize(dst) // 1024))
 
 
-def run_assertions(pairs, out, negative=None, neg_code=None):
-    mpath = os.path.join(out, '锚点映射表v1.json')
+def run_assertions(pairs, out, negative=None, neg_code=None, mapping_path=None):
+    # 2026-09-06 收尾-B：--mapping 可直载附则注册锚点映射表（v3，PDF 终态实测定标＝权威源）；
+    # 缺省仍用本目录自产 锚点映射表v1.json（docx 实测，题名内嵌公式件文字层不可见）。
+    mpath = mapping_path or os.path.join(out, '锚点映射表v1.json')
     mapping = json.load(open(mpath, encoding='utf-8'))
     results = {}
     for code, path in pairs:
@@ -519,7 +568,7 @@ def main():
             if '=' in a:
                 k, v = a.split('=', 1)
                 opts[k] = v
-            elif a in ('--out', '--negative', '--neg-code') and i + 1 < len(sys.argv):
+            elif a in ('--out', '--negative', '--neg-code', '--mapping') and i + 1 < len(sys.argv):
                 opts[a] = sys.argv[i + 1]
                 i += 1
             else:
@@ -538,7 +587,8 @@ def main():
     if '--make-p1' in opts:
         make_p1(pairs, out)
     if '--run' in opts:
-        run_assertions(pairs, out, opts.get('--negative'), opts.get('--neg-code'))
+        run_assertions(pairs, out, opts.get('--negative'), opts.get('--neg-code'),
+                       opts.get('--mapping'))
 
 
 if __name__ == '__main__':
