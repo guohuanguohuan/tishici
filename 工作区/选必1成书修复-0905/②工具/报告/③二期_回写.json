@@ -1,0 +1,44 @@
+{
+ "册目录页_核对": {
+  "sync_md5": "b5c2bbda6f173f185f3d69a2080042f6",
+  "anchor": "b5c2bbda6f173f185f3d69a2080042f6",
+  "equal": true
+ },
+ "装订单_核对": {
+  "sync_md5": "d59e6a52bd8bf2d65e96be567a5eb9fb",
+  "anchor": "d59e6a52bd8bf2d65e96be567a5eb9fb",
+  "equal": true
+ },
+ "清单1": {
+  "pre_md5": "b3175eae9d57742f66621549a48f1b0b",
+  "post_md5": "8e80aff507fe798876177f62acd648ef",
+  "src_md5": "8e80aff507fe798876177f62acd648ef",
+  "write_ok": true,
+  "omath": 396,
+  "footer样本": []
+ },
+ "清单2": {
+  "pre_md5": "cf79bdc95a8f9d8b092e158477831482",
+  "post_md5": "ed14608c28ebc034989c1b9d07ba34ad",
+  "src_md5": "ed14608c28ebc034989c1b9d07ba34ad",
+  "write_ok": true,
+  "omath": 1156,
+  "footer样本": []
+ },
+ "上61": {
+  "pre_md5": "139722a461839f6fc15bba20e1afbc44",
+  "post_md5": "ca657b0f43bcd9022525ebdaefca1879",
+  "src_md5": "ca657b0f43bcd9022525ebdaefca1879",
+  "write_ok": true,
+  "omath": 3251,
+  "footer样本": []
+ },
+ "下79": {
+  "pre_md5": "fbe2cd47290b0d60049669516aa0ef49",
+  "post_md5": "cf6421a36e4cd3489389c3ac991c84b1",
+  "src_md5": "cf6421a36e4cd3489389c3ac991c84b1",
+  "write_ok": true,
+  "omath": 2876,
+  "footer样本": []
+ }
+}

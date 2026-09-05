@@ -1,0 +1,86 @@
+{
+ "order": "C:\\提示词\\工作区\\选必1成书修复-0905\\阶段④\\自验输入\\测试装订单.md",
+ "input_dir": "C:\\提示词\\工作区\\选必1成书修复-0905\\阶段④\\自验输入",
+ "generated": "2026-09-05T10:19:31",
+ "no_xianjie": false,
+ "outputs": {
+  "整册": {
+   "file": "自验册·整册.pdf",
+   "total_pages": 20,
+   "pieces": [
+    {
+     "xu": 1,
+     "name": "衔接件（13题）",
+     "file": "人教B版选必1 第2章 平面解析几何·衔接件（13题）.pdf",
+     "order_pages": "5",
+     "src_pages": 5,
+     "blanks": 1,
+     "merged_range": "1–6"
+    },
+    {
+     "xu": 2,
+     "name": "衔接件（29题）",
+     "file": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.pdf",
+     "order_pages": "14",
+     "src_pages": 14,
+     "blanks": 0,
+     "merged_range": "7–20"
+    }
+   ]
+  },
+  "大分本-衔接本": {
+   "file": "自验册·大分本-衔接本.pdf",
+   "total_pages": 20,
+   "pieces": [
+    {
+     "xu": 1,
+     "name": "衔接件（13题）",
+     "file": "人教B版选必1 第2章 平面解析几何·衔接件（13题）.pdf",
+     "order_pages": "5",
+     "src_pages": 5,
+     "blanks": 1,
+     "merged_range": "1–6"
+    },
+    {
+     "xu": 2,
+     "name": "衔接件（29题）",
+     "file": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.pdf",
+     "order_pages": "14",
+     "src_pages": 14,
+     "blanks": 0,
+     "merged_range": "7–20"
+    }
+   ]
+  },
+  "本1": {
+   "file": "自验册·本1.pdf",
+   "total_pages": 6,
+   "pieces": [
+    {
+     "xu": 1,
+     "name": "衔接件（13题）",
+     "file": "人教B版选必1 第2章 平面解析几何·衔接件（13题）.pdf",
+     "order_pages": "5",
+     "src_pages": 5,
+     "blanks": 1,
+     "merged_range": "1–6"
+    }
+   ]
+  },
+  "本2": {
+   "file": "自验册·本2.pdf",
+   "total_pages": 14,
+   "pieces": [
+    {
+     "xu": 2,
+     "name": "衔接件（29题）",
+     "file": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.pdf",
+     "order_pages": "14",
+     "src_pages": 14,
+     "blanks": 0,
+     "merged_range": "1–14"
+    }
+   ]
+  }
+ }
+}
