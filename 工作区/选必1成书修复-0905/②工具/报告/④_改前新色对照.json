@@ -1,0 +1,87 @@
+{
+ "I1清单1": {
+  "diff_count": 0,
+  "diffs": [],
+  "auto_tc3_ok": null,
+  "ok": true
+ },
+ "X1衔接1": {
+  "diff_count": 0,
+  "diffs": [],
+  "auto_tc3_ok": null,
+  "ok": true
+ },
+ "B讲练1上": {
+  "diffs": [],
+  "attribution": "遗留3项（删5字＋孤儿图）允许位移——逐行登记"
+ },
+ "C讲练1下": {
+  "diff_count": 0,
+  "diffs": [],
+  "auto_tc3_ok": null,
+  "ok": true
+ },
+ "I2清单2": {
+  "diff_count": 4,
+  "diffs": [
+   "-C7C7C7 全挂点分桶（构造性恒等——修历史bug恒差1）：run 754｜run空文本 1｜段级 0｜段落标记 0｜tcPr 0｜om_mr 242｜om_ctrl 89｜tbl/tr 0｜其他 0｜Σ 1085＝document.xml 原始 1085 ✓",
+   "+C7C7C7 全挂点分桶（构造性恒等——修历史bug恒差1）：run 754｜run空文本 1｜段级 0｜段落标记 0｜tcPr 3｜om_mr 242｜om_ctrl 89｜tbl/tr 0｜其他 0｜Σ 1088＝document.xml 原始 1088 ✓",
+   "-登记不入七类：表内非标签灰底run 0｜tcPr底纹（导航表头等） 0｜空文本灰底run 1｜未归类 0",
+   "+登记不入七类：表内非标签灰底run 0｜tcPr底纹（导航表头等） 3｜空文本灰底run 1｜未归类 0"
+  ],
+  "auto_tc3_ok": true,
+  "ok": true
+ },
+ "X2衔接2": {
+  "diff_count": 0,
+  "diffs": [],
+  "auto_tc3_ok": null,
+  "ok": true
+ },
+ "E讲练92": {
+  "diff_count": 0,
+  "diffs": [],
+  "auto_tc3_ok": null,
+  "ok": true
+ },
+ "F讲练90": {
+  "diff_count": 0,
+  "diffs": [],
+  "auto_tc3_ok": null,
+  "ok": true
+ },
+ "G讲练68": {
+  "diff_count": 4,
+  "diffs": [
+   "-C7C7C7 全挂点分桶（构造性恒等——修历史bug恒差1）：run 337｜run空文本 1｜段级 0｜段落标记 0｜tcPr 0｜om_mr 7｜om_ctrl 3｜tbl/tr 0｜其他 0｜Σ 347＝document.xml 原始 347 ✓",
+   "+C7C7C7 全挂点分桶（构造性恒等——修历史bug恒差1）：run 337｜run空文本 1｜段级 0｜段落标记 0｜tcPr 3｜om_mr 7｜om_ctrl 3｜tbl/tr 0｜其他 0｜Σ 350＝document.xml 原始 350 ✓",
+   "-登记不入七类：表内非标签灰底run 0｜tcPr底纹（导航表头等） 0｜空文本灰底run 1｜未归类 0",
+   "+登记不入七类：表内非标签灰底run 0｜tcPr底纹（导航表头等） 3｜空文本灰底run 1｜未归类 0"
+  ],
+  "auto_tc3_ok": true,
+  "ok": true
+ },
+ "H讲练89": {
+  "diff_count": 4,
+  "diffs": [
+   "-C7C7C7 全挂点分桶（构造性恒等——修历史bug恒差1）：run 67｜run空文本 0｜段级 0｜段落标记 0｜tcPr 0｜om_mr 0｜om_ctrl 0｜tbl/tr 0｜其他 0｜Σ 67＝document.xml 原始 67 ✓",
+   "+C7C7C7 全挂点分桶（构造性恒等——修历史bug恒差1）：run 67｜run空文本 0｜段级 0｜段落标记 0｜tcPr 3｜om_mr 0｜om_ctrl 0｜tbl/tr 0｜其他 0｜Σ 70＝document.xml 原始 70 ✓",
+   "-登记不入七类：表内非标签灰底run 0｜tcPr底纹（导航表头等） 0｜空文本灰底run 0｜未归类 0",
+   "+登记不入七类：表内非标签灰底run 0｜tcPr底纹（导航表头等） 3｜空文本灰底run 0｜未归类 0"
+  ],
+  "auto_tc3_ok": true,
+  "ok": true
+ },
+ "SM使用说明": {
+  "diff_count": 0,
+  "diffs": [],
+  "auto_tc3_ok": null,
+  "ok": true
+ },
+ "TOC册目录页": {
+  "diff_count": 0,
+  "diffs": [],
+  "auto_tc3_ok": null,
+  "ok": true
+ }
+}

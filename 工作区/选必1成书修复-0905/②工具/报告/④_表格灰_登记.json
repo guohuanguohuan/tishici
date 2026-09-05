@@ -1,0 +1,236 @@
+{
+ "I2清单2": {
+  "file": "人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx",
+  "recolor": [
+   {
+    "old": "w:color=\"CCCCCC\"",
+    "new": "w:color=\"000000\"",
+    "n": 96
+   },
+   {
+    "old": "w:fill=\"F2F5F9\"",
+    "new": "w:fill=\"C7C7C7\"",
+    "n": 3
+   }
+  ],
+  "deleted_shd": [
+   {
+    "fill": "FAFBFC",
+    "cell_text": "定义方程关系",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "三角形周长",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "L = 2(a + c) （定值）",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "L = 2c + |P| + |P| （变量）",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "焦半径乘积",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "面积秒杀公式",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "S =  · tan(θ/2)",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "S =  · cot(θ/2)",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "面积最大值",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "顶角最值与离心率",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "sin(θ_max / 2) = e",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "无最大角（θ 可无限接近 π）",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "几何核心特征",
+    "row_is_header": false
+   }
+  ],
+  "deleted_shd_count": 13,
+  "fam_pre": {
+   "w:t": 4045,
+   "m:oMath": 1156,
+   "m:t": 7227,
+   "m:oMathPara": 121,
+   "wp:inline": 65,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 4045,
+   "m:oMath": 1156,
+   "m:t": 7227,
+   "m:oMathPara": 121,
+   "wp:inline": 65,
+   "wp:anchor": 0
+  },
+  "fam_ok": true
+ },
+ "G讲练68": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx",
+  "recolor": [
+   {
+    "old": "w:color=\"CCCCCC\"",
+    "new": "w:color=\"000000\"",
+    "n": 96
+   },
+   {
+    "old": "w:fill=\"F2F5F9\"",
+    "new": "w:fill=\"C7C7C7\"",
+    "n": 3
+   }
+  ],
+  "deleted_shd": [
+   {
+    "fill": "FAFBFC",
+    "cell_text": "定义方程关系",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "三角形周长",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "L = 2(a + c) （定值）",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "L = 2c + |P| + |P| （变量）",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "焦半径乘积",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "面积秒杀公式",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "S =  · tan(θ/2)",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "S =  · cot(θ/2)",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "面积最大值",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "顶角最值与离心率",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "sin(θ_max / 2) = e",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFAFA",
+    "cell_text": "无最大角（θ 可无限接近 π）",
+    "row_is_header": false
+   },
+   {
+    "fill": "FAFBFC",
+    "cell_text": "几何核心特征",
+    "row_is_header": false
+   }
+  ],
+  "deleted_shd_count": 13,
+  "fam_pre": {
+   "w:t": 6844,
+   "m:oMath": 2359,
+   "m:t": 9731,
+   "m:oMathPara": 5,
+   "wp:inline": 68,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 6844,
+   "m:oMath": 2359,
+   "m:t": 9731,
+   "m:oMathPara": 5,
+   "wp:inline": 68,
+   "wp:anchor": 0
+  },
+  "fam_ok": true
+ },
+ "H讲练89": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx",
+  "recolor": [
+   {
+    "old": "w:color=\"E0E0E0\"",
+    "new": "w:color=\"000000\"",
+    "n": 60
+   },
+   {
+    "old": "w:fill=\"F2F5F8\"",
+    "new": "w:fill=\"C7C7C7\"",
+    "n": 3
+   }
+  ],
+  "deleted_shd": [],
+  "deleted_shd_count": 0,
+  "fam_pre": {
+   "w:t": 10431,
+   "m:oMath": 4034,
+   "m:t": 28871,
+   "m:oMathPara": 780,
+   "wp:inline": 79,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 10431,
+   "m:oMath": 4034,
+   "m:t": 28871,
+   "m:oMathPara": 780,
+   "wp:inline": 79,
+   "wp:anchor": 0
+  },
+  "fam_ok": true
+ }
+}

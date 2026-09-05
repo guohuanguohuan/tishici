@@ -1,0 +1,372 @@
+{
+ "I1清单1": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何·知识清单（完成）.docx",
+  "dry_expect": 1353,
+  "replaced": 1353,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 1620,
+   "m:oMath": 396,
+   "m:t": 1911,
+   "m:oMathPara": 0,
+   "wp:inline": 22,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 1620,
+   "m:oMath": 396,
+   "m:t": 1911,
+   "m:oMathPara": 0,
+   "wp:inline": 22,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 1353 处"
+ },
+ "X1衔接1": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何·衔接件（29题）.docx",
+  "dry_expect": 245,
+  "replaced": 245,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 1655,
+   "m:oMath": 882,
+   "m:t": 1768,
+   "m:oMathPara": 0,
+   "wp:inline": 57,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 1655,
+   "m:oMath": 882,
+   "m:t": 1768,
+   "m:oMathPara": 0,
+   "wp:inline": 57,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 245 处"
+ },
+ "B讲练1上": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何（上）·讲练件（61题）.docx",
+  "dry_expect": 880,
+  "replaced": 880,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 8532,
+   "m:oMath": 3251,
+   "m:t": 14824,
+   "m:oMathPara": 0,
+   "wp:inline": 141,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 8532,
+   "m:oMath": 3251,
+   "m:t": 14824,
+   "m:oMathPara": 0,
+   "wp:inline": 141,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 880 处"
+ },
+ "C讲练1下": {
+  "file": "人教B版选必1 第1章 空间向量与立体几何（下）·讲练件（79题）.docx",
+  "dry_expect": 466,
+  "replaced": 466,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 8305,
+   "m:oMath": 2876,
+   "m:t": 12266,
+   "m:oMathPara": 0,
+   "wp:inline": 164,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 8305,
+   "m:oMath": 2876,
+   "m:t": 12266,
+   "m:oMathPara": 0,
+   "wp:inline": 164,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 466 处"
+ },
+ "I2清单2": {
+  "file": "人教B版选必1 第2章 平面解析几何·知识清单（完成）.docx",
+  "dry_expect": 1085,
+  "replaced": 1085,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 4059,
+   "m:oMath": 1156,
+   "m:t": 7227,
+   "m:oMathPara": 121,
+   "wp:inline": 65,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 4059,
+   "m:oMath": 1156,
+   "m:t": 7227,
+   "m:oMathPara": 121,
+   "wp:inline": 65,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 1085 处"
+ },
+ "X2衔接2": {
+  "file": "人教B版选必1 第2章 平面解析几何·衔接件（13题）.docx",
+  "dry_expect": 150,
+  "replaced": 150,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 488,
+   "m:oMath": 243,
+   "m:t": 1912,
+   "m:oMathPara": 0,
+   "wp:inline": 0,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 488,
+   "m:oMath": 243,
+   "m:t": 1912,
+   "m:oMathPara": 0,
+   "wp:inline": 0,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 150 处"
+ },
+ "E讲练92": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.1—2.3.3）·讲练件（92题）.docx",
+  "dry_expect": 354,
+  "replaced": 354,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 7525,
+   "m:oMath": 2705,
+   "m:t": 15169,
+   "m:oMathPara": 10,
+   "wp:inline": 90,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 7525,
+   "m:oMath": 2705,
+   "m:t": 15169,
+   "m:oMathPara": 10,
+   "wp:inline": 90,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 354 处"
+ },
+ "F讲练90": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx",
+  "dry_expect": 340,
+  "replaced": 340,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 7369,
+   "m:oMath": 2914,
+   "m:t": 19981,
+   "m:oMathPara": 5,
+   "wp:inline": 66,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 7369,
+   "m:oMath": 2914,
+   "m:t": 19981,
+   "m:oMathPara": 5,
+   "wp:inline": 66,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 340 处"
+ },
+ "G讲练68": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.6.1—2.7.2）·讲练件（68题）.docx",
+  "dry_expect": 347,
+  "replaced": 347,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 6858,
+   "m:oMath": 2359,
+   "m:t": 9731,
+   "m:oMathPara": 5,
+   "wp:inline": 68,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 6858,
+   "m:oMath": 2359,
+   "m:t": 9731,
+   "m:oMathPara": 5,
+   "wp:inline": 68,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 347 处"
+ },
+ "H讲练89": {
+  "file": "人教B版选必1 第2章 平面解析几何（2.8）·讲练件（89题）.docx",
+  "dry_expect": 67,
+  "replaced": 67,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 10445,
+   "m:oMath": 4034,
+   "m:t": 28871,
+   "m:oMathPara": 780,
+   "wp:inline": 79,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 10445,
+   "m:oMath": 4034,
+   "m:t": 28871,
+   "m:oMathPara": 780,
+   "wp:inline": 79,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 67 处"
+ },
+ "SM使用说明": {
+  "file": "人教B版选必1·使用说明.docx",
+  "dry_expect": 7,
+  "replaced": 7,
+  "diff_members": [
+   "word/document.xml"
+  ],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 57,
+   "m:oMath": 0,
+   "m:t": 0,
+   "m:oMathPara": 0,
+   "wp:inline": 0,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 57,
+   "m:oMath": 0,
+   "m:t": 0,
+   "m:oMathPara": 0,
+   "wp:inline": 0,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 7 处"
+ },
+ "TOC册目录页": {
+  "file": "人教B版选必1·册目录页.docx",
+  "dry_expect": 0,
+  "replaced": 0,
+  "diff_members": [],
+  "names_ok": true,
+  "byte_ok": true,
+  "fam_pre": {
+   "w:t": 36,
+   "m:oMath": 0,
+   "m:t": 0,
+   "m:oMathPara": 0,
+   "wp:inline": 0,
+   "wp:anchor": 0
+  },
+  "fam_post": {
+   "w:t": 36,
+   "m:oMath": 0,
+   "m:t": 0,
+   "m:oMathPara": 0,
+   "wp:inline": 0,
+   "wp:anchor": 0
+  },
+  "fam_ok": true,
+  "idem_ok": true,
+  "cnt_ok": true,
+  "ok": true,
+  "tool_line": "合计 C9C9C9→C7C7C7 0 处"
+ }
+}

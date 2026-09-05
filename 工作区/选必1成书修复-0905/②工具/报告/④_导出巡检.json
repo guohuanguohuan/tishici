@@ -1,0 +1,137 @@
+{
+ "I1清单1": {
+  "pages_new": 15,
+  "pages_old": 15,
+  "toc_new": 10,
+  "toc_5": 10,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "X1衔接1": {
+  "pages_new": 15,
+  "pages_old": 15,
+  "toc_new": 2,
+  "toc_5": 2,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "B讲练1上": {
+  "pages_new": 65,
+  "pages_old": 65,
+  "toc_new": 133,
+  "toc_5": 133,
+  "diff_pages": [
+   23,
+   24
+  ],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "C讲练1下": {
+  "pages_new": 62,
+  "pages_old": 62,
+  "toc_new": 181,
+  "toc_5": 181,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "I2清单2": {
+  "pages_new": 32,
+  "pages_old": 32,
+  "toc_new": 20,
+  "toc_5": 20,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "X2衔接2": {
+  "pages_new": 5,
+  "pages_old": 5,
+  "toc_new": 1,
+  "toc_5": 1,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "E讲练92": {
+  "pages_new": 58,
+  "pages_old": 58,
+  "toc_new": 10,
+  "toc_5": 10,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "F讲练90": {
+  "pages_new": 58,
+  "pages_old": 58,
+  "toc_new": 5,
+  "toc_5": 5,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "G讲练68": {
+  "pages_new": 47,
+  "pages_old": 47,
+  "toc_new": 32,
+  "toc_5": 32,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "H讲练89": {
+  "pages_new": 73,
+  "pages_old": 73,
+  "toc_new": 1,
+  "toc_5": 1,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "SM使用说明": {
+  "pages_new": 2,
+  "pages_old": 2,
+  "toc_new": 0,
+  "toc_5": 0,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ },
+ "TOC册目录页": {
+  "pages_new": 1,
+  "pages_old": 1,
+  "toc_new": 0,
+  "toc_5": 0,
+  "diff_pages": [],
+  "page_same": true,
+  "toc_same": true,
+  "text_ok": true,
+  "ok": true
+ }
+}

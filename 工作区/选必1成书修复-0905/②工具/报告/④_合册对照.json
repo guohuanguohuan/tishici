@@ -1,0 +1,96 @@
+{
+ "keep_md5": {
+  "人教B版选必1·封面.pdf": {
+   "src_md5": "9f8713a95629b3137feed1bc8dc01dc1",
+   "stage_md5": "9f8713a95629b3137feed1bc8dc01dc1"
+  },
+  "人教B版选必1·部分封面（第1章 空间向量与立体几何·衔接）.pdf": {
+   "src_md5": "b70869a2f2fc9a4514d673db51f6f32b",
+   "stage_md5": "b70869a2f2fc9a4514d673db51f6f32b"
+  },
+  "人教B版选必1·部分封面（第1章 空间向量与立体几何·清单）.pdf": {
+   "src_md5": "f20b99f2a804d93e705d85394bff603c",
+   "stage_md5": "f20b99f2a804d93e705d85394bff603c"
+  },
+  "人教B版选必1·部分封面（第1章 空间向量与立体几何·讲练）.pdf": {
+   "src_md5": "5c15291bd6e598d91fc0a218fb8b4c4e",
+   "stage_md5": "5c15291bd6e598d91fc0a218fb8b4c4e"
+  },
+  "人教B版选必1·部分封面（第2章 平面解析几何·衔接）.pdf": {
+   "src_md5": "e9648a846155c4449b9ec32ebc36da51",
+   "stage_md5": "e9648a846155c4449b9ec32ebc36da51"
+  },
+  "人教B版选必1·部分封面（第2章 平面解析几何·清单）.pdf": {
+   "src_md5": "60c3ee39ac556fa656d077a4a96eb065",
+   "stage_md5": "60c3ee39ac556fa656d077a4a96eb065"
+  },
+  "人教B版选必1·部分封面（第2章 平面解析几何·讲练）.pdf": {
+   "src_md5": "88635a2024243e5fcd732d778f3e8857",
+   "stage_md5": "88635a2024243e5fcd732d778f3e8857"
+  }
+ },
+ "cmp": {
+  "整册": {
+   "old": 454,
+   "new": 454,
+   "pieces_same": true,
+   "ok": true
+  },
+  "大分本-衔接本": {
+   "old": 26,
+   "new": 26,
+   "pieces_same": true,
+   "ok": true
+  },
+  "大分本-清单本": {
+   "old": 52,
+   "new": 52,
+   "pieces_same": true,
+   "ok": true
+  },
+  "大分本-讲练本": {
+   "old": 370,
+   "new": 370,
+   "pieces_same": true,
+   "ok": true
+  },
+  "本1": {
+   "old": 24,
+   "new": 24,
+   "pieces_same": true,
+   "ok": true
+  },
+  "本2": {
+   "old": 18,
+   "new": 18,
+   "pieces_same": true,
+   "ok": true
+  },
+  "本3": {
+   "old": 130,
+   "new": 130,
+   "pieces_same": true,
+   "ok": true
+  },
+  "本4": {
+   "old": 8,
+   "new": 8,
+   "pieces_same": true,
+   "ok": true
+  },
+  "本5": {
+   "old": 34,
+   "new": 34,
+   "pieces_same": true,
+   "ok": true
+  },
+  "本6": {
+   "old": 240,
+   "new": 240,
+   "pieces_same": true,
+   "ok": true
+  }
+ },
+ "ok": true,
+ "new_registry": "C:\\提示词\\工作区\\选必1成书修复-0905\\②工具\\PDF对比\\④轮合册\\人教B版选必1·合册补白登记.json"
+}

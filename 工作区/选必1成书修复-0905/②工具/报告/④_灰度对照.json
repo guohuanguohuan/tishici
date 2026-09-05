@@ -1,0 +1,431 @@
+{
+ "I1清单1": {
+  "new": {
+   "vec": [
+    12,
+    0,
+    1215,
+    0
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 17,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    12,
+    0,
+    0,
+    0
+   ],
+   "sig": 1215,
+   "vout": 0,
+   "pout": 17,
+   "vout_hex": {}
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ },
+ "X1衔接1": {
+  "new": {
+   "vec": [
+    3,
+    0,
+    271,
+    100
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 8,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    3,
+    0,
+    0,
+    100
+   ],
+   "sig": 271,
+   "vout": 0,
+   "pout": 8,
+   "vout_hex": {}
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ },
+ "B讲练1上": {
+  "new": {
+   "vec": [
+    11,
+    0,
+    771,
+    363
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 18,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    11,
+    0,
+    0,
+    363
+   ],
+   "sig": 771,
+   "vout": 0,
+   "pout": 18,
+   "vout_hex": {}
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ },
+ "C讲练1下": {
+  "new": {
+   "vec": [
+    1,
+    0,
+    443,
+    419
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 15,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    1,
+    0,
+    0,
+    419
+   ],
+   "sig": 443,
+   "vout": 0,
+   "pout": 15,
+   "vout_hex": {}
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ },
+ "I2清单2": {
+  "new": {
+   "vec": [
+    21,
+    0,
+    762,
+    0
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 17,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    21,
+    0,
+    0,
+    0
+   ],
+   "sig": 732,
+   "vout": 3,
+   "pout": 17,
+   "vout_hex": {
+    "CCCCCC": "125",
+    "F2F5F9": "30",
+    "FAFAFA": "28"
+   }
+  },
+  "delta_pages": {
+   "18": 15,
+   "19": 15
+  },
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [
+   18,
+   19
+  ],
+  "ok": true
+ },
+ "X2衔接2": {
+  "new": {
+   "vec": [
+    2,
+    0,
+    147,
+    41
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 9,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    2,
+    0,
+    0,
+    41
+   ],
+   "sig": 147,
+   "vout": 0,
+   "pout": 9,
+   "vout_hex": {}
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ },
+ "E讲练92": {
+  "new": {
+   "vec": [
+    11,
+    0,
+    338,
+    494
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 22,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    11,
+    0,
+    0,
+    494
+   ],
+   "sig": 338,
+   "vout": 0,
+   "pout": 22,
+   "vout_hex": {}
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ },
+ "F讲练90": {
+  "new": {
+   "vec": [
+    5,
+    0,
+    219,
+    544
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 6,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    5,
+    0,
+    0,
+    544
+   ],
+   "sig": 219,
+   "vout": 0,
+   "pout": 6,
+   "vout_hex": {}
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ },
+ "G讲练68": {
+  "new": {
+   "vec": [
+    6,
+    0,
+    159,
+    350
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 8,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    6,
+    0,
+    0,
+    350
+   ],
+   "sig": 129,
+   "vout": 3,
+   "pout": 8,
+   "vout_hex": {
+    "CCCCCC": "125",
+    "F2F5F9": "30",
+    "FAFAFA": "28"
+   }
+  },
+  "delta_pages": {
+   "11": 30
+  },
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [
+   11
+  ],
+  "ok": true
+ },
+ "H讲练89": {
+  "new": {
+   "vec": [
+    1,
+    0,
+    195,
+    508
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 18,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    1,
+    0,
+    0,
+    508
+   ],
+   "sig": 80,
+   "vout": 2,
+   "pout": 18,
+   "vout_hex": {
+    "E0E0E0": "164",
+    "F2F5F8": "115"
+   }
+  },
+  "delta_pages": {
+   "13": 23,
+   "14": 46,
+   "15": 46
+  },
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [
+   13,
+   14,
+   15
+  ],
+  "ok": true
+ },
+ "SM使用说明": {
+  "new": {
+   "vec": [
+    4,
+    2,
+    8,
+    0
+   ],
+   "sig": 0,
+   "vout": 1,
+   "pout": 2,
+   "vout_hex": {
+    "E0E0E0": "1"
+   }
+  },
+  "old": {
+   "vec": [
+    4,
+    2,
+    0,
+    0
+   ],
+   "sig": 8,
+   "vout": 1,
+   "pout": 2,
+   "vout_hex": {
+    "E0E0E0": "1"
+   }
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ },
+ "TOC册目录页": {
+  "new": {
+   "vec": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 0,
+   "vout_hex": {}
+  },
+  "old": {
+   "vec": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "sig": 0,
+   "vout": 0,
+   "pout": 0,
+   "vout_hex": {}
+  },
+  "delta_pages": {},
+  "sig_zero": true,
+  "vout_ok": true,
+  "loc_ok": true,
+  "pout_ok": true,
+  "delta_allow": [],
+  "ok": true
+ }
+}
