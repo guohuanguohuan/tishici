@@ -1,0 +1,48 @@
+{
+ "new_px": [
+  425,
+  342
+ ],
+ "old_px": [
+  425,
+  342
+ ],
+ "new_mode": "RGBA",
+ "old_mode": "RGBA",
+ "dpi": [
+  299.9994,
+  299.9994
+ ],
+ "alpha_min": 255,
+ "chroma_max": 0,
+ "ink_bbox_new(x0,y0,x1,y1,inkpx)": [
+  11,
+  7,
+  416,
+  319,
+  6474
+ ],
+ "ink_bbox_old(x0,y0,x1,y1,inkpx)": [
+  0,
+  9,
+  415,
+  341,
+  6379
+ ],
+ "margins_new_px": {
+  "left": 11,
+  "top": 7,
+  "right": 8,
+  "bottom": 22
+ },
+ "margins_old_px": {
+  "left": 0,
+  "top": 9,
+  "right": 9,
+  "bottom": 0
+ },
+ "ink_px_ratio": 1.0149,
+ "md5_new": "63403e8c77cb9e40d6c2192c812c66e1",
+ "md5_old_一期交付": "bba20e22a62aad472222978a61d24cdc",
+ "md5_③二期嵌入": "bfb3ca951889622dac65b4cd83c298cc"
+}

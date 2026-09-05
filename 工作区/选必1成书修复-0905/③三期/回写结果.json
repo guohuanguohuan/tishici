@@ -1,0 +1,23 @@
+{
+ "src_md5": "319438647184ae45e3644b5adbff1e11",
+ "image3_embedded_md5": "6c60d30a06cb9ebde7ba3a79e9b2ea13",
+ "pre_md5": "ed14608c28ebc034989c1b9d07ba34ad",
+ "post_md5": "319438647184ae45e3644b5adbff1e11",
+ "omath": 1156,
+ "image3_md5": "6c60d30a06cb9ebde7ba3a79e9b2ea13",
+ "wp_extent": "1095375x857250",
+ "footer_md5_equal": true,
+ "footer_sample": "word/footer1.xml: （共32页）·本5/共6本",
+ "联动件": {
+  "人教B版选必1·册目录页.docx": {
+   "md5": "b5c2bbda6f173f185f3d69a2080042f6",
+   "anchor": "b5c2bbda6f173f185f3d69a2080042f6",
+   "equal": true
+  },
+  "人教B版选必1·装订单.md": {
+   "md5": "d59e6a52bd8bf2d65e96be567a5eb9fb",
+   "anchor": "d59e6a52bd8bf2d65e96be567a5eb9fb",
+   "equal": true
+  }
+ }
+}

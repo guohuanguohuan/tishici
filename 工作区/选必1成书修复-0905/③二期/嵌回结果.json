@@ -1,0 +1,584 @@
+{
+ "清单1": {
+  "targets": {
+   "image17.jpg": {
+    "rid": "rIdW1_3",
+    "wp_extent": "3096000x2907118",
+    "old_aext": [
+     "3096000",
+     "2907118"
+    ],
+    "srcRect": "<a:srcRect l=\"6502\" t=\"27170\" r=\"8341\" b=\"27853\"/>",
+    "mode": "rename_derotate",
+    "new_file": "I1_image17.png",
+    "delivered_md5": "3e6cfcd05fa4709d8b34630c8c4c799f",
+    "embedded_md5": "ab87c9897aede6be3bcfa2333375d9d2",
+    "delivered_px": "543x496",
+    "embedded_px": "543x510",
+    "paint_ratio": 1.06497,
+    "img_ratio": 1.09476,
+    "dev_pct": 2.8,
+    "padded": true,
+    "paint_basis": "extent(去rot后)",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image17.png",
+    "embedded_media_md5": "ab87c9897aede6be3bcfa2333375d9d2"
+   },
+   "image18.jpg": {
+    "rid": "rIdW1_4",
+    "wp_extent": "1827391x3240000",
+    "old_aext": [
+     "2297094",
+     "3240000"
+    ],
+    "srcRect": "<a:srcRect l=\"2713\" t=\"20442\" r=\"9771\" b=\"10125\"/>",
+    "mode": "rename_shrink_aext",
+    "new_file": "I1_image18.png",
+    "delivered_md5": "e04a1b7edcf656a06ea7b14641a75b25",
+    "embedded_md5": "825cec96f8e2228612aea3c41dce820e",
+    "delivered_px": "519x519",
+    "embedded_px": "519x730",
+    "paint_ratio": 0.71084,
+    "img_ratio": 1.0,
+    "dev_pct": 40.68,
+    "padded": true,
+    "paint_basis": "新a:ext=(1827391, 2570731)",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image18.png",
+    "embedded_media_md5": "825cec96f8e2228612aea3c41dce820e"
+   }
+  },
+  "pre_md5": "b3175eae9d57742f66621549a48f1b0b",
+  "rels_diffs": [
+   [
+    "rIdW1_3",
+    "media/image17.jpg",
+    "media/image17.png"
+   ],
+   [
+    "rIdW1_4",
+    "media/image18.jpg",
+    "media/image18.png"
+   ]
+  ],
+  "omath": 396,
+  "wt_count": 1585,
+  "added": [
+   "word/media/image17.png",
+   "word/media/image18.png"
+  ],
+  "removed": [
+   "word/media/image17.jpg",
+   "word/media/image18.jpg"
+  ],
+  "changed": [
+   "word/_rels/document.xml.rels",
+   "word/document.xml"
+  ],
+  "out_md5": "8e80aff507fe798876177f62acd648ef",
+  "out_size": 727982
+ },
+ "清单2": {
+  "targets": {
+   "image3.png": {
+    "rid": "rId10",
+    "wp_extent": "1095375x857250",
+    "old_aext": [
+     "1095375",
+     "857250"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image3.png",
+    "delivered_md5": "bba20e22a62aad472222978a61d24cdc",
+    "embedded_md5": "bfb3ca951889622dac65b4cd83c298cc",
+    "delivered_px": "425x342",
+    "embedded_px": "437x342",
+    "paint_ratio": 1.27778,
+    "img_ratio": 1.24269,
+    "dev_pct": 2.75,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image3.png",
+    "embedded_media_md5": "bfb3ca951889622dac65b4cd83c298cc"
+   },
+   "image4.png": {
+    "rid": "rId11",
+    "wp_extent": "876300x809625",
+    "old_aext": [
+     "876300",
+     "809625"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image4.png",
+    "delivered_md5": "0ef10e71d7180b7e791593980ec09971",
+    "embedded_md5": "0ef10e71d7180b7e791593980ec09971",
+    "delivered_px": "354x330",
+    "embedded_px": "354x330",
+    "paint_ratio": 1.08235,
+    "img_ratio": 1.07273,
+    "dev_pct": 0.89,
+    "padded": false,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image4.png",
+    "embedded_media_md5": "0ef10e71d7180b7e791593980ec09971"
+   },
+   "image5.png": {
+    "rid": "rId12",
+    "wp_extent": "609600x523875",
+    "old_aext": [
+     "609600",
+     "523875"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image5.png",
+    "delivered_md5": "c2cde21beb16d5c386e3173151fa750c",
+    "embedded_md5": "c2cde21beb16d5c386e3173151fa750c",
+    "delivered_px": "330x283",
+    "embedded_px": "330x283",
+    "paint_ratio": 1.16364,
+    "img_ratio": 1.16608,
+    "dev_pct": 0.21,
+    "padded": false,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image5.png",
+    "embedded_media_md5": "c2cde21beb16d5c386e3173151fa750c"
+   },
+   "image6.png": {
+    "rid": "rId13",
+    "wp_extent": "733425x733425",
+    "old_aext": [
+     "733425",
+     "733425"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image6.png",
+    "delivered_md5": "d9916a3ce1a55f26776b383ec5b2a3e1",
+    "embedded_md5": "47f2962785cd68f61405a407237b9fd0",
+    "delivered_px": "377x354",
+    "embedded_px": "377x377",
+    "paint_ratio": 1.0,
+    "img_ratio": 1.06497,
+    "dev_pct": 6.5,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image6.png",
+    "embedded_media_md5": "47f2962785cd68f61405a407237b9fd0"
+   },
+   "image25.png": {
+    "rid": "rId32",
+    "wp_extent": "841317x1067825",
+    "old_aext": [
+     "841317",
+     "1067825"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image25.png",
+    "delivered_md5": "47602fefbec9cee984d3ab959e82d3f0",
+    "embedded_md5": "3420cd2698382e8d8f937c7abb3e6d14",
+    "delivered_px": "401x472",
+    "embedded_px": "401x509",
+    "paint_ratio": 0.78788,
+    "img_ratio": 0.84958,
+    "dev_pct": 7.83,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image25.png",
+    "embedded_media_md5": "3420cd2698382e8d8f937c7abb3e6d14"
+   },
+   "image26.png": {
+    "rid": "rId33",
+    "wp_extent": "841431x990844",
+    "old_aext": [
+     "841431",
+     "990844"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image26.png",
+    "delivered_md5": "1c44e05158ff2262455476bc575f44c5",
+    "embedded_md5": "1c44e05158ff2262455476bc575f44c5",
+    "delivered_px": "401x472",
+    "embedded_px": "401x472",
+    "paint_ratio": 0.84921,
+    "img_ratio": 0.84958,
+    "dev_pct": 0.04,
+    "padded": false,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image26.png",
+    "embedded_media_md5": "1c44e05158ff2262455476bc575f44c5"
+   },
+   "image27.png": {
+    "rid": "rId34",
+    "wp_extent": "841378x872254",
+    "old_aext": [
+     "841378",
+     "872254"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image27.png",
+    "delivered_md5": "4f8452940e1b0a8ab5ff5469f87932f2",
+    "embedded_md5": "27086fe1d2f89851a3e07418ffbc31e2",
+    "delivered_px": "401x472",
+    "embedded_px": "455x472",
+    "paint_ratio": 0.9646,
+    "img_ratio": 0.84958,
+    "dev_pct": 11.92,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image27.png",
+    "embedded_media_md5": "27086fe1d2f89851a3e07418ffbc31e2"
+   },
+   "image28.png": {
+    "rid": "rId35",
+    "wp_extent": "841298x861652",
+    "old_aext": [
+     "841298",
+     "861652"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image28.png",
+    "delivered_md5": "7571761d6d613f568a148b1531d7386f",
+    "embedded_md5": "6e8316a75addd6fdc49d061c411296d6",
+    "delivered_px": "401x472",
+    "embedded_px": "461x472",
+    "paint_ratio": 0.97638,
+    "img_ratio": 0.84958,
+    "dev_pct": 12.99,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image28.png",
+    "embedded_media_md5": "6e8316a75addd6fdc49d061c411296d6"
+   },
+   "image29.png": {
+    "rid": "rId36",
+    "wp_extent": "431757x579909",
+    "old_aext": [
+     "431757",
+     "579909"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image29.png",
+    "delivered_md5": "47602fefbec9cee984d3ab959e82d3f0",
+    "embedded_md5": "fb9a7314f478ca8e06314bfc5d01c653",
+    "delivered_px": "401x472",
+    "embedded_px": "401x539",
+    "paint_ratio": 0.74453,
+    "img_ratio": 0.84958,
+    "dev_pct": 14.11,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image29.png",
+    "embedded_media_md5": "fb9a7314f478ca8e06314bfc5d01c653"
+   },
+   "image30.png": {
+    "rid": "rId37",
+    "wp_extent": "431854x538789",
+    "old_aext": [
+     "431854",
+     "538789"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image30.png",
+    "delivered_md5": "1c44e05158ff2262455476bc575f44c5",
+    "embedded_md5": "6bd55447f1237881875a58955adab11a",
+    "delivered_px": "401x472",
+    "embedded_px": "401x500",
+    "paint_ratio": 0.80153,
+    "img_ratio": 0.84958,
+    "dev_pct": 5.99,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image30.png",
+    "embedded_media_md5": "6bd55447f1237881875a58955adab11a"
+   },
+   "image31.png": {
+    "rid": "rId38",
+    "wp_extent": "518830x510659",
+    "old_aext": [
+     "518830",
+     "510659"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image31.png",
+    "delivered_md5": "4f8452940e1b0a8ab5ff5469f87932f2",
+    "embedded_md5": "97891f35bddc24c540cc7a26c0f8c0b2",
+    "delivered_px": "401x472",
+    "embedded_px": "480x472",
+    "paint_ratio": 1.016,
+    "img_ratio": 0.84958,
+    "dev_pct": 16.38,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image31.png",
+    "embedded_media_md5": "97891f35bddc24c540cc7a26c0f8c0b2"
+   },
+   "image32.png": {
+    "rid": "rId39",
+    "wp_extent": "431854x452418",
+    "old_aext": [
+     "431854",
+     "452418"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_image32.png",
+    "delivered_md5": "7571761d6d613f568a148b1531d7386f",
+    "embedded_md5": "53ac17d9af079f662d37d71f50e193af",
+    "delivered_px": "401x472",
+    "embedded_px": "451x472",
+    "paint_ratio": 0.95455,
+    "img_ratio": 0.84958,
+    "dev_pct": 11.0,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image32.png",
+    "embedded_media_md5": "53ac17d9af079f662d37d71f50e193af"
+   },
+   "imageW2044.png": {
+    "rid": "rId55",
+    "wp_extent": "1743075x1762125",
+    "old_aext": [
+     "1743075",
+     "1762125"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "I2_imageW2044.png",
+    "delivered_md5": "a78f1698cfb0f9a4776bf36146bfc1d8",
+    "embedded_md5": "a78f1698cfb0f9a4776bf36146bfc1d8",
+    "delivered_px": "543x543",
+    "embedded_px": "543x543",
+    "paint_ratio": 0.98919,
+    "img_ratio": 1.0,
+    "dev_pct": 1.09,
+    "padded": false,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "imageW2044.png",
+    "embedded_media_md5": "a78f1698cfb0f9a4776bf36146bfc1d8"
+   }
+  },
+  "pre_md5": "cf79bdc95a8f9d8b092e158477831482",
+  "omath": 1156,
+  "wt_count": 4007,
+  "added": [],
+  "removed": [],
+  "changed": [
+   "word/media/image25.png",
+   "word/media/image26.png",
+   "word/media/image27.png",
+   "word/media/image28.png",
+   "word/media/image29.png",
+   "word/media/image3.png",
+   "word/media/image30.png",
+   "word/media/image31.png",
+   "word/media/image32.png",
+   "word/media/image4.png",
+   "word/media/image5.png",
+   "word/media/image6.png",
+   "word/media/imageW2044.png"
+  ],
+  "out_md5": "ed14608c28ebc034989c1b9d07ba34ad",
+  "out_size": 1652354
+ },
+ "上61": {
+  "targets": {
+   "image76.png": {
+    "rid": "rId83",
+    "wp_extent": "3041652x2567266",
+    "old_aext": [
+     "3041652",
+     "2567266"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "B_image76.png",
+    "delivered_md5": "6cf0c8dee32cb6e944a1a50e1ee238dd",
+    "embedded_md5": "6cf0c8dee32cb6e944a1a50e1ee238dd",
+    "delivered_px": "614x519",
+    "embedded_px": "614x519",
+    "paint_ratio": 1.18478,
+    "img_ratio": 1.18304,
+    "dev_pct": 0.15,
+    "padded": false,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image76.png",
+    "embedded_media_md5": "6cf0c8dee32cb6e944a1a50e1ee238dd"
+   },
+   "image77.png": {
+    "rid": "rId84",
+    "wp_extent": "2968506x2312960",
+    "old_aext": [
+     "2968506",
+     "2312960"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "B_image77.png",
+    "delivered_md5": "6edba518d32e9b1467e669d93cd33db3",
+    "embedded_md5": "1881dcbd4eafcca3d821ac5724566419",
+    "delivered_px": "614x519",
+    "embedded_px": "666x519",
+    "paint_ratio": 1.28342,
+    "img_ratio": 1.18304,
+    "dev_pct": 7.82,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image77.png",
+    "embedded_media_md5": "1881dcbd4eafcca3d821ac5724566419"
+   },
+   "image78.png": {
+    "rid": "rId85",
+    "wp_extent": "2645445x2618990",
+    "old_aext": [
+     "2645445",
+     "2618990"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "B_image78.png",
+    "delivered_md5": "1af864788aff348ffc1be6911842d26b",
+    "embedded_md5": "22a8116cc2e1558011a35d54e2b97e62",
+    "delivered_px": "614x519",
+    "embedded_px": "614x608",
+    "paint_ratio": 1.0101,
+    "img_ratio": 1.18304,
+    "dev_pct": 17.12,
+    "padded": true,
+    "paint_basis": "extent",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "image78.png",
+    "embedded_media_md5": "22a8116cc2e1558011a35d54e2b97e62"
+   },
+   "sub3_B_17.jpg": {
+    "rid": "rId370",
+    "wp_extent": "1827391x3240000",
+    "old_aext": [
+     "2297094",
+     "3240000"
+    ],
+    "srcRect": "<a:srcRect l=\"2713\" t=\"20442\" r=\"9771\" b=\"10125\"/>",
+    "mode": "rename_shrink_aext",
+    "new_file": "B_sub3_B_17.png",
+    "delivered_md5": "e04a1b7edcf656a06ea7b14641a75b25",
+    "embedded_md5": "825cec96f8e2228612aea3c41dce820e",
+    "delivered_px": "519x519",
+    "embedded_px": "519x730",
+    "paint_ratio": 0.71084,
+    "img_ratio": 1.0,
+    "dev_pct": 40.68,
+    "padded": true,
+    "paint_basis": "新a:ext=(1827391, 2570731)",
+    "gray": "RGBA alpha=(255, 255) chroma=0",
+    "dpi": "300.0",
+    "embedded_name": "sub3_B_17.png",
+    "embedded_media_md5": "825cec96f8e2228612aea3c41dce820e"
+   }
+  },
+  "pre_md5": "139722a461839f6fc15bba20e1afbc44",
+  "rels_diffs": [
+   [
+    "rId370",
+    "media/sub3_B_17.jpg",
+    "media/sub3_B_17.png"
+   ]
+  ],
+  "omath": 3251,
+  "wt_count": 8482,
+  "added": [
+   "word/media/sub3_B_17.png"
+  ],
+  "removed": [
+   "word/media/sub3_B_17.jpg"
+  ],
+  "changed": [
+   "word/_rels/document.xml.rels",
+   "word/document.xml",
+   "word/media/image76.png",
+   "word/media/image77.png",
+   "word/media/image78.png"
+  ],
+  "out_md5": "ca657b0f43bcd9022525ebdaefca1879",
+  "out_size": 6464872
+ },
+ "下79": {
+  "targets": {
+   "image294.png": {
+    "rid": "rId324",
+    "wp_extent": "3096000x1285689",
+    "old_aext": [
+     "3096000",
+     "1285689"
+    ],
+    "srcRect": null,
+    "mode": "replace",
+    "new_file": "C_image294.png",
+    "delivered_md5": "ea405c275deae8b0ba6c7536634f00b5",
+    "embedded_md5": "ea405c275deae8b0ba6c7536634f00b5",
+    "delivered_px": "1016x422",
+    "embedded_px": "1016x422",
+    "paint_ratio": 2.40805,
+    "img_ratio": 2.40758,
+    "dev_pct": 0.02,
+    "padded": false,
+    "paint_basis": "extent",
+    "gray": "L",
+    "dpi": "300.0",
+    "embedded_name": "image294.png",
+    "embedded_media_md5": "ea405c275deae8b0ba6c7536634f00b5"
+   }
+  },
+  "pre_md5": "fbe2cd47290b0d60049669516aa0ef49",
+  "omath": 2876,
+  "wt_count": 8264,
+  "added": [],
+  "removed": [],
+  "changed": [
+   "word/media/image294.png"
+  ],
+  "out_md5": "cf6421a36e4cd3489389c3ac991c84b1",
+  "out_size": 5205464
+ }
+}

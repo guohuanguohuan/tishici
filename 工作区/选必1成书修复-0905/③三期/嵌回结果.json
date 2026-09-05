@@ -1,0 +1,20 @@
+{
+ "pre_md5": "ed14608c28ebc034989c1b9d07ba34ad",
+ "out_md5": "319438647184ae45e3644b5adbff1e11",
+ "target": "image3.png",
+ "rid": "rId10",
+ "wp_extent": "1095375x857250",
+ "delivered_md5": "63403e8c77cb9e40d6c2192c812c66e1",
+ "delivered_px": "425x342",
+ "embedded_md5": "6c60d30a06cb9ebde7ba3a79e9b2ea13",
+ "embedded_px": "437x342",
+ "padded": true,
+ "dev_pct": 2.75,
+ "dpi": "(299.9994, 299.9994)",
+ "omath": 1156,
+ "wt_count": 4007,
+ "changed_members": [
+  "word/media/image3.png"
+ ],
+ "old_embedded_md5_3二期": "bfb3ca951889622dac65b4cd83c298cc"
+}
