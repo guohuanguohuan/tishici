@@ -1,0 +1,135 @@
+{
+ "清单1": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 20.6,
+  "pages": 15,
+  "png_new": 15
+ },
+ "衔接1": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 23.0,
+  "pages": 15,
+  "png_new": 15
+ },
+ "上61": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 122.5,
+  "pages": 65,
+  "png_new": 65
+ },
+ "下79": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 102.8,
+  "pages": 62,
+  "png_new": 62
+ },
+ "清单2": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 51.9,
+  "pages": 32,
+  "png_new": 32
+ },
+ "衔接2": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 16.4,
+  "pages": 5,
+  "png_new": 5
+ },
+ "92": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 84.3,
+  "pages": 58,
+  "png_new": 58
+ },
+ "90": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 130.2,
+  "pages": 58,
+  "png_new": 58
+ },
+ "68": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 88.9,
+  "pages": 47,
+  "png_new": 47
+ },
+ "89": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 193.6,
+  "pages": 73,
+  "png_new": 73
+ },
+ "TOC": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 2.5,
+  "pages": 1,
+  "png_new": 1
+ },
+ "SM": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 3.0,
+  "pages": 2,
+  "png_new": 2
+ },
+ "COVER": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 2.3,
+  "pages": 1,
+  "png_new": 1
+ },
+ "PF1X": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 2.4,
+  "pages": 1,
+  "png_new": 1
+ },
+ "PF1Q": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 2.4,
+  "pages": 1,
+  "png_new": 1
+ },
+ "PF1J": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 2.4,
+  "pages": 1,
+  "png_new": 1
+ },
+ "PF2X": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 2.4,
+  "pages": 1,
+  "png_new": 1
+ },
+ "PF2Q": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 2.5,
+  "pages": 1,
+  "png_new": 1
+ },
+ "PF2J": {
+  "status": "OK",
+  "mode": "Word直导(尝试1)",
+  "seconds": 2.4,
+  "pages": 1,
+  "png_new": 1
+ }
+}
