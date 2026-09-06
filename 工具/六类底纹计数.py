@@ -36,19 +36,35 @@
 #   其余件型（衔接件/知识清单/学史切片等）照旧口径不变。
 """七类底纹计数（载体文件名沿用「六类底纹计数.py」——公共规则§7点名；旧名
   四类底纹计数.py 保留为兼容入口）— 四色板底纹分色计数与恒等式核验（只读，不改文件）：
-  ①标题整行底纹（章/节，段级 #ADC2DA）  ②标题整行底纹（讲部/题型，段级 #C6D4E3）
+  ①标题整行底纹（章/节，段级 #ADC2DA）  ②讲部/题型标题左竖条恒等式（2026-09-06 ⑥轮改：
+      减法后讲部/题型撤底纹改 w:pBdr 左 sz=18 竖条——竖条段数＝讲部+题型标题数；
+      旧底纹段级 #C6D4E3 转过渡签名登记、新件期望 0）
   ③内容标记族（run级 #C7C7C7——2026-09-06 22%灰真值更正，原 #C9C9C9 降为过渡残留签名）：题号块（新形只盖N．/节号-序号．＋过渡旧形）、块标签（含行内小标签
       与并行解法标记——跨run分裂标签按字符级灰底蒙版整chip识别）、条目号、条目第一子层、
       答案值/需背（含 OMML m:r/ctrlPr 挂点）
-  ⑦题干底纹（段级 #E0E0E0，PDF灰≈224）：恒等式＝题干底纹段数＝题干段清点数
+  ⑦题干底纹（段级 #F2F2F2，PDF灰≈242——2026-09-05 拍板调浅，E0E0E0≈224 退役降过渡签名）：
+      恒等式＝题干底纹段数＝题干段清点数
   恒等式（公共规则§7自检⑦现行口径，2026-09-01 七类版）：
-      题号块底纹run数＝题量（文件名口径并记）；标题整行底纹段数＝章+节+讲部+题型标题数
-      （章标题与文内开头标题一并入计，按色分记 ADC2DA/C6D4E3）；块标签run数＝标签计数；
+      题号块底纹run数＝题量（文件名口径并记）；标题整行底纹段数＝章+节标题数
+      （章标题与文内开头标题一并入计；讲部/题型竖条不计底纹）；块标签run数＝标签计数
+      （衔接件族例外＝标签行字段【答案】【知识点】计数、解析区标签清灰不挂——②C T6c）；
       条目号run数＝条目计数；第一子层run数＝第一子层计数；内容标记覆盖＝题块数；
       题干底纹段数＝题干段清点数（带题件；清单件全件白底）。
   违规：A6A6A6/D9D9D9（document+headers/footers+styles 全包扫描）＝0；w:bdr＝0；
+      E0E0E0 旧题干色转过渡签名登记（不阻断）；
       段级 C7C7C7 误挂＝0；run级 #ADC2DA/#C6D4E3 误挂＝0；新格式旧结构序号run残留＝0；
       加粗类（题号块须加粗；块标签/条目号/子层不加粗；标题整行加粗——effective 解析含样式链）。
+  ⑥轮口径修（2026-09-06，选必1 §六 trait 地面真相解剖后落刀）：
+      衔接件题号块『（衔接必会）』签名经 QBLOCK_HEAD_RE 归口题号块（加粗＝规则要求，
+      非条目号违规）；【知识点】标签行后随的非加粗无底纹无竖条数码起段＝知识点引文行
+      （题块字段值），排除出标题分类；题量锚兜底——extract_structure 提取0时非jlp退
+      题号块签名段数、jlp退文件名题量（工具债登记在板）；使用说明件图例区演示段
+      （§11图例豁免）恒等式/违规类转登记不阻断；⑦题干色值更正 FILL_STEM E0E0E0→
+      F2F2F2（2026-09-05 拍板调浅追认——8 带题件 F2F2F2 计数与题干段清点逐件相等实证），
+      E0E0E0 降过渡签名登记不阻断（口径同 CB-4）；衔接件族芯片口径＝标签行字段
+      （【答案】【知识点】）出现数、解析区标签挂灰＝0（②C T6c「衔接件解析块界定清灰」
+      2026-09-05 既定闭环——交接-新会话.md 43 行、样章明页「衔接1 p2·解析块清灰区」；
+      全枚举标签出现数转登记）。
   过渡残留签名 #C9C9C9（2026-09-06 CB-4）：单列计数登记（新件应＝0；④轮改色完成前存量旧件
       视同合规、不阻断——CB-4 口径），入报告不入 base_ok。
   改版前件（未检出段级标题底纹）：标题整行底纹恒等式标「不适用（改版前）」，旧结构序号
@@ -74,24 +90,26 @@ FILL_CONTENT = 'C7C7C7'      # ③内容标记族（PDF灰≈199；2026-09-06 22
 FILL_CONTENT_LEGACY = 'C9C9C9'   # 过渡残留签名（新件应＝0；存量过渡期登记不阻断——CB-4）
 FILL_TITLE1 = 'ADC2DA'       # ①章/节标题整行底纹（≈190）
 FILL_TITLE2 = 'C6D4E3'       # ②讲部/题型标题整行底纹（≈209）
-FILL_STEM = 'E0E0E0'        # ⑦题干底纹（≈224；A''口径——只挂段级 pPr；图段豁免）
-LEGACY_FILLS = ('A6A6A6', 'D9D9D9', 'F2F2F2')   # F2F2F2解析浅底A''废止→违规残留色
+FILL_STEM = 'F2F2F2'        # ⑦题干底纹（≈242；2026-09-05拍板调浅——公共规则§7题干底纹款；只挂段级 pPr；图段豁免）
+FILL_STEM_LEGACY = 'E0E0E0'  # 旧题干色（2026-09-05 拍板调浅后退役——过渡签名登记不阻断，口径同 CB-4）
+LEGACY_FILLS = ('A6A6A6', 'D9D9D9')   # 硬违规残留色（E0E0E0 旧题干色转过渡签名；F2F2F2 自 2026-09-05 起为现行题干色）
 PRODUCT_EXT = ('.docx', '.docm', '.doc', '.xlsx', '.xls', '.pptx', '.ppt', '.pdf', '.zip')
 
 # —— 与 工具/块标签芯片.py 同源口径（复制常量避免中文名模块导入脆性；改动须两处同步）——
 CHIP_RE = re.compile(r'【[^】]{1,16}】')
 CHIP_BLACKLIST = ('【易错】', '【了解】')
 CHIP_BLACKLIST_RE = re.compile(r'^【典例[^】]*】$')
+CHIP_FIELD_LABELS = ('【答案】', '【知识点】')   # 衔接件族芯片期望面＝标签行字段（解析区标签清灰——②C T6c 既定，2026-09-06 ⑥轮⑤）
 MARK_RE = re.compile(r'^(?:\(\d{1,2}\)|（\d{1,2}）)?(?:【[^】]{1,12}】)?(?:解：|证明：)?'
                      r'(［?(?:方法|解法)[一二三四五六七八九十]{1,3}］?|另解)[：:]?$')
 # 题号头两种线制：连续制「N．」／层级制「节号-序号．」（A'改制轮口径C——同步线层级制）
 NUM_HEAD = r'(?:\d+|\d+(?:\.\d+)+-\d+)'
 # 题号块段落前缀（三段式/两段式/过渡旧单段；退化件裸 N．经题块起点识别不靠本式）
-QBLOCK_HEAD_RE = re.compile(
+QBLOCK_HEAD_RE = re.compile(     # 2026-09-06 ⑥轮修：「·卡壳看答案」逐题提醒语已废止（公共规则L104），衔接必会括注改可选后缀
     r'^' + NUM_HEAD + r'．（(?:(?:简单|中档|难)(?:·(?:保60%|保80%|冲100%))?·卡壳看答案'
-    r'|衔接必会·卡壳看答案|(?:简单|中档|难))')
+    r'|衔接必会(?:·卡壳看答案)?|(?:简单|中档|难))')
 QNUM_LEGACY_RE = re.compile(     # 过渡期旧形：整块「号．（档位[·提分线·卡壳看答案]）」一个run
-    r'^' + NUM_HEAD + r'．（(?:(?:简单|中档|难)(?:·(?:保60%|保80%|冲100%)·卡壳看答案)?|衔接必会·卡壳看答案)）$')
+    r'^' + NUM_HEAD + r'．（(?:(?:简单|中档|难)(?:·(?:保60%|保80%|冲100%)·卡壳看答案)?|衔接必会(?:·卡壳看答案)?)）$')
 SECTNUM_RE = re.compile(r'^\d+(?:\.\d+){1,6} ?$')   # 旧结构序号 run（N4 废除形态）
 LECTURE_RE = re.compile(r'^\d+(?:\.\d+)*\s*(?:方法讲解|知识讲解)[｜|]')   # 知识讲解＝2026-09-04 子步3 清单权威源复制块讲部标题形态（§6 例外登记）
 # 讲练件族判定（底纹减法口径分支，2026-09-04 子步2）：附则《讲练件底纹减法》适用面
@@ -296,8 +314,8 @@ def analysis_census(els, ptexts, qstart_els, head_by_idx, anchor_idx=frozenset()
             in_stem = False                      # 表格断语境
             continue
         t = ptexts[i]
-        if in_stem and t.startswith(ANA_LABELS):
-            in_stem = False                      # 首个解析标签行＝题干结束
+        if in_stem and t.replace('⁠', '').startswith(ANA_LABELS):
+            in_stem = False                      # 首个解析标签行＝题干结束（2026-09-06 ⑥轮：归一 WJ——B 实测 61/61 答案行带 ⁠）
         if i in qstart_els or QBLOCK_HEAD_RE.match(t):
             in_stem = True                       # 新题号块＝题干开始
         elif i in head_by_idx or i in anchor_idx                 or (ENT_RE.match(t) and not HEAD_RE.match(t)):
@@ -339,7 +357,43 @@ def count(path, report):
     anchor_ids = anchor_style_set(part_bytes.get('word/styles.xml'))
     anchor_idx = {i for i, el in enumerate(els)
                   if el.tag == q('p') and pstyle_of(el) in anchor_ids}
-    heads = [h for h in classify_headings(els, ptexts) if h[0] not in anchor_idx]
+    # —— 2026-09-06 ⑥轮口径修：两路标题误分类纠正 ——
+    #   (a) 知识点引文行：【知识点】标签行后随的数码起段＝题块知识点字段值（正文），非标题；
+    #       保护＝无标题底纹且无 sz18 竖条才排除（真节标题有底纹、讲部/题型标题有竖条；
+    #       引文行名号段常带加粗——字段值样式癖，不作标题证据）。
+    #   (b) 讲部/题型标题以 sz=18 左竖条为签名（减法后撤底纹——附则《讲练件底纹减法》）：
+    #       数码起段带竖条而归入 section 者纠正为 group（讲部形已被 LECTURE_RE 先行归 lecture）。
+    def _bar18(el):
+        ppr = el.find(q('pPr'))
+        if ppr is None:
+            return False
+        pbdr = ppr.find(q('pBdr'))
+        if pbdr is None:
+            return False
+        l = pbdr.find(q('left'))
+        return l is not None and l.get(q('sz')) == '18'
+
+    zsd_follow = set()
+    _prev = ''
+    for i, el in enumerate(els):
+        if el.tag != q('p'):
+            _prev = ''
+            continue
+        t = ptexts[i]
+        if not t.strip():
+            continue
+        if _prev.replace('⁠', '').startswith('【知识点】') \
+                and not _bar18(el) \
+                and para_shading(el, styles_fill)[0] is None:
+            zsd_follow.add(i)
+        _prev = t
+    heads = []
+    for h in classify_headings(els, ptexts):
+        if h[0] in anchor_idx or h[0] in zsd_follow:
+            continue
+        if h[1] == 'section' and _bar18(els[h[0]]):
+            h = (h[0], 'group', h[2])
+        heads.append(h)
     n_ch = sum(1 for h in heads if h[1] == 'chapter')
     n_sec = sum(1 for h in heads if h[1] == 'section')
     n_lec = sum(1 for h in heads if h[1] == 'lecture')
@@ -363,6 +417,7 @@ def count(path, report):
         zone[i] = _st
     para_zone_of = {id(el): zone[i] for i, el in enumerate(els) if el.tag == q('p')}
     is_qd = '知识清单' in os.path.basename(path)
+    is_xj = '衔接件' in os.path.basename(path)   # 衔接件族口径（2026-09-06 ⑥轮⑤——②C T6c 解析区清灰既定）
     # 讲练件族口径分支（2026-09-04 子步2；--jlp/--no-jlp 覆盖自动判定）
     jlp_ov = None
     if '--jlp' in sys.argv:
@@ -375,11 +430,19 @@ def count(path, report):
     nq = len(st['questions'])
     nent, nsub = entry_counts(els, ptexts, qstart_els)
     ncensus, census_idx = analysis_census(els, ptexts, qstart_els, head_by_idx, anchor_idx)
+    is_sm = '使用说明' in os.path.basename(path)   # 图例区＝各标记演示段（§11图例豁免）——恒等式/违规类转登记不阻断
+    # 2026-09-06 ⑥轮：题量锚兜底——extract_structure 未识别题块时（nq=0，工具债登记在板）
+    # 非 jlp 退用题号块签名段计数、jlp 退用文件名题量——断言对象始终是独立锚，不自证
+    qblock_sig_n = sum(1 for i, el in enumerate(els)
+                       if el.tag == q('p') and QBLOCK_HEAD_RE.match(ptexts[i]))
+    nq_eff = nq if nq else qblock_sig_n
+    nq_anchor_jlp = nq if nq else nq_fn
+    nq_debt_note = '（题量锚兜底——extract_structure 提取债登记）' if (not nq and (qblock_sig_n or nq_fn)) else ''
 
     # —— 段级标题整行底纹（effective＝直挂＞样式链）＋ ⑦段级浅底 ——
     t1_direct = t1_style = t2_direct = t2_style = 0
     t1_para_els, t2_para_els = set(), set()
-    stem_para_els = set()           # ⑦段级 #E0E0E0（直挂或样式继承）
+    stem_para_els = set()           # ⑦段级 #F2F2F2（直挂或样式继承）
     p3_mis = 0            # 段级 C7C7C7 误挂（内容族无段级合法对象）
     for i, el in enumerate(els):
         if el.tag != q('p'):
@@ -415,6 +478,7 @@ def count(path, report):
     empty_shd = 0
     odd = []
     chip_hit = marker_hit = 0
+    chip_hit_x = 0                     # 衔接件解析区标签挂灰计数（⑥轮⑤——②C T6c 清灰口径，期望 0）
     chip_miss_sample = []
     lb_occ = {}
     chip_lead_embedded = 0   # jlp：条目族 lead 内嵌芯片（lead 保留优先，不计 chip_hit）
@@ -493,9 +557,9 @@ def count(path, report):
             if lb in CHIP_BLACKLIST or CHIP_BLACKLIST_RE.match(lb):
                 continue
             lb_occ[lb] = lb_occ.get(lb, 0) + 1
-            chip_spans.append(mm.span())
+            chip_spans.append((mm.start(), mm.end(), lb))
         chip_runs = set()
-        for (a, bb) in chip_spans:
+        for (a, bb, lb) in chip_spans:
             # jlp（讲练件族·底纹减法口径）：条目族 lead（题号块/条目号/第一子层）内嵌芯片
             # 不属块标签挂灰——lead 保留优先、不拆 run（底纹去除器同口径，2026-09-04 子步3；
             # 样本形：『（1）【定理】』lead 单 run 内含芯片）。非 jlp 件型行为不变。
@@ -506,6 +570,8 @@ def count(path, report):
                 continue
             if all(mask[a:bb]):
                 chip_hit += 1
+                if is_xj and lb.replace('⁠', '') not in CHIP_FIELD_LABELS:
+                    chip_hit_x += 1         # 衔接件：解析区标签挂灰＝违规（②C T6c 清灰口径）
                 if any(ridx[j][1] for j in range(a, bb)):
                     chip_bold += 1          # chip 不加粗（§7）
             elif len(chip_miss_sample) < 8:
@@ -627,7 +693,7 @@ def count(path, report):
     stem_b = lambda bk: buckets.get((FILL_STEM, bk), 0)
     stem_total = sum(v for (f, _), v in buckets.items() if f == FILL_STEM)
     # ⑦题干底纹违规挂点：只挂段级 pPr——run/pmark/tc/om/tbl/other 任一挂点＝违规；
-    # 清单件全件白底——任何 E0E0E0（段级含）＝违规
+    # 清单件全件白底——任何 F2F2F2（段级含）＝违规
     stem_bad_mounts = stem_total - stem_b('para')
 
     # —— 旧灰残留全包扫描（document+headers/footers+styles 等 word/*.xml）——
@@ -643,6 +709,12 @@ def count(path, report):
         n = byt.count(('w:fill="%s"' % FILL_CONTENT_LEGACY).encode())
         if n:
             legacy_c9_parts.append('%s×%d' % (name, n))
+    # 过渡残留签名 #E0E0E0 旧题干色全包计数（2026-09-05 拍板调浅 F2F2F2 后退役；登记不阻断，口径同 CB-4）
+    legacy_stem_parts = []
+    for name, byt in part_bytes.items():
+        n = byt.count(('w:fill="%s"' % FILL_STEM_LEGACY).encode())
+        if n:
+            legacy_stem_parts.append('%s×%d' % (name, n))
     bdr_total = sum(1 for _ in doc.iter(q('bdr')))
     tc_shd = b('tc')
 
@@ -692,9 +764,17 @@ def count(path, report):
 
     nq_block = cls['题号块新形'] + cls['题号块旧形']
     chip_total_occ = sum(lb_occ.values())
+    # 衔接件族芯片口径（2026-09-06 ⑥轮⑤——②C T6c「衔接件解析块界定清灰」既定闭环、样章明页）：
+    # 芯片期望＝标签行字段（【答案】【知识点】）出现数；解析区标签（【分析】【详解】【点睛】【编注】等）
+    # 挂灰＝0（chip_hit_x 违规计数）；全枚举出现数转登记。其余件型照旧 芯片数＝标签计数。
+    field_occ = sum(v for k, v in lb_occ.items() if k.replace('⁠', '') in CHIP_FIELD_LABELS)
+    chip_ok = (chip_hit == field_occ and chip_hit_x == 0) if is_xj \
+        else (chip_hit == chip_total_occ)
     L = []
     L.append("七类底纹计数·四色签名（2026-09-02 A''成品轮七类版；2026-09-06 ③族真值更正——"
-             "四色板 C7C7C7/ADC2DA/C6D4E3/E0E0E0）：%s"
+             "四色板 C7C7C7/ADC2DA/C6D4E3/F2F2F2；2026-09-06 ⑥轮口径修——衔接题块签名归口／"
+             "知识点引文行排除／讲部题型竖条恒等式／题量锚兜底／使用说明图例登记／"
+             "⑦题干色值更正E0E0E0→F2F2F2）：%s"
              % os.path.basename(path))
     L.append('模式: %s' % ('四色板（检出段级标题底纹）' if new_format else
                           '改版前（未检出段级标题底纹——标题整行底纹恒等式不适用，待欠账A W波铺开）'))
@@ -703,11 +783,20 @@ def count(path, report):
              % (FILL_TITLE1, len(t1_para_els), n_ch, n_sec, n_ch + n_sec,
                 t1_direct, t1_style, n_ch, n_sec, len(t1_miss),
                 ('（body序号样本 %s）' % t1_miss[:6]) if t1_miss else '', len(t1_extra)))
-    L.append('②标题整行底纹 段级#%s %d 段（期望＝讲部 %d＋题型 %d＝%d）｜直挂 %d＋样式继承 %d｜'
-             '漏挂 %d 段%s｜误挂非标题段 %d 段'
-             % (FILL_TITLE2, len(t2_para_els), n_lec, n_grp, n_lec + n_grp,
-                t2_direct, t2_style, len(t2_miss),
-                ('（body序号样本 %s）' % t2_miss[:6]) if t2_miss else '', len(t2_extra)))
+    if is_sm and (t1_miss or t1_extra):
+        L[-1] += '｜图例件标题形态·登记（图例区演示段不参与恒等）'
+    if new_format:
+        bar18_n = sum(1 for i, el in enumerate(els) if el.tag == q('p') and _bar18(el))
+        L.append('②讲部/题型标题左竖条（w:pBdr 左 sz=18——减法后撤底纹改竖条、底纹计数归零）：竖条段 %d'
+                 '＝讲部 %d＋题型 %d＝%d%s｜旧底纹段级#%s 残留 %d 段（过渡签名登记，新件期望 0）'
+                 % (bar18_n, n_lec, n_grp, n_lec + n_grp,
+                    '' if bar18_n == n_lec + n_grp else ' ←≠', FILL_TITLE2, len(t2_para_els)))
+    else:
+        L.append('②标题整行底纹 段级#%s %d 段（期望＝讲部 %d＋题型 %d＝%d）｜直挂 %d＋样式继承 %d｜'
+                 '漏挂 %d 段%s｜误挂非标题段 %d 段'
+                 % (FILL_TITLE2, len(t2_para_els), n_lec, n_grp, n_lec + n_grp,
+                    t2_direct, t2_style, len(t2_miss),
+                    ('（body序号样本 %s）' % t2_miss[:6]) if t2_miss else '', len(t2_extra)))
     if jlp:
         # —— 讲练件族（底纹减法口径，2026-09-04 子步2；附则甲案改文）——
         L.append('③内容标记族 run级#%s【讲练件底纹减法口径】：' % FILL_CONTENT)
@@ -720,23 +809,32 @@ def count(path, report):
         L.append('   ②题目侧答案值灰底 run %d＋OMML m:r %d＋ctrlPr %d（期望全 0）%s'
                  % (cls['内容标记'], om_mr, om_ctrl,
                     ('｜表内OMML保留 %d（W4）' % om_tbl) if om_tbl else ''))
-        L.append('   题号块段数 %d＝题量 %d（文件名口径 %s）%s｜题号加粗维持：非加粗题号token run %d（期望 0）'
-                 % (n_qblock_para, nq, nq_fn if nq_fn is not None else '（文件名无题量）',
-                    '' if (n_qblock_para == nq and (nq_fn is None or nq == nq_fn)) else ' ←≠',
-                    qd_bold_missing))
+        L.append('   题号块段数 %d＝题量 %d（文件名口径 %s）%s%s｜题号加粗维持：非加粗题号token run %d（期望 0）'
+                 % (n_qblock_para, nq_anchor_jlp, nq_fn if nq_fn is not None else '（文件名无题量）',
+                    '' if (nq_anchor_jlp is not None and n_qblock_para == nq_anchor_jlp
+                           and (nq_fn is None or nq_anchor_jlp == nq_fn)) else ' ←≠',
+                    nq_debt_note, qd_bold_missing))
         L.append('   保留·讲部条目区需背灰底 run %d＋OMML m:r %d＋ctrlPr %d（甲案保留；讲部补挂后应＝'
                  '知识清单该节需背内容数，届时一次重算）' % (cls['讲部需背'], om_mr_entry, om_ctrl_entry))
         L.append('   内容标记覆盖恒等式：不适用（题目侧答案值灰底已废止——附则《讲练件底纹减法》②）')
     else:
         L.append('③内容标记族 run级#%s：题号块 %d（新形N．run %d＋过渡旧形整块run %d）＝题量 %d'
-                 '（文件名口径 %s）%s｜加粗缺失违规 %d（期望 0）'
-                 % (FILL_CONTENT, nq_block, cls['题号块新形'], cls['题号块旧形'], nq,
+                 '（文件名口径 %s）%s%s｜加粗缺失违规 %d（期望 0）'
+                 % (FILL_CONTENT, nq_block, cls['题号块新形'], cls['题号块旧形'], nq_eff,
                     nq_fn if nq_fn is not None else '（文件名无题量）',
-                    '' if (nq_block == nq and (nq_fn is None or nq == nq_fn)) else ' ←≠',
-                    qd_new_bold + qd_old_bold))
-        L.append('   块标签run（芯片）%d＝标签计数（芯片出现数）%d%s｜并行解法标记run %d（登记）%s'
-                 % (chip_hit, chip_total_occ, '' if chip_hit == chip_total_occ else ' ←≠',
-                    marker_hit, ('｜未挂样本 %r' % chip_miss_sample[:3]) if chip_miss_sample else ''))
+                    '' if (nq_block == nq_eff and (nq_fn is None or nq_eff == nq_fn)) else ' ←≠',
+                    nq_debt_note, qd_new_bold + qd_old_bold))
+        if is_xj:
+            L.append('   块标签run（芯片）%d＝标签行字段计数（【答案】＋【知识点】出现数）%d%s'
+                     '｜解析区标签挂灰 %d（期望 0——衔接件解析区清灰口径，②C T6c 既定）'
+                     '｜全枚举标签出现数 %d（登记）｜并行解法标记run %d（登记）'
+                     % (chip_hit, field_occ, '' if chip_hit == field_occ else ' ←≠',
+                        chip_hit_x, chip_total_occ, marker_hit))
+        else:
+            L.append('   块标签run（芯片）%d＝标签计数（芯片出现数）%d%s｜并行解法标记run %d（登记）%s'
+                     % (chip_hit, chip_total_occ,
+                        '' if chip_hit == chip_total_occ else (' ←≠（图例区文字提及·登记不阻断）' if is_sm else ' ←≠'),
+                        marker_hit, ('｜未挂样本 %r' % chip_miss_sample[:3]) if chip_miss_sample else ''))
     top = sorted(lb_occ.items(), key=lambda kv: -kv[1])[:10]
     L.append('   标签分计 TOP：%s' % ('；'.join('%s×%d' % kv for kv in top) if top else '（无）'))
     L.append('   条目号run %d＝条目计数 %d%s｜加粗违规 %d（期望 0）'
@@ -748,12 +846,14 @@ def count(path, report):
                  % (cls['内容标记'], om_mr, om_ctrl, cov, nq,
                     ('（未覆盖题: %s）' % nocov[:12]) if nocov else '',
                     '（清单件：题号块/覆盖恒等式不适用）' if is_qd else ''))
-    L.append('违规与残留：旧结构序号run %d（%s）｜段级#%s误挂 %d（期望 0）｜run级#%s/#%s误挂 %d（期望 0）｜'
+    L.append('违规与残留：旧结构序号run %d（%s）｜段级#%s误挂 %d（%s）｜run级#%s/#%s误挂 %d（期望 0）｜'
              'chip加粗违规 %d（期望 0）｜标题行非加粗run %d（%s）'
              % (old_sectnum_residue,
                 '新格式期望 0' if new_format else '改版前登记口径',
-                FILL_CONTENT, p3_mis, FILL_TITLE1, FILL_TITLE2, run_t1_t2_mis,
-                chip_bold, head_nobold, '新格式期望 0' if new_format else '改版前不检'))
+                FILL_CONTENT, p3_mis, '图例区演示段·登记' if is_sm else '期望 0',
+                FILL_TITLE1, FILL_TITLE2, run_t1_t2_mis,
+                chip_bold, head_nobold,
+                '图例件演示段·登记' if is_sm else ('新格式期望 0' if new_format else '改版前不检')))
     L.append('旧灰残留（全包 word/*.xml）：%s｜w:bdr %d（期望 0）'
              % ('；'.join(legacy_parts) if legacy_parts else 'A6A6A6/D9D9D9 全包 0', bdr_total))
     L.append('%s 全挂点分桶（构造性恒等——修历史bug恒差1）：run %d｜run空文本 %d｜段级 %d｜段落标记 %d｜'
@@ -765,7 +865,11 @@ def count(path, report):
              'word/*.xml 全包 %s'
              % (FILL_CONTENT_LEGACY, raw_c9_legacy,
                 '；'.join(legacy_c9_parts) if legacy_c9_parts else '0'))
-    # —— ⑦题干底纹（#E0E0E0，恒等式＝题干底纹段数＝题干段清点数；图段豁免）——
+    L.append('过渡残留签名 #%s 旧题干色（2026-09-05 拍板调浅 #%s 后退役；新件应＝0；'
+             '存量过渡期登记不阻断——口径同 CB-4）：word/*.xml 全包 %s'
+             % (FILL_STEM_LEGACY, FILL_STEM,
+                '；'.join(legacy_stem_parts) if legacy_stem_parts else '0'))
+    # —— ⑦题干底纹（#F2F2F2，恒等式＝题干底纹段数＝题干段清点数；图段豁免）——
     stem_para = len(stem_para_els)
     stem_extra = sorted(stem_para_els - census_idx)
     stem_miss = sorted(census_idx - stem_para_els)
@@ -778,12 +882,12 @@ def count(path, report):
     else:
         L.append('⑦题干底纹 段级#%s %d 段＝题干段清点数 %d%s%s%s'
                  % (FILL_STEM, stem_para, ncensus,
-                    '' if stem_para == ncensus else ' ←≠',
+                    '' if stem_para == ncensus else (' ←≠（图例演示段·登记不阻断）' if is_sm else ' ←≠'),
                     ('｜清点未铺 %d 段（body序号样本 %s）' % (len(stem_miss), stem_miss[:8])) if stem_miss else '',
                     ('｜非题干段误铺 %d 段（body序号样本 %s）' % (len(stem_extra), stem_extra[:8])) if stem_extra else ''))
-    L.append('   E0E0E0 全挂点分桶：段级 %d｜run %d｜段落标记 %d｜tcPr %d｜om_mr %d｜om_ctrl %d｜'
+    L.append('   %s 全挂点分桶：段级 %d｜run %d｜段落标记 %d｜tcPr %d｜om_mr %d｜om_ctrl %d｜'
              'tbl/tr %d｜其他 %d｜Σ %d｜段外挂点违规 %d（期望 0）'
-             % (stem_b('para'), stem_b('run'), stem_b('pmark'), stem_b('tc'),
+             % (FILL_STEM, stem_b('para'), stem_b('run'), stem_b('pmark'), stem_b('tc'),
                 stem_b('om_mr'), stem_b('om_ctrl'), stem_b('tbl'), stem_b('other'),
                 stem_total, stem_bad_mounts))
     L.append('登记不入七类：表内非标签灰底run %d｜tcPr底纹（导航表头等） %d｜空文本灰底run %d｜未归类 %d%s'
@@ -792,7 +896,7 @@ def count(path, report):
 
     base_ok = (cls['条目号'] == nent and ent_bold == 0
                and cls['条目第一子层'] == nsub and sub_bold == 0
-               and chip_hit == chip_total_occ and chip_bold == 0
+               and chip_ok and chip_bold == 0
                and p3_mis == 0 and run_t1_t2_mis == 0
                and not legacy_parts and bdr_total == 0 and not odd
                and c9_total == raw_c9
@@ -819,19 +923,34 @@ def count(path, report):
         base_ok = (base_ok
                    and nq_block == 0 and chip_hit == 0 and marker_hit == 0
                    and cls['内容标记'] == 0 and om_mr == 0 and om_ctrl == 0
-                   and n_qblock_para == nq and (nq_fn is None or nq == nq_fn)
+                   and nq_anchor_jlp is not None and n_qblock_para == nq_anchor_jlp
+                   and (nq_fn is None or nq_anchor_jlp == nq_fn)
                    and qd_bold_missing == 0)
     elif not is_qd:
-        base_ok = base_ok and nq_block == nq and (nq_fn is None or nq == nq_fn) \
+        base_ok = base_ok and nq_block == nq_eff and (nq_fn is None or nq_eff == nq_fn) \
             and cov == nq and qd_new_bold + qd_old_bold == 0
+    if is_sm:
+        # 使用说明图例件口径（2026-09-06 ⑥轮）：图例区演示段（题号块/芯片文字提及/段级底纹演示）
+        # 转登记不阻断；硬门保留＝条目族恒等式＋不加粗＋分桶守恒＋旧灰0＋字符边框0
+        base_ok = (cls['条目号'] == nent and ent_bold == 0
+                   and cls['条目第一子层'] == nsub and sub_bold == 0
+                   and chip_bold == 0 and run_t1_t2_mis == 0
+                   and not legacy_parts and bdr_total == 0 and not odd
+                   and c9_total == raw_c9 and raw_c9_legacy == 0)
     if new_format:
-        ok = (base_ok
-              and len(t1_para_els) == n_ch + n_sec and len(t2_para_els) == n_lec + n_grp
-              and not t1_miss and not t2_miss and not t1_extra and not t2_extra
-              and old_sectnum_residue == 0 and head_nobold == 0)
-        L.append('结论: ' + (('PASS 四色板齐＋七类恒等式成立（讲练件底纹减法口径：四类废止＝0、'
-                              '题目侧答案值＝0、讲部条目区需背保留、题号加粗维持）') if (ok and jlp)
-                            else ('PASS 四色板齐＋七类恒等式成立' if ok else 'CHECK 见上')))
+        if is_sm:
+            ok = base_ok
+            L.append('结论: ' + ('PASS（使用说明图例件口径——图例演示段登记不阻断；硬门全过）'
+                                 if ok else 'CHECK 见上'))
+        else:
+            ok = (base_ok
+                  and len(t1_para_els) == n_ch + n_sec
+                  and not t1_miss and not t1_extra
+                  and bar18_n == n_lec + n_grp and len(t2_para_els) == 0
+                  and old_sectnum_residue == 0 and head_nobold == 0)
+            L.append('结论: ' + (('PASS 四色板齐＋七类恒等式成立＋讲部/题型竖条恒等（讲练件底纹减法口径：'
+                                  '四类废止＝0、题目侧答案值＝0、讲部条目区需背保留、题号加粗维持）') if (ok and jlp)
+                                else ('PASS 四色板齐＋七类恒等式成立＋讲部/题型竖条恒等' if ok else 'CHECK 见上')))
     else:
         ok = base_ok
         L.append('结论: ' + ('PASS（挂载前口径——七类C7C7C7/题干底纹族恒等式成立；标题整行底纹0段待铺开）'
