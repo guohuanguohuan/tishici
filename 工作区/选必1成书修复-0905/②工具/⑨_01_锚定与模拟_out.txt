@@ -1,0 +1,107 @@
+MD5锚定 12 件 → C:/提示词/工作区/选必1成书修复-0905/②工具/报告/⑨_12件MD5锚定.json
+------------------------------------------------------------------------------------------
+SM 题 1.1.1.1-1｜body el [3..4)
+  [3] '1.1.1.1-1．（简单·保60%·卡壳看答案）\u3000题号块：「题型号-节内序号．（档位·提分线·卡壳看答案）」——整块加粗、括注不挂底纹；序'
+       run '1.1.1.1-1．' fill=None db=False
+       run '（简单·保60%·卡壳看答案）' fill=None db=False
+       run '\u3000题号块：「题型号-节内序号．（档位·提分线·卡壳看答案）」——整块加粗' fill=None db=False
+------------------------------------------------------------------------------------------
+SM 题 1.2.1.1-1｜body el [4..5)
+  [4] '1.2.1.1-1．（衔接必会·卡壳看答案）\u3000衔接件不区分难度——两段式括注、全部必会；题号块底纹维持现行（底纹减法不适用衔接件·清单件）。'
+       run '1.2.1.1-1．' fill=C7C7C7 db=False
+       run '（衔接必会·卡壳看答案）' fill=None db=False
+       run '\u3000衔接件不区分难度——两段式括注、全部必会；题号块底纹维持现行（底纹减法' fill=None db=False
+------------------------------------------------------------------------------------------
+X1 题 1.2.1.1-1｜body el [35..40)
+  [35] '1.2.1.1-1．（衔接必会）如图，在中，，，和相交于点，则.'
+       run '1.2.1.1-1．' fill=C7C7C7 db=False
+       run '（衔接必会）' fill=None db=False
+       run '如图，在' fill=None db=False
+       run '中，' fill=None db=False
+       run '，' fill=None db=False
+       run '，' fill=None db=False
+       run '和' fill=None db=False
+       run '相交于点' fill=None db=False
+       run '，则' fill=None db=False
+       run '.' fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+  [36] ''
+  [37] '【Ⓙ答Ⓙ案Ⓙ】'
+       run '【Ⓙ答Ⓙ案Ⓙ】' fill=C7C7C7 db=False
+  [38] ' 3/7\u3000'
+       run ' ' fill=None db=False
+       run '3/7' fill=C7C7C7 db=False
+       run '\u3000' fill=None db=False
+  [39] '【Ⓙ知Ⓙ识Ⓙ点Ⓙ】'
+       run '【Ⓙ知Ⓙ识Ⓙ点Ⓙ】' fill=C7C7C7 db=False
+------------------------------------------------------------------------------------------
+X1 题 1.2.1.2-6｜body el [85..90)
+  [85] '1.2.1.2-6．（衔接必会）在中，，于点，若，则，.'
+       run '1.2.1.2-6．' fill=C7C7C7 db=False
+       run '（衔接必会）' fill=None db=False
+       run '在' fill=None db=False
+       run '中，' fill=None db=False
+       run '，' fill=None db=False
+       run '于点' fill=None db=False
+       run '，若' fill=None db=False
+       run '，则' fill=None db=False
+       run '，' fill=None db=False
+       run '.' fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:ctrlPr fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+       m:r fill=None db=False
+  [86] ''
+  [87] '【Ⓙ答Ⓙ案Ⓙ】'
+       run '【Ⓙ答Ⓙ案Ⓙ】' fill=C7C7C7 db=False
+  [88] ' 4/5；16/9\u3000'
+       run ' ' fill=None db=False
+       run '4/5' fill=C7C7C7 db=False
+       run '；' fill=None db=False
+       run '16/9' fill=C7C7C7 db=False
+       run '\u3000' fill=None db=False
+  [89] '【Ⓙ知Ⓙ识Ⓙ点Ⓙ】'
+       run '【Ⓙ知Ⓙ识Ⓙ点Ⓙ】' fill=C7C7C7 db=False
+模拟修后 X1: 29/29｜命中腿分布 {'腿3续值run': 20, '腿2值行OMML': 6, '腿3续值OMML(新增)': 3}
+模拟修后 X2: 13/13｜命中腿分布 {'腿3续值run': 11, '腿2值行OMML': 2}
+模拟修后 SM: 0/2｜未覆盖 ['1.1.1.1-1', '1.2.1.1-1']｜命中腿分布 {}

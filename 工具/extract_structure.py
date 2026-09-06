@@ -19,7 +19,14 @@ kind=='section'/'group' 取集合，lecture 不入两集合（讲部标题五号
   ③ 编号核验输出双轨：旧全局号按 1..N 全件连续断言；层级制号按「节内序列连续无重复＋
      全件总数」断言（§7⑦），stdout 增各节序列清单。条目号（清单条目/讲部条目）同为
      「节号-序号．」/「N．」起段、归入 qstart kind，题块判定按块内【答案】过滤（条目无
-     【答案】不计题块）——与题号块三段式.py 题族/条目族分列口径一致。"""
+     【答案】不计题块）——与题号块三段式.py 题族/条目族分列口径一致。
+2026-09-06 债1修复（⑧轮·选必1成书修复-0905）：题块锚改钉现行件型题头括注族——档位括注
+  「N．（简单|中档|难[·提分线][·卡壳看答案]）」与衔接必会括注「N．（衔接必会[·卡壳看答案]）」
+  直接入题块（现行件型解析标签内嵌 U+2060，旧双锚「块内含【答案】」原文匹配第二腿全失效——
+  B 实测 61/61 答案行带 ⁠）；〔…〕条目括注形显式排除不入题块；裸题号回退旧双锚且题头/标签
+  匹配前一律 U+2060 归一（【⁠答⁠案⁠】原文计数为 0 的假阴性坑，⑥终报§三.6 同款）。括注词表与
+  六类底纹计数.QBLOCK_HEAD_RE 同源对齐（提取题头集 ⊆ 计数器题号块签名段集）；kind 分型
+  与输出结构不变。"""
 import sys, io, zipfile, re, json
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 from lxml import etree
@@ -31,6 +38,14 @@ def q(t): return '{%s}%s' % (W, t)
 STATS_RE = re.compile(r'[\s\u3000]本节\d+题')                      # 节级统计段（合并行）
 QSTART_RE = re.compile(r'^(?:\d+(?:\.\d+)+-\d+|\d+)．')            # 层级制「节号-序号．」＋旧「N．」
 SECNO_RE = re.compile(r'^(\d+(?:\.\d+)+)[\s\u3000]')
+WJ = '\u2060'   # U+2060 WORD JOINER——成书件解析标签/题头内嵌，一切标签/题头匹配前归一（⑧债1）
+# ⑧债1：题头括注族（词表与 六类底纹计数.QBLOCK_HEAD_RE 同源对齐——档位[·提分线]·卡壳看答案／
+# 衔接必会[·卡壳看答案]／裸档位，须带全括注）＝现行件型题目区题头，直接入题块。
+KUOHAO_RE = re.compile(r'^(\d+(?:\.\d+)+-\d+|\d+)．'
+                       r'（((?:简单|中档|难)(?:·(?:保60%|保80%|冲100%))?·卡壳看答案'
+                       r'|衔接必会(?:·卡壳看答案)?'
+                       r'|(?:简单|中档|难))）')
+TIAOMU_RE = re.compile(r'^(\d+(?:\.\d+)+-\d+|\d+)．〔')             # ⑧债1：〔…〕条目括注形——显式排除不入题块
 
 def ptext(p):
     parts = []
@@ -74,7 +89,10 @@ def structure(path):
         items.append({'kind': kind, 'el': i, 'text': t, 'p': el, 'sec': cur_sec})
 
     # 题块判定：qstart 起到下一个 qstart/标题/表格 前；
-    # 新签名＝题号块「N．（档位）」/「节号-序号．（档位）」或块内含【答案】；旧件回退＝块内含【难度】。
+    # ⑧债1 新锚（2026-09-06）：题头括注族（档位括注／衔接必会括注，KUOHAO_RE）直接入题块——
+    # 现行件型题目区解析标签内嵌 U+2060，旧双锚「块内含【答案】」原文匹配对题目区/详解区全失效；
+    # 〔…〕条目括注形显式排除（TIAOMU_RE，清单/讲部条目不得入题块）；裸题号回退旧双锚
+    # （块内【答案】/【难度】legacy）——旧件与裸号卷型件语义不变。题头/标签匹配前一律 U+2060 归一。
     n = len(items)
     qinfo = []  # {no, start, end(Exclusive), diff, sec}
     i = 0
@@ -86,14 +104,17 @@ def structure(path):
                 j += 1
             block = [items[k]['text'] for k in range(i, j)]
             blk = '\n'.join(block)
-            mno = re.match(r'^(\d+(?:\.\d+)+-\d+|\d+)．'
-                           r'(?:（((?:简单|中档|难)(?:·(?:保60%|保80%|冲100%)·卡壳看答案)?'
-                           r'|衔接必会·卡壳看答案)）)?', it['text'])
-            legacy = re.search(r'【难度】(简单|中档|难|[\d.]+)', blk)
-            if mno and ('【答案】' in blk or legacy):
-                diff = mno.group(2) or (legacy.group(1) if legacy else '')
-                sec = sec_of_qnum(mno.group(1)) or it.get('sec')
-                qinfo.append({'no': mno.group(1), 'start': it['el'],
+            tn = it['text'].replace(WJ, '')      # 题头匹配前 U+2060 归一
+            blkn = blk.replace(WJ, '')           # 标签匹配前 U+2060 归一（【⁠答⁠案⁠】假阴性坑）
+            mno = re.match(r'^(\d+(?:\.\d+)+-\d+|\d+)．', tn)
+            kuo = KUOHAO_RE.match(tn)
+            tiao = TIAOMU_RE.match(tn)
+            legacy = re.search(r'【难度】(简单|中档|难|[\d.]+)', blkn)
+            if kuo or (mno and not tiao and ('【答案】' in blkn or legacy)):
+                diff = (kuo.group(2) if kuo else '') or (legacy.group(1) if legacy else '')
+                no = (kuo or mno).group(1)
+                sec = sec_of_qnum(no) or it.get('sec')
+                qinfo.append({'no': no, 'start': it['el'],
                               'end': items[j-1]['el'] + 1 if j > i + 1 else it['el'] + 1,
                               'diff': diff, 'sec': sec})
                 i = j

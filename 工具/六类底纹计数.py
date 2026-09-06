@@ -67,6 +67,12 @@
       全枚举标签出现数转登记）。
   过渡残留签名 #C9C9C9（2026-09-06 CB-4）：单列计数登记（新件应＝0；④轮改色完成前存量旧件
       视同合规、不阻断——CB-4 口径），入报告不入 base_ok。
+  ⑨轮覆盖门修（2026-09-06，⑧轮 A3 漂移处置预案立项——X1/X2 覆盖循环转实浮出门缺陷）：
+      覆盖循环【答案】门(:737)加 U+2060 归一（同⑥轮 :318 ANA 边界前科——衔接件标签文字
+      内嵌 WJ，裸 startswith 假阴性）；续值段腿补 OMML m:r/ctrlPr 挂点扫描（与【答案】段内
+      OMML 腿同构——X1 实测 1.2.1.2-9／1.2.1.3-15／1.2.5.2-10 三题答案值为续值段内 OMML
+      公式挂 C7C7C7，原腿3只扫 w:r 文本 run 落两腿夹缝）。覆盖语义不变＝答案值行（或跨段
+      续值段）有内容标记族挂点（灰底或深蓝任一在位）。
   改版前件（未检出段级标题底纹）：标题整行底纹恒等式标「不适用（改版前）」，旧结构序号
   run 计数转登记口径（不阻断）；C7C7C7 族恒等式照常全断言。浅底0段且带题件：
   ⑦行标「改制前形态（未检出浅底）」并照出清点数（不阻断；浅底挂载后>0段即硬断言）。
@@ -207,6 +213,7 @@ def para_shading(p, styles_fill):
 
 ANCHOR_STYLE_IDS = ('JieMingMao', '节名锚')   # 2026-09-01 E1：T5节名锚段专用样式（§7锚段非标题、无底纹无边框）
 DEEP_BLUE = '1F4E79'   # 2026-09-01 E1：答案值分型深蓝（口径E——公式型剥灰保蓝；覆盖判据灰底或深蓝任一在位）
+WJ = '\u2060'          # U+2060 WORD JOINER——标签文字内嵌连接符（⑥轮 :317 ANA 边界同款坑；2026-09-06 ⑨轮覆盖门归一用）
 
 def deep_blue(rpr):
     if rpr is None:
@@ -733,7 +740,7 @@ def count(path, report):
             if tag(p) != 'p':
                 continue
             t = ptexts[ci]
-            if not t.startswith('【答案】'):
+            if not t.replace(WJ, '').startswith('【答案】'):   # ⑨轮修：归一 U+2060（原裸门对【⁠答⁠案⁠】假阴性——⑥轮 :317 前科）
                 continue
             for r in p.iter(q('r')):
                 txt = ''.join(x.text or '' for x in r.findall(q('t')))
@@ -756,6 +763,15 @@ def count(path, report):
                                 and (shd_fill(r.find(q('rPr'))) == FILL_CONTENT
                                      or deep_blue(r.find(q('rPr')))):
                             hit = True; break
+                    if not hit:
+                        # ⑨轮修：续值段补 OMML m:r/ctrlPr 挂点扫描（与 :743 【答案】段内 OMML 腿同构——
+                        # X1 实测 1.2.1.2-9/1.2.1.3-15/1.2.5.2-10 答案值为续值段内 OMML 公式挂 C7C7C7，
+                        # 原腿3只扫 w:r 文本 run，OMML 值落两腿夹缝；覆盖语义不变＝答案值挂内容标记族挂点）
+                        for m_el in els[cj].iter():
+                            if etree.QName(m_el).namespace == M and tag(m_el) in ('r', 'ctrlPr') and \
+                                    (shd_fill(m_el.find(q('rPr'))) == FILL_CONTENT
+                                     or deep_blue(m_el.find(q('rPr')))):
+                                hit = True; break
             break  # 每题只认首个【答案】行
         if hit:
             cov += 1

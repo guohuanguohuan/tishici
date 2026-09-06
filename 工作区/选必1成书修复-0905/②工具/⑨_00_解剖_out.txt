@@ -1,0 +1,105 @@
+====================================================================================================
+题 1.2.1.2-9｜items[114..119)｜body el [114..119)
+  [114] 段 原文='1.2.1.2-9．（衔接必会）已知在梯形中，，，，，，则此梯形的面积为________．'
+       run txt='1.2.1.2-9．' fill=C7C7C7 deep_blue=False ←命中腿1
+       run txt='（衔接必会）' fill=None deep_blue=False
+       run txt='已知在梯形' fill=None deep_blue=False
+       run txt='中，' fill=None deep_blue=False
+       run txt='，' fill=None deep_blue=False
+       run txt='，' fill=None deep_blue=False
+       run txt='，' fill=None deep_blue=False
+       run txt='，' fill=None deep_blue=False
+       run txt='，则此梯形的面积为' fill=None deep_blue=False
+       run txt='________' fill=None deep_blue=False
+       run txt='．' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:ctrlPr txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+  [115] 段 原文=''
+  [116] 段 原文='【Ⓙ答Ⓙ案Ⓙ】'
+       run txt='【Ⓙ答Ⓙ案Ⓙ】' fill=C7C7C7 deep_blue=False
+       （【答案】段腿1/2/3 模拟结束；【知识点】在本段=False）
+  [117] 段 原文=' ； '
+       run txt=' ' fill=None deep_blue=False
+       run txt='；' fill=None deep_blue=False
+       run txt=' ' fill=None deep_blue=False
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:ctrlPr txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+  [118] 段 原文='【Ⓙ知Ⓙ识Ⓙ点Ⓙ】'
+       run txt='【Ⓙ知Ⓙ识Ⓙ点Ⓙ】' fill=C7C7C7 deep_blue=False
+====================================================================================================
+题 1.2.1.3-15｜items[178..183)｜body el [178..183)
+  [178] 段 原文='1.2.1.3-15．（衔接必会）在中，是的平分线，，，，则____.'
+       run txt='1.2.1.3-15．' fill=C7C7C7 deep_blue=False ←命中腿1
+       run txt='（衔接必会）' fill=None deep_blue=False
+       run txt='在' fill=None deep_blue=False
+       run txt='中，' fill=None deep_blue=False
+       run txt='是' fill=None deep_blue=False
+       run txt='的平分线，' fill=None deep_blue=False
+       run txt='，' fill=None deep_blue=False
+       run txt='，' fill=None deep_blue=False
+       run txt='，则' fill=None deep_blue=False
+       run txt='____.' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+  [179] 段 原文=''
+  [180] 段 原文='【Ⓙ答Ⓙ案Ⓙ】'
+       run txt='【Ⓙ答Ⓙ案Ⓙ】' fill=C7C7C7 deep_blue=False
+       （【答案】段腿1/2/3 模拟结束；【知识点】在本段=False）
+  [181] 段 原文=' ； '
+       run txt=' ' fill=None deep_blue=False
+       run txt='；' fill=None deep_blue=False
+       run txt=' ' fill=None deep_blue=False
+       OMML m:ctrlPr txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:ctrlPr txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+  [182] 段 原文='【Ⓙ知Ⓙ识Ⓙ点Ⓙ】'
+       run txt='【Ⓙ知Ⓙ识Ⓙ点Ⓙ】' fill=C7C7C7 deep_blue=False
+====================================================================================================
+题 1.2.5.2-10｜items[310..314)｜body el [310..314)
+  [310] 段 原文='1.2.5.2-10．（衔接必会）在中，是钝角，是垂心，，则_____.'
+       run txt='1.2.5.2-10．' fill=C7C7C7 deep_blue=False ←命中腿1
+       run txt='（衔接必会）' fill=None deep_blue=False
+       run txt='在' fill=None deep_blue=False
+       run txt='中，' fill=None deep_blue=False
+       run txt='是钝角，' fill=None deep_blue=False
+       run txt='是垂心，' fill=None deep_blue=False
+       run txt='，则' fill=None deep_blue=False
+       run txt='_____.' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+       OMML m:r txt='' fill=None deep_blue=False
+  [311] 段 原文='【Ⓙ答Ⓙ案Ⓙ】'
+       run txt='【Ⓙ答Ⓙ案Ⓙ】' fill=C7C7C7 deep_blue=False
+       （【答案】段腿1/2/3 模拟结束；【知识点】在本段=False）
+  [312] 段 原文=' ； '
+       run txt=' ' fill=None deep_blue=False
+       run txt='；' fill=None deep_blue=False
+       run txt=' ' fill=None deep_blue=False
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:ctrlPr txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+       OMML m:r txt='' fill=C7C7C7 deep_blue=False ←命中腿2
+  [313] 段 原文='【Ⓙ知Ⓙ识Ⓙ点Ⓙ】'
+       run txt='【Ⓙ知Ⓙ识Ⓙ点Ⓙ】' fill=C7C7C7 deep_blue=False
