@@ -1,17 +1,25 @@
 % ============================================================
-% 全品式样张 v3 · 练习件（人教B版选必1 §1.1.1 空间向量及其运算）
-% 编译：xelatex main.tex（两遍）
-% v3 定位：高仿全品练习册（基准页 p06/p21 已亲看），非改良。相对导学件的件型差异：
-%   1. 结构：章首通栏（章22/节18/小节15/课时14）→ 题区双栏（花形组行「夯基达标／提能进阶」
-%      ＋流水号＋6.5pt 灰括注〔源·题号·难度〕，题面无答案）→ \clearpage →
-%      「答案与解析」通栏标题 → 双栏密集排（9.5pt/14.5pt，流水号＋【答案】下划线＋
-%      【分析】【详解】【点睛】verbatim 连排）。
-%   2. 池子分配（10 题守恒，与导学件互补）：夯基达标＝题4（简单）；提能进阶＝题6/9/10（中档）；
-%      组名与小字自拟不抄全品（登记）。
-%   3. 题源里嵌在【详解】的图（题10 折叠图）随解析排入答案区（30mm 档）——登记差异
-%      （全品将图印在题面）。
-%   4. 选项/①链 2em 缩进绑定（对齐练习册 p06）；题号列恒空 hang 7mm；
-%      页脚「· 练习件」；页眉 9pt 灰字节名。
+% 全品式样张 v4 · 练习件（人教B版选必1 §1.1.1 空间向量及其运算）
+% 编译：xelatex main.tex（两遍）→ render.py（150dpi，先清 png/）
+% v4 定位：总诊断-v4参数表（参数权威）＋练习件对照 A1–A13 全落地。
+% 相对 v3 的版式改动（逐条登记于 postproc_lianxi_log.txt 与交付报告）：
+%   主病1 行距：导言区 \linespread{1}（ctex linespread=1.3 叠乘撤销），实发 18pt；
+%   主病2 栏流：题区/答案区 multicols 各加 \raggedcolumns（左栏满到底再进右栏）、撤栏线；
+%   主病3 块前距：花形/答案标题前 3pt、题前 4pt（A5 定档）、答案条目前 2pt，glueguard 5/4/3→2/1/1；
+%   主病4 灰档：黑＋777777＋DDDDDD 三件收敛（808080/595959/BFBFBF 撤），单页灰档 ≤2；
+%   主病5 章首：方块行＋压缩间距，版心顶→题区起点 ≤60mm；
+%   A4 组行减负：撤深灰底线；右侧灰小字槽位改挂拍板26 目标分外衣「保60%/保80%/冲100%」（L225 待过目）；
+%   A6 页码块：单行（灰块＋章名小字同行）、去下沉、块底距页底 ≈11mm（footskip 4mm）；
+%   A7 选项：按长度 4/2/1 项每行网格；分号字符全保留（拍板21）；选项左缘＝7mm（全品实测口径，
+%      对照 A7 建议值 0.5em 与其自身 §1.1「选项左缘＝悬挂正文左缘」冲突，取全品实测）；
+%   A8 题图：题干 ≤2 行 30mm 图右嵌 minipage（右缘=栏右缘），长题干图题下居中（7mm 起排）；
+%   A9 答案区：10.5pt/18pt（主会话裁定，与正文同号，撤销 v3 9.5/14.5 密排）；
+%   A11 题侧：撤〔源〕括注（拍板18），改挂〔难度〕★（知识点N）同一灰档 6.5pt 777777；
+%   A12 页眉：仅题区首页保留节名，续页/答案区页省；
+%   A13 章首：777777 装饰方块 13.9×16.8mm 与居中章标题同行（摆位变通待过目）；
+%   答案：册末另区演示（正式＝独立答案册，拍板35②，登记交付报告）。
+% 题量配平：源题 1（各组第2题起唯一可用＝1.1.1.8-8，防撞池）＋命制 10（上限顶格、偏基础档、
+%   逐题亲算核验）＝11 题；配平落点＝题区满 1 页＋答案区满 1 页（末页栏利用率 ≥70% 断言）。
 % ============================================================
 \documentclass[fontset=none]{ctexart}
 
@@ -20,11 +28,14 @@
 \setCJKmainfont[BoldFont=SimHei]{SimSun}
 \setCJKfamilyfont{hei}{SimHei}
 \newcommand{\heiti}{\CJKfamily{hei}}
-\xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2200->"22FF, "25A0->"25FF}
+\xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
 \xeCJKsetup{CheckSingle=true}
 
 % ---------- 宏包 ----------
-\usepackage[a4paper,margin=15mm,headheight=12pt,headsep=2mm,footskip=6mm]{geometry}
+\usepackage[a4paper,top=15mm,bottom=19.5mm,left=15mm,right=15mm,headheight=13pt,headsep=2mm,footskip=13pt]{geometry}
+% 底边距 19.5mm＝参数表「四边15mm」与拍板22（块底≈11mm）＋全品实测（底部墨迹 274.2mm、
+% 块顶 278.0mm 在版心外）的冲突裁决：版心底 277.5mm＜页码块顶 278.2mm，满页内容永不压块；
+% 全品下边距实测 22.8mm，19.5mm 为兼顾满页容量的折中（L225 待过目，登记交付报告）
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{xcolor}
@@ -33,22 +44,19 @@
 \usepackage{needspace}
 \usepackage{fancyhdr}
 \usepackage{indentfirst}
-\usepackage{tcolorbox}   % 花形组行近似（白底黑边圆角字块）
+\usepackage{tcolorbox}   % 组行块近似（白底黑边圆角字块）
+\usepackage{tikz}        % 拍板24 题图矢量化（命制题演示图，图内字号≈正文72%）
 
-% ---------- 颜色 ----------
-\definecolor{rulegray}{HTML}{BFBFBF}   % 栏线浅灰
-\definecolor{headgray}{HTML}{808080}   % 页眉灰字／括注／注记
-\definecolor{footgray}{HTML}{808080}   % 页脚灰字
-\definecolor{deepgray}{HTML}{595959}   % 花形行深灰底线
-\definecolor{pnumbg}{HTML}{DDDDDD}     % 页码灰块
-\definecolor{kygray}{HTML}{777777}     % 题侧知识点对位标签灰字（返工项拍板15，同测评卷）
+% ---------- 颜色（拍板27：黑＋777777＋DDDDDD，单页灰档 ≤2） ----------
+\definecolor{midgray}{HTML}{777777}   % 页眉/页脚小字/题侧标签/组行外衣/章首方块
+\definecolor{pnumbg}{HTML}{DDDDDD}    % 页码灰块
 
 % ---------- 版面 ----------
 \setlength{\columnsep}{7.5mm}
-\setlength{\columnseprule}{0.14mm}
-\renewcommand{\columnseprulecolor}{\color{rulegray}}
-\setlength{\multicolsep}{8pt}
+\setlength{\columnseprule}{0pt}   % 撤栏线（拍板27/28）
+\setlength{\multicolsep}{2pt}
 \renewcommand{\normalsize}{\fontsize{10.5pt}{18pt}\selectfont}
+\linespread{1}   % 主病1 通解：撤销 ctex scheme=chinese 的 linespread=1.3 叠乘
 \normalsize
 \setlength{\parindent}{2em}
 \clubpenalty=10000
@@ -66,75 +74,93 @@
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\floatpagefraction}{0.85}
 
-% ---------- 表格默认（全框细线＋紧凑内边距） ----------
+% ---------- 表格默认（选项 2 项/行网格用；练习件正文零表） ----------
 \setlength{\arrayrulewidth}{0.4pt}
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.3}
+\renewcommand{\arraystretch}{1.0}
 
 % ---------- 页眉页脚 ----------
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[C]{\fontsize{9pt}{11pt}\selectfont\color{headgray}1.1.1\ 空间向量及其运算}
+% A12：页眉仅题区首页（拍板8②「续页可省」），续页/答案区页省
+\fancyhead[C]{\ifnum\value{page}=1 {\fontsize{9pt}{11pt}\selectfont\color{midgray}1.1.1\ 空间向量及其运算}\fi}
+% A6＋拍板22：页脚单行＝灰块页码＋章名·册别小字；块底距页底 ≈11mm（15−15+4：版心底+4mm=286mm）
 \fancyfoot[C]{%
-  \begin{tabular}[b]{@{}c@{}}
-  \fontsize{6.5pt}{8pt}\selectfont\color{footgray}第1章\ 空间向量与立体几何\ ·\ 练习件\\[1.2pt]
-  {\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{\makebox[31mm][c]{\rule[-2.6mm]{0pt}{7.8mm}\fontsize{10.5pt}{12pt}\selectfont\bfseries\thepage}}}
-  \end{tabular}}
+  \raisebox{-3.93mm}[0pt][0pt]{%
+  {\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{\makebox[31mm][c]{\rule{0pt}{7.8mm}\fontsize{10.5pt}{12pt}\selectfont\bfseries\thepage}}}%
+  \hspace{3mm}{\fontsize{6.5pt}{8pt}\selectfont\color{midgray}第1章\ 空间向量与立体几何\ ·\ 练习件}}}
 
-% ---------- 自定义标题命令（multicol 外通栏区） ----------
+% ---------- 章首标题（multicol 外通栏；A3 压缩＋A13 方块 777777） ----------
+% A13：装饰方块 13.9×16.8mm（全品 p06 实测尺寸）与居中章标题同行（拍板4 居中摆位变通，待过目）
 \newcommand{\zhangtitle}[1]{%
-  {\centering\fontsize{22pt}{30pt}\selectfont\heiti #1\par}%
-  \vspace{3pt}\noindent\rule{\textwidth}{0.4pt}\vspace{8pt}\par}
-\newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{14pt}%
-  {\centering\fontsize{18pt}{26pt}\selectfont\heiti #1\par}\addvspace{9pt}}
-\newcommand{\xiaojietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{10pt}%
-  {\centering\fontsize{15pt}{22pt}\selectfont\heiti #1\par}\addvspace{6pt}}
-\newcommand{\keshi}[1]{\par\Needspace*{3\baselineskip}\addvspace{8pt}%
-  {\centering\fontsize{14pt}{20pt}\selectfont\heiti #1\par}\addvspace{6pt}}
-% 答案与解析：14pt 黑体居中通栏（对齐全品练习册答案区标题）
-\newcommand{\answertitle}{\par\Needspace*{3\baselineskip}\addvspace{8pt}%
-  {\centering\fontsize{14pt}{20pt}\selectfont\heiti 答案与解析\par}\addvspace{6pt}}
+  {\centering{\color{midgray}\rule[-5.5mm]{13.9mm}{16.8mm}}\hspace{4mm}{\fontsize{22pt}{30pt}\selectfont\heiti #1}\par}%
+  \vspace{1pt}\noindent\rule{\textwidth}{0.4pt}\vspace{4pt}\par}
+\newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{6pt}%
+  {\centering\fontsize{18pt}{22pt}\selectfont\heiti #1\par}\addvspace{8pt}}
+\newcommand{\xiaojietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{6pt}%
+  {\centering\fontsize{15pt}{22pt}\selectfont\heiti #1\par}\addvspace{5pt}}
+\newcommand{\keshi}[1]{\par\Needspace*{3\baselineskip}\addvspace{5pt}%
+  {\centering\fontsize{14pt}{20pt}\selectfont\heiti #1\par}\addvspace{4pt}}
+% 答案与解析：14pt 黑体居中通栏（行高 16pt＝答案区满页容量裁决，主病3）
+\newcommand{\answertitle}{\par\Needspace*{3\baselineskip}\addvspace{2pt}%
+  {\centering\fontsize{14pt}{16pt}\selectfont\heiti 答案与解析\par}}
 
-% ---------- 正文宏（multicols 内：防孤悬一律 \glueguard） ----------
+% ---------- 正文宏（multicols 内：防孤悬 glueguard 降档 5/4/3→2/1/1，主病2） ----------
 \newcommand{\glueguard}[1]{\vskip 0pt plus #1\baselineskip\penalty-100\vskip 0pt plus -#1\baselineskip}
 \newcommand{\biaoqian}[1]{{\heiti #1}}
 \newcommand{\kongbai}{\underline{\hspace*{15mm}}}
 \newcommand{\ansul}[1]{\underline{#1}}
-% 花形组行：圆角 tcbox 近似花形框＋右侧灰小字＋深灰底线（栏内实现，登记差异）
-\newcommand{\huaxing}[2]{\par\glueguard{5}\addvspace{10pt}%
-  \noindent{\tcbox[on line,colback=white,colframe=black!85,boxrule=0.5pt,arc=2.5mm,%
-    left=5pt,right=5pt,top=2pt,bottom=2pt]{\fontsize{12pt}{16pt}\selectfont\heiti #1}}%
-  \hfill\raisebox{1pt}{\fontsize{6.5pt}{8pt}\selectfont\color{headgray}#2}\par
-  \vspace{1.5pt}\noindent{\color{deepgray}\rule{\linewidth}{0.8pt}}\par\addvspace{6pt}}
-% 题区题目：黑体流水号＋灰括注（题源·难度）＋题干；hang 7mm（题号列恒空）
-\newcommand{\jx}[3]{\par\glueguard{4}\addvspace{6pt}%
-  \noindent\hangindent=7mm\hangafter=1{\heiti #1．}\ {\fontsize{6.5pt}{9pt}\selectfont\color{headgray}〔#2〕}#3\par}
-% 题侧知识点对位标签（返工项拍板15，同测评卷口径）：6.5pt #777777 灰字「（知识点N）」，
-% 由 postproc 以 \hfill 弹性胶注入题干首行右缘（长题干在逗号/数学边界截首行）；
-% 行内右缘元素不进 7mm 题号悬挂窄列；答案页不加
-\newcommand{\kylabel}[1]{{\fontsize{6.5pt}{8pt}\selectfont\color{kygray}#1}}
-% 选项/①链：2em 缩进＋绑定（对齐练习册 p06；作行首前缀用）
-\newcommand{\bindopt}{\penalty10000\noindent\hspace*{2em}}
+% 组行（A4 减负＋拍板26 外衣）：白底黑边圆角块（花形近似）＋右侧灰小字目标分；撤深灰底线；
+% 块前 3pt（主病3 降档 10pt→3pt）、尾 2pt（A4 6pt→2pt）
+\newcommand{\huaxing}[2]{\par\glueguard{2}\addvspace{3pt}%
+  \noindent{\tcbox[on line,colback=white,colframe=black,boxrule=0.5pt,arc=2.5mm,%
+    left=5pt,right=5pt,top=1pt,bottom=1pt]{\fontsize{12pt}{16pt}\selectfont\heiti #1}}%
+  \hfill\raisebox{1pt}{\fontsize{6.5pt}{8pt}\selectfont\color{midgray}#2}\par\addvspace{2pt}}
+% 题图内字号（拍板24：恒≈正文 70~75%，10.5pt×0.72≈7.5pt）
+\newcommand{\figfont}{\fontsize{7.5pt}{9pt}\selectfont}
+% 题侧随件 run（A11）：〔难度〕★（知识点N）同一灰档 6.5pt 777777；〔源〕括注已撤（拍板18）
+\newcommand{\siderun}[1]{{\fontsize{6.5pt}{9pt}\selectfont\color{midgray}#1}}
+% 题区题目（A5）：黑体流水号＋题侧随件＋题干；hang 7mm（题号列恒空）；块前 4pt（题间距定档）
+\newcommand{\jx}[3]{\par\glueguard{1}\addvspace{4pt}%
+  \noindent\hangindent=7mm\hangafter=1{\heiti #1．}\siderun{#2}#3\par}
+% 嵌题侧题（A8）：题干 minipage（左）＋30mm 图 minipage（右，右缘=栏右缘），用于题干 ≤2 行
+\newcommand{\jxfig}[4]{\par\glueguard{1}\addvspace{4pt}%
+  \noindent\begin{minipage}[t]{\dimexpr\linewidth-31.5mm\relax}%
+  \hangindent=7mm\hangafter=1{\heiti #1．}\siderun{#2}#3\end{minipage}%
+  \hfill\begin{minipage}[t]{30mm}\centering#4\end{minipage}\par}
+% 题下居中图块（A8 长题干路径）：7mm 起排（题号列恒空）、30mm 档、段后零补偿（A5）
+\newcommand{\figblock}[1]{\penalty10000\hangindent=0pt\hangafter=1\noindent\hspace*{7mm}%
+  \makebox[\dimexpr\linewidth-7mm\relax][c]{#1}\par\penalty10000}
+% 选项/①链行首（全品实测口径：选项左缘＝悬挂正文左缘 7mm；分号字符保留，拍板21）
+\newcommand{\bindopt}{\penalty10000\noindent\hangindent=7mm\hangafter=1\hspace*{7mm}}
 % 其余续段：顶格绑定（作行首前缀用）
 \newcommand{\bindp}{\penalty10000\noindent}
-% 答案区段首：黑体流水号＋【答案】＋下划线值；解析文本同段接排（hang 7mm 续行）
-\newcommand{\jans}[2]{\par\glueguard{3}\noindent\hangindent=7mm\hangafter=1{\heiti #1．}【答案】#2 }
+% 选项 2 项/行网格（A7）：左列 36mm，第二列对齐 ≈栏中；网格左缘 7mm
+\newcommand{\optgrid}[1]{{\penalty10000\noindent\hangindent=7mm\hangafter=1\hspace*{7mm}%
+  \begin{tabular}[t]{@{}>{\raggedright\arraybackslash}p{36mm}@{}>{\raggedright\arraybackslash}p{36mm}@{}}#1\end{tabular}}\par}
+% 解答题书写空间（公共规则 L104「大题之后保留 6 行」的双栏降档 3 行；0＝不设）
+\newcommand{\liubai}[1]{\par\penalty10000\vspace{#1\baselineskip}}
+% 答案区条目（A9 裁定 10.5pt/18pt 同正文；hang 7mm 续行；块前距撤＝满页容量裁决）
+\newcommand{\jans}[2]{\par\glueguard{1}%
+  \noindent\hangindent=7mm\hangafter=1{\heiti #1．}【答案】#2 }
 
 \begin{document}
 % 章首＋节标题＋小节标题＋课时：全部 multicol 外通栏
 \input{chapterhead.tex}
-% 题区双栏（题面无答案）
+% 题区双栏（题面无答案；A1 \raggedcolumns＝左栏满到底再进右栏）
 \begin{multicols}{2}
+\raggedcolumns
 \emergencystretch=8em
 \input{body.tex}
 \end{multicols}
-% —— 答案与解析（新页起，9.5pt/14.5pt 密集）——
+% —— 答案与解析（新页起；A9 裁定 10.5pt/18pt 与正文同号；册末另区＝样张演示口径；
+%     multicolsep 置 0 仅本区作用域＝页码块净空裁决） ——
 \clearpage
 \answertitle
-\begin{multicols}{2}
-\fontsize{9.5pt}{14.5pt}\selectfont
+{\setlength{\multicolsep}{0pt}\begin{multicols}{2}
+\raggedcolumns
 \emergencystretch=8em
 \input{answers.tex}
-\end{multicols}
+\end{multicols}}
 \end{document}

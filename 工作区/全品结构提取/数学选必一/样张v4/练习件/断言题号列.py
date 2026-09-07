@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-r"""题号列恒空断言（v3 练习件版）：main.pdf 逐页核验「图／表／答案行」x0 ≥ 栏左+7mm（-0.5pt 容差）。
+r"""题号列恒空断言（v4 练习件版）：main.pdf 逐页核验「图／表／答案行」x0 ≥ 栏左+7mm（-0.5pt 容差）。
 背景：\jx／\jans 流水号悬挂 7mm——题号顶格（栏左），后续行与一切图/表从题号右缘（栏左+7mm）起排。
 断言口径（主会话定）：范围仅图/表/答案行三类；选项/①段 2em 缩进不在范围。
 登记排除项（探针实证）：
-  · multicol 栏线（stroke 中心 x=栏中缝 297.64pt，非表线）；
+  · multicol 栏线（v4 columnseprule=0 实际不画线，过滤保留为防御）；
   · \huaxing 花形组行 tcbox 左竖边（白底黑边圆角框顶格元素，stroke 高 8~30pt 且 x0−栏左≤3pt，登记豁免）；
   · 答案行首「1．」黑体：沿用墨迹口径（锚定行按 300dpi 像素墨迹左缘认定）。
-预期：图 3（image3/image4＝题2/题3 题面图 30mm＋image5＝题4 详解折叠图 30mm 排入答案区）；
-     答案行 4（^\d+．【答案】，答案区 p2 起）。"""
+v4 预期：raster 图 0（题6 正方体图＝嵌题侧 TikZ 矢量 30mm、题11 平行六面体图＝题下居中
+TikZ 矢量，拍板24 矢量化；pymupdf get_images 不含矢量绘图）；答案行 11（^\d+．【答案】，p2）。"""
 import re
 
 import pymupdf
 
-BASE = r"C:\提示词\工作区\全品结构提取\数学选必一\样张v3\练习件"
+BASE = r"C:\提示词\工作区\全品结构提取\数学选必一\样张v4\练习件"
 PT = 72 / 25.4
 MARGIN = 15 * PT                    # 42.52pt 栏左
 INDENT = 7 * PT                     # 19.84pt 题号列宽
@@ -39,6 +39,8 @@ def ink_left(page, bb, dpi=300):
 doc = pymupdf.open(BASE + r"\main.pdf")
 tot_fig = tot_rule = tot_ans = tot_exempt = tot_viol = 0
 for pno, page in enumerate(doc, 1):
+    # 答案条目行只在含【答案】文本的页统计（v4：p1 题区题面无答案，p1 题号行不属答案行）
+    page_has_ans = '【答案】' in page.get_text('text')
     def th(x0):
         return TH if x0 < MID else TH_R
 
@@ -66,8 +68,15 @@ for pno, page in enumerate(doc, 1):
     for blk in page.get_text('dict')['blocks']:
         for ln in blk.get('lines', []):
             txt = ''.join(sp['text'] for sp in ln['spans']).strip()
-            if not re.match(r'\d+．【答案】', txt):
+            # v4 口径：行首「N．」顶格即答案条目行（\ansul 下划线盒会致「N．」与
+            # 「【答案】」被 PDF 拆行，不得要求同行；续行悬挂缩进 7mm 不会误入）
+            if not page_has_ans:
                 continue
+            if not re.match(r'\d+．', txt):
+                continue
+            cl_ = MARGIN if ln['bbox'][0] < MID else MARGIN + COLW + COLSEP
+            if ln['bbox'][0] > cl_ + 3:
+                continue   # 行首非顶格（续行/行中分数片），非答案条目行
             ans += 1
             ink = ink_left(page, ln['bbox'])
             # 练习件答案行＝流水号行（题号），设计为顶格（hangafter=1，题号列内合法）；
@@ -87,8 +96,8 @@ for pno, page in enumerate(doc, 1):
     for r, t in viol_r:
         print(f'   违规表线 x0={r.x0:.2f} < {t:.2f} y={r.y0:.1f}~{r.y1:.1f}')
 
-print(f'—— 合计：图 {tot_fig}、表线 {tot_rule}、答案行 {tot_ans}，'
-      f'违规 {tot_viol}（必须=0）；答案行预期 4、图预期 3')
-ok = tot_viol == 0 and tot_ans == 4 and tot_fig == 3
+print(f'—— 合计：raster 图 {tot_fig}、表线 {tot_rule}、答案行 {tot_ans}，'
+      f'违规 {tot_viol}（必须=0）；答案行预期 11、raster 图预期 0（TikZ 矢量化，拍板24）')
+ok = tot_viol == 0 and tot_ans == 11 and tot_fig == 0
 print('断言结果：', '通过' if ok else '未通过')
 raise SystemExit(0 if ok else 1)

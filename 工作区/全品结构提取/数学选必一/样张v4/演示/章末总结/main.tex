@@ -1,0 +1,180 @@
+% ============================================================
+% v4 演示波④ · 章末总结提升（第1章 空间向量与立体几何）
+% 件型依据：拍板20（章末增设：题型归类〔类型总述＋例＋变式〕＋精选高考题组；
+%   真题标注照拍板清单 B＝6.5pt 注记档——元数据不在手不标年份省份，回填债已登记，
+%   页面留「高考题组」块）＋总诊断§三；件型归属随本样张演示定＝导学件族单页演示（登记）。
+% 版式＝样张v4/导学件 竖放双栏惯用法拷贝改造：A4 竖放四边 15mm、双栏 86.25mm 无栏线、
+%   正文 10.5pt/18pt、\linespread{1}＋\raggedcolumns、页脚左章名小字＋右 DDDDDD 灰块页码
+%   底缘离底 ≈11mm、题号悬挂 7mm、题后紧跟【答案】（拍板12 同构）、★精选标＋典型性理由
+%   （拍板25，同灰档）、纯灰阶 黑＋777777＋DDDDDD。
+% 题源：讲练件（上）题源 4 题（例1×2 ≡ v3测评卷源池逐对登记；变式×2 未入三件套）。
+%   类型总述为拍板20 授权的结构新增件编写层文字（登记）。
+% 编译：xelatex main.tex（两遍）→ render.py（先清 png/）→ 断言题号列.py＋断言版式.py
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+
+% ---------- 字体（同导学件 v4） ----------
+\setmainfont{Times New Roman}
+\setCJKmainfont[BoldFont=SimHei]{SimSun}
+\setCJKfamilyfont{hei}{SimHei}
+\setCJKfamilyfont{kai}{KaiTi}
+\newcommand{\heiti}{\CJKfamily{hei}}
+\newcommand{\kaishu}{\CJKfamily{kai}}
+\xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
+\xeCJKsetup{CheckSingle=true}
+
+% ---------- 宏包 ----------
+\usepackage[a4paper,margin=15mm,headheight=12pt,headsep=2mm,footskip=13pt]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{multirow,array,calc}
+\usepackage{multicol}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{tcolorbox}
+
+% ---------- 颜色（黑＋777777＋DDDDDD） ----------
+\definecolor{midgray}{HTML}{777777}
+\definecolor{pnumbg}{HTML}{DDDDDD}
+
+% ---------- 版面（竖放双栏，同导学件 v4） ----------
+\setlength{\columnsep}{7.5mm}
+\setlength{\columnseprule}{0pt}
+\setlength{\multicolsep}{3pt}
+\renewcommand{\normalsize}{\fontsize{10.5pt}{18pt}\selectfont}
+\linespread{1}
+\normalsize
+\setlength{\parindent}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\tolerance=9999
+\emergencystretch=8em
+\binoppenalty=100
+\relpenalty=100
+\flushbottom
+\raggedcolumns
+
+\setlength{\arrayrulewidth}{0.4pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+
+% ---------- 页脚（左章名小字＋右灰块页码，底缘离页底≈11mm，同导学件 v4） ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\fontsize{6.5pt}{8pt}\selectfont\color{midgray}第1章\ 空间向量与立体几何\ ·\ 章末总结提升}
+\fancyfoot[R]{\raisebox{0.59mm}[0pt][0pt]{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{\makebox[31mm][c]{\rule{0pt}{5mm}\fontsize{10.5pt}{12pt}\selectfont\bfseries\thepage}}}}
+
+% ---------- 标题命令 ----------
+% 章末页题头（非章首语境，不施章首灰方块——演示口径登记）：章名 22pt＋件型名 14pt＋黑细线
+\newcommand{\zhangmohead}{%
+  {\centering{\fontsize{22pt}{30pt}\selectfont\heiti 第1章\ 空间向量与立体几何}\par}
+   \vspace{2pt}{\fontsize{14pt}{20pt}\selectfont\heiti 章末总结提升}\par%
+  \vspace{3pt}\noindent\rule{\textwidth}{0.4pt}\vspace{4pt}\par}
+
+% ---------- 正文宏（multicols 内：防孤悬一律 \glueguard） ----------
+\newcommand{\glueguard}[1]{\vskip 0pt plus #1\baselineskip\penalty-100\vskip 0pt plus -#1\baselineskip}
+\newcommand{\biaoqian}[1]{{\heiti #1}}
+\newcommand{\kongbai}{\underline{\hspace*{15mm}}}
+\newcommand{\ansul}[1]{\underline{#1}}
+% 花形行（板块头，通栏语义在双栏页内以栏内块呈现＝导学件惯用法；底线黑，拍板27）
+\newcommand{\huaxing}[2]{\par\glueguard{2}\addvspace{4pt}%
+  \noindent{\tcbox[on line,colback=white,colframe=black,boxrule=0.5pt,arc=2.5mm,%
+    left=5pt,right=5pt,top=1.5pt,bottom=1.5pt]{\fontsize{12pt}{16pt}\selectfont\heiti #1}}%
+  \hfill\raisebox{1pt}{\fontsize{6.5pt}{8pt}\selectfont\color{midgray}#2}\par
+  \vspace{1.5pt}\noindent{\color{black}\rule{80mm}{0.8pt}}\par\addvspace{3pt}}
+% 题型标题：◆ 题型N｜名（12pt 黑体，同 \zsd 惯用法）
+\newcommand{\txing}[2]{\par\glueguard{4}\addvspace{3pt}%
+  \noindent{\fontsize{12pt}{17pt}\selectfont\bfseries ◆\ 题型#1\quad #2}\par\addvspace{2pt}}
+% 例/变式（同导学件 \li）：标签＋〔难度（知识点N）〕＋★块＋题干；hang 7mm
+\newcommand{\li}[4]{\par\glueguard{4}\addvspace{2pt}%
+  \noindent\hangindent=7mm\hangafter=1{\heiti #1}%
+  {\fontsize{9.5pt}{13pt}\selectfont\color{midgray}〔#2〕}%
+  #3#4\par}
+% ★精选块（同导学件：★＋典型性理由，同一灰档）
+\newcommand{\starblk}[1]{★{\fontsize{6.5pt}{9pt}\selectfont\color{midgray}#1}}
+% 灰注记 run（6.5pt 同段接排）
+\newcommand{\zhuzhu}[1]{{\fontsize{6.5pt}{9pt}\selectfont\color{midgray}\hspace{0.5em}#1}}
+% 【答案】行（整体缩进 7mm；值 \ansul 显式逐值包）
+\newcommand{\ansline}[1]{\par\glueguard{2}\noindent\hangindent=7mm\hangafter=0\biaoqian{【答案】}#1\par}
+% 【类型总述】段（hang 7mm；拍板20 授权编写层文字）
+\newcommand{\zongshu}[1]{\par\glueguard{2}\noindent\hangindent=7mm\hangafter=1\biaoqian{【类型总述】}#1\par}
+% 选项 4/2/1 网格（分号字符全保留；1 项/行在实参内以 \\ 断行）
+\newcommand{\opts}[1]{\par\penalty10000\noindent\hangindent=7mm\hangafter=0#1\par\penalty10000}
+% 题图块（30mm 档，从题号右缘 7mm 起排居中；显式清零悬挂残留）
+\newcommand{\figblk}[1]{\penalty10000\noindent\hangindent=0pt\hangafter=1\hspace*{7mm}%
+  \makebox[\dimexpr\linewidth-7mm\relax][c]{\includegraphics[width=30mm]{#1}}\par\penalty10000}
+
+\begin{document}
+
+% ================= 题头（通栏） =================
+\zhangmohead
+
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=8em
+
+% ================= 板块一：题型归类 =================
+\huaxing{题型归类}{按题型回看全章\quad 例变对照}
+
+\txing{一}{空间向量的夹角与距离（数量积法）}
+
+\zongshu{不建系时取不共面的三个向量作基底，建系后直接写坐标，先把目标向量表示出来：求夹角＝算数量积与模，代入 \(\cos\langle \overrightarrow{a},\overrightarrow{b}\rangle = \frac{\overrightarrow{a} \cdot \overrightarrow{b}}{\left| \overrightarrow{a} \right|\left| \overrightarrow{b} \right|}\) 后按 \([0,\pi]\) 取角；求距离＝把目标向量写成向量链后平方展开，逐项代入模与夹角。}
+
+\li{例1}{中档（知识点3）}{\starblk{典型性理由：非坐标法求夹角的母题，基底表示与平移共起点两法皆通，方法可迁移到任意几何体夹角问题}}{如图，在正方体\(ABCD - A_{1}B_{1}C_{1}D_{1}\)中，求向量\(\overrightarrow{BC_{1}}\)与\(\overrightarrow{AC}\)的夹角的大小．}
+
+\figblk{media/image3.png}
+
+\ansline{\ansul{\(60^\circ\)}}
+
+\noindent\hangindent=7mm\hangafter=0\biaoqian{【分析】}方法1：结合图形，平移向量，利用空间向量的夹角定义来求，但要注意向量夹角的范围；方法2：先求\(\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}\)，再利用公式\(\cos\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle = \frac{\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}}{\left| \overrightarrow{BC_{1}} \right| \cdot \left| \overrightarrow{AC} \right|}\)求\(\cos\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle\)，最后确定\(\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle\)即可．\biaoqian{【详解】}解：方法1：因为\(\overrightarrow{AD_{1}} = \overrightarrow{BC_{1}}\)，所以\(\angle CAD_{1}\)的大小就等于\(\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle\)因为△\(CAD_{1}\)为等边三角形，所以\(\angle CAD_{1} = 60^{{^\circ}}\)，所以\(\overrightarrow{BC_{1}}\)与\(\overrightarrow{AC}\)的夹角的大小为\(60{^\circ}\)．方法2．设正方体的棱长为1，\(\overrightarrow{BC_{1}} \cdot \overrightarrow{AC} = \allowbreak\left( \overrightarrow{BC} + \overrightarrow{CC_{1}} \right) \cdot \left( \overrightarrow{AB} + \overrightarrow{BC} \right) = \allowbreak\left( \overrightarrow{AD} + \overrightarrow{AA_{1}} \right) \cdot \left( \overrightarrow{AB} + \overrightarrow{AD} \right)\)\(= \overrightarrow{AD} \cdot \overrightarrow{AB} + \left| \overrightarrow{AD} \right|^{2} + \overrightarrow{AA_{1}} \cdot \overrightarrow{AB} + \overrightarrow{AA_{1}} \cdot \overrightarrow{AD} = 0 + \left| \overrightarrow{AD} \right|^{2} + 0 + 0 = \allowbreak\left| \overrightarrow{AD} \right|^{2} = 1\)又因为\(\left| \overrightarrow{BC_{1}} \right| = \sqrt{2},\left| \overrightarrow{AC} \right| = \sqrt{2}\)，所以\(\cos\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle = \frac{\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}}{\left| \overrightarrow{BC_{1}} \right| \cdot \left| \overrightarrow{AC} \right|} = \frac{1}{\sqrt{2} \times \sqrt{2}} = \frac{1}{2}\)，因为\(\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle \in \lbrack 0,\pi\rbrack\)，所以\(\overrightarrow{BC_{1}}\)与\(\overrightarrow{AC}\)的夹角的大小为\(60{^\circ}\)．\par
+
+\li{变式1}{中档（知识点6）}{}{已知\(\overrightarrow{a} = (1,0,0)\)，\(\overrightarrow{b} = (0, - 1,1)\)，若\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\overrightarrow{b}\)的夹角为\(120^{\circ}\)，则\(\lambda\)的值为（~~~~）}
+
+\opts{A．\(\frac{\sqrt{6}}{6}\)；B．\( - \frac{\sqrt{6}}{6}\)；C．\( \pm \frac{\sqrt{6}}{6}\)；D．\( \pm \sqrt{6}\)}
+
+\ansline{\ansul{B}}
+
+\noindent\hangindent=7mm\hangafter=0\biaoqian{【分析】}首先求出向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)的坐标，及向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\overrightarrow{b}\)的模，再利用空间向量的夹角余弦公式列方程求解即可．\biaoqian{【详解】}∵\(\overrightarrow{a} + \lambda\overrightarrow{b} = (1, - \lambda,\lambda)\)，\(\overrightarrow{b} = (0, - 1,1)\)，\(\therefore\left( \overrightarrow{a} + \lambda\overrightarrow{b} \right) \cdot \overrightarrow{b} = 2\lambda\)，\(\left| \overrightarrow{a} + \lambda\overrightarrow{b} \right| = \sqrt{2\lambda^{2} + 1}\)，\(\left| \overrightarrow{b} \right| = \sqrt{2}\)，∴\(\cos 120^{\circ} = \frac{\left( \overrightarrow{a} + \lambda\overrightarrow{b} \right) \cdot \overrightarrow{b}}{\left| \overrightarrow{a} + \lambda\overrightarrow{b} \right| \times \left| \overrightarrow{b} \right|} = \frac{2\lambda}{\sqrt{2\lambda^{2} + 1} \times \sqrt{2}} = - \frac{1}{2}\)，可得\(\lambda < 0\)，解得\(\lambda = - \frac{\sqrt{6}}{6}\).故选：B.\par
+
+\txing{二}{空间向量数量积的条件求参与综合应用}
+
+\zongshu{以模长与夹角给定的向量为载体：垂直条件翻译成数量积为零，锐角、钝角条件翻译成数量积的正负，解方程（组）求出参数后，再剔除使两向量共线（反向）的退化解；综合题把模长、夹角、垂直组合成方程组求解。}
+
+\li{例1}{中档（知识点3）}{\starblk{典型性理由：数量积条件翻译成不等式再剔除共线解，条件求参高考高频母题}}{已知向量\(\overrightarrow{a},\overrightarrow{b}\)，且\(\left| \overrightarrow{a} \right| = 2\)，\(\left| \overrightarrow{b} \right| = 1\)，\(\left\langle \overrightarrow{a},\overrightarrow{b} \right\rangle = 60^{\circ}\)，则使向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)的夹角为钝角的实数\(\lambda\)的取值范围是\kongbai{}．}
+
+\ansline{\ansul{\(\left( - 1 - \sqrt{3}, - 1 + \sqrt{3} \right)\)}}
+
+\noindent\hangindent=7mm\hangafter=0\biaoqian{【分析】}根据\(\left( \overrightarrow{a} + \lambda\overrightarrow{b} \right) \cdot \allowbreak\left( \lambda\overrightarrow{a} - 2\overrightarrow{b} \right) < 0\)，得出方程求得\(- 1 - \sqrt{3} < \lambda < - 1 + \sqrt{3}\)，若向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线时，则存在实数\(k < 0\)使得\(\overrightarrow{a} + \lambda\overrightarrow{b} = k(\lambda\overrightarrow{a} - 2\overrightarrow{b})\)成立，得到方程组\(\left\{ \begin{array}{r}
+k\lambda = 1 \\
+\lambda = - 2k
+\end{array} \right.\ \)无解，即可得到答案.\biaoqian{【详解】}由向量\(\overrightarrow{a},\overrightarrow{b}\)，且\(\left| \overrightarrow{a} \right| = 2\)，\(\left| \overrightarrow{b} \right| = 1\)，\(\left\langle \overrightarrow{a},\overrightarrow{b} \right\rangle = 60^{\circ}\)，可得\(\overrightarrow{a} \cdot \overrightarrow{b} = 2 \times 1 \times \cos 60^{\circ} = 1\)，因为向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)的夹角为钝角，可得\(\cos\left\langle \overrightarrow{a} + \lambda\overrightarrow{b},\lambda\overrightarrow{a} - 2\overrightarrow{b} \right\rangle < 0\)且\(\cos\left\langle \overrightarrow{a} + \lambda\overrightarrow{b},\lambda\overrightarrow{a} - 2\overrightarrow{b} \right\rangle \neq - 1\)，由\(\left( \overrightarrow{a} + \lambda\overrightarrow{b} \right) \cdot \allowbreak\left( \lambda\overrightarrow{a} - 2\overrightarrow{b} \right) < 0\)，即\(\lambda{\overrightarrow{a}}^{2}\text{+(}\lambda^{2} - 2)\overrightarrow{a} \cdot \overrightarrow{b} - 2\lambda{\overrightarrow{b}}^{2} < 0\)，所以\(\lambda^{2} + 2\lambda - 2 < 0\)，解得\(- 1 - \sqrt{3} < \lambda < - 1 + \sqrt{3}\)，若向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线时，存在实数\(k < 0\)，使得\(\overrightarrow{a} + \lambda\overrightarrow{b} = k(\lambda\overrightarrow{a} - 2\overrightarrow{b})\)成立，可得\(\left\{ \begin{array}{r}
+k\lambda = 1 \\
+\lambda = - 2k
+\end{array} \right.\ \)，此时方程组无解，所以不存在实数\(k\)使得向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线，所以实数\(\lambda\)的取值范围是\(\left( - 1 - \sqrt{3}, - 1 + \sqrt{3} \right)\).\par
+
+\li{变式1}{中档（知识点1）}{}{如图，一个结晶体的形状为平行六面体\(ABCD - A_{1}B_{1}C_{1}D_{1}\)，其中，以顶点\(A\)为端点的三条棱长均为\(6\)，且它们彼此的夹角都是\(60^{\circ}\)，下列说法中正确的是（~~~~）}
+
+\figblk{media/zhangmo_jiejingti.png}
+
+\opts{A．\(AC_{1} = 6\)；B．\(AC_{1} \perp BD\)；\newline C．向量\(\overrightarrow{B_{1}C}\)与\(\overrightarrow{AA_{1}}\)的夹角是\(60^{\circ}\)；\newline D．\(BD_{1}\)与\(AC\)所成角的余弦值为\(\frac{\sqrt{6}}{3}\)}
+
+\ansline{\ansul{B}}
+
+\noindent\hangindent=7mm\hangafter=0\biaoqian{【分析】}以顶点A的三条棱为基底，把各选项涉及的向量用基底表示，再通过模长平方与数量积计算逐项判断各选项正误。\biaoqian{【详解】}\(A\)选项，计算得\(AC_{1} = 6\sqrt{6}\)，所以选项\(A\)不正确；\(B\)选项，\(AC_{1} \cdot BD = 0\)，所以\(AC_{1} \perp BD\)，所以选项\(B\)正确；\(C\)选项，向量\(\overrightarrow{B_{1}C}\)与\(\overrightarrow{AA_{1}}\)的夹角是\(120^{\circ}\)，所以选项\(C\)不正确；\(D\)选项，\(BD_{1}\)与\(AC\)所成角的余弦值为\(\frac{\sqrt{6}}{6}\)，所以选项\(D\)不正确.
+\(A\)选项，由题意可知\(AC_{1} = AB + AD + AA_{1}\)，则\(AC_{1}^{2} = \left( AB + AD + AA_{1} \right)^{2}\)\(= AB^{2} + AD^{2} + AA_{1}^{2} + 2AB \cdot AD + 2AB \cdot AA_{1} + 2AD \cdot AA_{1}\)\(= 6^{2} + 6^{2} + 6^{2} + 2 \times 6 \times 6 \times \cos 60^{\circ} + 2 \times 6 \times 6 \times \cos 60^{\circ} + 2 \times 6 \times 6 \times \cos 60^{\circ} = 6^{3}\)，
+∴\(AC_{1} = 6\sqrt{6}\)，所以选项\(A\)不正确；\(B\)选项，\(BD = AD - AB\)，又\(AC_{1} = AB + AD + AA_{1}\)，\(AC_{1} \cdot BD = \left( AB + AD + AA_{1} \right) \cdot \left( AD - AB \right)\)\(= AB \cdot AD + AD \cdot AD + AA_{1} \cdot AD - AB \cdot AB - AD \cdot AB - AA_{1} \cdot AB\)\(= 6 \times 6 \times \cos 60^{\circ} + 6^{2} + 6 \times 6 \times \cos 60^{\circ} - 6^{2} - 6 \times 6 \times \cos 60^{\circ} - 6 \times 6 \times \cos 60^{\circ} = 0\)
+∴\(AC_{1} \perp BD\)，所以选项\(B\)正确；\(C\)选项，\(B_{1}C = B_{1}B + BC = AD - AA_{1}\)，\(\cos\left\langle B_{1}C, AA_{1} \right\rangle = \frac{\left( AD - AA_{1} \right) \cdot AA_{1}}{\left| AD - AA_{1} \right| \cdot \left| AA_{1} \right|} = - \frac{1}{2}\)，
+∴向量\(\overrightarrow{B_{1}C}\)与\(\overrightarrow{AA_{1}}\)的夹角是\(120^{\circ}\)，所以选项\(C\)不正确；\(D\)选项，\(BD_{1} = BD + DD_{1} = AA_{1} + AD - AB\)，\(AC = AB + AD\)，
+设\(BD_{1}\)与\(AC\)所成角的平面角为\(\theta\)，∴\(\cos\theta = \left| \cos\left\langle BD_{1},AC \right\rangle \right| = \left| \frac{\left( BD_{1} \cdot AC \right)}{\left| BD_{1} \right| \cdot \left| AC \right|} \right|\)\(= \left| \frac{\left( AA_{1} + AD - AB \right) \cdot \left( AB + AD \right)}{\sqrt{\left( AA_{1} + AD - AB \right)^{2}} \cdot \sqrt{\left( AB + AD \right)^{2}}} \right| = \frac{\sqrt{6}}{6}\)，所以选项\(D\)不正确.故选：B\par
+
+% ================= 板块二：高考题组（占位块，元数据回填债） =================
+\huaxing{高考题组}{对接高考\quad 精选真题}
+
+\noindent 本题组对接本章向量法主线（夹角、距离、垂直与求参），按上述题型归类精选高考真题编排，题目下方以 6.5pt 灰注记标注年份、省份等题源元数据（拍板清单 B）。\zhuzhu{（题源元数据暂不在手，年份省份不作标注；题目与标注随元数据回填债登记后补入本块，见交付报告·回填债）}
+
+\end{multicols}
+\end{document}

@@ -1,18 +1,21 @@
 # -*- coding: utf-8 -*-
-r"""题号列恒空断言（v3 导学件版）：main.pdf 逐页核验「图／表／答案行」x0 ≥ 栏左+7mm（-0.5pt 容差）。
-背景：\li／\jiance 题号悬挂 7mm——题号顶格（栏左），后续行与一切图/表/答案行从题号右缘（栏左+7mm）起排。
+r"""题号列恒空断言（v4 导学件版）：main.pdf 逐页核验「图／表／答案行」x0 ≥ 栏左+7mm（-0.5pt 容差）。
+背景：\li／\jiancestem／\ansline／\tjdnr 题号悬挂 7mm——题号顶格（栏左），后续行与一切图/表/答案行从题号右缘（栏左+7mm）起排。
 断言口径（主会话定）：范围仅图/表/答案行三类；选项/①段 2em 缩进不在范围。
 登记排除项（探针实证）：
   · multicol 栏线（stroke 中心 x=栏中缝 297.64pt，非表线）；
-  · \huaxing 花形行 tcbox 左竖边（白底黑边圆角框顶格元素，stroke 高 8~30pt 且 x0−栏左≤3pt，登记豁免；
-    右竖边在栏左+框宽处 ≥7mm 阈值内侧不触发）；
+  · \huaxing 花形行 tcbox 左竖边（白底黑边圆角框顶格元素，stroke 高 8~30pt 且 x0−栏左≤3pt（0–3pt 窗），登记豁免；
+    右竖边在栏左+框宽处 ≥7mm 阈值内侧不触发；v4 花形行居通栏时左缘=版心左，仍落窗内）；
   · 答案行首字【：SimHei【 左半空、xeCJK 行首压缩后 origin 比 ink 左偏（沿用 v2 口径：
-    锚定行按 300dpi 像素墨迹左缘认定，续行由 \hangafter=0 结构保证）。
-预期：图 3（sub3_B_4 45mm 三联投影图＋image1/image2 30mm 立体线框图）、
-     【答案】行 3（变式1＋课堂检测×2；诊断题答案在行末括号内、非【答案】起行，不计）。"""
+    锚定行按 300dpi 像素墨迹左缘认定，续行由 \hangafter=0 结构保证）；
+  · v4 页码灰块（31mm 宽）、章首实心灰方块（3.2mm 方）fill 宽均 >2pt，不进「宽≤2pt」表线过滤，天然不触发；
+  · v4 无 v3 章首 T0 导航表（讲练件统计行与 T0 表不排入导学件）；T0 带逻辑无害保留（页1 宽幅横线=章名下 0.4pt 通栏细线）。
+预期（v4）：图 6（sub3_B_4 45mm 投影三联＋image1/image2 30mm 立体线框＋探六/八/九 3 幅题图）、
+     【答案】行 14（变式1×9＋课堂检测×5；诊断题答案在行末括号内、非【答案】起行，不计）。"""
+import os
 import pymupdf
 
-BASE = r"C:\提示词\工作区\全品结构提取\数学选必一\样张v3\导学件"
+BASE = os.path.dirname(os.path.abspath(__file__))
 PT = 72 / 25.4
 MARGIN = 15 * PT                    # 42.52pt 栏左
 INDENT = 7 * PT                     # 19.84pt 题号列宽
@@ -99,7 +102,7 @@ for pno, page in enumerate(doc, 1):
         print(f'   违规表线 x0={r.x0:.2f} < {t:.2f} y={r.y0:.1f}~{r.y1:.1f}')
 
 print(f'—— 合计：图 {tot_fig}、表线 {tot_rule}（T0 豁免 {tot_exempt}）、答案行 {tot_ans}，'
-      f'违规 {tot_viol}（必须=0）；答案行预期 3、图预期 3')
-ok = tot_viol == 0 and tot_ans == 3 and tot_fig == 3
+      f'违规 {tot_viol}（必须=0）；答案行预期 14、图预期 6')
+ok = tot_viol == 0 and tot_ans == 14 and tot_fig == 6
 print('断言结果：', '通过' if ok else '未通过')
 raise SystemExit(0 if ok else 1)
