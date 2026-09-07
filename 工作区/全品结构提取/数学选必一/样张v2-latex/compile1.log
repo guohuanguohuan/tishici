@@ -1,0 +1,4330 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexart.cls (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-xetex.def))
+Document Class: ctexart 2026/08/11 v2.6.5 Chinese adapter for class article (CTEX)
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/indentfirst.sty)
+
+! LaTeX Error: Command \columnseprulecolor undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \renewcommand{\columnseprulecolor}
+                                       {\color{rulegray}}
+No file main.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(./chapterhead.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd)
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.10 \textbf
+            {节名} & \textbf{题量} & \textbf{简单/中档/难} &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.10 \textbf
+            {节名} & \textbf{题量} & \textbf{简单/中档/难} &
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.10 \textbf
+            {节名} & \textbf{题量} & \textbf{简单/中档/难} &
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 10--10
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 10--10
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 10--10
+\TU/TimesNewRoman(0)/m/n/10.5 0.5234 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 10--10
+\TU/SimSun(0)/b/n/10.5 节 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 10--10
+\TU/SimSun(0)/b/n/10.5 名|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.10 \textbf{节名} & \textbf
+                          {题量} & \textbf{简单/中档/难} &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.10 \textbf{节名} & \textbf
+                          {题量} & \textbf{简单/中档/难} &
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.10 \textbf{节名} & \textbf
+                          {题量} & \textbf{简单/中档/难} &
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 10--10
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 10--10
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 10--10
+\TU/TimesNewRoman(0)/m/n/10.5 0.0721 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 10--10
+\TU/SimSun(0)/b/n/10.5 题 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 10--10
+\TU/SimSun(0)/b/n/10.5 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.10 \textbf{节名} & \textbf{题量} & \textbf
+                                        {简单/中档/难} &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.10 \textbf{节名} & \textbf{题量} & \textbf
+                                        {简单/中档/难} &
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.10 \textbf{节名} & \textbf{题量} & \textbf
+                                        {简单/中档/难} &
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 10--10
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 10--10
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 10--10
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 10--10
+\TU/SimSun(0)/b/n/10.5 简 
+
+Overfull \hbox (23.91724pt too wide) in paragraph at lines 10--10
+\TU/SimSun(0)/b/n/10.5 单\TU/TimesNewRoman(0)/b/n/10.5 /\TU/SimSun(0)/b/n/10.5 中 
+
+Overfull \hbox (23.91724pt too wide) in paragraph at lines 10--10
+\TU/SimSun(0)/b/n/10.5 档\TU/TimesNewRoman(0)/b/n/10.5 /\TU/SimSun(0)/b/n/10.5 难|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.11 \textbf
+            {题型组数} \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.11 \textbf
+            {题型组数} \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.11 \textbf
+            {题型组数} \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 11--12
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 11--12
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.48535pt too wide) in paragraph at lines 11--12
+\TU/TimesNewRoman(0)/m/n/10.5 0.1191 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 11--12
+\TU/SimSun(0)/b/n/10.5 题 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 11--12
+\TU/SimSun(0)/b/n/10.5 型 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 11--12
+\TU/SimSun(0)/b/n/10.5 组 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 11--12
+\TU/SimSun(0)/b/n/10.5 数|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.12 1
+      .1.1 空间向量及其运算 & 10 & 简单6/中档4/难0 & 9 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.12 1
+      .1.1 空间向量及其运算 & 10 & 简单6/中档4/难0 & 9 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.12 1
+      .1.1 空间向量及其运算 & 10 & 简单6/中档4/难0 & 9 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 12--12
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (49.875pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 0.52341.1.1 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 向 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 量 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 及 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 其 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 运 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 算|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.12 1.1.1 空间向量及其运算 & 1
+                       0 & 简单6/中档4/难0 & 9 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.12 1.1.1 空间向量及其运算 & 1
+                       0 & 简单6/中档4/难0 & 9 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.12 1.1.1 空间向量及其运算 & 1
+                       0 & 简单6/中档4/难0 & 9 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 12--12
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (39.375pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 0.072110|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.12 1.1.1 空间向量及其运算 & 10 & 简
+                            单6/中档4/难0 & 9 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.12 1.1.1 空间向量及其运算 & 10 & 简
+                            单6/中档4/难0 & 9 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.12 1.1.1 空间向量及其运算 & 10 & 简
+                            单6/中档4/难0 & 9 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 12--12
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 6/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 12--12
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 4/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 12--12
+\TU/TimesNewRoman(0)/m/n/10.5 0|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.12 1.1.1 空间向量及其运算 & 10 & 简单6/中档4/难0 & 9
+                                          \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.12 1.1.1 空间向量及其运算 & 10 & 简单6/中档4/难0 & 9
+                                          \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.12 1.1.1 空间向量及其运算 & 10 & 简单6/中档4/难0 & 9
+                                          \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 12--13
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 12--13
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (33.73535pt too wide) in paragraph at lines 12--13
+\TU/TimesNewRoman(0)/m/n/10.5 0.11919|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.13 1
+      .1.2 空间向量基本定理 & 4 & 简单2/中档2/难0 & 3 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.13 1
+      .1.2 空间向量基本定理 & 4 & 简单2/中档2/难0 & 3 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.13 1
+      .1.2 空间向量基本定理 & 4 & 简单2/中档2/难0 & 3 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 13--13
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (49.875pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 0.52341.1.2 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 向 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 量 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 基 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 本 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 定 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 理|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.13 1.1.2 空间向量基本定理 & 4
+                        & 简单2/中档2/难0 & 3 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.13 1.1.2 空间向量基本定理 & 4
+                        & 简单2/中档2/难0 & 3 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.13 1.1.2 空间向量基本定理 & 4
+                        & 简单2/中档2/难0 & 3 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 13--13
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (34.125pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 0.07214|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.13 1.1.2 空间向量基本定理 & 4 & 简
+                           单2/中档2/难0 & 3 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.13 1.1.2 空间向量基本定理 & 4 & 简
+                           单2/中档2/难0 & 3 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.13 1.1.2 空间向量基本定理 & 4 & 简
+                           单2/中档2/难0 & 3 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 13--13
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 2/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 13--13
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 2/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 13--13
+\TU/TimesNewRoman(0)/m/n/10.5 0|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.13 1.1.2 空间向量基本定理 & 4 & 简单2/中档2/难0 & 3
+                                         \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.13 1.1.2 空间向量基本定理 & 4 & 简单2/中档2/难0 & 3
+                                         \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.13 1.1.2 空间向量基本定理 & 4 & 简单2/中档2/难0 & 3
+                                         \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 13--14
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 13--14
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (33.73535pt too wide) in paragraph at lines 13--14
+\TU/TimesNewRoman(0)/m/n/10.5 0.11913|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.14 1
+      .1.3 空间向量的坐标与空间直角坐标系 & 10 & 简单3/中档7/难0 & 7 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.14 1
+      .1.3 空间向量的坐标与空间直角坐标系 & 10 & 简单3/中档7/难0 & 7 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.14 1
+      .1.3 空间向量的坐标与空间直角坐标系 & 10 & 简单3/中档7/难0 & 7 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 14--14
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (49.875pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 0.52341.1.3 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 向 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 量 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 的 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 坐 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 标 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 与 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 直 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 角 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 坐 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 标 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 系|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 1
+                              0 & 简单3/中档7/难0 & 7 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 1
+                              0 & 简单3/中档7/难0 & 7 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 1
+                              0 & 简单3/中档7/难0 & 7 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 14--14
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (39.375pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 0.072110|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 10 & 简
+                                   单3/中档7/难0 & 7 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 10 & 简
+                                   单3/中档7/难0 & 7 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 10 & 简
+                                   单3/中档7/难0 & 7 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 14--14
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 3/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 14--14
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 7/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 14--14
+\TU/TimesNewRoman(0)/m/n/10.5 0|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 10 & 简单3/中档7/难0 & 7
+                                                 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 10 & 简单3/中档7/难0 & 7
+                                                 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.14 1.1.3 空间向量的坐标与空间直角坐标系 & 10 & 简单3/中档7/难0 & 7
+                                                 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 14--15
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 14--15
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (33.73535pt too wide) in paragraph at lines 14--15
+\TU/TimesNewRoman(0)/m/n/10.5 0.11917|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.15 1
+      .2.1 空间中的点、直线与空间向量 & 9 & 简单2/中档6/难1 & 6 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.15 1
+      .2.1 空间中的点、直线与空间向量 & 9 & 简单2/中档6/难1 & 6 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.15 1
+      .2.1 空间中的点、直线与空间向量 & 9 & 简单2/中档6/难1 & 6 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 15--15
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (49.875pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 0.52341.2.1 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 的 
+
+Overfull \hbox (14.23242pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 点、| 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 直 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 线 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 与 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 向 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.15 1.2.1 空间中的点、直线与空间向量 & 9
+                             & 简单2/中档6/难1 & 6 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.15 1.2.1 空间中的点、直线与空间向量 & 9
+                             & 简单2/中档6/难1 & 6 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.15 1.2.1 空间中的点、直线与空间向量 & 9
+                             & 简单2/中档6/难1 & 6 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 15--15
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (34.125pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 0.07219|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.15 1.2.1 空间中的点、直线与空间向量 & 9 & 简
+                                单2/中档6/难1 & 6 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.15 1.2.1 空间中的点、直线与空间向量 & 9 & 简
+                                单2/中档6/难1 & 6 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.15 1.2.1 空间中的点、直线与空间向量 & 9 & 简
+                                单2/中档6/难1 & 6 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 15--15
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 2/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 15--15
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 6/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 15--15
+\TU/TimesNewRoman(0)/m/n/10.5 1|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.15 1.2.1 空间中的点、直线与空间向量 & 9 & 简单2/中档6/难1 & 6
+                                              \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.15 1.2.1 空间中的点、直线与空间向量 & 9 & 简单2/中档6/难1 & 6
+                                              \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.15 1.2.1 空间中的点、直线与空间向量 & 9 & 简单2/中档6/难1 & 6
+                                              \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 15--16
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 15--16
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (33.73535pt too wide) in paragraph at lines 15--16
+\TU/TimesNewRoman(0)/m/n/10.5 0.11916|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.16 1
+      .2.2 空间中的平面与空间向量 & 7 & 简单2/中档5/难0 & 5 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.16 1
+      .2.2 空间中的平面与空间向量 & 7 & 简单2/中档5/难0 & 5 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.16 1
+      .2.2 空间中的平面与空间向量 & 7 & 简单2/中档5/难0 & 5 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 16--16
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (49.875pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 0.52341.2.2 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 的 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 平 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 面 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 与 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 向 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.16 1.2.2 空间中的平面与空间向量 & 7
+                           & 简单2/中档5/难0 & 5 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.16 1.2.2 空间中的平面与空间向量 & 7
+                           & 简单2/中档5/难0 & 5 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.16 1.2.2 空间中的平面与空间向量 & 7
+                           & 简单2/中档5/难0 & 5 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 16--16
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (34.125pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 0.07217|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.16 1.2.2 空间中的平面与空间向量 & 7 & 简
+                              单2/中档5/难0 & 5 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.16 1.2.2 空间中的平面与空间向量 & 7 & 简
+                              单2/中档5/难0 & 5 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.16 1.2.2 空间中的平面与空间向量 & 7 & 简
+                              单2/中档5/难0 & 5 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 16--16
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 2/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 16--16
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 5/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 16--16
+\TU/TimesNewRoman(0)/m/n/10.5 0|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.16 1.2.2 空间中的平面与空间向量 & 7 & 简单2/中档5/难0 & 5
+                                            \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.16 1.2.2 空间中的平面与空间向量 & 7 & 简单2/中档5/难0 & 5
+                                            \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.16 1.2.2 空间中的平面与空间向量 & 7 & 简单2/中档5/难0 & 5
+                                            \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 16--17
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 16--17
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (33.73535pt too wide) in paragraph at lines 16--17
+\TU/TimesNewRoman(0)/m/n/10.5 0.11915|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.17 1
+      .2.3 直线与平面的夹角 & 8 & 简单1/中档6/难1 & 7 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.17 1
+      .2.3 直线与平面的夹角 & 8 & 简单1/中档6/难1 & 7 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.17 1
+      .2.3 直线与平面的夹角 & 8 & 简单1/中档6/难1 & 7 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 17--17
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (49.875pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 0.52341.2.3 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 直 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 线 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 与 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 平 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 面 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 的 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 夹 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 角|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.17 1.2.3 直线与平面的夹角 & 8
+                        & 简单1/中档6/难1 & 7 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.17 1.2.3 直线与平面的夹角 & 8
+                        & 简单1/中档6/难1 & 7 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.17 1.2.3 直线与平面的夹角 & 8
+                        & 简单1/中档6/难1 & 7 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 17--17
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (34.125pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 0.07218|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.17 1.2.3 直线与平面的夹角 & 8 & 简
+                           单1/中档6/难1 & 7 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.17 1.2.3 直线与平面的夹角 & 8 & 简
+                           单1/中档6/难1 & 7 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.17 1.2.3 直线与平面的夹角 & 8 & 简
+                           单1/中档6/难1 & 7 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 17--17
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 1/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 17--17
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 6/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.5 1|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.17 1.2.3 直线与平面的夹角 & 8 & 简单1/中档6/难1 & 7
+                                         \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.17 1.2.3 直线与平面的夹角 & 8 & 简单1/中档6/难1 & 7
+                                         \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.17 1.2.3 直线与平面的夹角 & 8 & 简单1/中档6/难1 & 7
+                                         \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 17--18
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 17--18
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (33.73535pt too wide) in paragraph at lines 17--18
+\TU/TimesNewRoman(0)/m/n/10.5 0.11917|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.18 1
+      .2.4 二面角 & 13 & 简单0/中档13/难0 & 12 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.18 1
+      .2.4 二面角 & 13 & 简单0/中档13/难0 & 12 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.18 1
+      .2.4 二面角 & 13 & 简单0/中档13/难0 & 12 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 18--18
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (49.875pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 0.52341.2.4 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 18--18
+\TU/SimSun(0)/m/n/10.5 二 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 18--18
+\TU/SimSun(0)/m/n/10.5 面 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 18--18
+\TU/SimSun(0)/m/n/10.5 角|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.18 1.2.4 二面角 & 1
+                  3 & 简单0/中档13/难0 & 12 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.18 1.2.4 二面角 & 1
+                  3 & 简单0/中档13/难0 & 12 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.18 1.2.4 二面角 & 1
+                  3 & 简单0/中档13/难0 & 12 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 18--18
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (39.375pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 0.072113|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.18 1.2.4 二面角 & 13 & 简
+                       单0/中档13/难0 & 12 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.18 1.2.4 二面角 & 13 & 简
+                       单0/中档13/难0 & 12 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.18 1.2.4 二面角 & 13 & 简
+                       单0/中档13/难0 & 12 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 18--18
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 18--18
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 18--18
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 0/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 18--18
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (23.91724pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 13/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 18--18
+\TU/TimesNewRoman(0)/m/n/10.5 0|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.18 1.2.4 二面角 & 13 & 简单0/中档13/难0 & 1
+                                     2 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.18 1.2.4 二面角 & 13 & 简单0/中档13/难0 & 1
+                                     2 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.18 1.2.4 二面角 & 13 & 简单0/中档13/难0 & 1
+                                     2 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 18--19
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 18--19
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (38.98535pt too wide) in paragraph at lines 18--19
+\TU/TimesNewRoman(0)/m/n/10.5 0.119112|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.19 1
+      .2.5 空间中的距离 & 79 & 简单5/中档61/难13 & 69 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.19 1
+      .2.5 空间中的距离 & 79 & 简单5/中档61/难13 & 69 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.19 1
+      .2.5 空间中的距离 & 79 & 简单5/中档61/难13 & 69 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 19--19
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (49.875pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 0.52341.2.5 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 空 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 间 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 的 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 距 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 离|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.19 1.2.5 空间中的距离 & 7
+                     9 & 简单5/中档61/难13 & 69 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.19 1.2.5 空间中的距离 & 7
+                     9 & 简单5/中档61/难13 & 69 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.19 1.2.5 空间中的距离 & 7
+                     9 & 简单5/中档61/难13 & 69 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 19--19
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (39.375pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 0.072179|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.19 1.2.5 空间中的距离 & 79 & 简
+                          单5/中档61/难13 & 69 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.19 1.2.5 空间中的距离 & 79 & 简
+                          单5/中档61/难13 & 69 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.19 1.2.5 空间中的距离 & 79 & 简
+                          单5/中档61/难13 & 69 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 19--19
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (18.66724pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 5/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (23.91724pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 61/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 19--19
+\TU/TimesNewRoman(0)/m/n/10.5 13|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.19 1.2.5 空间中的距离 & 79 & 简单5/中档61/难13 & 6
+                                         9 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.19 1.2.5 空间中的距离 & 79 & 简单5/中档61/难13 & 6
+                                         9 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.19 1.2.5 空间中的距离 & 79 & 简单5/中档61/难13 & 6
+                                         9 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 19--20
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 19--20
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (38.98535pt too wide) in paragraph at lines 19--20
+\TU/TimesNewRoman(0)/m/n/10.5 0.119169|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.20 合
+      计 & 140 & 简单21/中档104/难15 & 118 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.20 合
+      计 & 140 & 简单21/中档104/难15 & 118 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.5234}
+l.20 合
+      计 & 140 & 简单21/中档104/难15 & 118 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 20--20
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 0.5234 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 20--20
+\TU/SimSun(0)/m/n/10.5 合 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 20--20
+\TU/SimSun(0)/m/n/10.5 计|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.20 合计 & 1
+           40 & 简单21/中档104/难15 & 118 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.20 合计 & 1
+           40 & 简单21/中档104/难15 & 118 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.0721}
+l.20 合计 & 1
+           40 & 简单21/中档104/难15 & 118 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 20--20
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (44.625pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 0.0721140|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.20 合计 & 140 & 简
+                 单21/中档104/难15 & 118 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.20 合计 & 140 & 简
+                 单21/中档104/难15 & 118 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.2853}
+l.20 合计 & 140 & 简
+                 单21/中档104/难15 & 118 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 20--20
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (28.875pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 0.2853 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 20--20
+\TU/SimSun(0)/m/n/10.5 简 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 20--20
+\TU/SimSun(0)/m/n/10.5 单 
+
+Overfull \hbox (23.91724pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 21/\TU/SimSun(0)/m/n/10.5 中 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 20--20
+\TU/SimSun(0)/m/n/10.5 档 
+
+Overfull \hbox (29.16724pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 104/\TU/SimSun(0)/m/n/10.5 难 
+
+Overfull \hbox (10.5pt too wide) in paragraph at lines 20--20
+\TU/TimesNewRoman(0)/m/n/10.5 15|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.20 合计 & 140 & 简单21/中档104/难15 & 1
+                                  18 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.20 合计 & 140 & 简单21/中档104/难15 & 1
+                                  18 \\
+! Undefined control sequence.
+<argument> (\linewidth - 6\tabcolsep ) * \real 
+                                               {0.1191}
+l.20 合计 & 140 & 简单21/中档104/难15 & 1
+                                  18 \\
+
+Overfull \hbox (6.99316pt too wide) in paragraph at lines 20--21
+[]\TU/TimesNewRoman(0)/m/n/10.5 () 
+
+Overfull \hbox (5.25pt too wide) in paragraph at lines 20--21
+\TU/TimesNewRoman(0)/m/n/10.5 * 
+
+Overfull \hbox (43.8457pt too wide) in paragraph at lines 20--21
+\TU/TimesNewRoman(0)/m/n/10.5 0.1191118|  
+)
+
+LaTeX Warning: Optional argument of \twocolumn too tall on page 1.
+
+
+Overfull \vbox (30.0pt too high) has occurred while \output is active
+
+LaTeX Warning: Text page 1 contains only floats.
+
+
+Overfull \vbox (30.0pt too high) has occurred while \output is active
+Overfull \vbox (16.0pt too high) has occurred while \output is active
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [1] (./body.tex
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.1 \bottomrule
+               
+! Too many }'s.
+<recently read> }
+                 
+l.2 }
+     
+
+LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 14.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.27 对
+      比项 & 旧知识：平面向量 & 新知识：空间向量 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.27 对
+      比项 & 旧知识：平面向量 & 新知识：空间向量 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0565}
+l.27 对
+      比项 & 旧知识：平面向量 & 新知识：空间向量 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 27--27
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 27--27
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 27--27
+\TU/TimesNewRoman(0)/b/n/12 0.0565 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 对 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 比 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 项|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.27 对比项 & 旧
+            知识：平面向量 & 新知识：空间向量 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.27 对比项 & 旧
+            知识：平面向量 & 新知识：空间向量 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0941}
+l.27 对比项 & 旧
+            知识：平面向量 & 新知识：空间向量 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 27--27
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 27--27
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 27--27
+\TU/TimesNewRoman(0)/b/n/12 0.0941 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 旧 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 知 
+
+Overfull \hbox (15.79688pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 识：| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 面 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--27
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.27 对比项 & 旧知识：平面向量 & 新
+                       知识：空间向量 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.27 对比项 & 旧知识：平面向量 & 新
+                       知识：空间向量 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.3083}
+l.27 对比项 & 旧知识：平面向量 & 新
+                       知识：空间向量 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 27--28
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 27--28
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 27--28
+\TU/TimesNewRoman(0)/b/n/12 0.3083 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--28
+\TU/SimHei(0)/m/n/12 新 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--28
+\TU/SimHei(0)/m/n/12 知 
+
+Overfull \hbox (15.79688pt too wide) in paragraph at lines 27--28
+\TU/SimHei(0)/m/n/12 识：| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--28
+\TU/SimHei(0)/m/n/12 空 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--28
+\TU/SimHei(0)/m/n/12 间 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--28
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 27--28
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.28 研
+      究范围 & 同一平面内（二维） & 空间中（三维），平面情形为其特例 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.28 研
+      究范围 & 同一平面内（二维） & 空间中（三维），平面情形为其特例 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0565}
+l.28 研
+      究范围 & 同一平面内（二维） & 空间中（三维），平面情形为其特例 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 28--28
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 28--28
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 28--28
+\TU/TimesNewRoman(0)/b/n/12 0.0565 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 研 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 究 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 范 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 围|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.28 研究范围 & 同
+             一平面内（二维） & 空间中（三维），平面情形为其特例 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.28 研究范围 & 同
+             一平面内（二维） & 空间中（三维），平面情形为其特例 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0941}
+l.28 研究范围 & 同
+             一平面内（二维） & 空间中（三维），平面情形为其特例 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 28--28
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 28--28
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 28--28
+\TU/TimesNewRoman(0)/b/n/12 0.0941 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 同 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 一 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 面 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 内 
+
+Overfull \hbox (16.73438pt too wide) in paragraph at lines 28--28
+|\TU/SimHei(0)/m/n/12 （二 
+
+Overfull \hbox (16.78125pt too wide) in paragraph at lines 28--28
+\TU/SimHei(0)/m/n/12 维）||  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.28 研究范围 & 同一平面内（二维） & 空
+                         间中（三维），平面情形为其特例 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.28 研究范围 & 同一平面内（二维） & 空
+                         间中（三维），平面情形为其特例 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.3083}
+l.28 研究范围 & 同一平面内（二维） & 空
+                         间中（三维），平面情形为其特例 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 28--29
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 28--29
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 28--29
+\TU/TimesNewRoman(0)/b/n/12 0.3083 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 空 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 间 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 中 
+
+Overfull \hbox (16.73438pt too wide) in paragraph at lines 28--29
+|\TU/SimHei(0)/m/n/12 （三 
+
+Overfull \hbox (20.10938pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 维） ，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 面 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 情 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 形 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 为 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 其 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 特 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 28--29
+\TU/SimHei(0)/m/n/12 例|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.29 定
+      义 & 具有大小和方向的量 & 具有大小和方向的量，含义一致 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.29 定
+      义 & 具有大小和方向的量 & 具有大小和方向的量，含义一致 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0565}
+l.29 定
+      义 & 具有大小和方向的量 & 具有大小和方向的量，含义一致 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 29--29
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/b/n/12 0.0565 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 定 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 义|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.29 定义 & 具
+           有大小和方向的量 & 具有大小和方向的量，含义一致 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.29 定义 & 具
+           有大小和方向的量 & 具有大小和方向的量，含义一致 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0941}
+l.29 定义 & 具
+           有大小和方向的量 & 具有大小和方向的量，含义一致 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 29--29
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 29--29
+\TU/TimesNewRoman(0)/b/n/12 0.0941 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 具 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 有 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 大 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 小 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 和 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 方 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--29
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.29 定义 & 具有大小和方向的量 & 具
+                       有大小和方向的量，含义一致 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.29 定义 & 具有大小和方向的量 & 具
+                       有大小和方向的量，含义一致 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.3083}
+l.29 定义 & 具有大小和方向的量 & 具
+                       有大小和方向的量，含义一致 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 29--30
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 29--30
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 29--30
+\TU/TimesNewRoman(0)/b/n/12 0.3083 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 具 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 有 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 大 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 小 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 和 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 方 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 量，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 含 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 义 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 一 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 29--30
+\TU/SimHei(0)/m/n/12 致|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.30 加
+      减、数乘与数量积 & 三角形／平行四边形法则与运算律 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.30 加
+      减、数乘与数量积 & 三角形／平行四边形法则与运算律 &
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0565}
+l.30 加
+      减、数乘与数量积 & 三角形／平行四边形法则与运算律 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 30--30
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 30--30
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 30--30
+\TU/TimesNewRoman(0)/b/n/12 0.0565 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 加 
+
+Overfull \hbox (16.35938pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 减、| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 数 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 乘 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 与 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 数 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 积|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.30 加减、数乘与数量积 & 三
+                  角形／平行四边形法则与运算律 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.30 加减、数乘与数量积 & 三
+                  角形／平行四边形法则与运算律 &
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0941}
+l.30 加减、数乘与数量积 & 三
+                  角形／平行四边形法则与运算律 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 30--30
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 30--30
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 30--30
+\TU/TimesNewRoman(0)/b/n/12 0.0941 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 三 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 角 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 形 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 ／ 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 行 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 四 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 边 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 形 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 法 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 则 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 与 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 运 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 算 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 30--30
+\TU/SimHei(0)/m/n/12 律|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.31 法
+      则与运算律完全一致，直接迁移 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.31 法
+      则与运算律完全一致，直接迁移 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.3083}
+l.31 法
+      则与运算律完全一致，直接迁移 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 31--32
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 31--32
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 31--32
+\TU/TimesNewRoman(0)/b/n/12 0.3083 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 法 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 则 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 与 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 运 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 算 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 律 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 完 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 全 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 一 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 致，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 直 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 接 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 迁 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 31--32
+\TU/SimHei(0)/m/n/12 移|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.32 共
+      线与共面 & 共线向量定理刻画平面内位置关系 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.32 共
+      线与共面 & 共线向量定理刻画平面内位置关系 &
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0565}
+l.32 共
+      线与共面 & 共线向量定理刻画平面内位置关系 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 32--32
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/b/n/12 0.0565 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 线 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 与 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 面|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.32 共线与共面 & 共
+              线向量定理刻画平面内位置关系 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.32 共线与共面 & 共
+              线向量定理刻画平面内位置关系 &
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0941}
+l.32 共线与共面 & 共
+              线向量定理刻画平面内位置关系 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 32--32
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 32--32
+\TU/TimesNewRoman(0)/b/n/12 0.0941 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 线 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 定 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 理 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 刻 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 画 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 面 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 内 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 位 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 置 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 关 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 32--32
+\TU/SimHei(0)/m/n/12 系|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.33 共
+      线定理（条目5）与共面向量定理（条目9）并用，刻画空间位置关系 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.33 共
+      线定理（条目5）与共面向量定理（条目9）并用，刻画空间位置关系 \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.3083}
+l.33 共
+      线定理（条目5）与共面向量定理（条目9）并用，刻画空间位置关系 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 33--34
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 33--34
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 33--34
+\TU/TimesNewRoman(0)/b/n/12 0.3083 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 线 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 定 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 理 
+
+Overfull \hbox (16.73438pt too wide) in paragraph at lines 33--34
+|\TU/SimHei(0)/m/n/12 （条 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 目 
+
+Overfull \hbox (10.78125pt too wide) in paragraph at lines 33--34
+\TU/TimesNewRoman(0)/b/n/12 5\TU/SimHei(0)/m/n/12 ）| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 与 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 面 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 定 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 理 
+
+Overfull \hbox (16.73438pt too wide) in paragraph at lines 33--34
+|\TU/SimHei(0)/m/n/12 （条 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 目 
+
+Overfull \hbox (10.78125pt too wide) in paragraph at lines 33--34
+\TU/TimesNewRoman(0)/b/n/12 9\TU/SimHei(0)/m/n/12 ）| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 并 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 用，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 刻 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 画 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 空 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 间 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 位 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 置 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 关 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 33--34
+\TU/SimHei(0)/m/n/12 系|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.34 易
+      混点 & ------ &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.34 易
+      混点 & ------ &
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0565}
+l.34 易
+      混点 & ------ &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 34--34
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/b/n/12 0.0565 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 34--34
+\TU/SimHei(0)/m/n/12 易 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 34--34
+\TU/SimHei(0)/m/n/12 混 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 34--34
+\TU/SimHei(0)/m/n/12 点|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.34 易混点 & -
+            ----- &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.34 易混点 & -
+            ----- &
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.0941}
+l.34 易混点 & -
+            ----- &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 34--34
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (45.0pt too wide) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/b/n/12 0.0941— 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 34--34
+\TU/TimesNewRoman(0)/b/n/12 — 
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.35 任
+      意两个空间向量必共面，但``不共线''的两向量只张成一张平面，不能作空间基底（须三个不共面，条目10） \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.35 任
+      意两个空间向量必共面，但``不共线''的两向量只张成一张平面，不能作空间基底（须三个不共面，条目10） \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.3083}
+l.35 任
+      意两个空间向量必共面，但``不共线''的两向量只张成一张平面，不能作空间基底（须三个不共面，条目10） \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 35--36
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 35--36
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 35--36
+\TU/TimesNewRoman(0)/b/n/12 0.3083 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 任 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 意 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 两 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 个 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 空 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 间 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 必 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 面，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 但 
+
+Overfull \hbox (18.0pt too wide) in paragraph at lines 35--36
+\TU/TimesNewRoman(0)/b/n/12 “\TU/SimHei(0)/m/n/12 不 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (18.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 线\TU/TimesNewRoman(0)/b/n/12 ” 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 两 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 只 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 张 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 成 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 一 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 张 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 面，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 不 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 能 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 作 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 空 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 间 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 基 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 底 
+
+Overfull \hbox (16.73438pt too wide) in paragraph at lines 35--36
+|\TU/SimHei(0)/m/n/12 （须 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 三 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 个 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 不 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 面，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 条 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 35--36
+\TU/SimHei(0)/m/n/12 目 
+
+Overfull \hbox (16.78125pt too wide) in paragraph at lines 35--36
+\TU/TimesNewRoman(0)/b/n/12 10\TU/SimHei(0)/m/n/12 ）||  
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.37 \bottomrule
+                
+! Too many }'s.
+<recently read> }
+                 
+l.38 }
+      
+
+Overfull \vbox (2222.72546pt too high) has occurred while \output is active
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [2]
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.56 \begin
+           {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.56 \begin
+           {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0760}
+l.56 \begin
+           {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 57--58
+[]\TU/SimHei(0)/m/n/12 特 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 57--58
+\TU/SimHei(0)/m/n/12 殊 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 57--58
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 57--58
+\TU/SimHei(0)/m/n/12 量  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 56--58
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 56--58
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 56--58
+\TU/TimesNewRoman(0)/b/n/12 0.0760[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.58 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.58 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3801}
+l.58 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 59--60
+[]\TU/SimHei(0)/m/n/12 定 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 59--60
+\TU/SimHei(0)/m/n/12 义  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 58--61
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 58--61
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 58--61
+\TU/TimesNewRoman(0)/b/n/12 0.3801[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.62 零
+      向量 & 长度为0的向量叫做零向量，记为0 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.62 零
+      向量 & 长度为0的向量叫做零向量，记为0 \\
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0760}
+l.62 零
+      向量 & 长度为0的向量叫做零向量，记为0 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 62--62
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 62--62
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 62--62
+\TU/TimesNewRoman(0)/b/n/12 0.0760 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--62
+\TU/SimHei(0)/m/n/12 零 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--62
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--62
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.62 零向量 & 长
+            度为0的向量叫做零向量，记为0 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.62 零向量 & 长
+            度为0的向量叫做零向量，记为0 \\
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3801}
+l.62 零向量 & 长
+            度为0的向量叫做零向量，记为0 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 62--63
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 62--63
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 62--63
+\TU/TimesNewRoman(0)/b/n/12 0.3801 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 长 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 度 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 为 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 62--63
+\TU/TimesNewRoman(0)/b/n/12 0 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 叫 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 做 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 零 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 量，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 记 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 62--63
+\TU/SimHei(0)/m/n/12 为 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 62--63
+\TU/TimesNewRoman(0)/b/n/12 0|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.63 单
+      位向量 & 模为1的向量叫做单位向量 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.63 单
+      位向量 & 模为1的向量叫做单位向量 \\
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0760}
+l.63 单
+      位向量 & 模为1的向量叫做单位向量 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 63--63
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 63--63
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 63--63
+\TU/TimesNewRoman(0)/b/n/12 0.0760 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--63
+\TU/SimHei(0)/m/n/12 单 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--63
+\TU/SimHei(0)/m/n/12 位 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--63
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--63
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.63 单位向量 & 模
+             为1的向量叫做单位向量 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.63 单位向量 & 模
+             为1的向量叫做单位向量 \\
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3801}
+l.63 单位向量 & 模
+             为1的向量叫做单位向量 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 63--64
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 63--64
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 63--64
+\TU/TimesNewRoman(0)/b/n/12 0.3801 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 模 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 为 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 63--64
+\TU/TimesNewRoman(0)/b/n/12 1 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 叫 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 做 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 单 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 位 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 63--64
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.64 相
+      反向量 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.64 相
+      反向量 &
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0760}
+l.64 相
+      反向量 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 64--64
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 64--64
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 64--64
+\TU/TimesNewRoman(0)/b/n/12 0.0760 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 64--64
+\TU/SimHei(0)/m/n/12 相 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 64--64
+\TU/SimHei(0)/m/n/12 反 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 64--64
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 64--64
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.65 与
+      \(\overrightarrow{a}\)长度相同而方向相反的向量叫做\(\overrightarrow{a}\)的相反向量，记为\(- ...
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.65 与
+      \(\overrightarrow{a}\)长度相同而方向相反的向量叫做\(\overrightarrow{a}\)的相反向量，记为\(- ...
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3801}
+l.65 与
+      \(\overrightarrow{a}\)长度相同而方向相反的向量叫做\(\overrightarrow{a}\)的相反向量，记为\(- ...
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 65--66
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 65--66
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 65--66
+\TU/TimesNewRoman(0)/b/n/12 0.3801 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 与 
+
+Overfull \hbox (12.0002pt too wide) in paragraph at lines 65--66
+[]$ 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 长 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 度 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 相 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 同 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 而 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 方 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 相 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 反 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 叫 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 做 
+
+Overfull \hbox (12.0002pt too wide) in paragraph at lines 65--66
+[]$ 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 相 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 反 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 量，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 记 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 65--66
+\TU/SimHei(0)/m/n/12 为 
+
+Overfull \hbox (21.33356pt too wide) in paragraph at lines 65--66
+\OMS/cmsy/m/n/12 ^^@[]$|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.66 共
+      线向量或平行向量 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.66 共
+      线向量或平行向量 &
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0760}
+l.66 共
+      线向量或平行向量 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 66--66
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 66--66
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 66--66
+\TU/TimesNewRoman(0)/b/n/12 0.0760 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 线 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 或 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 行 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.67 若
+      表示若干空间向量的有向线段所在的直线互相平行或重合，那么这些向量叫做共线向量或平行向量；
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.67 若
+      表示若干空间向量的有向线段所在的直线互相平行或重合，那么这些向量叫做共线向量或平行向量；
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3801}
+l.67 若
+      表示若干空间向量的有向线段所在的直线互相平行或重合，那么这些向量叫做共线向量或平行向量；
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 67--68
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 67--68
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 67--68
+\TU/TimesNewRoman(0)/b/n/12 0.3801 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 若 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 表 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 示 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 若 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 干 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 空 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 间 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 有 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 线 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 段 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 所 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 在 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 直 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 线 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 互 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 相 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 行 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 或 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 重 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 合，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 那 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 么 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 这 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 些 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 叫 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 做 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 共 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 线 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 或 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 行 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (15.79688pt too wide) in paragraph at lines 67--68
+\TU/SimHei(0)/m/n/12 量；|  
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+[]|\TU/SimHei(0)/m/n/12 规 
+
+Overfull \hbox (15.79688pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 定：| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 零 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 与 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 任 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 意 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 平 
+
+Overfull \hbox (15.1875pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 行．| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 即 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 对 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 任 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 意 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (15.32832pt too wide) in paragraph at lines 69--70
+[]$\TU/SimHei(0)/m/n/12 ，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 都 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+\TU/SimHei(0)/m/n/12 有 
+
+Overfull \hbox (21.3335pt too wide) in paragraph at lines 69--70
+[] \OMS/cmsy/m/n/12 k 
+
+Overfull \hbox (12.0002pt too wide) in paragraph at lines 69--70
+[]$|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.70 相
+      等向量 & 方向相同且模相等的向量 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.70 相
+      等向量 & 方向相同且模相等的向量 \\
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0760}
+l.70 相
+      等向量 & 方向相同且模相等的向量 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 70--70
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 70--70
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 70--70
+\TU/TimesNewRoman(0)/b/n/12 0.0760 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--70
+\TU/SimHei(0)/m/n/12 相 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--70
+\TU/SimHei(0)/m/n/12 等 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--70
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--70
+\TU/SimHei(0)/m/n/12 量|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.70 相等向量 & 方
+             向相同且模相等的向量 \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.70 相等向量 & 方
+             向相同且模相等的向量 \\
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3801}
+l.70 相等向量 & 方
+             向相同且模相等的向量 \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 70--71
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 70--71
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 70--71
+\TU/TimesNewRoman(0)/b/n/12 0.3801 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 方 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 相 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 同 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 且 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 模 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 相 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 等 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 70--71
+\TU/SimHei(0)/m/n/12 量|  
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.72 \bottomrule
+                
+! Too many }'s.
+<recently read> }
+                 
+l.73 }
+      
+
+Overfull \vbox (2548.3527pt too high) has occurred while \output is active
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [3]
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.86 \begin
+           {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.86 \begin
+           {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1178}
+l.86 \begin
+           {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 87--88
+[]\TU/SimHei(0)/m/n/12 加 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 87--88
+\TU/SimHei(0)/m/n/12 法  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 86--88
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 86--88
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (32.33789pt too wide) in paragraph at lines 86--88
+\TU/TimesNewRoman(0)/b/n/12 0.1178[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.88 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.88 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1804}
+l.88 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (21.13899pt too wide) in paragraph at lines 89--90
+[]$[] \OT1/cmr/m/n/12 + 
+
+Overfull \hbox (24.47227pt too wide) in paragraph at lines 89--90
+[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (27.25305pt too wide) in paragraph at lines 89--90
+[] \OT1/cmr/m/n/12 + 
+
+Overfull \hbox (49.65005pt too wide) in paragraph at lines 89--90
+[] \OT1/cmr/m/n/12 =$$[]$  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 88--90
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 88--90
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 88--90
+\TU/TimesNewRoman(0)/b/n/12 0.1804[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.91 \multirow
+              {2}{=}{\begin{minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.91 \multirow
+              {2}{=}{\begin{minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1583}
+l.91 \multirow
+              {2}{=}{\begin{minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+\Gin@@eheight ->\linewidthin 
+                             
+l.93 \end{minipage}}
+                     \\
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.93 \end{minipage}}
+                     \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.93 \end{minipage}}
+                     \\
+
+Overfull \hbox (68.81555pt too wide) in paragraph at lines 93--93
+[][]  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 91--94
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 91--94
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 91--94
+\TU/TimesNewRoman(0)/b/n/12 0.1583[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.94 \begin
+           {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.94 \begin
+           {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1178}
+l.94 \begin
+           {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 95--96
+[]\TU/SimHei(0)/m/n/12 减 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 95--96
+\TU/SimHei(0)/m/n/12 法  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 94--96
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 94--96
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (32.33789pt too wide) in paragraph at lines 94--96
+\TU/TimesNewRoman(0)/b/n/12 0.1178[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.96 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.96 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1804}
+l.96 \end{minipage} & \begin
+                            {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (21.33356pt too wide) in paragraph at lines 97--98
+[]$[] \OMS/cmsy/m/n/12 ^^@ 
+
+Overfull \hbox (24.47227pt too wide) in paragraph at lines 97--98
+[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (27.44762pt too wide) in paragraph at lines 97--98
+[] \OMS/cmsy/m/n/12 ^^@ 
+
+Overfull \hbox (49.1228pt too wide) in paragraph at lines 97--98
+[] \OT1/cmr/m/n/12 =$$[]$  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 96--99
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 96--99
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 96--99
+\TU/TimesNewRoman(0)/b/n/12 0.1804[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.100 \multirow
+               {3}{=}{数乘运算} &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.100 \multirow
+               {3}{=}{数乘运算} &
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1178}
+l.100 \multirow
+               {3}{=}{数乘运算} &
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 100--100
+[]|\TU/SimHei(0)/m/n/12 数 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 100--100
+\TU/SimHei(0)/m/n/12 乘 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 100--100
+\TU/SimHei(0)/m/n/12 运 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 100--100
+\TU/SimHei(0)/m/n/12 算|  
+
+Overfull \vbox (22.10008pt too high) detected at line 100
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 100--100
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 100--100
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (32.33789pt too wide) in paragraph at lines 100--100
+\TU/TimesNewRoman(0)/b/n/12 0.1178[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.101 当
+       \(\lambda > 0\)时，\(\lambda\overrightarrow{a} = \lambda\overrightarrow...
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.101 当
+       \(\lambda > 0\)时，\(\lambda\overrightarrow{a} = \lambda\overrightarrow...
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1804}
+l.101 当
+       \(\lambda > 0\)时，\(\lambda\overrightarrow{a} = \lambda\overrightarrow...
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 101--102
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 101--102
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 101--102
+\TU/TimesNewRoman(0)/b/n/12 0.1804 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 101--102
+\TU/SimHei(0)/m/n/12 当 
+
+Overfull \hbox (19.32617pt too wide) in paragraph at lines 101--102
+\OML/cmm/m/it/12 ^^U > 
+
+Overfull \hbox (5.87494pt too wide) in paragraph at lines 101--102
+\OT1/cmr/m/n/12 0$ 
+
+Overfull \hbox (14.33185pt too wide) in paragraph at lines 101--102
+\TU/SimHei(0)/m/n/12 时，| 
+
+Overfull \hbox (31.32637pt too wide) in paragraph at lines 101--102
+\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (37.44043pt too wide) in paragraph at lines 101--102
+\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (18.5115pt too wide) in paragraph at lines 101--102
+[]$|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.103 \multirow
+               {3}{=}{\includegraphics[width=0.85275in,height=\linewidthin,a...
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.103 \multirow
+               {3}{=}{\includegraphics[width=0.85275in,height=\linewidthin,a...
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1583}
+l.103 \multirow
+               {3}{=}{\includegraphics[width=0.85275in,height=\linewidthin,a...
+! Undefined control sequence.
+\Gin@@eheight ->\linewidthin 
+                             
+l.103 ...224c31cd9465}]{media/media/sub3_B_2.png}}
+                                                   \\
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.103 ...224c31cd9465}]{media/media/sub3_B_2.png}}
+                                                   \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.103 ...224c31cd9465}]{media/media/sub3_B_2.png}}
+                                                   \\
+
+Overfull \hbox (61.62029pt too wide) in paragraph at lines 103--103
+[]|[]|  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 103--104
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 103--104
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 103--104
+\TU/TimesNewRoman(0)/b/n/12 0.1583[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.104 &
+       
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.104 &
+       
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1178}
+l.104 &
+       
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 104--104
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 104--104
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (32.33789pt too wide) in paragraph at lines 104--104
+\TU/TimesNewRoman(0)/b/n/12 0.1178|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.105 当
+       \(\lambda < 0\)时，\(\lambda\overrightarrow{a} = \lambda\overrightarrow...
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.105 当
+       \(\lambda < 0\)时，\(\lambda\overrightarrow{a} = \lambda\overrightarrow...
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1804}
+l.105 当
+       \(\lambda < 0\)时，\(\lambda\overrightarrow{a} = \lambda\overrightarrow...
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 105--106
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 105--106
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 105--106
+\TU/TimesNewRoman(0)/b/n/12 0.1804 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 105--106
+\TU/SimHei(0)/m/n/12 当 
+
+Overfull \hbox (19.32617pt too wide) in paragraph at lines 105--106
+\OML/cmm/m/it/12 ^^U < 
+
+Overfull \hbox (5.87494pt too wide) in paragraph at lines 105--106
+\OT1/cmr/m/n/12 0$ 
+
+Overfull \hbox (14.33185pt too wide) in paragraph at lines 105--106
+\TU/SimHei(0)/m/n/12 时，| 
+
+Overfull \hbox (31.32637pt too wide) in paragraph at lines 105--106
+\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (37.44043pt too wide) in paragraph at lines 105--106
+\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (23.2832pt too wide) in paragraph at lines 105--106
+[]$|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.106 &
+        当\(\lambda = 0\)时，\(\lambda\overrightarrow{a} = \overrightarrow{0}\) \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.106 &
+        当\(\lambda = 0\)时，\(\lambda\overrightarrow{a} = \overrightarrow{0}\) \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1178}
+l.106 &
+        当\(\lambda = 0\)时，\(\lambda\overrightarrow{a} = \overrightarrow{0}\) \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 106--106
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 106--106
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (32.33789pt too wide) in paragraph at lines 106--106
+\TU/TimesNewRoman(0)/b/n/12 0.1178|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.106 & 当
+         \(\lambda = 0\)时，\(\lambda\overrightarrow{a} = \overrightarrow{0}\) \\
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.106 & 当
+         \(\lambda = 0\)时，\(\lambda\overrightarrow{a} = \overrightarrow{0}\) \\
+! Undefined control sequence.
+<argument> (\linewidth - 4\tabcolsep ) * \real 
+                                               {0.1804}
+l.106 & 当
+         \(\lambda = 0\)时，\(\lambda\overrightarrow{a} = \overrightarrow{0}\) \\
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 106--107
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 106--107
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 106--107
+\TU/TimesNewRoman(0)/b/n/12 0.1804 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 106--107
+\TU/SimHei(0)/m/n/12 当 
+
+Overfull \hbox (19.32617pt too wide) in paragraph at lines 106--107
+\OML/cmm/m/it/12 ^^U \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (5.87494pt too wide) in paragraph at lines 106--107
+\OT1/cmr/m/n/12 0$ 
+
+Overfull \hbox (14.33185pt too wide) in paragraph at lines 106--107
+\TU/SimHei(0)/m/n/12 时，| 
+
+Overfull \hbox (31.32637pt too wide) in paragraph at lines 106--107
+\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (12.0002pt too wide) in paragraph at lines 106--107
+[]$|  
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.108 \bottomrule
+                 
+! Too many }'s.
+<recently read> }
+                 
+l.109 }
+       
+
+Overfull \vbox (127.73535pt too high) has occurred while \output is active
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [4]
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.117 \begin
+            {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.117 \begin
+            {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0984}
+l.117 \begin
+            {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 118--119
+[]\TU/SimHei(0)/m/n/12 交 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 118--119
+\TU/SimHei(0)/m/n/12 换 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 118--119
+\TU/SimHei(0)/m/n/12 律  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 117--119
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 117--119
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 117--119
+\TU/TimesNewRoman(0)/b/n/12 0.0984[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.119 \end{minipage} & \begin
+                             {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.119 \end{minipage} & \begin
+                             {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3577}
+l.119 \end{minipage} & \begin
+                             {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (21.13899pt too wide) in paragraph at lines 120--121
+[]$[] \OT1/cmr/m/n/12 + 
+
+Overfull \hbox (45.61127pt too wide) in paragraph at lines 120--121
+[] \OT1/cmr/m/n/12 =$$[] + 
+
+Overfull \hbox (12.0002pt too wide) in paragraph at lines 120--121
+[]$  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 119--122
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 119--122
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 119--122
+\TU/TimesNewRoman(0)/b/n/12 0.3577[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.123 结
+       合律 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.123 结
+       合律 &
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0984}
+l.123 结
+       合律 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 123--123
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 123--123
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 123--123
+\TU/TimesNewRoman(0)/b/n/12 0.0984 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 123--123
+\TU/SimHei(0)/m/n/12 结 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 123--123
+\TU/SimHei(0)/m/n/12 合 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 123--123
+\TU/SimHei(0)/m/n/12 律|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.124 \(
+        \left( \overrightarrow{a} + \overrightarrow{b} \right) + \overrighta...
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.124 \(
+        \left( \overrightarrow{a} + \overrightarrow{b} \right) + \overrighta...
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3577}
+l.124 \(
+        \left( \overrightarrow{a} + \overrightarrow{b} \right) + \overrighta...
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 124--125
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 124--125
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (94.94461pt too wide) in paragraph at lines 124--125
+\TU/TimesNewRoman(0)/b/n/12 0.3577$[] \OT1/cmr/m/n/12 + 
+
+Overfull \hbox (45.61127pt too wide) in paragraph at lines 124--125
+[] \OT1/cmr/m/n/12 =$$[] + 
+
+Overfull \hbox (55.13766pt too wide) in paragraph at lines 124--125
+[]$\TU/SimHei(0)/m/n/12 ，| 
+
+Overfull \hbox (82.59702pt too wide) in paragraph at lines 124--125
+\OML/cmm/m/it/12 ^^U\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^V[]\OT1/cmr/m/n/12 ) =$$(\OML/cmm/m/it/12 ^^U^^V\OT1/cmr/m/n/12 )[]$|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.125 分
+       配律 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.125 分
+       配律 &
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0984}
+l.125 分
+       配律 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 125--125
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 125--125
+\TU/TimesNewRoman(0)/b/n/12 0.0984 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 125--125
+\TU/SimHei(0)/m/n/12 分 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 125--125
+\TU/SimHei(0)/m/n/12 配 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 125--125
+\TU/SimHei(0)/m/n/12 律|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.126 \(
+        (\lambda + \mu)\overrightarrow{a} = \lambda\overrightarrow{a} + \mu\...
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.126 \(
+        (\lambda + \mu)\overrightarrow{a} = \lambda\overrightarrow{a} + \mu\...
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.3577}
+l.126 \(
+        (\lambda + \mu)\overrightarrow{a} = \lambda\overrightarrow{a} + \mu\...
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 126--127
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 126--127
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (53.56229pt too wide) in paragraph at lines 126--127
+\TU/TimesNewRoman(0)/b/n/12 0.3577$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^U \OT1/cmr/m/n/12 + 
+
+Overfull \hbox (36.11105pt too wide) in paragraph at lines 126--127
+\OML/cmm/m/it/12 ^^V\OT1/cmr/m/n/12 )[] = 
+
+Overfull \hbox (27.99309pt too wide) in paragraph at lines 126--127
+\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 + 
+
+Overfull \hbox (56.89589pt too wide) in paragraph at lines 126--127
+\OML/cmm/m/it/12 ^^V[]; ^^U\OT1/cmr/m/n/12 ([] + 
+
+Overfull \hbox (57.03476pt too wide) in paragraph at lines 126--127
+[]\OT1/cmr/m/n/12 ) =$$\OML/cmm/m/it/12 ^^U[] \OT1/cmr/m/n/12 + 
+
+Overfull \hbox (18.8543pt too wide) in paragraph at lines 126--127
+\OML/cmm/m/it/12 ^^U[]$|  
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.128 \bottomrule
+                 
+! Too many }'s.
+<recently read> }
+                 
+l.129 }
+       
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.145 \begin
+            {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.145 \begin
+            {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0510}
+l.145 \begin
+            {minipage}[b]{\linewidth}\raggedright
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 146--147
+[]\TU/SimHei(0)/m/n/12 图 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 146--147
+\TU/SimHei(0)/m/n/12 示  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 145--147
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 145--147
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 145--147
+\TU/TimesNewRoman(0)/b/n/12 0.0510[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.147 \end{minipage} & \begin
+                             {minipage}[b]{\linewidth}\raggedright
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.147 \end{minipage} & \begin
+                             {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.4051}
+l.147 \end{minipage} & \begin
+                             {minipage}[b]{\linewidth}\raggedright
+! Undefined control sequence.
+\Gin@@eheight ->\linewidthin 
+                             
+l.148 ...-bcb9db49ca41}]{media/media/sub3_B_3.png}
+                                                  
+! Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.148 ...-bcb9db49ca41}]{media/media/sub3_B_3.png}
+                                                  
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.148 ...-bcb9db49ca41}]{media/media/sub3_B_3.png}
+                                                  
+
+Overfull \hbox (194.1984pt too wide) in paragraph at lines 148--149
+[][]  
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 147--150
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 147--150
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 147--150
+\TU/TimesNewRoman(0)/b/n/12 0.4051[]|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.151 定
+       义 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.151 定
+       义 &
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0510}
+l.151 定
+       义 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 151--151
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 151--151
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 151--151
+\TU/TimesNewRoman(0)/b/n/12 0.0510 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 151--151
+\TU/SimHei(0)/m/n/12 定 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 151--151
+\TU/SimHei(0)/m/n/12 义|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.152 已
+       知两个非零向量\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，在空间任取一点\emph{O}，...
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.152 已
+       知两个非零向量\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，在空间任取一点\emph{O}，...
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.4051}
+l.152 已
+       知两个非零向量\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，在空间任取一点\emph{O}，...
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 152--153
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 152--153
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 152--153
+\TU/TimesNewRoman(0)/b/n/12 0.4051 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 已 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 知 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 两 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 个 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 非 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 零 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (14.33205pt too wide) in paragraph at lines 152--153
+[]$\TU/SimHei(0)/m/n/12 ，| 
+
+Overfull \hbox (15.32832pt too wide) in paragraph at lines 152--153
+[]$\TU/SimHei(0)/m/n/12 ，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 在 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 空 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 间 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 任 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 取 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 一 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 点 
+
+Overfull \hbox (11.99414pt too wide) in paragraph at lines 152--153
+\TU/TimesNewRoman(0)/b/it/12 O\TU/SimHei(0)/m/n/12 ，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 作 
+
+Overfull \hbox (30.58633pt too wide) in paragraph at lines 152--153
+[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (14.33205pt too wide) in paragraph at lines 152--153
+[]$\TU/SimHei(0)/m/n/12 ，| 
+
+Overfull \hbox (31.30995pt too wide) in paragraph at lines 152--153
+[] \OT1/cmr/m/n/12 = 
+
+Overfull \hbox (15.32832pt too wide) in paragraph at lines 152--153
+[]$\TU/SimHei(0)/m/n/12 ，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 则 
+
+Overfull \hbox (36.3128pt too wide) in paragraph at lines 152--153
+\U/msa/m/n/12 \\OML/cmm/m/it/12 AOB$ 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 叫 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 做 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 向 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 量 
+
+Overfull \hbox (14.33205pt too wide) in paragraph at lines 152--153
+[]$\TU/SimHei(0)/m/n/12 ，| 
+
+Overfull \hbox (12.0002pt too wide) in paragraph at lines 152--153
+[]$ 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 的 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 夹 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 角，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 记 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 152--153
+\TU/SimHei(0)/m/n/12 作 
+
+Overfull \hbox (43.93091pt too wide) in paragraph at lines 152--153
+[]$|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.153 范
+       围 &
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.153 范
+       围 &
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.0510}
+l.153 范
+       围 &
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 153--153
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 153--153
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 153--153
+\TU/TimesNewRoman(0)/b/n/12 0.0510 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 153--153
+\TU/SimHei(0)/m/n/12 范 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 153--153
+\TU/SimHei(0)/m/n/12 围|  
+! Missing number, treated as zero.
+<to be read again> 
+                   (
+l.154 通
+       常规定：0\(\leq \langle\overrightarrow{a},\overrightarrow{b}\rangle \leq\...
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   (
+l.154 通
+       常规定：0\(\leq \langle\overrightarrow{a},\overrightarrow{b}\rangle \leq\...
+! Undefined control sequence.
+<argument> (\linewidth - 2\tabcolsep ) * \real 
+                                               {0.4051}
+l.154 通
+       常规定：0\(\leq \langle\overrightarrow{a},\overrightarrow{b}\rangle \leq\...
+
+Overfull \hbox (31.99219pt too wide) in paragraph at lines 154--155
+[]\TU/TimesNewRoman(0)/b/n/12 () 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 154--155
+\TU/TimesNewRoman(0)/b/n/12 * 
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 154--155
+\TU/TimesNewRoman(0)/b/n/12 0.4051 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 154--155
+\TU/SimHei(0)/m/n/12 通 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 154--155
+\TU/SimHei(0)/m/n/12 常 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 154--155
+\TU/SimHei(0)/m/n/12 规 
+
+Overfull \hbox (15.79688pt too wide) in paragraph at lines 154--155
+\TU/SimHei(0)/m/n/12 定：| 
+
+Overfull \hbox (15.33336pt too wide) in paragraph at lines 154--155
+\TU/TimesNewRoman(0)/b/n/12 0$\OMS/cmsy/m/n/12 ^^T 
+
+Overfull \hbox (67.06128pt too wide) in paragraph at lines 154--155
+\OMS/cmsy/m/n/12 h[]\OML/cmm/m/it/12 ; []\OMS/cmsy/m/n/12 i ^^T$$[]$\TU/SimHei(0)/m/n/12 ；|  
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 156--157
+[]|\TU/SimHei(0)/m/n/12 当 
+
+Overfull \hbox (58.63776pt too wide) in paragraph at lines 156--157
+\OMS/cmsy/m/n/12 h[]\OML/cmm/m/it/12 ; []\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 =$$[]$ 
+
+Overfull \hbox (14.33185pt too wide) in paragraph at lines 156--157
+\TU/SimHei(0)/m/n/12 时，| 
+
+Overfull \hbox (12.0002pt too wide) in paragraph at lines 156--157
+[]$ 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 156--157
+\TU/SimHei(0)/m/n/12 与 
+
+Overfull \hbox (12.0002pt too wide) in paragraph at lines 156--157
+[]$ 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 156--157
+\TU/SimHei(0)/m/n/12 垂 
+
+Overfull \hbox (15.32813pt too wide) in paragraph at lines 156--157
+\TU/SimHei(0)/m/n/12 直，| 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 156--157
+\TU/SimHei(0)/m/n/12 记 
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 156--157
+\TU/SimHei(0)/m/n/12 作 
+
+Overfull \hbox (33.33376pt too wide) in paragraph at lines 156--157
+[]\OMS/cmsy/m/n/12 ?[]$|  
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.158 \bottomrule
+                 
+! Too many }'s.
+<recently read> }
+                 
+l.159 }
+       
+
+Overfull \vbox (648.49644pt too high) has occurred while \output is active
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [5]
+Overfull \hbox (2.4862pt too wide) in paragraph at lines 169--170
+[]|\TU/SimHei(0)/m/n/12 （\TU/TimesNewRoman(0)/b/n/12 2\TU/SimHei(0)/m/n/12 ）|  由 数 量 积 的 定 义，|  可 以 得 到：| $[]\OMS/cmsy/m/n/12 ?[] ,$$[] ^^A
+Missing character: There is no ① (U+2460) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ② (U+2461) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Overfull \hbox (23.28867pt too wide) in paragraph at lines 181--182
+[][] 
+Missing character: There is no ③ (U+2462) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [6]
+Overfull \hbox (12.9815pt too wide) in paragraph at lines 243--243
+\TU/TimesNewRoman(0)/b/n/12 1.1.1.4-3\TU/SimHei(0)/m/n/12 ． （简 单）|  已 知 正 方 体 \TU/TimesNewRoman(0)/b/it/12 ABCD \TU/SimHei(0)/m/n/12 － \TU/TimesNewRoman(0)/b/it/12 A[] B[] C[] D[] \TU/SimHei(0)/m/n/12 中，|
+Missing character: There is no ① (U+2460) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ② (U+2461) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ③ (U+2462) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ④ (U+2463) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ① (U+2460) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ② (U+2461) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ③ (U+2462) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ④ (U+2463) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ① (U+2460) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ③ (U+2462) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ④ (U+2463) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ① (U+2460) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ③ (U+2462) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ② (U+2461) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ④ (U+2463) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [7]
+Missing character: There is no ① (U+2460) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ③ (U+2462) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ② (U+2461) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+Missing character: There is no ④ (U+2463) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Overfull \hbox (29.67879pt too wide) in paragraph at lines 296--297
+[]\TU/SimHei(0)/m/n/12 对 于 \TU/TimesNewRoman(0)/b/n/12 C\TU/SimHei(0)/m/n/12 ：| $[][] \OT1/cmr/m/n/12 = [][] =
+
+Overfull \hbox (14.66885pt too wide) in paragraph at lines 298--299
+[]\TU/SimHei(0)/m/n/12 对 于 \TU/TimesNewRoman(0)/b/n/12 D\TU/SimHei(0)/m/n/12 ：| $[][] \OT1/cmr/m/n/12 = [] \OMS/cmsy/m/n/12 ^^A [] \OT1/cmr/m/n/12 =
+
+Overfull \hbox (23.28867pt too wide) in paragraph at lines 309--310
+[][] 
+
+Overfull \hbox (44.87228pt too wide) in paragraph at lines 315--316
+[]\TU/SimHei(0)/m/n/12 方 法 \TU/TimesNewRoman(0)/b/n/12 2\TU/SimHei(0)/m/n/12 ：|  先 求 $[] \OMS/cmsy/m/n/12 ^^A []$\TU/SimHei(0)/m/n/12 ，|  再 利 用 公 式 $[] [] \OT1/cmr/m/n/12 =
+
+Overfull \hbox (13.06557pt too wide) in paragraph at lines 315--316
+[]$ \TU/SimHei(0)/m/n/12 求 $[] []$，|  最 后 确 定 $[]$
+Missing character: There is no △ (U+25B3) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Overfull \hbox (5.20105pt too wide) in paragraph at lines 319--320
+[]\TU/SimHei(0)/m/n/12 因 为 \TU/TimesNewRoman(0)/b/n/12 △$\OML/cmm/m/it/12 CAD[]$ \TU/SimHei(0)/m/n/12 为 等 边 三 角 形，|  所 以 $\U/msa/m/n/12 \\OML/cmm/m/it/12 CAD[] \OT1/cmr/m/n/12 =
+
+Overfull \hbox (2.11655pt too wide) in paragraph at lines 321--323
+[] \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 ; [] \OT1/cmr/m/n/12 = []$\TU/SimHei(0)/m/n/12 ，|  所 以 $[] [] \OT1/cmr/m/n/12 =
+
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [8]
+Overfull \hbox (2.21979pt too wide) in paragraph at lines 341--342
+[] [] \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1$\TU/SimHei(0)/m/n/12 ，|  由 $[] \OMS/cmsy/m/n/12 ^^A
+
+Overfull \hbox (6.6863pt too wide) in paragraph at lines 348--348
+[] \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 ; [] \OT1/cmr/m/n/12 = [] + \OML/cmm/m/it/12 ^^U[]; [] \OT1/cmr/m/n/12 = 135[]\OML/cmm/m/it/12 ; []\OMS/cmsy/m/n/12 ?[]$
+Missing character: There is no ∴ (U+2234) in font Times New Roman Bold/OT:script=latn;language=dflt;mapping=tex-text;!
+
+Overfull \hbox (10.80925pt too wide) in paragraph at lines 354--356
+[]|\TU/SimHei(0)/m/n/12 【详 解】|  由 $[]\OMS/cmsy/m/n/12 ?[]$\TU/SimHei(0)/m/n/12 ，|  得 $[] \OMS/cmsy/m/n/12 ^^A [] \OT1/cmr/m/n/12 =
+
+Overfull \hbox (23.28867pt too wide) in paragraph at lines 366--367
+[][] 
+
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [9])
+Overfull \vbox (23.01299pt too high) has occurred while \output is active [10] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information)
+Output written on main.pdf (10 pages).
+Transcript written on main.log.

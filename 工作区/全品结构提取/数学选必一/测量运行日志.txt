@@ -1,0 +1,1005 @@
+== 练习册 p06.png even=False rule_v=[(1418, 2, 188)] extent=(179, 2658)
+   header: top=276 chap={'y': (375, 469), 'h': 95, 'x': (419, 1792), 'dens': 0.36} lesson=None deco={'x': (179, 375), 'y': (275, 510)} rule={'y': 543, 'gray': 0, 'x': (179, 2658), 'thick': 1} qr=None
+   zone(179, 1408) n29 pitch=88.0 h25=45 adv=46.5 q5 qp=491.5 qb=None
+      L[(261, 16), (180, 6), (375, 2), (976, 2)]  R[(1359, 14), (1016, 4), (1408, 3)]
+   zone(1428, 2658) n26 pitch=91.5 h25=46 adv=41 q4 qp=268 qb=223
+      L[(1554, 13), (1428, 4), (1473, 4), (1643, 3)]  R[(2652, 11), (2533, 5), (2433, 2)]
+   labels=[{'zone': 0, 'band': (1094, 1189), 'h': 96, 'block': (179, 499), 'bw': 321, 'bh': 96, 'rule': None, 'caption': None}]
+   uline n=2 med=314.5 rng=(208, 421) sample=[(3123, 1661, 1868, 208), (3799, 1569, 1989, 421)]
+   footer={'pagenum_block': {'x': (2535, 2976), 'y': (3909, 4018), 'w': 442, 'hh': 110, 'fill': 221, 'side': 'right'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (1994, 2489)}}
+== 练习册 p07.png even=True rule_v=[(1555, 2, 188)] extent=(316, 2795)
+   header: top=262 chap=None lesson=None deco=None rule=None qr=None
+   zone(316, 1545) n27 pitch=89.5 h25=43 adv=42 q5 qp=564 qb=None
+      L[(424, 12), (318, 6), (465, 4), (510, 4)]  R[(1496, 10), (1037, 8), (1000, 4)]
+   zone(1565, 2795) n19 pitch=89 h25=46 adv=52.0 q2 qp=None qb=None
+      L[(1720, 11), (1611, 3)]  R[(2791, 11)]
+   labels=[{'zone': 0, 'band': (1794, 1889), 'h': 96, 'block': (316, 636), 'bw': 321, 'bh': 96, 'rule': None, 'caption': None}, {'zone': 1, 'band': (1433, 1537), 'h': 105, 'block': (1609, 1961), 'bw': 353, 'bh': 105, 'rule': (2399, 2769), 'caption': None}]
+   uline n=1 med=208 rng=(208, 208) sample=[(3498, 746, 953, 208)]
+   footer={'pagenum_block': {'x': (0, 439), 'y': (3909, 4018), 'w': 440, 'hh': 110, 'fill': 221, 'side': 'left'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (482, 1110)}}
+   anscol={'vlines': [199, 254], 'box_x': (20, 254), 'head_seps': [301, 394, 486, 579], 'row_pitch': 110, 'n_seps': 20, 'n_num_rows': 15, 'num_pitch': 110.0}
+== 练习册 p08.png even=False rule_v=[(1418, 2, 188)] extent=(180, 2651)
+   header: top=314 chap=None lesson={'y': (314, 373), 'h': 60, 'x': (982, 1856), 'dens': 0.4} deco=None rule=None qr=None
+   zone(180, 1408) n29 pitch=98.5 h25=40 adv=37.0 q5 qp=452.5 qb=None
+      L[(261, 20), (179, 6)]  R[(1358, 13), (988, 4), (963, 3)]
+   zone(1428, 2651) n23 pitch=84 h25=43 adv=48 q4 qp=278 qb=223.0
+      L[(1554, 10), (1618, 5), (1473, 4), (1643, 2)]  R[(2650, 8), (2196, 3), (1857, 2)]
+   labels=[]
+   uline n=2 med=209.0 rng=(209, 209) sample=[(1223, 1738, 1946, 209), (1499, 1811, 2019, 209)]
+   footer={'pagenum_block': {'x': (2535, 2976), 'y': (3909, 4018), 'w': 442, 'hh': 110, 'fill': 221, 'side': 'right'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (1994, 2489)}}
+== 练习册 p09.png even=True rule_v=[(1555, 2, 188)] extent=(319, 2791)
+   header: top=262 chap=None lesson=None deco=None rule=None qr=None
+   zone(319, 1545) n20 pitch=89 h25=46 adv=37.5 q4 qp=None qb=None
+      L[(427, 13), (318, 5)]  R[(1496, 11), (1100, 2)]
+   zone(1565, 2791) n9 pitch=91 h25=46 adv=53 q2 qp=273 qb=228
+      L[(1719, 6), (1611, 3)]  R[(2790, 5)]
+   labels=[{'zone': 1, 'band': (3151, 3255), 'h': 105, 'block': (1609, 1961), 'bw': 353, 'bh': 105, 'rule': None, 'caption': None}]
+   uline n=3 med=209 rng=(208, 209) sample=[(2423, 429, 637, 209), (3497, 1771, 1978, 208), (3773, 2522, 2730, 209)]
+   footer={'pagenum_block': {'x': (0, 439), 'y': (3909, 4018), 'w': 440, 'hh': 110, 'fill': 221, 'side': 'left'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (482, 1110)}}
+   anscol={'vlines': [199, 254], 'box_x': (20, 253), 'head_seps': [301, 394, 486, 579], 'row_pitch': 110.0, 'n_seps': 21, 'n_num_rows': 16, 'num_pitch': 110}
+== 练习册 p14.png even=False rule_v=[(1418, 2, 188)] extent=(180, 2658)
+   header: top=358 chap=None lesson={'y': (358, 417), 'h': 60, 'x': (676, 2158), 'dens': 0.4} deco=None rule=None qr=None
+   zone(180, 1408) n28 pitch=88 h25=42 adv=30.0 q7 qp=433 qb=None
+      L[(262, 19), (180, 8)]  R[(1358, 15), (997, 2), (1142, 2)]
+   zone(1428, 2658) n16 pitch=101 h25=47 adv=48.5 q3 qp=175 qb=127
+      L[(1554, 6), (1583, 5), (1474, 3)]  R[(2654, 6), (2247, 2), (2401, 2)]
+   labels=[{'zone': 0, 'band': (539, 634), 'h': 96, 'block': (179, 499), 'bw': 321, 'bh': 96, 'rule': None, 'caption': None}]
+   uline n=2 med=208.0 rng=(208, 208) sample=[(1169, 2181, 2388, 208), (1796, 1873, 2080, 208)]
+   footer={'pagenum_block': {'x': (2535, 2976), 'y': (3909, 4018), 'w': 442, 'hh': 110, 'fill': 221, 'side': 'right'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (1994, 2489)}}
+== 练习册 p15.png even=True rule_v=[(1555, 2, 188)] extent=(319, 2793)
+   header: top=276 chap=None lesson=None deco=None rule=None qr=None
+   zone(319, 1545) n21 pitch=89 h25=45 adv=42 q4 qp=455 qb=None
+      L[(425, 13), (318, 5), (442, 2)]  R[(1497, 15)]
+   zone(1565, 2793) n26 pitch=88.0 h25=46 adv=49.0 q1 qp=None qb=None
+      L[(1719, 21), (1610, 2)]  R[(2789, 17), (1964, 2)]
+   labels=[{'zone': 1, 'band': (1058, 1162), 'h': 105, 'block': (1609, 1961), 'bw': 353, 'bh': 105, 'rule': None, 'caption': None}]
+   uline n=1 med=208 rng=(208, 208) sample=[(2847, 587, 794, 208)]
+   footer={'pagenum_block': {'x': (0, 439), 'y': (3909, 4018), 'w': 440, 'hh': 110, 'fill': 221, 'side': 'left'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (482, 1110)}}
+   anscol={'vlines': [199, 254], 'box_x': (20, 254), 'head_seps': [301, 394, 486, 579], 'row_pitch': 110.0, 'n_seps': 19, 'n_num_rows': 14, 'num_pitch': 110}
+== 导学案 p04.png even=False rule_v=[(1487, 2, 188)] extent=(246, 2722)
+   header: top=276 chap={'y': (375, 469), 'h': 95, 'x': (487, 1861), 'dens': 0.36} lesson=None deco={'x': (248, 411), 'y': (275, 510)} rule={'y': 543, 'gray': 0, 'x': (248, 2727), 'thick': 1} qr={'x': (2536, 2723), 'y': (292, 533)}
+   zone(246, 1477) n18 pitch=90 h25=47 adv=55 q8 qp=172 qb=55
+      L[(250, 10), (463, 2), (1045, 2)]  R[(1427, 6), (1476, 4), (519, 2)]
+   zone(1497, 2722) n33 pitch=90 h25=48 adv=51 q23 qp=90.0 qb=42.0
+      L[(1549, 26), (1497, 5)]  R[(2719, 23)]
+   labels=[{'zone': 0, 'band': (1816, 1863), 'h': 48, 'block': (251, 647), 'bw': 397, 'bh': 48, 'rule': (1151, 1364), 'caption': (1372, 1427)}, {'zone': 0, 'band': (2160, 2223), 'h': 64, 'block': (251, 464), 'bw': 214, 'bh': 64, 'rule': None, 'caption': None}, {'zone': 1, 'band': (1427, 1475), 'h': 49, 'block': (1552, 1813), 'bw': 262, 'bh': 49, 'rule': None, 'caption': None}, {'zone': 1, 'band': (2438, 2484), 'h': 47, 'block': (1547, 1888), 'bw': 342, 'bh': 47, 'rule': None, 'caption': None}, {'zone': 1, 'band': (2706, 2754), 'h': 49, 'block': (1552, 1813), 'bw': 262, 'bh': 49, 'rule': (1908, 2373), 'caption': (2381, 2716)}]
+   uline n=9 med=222 rng=(218, 337) sample=[(1782, 751, 973, 223), (1782, 1094, 1315, 222), (1963, 250, 467, 218), (1963, 557, 783, 227)]
+   footer={'pagenum_block': {'x': (2604, 2976), 'y': (3909, 4018), 'w': 373, 'hh': 110, 'fill': 221, 'side': 'right'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (2059, 2554)}}
+   objectives={'n': 2, 'pitch': 84, 'h': 44.0, 'ys': [1172, 1256], 'left': 463.0, 'adv': 51}
+== 导学案 p05.png even=False rule_v=[(1487, 2, 188)] extent=(246, 2727)
+   header: top=278 chap=None lesson=None deco=None rule=None qr=None
+   zone(246, 1477) n40 pitch=90.0 h25=48 adv=54 q32 qp=90 qb=43.0
+      L[(252, 38)]  R[(1425, 23), (369, 2), (1004, 2)]
+   zone(1497, 2727) n34 pitch=94 h25=48 adv=51.0 q26 qp=96 qb=46
+      L[(1547, 29), (1882, 2), (2596, 2)]  R[(2719, 18), (2600, 2), (2648, 2)]
+   labels=[{'zone': 0, 'band': (982, 1045), 'h': 64, 'block': (251, 481), 'bw': 231, 'bh': 64, 'rule': None, 'caption': None}, {'zone': 0, 'band': (1179, 1226), 'h': 48, 'block': (251, 543), 'bw': 293, 'bh': 48, 'rule': (557, 996), 'caption': (1004, 1009)}, {'zone': 0, 'band': (1269, 1316), 'h': 48, 'block': (251, 543), 'bw': 293, 'bh': 48, 'rule': None, 'caption': None}, {'zone': 0, 'band': (1539, 1586), 'h': 48, 'block': (256, 463), 'bw': 208, 'bh': 48, 'rule': None, 'caption': None}, {'zone': 0, 'band': (1629, 1677), 'h': 49, 'block': (256, 517), 'bw': 262, 'bh': 49, 'rule': None, 'caption': None}, {'zone': 0, 'band': (1719, 1766), 'h': 48, 'block': (255, 615), 'bw': 361, 'bh': 48, 'rule': None, 'caption': None}, {'zone': 1, 'band': (653, 700), 'h': 48, 'block': (1547, 1877), 'bw': 331, 'bh': 48, 'rule': (2353, 2624), 'caption': (2638, 2720)}, {'zone': 1, 'band': (1216, 1264), 'h': 49, 'block': (1552, 1813), 'bw': 262, 'bh': 49, 'rule': None, 'caption': None}, {'zone': 1, 'band': (2845, 2894), 'h': 50, 'block': (1543, 1797), 'bw': 255, 'bh': 50, 'rule': None, 'caption': None}]
+   uline n=11 med=223 rng=(207, 346) sample=[(804, 1546, 1874, 329), (898, 2056, 2384, 329), (2255, 361, 696, 336), (2255, 733, 1078, 346)]
+   footer={'pagenum_block': {'x': (0, 371), 'y': (3909, 4018), 'w': 372, 'hh': 110, 'fill': 221, 'side': 'left'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (414, 1042)}}
+== 导学案 p06.png even=False rule_v=[(1487, 2, 188)] extent=(251, 2724)
+   header: top=279 chap=None lesson=None deco=None rule=None qr=None
+   zone(251, 1477) n18 pitch=86.0 h25=44 adv=49.0 q14 qp=86 qb=42.5
+      L[(253, 17)]  R[(1427, 8), (651, 2), (1407, 2)]
+   zone(1497, 2724) n23 pitch=89.0 h25=42 adv=49.0 q19 qp=92 qb=47.0
+      L[(1548, 20), (1639, 3)]  R[(2720, 8), (2328, 7), (2653, 2)]
+   labels=[{'zone': 0, 'band': (953, 997), 'h': 45, 'block': (252, 497), 'bw': 246, 'bh': 45, 'rule': None, 'caption': None}, {'zone': 0, 'band': (2037, 2084), 'h': 48, 'block': (251, 648), 'bw': 398, 'bh': 48, 'rule': None, 'caption': None}, {'zone': 1, 'band': (2649, 2693), 'h': 45, 'block': (1548, 1793), 'bw': 246, 'bh': 45, 'rule': None, 'caption': None}]
+   uline n=1 med=218 rng=(218, 218) sample=[(920, 751, 968, 218)]
+   footer={'pagenum_block': {'x': (2604, 2976), 'y': (3909, 4018), 'w': 373, 'hh': 110, 'fill': 221, 'side': 'right'}, 'digits_h': 38, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (2059, 2554)}}
+== 导学案 p07.png even=False rule_v=[(1487, 2, 188)] extent=(248, 2722)
+   header: top=278 chap=None lesson=None deco=None rule=None qr=None
+   zone(248, 1477) n26 pitch=111.0 h25=43 adv=44 q20 qp=160.0 qb=50
+      L[(251, 26)]  R[(1424, 15), (825, 3), (882, 2)]
+   zone(1497, 2722) n30 pitch=104.0 h25=47 adv=37.0 q22 qp=106 qb=56.5
+      L[(1546, 23), (1637, 3)]  R[(2719, 12), (2018, 5), (1916, 4)]
+   labels=[{'zone': 0, 'band': (1206, 1255), 'h': 50, 'block': (251, 483), 'bw': 233, 'bh': 50, 'rule': None, 'caption': None}, {'zone': 0, 'band': (2039, 2087), 'h': 49, 'block': (255, 503), 'bw': 249, 'bh': 49, 'rule': (813, 1318), 'caption': (1326, 1429)}, {'zone': 0, 'band': (2129, 2176), 'h': 48, 'block': (253, 527), 'bw': 275, 'bh': 48, 'rule': None, 'caption': None}, {'zone': 0, 'band': (2386, 2490), 'h': 105, 'block': (252, 617), 'bw': 366, 'bh': 105, 'rule': None, 'caption': None}, {'zone': 0, 'band': (3195, 3239), 'h': 45, 'block': (252, 497), 'bw': 246, 'bh': 45, 'rule': None, 'caption': None}, {'zone': 0, 'band': (3397, 3480), 'h': 84, 'block': (254, 589), 'bw': 336, 'bh': 43, 'rule': None, 'caption': None}, {'zone': 1, 'band': (3167, 3230), 'h': 64, 'block': (1544, 1918), 'bw': 375, 'bh': 64, 'rule': None, 'caption': None}]
+   uline n=2 med=219.0 rng=(219, 219) sample=[(2598, 1720, 1938, 219), (2598, 2449, 2667, 219)]
+   footer={'pagenum_block': {'x': (0, 371), 'y': (3909, 4018), 'w': 372, 'hh': 110, 'fill': 221, 'side': 'left'}, 'digits_h': 38, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (414, 1042)}}
+== 导学案 p08.png even=False rule_v=[(1487, 2, 188)] extent=(248, 2727)
+   header: top=317 chap=None lesson={'y': (317, 376), 'h': 60, 'x': (1051, 1925), 'dens': 0.39} deco=None rule=None qr=None
+   zone(248, 1477) n37 pitch=91 h25=47 adv=52.0 q26 qp=105 qb=49.0
+      L[(252, 32), (462, 3)]  R[(1425, 14), (1477, 3), (744, 2)]
+   zone(1497, 2727) n23 pitch=91 h25=44 adv=28 q18 qp=92.0 qb=47.0
+      L[(1549, 20), (1497, 3)]  R[(2720, 11), (1927, 2), (2241, 2)]
+   labels=[{'zone': 0, 'band': (1264, 1311), 'h': 48, 'block': (252, 515), 'bw': 264, 'bh': 48, 'rule': (864, 1070), 'caption': (1078, 1083)}, {'zone': 0, 'band': (1905, 1952), 'h': 48, 'block': (256, 548), 'bw': 293, 'bh': 48, 'rule': (557, 1219), 'caption': (1227, 1232)}, {'zone': 0, 'band': (2539, 2585), 'h': 47, 'block': (255, 463), 'bw': 209, 'bh': 47, 'rule': None, 'caption': None}, {'zone': 0, 'band': (2810, 2853), 'h': 44, 'block': (255, 466), 'bw': 212, 'bh': 44, 'rule': (620, 837), 'caption': (845, 850)}, {'zone': 0, 'band': (3172, 3218), 'h': 47, 'block': (255, 498), 'bw': 244, 'bh': 41, 'rule': None, 'caption': None}, {'zone': 0, 'band': (3352, 3400), 'h': 49, 'block': (256, 517), 'bw': 262, 'bh': 49, 'rule': None, 'caption': None}, {'zone': 1, 'band': (1221, 1267), 'h': 47, 'block': (1551, 1794), 'bw': 244, 'bh': 47, 'rule': None, 'caption': None}, {'zone': 1, 'band': (3543, 3587), 'h': 45, 'block': (1548, 1793), 'bw': 246, 'bh': 45, 'rule': None, 'caption': None}]
+   uline n=3 med=212 rng=(207, 218) sample=[(1448, 1193, 1404, 212), (1572, 356, 562, 207), (2776, 509, 726, 218)]
+   footer={'pagenum_block': {'x': (2604, 2976), 'y': (3909, 4018), 'w': 373, 'hh': 110, 'fill': 221, 'side': 'right'}, 'digits_h': 39, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (2059, 2554)}}
+   objectives={'n': 3, 'pitch': 78.5, 'h': 44, 'ys': [548, 626, 705], 'left': 462, 'adv': 50.0}
+== 导学案 p09.png even=False rule_v=[(1487, 2, 188)] extent=(248, 2727)
+   header: top=278 chap=None lesson=None deco=None rule=None qr=None
+   zone(248, 1477) n34 pitch=88 h25=42 adv=50 q29 qp=90 qb=44.5
+      L[(252, 34)]  R[(1425, 15), (975, 4), (1022, 3)]
+   zone(1497, 2727) n29 pitch=91.0 h25=44 adv=43.0 q27 qp=97.0 qb=42.0
+      L[(1546, 28)]  R[(2722, 13), (2062, 3), (2329, 2)]
+   labels=[{'zone': 0, 'band': (1564, 1607), 'h': 44, 'block': (252, 497), 'bw': 246, 'bh': 44, 'rule': None, 'caption': None}, {'zone': 0, 'band': (2502, 2545), 'h': 44, 'block': (252, 566), 'bw': 315, 'bh': 44, 'rule': None, 'caption': None}, {'zone': 0, 'band': (3161, 3209), 'h': 49, 'block': (255, 503), 'bw': 249, 'bh': 49, 'rule': None, 'caption': None}, {'zone': 0, 'band': (3258, 3362), 'h': 105, 'block': (251, 472), 'bw': 222, 'bh': 49, 'rule': None, 'caption': None}, {'zone': 0, 'band': (3596, 3643), 'h': 48, 'block': (256, 529), 'bw': 274, 'bh': 48, 'rule': None, 'caption': None}, {'zone': 1, 'band': (639, 682), 'h': 44, 'block': (1548, 1793), 'bw': 246, 'bh': 44, 'rule': None, 'caption': None}]
+   uline n=2 med=190.5 rng=(163, 218) sample=[(3468, 636, 798, 163), (3743, 593, 810, 218)]
+   footer={'pagenum_block': {'x': (0, 371), 'y': (3909, 4018), 'w': 372, 'hh': 110, 'fill': 221, 'side': 'left'}, 'digits_h': 38, 'footer_text': {'y': (3950, 3973), 'h': 24, 'x': (414, 1042)}}
+
+== SUMMARY ==
+{
+ "练习册页图": {
+  "pages": [
+   "p06.png",
+   "p07.png",
+   "p08.png",
+   "p09.png",
+   "p14.png",
+   "p15.png"
+  ],
+  "pitch_all": 89.0,
+  "pitch_rng": [
+   84,
+   101
+  ],
+  "body_h_p25": 45.5,
+  "adv_all": 44.25,
+  "q_blank": 223.0,
+  "rule_v": 1486.5,
+  "x0_odd": 180,
+  "x1_odd": 2658,
+  "x0_even": 319,
+  "x1_even": 2793,
+  "top_ink": 276.0,
+  "uline": {
+   "n": 11,
+   "med": 208,
+   "rng": [
+    208,
+    421
+   ]
+  },
+  "labels": [
+   {
+    "page": "p06.png",
+    "zone": 0,
+    "band": [
+     1094,
+     1189
+    ],
+    "h": 96,
+    "block": [
+     179,
+     499
+    ],
+    "bw": 321,
+    "bh": 96,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p07.png",
+    "zone": 0,
+    "band": [
+     1794,
+     1889
+    ],
+    "h": 96,
+    "block": [
+     316,
+     636
+    ],
+    "bw": 321,
+    "bh": 96,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p07.png",
+    "zone": 1,
+    "band": [
+     1433,
+     1537
+    ],
+    "h": 105,
+    "block": [
+     1609,
+     1961
+    ],
+    "bw": 353,
+    "bh": 105,
+    "rule": [
+     2399,
+     2769
+    ],
+    "caption": null
+   },
+   {
+    "page": "p09.png",
+    "zone": 1,
+    "band": [
+     3151,
+     3255
+    ],
+    "h": 105,
+    "block": [
+     1609,
+     1961
+    ],
+    "bw": 353,
+    "bh": 105,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p14.png",
+    "zone": 0,
+    "band": [
+     539,
+     634
+    ],
+    "h": 96,
+    "block": [
+     179,
+     499
+    ],
+    "bw": 321,
+    "bh": 96,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p15.png",
+    "zone": 1,
+    "band": [
+     1058,
+     1162
+    ],
+    "h": 105,
+    "block": [
+     1609,
+     1961
+    ],
+    "bw": 353,
+    "bh": 105,
+    "rule": null,
+    "caption": null
+   }
+  ],
+  "chap_h": 95,
+  "lesson_h": 60.0,
+  "obj": {
+   "pitch": null,
+   "h": null,
+   "adv": null
+  },
+  "anscol": {
+   "box_x": 20,
+   "box_x1": 254,
+   "row_pitch": 110.0,
+   "n_rows": 15,
+   "num_pitch": 110
+  }
+ },
+ "导学案页图": {
+  "pages": [
+   "p04.png",
+   "p05.png",
+   "p06.png",
+   "p07.png",
+   "p08.png",
+   "p09.png"
+  ],
+  "pitch_all": 90.5,
+  "pitch_rng": [
+   86.0,
+   111.0
+  ],
+  "body_h_p25": 45.5,
+  "adv_all": 49.5,
+  "q_blank": 46.5,
+  "rule_v": 1487.0,
+  "x0_odd": 248.0,
+  "x1_odd": 2725.5,
+  "x0_even": null,
+  "x1_even": null,
+  "top_ink": 278.0,
+  "uline": {
+   "n": 28,
+   "med": 219.0,
+   "rng": [
+    163,
+    346
+   ]
+  },
+  "labels": [
+   {
+    "page": "p04.png",
+    "zone": 0,
+    "band": [
+     1816,
+     1863
+    ],
+    "h": 48,
+    "block": [
+     251,
+     647
+    ],
+    "bw": 397,
+    "bh": 48,
+    "rule": [
+     1151,
+     1364
+    ],
+    "caption": [
+     1372,
+     1427
+    ]
+   },
+   {
+    "page": "p04.png",
+    "zone": 0,
+    "band": [
+     2160,
+     2223
+    ],
+    "h": 64,
+    "block": [
+     251,
+     464
+    ],
+    "bw": 214,
+    "bh": 64,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p04.png",
+    "zone": 1,
+    "band": [
+     1427,
+     1475
+    ],
+    "h": 49,
+    "block": [
+     1552,
+     1813
+    ],
+    "bw": 262,
+    "bh": 49,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p04.png",
+    "zone": 1,
+    "band": [
+     2438,
+     2484
+    ],
+    "h": 47,
+    "block": [
+     1547,
+     1888
+    ],
+    "bw": 342,
+    "bh": 47,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p04.png",
+    "zone": 1,
+    "band": [
+     2706,
+     2754
+    ],
+    "h": 49,
+    "block": [
+     1552,
+     1813
+    ],
+    "bw": 262,
+    "bh": 49,
+    "rule": [
+     1908,
+     2373
+    ],
+    "caption": [
+     2381,
+     2716
+    ]
+   },
+   {
+    "page": "p05.png",
+    "zone": 0,
+    "band": [
+     982,
+     1045
+    ],
+    "h": 64,
+    "block": [
+     251,
+     481
+    ],
+    "bw": 231,
+    "bh": 64,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p05.png",
+    "zone": 0,
+    "band": [
+     1179,
+     1226
+    ],
+    "h": 48,
+    "block": [
+     251,
+     543
+    ],
+    "bw": 293,
+    "bh": 48,
+    "rule": [
+     557,
+     996
+    ],
+    "caption": [
+     1004,
+     1009
+    ]
+   },
+   {
+    "page": "p05.png",
+    "zone": 0,
+    "band": [
+     1269,
+     1316
+    ],
+    "h": 48,
+    "block": [
+     251,
+     543
+    ],
+    "bw": 293,
+    "bh": 48,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p05.png",
+    "zone": 0,
+    "band": [
+     1539,
+     1586
+    ],
+    "h": 48,
+    "block": [
+     256,
+     463
+    ],
+    "bw": 208,
+    "bh": 48,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p05.png",
+    "zone": 0,
+    "band": [
+     1629,
+     1677
+    ],
+    "h": 49,
+    "block": [
+     256,
+     517
+    ],
+    "bw": 262,
+    "bh": 49,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p05.png",
+    "zone": 0,
+    "band": [
+     1719,
+     1766
+    ],
+    "h": 48,
+    "block": [
+     255,
+     615
+    ],
+    "bw": 361,
+    "bh": 48,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p05.png",
+    "zone": 1,
+    "band": [
+     653,
+     700
+    ],
+    "h": 48,
+    "block": [
+     1547,
+     1877
+    ],
+    "bw": 331,
+    "bh": 48,
+    "rule": [
+     2353,
+     2624
+    ],
+    "caption": [
+     2638,
+     2720
+    ]
+   },
+   {
+    "page": "p05.png",
+    "zone": 1,
+    "band": [
+     1216,
+     1264
+    ],
+    "h": 49,
+    "block": [
+     1552,
+     1813
+    ],
+    "bw": 262,
+    "bh": 49,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p05.png",
+    "zone": 1,
+    "band": [
+     2845,
+     2894
+    ],
+    "h": 50,
+    "block": [
+     1543,
+     1797
+    ],
+    "bw": 255,
+    "bh": 50,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p06.png",
+    "zone": 0,
+    "band": [
+     953,
+     997
+    ],
+    "h": 45,
+    "block": [
+     252,
+     497
+    ],
+    "bw": 246,
+    "bh": 45,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p06.png",
+    "zone": 0,
+    "band": [
+     2037,
+     2084
+    ],
+    "h": 48,
+    "block": [
+     251,
+     648
+    ],
+    "bw": 398,
+    "bh": 48,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p06.png",
+    "zone": 1,
+    "band": [
+     2649,
+     2693
+    ],
+    "h": 45,
+    "block": [
+     1548,
+     1793
+    ],
+    "bw": 246,
+    "bh": 45,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p07.png",
+    "zone": 0,
+    "band": [
+     1206,
+     1255
+    ],
+    "h": 50,
+    "block": [
+     251,
+     483
+    ],
+    "bw": 233,
+    "bh": 50,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p07.png",
+    "zone": 0,
+    "band": [
+     2039,
+     2087
+    ],
+    "h": 49,
+    "block": [
+     255,
+     503
+    ],
+    "bw": 249,
+    "bh": 49,
+    "rule": [
+     813,
+     1318
+    ],
+    "caption": [
+     1326,
+     1429
+    ]
+   },
+   {
+    "page": "p07.png",
+    "zone": 0,
+    "band": [
+     2129,
+     2176
+    ],
+    "h": 48,
+    "block": [
+     253,
+     527
+    ],
+    "bw": 275,
+    "bh": 48,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p07.png",
+    "zone": 0,
+    "band": [
+     2386,
+     2490
+    ],
+    "h": 105,
+    "block": [
+     252,
+     617
+    ],
+    "bw": 366,
+    "bh": 105,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p07.png",
+    "zone": 0,
+    "band": [
+     3195,
+     3239
+    ],
+    "h": 45,
+    "block": [
+     252,
+     497
+    ],
+    "bw": 246,
+    "bh": 45,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p07.png",
+    "zone": 0,
+    "band": [
+     3397,
+     3480
+    ],
+    "h": 84,
+    "block": [
+     254,
+     589
+    ],
+    "bw": 336,
+    "bh": 43,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p07.png",
+    "zone": 1,
+    "band": [
+     3167,
+     3230
+    ],
+    "h": 64,
+    "block": [
+     1544,
+     1918
+    ],
+    "bw": 375,
+    "bh": 64,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p08.png",
+    "zone": 0,
+    "band": [
+     1264,
+     1311
+    ],
+    "h": 48,
+    "block": [
+     252,
+     515
+    ],
+    "bw": 264,
+    "bh": 48,
+    "rule": [
+     864,
+     1070
+    ],
+    "caption": [
+     1078,
+     1083
+    ]
+   },
+   {
+    "page": "p08.png",
+    "zone": 0,
+    "band": [
+     1905,
+     1952
+    ],
+    "h": 48,
+    "block": [
+     256,
+     548
+    ],
+    "bw": 293,
+    "bh": 48,
+    "rule": [
+     557,
+     1219
+    ],
+    "caption": [
+     1227,
+     1232
+    ]
+   },
+   {
+    "page": "p08.png",
+    "zone": 0,
+    "band": [
+     2539,
+     2585
+    ],
+    "h": 47,
+    "block": [
+     255,
+     463
+    ],
+    "bw": 209,
+    "bh": 47,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p08.png",
+    "zone": 0,
+    "band": [
+     2810,
+     2853
+    ],
+    "h": 44,
+    "block": [
+     255,
+     466
+    ],
+    "bw": 212,
+    "bh": 44,
+    "rule": [
+     620,
+     837
+    ],
+    "caption": [
+     845,
+     850
+    ]
+   },
+   {
+    "page": "p08.png",
+    "zone": 0,
+    "band": [
+     3172,
+     3218
+    ],
+    "h": 47,
+    "block": [
+     255,
+     498
+    ],
+    "bw": 244,
+    "bh": 41,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p08.png",
+    "zone": 0,
+    "band": [
+     3352,
+     3400
+    ],
+    "h": 49,
+    "block": [
+     256,
+     517
+    ],
+    "bw": 262,
+    "bh": 49,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p08.png",
+    "zone": 1,
+    "band": [
+     1221,
+     1267
+    ],
+    "h": 47,
+    "block": [
+     1551,
+     1794
+    ],
+    "bw": 244,
+    "bh": 47,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p08.png",
+    "zone": 1,
+    "band": [
+     3543,
+     3587
+    ],
+    "h": 45,
+    "block": [
+     1548,
+     1793
+    ],
+    "bw": 246,
+    "bh": 45,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p09.png",
+    "zone": 0,
+    "band": [
+     1564,
+     1607
+    ],
+    "h": 44,
+    "block": [
+     252,
+     497
+    ],
+    "bw": 246,
+    "bh": 44,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p09.png",
+    "zone": 0,
+    "band": [
+     2502,
+     2545
+    ],
+    "h": 44,
+    "block": [
+     252,
+     566
+    ],
+    "bw": 315,
+    "bh": 44,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p09.png",
+    "zone": 0,
+    "band": [
+     3161,
+     3209
+    ],
+    "h": 49,
+    "block": [
+     255,
+     503
+    ],
+    "bw": 249,
+    "bh": 49,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p09.png",
+    "zone": 0,
+    "band": [
+     3258,
+     3362
+    ],
+    "h": 105,
+    "block": [
+     251,
+     472
+    ],
+    "bw": 222,
+    "bh": 49,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p09.png",
+    "zone": 0,
+    "band": [
+     3596,
+     3643
+    ],
+    "h": 48,
+    "block": [
+     256,
+     529
+    ],
+    "bw": 274,
+    "bh": 48,
+    "rule": null,
+    "caption": null
+   },
+   {
+    "page": "p09.png",
+    "zone": 1,
+    "band": [
+     639,
+     682
+    ],
+    "h": 44,
+    "block": [
+     1548,
+     1793
+    ],
+    "bw": 246,
+    "bh": 44,
+    "rule": null,
+    "caption": null
+   }
+  ],
+  "chap_h": 95,
+  "lesson_h": 60,
+  "obj": {
+   "pitch": 81.25,
+   "h": 44.0,
+   "adv": 50.5
+  }
+ }
+}

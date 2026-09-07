@@ -1,0 +1,12 @@
+1. 去除 U+2060 词连接符 197 个
+2. \overset{⃑} {X} → \overrightarrow{X} 归一化 437 处（语义等价：源为箭头重音）
+3. longtable→tabular 转换 6 表，规则线规范化（top/mid/bottomrule）
+3b. 表格列宽归一化 6 表（pandoc 占比按 docx 表宽计，双栏下重新归一）
+4. 表内图片 3 处 → width=\linewidth；独立图片 6 处按原图宽分档 30/45/86mm
+5. 删隐藏节名锚段 2 个：['1.1 空间向量及其运算', '1.1.1 空间向量及其运算']
+6a. 首块 → \zhangtitle（22pt 黑体居中＋通栏 0.4pt 横线）
+6. 标题映射：小节 \xiaojietitle、节 \jietitle、题型组 \zutit×10、题号悬挂 \timu×10
+7. 答案行一行式合并 10 处（答案值加 \ansbox 浅灰底）
+8. 【】标签黑体化 42 处；长下划线挖空 → \kongbai 5 处
+9a. 正文表格转 table[!htbp] 浮动 ×5
+9. 拆分：chapterhead.tex（章标题「人教B版选必1 第1章 空间向量与立体几何·讲练件（…」+统计行+统计表）、body.tex（正文 24371 字符）

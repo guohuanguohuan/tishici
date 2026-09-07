@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+"""main.pdf → png/pNN.png（150dpi，pymupdf 渲染）——同 v2 render_v2.py，改测评卷路径"""
+import os
+import pymupdf
+
+BASE = r"C:\提示词\工作区\全品结构提取\数学选必一\样张v3\测评卷"
+os.makedirs(BASE + r"\png", exist_ok=True)
+doc = pymupdf.open(BASE + r"\main.pdf")
+for i, page in enumerate(doc, 1):
+    pix = page.get_pixmap(dpi=150)
+    pix.save(BASE + rf"\png\p{i:02d}.png")
+print(f'{len(doc)} pages rendered to png/ at 150dpi')

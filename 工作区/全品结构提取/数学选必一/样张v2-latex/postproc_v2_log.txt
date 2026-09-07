@@ -1,0 +1,43 @@
+1. 去除 U+2060 词连接符 197 个（同 v1）
+2. \overset{⃑}{X} → \overrightarrow{X} 归一化 437 处（同 v1，语义等价：源为箭头重音）
+3. longtable→tabular 转换 6 表；booktabs top/mid/bottomrule 全部移除（v2 改全框 0.4pt \hline 网格）
+4. 去 pandoc 表格单元格 minipage 包装 11 处（行结构归一，便于表头样式与网格处理）
+5-1 [节名] 表头行样式：白底黑体加粗＋\multicolumn 定宽 p{Wmm} 居中（弃 |c| 自然宽度：T1 实测 col2 被撑宽 3.9mm→右缘超栏 6.77pt；v2.1 弃 \rowcolor{thbg} 灰底），4 列，宽 ['78', '14', '44', '30']
+5-1 [节名] 列宽定长：|>{\raggedright\arraybackslash}p{78mm}|>{\centering\arraybackslash}p{14mm}|>{\raggedright\arraybackslash}p{44mm}|>{\centering\arraybackslash}p{30mm}|（弃 pandoc \real 占比）＋全框 \hline ×11（含首末线）
+5-2 [对比项] 表头行样式：白底黑体加粗＋\multicolumn 定宽 p{Wmm} 居中（弃 |c| 自然宽度：T1 实测 col2 被撑宽 3.9mm→右缘超栏 6.77pt；v2.1 弃 \rowcolor{thbg} 灰底），3 列，宽 ['13', '27', '32']
+5-2 [对比项] 列宽定长：|>{\raggedright\arraybackslash}p{13mm}|>{\raggedright\arraybackslash}p{27mm}|>{\raggedright\arraybackslash}p{32mm}|（弃 pandoc \real 占比）＋全框 \hline ×7（含首末线）
+5-3 [特殊向量] 表头行样式：白底黑体加粗＋\multicolumn 定宽 p{Wmm} 居中（弃 |c| 自然宽度：T1 实测 col2 被撑宽 3.9mm→右缘超栏 6.77pt；v2.1 弃 \rowcolor{thbg} 灰底），2 列，宽 ['22', '52']
+5-3 [特殊向量] 列宽定长：|>{\raggedright\arraybackslash}p{22mm}|>{\raggedright\arraybackslash}p{52mm}|（弃 pandoc \real 占比）＋全框 \hline ×7（含首末线）
+5-3 [特殊向量] 表内单元格空段 → \par ×1（防分块拆表）
+5-4 [加法] 列宽定长：|>{\raggedright\arraybackslash}p{15mm}|>{\raggedright\arraybackslash}p{26mm}|>{\centering\arraybackslash}p{31mm}|（弃 pandoc \real 占比）＋全框 \hline ×6（含首末线）
+5-4 [加法] 表无表头行：首列标签黑体 ×3
+5-4 [加法] 表内图片 2 处定宽（水平居中由 \multirowsetup 承担）：sub3_B_1.png→30mm，sub3_B_2.png→30mm
+5-5 [交换律] 列宽定长：|>{\raggedright\arraybackslash}p{18mm}|>{\raggedright\arraybackslash}p{56mm}|（弃 pandoc \real 占比）＋全框 \hline ×4（含首末线）
+5-5 [交换律] 表无表头行：首列标签黑体 ×3
+5-6 [图示] 列宽定长：|>{\raggedright\arraybackslash}p{16mm}|>{\raggedright\arraybackslash}p{58mm}|（弃 pandoc \real 占比）＋全框 \hline ×4（含首末线）
+5-6 [图示] 表无表头行：首列标签黑体 ×3
+5-6 [图示] 表内单元格空段 → \par ×1（防分块拆表）
+5-6 [图示] 表内图片 1 处定宽（水平居中由 \multirowsetup 承担）：sub3_B_3.png→45mm
+7. 删隐藏节名锚段 2 个：['1.1 空间向量及其运算', '1.1.1 空间向量及其运算']（同 v1，按渲染语义删除）
+8a. 章标题（演示性改动）：「人教B版选必1 第1章 空间向量与立体几何·讲练件（140题）」→「第1章 空间向量与立体几何」（删「人教B版选必1」前缀与「·讲练件（140题）」后缀）
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.2 空间向量的概念辨析」→「探究点一｜1.1.1.2 空间向量的概念辨析」
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.3 空间向量的线性运算」→「探究点二｜1.1.1.3 空间向量的线性运算」
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.4 用基底表示向量」→「探究点三｜1.1.1.4 用基底表示向量」
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.5 共面向量的判定」→「探究点四｜1.1.1.5 共面向量的判定」
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.6 数量积的概念与运算律」→「探究点五｜1.1.1.6 数量积的概念与运算律」
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.7 数量积求夹角与投影（非坐标法）」→「探究点六｜1.1.1.7 数量积求夹角与投影（非坐标法）」
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.8 数量积条件求参（夹角与垂直）」→「探究点七｜1.1.1.8 数量积条件求参（夹角与垂直）」
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.9 数量积求距离（展开法）」→「探究点八｜1.1.1.9 数量积求距离（展开法）」
+8b. 探究点挂号（演示性改动）：题型组「1.1.1.10 数量积求距离（折叠矩形）」→「探究点九｜1.1.1.10 数量积求距离（折叠矩形）」
+8. 标题映射：节「1.1 空间向量及其运算」/小节「1.1.1 空间向量及其运算」/节级与本节统计行抽出为通栏块（multicol 外）；题型组 \zutit×10（讲部组 1.1.1.1 保持原名＋探究点 9 个）；\timu×10
+9. 知识点块（演示性改动）：◆ 知识点一　空间向量的概念 ← 条目1～3（定义→表示法→特殊向量）
+9. 知识点块（演示性改动）：◆ 知识点二　空间向量的线性运算 ← 条目4～5（加减数乘与运算律→共线充要条件）
+9. 知识点块（演示性改动）：◆ 知识点三　空间向量的夹角、数量积与共面 ← 条目6～9（夹角→数量积→投影向量→共面充要条件）
+9. 知识点块共 3 个（讲部 9 条目按内容聚类，块内条目顺序保持源序不动；正文条目文字零增删）
+10. 答案行一行式合并 10 处（\hangindent=7mm\hangafter=0 全行缩进：题号列恒空，答案行从题号右缘起排；\ansbox \fboxsep 收紧至 1pt）
+11. 【】标签黑体化 42 处；长下划线挖空 → \kongbai 5 处（同 v1）
+11b. 巨型行内公式显式断点：顶层 = 与 · 后注入 \allowbreak ×26 （1.1.1.6-5 详解 C 实证：\left\right 密集公式无自动断点→首行 29.68pt overfull，且与 tolerance/emergencystretch 无关；\allowbreak 纯惩罚点零字形增删）
+12. 图内容感知分档（86mm 禁用），正文 6 张逐张（另有表内 3 张见 5-4/5-6）：sub3_B_4.png→45mm(独立7mm起排)；image1.png→30mm(独立7mm起排)；image2.png→30mm(独立7mm起排)；image3.png→30mm(独立7mm起排)；image4.png→30mm(独立7mm起排)；image5.png→30mm(独立7mm起排)；正文图一律独立成块：\noindent\hspace*{7mm}＋\makebox[linewidth−7mm] 栏内居中＋\penalty10000 前后绑定（题号列恒空：图从题号右缘起排；行内→独立改置 6 段——行内图行首落位不定、x0 无法断言）；判定依据：sub3_B_4.png：投影三联图①②③（组合图元素繁多），image1.png：直三棱柱线框（立体几何），image2.png：正方体+AE 线框（立体几何），image3.png：正方体+BC₁/AC 线框（立体几何），image4.png：二面角两正方形拼接线框（立体几何），image5.png：折叠矩形垂线图（立体几何）
+13. 逻辑绑定：选项/①段段前 \penalty10000＋\noindent ×6（题干与选项不跨栏断；选项顶格对齐全品）；「故答案为/故选」尾句段前 \penalty10000 ×1（不离题块成孤儿）；（multicol 下禁用含 \break 的 \Needspace：页级断点会跳过第二栏产生空栏页 p5，\zutit 单变量实验实证删后 9→8 页）；模板层另设 \clubpenalty=\widowpenalty=10000、xeCJK CheckSingle（防孤字行）、\zhishi/\zutit/\timu 前置 \glueguard{4/6/4}（无 \break 的软断点防孤悬，best effort）
+14. 表格放置策略：5 张正文表随行 7mm 起排 ×5（\noindent\hspace*{7mm}：题号列恒空，表从题号右缘起排；列宽已收缩至合计 ≤78.9mm，78.9＋7=85.9 ≤ 栏宽 86.25mm，逐表算术见 5-N 日志；v1/v2 初稿的 table[!t] 浮动在 multicol 下被推迟丢失，实测废弃；T0 章首导航表 multicols 外通栏、无题号语境，不适用并登记豁免）
+15. 拆分输出：chapterhead_v2.tex（章标题＋全件统计＋导航表＋节/小节标题＋本节统计，全通栏）、body_v2.tex（正文 24921 字符，multicols 内双栏）
