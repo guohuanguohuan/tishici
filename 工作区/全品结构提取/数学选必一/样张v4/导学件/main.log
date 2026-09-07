@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  7 SEP 2026 13:42
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  8 SEP 2026 00:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -315,7 +315,7 @@ File: ctex-name-utf8.cfg 2026/08/11 v2.6.5 Caption with encoding UTF-8 (CTEX)
 File: ctex-c5size.clo 2026/08/11 v2.6.5 c5size option (CTEX)
 )) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex-scheme.cfg 2026/08/11 v2.6.5 Configuration file (CTEX)
-)
+) (./qp-fonts.tex
 
 Package fontspec Info: 
 (fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
@@ -372,7 +372,7 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
 
- (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+) (./qp-layout.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
@@ -594,9 +594,7 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \colbreak@box=\box110
 \mc@col@check@num=\count344
 \g__mc_curr_col_int=\count345
-) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/needspace/needspace.sty
-Package: needspace 2025/03/13 v1.3e reserve vertical space
-) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+)) (./qp-headfoot.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip76
 \f@nch@offset@elh=\skip77
@@ -613,11 +611,9 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip88
 \f@nch@widthR=\skip89
 \@temptokenb=\toks25
-) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/indentfirst.sty
-Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2026/05/28 version 6.10.0 text color boxes
- (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+)) (./qp-titles.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+)) (./qp-blocks.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks26
 \pgfutil@tempdima=\dimen282
 \pgfutil@tempdimb=\dimen283
@@ -798,51 +794,32 @@ File: pgfmodulematrix.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \tikz@expandcount=\count367
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2026-08-01 v3.1.12 (3.1.12)
-))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks38
-\verbatim@line=\toks39
-\verbatim@in@stream=\read3
-) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
-Package: environ 2014/05/04 v0.3 A new way to define environments
- (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count368
-)
-\tcb@titlebox=\box122
-\tcb@upperbox=\box123
-\tcb@lowerbox=\box124
-\tcb@phantombox=\box125
-\c@tcbbreakpart=\count369
-\c@tcblayer=\count370
-\c@tcolorbox@number=\count371
-\l__tcobox_tmpa_box=\box126
-\l__tcobox_tmpa_dim=\dimen332
-\tcb@temp=\box127
-\tcb@temp=\box128
-\tcb@temp=\box129
-\tcb@temp=\box130
+))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
+))
+\kdmind=\skip90
+\kdwd=\skip91
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
-LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -850,56 +827,56 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 164.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 164.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 164.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 164.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 164.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 164.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 164.
-LaTeX Font Info:    Redeclaring math accent \check on input line 164.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 164.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 164.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 164.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 164.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 164.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 21.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 21.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 21.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 21.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 21.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 21.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 21.
+LaTeX Font Info:    Redeclaring math accent \check on input line 21.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 21.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 21.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 21.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 21.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 164.
+(Font)              `operators' in the math version `normal' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 164.
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 21.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 164.
+(Font)              `operators' in the math version `bold' on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 164.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on input line 164.
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 164.
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 164.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 164.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 164.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 21.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on input line 164.
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line 164.
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 164.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 21.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 164.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -908,18 +885,18 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
-* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 745.46222pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=512.14963pt
-* \textheight=759.6886pt
+* \textheight=745.46222pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
-* \topmargin=-47.2814pt
-* \headheight=12.0pt
-* \headsep=5.69054pt
+* \topmargin=-29.59087pt
+* \headheight=0.0pt
+* \headsep=0.0pt
 * \topskip=10.0pt
 * \footskip=13.0pt
 * \marginparwidth=65.0pt
@@ -930,8 +907,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -954,6 +931,32 @@ Package fontspec Info:
 
 Package fontspec Info: 
 (fontspec)             Font family 'SimHei(0)' created for font 'SimHei' with
+(fontspec)             options [Script={CJK},FakeBold={2.2}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimHei/OT:script=hani;language=dflt;embolden=2.2;"
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimHei/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimHei/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SimHei(1)' created for font 'SimHei' with
 (fontspec)             options [Script={CJK}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
@@ -1003,53 +1006,78 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: media/media/sub3_B_4.png Graphic file (type bmp)
 <media/media/sub3_B_4.png>
  [2]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+[]\TU/SimSun(0)/m/n/10.5 在 直 三 棱 柱 $\OML/cmm/m/it/10.5 ABC \OMS/cmsy/m/n/10.5 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+\OML/cmm/m/it/10.5 A[]B[]C[]$ \TU/SimSun(0)/m/n/10.5 中，|  若 $[] \OT1/cmr/m/n/10.5 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
+[]$\TU/TimesNewRoman(0)/m/n/10.5 =$[]$.(\TU/SimSun(0)/m/n/10.5 用 $[]\OML/cmm/m/it/10.5 ; []; []$
+ []
+
 File: media/media/image1.png Graphic file (type bmp)
 <media/media/image1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+[]\TU/SimSun(0)/m/n/10.5 已 知 正 方 体 \TU/TimesNewRoman(0)/m/it/10.5 ABCD \TU/SimSun(0)/m/n/10.5 －
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\TU/TimesNewRoman(0)/m/it/10.5 A[] B[] C[] D[] \TU/SimSun(0)/m/n/10.5 中，| $[]$ ＝ $[]$
+ []
+
 File: media/media/image2.png Graphic file (type bmp)
 <media/media/image2.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 |\TU/SimSun(0)/b/n/10.5 【素 养 小 结】|  \TU/SimSun(0)/m/n/10.5 ① 识 别：|  题 干 给 出 \TU/TimesNewRoman(0)/m/n/10.5 p=xa+yb \TU/SimSun(0)/m/n/10.5 或
  []
 
-[3]
+
+Underfull \hbox (badness 5548) in paragraph at lines 244--244
+[]\TU/SimSun(0)/m/n/10.5 如 图，|  在 正 方 体 $\OML/cmm/m/it/10.5 ABCD \OMS/cmsy/m/n/10.5 ^^@
+ []
+
 File: media/media/image3.png Graphic file (type bmp)
 <media/media/image3.png>
 
-Underfull \hbox (badness 7291) in paragraph at lines 221--223
+Underfull \hbox (badness 7291) in paragraph at lines 254--256
 \TU/SimSun(0)/m/n/10.5 方 法 \TU/TimesNewRoman(0)/m/n/10.5 2\TU/SimSun(0)/m/n/10.5 ．|  设 正 方 体 的 棱 长 为 \TU/TimesNewRoman(0)/m/n/10.5 1\TU/SimSun(0)/m/n/10.5 ，| $[] \OMS/cmsy/m/n/10.5 ^^A [] \OT1/cmr/m/n/10.5 =
  []
 
 
-Underfull \hbox (badness 5189) in paragraph at lines 221--223
+Underfull \hbox (badness 5189) in paragraph at lines 254--256
 [] \OMS/cmsy/m/n/10.5 ^^A [] \OT1/cmr/m/n/10.5 = [] \OMS/cmsy/m/n/10.5 ^^A
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 \TU/SimSun(0)/m/n/10.5 角，|  可 得 $[] [] \OML/cmm/m/it/10.5 < \OT1/cmr/m/n/10.5 0$ \TU/SimSun(0)/m/n/10.5 且
  []
 
-[4]
 File: media/media/image4.png Graphic file (type bmp)
 <media/media/image4.png>
 File: media/media/image5.png Graphic file (type bmp)
 <media/media/image5.png>
- [5]
-LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 309.
-) [6] (./main.aux)
+[5]) [6] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 23910 strings out of 469768
- 602902 string characters out of 5466040
- 1069863 words of memory out of 5000000
- 52510 multiletter control sequences out of 15000+600000
- 639080 words of font info for 134 fonts, out of 8000000 for 9000
+ 22135 strings out of 469768
+ 560435 string characters out of 5466040
+ 1012211 words of memory out of 5000000
+ 50718 multiletter control sequences out of 15000+600000
+ 638280 words of font info for 141 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 106i,21n,109p,1193b,754s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 97i,21n,101p,1193b,903s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (6 pages).

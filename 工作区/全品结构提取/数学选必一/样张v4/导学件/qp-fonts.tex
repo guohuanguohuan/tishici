@@ -1,0 +1,19 @@
+% ============================================================
+% qp-fonts.tex —— 字体模块（全品式导学件，供 main.tex \input）
+% 职责：西文/中文字体族、黑体楷体族、仿粗黑体族（v4.2）、xeCJK 字符类与断行检查。
+% 调用关系：main.tex → qp-fonts → qp-layout → qp-headfoot → qp-titles → qp-blocks。
+% 依赖：documentclass [fontset=none]{ctexart}（在 main.tex）。
+% v4.2：增设 \heibf（FakeBold 黑体族）——全品章/节/小节/课时标题实证为加重黑体，
+%       SimHei 无真粗体面，以 FakeBold=2.2 合成（实测墨密 0.292→0.391，仅四级标题用；
+%       正文内【】标签、◆标题维持 \heiti/\bfseries 口径不动）。
+% ============================================================
+\setmainfont{Times New Roman}
+\setCJKmainfont[BoldFont=SimHei]{SimSun}
+\setCJKfamilyfont{hei}{SimHei}
+\setCJKfamilyfont{heibf}[FakeBold=2.2]{SimHei}
+\setCJKfamilyfont{kai}{KaiTi}
+\newcommand{\heiti}{\CJKfamily{hei}}
+\newcommand{\heibf}{\CJKfamily{heibf}}
+\newcommand{\kaishu}{\CJKfamily{kai}}
+\xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
+\xeCJKsetup{CheckSingle=true}

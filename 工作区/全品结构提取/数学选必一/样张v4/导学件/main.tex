@@ -1,169 +1,26 @@
 % ============================================================
-% 全品式样张 v4 · 导学件（人教B版选必1 §1.1.1 空间向量及其运算）
+% 全品式样张 v4.1 · 导学件（人教B版选必1 §1.1.1 空间向量及其运算）
 % 编译：postproc_daoxue.py → xelatex main.tex（两遍）→ render.py
-% v4 定位：v3 高仿基础上的改版轮（依据＝v3对照诊断-0907/总诊断-v4参数表＋导学件对照§四 11 条＋拍板 16/18/22/25/28/34/35）。
-%   相对 v3 的版式差异（均为授权改版，逐条登记于 postproc log 与交付报告）：
-%   1. 行距通解：导言区 \linespread{1}（实发 18pt，撤 ctex linestretch 1.3 叠乘）。
-%   2. \flushbottom＋\raggedcolumns；multicolsep 8pt→3pt；glueguard {5,6}→{2}。
-%   3. 块前距降档 12/8/6→3/3/2pt（\zsd/\tjd/\li/\xiaojie/\zhenhead/\jiance/\mubiaoline/\huaxing）。
-%   4. 花形行通栏化＝multicols 切分法（body.tex 内 \end/\begin multicols，花形行居通栏，撤 v3 栏内登记差异）。
-%   5. 单页灰档 ≤2：调色板收敛＝黑＋777777＋DDDDDD；撤栏线（columnseprule 0pt）；花形行底线改黑；
-%      tcbox 框黑；页眉灰字/括注/注记/灰小字/章首方块统一 777777；页码块 DDDDDD。
-%   6. 页眉全省（拍板8②）；页脚单行＝左章名小字＋右灰块页码，块底缘离页底 ≈11mm（块高 7.8→5mm，
-%      否则 15mm 底边距下 7.8mm 块顶必侵入正文区——物理冲突，登记待裁）。
-%   7. 章首：4+4pt、节行高 26→22；章名前加 777777 实心灰方块（拍板22，演示近似）。
-%   8. 学习目标块：楷体化（KaiTi）＋条目压缩 ≤1 行/条（拍板28；演示文案）＋移入章首通栏区（防 multicols 平衡出短栏）。
-%   9. 探究点：恒式 例1＋变式1＋素养小结（拍板16）；◆探究点标题与例1 同段内联（拍板28）；
-%      题侧改挂「难度文字档＋（知识点N）」（拍板15/18，撤〔源〕括注）；★精选标＋典型性理由（拍板25，同一灰档）。
-%   10. 表格 arraystretch 1.3→1.15；灰注记（编注）并入所属条目段末同段接排（对照§四-7）；答案题后紧跟（拍板12）。
-% 版式规格：A4 四边 15mm；双栏 columnsep 7.5mm 无栏线；正文 10.5pt/18pt；
-%   标题梯子 章22/节18/小节15/课时14 黑体居中；例题标签悬挂 7mm（题号列恒空）；挖空 15mm。
+% v4.1 用户过目轮：导言区模块化（按功能拆分、嵌套 \input，类比 python 模块）：
+%   qp-fonts.tex    字体（西文/中文族、黑楷族、xeCJK 字符类）
+%   qp-layout.tex   版面（geometry/宏包/调色板/行距栏距/惩罚/表格默认/顶格化）
+%   qp-headfoot.tex 页眉页脚（参数宏 \qpzhangming/\qpjieming/\qpjianming/\qpceming，他件复用入口）
+%   qp-titles.tex   章节小节课时标题＋学习目标块（multicols 外通栏区）
+%   qp-blocks.tex   正文块宏（挖空印答/条目/例变/答案/诊断/检测/花形）
+% v4.1 相对 v4 改版（用户过目，逐条登记于交付报告§八）：知识点填空印答（\kongda）、判断题加
+%   【解析】＋全品式（1）序号、页眉恢复（v3 形制）、页脚 twoside 奇偶对齐全品＋页码块 24×7 居中、
+%   正文顶格化（撤全部悬挂缩进）、花形行栏内化（菱形标＋midgray 细线）、章首左对齐化、条目按知识点重编号。
 % ============================================================
 \documentclass[fontset=none]{ctexart}
-
-% ---------- 字体 ----------
-\setmainfont{Times New Roman}
-\setCJKmainfont[BoldFont=SimHei]{SimSun}
-\setCJKfamilyfont{hei}{SimHei}
-\setCJKfamilyfont{kai}{KaiTi}
-\newcommand{\heiti}{\CJKfamily{hei}}
-\newcommand{\kaishu}{\CJKfamily{kai}}
-\xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
-\xeCJKsetup{CheckSingle=true}
-
-% ---------- 宏包 ----------
-\usepackage[a4paper,margin=15mm,headheight=12pt,headsep=2mm,footskip=13pt]{geometry}
-\usepackage{amsmath,amssymb}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{multirow,array,calc}
-\usepackage{multicol}
-\usepackage{needspace}
-\usepackage{fancyhdr}
-\usepackage{indentfirst}
-\usepackage{tcolorbox}   % 花形框近似（白底黑边圆角字块）
-
-% ---------- 颜色（调色板收敛：黑＋777777＋DDDDDD，单页灰档≤2，拍板27） ----------
-\definecolor{midgray}{HTML}{777777}    % 灰字/括注/注记/灰小字/章首方块（唯一中灰）
-\definecolor{pnumbg}{HTML}{DDDDDD}     % 页码灰块（唯一浅灰）
-
-% ---------- 版面 ----------
-\setlength{\columnsep}{7.5mm}
-\setlength{\columnseprule}{0pt}        % 撤栏线（拍板28）
-\setlength{\multicolsep}{3pt}
-\renewcommand{\normalsize}{\fontsize{10.5pt}{18pt}\selectfont}
-\linespread{1}                          % 主病1通解：撤 ctex linestretch 1.3 叠乘，实发 18pt
-\normalsize
-\setlength{\parindent}{2em}
-\clubpenalty=10000
-\widowpenalty=10000
-\displaywidowpenalty=10000
-\tolerance=9999
-\emergencystretch=8em   % 序言预设；实际生效处在 multicols 内（multicol 进入时会重置为 8pt）
-\binoppenalty=100
-\relpenalty=100
-\flushbottom            % 对照§四-5（\raggedbottom 撤）
-\raggedcolumns          % 主病2通解：multicol 栏末不硬拉伸（末页参差收尾，拍板23）
-\setcounter{topnumber}{4}
-\setcounter{totalnumber}{4}
-\setcounter{bottomnumber}{2}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\textfraction}{0.05}
-\renewcommand{\floatpagefraction}{0.85}
-
-% ---------- 表格默认（全框细线＋紧凑内边距；arraystretch 1.3→1.15，对照§四-6） ----------
-\setlength{\arrayrulewidth}{0.4pt}
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.15}
-\renewcommand{\multirowsetup}{\centering}
-
-% ---------- 页眉页脚（页眉全省，拍板8②；页脚单行：左章名小字＋右灰块页码，拍板22） ----------
-\pagestyle{fancy}
-% footskip=13pt（≥fancyhdr 自修正阈值 12.64723pt，不再触发逐页警告改写；同练习件 A6 方案）
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\fancyfoot[L]{\fontsize{6.5pt}{8pt}\selectfont\color{midgray}第1章\ 空间向量与立体几何\ ·\ 导学件}
-\fancyfoot[R]{\raisebox{0.59mm}[0pt][0pt]{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{\makebox[31mm][c]{\rule{0pt}{5mm}\fontsize{10.5pt}{12pt}\selectfont\bfseries\thepage}}}}
-% 页码块几何（同练习件 A6 已验证结构：raisebox [0pt][0pt] 防锚定吞位移）：baseline=版心底+13pt=286.59mm，
-%   块底=baseline−0.59mm=286.0mm → 底缘离页底 11mm（拍板22 目标）；块顶 281mm=版心内 1.0mm——
-%   15mm 恒定边距（拍板6）下 5mm 块+11mm 底缘的必然形态，拍板22 物理冲突维持登记待裁
-
-% ---------- 自定义标题命令（multicol 外通栏区，可用 \Needspace） ----------
-% 章首灰方块＋章名（拍板22；777777 实心方块演示近似，登记）
-\newcommand{\zhangtitle}[1]{%
-  {\centering\raisebox{1.2mm}{\color{midgray}\rule[0pt]{3.2mm}{3.2mm}}\hspace{2.5mm}%
-   {\fontsize{22pt}{30pt}\selectfont\heiti #1}\par}%
-  \vspace{3pt}\noindent\rule{\textwidth}{0.4pt}\vspace{4pt}\par}
-\newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{4pt}%
-  {\centering\fontsize{18pt}{22pt}\selectfont\heiti #1\par}\addvspace{3pt}}
-\newcommand{\xiaojietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{3pt}%
-  {\centering\fontsize{15pt}{22pt}\selectfont\heiti #1\par}\addvspace{2pt}}
-% 课时标题：14pt 黑体居中（章首通栏第 4 层，源节未分课时——演示性定名，登记）
-\newcommand{\keshi}[1]{\par\Needspace*{3\baselineskip}\addvspace{3pt}%
-  {\centering\fontsize{14pt}{20pt}\selectfont\heiti #1\par}\addvspace{2pt}}
-
-% ---------- 正文宏（multicols 内：防孤悬一律 \glueguard，禁 \Needspace） ----------
-% multicol 安全的防孤悬 guard（v2 实证：\Needspace 的 \vfil\break 会致空栏页）；档位 {5,6}→{2}（对照§四-5）
-\newcommand{\glueguard}[1]{\vskip 0pt plus #1\baselineskip\penalty-100\vskip 0pt plus -#1\baselineskip}
-% 【】标签：黑体加粗
-\newcommand{\biaoqian}[1]{{\heiti #1}}
-% 挖空留白线
-\newcommand{\kongbai}{\underline{\hspace*{15mm}}}
-% 答案值下划线（对齐全品导学案）
-\newcommand{\ansul}[1]{\underline{#1}}
-% 【学习目标】标签行（学习目标块＝楷体化压缩，拍板28；位于章首通栏区，登记）
-\newcommand{\mubiaoline}{\par\glueguard{2}\addvspace{2pt}\noindent\biaoqian{【学习目标】}\par\nopagebreak}
-\newcommand{\mubiaomu}[2]{\noindent\hangindent=1.6em\hangafter=1{\kaishu #1．#2}\par}
-% 知识点条目：编号．内容（hang 1.6em）；灰注记（编注）以 \zhuzhu 并入段末同段接排（对照§四-7）
-\newcommand{\tiaomu}[2]{\par\glueguard{1}\noindent\hangindent=1.6em\hangafter=1 #1．#2\par}
-% 灰注记 run（6.5pt 同段接排，独立段数 0；字符总量不变）
-\newcommand{\zhuzhu}[1]{{\fontsize{6.5pt}{9pt}\selectfont\color{midgray}\hspace{0.5em}#1}}
-% 花形行：通栏（multicols 切分法，拍板28）＝圆角 tcbox 近似花形框＋右侧灰小字＋黑底线（底线改黑，拍板27）
-\newcommand{\huaxing}[2]{\par\glueguard{2}\addvspace{4pt}%
-  \noindent{\tcbox[on line,colback=white,colframe=black,boxrule=0.5pt,arc=2.5mm,%
-    left=5pt,right=5pt,top=1.5pt,bottom=1.5pt]{\fontsize{12pt}{16pt}\selectfont\heiti #1}}%
-  \hfill\raisebox{1pt}{\fontsize{6.5pt}{8pt}\selectfont\color{midgray}#2}\par
-  \vspace{1.5pt}\noindent{\color{black}\rule{80mm}{0.8pt}}\par\addvspace{3pt}}
-% 知识点块标题：◆ 知识点N　名（12pt 黑体；前距 12→3pt，对照§四-2）
-\newcommand{\zsd}[2]{\par\glueguard{4}\addvspace{3pt}%
-  \noindent{\fontsize{12pt}{17pt}\selectfont\bfseries ◆\ 知识点#1\quad #2}\par\addvspace{2pt}}
-% 探究点（恒式＋标题内联，拍板16/28）：◆探究点N｜名 与 例1 题侧标签、题干同段接排（hang 7mm）
-% #1=点序名（一｜名 已含）#2=标签（例1）#3=题侧（难度（知识点N））#4=★块（空或★+理由预格式化）#5=题干
-\newcommand{\tjdnr}[5]{\par\glueguard{2}\addvspace{3pt}%
-  \noindent\hangindent=7mm\hangafter=1{\fontsize{12pt}{17pt}\selectfont\bfseries ◆\ 探究点#1}\quad
-  {\heiti #2}%
-  {\fontsize{9.5pt}{13pt}\selectfont\color{midgray}〔#3〕}%
-  #4#5\par}
-% 例题/变式（非点首）：标签（例1／变式1）＋题侧〔难度（知识点N）〕＋题干；hang 7mm（题号列恒空）
-\newcommand{\li}[4]{\par\glueguard{4}\addvspace{2pt}%
-  \noindent\hangindent=7mm\hangafter=1{\heiti #1}%
-  {\fontsize{9.5pt}{13pt}\selectfont\color{midgray}〔#2〕}%
-  #3#4\par}
-% ★精选块（拍板25；同一灰档 777777；空题侧传 {}）
-\newcommand{\starblk}[1]{★{\fontsize{6.5pt}{9pt}\selectfont\color{midgray}#1}}
-% 选项/①链：2em 缩进＋绑定（对齐练习册 p06；作行首前缀用）
-\newcommand{\bindopt}{\penalty10000\noindent\hspace*{2em}}
-% 其余续段：顶格续排（作行首前缀用；v4 撤首部 \penalty10000——长链禁断在整页组版期致 vbox 超高 140/136pt，撤后归零，段间改由 glueguard 集中断点）
-\newcommand{\bindp}{\noindent}
-% 【答案】行：整体缩进 7mm（题号列恒空）；答案值下划线由调用侧逐值 \ansul 显式给出（只包值，v3§七坑规；
-%   v4 撤本宏的兜底 \ansul{#1}——整句包盒不可断行，变式四长答案列内超宽 192.65pt 即此病）
-\newcommand{\ansline}[1]{\par\glueguard{2}\noindent\hangindent=7mm\hangafter=0\biaoqian{【答案】}#1\par}
-% 【素养小结】段落：三句式（识别／操作／收束），hang 7mm（前距 4→2pt）
-\newcommand{\xiaojie}[1]{\par\glueguard{2}\addvspace{2pt}%
-  \noindent\hangindent=7mm\hangafter=1\biaoqian{【素养小结】}#1\par}
-% 【诊断分析】头：标签＋题型说明（前距 6→2pt）
-\newcommand{\zhenhead}[1]{\par\glueguard{2}\addvspace{2pt}%
-  \noindent\biaoqian{【诊断分析】}\hspace{1em}#1\par\addvspace{2pt}}
-% 诊断判断题：序号＋题干＋右端括号内下划线答案（题答紧跟）
-\newcommand{\zhenti}[3]{\par\glueguard{1}\noindent#1#2\hfill（#3）\par}
-% 课堂检测题：题干（题号/题侧含在内）＋【答案】行（题答紧跟，拍板12）
-\newcommand{\jiancestem}[1]{\par\glueguard{4}\addvspace{2pt}%
-  \noindent\hangindent=7mm\hangafter=1 #1\par}
-\newcommand{\jiance}[2]{\jiancestem{#1}\ansline{#2}}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
 
 \begin{document}
 % 章首＋节标题＋小节标题＋课时＋【学习目标】（楷体化压缩块）：全部 multicol 外通栏
 \input{chapterhead.tex}
-% 正文多段双栏（multicols 切分法：花形行居通栏；栏距 7.5mm、无栏线）
+% 正文双栏（v4.1：花形行栏内化，单一 multicols 环境，花形为栏内元素）
 \input{body.tex}
 \end{document}

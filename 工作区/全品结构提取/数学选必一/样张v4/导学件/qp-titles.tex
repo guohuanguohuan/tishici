@@ -1,0 +1,29 @@
+% ============================================================
+% qp-titles.tex —— 标题模块（全品式导学件，供 main.tex \input）
+% 职责：章/节/小节/课时标题＋【学习目标】块（multicols 外通栏区，可用 \Needspace）。
+% 章首＝全品式左对齐：两个错位交叠灰方块（浅 DDDDDD＋深 777777）＋仿粗黑体（\heibf，v4.2）22pt 章名＋通栏细线；
+% 节/小节/课时维持居中（与全品一致）。学习目标条目维持 1.6em 悬挂（章首块不属正文顶格口径）。
+% 调用关系：main.tex → qp-headfoot → 本模块 → qp-blocks。
+% ============================================================
+\usepackage{needspace}
+
+% 章首：浅方块 6.5mm 坐基线，深方块 3.5mm 叠其右上，1.5mm 小深方块缀其右下（全品错位交叠近似）
+\newcommand{\zhangtitle}[1]{%
+  \par\addvspace{2pt}\noindent
+  {\color{pnumbg}\rule{6.5mm}{6.5mm}}\hspace{-2.6mm}%
+  \raisebox{4.4mm}[0pt][0pt]{\color{midgray}\rule{3.5mm}{3.5mm}}\hspace{-3.4mm}%
+  \raisebox{0pt}[0pt][0pt]{\color{midgray}\rule{1.5mm}{1.5mm}}\hspace{2.4mm}%
+  {\fontsize{22pt}{30pt}\selectfont\heibf #1}\par
+  \vspace{3pt}\noindent\rule{\textwidth}{0.4pt}\vspace{4pt}\par}
+
+\newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{4pt}%
+  {\centering\fontsize{18pt}{22pt}\selectfont\heibf #1\par}\addvspace{3pt}}
+\newcommand{\xiaojietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{3pt}%
+  {\centering\fontsize{15pt}{22pt}\selectfont\heibf #1\par}\addvspace{2pt}}
+% 课时标题：14pt 仿粗黑体居中（章首通栏第 4 层；v4.2 实证对齐全品 p04 课时名「第 1 课时 空间向量的概念及线性运算」内容式命名，postproc 7 段同步）
+\newcommand{\keshi}[1]{\par\Needspace*{3\baselineskip}\addvspace{3pt}%
+  {\centering\fontsize{14pt}{20pt}\selectfont\heibf #1\par}\addvspace{2pt}}
+
+% 【学习目标】标签行（楷体化压缩，拍板28；位于章首通栏区，登记）
+\newcommand{\mubiaoline}{\par\glueguard{2}\addvspace{2pt}\noindent\biaoqian{【学习目标】}\par\nopagebreak\vspace{-2pt}}
+\newcommand{\mubiaomu}[2]{\noindent\hangindent=1.6em\hangafter=1{\kaishu #1．#2}\par}
