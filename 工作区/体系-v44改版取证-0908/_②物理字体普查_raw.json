@@ -1,0 +1,2547 @@
+{
+ "练习册": {
+  "pages": 20,
+  "fonts": [
+   {
+    "basefont": "HOVUFF+FZJINHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "cid"
+    ]
+   },
+   {
+    "basefont": "DAZWBN+FZLTCHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "ZCUYXV+FZLTXIHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "RGCDEE+E-F3",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "SGCDEE+FZLTHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "QGCDEE+E-F4",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "MGCDEE+E-BZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "NGCDEE+E-FZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "OGCDEE+FZLTXHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "PGCDEE+FZLTZHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "LGCDEE+E-XFZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "KGCDEE+FZLTXIHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "CBCDEE+FZLTZCHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "DBCDEE+E-FZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "NBCDEE+E-F2",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "OBCDEE+FZPSZHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "MBCDEE+FZLTHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "EBCDEE+FZLTZHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "FBCDEE+E-BX",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "HBCDEE+FZFSK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "IBCDEE+E-BZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "JBCDEE+E-F5",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "KBCDEE+E-B6",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "GBCDEE+FZKTK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "LBCDEE+FZSSK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "BBCDEE+FZLTHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "XICDEE+E-F2",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "CJCDEE+FZPSZHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "AJCDEE+FZLTHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "SICDEE+E-BX",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "TICDEE+FZFSK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "VICDEE+E-BZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "UICDEE+E-F5",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "BJCDEE+E-B6",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "WICDEE+FZKTK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "YICDEE+FZSSK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   }
+  ],
+  "spans": [
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 10446,
+    "sample": [
+     [
+      5,
+      "从同一高度抛出完"
+     ],
+     [
+      5,
+      "全相同的甲"
+     ],
+     [
+      5,
+      "丙三个小球"
+     ],
+     [
+      5,
+      "甲球竖直向上抛出"
+     ]
+    ],
+    "colors": {
+     "0": 1792
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 10.09,
+    "chars": 4171,
+    "sample": [
+     [
+      3,
+      "………………………………………………………………"
+     ],
+     [
+      3,
+      "………………………………………………………………"
+     ],
+     [
+      3,
+      "………………………………………………………………"
+     ],
+     [
+      3,
+      "………………………………………………………………"
+     ]
+    ],
+    "colors": {
+     "0": 2201,
+     "13421772": 44
+    }
+   },
+   {
+    "font": "E-BX",
+    "size_pt": 10.09,
+    "chars": 1476,
+    "sample": [
+     [
+      5,
+      "p'"
+     ],
+     [
+      5,
+      ".m"
+     ],
+     [
+      5,
+      ".mgt"
+     ],
+     [
+      5,
+      ".m"
+     ]
+    ],
+    "colors": {
+     "0": 1332
+    }
+   },
+   {
+    "font": "FZLTHK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 370,
+    "sample": [
+     [
+      3,
+      "动量"
+     ],
+     [
+      3,
+      "动量定理"
+     ],
+     [
+      3,
+      "专题课"
+     ],
+     [
+      3,
+      "动量定理的应用"
+     ]
+    ],
+    "colors": {
+     "0": 59
+    }
+   },
+   {
+    "font": "FZKTK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 363,
+    "sample": [
+     [
+      5,
+      "河北石家庄二中月考"
+     ],
+     [
+      5,
+      "江苏苏州中学高二月考"
+     ],
+     [
+      5,
+      "山西宝鸡中学期中"
+     ],
+     [
+      6,
+      "浙江宁波期末"
+     ]
+    ],
+    "colors": {
+     "0": 46
+    }
+   },
+   {
+    "font": "FZLTZHK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 281,
+    "sample": [
+     [
+      5,
+      "知识点一　动量　动量与动能的关系"
+     ],
+     [
+      5,
+      "知识点二　动量的变化量"
+     ],
+     [
+      7,
+      "知识点一　冲量　合力的冲量"
+     ],
+     [
+      7,
+      "知识点二　用动量定理定性解释现象"
+     ]
+    ],
+    "colors": {
+     "0": 35
+    }
+   },
+   {
+    "font": "FZFSK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 194,
+    "sample": [
+     [
+      5,
+      "时间"
+     ],
+     [
+      5,
+      "分钟"
+     ],
+     [
+      5,
+      "总分"
+     ],
+     [
+      5,
+      "选择题每小题"
+     ]
+    ],
+    "colors": {
+     "0": 121
+    }
+   },
+   {
+    "font": "E-B6",
+    "size_pt": 10.09,
+    "chars": 138,
+    "sample": [],
+    "colors": {
+     "0": 138
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 5.53,
+    "chars": 131,
+    "sample": [],
+    "colors": {
+     "0": 131
+    }
+   },
+   {
+    "font": "E-F4",
+    "size_pt": 7.67,
+    "chars": 114,
+    "sample": [
+     [
+      3,
+      "002"
+     ],
+     [
+      3,
+      "004"
+     ],
+     [
+      3,
+      "006"
+     ],
+     [
+      3,
+      "008"
+     ]
+    ],
+    "colors": {
+     "0": 38
+    }
+   },
+   {
+    "font": "E-F5",
+    "size_pt": 10.09,
+    "chars": 105,
+    "sample": [
+     [
+      6,
+      "10"
+     ],
+     [
+      6,
+      "11"
+     ],
+     [
+      6,
+      "12"
+     ],
+     [
+      8,
+      "10"
+     ]
+    ],
+    "colors": {
+     "0": 87
+    }
+   },
+   {
+    "font": "FZLTHJW--GB1-0",
+    "size_pt": 5.24,
+    "chars": 104,
+    "sample": [
+     [
+      5,
+      "高中物理　选择性必修第一册"
+     ],
+     [
+      7,
+      "高中物理　选择性必修第一册"
+     ],
+     [
+      9,
+      "高中物理　选择性必修第一册"
+     ],
+     [
+      11,
+      "高中物理　选择性必修第一册"
+     ]
+    ],
+    "colors": {
+     "5000524": 8
+    }
+   },
+   {
+    "font": "FZLTHK--GBK1-0",
+    "size_pt": 5.24,
+    "chars": 80,
+    "sample": [
+     [
+      6,
+      "第一章　动量守恒定律"
+     ],
+     [
+      8,
+      "第一章　动量守恒定律"
+     ],
+     [
+      10,
+      "第一章　动量守恒定律"
+     ],
+     [
+      12,
+      "第一章　动量守恒定律"
+     ]
+    ],
+    "colors": {
+     "5000524": 8
+    }
+   },
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 9.7,
+    "chars": 76,
+    "sample": [
+     [
+      19,
+      "乙两个物块在光滑水平桌"
+     ],
+     [
+      19,
+      "面上沿同一直线运动"
+     ],
+     [
+      19,
+      "追上乙"
+     ],
+     [
+      19,
+      "并与乙发生碰撞"
+     ]
+    ],
+    "colors": {
+     "0": 13
+    }
+   },
+   {
+    "font": "FZLTZHK--GBK1-0",
+    "size_pt": 16.88,
+    "chars": 68,
+    "sample": [
+     [
+      5,
+      "动量"
+     ],
+     [
+      7,
+      "动量定理"
+     ],
+     [
+      9,
+      "专题课"
+     ],
+     [
+      9,
+      "动量定理的应用"
+     ]
+    ],
+    "colors": {
+     "0": 13
+    }
+   },
+   {
+    "font": "FZPSZHJW--GB1-0",
+    "size_pt": 5.24,
+    "chars": 64,
+    "sample": [
+     [
+      5,
+      "全品学练考"
+     ],
+     [
+      6,
+      "练习册"
+     ],
+     [
+      7,
+      "全品学练考"
+     ],
+     [
+      8,
+      "练习册"
+     ]
+    ],
+    "colors": {
+     "5000524": 16
+    }
+   },
+   {
+    "font": "FZLTCHK--GBK1-0",
+    "size_pt": 14.0,
+    "chars": 55,
+    "sample": [
+     [
+      2,
+      "目录设置更加符合一线上课实际，详略得当，拓展有度"
+     ],
+     [
+      2,
+      "科学分层设置作业，注重难易比例搭配，兼顾基础性和"
+     ]
+    ],
+    "colors": {
+     "2301728": 2
+    }
+   },
+   {
+    "font": "E-F2",
+    "size_pt": 11.16,
+    "chars": 48,
+    "sample": [
+     [
+      5,
+      "002"
+     ],
+     [
+      6,
+      "003"
+     ],
+     [
+      7,
+      "004"
+     ],
+     [
+      8,
+      "005"
+     ]
+    ],
+    "colors": {
+     "0": 16
+    }
+   },
+   {
+    "font": "FZLTXIHJW--GB1-0",
+    "size_pt": 6.79,
+    "chars": 38,
+    "sample": [
+     [
+      4,
+      "［第一章　动量守恒定律］"
+     ],
+     [
+      4,
+      "［第二章　机械振动］"
+     ],
+     [
+      4,
+      "［第三章　机械波］"
+     ],
+     [
+      4,
+      "［第四章　光］"
+     ]
+    ],
+    "colors": {
+     "0": 4
+    }
+   },
+   {
+    "font": "E-BX",
+    "size_pt": 5.53,
+    "chars": 28,
+    "sample": [],
+    "colors": {
+     "0": 28
+    }
+   },
+   {
+    "font": "FZLTXHK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 27,
+    "sample": [
+     [
+      4,
+      "课时　折射现象与折射定律"
+     ],
+     [
+      4,
+      "课时　实验"
+     ],
+     [
+      4,
+      "测量玻璃的折射率"
+     ]
+    ],
+    "colors": {
+     "0": 5
+    }
+   },
+   {
+    "font": "E-F3",
+    "size_pt": 10.09,
+    "chars": 26,
+    "sample": [],
+    "colors": {
+     "0": 26
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 9.7,
+    "chars": 22,
+    "sample": [
+     [
+      19,
+      "kg"
+     ],
+     [
+      19,
+      "( )"
+     ]
+    ],
+    "colors": {
+     "0": 19
+    }
+   },
+   {
+    "font": "E-XFZ",
+    "size_pt": 9.7,
+    "chars": 18,
+    "sample": [
+     [
+      4,
+      "P077~P108"
+     ],
+     [
+      4,
+      "P109~P218"
+     ]
+    ],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 5.24,
+    "chars": 16,
+    "sample": [
+     [
+      5,
+      "RJ"
+     ],
+     [
+      7,
+      "RJ"
+     ],
+     [
+      9,
+      "RJ"
+     ],
+     [
+      11,
+      "RJ"
+     ]
+    ],
+    "colors": {
+     "5000524": 8
+    }
+   },
+   {
+    "font": "FZLTXIHJW--GB1-0",
+    "size_pt": 8.0,
+    "chars": 14,
+    "sample": [
+     [
+      2,
+      "物理 选择性必修第一册 RJ"
+     ]
+    ],
+    "colors": {
+     "8422021": 1
+    }
+   },
+   {
+    "font": "FZLTXHK--GBK1-0",
+    "size_pt": 9.7,
+    "chars": 12,
+    "sample": [
+     [
+      4,
+      "［另附分册"
+     ],
+     [
+      4,
+      "［另附分册"
+     ]
+    ],
+    "colors": {
+     "0": 4
+    }
+   },
+   {
+    "font": "E-F4",
+    "size_pt": 8.15,
+    "chars": 12,
+    "sample": [
+     [
+      4,
+      "01"
+     ],
+     [
+      4,
+      "03"
+     ],
+     [
+      4,
+      "05"
+     ],
+     [
+      4,
+      "07"
+     ]
+    ],
+    "colors": {
+     "0": 6
+    }
+   },
+   {
+    "font": "FZLTZHK--GBK1-0",
+    "size_pt": 9.7,
+    "chars": 11,
+    "sample": [
+     [
+      19,
+      "知识点二　碰撞可能性"
+     ]
+    ],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "FZLTZCHK--GBK1-0",
+    "size_pt": 20.67,
+    "chars": 10,
+    "sample": [
+     [
+      5,
+      "第一章　动量守恒定律"
+     ]
+    ],
+    "colors": {
+     "0": 1
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 16.88,
+    "chars": 8,
+    "sample": [],
+    "colors": {
+     "0": 8
+    }
+   },
+   {
+    "font": "FZLTZHK--GBK1-0",
+    "size_pt": 10.58,
+    "chars": 7,
+    "sample": [
+     [
+      4,
+      "参考答案"
+     ],
+     [
+      4,
+      "导学案"
+     ]
+    ],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "E-BX",
+    "size_pt": 9.7,
+    "chars": 7,
+    "sample": [],
+    "colors": {
+     "0": 7
+    }
+   },
+   {
+    "font": "FZLTXHK--GBK1-0",
+    "size_pt": 8.15,
+    "chars": 6,
+    "sample": [],
+    "colors": {
+     "0": 6
+    }
+   },
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 5.53,
+    "chars": 6,
+    "sample": [],
+    "colors": {
+     "0": 6
+    }
+   },
+   {
+    "font": "FZLTXHK--GBK1-0",
+    "size_pt": 7.67,
+    "chars": 5,
+    "sample": [
+     [
+      4,
+      "（练习册）"
+     ]
+    ],
+    "colors": {
+     "0": 1
+    }
+   },
+   {
+    "font": "FZJINHJW--GB1-0",
+    "size_pt": 20.14,
+    "chars": 4,
+    "sample": [
+     [
+      2,
+      "02"
+     ],
+     [
+      2,
+      "01"
+     ]
+    ],
+    "colors": {
+     "16777215": 2
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 10.09,
+    "chars": 4,
+    "sample": [],
+    "colors": {
+     "0": 4
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 16.88,
+    "chars": 3,
+    "sample": [],
+    "colors": {
+     "0": 3
+    }
+   },
+   {
+    "font": "FZLTZHK--GBK1-0",
+    "size_pt": 4.27,
+    "chars": 2,
+    "sample": [],
+    "colors": {
+     "0": 2
+    }
+   }
+  ]
+ },
+ "导学案": {
+  "pages": 19,
+  "fonts": [
+   {
+    "basefont": "HGCDEE+E-F3",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "FGCDEE+FZLTHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "IGCDEE+E-F4",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "JGCDEE+E-BZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "EGCDEE+FZLTXHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "GGCDEE+FZLTZHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "KFCDEE+FZLTHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "LFCDEE+FZPSZHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "XFCDEE+FZZYK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "SFCDEE+E-F6",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "VFCDEE+E-B6",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "WFCDEE+FZKTK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "UFCDEE+E-F2",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "PFCDEE+FZLTZCHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "MFCDEE+E-FZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "QFCDEE+FZLTZHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "NFCDEE+FZLTHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "JFCDEE+FZHTK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "RFCDEE+E-BZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "TFCDEE+FZSSK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "OFCDEE+E-BX",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "ZFCDEE+E-YT1",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "YFCDEE+FZY3K--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "AGCDEE+FZFSK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "CGCDEE+E-F5",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   }
+  ],
+  "spans": [
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 9106,
+    "sample": [
+     [
+      4,
+      "用两根长度相同的细线"
+     ],
+     [
+      4,
+      "分别悬挂"
+     ],
+     [
+      4,
+      "两个完全相同的钢球"
+     ],
+     [
+      4,
+      "且两球并排放置"
+     ]
+    ],
+    "colors": {
+     "0": 1521
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 10.09,
+    "chars": 2892,
+    "sample": [
+     [
+      2,
+      "………………………………………………………………"
+     ],
+     [
+      2,
+      "………………………………………………………………"
+     ],
+     [
+      2,
+      "………………………………………………………………"
+     ],
+     [
+      2,
+      "………………………………………………………………"
+     ]
+    ],
+    "colors": {
+     "0": 1495,
+     "13421772": 33
+    }
+   },
+   {
+    "font": "FZFSK--GBK1-0",
+    "size_pt": 9.12,
+    "chars": 1237,
+    "sample": [
+     [
+      5,
+      "动量变化量"
+     ],
+     [
+      5,
+      "的计算遵守矢量运算法则"
+     ],
+     [
+      5,
+      "物体做直线运动的情况"
+     ],
+     [
+      5,
+      "先规定正方向"
+     ]
+    ],
+    "colors": {
+     "0": 170
+    }
+   },
+   {
+    "font": "E-BX",
+    "size_pt": 10.09,
+    "chars": 933,
+    "sample": [
+     [
+      4,
+      "v'"
+     ],
+     [
+      5,
+      ".W"
+     ],
+     [
+      5,
+      ".W"
+     ],
+     [
+      6,
+      ".p"
+     ]
+    ],
+    "colors": {
+     "0": 882
+    }
+   },
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 9.12,
+    "chars": 574,
+    "sample": [
+     [
+      5,
+      "动量"
+     ],
+     [
+      5,
+      "动能"
+     ],
+     [
+      5,
+      "矢量"
+     ],
+     [
+      5,
+      "标量"
+     ]
+    ],
+    "colors": {
+     "0": 97
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 9.77,
+    "chars": 500,
+    "sample": [
+     [
+      4,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ],
+     [
+      4,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ],
+     [
+      5,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ],
+     [
+      6,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ]
+    ],
+    "colors": {
+     "6710886": 20
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 9.73,
+    "chars": 285,
+    "sample": [
+     [
+      4,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ],
+     [
+      5,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ],
+     [
+      6,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ],
+     [
+      7,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ]
+    ],
+    "colors": {
+     "6710886": 15
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 9.12,
+    "chars": 282,
+    "sample": [
+     [
+      4,
+      "kg"
+     ],
+     [
+      4,
+      "kg"
+     ],
+     [
+      4,
+      "/("
+     ],
+     [
+      4,
+      "(m·s"
+     ]
+    ],
+    "colors": {
+     "0": 207
+    }
+   },
+   {
+    "font": "FZLTHK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 270,
+    "sample": [
+     [
+      2,
+      "动量"
+     ],
+     [
+      2,
+      "动量定理"
+     ],
+     [
+      2,
+      "专题课"
+     ],
+     [
+      2,
+      "动量定理的应用"
+     ]
+    ],
+    "colors": {
+     "0": 41
+    }
+   },
+   {
+    "font": "E-BX",
+    "size_pt": 9.12,
+    "chars": 270,
+    "sample": [
+     [
+      4,
+      "v'"
+     ],
+     [
+      4,
+      "v'"
+     ],
+     [
+      5,
+      "”“"
+     ],
+     [
+      5,
+      "p、p"
+     ]
+    ],
+    "colors": {
+     "0": 237
+    }
+   },
+   {
+    "font": "FZLTHK--GBK1-0",
+    "size_pt": 13.0,
+    "chars": 237,
+    "sample": [
+     [
+      4,
+      "学习任务一　寻求碰撞中的不变量"
+     ],
+     [
+      4,
+      "学习任务二　动量及动量的变化量"
+     ],
+     [
+      5,
+      "学习任务三　动量与动能的比较"
+     ],
+     [
+      6,
+      "学习任务一　冲量"
+     ]
+    ],
+    "colors": {
+     "0": 14
+    }
+   },
+   {
+    "font": "FZLTHJW--GB1-0",
+    "size_pt": 5.24,
+    "chars": 184,
+    "sample": [
+     [
+      4,
+      "第一章　动量守恒定律"
+     ],
+     [
+      5,
+      "高中物理　选择性必修第一册"
+     ],
+     [
+      6,
+      "第一章　动量守恒定律"
+     ],
+     [
+      7,
+      "高中物理　选择性必修第一册"
+     ]
+    ],
+    "colors": {
+     "5000524": 16
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 5.53,
+    "chars": 161,
+    "sample": [
+     [
+      4,
+      "k1"
+     ],
+     [
+      4,
+      "k2"
+     ],
+     [
+      11,
+      "-7"
+     ]
+    ],
+    "colors": {
+     "0": 158
+    }
+   },
+   {
+    "font": "FZHTK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 140,
+    "sample": [
+     [
+      4,
+      "科学探究"
+     ],
+     [
+      4,
+      "教材链接"
+     ],
+     [
+      4,
+      "反思感悟"
+     ],
+     [
+      5,
+      "反思感悟"
+     ]
+    ],
+    "colors": {
+     "0": 41
+    }
+   },
+   {
+    "font": "FZKTK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 126,
+    "sample": [
+     [
+      4,
+      "湖南长沙一中月考"
+     ],
+     [
+      5,
+      "江苏扬州中学高二月考"
+     ],
+     [
+      5,
+      "浙江杭州高级中学月考"
+     ],
+     [
+      7,
+      "全国卷"
+     ]
+    ],
+    "colors": {
+     "0": 21
+    }
+   },
+   {
+    "font": "FZHTK--GBK1-0",
+    "size_pt": 9.12,
+    "chars": 103,
+    "sample": [
+     [
+      5,
+      "物理量"
+     ],
+     [
+      5,
+      "定义式"
+     ],
+     [
+      5,
+      "单位"
+     ],
+     [
+      5,
+      "性质"
+     ]
+    ],
+    "colors": {
+     "0": 37
+    }
+   },
+   {
+    "font": "E-F4",
+    "size_pt": 7.67,
+    "chars": 96,
+    "sample": [
+     [
+      2,
+      "109"
+     ],
+     [
+      2,
+      "111"
+     ],
+     [
+      2,
+      "114"
+     ],
+     [
+      2,
+      "116"
+     ]
+    ],
+    "colors": {
+     "0": 32
+    }
+   },
+   {
+    "font": "FZY3K--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 76,
+    "sample": [
+     [
+      5,
+      "要点总结"
+     ],
+     [
+      7,
+      "要点总结"
+     ],
+     [
+      7,
+      "要点总结"
+     ],
+     [
+      8,
+      "审题指导"
+     ]
+    ],
+    "colors": {
+     "0": 18
+    }
+   },
+   {
+    "font": "FZPSZHJW--GB1-0",
+    "size_pt": 5.24,
+    "chars": 64,
+    "sample": [
+     [
+      4,
+      "导学案"
+     ],
+     [
+      5,
+      "全品学练考"
+     ],
+     [
+      6,
+      "导学案"
+     ],
+     [
+      7,
+      "全品学练考"
+     ]
+    ],
+    "colors": {
+     "5000524": 16
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 10.09,
+    "chars": 62,
+    "sample": [],
+    "colors": {
+     "0": 62
+    }
+   },
+   {
+    "font": "E-B6",
+    "size_pt": 10.09,
+    "chars": 54,
+    "sample": [],
+    "colors": {
+     "0": 54
+    }
+   },
+   {
+    "font": "E-F2",
+    "size_pt": 11.16,
+    "chars": 48,
+    "sample": [
+     [
+      4,
+      "109"
+     ],
+     [
+      5,
+      "110"
+     ],
+     [
+      6,
+      "111"
+     ],
+     [
+      7,
+      "112"
+     ]
+    ],
+    "colors": {
+     "0": 16
+    }
+   },
+   {
+    "font": "FZLTZHK--GBK1-0",
+    "size_pt": 16.88,
+    "chars": 45,
+    "sample": [
+     [
+      4,
+      "动量"
+     ],
+     [
+      6,
+      "动量定理"
+     ],
+     [
+      9,
+      "专题课：动量定理的应用"
+     ],
+     [
+      11,
+      "动量守恒定律"
+     ]
+    ],
+    "colors": {
+     "0": 8
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 4.76,
+    "chars": 45,
+    "sample": [
+     [
+      4,
+      "-1"
+     ],
+     [
+      4,
+      "-1"
+     ],
+     [
+      4,
+      "k1"
+     ],
+     [
+      4,
+      "k2"
+     ]
+    ],
+    "colors": {
+     "0": 39
+    }
+   },
+   {
+    "font": "E-F5",
+    "size_pt": 10.09,
+    "chars": 41,
+    "sample": [],
+    "colors": {
+     "0": 41
+    }
+   },
+   {
+    "font": "FZLTZCHK--GBK1-0",
+    "size_pt": 10.58,
+    "chars": 41,
+    "sample": [
+     [
+      17,
+      "方案一　研究气垫导轨上滑块碰撞时的动量守恒"
+     ],
+     [
+      18,
+      "方案二　研究斜槽末端小球碰撞时的动量守恒"
+     ]
+    ],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "E-YT1",
+    "size_pt": 10.09,
+    "chars": 36,
+    "sample": [],
+    "colors": {
+     "0": 36
+    }
+   },
+   {
+    "font": "FZZYK--GBK1-0",
+    "size_pt": 12.03,
+    "chars": 30,
+    "sample": [],
+    "colors": {
+     "0": 30
+    }
+   },
+   {
+    "font": "FZLTXHK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 27,
+    "sample": [
+     [
+      3,
+      "课时　折射现象与折射定律"
+     ],
+     [
+      3,
+      "课时　实验"
+     ],
+     [
+      3,
+      "测量玻璃的折射率"
+     ]
+    ],
+    "colors": {
+     "0": 5
+    }
+   },
+   {
+    "font": "E-F6",
+    "size_pt": 10.09,
+    "chars": 27,
+    "sample": [],
+    "colors": {
+     "0": 27
+    }
+   },
+   {
+    "font": "E-F3",
+    "size_pt": 10.09,
+    "chars": 25,
+    "sample": [],
+    "colors": {
+     "0": 25
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 9.69,
+    "chars": 24,
+    "sample": [
+     [
+      8,
+      "􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋􀪋"
+     ]
+    ],
+    "colors": {
+     "6710886": 1
+    }
+   },
+   {
+    "font": "E-BX",
+    "size_pt": 5.53,
+    "chars": 22,
+    "sample": [],
+    "colors": {
+     "0": 22
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 5.24,
+    "chars": 16,
+    "sample": [
+     [
+      5,
+      "RJ"
+     ],
+     [
+      7,
+      "RJ"
+     ],
+     [
+      9,
+      "RJ"
+     ],
+     [
+      11,
+      "RJ"
+     ]
+    ],
+    "colors": {
+     "5000524": 8
+    }
+   },
+   {
+    "font": "FZFSK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 13,
+    "sample": [
+     [
+      5,
+      "多选"
+     ],
+     [
+      5,
+      "多选"
+     ],
+     [
+      9,
+      "多选"
+     ],
+     [
+      10,
+      "多选"
+     ]
+    ],
+    "colors": {
+     "0": 7
+    }
+   },
+   {
+    "font": "FZLTHJW--GB1-0",
+    "size_pt": 10.09,
+    "chars": 13,
+    "sample": [
+     [
+      8,
+      "角度二　用动量定理定量计算"
+     ]
+    ],
+    "colors": {
+     "0": 1
+    }
+   },
+   {
+    "font": "FZLTZCHK--GBK1-0",
+    "size_pt": 20.67,
+    "chars": 10,
+    "sample": [
+     [
+      4,
+      "第一章　动量守恒定律"
+     ]
+    ],
+    "colors": {
+     "0": 1
+    }
+   },
+   {
+    "font": "FZLTZHK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 5,
+    "sample": [
+     [
+      3,
+      "参考答案"
+     ]
+    ],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 9.12,
+    "chars": 5,
+    "sample": [
+     [
+      8,
+      "10"
+     ]
+    ],
+    "colors": {
+     "0": 4
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 16.88,
+    "chars": 4,
+    "sample": [],
+    "colors": {
+     "0": 4
+    }
+   },
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 5.53,
+    "chars": 4,
+    "sample": [],
+    "colors": {
+     "0": 4
+    }
+   },
+   {
+    "font": "E-F4",
+    "size_pt": 8.15,
+    "chars": 3,
+    "sample": [
+     [
+      3,
+      "193"
+     ]
+    ],
+    "colors": {
+     "0": 1
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 16.88,
+    "chars": 2,
+    "sample": [],
+    "colors": {
+     "0": 2
+    }
+   }
+  ]
+ },
+ "测评卷": {
+  "pages": 2,
+  "fonts": [
+   {
+    "basefont": "EECDEE+FZLTHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "CECDEE+FZPSZHJW--GB1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "BECDEE+E-H4",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "MECDEE+E-B6",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "JECDEE+FZKTK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "KECDEE+FZSSK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "LECDEE+E-F6",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "DECDEE+E-BZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "FECDEE+FZLTXHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "YDCDEE+FZLTZHK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "GECDEE+FZY4K--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "AECDEE+E-BX",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "ZDCDEE+FZFSK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "HECDEE+FZHTK--GBK1-0",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   },
+   {
+    "basefont": "IECDEE+E-FZ",
+    "type": "Type0",
+    "ext": [
+     "ttf"
+    ]
+   }
+  ],
+  "spans": [
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 2878,
+    "sample": [
+     [
+      1,
+      "船舶的设计中"
+     ],
+     [
+      1,
+      "通常会在船舷处悬挂轮胎"
+     ],
+     [
+      1,
+      "目的主要是在船舶与其他船舶碰撞时或船舶岸边停靠时"
+     ],
+     [
+      1,
+      "冲击力"
+     ]
+    ],
+    "colors": {
+     "0": 442
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 10.09,
+    "chars": 712,
+    "sample": [
+     [
+      1,
+      "28"
+     ],
+     [
+      1,
+      "2025"
+     ],
+     [
+      1,
+      "( )"
+     ],
+     [
+      1,
+      "2024"
+     ]
+    ],
+    "colors": {
+     "0": 515
+    }
+   },
+   {
+    "font": "E-BX",
+    "size_pt": 10.09,
+    "chars": 347,
+    "sample": [
+     [
+      1,
+      ".L"
+     ],
+     [
+      1,
+      "mL"
+     ],
+     [
+      1,
+      "mL"
+     ],
+     [
+      1,
+      "ML"
+     ]
+    ],
+    "colors": {
+     "0": 317
+    }
+   },
+   {
+    "font": "FZFSK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 120,
+    "sample": [
+     [
+      1,
+      "本题共"
+     ],
+     [
+      1,
+      "小题"
+     ],
+     [
+      1,
+      "每小题"
+     ],
+     [
+      1,
+      "在每小题给出的四"
+     ]
+    ],
+    "colors": {
+     "0": 49
+    }
+   },
+   {
+    "font": "FZKTK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 58,
+    "sample": [
+     [
+      1,
+      "内蒙古赤峰期末"
+     ],
+     [
+      1,
+      "重庆巴蜀中学高二月考"
+     ],
+     [
+      1,
+      "湖南长沙一中期中"
+     ],
+     [
+      1,
+      "河北石家庄二中期中"
+     ]
+    ],
+    "colors": {
+     "0": 7
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 5.53,
+    "chars": 37,
+    "sample": [
+     [
+      1,
+      "-3"
+     ],
+     [
+      2,
+      "-1"
+     ]
+    ],
+    "colors": {
+     "0": 35
+    }
+   },
+   {
+    "font": "FZLTHJW--GB1-0",
+    "size_pt": 7.28,
+    "chars": 22,
+    "sample": [
+     [
+      1,
+      "章末素养测评（一）"
+     ],
+     [
+      2,
+      "高中物理　选择性必修第一册"
+     ]
+    ],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "E-H4",
+    "size_pt": 10.09,
+    "chars": 21,
+    "sample": [
+     [
+      1,
+      "10"
+     ],
+     [
+      1,
+      "11"
+     ],
+     [
+      2,
+      "12"
+     ],
+     [
+      2,
+      "13"
+     ]
+    ],
+    "colors": {
+     "0": 15
+    }
+   },
+   {
+    "font": "E-B6",
+    "size_pt": 10.09,
+    "chars": 21,
+    "sample": [],
+    "colors": {
+     "0": 21
+    }
+   },
+   {
+    "font": "FZHTK--GBK1-0",
+    "size_pt": 10.09,
+    "chars": 17,
+    "sample": [
+     [
+      1,
+      "单项选择题"
+     ],
+     [
+      1,
+      "多项选择题"
+     ],
+     [
+      1,
+      "非选择题"
+     ]
+    ],
+    "colors": {
+     "0": 6
+    }
+   },
+   {
+    "font": "E-BZ",
+    "size_pt": 9.7,
+    "chars": 16,
+    "sample": [
+     [
+      1,
+      "100"
+     ],
+     [
+      1,
+      "75"
+     ],
+     [
+      2,
+      "10"
+     ]
+    ],
+    "colors": {
+     "0": 12
+    }
+   },
+   {
+    "font": "FZFSK--GBK1-0",
+    "size_pt": 9.7,
+    "chars": 12,
+    "sample": [
+     [
+      1,
+      "本试卷满分"
+     ],
+     [
+      1,
+      "考试时间"
+     ],
+     [
+      1,
+      "分钟"
+     ]
+    ],
+    "colors": {
+     "0": 4
+    }
+   },
+   {
+    "font": "FZLTZHK--GBK1-0",
+    "size_pt": 19.7,
+    "chars": 9,
+    "sample": [
+     [
+      1,
+      "章末素养测评（一）"
+     ]
+    ],
+    "colors": {
+     "0": 1
+    }
+   },
+   {
+    "font": "FZY4K--GBK1-0",
+    "size_pt": 13.0,
+    "chars": 9,
+    "sample": [
+     [
+      1,
+      "第一章"
+     ],
+     [
+      1,
+      "动量守恒定律"
+     ]
+    ],
+    "colors": {
+     "6710886": 2
+    }
+   },
+   {
+    "font": "FZPSZHJW--GB1-0",
+    "size_pt": 7.28,
+    "chars": 8,
+    "sample": [
+     [
+      1,
+      "测评卷"
+     ],
+     [
+      2,
+      "全品学练考"
+     ]
+    ],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "E-F6",
+    "size_pt": 13.97,
+    "chars": 4,
+    "sample": [
+     [
+      1,
+      "01"
+     ],
+     [
+      2,
+      "02"
+     ]
+    ],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 9.7,
+    "chars": 4,
+    "sample": [],
+    "colors": {
+     "0": 4
+    }
+   },
+   {
+    "font": "E-BX",
+    "size_pt": 9.7,
+    "chars": 3,
+    "sample": [],
+    "colors": {
+     "0": 3
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 10.09,
+    "chars": 3,
+    "sample": [],
+    "colors": {
+     "0": 3
+    }
+   },
+   {
+    "font": "FZLTXHK--GBK1-0",
+    "size_pt": 7.28,
+    "chars": 2,
+    "sample": [],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "FZSSK--GBK1-0",
+    "size_pt": 5.53,
+    "chars": 2,
+    "sample": [],
+    "colors": {
+     "0": 2
+    }
+   },
+   {
+    "font": "E-FZ",
+    "size_pt": 7.28,
+    "chars": 2,
+    "sample": [
+     [
+      2,
+      "RJ"
+     ]
+    ],
+    "colors": {
+     "0": 1
+    }
+   }
+  ]
+ }
+}

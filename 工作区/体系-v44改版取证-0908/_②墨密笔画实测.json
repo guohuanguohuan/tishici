@@ -1,0 +1,542 @@
+{
+ "我方v43": {
+  "正文": [
+   {
+    "ink": 0.132,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 46,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.141,
+    "stroke": 2.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 39,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.044,
+    "stroke": 2.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 45,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.142,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 41,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.071,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 44,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.1,
+    "stroke": 2.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 39,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.042,
+    "stroke": 2.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 44,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.103,
+    "stroke": 2.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 39,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.192,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 46,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.062,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 39,
+    "pt": 10.46,
+    "font": "FZSSJW"
+   }
+  ],
+  "检测题号": [
+   {
+    "ink": 0.067,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 31,
+    "pt": 11.36,
+    "font": "TimesNewRomanPSMT"
+   },
+   {
+    "ink": 0.109,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 31,
+    "pt": 11.36,
+    "font": "TimesNewRomanPSMT"
+   },
+   {
+    "ink": 0.099,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 32,
+    "pt": 11.36,
+    "font": "TimesNewRomanPSMT"
+   },
+   {
+    "ink": 0.126,
+    "stroke": 4.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 31,
+    "pt": 11.36,
+    "font": "TimesNewRomanPSMT"
+   },
+   {
+    "ink": 0.109,
+    "stroke": 4.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 31,
+    "pt": 11.36,
+    "font": "TimesNewRomanPSMT"
+   }
+  ],
+  "检测题号点": [
+   {
+    "ink": 0.009,
+    "stroke": 6.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 5,
+    "pt": 11.36,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.013,
+    "stroke": 1.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 25,
+    "pt": 11.36,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.011,
+    "stroke": 1.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 13,
+    "pt": 11.36,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.012,
+    "stroke": 6.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 11,
+    "pt": 11.36,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.015,
+    "stroke": 1.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 34,
+    "pt": 11.36,
+    "font": "FZHTJW"
+   }
+  ],
+  "【答案】": [
+   {
+    "ink": 0.206,
+    "stroke": 6.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 47,
+    "pt": 10.46,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.205,
+    "stroke": 6.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 41,
+    "pt": 10.46,
+    "font": "FZHTJW"
+   }
+  ],
+  "【解析】": [
+   {
+    "ink": 0.213,
+    "stroke": 4.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 45,
+    "pt": 10.46,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.201,
+    "stroke": 4.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 41,
+    "pt": 10.46,
+    "font": "FZHTJW"
+   }
+  ],
+  "例N标签": [
+   {
+    "ink": 0.282,
+    "stroke": 5.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 44,
+    "pt": 11.96,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.241,
+    "stroke": 5.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 44,
+    "pt": 11.96,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.282,
+    "stroke": 5.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 44,
+    "pt": 11.96,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.225,
+    "stroke": 5.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 44,
+    "pt": 11.96,
+    "font": "FZHTJW"
+   },
+   {
+    "ink": 0.282,
+    "stroke": 5.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 44,
+    "pt": 11.96,
+    "font": "FZHTJW"
+   }
+  ],
+  "◆知识点标题": [
+   {
+    "ink": 0.213,
+    "stroke": 5.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 44,
+    "pt": 11.96,
+    "font": "FZHTJW"
+   }
+  ],
+  "素养小结内容": [
+   {
+    "ink": 0.114,
+    "stroke": 2.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 38,
+    "pt": 10.46,
+    "font": "KaiTi"
+   },
+   {
+    "ink": 0.121,
+    "stroke": 2.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 39,
+    "pt": 10.46,
+    "font": "KaiTi"
+   },
+   {
+    "ink": 0.116,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 40,
+    "pt": 10.46,
+    "font": "KaiTi"
+   },
+   {
+    "ink": 0.12,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 40,
+    "pt": 10.46,
+    "font": "KaiTi"
+   },
+   {
+    "ink": 0.112,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 38,
+    "pt": 10.46,
+    "font": "KaiTi"
+   },
+   {
+    "ink": 0.11,
+    "stroke": 2.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 39,
+    "pt": 10.46,
+    "font": "KaiTi"
+   }
+  ],
+  "页脚小字": [
+   {
+    "ink": 0.104,
+    "stroke": 1.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 21,
+    "pt": 5.48,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.103,
+    "stroke": 1.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 21,
+    "pt": 5.48,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.083,
+    "stroke": 1.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 20,
+    "pt": 5.48,
+    "font": "FZSSJW"
+   }
+  ],
+  "学习目标序号": [
+   {
+    "ink": 0.139,
+    "stroke": 7.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 30,
+    "pt": 10.96,
+    "font": "TimesNewRomanPS-BoldMT"
+   }
+  ],
+  "题侧灰标": [
+   {
+    "ink": 0.035,
+    "stroke": 1.0,
+    "gmin": 118,
+    "gmode": 119,
+    "ih": 30,
+    "pt": 7.97,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.037,
+    "stroke": 1.0,
+    "gmin": 118,
+    "gmode": 119,
+    "ih": 29,
+    "pt": 7.97,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.037,
+    "stroke": 1.0,
+    "gmin": 118,
+    "gmode": 119,
+    "ih": 30,
+    "pt": 7.97,
+    "font": "FZSSJW"
+   },
+   {
+    "ink": 0.032,
+    "stroke": 1.0,
+    "gmin": 118,
+    "gmode": 119,
+    "ih": 29,
+    "pt": 7.97,
+    "font": "FZSSJW"
+   }
+  ],
+  "条目号": [
+   {
+    "ink": 0.058,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 29,
+    "pt": 10.46,
+    "font": "TimesNewRomanPSMT"
+   },
+   {
+    "ink": 0.082,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 29,
+    "pt": 10.46,
+    "font": "TimesNewRomanPSMT"
+   },
+   {
+    "ink": 0.078,
+    "stroke": 3.0,
+    "gmin": 0,
+    "gmode": 0,
+    "ih": 29,
+    "pt": 10.46,
+    "font": "TimesNewRomanPSMT"
+   }
+  ]
+ },
+ "全品扫描": {
+  "正文(例2题干)": {
+   "ink": 0.053,
+   "stroke": 3.0,
+   "gmin": 0,
+   "gmode": 0,
+   "ih": 34,
+   "pxmm": 14.057
+  },
+  "课堂评价题号1.": {
+   "ink": 0.027,
+   "stroke": 4.0,
+   "gmin": 0,
+   "gmode": 0,
+   "ih": 18,
+   "pxmm": 14.057
+  },
+  "例1标签": {
+   "ink": 0.228,
+   "stroke": 7.0,
+   "gmin": 0,
+   "gmode": 0,
+   "ih": 50,
+   "pxmm": 14.057
+  },
+  "变式标签": {
+   "ink": 0.342,
+   "stroke": 8.0,
+   "gmin": 0,
+   "gmode": 0,
+   "ih": 50,
+   "pxmm": 14.057
+  },
+  "◆探究点一标题": {
+   "ink": 0.288,
+   "stroke": 7.0,
+   "gmin": 0,
+   "gmode": 0,
+   "ih": 51,
+   "pxmm": 14.057
+  },
+  "◆知识点一标题(去◆)": {
+   "ink": 0.105,
+   "stroke": 7.0,
+   "gmin": 0,
+   "gmode": 0,
+   "ih": 22,
+   "pxmm": 14.057
+  },
+  "条目号3．": {
+   "ink": 0.055,
+   "stroke": 3.0,
+   "gmin": 0,
+   "gmode": 0,
+   "ih": 26,
+   "pxmm": 14.057
+  },
+  "素养小结楷体": null,
+  "页脚小字": {
+   "ink": 0.161,
+   "stroke": 2.0,
+   "gmin": 76,
+   "gmode": 76,
+   "ih": 23,
+   "pxmm": 14.057
+  },
+  "花形右灰词": {
+   "ink": 0.105,
+   "stroke": 2.0,
+   "gmin": 122,
+   "gmode": 122,
+   "ih": 26,
+   "pxmm": 14.057
+  },
+  "诊断小问号(1)": {
+   "ink": 0.037,
+   "stroke": 84.0,
+   "gmin": 122,
+   "gmode": 122,
+   "ih": 2,
+   "pxmm": 14.057
+  },
+  "◆知识点一标题(整行)": {
+   "ink": 0.142,
+   "stroke": 7.0,
+   "gmin": 0,
+   "gmode": 0,
+   "ih": 27,
+   "pxmm": 14.057
+  }
+ }
+}
