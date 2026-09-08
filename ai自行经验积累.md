@@ -129,3 +129,13 @@
 - 2026-09-06 GitHub secret scanning——网页快照内嵌第三方微信appId被扫出（非我方凭证、风险≈0）；告警扫git历史、删文件不消警；教训：抓样html入库前grep（appid/secret/token）或干脆不入库
 - 2026-09-08 v4.2全品改版轮——LaTeX两坑：①\dimen0等暂存寄存器被xeCJK断胶覆写，自定尺寸宏一律\newlength专用长度；②minipage[t]联排图基线沉底，图顶对齐首行用\raisebox{\dimexpr-\height+\ht\strutbox\relax}；③智谱Coding Plan标准端报1113＝端点误配非欠费，coding端＝/api/coding/paas/v4；④全品细部测量法（PIL像素灰度）已固化附则《全品样张细节清单》
 - 2026-09-08 v4.3拍板＋字库鉴定轮——十项拍板落任务书§七；转译尺子/用户终审工序/字库登记已固化附则《全品样张细节清单》§七§八；独有教训：①扫描件字重比对单看IoU受印刷墨扩偏袒重字体，须墨密双指标纠偏（华文中宋伪领先翻案实证）；②字库鉴定上限＝品类级，铁证唯电子版嵌字名（物理线FZSSK文字层＝现成交叉校准源）；③Windows用户级装字体＝拷%LOCALAPPDATA%\Microsoft\Windows\Fonts＋HKCU Fonts注册表，TinyTeX fc-list不扫该目录→xeCJK走Path=显式挂载；④镜像站下字库必核官方发布MD5
+- 2026-09-08 v4.3导学件执行轮——9条经验候选落档（来源＝工作区/体系-v43执行-0908/交付报告-v43导学件.md§六；各条＝现象｜结论｜适用场景）：
+- \bindp（=\noindent）作块首时 \vspace 陷水平模式失效｜图块发射串须 \par\vspace{…}\par 包裹｜LaTeX 坑规/导学件管线
+- multicols 栏首元素行首胶被 TeX 弃置｜栏首元素前距须在栏区外给（\vspace 于 \begin{multicols} 后），宏内 \addvspace 只管栏中实例｜LaTeX 坑规
+- xeCJK 行首【字形负承载｜解析行 line bbox[0]＝列缘−4.74pt，列过滤断言一律 ±7pt 容差｜断言工具规约
+- 150dpi 像素墨带对细线/小字不可靠（6.5pt 词竖白缝裂带、0.4pt 线抗锯齿溢出污染前距）｜断言 clip 须 dpi300＋收进线墨顶 1.2pt、merge 0.4mm｜断言工具规约
+- get_drawings 矩形口径：stroke rect＝路径中心线（线厚/2 外扩）、fill rect＝实边｜贴线/线墨顶换算必 ±sw/2｜断言工具规约
+- tex 级 needle 宏边界陷阱：\biaoqian{【解析】}#4 闭括号夹在 】与 #4 间——尾针须含中间括号；跨行 needle（\par 后换行缩进）拆两段式 in 判断｜断言工具规约
+- glueguard 伸缩胶是分页吸收黑洞｜断点处 \vskip plus 吃掉全部上游推力，分页微调唯「目标栏内」胶生效（7pt 实验 +0.35mm/预期 5.3mm）｜分页/利用率调排
+- pymupdf 同视觉行可拆行：（　）填空对拆两个 line 对象（p3 两处）｜孤行类守卫只防真悬孤（半角 ) 行首×列左）｜断言工具规约
+- 行 bbox 顶含行内 leading（高于墨顶 >1.2mm）｜级间距墨带匹配用「区间重叠」法非锚点±容差｜断言工具规约

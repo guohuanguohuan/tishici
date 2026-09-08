@@ -1,19 +1,43 @@
 % ============================================================
 % qp-fonts.tex —— 字体模块（全品式导学件，供 main.tex \input）
-% 职责：西文/中文字体族、黑体楷体族、仿粗黑体族（v4.2）、xeCJK 字符类与断行检查。
+% 职责：西文/中文字体族、黑体楷体族、字重阶梯族（v4.3）、花形斜体特粗族、xeCJK 字符类与断行检查。
 % 调用关系：main.tex → qp-fonts → qp-layout → qp-headfoot → qp-titles → qp-blocks。
 % 依赖：documentclass [fontset=none]{ctexart}（在 main.tex）。
-% v4.2：增设 \heibf（FakeBold 黑体族）——全品章/节/小节/课时标题实证为加重黑体，
-%       SimHei 无真粗体面，以 FakeBold=2.2 合成（实测墨密 0.292→0.391，仅四级标题用；
-%       正文内【】标签、◆标题维持 \heiti/\bfseries 口径不动）。
+% v4.3（拍板5 新路线＋执行注意增录1）：
+%   正文＝方正书宋 FZShuSong-Z01S（BoldFont=方正黑体 FZHei-B01S）；\heiti＝方正黑体；楷体 KaiTi 维持；
+%   数学 Times 系维持。挂载纪律＝xeCJK 一律 Path= 显式路径
+%   （C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/——TinyTeX fontconfig 不扫用户字体目录，
+%   fc-list 不可见已实证，禁依赖字体名检索）；方正两款为用户级安装，必须 Path=；
+%   KaiTi/Times 属系统目录（fontconfig 可见），维持字体名挂载。
+% v4.3 字重阶梯（附则《全品样张细节清单》§三，全品笔画倍数谱→方正黑体分档 FakeBold）：
+%   章4.0×＞小节(课时)3.3×＞条目号2.7×＞探究点/例N(◆知识点)2.3×＞题号2.0×＞变式/【】标签1.3×＞正文1×；
+%   \heibf 名字保留挂在 2.3× 档（断言⑲沿名）；节标题不加粗（用 \heiti 常规，反向断言）。
+% 花形内字（拍板1/总账A）：≈11pt 斜体特粗＝方正黑体＋FakeSlant=0.18（≈10°）＋FakeBold=2.0（fake slant 组合，
+%   无现成斜体面，任务书§五-2）。
 % ============================================================
 \setmainfont{Times New Roman}
-\setCJKmainfont[BoldFont=SimHei]{SimSun}
-\setCJKfamilyfont{hei}{SimHei}
-\setCJKfamilyfont{heibf}[FakeBold=2.2]{SimHei}
+\setCJKmainfont[
+  Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,
+  BoldFont=FZHei-B01S.ttf]{FZShuSong-Z01S.ttf}
+\setCJKfamilyfont{hei}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/]{FZHei-B01S.ttf}
 \setCJKfamilyfont{kai}{KaiTi}
+% ---- 字重阶梯族（同文件同字库，仅 FakeBold 分档） ----
+\setCJKfamilyfont{heizhang}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeBold=4.0]{FZHei-B01S.ttf}
+\setCJKfamilyfont{heijie}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeBold=3.3]{FZHei-B01S.ttf}
+\setCJKfamilyfont{heitiao}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeBold=2.7]{FZHei-B01S.ttf}
+\setCJKfamilyfont{heibf}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeBold=2.3]{FZHei-B01S.ttf}
+\setCJKfamilyfont{heihao}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeBold=2.0]{FZHei-B01S.ttf}
+\setCJKfamilyfont{heibian}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeBold=1.3]{FZHei-B01S.ttf}
+% ---- 花形内字：斜体特粗（fake slant＋FakeBold 组合） ----
+\setCJKfamilyfont{huabf}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeSlant=0.18,FakeBold=2.0]{FZHei-B01S.ttf}
 \newcommand{\heiti}{\CJKfamily{hei}}
+\newcommand{\heizhang}{\CJKfamily{heizhang}}
+\newcommand{\heijie}{\CJKfamily{heijie}}
+\newcommand{\heitiao}{\CJKfamily{heitiao}}
 \newcommand{\heibf}{\CJKfamily{heibf}}
+\newcommand{\heihao}{\CJKfamily{heihao}}
+\newcommand{\heibian}{\CJKfamily{heibian}}
+\newcommand{\huabf}{\CJKfamily{huabf}}
 \newcommand{\kaishu}{\CJKfamily{kai}}
 \xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
 \xeCJKsetup{CheckSingle=true}

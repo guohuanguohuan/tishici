@@ -1,0 +1,402 @@
+\vspace{1.7mm}%  v4.3 花形前距（0908 实测回填）：课前预习花形为 multicols 栏首元素，行首胶被 TeX 弃置，前距须在栏区外给——设计 4.5 实出墨距 2.82，+1.7 → 4.5±0.8 窗
+\begin{multicols}{2}
+\emergencystretch=8em
+
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{空间向量的概念}
+
+\tiaomu{1}{定义：在空间，我们把具有\kongda{大小}和\kongda{方向}的量叫做空间向量．\zhuzhu{与必修2平面向量初步的定义类比记忆（只多``空间''二字）；零向量方向任意、模为0，是概念题易错点。}}
+
+\tiaomu{2}{（1）字母表示法：用字母 \(\overrightarrow{a},\overrightarrow{b},\overrightarrow{c},\cdots\) 表示．}
+
+\bindp （2）几何表示法：用有向线段表示，其\kongda{长度}表示空间向量的模．即若向量 \(\overrightarrow{a}\) 的起点是 \(A\)、终点是 \(B\)，则向量 \(\overrightarrow{a}\) 也可记作 \(\overrightarrow{AB}\)，其模记为 \(\left| \overrightarrow{AB} \right|\)．\zhuzhu{字母表示与有向线段表示贯穿全章书写，解题前先统一记号；模的记号与绝对值区分，避免混淆。}
+
+\tiaomu{3}{几类特殊向量（见下表）；规定：\kongda{零}向量与任意向量平行．即对任意向量 \(\overrightarrow{a}\)，都有 \(\overrightarrow{0}\parallel\overrightarrow{a}\)．\zhuzhu{概念辨析高频条目，判定按定义逐条核对；注意共线向量不要求在同一直线上（平行或重合均可），且零向量与任意向量平行（衔接条目5）。}}
+
+{\setlength{\tabcolsep}{2pt}\arrayrulecolor{gray122}
+\vspace{-3.8mm}
+\noindent\begin{tabular}{!{\vline width 0.8pt}>{\centering\arraybackslash}p{16mm}!{\vline width 0.4pt}>{\raggedright\arraybackslash}p{35mm}!{\vline width 0.4pt}>{\raggedright\arraybackslash}p{29mm}!{\vline width 0.8pt}}
+\thickhline
+{\textbf{名称}} & {\textbf{定义}} & {\textbf{表示}} \\
+\hline
+零向量 & 长度为\kongda{0}的向量叫做零向量 & 记作\kongda{0} \\ \hline
+单位向量 & 模等于\kongda{1}的向量 & 用 \(e\) 表示，\(|e|=1\) \\ \hline
+相反向量 & 与 \(\overrightarrow{a}\) 长度相同而方向\kongda{相反}的向量 & 记作 \(-\overrightarrow{a}\) \\ \hline
+共线向量或平行向量 & 表示若干空间向量的有向线段所在的直线\kongda{互相平行}或\kongda{重合} & 记作 \(\overrightarrow{a}\parallel\overrightarrow{b}\) \\ \hline
+相等向量 & 方向相同且\kongda{模相等}的向量 & 记作 \(\overrightarrow{a}=\overrightarrow{b}\) \\
+\thickhline
+\end{tabular}\par
+}
+
+\zhenhead{判断正误(正确的打“√”,错误的打“×”)}
+
+\zhenti{（1）}{两个空间向量的模相等，则这两个向量相等．}{×}{模相等方向未必相同，还可能相反或斜交，两向量未必相等，故×．}
+
+\zhenti{（2）}{相等向量一定是共线向量．}{√}{相等向量方向相同，所在直线平行或重合，符合共线向量（平行向量）定义，故√．}
+
+\zsd{二}{空间向量的线性运算}
+
+\tiaomu{1}{加法可按\kongda{三角形}法则或\kongda{平行四边形}法则作出；减法 \(\overrightarrow{a}-\overrightarrow{b}\) 为减向量终点指向被减向量终点；数乘 \(\lambda\overrightarrow{a}\)：当 \(\lambda>0\) 时与 \(\overrightarrow{a}\) 方向\kongda{相同}，当 \(\lambda<0\) 时方向\kongda{相反}，当 \(\lambda=0\) 时 \(\lambda\overrightarrow{a}=\overrightarrow{0}\)．\zhuzhu{全章运算的基础，加减、数乘的法则与运算律均与平面向量一致，类比迁移即可；线性组合的运用见条目9与10。}}
+
+\tiaomu{2}{共线的充要条件：对任意两个空间向量 \(\overrightarrow{a},\overrightarrow{b}\)（\(\overrightarrow{b}\neq\overrightarrow{0}\)），\(\overrightarrow{a}\parallel\overrightarrow{b}\) 的充要条件是存在\kongda{实数} \(\lambda\)，使 \(\overrightarrow{a}=\lambda\overrightarrow{b}\)．\zhuzhu{证线线平行与求参数存在性的基础工具；易错点：与条目9共面充要条件混淆------共线用一个实数、共面用有序实数对。}}
+
+{\setlength{\tabcolsep}{3pt}\arrayrulecolor{gray122}
+\vspace{-3.8mm}
+\noindent\begin{tabular}{!{\vline width 0.8pt}>{\centering\arraybackslash}p{10mm}!{\vline width 0.4pt}>{\raggedright\arraybackslash}p{37mm}!{\vline width 0.4pt}>{\raggedright\arraybackslash}p{32mm}!{\vline width 0.8pt}}
+\thickhline
+{\textbf{运算}} & {\textbf{法则要点}} & {\textbf{运算律举例}} \\
+\hline
+加法 & 三角形法则／平行四边形法则（与平面向量一致） & \(\overrightarrow{a}+\overrightarrow{b}=\overrightarrow{b}+\overrightarrow{a}\) \\ \hline
+减法 & 减向量终点指向被减向量终点 & \((\overrightarrow{a}+\overrightarrow{b})+\overrightarrow{c}=\overrightarrow{a}+(\overrightarrow{b}+\overrightarrow{c})\) \\ \hline
+数乘 & 实数 \(\lambda\) 与向量 \(\overrightarrow{a}\) 的乘积仍为向量 & \((\lambda+\mu)\overrightarrow{a}=\lambda\overrightarrow{a}+\mu\overrightarrow{a}\) \\ \hline
+共线 & \(\overrightarrow{a}\parallel\overrightarrow{b}\)（\(\overrightarrow{b}\neq\overrightarrow{0}\)） & \(\overrightarrow{a}=\lambda\overrightarrow{b}\) \\
+\thickhline
+\end{tabular}\par
+}
+
+\zhenhead{判断正误(正确的打“√”,错误的打“×”)}
+
+\zhenti{（1）}{若 \(\overrightarrow{a}\parallel\overrightarrow{b}\)，\(\overrightarrow{b}\parallel\overrightarrow{c}\)，则 \(\overrightarrow{a}\parallel\overrightarrow{c}\)．}{×}{平行传递需 \(\overrightarrow{b}\neq\overrightarrow{0}\)；\(\overrightarrow{b}=\overrightarrow{0}\) 时零向量与任意向量平行，传递性失效，故×．}
+
+\zhenti{（2）}{若 \(\overrightarrow{a}\parallel\overrightarrow{b}\)，则存在唯一实数 \(\lambda\)，使 \(\overrightarrow{a}=\lambda\overrightarrow{b}\)．}{×}{缺 \(\overrightarrow{b}\neq\overrightarrow{0}\) 前提；且 \(\overrightarrow{a}=\overrightarrow{0}\) 时 \(\lambda\) 不唯一，故×．}
+
+\zsd{三}{空间向量的夹角、数量积与共面}
+
+\tiaomu{1}{夹角：已知两个非零向量 \(\overrightarrow{a},\overrightarrow{b}\)，在空间中任取一点 \(O\)，作 \(\overrightarrow{OA}=\overrightarrow{a},\overrightarrow{OB}=\overrightarrow{b}\)，则大小在\kongda{[0°,180°]}内的 \(\angle AOB\) 称为 \(\overrightarrow{a}\) 与 \(\overrightarrow{b}\) 的夹角，记作 \(\langle\overrightarrow{a},\overrightarrow{b}\rangle\)；当 \(\langle\overrightarrow{a},\overrightarrow{b}\rangle=\frac{\pi}{2}\) 时，称 \(\overrightarrow{a}\) 与 \(\overrightarrow{b}\)\kongda{互相垂直}，记作 \(\overrightarrow{a}\perp\overrightarrow{b}\)．\zhuzhu{夹角范围（0°到180°）是数量积正负讨论的前提；易混点：几何角（如异面直线所成角）与向量夹角可能互补，运算前先分清求的是哪个角。}}
+
+\tiaomu{2}{数量积：定义 \(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)；规定\kongda{零向量}与任意向量的数量积为 0．性质：\(\overrightarrow{a}\perp\overrightarrow{b}\Leftrightarrow\overrightarrow{a}\cdot\overrightarrow{b}=0\)；\(\overrightarrow{a}\cdot\overrightarrow{a}={{\overrightarrow{a}}^{2}}={\left| \overrightarrow{a} \right|}^{2}\)；\(\left| \overrightarrow{a}\cdot\overrightarrow{b} \right|\leq\left| \overrightarrow{a} \right|\left| \overrightarrow{b} \right|\)．\zhuzhu{【微提醒】零向量与任意向量的数量积为0．}\zhuzhu{求空间角与距离的核心运算（支撑条目16、17、34）；注意数量积不满足结合律，零向量与任意向量的数量积为0。}}
+
+\tiaomu{3}{投影向量：（1）在空间，向量\(\overrightarrow{a}\)向向量\(\overrightarrow{b}\)投影：\zhuzhu{数量积几何意义的载体，条目33三余弦定理与条目38点面距的推导都基于投影；易错点：投影向量是向量、投影长度是数量。}}
+
+\bindp 如图①，先将它们平移到同一平面\(\alpha\)内，利用平面上向量的投影，得到与向量\(\overrightarrow{b}\)共线的向量\(\overrightarrow{c}\)，\(\overrightarrow{c} =\)\(\left| \overrightarrow{a} \right|\cos\left\langle \overrightarrow{a},\overrightarrow{b} \right\rangle \cdot \frac{\overrightarrow{b}}{\left| \overrightarrow{b} \right|}\)，称向量\(\overrightarrow{c}\)为向量\(\overrightarrow{a}\)在向量\(\overrightarrow{b}\)上的投影向量．
+
+\bindp （2）向量\(\overrightarrow{a}\)在直线\emph{l}上的投影如图②．
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=60mm,alt={@@@5da5e1ea-9d33-4579-a56f-804b4a72c894}]{media/media/sub3_B_4.png}}\par\vspace{-1.7mm}\penalty10000
+
+\bindp （3）向量\(\overrightarrow{a}\)向平面\(\beta\)投影：
+
+\bindp 如图③，分别由向量\(\overrightarrow{a}\)的起点\emph{A}和终点\emph{B}作平面\(\beta\)的垂线，垂足分别为\(A'\)，\(B'\)，得到向量\(\overrightarrow{A'B'}\)，向量\(\overrightarrow{A'B'}\)称为向量\(\overrightarrow{a}\)在平面\(\beta\)上的投影向量．
+
+\tiaomu{4}{共面的充要条件：向量 \(\overrightarrow{p}\) 与不共线向量 \(\overrightarrow{a},\overrightarrow{b}\) 共面的充要条件是存在\kongda{有序实数对} \((x,y)\)，使 \(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)．\zhuzhu{证四点共面、线共面的标准工具；易错点：定理前提是p与a、b不共线，此前提不可漏，且实数对存在唯一。}}
+
+{\setlength{\tabcolsep}{3pt}\arrayrulecolor{gray122}
+\vspace{-3.8mm}
+\noindent\begin{tabular}{!{\vline width 0.8pt}>{\centering\arraybackslash}p{10mm}!{\vline width 0.4pt}>{\raggedright\arraybackslash}p{36mm}!{\vline width 0.4pt}>{\raggedright\arraybackslash}p{33mm}!{\vline width 0.8pt}}
+\thickhline
+{\textbf{概念}} & {\textbf{要点}} & {\textbf{记号／范围}} \\
+\hline
+夹角 & \(\angle AOB\)（\(\overrightarrow{OA}=\overrightarrow{a},\overrightarrow{OB}=\overrightarrow{b}\)） & \(0^\circ\leq\langle\overrightarrow{a},\overrightarrow{b}\rangle\leq180^\circ\) \\ \hline
+数量积 & \(\overrightarrow{a}\) 的模与 \(\overrightarrow{b}\) 在 \(\overrightarrow{a}\) 上投影的数量之积 & \(\overrightarrow{a}\allowbreak\cdot\allowbreak\overrightarrow{b}\allowbreak=\allowbreak|\overrightarrow{a}|\allowbreak|\overrightarrow{b}|\allowbreak\cos\allowbreak\langle\overrightarrow{a},\overrightarrow{b}\rangle\) \\ \hline
+投影向量 & 与 \(\overrightarrow{b}\) 同向（\(\cos\allowbreak\langle\overrightarrow{a},\overrightarrow{b}\rangle\allowbreak>0\) 时） & 模为 \(|\overrightarrow{a}|\allowbreak\cos\allowbreak\langle\overrightarrow{a},\overrightarrow{b}\rangle\) \\ \hline
+共面 & 存在 \((x,y)\) 使 \(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)（\(\overrightarrow{a},\overrightarrow{b}\) 不共线） & \(\overrightarrow{p},\overrightarrow{a},\overrightarrow{b}\) 共面 \\
+\thickhline
+\end{tabular}\par
+}
+
+\zhenhead{判断正误(正确的打“√”,错误的打“×”)}
+
+\zhenti{（1）}{若 \(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)（\(\overrightarrow{a}\)，\(\overrightarrow{b}\) 不共线），则 \(\overrightarrow{p}\)，\(\overrightarrow{a}\)，\(\overrightarrow{b}\) 共面．}{√}{\(\overrightarrow{p}\) 是 \(\overrightarrow{a}\)、\(\overrightarrow{b}\) 的线性组合，由共面向量定理知三向量共面，故√．}
+
+\zhenti{（2）}{两个非零空间向量的数量积大于 \(0\)，则这两个向量的夹角为锐角．}{×}{数量积大于 0 仅保证 \(\cos\theta>0\)，夹角 \(\theta\in[0^\circ,90^\circ)\)；\(\theta=0^\circ\)（同向）时数量积也为正而非锐角，故×．}
+
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一｜空间向量的概念辨析}{例1}{简单（知识点一）}{下列说法正确的是（~~~~）}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．若\(\left| \overrightarrow{a} \right| = \allowbreak\left| \overrightarrow{b} \right|\)，则\(\overrightarrow{a} = \overrightarrow{b}\)或\(\overrightarrow{a} = - \overrightarrow{b}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．若\(\overrightarrow{a},\overrightarrow{b}\)为相反向量，则\(\overrightarrow{a} + \overrightarrow{b} = \overrightarrow{0}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．零向量是没有方向的向量；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．若\(\overrightarrow{a},\overrightarrow{b}\)是两个单位向量，则\(\overrightarrow{a} = \overrightarrow{b}\)\par}
+
+\bindp 【分析】根据零向量、单位向量、向量的模、相等向量、相反向量等概念逐一分析即可得出答案.
+
+\bindp 【详解】解：若\(\left| \overrightarrow{a} \right| = \allowbreak\left| \overrightarrow{b} \right|\)，则它们的方向相同时是相等向量，方向相反时是相反向量，还有可能方向既不相同，也不相反，A错；
+
+\bindp 若\(\overrightarrow{a},\overrightarrow{b}\)为相反向量，则它们的和为零向量，B对；
+
+\bindp 零向量的方向是任意的，C错；
+
+\bindp 两个单位向量只是模都为1，方向不一定相同，D错.故选：B.
+
+\li{变式1}{简单（知识点一）}{}{下列说法错误的是（~~~~）}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．零向量与任意向量都平行；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．若 \(|\overrightarrow{a}|=0\)，则 \(\overrightarrow{a}=\overrightarrow{0}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．若 \(\overrightarrow{a}=\overrightarrow{b}\)，则 \(|\overrightarrow{a}|=|\overrightarrow{b}|\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．若 \(\overrightarrow{a}\parallel\overrightarrow{b}\)，则 \(|\overrightarrow{a}|=|\overrightarrow{b}|\)\par}
+
+\ansline{\ansul{D}}
+
+\jiexi{A 规定成立；B 模为 0 即零向量；C 相等必等模；D 平行不需等模（反例 \(\overrightarrow{a}=2\overrightarrow{b}\)），故选 D．}
+
+\xiaojie{①识别：题干围绕模、方向、零向量、单位向量、相等向量与相反向量罗列说法要求辨误时，判归本题型。}
+
+\bindp {\kaishu ②操作：对照定义逐条核验，存疑条目用反例否定。}
+
+\bindp {\kaishu ③收束：排除错误项定答案，忌凭直觉误选。}
+
+\tjdnr{二｜空间向量的线性运算}{例1}{简单（知识点二）}{}
+
+\noindent\begin{minipage}[t]{0.56\linewidth}\raggedright 在直三棱柱\(ABC - A_{1}B_{1}C_{1}\)中，若\(\overrightarrow{CA} = \overrightarrow{a},\overrightarrow{CB} = \overrightarrow{b},\overrightarrow{CC_{1}} = \overrightarrow{c},\)，则\(\overrightarrow{A_{1}B}\)=\kongbai{}.(用\(\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}\)表示)\end{minipage}\hfill\begin{minipage}[t]{0.40\linewidth}\centering\raisebox{\dimexpr-\height+\ht\strutbox\relax}{\includegraphics[width=\linewidth,alt={@@@4e3aa752498e415b9cc3d6d60f7bb3fe}]{media/media/image1.png}}\end{minipage}\par
+
+\bindp 【分析】连接\(CA_{1},\)根据直三棱柱的结构特征及空间向量减法的几何意义可得\(\overrightarrow{A_{1}B} = \overrightarrow{CB} - \overrightarrow{CA} - \overrightarrow{CC_{1}}\)，结合已知即可求表达式.
+
+\bindp 【详解】连接\(CA_{1},\)则\(\overrightarrow{A_{1}B} = \overrightarrow{CB} - \overrightarrow{CA_{1}} = \overrightarrow{CB} - \overrightarrow{CA} - \overrightarrow{CC_{1}} =\)
+\(\overrightarrow{b} - \overrightarrow{a} - \overrightarrow{c}\).
+
+\bindp 故答案为：\(\overrightarrow{b} - \overrightarrow{a} - \overrightarrow{c}\)
+
+\li{变式1}{简单（知识点二）}{}{在平行六面体 \(ABCD-A_1B_1C_1D_1\) 中，\(\overrightarrow{AB}=\overrightarrow{a}\)，\(\overrightarrow{AD}=\overrightarrow{b}\)，\(\overrightarrow{AA_1}=\overrightarrow{c}\)，则 \(\overrightarrow{D_1B}=\)\kongbai{}．（用 \(\overrightarrow{a}\)，\(\overrightarrow{b}\)，\(\overrightarrow{c}\) 表示）}
+
+\ansline{\ansul{\(\overrightarrow{a}-\overrightarrow{b}-\overrightarrow{c}\)}}
+
+\jiexi{\(\overrightarrow{D_1B}=\overrightarrow{D_1A_1}+\overrightarrow{A_1A}+\overrightarrow{AB}=-\overrightarrow{b}-\overrightarrow{c}+\overrightarrow{a}\)．}
+
+\xiaojie{①识别：在几何体中给出若干已知向量、要求表示指定向量时，判归本题型。}
+
+\bindp {\kaishu ②操作：为目标向量选一条首尾相接的路径写出加减链，再把链中各段用相等或共线的已知向量替换，最后合并化简得表达式。}
+
+\bindp {\kaishu ③收束：复查每段方向与起讫点，防抄错向量。}
+
+\tjdnr{三｜用基底表示向量}{例1}{简单（知识点二）}{}
+
+\noindent\begin{minipage}[t]{0.56\linewidth}\raggedright 已知正方体\emph{ABCD}－\emph{A\textsubscript{1}B\textsubscript{1}C\textsubscript{1}D\textsubscript{1}}中，\(\overrightarrow{A_{1}E}\)＝\(\frac{1}{4}\) \(\overrightarrow{A_{1}C_{1}}\)，若\(\overrightarrow{AE} =\)\emph{x}\(\overrightarrow{AA_{1}}\)＋\emph{y}(\(\overrightarrow{AB}\)＋\(\overrightarrow{AD}\))，则\emph{x}＝\kongbai{}，\emph{y}＝\kongbai{}.\end{minipage}\hfill\begin{minipage}[t]{0.40\linewidth}\centering\raisebox{\dimexpr-\height+\ht\strutbox\relax}{\includegraphics[width=\linewidth,alt={@@@b0b55c9f-4634-4bba-b096-bc6dd0cf7747}]{media/media/image2.png}}\end{minipage}\par
+
+\bindp 【分析】结合空间向量的线性运算列方程，由此求得\(x,y\)的值.
+
+\bindp 【详解】\(\overrightarrow{AE} = \overrightarrow{AA_{1}} + \overrightarrow{A_{1}E} = \overrightarrow{AA_{1}} + \frac{1}{4}\overrightarrow{A_{1}C_{1}} = \overrightarrow{AA_{1}} + \frac{1}{4}\left( \overrightarrow{AB} + \overrightarrow{AD} \right)\)，所以\(x = 1,y = \frac{1}{4}\).故答案为：\(1\)；\(\frac{1}{4}\)
+
+\li{变式1}{简单（知识点二）}{}{在平行六面体 \(ABCD-A_1B_1C_1D_1\) 中，点 \(E\) 在 \(A_1C_1\) 上，且 \(\overrightarrow{A_1E}=\frac{1}{2}\overrightarrow{A_1C_1}\)，若 \(\overrightarrow{AE}=x\overrightarrow{AA_1}+y(\overrightarrow{AB}+\overrightarrow{AD})\)，则 \(x=\)\kongbai{}，\(y=\)\kongbai{}．}
+
+\ansline{\ansul{\(x=1\)}，\ansul{\(y=\frac{1}{2}\)}}
+
+\jiexi{\(\overrightarrow{AE}=\overrightarrow{AA_1}+\overrightarrow{A_1E}=\overrightarrow{AA_1}+\frac{1}{2}(\overrightarrow{AB}+\overrightarrow{AD})\)，故 \(x=1\)，\(y=\frac{1}{2}\)．}
+
+\xiaojie{①识别：指定三个不共面的向量作基底、要求把目标向量写成基底向量的线性组合并求系数时，判归本题型。}
+
+\bindp {\kaishu ②操作：先把目标向量沿几何路径分解为基底向量的和，再把各段按比例关系代入基底。}
+
+\bindp {\kaishu ③收束：比较等式两边系数求出待定值，防漏写中间段。}
+
+\tjdnr{四｜共面向量的判定}{例1}{简单（知识点三）}{有下列说法:}
+
+\bindopt ①若\(\overrightarrow{p} = x\overrightarrow{a} + y\overrightarrow{b}\)，则\(\overrightarrow{p}\)与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面；②若\(\overrightarrow{p}\)与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面，则\(\overrightarrow{p}\)=\emph{x}\(\overrightarrow{a}\)+\emph{y}\(\overrightarrow{b}\)；③若\(\overrightarrow{MP}\)=\emph{x}\(\overrightarrow{MA}\)+\emph{y}\(\overrightarrow{MB}\)，则\emph{P}，\emph{M}，\emph{A}，\emph{B}共面；④若\emph{P}，\emph{M}，\emph{A}，\emph{B}共面，则\(\overrightarrow{MP}\)=\emph{x}\(\overrightarrow{MA}\)+\emph{y}\(\overrightarrow{MB}\).其中正确的是（~~~~）
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．①②③④；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．①③④；}\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．①③；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．②④}\par}
+
+\bindp 【分析】利用空间向量共面定理逐一判断即可.
+
+\bindp 【详解】若\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共线，由\(\overrightarrow{p}\)=\emph{x}\(\overrightarrow{a}\)+\emph{y}\(\overrightarrow{b}\)知\(\overrightarrow{p}\)一定与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面，
+
+\bindp 若\(\overrightarrow{a}\)，\(\overrightarrow{b}\)不共线，则满足共面定理，\(\overrightarrow{p}\)与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面，①对；
+
+\bindp 同理③对；若\(\overrightarrow{p}\)与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面，且\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共线，则不一定有\(\overrightarrow{p}\)=\emph{x}\(\overrightarrow{a}\)+\emph{y}\(\overrightarrow{b}\)，故②不对；同理④不对，故选：C.
+
+\li{变式1}{简单（知识点三）}{}{已知 \(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\)，判断 \(P\)，\(M\)，\(A\)，\(B\) 四点是否共面，并说明理由．}
+
+\ansline{\ansul{共面}（\(\overrightarrow{MP}\) 可由 \(\overrightarrow{MA}\)，\(\overrightarrow{MB}\) 线性表示，故 \(\overrightarrow{MP}\)，\(\overrightarrow{MA}\)，\(\overrightarrow{MB}\) 共面，即 \(P\) 在平面 \(MAB\) 内）}
+
+\jiexi{\(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\) 为 \(\overrightarrow{MA}\)、\(\overrightarrow{MB}\) 的线性组合，故三向量共面，\(P\) 在平面 \(MAB\) 内．}
+
+\xiaojie{①识别：题干给出 p=xa+yb 或 MP=xMA+yMB 一类线性表示与“共面”结论的互推说法判断时，判归本题型。}
+
+\bindp {\kaishu ②操作：核对充要条件的前提（两向量不共线或三点不共线）是否齐备，再对缺前提的说法举共线反例排除。}
+
+\bindp {\kaishu ③收束：最后汇总正确序号定选项。}
+
+\tjdnr{五｜数量积的概念与运算律}{例1}{简单（知识点三）}{设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)为空间中的任意两个非零向量，下列各式中正确的有（~~~~）}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．\({\overrightarrow{a}}^{2} = \allowbreak\left| \overrightarrow{a} \right|^{2}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．\(\frac{\overrightarrow{a} \cdot \overrightarrow{b}}{\overrightarrow{a} \cdot \overrightarrow{a}} = \frac{\overrightarrow{b}}{\overrightarrow{a}}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．\(\left( \overrightarrow{a} \cdot \overrightarrow{b} \right)^{2} = {\overrightarrow{a}}^{2} \cdot {\overrightarrow{b}}^{2}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．\(\left( \overrightarrow{a} - \overrightarrow{b} \right)^{2} = {\overrightarrow{a}}^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + {\overrightarrow{b}}^{2}\)\par}
+
+\bindp 【分析】根据空间向量数量积的定义与运算律一一判断即可；
+
+\bindp 【详解】解：对于A：\({\overrightarrow{a}}^{2} = \overrightarrow{a} \cdot \overrightarrow{a} = \allowbreak\left| \overrightarrow{a} \right| \cdot \allowbreak\left| \overrightarrow{a} \right|\cos 0 = \allowbreak\left| \overrightarrow{a} \right|^{2}\)，故A正确；
+
+\bindp 对于B：因为向量不能做除法，即\(\frac{\overrightarrow{b}}{\overrightarrow{a}}\)无意义，故B错误；
+
+\bindp 对于C：\(\left( \overrightarrow{a} \cdot \overrightarrow{b} \right)^{2} = \allowbreak\left( \left| \overrightarrow{a} \right| \cdot \allowbreak\left| \overrightarrow{b} \right|\cos\left\langle \overrightarrow{a},\overrightarrow{b} \right\rangle \right)^{2} = \allowbreak\left| \overrightarrow{a} \right|^{2} \cdot \allowbreak\left| \overrightarrow{b} \right|^{2}\cos^{2}\left\langle \overrightarrow{a},\overrightarrow{b} \right\rangle\)，故C错误；
+
+\bindp 对于D：\(\left( \overrightarrow{a} - \overrightarrow{b} \right)^{2} = \allowbreak\left( \overrightarrow{a} - \overrightarrow{b} \right) \cdot \allowbreak\left( \overrightarrow{a} - \overrightarrow{b} \right) = {\overrightarrow{a}}^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + {\overrightarrow{b}}^{2}\)，故D正确；故选：AD
+
+\li{变式1}{简单（知识点三）}{}{已知 \(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，则 \((\overrightarrow{a}+2\overrightarrow{b})\cdot(\overrightarrow{a}-\overrightarrow{b})=\)\kongbai{}．}
+
+\ansline{\ansul{\(-11\)}}
+
+\jiexi{\(\overrightarrow{a}\cdot\overrightarrow{b}=2\times3\times\cos60^\circ=3\)；原式 \(=\overrightarrow{a}^2+\overrightarrow{a}\cdot\overrightarrow{b}-2\overrightarrow{b}^2=4+3-18=-11\)．}
+
+\xiaojie{①识别：题干列出数量积相关的若干等式（平方、商式、乘积展开）要求判断正误时，判归本题型。}
+
+\bindp {\kaishu ②操作：按定义 a·b=|a||b|cosθ 逐式展开核验，展开后移项验算。}
+
+\bindp {\kaishu ③收束：警惕向量无除法、数量积无结合律等误用。}
+
+\tjdnr{六｜数量积求夹角与投影（非坐标法）}{例1}{中档（知识点三）}{}
+
+\noindent\begin{minipage}[t]{0.56\linewidth}\raggedright 如图，在正方体\(ABCD - A_{1}B_{1}C_{1}D_{1}\)中，求向量\(\overrightarrow{BC_{1}}\)与\(\overrightarrow{AC}\)的夹角的大小．\end{minipage}\hfill\begin{minipage}[t]{0.40\linewidth}\centering\raisebox{\dimexpr-\height+\ht\strutbox\relax}{\includegraphics[width=\linewidth,alt={@@@d8ffc038-cfd6-4d16-b846-f3d81f29b325}]{media/media/image3.png}}\end{minipage}\par
+
+\bindp 【分析】方法1：结合图形，平移向量，利用空间向量的夹角定义来求，但要注意向量夹角的范围；
+
+\bindp 方法2：先求\(\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}\)，再利用公式\(\cos\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle = \frac{\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}}{\left| \overrightarrow{BC_{1}} \right| \cdot \allowbreak\left| \overrightarrow{AC} \right|}\)求\(\cos\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle\)，最后确定\(\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle\)即可．
+
+\bindp 【详解】解：方法1：因为\(\overrightarrow{AD_{1}} = \overrightarrow{BC_{1}}\)，所以\(\angle CAD_{1}\)的大小就等于\(\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle\)
+
+\bindp 因为△\(CAD_{1}\)为等边三角形，所以\(\angle CAD_{1} = 60^{{^\circ}}\)，所以\(\overrightarrow{BC_{1}}\)与\(\overrightarrow{AC}\)的夹角的大小为\(60{^\circ}\)．
+
+\bindp 方法2．设正方体的棱长为1，\(\overrightarrow{BC_{1}} \cdot \overrightarrow{AC} = \allowbreak\left( \overrightarrow{BC} + \overrightarrow{CC_{1}} \right) \cdot \allowbreak\left( \overrightarrow{AB} + \overrightarrow{BC} \right) = \allowbreak\left( \overrightarrow{AD} + \overrightarrow{AA_{1}} \right) \cdot \allowbreak\left( \overrightarrow{AB} + \overrightarrow{AD} \right)\)\(= \overrightarrow{AD} \cdot \overrightarrow{AB} + \left| \overrightarrow{AD} \right|^{2} + \overrightarrow{AA_{1}} \cdot \overrightarrow{AB} + \overrightarrow{AA_{1}} \cdot \overrightarrow{AD} = 0 + \left| \overrightarrow{AD} \right|^{2} + 0 + 0 = \allowbreak\left| \overrightarrow{AD} \right|^{2} = 1\)又因为\(\left| \overrightarrow{BC_{1}} \right| = \sqrt{2},\left| \overrightarrow{AC} \right| = \sqrt{2}\)，所以\(\cos\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle = \frac{\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}}{\left| \overrightarrow{BC_{1}} \right| \cdot \allowbreak\left| \overrightarrow{AC} \right|} = \frac{1}{\sqrt{2} \times \sqrt{2}} = \frac{1}{2}\)，
+因为\(\left\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \right\rangle \in \lbrack 0,\pi\rbrack\)，所以\(\overrightarrow{BC_{1}}\)与\(\overrightarrow{AC}\)的夹角的大小为\(60{^\circ}\)．
+
+\li{变式1}{中档（知识点三）}{}{在长方体 \(ABCD-A_1B_1C_1D_1\) 中，\(AB=2\)，\(AD=2\)，\(AA_1=1\)，则向量 \(\overrightarrow{AB_1}\) 与 \(\overrightarrow{AC}\) 夹角的余弦值为\kongbai{}．}
+
+\ansline{\ansul{\(\frac{\sqrt{10}}{5}\)}}
+
+\jiexi{\(\overrightarrow{AB_1}\cdot\overrightarrow{AC}=(\overrightarrow{AB}+\overrightarrow{BB_1})\cdot(\overrightarrow{AB}+\overrightarrow{BC})=|\overrightarrow{AB}|^2=4\)，\(|\overrightarrow{AB_1}|=\sqrt{5}\)，\(|\overrightarrow{AC}|=2\sqrt{2}\)，故 \(\cos\langle\overrightarrow{AB_1},\overrightarrow{AC}\rangle=\frac{4}{\sqrt{5}\times2\sqrt{2}}=\frac{\sqrt{10}}{5}\)．}
+
+\xiaojie{①识别：题干在几何体中求两向量的夹角、模长或投影而不建坐标系时，判归本题型。}
+
+\bindp {\kaishu ②操作：先平移向量使起点共点或选不共面的三个向量作基底，再把相关向量用基底表示并算出数量积与模长。}
+
+\bindp {\kaishu ③收束：最后代入夹角公式并按向量夹角范围 [0,π] 取角。}
+
+\tjdnr{七｜数量积条件求参（夹角与垂直）}{例1}{中档（知识点三）}{已知向量\(\overrightarrow{a},\overrightarrow{b}\)，且\(\left| \overrightarrow{a} \right| = 2\)，\(\left| \overrightarrow{b} \right| = 1\)，\(\left\langle \overrightarrow{a},\overrightarrow{b} \right\rangle = 60^{\circ}\)，则使向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)的夹角为钝角的实数\(\lambda\)的取值范围是\kongbai{}．}
+
+\bindp 【分析】根据\(\left( \overrightarrow{a} + \lambda\overrightarrow{b} \right) \cdot \allowbreak\left( \lambda\overrightarrow{a} - 2\overrightarrow{b} \right) < 0\)，得出方程求得\(- 1 - \sqrt{3} < \lambda < - 1 + \sqrt{3}\)，若向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线时，则存在实数\(k < 0\)使得\(\overrightarrow{a} + \lambda\overrightarrow{b} = k(\lambda\overrightarrow{a} - 2\overrightarrow{b})\)成立，得到方程组\(\left\{ \begin{array}{r}
+k\lambda = 1 \\
+\lambda = - 2k
+\end{array} \right.\ \)无解，即可得到答案.
+
+\bindp 【详解】由向量\(\overrightarrow{a},\overrightarrow{b}\)，且\(\left| \overrightarrow{a} \right| = 2\)，\(\left| \overrightarrow{b} \right| = 1\)，\(\left\langle \overrightarrow{a},\overrightarrow{b} \right\rangle = 60^{\circ}\)，可得\(\overrightarrow{a} \cdot \overrightarrow{b} = 2 \times 1 \times \cos 60^{\circ} = 1\)，
+
+\bindp 因为向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)的夹角为钝角，可得\(\cos\left\langle \overrightarrow{a} + \lambda\overrightarrow{b},\lambda\overrightarrow{a} - 2\overrightarrow{b} \right\rangle < 0\)且\(\cos\left\langle \overrightarrow{a} + \lambda\overrightarrow{b},\lambda\overrightarrow{a} - 2\overrightarrow{b} \right\rangle \neq - 1\)，由\(\left( \overrightarrow{a} + \lambda\overrightarrow{b} \right) \cdot \allowbreak\left( \lambda\overrightarrow{a} - 2\overrightarrow{b} \right) < 0\)，即\(\lambda{\overrightarrow{a}}^{2}\text{+(}\lambda^{2} - 2)\overrightarrow{a} \cdot \overrightarrow{b} - 2\lambda{\overrightarrow{b}}^{2} < 0\)，所以\(\lambda^{2} + 2\lambda - 2 < 0\)，解得\(- 1 - \sqrt{3} < \lambda < - 1 + \sqrt{3}\)，
+
+\bindp 若向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线时，存在实数\(k < 0\)，使得\(\overrightarrow{a} + \lambda\overrightarrow{b} = k(\lambda\overrightarrow{a} - 2\overrightarrow{b})\)成立，可得\(\left\{ \begin{array}{r}
+k\lambda = 1 \\
+\lambda = - 2k
+\end{array} \right.\ \)，此时方程组无解，所以不存在实数\(k\)使得向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线，所以实数\(\lambda\)的取值范围是\(\left( - 1 - \sqrt{3}, - 1 + \sqrt{3} \right)\).
+
+\li{变式1}{简单（知识点三）}{}{已知\(\left| \overrightarrow{a} \right| = 3\sqrt{2},\left| \overrightarrow{b} \right| = 4,\overrightarrow{m} = \overrightarrow{a} + \overrightarrow{b},\overrightarrow{n} = \overrightarrow{a} + \lambda\overrightarrow{b},\left\langle \overrightarrow{a},\overrightarrow{b} \right\rangle = 135{^\circ},\overrightarrow{m}\bot\overrightarrow{n}\) ，则λ＝\kongbai{}．}
+
+\ansline{\ansul{\(- \frac{3}{2}\)}}
+
+\jiexi{\(\overrightarrow{m}\cdot\overrightarrow{n}=(\overrightarrow{a}+\overrightarrow{b})\cdot(\overrightarrow{a}+\lambda\overrightarrow{b})=|\overrightarrow{a}|^2+\lambda|\overrightarrow{b}|^2+(1+\lambda)\overrightarrow{a}\cdot\overrightarrow{b}=18+16\lambda-12(1+\lambda)=6+4\lambda=0\)，故 \(\lambda=-\frac{3}{2}\)．}
+
+\xiaojie{①识别：题干给出两向量的模与夹角、并以夹角为锐角/钝角或两向量垂直为条件求参数时，判归本题型。}
+
+\bindp {\kaishu ②操作：第一步用数量积把条件翻译成不等式或方程（锐角 cos>0、钝角 cos<0、垂直 cos=0）。}
+
+\bindp {\kaishu ③收束：再求解并剔除使两向量共线的参数，最后写出参数值或取值范围。}
+
+\tjdnr{八｜数量积求距离（展开法）}{例1}{中档（知识点三）}{}
+
+\noindent\begin{minipage}[t]{0.56\linewidth}\raggedright 如图，在大小为45°的二面角A\-EF\-D中，四边形ABFE，CDEF都是边长为1的正方形，则B，D两点间的距离是()\end{minipage}\hfill\begin{minipage}[t]{0.40\linewidth}\centering\raisebox{\dimexpr-\height+\ht\strutbox\relax}{\includegraphics[width=\linewidth,alt={@@@494a628b97d74c2894c135f69e8f1eb7}]{media/media/image4.png}}\end{minipage}\par
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(\sqrt{3}\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(\sqrt{2}\)；}\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．1；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(\sqrt{3 - \sqrt{2}}\)}\par}
+
+\bindp 【分析】由\(\overrightarrow{DB} = \overrightarrow{ED} + \overrightarrow{FE} + \overrightarrow{BF}\)，利用数量积运算性质展开即可得到答案
+
+\bindp 【详解】\(\because\overrightarrow{BD} = \overrightarrow{ED} + \overrightarrow{FE} + \overrightarrow{BF}\),\(\therefore\left| \overrightarrow{BD} \right|^{2} = \allowbreak\left| \overrightarrow{BF} \right|^{2} + \left| \overrightarrow{FE} \right|^{2} + \left| \overrightarrow{ED} \right|^{2} + 2\overrightarrow{BF} \bullet \overrightarrow{FE} + 2\overrightarrow{FE} \bullet \overrightarrow{ED} + 2\overrightarrow{BF} \bullet \overrightarrow{ED} = 1 + 1 + 1 - \sqrt{2}\)故\(\left| \overrightarrow{BD} \right| = \sqrt{3 - \sqrt{2}}\)故选\(D\)
+
+\bindp 【点睛】本题是要求空间两点之间的距离，运用空间向量将其表示，然后计算得到结果，较为基础．
+
+\li{变式1}{简单（知识点三）}{}{在大小为 \(60^\circ\) 的二面角 \(A-EF-D\) 中，四边形 \(ABFE\)，\(CDEF\) 都是边长为 \(1\) 的正方形，则 \(B\)，\(D\) 两点间的距离为\kongbai{}．}
+
+\ansline{\ansul{\(\sqrt{2}\)}}
+
+\jiexi{\(|\overrightarrow{BD}|^2=1+1+1+2\overrightarrow{BF}\cdot\overrightarrow{ED}=3+2\cos120^\circ=2\)，故 \(|\overrightarrow{BD}|=\sqrt{2}\)．}
+
+\xiaojie{①识别：题干在含二面角的拼接图形中求两点距离时，判归本题型。}
+
+\bindp {\kaishu ②操作：第一步把待求线段对应的向量写成已知棱向量的首尾相接和链，再对模长平方作数量积展开，逐项代入模长与夹角（端点处两条垂线段的夹角由二面角决定，注意取 45° 还是 135°）。}
+
+\bindp {\kaishu ③收束：最后开方得距离。}
+
+\tjdnr{九｜数量积求距离（折叠矩形）}{例1}{中档（知识点三）}{已知矩形\(ABCD\)中，\(AB = 1\)，\(BC = \sqrt{3}\)，将矩形\(ABCD\)沿对角线\(AC\)折起，使平面\(ABC\)与平面\(ACD\)垂直，则\(|\overrightarrow{BD}| =\)（~~~~）．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\frac{\sqrt{10}}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(\frac{\sqrt{6}}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\frac{\sqrt{5}}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．2}\par}
+
+\bindp 【分析】过点\(B\)，\(D\)分别向\(AC\)作垂线，垂足分别为\(M\)，\(N\)，由\(\overrightarrow{BD} = \overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND}\)，平方后结合长度和垂直关系可得解.
+
+\bindp 【详解】
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=34mm,alt={@@@e34e5148-bca3-440e-84b1-3cbf33fe2cc1}]{media/media/image5.png}}\par\vspace{-1.7mm}\penalty10000
+
+\bindp ~~过点\(B\)，\(D\)分别向\(AC\)作垂线，垂足分别为\(M\)，\(N\)，则可得\(AM = \frac{1}{2}\)，\(BM = \frac{\sqrt{3}}{2}\)，\(CN = \frac{1}{2}\)，\(DN = \frac{\sqrt{3}}{2}\)，\(MN = 1\)．由于\(\overrightarrow{BD} = \overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND}\)，所以\(|\overrightarrow{BD}|^{2} = {(\overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND})}^{2}\)\(= |\overrightarrow{BM}|^{2} + |\overrightarrow{MN}|^{2} + |\overrightarrow{ND}|^{2} + 2(\overrightarrow{BM} \cdot \overrightarrow{MN} + \overrightarrow{MN} \cdot \overrightarrow{ND} + \overrightarrow{BM} \cdot \overrightarrow{ND})\)\(= \left( \frac{\sqrt{3}}{2} \right)^{2} + 1^{2} + \left( \frac{\sqrt{3}}{2} \right)^{2} + 2 \times (0 + 0 + 0) = \frac{5}{2}\)，所以\(|\overrightarrow{BD}| = \frac{\sqrt{10}}{2}\)．故选:\emph{A}．
+
+\bindp 【点睛】本题主要考查了空间向量数量积的应用，属于基础题.
+
+\li{变式1}{中档（知识点三）}{}{已知矩形 \(ABCD\) 中，\(AB=1\)，\(BC=\sqrt{3}\)，将矩形 \(ABCD\) 沿对角线 \(AC\) 折起，使二面角 \(B-AC-D\) 的大小为 \(60^\circ\)，则 \(|\overrightarrow{BD}|=\)\kongbai{}．}
+
+\ansline{\ansul{\(\frac{\sqrt{13}}{2}\)}}
+
+\jiexi{\(BM=DN=\frac{\sqrt{3}}{2}\)，\(MN=1\)；两垂线向量夹角随二面角为 \(60^\circ\)，\(\overrightarrow{BM}\cdot\overrightarrow{ND}=\frac{3}{4}\cos60^\circ=\frac{3}{8}\)；\(|\overrightarrow{BD}|^2=\frac{3}{4}+1+\frac{3}{4}+2\times\frac{3}{8}=\frac{13}{4}\)，故 \(|\overrightarrow{BD}|=\frac{\sqrt{13}}{2}\)．}
+
+\xiaojie{①识别：题干为平面图形沿一条直线折起且折后两面垂直、求两点间距离时，判归本题型。}
+
+\bindp {\kaishu ②操作：第一步在折后图形中过两点对折痕作垂线定出垂足，再把目标向量写成两段垂线与折痕段的和链并平方展开。}
+
+\bindp {\kaishu ③收束：最后利用面面垂直带来的向量垂直逐项化简、开方得距离。}
+
+\vbox{
+
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao 1．}{\fontsize{8pt}{11pt}\selectfont\color{midgray}〔简单（知识点三）〕}\hspace{1.3mm}已知 \(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，则 \(\overrightarrow{a}\cdot\overrightarrow{b}=\)\kongbai{}．{\zhuzhu{（提示：\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)）}}}
+
+\ansline{\ansul{3}}
+
+\jiexi{\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos60^\circ=2\times3\times0.5=3\)．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao 2．}{\fontsize{8pt}{11pt}\selectfont\color{midgray}〔简单（知识点二）〕}\hspace{1.3mm}设 \(\overrightarrow{e_1}\)，\(\overrightarrow{e_2}\) 不共线，\(\overrightarrow{a}=2\overrightarrow{e_1}+\overrightarrow{e_2}\)，\(\overrightarrow{b}=4\overrightarrow{e_1}+k\overrightarrow{e_2}\)，若 \(\overrightarrow{a}\parallel\overrightarrow{b}\)，则 \(k=\)（~~~~）}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\frac{1}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(2\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(-\frac{1}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(3\)}\par}
+
+\ansline{\ansul{B}}
+
+\jiexi{\(\overrightarrow{b}=\lambda\overrightarrow{a}\Rightarrow4=2\lambda\Rightarrow\lambda=2\)，\(k=2\)，选 B．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao 3．}{\fontsize{8pt}{11pt}\selectfont\color{midgray}〔简单（知识点三）〕}\hspace{1.3mm}设 \(\overrightarrow{a}\)，\(\overrightarrow{b}\) 均为非零空间向量，则“\(\overrightarrow{a}\cdot\overrightarrow{b}=0\)”是“\(\overrightarrow{a}\perp\overrightarrow{b}\)”的（~~~~）}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．充分不必要条件；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．必要不充分条件；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．充要条件；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．既不充分也不必要条件\par}
+
+\ansline{\ansul{C}}
+
+\jiexi{非零向量 \(\overrightarrow{a}\cdot\overrightarrow{b}=0\Leftrightarrow\overrightarrow{a}\perp\overrightarrow{b}\)，充要条件，选 C．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao 4．}{\fontsize{8pt}{11pt}\selectfont\color{midgray}〔简单（知识点二）〕}\hspace{1.3mm}在空间四边形 \(ABCD\) 中，\(E\)，\(F\) 分别为 \(AB\)，\(CD\) 的中点，则 \(\frac{1}{2}(\overrightarrow{AD}+\overrightarrow{BC})=\)（~~~~）}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(2\overrightarrow{EF}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(-\overrightarrow{EF}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\overrightarrow{FE}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(\overrightarrow{EF}\)}\par}
+
+\ansline{\ansul{D}}
+
+\jiexi{取 \(AC\) 中点 \(G\)，\(\overrightarrow{EF}=\overrightarrow{EG}+\overrightarrow{GF}=\frac{1}{2}\overrightarrow{BC}+\frac{1}{2}\overrightarrow{AD}\)，选 D．}
+
+\jiance{{\fontsize{11.4pt}{14pt}\selectfont\heihao 5．}{\fontsize{8pt}{11pt}\selectfont\color{midgray}〔简单（知识点三）〕}\hspace{1.3mm}已知 \(|\overrightarrow{a}|=4\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=120^\circ\)，则 \(|\overrightarrow{a}+\overrightarrow{b}|=\)\kongbai{}．{\zhuzhu{（提示：先算 \(\overrightarrow{a}\cdot\overrightarrow{b}\)，再对 \(|\overrightarrow{a}+\overrightarrow{b}|^2=(\overrightarrow{a}+\overrightarrow{b})^2\) 展开）}}}{\ansul{\(\sqrt{13}\)}}
+
+\jiexi{\(\overrightarrow{a}\cdot\overrightarrow{b}=4\times3\times\cos120^\circ=-6\)，\(|\overrightarrow{a}+\overrightarrow{b}|^2=16+9-12=13\)，故 \(\sqrt{13}\)．}
+
+}
+
+\end{multicols}

@@ -1,8 +1,9 @@
 % ============================================================
 % qp-layout.tex —— 版面模块（全品式导学件，供 main.tex \input）
-% 职责：几何（A4 左/右/顶 15mm、底 20mm（v4.2 拍板22 让位页脚带）、twoside 对称；v4.2 headheight/headsep=0pt 撤页眉位）、宏包、
-%       调色板（黑＋777777＋DDDDDD＋black!25 栏线派生档拍板39）、
-%       行距/栏距/栏线/断行惩罚/浮动参数、表格默认、顶格化口径（\parindent=0pt）。
+% 职责：几何（A4 左/右/顶 15mm、底 20mm、twoside；headheight/headsep=0pt 撤页眉位）、宏包、
+%       调色板（黑＋777777＋7A7A7A＋4D4D4D＋DDDDDD＋black!40 栏线派生档）、
+%       行距/栏距/栏线/断行惩罚/浮动参数、表格默认（v4.3 总账D：深灰线色＋外框0.8pt＞内线0.4pt＋行高 pad 4.1mm）、
+%       顶格化口径（\parindent=0pt）。
 % 调用关系：main.tex → qp-fonts → 本模块 → qp-headfoot → qp-titles → qp-blocks。
 % ============================================================
 % v4.2 拍板22 冲突实害修复：bottom=20mm 正文区让位页脚带（全品 p04/p05 实测正文最低≈22.8mm、
@@ -11,22 +12,28 @@
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{colortbl}
 \usepackage{multirow,array,calc}
 \usepackage{multicol}
 
-% ---------- 颜色（调色板收敛：黑＋777777＋DDDDDD，单页灰档≤2，拍板27） ----------
-\definecolor{midgray}{HTML}{777777}    % 灰字/括注/注记/灰小字/章首方块/花形底线（唯一中灰）
+% ---------- 颜色（v4.3 调色板：黑＋777777＋7A7A7A＋4D4D4D＋DDDDDD＋black!40 栏线） ----------
+\definecolor{midgray}{HTML}{777777}    % 灰字/括注（题侧 8pt）/章首方块深块（唯一中灰，拍板27 沿用）
+\definecolor{gray122}{HTML}{7A7A7A}    % 灰122：花形右词/表线（总账A/D，全品实测 122）
+\definecolor{huarule}{HTML}{4D4D4D}    % 灰77（十进制 77/255）：花形底线（总账A，全品实测 77，深灰）
 \definecolor{pnumbg}{HTML}{DDDDDD}     % 页码灰块/章首浅方块（唯一浅灰）
 
 % ---------- 版面 ----------
 \setlength{\columnsep}{7.5mm}
-\setlength{\columnseprule}{0.4pt}      % 栏间竖线恢复（v4.2 翻拍板28：全品 p04-p06 实证页心竖线，宽约 0.17mm 近似 0.4pt）
-\renewcommand{\columnseprulecolor}{\color{black!25}}   % 全品实测灰度 188≈black!25（0xBF，拍板39 调色板派生档）
-\setlength{\multicolsep}{0pt}         % 章首【学习目标】标签→栏区零距（④ 36.2→34.4mm 达 ≤35 门；multicol 前后 skip 全局归零，单 multicols 无副作用）
+\setlength{\columnseprule}{0.4pt}      % 栏间竖线（全品 p04-p06 实证宽约 0.17mm 近似 0.4pt）
+% v4.3 总账I：black!25（0xBF）渲染实测灰 233 无芯偏浅 → 加深试档，取 black!40（0x99）：
+% 线性折算 233×153/191≈187≈全品实测 188 带芯（出样实测见交付报告，black!35/40 双档比对取 40）
+\renewcommand{\columnseprulecolor}{\color{black!40}}
+\setlength{\multicolsep}{0pt}         % 章首【学习目标】标签→栏区零距（multicol 前后 skip 全局归零）
 \renewcommand{\normalsize}{\fontsize{10.5pt}{18pt}\selectfont}
 \linespread{1}                          % 行距通解：撤 ctex linestretch 1.3 叠乘，实发 18pt
 \normalsize
 \setlength{\parindent}{0pt}             % 顶格化（v4.1 指令5）：全品正文无首行缩进
+                                        % v4.3 拍板6 例外：学习目标条目（\mubiaomu，qp-titles）悬挂 8.3mm
 \clubpenalty=10000
 \widowpenalty=10000
 \displaywidowpenalty=10000
@@ -43,9 +50,13 @@
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\floatpagefraction}{0.85}
 
-% ---------- 表格默认（全框细线＋紧凑内边距；arraystretch 1.05，对照§四-6；v4.2 1.15→1.05：bottom=20mm
-%           后 p1 左栏剩余约 81mm 装不下 1.15 档表1（86.2mm），1.05 省约 5.8mm 使表1 归位左栏） ----------
+% ---------- 表格默认（v4.3 总账D：内线 0.4pt（外框 0.8pt 在 kbtable 逐表组内设）；表线深灰 122
+%           （\arrayrulecolor 在 kbtable 表组内设，不泄漏全局）；行高留白 pad≈4.1mm/行（\extrarowheight）；
+%           tabcolsep 3pt 维持；v4.2 让位 1.05 stretch 沿用） ----------
 \setlength{\arrayrulewidth}{0.4pt}
+% v4.3 行高留白：全品单行行高 7.26mm（p14 逐线实测）——arraystretch 1.05 strut 6.67mm＋0.6mm。
+% （首版误将「pad≈4.1mm/行」直译为 extrarowheight 4.1mm，实测单行 10.45 超全品 3.2mm，0908 修正）
+\setlength{\extrarowheight}{0.6mm}
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.05}
 \renewcommand{\multirowsetup}{\centering}

@@ -1,0 +1,23 @@
+\documentclass[fontset=none]{ctexart}
+\input{../../全品结构提取/数学选必一/样张v4/导学件/qp-fonts.tex}
+\input{../../全品结构提取/数学选必一/样张v4/导学件/qp-layout.tex}
+\input{../../全品结构提取/数学选必一/样张v4/导学件/qp-headfoot.tex}
+\input{../../全品结构提取/数学选必一/样张v4/导学件/qp-titles.tex}
+\input{../../全品结构提取/数学选必一/样张v4/导学件/qp-blocks.tex}
+\newlength{\zdw}
+\newcommand{\zhentiX}[4]{\par\glueguard{1}%
+  \settowidth{\zdw}{#1#2（\ansul{#3}）\hspace*{5.4mm}}%
+  \typeout{ZDW=[\the\zdw] LW=[\the\linewidth]}%
+  \ifdim\zdw>\linewidth
+    \noindent#1#2\par\nopagebreak\noindent\makebox[\linewidth][r]{（\ansul{#3}）\rule{3.34mm}{0pt}}\par
+  \else
+    \noindent#1#2\hfill（\ansul{#3}）\hspace*{5.4mm}\par
+  \fi
+  \nopagebreak\noindent{\biaoqian{【解析】}#4}\par\addvspace{5pt}}
+\begin{document}
+\hsize=86.26mm
+\setlength{\linewidth}{86.26mm}
+\zhentiX{（1）}{两个空间向量的模相等，则这两个向量相等．}{×}{模相等方向未必相同，还可能相反或斜交，两向量未必相等，故×．}
+\zhentiX{（2）}{相等向量一定是共线向量．}{√}{相等向量方向相同，所在直线平行或重合，符合共线向量定义，故√．}
+\zhentiX{（3）}{若 \(\overrightarrow{a}\parallel\overrightarrow{b}\)，则存在唯一实数 \(\lambda\)，使 \(\overrightarrow{a}=\lambda\overrightarrow{b}\)．}{×}{缺 \(\overrightarrow{b}\neq\overrightarrow{0}\) 前提，故×．}
+\end{document}
