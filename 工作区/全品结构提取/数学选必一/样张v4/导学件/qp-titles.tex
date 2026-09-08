@@ -3,7 +3,7 @@
 % 职责：章/节/小节/课时标题＋【学习目标】块（multicols 外通栏区，可用 \Needspace）。
 % v4.3 章首组（拍板7＋总账B）：
 %   方块组复刻放大＝两枚 6.9mm 等大对角相触（浅 DDDDDD 左下坐基线、深 777777 右上角触）＋右下 2.3mm
-%   小深块（下探 2.8mm），union 13.8×16.6mm；章名 22pt \heizhang（字重阶梯 4.0×）与方块间距 3.1mm；
+%   小深块（下探 2.8mm），union 13.8×16.6mm；章名 20.67pt \heizhang（字重阶梯 4.0×）与方块间距 3.1mm；
 %   横线 0.2pt；级间距放开全品档（横线→节 6.9／节→小节 5.5／小节→课时 5.9／课时→目标 5.8mm，
 %   \corrglue 系微调量按渲染实测回填，章首占地 版心顶→【学习目标】标签顶 ≈57mm）。
 %   节标题撤仿粗不加粗（反向断言，附则§三）——\heiti 常规；小节/课时 \heijie（3.3×）。
@@ -22,23 +22,24 @@
 \newcommand{\corrgMubiao}{-2.5mm}  % 课时→目标
 
 % 章首：浅方块 6.9mm 坐基线，深方块 6.9mm 叠其右上（对角角触），右下 2.3mm 小深块下探 2.8mm；
-% 章名 22pt \heizhang 距方块 3.1mm；横线 0.2pt（原 0.4pt，总账B）
+% 章名 20.67pt \heizhang 距方块 3.1mm；横线 0.2pt（原 0.4pt，总账B）
+% v4.4 字号梯子（全品实测口径）：章 20.67／节 16.88／小节 15.1／课时 13.0pt（行距维持）
 \newcommand{\zhangtitle}[1]{%
   \par\addvspace{2pt}\noindent
   {\color{pnumbg}\rule{6.9mm}{6.9mm}}%
   \raisebox{6.9mm}[0pt][0pt]{\color{midgray}\rule{6.9mm}{6.9mm}}%
   \hspace{-2.3mm}\raisebox{-2.8mm}[0pt][0pt]{\color{midgray}\rule{2.3mm}{2.3mm}}%
   \hspace{3.1mm}%
-  {\fontsize{22pt}{30pt}\selectfont\heizhang #1}\par
+  {\fontsize{20.67pt}{30pt}\selectfont\heizhang #1}\par
   \vspace{-0.3mm}\noindent\rule{\textwidth}{0.2pt}\par}
 
 \newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr6.9mm+\corrgJie\relax}%
-  {\centering\fontsize{18pt}{22pt}\selectfont\heiti #1\par}}
+  {\centering\fontsize{16.88pt}{22pt}\selectfont\heiti #1\par}}
 \newcommand{\xiaojietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr5.5mm+\corrgXiaojie\relax}%
-  {\centering\fontsize{15pt}{22pt}\selectfont\heijie #1\par}}
-% 课时标题：14pt \heijie 居中（章首通栏第 4 层；内容式命名维持）
+  {\centering\fontsize{15.1pt}{22pt}\selectfont\heijie #1\par}}
+% 课时标题：13pt \heijie 居中（章首通栏第 4 层；内容式命名维持）
 \newcommand{\keshi}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr5.9mm+\corrgKeshi\relax}%
-  {\centering\fontsize{14pt}{20pt}\selectfont\heijie #1\par}}
+  {\centering\fontsize{13pt}{20pt}\selectfont\heijie #1\par}}
 
 % 【学习目标】标签行（位于章首通栏区）；课时→目标间距 5.8mm（总账B）
 \newcommand{\mubiaoline}{\par\glueguard{2}\addvspace{\dimexpr5.8mm+\corrgMubiao\relax}\noindent\biaoqian{【学习目标】}\par\nopagebreak\vspace{-2pt}}

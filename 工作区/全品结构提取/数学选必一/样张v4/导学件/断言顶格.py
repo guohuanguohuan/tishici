@@ -25,7 +25,10 @@ hangindent=8.3mm（qp-titles:46 定义，不在 body——(a) grep 不误报；N
 页眉已撤（v4.2-A1）；页脚块 fill 宽 >2pt 不进 (d)；页码数字不匹配签名。
 v4.3 签名覆盖注：知识点条目号改半角「N.」（总账E），不以全角「．」入 SIG——顶格性由 \tiaomu
 行首 \noindent 机制保证；全角「N．」仅存检测题号（postproc \heihao），照常入 (c)。
-预期（v4.3 复核）：图 6（4 并排 side 0.56＋2 居中 60mm／34mm）、【答案】行 14。表线总数随分页漂移，不硬编码。"""
+v4.4 签名适配（执行轮）：【答案】/【解析】→半角 [答案]/[解析] 入 SIG（拍板2 半角[]标签制）；
+子项号（N）转半角 (N) 后以 \(N 入 SIG（判断题全品式序号）；图构成＝5 并排 side 0.56（v4.4⑩ side×5）
+＋1 居中 60mm＝6 张（总数不变，n_fig==6 维持）；【答案】行 14 维持（n_ans 计 [答案]）。
+预期（v4.4 复核）：图 6（5 并排 side 0.56＋1 居中 60mm）、[答案] 行 14。表线总数随分页漂移，不硬编码。"""
 import os
 import re
 import pymupdf
@@ -53,7 +56,7 @@ if bad_body or bad_blk:
 
 # ---- (c)(d)(e) pdf ----
 SIG = re.compile(
-    r'^(\d+．|【答案】|【解析】|【诊断分析】|【素养小结】|【学习目标】|[A-D]．|[①②③④⑤⑥⑦⑧⑨]|◆|（\d+)')
+    r'^(\d+．|\[答案\]|\[解析\]|【诊断分析】|【素养小结】|【学习目标】|[A-D]．|[①②③④⑤⑥⑦⑧⑨]|◆|（\d+|\(\d+)')
 
 def ink_left(page, y0, y1, cl, dpi=300):
     """竖带 [cl−3, cl+7] × [y0−0.5, y1+0.5] 内最左墨迹像素 x（pt），无墨返回 1e9。"""
@@ -95,7 +98,7 @@ for pno, page in enumerate(doc, 1):
                and o[1].x1 <= r.x0 + 1.0 for o in lines):     # 左侧有文本＝行中元素
             continue
         n_sig += 1
-        if t.startswith('【答案】'):
+        if t.startswith('[答案]'):
             n_ans += 1
         cl = cl0
         ref = r.x0 if cl - 0.5 <= r.x0 else None
@@ -131,7 +134,7 @@ for pno, page in enumerate(doc, 1):
                 n_viol_e += 1
                 print(f'   (e)违规图 x0={r.x0:.2f} x1={r.x1:.2f} 栏带=[{cl:.2f},{cl + COLW:.2f}] p{pno} y={r.y0:.1f}')
 
-print(f'—— 签名行 {n_sig}（其中【答案】{n_ans}；违规 {n_viol_c}）｜表线 {n_rules}（左框线 {n_leftedge}；'
+print(f'—— 签名行 {n_sig}（其中[答案]{n_ans}；违规 {n_viol_c}）｜表线 {n_rules}（左框线 {n_leftedge}；'
       f'违规 {n_viol_d}，花形豁免 {n_exempt}）｜图 {n_fig}（违规 {n_viol_e}）')
 viol = n_viol_c + n_viol_d + n_viol_e
 ok = viol == 0 and not fail and n_fig == 6 and n_ans == 14 and n_leftedge >= 6

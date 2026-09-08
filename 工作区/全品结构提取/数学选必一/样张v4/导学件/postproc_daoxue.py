@@ -10,6 +10,15 @@ v4.3 改版轮（2026-09-08 拍板落槌，逐条登记交付报告§十）：�
 题干 minipage \raggedright 松排、居中图上下间距 2.8/2.2mm；表格组（外框 0.8pt＞内线 0.4pt＋线色灰122＋首列居中
 ＋行高＝单行 7.26mm 档＋表顶前距 2.8mm）；检测题号 11.4pt \heihao；题侧→题干 1.3mm；选项行距分档（例区19pt／评价·检测21pt）；
 素养小结②③包 \kaishu；【诊断分析】说明紧缩文案（10.5pt 单行）；条目首子项（1）连排机制断言（第8步）。
+v4.4 导学件改版执行轮（2026-09-08，规格书＝派工规格书-v44执行轮.md；逐条登记交付报告§十）：
+表顶负胶撤除改正胶（0908 标定回填 1.1mm）＋表内行距 13.9pt＋表尾 \addvspace（0908 二次标定回填 2.8mm，旧 -0.8 系带底假口径误调）；
+第 6 步 \allowbreak 注入撤除；
+新增转换 pass（全角（）→半角／(~~~~)→(\kongwei)／CJK 邻空格清除／【分析】【详解】【点睛】→[ ]，
+均计数＋清后 0 断言）；题侧→\tieside 10.5pt 黑半角[]；题号数字 \textbf 加重（检测题号/例N/变式N）；
+\tjdnr 改 5 参发射（◆探究点N＋空两字＋名；RENAME 压字探六/探七去括注后缀）；探五例1 多选 \duoxuan；
+image5 居中→题侧并排（探九图归位，side×5）；side 行 raisebox 顶对齐 2.6mm＋\hspace{1.2mm}；
+居中图尾距 -1.7→-1.0mm（0908 二次标定：首轮 -0.3 实测图底→下块 3.22 出窗 0.4–2.6）；
+检测提示词 \zhuzhu→\zhushi（\zhuzhu 的 [注意] 前缀不再占用提示词位）。
 v4.1 用户过目轮（依据＝用户以全品原书 p04/p05/p06 提出的 11 条改版指令，逐条登记交付报告§八）：
 知识点区挖空印答（\kongda，原词下划线印出，仅例题/变式/检测题干保留 \kongbai）、判断题加第 4 参【解析】＋
 全品式（1）（2）序号、花形行栏内化（撤 multicols 切分，单一 multicols，花形为栏内首元素，菱形标＋栏宽灰线）、
@@ -121,20 +130,20 @@ FIG = {'sub3_B_4.png': ('center', '60mm'),   # 条目3 投影三联图：居中�
        'image2.png': ('side', ''),           # 探究点三例1（题3）题干图：minipage 并排
        'image3.png': ('side', ''),           # 探究点六例1（题6）题干图：minipage 并排
        'image4.png': ('side', ''),           # 探究点八例1（题9）题干图：minipage 并排
-       'image5.png': ('center', '34mm')}     # 探究点九例1（题10）详解内图：居中（v4.3 居中档 32.5–35.8mm，40→34）
+       'image5.png': ('side', '')}           # v4.4⑩：探究点九例1（题10）详解内图 居中→题干 minipage 并排（extract_fig 特判抽图，side×5）
 FIGRE = re.compile(r'\\includegraphics\[(width=[\d.]+in,height=[\d.]+in)(,alt=\{[^}]*\})?\]\{([^}]+)\}')
 figs_seen = []
 
 def side_row(text, tok, tag):
     r"""v4.2-A6：题干文字（左 0.56\linewidth）＋图（右 0.40\linewidth 居中）minipage 并排行（全品 p06 变式版式）。
-    返修3：\includegraphics 基线在图底缘，minipage [t] 联排按首行基线对齐 ⇒ 图底=题干首行基线、
-    图顶高出首行顶约整图高（p3 探二实测 dy=−52.2mm）。\raisebox 把基线提到图顶下 \ht\strutbox
-    （=0.7\baselineskip=12.6pt≈题干首行盒高）处，图顶≈题干首行顶（实测 |dy|≤0.3mm）。
+    v4.4⑪（图位组 TW-01 顶对齐标定）：\raisebox 改 \dimexpr-\height+2.6mm\relax[0pt][0pt]——基线提到图顶下
+    2.6mm 处且盒高深不参与行距（图顶高出题干首行顶 ≤2mm 窗，渲染断言⑥核）；\hfill→\hspace{1.2mm}——
+    盒间机械缝 1.2mm＋PNG 内留白≈3mm＝文图墨缝≈4.2mm（TW-01 文图缝 4.2mm 档，窗 4.4±1，渲染标定）。
     v4.3 图区组（总账F）：题干 minipage \raggedright 松排——撤两端对齐疏排（「在 直 三 棱 柱」字距拉开病）。"""
     figs_seen.append(('side', tok, tag))
-    return (r'\noindent\begin{minipage}[t]{0.56\linewidth}\raggedright ' + text + r'\end{minipage}\hfill'
+    return (r'\noindent\begin{minipage}[t]{0.56\linewidth}\raggedright ' + text + r'\end{minipage}\hspace{1.2mm}'
             r'\begin{minipage}[t]{0.40\linewidth}\centering'
-            r'\raisebox{\dimexpr-\height+\ht\strutbox\relax}{' + tok + r'}\end{minipage}\par')
+            r'\raisebox{\dimexpr-\height+2.6mm\relax}[0pt][0pt]{' + tok + r'}\end{minipage}\par')
 
 def reflow(blocks_in, tag):
     out = []
@@ -159,8 +168,10 @@ def reflow(blocks_in, tag):
                 # 块首必须 \par：图块被 \bindp（\noindent）接入前段时 \vspace 陷水平模式（\vadjust）失效，
                 # 0908 校准实测前距塌 0.84≈旧 0.8（ink 口径）；\par 后 \vspace 才是栏内真胶。
                 # 胶值回填（0908 渲染实测，ink 口径）：\par 结构下胶 2.8/2.2 出墨 3.73-3.56/5.76-6.43，
-                # 结构垫高（baselineskip 系）前 +0.85／后 +3.9，回填 1.9/-1.7 → 实测 2.8/2.2±0.3 落窗
-                out.append(r'\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{' + tok + r'}\par\vspace{-1.7mm}\penalty10000')
+                # 结构垫高（baselineskip 系）前 +0.85／后 +3.9，回填 1.9/-1.7 → 实测 2.8/2.2±0.3 落窗。
+                # v4.4⑫：图尾 -1.7→-0.3mm——下邻块距改走「图底→下块顶 0.4–2.6mm」新窗（断言⑥），
+                # 0908 二次标定：-0.3 实测 3.22 出窗，回填 -1.0mm（目标中值 1.5，成因登记）。
+                out.append(r'\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{' + tok + r'}\par\vspace{-1.0mm}\penalty10000')
             last = mm.end()
         if b[last:].strip():
             out.append(b[last:].strip())
@@ -258,7 +269,10 @@ def kb(word):
     return r'\kongda{' + word + '}'
 
 TABW = ('17', '37', '25')   # v4.2-C14 起按表配宽（kbtable 第 5 参显式传入），此默认仅存档
-TABTOP = r'\vspace{-3.8mm}'   # v4.3 总账D：表顶前距 2.8mm（现值 6.6mm 的 ink 间距，负修正量按渲染实测回填）
+# v4.4①（BG-04 表顶前距 2.77mm 档）：负胶 -3.8mm 撤除改正胶——上一块段尾 \addvspace{1mm} 与
+# 行盒深构成自然缝≈0.4mm；0908 标定：2.4mm 实测 3.95/4.12 出窗（窗 2.2–3.4，断言⑦表顶），
+# 回填 1.1mm（成因登记：正胶叠加段间垫胶同向垫高，与表尾 -0.8 同因）
+TABTOP = r'\vspace{1.1mm}'
 n_tab = [0]
 def kbtable(h1, h2, h3, rows, widths, tcsep=3):
     r"""v4.2-C14：列宽内容驱动（对照全品 p04 表三列宽比 19%:41%:40%）——
@@ -267,26 +281,34 @@ def kbtable(h1, h2, h3, rows, widths, tcsep=3):
     定义列 35mm（省 2 折行行、表1 装进 p1 左栏）且名称列保 16mm（4 字名不折行）。
     v4.3 总账D：表线深灰 122（\arrayrulecolor{gray122}，表组内不泄漏）；外框 0.8pt（!{\vline width 0.8pt}
     左右框＋组内 \\arrayrulewidth 加档 \\hline 顶底线）＞内线 0.4pt；首列居中（\\centering 替 \\raggedright）；
-    行高留白＝全品单行 7.26mm 档（arraystretch 1.05＋extrarowheight 0.6mm，qp-layout 全局）；表顶前距 2.8mm（TABTOP 负修正）。"""
+    行高留白＝全品单行 7.26mm 档（arraystretch 1.05＋extrarowheight 0.6mm，qp-layout 全局）；表顶前距 TABTOP（0908 标定 1.1mm 正胶）。"""
     n_tab[0] += 1
     usable = 86.2 - 1.6 * 25.4 / 72 - 6 * tcsep * 25.4 / 72   # 框线 4×0.4pt＋tabcolsep 6×tcsep，折 mm
     head = ' & '.join(r'{\textbf{' + c + '}}' for c in (h1, h2, h3))
+    # v4.4②（BG-02/03 表内行距）：列前导 \fontsize{10.5pt}{13.9pt}\selectfont——表内行距 13.9pt
+    # （单元格行高 7.26mm 档的内行距落点），三列 >{} 前导统一注入（ braces 由 array >{} 隐式组承担，
+    # 前导内不得再手写裸 {——0908 首轮编译 19 错即 此因，登记）；表尾 \addvspace{2.8mm}
+    # ＝表底→下块顶 3.91mm 档（断言⑦表底缝）。0908 二次标定：-0.8mm 时物理缝（线墨底→下块墨带顶）
+    # 实测仅 0.28mm（p1 表→【诊断分析】探针）——旧 +2.7/-0.8 两轮读数 6.96/7.81/11.37 全系断言
+    # 「取下带底」假口径（多含一整行行高 ≈3.7mm），断言已改取带顶；按 Δ线性回填 2.8mm（0.28+3.6=3.88）
+    fs_lead = r'\fontsize{10.5pt}{13.9pt}\selectfont'
     lines = ['{\\setlength{\\tabcolsep}{' + str(tcsep) + 'pt}\\arrayrulecolor{gray122}',
              TABTOP,
-             r'\noindent\begin{tabular}{!{\vline width 0.8pt}>{\centering\arraybackslash}p{' + widths[0] +
-             r'mm}!{\vline width 0.4pt}>{\raggedright\arraybackslash}p{' + widths[1] +
-             r'mm}!{\vline width 0.4pt}>{\raggedright\arraybackslash}p{' + widths[2] + r'mm}!{\vline width 0.8pt}}',
+             r'\noindent\begin{tabular}{!{\vline width 0.8pt}>{' + fs_lead + r'\centering\arraybackslash}p{' + widths[0] +
+             r'mm}!{\vline width 0.4pt}>{' + fs_lead + r'\raggedright\arraybackslash}p{' + widths[1] +
+             r'mm}!{\vline width 0.4pt}>{' + fs_lead + r'\raggedright\arraybackslash}p{' + widths[2] + r'mm}!{\vline width 0.8pt}}',
              r'\thickhline', head + r' \\', r'\hline']
     for j, r in enumerate(rows):
         lines.append(' & '.join(r) + (r' \\ \hline' if j < len(rows) - 1 else r' \\'))
     lines.append(r'\thickhline')
-    lines.append(r'\end{tabular}\par')
+    lines.append(r'\end{tabular}\par\addvspace{2.8mm}')
     lines.append('}')
     body.append('\n'.join(lines))
     log(f'4b. 三列挖空表 #{n_tab[0]}：白底黑体表头＋外框 0.8pt＞内线 0.4pt＋线色灰122（总账D）＋首列居中＋'
-        f'行高＝单行 7.26mm 档（arraystretch 1.05＋extrarowheight 0.6mm），列宽内容驱动 {"/".join(widths)}mm＋'
+        f'行高＝单行 7.26mm 档（arraystretch 1.05＋extrarowheight 0.6mm）＋表内行距 13.9pt（v4.4② 列前导），列宽内容驱动 {"/".join(widths)}mm＋'
         f'tabcolsep {tcsep}pt（三列和 {sum(int(x) for x in widths)}mm≤{usable:.1f}mm 门），'
-        f'{len(rows)} 行（cells 选编自源讲部表，挖空印答见 #4 登记），表顶前距 2.8mm（TABTOP）')
+        f'{len(rows)} 行（cells 选编自源讲部表，挖空印答见 #4 登记），表顶前距 1.1mm 正胶（v4.4① 0908 标定回填，目标墨隙 2.77）、'
+        f'表尾 \\addvspace{{2.8mm}}（v4.4② 0908 二次标定回填，表底→下块 3.91 档，旧负胶系假口径误调）')
 
 # ---- 5. 组装正文 ----
 body = []
@@ -393,6 +415,9 @@ em(r'\tiaomu{1}{夹角：已知两个非零向量 \(\overrightarrow{a},\overrigh
    r'当 \(\langle\overrightarrow{a},\overrightarrow{b}\rangle=\frac{\pi}{2}\) 时，称 \(\overrightarrow{a}\) 与 \(\overrightarrow{b}\)' +
    kb('互相垂直') + r'，记作 \(\overrightarrow{a}\perp\overrightarrow{b}\)．\zhuzhu{' + entries[6]['note'] + '}}')
 weiti = next((s for s in entries[7]['blocks'] if s.startswith('【微提醒】')), '')
+# v4.4（拍板1）：剥【微提醒】前缀——\zhuzhu 宏自带 [注意] 内联前缀（半角[]），原【微提醒】字面不再排印
+if weiti.startswith('【微提醒】'):
+    weiti = weiti[len('【微提醒】'):].strip()
 em(r'\tiaomu{2}{数量积：定义 \(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)；'
    '规定' + kb('零向量') + r'与任意向量的数量积为 0．'
    r'性质：\(\overrightarrow{a}\perp\overrightarrow{b}\Leftrightarrow\overrightarrow{a}\cdot\overrightarrow{b}=0\)；'
@@ -549,21 +574,30 @@ for gi, gname in enumerate(grp_order, 1):
     gnum = int(re.match(r'1\.1\.1\.(\d+)', gname).group(1))
     kn = KN[gnum]
     d = tis[(gnum, GRP_KS[gnum][0])]   # 各组第 1 题＝X-1（组2→题1…组8→题7；组8 双题后组9→题9、组10→题10）
+    # v4.4⑨（压字清单）：探究点名 RENAME——探六（源「数量积求夹角与投影（非坐标法）」）、
+    # 探七（源「数量积条件求参（夹角与垂直）」）去括注后缀（◆探究点N＋名 单行≤82mm，断言⑫）；
+    # 探八/探九（源「数量积求距离（展开法）／（折叠矩形）」）12 字后缀保留合规，不压字
+    RENAME = {6: '数量积求夹角与投影', 7: '数量积条件求参'}
+    dotname = RENAME.get(gi, gname.split(' ', 1)[1])
+    # v4.4⑦（拍板2）：例1 数字 \textbf 加重；⑧（TJ-04）：探五例1（题5 答案 AD）挂多选标记 \duoxuan
+    label = r'例\textbf{1}' + (r'\duoxuan' if gi == 5 else '')
+    tjd_args = CN[gi-1] + '}{' + dotname + '}{' + label + '}{' + d['nanidu'] + '（知识点' + kn + '）'
     stem_rest, side_tok = consume_side(d['stem'][1:], f'例{gi}')
-    if side_tok is None and gi == 2:
-        # v4.2-返修2：探究点二例1 题图并排漏改补——image1 在源题 stem 后续块（【详解】流内，居中独立行），
-        # 特判抽图与题干 minipage 并排（与探三/六/八同款：题左 0.56／图右 0.40）
-        d['xiangjie'], side_tok = extract_fig(d['xiangjie'], 'image1.png')
-        log('3-图. 探究点二例1 图 image1 详解流内居中→题干 minipage 并排（返修2：题左 0.56\\linewidth／'
-            '图右 0.40\\linewidth≈34mm，与探三/六/八同款；图在源题 stem 后续块，extract_fig 特判抽图）')
+    if side_tok is None and gi in (2, 9):
+        # v4.2-返修2＋v4.4⑩：题图在源题 stem 后续块（【详解】流内）时抽图与题干 minipage 并排——
+        # 探二抽 image1、探九抽 image5（v4.4 居中→并排归位，side×5＝探二三六八九）
+        figname = 'image1.png' if gi == 2 else 'image5.png'
+        d['xiangjie'], side_tok = extract_fig(d['xiangjie'], figname)
+        log(f'3-图. 探究点{CN[gi-1]}例1 图 {figname} 详解流内居中→题干 minipage 并排'
+            f'（{"返修2" if gi == 2 else "v4.4⑩ 归位"}：题左 0.56\\linewidth／图右 0.40\\linewidth≈34mm，与探三/六/八同款）')
     if side_tok is not None:
         # v4.2-A6：题干图 minipage 并排（全品 p06 变式版式：题左图右）——◆标签行题干位传空，题干文字入图行左栏
-        em(r'\tjdnr{' + CN[gi-1] + '｜' + gname.split(' ', 1)[1] + '}{例1}{' + d['nanidu'] + '（知识点' + kn + '）}{}')
+        em(r'\tjdnr{' + tjd_args + '}{}')
         em(side_row(d['stem'][0], side_tok, f'例{gi}'))
         log(f'3-图. 探究点{CN[gi-1]}例1 题干图→minipage 并排（左 0.56\\linewidth 题干／右 0.40\\linewidth 图≈34mm，30mm 档提档；'
-            f'图文并排全品 p06 实证：图约占栏宽 42%、文字约 55%；返修3 图盒 \\raisebox 顶对齐题干首行）')
+            f'图文并排全品 p06 实证：图约占栏宽 42%、文字约 55%；v4.4⑪ 图盒顶对齐 2.6mm＋盒间 1.2mm）')
     else:
-        em(r'\tjdnr{' + CN[gi-1] + '｜' + gname.split(' ', 1)[1] + '}{例1}{' + d['nanidu'] + '（知识点' + kn + '）}{' + d['stem'][0] + '}')
+        em(r'\tjdnr{' + tjd_args + '}{' + d['stem'][0] + '}')
     emit_blocks(reflow(stem_rest, f'例{gi}'))
     emit_blocks(reflow(d['fenxi'], f'例{gi}'))
     emit_blocks(reflow(d['xiangjie'], f'例{gi}'))
@@ -571,7 +605,7 @@ for gi, gname in enumerate(grp_order, 1):
         emit_blocks(reflow(d['dj'], f'例{gi}'))
     if gi in BIAN_COMPOSED:
         v = BIAN_COMPOSED[gi]
-        em(r'\li{变式1}{' + v['nd'] + '（知识点' + kn + '）}{}{' + v['stem'] + '}')
+        em(r'\li{变式\textbf{1}}{' + v['nd'] + '（知识点' + kn + '）}{}{' + v['stem'] + '}')
         if 'opts' in v:
             emit_blocks([v['opts']])
         em(r'\ansline{' + v['ans'] + '}')
@@ -581,7 +615,7 @@ for gi, gname in enumerate(grp_order, 1):
             + '；v4.2-D16 补【解析】简析行（8pt 黑，答案行下一行，jc 转写）')
     else:
         d8 = tis[(gnum, GRP_KS[gnum][1])]   # 组8 第 2 题＝题8（组内第 2 题按节内全局编号）
-        em(r'\li{变式1}{' + d8['nanidu'] + '（知识点' + kn + '）}{}{' + d8['stem'][0] + '}')
+        em(r'\li{变式\textbf{1}}{' + d8['nanidu'] + '（知识点' + kn + '）}{}{' + d8['stem'][0] + '}')
         emit_blocks(reflow(d8['stem'][1:], f'变式{gi}'))
         em(r'\ansline{\ansul{' + d8['ans'] + '}}')
         em(r'\jiexi{' + BIAN_JX[gi] + '}')
@@ -607,10 +641,9 @@ em(r'\vbox{')
 huaxing('课堂评价', '知识评价\\quad 素养形成')
 
 def cebiao(nd, kn):
-    # v4.2-A10：题侧 9.5pt→8pt midgray（层级＝粗黑题号＋8pt 灰括注＋10.5pt 题干）；
-    # v4.3 题侧组（条9/总账H）：题侧→题干 \hspace{1.3mm}（题号→题干隙三件套③）
-    return (r'{\fontsize{8pt}{11pt}\selectfont\color{midgray}〔' + nd + '（知识点' + kn + '）〕}'
-            r'\hspace{1.3mm}')
+    # v4.4⑤（TJ-03＋#3）：题侧〔〕→ \tieside 半角[]内联——宏自带 [] 与 10.5pt 黑宋体（拍板2 与正文完全同号），
+    # 此处只给隙距：标签→[ ] 2.7mm、]→题干 2.2mm（args 不带括号）
+    return (r'\hspace{2.7mm}\tieside{' + nd + '（知识点' + kn + '）}' + r'\hspace{2.2mm}')
 
 # v4.2-D17：课堂检测 5 题各补【解析】简析行（8pt 黑，【答案】行下一行）——亲算文字逐题转写
 DET_JX = {
@@ -624,10 +657,10 @@ for g, jx in DET_JX.items():
     COMPOSED.append(jx)
 
 # v4.2-G20：检测题号加粗（全品实证检测题号 1. 2. 3. 粗黑）＝postproc 输出 {\heiti N．}
-em(r'\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao 1．}' + cebiao('简单', '三')
+em(r'\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao \textbf{1}．}' + cebiao('简单', '三')
    + r'已知 \(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，'
      r'则 \(\overrightarrow{a}\cdot\overrightarrow{b}=\)\kongbai{}．'
-     r'{\zhuzhu{（提示：\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)）}}}')
+     r'{\zhushi{（提示：\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)）}}}')
 em(r'\ansline{\ansul{3}}')
 em(r'\jiexi{' + DET_JX[1] + '}')
 COMPOSED.append(r'（提示：\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)）')
@@ -636,7 +669,7 @@ log('5h. 检测1＝沿用 v3 已亲算（数量积定义求值，答案 3），�
 jc2_stem = (r'设 \(\overrightarrow{e_1}\)，\(\overrightarrow{e_2}\) 不共线，\(\overrightarrow{a}=2\overrightarrow{e_1}+\overrightarrow{e_2}\)，'
             r'\(\overrightarrow{b}=4\overrightarrow{e_1}+k\overrightarrow{e_2}\)，若 \(\overrightarrow{a}\parallel\overrightarrow{b}\)，则 \(k=\)（~~~~）')
 jc2_opts = r'A．\(\frac{1}{2}\)；B．\(2\)；C．\(-\frac{1}{2}\)；D．\(3\)'
-em(r'\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao 2．}' + cebiao('简单', '二') + jc2_stem + '}')
+em(r'\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao \textbf{2}．}' + cebiao('简单', '二') + jc2_stem + '}')
 emit_blocks([jc2_opts])
 em(r'\ansline{\ansul{B}}')
 em(r'\jiexi{' + DET_JX[2] + '}')
@@ -646,7 +679,7 @@ log('5h. 检测2（单选）＝本轮新命制（亲算：b=λa ⇒ 4=2λ ⇒ λ
 jc3_stem = (r'设 \(\overrightarrow{a}\)，\(\overrightarrow{b}\) 均为非零空间向量，则“\(\overrightarrow{a}\cdot\overrightarrow{b}=0\)”'
             r'是“\(\overrightarrow{a}\perp\overrightarrow{b}\)”的（~~~~）')
 jc3_opts = r'A．充分不必要条件；B．必要不充分条件；C．充要条件；D．既不充分也不必要条件'
-em(r'\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao 3．}' + cebiao('简单', '三') + jc3_stem + '}')
+em(r'\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao \textbf{3}．}' + cebiao('简单', '三') + jc3_stem + '}')
 emit_blocks([jc3_opts])
 em(r'\ansline{\ansul{C}}')
 em(r'\jiexi{' + DET_JX[3] + '}')
@@ -656,7 +689,7 @@ log('5h. 检测3（单选）＝本轮新命制（亲算：两向量均非零时 
 jc4_stem = (r'在空间四边形 \(ABCD\) 中，\(E\)，\(F\) 分别为 \(AB\)，\(CD\) 的中点，'
             r'则 \(\frac{1}{2}(\overrightarrow{AD}+\overrightarrow{BC})=\)（~~~~）')
 jc4_opts = r'A．\(2\overrightarrow{EF}\)；B．\(-\overrightarrow{EF}\)；C．\(\overrightarrow{FE}\)；D．\(\overrightarrow{EF}\)'
-em(r'\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao 4．}' + cebiao('简单', '二') + jc4_stem + '}')
+em(r'\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao \textbf{4}．}' + cebiao('简单', '二') + jc4_stem + '}')
 emit_blocks([jc4_opts])
 em(r'\ansline{\ansul{D}}')
 em(r'\jiexi{' + DET_JX[4] + '}')
@@ -665,28 +698,64 @@ log(r'5h. 检测4（单选）＝本轮新命制（亲算：\(\overrightarrow{EF}
 
 jc5_stem = (r'已知 \(|\overrightarrow{a}|=4\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=120^\circ\)，'
             r'则 \(|\overrightarrow{a}+\overrightarrow{b}|=\)\kongbai{}．'
-            r'{\zhuzhu{（提示：先算 \(\overrightarrow{a}\cdot\overrightarrow{b}\)，再对 \(|\overrightarrow{a}+\overrightarrow{b}|^2=(\overrightarrow{a}+\overrightarrow{b})^2\) 展开）}}')
-em(r'\jiance{' + r'{\fontsize{11.4pt}{14pt}\selectfont\heihao 5．}' + cebiao('简单', '三') + jc5_stem + '}' + r'{\ansul{\(\sqrt{13}\)}}')
+            r'{\zhushi{（提示：先算 \(\overrightarrow{a}\cdot\overrightarrow{b}\)，再对 \(|\overrightarrow{a}+\overrightarrow{b}|^2=(\overrightarrow{a}+\overrightarrow{b})^2\) 展开）}}')
+em(r'\jiance{' + r'{\fontsize{11.4pt}{14pt}\selectfont\heihao \textbf{5}．}' + cebiao('简单', '三') + jc5_stem + '}' + r'{\ansul{\(\sqrt{13}\)}}')
 em(r'\jiexi{' + DET_JX[5] + '}')
 em(r'}')
 COMPOSED.append(jc5_stem)
 log('5h. 检测5（填空带提示词）＝本轮新命制（亲算：a·b=12×cos120°=−6；|a+b|²=16−12+9=13，故 √13）；模长平方展开；v4.2-D17 补【解析】简析行')
-log('5h-小结. 课堂检测恒 5 题＝3 单选（检测2/3/4）＋2 填空带提示词（检测1/5），难度均〔简单〕≤例题（拍板35④）；'
-    '题侧均挂〔难度（知识点N）〕，题答紧跟（拍板12）；'
+log('5h-小结. 课堂检测恒 5 题＝3 单选（检测2/3/4）＋2 填空带提示词（检测1/5），难度均 简单 ≤例题（拍板35④）；'
+    '题侧均挂 [难度(知识点N)]（v4.4⑤ \\tieside 半角[]内联），题答紧跟（拍板12）；'
     'v4.2-⑦：花形行＋检测 5 题整体 \\vbox 装栏（防「课堂评价」标线悬空栏底——multicol 平衡断点切列无视段间 penalty，实测登记）')
 
 em(LAN_CLOSE)
 
-# ---- 6. 巨型公式断点（同 v2/v3）＋分号守恒＋控制字符扫描＋输出 ----
+# ---- 6. 巨型公式断点撤除（v4.4③）＋转换 pass（v4.4④）＋分号守恒＋控制字符扫描＋输出 ----
+# v4.4③：第 6 步两处 \allowbreak 注入（顶层 = 与 · 后）撤除——拍板3 半角窄式＋PunctStyle=plain 下
+# 断行纪律由 xeCJK 接管，注入式断点随旧「巨型公式整行」形态一并废弃；表格 cell 内显式 \allowbreak
+# （kbtable 数量积 cell 窄栏断行用）维持不动。6b 对账 _norm 已随本轮扩展规范化（见该函数注）。
 body_text = '\n\n'.join(body)
-n_ab = body_text.count(' = \\left') + body_text.count(' \\cdot \\left')
-body_text = body_text.replace(' = \\left', ' = \\allowbreak\\left')
-body_text = body_text.replace(' \\cdot \\left', ' \\cdot \\allowbreak\\left')
-log(f'6. 巨型行内公式显式断点：顶层 = 与 · 后注入 \\allowbreak ×{n_ab}（同 v2 11b，详解C 溯源链）')
+
+# ---- 6a. v4.4④ 转换 pass（顺序固定：全角括号→空位括注→CJK 邻空格→【】标签；body 域）----
+# a) 全角（）→半角（拍板3 半角窄式；断言② 全角（）零残留）；chapterhead head 行同域转换在 7 步
+n_paren = body_text.count('（') + body_text.count('）')
+body_text = body_text.replace('（', '(').replace('）', ')')
+# b) 空位括注 (~~~~)→(\kongwei)（#17 定宽 6.8mm 空档；源 4 处＋命制 4 处＝8）
+n_kw = body_text.count('(~~~~)')
+assert n_kw == 8, f'空位括注 (~~~~) 计数异常：{n_kw}/8（源漂移，人工复核）'
+body_text = body_text.replace('(~~~~)', r'(\kongwei)')
+# c) CJK 邻空格清除：邻 CJK 汉字/全角标点/引号 的半角空格——控制字词尾空格保护（\quad 素养小结 类
+#    为控制字名终止符，TeX 解析不产空格，保留形制）；断言⑨ 清后 0
+_CJK = '\u3000-\u303f\u4e00-\u9fff\uff00-\uffef\u2018\u2019\u201c\u201d'
+_n_sp = [0]
+def _cvt_sp(m):
+    s = m.group(0)
+    if s.startswith('\\'):   # 控制字＋其后空格：整体保留（空格系控制字名终止符）
+        return s
+    _n_sp[0] += 1
+    return ''
+body_text = re.sub(r'\\[a-zA-Z]+ +| +(?=[' + _CJK + r'])|(?<=[' + _CJK + r']) +', _cvt_sp, body_text)
+_sp_resid = [m.group(0) for m in re.finditer(r'\\[a-zA-Z]+ +| +(?=[' + _CJK + r'])|(?<=[' + _CJK + r']) +', body_text)
+             if not m.group(0).startswith('\\')]
+assert not _sp_resid, f'CJK 邻空格清除残留：{_sp_resid[:5]}'
+# d) 标签转换：【分析】【详解】【点睛】→[分析][详解][点睛]（[ ] 半角标签；【】仅留三件套＝\biaoqian）
+n_fx, n_xj2, n_dj2 = (body_text.count('【分析】'), body_text.count('【详解】'), body_text.count('【点睛】'))
+assert (n_fx, n_xj2, n_dj2) == (9, 9, 2), f'【】标签计数异常：分析{n_fx}/详解{n_xj2}/点睛{n_dj2}（应 9/9/2）'
+body_text = (body_text.replace('【分析】', '[分析]').replace('【详解】', '[详解]').replace('【点睛】', '[点睛]'))
+log(f'6a. v4.4④ 转换 pass：全角（）→半角 ×{n_paren}（断言② 零残留）；(~~~~)→(\\kongwei) ×{n_kw}；'
+    f'CJK 邻空格清除 ×{_n_sp[0]}（控制字词尾空格保护，清后 0 断言）；'
+    f'【分析】【详解】【点睛】→[ ] ×{n_fx + n_xj2 + n_dj2}（9/9/2）；'
+    'chapterhead head 行括号同域转换见 7 步')
 
 # ---- 6b. 分号守恒对账（拍板21；片段级，剥 \allowbreak 注入与空白差） ----
+# v4.4④：_norm 随转换 pass 同步规范化——全角（）→半角、(~~~~)→(\kongwei)、【分析】【详解】【点睛】→[ ]，
+# 两侧（源片段/body）同一映射，转换不产生伪「未排印」
 def _norm(s):
-    return re.sub(r'\s+', '', s).replace(r'\allowbreak', '')
+    s = re.sub(r'\s+', '', s).replace(r'\allowbreak', '')
+    s = s.replace('（', '(').replace('）', ')')
+    s = s.replace('(~~~~)', r'(\kongwei)')
+    s = (s.replace('【分析】', '[分析]').replace('【详解】', '[详解]').replace('【点睛】', '[点睛]'))
+    return s
 body_n = _norm(body_text)
 fh_tongshi = fh_unprint = fh_verbatim = 0
 fh_miss = []
@@ -731,19 +800,23 @@ head = [
     r'\mubiaomu{3}{掌握数量积的概念与运算律，会求夹角、投影向量，并能用数量积求距离．}',
 ]
 COMPOSED.extend(h[1:].rstrip('；') for h in head[4:])
+# v4.4④：head 行全角（）→半角（mubiaomu 括注同域转换；CJK 邻空格规则对 \quad 保护同 6a）
+n_paren_hd = sum(h.count('（') + h.count('）') for h in head)
+head = [h.replace('（', '(').replace('）', ')') for h in head]
 open(BASE + r'\chapterhead.tex', 'w', encoding='utf-8').write('\n'.join(head) + '\n')
-log('7. 章首通栏：章22（v4.1 指令7 全品式左对齐＝两枚 6.9mm 等大对角相触方块＋右下 2.3mm 小块（v4.3 总账B 复刻放大），'
-    '章名黑体左排，「第1章」改「第一章」；节/小节/课时维持居中）/节18（行高22，\\heiti 常规——v4.3 节标题撤仿粗，附则§三）'
-    '/小节15/课时14（\\heijie 3.3×；级间距 6.9/5.5/5.9/5.8mm 全品档放开，拍板7）；'
+log('7. 章首通栏：章20.67（v4.4 字号梯子，全品 22pt 墨高折算；v4.1 指令7 全品式左对齐＝两枚 6.9mm 等大对角相触方块＋右下 2.3mm 小块（v4.3 总账B 复刻放大），'
+    '章名黑体左排，「第1章」改「第一章」；节/小节/课时维持居中）/节16.88（行高22，\\heiti 常规——v4.3 节标题撤仿粗，附则§三）'
+    '/小节15.1/课时13（\\heijie 3.3×；级间距 6.9/5.5/5.9/5.8mm 全品档放开，拍板7）；'
     'v4.2-5：课时名内容式对齐全品 p04 实证＝「第1课时　空间向量的概念及线性运算」（原「空间向量及其运算」撤）；'
     'v4.3：四级标题字体＝方正黑体分档 FakeBold 字重阶梯（章4.0/小节·课时3.3，字库见 qp-fonts）；'
     '【学习目标】3 条楷体＋顶格例外（拍板6：序号半角加粗＋首行缩进2字＋悬挂8.3mm＋行距17pt）；'
+    f'v4.4④：head 行全角（）→半角 ×{n_paren_hd}（转换 pass 同域）；'
     '讲练件的统计行与 T0 导航表不排入导学件（件型差异，登记）')
 
 # ---- 8. 逻辑断言自检（复测波脚本手工版的数据面） ----
 n_tj = body_text.count(r'\tjdnr{')
-n_li1 = body_text.count('{例1}')
-n_bs = body_text.count('{变式1}')
+n_li1 = body_text.count(r'{例\textbf{1}}') + body_text.count(r'{例\textbf{1}\duoxuan}')
+n_bs = body_text.count(r'{变式\textbf{1}}')
 n_ans = body_text.count(r'\ansline{') + body_text.count(r'\jiance{')
 n_star = body_text.count('典型性理由：')
 n_kd = body_text.count(r'\kongda{')
@@ -751,8 +824,11 @@ n_kb_stem = body_text.count(r'\kongbai{}')
 n_zt = body_text.count(r'\zhenti{')
 n_jx = body_text.count(r'\jiexi{')
 n_mini = body_text.count(r'\begin{minipage}')
-n_hao_bold = len(re.findall(r'\{\\fontsize\{11\.4pt\}\{14pt\}\\selectfont\\heihao \d．\}', body_text))
+n_hao_bold = len(re.findall(r'\{\\fontsize\{11\.4pt\}\{14pt\}\\selectfont\\heihao \\textbf\{\d\}．\}', body_text))
 n_side = body_text.count(r'\begin{minipage}[t]{0.56\linewidth}')
+n_duox = body_text.count(r'\duoxuan')
+n_kw2 = body_text.count(r'\kongwei')
+n_tie = body_text.count(r'\tieside{')
 xuankong = [w for w in ('见例', '如下例') if w in body_text] + \
     ([r'衔接\d'] if re.search(r'衔接\d', body_text) else [])
 cg_hits = [w for w in ('基本定理', '空间直角') if w in body_text]
@@ -763,29 +839,32 @@ cg_zuobiao = [m.group(0) for m in re.finditer(r'.{6}坐标.{6}', body_text)
 # 命中仅报告供人工复核，不阻断（合法形态在同一扫描域内无法机判，逐条登记）。
 lianpai_hits = [m.group(0)[:30] for m in re.finditer(r'\\tiaomu\{\d\}\{[^\n]*?[^\s{（]（\d）', body_text)]
 sub2_inline = [m.group(0)[:30] for m in re.finditer(r'[^\s{（]（[2-9]）', body_text)]
-log(f'8. 逻辑断言自检（数据面）：◆探究点 {n_tj}/9；例1 {n_li1}/9；变式1 {n_bs}/9；【答案】行 {n_ans}/14；'
+log(f'8. 逻辑断言自检（数据面）：◆探究点 {n_tj}/9；例1 {n_li1}/9（数字 \\textbf 加重，探五带 \\duoxuan）；变式1 {n_bs}/9；【答案】行 {n_ans}/14；'
     f'★典型性理由 {n_star}/0（v4.2-E18 撤★）；【解析】简析 \\jiexi {n_jx}/14（变式9＋检测5，D 类16/17）；'
-    f'图文并排 minipage {n_mini}（{n_side} 组题干并排，左 0.56/右 0.40）；'
+    f'图文并排 minipage {n_mini}（{n_side} 组题干并排，左 0.56/右 0.40，v4.4⑩ side×5＝探二三六八九）；'
+    f'多选标记 \\duoxuan {n_duox}/1（探五例1，题5 答案 AD）；空位 (\\kongwei) {n_kw2}/8（v4.4④ 转换 pass）；'
+    f'题侧 \\tieside {n_tie}/5（检测题侧直排；例1 题侧在 \\tjdnr 第 4 参由宏排印）；'
     f'挖空印答 \\kongda {n_kd}/20（课前预习知识点区全部空，答案逐个核对条目语义）；'
     f'题干留白 \\kongbai {n_kb_stem}（例题/变式/课堂检测，答案由【答案】/【详解】紧跟）；'
     f'判断题 \\zhenti {n_zt}/6（第 4 参【解析】由宏排印，字面在 qp-blocks）；'
-    f'检测题号 {{\\fontsize{{11.4pt}}{{14pt}}\\selectfont\\heihao N．}} {n_hao_bold}/5（G20＋v4.3 总账H）；'
-    f'条目内「文字+（N）」连排命中 {lianpai_hits or "无"}（拍板3 机制断言：首子项连排合法，命中即报人工复核）；'
+    f'检测题号 {{\\fontsize{{11.4pt}}{{14pt}}\\selectfont\\heihao \\textbf{{N}}．}} {n_hao_bold}/5（G20＋拍板2 数字加重）；'
+    f'条目内「文字+(N)」连排命中 {lianpai_hits or "无"}（拍板3 机制断言：首子项连排合法，命中即报人工复核）；'
     f'（2）起未各自成段嫌疑 {sub2_inline or "无"}（应全为 \\bindp 段首，命中即报）；'
     f'悬空引用 {xuankong or "无"}；'
     f'超纲禁词（基本定理/空间直角）{cg_hits or "无"}；'
     f'「坐标」非否定式命中 {cg_zuobiao or "无"}（命制/演示文字超纲复查＝0）')
 assert n_kd == 20 and n_zt == 6, f'v4.1 印答/解析计数异常：kongda={n_kd} zhenti={n_zt}'
-assert n_star == 0 and n_jx == 14 and n_side == 4 and n_hao_bold == 5, \
-    f'v4.2 撤★/解析/并排/题号加粗计数异常：star={n_star} jiexi={n_jx} side={n_side} haobold={n_hao_bold}（返修2 后并排 4 组）'
+assert n_star == 0 and n_jx == 14 and n_side == 5 and n_hao_bold == 5 and n_duox == 1 and n_kw2 == 8, \
+    f'v4.2-v4.4 计数异常：star={n_star} jiexi={n_jx} side={n_side}（⑩ side×5）haobold={n_hao_bold} duoxuan={n_duox} kongwei={n_kw2}'
 log('8b. 命制对账：本轮新命制 14（变式 8＋检测 4＋诊断 2）≤上限 15，逐题亲算（见 5g/5h 各条）；'
     '沿用 v3 已亲算 5（检测1＋诊断块①2 道＋块②③第 1 道），逐条登记；'
     '变式六策覆盖：逆向化/概念辨析化/换载体/换设问/换数值/换条件')
-log('8c. v4.3 图定性处置台账（全件 6 图）：sub3_B_4＝条目3 投影三联图 45→60mm 居中提档（图区组，条5）；'
-    'image1（探究点二例1 详解内）＝题干 minipage 并排（返修2，与探三/六/八同款）；'
-    'image5（探究点九例1 详解内）＝居中独立行 40→34mm（v4.3 居中档 32.5–35.8mm，总账F）；'
+log('8c. v4.4 图定性处置台账（全件 6 图）：sub3_B_4＝条目3 投影三联图 60mm 居中（图区组，条5；'
+    '居中前距 1.9mm/尾距 -1.0mm（0908 标定回填），v4.4⑫ 下距窗 0.4–2.6）；'
+    'image1（探究点二例1 详解内）＝题干 minipage 并排（返修2）；'
+    'image5（探究点九例1 详解内）＝题干 minipage 并排（v4.4⑩ 居中撤、extract_fig 特判抽图——居中档独立行撤，side×5）；'
     'image2（探究点三例1 题干图）／image3（探究点六例1 题干图）／image4（探究点八例1 题干图）＝题干 minipage 并排 '
-    '（左 0.56\\linewidth 题干文字\\raggedright 松排／右 0.40\\linewidth 图≈34mm，全品 p06 变式版式实证）；'
-    '居中图上下间距 2.8/2.2mm（总账F）')
+    '（左 0.56\\linewidth 题干文字\\raggedright 松排／右 0.40\\linewidth 图≈34mm，全品 p06 变式版式实证；'
+    'v4.4⑪ 图盒 raisebox 顶对齐 -\\height+2.6mm[0pt][0pt]＋盒间 \\hspace{1.2mm}，顶悬空≤2mm／横缝 4.4±1 渲染标定）')
 open(BASE + r'\postproc_daoxue_log.txt', 'w', encoding='utf-8').write('\n'.join(LOG))
 print('\n'.join(LOG))

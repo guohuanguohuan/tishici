@@ -19,8 +19,12 @@
 \setCJKmainfont[
   Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,
   BoldFont=FZHei-B01S.ttf]{FZShuSong-Z01S.ttf}
-\setCJKfamilyfont{hei}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/]{FZHei-B01S.ttf}
+% v4.4：hei 族补 BoldFont=self——\textbf（题号数字加重，拍板2）在 \heihao 组内对全角「．」走 series=bf，
+% 无 BoldFont 声明会回落警告；数字本体走主字体 Times Bold（ BoldFace 自动档），「．」维持 2.0× FakeBold。
+\setCJKfamilyfont{hei}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,BoldFont=FZHei-B01S.ttf]{FZHei-B01S.ttf}
 \setCJKfamilyfont{kai}{KaiTi}
+% v4.4 拍板4a：仿宋面（说明行→仿宋，全品大题说明行 FZFSK 同位）；系统目录字体按字体名挂载（KaiTi 同例）
+\setCJKfamilyfont{fangsong}{FangSong}
 % ---- 字重阶梯族（同文件同字库，仅 FakeBold 分档） ----
 \setCJKfamilyfont{heizhang}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeBold=4.0]{FZHei-B01S.ttf}
 \setCJKfamilyfont{heijie}[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,FakeBold=3.3]{FZHei-B01S.ttf}
@@ -39,5 +43,8 @@
 \newcommand{\heibian}{\CJKfamily{heibian}}
 \newcommand{\huabf}{\CJKfamily{huabf}}
 \newcommand{\kaishu}{\CJKfamily{kai}}
+\newcommand{\fangsong}{\CJKfamily{fangsong}}% v4.4 拍板4a：仿宋访问宏（\zhenhead 说明行用；漏挂 0908 首轮补）
 \xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
-\xeCJKsetup{CheckSingle=true}
+% v4.4（#21 标点收紧）：PunctStyle=plain——全角标点不悬挂不挤压，行尾标点禁出栏、行首禁标点；
+%   半角括号/半角标点转换在 postproc_daoxue.py 文本 pass 完成，此处只管断行纪律。
+\xeCJKsetup{CheckSingle=true,PunctStyle=plain}
