@@ -1,0 +1,72 @@
+[
+ {
+  "name": "image1.png",
+  "mode": "RGBA",
+  "px": [
+   839,
+   1345
+  ],
+  "white_l": 2.49,
+  "white_t": 3.79,
+  "white_r": 3.43,
+  "white_b": 3.63,
+  "ink_w_mm": 27.2,
+  "ink_h_mm": 45.67
+ },
+ {
+  "name": "image2.png",
+  "mode": "RGBA",
+  "px": [
+   764,
+   764
+  ],
+  "white_l": 0.39,
+  "white_t": 0.35,
+  "white_r": 0.35,
+  "white_b": 0.35,
+  "ink_w_mm": 32.38,
+  "ink_h_mm": 32.43
+ },
+ {
+  "name": "image3.png",
+  "mode": "RGBA",
+  "px": [
+   521,
+   496
+  ],
+  "white_l": 0.51,
+  "white_t": 0.51,
+  "white_r": 0.95,
+  "white_b": 0.64,
+  "ink_w_mm": 31.66,
+  "ink_h_mm": 30.39
+ },
+ {
+  "name": "image4.png",
+  "mode": "RGB",
+  "px": [
+   788,
+   424
+  ],
+  "white_l": 0.5,
+  "white_t": 0.88,
+  "white_r": 1.98,
+  "white_b": 0.84,
+  "ink_w_mm": 30.64,
+  "ink_h_mm": 16.1
+ },
+ {
+  "name": "image5.png",
+  "mode": "RGBA",
+  "px": [
+   1798,
+   1350
+  ],
+  "white_l": 0.02,
+  "white_t": 0.52,
+  "white_r": 0.0,
+  "white_b": 0.94,
+  "ink_w_mm": 33.1,
+  "ink_h_mm": 23.41
+ }
+]

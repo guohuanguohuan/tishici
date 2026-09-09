@@ -1,0 +1,74 @@
+[
+ {
+  "label": "正文·p1条目3  0∥a",
+  "page": 1,
+  "class": "body",
+  "sym": "∥",
+  "gapL_mm": 1.037,
+  "gapR_mm": 1.058,
+  "sym_ink_mm": 2.921
+ },
+ {
+  "label": "正文·p2条目2  a∥b",
+  "page": 2,
+  "class": "body",
+  "sym": "∥",
+  "gapL_mm": 1.799,
+  "gapR_mm": 2.095,
+  "sym_ink_mm": 2.9
+ },
+ {
+  "label": "正文·p2条目2  a=λb",
+  "page": 2,
+  "class": "body",
+  "sym": "=",
+  "gapL_mm": 2.053,
+  "gapR_mm": 4.868,
+  "sym_ink_mm": 1.778
+ },
+ {
+  "label": "正文·p2判断(2)解析 a=λb",
+  "page": 2,
+  "class": "body",
+  "sym": "=",
+  "gapL_mm": 0.868,
+  "gapR_mm": 1.566,
+  "sym_ink_mm": 1.778
+ },
+ {
+  "label": "表格·p1特殊向量表 a∥b",
+  "page": 1,
+  "class": "table",
+  "sym": "∥",
+  "gapL_mm": 0.614,
+  "gapR_mm": 0.931,
+  "sym_ink_mm": 3.027
+ },
+ {
+  "label": "表格·p1特殊向量表 a=b",
+  "page": 1,
+  "class": "table",
+  "sym": "=",
+  "gapL_mm": 0.91,
+  "gapR_mm": 1.228,
+  "sym_ink_mm": 1.841
+ },
+ {
+  "label": "表格·p2运算律表 a∥b",
+  "page": 2,
+  "class": "table",
+  "sym": "∥",
+  "gapL_mm": 0.635,
+  "gapR_mm": 0.931,
+  "sym_ink_mm": 3.027
+ },
+ {
+  "label": "表格·p2运算律表 a=λb",
+  "page": 2,
+  "class": "table",
+  "sym": "=",
+  "gapL_mm": 0.91,
+  "gapR_mm": 1.609,
+  "sym_ink_mm": 1.841
+ }
+]

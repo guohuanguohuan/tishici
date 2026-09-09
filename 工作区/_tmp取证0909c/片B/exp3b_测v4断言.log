@@ -1,0 +1,8 @@
+C:\提示词\工作区\字替对照-0909\variantF\_测v4断言.py:718: SyntaxWarning: invalid escape sequence '\m'
+  reg('N1 口径（0909 R2 新形二次标定）', '判断答案 (\makebox[1.8em]{答案}) 右挂＋尾 \\hspace{0.56mm}——'
+       末页 p7 左86%/右0%——课堂评价收尾页实测登记（参差收尾＝拍板23）
+Traceback (most recent call last):
+  File "C:\提示词\工作区\字替对照-0909\variantF\_测v4断言.py", line 1328, in <module>
+    split_detail.append(f'p{pno}c{ci} pitch{pitch:.2f} 墨隙{gap:.2f}')
+                                                           ^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__

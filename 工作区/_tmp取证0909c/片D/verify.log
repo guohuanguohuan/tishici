@@ -1,0 +1,13 @@
+==== 我方（360dpi 主口径；字0=变 字1=式 字2=1） ====
+  改前 变: 360dpi mode=4.0px int=3.86px (0.272mm=0.0642em) dens=0.318 min=0.0 n=9 | 600dpi int=6.18px(→360口径3.71px)
+  改前 式: 360dpi mode=4.0px int=3.85px (0.271mm=0.0640em) dens=0.252 min=0.0 n=8 | 600dpi int=6.40px(→360口径3.84px)
+  改前 1: 360dpi mode=4.0px int=4.21px (0.297mm=0.0700em) dens=0.351 min=0.0 n=5 | 600dpi int=7.00px(→360口径4.20px)
+  改后 变: 360dpi mode=8.0px int=7.08px (0.499mm=0.1177em) dens=0.527 min=0.0 n=9 | 600dpi int=11.78px(→360口径7.07px)
+  改后 式: 360dpi mode=5.0px int=4.39px (0.310mm=0.0730em) dens=0.291 min=0.0 n=8 | 600dpi int=7.29px(→360口径4.37px)
+  改后 1: 360dpi mode=5.0px int=4.86px (0.343mm=0.0808em) dens=0.420 min=0.0 n=5 | 600dpi int=8.10px(→360口径4.86px)
+==== 全品 p06（360dpi 原生，同法；p06 标签为「变式」＋后随如/（1），无粘连数字——只列变/式） ====
+  qp_左 变: mode=8px int=8.73px (0.616mm=0.1451em) dens=0.698 min=0
+  qp_左 式: mode=4px int=4.50px (0.318mm=0.0748em) dens=0.304 min=0
+  qp_右 变: mode=9px int=9.34px (0.659mm=0.1553em) dens=0.713 min=0
+  qp_右 式: mode=4px int=4.51px (0.318mm=0.0750em) dens=0.297 min=0
+saved verify_result.json

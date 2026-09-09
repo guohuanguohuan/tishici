@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{array}
+\begin{document}
+\setlength{\extrarowheight}{2.6mm}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\noindent X\par
+\noindent\begin{tabular}{|m{30mm}|m{30mm}|}\hline
+A1 & B1 \\hline
+\noalign{\global\extrarowheight=0.4mm}
+A2 & B2 \\hline
+\noalign{\global\extrarowheight=2.6mm}
+A3 & B3 \\hline
+A4 line one long text that wraps here & B4 \\hline
+\end{tabular}
+\par Y\par
+\end{document}

@@ -1,0 +1,78 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  9 SEP 2026 20:57
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**_test_noalign.tex
+(./_test_noalign.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\c )
+Output written on _test_noalign.pdf (1 page).
+Transcript written on _test_noalign.log.
+80
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen150
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2026/02/24 v2.7b Tabular extension package (FMi)
+\col@sep=\dimen151
+\ar@mcellbox=\box53
+\extrarowheight=\dimen152
+\NC@list=\toks17
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box54
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-xetex.def
+File: l3backend-xetex.def 2026-08-10 L3 backend support: XeTeX
+\g__graphics_track_int=\count281
+\g__pdfannot_backend_int=\count282
+\g__pdfannot_backend_link_int=\count283
+) (./_test_noalign.aux)
+\openout1 = `_test_noalign.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+ [1
+
+] (./_test_noalign.aux)
+ ***********
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 536 strings out of 469768
+ 10415 string characters out of 5466040
+ 429451 words of memory out of 5000000
+ 29623 multiletter control sequences out of 15000+600000
+ 627729 words of font info for 41 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 35i,7n,38p,160b,124s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on _test_noalign.pdf (1 page).

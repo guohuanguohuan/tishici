@@ -1,0 +1,14 @@
+{\setlength{\tabcolsep}{2pt}\arrayrulecolor{gray122}
+\vspace{2.55mm}
+\noindent\begin{tabular}{!{\vline width 0.8pt}>{\fontsize{10.5pt}{13.9pt}\selectfont\centering\arraybackslash}m{16mm}!{\vline width 0.4pt}>{\fontsize{10.5pt}{13.9pt}\selectfont}m{35mm}!{\vline width 0.4pt}>{\fontsize{10.5pt}{13.9pt}\selectfont}m{26.7mm}!{\vline width 0.8pt}}
+\thickhline
+\makebox[\linewidth]{\textbf{名称}} & \makebox[\linewidth]{\textbf{定义}} & \makebox[\linewidth]{\textbf{表示}} \\[0.45mm]
+\hline
+零向量&长度为\kongda{0}的向量叫做零向量&记作\kongda{0} \\[2.65mm] \hline
+单位向量&模等于\kongda{1}的向量&用\(e\)表示，\(|e|=1\) \\[2.65mm] \hline
+相反向量&与\(\overrightarrow{a}\)长度相同而方向\kongda{相反}的向量&记作\(-\overrightarrow{a}\) \\[2.65mm] \hline
+共线向量或平行向量&表示若干空间向量的有向线段所在的直线\kongda{互相平行}或\kongda{重合} &记作\(\overrightarrow{a}\parallel\overrightarrow{b}\) \\[2.65mm] \hline
+相等向量&方向相同且\kongda{模相等}的向量&记作\(\overrightarrow{a}=\overrightarrow{b}\) \\[2.65mm]
+\thickhline
+\end{tabular}\par\addvspace{2.8mm}
+}

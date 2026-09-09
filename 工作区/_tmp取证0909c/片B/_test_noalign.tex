@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage{array}
+\makeatletter
+\newcommand{\tabstrutht}[1]{\global\ht\@arstrutbox=#1\relax}
+\makeatother
+\begin{document}
+\setlength{\extrarowheight}{1.5mm}
+\begin{tabular}{|m{30mm}|}\hline
+A1 one line \\\noalign{\tabstrutht{0.01mm}}\hline
+B2 one line \\\noalign{\tabstrutht{20mm}}\hline
+C3 one line \\\noalign{\tabstrutht{4.02mm}}\hline
+D4 one line \\\hline
+\end{tabular}
+\end{document}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  9 SEP 2026 16:50
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  9 SEP 2026 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -382,6 +382,17 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
+(fontspec)             Font family 'FY-w450BEVL100.ttf(0)' created for font
+(fontspec)             'FY-w450BEVL100.ttf' with options [Path=fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w450BEVL100.ttf]/OT:script=latn;language=dflt;"
+
+
+Package fontspec Info: 
 (fontspec)             Font family 'NSC-w850.ttf(0)' created for font
 (fontspec)             'NSC-w850.ttf' with options
 (fontspec)             [Path=fonts/,Height=0.905,Depth=0.212].
@@ -541,13 +552,13 @@ Package fontspec Info:
 (fontspec)             <9.1692519->"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 21.
+(Font)              `operators' in the math version `normal' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/texgyretermes-math.otf(1)/m/n on input line 21.
+(Font)                  OT1/cmr/m/n --> TU/texgyretermes-math.otf(1)/m/n on input line 24.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 21.
+(Font)              `operators' in the math version `bold' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/texgyretermes-math.otf(1)/b/n on input line 21.
+(Font)                  OT1/cmr/bx/n --> TU/texgyretermes-math.otf(1)/b/n on input line 24.
 
 Package fontspec Info: 
 (fontspec)             texgyretermes-math scale = 1.0001.
@@ -587,13 +598,13 @@ Package fontspec Info:
 (fontspec)             <9.1692519->s*[1.0001]"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>s*[1.0001]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>s*[1.0001]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 21.
+(Font)              `symbols' in the math version `normal' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/texgyretermes-math.otf(2)/m/n on input line 21.
+(Font)                  OMS/cmsy/m/n --> TU/texgyretermes-math.otf(2)/m/n on input line 24.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 21.
+(Font)              `symbols' in the math version `bold' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/texgyretermes-math.otf(2)/b/n on input line 21.
+(Font)                  OMS/cmsy/b/n --> TU/texgyretermes-math.otf(2)/b/n on input line 24.
 
 Package fontspec Info: 
 (fontspec)             texgyretermes-math scale = 0.9999.
@@ -627,13 +638,13 @@ Package fontspec Info:
 (fontspec)             <9.1692519->s*[0.9999]"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>s*[0.9999]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>s*[0.9999]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 21.
+(Font)              `largesymbols' in the math version `normal' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/m/n on input line 21.
+(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/m/n on input line 24.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 21.
+(Font)              `largesymbols' in the math version `bold' on input line 24.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/b/n on input line 21.
+(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/b/n on input line 24.
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -767,7 +778,10 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \colbreak@box=\box110
 \mc@col@check@num=\count348
 \g__mc_curr_col_int=\count349
-)) (./qp-parts.tex) (./qp-headfoot.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+)
+\rowmax=\count350
+\celllines=\count351
+) (./qp-parts.tex) (./qp-headfoot.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip77
 \f@nch@offset@elh=\skip78
@@ -816,14 +830,14 @@ Package: pgfsys 2026-08-01 v3.1.12 (3.1.12)
 \pgf@yd=\dimen293
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count350
-\c@pgf@countb=\count351
-\c@pgf@countc=\count352
-\c@pgf@countd=\count353
+\c@pgf@counta=\count352
+\c@pgf@countb=\count353
+\c@pgf@countc=\count354
+\c@pgf@countd=\count355
 \t@pgf@toka=\toks30
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count354
+\pgf@sys@id@count=\count356
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2026-08-01 v3.1.12 (3.1.12)
 )
@@ -835,24 +849,24 @@ File: pgfsys-dvipdfmx.def 2026-08-01 v3.1.12 (3.1.12)
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2026-08-01 v3.1.12 (3.1.12)
 )
-\pgfsys@objnum=\count355
+\pgfsys@objnum=\count357
 ))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2026-08-01 v3.1.12 (3.1.12)
-\pgfsyssoftpath@smallbuffer@items=\count356
-\pgfsyssoftpath@bigbuffer@items=\count357
+\pgfsyssoftpath@smallbuffer@items=\count358
+\pgfsyssoftpath@bigbuffer@items=\count359
 ) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2026-08-01 v3.1.12 (3.1.12)
 )) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2026-08-01 v3.1.12 (3.1.12)
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen294
-\pgfmath@count=\count358
+\pgfmath@count=\count360
 \pgfmath@box=\box112
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
 \pgfmath@stack@operation=\toks35
 ) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count359
+\c@pgfmathroundto@lastzeros=\count361
 )) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@picminx=\dimen295
@@ -882,7 +896,7 @@ File: pgfcorescopes.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgfpic=\box113
 \pgf@hbox=\box114
 \pgf@layerbox@main=\box115
-\pgf@picture@serial@count=\count360
+\pgf@picture@serial@count=\count362
 ) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgflinewidth=\dimen313
@@ -903,8 +917,8 @@ File: pgfcorearrows.code.tex 2026-08-01 v3.1.12 (3.1.12)
 ) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \pgf@max=\dimen318
-\pgf@sys@shading@range@num=\count361
-\pgf@shadingcount=\count362
+\pgf@sys@shading@range@num=\count363
+\pgf@shadingcount=\count364
 ) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2026-08-01 v3.1.12 (3.1.12)
 ) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -939,7 +953,7 @@ Package: pgffor 2026-08-01 v3.1.12 (3.1.12)
 Package: tikz 2026-08-01 v3.1.12 (3.1.12)
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2026-08-01 v3.1.12 (3.1.12)
-\pgf@plot@mark@count=\count363
+\pgf@plot@mark@count=\count365
 \pgfplotmarksize=\dimen323
 )
 \tikz@lastx=\dimen324
@@ -954,17 +968,17 @@ File: pgflibraryplothandlers.code.tex 2026-08-01 v3.1.12 (3.1.12)
 \tikz@figbox@bg=\box119
 \tikz@tempbox=\box120
 \tikz@tempbox@bg=\box121
-\tikztreelevel=\count364
-\tikznumberofchildren=\count365
-\tikznumberofcurrentchild=\count366
-\tikz@fig@count=\count367
+\tikztreelevel=\count366
+\tikznumberofchildren=\count367
+\tikznumberofcurrentchild=\count368
+\tikz@fig@count=\count369
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2026-08-01 v3.1.12 (3.1.12)
-\pgfmatrixcurrentrow=\count368
-\pgfmatrixcurrentcolumn=\count369
-\pgf@matrix@numberofcolumns=\count370
+\pgfmatrixcurrentrow=\count370
+\pgfmatrixcurrentcolumn=\count371
+\pgf@matrix@numberofcolumns=\count372
 )
-\tikz@expandcount=\count371
+\tikz@expandcount=\count373
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2026-08-01 v3.1.12 (3.1.12)
 ))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
@@ -1157,6 +1171,11 @@ LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.24944pt on input line 23.
 
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 用 $[]$ 表 示，|
+ []
+
+
 Package fontspec Info: 
 (fontspec)             Font family 'FZFSK.TTF(1)' created for font 'FZFSK.TTF'
 (fontspec)             with options [Script={CJK},Path={fonts/}].
@@ -1177,12 +1196,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--40
 \TU/NSC-w850.ttf(0)/m/n/10.09 1. \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 加 法 可 按 $[]$ 法 则 或 $[]$ 法 则 作
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
+\TU/NSC-w850.ttf(0)/m/n/10.09 2. \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 共 线 的 充 要 条 件：|  对 任 意 两 个 空 间 向 量
+ []
+
 [1
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\TU/NSC-w850.ttf(0)/m/n/10.09 2. \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 数 量 积：|  定 义 $[] [] [] [] [][][][][][] [][][][] [][]$；|  规 定
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 与 任 意 向 量 的 数 量 积 为 \TU/TimesNewRoman(0)/m/n/10.09 0\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ．|  性 质：|
+ []
+
 File: media/media/sub3_B_4.png Graphic file (type bmp)
 <media/media/sub3_B_4.png>
- [2]
+
+Underfull \hbox (badness 6592) in paragraph at lines 100--100
+\TU/TimesNewRoman(0)/m/n/10.09 (1) \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 若 $[] [] [][] [] [][]$\TU/TimesNewRoman(0)/m/n/10.09 ($[]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，| $[]$ 不 共 线\TU/TimesNewRoman(0)/m/n/10.09 )\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，|  则$[]$，| $[]$，| $[]$ 共
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+\TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 解 析\TU/TimesNewRoman(0)/m/n/10.09 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 数 量 积 大 于 \TU/TimesNewRoman(0)/m/n/10.09 0 \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 仅 保 证 $[] [] [] []$，|  夹 角
+ []
+
+
+Underfull \hbox (badness 5161) in paragraph at lines 102--102
+[] [] [][][][] [][][][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ；| $[] [] [][]$\TU/TimesNewRoman(0)/m/n/10.09 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 同 向\TU/TimesNewRoman(0)/m/n/10.09 ) \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 时 数 量 积 也 为 正 而 非 锐
+ []
+
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1205,48 +1252,153 @@ Package fontspec Info:
 (fontspec)             <->"[fonts/FangYuanTi-w600圆-BEVL100.ttf]/OT:script=hani;language=dflt;"
 
 
-
 LaTeX Font Warning: Font shape `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n' undefined
 (Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 106.
 
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'FY-w400BEVL100'. Check the typeset output, and if it
+(fontspec)             'FY-w700BEVL100'. Check the typeset output, and if it
 (fontspec)             is okay then ignore this warning. Otherwise a different
 (fontspec)             font should be chosen.
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'FY-w400BEVL100.ttf(1)' created for font
-(fontspec)             'FY-w400BEVL100.ttf' with options
-(fontspec)             [Script={CJK},Path={fonts/},BoldFont={FY-w400BEVL100.ttf}].
+(fontspec)             Font family 'FY-w700BEVL100.ttf(0)' created for font
+(fontspec)             'FY-w700BEVL100.ttf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={FY-w700BEVL100.ttf}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[fonts/FY-w400BEVL100.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             <->"[fonts/FY-w700BEVL100.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[fonts/FY-w400BEVL100.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             <->"[fonts/FY-w700BEVL100.ttf]/OT:script=hani;language=dflt;"
 
 
-LaTeX Font Warning: Font shape `TU/FY-w400BEVL100.ttf(0)/b/n' undefined
-(Font)              using `TU/FY-w400BEVL100.ttf(0)/m/n' instead on input line 126.
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'FY-w450BEVL100'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FY-w450BEVL100.ttf(1)' created for font
+(fontspec)             'FY-w450BEVL100.ttf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={FY-w450BEVL100.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w450BEVL100.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w450BEVL100.ttf]/OT:script=hani;language=dflt;"
+
+
+LaTeX Font Warning: Font shape `TU/FY-w450BEVL100.ttf(0)/b/n' undefined
+(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 126.
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 146--146
+\TU/FangYuanTi-w600圆-BEVL100.ttf(1)/m/n/12.03 例 \TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 二\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 直 三 棱 柱 $[][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--146
+[][][][][][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 中，|  若 $[] [] [][] [] [] [][] [] [] [][]$，|
+ []
 
 File: media/media/image1.png Graphic file (type bmp)
 <media/media/image1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变 \TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式 \TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 二\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 平 行 六 面 体
+ []
+
+[3]
 File: media/media/image2.png Graphic file (type bmp)
 <media/media/image2.png>
-[3]
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 若 $[] [] [][] [] [][][] [] [][]$，|  则$[] []$$[]$，|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+[]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，| $[]$ 共 面，|  则$[]$\TU/TimesNewRoman(0)/m/n/10.09 =\TU/TimesNewRoman(0)/m/it/10.09 x$[]$\TU/TimesNewRoman(0)/m/n/10.09 +\TU/TimesNewRoman(0)/m/it/10.09 y$[]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ；|  ③ 若 $[]$\TU/TimesNewRoman(0)/m/n/10.09 =\TU/TimesNewRoman(0)/m/it/10.09 x$[]$\TU/TimesNewRoman(0)/m/n/10.09 +\TU/TimesNewRoman(0)/m/it/10.09 y$[]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 对 于 \TU/TimesNewRoman(0)/m/n/10.09 C\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ：| $[][] [] [][][] [] [][][][] [] [][][] [][][][] [][][][] [] [][][][] []
+ []
+
+[4]
 File: media/media/image3.png Graphic file (type bmp)
 <media/media/image3.png>
- [4]
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 方 法 \TU/TimesNewRoman(0)/m/n/10.09 2\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ：|  先 求 $[] [] []$，|  再 利 用 公 式
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+[][][][] [][] [] []$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 求 $[][][][] [][]$，|  最 后 确
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+[] [] [] [] [][][][] [] []$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 又 因 为 $[][][] [] [][] [][][] [] []$，|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 所 以 $[][][][] [][] [] [] [] [] [] []$，| 因 为
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+[][][][][][][][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 中，| $[][] [] []$，| $[][] [] []$，| $[][][] [] []$，|  则 向 量
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+\TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 解 析\TU/TimesNewRoman(0)/m/n/10.09 ] $[] [] [] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[][] [] [][][][] [] []$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，| $[][][] [] []$，| $[][][] [] [][]$，|  故
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
+\TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变 \TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式 \TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
+\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 知 $[][][] [] [][][] [][][] [] [][] [] [] [] [] [][] [] [] [] []
+ []
+
+[5]
 File: media/media/image4.png Graphic file (type bmp)
 <media/media/image4.png>
- [5]
 File: media/media/image5.png Graphic file (type bmp)
 <media/media/image5.png>
+
+Underfull \hbox (badness 7133) in paragraph at lines 337--337
+\TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变 \TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式 \TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中 档 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 矩 形 $[][][][]$
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 337--337
+\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 折 起，|  使 二 面 角 $[] [] [][] [] []$ 的 大 小 为 $[][][]$，|
+ []
+
 
 Package fontspec Info: 
 (fontspec)             Font family 'NSC-w500.ttf(0)' created for font
@@ -1261,7 +1413,27 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
 
- [6]) [7] (./main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
+\TU/NSC-w700.ttf(0)/m/n/11.4 1\TU/NSC-w500.ttf(0)/m/n/11.4 ．|  \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 $[][][] [] []$，| $[][][] [] []$，|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
+[][][] [][] [] [][][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，|  则$[] [] [] []$$[]$．|  \TU/TimesNewRoman(0)/m/n/10.09 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 提 示：| $[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+\TU/NSC-w700.ttf(0)/m/n/11.4 5\TU/NSC-w500.ttf(0)/m/n/11.4 ．|  \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 $[][][] [] []$，| $[][][] [] []$，|
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+[][][] [][] [] [][][][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，|  则$[][] [] [][] []$$[]$．|  \TU/TimesNewRoman(0)/m/n/10.09 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 提 示：|  先 算
+ []
+
+[6]) [7] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
@@ -1272,12 +1444,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25525 strings out of 469768
- 600283 string characters out of 5466040
- 1181819 words of memory out of 5000000
- 54025 multiletter control sequences out of 15000+600000
- 633905 words of font info for 191 fonts, out of 8000000 for 9000
+ 25573 strings out of 469768
+ 601525 string characters out of 5466040
+ 1189584 words of memory out of 5000000
+ 54064 multiletter control sequences out of 15000+600000
+ 633961 words of font info for 198 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 97i,16n,110p,1193b,935s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 97i,16n,110p,1220b,935s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (7 pages).

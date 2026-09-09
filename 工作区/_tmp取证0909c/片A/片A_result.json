@@ -1,0 +1,172 @@
+[
+ {
+  "name": "image1.png",
+  "page": 3,
+  "col": "R",
+  "imgbox_mm": [
+   163.49,
+   78.54,
+   190.77,
+   124.29
+  ],
+  "ink_mm": [
+   163.69,
+   78.72,
+   190.51,
+   124.02
+  ],
+  "ink_w_mm": 26.82,
+  "ink_h_mm": 45.3,
+  "first_line": "[详解] 连接𝐶𝐴1,",
+  "first_ink_top_mm": 78.97,
+  "img_ink_top_mm": 78.72,
+  "topdiff_mm": -0.25,
+  "seam_mm": 5.37,
+  "seam_line_mm": 8.2,
+  "right_edge_mm": 1.92,
+  "per_line_mm": [
+   30.8,
+   8.2,
+   32.5
+  ],
+  "lines_n": 3
+ },
+ {
+  "name": "image2.png",
+  "page": 3,
+  "col": "R",
+  "imgbox_mm": [
+   157.61,
+   227.49,
+   190.73,
+   260.61
+  ],
+  "ink_mm": [
+   157.98,
+   227.84,
+   190.34,
+   260.24
+  ],
+  "ink_w_mm": 32.36,
+  "ink_h_mm": 32.4,
+  "first_line": "已知正方体",
+  "first_ink_top_mm": 228.09,
+  "img_ink_top_mm": 227.84,
+  "topdiff_mm": -0.25,
+  "seam_mm": 6.01,
+  "seam_line_mm": 5.96,
+  "right_edge_mm": 2.09,
+  "per_line_mm": [
+   38.92,
+   5.96,
+   5.96,
+   37.78,
+   13.12,
+   26.68,
+   48.8,
+   10.8
+  ],
+  "lines_n": 8
+ },
+ {
+  "name": "image3.png",
+  "page": 5,
+  "col": "L",
+  "imgbox_mm": [
+   66.44,
+   32.3,
+   99.57,
+   63.83
+  ],
+  "ink_mm": [
+   66.93,
+   32.82,
+   98.58,
+   63.16
+  ],
+  "ink_w_mm": 31.65,
+  "ink_h_mm": 30.34,
+  "first_line": "如图，在正方体",
+  "first_ink_top_mm": 33.08,
+  "img_ink_top_mm": 32.82,
+  "topdiff_mm": -0.25,
+  "seam_mm": 5.71,
+  "seam_line_mm": 5.27,
+  "right_edge_mm": 1.79,
+  "per_line_mm": [
+   32.28,
+   5.27,
+   6.05
+  ],
+  "lines_n": 3
+ },
+ {
+  "name": "image4.png",
+  "page": 6,
+  "col": "L",
+  "imgbox_mm": [
+   66.63,
+   31.93,
+   99.75,
+   49.75
+  ],
+  "ink_mm": [
+   67.1,
+   32.83,
+   97.74,
+   48.91
+  ],
+  "ink_w_mm": 30.64,
+  "ink_h_mm": 16.08,
+  "first_line": "如图，在大小为45° 的二面",
+  "first_ink_top_mm": 33.13,
+  "img_ink_top_mm": 32.83,
+  "topdiff_mm": -0.3,
+  "seam_mm": 7.02,
+  "seam_line_mm": 16.76,
+  "right_edge_mm": 2.64,
+  "per_line_mm": [
+   16.76,
+   17.21,
+   17.36
+  ],
+  "lines_n": 3
+ },
+ {
+  "name": "image5.png",
+  "page": 6,
+  "col": "R",
+  "imgbox_mm": [
+   159.82,
+   17.58,
+   189.82,
+   40.1
+  ],
+  "ink_mm": [
+   160.01,
+   18.05,
+   189.54,
+   39.24
+  ],
+  "ink_w_mm": 29.52,
+  "ink_h_mm": 21.19,
+  "first_line": "[详解] 过点𝐵，𝐷分别向𝐴𝐶",
+  "first_ink_top_mm": 18.35,
+  "img_ink_top_mm": 18.05,
+  "topdiff_mm": -0.3,
+  "seam_mm": 6.77,
+  "seam_line_mm": 7.83,
+  "right_edge_mm": 2.89,
+  "per_line_mm": [
+   15.91,
+   7.83,
+   10.18,
+   27.18,
+   11.12,
+   41.72,
+   58.6,
+   37.75
+  ],
+  "lines_n": 8
+ }
+]

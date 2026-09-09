@@ -16,6 +16,10 @@
 %     （t128 口径），我方 w700 0.504／w600 0.458／w500 0.426，Σ|密度差|＝0.169:0.378:0.541，
 %     w700 在 t128/155/170/185 各阈值下均残差最小（竖笔众数真迹 [6,7,7,7,7]px@t128 对 w700
 %     [8,8,8,8,8]；我方字形高 41–43px 对真迹 36–38px，密度法口径已归一）。目检板 _pB_board.png。
+% F 片D 0909c（变式标签双字重修复，意见#33）：
+%   ⑥变式标签拆双字重（全品 p06 真迹＝「变」特黑 0.145em/8.7px＋「式」中黑 0.075em/4.5px）：
+%     「变」→ FY-w700BEVL100（标定 7.08px）；「式＋数字」→ FY-w450BEVL100（标定 4.39px）；
+%     整串 w400（3.8px）退役——E 轮 4px 靶只量「式」漏「变」。取证/标定见字体挂载区注释。
 % 本版相对 v4.4 的改动（对照实验，逐条可回退）：
 %   ①字重阶梯撤「FZHei-B01S＋FakeBold 仿粗」，换思源黑体（Noto Sans SC，Adobe＋Google，SIL OFL）真字重：
 %     heizhang→Black 900（谱 4.0×）／heijie→Bold 700（3.3×）／heitiao→Bold 700（2.7×）／
@@ -51,11 +55,23 @@
 \setCJKfamilyfont{kai}[Path=fonts/]{FZKTK.TTF}
 % v4.4 拍板4a：仿宋面（说明行→仿宋，全品大题说明行 FZFSK 同位）；E 版 0909 换挂 FZFSK.TTF 原件
 \setCJKfamilyfont{fangsong}[Path=fonts/]{FZFSK.TTF}
-% F 0909 终审 P-D：判断题 √/× 字符路由仿宋——FZFSK.TTF cmap 含 U+221A/U+00D7（fontTools 实证，无回退），
-% 挂拉丁侧族发符号（\zhenhead 说明行「打√,打×」与判断答案 ×/√ 由 postproc pass 转 \gou{}/\cha{}）
+% F 0909 终审 P-D：判断题 √ 字符路由仿宋——FZFSK.TTF cmap 含 U+221A（fontTools 实证，无回退），
+% 挂拉丁侧族发符号（\zhenhead 说明行「打√」与判断答案 √ 由 postproc pass 转 \gou{}）；
+% F 片C 0909 #37（√ 漏网归位）：U+221A 原被下方 xeCJK 字符类 "2200->"22FF 收进 CJK 类，
+% \fangsonglat 对 CJK 类字符无效——书宋上下文里的 √ 落 FZSSJW（p1/p3 各 2 处）；已在字符类
+% 行后补 \xeCJKDeclareCharClass{Default}{"221A} 归拉丁类，\gou 全件落 FZFSK。
 \newfontfamily{\fangsonglat}[Path=fonts/]{FZFSK.TTF}
 \newcommand{\gou}{{\fangsonglat\symbol{"221A}}}
-\newcommand{\cha}{{\fangsonglat\symbol{"00D7}}}
+% F 片C 0909 #34（判断错号 × 自绘，拍板A）：方正全系 × 均 ~0.48em 小×（我方 FZFSK multiply
+% 墨 1.69×1.69mm vs 全品 p04 说明行真迹 2.40×2.40mm，线性 70%），换族无效——改 TikZ 自绘：
+% 45° 双线、线宽 0.4pt（0.141mm）、墨幅 2.41mm（对角 L=0.6516em＋线宽 0.0398em/√2 端帽外延），
+% 墨心置 0.239em（实测括号带中心 0.85mm），与 \parallel 同法（filled 平行四边形、baseline={(0,0)}；
+% tikz 由 qp-blocks 导言装载，故 \AtBeginDocument 落地）。\gou 保留 FZFSK radical 不动。
+\newcommand{\cha}{}% 占位；实体在 \AtBeginDocument 落 TikZ（tikz 未装载前不可用）
+\AtBeginDocument{\renewcommand{\cha}{{\begin{tikzpicture}[x=1em,y=1em,baseline={(0,0)}]
+  \fill (-0.3399,-0.0727) -- (-0.3117,-0.1009) -- (0.3399,0.5507) -- (0.3117,0.5789) -- cycle;
+  \fill (-0.3399,0.5507) -- (-0.3117,0.5789) -- (0.3399,-0.0727) -- (0.3117,-0.1009) -- cycle;
+\end{tikzpicture}}}}
 % ================= 字体挂载区（换字体＝改本区文件名） =================
 % ---- 字重阶梯族（思源黑体真字重；BoldFont=self 保组内 \bfseries 回落干净） ----
 % E 版（0909 全品笔画标定，variantE/_calib/calib_result.json，±0.5px 收敛）：
@@ -73,7 +89,8 @@
 \setCJKfamilyfont{hei}[Path=fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Medium.otf}
 % ---- E 版新族（0909 笔画标定落位） ----
 % \hejie 节标题 w315（5px@16.88，比 v4.3「节常规不加粗」更贴全品细黑）；\hekeshi 课时 w600（8px@13.0，
-% 与小节 3.3× 分档——课时实测 2.7×）；\libian 变式标签方圆 w400（4px@12.03，撤 w600 8→6px 过粗档）；
+% 与小节 3.3× 分档——课时实测 2.7×）；\libian 变式标签方圆 w400（4px@12.03）【F 片D 0909c 退役：
+% 4px 靶只量「式」漏「变」——变式标签改双字重 \libianb/\libians（见下方新族），w400 挂载保留备查】；
 % \numbold 条目号数字 w850（8px@10.09）；\numboldjian 检测题号数字 w700（F 0909 自 w500 6px 升档，
 % 同字形密度标定见文件头⑤；Height/Depth 裁齐参数不变）——
 % 数字族走 fontspec 拉丁族（NSC 实例含 ASCII 数字），绕开 xeCJK 数字路由主字体的坑。
@@ -81,6 +98,16 @@
 \setCJKfamilyfont{hekeshi}[Path=fonts/,BoldFont=NSC-w600.ttf]{NSC-w600.ttf}
 \setCJKfamilyfont{libian}[Path=fonts/,BoldFont=FY-w400BEVL100.ttf]{FY-w400BEVL100.ttf}
 \newfontfamily{\libianlat}[Path=fonts/]{FY-w400BEVL100.ttf}
+% ---- F 片D 0909c 新族（#33 变式标签双字重修复；取证＝_tmp取证0909c/C组/取证报告C组.md §意见33） ----
+% 全品 p06 真迹「变」0.145em＝8.7px（特黑，比例1 7.5px 还重）＋「式」0.075em＝4.5px（中黑）＝双字重；
+% 我方整串同挂 w400（3.8px）系 E 轮 4px 靶只量「式」、漏「变」（variantE/_calib/calibrate.py:187 硬编码 4.0）。
+% 拆双族（标定＝片D/probe.py，zoom5＝14.1732px/mm 同口径）：「变」→ \libianb 挂 FY-w700BEVL100
+% （实测 7.08px/0.118em，对全品 8.7px 差 −1.6px——VF wght 轴上限 700，与例N −1px 同容差登记）；
+% 「式＋数字」→ \libians/\libianslat 挂 FY-w450BEVL100（实测 4.39px/0.073em，贴全品 4.5px）。
+% 字体文件＝fonts/候选字体/AlimamaFangYuanTi-VF.ttf 经 fontTools varLib.instancer wght=700/450 BEVL=100 实例化。
+\setCJKfamilyfont{libianb}[Path=fonts/,BoldFont=FY-w700BEVL100.ttf]{FY-w700BEVL100.ttf}
+\setCJKfamilyfont{libians}[Path=fonts/,BoldFont=FY-w450BEVL100.ttf]{FY-w450BEVL100.ttf}
+\newfontfamily{\libianslat}[Path=fonts/]{FY-w450BEVL100.ttf}
 % 数字族 Height/Depth 按 Times New Roman hhea 口径（asc 0.905／desc 0.212em）裁齐——
 % Noto 原生 1.45em 行盒在题号 11.4/14 处会把「课堂评价」\vbox 顶溢（0909 首编 6→7 页实证），
 % 裁齐后行盒与 C 版 Times 同量级，字形渲染不受影响。
@@ -101,6 +128,9 @@
 \newcommand{\hejie}{\CJKfamily{hejie}}
 \newcommand{\hekeshi}{\CJKfamily{hekeshi}}
 \newcommand{\libian}{\CJKfamily{libian}}
+% F 片D 0909c：变式标签双字重访问宏（\liB 拆段用——「变」\libianb w700／「式N」\libians＋西文 \libianslat w450）
+\newcommand{\libianb}{\CJKfamily{libianb}}
+\newcommand{\libians}{\CJKfamily{libians}}
 \newcommand{\heitiao}{\CJKfamily{heitiao}}
 \newcommand{\heibf}{\CJKfamily{heibf}}
 \newcommand{\heihao}{\CJKfamily{heihao}}
@@ -116,6 +146,9 @@
   \fill (-0.115,-0.016) -- (-0.078,-0.016) -- (0.411,0.956) -- (0.374,0.956) -- cycle;
 \end{tikzpicture}}}}
 \xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
+% F 片C 0909 #37：U+221A（√）自 CJK 类划回 Default——否则 \fangsonglat 管不到（CJK 类字符由
+%   xeCJK 路由 CJK 族），\gou 在书宋上下文落 FZSSJW；划回后 \gou 恒走 FZFSK 拉丁族。
+\xeCJKDeclareCharClass{Default}{"221A}
 % v4.4（#21 标点收紧）：PunctStyle=plain——全角标点不悬挂不挤压，行尾标点禁出栏、行首禁标点；
 %   半角括号/半角标点转换在 postproc_daoxue.py 文本 pass 完成，此处只管断行纪律。
 \xeCJKsetup{CheckSingle=true,PunctStyle=plain}

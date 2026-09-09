@@ -1,0 +1,1 @@
+[详解]连接\(CA_{1},\)则\nobreak\(\overrightarrow{A_{1}B} = \overrightarrow{CB} - \overrightarrow{CA_{1}} = \overrightarrow{CB} - \overrightarrow{CA} - \overrightarrow{CC_{1}} =\overrightarrow{b} - \overrightarrow{a} - \overrightarrow{c}\).

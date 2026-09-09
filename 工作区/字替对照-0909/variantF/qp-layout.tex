@@ -18,6 +18,10 @@
 \usepackage{amsmath}
 \usepackage{unicode-math}
 \setmathfont{texgyretermes-math.otf}
+% F 片C 0909 #29（数学符号间距刚性化）：unicode-math 默认 \thickmuskip=5mu plus 5mu——
+%   关系符号（＝/∥ 等）两侧胶被 \emergencystretch 拉伸至自然值 2.2 倍（实测正文 1.2–2.35mm，
+%   自然 5mu＝0.99mm；表格单行格恒自然）。去 plus/minus 刚性化，正文墨隙回到 5mu 自然值。
+\thickmuskip=5mu
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{colortbl}
@@ -50,9 +54,16 @@
 \widowpenalty=10000
 \displaywidowpenalty=10000
 \tolerance=9999
-\emergencystretch=8em   % 序言预设；实际生效处在 multicols 内（multicol 进入时会重置为 8pt）
+% F 片C 0909 #29（数学符号间距刚性化）：\emergencystretch 8em→2em——8em 曾把 \thickmuskip 的
+%   plus 分量拉伸到自然值 2.2 倍（正文 =/∥ 两侧实测 1.2–2.35mm）；刚性化已由上方 \thickmuskip=5mu
+%   承担（关系胶不再受 emergencystretch 影响），本值只决定空格胶弹性。实测 0pt 出 17 处 overfull、
+%   2em 落 0（基线 8em 亦 0）——按任务书「0pt 劣于基线则回试 1–2em」取 2em；multicol 进入时按
+%   4pt×栏数重置，实际生效值在 body.tex（postproc LAN_OPEN 同步 2em）。
+\emergencystretch=2em   % 序言预设；实际生效处在 multicols 内（multicol 进入时重置为 4pt×栏数）
+% 关系号后禁断行（消灭「a=」悬行尾）：\relpenalty 100→10000；\binoppenalty 维持 100——
+%   10000 实测（纯公式段无 CJK 断点）出 9 处 overfull，且任务目标只涉关系号（+− 非关系号）。
 \binoppenalty=100
-\relpenalty=100
+\relpenalty=10000
 \flushbottom            % 对照§四-5（\raggedbottom 撤）
 \raggedcolumns          % multicol 栏末不硬拉伸（末页参差收尾，拍板23）
 \setcounter{topnumber}{4}
@@ -66,14 +77,29 @@
 %           （\arrayrulecolor 在 kbtable 表组内设，不泄漏全局）；行高留白 pad≈4.1mm/行（\extrarowheight）；
 %           tabcolsep 3pt 维持；v4.2 让位 1.05 stretch 沿用） ----------
 \setlength{\arrayrulewidth}{0.4pt}
-% v4.3 行高留白：全品单行行高 7.26mm（p14 逐线实测）——arraystretch 1.05 strut＋0.6mm。
+% v4.3 行高留白：全品单行行高 7.26mm（p14 逐线实测）——arraystretch 1.05 strut＋extrarowheight。
 % （首版误将「pad≈4.1mm/行」直译为 extrarowheight 4.1mm，实测单行 10.45 超全品 3.2mm，0908 修正）
 % v4.5-F（P-E 0909）：0.6→0.4mm＋kbtable 行尾 \\[0.45mm]——目标单行格净空 顶≈2.0/底≈2.1mm。
 % （实测：m 列墨锚数学轴，extrarowheight 只长行顶 dT/dE≈+1；底净空由行尾胶补 dB/dX＝+1，探针 pe_probe.py 两轮回填）
 % F 0909 收尾轮（V5 终验）：1.0→0.4mm——终验实测（_calib/pe_probe.py 360dpi 全格）E=1.0 时 m 格内容
 % 系统性下坠 Δ=padT−padB≈+1.2mm（E/2 下坠），多行格不居中、单行格 顶2.75-3.14/底1.90-2.28 出窗
 % （目标 2.0/2.1）；回填 0.4mm 后复测居中 ±0.3、单行格落窗（表头 8.47→7.87mm≈全品单行 7.26 档＋FakeBold 补差）
-\setlength{\extrarowheight}{0.4mm}
+% F 片B 0909 #30（意见31 甲案标定回填）：0.4→1.7mm——甲案原定 2.6mm，实测（_tabcal 标定矩阵 0909，
+% 表1/表2 真内容 600dpi ink）padT 对 E 的响应 dT/dE≈+1.09：E=2.6 时多行格顶净空 4.5mm 出窗
+% （目标 3.5±0.3）；E=1.7 时 padT 3.4–3.5 落窗、表头行高 9.18（全品 9.03）落 9.0±0.3 窗。底侧净空由
+% 行尾胶经 \tabrowglue 按行折数分档供给（见下）——E=1.7 为顶/表头双窗共解值（E≥1.8 表头出窗）。
+\setlength{\extrarowheight}{1.7mm}
+% 表行尾胶自动分档（F 片B 0909 #30）：\\[\tabrowglue]——m 列行尾胶在折数 ≥2 时被居中机制吸收，
+% 底净空需超过阈值才生效（实测阈值≈2.44mm、超过后 dB/dG≈1）；折数用 TeX 自测（\prevgraf）：
+% 每数据格首格 \rowreset 清零、格末 \marklines 记 max 行数，行尾胶按 1/2/≥3 折取 0.85/4.65/7.60mm
+% ——实测多行格行级最紧侧 顶3.1–3.5/底3.0–4.0（基线 0.9–2.2），全品 p04 多行格 3.46–4.59 档内；
+% 单行格（表2 共线行）底净空保 2.2（原 2.1/2.2 档），行高 7.82→9.58 随 E 全局垫顶（登记）。
+\newcount\rowmax
+\newcount\celllines
+\newcommand{\rowreset}{\global\rowmax=0 }
+\newcommand{\marklines}{\par\celllines=\prevgraf\relax
+  \ifnum\celllines>\rowmax \global\rowmax=\celllines \fi}
+\newcommand{\tabrowglue}{\ifnum\rowmax>2 7.60mm\else\ifnum\rowmax>1 4.65mm\else 0.85mm\fi\fi}
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.05}
 \renewcommand{\multirowsetup}{\centering}

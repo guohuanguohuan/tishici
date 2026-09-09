@@ -1,0 +1,31 @@
+\documentclass[fontset=none]{ctexart}
+\usepackage[a4paper,margin=15mm]{geometry}
+\setmainfont{Times New Roman}
+\xeCJKsetup{CheckSingle=false}
+\setCJKfamilyfont{libianb}[Path=fonts/,BoldFont=FY-w700BEVL100.ttf]{FY-w700BEVL100.ttf}
+\setCJKfamilyfont{libians}[Path=fonts/,BoldFont=FY-w450BEVL100.ttf]{FY-w450BEVL100.ttf}
+\setCJKfamilyfont{libianu}[Path=fonts/,BoldFont=FY-w500BEVL100.ttf]{FY-w500BEVL100.ttf}
+\setCJKfamilyfont{libian}[Path=fonts/,BoldFont=FY-w400BEVL100.ttf]{FY-w400BEVL100.ttf}
+\newcommand{\libianb}{\CJKfamily{libianb}}
+\newcommand{\libians}{\CJKfamily{libians}}
+\newcommand{\libianu}{\CJKfamily{libianu}}
+\newcommand{\libian}{\CJKfamily{libian}}
+\newfontfamily{\libianslat}[Path=fonts/]{FY-w450BEVL100.ttf}
+\newfontfamily{\libianulat}[Path=fonts/]{FY-w500BEVL100.ttf}
+\newfontfamily{\libianlat}[Path=fonts/]{FY-w400BEVL100.ttf}
+% 宏层拆分试验：\liBsplit 以 \liBstop 为界取首字「变」+余部「式N」
+\def\liBsplit#1#2\liBstop{{\libianb #1}{\libians\libianslat #2}}
+\newcommand{\liBt}[4]{\par\addvspace{6pt}\noindent{\fontsize{12.03pt}{15pt}\selectfont\liBsplit#1\liBstop}%
+  \hspace{2.7mm}#2\hspace{2.2mm}#3#4\par}
+\newcommand{\liBu}[4]{\par\addvspace{6pt}\noindent{\fontsize{12.03pt}{15pt}\selectfont{\libianb #1}{\libianu\libianulat #2}}%
+  \hspace{2.7mm}#3\hspace{2.2mm}#4\par}
+\newcommand{\liBw}[4]{\par\addvspace{6pt}\noindent{\fontsize{12.03pt}{15pt}\selectfont{\libian #1}{\libian\libianlat #2}}%
+  \hspace{2.7mm}#3\hspace{2.2mm}#4\par}
+\begin{document}
+\liBt{变式\textbf{1}}{简单(知识点一)}{}{探针A w700+w450 第一行}
+\liBt{变式\textbf{1}}{简单(知识点一)}{}{探针A w700+w450 第二行}
+\liBu{变}{式\textbf{1}}{简单(知识点一)}{探针B w700+w500 第一行}
+\liBu{变}{式\textbf{1}}{简单(知识点一)}{探针B w700+w500 第二行}
+\liBw{变}{式\textbf{1}}{简单(知识点一)}{探针C w400 现状参照 第一行}
+\liBw{变}{式\textbf{1}}{简单(知识点一)}{探针C w400 现状参照 第二行}
+\end{document}
