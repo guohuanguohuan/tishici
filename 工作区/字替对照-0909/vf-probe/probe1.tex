@@ -1,0 +1,11 @@
+% VF 探针 1：命名实例 Instance=Bold 是否生效
+\documentclass[fontset=none]{ctexart}
+\usepackage[a4paper,margin=12mm]{geometry}
+\setCJKmainfont{NotoSansSC-VF.ttf}[Path=C:/Windows/Fonts/,Renderer=HarfBuzz]
+\newCJKfontfamily\vfInst{NotoSansSC-VF.ttf}[Path=C:/Windows/Fonts/,Renderer=HarfBuzz,Instance=Bold]
+\begin{document}
+\fontsize{22pt}{36pt}\selectfont
+A1VF默认实例：永国字重探针123
+
+B1Instance=Bold：{\vfInst 永国字重探针123}
+\end{document}

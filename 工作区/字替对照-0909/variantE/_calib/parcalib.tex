@@ -1,0 +1,17 @@
+% ∥ 精确复刻验证样张（终测版）：只排一个 \(a\qppar b\)，大边距，无其他元素
+% 全品实测（E-BZ 10.09pt，1152dpi）：倾角 −26.71°(tanθ=0.503) 墨高 0.972em(基线上0.982/下0.016)
+%   水平笔厚 0.037em  水平间隙 0.260em  端点水平平头
+\documentclass[fontset=none]{ctexart}
+\usepackage[a4paper,margin=40mm]{geometry}
+\setmainfont{Times New Roman}
+\usepackage{tikz}
+\newcommand{\qppar}{\mathrel{\begin{tikzpicture}[x=1em,y=1em,baseline={(0,0)}]
+  % 0909 终标定（干净复测证伪"y 方向 em=9.62pt"：实侧 y-em=x-em=10.09pt）：
+  % 墨高 0.972（基线上0.956/下0.016，按全品上/下比 0.982:0.016 分配）
+  % 笔粗 0.037、隙 0.260、全高斜移 dx=0.972·tan26.71°=0.489 → 渲出四项＝全品 E-BZ 真迹
+  \fill (-0.412,-0.016) -- (-0.375,-0.016) -- (0.114,0.956) -- (0.077,0.956) -- cycle;
+  \fill (-0.115,-0.016) -- (-0.078,-0.016) -- (0.411,0.956) -- (0.374,0.956) -- cycle;
+\end{tikzpicture}}}
+\begin{document}\fontsize{10.09pt}{18.25pt}\selectfont
+\(a\qppar b\)
+\end{document}

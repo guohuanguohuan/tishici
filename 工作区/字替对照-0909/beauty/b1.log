@@ -1,0 +1,24 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./beauty.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexart.cls (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-xetex.def))
+Document Class: ctexart 2026/08/11 v2.6.5 Chinese adapter for class article (CTEX)
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg))) (./beauty.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+
+LaTeX Font Warning: Font shape `TU/FZShuSong-Z01S.ttf(0)/b/n' undefined
+(Font)              using `TU/FZShuSong-Z01S.ttf(0)/m/n' instead on input line 57.
+
+[1] [2] (./beauty.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+Output written on beauty.pdf (2 pages).
+Transcript written on beauty.log.

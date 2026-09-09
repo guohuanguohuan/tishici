@@ -1,0 +1,42 @@
+% ============================================================
+% qp-headfoot.tex —— 页眉页脚模块（全品式导学件，供 main.tex \input）
+% 职责：页脚 twoside 奇偶（奇＝右端黑粗小字「章名＋件名」＋页码灰块；偶＝左端页码灰块＋黑粗小字册名）。
+%       页眉撤（v4.2，全品 p04-p06 实证无页眉）维持；\qpjieming 宏保留作他件复用参数。
+% 参数宏（他件复用改这四条即可）：
+%   \qpzhangming 章名　\qpjieming 页眉节名（不排印，保留备他件）　\qpjianming 件名　\qpceming 册名
+% v4.3 页脚组（总账C）：
+%   页码块 26.2×7.8mm（原 24×7）；数字 ≈11pt（原 10.5）；数字靠版心内侧（原居中）——
+%   奇页块贴版心右、数字落块内左（版心）侧；偶页块贴版心左、数字落块内右（版心）侧，
+%   内侧留 1.2mm 垫（全品「靠内侧」无精确垫值，出样过目登记）；块几何（底缘 11mm、基线 −2.275
+%   ＋raisebox −2.11mm）维持拍板22 口径不变。
+%   小字 5.5pt 混重（原 6.5pt 全粗黑）：章名/册名宋体常规＋件名黑体——「混重」按混排字族实现
+%   （全品页脚小字实测灰度 58 近黑，色维持黑；具体混重分配出样过目登记）。
+%   内容维持我方件名串、不印品牌段（v4.1 已定）。
+% 调用关系：main.tex → qp-layout（geometry/颜色）→ 本模块 → qp-titles → qp-blocks。
+% ============================================================
+\usepackage{fancyhdr}
+
+% ---------- 参数宏（他件复用入口） ----------
+\newcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+\newcommand{\qpjieming}{1.1.1 空间向量及其运算}   % 撤页眉后不排印，保留作他件复用参数
+\newcommand{\qpjianming}{导学件}
+% v4.4 标定（0908）：册名括号改半角——全角（）是页脚偶页括号墨残留源（断言⑧「全角（）残留」首轮 6 处全出此行，成因登记）
+\newcommand{\qpceming}{高中数学\quad 选择性必修第一册(人教B版)}
+
+% ---------- 页码灰块（底 DDDDDD＋黑粗数字，靠版心内侧；v4.3 块 26.2×7.8、数字 11pt） ----------
+% 奇页（块贴版心右）：数字落块内左侧（版心侧）；偶页（块贴版心左）：数字落块内右侧。
+\newcommand{\qpshuziR}{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[26.2mm][r]{\rule[-2.275mm]{0pt}{7.8mm}\fontsize{11pt}{13pt}\selectfont\bfseries\thepage\hspace{1.2mm}}}}
+\newcommand{\qpshuziL}{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[26.2mm][l]{\rule[-2.275mm]{0pt}{7.8mm}\hspace{1.2mm}\fontsize{11pt}{13pt}\selectfont\bfseries\thepage}}}
+% v4.3：页脚小字＝5.5pt 混重（章名/册名宋体常规；件名由调用侧挂 \heiti）
+% 字替对照 E（0909）：5.5pt→5.24pt（全品字号铁证）＋色黑→灰76（p04 页脚小字暗核众数 76 实测；
+%   v4.4 纯黑渲染灰 22 过深，故换 \color{footgray}），混重结构（宋常规＋件名黑体）维持
+\definecolor{footgray}{HTML}{4C4C4C}
+\newcommand{\qphuitext}{\fontsize{5.24pt}{7pt}\selectfont\color{footgray}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[RO]{\raisebox{-2.11mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}\hspace{3mm}\qpshuziL}}
+\fancyfoot[LE]{\raisebox{-2.11mm}[0pt][0pt]{\qpshuziR\hspace{3mm}\qphuitext\qpceming}}

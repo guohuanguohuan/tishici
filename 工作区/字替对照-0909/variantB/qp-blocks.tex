@@ -1,0 +1,151 @@
+% ============================================================
+% qp-blocks.tex —— 正文块宏模块（全品式导学件，供 main.tex \input）
+% v4.4 改版轮（任务书 §五落槌，逐条登记交付报告§十一；零件归口见 qp-parts.tex）：
+%   #7/#9＋清单§九：判断题括号单段 #1#2\nobreak\hfill(...) 末行右挂，废两段支独占行（0 容忍断言④；
+%   0908 标定 \penalty-100→\nobreak：罚值太便宜致括号独占行 6 处，成因登记见宏出处注）；
+%   #22：\ansul 恒等（撤答案下划线；\kongda 印答线独立机制不在本条）；
+%   拍板2：[答案]/[解析] 标签 \anlabel＝黑体常规（撤 \heibian 仿粗）；题号数字一律 \textbf（Times Bold 数字库等效档）；
+%   拍板3：\zhenti 括号、\ansline/【分析】类全面半角窄式；【】仅留三件套（学习目标/诊断分析/素养小结＝\biaoqian 1.3× 维持）；
+%   拍板1：\zhuzhu 编注＝[注意] 题源标式内联前缀（半角[]、宋体常规、正文同号）；提示词走 \zhushi（无前缀）；
+%   #3＋TJ-03：题侧 \tieside＝半角[]内联、正文同号 10.5pt 纯黑常规宋体，标签→[ ]2.7mm、]→题干 2.2mm；
+%   #11＋TJ-04：多选标记 \duoxuan＝(多选题) 半角窄括号常规宋体不加粗（数值未测＝目检档，需裁决登记）；
+%   拍板5：\tjdnr 5 参——◆探究点N＋空两字＋名（废「｜」）；#17：\kongwei 定宽 6.8mm 空档；
+%   拍板4a：变式标签 \heibf 2.3×→\heiti（FZHei 本底补差降档）；\zhenhead 说明行→\fangsong（仿宋）；
+%   #15：\tjdnr 标题→例1 行 \addvspace{2.0mm}（探究点→例1 墨隙 4.2 档，0908 标定回填见宏出处注）。
+% 职责：multicols 内正文全部宏——挖空（\kongbai 空留白／\kongda 印答）、条目、知识点/探究点/例变、
+%       答案行、诊断判断（含【解析】）、简析行（\jiexi）、课堂检测、花形行（栏内菱形标）、选项绑定。
+% 顶格化口径（v4.1 指令5）：\parindent=0pt（qp-layout），全部悬挂缩进已撤，续行一律顶格。
+% v4.3 改版（拍板逐条，详见交付报告§十断言转译登记）：
+%   拍板8/翻拍板16/28：探究点标题独行——\tjdnr 标题行（◆探究点N｜名）后 \par\nopagebreak\noindent，
+%   例1〔题侧〕与题干另行内联（全品 p05 实证形态，裁片 qp_p05_li1b.png）；
+%   拍板2：编注/解析/注意升 10.5pt 同号黑字（\zhuzhu/\jiexi/\zhenti 解析撤小号；题侧〔难度〕维持 8pt 灯灰）；
+%   拍板1/总账A：花形组＝四枚圆角菱形（组 23.5×6.7mm、内字 11pt \huabf 斜体特粗）＋底线 1.2pt 灰77
+%   （huarule=0x4D）两端缩进（起点 +2.77mm／终点距栏线 4mm）＋右词灰122 6.5pt 不加粗坐线；
+%   总账E：◆符号 0.63em＋后隙 2.4mm；条目号半角「N.」（\heitiao 2.7×）＋后空 1 字；
+%   素养小结＝标签独行＋内容另起行楷体；【诊断分析】说明回 10.5pt（单行由紧缩文案达成，postproc）；
+%   字重阶梯（附则§三）：\biaoqian→\heibian(1.3×)；例N/探究点/◆知识点→\heibf(2.3×) 12pt；
+%   变式标签→\heibian(1.3×) 12pt；条目号→\heitiao(2.7×)；检测题号（postproc）→\heihao(2.0×) 11.4pt；
+%   题侧组（条9/总账H）：题侧〔〕→题干 \hspace{1.3mm}；判断题答案括号固定列位（右括号距栏右 5.4mm）；
+%   【解析】行后固定间距（\addvspace{7pt}，6–8pt 档内取 7——0908 断言轮由 6pt 提档，N10 墨距贴全品参照）。
+% 调用关系：main.tex → qp-titles → 本模块（body.tex/chapterhead.tex 使用这些宏）。
+% ============================================================
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+
+% multicol 安全的防孤悬 guard（v2 实证：\Needspace 的 \vfil\break 会致空栏页）；档位 {5,6}→{2}（对照§四-5）
+\newcommand{\glueguard}[1]{\vskip 0pt plus #1\baselineskip\penalty-100\vskip 0pt plus -#1\baselineskip}
+% 【】标签：黑体 1.3×（三件套栏目标签档＝ZS-07/XB-01/XB-02 参数；v4.4 [答案]/[解析] 不再走本宏）
+\newcommand{\biaoqian}[1]{{\heibian #1}}
+% [答案]/[解析] 标签（拍板2：撤仿粗回归黑体常规；拍板3：【】仅留三件套，标签括号半角窄式）
+\newcommand{\anlabel}[1]{{\heiti #1}}
+% 题侧串（#3＋TJ-03 题源标零件：半角[]内联、正文同号 10.5pt 纯黑常规宋体；标签→[ ]2.7mm、]→题干 2.2mm 由调用侧给）
+\newcommand{\tieside}[1]{{\fontsize{10.5pt}{15pt}\selectfont [#1]}}
+% 多选题标记（#11＋TJ-04：题号后半角窄括号常规宋体不加粗；0908 标定：原裸 \normalfont 继承标签 12pt 号
+% 实测 12.0pt 出窗，改钉 10.5pt 同正文（TJ-04），成因登记）
+\newcommand{\duoxuan}{{\normalfont\fontsize{10.5pt}{15pt}\selectfont(多选题)}}
+% 挖空留白线（例题/变式/课堂检测题干用；课前预习知识点区改用 \kongda 印答）
+\newcommand{\kongbai}{\underline{\hspace*{15mm}}}
+% 挖空印答（v4.1 指令1）：答案值带下划线印出；最小宽 15mm、内容更长自适应；下划线只包值（v3§七坑规）。
+% v4.2：两侧 \hspace{0.15em}（F 类19）；v4.2-返修1：专用寄存器 \kdmind/\kdwd（xeCJK 断胶覆写 \dimen0 坑）
+\newlength{\kdmind}
+\newlength{\kdwd}
+\newcommand{\kongda}[1]{{\setlength{\kdmind}{15mm}\settowidth{\kdwd}{#1}%
+  \ifdim\kdwd>\kdmind \kdmind=\kdwd\fi
+  \hspace{0.15em}\underline{\makebox[\kdmind][c]{#1}}\hspace{0.15em}}}
+% 答案值（v4.4 #22 拍板：撤下划线——\ansul 恒等；\kongda 印答线为独立机制不受影响）
+\newcommand{\ansul}[1]{#1}
+% 答案空档（#17：定宽 6.8mm 全角空——禁 ~~~~ 式四连 nbsp，全品 p05 例1 题干空档 6.8mm 实测）
+\newcommand{\kongwei}{\makebox[6.8mm]{}}
+% 知识点条目：编号. 内容（顶格；条目号 \heitiao 2.7×＋半角「N.」＋后空 1 字，总账E；
+% 灰注记以 \zhuzhu 并入条目段末同段接排，对照§四-7）；
+% 尾距 knob（#15：条目→条目 全品 2.99–3.06，v4.3 2.03–2.54；0908 标定 1mm 实测 2.20 仍紧 0.8，回填 1.8mm）
+\newcommand{\tiaomu}[2]{\par\glueguard{1}\noindent{\heitiao \textbf{#1}.}\hspace{1em}#2\par\addvspace{1.8mm}}
+% 编注/注记 run（拍板1：[注意] 题源标式内联前缀——半角[]、宋体常规、正文同号；同段接排）
+\newcommand{\zhuzhu}[1]{\hspace{0.5em}[注意]\hspace{0.4em}#1}
+% 提示词 run（检测题带提示词用，非注意类辅助文字，无前缀）
+\newcommand{\zhushi}[1]{\hspace{0.5em}#1}
+% ---- 花形组（拍板1＋总账A）调参区（渲染实测回填） ----
+\newcommand{\huaruleRaise}{-2.25mm}   % 底线顶缘相对行基线（菱形底贴线 0.3mm）
+\newcommand{\huawordRaise}{-1.1mm}    % 右词基线相对行基线（字墨底贴线 0.43mm；0908 实测 −1.54 贴死，上提 0.44）
+\newcommand{\huadianOverlap}{-5.1mm}  % 菱形两两重叠量（组总宽 23.5mm）
+% 花形标单字：装圆角菱形框（minimum 9.7×6.7mm、rounded corners、白底黑边；
+% 内字≈11pt \huabf＝方正黑体＋FakeSlant 0.18＋FakeBold 2.0 斜体特粗）
+\newcommand{\huadia}[1]{\tikz[baseline=(huaxd.base)]\node[diamond,draw=black,fill=white,line width=0.5pt,inner sep=0pt,%
+  minimum width=10.2mm,minimum height=6.7mm,rounded corners=1.8mm]%
+  (huaxd){\fontsize{11pt}{11pt}\selectfont\huabf #1};}
+% 花形行：#1~#4=四字 ＋ #5=右侧灰小字（灰122 黑体常规 6.5pt 不加粗，坐线 0.43mm）。
+% 底线＝1.2pt 灰77（huarule=0x4D），起点 版心左+2.77mm、终点 距栏线 4mm（零高 overlay，不占行高——
+% 整行总高＝菱形组 6.7mm＋贴线 0.3mm＋线 0.42mm≈7.4mm≈全品 7.1mm 档）。
+% 花形前距（0908 渲染实测回填，ink 口径）：宏胶走 0.9mm——考点探究（p3，判断解析 \addvspace{7pt} 叠加：
+% 0908 解析尾 6pt→7pt 上调叠加 +0.35，首轮宏胶 1.4 实出 5.53 出窗 3.7–5.3，回填 0.9→实测落窗，成因登记）
+% 胶 6.0 实出 9.09，0.9 → 4.5±0.8 窗；课前预习（p1）为 multicols 栏首元素，行首胶被弃，前距由 postproc
+% LAN_OPEN 栏区外 \vspace{1.7mm} 给（同 4.5 落窗）；知识评价（p7）栏顶豁免登记。
+\newcommand{\huaxing}[5]{\par\glueguard{0}\addvspace{0.9mm}\noindent
+  \makebox[0pt][l]{\raisebox{\huaruleRaise}[0pt][0pt]{\hspace*{2.77mm}\textcolor{huarule}{\rule{\dimexpr\linewidth-6.77mm\relax}{1.2pt}}}}%
+  \huadia{#1}\hspace{\huadianOverlap}\huadia{#2}\hspace{\huadianOverlap}\huadia{#3}\hspace{\huadianOverlap}\huadia{#4}%
+  \hfill\raisebox{\huawordRaise}[0pt][0pt]{\fontsize{6.5pt}{8pt}\selectfont\color{gray122}#5}\hspace*{4mm}\par
+  \addvspace{3pt}}
+% 【诊断分析】表组加粗横线（外框 0.8pt，总账D）：显式 \noalign\hrule（组包 \hline 法实测表头错位，废）。
+% 色用 XeTeX color special（xcolor \color 的 aftergroup 会在连续 \noalign 间产生 Misplaced \noalign，实测废）；
+% gray122＝122/255≈0.478
+\newcommand{\thickhline}{\noalign{\special{color push rgb 0.478 0.478 0.478}\hrule height 0.8pt\special{color pop}}}
+% 知识点块标题：◆ 知识点N　名（12pt \heibf 2.3×；◆ 0.63em（8.6pt 桶排≈0.88em 墨宽）＋后隙 2.4mm，总账E）；
+% 尾距 knob（#15：标题→首条目墨隙全品 3.84–3.91，v4.3 实测 2.03，\addvspace 标定值渲染回填）；
+% 前距 knob（0908 标定：前块→◆标题目标 3.87±0.45，3pt 实测 2.71，3pt→6.3pt 回填，成因登记）；
+% 0908 顺序换位：glueguard 的 \vskip 0pt plus±4\baselineskip 自然长度 0pt 会重置 \lastskip，
+% 致 \addvspace{6.3pt} 与前块解析尾 7pt 叠加（13.3pt）而不取 max——p2 知识点三缝 band 口径实测 7.45 出窗；
+% addvspace 先行恢复 max 语义：解析尾后增 0（总 7pt）、裸前块给足 6.3pt，双落窗（探针＋成因登记）
+\newcommand{\huafu}{\raisebox{1.2pt}{\fontsize{8.6pt}{8.6pt}\selectfont◆}}
+\newcommand{\zsd}[2]{\par\addvspace{6.3pt}\glueguard{4}%
+  \noindent{\fontsize{12pt}{17pt}\selectfont\heibf \huafu\hspace{2.4mm}知识点#1\quad #2}\par\addvspace{2pt}}
+% 探究点（拍板8＋拍板5 v4.4）：标题行（◆探究点N＋空两字＋名，12pt \heibf）独行；例1 标签行内联题干。
+% #1=点序（一）#2=点题名 #3=标签（例1，调用侧带 \textbf 数字＋可带 \duoxuan）#4=题侧 #5=题干；
+% 标题→例1 行距 knob（#15：全品墨隙 4.20/行距 1.17×）；0908 标定：2.6mm 实测 4.74–5.08 出窗
+% （目标 4.2±0.5），2.6→2.0mm 回填，成因登记
+\newcommand{\tjdnr}[5]{\par\glueguard{2}\addvspace{3pt}%
+  \noindent{\fontsize{12pt}{17pt}\selectfont\heibf \huafu\hspace{2.4mm}探究点#1\hspace{2em}#2}\par
+  \addvspace{2.0mm}%
+  \nopagebreak\noindent{\fontsize{12pt}{15pt}\selectfont\lihei\lilat #3}%
+  \hspace{2.7mm}\tieside{#4}\hspace{2.2mm}#5\par}
+% 例题/变式（非点首）：标签（变式1）＋题侧［难度（知识点N）］＋题干（顶格）；
+% 变式标签 12pt \heiti（拍板4a 标签层降档＝FZHei 常规，本底补差）；题侧 10.5pt 黑（TJ-03）；
+% 标签→题侧 2.7mm、题侧→题干 2.2mm（TJ-03 隙距）
+\newcommand{\li}[4]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent{\fontsize{12pt}{15pt}\selectfont\lihei\lilat #1}%
+  \hspace{2.7mm}\tieside{#2}\hspace{2.2mm}#3#4\par}
+% 选项/①链：顶格＋绑定（v4.1 指令5 撤 2em 前缀；作行首前缀用）。绑定维持 v4 拍板21 血统 penalty10000；
+% 选项行距分档（拍板9）由 postproc 在选项行外包 {\fontsize{10.5pt}{19/21pt}\selectfont …}（例区19／评价·检测21）
+\newcommand{\bindopt}{\penalty10000\noindent}
+% 其余续段：顶格续排（作行首前缀用；v4 撤首部 \penalty10000）
+\newcommand{\bindp}{\noindent}
+% 【答案】行：顶格；[答案] 标签黑体常规（拍板2），答案值不再带下划线（#22 \ansul 恒等）
+\newcommand{\ansline}[1]{\par\glueguard{2}\noindent\anlabel{[答案]}\hspace{0.5em}#1\par}
+% 【素养小结】段落（总账E）：标签独行＋内容另起行楷体（①识别随标签后行；②③由 postproc 以 \bindp
+% 各自成段并包 \kaishu）
+\newcommand{\xiaojie}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【素养小结】}\par\nopagebreak\noindent{\kaishu #1}\par}
+% 【诊断分析】头：标签＋题型说明（前距 2pt）。标签维持 \biaoqian 1.3×（三件套）；
+% 说明行→仿宋（拍板4a：说明行→仿宋，全品大题说明行 FZFSK 同位）
+\newcommand{\zhenhead}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【诊断分析】}{\fangsong #1}\par\addvspace{2pt}}
+% 诊断判断题（v4.1 指令2）：#1=全品式序号(1) #2=题干 #3=答案 #4=一句话解析；
+% v4.4 #7/#9（清单§九 0 容忍）：单段 #1#2\nobreak\hfill(×)\rule 末行右挂——TeX 自断、
+% 括号挂题干末行行尾；废 \makebox[\linewidth][r] 两段支（括号独占整行即缺陷，断言④ 0 容忍）。
+% 0908 二次标定（探针实证）：满行题干＋尾全角标点时，\parfillskip=1fil 使「独占行」末行 badness=0
+% 恒胜出——\nobreak/\penalty10000 拦不住 xeCJK 字符类边界断点，multicol 又把 \emergencystretch
+% 重置 8pt（< 一个 10.5pt 字宽量子）致题干内部断行不可行——故局部 \parfillskip=0pt（独占行变
+% badness 10000 不可行）＋\emergencystretch=3em（题干内断行可行，末行由 \hfill 二阶无限右挂）。
+% 实测六态（短/满行×纯中文/数学式/两行/三行）全右挂 0 overfull；\penalty-100→\nobreak 保留作单行态保险。
+% 固定列位：尾占位 \rule{3.34mm}{0pt}（总账H）；半角窄式括号 ink 距栏右实测 3.62（全角时代 5.14，窗 3.3–3.9）。
+% 解析行后固定间距 \addvspace{7pt}（6–8pt 档，条9②沿革见 v4.3 交付报告）。
+\newcommand{\zhenti}[4]{\par\glueguard{1}%
+  {\parfillskip=0pt\emergencystretch=3em\noindent#1#2\nobreak\hfill(\ansul{#3})\rule{3.34mm}{0pt}\par}%
+  \nopagebreak\noindent{\anlabel{[解析]}\hspace{0.5em}#4}\par\addvspace{7pt}}
+% 简析行（v4.2-D16）：变式/检测[答案]行下一行；[解析] 标签黑体常规（拍板2）；解析行后固定间距 7pt（6–8pt 档，条9②）
+\newcommand{\jiexi}[1]{\nopagebreak\noindent{\anlabel{[解析]}\hspace{0.5em}#1}\par\addvspace{7pt}}
+% 课堂检测题：题干（题号/题侧含在内，顶格；题号 11.4pt \heihao 2.0×由 postproc 输出，总账H）
+\newcommand{\jiancestem}[1]{\par\glueguard{4}\addvspace{2pt}%
+  \noindent #1\par}
+% v4.2-⑦ 登记：\jiancestemhd（花形行绑定首题的 penalty 绑定变体）试过无效已撤——multicol 末页平衡走
+% \vsplit 类切列，段间 glue 断点不受 \nopagebreak 约束；「课堂评价」整节改由 postproc 以 \vbox 整体装栏（box 不可切）。
+\newcommand{\jiance}[2]{\jiancestem{#1}\ansline{#2}}

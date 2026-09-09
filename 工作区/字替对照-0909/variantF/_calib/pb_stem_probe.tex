@@ -1,0 +1,13 @@
+% P-B 题号字重标定探针 v2：每字形独立成行，裁行内中部测竖笔
+\documentclass[12pt]{article}
+\usepackage[margin=20mm]{geometry}
+\usepackage{fontspec}
+\newfontfamily{\wFive}[Path=../fonts/,Height=0.905,Depth=0.212]{NSC-w500.ttf}
+\newfontfamily{\wSeven}[Path=../fonts/,Height=0.905,Depth=0.212]{NSC-w700.ttf}
+\newfontfamily{\wSix}[Path=../fonts/,Height=0.905,Depth=0.212]{NSC-w600.ttf}
+\newcommand{\probe}[2]{{\fontsize{11.4pt}{26pt}\selectfont#1#2}\par}
+\begin{document}
+\probe{\wFive}{1}\probe{\wFive}{4}\probe{\wFive}{5}
+\probe{\wSix}{1}\probe{\wSix}{4}\probe{\wSix}{5}
+\probe{\wSeven}{1}\probe{\wSeven}{4}\probe{\wSeven}{5}
+\end{document}

@@ -1,0 +1,64 @@
+% ============================================================
+% qp-fonts.tex —— 字体模块（字替对照·Variant B「真字重版」，基线＝样张v4.4）
+% 本版相对 v4.4 的改动（对照实验，逐条可回退）：
+%   ①字重阶梯撤「FZHei-B01S＋FakeBold 仿粗」，换思源黑体（Noto Sans SC，Adobe＋Google，SIL OFL）真字重：
+%     heizhang→Black 900（谱 4.0×）／heijie→Bold 700（3.3×）／heitiao→Bold 700（2.7×）／
+%     heibf→Bold 700（2.3×）／heihao→Bold 700（2.0×；题号数字本体仍走主字体 Times Bold 机制，不动）／
+%     heibian→Medium 500（1.3×）／hei（节标题常规层）→Medium 500（1.7×）。
+%     VF 探针结论（../vf-probe/）：XeTeX 挂 NotoSansSC-VF.ttf 时 Instance= 命名实例与
+%     RawFeature={wght=…} 任意轴均被拒（Unknown feature），按字体名挂命名实例也找不到
+%     （系统目录名检索不通），且 VF 默认实例是 Thin（墨量仅真粗 45%）——三路皆不通，故用静态 OTF。
+%   ②例N/变式N 标签→\lihei 阿里妈妈方圆体（官方免费商用；VF 实例化 wght=600·BEVL=100 圆角），
+%     \lilat＝同文件西文族，标签整串（含数字）同族（xeCJK 下数字默认路由主字体 Times，须局部切西文）。
+%   ③\parallel 斜体化：sympx 族（Noto Medium＋FakeSlant=0.2）承 U+2225∥；
+%     重定义经 \AtBeginDocument 落地（qp-layout 的 amsmath/unicode-math 装载在后，勿提前）。
+%   ④huabf 花形内字→真 Bold＋保留 FakeSlant=0.18（撤 FakeBold=2.0 仿粗）。
+%   ⑤正文 FZShuSong／楷体 KaiTi／仿宋 FangSong／主字体 Times／xeCJK 字符类与断行纪律：一律维持 v4.4。
+% 字体文件：本目录 fonts/（随样张分发；许可见 fonts/LICENSE-NotoSansSC-OFL.txt；方圆体为官方 VF 的
+%   fontTools varLib.instancer 静态实例化产物）。
+% 换字体＝改「字体挂载区」对应行的文件名即可（换款如普惠体/HarmonyOS，路径骨架不变）。
+% 纪律沿 v4.3：xeCJK 一律 Path= 显式路径；Path= 值内禁用宏（fontspec 对其 detokenize，宏不展开，
+%   已在选美页轮实证），故路径以字面量书写、文件名单独成行集中管理。
+% ============================================================
+\setmainfont{Times New Roman}
+\setCJKmainfont[
+  Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,
+  BoldFont=FZHei-B01S.ttf]{FZShuSong-Z01S.ttf}
+\setCJKfamilyfont{kai}{KaiTi}
+% v4.4 拍板4a：仿宋面（说明行→仿宋，全品大题说明行 FZFSK 同位）；系统目录字体按字体名挂载（KaiTi 同例）
+\setCJKfamilyfont{fangsong}{FangSong}
+% ================= 字体挂载区（换字体＝改本区文件名） =================
+% ---- 字重阶梯族（思源黑体真字重；BoldFont=self 保组内 \bfseries 回落干净） ----
+\setCJKfamilyfont{heizhang}[Path=fonts/,BoldFont=NotoSansSC-Black.otf]{NotoSansSC-Black.otf}
+\setCJKfamilyfont{heijie}[Path=fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Bold.otf}
+\setCJKfamilyfont{heitiao}[Path=fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Bold.otf}
+\setCJKfamilyfont{heibf}[Path=fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Bold.otf}
+% v4.4 沿革：\heihao 组内对全角「．」走 series=bf，BoldFont=self 维持（数字本体走 Times Bold 不变）
+\setCJKfamilyfont{heihao}[Path=fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Bold.otf}
+\setCJKfamilyfont{heibian}[Path=fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Medium.otf}
+\setCJKfamilyfont{hei}[Path=fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Medium.otf}
+% ---- 花形内字：真 Bold＋FakeSlant（斜体组合，撤仿粗） ----
+\setCJKfamilyfont{huabf}[Path=fonts/,FakeSlant=0.18,BoldFont=NotoSansSC-Black.otf]{NotoSansSC-Bold.otf}
+% ---- 数学平行号斜体源（∥＝U+2225；FakeSlant≈0.2 倾斜化） ----
+\setCJKfamilyfont{sympx}[Path=fonts/,FakeSlant=0.2,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Medium.otf}
+% ---- 例N/变式N 圆黑标签族（阿里妈妈方圆体；lilat＝同文件西文侧，保数字同族） ----
+\setCJKfamilyfont{lihei}[Path=fonts/,BoldFont=FangYuanTi-w600圆-BEVL100.ttf]{FangYuanTi-w600圆-BEVL100.ttf}
+\newfontfamily{\lilat}[Path=fonts/]{FangYuanTi-w600圆-BEVL100.ttf}
+% ================= 访问宏（宏名一律不动，调用侧零改动） =================
+\newcommand{\heiti}{\CJKfamily{hei}}
+\newcommand{\heizhang}{\CJKfamily{heizhang}}
+\newcommand{\heijie}{\CJKfamily{heijie}}
+\newcommand{\heitiao}{\CJKfamily{heitiao}}
+\newcommand{\heibf}{\CJKfamily{heibf}}
+\newcommand{\heihao}{\CJKfamily{heihao}}
+\newcommand{\heibian}{\CJKfamily{heibian}}
+\newcommand{\huabf}{\CJKfamily{huabf}}
+\newcommand{\lihei}{\CJKfamily{lihei}}
+\newcommand{\kaishu}{\CJKfamily{kai}}
+\newcommand{\fangsong}{\CJKfamily{fangsong}}% v4.4 拍板4a：仿宋访问宏（\zhenhead 说明行用；漏挂 0908 首轮补）
+% ---- \parallel 斜体化（\AtBeginDocument：等 qp-layout 的 amsmath/unicode-math 就位后再落定义） ----
+\AtBeginDocument{\renewcommand{\parallel}{\mathrel{\text{\CJKfamily{sympx}∥}}}}
+\xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
+% v4.4（#21 标点收紧）：PunctStyle=plain——全角标点不悬挂不挤压，行尾标点禁出栏、行首禁标点；
+%   半角括号/半角标点转换在 postproc_daoxue.py 文本 pass 完成，此处只管断行纪律。
+\xeCJKsetup{CheckSingle=true,PunctStyle=plain}

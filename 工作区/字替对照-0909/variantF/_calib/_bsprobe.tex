@@ -1,0 +1,13 @@
+\documentclass{article}
+\newdimen\da \newdimen\db
+\begin{document}
+\settowidth\da{$a=b$}
+\settowidth\db{$a=\ b$}
+\typeout{BSA:\the\da}
+\typeout{BSB:\the\db}
+\settowidth\da{$|a|$}
+\settowidth\db{$| a |$}
+\typeout{BSC:\the\da}
+\typeout{BSD:\the\db}
+X
+\end{document}

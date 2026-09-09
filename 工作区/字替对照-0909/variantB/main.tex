@@ -1,0 +1,28 @@
+% ============================================================
+% 全品式样张 v4.1 · 导学件（人教B版选必1 §1.1.1 空间向量及其运算）
+% 编译：postproc_daoxue.py → xelatex main.tex（两遍）→ render.py
+% v4.1 用户过目轮：导言区模块化（按功能拆分、嵌套 \input，类比 python 模块）：
+%   qp-fonts.tex    字体（西文/中文族、黑楷族、xeCJK 字符类）
+%   qp-layout.tex   版面（geometry/宏包/调色板/行距栏距/惩罚/表格默认/顶格化）
+%   qp-parts.tex    全品零件库落件（52 件参数注册表，v4.4 新增；只注册参数不排版）
+%   qp-headfoot.tex 页眉页脚（参数宏 \qpzhangming/\qpjieming/\qpjianming/\qpceming，他件复用入口）
+%   qp-titles.tex   章节小节课时标题＋学习目标块（multicols 外通栏区）
+%   qp-blocks.tex   正文块宏（挖空印答/条目/例变/答案/诊断/检测/花形）
+% v4.1 相对 v4 改版（用户过目，逐条登记于交付报告§八）：知识点填空印答（\kongda）、判断题加
+%   【解析】＋全品式（1）序号、页眉恢复（v3 形制）、页脚 twoside 奇偶对齐全品＋页码块 24×7 居中、
+%   正文顶格化（撤全部悬挂缩进）、花形行栏内化（菱形标＋midgray 细线）、章首左对齐化、条目按知识点重编号。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}   % v4.4：全品零件库落件（52 件参数注册表，参数照抄《附则/全品零件库.md》§二）
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+\begin{document}
+% 章首＋节标题＋小节标题＋课时＋【学习目标】（楷体化压缩块）：全部 multicol 外通栏
+\input{chapterhead.tex}
+% 正文双栏（v4.1：花形行栏内化，单一 multicols 环境，花形为栏内元素）
+\input{body.tex}
+\end{document}

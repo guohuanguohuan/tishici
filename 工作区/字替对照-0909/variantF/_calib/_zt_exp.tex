@@ -1,0 +1,54 @@
+% 0909 收尾轮：\zhenti 独占行缺陷最小复现＋变体实验（列宽 82.8mm＝工程同参）
+\documentclass{article}
+\usepackage[margin=17.575mm]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{multicol}
+\setCJKmainfont[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/]{FZShuSong-Z01S.ttf}
+\setCJKfamilyfont{fangsong}[Path=fonts/]{FZFSK.TTF}
+\newfontfamily{\fangsonglat}[Path=fonts/]{FZFSK.TTF}
+\xeCJKsetup{CheckSingle=true,PunctStyle=plain}
+\newcommand{\ansul}[1]{#1}
+\newcommand{\cha}{{\fangsonglat\symbol{"00D7}}}
+\newcommand{\gou}{{\fangsonglat\symbol{"221A}}}
+\newlength{\colw}
+\setlength{\colw}{82.8mm}
+% V1＝现工程形
+\newcommand{\ztA}[2]{{\parfillskip=0pt\emergencystretch=3em\noindent#1\nobreak\mbox{}\nobreak\hspace{0pt plus 1fil}(\makebox[1.8em]{\ansul{#2}})\hspace{0.56mm}\par}}
+% V2＝mbox 去掉、nobreak 挪到 fil 之后
+\newcommand{\ztB}[2]{{\parfillskip=0pt\emergencystretch=3em\noindent#1\nobreak\hspace{0pt plus 1fil}\nobreak(\makebox[1.8em]{\ansul{#2}})\hspace{0.56mm}\par}}
+% V3＝括号组整体 \mbox 胶囊（fil 在外），题干高容差
+\newcommand{\ztC}[2]{{\parfillskip=0pt\emergencystretch=3em\tolerance=9999\noindent#1\nobreak\hspace{0pt plus 1fil}\mbox{(\makebox[1.8em]{\ansul{#2}})\hspace{0.56mm}}\par}}
+% V4＝\hfil 换 \hspace fil＋末尾 \parfillskip 恒等、去 mbox、题干尾 nobreak 直连 fil，容差放开＋pretolerance 关
+\newcommand{\ztD}[2]{{\parfillskip=0pt\emergencystretch=5em\tolerance=9999\pretolerance=-1\noindent#1\nobreak\hspace{0pt plus 1fil}\nobreak\mbox{(\makebox[1.8em]{\ansul{#2}})}\hspace{0.56mm}\par}}
+\begin{document}
+\fontsize{10.09pt}{18.25pt}\selectfont
+\begin{multicols}{2}
+\noindent A1\quad\ztA{两个空间向量的模相等，则这两个向量相等．}{\cha{}}
+\noindent A2\quad\ztA{相等向量一定是共线向量．}{\gou{}}
+\noindent A3\quad\ztA{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，\(\overrightarrow{b}\parallel\overrightarrow{c}\)，则\nobreak\(\overrightarrow{a}\parallel\overrightarrow{c}\)．}{\cha{}}
+\noindent A4\quad\ztA{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则存在唯一实数\(\lambda\)，使\(\overrightarrow{a}=\lambda\overrightarrow{b}\)．}{\cha{}}
+\noindent A5\quad\ztA{若\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)(\(\overrightarrow{a}\)，\(\overrightarrow{b}\)不共线)，则\nobreak\(\overrightarrow{p}\)，\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面．}{\gou{}}
+\end{multicols}
+\begin{multicols}{2}
+\noindent B1\quad\ztB{两个空间向量的模相等，则这两个向量相等．}{\cha{}}
+\noindent B2\quad\ztB{相等向量一定是共线向量．}{\gou{}}
+\noindent B3\quad\ztB{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，\(\overrightarrow{b}\parallel\overrightarrow{c}\)，则\nobreak\(\overrightarrow{a}\parallel\overrightarrow{c}\)．}{\cha{}}
+\noindent B4\quad\ztB{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则存在唯一实数\(\lambda\)，使\(\overrightarrow{a}=\lambda\overrightarrow{b}\)．}{\cha{}}
+\noindent B5\quad\ztB{若\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)(\(\overrightarrow{a}\)，\(\overrightarrow{b}\)不共线)，则\nobreak\(\overrightarrow{p}\)，\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面．}{\gou{}}
+\end{multicols}
+\begin{multicols}{2}
+\noindent C1\quad\ztC{两个空间向量的模相等，则这两个向量相等．}{\cha{}}
+\noindent C2\quad\ztC{相等向量一定是共线向量．}{\gou{}}
+\noindent C3\quad\ztC{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，\(\overrightarrow{b}\parallel\overrightarrow{c}\)，则\nobreak\(\overrightarrow{a}\parallel\overrightarrow{c}\)．}{\cha{}}
+\noindent C4\quad\ztC{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则存在唯一实数\(\lambda\)，使\(\overrightarrow{a}=\lambda\overrightarrow{b}\)．}{\cha{}}
+\noindent C5\quad\ztC{若\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)(\(\overrightarrow{a}\)，\(\overrightarrow{b}\)不共线)，则\nobreak\(\overrightarrow{p}\)，\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面．}{\gou{}}
+\end{multicols}
+\begin{multicols}{2}
+\noindent D1\quad\ztD{两个空间向量的模相等，则这两个向量相等．}{\cha{}}
+\noindent D2\quad\ztD{相等向量一定是共线向量．}{\gou{}}
+\noindent D3\quad\ztD{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，\(\overrightarrow{b}\parallel\overrightarrow{c}\)，则\nobreak\(\overrightarrow{a}\parallel\overrightarrow{c}\)．}{\cha{}}
+\noindent D4\quad\ztD{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则存在唯一实数\(\lambda\)，使\(\overrightarrow{a}=\lambda\overrightarrow{b}\)．}{\cha{}}
+\noindent D5\quad\ztD{若\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)(\(\overrightarrow{a}\)，\(\overrightarrow{b}\)不共线)，则\nobreak\(\overrightarrow{p}\)，\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面．}{\gou{}}
+\end{multicols}
+\end{document}

@@ -1,0 +1,14 @@
+% VF 探针 2：RawFeature 数值轴 wght=700 / wght=900 是否生效
+\documentclass[fontset=none]{ctexart}
+\usepackage[a4paper,margin=12mm]{geometry}
+\setCJKmainfont{NotoSansSC-VF.ttf}[Path=C:/Windows/Fonts/,Renderer=HarfBuzz]
+\newCJKfontfamily\vfW{NotoSansSC-VF.ttf}[Path=C:/Windows/Fonts/,Renderer=HarfBuzz,RawFeature={wght=700}]
+\newCJKfontfamily\vfWx{NotoSansSC-VF.ttf}[Path=C:/Windows/Fonts/,Renderer=HarfBuzz,RawFeature={wght=900}]
+\begin{document}
+\fontsize{22pt}{36pt}\selectfont
+A1VF默认实例：永国字重探针123
+
+C1wght=700：{\vfW 永国字重探针123}
+
+C2wght=900：{\vfWx 永国字重探针123}
+\end{document}
