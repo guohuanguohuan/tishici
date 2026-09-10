@@ -1,0 +1,227 @@
+% ============================================================
+% 靠齐样张-0910 · 导学件增量 2 页样张（形式样张，非量产）
+% 第1页＝章末「本章总结提升」页（全品导学案组件；对照报告 §7.1 修正节：该板块归属导学案，练习册正文无）
+% 第2页＝课时页样板（五段闭环：学习目标→课前预习(知识导学填空＋诊断分析挂每个知识点之后)
+%        →课中探究(例＋变式＋素养小结)→课堂评价(恒5题)；正文留书写白＋斜置浅灰水印）
+%
+% 口径来源（详见同目录 简报.md）：
+%   结构＝工作区/全品结构提取/数学选必一/对照报告-全品学练考RJB选必一.md §二/§7.1
+%   零件＝附则/全品零件库.md（ZS-02/03/04/06/07、HX-01~04、TB-01/03/04/05、TJ-01~09、XB-01/02/03/04）
+%        ＋附则/全品基准总表.md（行距 18.0pt／栏宽 84.0mm／字号梯子／缝距谱／编译三 0 门）
+%   目视基准＝工作区/全品结构提取/数学选必一/导学案页图/p01..p19.png（章末形态另参 练习册页图/p03.png 样例）
+% 工具链＝../variantF/ 七模块原样拷贝，仅改字体路径（Path=fonts/ → variantF/fonts/ 字面量、禁宏）；
+%   本文件只新增局部宏（章末题头／题型标题／类型总述／高考真题位／课堂评价组头／书写留白＋水印），
+%   公共模块语义零改动。
+% 编译：xelatex main.tex（两遍）→ python render.py（150dpi → png/pageN.png）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ================= 页脚参数宏（qp-headfoot 文件头明示的复用入口，非模块语义改动） =================
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+\renewcommand{\qpjianming}{导学件}
+
+% ================= 局部宏（本样张新增；零件参数照抄，不动公共模块） =================
+% 章末题头：章名 20.67pt \heizhang 左对齐（ZS-02 档）＋通栏 0.2pt 线（ZS-03）；
+% 件型名「本章总结提升」走 \jietitle（16.88pt \hejie 居中＝ZS-04 档）。
+% 章末页非章首页，故不施 ZS-01 装饰方块组（登记为与章首页的差异）。
+\newcommand{\zhangmohead}[1]{%
+  \par\addvspace{2pt}\noindent
+  {\fontsize{20.67pt}{30pt}\selectfont\heizhang #1}\par
+  \vspace{-0.3mm}\noindent\rule{\textwidth}{0.2pt}\par}
+% 题型标题（TB-01 ◆标题件参数：12.03pt \heibf 2.3×＋◆ 0.63em＋后隙 2.4mm；前距 6.3pt／尾距 2pt 同 \zsd）
+\newcommand{\lxing}[2]{\par\addvspace{6.3pt}\glueguard{4}%
+  \noindent{\fontsize{12.03pt}{17pt}\selectfont\heibf \huafu\hspace{2.4mm}题型#1\quad #2}\par\addvspace{2pt}}
+% 类型总述（XB-03 编注件式：半角 [ ] 标签＋正文级同号纯黑随文；两句式＝①识别信号＋②通法步骤）
+\newcommand{\zongshu}[1]{\par\glueguard{1}\addvspace{2pt}%
+  \noindent\anlabel{[类型总述]}\hspace{0.5em}#1\par\addvspace{2pt}}
+% 精选高考题位（TJ-03 题源标位式＋真题干留空占位；题源不在手＝不编题，标 〔高考真题位·待源〕）
+\newcommand{\gaokaowei}{\par\glueguard{2}\addvspace{3pt}%
+  \noindent\anlabel{[精选高考题]}\hspace{2.7mm}\tieside{题源待补}\hspace{2.2mm}%
+  〔高考真题位·待源〕\par
+  \nopagebreak\vskip 45mm\noindent}
+% 课堂评价组头（XB-02 \zhenhead 同构：\biaoqian 1.3× 标签＋仿宋说明行；恒 5 题说明）
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+% 书写留白＋斜置浅灰水印（导学案正文属性：答案另册→正文留书写位；
+% 全品原水印＝授权水印 TS-03 不复用，本处按任务书自制「此处书写」类提示水印，斜置 25°／black!12）
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+% 纯书写占位留白（无水印；章末页「真题干留空」与题间书写位用）
+\newcommand{\zhankong}[1]{\par\nobreak\addvspace{#1}\nopagebreak\noindent}
+
+\begin{document}
+
+% ============================================================
+% 第 1 页 · 章末「本章总结提升」（题型归类式：类型总述＋例＋变式＋精选高考题位）
+% ============================================================
+\zhangmohead{第一章\quad 空间向量与立体几何}
+\jietitle{本章总结提升}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\huaxing{题}{型}{归}{类}{通法提炼\quad 例变对接}
+
+% ---------- 题型块一 ----------
+\lxing{一}{空间向量的概念辨析}
+
+\zongshu{①识别：题干围绕模、方向、零向量、单位向量、相等向量与相反向量罗列说法要求辨误时，判归本题型.②通法：对照定义逐条核验，存疑条目用反例否定；排除错误项定答案，忌凭直觉误选.}
+
+\li{例\textbf{1}}{简单(知识点一)}{下列说法正确的是\nobreak(\kongwei)}{}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．若\(| \overrightarrow{a} | = | \overrightarrow{b} |\)，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)或\(\overrightarrow{a} = - \overrightarrow{b}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．若\(\overrightarrow{a},\overrightarrow{b}\)为相反向量，则\nobreak\(\overrightarrow{a} + \overrightarrow{b} = \overrightarrow{0}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．零向量是没有方向的向量；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．若\(\overrightarrow{a},\overrightarrow{b}\)是两个单位向量，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)\par}
+
+\zhankong{13mm}
+\liB{变式\textbf{1}}{简单(知识点一)}{}{下列说法错误的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．零向量与任意向量都平行；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．若\(|\overrightarrow{a}|=0\)，则\nobreak\(\overrightarrow{a}=\overrightarrow{0}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．若\(\overrightarrow{a}=\overrightarrow{b}\)，则\nobreak\(|\overrightarrow{a}|=|\overrightarrow{b}|\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则\nobreak\(|\overrightarrow{a}|=|\overrightarrow{b}|\)\par}
+
+\zhankong{13mm}
+\gaokaowei
+
+\columnbreak
+
+% ---------- 题型块二 ----------
+\lxing{二}{空间向量数量积的概念与运算律}
+
+\zongshu{①识别：题干列出数量积相关的若干等式(平方、商式、乘积展开)要求判断正误时，判归本题型.②通法：按定义\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)逐式展开核验，展开后移项验算；警惕向量无除法、数量积无结合律等误用.}
+
+\li{例\textbf{1}\duoxuan}{简单(知识点三)}{设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)为空间中的任意两个非零向量，下列各式中正确的有(\kongwei)}{}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．\({\overrightarrow{a}}^{2} = | \overrightarrow{a} |^{2}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．\(\frac{\overrightarrow{a} \cdot \overrightarrow{b}}{\overrightarrow{a} \cdot \overrightarrow{a}} = \frac{\overrightarrow{b}}{\overrightarrow{a}}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．\(( \overrightarrow{a} \cdot \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} \cdot {\overrightarrow{b}}^{2}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．\(( \overrightarrow{a} - \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + {\overrightarrow{b}}^{2}\)\par}
+
+\zhankong{13mm}
+\liB{变式\textbf{1}}{简单(知识点三)}{}{已知\(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，则\nobreak\((\overrightarrow{a}+2\overrightarrow{b})\cdot(\overrightarrow{a}-\overrightarrow{b})=\)\kongbai{}．}
+
+\gaokaowei
+
+\end{multicols}
+
+\clearpage
+
+% ============================================================
+% 第 2 页 · 课时页样板（第1课时；五段闭环＋书写留白＋斜置浅灰水印）
+% ============================================================
+\keshi{第1课时\quad 空间向量的概念及线性运算}
+\mubiaoline
+\mubiaomu{1}{理解空间向量的概念(模、方向、零向量、单位向量、相等与相反向量)，会用有向线段表示向量；}
+\mubiaomu{2}{掌握线性运算(加减、数乘)的法则与运算律，理解共线、共面的充要条件；}
+
+\vspace{1.7mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ---------- 一、课前预习（知识导学填空＋诊断分析挂每个知识点之后） ----------
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{空间向量的概念}
+
+\tiaomu{1}{定义：在空间，我们把具有\kongda{大小}和\kongda{方向}的量叫做空间向量；规定\kongda{零}向量与任意向量平行．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhenti{(1)}{两个空间向量的模相等，则这两个向量相等．}{\cha{}}{模相等方向未必相同，还可能相反或斜交，故\cha{}．}
+
+\zsd{二}{空间向量的线性运算}
+
+\tiaomu{1}{加法可按\kongda{三角形}法则或\kongda{平行四边形}法则作出；数乘\(\lambda\overrightarrow{a}\)(\(\lambda\neq 0\))与\(\overrightarrow{a}\)方向\kongda{相同}或\kongda{相反}．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhenti{(1)}{若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则存在唯一实数\(\lambda\)，使\(\overrightarrow{a}=\lambda\overrightarrow{b}\)．}{\cha{}}{缺\(\overrightarrow{b}\neq\overrightarrow{0}\)前提，故\cha{}．}
+
+\zsd{三}{空间向量的夹角与数量积}
+
+\tiaomu{1}{夹角\(\langle\overrightarrow{a},\overrightarrow{b}\rangle\in\)\kongda{[0°,180°]}；数量积\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhenti{(1)}{两个非零空间向量的数量积大于\(0\)，则这两个向量的夹角为锐角．}{\cha{}}{\(\theta=0^\circ\)(同向)时数量积也为正而非锐角，故\cha{}．}
+
+\zsd{四}{共面向量的判定}
+
+\tiaomu{1}{\(\overrightarrow{p}\)与不共线向量\(\overrightarrow{a},\overrightarrow{b}\)共面的充要条件是存在\kongda{有序实数对}\((x,y)\)，使\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhenti{(1)}{若\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)(\(\overrightarrow{a}\)，\(\overrightarrow{b}\)不共线)，则\(\overrightarrow{p}\)，\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面．}{\gou{}}{\(\overrightarrow{p}\)是\(\overrightarrow{a}\)、\(\overrightarrow{b}\)的线性组合，故\gou{}．}
+
+\liubai[9mm]{此处书写}
+
+\columnbreak
+
+% ---------- 二、课中探究（探究点 1 个：例＋变式＋素养小结） ----------
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{空间向量的概念辨析}{例\textbf{1}}{简单(知识点一)}{下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．若\(| \overrightarrow{a} | = | \overrightarrow{b} |\)，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)或\(\overrightarrow{a} = - \overrightarrow{b}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．若\(\overrightarrow{a},\overrightarrow{b}\)为相反向量，则\nobreak\(\overrightarrow{a} + \overrightarrow{b} = \overrightarrow{0}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．零向量是没有方向的向量；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．若\(\overrightarrow{a},\overrightarrow{b}\)是两个单位向量，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)\par}
+
+\liubai[6mm]{解答书写区}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{已知\(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\)，判断\(P\)，\(M\)，\(A\)，\(B\)四点是否共面，并说明理由．}
+
+\xiaojie{①识别：题干围绕模、方向、零向量、单位向量、相等向量与相反向量罗列说法要求辨误时，判归本题型；②操作：对照定义逐条核验，存疑条目用反例否定，排除错误项定答案.}
+
+% ---------- 三、课堂评价（恒 5 题＝3 单选＋2 填空；难度≤例题；答案另册故正文不印答案） ----------
+\vbox{
+
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}设\(\overrightarrow{e_1}\)，\(\overrightarrow{e_2}\)不共线，\(\overrightarrow{a}=2\overrightarrow{e_1}+\overrightarrow{e_2}\)，\(\overrightarrow{b}=4\overrightarrow{e_1}+k\overrightarrow{e_2}\)，若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则\nobreak\(k=\)(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\frac{1}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(2\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(-\frac{1}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(3\)}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)均为非零空间向量，则“\(\overrightarrow{a}\cdot\overrightarrow{b}=0\)”是“\(\overrightarrow{a}\perp\overrightarrow{b}\)”的(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．充分不必要条件；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．必要不充分条件；}\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．充要条件；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．既不充分也不必要条件}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}在空间四边形\(ABCD\)中，\(E\)，\(F\)分别为\(AB\)，\(CD\)的中点，则\nobreak\(\frac{1}{2}(\overrightarrow{AD}+\overrightarrow{BC})=\)(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(2\overrightarrow{EF}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(-\overrightarrow{EF}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\overrightarrow{FE}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(\overrightarrow{EF}\)}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}已知\(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，则\nobreak\(\overrightarrow{a}\cdot\overrightarrow{b}=\)\kongbai{}．{\zhushi{(提示：\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\))}}}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}已知\(|\overrightarrow{a}|=4\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=120^\circ\)，则\nobreak\(|\overrightarrow{a}+\overrightarrow{b}|=\)\kongbai{}．{\zhushi{(提示：先算\(\overrightarrow{a}\cdot\overrightarrow{b}\)，再展开\(|\overrightarrow{a}+\overrightarrow{b}|^2\))}}}
+
+}
+
+\end{multicols}
+\end{document}

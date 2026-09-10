@@ -1,0 +1,36 @@
+% g5-fold.tikz —— 片G 0910 集成自 _tmp片G素材/fig-image5-fold-body.tex（L36–65 正文，逐字拷入）
+% 源图：variantF/media/media/image5.png 1798×1350px = 源排印宽 54.7mm
+% 集成口径：本片仍 \resizebox{54.7mm}{!}{…}（同比缩放＝素材认可的安全法）。
+%   本片段无 bbox 锁定，自然外框含标签外扩（源图 C 标签右端被画布裁去，本稿按完整字形放置），
+%   故实测宽略大于 54.7mm 的图形部分会被同比缩 ~3.3%（登记项）。
+% 依赖：宿主导言 \usepackage{tikz}；im5dash 为本片段内 tikz key，不入导言
+\begin{tikzpicture}[
+  x=1mm, y=1mm,
+  line width=0.3042mm,
+  line cap=butt, line join=miter,
+  im5dash/.style={dash pattern=on 1.2169mm off 0.6085mm},
+  every node/.style={inner sep=0pt, font=\fontsize{14.4pt}{14.4pt}\selectfont}
+]
+  % ---- 顶点 ----
+  \coordinate (A) at ( 3.9650,18.6187);
+  \coordinate (B) at (19.7139,35.7637);
+  \coordinate (C) at (50.4429,18.6187);
+  \coordinate (D) at (37.9027, 6.2360);
+  \coordinate (M) at (19.7139,18.6187);
+  \coordinate (N) at (37.9027,18.6187);
+  % ---- 实线：两个三角形的边 + 折起后 BD ----
+  \draw (A) -- (B) -- (C) -- (D) -- cycle;
+  \draw (B) -- (D);
+  % ---- 虚线：对角线 AC、垂线 BM、垂线 DN、MD（源图 M–D 亦为虚线） ----
+  \draw[im5dash] (A) -- (C);
+  \draw[im5dash] (B) -- (M);
+  \draw[im5dash] (D) -- (N);
+  \draw[im5dash] (M) -- (D);
+  % ---- 标签（西文斜体数学体，anchor=center 对准源图字形中心） ----
+  \node at ( 1.5363,18.8164) {$A$};
+  \node at (19.6531,38.5101) {$B$};
+  \node at (53.1180,18.9686) {$C$};
+  \node at (37.8763, 3.2552) {$D$};
+  \node at (16.7477,21.8435) {$M$};
+  \node at (37.9219,21.0981) {$N$};
+\end{tikzpicture}%

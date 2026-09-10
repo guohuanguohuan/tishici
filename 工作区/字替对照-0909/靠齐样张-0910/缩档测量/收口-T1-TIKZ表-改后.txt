@@ -1,0 +1,6 @@
+TIKZ = {'image1.png': ('figs/g1-prism.tikz', 41.1),      # 探二例1 直三棱柱（素材实测 41.099×68.936mm）
+        'image2.png': ('figs/g2-cubeE.tikz', 42.0),      # 探三例1 正方体＋E 点（41.998×41.998）
+        'image3.png': ('figs/g3-cube6.tikz', 36.3),      # 探六例1 正方体（缩档轮 0910：84.0→36.3，k_font 0.4318）
+        'image4.png': ('figs/g4-dihedral.tikz', 30.5),   # 探八例1 二面角（缩档轮 0910：66.3→30.5，k_font 0.4604）
+        'image5.png': ('figs/g5-fold.tikz', 28.2),       # 探九例1 折叠矩形（缩档轮 0910：54.7→28.2，k_font 0.5154）
+        'sub3_B_4.png': ('figs/g6-triple.tikz', 80.8)}   # 条目3 投影三联（缩档轮 0910：84.0→80.8，k_font 0.9613）

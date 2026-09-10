@@ -1,9 +1,10 @@
 % g3-cube6.tikz —— 片G 0910 集成自 _tmp片G素材/tikz_tan6.tex（L27–68 片段正文，逐字拷入，仅删空行、末行加 %）
 % 源图：variantF/media/media/image3.png 521×496px = 源排印 86.0×82.0mm
-% 集成口径：本片按栏宽封顶置 84.0mm（源 86mm 略缩 2.3%，同比缩放，线宽/字号/虚线一并缩）
+% 集成口径：素材同比缩放（线宽/字号/虚线随 \resizebox 一并缩）；置宽档史：栏宽封顶 84.0mm（缩 0.9767）
+%   → 缩档轮 0910 改 36.3mm（有效系数 36.3/86.00＝0.422093，标签渲染 17.37→7.51pt 命中 TW-05 目标）
 % 依赖：宿主导言 \usepackage{tikz} + \definecolor{cubegray}{gray}{0.25}（见 qp-blocks.tex）
 \begin{tikzpicture}[x=1mm,y=1mm,
-    line width=0.43mm, line cap=butt, line join=miter,
+    line width=0.498mm, line cap=butt, line join=miter,
     every node/.style={inner sep=0pt,outer sep=0pt},
     lab/.style={font=\fontsize{17.5}{21}\selectfont}]
   \useasboundingbox (0,0) rectangle (86,82);
@@ -26,10 +27,13 @@
   \draw[cubegray,dash pattern=on 1.82mm off 1.40mm,dash phase=0.62mm] (C)--(D);
   \draw[cubegray,dash pattern=on 1.82mm off 1.40mm,dash phase=3.18mm] (D1)--(D);
   % ---- 黑粗线（问题向量及其平移辅助：BC₁ 实线；AC、AD₁、D₁C 虚线）----
-  \draw[line width=0.59mm] (B)--(C1);
-  \draw[line width=0.59mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.09mm] (A)--(C);
-  \draw[line width=0.59mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.30mm] (A)--(D1);
-  \draw[line width=0.59mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.11mm] (D1)--(C);
+  % 缩档轮 0910：黑粗线档 0.59mm 与灰棱档 0.43mm 一并写回「0.21÷有效系数 0.422093＝0.498mm」，
+  %   使全图描边有效线宽统一落 0.210mm（TW-05）；源图 1.37 粗细层级退场，强调关系由黑 vs cubegray(0.25)
+  %   色差继续承载（登记项，见 缩档测量/简报.md）。
+  \draw[line width=0.498mm] (B)--(C1);
+  \draw[line width=0.498mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.09mm] (A)--(C);
+  \draw[line width=0.498mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.30mm] (A)--(D1);
+  \draw[line width=0.498mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.11mm] (D1)--(C);
   % ---- 顶点标签（位置 = 源图墨迹中心，mm）----
   \node[lab] at ( 4.62,58.48) {$A_1$};
   \node[lab] at ( 7.35, 4.38) {$A$};

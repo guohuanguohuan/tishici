@@ -1,0 +1,64 @@
+% ============================================================
+% qp-answ-layout.tex —— 版面模块（答案册式样草案）
+% 依据：附则《全品基准总表》§行距/栏宽/栏距/页边距（〔审计〕§E7＋〔H1〕E7）
+%       ＋variantF/qp-layout.tex 的 H1 落定档。
+% 数值（全品实证，非外推）：
+%   版心 175.6mm（左右 margin 17.2mm＝全品墨缘 17.35/17.56 反推）
+%   首行墨顶 19.6mm（全品 p05/p06/p07 实测 19.61/19.68/19.61 单列上边距）
+%   下边距 20mm＝页脚带让位（全品正文最低≈22.8mm、页码块顶 278.2mm 在版心外）
+%   双栏：栏宽 84.0mm＝(175.6−7.6)/2、栏距 7.6mm（全品栏 ink 距 7.55mm 实测档）
+%   栏线 0.4pt black!40（全品灰 188 带黑芯；断言窗 170–210）
+%   正文 10.09pt／行距 18.0pt（全品 p05 行距众数 18.0pt；练习册分册谱 17.95pt）
+% ============================================================
+\usepackage[a4paper,left=17.2mm,right=17.2mm,top=19.6mm,bottom=20mm,twoside,
+            headheight=0pt,headsep=0pt,footskip=13pt]{geometry}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{texgyretermes-math.otf}
+% 关系号胶刚性化：unicode-math 默认 \thickmuskip=5mu plus 5mu 会被 \emergencystretch 拉伸
+\thickmuskip=5mu
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{multirow,array,calc}
+\usepackage{multicol}
+
+% ---------- 颜色（全品灰阶谱；一切 R=G=B 纯灰） ----------
+\definecolor{midgray}{HTML}{777777}    % 中灰：章首方块/花形底线派生件
+\definecolor{gray122}{HTML}{7A7A7A}    % 灰122：表线（全品实测 122）
+\definecolor{huarule}{HTML}{4D4D4D}    % 灰77：花形底线（全品实测 77）
+\definecolor{pnumbg}{HTML}{DDDDDD}     % 浅灰：页码块/章首浅方块（全品实测 221）
+\definecolor{footgray}{HTML}{4C4C4C}   % 页脚小字灰76（全品 p04 页脚小字暗核众数）
+
+% ---------- 版面 ----------
+\setlength{\columnsep}{7.6mm}
+\setlength{\columnseprule}{0.4pt}
+% 栏线色＝black!26（255×0.74≈189≈全品实测灰 188；断言窗 170–210）。
+% ▽与 variantF 的差异：variantF 用 black!40（渲染灰 153/170），附则《全品基准总表》§色值/灰度栏线行
+%   明载「我方 black!40（灰153/170）待改 black!26」——本件按附则靶值落 black!26。
+\renewcommand{\columnseprulecolor}{\color{black!26}}
+\setlength{\multicolsep}{0pt}
+\renewcommand{\normalsize}{\fontsize{10.09pt}{18.0pt}\selectfont}
+\linespread{1}
+\normalsize
+\setlength{\parindent}{0pt}            % 顶格制（附则《全品样张细节清单》§四）
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\tolerance=9999
+\emergencystretch=1em
+\binoppenalty=100
+\relpenalty=500
+\flushbottom
+\raggedcolumns                         % 末页参差收尾（拍板23）
+\setcounter{topnumber}{4}
+\setcounter{totalnumber}{4}
+\setcounter{bottomnumber}{2}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.85}
+
+% ---------- 表格默认（全品式：内线 0.4pt／表线深灰 122／净空≈2mm 档） ----------
+\setlength{\arrayrulewidth}{0.4pt}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}

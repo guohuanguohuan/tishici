@@ -8,9 +8,9 @@ def scan(path):
     out = {}
     out['pages'] = (re.search(r'Output written on .*\((\d+) page', s) or [None, '?'])[1]
     out['error'] = len(re.findall(r'^!', s, re.M))
-    out['overfull'] = len(re.findall(r'Overfull \\\\hbox', s))
-    out['underfull'] = len(re.findall(r'Underfull \\\\hbox', s))
-    out['underfull_vbox'] = len(re.findall(r'Underfull \\\\vbox', s))
+    out['overfull'] = len(re.findall(r'Overfull \\hbox', s))
+    out['underfull'] = len(re.findall(r'Underfull \\hbox', s))
+    out['underfull_vbox'] = len(re.findall(r'Underfull \\vbox', s))
     out['missing_char'] = len(re.findall(r'Missing character', s))
     out['latex_warning'] = len(re.findall(r'LaTeX Warning', s))
     out['font_warning'] = len(re.findall(r'Package .* Warning', s))

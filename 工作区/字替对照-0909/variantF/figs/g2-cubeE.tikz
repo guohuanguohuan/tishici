@@ -1,8 +1,11 @@
 % g2-cubeE.tikz —— 片G 0910 集成自 _tmp片G素材/image2_重绘.tex（L18–53 片段正文，逐字拷入，仅末行加 %）
 % 源图：variantF/media/media/image2.png 764×764px = 源排印宽 42.0mm
 % 依赖：宿主导言 \usepackage{tikz}；\qon/\qoff 为片段内局部 \def，不入导言
-\begin{tikzpicture}[x=1mm,y=1mm,line width=0.308mm,line cap=butt,line join=miter,
-                    every node/.style={font=\fontsize{14.53pt}{17.436pt}\selectfont}]
+% 缩档轮 0910（置宽 42.0mm 不动——本图属「字大图不大」：线框宽 31.92mm 本已在 27.7–36mm 档内）：
+%   标签字号 14.53→7.53pt（×0.5181＝7.5÷中位 14.48；件内渲染 7.50pt 命中 TW-05 目标；行距参对单行节点
+%   不起作用，按最小改动原则保留）；线宽按「0.21 ÷ 有效系数（42.0/42.00＝1.000）」改声明 0.308→0.210mm。
+\begin{tikzpicture}[x=1mm,y=1mm,line width=0.210mm,line cap=butt,line join=miter,
+                    every node/.style={font=\fontsize{7.53pt}{17.436pt}\selectfont}]
 % ---- 坐标（mm，原点=位图左上角，y 向上） ----
 \coordinate (A)  at (5.971,5.058);\coordinate (B)  at (28.993,5.058);
 \coordinate (A1) at (5.971,28.092);\coordinate (B1) at (28.993,28.092);

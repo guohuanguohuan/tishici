@@ -1,0 +1,29 @@
+% ============================================================
+% qp-answ-headfoot.tex —— 页眉页脚模块（答案册式样草案）
+% 依据：附则《全品零件库》YJ-01（页码灰块件）＋〔审计〕§E5＋variantF/qp-headfoot.tex。
+% 页眉：**无**——全品导学案 p04–p06 实证无页眉（撤页眉口径，翻拍板38①）；答案册随此。
+% 页脚：全品式奇偶交替（奇页右＝章名＋件名小字＋页码块；偶页左＝页码块＋册名小字）。
+%   页码块 fill221（全品实测 221）＋块底距页底 11.2mm；页码数字纯黑、笔画 5–6px。
+%   ▽外推项：块宽 31.0mm 取全品**练习册档**（答案册随练习册装订，练习册实证 31.0×7.8mm；
+%     导学案档 26.2×7.8mm 备选）——实物到手后校。
+% ============================================================
+\usepackage{fancyhdr}
+
+% ---------- 参数宏（换册＝改本区） ----------
+\newcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+% 件名文案按草案 §六 拍板⑨ 落定：册名「参考答案」（demo 原文「答案册」系占位，草案 L223 已标「占位·过目定稿」）
+\newcommand{\qpjianming}{参考答案}
+\newcommand{\qpceming}{高中数学\quad 选择性必修第一册(人教B版)}
+
+% ---------- 页码灰块 ----------
+\newcommand{\qpshuziR}{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][r]{\rule[-2.275mm]{0pt}{7.8mm}\fontsize{11pt}{13pt}\selectfont\bfseries\thepage\hspace{1.2mm}}}}
+\newcommand{\qpshuziL}{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][l]{\rule[-2.275mm]{0pt}{7.8mm}\hspace{1.2mm}\fontsize{11pt}{13pt}\selectfont\bfseries\thepage}}}
+\newcommand{\qphuitext}{\fontsize{5.24pt}{7pt}\selectfont\color{footgray}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[RO]{\raisebox{-2.11mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}\hspace{3mm}\qpshuziL}}
+\fancyfoot[LE]{\raisebox{-2.11mm}[0pt][0pt]{\qpshuziR\hspace{3mm}\qphuitext\qpceming}}

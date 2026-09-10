@@ -1,0 +1,1 @@
+工作区/字替对照-0909/variantF/main.log {'pages': '7', 'error': 0, 'overfull': 0, 'underfull': 6, 'underfull_vbox': 0, 'missing_char': 0, 'latex_warning': 0, 'font_warning': 0}

@@ -1,0 +1,39 @@
+% g4-dihedral.tikz —— 片G 0910 集成自 _tmp片G素材/片G-image4-二面角.tikz（L22–58 正文，逐字拷入，仅删空行）
+% 源图：variantF/media/media/image4.png 788×424px = 源排印宽 66.3mm；画布 66.3000×35.6741mm
+% 集成口径：素材注记的 \resizebox{33.120mm}（侧绕排）作废，本片按源尺寸 66.3mm 图下置居中
+% 依赖：宿主导言 \usepackage{tikz}
+% 注：末行 % 必需——\input 时尾随换行会成空格 token，被计入裁切框（实测 +3.33pt 页宽）。
+\begin{tikzpicture}[x=1mm,y=1mm,line width=0.34mm,line cap=butt,line join=miter,
+                    font=\fontsize{16.03pt}{19.2pt}\selectfont]
+  \path[use as bounding box] (0,0) rectangle (66.3000,35.6741);   % bbox＝源画布 788×424 px
+  % ---- 顶点坐标（源 px 见行末注；由 8 条线最小二乘拟合并求交，残差 ≤0.6px） ----
+  \coordinate (E) at ( 5.6204,18.3839);   % px(  66.80, 205.50)  EF∩EA
+  \coordinate (A) at (26.8969,29.4059);   % px( 319.68,  74.50)  EA∩AB
+  \coordinate (B) at (58.2228,29.4059);   % px( 692.00,  74.50)  AB∩FB（∩DB 得 690.87，取中）
+  \coordinate (F) at (36.5491,18.3839);   % px( 434.40, 205.50)  EF∩FB（∩FC 得 435.56，取中）
+  \coordinate (D) at (25.2748, 6.4470);   % px( 300.40, 347.375) ED∩DC（∩DB 得 299.17，取中）
+  \coordinate (C) at (56.1463, 6.4470);   % px( 667.32, 347.375) DC∩FC
+  % ---- 线（全实线，无箭头；逐条对应源图线要素） ----
+  % 正方形 ABFE 四边：EF 下边、AB 上边、EA 左边、FB 右边
+  \draw (E) -- (A);      % 左棱
+  \draw (A) -- (B);      % 上边（源水平线 y=74.50px）
+  \draw (E) -- (F);      % 公共棱 EF（源水平线 y=205.50px）
+  \draw (F) -- (B);      % 右棱
+  % 正方形 CDEF 四边：EF 公共棱（已画）、FC 右边、DC 下边、ED 左边
+  \draw (E) -- (D);      % 左棱
+  \draw (F) -- (C);      % 右棱
+  \draw (D) -- (C);      % 下边（源水平线 y=347.375px）
+  % 连线 BD（源图唯一交叉线：BD 与 FC 交于 px(471.4,227.4)＝mm(39.66,16.54)）
+  \draw (B) -- (D);
+  % ---- 标签（锚点＝源字母墨迹盒对应角，mm；inner sep=0 使锚点即字盒边） ----
+  % 位置经三轮闭环标定：①按源墨迹盒角落位（残差=TeX 字盒宽/深≠墨迹盒，逐字不同）；
+  % ②788px 帧互相关对齐（dx=dy=0.25px）后逐字修正；③以线网为基准逐字母亚像素微调
+  % （2x 帧、0.5px@1x 步进，目标＝阈值 IoU 最大）——终态逐字母墨迹盒残差 ≤1px@1x（≤0.08mm）
+  % 6 字母 + 线网的最优位移已完全一致（同为 (0,+1)px@2x），即无逐要素残余错位
+  \node[anchor=south east,inner sep=0pt] at (26.1666,29.9950) {$A$};  % 源盒 px x[265,306] y[ 21, 66]
+  \node[anchor=west,      inner sep=0pt] at (58.9380,29.1114) {$B$};  % 源盒 px x[702,741] y[ 57,101]
+  \node[anchor=north west,inner sep=0pt] at (55.1518, 6.5206) {$C$};  % 源盒 px x[661,703] y[349,395]
+  \node[anchor=north,     inner sep=0pt] at (24.6101, 5.5531) {$D$};  % 源盒 px x[268,315] y[360,404]
+  \node[anchor=east,      inner sep=0pt] at ( 4.9220,18.2998) {$E$};  % 源盒 px x[ 12, 54] y[185,229]
+  \node[anchor=north,     inner sep=0pt] at (33.5285,17.5847) {$F$};  % 源盒 px x[377,419] y[217,261]
+\end{tikzpicture}%

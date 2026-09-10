@@ -1,0 +1,18 @@
+== Task2 body.tex 逐处 diff 证据（缩档收口 0910）==
+
+[试法一·g6 图行尾胶 −1.0→−0.8（已回退）] diff body.tex(试法一) vs body.tex.bak_缩档收口0910
+76c76
+< \bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\resizebox{80.8mm}{!}{\input{figs/g6-triple.tikz}}}\par\vspace{-0.8mm}\penalty10000
+---
+> \bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\resizebox{80.8mm}{!}{\input{figs/g6-triple.tikz}}}\par\vspace{-1.0mm}\penalty10000
+（仅 L76 一行；试法一回退后重跑 postproc，md5 复归 0c4d0cfc8a27369bc5158fa5c77eb58f＝任务1态）
+
+[试法二·条目3 末段尾距 0.35→0.80mm（采用，最终盘）] diff body.tex(现行) vs body.tex.bak_缩档收口0910
+80c80
+< \bindp 如图③，分别由向量\(\overrightarrow{a}\)的起点\emph{A}和终点\emph{B}作平面\(\beta\)的垂线，垂足分别为\(A'\)，\(B'\)，得到向量\(\overrightarrow{A'B'}\)，向量\(\overrightarrow{A'B'}\)称为向量\(\overrightarrow{a}\)在平面\(\beta\)上的投影向量．\par\addvspace{0.80mm}
+---
+> \bindp 如图③，分别由向量\(\overrightarrow{a}\)的起点\emph{A}和终点\emph{B}作平面\(\beta\)的垂线，垂足分别为\(A'\)，\(B'\)，得到向量\(\overrightarrow{A'B'}\)，向量\(\overrightarrow{A'B'}\)称为向量\(\overrightarrow{a}\)在平面\(\beta\)上的投影向量．\tiaomutail
+
+[最终盘 md5]
+b7e7d7026231ae1c99ae1868fe541013 *body.tex
+6bd05cadfbff242ee850d946b539701b *main.pdf

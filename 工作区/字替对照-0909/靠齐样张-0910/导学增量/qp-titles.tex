@@ -1,0 +1,53 @@
+% ============================================================
+% qp-titles.tex —— 标题模块（全品式导学件，供 main.tex \input）
+% 职责：章/节/小节/课时标题＋【学习目标】块（multicols 外通栏区，可用 \Needspace）。
+% E 版（0909）：\jietitle 撤 \heiti 常规改挂 \hejie（全品节标题细黑 5px@16.88 标定档）；
+%   \keshi 撤 \heijie 改挂 \hekeshi（课时 8px@13.0 与小节分档）；章/小节字号与几何维持 C 版。
+% v4.3 章首组（拍板7＋总账B）：
+%   方块组复刻放大＝两枚 6.9mm 等大对角相触（浅 DDDDDD 左下坐基线、深 777777 右上角触）＋右下 2.3mm
+%   小深块（下探 2.8mm），union 13.8×16.6mm；章名 20.67pt \heizhang（字重阶梯 4.0×）与方块间距 3.1mm；
+%   横线 0.2pt；级间距放开全品档（横线→节 6.9／节→小节 5.5／小节→课时 5.9／课时→目标 5.8mm，
+%   \corrglue 系微调量按渲染实测回填，章首占地 版心顶→【学习目标】标签顶 ≈57mm）。
+%   节标题撤仿粗不加粗（反向断言，附则§三）——\heiti 常规；小节/课时 \heijie（3.3×）。
+% 学习目标条目（拍板6 顶格例外，附则§四）：序号半角「N.」加粗（\heitiao 2.7×）＋后空 1 字、
+%   首行缩进 2 字、回行悬挂 8.3mm、条目行距≈17pt；内容楷体维持（拍板28）。
+% 调用关系：main.tex → qp-headfoot → 本模块 → qp-blocks。
+% ============================================================
+\usepackage{needspace}
+
+% 级间距微调量（渲染实测回填：负值＝收紧，补偿行盒深/高与墨缘差）
+% 0908 像素实测（150dpi 墨口径）：线→节 9.39／节→小节 8.13／小节→课时 8.30／课时→目标 8.29，
+% 对全品档 6.9/5.5/5.9/5.8 逐档回填 −2.5/−2.6/−2.4/−2.5（复测见交付报告）。
+\newcommand{\corrgJie}{-2.5mm}     % 横线→节
+\newcommand{\corrgXiaojie}{-2.6mm} % 节→小节
+\newcommand{\corrgKeshi}{-2.4mm}   % 小节→课时
+\newcommand{\corrgMubiao}{-2.5mm}  % 课时→目标
+
+% 章首：浅方块 6.9mm 坐基线，深方块 6.9mm 叠其右上（对角角触），右下 2.3mm 小深块下探 2.8mm；
+% 章名 20.67pt \heizhang 距方块 3.1mm；横线 0.2pt（原 0.4pt，总账B）
+% v4.4 字号梯子（全品实测口径）：章 20.67／节 16.88／小节 15.1／课时 13.0pt（行距维持）
+\newcommand{\zhangtitle}[1]{%
+  \par\addvspace{2pt}\noindent
+  {\color{pnumbg}\rule{6.9mm}{6.9mm}}%
+  \raisebox{6.9mm}[0pt][0pt]{\color{midgray}\rule{6.9mm}{6.9mm}}%
+  \hspace{-2.3mm}\raisebox{-2.8mm}[0pt][0pt]{\color{midgray}\rule{2.3mm}{2.3mm}}%
+  \hspace{3.1mm}%
+  {\fontsize{20.67pt}{30pt}\selectfont\heizhang #1}\par
+  \vspace{-0.3mm}\noindent\rule{\textwidth}{0.2pt}\par}
+
+\newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr6.9mm+\corrgJie\relax}%
+  {\centering\fontsize{16.88pt}{22pt}\selectfont\hejie #1\par}}
+\newcommand{\xiaojietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr5.5mm+\corrgXiaojie\relax}%
+  {\centering\fontsize{15.1pt}{22pt}\selectfont\heijie #1\par}}
+% 课时标题：13pt \hekeshi（E：课时 2.7× 与小节 3.3× 分档，NSC-w600 8px@13.0）居中（章首通栏第 4 层）
+\newcommand{\keshi}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr5.9mm+\corrgKeshi\relax}%
+  {\centering\fontsize{13pt}{20pt}\selectfont\hekeshi #1\par}}
+
+% 【学习目标】标签行（位于章首通栏区）；课时→目标间距 5.8mm（总账B）
+\newcommand{\mubiaoline}{\par\glueguard{2}\addvspace{\dimexpr5.8mm+\corrgMubiao\relax}\noindent\biaoqian{【学习目标】}\par\nopagebreak\vspace{-2pt}}
+% 学习目标条目（拍板6 顶格例外）：首行缩进 2 字、回行悬挂 8.3mm、行距≈17pt、序号半角「N.」加粗＋后空 1 字
+% H3 片 0909c（学习目标条目后隙）：\hspace{1em}（10.5pt＝3.70mm，ink 隙实测 4.106mm）→ \kern7.83pt
+%   （2.76mm 固定档、零拉伸、非断点）——全品 p04 学习目标位 ink 隙 3.174mm（H1 片复测 n 值），
+%   本字面（Times「.」＋楷体）侧承 0.41mm，7.83pt＋0.41＝3.17mm 命中；做法同 H1 \tiaomu \kern8.5pt。
+\newcommand{\mubiaomu}[2]{\noindent\hangindent=8.3mm\hangafter=1
+  {\fontsize{10.5pt}{17pt}\selectfont\kaishu\hspace*{2em}{\heitiao #1.}\kern7.83pt#2\par}}

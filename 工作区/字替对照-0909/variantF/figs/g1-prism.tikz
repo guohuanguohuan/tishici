@@ -1,8 +1,16 @@
 % g1-prism.tikz —— 片G 0910 集成自 _tmp片G素材/img1_tikz.tex（L42–71 片段正文，逐字拷入，仅删空行、末行加 %）
 % 源图：variantF/media/media/image1.png 691×1159px = 41.100×68.936mm（源排印宽 41.1mm）
 % 依赖：宿主导言 \usepackage{tikz} + 宏 \qldrop/\qldsub/\qlabs/\qlab（见 qp-blocks.tex）
-\begin{tikzpicture}[x=1mm,y=1mm,line width=0.370mm,line join=bevel,
+\begin{tikzpicture}[x=1mm,y=1mm,line width=0.210mm,line join=bevel,
   every node/.style={inner sep=0pt,outer sep=0pt}]
+  % 缩档轮 0910：本图为「字大图不大」型——置宽 41.1mm 不动（几何外廓 31.62mm 本已在 27.7–36mm 档内），
+  %   只把标签字号 ×0.4584 到 7.5pt 档（见 缩档测量/缩档测量.txt【一】g1 行）。线宽同轮按
+  %   「0.21 ÷ 有效系数（本图 41.1/41.100＝1.000）」改声明为 0.210mm。
+  % 下标随主档同缩：宿宏 \qldsub 内嵌 9.68pt 定档、\qldrop 定坠 0.649mm 均不随节点字号缩，
+  %   若不同步覆写则下标「1」(9.84pt) 反比主字母 (6.94pt) 大、且落正文档 [9.6,11.2] 被误判为正文行。
+  %   覆写限本 tikzpicture 组内（\qldrop 0.649×0.4584＝0.2975mm／9.68×0.4584＝4.44pt），qp-blocks.tex 未动。
+  \renewcommand{\qldrop}{0.2975mm}%
+  \renewcommand{\qldsub}[1]{\raisebox{-\qldrop}{\fontsize{4.44pt}{4.44pt}\selectfont $#1$}}%
   % line join=bevel：源图角部无 miter 尖刺（A1 处两线交角 29.5°，miter 会长出 1.45mm，源图实测无）
   \path[use as bounding box] (0,0) rectangle (41.100,68.936);  % 源画布 691×1159px
   % ---- 顶点：10 条边逐线亚像素拟合后取交点（残差 <0.16px）；注释为源图像素坐标 ----
@@ -24,10 +32,13 @@
   % ---- 六顶点实心点（半径 0.548mm＝源墨 0.531mm 扣口径校正）----
   \foreach \p in {A1,C1,B1,A,C,B} \fill (\p) circle[radius=0.548mm];
   % ---- 标签：anchor=base（y＝源图基线；x＝主体字墨心，均按源图墨 bbox 标定，偏差 <0.06mm）----
-  \node[anchor=base,font=\fontsize{14.90pt}{17pt}\selectfont] at ( 6.226,65.363) {\qlabs{A}{1}{-0.117mm}}; % 源 px 基线 y=59 ,  墨心 x=87.0
-  \node[anchor=base,font=\fontsize{14.90pt}{17pt}\selectfont] at (38.333,64.350) {\qlabs{C}{1}{-0.308mm}}; % 源 px 基线 y=77 ,  墨心 x=634.5
-  \node[anchor=base,font=\fontsize{14.90pt}{17pt}\selectfont] at (24.037,55.768) {\qlabs{B}{1}{-0.096mm}}; % 源 px 基线 y=221,  墨心 x=389.0
-  \node[anchor=base,font=\fontsize{17.30pt}{20pt}\selectfont] at ( 1.979,18.325) {\qlab{A}};                % 源 px 基线 y=850,  墨心 x=28.0
-  \node[anchor=base,font=\fontsize{17.30pt}{20pt}\selectfont] at (38.991,18.712) {\qlab{C}};                % 源 px 基线 y=844,  墨心 x=657.0
-  \node[anchor=base,font=\fontsize{17.30pt}{20pt}\selectfont] at (26.082, 0.063) {\qlab{B}};                % 源 px 基线 y=1157, 墨心 x=436.5
+  % 字号档（缩档轮 0910）：主体 17.30→7.93pt、带下标档 14.90→6.83pt（均 ×0.4584＝7.5÷中位 16.36）
+  %   → 件内渲染 8.06／6.94pt，中位 7.50pt 命中 TW-05 目标；两档固有档差 2.44pt 系源图标定，非本轮引入。
+  %   第二参（行距 17/20pt）对 anchor=base 的单行节点不起作用，按「只改字号档」的最小改动原则保留原值。
+  \node[anchor=base,font=\fontsize{6.83pt}{17pt}\selectfont] at ( 6.226,65.363) {\qlabs{A}{1}{-0.117mm}}; % 源 px 基线 y=59 ,  墨心 x=87.0
+  \node[anchor=base,font=\fontsize{6.83pt}{17pt}\selectfont] at (38.333,64.350) {\qlabs{C}{1}{-0.308mm}}; % 源 px 基线 y=77 ,  墨心 x=634.5
+  \node[anchor=base,font=\fontsize{6.83pt}{17pt}\selectfont] at (24.037,55.768) {\qlabs{B}{1}{-0.096mm}}; % 源 px 基线 y=221,  墨心 x=389.0
+  \node[anchor=base,font=\fontsize{7.93pt}{20pt}\selectfont] at ( 1.979,18.325) {\qlab{A}};                % 源 px 基线 y=850,  墨心 x=28.0
+  \node[anchor=base,font=\fontsize{7.93pt}{20pt}\selectfont] at (38.991,18.712) {\qlab{C}};                % 源 px 基线 y=844,  墨心 x=657.0
+  \node[anchor=base,font=\fontsize{7.93pt}{20pt}\selectfont] at (26.082, 0.063) {\qlab{B}};                % 源 px 基线 y=1157, 墨心 x=436.5
 \end{tikzpicture}%

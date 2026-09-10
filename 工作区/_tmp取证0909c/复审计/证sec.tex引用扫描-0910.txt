@@ -1,0 +1,36 @@
+== 证 sec.tex 死文件（grep 取证，2026-09-10） ==
+目录: 工作区/字替对照-0909/variantF/
+
+$ grep -rn "sec\.tex" .   （variantF 全目录、全文件类型）
+./postproc_daoxue.py:2:r"""v4.2 导学件后处理器：sec.tex（pandoc 原始输出）→ chapterhead.tex + body.tex + postproc_daoxue_log.txt。
+./postproc_daoxue.py:50:# sec.tex 已随 variantF 目录分发，与只读区逐字节一致）
+./postproc_daoxue.py:55:tex = open(BASE + r"\sec.tex", encoding='utf-8').read()
+./postproc_daoxue.py:1167:# 且不覆盖「条目9」「支撑条目16、17、34」等旧连号引用；本片 5 处编注已改指名式（sec.tex），
+./postproc_daoxue.py:1202:log('8a. R8 题源答案普查（sec.tex 十题，F 0909 补登记）：B/式/C/1¼/AD/60°/区间/−3/2/D/A——'
+./postproc_daoxue.py.bak_片G集成0910:2:r"""v4.2 导学件后处理器：sec.tex（pandoc 原始输出）→ chapterhead.tex + body.tex + postproc_daoxue_log.txt。
+./postproc_daoxue.py.bak_片G集成0910:50:# sec.tex 已随 variantF 目录分发，与只读区逐字节一致）
+./postproc_daoxue.py.bak_片G集成0910:55:tex = open(BASE + r"\sec.tex", encoding='utf-8').read()
+./postproc_daoxue.py.bak_片G集成0910:1117:# 且不覆盖「条目9」「支撑条目16、17、34」等旧连号引用；本片 5 处编注已改指名式（sec.tex），
+./postproc_daoxue.py.bak_片G集成0910:1149:log('8a. R8 题源答案普查（sec.tex 十题，F 0909 补登记）：B/式/C/1¼/AD/60°/区间/−3/2/D/A——'
+./postproc_daoxue_log.txt:84:8a. R8 题源答案普查（sec.tex 十题，F 0909 补登记）：B/式/C/1¼/AD/60°/区间/−3/2/D/A——唯题5＝AD 多答（\duoxuan 已挂，n_duox=1 断言维持）；普查结论＝源题答案全部在场，与【答案】行/【详解】逐一相符
+./交付报告-修复轮0909c.md:3:母体＝variantF（F 轮交付件 `main.pdf`，7 页）；本轮按用户终审意见 11 条（#27–#37）＋随轮衍生 2 项（#38 文书修正／#39 探二·探九图归位【详解】）四片并行修复：片A 图文形态／片B 竖向间距与表格／片C 符号与编注文案／片D 变式标签字重。改动全落源码层（sec.tex／postproc／qp-*.tex），postproc 重跑→xelatex 两遍。
+./交付报告-修复轮0909c.md:32:| **#27** 正文「条目+数字」悬空引用 | 6 处（body.tex，5 条编注） | **0**（body.tex＋PDF 双查） | 0 | 片C报告 §二/§三/§六：sec.tex:84/114/176/209/219 五处逐字替换；postproc:1032–1036 禁则 `条目\s*\d`；断言 N11 新设 |
+→ grep 退出码: 0  （1＝无任何匹配）
+
+$ grep -rn "(\./sec" main.log  （编译日志中被 \input 的文件痕迹）
+→ grep 退出码: 1  （1＝无任何匹配）
+
+$ ls -la sec.tex
+-rw-r--r-- 1 28120 197121 34399 Sep  9 21:25 sec.tex
+
+==================================================
+判定（2026-09-10 清理三件套轮）：
+  grep 全 variantF/ 证得 sec.tex「并非无引用」——
+  · postproc_daoxue.py:55 为可执行读取（tex = open(BASE + r"\sec.tex", ...)），
+    即 postproc 重建链（sec.tex → chapterhead/body.tex）仍以 sec.tex 为上游源；
+  · 另有同文件 4 处注释/文档引用、postproc_daoxue_log.txt:84、
+    交付报告-修复轮0909c.md 2 处（「改动全落源码层（sec.tex/postproc/qp-*.tex），postproc 重跑」）；
+  · 仅编译链无引用（main.log 无 "(./sec"）。
+  结论：任务 3「证死后删除」门槛未过（引用在案）→ 删除动作否决，sec.tex 保留。
+  附：sec.tex 位图引用 grep -c 'includegraphics' ＝ 9（与片G复审计登记的 9 条吻合）；
+      git ls-files 证其已入库、git status --porcelain 空＝未修改（只读检查）。

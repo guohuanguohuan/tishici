@@ -1,0 +1,219 @@
+% ============================================================
+% 全品靠齐样张轮 · 测评卷 2 页形式样张（人教B版 选择性必修第一册 第一章）
+% 页面＝8 开横放 399.8mm×284.2mm（照全品测评卷页图实测档：5622×3996px ÷ 14.062px/mm）
+% 编译：xelatex main.tex ×2 遍 → 150dpi png（工序见 简报.md）
+%
+% 模块复用＝variantF 六件（qp-fonts/qp-layout/qp-parts/qp-headfoot/qp-titles/qp-blocks）
+%   · 模块内唯一改动＝qp-fonts.tex 字体路径 Path=fonts/ → variantF/fonts/ 绝对路径（24 处；
+%     字体二进制不复制，仍指 variantF/fonts/）
+%   · 页面尺寸／字号行距／页脚形制＝本文件「件型层」覆盖，公共模块语义未动
+% 零件依据：附则/全品零件库.md §二 JT-01～JT-06（卷头组）、YJ-02（文字行页脚）、
+%   TJ-02（悬挂题号内收 5.7mm）、TJ-05（分值括注）、TJ-07（选项行）、TJ-08（括号固定列位）
+%   ＋结构级行距主峰 17.7pt（测评卷档）；参数经 qp-parts.tex 注册宏 \qpJT*/\qpYJb* 取用
+% 扫描页基准：工作区/全品结构提取/数学选必一/测评卷页图/p01.png、p02.png
+% 题干材料：../variantF/body.tex（选必1 §1.1 空间向量及其运算 例题/变式/课堂检测，原样搬，
+%   仅重编题号＋补分值）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ------------------------------------------------------------
+% 件型层 A｜页面：8 开横放三栏（左右缘 8.9mm、栏宽 120.0mm、栏距 11.0mm＝实测栏间 154px）
+%   顶 12.0mm＝JT-02 填写行行顶距页顶；底 17.6mm＝实测正文最低墨缘 266.5mm；
+%   footskip 7.1mm＝YJ-02 带底距页底 10.5mm（\qpYJbBottom）换算至基线
+% ------------------------------------------------------------
+\geometry{paperwidth=399.8mm,paperheight=284.2mm,left=8.9mm,right=8.9mm,
+  top=12.0mm,bottom=17.6mm,twoside,headheight=0pt,headsep=0pt,footskip=7.1mm}
+\setlength{\topskip}{0pt}          % 首行基线＝版心顶（配合 \jpcol 零高参考盒，三栏等高起排）
+\raggedbottom                      % 测评卷栏底自然参差（全品 p01 第三栏短收），不强拉 flush
+\renewcommand{\normalsize}{\fontsize{10.5pt}{17.7pt}\selectfont}  % 测评卷：10.5pt 宋体／行距主峰 17.7pt
+\linespread{1}\normalsize
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newlength{\jpcolw}\setlength{\jpcolw}{120.0mm}
+\newlength{\jpgap}\setlength{\jpgap}{11.0mm}
+% 字内距（\CJKglue）件型级覆盖：variantF 的 0.10em 是「导学件」标定；测评卷 p01 实测
+%   「时间：」两字字心距 3.84mm @ 10.5pt（em 3.70mm）⇒ 字内距 0.04em，故本件型另立
+\xeCJKsetup{CJKglue={\hskip 0.04em plus 0.04em minus 0.01em}}
+
+% 色档（扫描页实测灰值直译；零件库登记值见括注）
+\definecolor{silklight}{gray}{0.8235}   % 灰210 浅带（\qpJTaGrayLight）
+\definecolor{silkdark}{gray}{0.6510}    % 灰166 深带（\qpJTaGrayDeep）
+\definecolor{juanrule}{gray}{0.1255}    % 灰32 卷名下划线（\qpJTcRuleGray）
+\definecolor{subgrey}{gray}{0.4}        % 灰102 副题（\qpJTdGray）
+
+% ------------------------------------------------------------
+% 件型层 B｜JT-01 丝带角饰——TikZ 矢量重绘
+%   坐标全部取自 p01.png 逐像素实测（÷14.062px/mm），原点改以「栏1 版心左上角」计
+%   落位用「页面绝对坐标」：picture 内先取 current page.north west 为 O，scope shift 到 O，
+%   单位 x=1mm、y=1mm（标准不镜像），页面 mm 值一律写成 (X,−Y)；tikzpicture 走 overlay＋
+%   remember picture（零尺寸、不占行、不被 picture 环境裁切——早先 \begin{picture}(0,0) 写法
+%   把角饰裁到只剩一角，已废）。曾试 y=−1mm 直写，结果 45° 白字被镜像成与斜带垂直，已弃
+%   实测几何：浅带＝直角三角形（直角顶点页面 6.9/9.39mm，两直角边 33.2mm，斜边 45°）
+%             深带＝45° 斜带（内缘 x+y=31.15、外缘 x+y=42.36，垂直厚 7.93mm；上端水平切 y8.21mm、
+%                   左端垂直切 x5.78mm，两端各越浅带缘 1.1mm＝出血；两端外缘各附一枚直角边
+%                   1.0mm 的等腰直角「折影」小三角，实测同灰 166）
+%             角框＝白色 L 线 0.28mm（竖笔 x9.21mm、横笔 y11.63mm，两端止于浅带斜边）
+%             「数学」＝白字 26pt 黑体加粗、45° 仰排，墨心页面 (16.92,19.77)mm＝深带中心线上
+% ------------------------------------------------------------
+\newcommand{\juanmathSize}{17pt}   % 「数学」字号：零件库登记 \qpJTaMathSize=26pt，件型层按实测回填
+\newcommand{\sishou}{%
+  \begin{tikzpicture}[overlay,remember picture,x=1mm,y=1mm]
+    \path (current page.north west) coordinate (O);
+    \begin{scope}[shift={(O)}]
+      \fill[silklight] (6.9,-9.39) -- (40.1,-9.39) -- (6.9,-42.59) -- cycle;
+      \draw[white,line width=0.28mm] (9.21,-40.29) -- (9.21,-11.63) -- (37.87,-11.63);
+      \fill[silkdark] (22.94,-8.21) -- (34.15,-8.21) -- (5.78,-36.58) -- (5.78,-25.37) -- cycle;
+      % 两端折影：外缘斜边外侧各一枚直角边 1.0mm 的等腰直角小三角（实测灰同 166）
+      \fill[silkdark] (34.15,-8.21) -- (34.15,-9.20) -- (33.16,-9.20) -- cycle;
+      \fill[silkdark] (5.78,-36.58) -- (6.78,-36.58) -- (6.78,-35.58) -- cycle;
+      \node[white,inner sep=0pt,anchor=center,rotate=45] at (17.23,-19.74)
+        {\fontsize{\juanmathSize}{\juanmathSize}\selectfont\heitiao 数学};
+    \end{scope}
+  \end{tikzpicture}}
+
+% ------------------------------------------------------------
+% 件型层 C｜卷头零件（JT-02～JT-06）＋题区零件（TJ-02/05/07/08）
+%   卷头各行以基线距排布（零高参考盒＋\nointerlineskip\vskip）；\vgt{目标基线距} 供正文段间使用
+%   （正文相邻两普通行基线距自然＝\baselineskip 6.25mm，故显式胶＝目标−6.25mm）
+% ------------------------------------------------------------
+\newcommand{\zeroheight}[1]{\raisebox{0pt}[0pt][0pt]{#1}}
+\newcommand{\jpcen}[1]{\hbox to\jpcolw{\hfil\zeroheight{#1}\hfil}\nointerlineskip}
+\newcommand{\jpright}[1]{\hbox to\jpcolw{\hfill\zeroheight{#1}}\nointerlineskip}
+\newcommand{\vgt}[1]{\par\vskip\dimexpr#1-6.25mm\relax}
+
+% JT-02 填写行：标签黑体加粗 11pt 纯黑＋冒号＋下划线 10.4mm×0.2mm（实测厚 2–3px），三组间距 1.4mm
+\newcommand{\tianxieg}[1]{{\fontsize{\qpJTbLabelSize}{13pt}\selectfont\heitiao #1：}%
+  \rule[-0.62mm]{\qpJTbLineLen}{0.2mm}}
+\newcommand{\jtianxie}{\tianxieg{班级}\hspace{\qpJTbGapGrp}\tianxieg{姓名}%
+  \hspace{\qpJTbGapGrp}\tianxieg{得分}}
+% JT-03 卷名：黑体加粗纯黑＋下划线 0.4pt×71.0mm 灰32；零行内字距（撤 \CJKglue）
+%   字号＝件型层实测值 20.5pt：零件库登记 \qpJTcSize=22pt（二号）系按墨高反推，本件实测
+%   字心距 7.25mm、墨高 6.68mm 双证均指回 20.5pt（按 22pt 排则字心距 7.76mm，宽 6.9%）
+\newcommand{\juanmingSize}{20.5pt}
+\newcommand{\jjuanming}{{\fontsize{\juanmingSize}{26pt}\selectfont\heizhang
+  \renewcommand{\CJKglue}{\hskip 0pt}单元素养测评卷（一）}}
+\newcommand{\jjunrule}{{\color{juanrule}\rule{\qpJTcRuleLen}{\qpJTcRule}}}
+% JT-04 副题：14pt 黑体加粗 灰102 居中（标题级＝撤字内距，与卷名同理）
+\newcommand{\jfuti}{{\fontsize{\qpJTdSize}{18pt}\selectfont\heitiao\color{subgrey}%
+  \renewcommand{\CJKglue}{\hskip 0pt}第一章}}
+% JT-05 时间分值行：10.5pt 宋体常规 居中
+\newcommand{\jptime}{{\fontsize{\qpJTeSize}{17.7pt}\selectfont（时间：120分钟\quad 分值：150分）}}
+% JT-06 分区组行：组名黑体加粗＋说明宋体常规，同号 10.5pt 同行；续行内收 5.7mm（TJ-02 实测）
+\newcommand{\zuhang}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{\qpJTfSize}{17.7pt}\selectfont\heitiao #1}#2\par}
+% TJ-02 悬挂题号：半角「N.」特粗黑体数字 11.4pt＋隙 2.7mm，续行内收 5.7mm
+\newcommand{\ti}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{11.4pt}{17.7pt}\selectfont\heihao{\numboldjian #1}.}\hspace{2.7mm}#2\par}
+% TJ-05 分值括注（题号后、宋体常规同号）
+\newcommand{\fenzhi}[1]{（#1分）}
+% TJ-07 选项行：10.5pt 常规、行距 19pt（variantF 选项档；扫描页题干→首选项墨顶距实测 7.18mm
+%   ≈20.4pt 为下限——选项含向量上箭头时墨顶再抬高，故仍按 19pt 落，差异登记 简报）、
+%   整行内收 5.7mm；4/2/1 项每行网格
+\newcommand{\optline}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  {\fontsize{10.5pt}{19pt}\selectfont #1}\par}
+\newcommand{\optII}[2]{\makebox[57.1mm][l]{#1}#2}
+\newcommand{\optIV}[4]{\makebox[21.5mm][l]{#1}\makebox[21.5mm][l]{#2}\makebox[21.5mm][l]{#3}#4}
+% TJ-08 括号固定列位：右括号右缘距栏右 5.4mm
+\newcommand{\kw}{\hfill（\hspace{3.6mm}）\hspace*{5.4mm}}
+% 【答案】/【详解】块：标签＝\biaoqian（黑体 1.3×）、内容 10.5pt 正体
+% （全品真身答案另册；本样张按任务书要求内联，形制差异登记见 简报.md）
+\newcommand{\dablock}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  {\fontsize{10.5pt}{17.7pt}\selectfont\biaoqian{【答案】}}\hspace{0.5em}#1\par}
+\newcommand{\xjblock}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  {\fontsize{10.5pt}{17.7pt}\selectfont\biaoqian{【详解】}}\hspace{0.5em}#1\par}
+
+% 卷头基线距（扫描页实测；括注＝零件库墨缘距原值）
+\newdimen\hA \hA=3.03mm    % 版心顶→填写行基线（JT-02 行顶距页顶 12.0mm）
+\newdimen\hB \hB=12.12mm   % 填写行→卷名基线（JT-03 填写行→卷名顶 5.7mm）
+\newdimen\hC \hC=1.89mm    % 卷名→下划线（JT-03 卷名底→线 1.1mm）
+\newdimen\hD \hD=5.95mm    % 下划线→副题基线（JT-04 线底→副题顶 2.1mm）
+\newdimen\hE \hE=8.04mm    % 副题→时间行基线（JT-05 副题底→行顶 4.9mm）
+\newdimen\hF \hF=5.70mm    % 时间行→组行段顶（JT-06 时间行底→组行顶 5.4mm；行盒高另计，实测回填）
+\newdimen\hG \hG=6.35mm    % 组行末→首题基线（JT-06 组行底→首题顶 2.9mm）
+\newcommand{\jphead}{\hbox to\jpcolw{\sishou\hfill}\nointerlineskip
+  \vskip\hA\jpright{\jtianxie}%
+  \vskip\hB\jpcen{\jjuanming}%
+  \vskip\hC\jpcen{\jjunrule}%
+  \vskip\hD\jpcen{\jfuti}%
+  \vskip\hE\jpcen{\jptime}%
+  \vskip\hF
+  \zuhang{一、选择题}{：本题共8小题，每小题5分，共40分.\ 在每小题给出的四个选项中，只有一项是符合题目要求的.}%
+  \vgt{\hG}}
+
+% ------------------------------------------------------------
+% 件型层 D｜YJ-02 文字行页脚（无灰块；奇页右置／偶页左置；页码 14pt 黑体特粗，余字 8.5pt）
+%   —— 覆盖 qp-headfoot 的导学件灰块页脚（模块本体不改）
+% ------------------------------------------------------------
+\newcommand{\jpnum}[1]{{\fontsize{\qpYJbNumSize}{\qpYJbNumSize}\selectfont\numbold #1}}
+% 页脚余字字号＝件型层实测 7.5pt（六号）：零件库登记 \qpYJbTextSize=8.5pt，实测字心距 2.75mm、
+%   单字墨宽 2.28mm 双证指回 7.5pt（按 8.5pt 排则字心距 3.04mm，整串页脚宽出 9–29mm）
+\newcommand{\jptxtsize}{7.5pt}
+\newcommand{\jptxt}{\fontsize{\jptxtsize}{\jptxtsize}\selectfont}
+\newcommand{\juanname}{单元素养测评卷（一）}
+\newcommand{\pqt}{\ifnum\value{page}<10 0\fi\thepage}
+% \headwidth 显式钉回 \textwidth：fancyhdr 在 qp-layout 首次 \geometry（a4 纸）时把 \headwidth
+% 定成 175.6mm，本件型二次 \geometry 换 8 开横放并未回头改它 → 页脚会落在页面中段
+\setlength{\headwidth}{\textwidth}
+% 段隙＝扫描页实测「墨隙 − 0.46mm 字余白」：p01 墨隙 4.41/4.34/2.71，p02 墨隙 2.35/4.41/3.48/3.20/3.27
+\fancyfoot[RO]{\jptxt\juanname\hspace{3.95mm}{\heitiao 测评卷}\hspace{3.88mm}卷\hspace{2.25mm}\jpnum{\pqt}}
+\fancyfoot[LE]{\jptxt\jpnum{\pqt}\hspace{1.9mm}卷\hspace{3.95mm}{\heitiao 全品学练考}%
+  \hspace{3.0mm}高中数学\hspace{2.75mm}选择性必修第一册\hspace{2.8mm}RJB}
+
+% ------------------------------------------------------------
+% 件型层 E｜三栏排布器：三栏顶边等高起排于版心顶（零高参考盒），栏内容自管
+% ------------------------------------------------------------
+\newcommand{\jpcol}[1]{\raisebox{0pt}[0pt][0pt]{\vtop{\hsize\jpcolw\parskip0pt\parindent0pt
+  \fontsize{10.5pt}{17.7pt}\selectfont\relax#1}}}
+\newcommand{\jpthree}[3]{\nointerlineskip\noindent\jpcol{#1}\hspace{\jpgap}\jpcol{#2}%
+  \hspace{\jpgap}\jpcol{#3}\par}
+% 栏首零高锚线：\vtop 的参考点＝首行基线，\topskip=0 会把它顶在版心顶上（墨顶反而高出约 3.1mm）；
+% 先垫一条零高空行，真正首行的基线即落到「版心顶＋字高」处＝墨顶与版心顶齐平（照扫描页 p02 实测
+% 首行墨顶 11.98mm ≈ 版心顶 12.0mm）。卷头页栏1 首件是丝带零高 hbox，天然自带此锚，无需再加
+\newcommand{\jplead}{\hbox{}\nointerlineskip}
+
+\begin{document}
+% ===================== 第 1 页＝卷头页（栏1 卷头＋Q1；栏2 Q2–Q3；栏3 留白） =====================
+%   题目按卷型跨栏续排（扫描页 p01 三栏满排；本样张材料截排 6 题，故栏3 自然留白）
+\jpthree{\jphead
+  \ti{1}{下列说法正确的是\kw}
+  \optline{\optII{A．若\(| \overrightarrow{a} | = | \overrightarrow{b} |\)，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)或}{\(\overrightarrow{a} = - \overrightarrow{b}\)；}}
+  \optline{B．若\(\overrightarrow{a},\overrightarrow{b}\)为相反向量，则\nobreak\(\overrightarrow{a} + \overrightarrow{b} = \overrightarrow{0}\)；}
+  \optline{C．零向量是没有方向的向量；}
+  \optline{D．若\(\overrightarrow{a},\overrightarrow{b}\)是两个单位向量，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)}
+}{\jplead
+  \ti{2}{下列说法错误的是\kw}
+  \optline{\optII{A．零向量与任意向量都平行；}{B．若\(|\overrightarrow{a}|=0\)，则\nobreak\(\overrightarrow{a}=\overrightarrow{0}\)；}}
+  \optline{\optII{C．若\(\overrightarrow{a}=\overrightarrow{b}\)，则\nobreak\(|\overrightarrow{a}|=|\overrightarrow{b}|\)；}{D．若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则\nobreak\(|\overrightarrow{a}|=|\overrightarrow{b}|\)}}
+  \ti{3}{设\(\overrightarrow{e_1}\)，\(\overrightarrow{e_2}\)不共线，\(\overrightarrow{a}=2\overrightarrow{e_1}+\overrightarrow{e_2}\)，\(\overrightarrow{b}=4\overrightarrow{e_1}+k\overrightarrow{e_2}\)，若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则\nobreak\(k=\)\kw}
+  \optline{\optIV{A．\(\frac{1}{2}\)；}{B．\(2\)；}{C．\(-\frac{1}{2}\)；}{D．\(3\)}}
+}{}
+\newpage
+% ===================== 第 2 页＝内页（栏1 组行二＋Q4＋组行三＋Q5；栏2 组行四＋Q6 含【答案】/【详解】） =========
+%   题间不加额外段前距：扫描页 p01 实测 组行末→首题、行与行 基线距均＝\baselineskip 17.7pt
+\jpthree{\jplead
+  \zuhang{二、选择题}{：本题共3小题，每小题6分，共18分.\ 在每小题给出的选项中，有多项符合题目要求.}%
+  \vgt{\hG}
+  \ti{4}{\fenzhi{6}设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)为空间中的任意两个非零向量，下列各式中正确的有\kw}
+  \optline{A．\({\overrightarrow{a}}^{2} = | \overrightarrow{a} |^{2}\)；}
+  \optline{B．\(\frac{\overrightarrow{a} \cdot \overrightarrow{b}}{\overrightarrow{a} \cdot \overrightarrow{a}} = \frac{\overrightarrow{b}}{\overrightarrow{a}}\)；}
+  \optline{C．\(( \overrightarrow{a} \cdot \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} \cdot {\overrightarrow{b}}^{2}\)；}
+  \optline{D．\(( \overrightarrow{a} - \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + {\overrightarrow{b}}^{2}\)}
+  \vgt{\hG}
+  \zuhang{三、填空题}{：本题共3小题，每小题5分，共15分.}
+  \vgt{\hG}
+  \ti{5}{\fenzhi{5}已知\(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，则\nobreak\(\overrightarrow{a}\cdot\overrightarrow{b}=\)\kongbai{}}
+}{\jplead
+  \zuhang{四、解答题}{：本题共5小题，共77分.\ 解答应写出文字说明、证明过程或演算步骤.}
+  \vgt{\hG}
+  \ti{6}{\fenzhi{13}已知\(|\overrightarrow{a}|=4\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=120^\circ\)，求\(|\overrightarrow{a}+\overrightarrow{b}|\).}
+  \vgt{\hG}
+  \dablock{\(\sqrt{13}\)}
+  \xjblock{\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}|\,|\overrightarrow{b}|\,\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=4\times3\times\left(-\frac{1}{2}\right)=-6\)；\(|\overrightarrow{a}+\overrightarrow{b}|^{2}=|\overrightarrow{a}|^{2}+2\overrightarrow{a}\cdot\overrightarrow{b}+|\overrightarrow{b}|^{2}=16-12+9=13\)，故\(|\overrightarrow{a}+\overrightarrow{b}|=\sqrt{13}\).}
+}{}
+\end{document}

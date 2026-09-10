@@ -1,0 +1,282 @@
+% ============================================================
+% qp-parts.tex —— 全品零件库落件模块（52 零件参数资产注册表）
+% 依《附则/全品零件库.md》§二落件（2026-09-08 v4.4 拍板6a），参数一字不改；
+% 零件号＝组号-序号（ZS-01…TS-03，10 组 52 件），宏名＝\qp＋组号＋小写序字母（ZS-01→\qpZSa…ZS-07→\qpZSg）。
+% 口径：本库登记＝全品实测原值（对照基准）；实施模块（qp-titles/qp-blocks/qp-layout）按
+%   字号折算＝墨高/em≈0.87（〔版式〕§10）换算后落值，实施值与库值的换算登记见交付报告§字号梯子。
+% 占位件（数值未测，目检档占位＋「需裁决」）：TJ-04／TJ-05／JT-07／TS-01／HX-01 斜体角度——
+%   禁造数值，数值化后回填本件（零件库§六.5）。
+% 出处缩写沿用零件库§二（〔十条〕〔花〕〔章〕〔题〕〔版式〕〔参照〕⑤）。
+% 调用关系：main.tex → qp-layout → 本件 → qp-headfoot → qp-titles → qp-blocks（本件只注册参数，不排版）。
+% ============================================================
+
+% ---------------- ZS 章首组（A1～A7） ----------------
+% ZS-01 装饰方块组｜章首左上角饰｜〔章〕#1/#2；裁片 qp_p04 系
+%   两枚 6.9×6.9mm 等大方块对角错位相触（右上灰144＋左下灰199，交叠缘灰166）＋右下 2.3mm 小块；
+%   union 13.8×16.6mm，纵向越出章标题行（顶越 7.1mm）；与章标题墨间距 3.1mm
+\newcommand{\qpZSaSq}{6.9mm}      % 等大方块边长
+\newcommand{\qpZSaSmallSq}{2.3mm} % 右下小块边长
+\newcommand{\qpZSaGapTitle}{3.1mm}% 与章标题墨间距
+\newcommand{\qpZSaOverTop}{7.1mm} % 顶越章标题行
+\newcommand{\qpZSaGrayHi}{144}    % 右上块灰
+\newcommand{\qpZSaGrayLo}{199}    % 左下块灰
+\newcommand{\qpZSaGrayEdge}{166}  % 交叠缘灰
+% ZS-02 章标题｜章名｜〔十条〕§6、〔版式〕§4
+%   22pt 黑体（笔画 4.0×，dens 0.36）纯黑，左对齐（版心左+16.9mm），墨高 6.76mm
+\newcommand{\qpZSbSize}{22pt}
+\newcommand{\qpZSbStroke}{4.0}    % 笔画倍数（字重阶梯 4.0× 档）
+\newcommand{\qpZSbLeft}{16.9mm}   % 版心左缩进
+\newcommand{\qpZSbInkH}{6.76mm}   % 墨高
+% ZS-03 章标下横线｜章首通栏线｜〔章〕#3、〔版式〕§4：0.2pt 纯黑，版心全宽，仅章首页，y38.6mm
+\newcommand{\qpZScRule}{0.2pt}
+% ZS-04 节标题｜n.x｜〔十条〕§6、〔章〕#4
+%   18pt 黑体常规不加粗（笔画 1.7×＝唯一不粗层级），居中；与横线距 6.9mm
+\newcommand{\qpZSdSize}{18pt}
+\newcommand{\qpZSdStroke}{1.7}
+\newcommand{\qpZSdGapRule}{6.9mm}
+% ZS-05 小节标题｜n.n.n｜〔十条〕§6、〔章〕#4：15pt 黑体加粗 3.3×，居中；与节距 5.5mm
+\newcommand{\qpZSeSize}{15pt}
+\newcommand{\qpZSeStroke}{3.3}
+\newcommand{\qpZSeGapJie}{5.5mm}
+% ZS-06 课时标题｜第N课时｜〔十条〕§6、〔版式〕§4、〔章〕#4
+%   14pt 黑体加粗 2.7×，居中，顶距版心 22.3–25.5mm；与小节距 5.9mm
+\newcommand{\qpZSfSize}{14pt}
+\newcommand{\qpZSfStroke}{2.7}
+\newcommand{\qpZSfGapXiaojie}{5.9mm}
+% ZS-07 学习目标件｜【学习目标】块｜〔版式〕§3/§7、〔花〕★18/★19、〔章〕#4、拍板6
+%   标签：墨高 48–50px≈11pt 黑体加粗 1.3×，栏左缘，块宽 18.5mm；
+%   条目：楷体 10.5pt、条目行距 15.8–17.0pt、首行缩进 15.2mm＋序号加粗、回行悬挂 8.3mm；标签→首条目 5.8mm
+\newcommand{\qpZSgLabelSize}{11pt}
+\newcommand{\qpZSgLabelStroke}{1.3}
+\newcommand{\qpZSgLabelW}{18.5mm}
+\newcommand{\qpZSgBodySize}{10.5pt}
+\newcommand{\qpZSgLeadInd}{15.2mm}
+\newcommand{\qpZSgHang}{8.3mm}
+\newcommand{\qpZSgGapFirst}{5.8mm}
+
+% ---------------- HX 花形行组（栏内件，B1～B4） ----------------
+% HX-01 菱形块｜栏目块｜〔十条〕§2、〔花〕★1–★5、〔版式〕§7
+%   23.5×6.7mm＝4 枚圆角菱形尖端相连（重叠 1.06mm），白底黑描边 0.4–0.6pt，内字≈11pt 斜体特粗黑
+%   （右倾≈10°美术黑），左缘＝版心左；练习册版 22.6×6.8mm 同构
+\newcommand{\qpHXaW}{23.5mm}
+\newcommand{\qpHXaH}{6.7mm}
+\newcommand{\qpHXaOverlap}{1.06mm}
+\newcommand{\qpHXaRuleLo}{0.4pt}
+\newcommand{\qpHXaRuleHi}{0.6pt}
+\newcommand{\qpHXaInnerSize}{11pt}
+% HX-01 斜体角度＝占位件：右倾≈10°美术黑，像素级未参数化（零件库§六.4）；
+%   现实施走 qp-fonts huabf FakeSlant=0.18 目检档，需裁决
+\newcommand{\qpHXaSlant}{0.18}% 目检档占位（FakeSlant）；精确角度需裁决
+% HX-02 底线｜块下线｜〔十条〕§2、〔花〕★6/★7、拍板§七.1
+%   80.7mm×1.2pt 深灰 77，两端缩进（起点版心左+2.77mm、终点距栏线 4.03mm），距块底 0–0.36mm（贴线）
+\newcommand{\qpHXbLen}{80.7mm}
+\newcommand{\qpHXbThick}{1.2pt}
+\newcommand{\qpHXbGray}{77}
+\newcommand{\qpHXbIndL}{2.77mm}
+\newcommand{\qpHXbIndR}{4.03mm}
+% HX-03 右灰词｜块右说明词｜〔十条〕§2、〔花〕★10、拍板§七.1
+%   6.5pt 灰 122 黑体常规不加粗，坐线（字底距线顶 0.43mm），两词组
+\newcommand{\qpHXcSize}{6.5pt}
+\newcommand{\qpHXcGray}{122}
+\newcommand{\qpHXcSitUp}{0.43mm}
+% HX-04 行距件｜整行｜〔花〕★12/#13/#14、〔题〕#23：前距 4.5mm、后距 5.19mm、整行高 7.1mm
+\newcommand{\qpHXdPre}{4.5mm}
+\newcommand{\qpHXdPost}{5.19mm}
+\newcommand{\qpHXdRowH}{7.1mm}
+
+% ---------------- TB 条目/标题组（C1～C6） ----------------
+% TB-01 ◆知识点标题｜◆知识点N｜〔十条〕§1/§6、〔花〕★16、〔章〕#6
+%   12pt 黑体加粗（笔画 2.3×）顶格（版心左+0.7mm），◆符号 0.63em＋后隙 2.4mm＋全角空格＋名；墨高 3.70mm
+\newcommand{\qpTBaSize}{12pt}
+\newcommand{\qpTBaStroke}{2.3}
+\newcommand{\qpTBaIndent}{0.7mm}
+\newcommand{\qpTBaDiaMark}{0.63em}
+\newcommand{\qpTBaDiaGap}{2.4mm}
+% TB-02 条目号｜1. 2. 3.｜〔花〕★17、〔十条〕§6
+%   半角「1.」＋号后空约 1 字再接内容；号＝特粗黑体 2.7×，内容常规宋体
+\newcommand{\qpTBbStroke}{2.7}
+% TB-03 探究点标题｜◆探究点N 名｜〔十条〕§1、〔花〕★23、拍板8
+%   12pt 特粗黑（2.3×）独立成行，「◆探究点N」＋空约 2 字＋栏目名；行自带 1.17× 行距；花形线底→标题顶 5.19mm
+\newcommand{\qpTBcSize}{12pt}
+\newcommand{\qpTBcStroke}{2.3}
+\newcommand{\qpTBcLead}{2em}
+\newcommand{\qpTBcLineLead}{1.17}
+\newcommand{\qpTBcGapPre}{5.19mm}
+% TB-04 例N 标签｜例1/例2…｜〔十条〕§1、〔题〕#1/#4、〔花〕★22、拍板8
+%   12pt 特粗黑另行内联题干；标签→题干隙 1.3mm；导学案探点内连续编号
+\newcommand{\qpTBdSize}{12pt}
+\newcommand{\qpTBdGap}{1.3mm}
+% TB-05 变式N 标签｜变式｜〔花〕★22、〔题〕#10、v43任务书§五.5
+%   12pt 特粗黑（笔画 4px＝1.3–2.3× 区间，实施取中档）；全品无序号、（1）（2）子题号
+\newcommand{\qpTBeSize}{12pt}
+% TB-06 子项号｜（1）①②｜〔花〕★17 及子项普查、拍板3
+%   常规字重 1.0×；首子项连排条目/标签头、后续一律换行顶格、行尾括号右贴栏缘（距 0.56mm）
+\newcommand{\qpTBfStroke}{1.0}
+\newcommand{\qpTBfEdgeGap}{0.56mm}
+
+% ---------------- TJ 题区组（D1～D10） ----------------
+% TJ-01 课堂评价/检测题号｜1.–5.｜〔十条〕§6、〔题〕#5
+%   加粗 2.0×（笔画 6px，数字高 37px）≈11.4pt；题号→题干留约 1 字空
+\newcommand{\qpTJaStroke}{2.0}
+\newcommand{\qpTJaSize}{11.4pt}
+% TJ-02 练习册悬挂题号｜题号｜〔版式〕§2.3：悬挂深度＝题号宽：单号内收 5.7–5.8mm、双位 7.5–7.7mm
+\newcommand{\qpTJbHangOne}{5.75mm}
+\newcommand{\qpTJbHangTwo}{7.6mm}
+% TJ-03 题源标｜〔年份·地区考试〕｜⑤本轮实测（§一）；〔题〕#3
+%   宋体常规 10.5pt 纯黑（与正文完全同），半角 [ ]（左括下探），内联于题号/例N/变式N 标签后（隙 2.7mm），
+%   ]→题干 2.2mm，无框无底纹无独立距；三件型通用
+\newcommand{\qpTJcSize}{10.5pt}
+\newcommand{\qpTJcGapPre}{2.7mm}
+\newcommand{\qpTJcGapPost}{2.2mm}
+% TJ-04 多选题标记｜(多选题)｜〔参照〕§1＋⑤快扫复证——占位件：数值未测，需裁决
+%   目检档：题号后内联加粗、字号同正文（半角括号）；实例 练习册 p10题7/p11题12/p12题7/p13题13/p19题12/p21题12
+\newcommand{\qpTJdMark}{(多选题)}% 目检档文本占位；字号/字重数值未测，需裁决后数值化
+% TJ-05 分值括注｜(13分)(15分)｜⑤（⑤_题源标_Q17四川德阳.png）；〔参照〕§2——占位件：笔画宽数值未测，需裁决
+%   题号后、题源标前，宋体常规 10.5pt；梯队 13/15/15/17/17（测评卷）、13/15（练习册档末）
+\newcommand{\qpTJeMark}[1]{(#1分)}% 文本占位；笔画宽数值未测，需裁决
+% TJ-06 ★精选标｜题号前星｜〔十条〕§10、〔参照〕§1：实心五角星 bbox 23×24px≈1.7mm、fill 0.36，紧贴题号
+%   基础巩固档末位解答题常带、与难度正交；导学案全域无★
+\newcommand{\qpTJfStarW}{1.7mm}
+\newcommand{\qpTJfFill}{0.36}
+% TJ-07 选项行｜A./B./C./D.｜〔题〕#17/#18/#19、拍板9
+%   10.5pt 常规、行末分号、半角点＋空；行距分档：例题区 19.0–19.4pt／课堂评价·检测区 20.8–21.2pt；
+%   4/2/1 项每行网格；短选项打包左置；续行悬挂对齐选项文字
+\newcommand{\qpTJgSize}{10.5pt}
+\newcommand{\qpTJgLeadLiti}{19.2pt}   % 例题区档（区间 19.0–19.4 中值落点，实测回填）
+\newcommand{\qpTJgLeadPingjia}{21.0pt}% 课堂评价·检测区档（区间 20.8–21.2 中值落点，实测回填）
+% TJ-08 判断题括号位｜（　　）｜〔题〕#6：固定列位：右括号右缘距栏右 5.4mm；逐项一行、行距同正文密排
+\newcommand{\qpTJhEdgeGap}{5.4mm}
+% TJ-09 挖空线｜____｜〔花〕挖空专项、〔版式〕§8
+%   导学案长中位 15.5mm（区间 11.5–24.4）、练习册 14.7mm；线厚≈0.14mm、行内偏下（距字底 0.71mm）
+\newcommand{\qpTJiLenDx}{15.5mm}
+\newcommand{\qpTJiLenLx}{14.7mm}
+\newcommand{\qpTJiThick}{0.14mm}
+\newcommand{\qpTJiDrop}{0.71mm}
+% TJ-10 题间距｜题间｜〔题〕#20/§四：题间墨隙中位 4.1–4.7mm（最小 2.2mm）；知识点块→题目、断栏留白沿〔题〕§四
+\newcommand{\qpTJjGapMid}{4.4mm} % 中位区间 4.1–4.7 落点，实测回填
+\newcommand{\qpTJjGapMin}{2.2mm}
+
+% ---------------- BG 表格组（E1～E4） ----------------
+% BG-01 表线件｜外框/内线｜〔花〕★29/★30：外框 0.6–0.8pt 粗于内线 0.4pt；线色深灰 122（非纯黑）
+\newcommand{\qpBGaFrameLo}{0.6pt}
+\newcommand{\qpBGaFrameHi}{0.8pt}
+\newcommand{\qpBGaInner}{0.4pt}
+\newcommand{\qpBGaGray}{122}
+% BG-02 表头行｜表头｜〔花〕★31/#36：黑体加粗居中；行高 9.11mm（p04）/7.33mm（p14，逐线实测为准）
+\newcommand{\qpBGbHeadH}{9.11mm}
+\newcommand{\qpBGbHeadHAlt}{7.33mm}
+% BG-03 单元格｜数据行｜〔花〕★32/#37：单行行高 7.26mm、格内上下 pad≈4.1mm/行；表内挖空 13–16mm 空白线
+\newcommand{\qpBGcRowH}{7.26mm}
+\newcommand{\qpBGcPad}{4.1mm}
+\newcommand{\qpBGcKongLenLo}{13mm}
+\newcommand{\qpBGcKongLenHi}{16mm}
+% BG-04 首列件｜名称列｜〔花〕★33/★34/#35/#16
+%   水平居中（非左齐）；列宽比 1:2.09:2.04；表宽 83.7mm（占栏 96%）；表顶前距 2.77mm
+\newcommand{\qpBGdRatio}{1:2.09:2.04}
+\newcommand{\qpBGdTableW}{83.7mm}
+\newcommand{\qpBGdPreGap}{2.77mm}
+
+% ---------------- TW 图位组（F1～F5） ----------------
+% TW-01 题侧嵌图｜短题干图｜〔十条〕§5、〔题〕#16
+%   26.5–32mm（≈栏宽 1/3），图右文左，文图缝 4.2mm，文 56%/图 36% 栏宽
+\newcommand{\qpTWaWLo}{26.5mm}
+\newcommand{\qpTWaWHi}{32mm}
+\newcommand{\qpTWaGap}{4.2mm}
+% TW-02 题下居中图｜长题干图｜〔十条〕§5、〔题〕#12/#13：27.7–36mm，上下间距 2.8/2.2mm，偏右不严格居中
+\newcommand{\qpTWbWLo}{27.7mm}
+\newcommand{\qpTWbWHi}{36mm}
+\newcommand{\qpTWbGapUp}{2.8mm}
+\newcommand{\qpTWbGapDn}{2.2mm}
+% TW-03 并排图｜多图｜〔十条〕§5：每张 18–24mm 并排等高
+\newcommand{\qpTWcWLo}{18mm}
+\newcommand{\qpTWcWHi}{24mm}
+% TW-04 选项小图｜选项配图｜〔十条〕§5：一行 4 张、每张 9–13mm
+\newcommand{\qpTWdWLo}{9mm}
+\newcommand{\qpTWdWHi}{13mm}
+% TW-05 图内字件｜字母标签｜〔题〕#11、对照报告§八：≈7pt（正文 70–75%），全书统一
+\newcommand{\qpTWeSize}{7pt}
+
+% ---------------- XB 小结/标签组（G1～G4） ----------------
+% XB-01 素养小结件｜【素养小结】｜〔花〕★21、〔题〕#8
+%   标签独占一行（黑体加粗 1.3×，墨高 45px）；内容另起行楷体 10.5pt、行距 17.2–17.9pt、子项换行
+\newcommand{\qpXBaLabelStroke}{1.3}
+\newcommand{\qpXBaBodySize}{10.5pt}
+% XB-02 诊断分析件｜【诊断分析】｜〔题〕#9、〔花〕★20
+%   标签同上 1.3×；说明文字与正文同大 10.5pt 正体（v4.2 降 9.5 已回滚拍板）；判断题 4–6 条逐条一行
+\newcommand{\qpXBbBodySize}{10.5pt}
+% XB-03 编注件｜「注：」「规定：」｜〔十条〕§3、拍板2
+%   正文区无小字层：10.5pt 同号黑字随文（全品唯一正文内注记做法）；真小字仅 6.5pt 装饰位（B3→HX-03）与页脚 5.6pt
+\newcommand{\qpXBcBodySize}{10.5pt}
+% XB-04 学习目标标签｜【学习目标】｜〔版式〕§7：见 A7→ZS-07（参数见 \qpZSg*）
+
+% ---------------- YJ 页脚组（H1～H2） ----------------
+% YJ-01 灰块页脚｜导学案/练习册页脚｜〔版式〕§5、〔章〕#8–#12
+%   灰块 fill221：练习册 31.0×7.8mm／导学案 26.2×7.8mm，贴外侧出血，块底距页底 11.2mm；
+%   页码粗体衬线数字墨高 38–39px≈9.5–10.5pt；对侧小字≈5.6pt 灰76 混字重
+\newcommand{\qpYJaBlockLx}{31.0mm}
+\newcommand{\qpYJaBlockDx}{26.2mm}
+\newcommand{\qpYJaBlockH}{7.8mm}
+\newcommand{\qpYJaGray}{221}
+\newcommand{\qpYJaBottom}{11.2mm}
+% YJ-02 文字行页脚｜测评卷页脚（新发现，无灰块）｜⑤（⑤_测评卷页脚p01/p02.png）
+%   单行文字带 y3800–3848（高 48px＝3.4mm），带底距页底 10.5mm；页码「01/02」墨高 49px≈14pt 黑体特粗；
+%   余字墨高 31–35px≈8.5pt；更正〔参照〕§2「灰块页码」旧说
+\newcommand{\qpYJbBandH}{3.4mm}
+\newcommand{\qpYJbBottom}{10.5mm}
+\newcommand{\qpYJbNumSize}{14pt}
+\newcommand{\qpYJbTextSize}{8.5pt}
+
+% ---------------- JT 卷头组（测评卷/滚动卷，I1～I7） ----------------
+% JT-01 丝带角饰｜卷头左上｜⑤（⑤_测评卷头丝带.png、⑤_卷头全貌.png）
+%   角饰区 bbox 41.2×56.3mm；深带灰166＋浅带灰210 双层 45° 斜带、外圈双细线角框（灰≈210）；
+%   白字「数学」黑体加粗单字≈130px≈26pt、45° 仰排；复刻建议 tikz 矢量重绘＋出样目检
+\newcommand{\qpJTaBboxW}{41.2mm}
+\newcommand{\qpJTaBboxH}{56.3mm}
+\newcommand{\qpJTaGrayDeep}{166}
+\newcommand{\qpJTaGrayLight}{210}
+\newcommand{\qpJTaMathSize}{26pt}
+% JT-02 填写行｜班级/姓名/得分｜⑤（⑤_测评卷头填写行.png）
+%   标签黑体加粗 h49px≈11pt 纯黑，冒号后下划线长 10.4mm（厚 2–3px）；三组间距≈1.4mm；行顶距页顶 12.0mm
+\newcommand{\qpJTbLabelSize}{11pt}
+\newcommand{\qpJTbLineLen}{10.4mm}
+\newcommand{\qpJTbGapGrp}{1.4mm}
+\newcommand{\qpJTbTop}{12.0mm}
+% JT-03 卷名件｜单元素养测评卷（一）｜⑤（⑤_测评卷名与副题.png）
+%   22pt 黑体加粗纯黑（与章标题同号，墨高 95px），居中，宽 68.2mm；下划线 0.4pt 近黑（灰32）×长 71.0mm，
+%   卷名底→线 1.1mm；填充行→卷名顶 5.7mm
+\newcommand{\qpJTcSize}{22pt}
+\newcommand{\qpJTcW}{68.2mm}
+\newcommand{\qpJTcRule}{0.4pt}
+\newcommand{\qpJTcRuleLen}{71.0mm}
+\newcommand{\qpJTcRuleGray}{32}
+\newcommand{\qpJTcGapRule}{1.1mm}
+\newcommand{\qpJTcGapFill}{5.7mm}
+% JT-04 副题件｜第一章｜⑤同上：14pt 黑体加粗、灰 102（中灰），居中；线底→副题顶 2.1mm
+\newcommand{\qpJTdSize}{14pt}
+\newcommand{\qpJTdGray}{102}
+\newcommand{\qpJTdGapRule}{2.1mm}
+% JT-05 时间分值行｜（时间：120分钟 分值：150分）｜⑤（⑤_测评卷时间分值行.png）
+%   10.5pt 宋体常规纯黑，居中；副题底→行顶 4.9mm
+\newcommand{\qpJTeSize}{10.5pt}
+\newcommand{\qpJTeGapSub}{4.9mm}
+% JT-06 分区组行｜一、选择题：…｜⑤（⑤_测评卷组行选择题.png；练习册 p16 快扫）
+%   「一、选择题」黑体加粗＋「：本题共8小题…」宋体常规，同号 10.5pt 同行；时间行底→组行顶 5.4mm、组行底→首题顶 2.9mm
+\newcommand{\qpJTfSize}{10.5pt}
+\newcommand{\qpJTfGapTime}{5.4mm}
+\newcommand{\qpJTfGapFirst}{2.9mm}
+% JT-07 滚动卷头｜▶滚动习题（一）｜练习册 p16（⑤_快扫_练_4.png）——占位件：未数值化（快扫观察），需裁决
+%   目检档：居中黑体大字＋「范围1.1」小字＋「(时间:45分钟 分值:100分)」居中行
+\newcommand{\qpJTgHead}{}% 未数值化占位；数值化需补测，需裁决
+
+% ---------------- TS 特殊件（J1～J3） ----------------
+% TS-01 流程图件｜方法小结流程图｜导学案 p15（⑤_快扫_导_3.png）——占位件：参数未测（快扫发现），需裁决
+%   目检档：菱形步骤框（求模…）＋右侧矩形说明框＋箭头链，全书仅导学案 p15 一处
+\newcommand{\qpTSaFlow}{}% 未数值化占位；需补测，需裁决
+% TS-02 答题栏｜练习册书偶页外侧栏｜〔版式〕§6：拍板6/A 已否决，不推广，仅存档（不落宏）
+% TS-03 全品水印｜页面斜置灰字｜各页目检：授权水印，不复用（不落宏）
+
+% ---------------- 结构级规则（跨零件；注释登记，不落宏） ----------------
+%   行距主峰 18.25pt（导学案）/17.95pt（练习册）/17.7pt（测评卷）；
+%   正文 10.5pt 宋体＋数学 Times 粗斜体；黑体分常规/加粗两档；
+%   答案另册物理隔离（正文无答案行/解析行）；课堂评价恒 5 题；每课时恒 16 题＝10+4+2。
+%   〔十条〕§7/§8/§9、〔参照〕§1

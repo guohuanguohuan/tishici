@@ -3,7 +3,9 @@
 % 集成口径：素材注记的 \resizebox{33.120mm}（侧绕排）作废，本片按源尺寸 66.3mm 图下置居中
 % 依赖：宿主导言 \usepackage{tikz}
 % 注：末行 % 必需——\input 时尾随换行会成空格 token，被计入裁切框（实测 +3.33pt 页宽）。
-\begin{tikzpicture}[x=1mm,y=1mm,line width=0.34mm,line cap=butt,line join=miter,
+% 缩档轮 0910：置宽 66.3→30.5mm（有效系数 30.5/66.30＝0.460030，标签渲染 16.29→7.49pt 命中 TW-05 目标，
+%   字号档不动、随 \resizebox 同比缩）；线宽声明按「0.21÷0.460030＝0.456mm」回填。
+\begin{tikzpicture}[x=1mm,y=1mm,line width=0.456mm,line cap=butt,line join=miter,
                     font=\fontsize{16.03pt}{19.2pt}\selectfont]
   \path[use as bounding box] (0,0) rectangle (66.3000,35.6741);   % bbox＝源画布 788×424 px
   % ---- 顶点坐标（源 px 见行末注；由 8 条线最小二乘拟合并求交，残差 ≤0.6px） ----

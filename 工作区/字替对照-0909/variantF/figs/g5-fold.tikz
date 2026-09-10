@@ -6,7 +6,10 @@
 % 依赖：宿主导言 \usepackage{tikz}；im5dash 为本片段内 tikz key，不入导言
 \begin{tikzpicture}[
   x=1mm, y=1mm,
-  line width=0.3042mm,
+  % 缩档轮 0910：置宽 54.7→28.2mm（标签渲染 14.55→7.50pt 命中 TW-05 目标，字号档 14.4pt 不动、随同比缩）。
+  %   本片段无画布锁定 → 有效系数取实测反推：现 0.3025mm÷声明 0.3042mm＝0.99441，
+  %   新 0.99441×(28.2÷54.7)＝0.51266 → 声明回填 0.21÷0.51266＝0.4096mm。
+  line width=0.4096mm,
   line cap=butt, line join=miter,
   im5dash/.style={dash pattern=on 1.2169mm off 0.6085mm},
   every node/.style={inner sep=0pt, font=\fontsize{14.4pt}{14.4pt}\selectfont}
