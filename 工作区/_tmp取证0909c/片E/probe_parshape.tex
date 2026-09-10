@@ -1,0 +1,55 @@
+% 片E 最小探针：\parshape 绕排 in multicols（机制验证：窄栏→通栏、零尺寸图盒、跨栏、\raggedright＋\hfill 右挂）
+% 编译：xelatex 两遍；观察 (1) 图是否落位 (2) 图旁行是否窄栏 (3) 图底以下是否通栏 (4) 跨栏时图是否随首行
+\documentclass{ctexart}
+\setCJKmainfont{SimSun}
+\setCJKmonofont{SimSun}
+\usepackage[a4paper,margin=17.575mm,bottom=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{xcolor}
+\setlength{\columnsep}{9.25mm}
+\setlength{\parindent}{0pt}
+\renewcommand{\normalsize}{\fontsize{10.09pt}{18.25pt}\selectfont}
+\normalsize
+\newcommand{\probeimg}[2]{% #1=盒宽mm #2=盒高mm
+  \textcolor{red!60}{\rule{#1mm}{#2mm}}}
+\begin{document}
+\begin{multicols}{2}
+\noindent 左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。\par
+\noindent 左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。\par
+\noindent 左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。\par
+\noindent 左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。\par
+\noindent 左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。\par
+\noindent 左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。\par
+\noindent 左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。左栏填充行。\par
+% ================= 测试1：\parshape 4 行窄栏（46.368mm）+ 其余通栏，图零尺寸盒挂首行 =================
+{\parshape 5 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt \linewidth
+\raggedright
+\noindent\smash{\rlap{\hspace{50.2mm}\raisebox{\dimexpr-\height+3.677mm\relax}[\dimexpr3.677mm\relax][\dimexpr\height-3.677mm\relax]{\probeimg{30}{22.5}}}}%
+探九例1详解文本模拟：过点 \(B\)，\(D\) 分别向 \(AC\) 作垂线，垂足分别为 \(M\)，\(N\)，则可得 \(AM = \frac{1}{2}\)，\(BM = \frac{\sqrt{3}}{2}\)，\(CN = \frac{1}{2}\)，\(DN = \frac{\sqrt{3}}{2}\)，\(MN = 1\)．由于 \(\overrightarrow{BD} = \overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND}\)，所以 \(|\overrightarrow{BD}|^{2} = {(\overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND})}^{2}\)，故选：\emph{A}．\par}
+% 测试1 尾标（应在图底以下，通栏起）
+\noindent 测试1 之后第一块（应通栏、且在图底之下）。\par
+\noindent 测试1 之后第二块。\par
+% ================= 测试2：短段落（窄栏行数 < N）+ \hfill 右挂 =================
+{\parshape 7 0pt 44mm 0pt 44mm 0pt 44mm 0pt 44mm 0pt 44mm 0pt 44mm 0pt \linewidth
+\raggedright
+\noindent\smash{\rlap{\hspace{49mm}\raisebox{\dimexpr-\height+4.093mm\relax}[\dimexpr4.093mm\relax][\dimexpr\height-4.093mm\relax]{\probeimg{33.12}{17.8}}}}%
+探八例1题干模拟：如图，在大小为 45° 的二面角 \(A-EF-D\) 中，四边形 \(ABFE\)，\(CDEF\) 都是边长为 1 的正方形，则 \(B\)，\(D\) 两点间的距离是\nobreak\mbox{}\nobreak\hfill(\hspace{4mm})\hspace{0.56mm}\par}
+\noindent 测试2 尾标（若段落短于图高，此处应仍在图右侧空白之下——缺陷态复现点）。\par
+% ================= 测试3：跨栏测试——大量填充后段落起于栏底 =================
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+\noindent 填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。填充。\par
+{\parshape 5 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt \linewidth
+\raggedright
+\noindent\smash{\rlap{\hspace{50.2mm}\raisebox{\dimexpr-\height+3.677mm\relax}[\dimexpr3.677mm\relax][\dimexpr\height-3.677mm\relax]{\probeimg{30}{22.5}}}}%
+测试3 跨栏段落：一二三四五六七八九十甲乙丙丁一二三四五六七八九十甲乙丙丁一二三四五六七八九十甲乙丙丁一二三四五六七八九十甲乙丙丁一二三四五六七八九十甲乙丙丁一二三四五六七八九十甲乙丙丁一二三四五六七八九十甲乙丙丁一二三四五六七八九十甲乙丙丁\par}
+\end{multicols}
+\end{document}

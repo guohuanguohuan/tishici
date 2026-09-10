@@ -1,0 +1,24 @@
+% 探针：判断题序号后隙刚性化择优（\showbox 看 set glue）——片F #43 用
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\showboxbreadth=1000
+\showboxdepth=1000
+\begin{document}
+\message{^^J=== W0 现状（ecglue 空格） ===}
+\setbox0=\hbox to 234.74pt{\noindent(1)若\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)，则\hfill}
+\showbox0
+\message{^^J=== W1 \kern2.2pt 夹缝 ===}
+\setbox1=\hbox to 234.74pt{\noindent(1)\kern2.2pt若\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)，则\hfill}
+\showbox1
+\message{^^J=== W3 \hspace{2.2pt} 夹缝 ===}
+\setbox3=\hbox to 234.74pt{\noindent(1)\hspace{2.2pt}若\(\overrightarrow{p}=x\overrightarrow{a}+y\overrightarrow{b}\)，则\hfill}
+\showbox3
+\message{^^J=== W4 \kern 夹缝＋组内 ecglue 保持（看组外西文边界是否受影响） ===}
+\setbox4=\hbox to 234.74pt{\noindent(1)\kern2.2pt若\(a\)，则\hfill}
+\showbox4
+\end{document}

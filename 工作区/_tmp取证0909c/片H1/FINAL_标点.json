@@ -1,0 +1,1882 @@
+[
+ {
+  "page": 1,
+  "y": 228.8,
+  "punct": "、",
+  "trio": "模、零",
+  "before_mm": -0.046,
+  "after_mm": -0.059,
+  "before_px360": -0.6,
+  "after_px360": -0.8
+ },
+ {
+  "page": 1,
+  "y": 228.8,
+  "punct": "、",
+  "trio": "量、单",
+  "before_mm": -0.046,
+  "after_mm": -0.059,
+  "before_px360": -0.6,
+  "after_px360": -0.8
+ },
+ {
+  "page": 1,
+  "y": 228.8,
+  "punct": "、",
+  "trio": "量、相",
+  "before_mm": -0.046,
+  "after_mm": -0.057,
+  "before_px360": -0.6,
+  "after_px360": -0.8
+ },
+ {
+  "page": 1,
+  "y": 228.8,
+  "punct": "、",
+  "trio": "反、共",
+  "before_mm": -0.046,
+  "after_mm": -0.015,
+  "before_px360": -0.6,
+  "after_px360": -0.2
+ },
+ {
+  "page": 1,
+  "y": 262.7,
+  "punct": "、",
+  "trio": "减、数",
+  "before_mm": -0.046,
+  "after_mm": -0.009,
+  "before_px360": -0.6,
+  "after_px360": -0.1
+ },
+ {
+  "page": 1,
+  "y": 262.7,
+  "punct": "，",
+  "trio": "律，理",
+  "before_mm": -0.046,
+  "after_mm": -0.052,
+  "before_px360": -0.6,
+  "after_px360": -0.7
+ },
+ {
+  "page": 1,
+  "y": 262.7,
+  "punct": "、",
+  "trio": "线、共",
+  "before_mm": -0.003,
+  "after_mm": -0.052,
+  "before_px360": -0.0,
+  "after_px360": -0.7
+ },
+ {
+  "page": 1,
+  "y": 279.6,
+  "punct": "，",
+  "trio": "律，会",
+  "before_mm": -0.046,
+  "after_mm": -0.052,
+  "before_px360": -0.6,
+  "after_px360": -0.7
+ },
+ {
+  "page": 1,
+  "y": 279.6,
+  "punct": "、",
+  "trio": "角、投",
+  "before_mm": -0.046,
+  "after_mm": -0.052,
+  "before_px360": -0.6,
+  "after_px360": -0.7
+ },
+ {
+  "page": 1,
+  "y": 279.6,
+  "punct": "，",
+  "trio": "量，并",
+  "before_mm": -0.046,
+  "after_mm": -0.052,
+  "before_px360": -0.6,
+  "after_px360": -0.7
+ },
+ {
+  "page": 1,
+  "y": 351.5,
+  "punct": "：",
+  "trio": "义：在",
+  "before_mm": -0.033,
+  "after_mm": 1.221,
+  "before_px360": -0.5,
+  "after_px360": 17.3
+ },
+ {
+  "page": 1,
+  "y": 351.5,
+  "punct": "，",
+  "trio": "间，我",
+  "before_mm": -0.033,
+  "after_mm": -0.049,
+  "before_px360": -0.5,
+  "after_px360": -0.7
+ },
+ {
+  "page": 1,
+  "y": 405.3,
+  "punct": "、",
+  "trio": "意、模",
+  "before_mm": -0.033,
+  "after_mm": -0.032,
+  "before_px360": -0.5,
+  "after_px360": -0.5
+ },
+ {
+  "page": 1,
+  "y": 442.2,
+  "punct": "：",
+  "trio": "法：用",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 1,
+  "y": 460.1,
+  "punct": "：",
+  "trio": "法：用",
+  "before_mm": -0.075,
+  "after_mm": 1.489,
+  "before_px360": -1.1,
+  "after_px360": 21.1
+ },
+ {
+  "page": 1,
+  "y": 460.1,
+  "punct": "，",
+  "trio": "示，其",
+  "before_mm": -0.033,
+  "after_mm": 1.404,
+  "before_px360": -0.5,
+  "after_px360": 19.9
+ },
+ {
+  "page": 1,
+  "y": 513.9,
+  "punct": "，",
+  "trio": "写，解",
+  "before_mm": -0.075,
+  "after_mm": 1.496,
+  "before_px360": -1.1,
+  "after_px360": 21.2
+ },
+ {
+  "page": 1,
+  "y": 531.8,
+  "punct": "；",
+  "trio": "号；模",
+  "before_mm": -0.033,
+  "after_mm": 2.96,
+  "before_px360": -0.5,
+  "after_px360": 42.0
+ },
+ {
+  "page": 1,
+  "y": 531.8,
+  "punct": "，",
+  "trio": "分，避",
+  "before_mm": -0.033,
+  "after_mm": 3.001,
+  "before_px360": -0.5,
+  "after_px360": 42.5
+ },
+ {
+  "page": 1,
+  "y": 604.6,
+  "punct": "，",
+  "trio": "目，判",
+  "before_mm": -0.033,
+  "after_mm": 2.689,
+  "before_px360": -0.5,
+  "after_px360": 38.1
+ },
+ {
+  "page": 1,
+  "y": 638.6,
+  "punct": "，",
+  "trio": "同，还",
+  "before_mm": -0.033,
+  "after_mm": 2.541,
+  "before_px360": -0.5,
+  "after_px360": 36.0
+ },
+ {
+  "page": 1,
+  "y": 656.5,
+  "punct": "，",
+  "trio": "等，故",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 1,
+  "y": 692.4,
+  "punct": "，",
+  "trio": "同，所",
+  "before_mm": -0.033,
+  "after_mm": 2.456,
+  "before_px360": -0.5,
+  "after_px360": 34.8
+ },
+ {
+  "page": 1,
+  "y": 710.3,
+  "punct": "，",
+  "trio": "义，故",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 2,
+  "y": 103.7,
+  "punct": "；",
+  "trio": "出；减",
+  "before_mm": -0.075,
+  "after_mm": 1.483,
+  "before_px360": -1.1,
+  "after_px360": 21.0
+ },
+ {
+  "page": 2,
+  "y": 103.7,
+  "punct": "；",
+  "trio": "点；数",
+  "before_mm": -0.033,
+  "after_mm": 1.483,
+  "before_px360": -0.5,
+  "after_px360": 21.0
+ },
+ {
+  "page": 2,
+  "y": 157.5,
+  "punct": "，",
+  "trio": "础，加",
+  "before_mm": -0.033,
+  "after_mm": 2.009,
+  "before_px360": -0.5,
+  "after_px360": 28.5
+ },
+ {
+  "page": 2,
+  "y": 157.5,
+  "punct": "、",
+  "trio": "减、数",
+  "before_mm": -0.033,
+  "after_mm": 1.765,
+  "before_px360": -0.5,
+  "after_px360": 25.0
+ },
+ {
+  "page": 2,
+  "y": 175.4,
+  "punct": "，",
+  "trio": "致，类",
+  "before_mm": -0.033,
+  "after_mm": 1.749,
+  "before_px360": -0.5,
+  "after_px360": 24.8
+ },
+ {
+  "page": 2,
+  "y": 175.4,
+  "punct": "；",
+  "trio": "可；线",
+  "before_mm": -0.033,
+  "after_mm": 1.883,
+  "before_px360": -0.5,
+  "after_px360": 26.7
+ },
+ {
+  "page": 2,
+  "y": 212.3,
+  "punct": "：",
+  "trio": "件：对",
+  "before_mm": -0.033,
+  "after_mm": 1.764,
+  "before_px360": -0.5,
+  "after_px360": 25.0
+ },
+ {
+  "page": 2,
+  "y": 248.1,
+  "punct": "；",
+  "trio": "具；易",
+  "before_mm": -0.033,
+  "after_mm": 1.586,
+  "before_px360": -0.5,
+  "after_px360": 22.5
+ },
+ {
+  "page": 2,
+  "y": 266.1,
+  "punct": "：",
+  "trio": "点：与",
+  "before_mm": -0.033,
+  "after_mm": 1.375,
+  "before_px360": -0.5,
+  "after_px360": 19.5
+ },
+ {
+  "page": 2,
+  "y": 571.6,
+  "punct": "，",
+  "trio": "行，传",
+  "before_mm": -0.031,
+  "after_mm": -0.038,
+  "before_px360": -0.4,
+  "after_px360": -0.5
+ },
+ {
+  "page": 2,
+  "y": 571.6,
+  "punct": "，",
+  "trio": "效，故",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 2,
+  "y": 607.5,
+  "punct": "；",
+  "trio": "提；且",
+  "before_mm": -0.033,
+  "after_mm": -0.026,
+  "before_px360": -0.5,
+  "after_px360": -0.4
+ },
+ {
+  "page": 2,
+  "y": 607.5,
+  "punct": "，",
+  "trio": "一，故",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 2,
+  "y": 631.7,
+  "punct": "、",
+  "trio": "角、数",
+  "before_mm": -0.031,
+  "after_mm": 2.78,
+  "before_px360": -0.4,
+  "after_px360": 39.4
+ },
+ {
+  "page": 2,
+  "y": 669.6,
+  "punct": "：",
+  "trio": "角：已",
+  "before_mm": -0.033,
+  "after_mm": 2.055,
+  "before_px360": -0.5,
+  "after_px360": 29.1
+ },
+ {
+  "page": 2,
+  "y": 705.4,
+  "punct": "，",
+  "trio": "角，记",
+  "before_mm": -0.033,
+  "after_mm": -0.045,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 2,
+  "y": 723.3,
+  "punct": "，",
+  "trio": "直，记",
+  "before_mm": -0.021,
+  "after_mm": -0.072,
+  "before_px360": -0.3,
+  "after_px360": -1.0
+ },
+ {
+  "page": 2,
+  "y": 759.2,
+  "punct": "；",
+  "trio": "提；易",
+  "before_mm": -0.075,
+  "after_mm": 2.054,
+  "before_px360": -1.1,
+  "after_px360": 29.1
+ },
+ {
+  "page": 2,
+  "y": 759.2,
+  "punct": "：",
+  "trio": "点：几",
+  "before_mm": -0.075,
+  "after_mm": 2.005,
+  "before_px360": -1.1,
+  "after_px360": 28.4
+ },
+ {
+  "page": 2,
+  "y": 777.1,
+  "punct": "，",
+  "trio": "补，运",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 2,
+  "y": 65.5,
+  "punct": "：",
+  "trio": "积：定",
+  "before_mm": -0.033,
+  "after_mm": 1.404,
+  "before_px360": -0.5,
+  "after_px360": 19.9
+ },
+ {
+  "page": 2,
+  "y": 137.3,
+  "punct": "；",
+  "trio": "算；注",
+  "before_mm": -0.075,
+  "after_mm": 1.63,
+  "before_px360": -1.1,
+  "after_px360": 23.1
+ },
+ {
+  "page": 2,
+  "y": 155.2,
+  "punct": "，",
+  "trio": "律，零",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 2,
+  "y": 174.1,
+  "punct": "，",
+  "trio": "间，向",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 2,
+  "y": 192.0,
+  "punct": "，",
+  "trio": "体，后",
+  "before_mm": -0.075,
+  "after_mm": 1.538,
+  "before_px360": -1.1,
+  "after_px360": 21.8
+ },
+ {
+  "page": 2,
+  "y": 210.0,
+  "punct": "；",
+  "trio": "影；易",
+  "before_mm": -0.075,
+  "after_mm": 1.969,
+  "before_px360": -1.1,
+  "after_px360": 27.9
+ },
+ {
+  "page": 2,
+  "y": 210.0,
+  "punct": "：",
+  "trio": "点：投",
+  "before_mm": -0.033,
+  "after_mm": 1.832,
+  "before_px360": -0.5,
+  "after_px360": 26.0
+ },
+ {
+  "page": 2,
+  "y": 227.9,
+  "punct": "、",
+  "trio": "量、投",
+  "before_mm": -0.033,
+  "after_mm": -0.063,
+  "before_px360": -0.5,
+  "after_px360": -0.9
+ },
+ {
+  "page": 2,
+  "y": 245.8,
+  "punct": "，",
+  "trio": "内，利",
+  "before_mm": -0.033,
+  "after_mm": 4.023,
+  "before_px360": -0.5,
+  "after_px360": 57.0
+ },
+ {
+  "page": 2,
+  "y": 263.8,
+  "punct": "，",
+  "trio": "影，得",
+  "before_mm": -0.033,
+  "after_mm": 2.999,
+  "before_px360": -0.5,
+  "after_px360": 42.5
+ },
+ {
+  "page": 2,
+  "y": 422.2,
+  "punct": "，",
+  "trio": "线，垂",
+  "before_mm": -0.075,
+  "after_mm": -0.042,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 2,
+  "y": 459.1,
+  "punct": "：",
+  "trio": "件：向",
+  "before_mm": -0.033,
+  "after_mm": 1.486,
+  "before_px360": -0.5,
+  "after_px360": 21.1
+ },
+ {
+  "page": 2,
+  "y": 495.0,
+  "punct": "、",
+  "trio": "面、线",
+  "before_mm": -0.033,
+  "after_mm": -0.025,
+  "before_px360": -0.5,
+  "after_px360": -0.4
+ },
+ {
+  "page": 2,
+  "y": 495.0,
+  "punct": "；",
+  "trio": "具；易",
+  "before_mm": -0.075,
+  "after_mm": 1.536,
+  "before_px360": -1.1,
+  "after_px360": 21.8
+ },
+ {
+  "page": 2,
+  "y": 495.0,
+  "punct": "：",
+  "trio": "点：定",
+  "before_mm": -0.033,
+  "after_mm": 1.483,
+  "before_px360": -0.5,
+  "after_px360": 21.0
+ },
+ {
+  "page": 2,
+  "y": 512.9,
+  "punct": "，",
+  "trio": "线，此",
+  "before_mm": -0.033,
+  "after_mm": 1.313,
+  "before_px360": -0.5,
+  "after_px360": 18.6
+ },
+ {
+  "page": 2,
+  "y": 512.9,
+  "punct": "，",
+  "trio": "漏，且",
+  "before_mm": -0.075,
+  "after_mm": -0.001,
+  "before_px360": -1.1,
+  "after_px360": -0.0
+ },
+ {
+  "page": 3,
+  "y": 103.4,
+  "punct": "，",
+  "trio": "合，由",
+  "before_mm": -0.033,
+  "after_mm": 2.269,
+  "before_px360": -0.5,
+  "after_px360": 32.2
+ },
+ {
+  "page": 3,
+  "y": 121.3,
+  "punct": "，",
+  "trio": "面，故",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 323.8,
+  "punct": "，",
+  "trio": "量，则",
+  "before_mm": -0.046,
+  "after_mm": -0.052,
+  "before_px360": -0.6,
+  "after_px360": -0.7
+ },
+ {
+  "page": 3,
+  "y": 361.7,
+  "punct": "，",
+  "trio": "量，则",
+  "before_mm": -0.046,
+  "after_mm": -0.007,
+  "before_px360": -0.6,
+  "after_px360": -0.1
+ },
+ {
+  "page": 3,
+  "y": 379.6,
+  "punct": "、",
+  "trio": "量、单",
+  "before_mm": -0.075,
+  "after_mm": -0.008,
+  "before_px360": -1.1,
+  "after_px360": -0.1
+ },
+ {
+  "page": 3,
+  "y": 379.6,
+  "punct": "、",
+  "trio": "量、向",
+  "before_mm": -0.033,
+  "after_mm": -0.052,
+  "before_px360": -0.5,
+  "after_px360": -0.7
+ },
+ {
+  "page": 3,
+  "y": 379.6,
+  "punct": "、",
+  "trio": "模、相",
+  "before_mm": -0.033,
+  "after_mm": -0.052,
+  "before_px360": -0.5,
+  "after_px360": -0.7
+ },
+ {
+  "page": 3,
+  "y": 415.5,
+  "punct": "：",
+  "trio": "解：若",
+  "before_mm": -0.033,
+  "after_mm": -0.042,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 433.4,
+  "punct": "，",
+  "trio": "量，方",
+  "before_mm": -0.075,
+  "after_mm": 1.876,
+  "before_px360": -1.1,
+  "after_px360": 26.6
+ },
+ {
+  "page": 3,
+  "y": 433.4,
+  "punct": "，",
+  "trio": "量，还",
+  "before_mm": -0.033,
+  "after_mm": 1.878,
+  "before_px360": -0.5,
+  "after_px360": 26.6
+ },
+ {
+  "page": 3,
+  "y": 451.4,
+  "punct": "，",
+  "trio": "同，也",
+  "before_mm": -0.075,
+  "after_mm": -0.042,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 469.3,
+  "punct": "，",
+  "trio": "量，则",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 735.3,
+  "punct": "：",
+  "trio": "别：题",
+  "before_mm": -0.075,
+  "after_mm": 2.001,
+  "before_px360": -1.1,
+  "after_px360": 28.4
+ },
+ {
+  "page": 3,
+  "y": 735.3,
+  "punct": "、",
+  "trio": "模、方",
+  "before_mm": -0.033,
+  "after_mm": 1.917,
+  "before_px360": -0.5,
+  "after_px360": 27.2
+ },
+ {
+  "page": 3,
+  "y": 735.3,
+  "punct": "、",
+  "trio": "向、零",
+  "before_mm": -0.075,
+  "after_mm": 1.832,
+  "before_px360": -1.1,
+  "after_px360": 26.0
+ },
+ {
+  "page": 3,
+  "y": 735.3,
+  "punct": "、",
+  "trio": "量、单",
+  "before_mm": -0.033,
+  "after_mm": 1.832,
+  "before_px360": -0.5,
+  "after_px360": 26.0
+ },
+ {
+  "page": 3,
+  "y": 735.3,
+  "punct": "、",
+  "trio": "量、相",
+  "before_mm": -0.075,
+  "after_mm": 1.792,
+  "before_px360": -1.1,
+  "after_px360": 25.4
+ },
+ {
+  "page": 3,
+  "y": 753.2,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.033,
+  "after_mm": 1.395,
+  "before_px360": -0.5,
+  "after_px360": 19.8
+ },
+ {
+  "page": 3,
+  "y": 65.5,
+  "punct": "：",
+  "trio": "作：对",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 65.5,
+  "punct": "，",
+  "trio": "验，存",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 83.5,
+  "punct": "：",
+  "trio": "束：排",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 83.5,
+  "punct": "，",
+  "trio": "案，忌",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 145.9,
+  "punct": "，",
+  "trio": "中，若",
+  "before_mm": -0.033,
+  "after_mm": 1.8,
+  "before_px360": -0.5,
+  "after_px360": 25.5
+ },
+ {
+  "page": 3,
+  "y": 502.6,
+  "punct": "：",
+  "trio": "别：在",
+  "before_mm": -0.033,
+  "after_mm": 1.962,
+  "before_px360": -0.5,
+  "after_px360": 27.8
+ },
+ {
+  "page": 3,
+  "y": 502.6,
+  "punct": "、",
+  "trio": "量、要",
+  "before_mm": -0.033,
+  "after_mm": 1.624,
+  "before_px360": -0.5,
+  "after_px360": 23.0
+ },
+ {
+  "page": 3,
+  "y": 520.5,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 538.5,
+  "punct": "：",
+  "trio": "作：为",
+  "before_mm": -0.033,
+  "after_mm": 1.564,
+  "before_px360": -0.5,
+  "after_px360": 22.2
+ },
+ {
+  "page": 3,
+  "y": 556.4,
+  "punct": "，",
+  "trio": "链，再",
+  "before_mm": -0.033,
+  "after_mm": -0.038,
+  "before_px360": -0.5,
+  "after_px360": -0.5
+ },
+ {
+  "page": 3,
+  "y": 592.2,
+  "punct": "：",
+  "trio": "束：复",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 592.2,
+  "punct": "，",
+  "trio": "点，防",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 3,
+  "y": 747.9,
+  "punct": "，",
+  "trio": "程，由",
+  "before_mm": -0.033,
+  "after_mm": 2.04,
+  "before_px360": -0.5,
+  "after_px360": 28.9
+ },
+ {
+  "page": 4,
+  "y": 121.3,
+  "punct": "，",
+  "trio": "中，点",
+  "before_mm": -0.033,
+  "after_mm": 2.261,
+  "before_px360": -0.5,
+  "after_px360": 32.1
+ },
+ {
+  "page": 4,
+  "y": 121.3,
+  "punct": "，",
+  "trio": "上，且",
+  "before_mm": -0.033,
+  "after_mm": 2.219,
+  "before_px360": -0.5,
+  "after_px360": 31.5
+ },
+ {
+  "page": 4,
+  "y": 237.9,
+  "punct": "：",
+  "trio": "别：指",
+  "before_mm": -0.033,
+  "after_mm": 1.962,
+  "before_px360": -0.5,
+  "after_px360": 27.8
+ },
+ {
+  "page": 4,
+  "y": 237.9,
+  "punct": "、",
+  "trio": "底、要",
+  "before_mm": -0.033,
+  "after_mm": 1.624,
+  "before_px360": -0.5,
+  "after_px360": 23.0
+ },
+ {
+  "page": 4,
+  "y": 255.8,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.075,
+  "after_mm": 1.393,
+  "before_px360": -1.1,
+  "after_px360": 19.7
+ },
+ {
+  "page": 4,
+  "y": 291.7,
+  "punct": "：",
+  "trio": "作：先",
+  "before_mm": -0.033,
+  "after_mm": 1.479,
+  "before_px360": -0.5,
+  "after_px360": 21.0
+ },
+ {
+  "page": 4,
+  "y": 309.6,
+  "punct": "，",
+  "trio": "和，再",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 327.5,
+  "punct": "：",
+  "trio": "束：比",
+  "before_mm": -0.033,
+  "after_mm": 2.259,
+  "before_px360": -0.5,
+  "after_px360": 32.0
+ },
+ {
+  "page": 4,
+  "y": 327.5,
+  "punct": "，",
+  "trio": "值，防",
+  "before_mm": -0.033,
+  "after_mm": 2.174,
+  "before_px360": -0.5,
+  "after_px360": 30.8
+ },
+ {
+  "page": 4,
+  "y": 443.8,
+  "punct": "，",
+  "trio": "面，则",
+  "before_mm": -0.033,
+  "after_mm": 1.503,
+  "before_px360": -0.5,
+  "after_px360": 21.3
+ },
+ {
+  "page": 4,
+  "y": 535.5,
+  "punct": "，",
+  "trio": "线，由",
+  "before_mm": -0.033,
+  "after_mm": -0.038,
+  "before_px360": -0.5,
+  "after_px360": -0.5
+ },
+ {
+  "page": 4,
+  "y": 553.4,
+  "punct": "，",
+  "trio": "线，则",
+  "before_mm": -0.033,
+  "after_mm": -0.001,
+  "before_px360": -0.5,
+  "after_px360": -0.0
+ },
+ {
+  "page": 4,
+  "y": 571.3,
+  "punct": "；",
+  "trio": "对；若",
+  "before_mm": -0.033,
+  "after_mm": -0.027,
+  "before_px360": -0.5,
+  "after_px360": -0.4
+ },
+ {
+  "page": 4,
+  "y": 571.3,
+  "punct": "，",
+  "trio": "面，且",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 571.3,
+  "punct": "，",
+  "trio": "线，则",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 589.2,
+  "punct": "；",
+  "trio": "对；同",
+  "before_mm": -0.033,
+  "after_mm": -0.07,
+  "before_px360": -0.5,
+  "after_px360": -1.0
+ },
+ {
+  "page": 4,
+  "y": 589.2,
+  "punct": "，",
+  "trio": "对，故",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 627.1,
+  "punct": "，",
+  "trio": "面，并",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 645.0,
+  "punct": "，",
+  "trio": "示，故",
+  "before_mm": -0.033,
+  "after_mm": -0.043,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 663.0,
+  "punct": "，",
+  "trio": "面，即",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 680.9,
+  "punct": "，",
+  "trio": "合，故",
+  "before_mm": -0.033,
+  "after_mm": 1.358,
+  "before_px360": -0.5,
+  "after_px360": 19.2
+ },
+ {
+  "page": 4,
+  "y": 743.7,
+  "punct": "：",
+  "trio": "别：题",
+  "before_mm": -0.033,
+  "after_mm": 1.197,
+  "before_px360": -0.5,
+  "after_px360": 17.0
+ },
+ {
+  "page": 4,
+  "y": 761.6,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.033,
+  "after_mm": 1.29,
+  "before_px360": -0.5,
+  "after_px360": 18.3
+ },
+ {
+  "page": 4,
+  "y": 65.5,
+  "punct": "：",
+  "trio": "作：核",
+  "before_mm": -0.033,
+  "after_mm": 2.168,
+  "before_px360": -0.5,
+  "after_px360": 30.7
+ },
+ {
+  "page": 4,
+  "y": 83.5,
+  "punct": "，",
+  "trio": "备，再",
+  "before_mm": -0.075,
+  "after_mm": 2.21,
+  "before_px360": -1.1,
+  "after_px360": 31.3
+ },
+ {
+  "page": 4,
+  "y": 119.3,
+  "punct": "：",
+  "trio": "束：最",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 181.8,
+  "punct": "，",
+  "trio": "量，下",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 311.3,
+  "punct": "：",
+  "trio": "解：对",
+  "before_mm": -0.033,
+  "after_mm": 1.519,
+  "before_px360": -0.5,
+  "after_px360": 21.5
+ },
+ {
+  "page": 4,
+  "y": 347.2,
+  "punct": "，",
+  "trio": "法，即",
+  "before_mm": -0.033,
+  "after_mm": 2.648,
+  "before_px360": -0.5,
+  "after_px360": 37.5
+ },
+ {
+  "page": 4,
+  "y": 347.2,
+  "punct": "，",
+  "trio": "义，故",
+  "before_mm": -0.033,
+  "after_mm": 2.394,
+  "before_px360": -0.5,
+  "after_px360": 33.9
+ },
+ {
+  "page": 4,
+  "y": 436.8,
+  "punct": "；",
+  "trio": "确；故",
+  "before_mm": -0.033,
+  "after_mm": -0.027,
+  "before_px360": -0.5,
+  "after_px360": -0.4
+ },
+ {
+  "page": 4,
+  "y": 573.3,
+  "punct": "：",
+  "trio": "别：题",
+  "before_mm": -0.033,
+  "after_mm": 1.418,
+  "before_px360": -0.5,
+  "after_px360": 20.1
+ },
+ {
+  "page": 4,
+  "y": 573.3,
+  "punct": "、",
+  "trio": "方、商",
+  "before_mm": -0.033,
+  "after_mm": -0.02,
+  "before_px360": -0.5,
+  "after_px360": -0.3
+ },
+ {
+  "page": 4,
+  "y": 591.2,
+  "punct": "、",
+  "trio": "式、乘",
+  "before_mm": -0.033,
+  "after_mm": -0.082,
+  "before_px360": -0.5,
+  "after_px360": -1.2
+ },
+ {
+  "page": 4,
+  "y": 591.2,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 609.2,
+  "punct": "：",
+  "trio": "作：按",
+  "before_mm": -0.033,
+  "after_mm": 1.404,
+  "before_px360": -0.5,
+  "after_px360": 19.9
+ },
+ {
+  "page": 4,
+  "y": 609.2,
+  "punct": "，",
+  "trio": "验，展",
+  "before_mm": -0.033,
+  "after_mm": 1.277,
+  "before_px360": -0.5,
+  "after_px360": 18.1
+ },
+ {
+  "page": 4,
+  "y": 645.0,
+  "punct": "：",
+  "trio": "束：警",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 645.0,
+  "punct": "、",
+  "trio": "法、数",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 707.5,
+  "punct": "，",
+  "trio": "图，在",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 4,
+  "y": 725.4,
+  "punct": "，",
+  "trio": "中，求",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 65.5,
+  "punct": "，",
+  "trio": "形，平",
+  "before_mm": -0.033,
+  "after_mm": 1.752,
+  "before_px360": -0.5,
+  "after_px360": 24.8
+ },
+ {
+  "page": 5,
+  "y": 65.5,
+  "punct": "，",
+  "trio": "量，利",
+  "before_mm": -0.033,
+  "after_mm": 1.752,
+  "before_px360": -0.5,
+  "after_px360": 24.8
+ },
+ {
+  "page": 5,
+  "y": 83.5,
+  "punct": "，",
+  "trio": "求，但",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 137.3,
+  "punct": "：",
+  "trio": "解：方",
+  "before_mm": -0.075,
+  "after_mm": -0.022,
+  "before_px360": -1.1,
+  "after_px360": -0.3
+ },
+ {
+  "page": 5,
+  "y": 173.1,
+  "punct": "，",
+  "trio": "形，所",
+  "before_mm": -0.033,
+  "after_mm": 1.719,
+  "before_px360": -0.5,
+  "after_px360": 24.4
+ },
+ {
+  "page": 5,
+  "y": 453.1,
+  "punct": "：",
+  "trio": "别：题",
+  "before_mm": -0.033,
+  "after_mm": 1.878,
+  "before_px360": -0.5,
+  "after_px360": 26.6
+ },
+ {
+  "page": 5,
+  "y": 453.1,
+  "punct": "、",
+  "trio": "角、模",
+  "before_mm": -0.033,
+  "after_mm": 1.666,
+  "before_px360": -0.5,
+  "after_px360": 23.6
+ },
+ {
+  "page": 5,
+  "y": 471.0,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 488.9,
+  "punct": "：",
+  "trio": "作：先",
+  "before_mm": -0.033,
+  "after_mm": 1.479,
+  "before_px360": -0.5,
+  "after_px360": 21.0
+ },
+ {
+  "page": 5,
+  "y": 506.9,
+  "punct": "，",
+  "trio": "底，再",
+  "before_mm": -0.033,
+  "after_mm": 1.395,
+  "before_px360": -0.5,
+  "after_px360": 19.8
+ },
+ {
+  "page": 5,
+  "y": 542.7,
+  "punct": "：",
+  "trio": "束：最",
+  "before_mm": -0.033,
+  "after_mm": 1.622,
+  "before_px360": -0.5,
+  "after_px360": 23.0
+ },
+ {
+  "page": 5,
+  "y": 694.9,
+  "punct": "，",
+  "trio": "时，则",
+  "before_mm": -0.033,
+  "after_mm": -0.045,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 724.0,
+  "punct": "，",
+  "trio": "立，得",
+  "before_mm": -0.075,
+  "after_mm": -0.042,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 724.0,
+  "punct": "，",
+  "trio": "解，即",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 65.5,
+  "punct": "，",
+  "trio": "角，可",
+  "before_mm": -0.033,
+  "after_mm": -0.054,
+  "before_px360": -0.5,
+  "after_px360": -0.8
+ },
+ {
+  "page": 5,
+  "y": 137.3,
+  "punct": "，",
+  "trio": "时，存",
+  "before_mm": -0.033,
+  "after_mm": -0.049,
+  "before_px360": -0.5,
+  "after_px360": -0.7
+ },
+ {
+  "page": 5,
+  "y": 166.1,
+  "punct": "，",
+  "trio": "立，可",
+  "before_mm": -0.033,
+  "after_mm": -0.045,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 197.7,
+  "punct": "，",
+  "trio": "解，所",
+  "before_mm": -0.033,
+  "after_mm": 1.537,
+  "before_px360": -0.5,
+  "after_px360": 21.8
+ },
+ {
+  "page": 5,
+  "y": 215.6,
+  "punct": "，",
+  "trio": "线，所",
+  "before_mm": -0.075,
+  "after_mm": 1.614,
+  "before_px360": -1.1,
+  "after_px360": 22.9
+ },
+ {
+  "page": 5,
+  "y": 388.0,
+  "punct": "：",
+  "trio": "别：题",
+  "before_mm": -0.033,
+  "after_mm": 1.92,
+  "before_px360": -0.5,
+  "after_px360": 27.2
+ },
+ {
+  "page": 5,
+  "y": 388.0,
+  "punct": "、",
+  "trio": "角、并",
+  "before_mm": -0.033,
+  "after_mm": 1.878,
+  "before_px360": -0.5,
+  "after_px360": 26.6
+ },
+ {
+  "page": 5,
+  "y": 405.9,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.033,
+  "after_mm": -0.033,
+  "before_px360": -0.5,
+  "after_px360": -0.5
+ },
+ {
+  "page": 5,
+  "y": 441.8,
+  "punct": "：",
+  "trio": "作：第",
+  "before_mm": -0.033,
+  "after_mm": 1.649,
+  "before_px360": -0.5,
+  "after_px360": 23.4
+ },
+ {
+  "page": 5,
+  "y": 477.6,
+  "punct": "：",
+  "trio": "束：再",
+  "before_mm": -0.033,
+  "after_mm": 2.005,
+  "before_px360": -0.5,
+  "after_px360": 28.4
+ },
+ {
+  "page": 5,
+  "y": 477.6,
+  "punct": "，",
+  "trio": "数，最",
+  "before_mm": -0.033,
+  "after_mm": 2.089,
+  "before_px360": -0.5,
+  "after_px360": 29.6
+ },
+ {
+  "page": 5,
+  "y": 558.0,
+  "punct": "，",
+  "trio": "图，在",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 575.9,
+  "punct": "，",
+  "trio": "中，四",
+  "before_mm": -0.033,
+  "after_mm": -0.042,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 606.2,
+  "punct": "，",
+  "trio": "形，则",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 751.7,
+  "punct": "，",
+  "trio": "离，运",
+  "before_mm": -0.033,
+  "after_mm": 1.659,
+  "before_px360": -0.5,
+  "after_px360": 23.5
+ },
+ {
+  "page": 5,
+  "y": 769.6,
+  "punct": "，",
+  "trio": "示，然",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 5,
+  "y": 769.6,
+  "punct": "，",
+  "trio": "果，较",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 83.5,
+  "punct": "，",
+  "trio": "中，四",
+  "before_mm": -0.033,
+  "after_mm": -0.036,
+  "before_px360": -0.5,
+  "after_px360": -0.5
+ },
+ {
+  "page": 6,
+  "y": 101.4,
+  "punct": "，",
+  "trio": "形，则",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 200.0,
+  "punct": "：",
+  "trio": "别：题",
+  "before_mm": -0.033,
+  "after_mm": 1.352,
+  "before_px360": -0.5,
+  "after_px360": 19.2
+ },
+ {
+  "page": 6,
+  "y": 217.9,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.075,
+  "after_mm": -0.042,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 235.9,
+  "punct": "：",
+  "trio": "作：第",
+  "before_mm": -0.033,
+  "after_mm": 1.649,
+  "before_px360": -0.5,
+  "after_px360": 23.4
+ },
+ {
+  "page": 6,
+  "y": 253.8,
+  "punct": "，",
+  "trio": "链，再",
+  "before_mm": -0.033,
+  "after_mm": -0.038,
+  "before_px360": -0.5,
+  "after_px360": -0.5
+ },
+ {
+  "page": 6,
+  "y": 289.7,
+  "punct": "，",
+  "trio": "定，注",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 307.6,
+  "punct": "：",
+  "trio": "束：最",
+  "before_mm": -0.031,
+  "after_mm": -0.038,
+  "before_px360": -0.4,
+  "after_px360": -0.5
+ },
+ {
+  "page": 6,
+  "y": 370.1,
+  "punct": "，",
+  "trio": "起，使",
+  "before_mm": -0.075,
+  "after_mm": 2.072,
+  "before_px360": -1.1,
+  "after_px360": 29.4
+ },
+ {
+  "page": 6,
+  "y": 388.0,
+  "punct": "，",
+  "trio": "直，则",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 424.9,
+  "punct": "，",
+  "trio": "线，垂",
+  "before_mm": -0.033,
+  "after_mm": 1.577,
+  "before_px360": -0.5,
+  "after_px360": 22.4
+ },
+ {
+  "page": 6,
+  "y": 496.6,
+  "punct": "，",
+  "trio": "线，垂",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 617.4,
+  "punct": "，",
+  "trio": "用，属",
+  "before_mm": -0.033,
+  "after_mm": 1.743,
+  "before_px360": -0.5,
+  "after_px360": 24.7
+ },
+ {
+  "page": 6,
+  "y": 673.2,
+  "punct": "，",
+  "trio": "起，使",
+  "before_mm": -0.033,
+  "after_mm": -0.027,
+  "before_px360": -0.5,
+  "after_px360": -0.4
+ },
+ {
+  "page": 6,
+  "y": 83.5,
+  "punct": "：",
+  "trio": "别：题",
+  "before_mm": -0.033,
+  "after_mm": 1.352,
+  "before_px360": -0.5,
+  "after_px360": 19.2
+ },
+ {
+  "page": 6,
+  "y": 101.4,
+  "punct": "、",
+  "trio": "直、求",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 101.4,
+  "punct": "，",
+  "trio": "时，判",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 119.3,
+  "punct": "：",
+  "trio": "作：第",
+  "before_mm": -0.033,
+  "after_mm": 1.649,
+  "before_px360": -0.5,
+  "after_px360": 23.4
+ },
+ {
+  "page": 6,
+  "y": 137.3,
+  "punct": "，",
+  "trio": "足，再",
+  "before_mm": -0.033,
+  "after_mm": 1.395,
+  "before_px360": -0.5,
+  "after_px360": 19.8
+ },
+ {
+  "page": 6,
+  "y": 173.1,
+  "punct": "：",
+  "trio": "束：最",
+  "before_mm": -0.033,
+  "after_mm": 1.606,
+  "before_px360": -0.5,
+  "after_px360": 22.8
+ },
+ {
+  "page": 6,
+  "y": 191.1,
+  "punct": "、",
+  "trio": "简、开",
+  "before_mm": -0.033,
+  "after_mm": -0.082,
+  "before_px360": -0.5,
+  "after_px360": -1.2
+ },
+ {
+  "page": 6,
+  "y": 560.4,
+  "punct": "，",
+  "trio": "件，选",
+  "before_mm": -0.075,
+  "after_mm": -0.04,
+  "before_px360": -1.1,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 605.2,
+  "punct": "，",
+  "trio": "点，则",
+  "before_mm": -0.033,
+  "after_mm": -0.04,
+  "before_px360": -0.5,
+  "after_px360": -0.6
+ },
+ {
+  "page": 6,
+  "y": 724.8,
+  "punct": "：",
+  "trio": "示：先",
+  "before_mm": -0.075,
+  "after_mm": 2.281,
+  "before_px360": -1.1,
+  "after_px360": 32.3
+ }
+]

@@ -46,5 +46,8 @@
 % 【学习目标】标签行（位于章首通栏区）；课时→目标间距 5.8mm（总账B）
 \newcommand{\mubiaoline}{\par\glueguard{2}\addvspace{\dimexpr5.8mm+\corrgMubiao\relax}\noindent\biaoqian{【学习目标】}\par\nopagebreak\vspace{-2pt}}
 % 学习目标条目（拍板6 顶格例外）：首行缩进 2 字、回行悬挂 8.3mm、行距≈17pt、序号半角「N.」加粗＋后空 1 字
+% H3 片 0909c（学习目标条目后隙）：\hspace{1em}（10.5pt＝3.70mm，ink 隙实测 4.106mm）→ \kern7.83pt
+%   （2.76mm 固定档、零拉伸、非断点）——全品 p04 学习目标位 ink 隙 3.174mm（H1 片复测 n 值），
+%   本字面（Times「.」＋楷体）侧承 0.41mm，7.83pt＋0.41＝3.17mm 命中；做法同 H1 \tiaomu \kern8.5pt。
 \newcommand{\mubiaomu}[2]{\noindent\hangindent=8.3mm\hangafter=1
-  {\fontsize{10.5pt}{17pt}\selectfont\kaishu\hspace*{2em}{\heitiao #1.}\hspace{1em}#2\par}}
+  {\fontsize{10.5pt}{17pt}\selectfont\kaishu\hspace*{2em}{\heitiao #1.}\kern7.83pt#2\par}}

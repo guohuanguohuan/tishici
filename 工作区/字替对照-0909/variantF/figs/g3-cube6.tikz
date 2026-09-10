@@ -1,0 +1,42 @@
+% g3-cube6.tikz —— 片G 0910 集成自 _tmp片G素材/tikz_tan6.tex（L27–68 片段正文，逐字拷入，仅删空行、末行加 %）
+% 源图：variantF/media/media/image3.png 521×496px = 源排印 86.0×82.0mm
+% 集成口径：本片按栏宽封顶置 84.0mm（源 86mm 略缩 2.3%，同比缩放，线宽/字号/虚线一并缩）
+% 依赖：宿主导言 \usepackage{tikz} + \definecolor{cubegray}{gray}{0.25}（见 qp-blocks.tex）
+\begin{tikzpicture}[x=1mm,y=1mm,
+    line width=0.43mm, line cap=butt, line join=miter,
+    every node/.style={inner sep=0pt,outer sep=0pt},
+    lab/.style={font=\fontsize{17.5}{21}\selectfont}]
+  \useasboundingbox (0,0) rectangle (86,82);
+  % ---- 顶点 ----
+  \coordinate (A)  at ( 9.25, 7.05);
+  \coordinate (B)  at (58.85, 7.05);
+  \coordinate (C)  at (76.35,24.55);
+  \coordinate (D)  at (26.75,24.55);
+  \coordinate (A1) at ( 9.25,56.79);
+  \coordinate (B1) at (58.85,56.68);
+  \coordinate (C1) at (76.35,74.17);
+  \coordinate (D1) at (26.75,74.17);
+  % ---- 灰线·实线棱（9 段）----
+  \draw[cubegray] (A)--(B)--(C)--(C1)--(D1)--(A1)--cycle % 底前棱、底右棱、右后棱、顶后棱、顶左棱、左前棱
+                  (A1)--(B1)--(B)                        % 顶前棱、右前棱
+                  (B1)--(C1);                            % 顶右棱
+  % ---- 灰线·虚线棱（3 段隐藏棱：AD、DC、DD₁）----
+  % dash phase = 按源图虚线节距逐段反解的对相（锚点=笔画起端；on 1.82 / off 1.40mm，周期 3.22mm）
+  \draw[cubegray,dash pattern=on 1.82mm off 1.40mm,dash phase=2.90mm] (A)--(D);
+  \draw[cubegray,dash pattern=on 1.82mm off 1.40mm,dash phase=0.62mm] (C)--(D);
+  \draw[cubegray,dash pattern=on 1.82mm off 1.40mm,dash phase=3.18mm] (D1)--(D);
+  % ---- 黑粗线（问题向量及其平移辅助：BC₁ 实线；AC、AD₁、D₁C 虚线）----
+  \draw[line width=0.59mm] (B)--(C1);
+  \draw[line width=0.59mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.09mm] (A)--(C);
+  \draw[line width=0.59mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.30mm] (A)--(D1);
+  \draw[line width=0.59mm,dash pattern=on 1.82mm off 1.40mm,dash phase=0.11mm] (D1)--(C);
+  % ---- 顶点标签（位置 = 源图墨迹中心，mm）----
+  \node[lab] at ( 4.62,58.48) {$A_1$};
+  \node[lab] at ( 7.35, 4.38) {$A$};
+  \node[lab] at (59.93, 3.80) {$B$};
+  \node[lab] at (55.80,60.43) {$B_1$};
+  \node[lab] at (80.22,76.13) {$C_1$};
+  \node[lab] at (79.40,23.72) {$C$};
+  \node[lab] at (22.94,25.29) {$D$};
+  \node[lab] at (25.01,78.28) {$D_1$};
+\end{tikzpicture}%

@@ -10,18 +10,39 @@
 % 块底≈11.4mm——全品正文区让开页脚带；v4.2 原 margin=15mm 实证 p1 页脚盖正文末行，故底边让 5mm）
 % 字替对照 C：密度版式（任务④）——左右 margin 15mm→17.6mm（版心收窄）；bottom=20mm 让位页脚带机制不动
 % 字替对照 E（0909）：margin 17.6→17.575mm（全品版心 174.85mm 实测反推，勿手抹小数）
-\usepackage[a4paper,margin=17.575mm,bottom=20mm,twoside,headheight=0pt,headsep=0pt,footskip=13pt]{geometry}
+% H1 片 0909c（E7 版面基准对齐，全品 p04-p07 同尺复测）：左右 margin 17.575→17.2mm（全品墨缘 17.35/17.56
+%   实测反推，版心 175.6mm）；top 17.575→19.6mm 单列（首行墨顶全品 p05/p06/p07 实测 19.61/19.68/19.61，
+%   旧 17.5-17.6 系 top=margin 同值所致；左右不随——top 单给防水平联动）；bottom=20mm 页脚带机制不动。
+\usepackage[a4paper,left=17.2mm,right=17.2mm,top=19.6mm,bottom=20mm,twoside,headheight=0pt,headsep=0pt,footskip=13pt]{geometry}
 % 字替对照 B/C：数学修（任务③b）——unicode-math＋TeX Gyre Termes Math（Times 风），数学变量/数字/
 %   箭头换 Times 系；amssymb 与 unicode-math 冲突故卸下（body.tex 无 amssymb 专属命令，已核对）；
 %   \parallel 已由 qp-fonts 的 \AtBeginDocument 在其之后再落定义（TikZ 双平行四边形复刻全品 ∥），
 %   不被覆盖；原 sympx 斜体方案退役。
 \usepackage{amsmath}
 \usepackage{unicode-math}
-\setmathfont{texgyretermes-math.otf}
+% H2 片 0909c（E3 数学式对齐全品）：Scale 档——全品 p04-p06 复测数学字母 cap 36-38px（A38/B36/
+%   C38/D36/F37，n=15）对我方 34px（比值 1.074⇒1.07-1.08 理论档）。但探针实测（t/O/P 系列全件构建）：
+%   Scale≥1.04 起「拉伸异常行」断言开始冒头（1.04→1 处、1.06→3 处、1.08→5 处，行内 CJK-CJK 空档
+%   13-36pt），1.02 为「零 overfull＋零拉伸异常行」可用的最大档 ⇒ 取 1.02（cap 34.2px，全品差
+%   −6%，登记为遗留；提档须先解长数学串成行的断点问题，见 片H2 报告）。
+%   注：ScriptPercentScaleDown 选项在 xelatex 下被 unicode-math 静默忽略（探针 t3/t4 实证），
+%   脚本比改由下方 \DeclareMathSizes 承担。
+\setmathfont{texgyretermes-math.otf}[Scale=1.02]
 % F 片C 0909 #29（数学符号间距刚性化）：unicode-math 默认 \thickmuskip=5mu plus 5mu——
 %   关系符号（＝/∥ 等）两侧胶被 \emergencystretch 拉伸至自然值 2.2 倍（实测正文 1.2–2.35mm，
 %   自然 5mu＝0.99mm；表格单行格恒自然）。去 plus/minus 刚性化，正文墨隙回到 5mu 自然值。
 \thickmuskip=5mu
+% H2 片 0909c（E3 减号紧贴）：\medmuskip 4mu→2mu（plus 2mu／minus 4mu 弹性保留）——全品 p06
+%   真迹运算符间隙（减号后 8-15px、加号两侧 10/11px）对我方基线 18-22px；探针 m0-m3 实测
+%   4/2/1/0mu ⇒ 隙 18/12/9/6px@360dpi，取自然 2mu。**弹性必须保留**：先试刚性 2mu（去 plus/
+%   minus）实测 underfull 5→17、页数 6→7（minus 4mu 的可收缩量是长数学串行的救命余量）；
+%   终值下正文减号实测隙 14.7/14.8px（落全品 8-19 域）。
+\medmuskip=2mu plus 2mu minus 4mu
+% H2 片 0909c（E3 ③ 行内分式大式化）：\frac→\dfrac 全件（探针 t5/t15：分式总高 104px、上下件
+%   37px＝全品真迹 105/35-36 档；小式 61px 系 0.70 脚本档产物）。amsmath \dfrac 与 \frac 同签名。
+%   代价登记：dfrac 行高（含 √ 者 height+depth 至 29pt）使 6 页→7 页（探针 C5/C7/M3 对照），
+%   全件推进仍过全部断言；若须回 6 页须撤本行（E3③ 回 61px）。
+\let\frac\dfrac
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{colortbl}
@@ -38,16 +59,28 @@
 % 字替对照 C：栏距 7.5mm→8.8mm（目标栏宽≈83.0mm）
 % 字替对照 E（0909）：栏距 8.8→9.25mm（版心 174.85mm 时栏宽＝(174.85−9.25)/2＝82.8mm，与全品栏宽实测一致；
 %   C 版三表已收窄至 82.8mm，理论恰好放下——若冒 overfull 按先例最小回填留痕）
-\setlength{\columnsep}{9.25mm}
+% H1 片 0909c（E7）：栏距 9.25→7.6mm（全品栏 ink 距 7.55mm 实测档）——版心 175.6mm 时栏宽＝84.0mm，
+%   恰容 E1 字距后 21 字行（21×3.98＝83.7mm）；三表宽同步 82.8→84.0（postproc kbtable 列宽）。
+\setlength{\columnsep}{7.6mm}
 \setlength{\columnseprule}{0.4pt}      % 栏间竖线（全品 p04-p06 实证宽约 0.17mm 近似 0.4pt）
 % v4.3 总账I：black!25（0xBF）渲染实测灰 233 无芯偏浅 → 加深试档，取 black!40（0x99）：
 % 线性折算 233×153/191≈187≈全品实测 188 带芯（出样实测见交付报告，black!35/40 双档比对取 40）
-\renewcommand{\columnseprulecolor}{\color{black!40}}
+% H3 片 0909c（E6）：black!40 渲染实测灰 153/170（审计 E6），全品复测恒 188——改 black!26
+% （0xBC＝188，直接命中靶值；旧档 153 偏深系 v4.3 试档定位误差，黑度与全品差 35 级）。
+\renewcommand{\columnseprulecolor}{\color{black!26}}
 \setlength{\multicolsep}{0pt}         % 章首【学习目标】标签→栏区零距（multicol 前后 skip 全局归零）
 % 字替对照 C：正文 10.5pt/18pt→10.09pt/18.25pt（全品密度实测口径）
-\renewcommand{\normalsize}{\fontsize{10.09pt}{18.25pt}\selectfont}
+% H1 片 0909c（E7）：行距 18.25→18.0pt（全品 p05 行距众数 18.0pt×25 实测；字号 10.09pt 不动——
+%   全品字面同大实测已证，差的是字距，见下）
+\renewcommand{\normalsize}{\fontsize{10.09pt}{18.0pt}\selectfont}
 \linespread{1}                          % 行距通解：撤 ctex linestretch 1.3 叠乘，实发 18pt
 \normalsize
+% H2 片 0909c（E3 上下标比 0.54）：脚本字号改 \DeclareMathSizes 键（unicode-math 于 \setmathfont 时
+%   以 MATH 表 scriptPercentScaleDown（0.70）注册同键，本行在其后重置）——10.09pt 正文的
+%   script/scriptscript 取 5.45/4.54pt＝54%/45%（全品 p04-p06 复测：下标「1」19-20px 对主字号
+%   数字 35-36px＝0.546；n=11 对 n=3）。键值须与 \normalsize 键一致（10.09），否则不生效
+%   （探针 t14：键 10 无效、t13 键 10.09 生效：下标 27→20px）。
+\DeclareMathSizes{10.09}{10.09}{5.45}{4.54}
 \setlength{\parindent}{0pt}             % 顶格化（v4.1 指令5）：全品正文无首行缩进
                                         % v4.3 拍板6 例外：学习目标条目（\mubiaomu，qp-titles）悬挂 8.3mm
 \clubpenalty=10000
@@ -59,11 +92,17 @@
 %   承担（关系胶不再受 emergencystretch 影响），本值只决定空格胶弹性。实测 0pt 出 17 处 overfull、
 %   2em 落 0（基线 8em 亦 0）——按任务书「0pt 劣于基线则回试 1–2em」取 2em；multicol 进入时按
 %   4pt×栏数重置，实际生效值在 body.tex（postproc LAN_OPEN 同步 2em）。
-\emergencystretch=2em   % 序言预设；实际生效处在 multicols 内（multicol 进入时重置为 4pt×栏数）
-% 关系号后禁断行（消灭「a=」悬行尾）：\relpenalty 100→10000；\binoppenalty 维持 100——
-%   10000 实测（纯公式段无 CJK 断点）出 9 处 overfull，且任务目标只涉关系号（+− 非关系号）。
+% F 片F 0909c #41（行内拉伸治理）：0.5em→1em——逐档实测（rel=500 固定）overfull 0/0.25/0.5/0.75/1.0em
+%   ＝12/4/2/1/0，取最小 overfull=0 档 1em；1.5/2em 同落 0 但欠拉报告（underfull）多 1（19 vs 18），
+%   拉伸异常行（CJK-CJK 去设计隙）自 0.25em 起恒为 1 处（\liBsplit 变|式，另修），本值只影响断点取舍。
+%   multicol 进入时仍按 4pt×栏数重置，实际生效值在 body.tex（postproc LAN_OPEN 同步 1em）。
+\emergencystretch=1em   % 序言预设；实际生效处在 multicols 内（multicol 进入时重置为 4pt×栏数）
+% 关系号后禁断行（消灭「a=」悬行尾）：F 片C 0909 曾 100→10000；F 片F 0909c #41 回 10000→500——
+%   用户终审实证全品允许关系号后断行（截图「ABCD−A₁B₁C₁D₁ 中,AA₁=」＝「=」收行末），10000 使
+%   断点稀缺、超拉集中（变式1 行「式/1」间 14.9pt 实测）；500 恢复可断但保持「a=」不悬行尾的
+%   偏好（远高于普通 CJK 断点 0）。\binoppenalty 维持 100。
 \binoppenalty=100
-\relpenalty=10000
+\relpenalty=500
 \flushbottom            % 对照§四-5（\raggedbottom 撤）
 \raggedcolumns          % multicol 栏末不硬拉伸（末页参差收尾，拍板23）
 \setcounter{topnumber}{4}

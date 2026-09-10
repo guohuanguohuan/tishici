@@ -1,0 +1,28 @@
+% ============================================================================
+% 片G · image4 同尺并排对照（上＝源位图按源排印宽 66.3mm；下＝TikZ 重绘同宽 66.3mm）
+% 编译：xelatex 片G-image4-对照-604dpi.tex → PyMuPDF 600dpi 栅格化 → PNG
+% （standalone 类正文禁用 \\ / tabular，故用 minipage + \par 竖向叠放）
+% 另附红/蓝叠加图（源=红、重绘=蓝、重合=黑），由 crop_g_叠加.py 生成
+% ============================================================================
+\documentclass[border=3mm]{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{texgyretermes-math.otf}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\pagestyle{empty}
+\begin{document}
+\begin{minipage}{68mm}\centering
+  {\small 上：源位图 image4.png（788$\times$424px，1bit 二值）按源排印宽 66.3mm 缩放}\par
+  \vspace{1.2mm}
+  \includegraphics[width=66.3mm]{source-image4.png}\par
+  \vspace{1.0mm}
+  {\color[gray]{0.55}\rule{66.3mm}{0.3pt}}\par
+  \vspace{1.0mm}
+  {\small 下：TikZ 矢量重绘（bbox＝画布 66.3000$\times$35.6741mm，原尺寸置入 66.3mm）}\par
+  \vspace{1.2mm}
+  \input{片G-image4-二面角.tikz}\par
+\end{minipage}
+\end{document}

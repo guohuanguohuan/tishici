@@ -1,0 +1,37 @@
+% 片E 探针 B：同一段文本四种形态的断行对比（探三题干文本，真实前导）
+% 编译（cwd=variantF）：xelatex -interaction=nonstopmode 绝对路径
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\begin{document}
+\begin{multicols}{2}
+\def\QPTEXT{已知正方体\emph{ABCD}-\emph{A\textsubscript{1}B\textsubscript{1}C\textsubscript{1}D\textsubscript{1}}中，\(\overrightarrow{A_{1}E}\)=\(\frac{1}{4}\) \(\overrightarrow{A_{1}C_{1}}\)，若\(\overrightarrow{AE} =\)\emph{x}\(\overrightarrow{AA_{1}}\)+\emph{y}(\(\overrightarrow{AB}\)+\(\overrightarrow{AD}\))，则\emph{x}\nobreak=\kongbai{}，\emph{y}\nobreak=\kongbai{}.}
+
+[A] minipage 形（旧）\par
+\noindent\begin{minipage}[t]{46.368mm}\raggedright \QPTEXT\end{minipage}\par
+\vspace{3mm}
+
+[B] \textbackslash parshape 全窄（5 项）\par
+\noindent\begingroup\parshape 5 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm\raggedright
+\QPTEXT\par\endgroup
+\vspace{3mm}
+
+[C] \textbackslash hsize 窄栏（无 parshape）\par
+\noindent\begingroup\hsize=46.368mm\raggedright \QPTEXT\par\endgroup
+\vspace{3mm}
+
+[D] \textbackslash parshape 窄+通栏（6 项）\par
+\noindent\begingroup\parshape 6 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt \linewidth\raggedright
+\QPTEXT\par\endgroup
+\vspace{3mm}
+
+[E] \textbackslash hsize=栏宽 + parshape 窄+通栏（minipage 全宽内）\par
+\noindent\begin{minipage}[t]{\linewidth}\raggedright
+\parshape 6 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt \linewidth
+\QPTEXT\par\end{minipage}\par
+\end{multicols}
+\end{document}

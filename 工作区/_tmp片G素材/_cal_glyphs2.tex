@@ -1,0 +1,22 @@
+\documentclass[border=5mm]{standalone}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Times New Roman}
+\setmathfont{texgyretermes-math.otf}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm]
+  % Termes bold italic math
+  \node[inner sep=0,anchor=base west,font=\fontsize{17.25pt}{20pt}\selectfont] at (0,40) {$\symbfit{A}$};
+  \node[inner sep=0,anchor=base west,font=\fontsize{17.25pt}{20pt}\selectfont] at (30,40) {$\symbfit{B}$};
+  \node[inner sep=0,anchor=base west,font=\fontsize{17.25pt}{20pt}\selectfont] at (60,40) {$\symbfit{C}$};
+  % TNR bold italic again for overlay
+  \node[inner sep=0,anchor=base west,font=\bfseries\itshape\fontsize{17.25pt}{20pt}\selectfont] at (0,20) {A};
+  \node[inner sep=0,anchor=base west,font=\bfseries\itshape\fontsize{17.25pt}{20pt}\selectfont] at (30,20) {B};
+  \node[inner sep=0,anchor=base west,font=\bfseries\itshape\fontsize{17.25pt}{20pt}\selectfont] at (60,20) {C};
+  % TNR italic again
+  \node[inner sep=0,anchor=base west,font=\itshape\fontsize{17.25pt}{20pt}\selectfont] at (0,0) {A};
+  \node[inner sep=0,anchor=base west,font=\itshape\fontsize{17.25pt}{20pt}\selectfont] at (30,0) {B};
+  \node[inner sep=0,anchor=base west,font=\itshape\fontsize{17.25pt}{20pt}\selectfont] at (60,0) {C};
+\end{tikzpicture}
+\end{document}

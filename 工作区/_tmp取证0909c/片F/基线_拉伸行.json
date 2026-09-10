@@ -1,0 +1,2024 @@
+[
+ {
+  "page": 1,
+  "y": 316.3,
+  "x0": 49.8,
+  "text": "◆知识点一",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "知",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 58.4,
+    "y": 318.1,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 1,
+  "y": 368.1,
+  "x0": 315.3,
+  "text": "单位向量模等于",
+  "gaps": [
+   {
+    "left": "量",
+    "right": "模",
+    "gap": 6.14,
+    "lim": 5.23,
+    "x": 357.1,
+    "y": 375.0,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.46
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 1,
+  "y": 412.7,
+  "x0": 315.3,
+  "text": "相反向量与𝑎长度相同而方向",
+  "gaps": [
+   {
+    "left": "量",
+    "right": "与",
+    "gap": 6.14,
+    "lim": 5.23,
+    "x": 357.1,
+    "y": 419.7,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.46
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 1,
+  "y": 517.3,
+  "x0": 315.3,
+  "text": "相等向量方向相同且模相等",
+  "gaps": [
+   {
+    "left": "量",
+    "right": "方",
+    "gap": 6.14,
+    "lim": 5.23,
+    "x": 357.1,
+    "y": 524.3,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.46
+   },
+   {
+    "left": "且",
+    "right": "模",
+    "gap": 7.13,
+    "lim": 5.23,
+    "x": 418.4,
+    "y": 517.3,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.46
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 1,
+  "y": 563.6,
+  "x0": 310.7,
+  "text": "【诊断分析】判断正误(正确的打√,错误的打)",
+  "gaps": [
+   {
+    "left": "打",
+    "right": ")",
+    "gap": 6.83,
+    "lim": 5.03,
+    "x": 515.1,
+    "y": 563.8,
+    "lf": "FZFSK--GBK1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 1,
+  "y": 620.3,
+  "x0": 310.7,
+  "text": "[解析]模相等方向未必相同，还可能相反或斜交，两",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "模",
+    "gap": 5.03,
+    "lim": 5.03,
+    "x": 337.6,
+    "y": 621.3,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 1,
+  "y": 638.5,
+  "x0": 310.7,
+  "text": "向量未必相等，故．",
+  "gaps": [
+   {
+    "left": "故",
+    "right": "．",
+    "gap": 6.83,
+    "lim": 5.03,
+    "x": 391.2,
+    "y": 638.5,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 1,
+  "y": 674.8,
+  "x0": 310.7,
+  "text": "[解析]相等向量方向相同，所在直线平行或重合，符",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "相",
+    "gap": 5.03,
+    "lim": 5.03,
+    "x": 337.6,
+    "y": 675.9,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 2,
+  "y": 49.5,
+  "x0": 49.8,
+  "text": "◆知识点二",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "知",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 58.4,
+    "y": 51.3,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 2,
+  "y": 71.6,
+  "x0": 69.4,
+  "text": "加法可按三角形法则或平行四边形法则作",
+  "gaps": [
+   {
+    "left": "按",
+    "right": "三",
+    "gap": 7.69,
+    "lim": 5.03,
+    "x": 116.4,
+    "y": 71.6,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "形",
+    "right": "法",
+    "gap": 7.69,
+    "lim": 5.03,
+    "x": 154.2,
+    "y": 71.6,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 2,
+  "y": 523.7,
+  "x0": 49.8,
+  "text": "【诊断分析】判断正误(正确的打√,错误的打)",
+  "gaps": [
+   {
+    "left": "打",
+    "right": ")",
+    "gap": 6.83,
+    "lim": 5.03,
+    "x": 254.2,
+    "y": 523.9,
+    "lf": "FZFSK--GBK1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 2,
+  "y": 562.2,
+  "x0": 49.8,
+  "text": "[解析]平行传递需𝑏≠0；𝑏=0时零向量与任意向量",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "平",
+    "gap": 5.03,
+    "lim": 5.03,
+    "x": 76.7,
+    "y": 563.3,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 2,
+  "y": 580.4,
+  "x0": 49.8,
+  "text": "平行，传递性失效，故．",
+  "gaps": [
+   {
+    "left": "故",
+    "right": "．",
+    "gap": 6.83,
+    "lim": 5.03,
+    "x": 150.3,
+    "y": 580.4,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 2,
+  "y": 598.6,
+  "x0": 95.5,
+  "text": "𝑏，则存在唯一实数𝜆，使𝑎=𝜆𝑏．(",
+  "gaps": [
+   {
+    "left": "．",
+    "right": "(",
+    "gap": 7.74,
+    "lim": 5.03,
+    "x": 252.0,
+    "y": 598.6,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 2,
+  "y": 616.8,
+  "x0": 49.8,
+  "text": "[解析]缺𝑏≠0前提；且𝑎=0时𝜆不唯一，故．",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "缺",
+    "gap": 5.03,
+    "lim": 5.03,
+    "x": 76.6,
+    "y": 617.8,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "故",
+    "right": "．",
+    "gap": 6.83,
+    "lim": 5.03,
+    "x": 258.7,
+    "y": 616.8,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 2,
+  "y": 49.5,
+  "x0": 310.7,
+  "text": "◆知识点三",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "知",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 319.3,
+    "y": 51.3,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 2,
+  "y": 107.9,
+  "x0": 310.7,
+  "text": "点𝑂，作𝑂𝐴=𝑎,𝑂𝐵=𝑏，则大小在[0°,180°]内的",
+  "gaps": [
+   {
+    "left": "点",
+    "right": "𝑂",
+    "gap": 5.71,
+    "lim": 5.03,
+    "x": 320.8,
+    "y": 107.9,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "作",
+    "right": "𝑂",
+    "gap": 5.71,
+    "lim": 5.03,
+    "x": 354.6,
+    "y": 107.9,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 2,
+  "y": 236.2,
+  "x0": 316.9,
+  "text": "零向量与任意向量的数量积为",
+  "gaps": [
+   {
+    "left": "量",
+    "right": "与",
+    "gap": 7.69,
+    "lim": 5.03,
+    "x": 347.1,
+    "y": 236.2,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 2,
+  "y": 400.8,
+  "x0": 310.7,
+  "text": "如图①，先将它们平移到同一平面𝛼内，利用平",
+  "gaps": [
+   {
+    "left": "面",
+    "right": "𝛼",
+    "gap": 6.5,
+    "lim": 5.03,
+    "x": 473.1,
+    "y": 400.8,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝛼",
+    "right": "内",
+    "gap": 6.5,
+    "lim": 5.03,
+    "x": 486.0,
+    "y": 401.6,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 2,
+  "y": 419.0,
+  "x0": 310.7,
+  "text": "面上向量的投影，得到与向量𝑏共线的向量𝑐，",
+  "gaps": [
+   {
+    "left": "量",
+    "right": "𝑏",
+    "gap": 6.87,
+    "lim": 5.03,
+    "x": 452.1,
+    "y": 419.0,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝑏",
+    "right": "共",
+    "gap": 6.87,
+    "lim": 5.03,
+    "x": 464.0,
+    "y": 419.8,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "量",
+    "right": "𝑐",
+    "gap": 6.88,
+    "lim": 5.03,
+    "x": 525.0,
+    "y": 419.0,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 3
+ },
+ {
+  "page": 3,
+  "y": 248.4,
+  "x0": 49.8,
+  "text": "【诊断分析】判断正误(正确的打√,错误的打)",
+  "gaps": [
+   {
+    "left": "打",
+    "right": ")",
+    "gap": 6.83,
+    "lim": 5.03,
+    "x": 254.2,
+    "y": 248.5,
+    "lf": "FZFSK--GBK1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 268.7,
+  "x0": 49.8,
+  "text": "(1)若𝑝=𝑥𝑎+𝑦𝑏(𝑎，𝑏不共线)，则𝑝，𝑎，𝑏共",
+  "gaps": [
+   {
+    "left": ")",
+    "right": "若",
+    "gap": 7.59,
+    "lim": 5.03,
+    "x": 61.5,
+    "y": 269.7,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "若",
+    "right": "𝑝",
+    "gap": 7.59,
+    "lim": 5.03,
+    "x": 79.2,
+    "y": 268.7,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝑏",
+    "right": "不",
+    "gap": 7.59,
+    "lim": 5.03,
+    "x": 167.1,
+    "y": 269.5,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝑏",
+    "right": "共",
+    "gap": 7.59,
+    "lim": 5.03,
+    "x": 266.9,
+    "y": 269.5,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 4
+ },
+ {
+  "page": 3,
+  "y": 395.7,
+  "x0": 49.8,
+  "text": "𝜃∈[0∘,90∘)；𝜃=0∘(同向)时数量积也为正而非锐",
+  "gaps": [
+   {
+    "left": ")",
+    "right": "时",
+    "gap": 7.2,
+    "lim": 5.03,
+    "x": 167.4,
+    "y": 397.0,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 414.2,
+  "x0": 49.8,
+  "text": "角，故．",
+  "gaps": [
+   {
+    "left": "故",
+    "right": "．",
+    "gap": 6.83,
+    "lim": 5.03,
+    "x": 80.0,
+    "y": 414.2,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 464.2,
+  "x0": 49.8,
+  "text": "◆探究点一",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 58.4,
+    "y": 466.0,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 488.4,
+  "x0": 49.8,
+  "text": "例1[简单(知识点一)]下列说法正确的是(",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "下",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 157.5,
+    "y": 490.6,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 583.8,
+  "x0": 49.8,
+  "text": "[分析]根据零向量、单位向量、向量的模、相等向",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "根",
+    "gap": 5.67,
+    "lim": 5.03,
+    "x": 77.3,
+    "y": 584.8,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 49.6,
+  "x0": 310.7,
+  "text": "变式1[简单(知识点一)]下列说法错误的是(",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "下",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 430.2,
+    "y": 51.8,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 318.7,
+  "x0": 310.7,
+  "text": "◆探究点二",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 319.3,
+    "y": 320.5,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 342.9,
+  "x0": 334.9,
+  "text": "1[简单(知识点二)]在直三棱柱𝐴𝐵𝐶−",
+  "gaps": [
+   {
+    "left": "单",
+    "right": "(",
+    "gap": 7.9,
+    "lim": 5.23,
+    "x": 374.7,
+    "y": 344.1,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.46,
+    "rsz": 10.46
+   },
+   {
+    "left": "]",
+    "right": "在",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 444.0,
+    "y": 345.1,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   },
+   {
+    "left": "柱",
+    "right": "𝐴",
+    "gap": 7.59,
+    "lim": 5.03,
+    "x": 505.0,
+    "y": 344.4,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 3
+ },
+ {
+  "page": 3,
+  "y": 602.7,
+  "x0": 310.7,
+  "text": "变式",
+  "gaps": [
+   {
+    "left": "变",
+    "right": "式",
+    "gap": 6.18,
+    "lim": 5.99,
+    "x": 322.7,
+    "y": 602.7,
+    "lf": "AlimamaFangYuanTiVF-Thin",
+    "rf": "AlimamaFangYuanTiVF-Thin",
+    "lsz": 11.99,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 603.9,
+  "x0": 406.4,
+  "text": "(知识点二)]在平行六面体",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "在",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 471.2,
+    "y": 604.9,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 3,
+  "y": 622.4,
+  "x0": 310.7,
+  "text": "𝐴𝐵𝐶𝐷−𝐴1𝐵1𝐶1𝐷1中，𝐴𝐵=𝑎，𝐴𝐷=𝑏，𝐴𝐴1=𝑐，",
+  "gaps": [
+   {
+    "left": "1",
+    "right": "中",
+    "gap": 5.1,
+    "lim": 3.52,
+    "x": 396.2,
+    "y": 627.8,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 179.5,
+  "x0": 49.8,
+  "text": "◆探究点三",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 58.4,
+    "y": 181.3,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 389.8,
+  "x0": 49.8,
+  "text": "变式1[简单(知识点二)]在平行六面体𝐴𝐵𝐶𝐷−",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "在",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 176.2,
+    "y": 392.0,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 408.3,
+  "x0": 49.8,
+  "text": "𝐴1𝐵1𝐶1𝐷1中，点𝐸在𝐴1𝐶1上，且𝐴1𝐸=1",
+  "gaps": [
+   {
+    "left": "1",
+    "right": "中",
+    "gap": 4.35,
+    "lim": 3.52,
+    "x": 93.6,
+    "y": 414.9,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   },
+   {
+    "left": "1",
+    "right": "上",
+    "gap": 4.35,
+    "lim": 3.52,
+    "x": 178.0,
+    "y": 414.9,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 4,
+  "y": 674.1,
+  "x0": 49.8,
+  "text": "◆探究点四",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 58.4,
+    "y": 675.9,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 698.3,
+  "x0": 49.8,
+  "text": "例1[简单(知识点三)]有下列说法:",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "有",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 157.5,
+    "y": 700.5,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 718.0,
+  "x0": 49.8,
+  "text": "①若𝑝=𝑥𝑎+𝑦𝑏，则𝑝与𝑎，𝑏共面；②若𝑝与",
+  "gaps": [
+   {
+    "left": "若",
+    "right": "𝑝",
+    "gap": 6.02,
+    "lim": 5.03,
+    "x": 70.7,
+    "y": 718.0,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝑝",
+    "right": "与",
+    "gap": 6.0,
+    "lim": 5.03,
+    "x": 156.6,
+    "y": 718.8,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "与",
+    "right": "𝑎",
+    "gap": 6.01,
+    "lim": 5.03,
+    "x": 172.7,
+    "y": 718.0,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝑏",
+    "right": "共",
+    "gap": 6.01,
+    "lim": 5.03,
+    "x": 198.8,
+    "y": 718.8,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "若",
+    "right": "𝑝",
+    "gap": 6.03,
+    "lim": 5.03,
+    "x": 257.4,
+    "y": 718.0,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝑝",
+    "right": "与",
+    "gap": 6.0,
+    "lim": 5.03,
+    "x": 268.5,
+    "y": 718.8,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 6
+ },
+ {
+  "page": 4,
+  "y": 51.1,
+  "x0": 310.7,
+  "text": "则P，M，A，B共面；④若P，M，A，B共面，",
+  "gaps": [
+   {
+    "left": "则",
+    "right": "P",
+    "gap": 6.25,
+    "lim": 5.03,
+    "x": 320.8,
+    "y": 51.1,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPS-ItalicMT",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "B",
+    "right": "共",
+    "gap": 6.24,
+    "lim": 5.03,
+    "x": 385.0,
+    "y": 52.1,
+    "lf": "TimesNewRomanPS-ItalicMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "若",
+    "right": "P",
+    "gap": 6.25,
+    "lim": 5.03,
+    "x": 444.0,
+    "y": 51.1,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPS-ItalicMT",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "B",
+    "right": "共",
+    "gap": 6.24,
+    "lim": 5.03,
+    "x": 508.2,
+    "y": 52.1,
+    "lf": "TimesNewRomanPS-ItalicMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 4
+ },
+ {
+  "page": 4,
+  "y": 253.1,
+  "x0": 310.7,
+  "text": "变式1[简单(知识点三)]已知𝑀𝑃=3𝑀𝐴−2𝑀𝐵，",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "已",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 429.3,
+    "y": 255.3,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 291.0,
+  "x0": 310.7,
+  "text": "[答案]共面(𝑀𝑃可由𝑀𝐴，𝑀𝐵线性表示，故𝑀𝑃，",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "共",
+    "gap": 5.03,
+    "lim": 5.03,
+    "x": 337.8,
+    "y": 292.0,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 519.2,
+  "x0": 310.7,
+  "text": "◆探究点五",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 319.3,
+    "y": 521.0,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 543.4,
+  "x0": 310.7,
+  "text": "例1(多选题)[简单(知识点三)]设𝑎，𝑏为空间中",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "设",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 461.7,
+    "y": 545.6,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 4,
+  "y": 729.8,
+  "x0": 473.1,
+  "text": "𝑎无意义，故B",
+  "gaps": [
+   {
+    "left": "𝑎",
+    "right": "无",
+    "gap": 5.66,
+    "lim": 3.52,
+    "x": 477.1,
+    "y": 736.4,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 5,
+  "y": 124.3,
+  "x0": 49.8,
+  "text": "变式1[简单(知识点三)]已知|𝑎|=2，|𝑏|=3，",
+  "gaps": [
+   {
+    "left": "式",
+    "right": "1",
+    "gap": 7.16,
+    "lim": 5.99,
+    "x": 75.6,
+    "y": 124.3,
+    "lf": "AlimamaFangYuanTiVF-Thin",
+    "rf": "AlimamaFangYuanTiVF-Thin",
+    "lsz": 11.99,
+    "rsz": 11.99
+   },
+   {
+    "left": "]",
+    "right": "已",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 181.3,
+    "y": 126.5,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 5,
+  "y": 335.9,
+  "x0": 49.8,
+  "text": "◆探究点六",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 58.4,
+    "y": 337.7,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 5,
+  "y": 595.3,
+  "x0": 49.8,
+  "text": "因为△𝐶𝐴𝐷1为等边三角形，所以∠𝐶𝐴𝐷1=60",
+  "gaps": [
+   {
+    "left": "1",
+    "right": "为",
+    "gap": 3.7,
+    "lim": 3.52,
+    "x": 108.1,
+    "y": 600.7,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 5,
+  "y": 631.6,
+  "x0": 49.8,
+  "text": "方法2．设正方体的棱长为1，𝐵𝐶1⋅𝐴𝐶=(𝐵𝐶+",
+  "gaps": [
+   {
+    "left": "法",
+    "right": "2",
+    "gap": 5.9,
+    "lim": 5.03,
+    "x": 70.7,
+    "y": 631.6,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "为",
+    "right": "1",
+    "gap": 5.9,
+    "lim": 5.03,
+    "x": 178.1,
+    "y": 631.6,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 5,
+  "y": 722.6,
+  "x0": 49.8,
+  "text": "⟨𝐵𝐶1,𝐴𝐶⟩∈[0,𝜋]，所以𝐵𝐶1与𝐴𝐶的夹角的大小",
+  "gaps": [
+   {
+    "left": "以",
+    "right": "𝐵",
+    "gap": 5.06,
+    "lim": 5.03,
+    "x": 160.4,
+    "y": 722.6,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "1",
+    "right": "与",
+    "gap": 5.55,
+    "lim": 3.52,
+    "x": 182.3,
+    "y": 728.0,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   },
+   {
+    "left": "与",
+    "right": "𝐴",
+    "gap": 5.05,
+    "lim": 5.03,
+    "x": 197.9,
+    "y": 722.6,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝐶",
+    "right": "的",
+    "gap": 5.56,
+    "lim": 5.03,
+    "x": 215.8,
+    "y": 723.4,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 4
+ },
+ {
+  "page": 5,
+  "y": 49.6,
+  "x0": 347.6,
+  "text": "1[中档(知识点三)]在长方体𝐴𝐵𝐶𝐷−",
+  "gaps": [
+   {
+    "left": "档",
+    "right": "(",
+    "gap": 6.39,
+    "lim": 5.23,
+    "x": 386.3,
+    "y": 50.8,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.46,
+    "rsz": 10.46
+   },
+   {
+    "left": "]",
+    "right": "在",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 451.5,
+    "y": 51.8,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   },
+   {
+    "left": "体",
+    "right": "𝐴",
+    "gap": 6.14,
+    "lim": 5.03,
+    "x": 500.4,
+    "y": 51.1,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 3
+ },
+ {
+  "page": 5,
+  "y": 160.2,
+  "x0": 422.3,
+  "text": "5．",
+  "gaps": [
+   {
+    "left": "5",
+    "right": "．",
+    "gap": 5.34,
+    "lim": 3.52,
+    "x": 426.3,
+    "y": 166.7,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 5,
+  "y": 333.9,
+  "x0": 310.7,
+  "text": "◆探究点七",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 319.3,
+    "y": 335.7,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 5,
+  "y": 358.1,
+  "x0": 310.7,
+  "text": "例1[中档(知识点三)]已知向量𝑎,𝑏，且|𝑎|=2，",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "已",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 422.0,
+    "y": 360.3,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 5,
+  "y": 737.9,
+  "x0": 511.7,
+  "text": "三)]已",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "已",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 529.2,
+    "y": 739.0,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 6,
+  "y": 243.0,
+  "x0": 49.8,
+  "text": "◆探究点八",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 58.4,
+    "y": 244.8,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 6,
+  "y": 518.9,
+  "x0": 49.8,
+  "text": "变式1[简单(知识点三)]在大小为60∘的二面角",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "在",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 175.5,
+    "y": 521.1,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   },
+   {
+    "left": "∘",
+    "right": "的",
+    "gap": 4.07,
+    "lim": 3.52,
+    "x": 239.5,
+    "y": 520.2,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 6,
+  "y": 49.5,
+  "x0": 310.7,
+  "text": "◆探究点九",
+  "gaps": [
+   {
+    "left": "◆",
+    "right": "探",
+    "gap": 6.8,
+    "lim": 4.28,
+    "x": 319.3,
+    "y": 51.3,
+    "lf": "NotoSansSC-Thin",
+    "rf": "NotoSansSC-Thin",
+    "lsz": 8.57,
+    "rsz": 11.99
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 6,
+  "y": 73.7,
+  "x0": 332.9,
+  "text": "1[中档(知识点三)]已知矩形𝐴𝐵𝐶𝐷中，",
+  "gaps": [
+   {
+    "left": "档",
+    "right": "(",
+    "gap": 6.62,
+    "lim": 5.23,
+    "x": 372.0,
+    "y": 74.9,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.46,
+    "rsz": 10.46
+   },
+   {
+    "left": "]",
+    "right": "已",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 437.8,
+    "y": 76.0,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   },
+   {
+    "left": "形",
+    "right": "𝐴",
+    "gap": 6.36,
+    "lim": 5.03,
+    "x": 486.8,
+    "y": 75.3,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝐷",
+    "right": "中",
+    "gap": 6.42,
+    "lim": 5.03,
+    "x": 519.9,
+    "y": 76.1,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 4
+ },
+ {
+  "page": 6,
+  "y": 130.2,
+  "x0": 334.3,
+  "text": "2；",
+  "gaps": [
+   {
+    "left": "2",
+    "right": "；",
+    "gap": 5.51,
+    "lim": 3.66,
+    "x": 338.4,
+    "y": 136.8,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.32,
+    "rsz": 10.46
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 6,
+  "y": 325.5,
+  "x0": 457.7,
+  "text": "2．故选:A．",
+  "gaps": [
+   {
+    "left": "2",
+    "right": "．",
+    "gap": 5.34,
+    "lim": 3.52,
+    "x": 461.7,
+    "y": 331.9,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 6,
+  "y": 380.6,
+  "x0": 351.5,
+  "text": "1[中档(知识点三)]已知矩形𝐴𝐵𝐶𝐷",
+  "gaps": [
+   {
+    "left": "档",
+    "right": "(",
+    "gap": 8.05,
+    "lim": 5.23,
+    "x": 391.2,
+    "y": 381.7,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.46,
+    "rsz": 10.46
+   },
+   {
+    "left": "]",
+    "right": "已",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 460.9,
+    "y": 382.8,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   },
+   {
+    "left": "形",
+    "right": "𝐴",
+    "gap": 7.74,
+    "lim": 5.03,
+    "x": 510.9,
+    "y": 382.1,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 3
+ },
+ {
+  "page": 6,
+  "y": 418.2,
+  "x0": 310.7,
+  "text": "折起，使二面角𝐵−𝐴𝐶−𝐷的大小为60∘，",
+  "gaps": [
+   {
+    "left": "角",
+    "right": "𝐵",
+    "gap": 7.75,
+    "lim": 5.03,
+    "x": 386.9,
+    "y": 418.4,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "𝐷",
+    "right": "的",
+    "gap": 7.82,
+    "lim": 5.03,
+    "x": 462.3,
+    "y": 419.3,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   },
+   {
+    "left": "为",
+    "right": "6",
+    "gap": 7.75,
+    "lim": 5.03,
+    "x": 513.8,
+    "y": 418.4,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TeXGyreTermesMath-Regula",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 3
+ },
+ {
+  "page": 6,
+  "y": 509.4,
+  "x0": 446.3,
+  "text": "2．",
+  "gaps": [
+   {
+    "left": "2",
+    "right": "．",
+    "gap": 5.34,
+    "lim": 3.52,
+    "x": 450.3,
+    "y": 515.7,
+    "lf": "TeXGyreTermesMath-Regula",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 7.04,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 7,
+  "y": 87.5,
+  "x0": 49.8,
+  "text": "1．[简单",
+  "gaps": [
+   {
+    "left": "．",
+    "right": "[",
+    "gap": 7.65,
+    "lim": 5.68,
+    "x": 67.9,
+    "y": 87.5,
+    "lf": "NotoSansSC-Thin",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 11.36,
+    "rsz": 10.46
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 7,
+  "y": 88.5,
+  "x0": 112.7,
+  "text": "(知识点三)]已知",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "已",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 176.2,
+    "y": 89.5,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 7,
+  "y": 187.4,
+  "x0": 49.8,
+  "text": "2．[简单(知识点二)]设𝑒1，𝑒2不共线，𝑎=2𝑒1+",
+  "gaps": [
+   {
+    "left": "．",
+    "right": "[",
+    "gap": 7.65,
+    "lim": 5.68,
+    "x": 67.9,
+    "y": 187.4,
+    "lf": "NotoSansSC-Thin",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 11.36,
+    "rsz": 10.46
+   },
+   {
+    "left": "]",
+    "right": "设",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 154.8,
+    "y": 189.4,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 7,
+  "y": 290.0,
+  "x0": 49.8,
+  "text": "3．[简单(知识点三)]设𝑎，𝑏均为非零空间向量，",
+  "gaps": [
+   {
+    "left": "．",
+    "right": "[",
+    "gap": 7.65,
+    "lim": 5.68,
+    "x": 67.9,
+    "y": 290.0,
+    "lf": "NotoSansSC-Thin",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 11.36,
+    "rsz": 10.46
+   },
+   {
+    "left": "]",
+    "right": "设",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 154.1,
+    "y": 292.0,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 7,
+  "y": 429.5,
+  "x0": 49.8,
+  "text": "[解析]非零向量𝑎⋅𝑏=0⇔𝑎⟂𝑏，充要条件，选C．",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "非",
+    "gap": 5.03,
+    "lim": 5.03,
+    "x": 76.6,
+    "y": 430.6,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 7,
+  "y": 455.4,
+  "x0": 49.8,
+  "text": "4．[简单(知识点二)]在空间四边形𝐴𝐵𝐶𝐷中，",
+  "gaps": [
+   {
+    "left": "．",
+    "right": "[",
+    "gap": 7.65,
+    "lim": 5.68,
+    "x": 67.9,
+    "y": 455.4,
+    "lf": "NotoSansSC-Thin",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 11.36,
+    "rsz": 10.46
+   },
+   {
+    "left": "]",
+    "right": "在",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 161.2,
+    "y": 457.4,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 2
+ },
+ {
+  "page": 7,
+  "y": 495.4,
+  "x0": 49.8,
+  "text": "A．2𝐸𝐹；B．−𝐸𝐹；C．𝐹𝐸；",
+  "gaps": [
+   {
+    "left": "；",
+    "right": "B",
+    "gap": 5.74,
+    "lim": 5.23,
+    "x": 97.5,
+    "y": 495.4,
+    "lf": "FZSSJW--GB1-0",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 10.46,
+    "rsz": 10.46
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 7,
+  "y": 531.0,
+  "x0": 49.8,
+  "text": "[解析]取𝐴𝐶中点𝐺，𝐸𝐹=𝐸𝐺+𝐺𝐹=1",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "取",
+    "gap": 5.03,
+    "lim": 5.03,
+    "x": 76.6,
+    "y": 533.2,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.05,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 7,
+  "y": 576.2,
+  "x0": 49.8,
+  "text": "5．[简单",
+  "gaps": [
+   {
+    "left": "．",
+    "right": "[",
+    "gap": 7.65,
+    "lim": 5.68,
+    "x": 67.9,
+    "y": 576.2,
+    "lf": "NotoSansSC-Thin",
+    "rf": "TimesNewRomanPSMT",
+    "lsz": 11.36,
+    "rsz": 10.46
+   }
+  ],
+  "n": 1
+ },
+ {
+  "page": 7,
+  "y": 577.1,
+  "x0": 112.7,
+  "text": "(知识点三)]已知",
+  "gaps": [
+   {
+    "left": "]",
+    "right": "已",
+    "gap": 6.24,
+    "lim": 5.23,
+    "x": 176.2,
+    "y": 578.2,
+    "lf": "TimesNewRomanPSMT",
+    "rf": "FZSSJW--GB1-0",
+    "lsz": 10.46,
+    "rsz": 10.05
+   }
+  ],
+  "n": 1
+ }
+]

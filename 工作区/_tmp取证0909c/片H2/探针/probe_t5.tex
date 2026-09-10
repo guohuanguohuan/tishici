@@ -1,0 +1,26 @@
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+% ---- 探针开关（生成注入） ----
+\setmathfont{texgyretermes-math.otf}[Scale=1.08,ScriptPercentScaleDown=54,ScriptScriptPercentScaleDown=45]
+
+\let\frac\dfrac
+\begin{document}
+\noindent TAG=t5
+
+\noindent 在平行六面体\(ABCD-A_1B_1C_1D_1\)中，点\(E\)在\(A_1C_1\)上，且\(\overrightarrow{A_1E}=\frac{1}{2}\overrightarrow{A_1C_1}\)，若\(\overrightarrow{AE}=x\overrightarrow{AA_1}\)，求\(xy+yz\)的最大值。
+
+\noindent \(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\)，则\(P\)，\(M\)，\(A\)，\(B\)四点是否共面？已知\(MP=3MA-2MB\)的取值。
+
+\noindent 故答案为\(x=1\)，\(y=\frac{1}{4}\)。所以\(\cos\langle \overrightarrow{AB_1},\overrightarrow{AC}\rangle=\frac{4}{\sqrt{5}\times2\sqrt{2}}=\frac{\sqrt{10}}{5}\)。
+
+\noindent 【详解】方法2．设正方体的棱长为1，\(\overrightarrow{BC_{1}} \cdot \overrightarrow{AC} = ( \overrightarrow{BC} + \overrightarrow{CC_{1}} ) \cdot ( \overrightarrow{AB} + \overrightarrow{BC} )\)，则\(AM = \frac{1}{2}\)，\(BM = \frac{\sqrt{3}}{2}\)，\(CN = \frac{1}{2}\)。
+
+\noindent 已知\(AB=3\)，\(AD=2\)，\(AA_1=1\)，\(| \overrightarrow{a} |\cos\langle \overrightarrow{a},\overrightarrow{b} \rangle \cdot \frac{\overrightarrow{b}}{| \overrightarrow{b} |}\)，\(\lambda=-1-\sqrt{3}\)。
+
+\noindent 测甲\(ABCD-A_1B_1C_1D_1\)测乙
+
+\noindent 测甲\(\frac{1}{4}\)测乙\(\frac{\sqrt{10}}{5}\)测丙\(\frac{\overrightarrow{b}}{| \overrightarrow{b} |}\)测丁
+
+\noindent 测甲\(3\overrightarrow{MA}-2\overrightarrow{MB}\)测乙\(| \overrightarrow{a} |\cos\langle \overrightarrow{a},\overrightarrow{b} \rangle\)测丙
+\end{document}

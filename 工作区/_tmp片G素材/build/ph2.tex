@@ -1,0 +1,10 @@
+\documentclass[border=0pt]{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[x=1mm,y=1mm,line width=0.308mm,line cap=butt]
+\foreach \ph/\i in {0/0, 0.5/1, 1.0/2, 1.264/3, 2.0/4}{
+  \draw[dash pattern=on 1.209mm off 0.852mm, dash phase=\ph mm] (0,-\i)--(30,-\i);
+  \node[right,font=\tiny] at (30,-\i) {\ph};
+}
+\end{tikzpicture}
+\end{document}

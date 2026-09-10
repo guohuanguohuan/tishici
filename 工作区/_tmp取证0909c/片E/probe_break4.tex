@@ -1,0 +1,29 @@
+% 片E 探针 F：文本切分法——前缀（窄栏，旧 minipage 形）＋余段（通栏）断行核对
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\begin{document}
+\begin{multicols}{2}
+\def\PnA{[详解]过点\(B\)，\(D\)分别向\(AC\)作垂线，垂足分别为\(M\)，\(N\)，则可得\(AM = \frac{1}{2}\)，\(BM = \frac{\sqrt{3}}{2}\)，\(CN = \frac{1}{2}\)，\(DN = \frac{\sqrt{3}}{2}\)，}
+\def\PnB{\(MN = 1\)．由于\(\overrightarrow{BD} = \overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND}\)，所以\(|\overrightarrow{BD}|^{2} = {(\overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND})}^{2}\)\allowbreak\(= |\overrightarrow{BM}|^{2} + |\overrightarrow{MN}|^{2} + |\overrightarrow{ND}|^{2} + 2(\overrightarrow{BM} \cdot \overrightarrow{MN} + \overrightarrow{MN} \cdot \overrightarrow{ND} + \overrightarrow{BM} \cdot \overrightarrow{ND})\)\allowbreak\(= ( \frac{\sqrt{3}}{2} )^{2} + 1^{2} + ( \frac{\sqrt{3}}{2} )^{2} + 2 \times (0 + 0 + 0) = \frac{5}{2}\)，所以\(|\overrightarrow{BD}| = \frac{\sqrt{10}}{2}\)．故选:\emph{A}．}
+\def\PmA{如图，在大小为45°的二面角A\-EF\-D中，四边形ABFE，CDEF都是边长为1}
+\def\PmB{的正方形，则B，D两点间的距离是}
+
+[W] 探九前缀（46.368mm minipage，应 4 行同旧形）＋余段通栏\par
+\noindent\begin{minipage}[t]{46.368mm}\raggedright \PnA\end{minipage}\par
+\PnB\par
+\vspace{3mm}
+
+[X] 探八前缀（44mm minipage，应 3 行同旧形）＋余段通栏\par
+\noindent\begin{minipage}[t]{44mm}\raggedright \PmA\end{minipage}\par
+\PmB\par
+\vspace{3mm}
+
+[Y] 对照：探九全段（46.368mm minipage，旧形全窄）\par
+\noindent\begin{minipage}[t]{46.368mm}\raggedright \PnA\PnB\end{minipage}\par
+\end{multicols}
+\end{document}

@@ -1,0 +1,7 @@
+C:\提示词\工作区\字替对照-0909\variantF\postproc_daoxue.py:312: SyntaxWarning: invalid escape sequence '\('
+  """v4.2-C15 修复：原把 \( \) 括号计入宽度致检测2/检测4 短数学项被判 1 项/行——
+Traceback (most recent call last):
+  File "C:\提示词\工作区\字替对照-0909\variantF\postproc_daoxue.py", line 1046, in <module>
+    assert fh_unprint <= 3, f'分号对账异常：{fh_miss}'
+           ^^^^^^^^^^^^^^^
+AssertionError: 分号对账异常：[(1, '{\\def\\LTcaptype{none} % do not increment'), (1, '{\\def\\LTcaptype{none} % do not increment'), (1, '（2）由数量积的定义，可以得到：\\(\\overrightarrow{a}\\bot'), (3, 'A．若\\(\\left| \\overrightarrow{a} \\right| ='), (3, '①若\\(\\overrightarrow{p} = x\\overrightarro')]

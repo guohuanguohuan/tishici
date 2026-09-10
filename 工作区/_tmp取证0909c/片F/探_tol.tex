@@ -1,0 +1,13 @@
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\begin{document}
+\message{^^J=== TOL before multicols = \the\tolerance ===}
+\begin{multicols}{2}
+\message{^^J=== TOL in multicols = \the\tolerance ===}
+\end{multicols}
+\end{document}

@@ -1,0 +1,28 @@
+% ============================================================================
+% 片G · sub3 同尺并排对照（上＝源位图按源排印宽 86.0mm；下＝TikZ 重绘同宽 86.0mm）
+% 编译：xelatex sub3_对照-600dpi.tex → PyMuPDF 600dpi 栅格化 → PNG（sub3_对照-600dpi.png）
+% （standalone 类正文禁用 \\ / tabular，故用 minipage + \par 竖向叠放）
+% 另附红/蓝叠加图（源=红、重绘=蓝、重合=黑），由 sub3_build.py 生成
+% ============================================================================
+\documentclass[border=3mm]{standalone}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{texgyretermes-math.otf}
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+\pagestyle{empty}
+\begin{document}
+\begin{minipage}{88mm}\centering
+  {\small 上：源位图 sub3\_B\_4.png（1408$\times$374px，源排印宽 86.0mm）}\par
+  \vspace{1.2mm}
+  \includegraphics[width=86.0mm]{sub3_source.png}\par
+  \vspace{1.0mm}
+  {\color[gray]{0.55}\rule{86.0mm}{0.3pt}}\par
+  \vspace{1.0mm}
+  {\small 下：TikZ 矢量重绘（bbox＝画布 86.0000$\times$22.8440mm，原尺寸置入 86.0mm）}\par
+  \vspace{1.2mm}
+  \input{sub3_投影三联.tikz}\par
+\end{minipage}
+\end{document}

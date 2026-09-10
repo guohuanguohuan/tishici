@@ -1,0 +1,11 @@
+% 宿主仿真测试：图形本体放进普通 article + amsmath + tikz（不加载 fix-cm），
+% 用途：验证 body 片段不依赖独立壳、可在宿主中原样编译；并核对无 fix-cm 时字形不变。
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usepackage[margin=4mm,paperwidth=66mm,paperheight=48mm]{geometry}
+\pagestyle{empty}
+\begin{document}
+\noindent
+\input{fig-image5-fold-body.tex}
+\end{document}

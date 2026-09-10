@@ -1,0 +1,21 @@
+% 片H2 探针（减号形态专项）：比较 math '-' / \text{-} / 不同 \medmuskip
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\setmathfont{texgyretermes-math.otf}[Scale=1.08]
+\DeclareMathSizes{10.09}{10.09}{5.45}{4.54}
+\normalsize
+\medmuskip=1mu
+\begin{document}
+\noindent 测甲\(ABCD-A_1B_1C_1D_1\)测乙
+
+\noindent 测甲\(ABCD\text{-}A_1B_1C_1D_1\)测乙
+
+\noindent 测甲\(3\overrightarrow{MA}-2\overrightarrow{MB}\)测乙
+
+\noindent 测甲\(3\overrightarrow{MA}\text{-}2\overrightarrow{MB}\)测乙
+
+\noindent 测甲\(\overrightarrow{AF_{1}}-\overrightarrow{EF}+\overrightarrow{AB}+\overrightarrow{CC_{1}}\)测乙
+
+\noindent 测甲\(\frac{1}{2}\overrightarrow{A_1C_1}\)测乙
+\end{document}

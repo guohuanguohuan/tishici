@@ -1,0 +1,186 @@
+[
+ {
+  "tag": "ec0em",
+  "ec": "0em",
+  "rel": 500,
+  "err": 0,
+  "ov": 12,
+  "un": 4,
+  "mc": 0,
+  "pg": "7",
+  "lines": 76,
+  "cc": 15,
+  "cc_lines": 14,
+  "real": 0,
+  "real_lines": 0,
+  "real_rows": []
+ },
+ {
+  "tag": "ec0.25em",
+  "ec": "0.25em",
+  "rel": 500,
+  "err": 0,
+  "ov": 4,
+  "un": 13,
+  "mc": 0,
+  "pg": "7",
+  "lines": 82,
+  "cc": 16,
+  "cc_lines": 15,
+  "real": 1,
+  "real_lines": 1,
+  "real_rows": [
+   {
+    "page": 3,
+    "y": 602.0,
+    "kind": "CJK-CJK",
+    "left": "变",
+    "right": "式",
+    "gap_pt": 6.18,
+    "gap_mm": 2.179,
+    "lim": 5.99,
+    "x": 322.7
+   }
+  ]
+ },
+ {
+  "tag": "ec0.5em",
+  "ec": "0.5em",
+  "rel": 500,
+  "err": 0,
+  "ov": 2,
+  "un": 15,
+  "mc": 0,
+  "pg": "7",
+  "lines": 83,
+  "cc": 16,
+  "cc_lines": 15,
+  "real": 1,
+  "real_lines": 1,
+  "real_rows": [
+   {
+    "page": 3,
+    "y": 602.0,
+    "kind": "CJK-CJK",
+    "left": "变",
+    "right": "式",
+    "gap_pt": 6.18,
+    "gap_mm": 2.179,
+    "lim": 5.99,
+    "x": 322.7
+   }
+  ]
+ },
+ {
+  "tag": "ec0.75em",
+  "ec": "0.75em",
+  "rel": 500,
+  "err": 0,
+  "ov": 1,
+  "un": 16,
+  "mc": 0,
+  "pg": "7",
+  "lines": 83,
+  "cc": 16,
+  "cc_lines": 15,
+  "real": 1,
+  "real_lines": 1,
+  "real_rows": [
+   {
+    "page": 3,
+    "y": 602.0,
+    "kind": "CJK-CJK",
+    "left": "变",
+    "right": "式",
+    "gap_pt": 6.18,
+    "gap_mm": 2.179,
+    "lim": 5.99,
+    "x": 322.7
+   }
+  ]
+ },
+ {
+  "tag": "ec1em",
+  "ec": "1em",
+  "rel": 500,
+  "err": 0,
+  "ov": 0,
+  "un": 18,
+  "mc": 0,
+  "pg": "7",
+  "lines": 84,
+  "cc": 16,
+  "cc_lines": 15,
+  "real": 1,
+  "real_lines": 1,
+  "real_rows": [
+   {
+    "page": 3,
+    "y": 602.0,
+    "kind": "CJK-CJK",
+    "left": "变",
+    "right": "式",
+    "gap_pt": 6.18,
+    "gap_mm": 2.179,
+    "lim": 5.99,
+    "x": 322.7
+   }
+  ]
+ },
+ {
+  "tag": "ec1.5em",
+  "ec": "1.5em",
+  "rel": 500,
+  "err": 0,
+  "ov": 0,
+  "un": 19,
+  "mc": 0,
+  "pg": "7",
+  "lines": 83,
+  "cc": 16,
+  "cc_lines": 15,
+  "real": 1,
+  "real_lines": 1,
+  "real_rows": [
+   {
+    "page": 3,
+    "y": 602.0,
+    "kind": "CJK-CJK",
+    "left": "变",
+    "right": "式",
+    "gap_pt": 6.18,
+    "gap_mm": 2.179,
+    "lim": 5.99,
+    "x": 322.7
+   }
+  ]
+ },
+ {
+  "tag": "ec2em",
+  "ec": "2em",
+  "rel": 500,
+  "err": 0,
+  "ov": 0,
+  "un": 19,
+  "mc": 0,
+  "pg": "7",
+  "lines": 83,
+  "cc": 16,
+  "cc_lines": 15,
+  "real": 1,
+  "real_lines": 1,
+  "real_rows": [
+   {
+    "page": 3,
+    "y": 602.0,
+    "kind": "CJK-CJK",
+    "left": "变",
+    "right": "式",
+    "gap_pt": 6.18,
+    "gap_mm": 2.179,
+    "lim": 5.99,
+    "x": 322.7
+   }
+  ]
+ }
+]

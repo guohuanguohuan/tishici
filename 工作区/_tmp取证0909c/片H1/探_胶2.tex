@@ -1,0 +1,22 @@
+% 片H1 探针 v2：E2 banjiao 后标点节结构与 v1 例1 行胶成分
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\showboxbreadth=10000
+\showboxdepth=10000
+\begin{document}
+\message{^^J=== PROBE2 START ===}
+\message{^^J CJKglue = \meaning\CJKglue}
+\message{^^J CJKecglue = \meaning\CJKecglue}
+{\hsize=238.11pt
+\setbox0=\vbox{\noindent 减法\(\overrightarrow{a}-\overrightarrow{b}\)为减向量终点指向被减向量终点；数乘\par}
+\showbox0}
+{\hsize=238.11pt
+\setbox1=\vbox{\noindent 在平行六面体\(ABCD - A_{1}B_{1}C_{1}D_{1}\)中，若\(\overrightarrow{CA} = \overrightarrow{a},\)，则\(\overrightarrow{A_{1}B}\)=\kongbai{}.(用\(\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}\)表示)\par}
+\showbox1}
+\message{^^J=== PROBE2 END ===}
+\end{document}

@@ -1,0 +1,39 @@
+% g2-cubeE.tikz —— 片G 0910 集成自 _tmp片G素材/image2_重绘.tex（L18–53 片段正文，逐字拷入，仅末行加 %）
+% 源图：variantF/media/media/image2.png 764×764px = 源排印宽 42.0mm
+% 依赖：宿主导言 \usepackage{tikz}；\qon/\qoff 为片段内局部 \def，不入导言
+\begin{tikzpicture}[x=1mm,y=1mm,line width=0.308mm,line cap=butt,line join=miter,
+                    every node/.style={font=\fontsize{14.53pt}{17.436pt}\selectfont}]
+% ---- 坐标（mm，原点=位图左上角，y 向上） ----
+\coordinate (A)  at (5.971,5.058);\coordinate (B)  at (28.993,5.058);
+\coordinate (A1) at (5.971,28.092);\coordinate (B1) at (28.993,28.092);
+\coordinate (C)  at (37.547,13.696);\coordinate (C1) at (37.547,36.723);
+\coordinate (D)  at (14.543,13.713);\coordinate (D1) at (14.543,36.723);
+\coordinate (E)  at (15.917,30.809);   % E = 线 A1C1 ∩ 线 AE（源图 t=0.315，见核对表）
+% ---- 虚线（隐藏棱 AD、DC、DD1 与辅助线 AE）----
+\def\qon{1.209mm}\def\qoff{0.852mm}
+\draw[dash pattern=on \qon off \qoff, dash phase=0.033mm] (A)--(D);    % 首段墨迹距 A 36.9px
+\draw[dash pattern=on \qon off \qoff, dash phase=0.825mm] (D)--(C);    % 自 D 起 22.5px 起墨
+\draw[dash pattern=on \qon off \qoff, dash phase=0.399mm] (D)--(D1);   % 相位按 dash 中心拟合（自 D 起第1段中心 30.25px）
+\draw[dash pattern=on \qon off \qoff, dash phase=0.049mm] (A)--(E);    % 首段墨迹距 A 36.6px
+% ---- 实线：前面 ABB1A1、右面 BCC1B1、上面 A1B1C1D1、对角线 A1C1 ----
+\draw (A)--(B)--(C)--(C1)--(B1)--(A1)--(A)--cycle;   % 外轮廓：A-B、B-C、C-C1、C1-B1、B1-A1、A1-A
+\draw (B)--(B1);                                     % 前面右竖棱 B-B1
+\draw (A1)--(D1)--(C1);                              % 上面后两条可见棱
+\draw (A1)--(C1);                                    % 上面对角线（E 所在）
+% ---- 点 E（实心圆）----
+\fill (E) circle[radius=0.472mm];
+% ---- 标签 ----
+\node at (4.644,2.350) {$\mathit{A}$};
+\node at (28.898,2.116) {$\mathit{B}$};
+\node at (39.683,13.844) {$\mathit{C}$};
+\node at (11.954,14.713) {$\mathit{D}$};
+\node at (17.085,33.897) {$\mathit{E}$};
+\node at (3.229,29.422) {$\mathit{A}_{\mathrm{1}}$};
+\node at (32.520,26.320) {$\mathit{B}_{\mathrm{1}}$};
+\node at (39.457,38.888) {$\mathit{C}_{\mathrm{1}}$};
+\node at (13.870,39.477) {$\mathit{D}_{\mathrm{1}}$};
+% ---- 外框＝源排印幅面 42x42mm（与源位图 764x764px 同幅；不含图形，只定画布大小，
+%      比节点自然外框（44.7x43.5mm）更贴源幅面。集成方若要“紧框”，删掉这两行即可） ----
+\pgfresetboundingbox
+\path[use as bounding box] (0,0) rectangle (42,42);
+\end{tikzpicture}%

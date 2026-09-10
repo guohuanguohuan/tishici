@@ -1,0 +1,19 @@
+% 片E 探针 D：\tracingparagraphs 对比（hsize 窄栏 vs parshape 窄栏）
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\begin{document}
+\def\QPTEXT{已知正方体\emph{ABCD}-\emph{A\textsubscript{1}B\textsubscript{1}C\textsubscript{1}D\textsubscript{1}}中，\(\overrightarrow{A_{1}E}\)=\(\frac{1}{4}\) \(\overrightarrow{A_{1}C_{1}}\)，若\(\overrightarrow{AE} =\)\emph{x}\(\overrightarrow{AA_{1}}\)+\emph{y}(\(\overrightarrow{AB}\)+\(\overrightarrow{AD}\))，则\emph{x}\nobreak=\kongbai{}，\emph{y}\nobreak=\kongbai{}.}
+\begin{multicols}{2}
+\tracingparagraphs=1
+\message{===== HSIZE =====}
+\noindent\begingroup\hsize=46.368mm\raggedright \QPTEXT\par\endgroup
+\message{===== PARSHAPE =====}
+\noindent\begingroup\parshape 5 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm 0pt 46.368mm\raggedright \QPTEXT\par\endgroup
+\tracingparagraphs=0
+\end{multicols}
+\end{document}

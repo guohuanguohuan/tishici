@@ -1,0 +1,13 @@
+% ============================================================
+% fig-image5-fold.tex —— 独立可编译壳（供出样/对照用）
+% 编译：xelatex fig-image5-fold.tex（连编两遍取稳定 aux）
+% 依赖：standalone + tikz + fix-cm（图形本体 fig-image5-fold-body.tex 仅依赖 tikz）
+% fix-cm 只为本壳消去「CM 数学字号定档」的惰性告警（脚本档 14.4×0.7=10.08 非定档）；
+% 图形本体声明的是 CM 定档 14.4pt，宿主加不加 fix-cm 渲染结果一致。
+% ============================================================
+\documentclass[border=0pt]{standalone}
+\usepackage{tikz}
+\usepackage{fix-cm}
+\begin{document}
+\input{fig-image5-fold-body.tex}
+\end{document}

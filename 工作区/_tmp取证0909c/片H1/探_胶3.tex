@@ -1,0 +1,42 @@
+% 片H1 探针 v3b：banjiao 参数敏感性（preamble 声明，doc 内切换）
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\xeCJKDeclarePunctStyle { ban2 } { fixed-punct-ratio = 0.5 , optimize-margin = true , kerning-total-ratio = 1.0 , optimize-kerning = true }
+\xeCJKDeclarePunctStyle { ban3 } { fixed-punct-ratio = 0.5 , optimize-margin = true , kerning-total-ratio = 0.75 , optimize-kerning = true }
+\xeCJKDeclarePunctStyle { ban4 } { fixed-punct-ratio = 0.5 , optimize-margin = true , kerning-total-ratio = 0.25 , optimize-kerning = true }
+\xeCJKDeclarePunctStyle { ban5 } { fixed-punct-ratio = 0.5 , optimize-margin = false , kerning-total-ratio = 0.5 , optimize-kerning = false }
+\xeCJKDeclarePunctStyle { ban6 } { fixed-punct-ratio = 0.5 , middle-margin-ratio = 0.5 , optimize-margin = true , kerning-total-ratio = 0.5 , optimize-kerning = true }
+\xeCJKDeclarePunctStyle { ban7 } { fixed-punct-ratio = 0.5 , middle-margin-ratio = 1.5 , optimize-margin = true , kerning-total-ratio = 0.5 , optimize-kerning = true }
+\xeCJKDeclarePunctStyle { ban8 } { fixed-punct-ratio = 0.5 , middle-margin-width = 1pt , optimize-margin = true , kerning-total-ratio = 0.5 , optimize-kerning = true }
+\xeCJKDeclarePunctStyle { ban9 } { fixed-punct-ratio = 0.5 , middle-margin-width = 2pt , optimize-margin = true , kerning-total-ratio = 0.5 , optimize-kerning = true }
+\showboxbreadth=10000
+\showboxdepth=10000
+\newcommand{\probel}[1]{%
+  \message{^^J=== VARIANT: #1 ===}%
+  {\hsize=238.11pt\setbox0=\vbox{\noindent 出；减\par}\showbox0}}
+\begin{document}
+\message{^^J=== PROBE3 START ===}
+\probel{A: banjiao(现状)}
+\xeCJKsetup{PunctStyle=ban2}
+\probel{B: ktr=1.0}
+\xeCJKsetup{PunctStyle=ban3}
+\probel{C: ktr=0.75}
+\xeCJKsetup{PunctStyle=ban4}
+\probel{D: ktr=0.25}
+\xeCJKsetup{PunctStyle=ban5}
+\probel{E: 无 optimize}
+\xeCJKsetup{PunctStyle=ban6}
+\probel{F: mid-margin-ratio=0.5}
+\xeCJKsetup{PunctStyle=ban7}
+\probel{G: mid-margin-ratio=1.5}
+\xeCJKsetup{PunctStyle=ban8}
+\probel{H: mid-margin-width=1pt}
+\xeCJKsetup{PunctStyle=ban9}
+\probel{I: mid-margin-width=2pt}
+\message{^^J=== PROBE3 END ===}
+\end{document}

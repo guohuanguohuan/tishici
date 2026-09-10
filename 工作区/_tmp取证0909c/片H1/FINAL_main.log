@@ -1,0 +1,1327 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  10 SEP 2026 09:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexart.cls (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
+File: ctexbackend.cfg 2026/08/11 v2.6.5 Backend configuration file (CTEX)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-08-10 L3 programming layer (loader) 
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-xetex.def
+File: l3backend-xetex.def 2026-08-10 L3 backend support: XeTeX
+\g__graphics_track_int=\count273
+\g__pdfannot_backend_int=\count274
+\g__pdfannot_backend_link_int=\count275
+))
+Document Class: ctexart 2026/08/11 v2.6.5 Chinese adapter for class article (CTEX)
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty
+Package: ctexhook 2026/08/11 v2.6.5 Document and package hooks (CTEX)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty
+Package: ctexpatch 2026/08/11 v2.6.5 Patching commands (CTEX)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+LaTeX Encoding Info:    Redeclaring text command \capitalcedilla (encoding TS1) on input line 49.
+LaTeX Encoding Info:    Redeclaring text command \capitalogonek (encoding TS1) on input line 52.
+LaTeX Encoding Info:    Redeclaring text command \capitalgrave (encoding TS1) on input line 55.
+LaTeX Encoding Info:    Redeclaring text command \capitalacute (encoding TS1) on input line 56.
+LaTeX Encoding Info:    Redeclaring text command \capitalcircumflex (encoding TS1) on input line 57.
+LaTeX Encoding Info:    Redeclaring text command \capitaltilde (encoding TS1) on input line 58.
+LaTeX Encoding Info:    Redeclaring text command \capitaldieresis (encoding TS1) on input line 59.
+LaTeX Encoding Info:    Redeclaring text command \capitalhungarumlaut (encoding TS1) on input line 60.
+LaTeX Encoding Info:    Redeclaring text command \capitalring (encoding TS1) on input line 61.
+LaTeX Encoding Info:    Redeclaring text command \capitalcaron (encoding TS1) on input line 62.
+LaTeX Encoding Info:    Redeclaring text command \capitalbreve (encoding TS1) on input line 63.
+LaTeX Encoding Info:    Redeclaring text command \capitalmacron (encoding TS1) on input line 64.
+LaTeX Encoding Info:    Redeclaring text command \capitaldotaccent (encoding TS1) on input line 65.
+LaTeX Encoding Info:    Redeclaring text command \t (encoding TS1) on input line 66.
+LaTeX Encoding Info:    Redeclaring text command \capitaltie (encoding TS1) on input line 67.
+LaTeX Encoding Info:    Redeclaring text command \newtie (encoding TS1) on input line 68.
+LaTeX Encoding Info:    Redeclaring text command \capitalnewtie (encoding TS1) on input line 69.
+LaTeX Encoding Info:    Redeclaring text symbol \textcapitalcompwordmark (encoding TS1) on input line 70.
+LaTeX Encoding Info:    Redeclaring text symbol \textascendercompwordmark (encoding TS1) on input line 71.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightbase (encoding TS1) on input line 72.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightdblbase (encoding TS1) on input line 73.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwelveudash (encoding TS1) on input line 74.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequartersemdash (encoding TS1) on input line 75.
+LaTeX Encoding Info:    Redeclaring text symbol \textleftarrow (encoding TS1) on input line 76.
+LaTeX Encoding Info:    Redeclaring text symbol \textrightarrow (encoding TS1) on input line 77.
+LaTeX Encoding Info:    Redeclaring text symbol \textblank (encoding TS1) on input line 78.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollar (encoding TS1) on input line 79.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotesingle (encoding TS1) on input line 80.
+LaTeX Encoding Info:    Redeclaring text command \textasteriskcentered (encoding TS1) on input line 81.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphen (encoding TS1) on input line 92.
+LaTeX Encoding Info:    Redeclaring text symbol \textfractionsolidus (encoding TS1) on input line 93.
+LaTeX Encoding Info:    Redeclaring text symbol \textzerooldstyle (encoding TS1) on input line 94.
+LaTeX Encoding Info:    Redeclaring text symbol \textoneoldstyle (encoding TS1) on input line 95.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwooldstyle (encoding TS1) on input line 96.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreeoldstyle (encoding TS1) on input line 97.
+LaTeX Encoding Info:    Redeclaring text symbol \textfouroldstyle (encoding TS1) on input line 98.
+LaTeX Encoding Info:    Redeclaring text symbol \textfiveoldstyle (encoding TS1) on input line 99.
+LaTeX Encoding Info:    Redeclaring text symbol \textsixoldstyle (encoding TS1) on input line 100.
+LaTeX Encoding Info:    Redeclaring text symbol \textsevenoldstyle (encoding TS1) on input line 101.
+LaTeX Encoding Info:    Redeclaring text symbol \texteightoldstyle (encoding TS1) on input line 102.
+LaTeX Encoding Info:    Redeclaring text symbol \textnineoldstyle (encoding TS1) on input line 103.
+LaTeX Encoding Info:    Redeclaring text symbol \textlangle (encoding TS1) on input line 104.
+LaTeX Encoding Info:    Redeclaring text symbol \textminus (encoding TS1) on input line 105.
+LaTeX Encoding Info:    Redeclaring text symbol \textrangle (encoding TS1) on input line 106.
+LaTeX Encoding Info:    Redeclaring text symbol \textmho (encoding TS1) on input line 107.
+LaTeX Encoding Info:    Redeclaring text symbol \textbigcircle (encoding TS1) on input line 108.
+LaTeX Encoding Info:    Redeclaring text command \textcircled (encoding TS1) on input line 109.
+LaTeX Encoding Info:    Redeclaring text symbol \textohm (encoding TS1) on input line 115.
+LaTeX Encoding Info:    Redeclaring text symbol \textlbrackdbl (encoding TS1) on input line 116.
+LaTeX Encoding Info:    Redeclaring text symbol \textrbrackdbl (encoding TS1) on input line 117.
+LaTeX Encoding Info:    Redeclaring text symbol \textuparrow (encoding TS1) on input line 118.
+LaTeX Encoding Info:    Redeclaring text symbol \textdownarrow (encoding TS1) on input line 119.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciigrave (encoding TS1) on input line 120.
+LaTeX Encoding Info:    Redeclaring text symbol \textborn (encoding TS1) on input line 121.
+LaTeX Encoding Info:    Redeclaring text symbol \textdivorced (encoding TS1) on input line 122.
+LaTeX Encoding Info:    Redeclaring text symbol \textdied (encoding TS1) on input line 123.
+LaTeX Encoding Info:    Redeclaring text symbol \textleaf (encoding TS1) on input line 124.
+LaTeX Encoding Info:    Redeclaring text symbol \textmarried (encoding TS1) on input line 125.
+LaTeX Encoding Info:    Redeclaring text symbol \textmusicalnote (encoding TS1) on input line 126.
+LaTeX Encoding Info:    Redeclaring text symbol \texttildelow (encoding TS1) on input line 127.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphenchar (encoding TS1) on input line 128.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciibreve (encoding TS1) on input line 129.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciicaron (encoding TS1) on input line 130.
+LaTeX Encoding Info:    Redeclaring text symbol \textacutedbl (encoding TS1) on input line 131.
+LaTeX Encoding Info:    Redeclaring text symbol \textgravedbl (encoding TS1) on input line 132.
+LaTeX Encoding Info:    Redeclaring text symbol \textdagger (encoding TS1) on input line 133.
+LaTeX Encoding Info:    Redeclaring text symbol \textdaggerdbl (encoding TS1) on input line 134.
+LaTeX Encoding Info:    Redeclaring text symbol \textbardbl (encoding TS1) on input line 135.
+LaTeX Encoding Info:    Redeclaring text symbol \textperthousand (encoding TS1) on input line 136.
+LaTeX Encoding Info:    Redeclaring text symbol \textbullet (encoding TS1) on input line 137.
+LaTeX Encoding Info:    Redeclaring text symbol \textcelsius (encoding TS1) on input line 138.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollaroldstyle (encoding TS1) on input line 139.
+LaTeX Encoding Info:    Redeclaring text symbol \textcentoldstyle (encoding TS1) on input line 140.
+LaTeX Encoding Info:    Redeclaring text symbol \textflorin (encoding TS1) on input line 141.
+LaTeX Encoding Info:    Redeclaring text symbol \textcolonmonetary (encoding TS1) on input line 142.
+LaTeX Encoding Info:    Redeclaring text symbol \textwon (encoding TS1) on input line 143.
+LaTeX Encoding Info:    Redeclaring text symbol \textnaira (encoding TS1) on input line 144.
+LaTeX Encoding Info:    Redeclaring text symbol \textguarani (encoding TS1) on input line 145.
+LaTeX Encoding Info:    Redeclaring text symbol \textpeso (encoding TS1) on input line 146.
+LaTeX Encoding Info:    Redeclaring text symbol \textlira (encoding TS1) on input line 147.
+LaTeX Encoding Info:    Redeclaring text symbol \textrecipe (encoding TS1) on input line 148.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobang (encoding TS1) on input line 149.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobangdown (encoding TS1) on input line 150.
+LaTeX Encoding Info:    Redeclaring text symbol \textdong (encoding TS1) on input line 151.
+LaTeX Encoding Info:    Redeclaring text symbol \texttrademark (encoding TS1) on input line 152.
+LaTeX Encoding Info:    Redeclaring text symbol \textpertenthousand (encoding TS1) on input line 153.
+LaTeX Encoding Info:    Redeclaring text symbol \textpilcrow (encoding TS1) on input line 154.
+LaTeX Encoding Info:    Redeclaring text symbol \textbaht (encoding TS1) on input line 155.
+LaTeX Encoding Info:    Redeclaring text symbol \textnumero (encoding TS1) on input line 156.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiscount (encoding TS1) on input line 157.
+LaTeX Encoding Info:    Redeclaring text symbol \textestimated (encoding TS1) on input line 158.
+LaTeX Encoding Info:    Redeclaring text symbol \textopenbullet (encoding TS1) on input line 159.
+LaTeX Encoding Info:    Redeclaring text symbol \textservicemark (encoding TS1) on input line 160.
+LaTeX Encoding Info:    Redeclaring text symbol \textlquill (encoding TS1) on input line 161.
+LaTeX Encoding Info:    Redeclaring text symbol \textrquill (encoding TS1) on input line 162.
+LaTeX Encoding Info:    Redeclaring text symbol \textcent (encoding TS1) on input line 163.
+LaTeX Encoding Info:    Redeclaring text symbol \textsterling (encoding TS1) on input line 164.
+LaTeX Encoding Info:    Redeclaring text symbol \textcurrency (encoding TS1) on input line 165.
+LaTeX Encoding Info:    Redeclaring text symbol \textyen (encoding TS1) on input line 166.
+LaTeX Encoding Info:    Redeclaring text symbol \textbrokenbar (encoding TS1) on input line 167.
+LaTeX Encoding Info:    Redeclaring text symbol \textsection (encoding TS1) on input line 168.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciidieresis (encoding TS1) on input line 169.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyright (encoding TS1) on input line 170.
+LaTeX Encoding Info:    Redeclaring text symbol \textordfeminine (encoding TS1) on input line 171.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyleft (encoding TS1) on input line 172.
+LaTeX Encoding Info:    Redeclaring text symbol \textlnot (encoding TS1) on input line 173.
+LaTeX Encoding Info:    Redeclaring text symbol \textcircledP (encoding TS1) on input line 174.
+LaTeX Encoding Info:    Redeclaring text symbol \textregistered (encoding TS1) on input line 175.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciimacron (encoding TS1) on input line 176.
+LaTeX Encoding Info:    Redeclaring text symbol \textdegree (encoding TS1) on input line 177.
+LaTeX Encoding Info:    Redeclaring text symbol \textpm (encoding TS1) on input line 178.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwosuperior (encoding TS1) on input line 179.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreesuperior (encoding TS1) on input line 180.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciiacute (encoding TS1) on input line 181.
+LaTeX Encoding Info:    Redeclaring text symbol \textmu (encoding TS1) on input line 182.
+LaTeX Encoding Info:    Redeclaring text symbol \textparagraph (encoding TS1) on input line 183.
+LaTeX Encoding Info:    Redeclaring text symbol \textperiodcentered (encoding TS1) on input line 184.
+LaTeX Encoding Info:    Redeclaring text symbol \textreferencemark (encoding TS1) on input line 185.
+LaTeX Encoding Info:    Redeclaring text symbol \textonesuperior (encoding TS1) on input line 186.
+LaTeX Encoding Info:    Redeclaring text symbol \textordmasculine (encoding TS1) on input line 187.
+LaTeX Encoding Info:    Redeclaring text symbol \textsurd (encoding TS1) on input line 188.
+LaTeX Encoding Info:    Redeclaring text symbol \textonequarter (encoding TS1) on input line 189.
+LaTeX Encoding Info:    Redeclaring text symbol \textonehalf (encoding TS1) on input line 190.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequarters (encoding TS1) on input line 191.
+LaTeX Encoding Info:    Redeclaring text symbol \texteuro (encoding TS1) on input line 192.
+LaTeX Encoding Info:    Redeclaring text symbol \texttimes (encoding TS1) on input line 193.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiv (encoding TS1) on input line 194.
+))
+\l__ctex_tmp_int=\count276
+\l__ctex_tmp_box=\box53
+\l__ctex_tmp_dim=\dimen150
+\g__ctex_section_depth_int=\count277
+\g__ctex_font_size_int=\count278
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+File: ctexopts.cfg 2026/08/11 v2.6.5 Option configuration file (CTEX)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count279
+\c@section=\count280
+\c@subsection=\count281
+\c@subsubsection=\count282
+\c@paragraph=\count283
+\c@subparagraph=\count284
+\c@figure=\count285
+\c@table=\count286
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen151
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+File: ctex-engine-xetex.def 2026/08/11 v2.6.5 XeLaTeX adapter (CTEX)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2026/08/21 v3.10.6 Typesetting CJK scripts with XeLaTeX
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2025-10-09 L3 Experimental prototype document functions
+)
+\l__xeCJK_tmp_int=\count287
+\l__xeCJK_tmp_box=\box54
+\l__xeCJK_tmp_dim=\dimen152
+\l__xeCJK_tmp_skip=\skip51
+\g__xeCJK_space_factor_int=\count288
+\l__xeCJK_begin_int=\count289
+\l__xeCJK_end_int=\count290
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\c__xeCJK_HangulJamoL_class_int=\XeTeXcharclass9
+\c__xeCJK_HangulJamoV_class_int=\XeTeXcharclass10
+\c__xeCJK_HangulJamoT_class_int=\XeTeXcharclass11
+\c__xeCJK_CJStarter_class_int=\XeTeXcharclass12
+\c__xeCJK_PoZheHao_class_int=\XeTeXcharclass13
+\l__xeCJK_interword_dim=\dimen153
+\l__xeCJK_last_skip=\skip52
+\c__xeCJK_none_node=\count291
+\g__xeCJK_node_int=\count292
+\c__xeCJK_CJK_node_dim=\dimen154
+\c__xeCJK_CJK-space_node_dim=\dimen155
+\c__xeCJK_default_node_dim=\dimen156
+\c__xeCJK_CJK-widow_node_dim=\dimen157
+\c__xeCJK_normalspace_node_dim=\dimen158
+\c__xeCJK_default-space_node_skip=\skip53
+\c__xeCJK_math_node_dim=\dimen159
+\c__xeCJK_math-space_node_dim=\dimen160
+\c__xeCJK_math-space-frozen_node_dim=\dimen161
+\g__xeCJK_boundary_capture_depth_int=\count293
+\g__xeCJK_boundary_suspend_depth_int=\count294
+\g__xeCJK_boundary_capture_1_box=\box55
+\g__xeCJK_boundary_capture_2_box=\box56
+\g__xeCJK_boundary_capture_3_box=\box57
+\l__xeCJK_boundary_post_box=\box58
+\l__xeCJK_boundary_math_skip=\skip54
+\l__xeCJK_boundary_math_actual_skip=\skip55
+\l__xeCJK_boundary_math_ecglue_skip=\skip56
+\l__xeCJK_boundary_math_delta_skip=\skip57
+\l__xeCJK_boundary_math_space_dim=\dimen162
+\l__xeCJK_boundary_math_ecglue_dim=\dimen163
+\l__xeCJK_boundary_math_stretch_dim=\dimen164
+\l__xeCJK_boundary_math_shrink_dim=\dimen165
+\g__xeCJK_boundary_probe_type_int=\count295
+\l__xeCJK_boundary_probe_box=\box59
+\l__xeCJK_ccglue_skip=\skip58
+\l__xeCJK_ecglue_skip=\skip59
+\g__xeCJK_par_guard_dim=\dimen166
+\l__xeCJK_punct_kern_skip=\skip60
+\l__xeCJK_indent_box=\box60
+\l__xeCJK_last_penalty_int=\count296
+\l__xeCJK_last_bound_dim=\dimen167
+\l__xeCJK_last_kern_dim=\dimen168
+\l__xeCJK_widow_penalty_int=\count297
+
+LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
+(template)           argument(s) on line 4902.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen169
+\l__xeCJK_mixed_punct_width_dim=\dimen170
+\l__xeCJK_middle_punct_width_dim=\dimen171
+\l__xeCJK_fixed_margin_width_dim=\dimen172
+\l__xeCJK_mixed_margin_width_dim=\dimen173
+\l__xeCJK_middle_margin_width_dim=\dimen174
+\l__xeCJK_bound_punct_width_dim=\dimen175
+\l__xeCJK_bound_margin_width_dim=\dimen176
+\l__xeCJK_margin_minimum_dim=\dimen177
+\l__xeCJK_kerning_total_width_dim=\dimen178
+\l__xeCJK_same_align_margin_dim=\dimen179
+\l__xeCJK_different_align_margin_dim=\dimen180
+\l__xeCJK_kerning_margin_width_dim=\dimen181
+\l__xeCJK_kerning_margin_minimum_dim=\dimen182
+\l__xeCJK_bound_dim=\dimen183
+\l__xeCJK_reverse_bound_dim=\dimen184
+\l__xeCJK_margin_dim=\dimen185
+\l__xeCJK_minimum_bound_dim=\dimen186
+\l__xeCJK_kerning_margin_dim=\dimen187
+\g__xeCJK_family_int=\count298
+\l__xeCJK_fam_int=\count299
+\g__xeCJK_fam_allocation_int=\count300
+\l__xeCJK_verb_case_int=\count301
+\l__xeCJK_verb_exspace_skip=\skip61
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2026/08/11 v2.9h Font selection for XeLaTeX and LuaLaTeX
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2026/08/11 v2.9h Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count302
+\l__fontspec_language_int=\count303
+\l__fontspec_strnum_int=\count304
+\l__fontspec_tmp_int=\count305
+\l__fontspec_tmpa_int=\count306
+\l__fontspec_tmpb_int=\count307
+\l__fontspec_tmpc_int=\count308
+\l__fontspec_em_int=\count309
+\l__fontspec_emdef_int=\count310
+\l__fontspec_strong_int=\count311
+\l__fontspec_strongdef_int=\count312
+\l__fontspec_tmpa_dim=\dimen188
+\l__fontspec_tmpb_dim=\dimen189
+\l__fontspec_tmpc_dim=\dimen190
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+\l__xeCJK_default_char_int=\count313
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2026/08/21 v3.10.6 Configuration file for xeCJK package
+))
+\ccwd=\dimen191
+\l__ctex_ccglue_skip=\skip62
+)
+\l__ctex_ziju_dim=\dimen192
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count314
+\l__zhnum_tmp_int=\count315
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
+))
+\l__ctex_heading_skip=\skip63
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def
+File: ctex-scheme-chinese-article.def 2026/08/11 v2.6.5 Chinese scheme for article (CTEX)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2026/08/11 v2.6.5 Caption with encoding UTF-8 (CTEX)
+)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2026/08/11 v2.6.5 c5size option (CTEX)
+)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex-scheme.cfg 2026/08/11 v2.6.5 Configuration file (CTEX)
+) (./qp-fonts.tex
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FZShuSong-Z01S.ttf(0)' created for font
+(fontspec)             'FZShuSong-Z01S.ttf' with options
+(fontspec)             [Script={CJK},Path={C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/},BoldFont={FZHei-B01S.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/FZShuSong-Z01S.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/FZHei-B01S.ttf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FZFSK.TTF(0)' created for font 'FZFSK.TTF'
+(fontspec)             with options [Path=fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FZFSK.TTF]/OT:language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FY-w400BEVL100.ttf(0)' created for font
+(fontspec)             'FY-w400BEVL100.ttf' with options [Path=fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w400BEVL100.ttf]/OT:script=latn;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FY-w450BEVL100.ttf(0)' created for font
+(fontspec)             'FY-w450BEVL100.ttf' with options [Path=fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w450BEVL100.ttf]/OT:script=latn;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NSC-w850.ttf(0)' created for font
+(fontspec)             'NSC-w850.ttf' with options
+(fontspec)             [Path=fonts/,Height=0.905,Depth=0.212].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NSC-w850.ttf]/OT:script=latn;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NSC-w700.ttf(0)' created for font
+(fontspec)             'NSC-w700.ttf' with options
+(fontspec)             [Path=fonts/,Height=0.905,Depth=0.212].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NSC-w700.ttf]/OT:script=latn;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FangYuanTi-w600圆-BEVL100.ttf(0)' created
+(fontspec)             for font 'FangYuanTi-w600圆-BEVL100.ttf' with options
+(fontspec)             [Path=fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FangYuanTi-w600圆-BEVL100.ttf]/OT:script=latn;language=dflt;"
+
+) (./qp-layout.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count316
+\Gm@cntv=\count317
+\c@Gm@tempcnt=\count318
+\Gm@bindingoffset=\dimen193
+\Gm@wd@mp=\dimen194
+\Gm@odd@mp=\dimen195
+\Gm@even@mp=\dimen196
+\Gm@layoutwidth=\dimen197
+\Gm@layoutheight=\dimen198
+\Gm@layouthoffset=\dimen199
+\Gm@layoutvoffset=\dimen256
+\Gm@dimlist=\toks18
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2026/05/19 v2.18d AMS math features
+\@mathmargin=\skip64
+
+For additional information on amsmath, use the `?' option.
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen257
+)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen258
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count319
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count320
+\leftroot@=\count321
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count322
+\DOTSCASE@=\count323
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box61
+\strutbox@=\box62
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen259
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count324
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count325
+\dotsspace@=\muskip17
+\c@parentequation=\count326
+\dspbrk@lvl=\count327
+\tag@help=\toks20
+\row@=\count328
+\column@=\count329
+\maxfields@=\count330
+\andhelp@=\toks21
+\eqnshift@=\dimen260
+\alignsep@=\dimen261
+\tagshift@=\dimen262
+\tagwidth@=\dimen263
+\totwidth@=\dimen264
+\lineht@=\dimen265
+\@envbody=\toks22
+\multlinegap=\skip65
+\multlinetaggap=\skip66
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2965.
+LaTeX Info: Redefining \] on input line 2966.
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+)
+\g__um_fam_int=\count331
+\g__um_fonts_used_int=\count332
+\l__um_primecount_int=\count333
+\g__um_primekern_muskip=\muskip18
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
+
+Package fontspec Info: 
+(fontspec)             Font family 'texgyretermes-math.otf(0)' created for
+(fontspec)             font 'texgyretermes-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[texgyretermes-math.otf]/OT:script=math;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'texgyretermes-math.otf(1)' created for
+(fontspec)             font 'texgyretermes-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.1692519-},{Size=6.79789365-9.1692519,Font=texgyretermes-math.otf,Style=MathScript},{Size=-6.79789365,Font=texgyretermes-math.otf,Style=MathScriptScript}}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.1692519->"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/texgyretermes-math.otf(1)/m/n on input line 27.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/texgyretermes-math.otf(1)/b/n on input line 27.
+
+Package fontspec Info: 
+(fontspec)             texgyretermes-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             texgyretermes-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             texgyretermes-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             texgyretermes-math scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'texgyretermes-math.otf(2)' created for
+(fontspec)             font 'texgyretermes-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.1692519-},{Size=6.79789365-9.1692519,Font=texgyretermes-math.otf,Style=MathScript},{Size=-6.79789365,Font=texgyretermes-math.otf,Style=MathScriptScript}},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =6.68196pt\relax \fontdimen 9\font
+(fontspec)             =4.53192pt\relax \fontdimen 10\font =4.53192pt\relax
+(fontspec)             \fontdimen 11\font =6.30254pt\relax \fontdimen 12\font
+(fontspec)             =2.80347pt\relax \fontdimen 13\font =3.57285pt\relax
+(fontspec)             \fontdimen 14\font =3.57285pt\relax \fontdimen 15\font
+(fontspec)             =2.99318pt\relax \fontdimen 16\font =2.33974pt\relax
+(fontspec)             \fontdimen 17\font =2.33974pt\relax \fontdimen 18\font
+(fontspec)             =2.33974pt\relax \fontdimen 19\font =1.16988pt\relax
+(fontspec)             \fontdimen 22\font =2.63484pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.1692519->s*[1.0001]"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>s*[1.0001]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>s*[1.0001]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/texgyretermes-math.otf(2)/m/n on input line 27.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/texgyretermes-math.otf(2)/b/n on input line 27.
+
+Package fontspec Info: 
+(fontspec)             texgyretermes-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             texgyretermes-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             texgyretermes-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             texgyretermes-math scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'texgyretermes-math.otf(3)' created for
+(fontspec)             font 'texgyretermes-math.otf' with options
+(fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=9.1692519-},{Size=6.79789365-9.1692519,Font=texgyretermes-math.otf,Style=MathScript},{Size=-6.79789365,Font=texgyretermes-math.otf,Style=MathScriptScript}},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.54805pt\relax \fontdimen 9\font
+(fontspec)             =1.05394pt\relax \fontdimen 10\font =1.05394pt\relax
+(fontspec)             \fontdimen 11\font =1.05394pt\relax \fontdimen 12\font
+(fontspec)             =4.56355pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <9.1692519->s*[0.9999]"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>s*[0.9999]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>s*[0.9999]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/m/n on input line 27.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 27.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/b/n on input line 27.
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen266
+\Gin@req@width=\dimen267
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2026/02/24 v2.7b Tabular extension package (FMi)
+\col@sep=\dimen268
+\ar@mcellbox=\box63
+\extrarowheight=\dimen269
+\NC@list=\toks24
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box64
+)
+new hooks used!!
+\minrowclearance=\skip69
+\rownum=\count334
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip70
+\multirow@cntb=\count335
+\multirow@dima=\skip71
+\bigstrutjot=\dimen270
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count336
+\calc@Bcount=\count337
+\calc@Adimen=\dimen271
+\calc@Bdimen=\dimen272
+\calc@Askip=\skip72
+\calc@Bskip=\skip73
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count338
+\calc@Cskip=\skip74
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count339
+\mult@box=\box65
+\multicol@leftmargin=\dimen273
+\c@unbalance=\count340
+\c@collectmore=\count341
+\doublecol@number=\count342
+\multicoltolerance=\count343
+\multicolpretolerance=\count344
+\full@width=\dimen274
+\page@free=\dimen275
+\premulticols=\dimen276
+\postmulticols=\dimen277
+\multicolsep=\skip75
+\multicolbaselineskip=\skip76
+\partial@page=\box66
+\last@line=\box67
+\mc@boxedresult=\box68
+\maxbalancingoverflow=\dimen278
+\mult@rightbox=\box69
+\mult@grightbox=\box70
+\mult@firstbox=\box71
+\mult@gfirstbox=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\c@minrows=\count345
+\c@columnbadness=\count346
+\c@finalcolumnbadness=\count347
+\last@try=\dimen279
+\multicolovershoot=\dimen280
+\multicolundershoot=\dimen281
+\mult@nat@firstbox=\box109
+\colbreak@box=\box110
+\mc@col@check@num=\count348
+\g__mc_curr_col_int=\count349
+)
+\rowmax=\count350
+\celllines=\count351
+) (./qp-parts.tex) (./qp-headfoot.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+\f@nch@headwidth=\skip77
+\f@nch@offset@elh=\skip78
+\f@nch@offset@erh=\skip79
+\f@nch@offset@olh=\skip80
+\f@nch@offset@orh=\skip81
+\f@nch@offset@elf=\skip82
+\f@nch@offset@erf=\skip83
+\f@nch@offset@olf=\skip84
+\f@nch@offset@orf=\skip85
+\f@nch@height=\skip86
+\f@nch@footalignment=\skip87
+\f@nch@widthL=\skip88
+\f@nch@widthC=\skip89
+\f@nch@widthR=\skip90
+\@temptokenb=\toks25
+)) (./qp-titles.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+)) (./qp-blocks.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen282
+\pgfutil@tempdimb=\dimen283
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box111
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2026-08-01 v3.1.12 (3.1.12)
+))
+Package: pgf 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks29
+))
+\pgf@x=\dimen284
+\pgf@y=\dimen285
+\pgf@xa=\dimen286
+\pgf@ya=\dimen287
+\pgf@xb=\dimen288
+\pgf@yb=\dimen289
+\pgf@xc=\dimen290
+\pgf@yc=\dimen291
+\pgf@xd=\dimen292
+\pgf@yd=\dimen293
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count352
+\c@pgf@countb=\count353
+\c@pgf@countc=\count354
+\c@pgf@countd=\count355
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+\pgf@sys@id@count=\count356
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2026-08-01 v3.1.12 (3.1.12)
+)
+Driver file for pgf: pgfsys-xetex.def
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2026-08-01 v3.1.12 (3.1.12)
+)
+\pgfsys@objnum=\count357
+))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfsyssoftpath@smallbuffer@items=\count358
+\pgfsyssoftpath@bigbuffer@items=\count359
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2026-08-01 v3.1.12 (3.1.12)
+)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen294
+\pgfmath@count=\count360
+\pgfmath@box=\box112
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count361
+)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@picminx=\dimen295
+\pgf@picmaxx=\dimen296
+\pgf@picminy=\dimen297
+\pgf@picmaxy=\dimen298
+\pgf@pathminx=\dimen299
+\pgf@pathmaxx=\dimen300
+\pgf@pathminy=\dimen301
+\pgf@pathmaxy=\dimen302
+\pgf@xx=\dimen303
+\pgf@xy=\dimen304
+\pgf@yx=\dimen305
+\pgf@yy=\dimen306
+\pgf@zx=\dimen307
+\pgf@zy=\dimen308
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@path@lastx=\dimen309
+\pgf@path@lasty=\dimen310
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@shorten@end@additional=\dimen311
+\pgf@shorten@start@additional=\dimen312
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfpic=\box113
+\pgf@hbox=\box114
+\pgf@layerbox@main=\box115
+\pgf@picture@serial@count=\count362
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgflinewidth=\dimen313
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@pt@x=\dimen314
+\pgf@pt@y=\dimen315
+\pgf@pt@temp=\dimen316
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfarrowsep=\dimen317
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@max=\dimen318
+\pgf@sys@shading@range@num=\count363
+\pgf@shadingcount=\count364
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfexternal@startupbox=\box116
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2026-08-01 v3.1.12 (3.1.12)
+))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfnodeparttextbox=\box117
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2026-08-01 v3.1.12 (3.1.12)
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2026-08-01 v3.1.12 (3.1.12)
+\pgf@nodesepstart=\dimen319
+\pgf@nodesepend=\dimen320
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2026-08-01 v3.1.12 (3.1.12)
+)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2026-08-01 v3.1.12 (3.1.12)
+\pgffor@iter=\dimen321
+\pgffor@skip=\dimen322
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
+)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgf@plot@mark@count=\count365
+\pgfplotmarksize=\dimen323
+)
+\tikz@lastx=\dimen324
+\tikz@lasty=\dimen325
+\tikz@lastxsaved=\dimen326
+\tikz@lastysaved=\dimen327
+\tikz@lastmovetox=\dimen328
+\tikz@lastmovetoy=\dimen329
+\tikzleveldistance=\dimen330
+\tikzsiblingdistance=\dimen331
+\tikz@figbox=\box118
+\tikz@figbox@bg=\box119
+\tikz@tempbox=\box120
+\tikz@tempbox@bg=\box121
+\tikztreelevel=\count366
+\tikznumberofchildren=\count367
+\tikznumberofcurrentchild=\count368
+\tikz@fig@count=\count369
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2026-08-01 v3.1.12 (3.1.12)
+\pgfmatrixcurrentrow=\count370
+\pgfmatrixcurrentcolumn=\count371
+\pgf@matrix@numberofcolumns=\count372
+)
+\tikz@expandcount=\count373
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2026-08-01 v3.1.12 (3.1.12)
+))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
+ (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
+))
+\kdmind=\skip91
+\kdwd=\skip92
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(48.93872pt, 499.63043pt, 48.93872pt)
+* v-part:(T,H,B)=(55.76741pt, 732.37393pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=499.63043pt
+* \textheight=732.37393pt
+* \oddsidemargin=-23.33127pt
+* \evensidemargin=-23.33127pt
+* \topmargin=-16.50258pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=10.0pt
+* \footskip=13.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=21.6241pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  TU/texgyretermes-math.otf(1)/m/n --> TU/TimesNewRoman(0)/m/n on input line 23.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 23.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 23.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 23.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 23.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 23.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 23.
+(./chapterhead.tex
+
+Package fontspec Info: 
+(fontspec)             Font family 'NSC-w600.ttf(0)' created for font
+(fontspec)             'NSC-w600.ttf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={NSC-w600.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NSC-w600.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NSC-w600.ttf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NSC-w315.ttf(0)' created for font
+(fontspec)             'NSC-w315.ttf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={NSC-w315.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NSC-w315.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NSC-w315.ttf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NotoSansSC-Bold.otf(0)' created for font
+(fontspec)             'NotoSansSC-Bold.otf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={NotoSansSC-Bold.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NotoSansSC-Medium.otf(0)' created for font
+(fontspec)             'NotoSansSC-Medium.otf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={NotoSansSC-Bold.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NotoSansSC-Medium.otf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FZKTK.TTF(0)' created for font 'FZKTK.TTF'
+(fontspec)             with options [Script={CJK},Path={fonts/}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FZKTK.TTF]/OT:script=hani;language=dflt;"
+
+) (./body.tex
+
+Package fontspec Info: 
+(fontspec)             Font family 'NotoSansSC-Bold.otf(1)' created for font
+(fontspec)             'NotoSansSC-Bold.otf' with options
+(fontspec)             [Script={CJK},Path={fonts/},FakeSlant={0.18},BoldFont={NotoSansSC-Black.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;slant=0.18;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NotoSansSC-Black.otf]/OT:script=hani;language=dflt;slant=0.18;"
+
+LaTeX Font Info:    Calculating math sizes for size <10.09> on input line 9.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.09106pt on input line 9.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.0637pt on input line 9.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.04553pt on input line 9.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.08891pt on input line 9.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.0622pt on input line 9.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.04445pt on input line 9.
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 23.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.50111pt on input line 23.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.35074pt on input line 23.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.25055pt on input line 23.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.49887pt on input line 23.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.34917pt on input line 23.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.24944pt on input line 23.
+
+Package fontspec Info: 
+(fontspec)             Font family 'FZFSK.TTF(1)' created for font 'FZFSK.TTF'
+(fontspec)             with options [Script={CJK},Path={fonts/}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FZFSK.TTF]/OT:script=hani;language=dflt;"
+
+ [1
+
+]
+File: media/media/sub3_B_4.png Graphic file (type bmp)
+<media/media/sub3_B_4.png>
+ [2]
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'FangYuanTi-w600圆-BEVL100'. Check the typeset output,
+(fontspec)             and if it is okay then ignore this warning. Otherwise a
+(fontspec)             different font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FangYuanTi-w600圆-BEVL100.ttf(1)' created
+(fontspec)             for font 'FangYuanTi-w600圆-BEVL100.ttf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={FangYuanTi-w600圆-BEVL100.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FangYuanTi-w600圆-BEVL100.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FangYuanTi-w600圆-BEVL100.ttf]/OT:script=hani;language=dflt;"
+
+
+
+LaTeX Font Warning: Font shape `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n' undefined
+(Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 106.
+
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'FY-w700BEVL100'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FY-w700BEVL100.ttf(0)' created for font
+(fontspec)             'FY-w700BEVL100.ttf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={FY-w700BEVL100.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w700BEVL100.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w700BEVL100.ttf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Script 'CJK' not explicitly supported within font
+(fontspec)             'FY-w450BEVL100'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FY-w450BEVL100.ttf(1)' created for font
+(fontspec)             'FY-w450BEVL100.ttf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={FY-w450BEVL100.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w450BEVL100.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/FY-w450BEVL100.ttf]/OT:script=hani;language=dflt;"
+
+
+LaTeX Font Warning: Font shape `TU/FY-w450BEVL100.ttf(0)/b/n' undefined
+(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 126.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--126
+\TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/m/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 一\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 下 列 说 法 错 误 的
+ []
+
+File: media/media/image1.png Graphic file (type bmp)
+<media/media/image1.png>
+
+Underfull \hbox (badness 7540) in paragraph at lines 154--154
+[][][][][][][][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 中，| $[] [] []$，| $[] [] []$，| $[] [] []$，|
+ []
+
+File: media/media/image2.png Graphic file (type bmp)
+<media/media/image2.png>
+[3]
+File: media/media/image3.png Graphic file (type bmp)
+<media/media/image3.png>
+ [4]
+Underfull \hbox (badness 5817) in paragraph at lines 261--261
+\TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中 档 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 长 方 体 $[][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
+\TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 $[][][] [] [][][] [][][] []
+ []
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 289--289
+[][] [] [] [] [] [][] [] [] [] [] [][][] [][][] [][] [] [][][][][] [][][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，|  则
+ []
+
+File: media/media/image4.png Graphic file (type bmp)
+<media/media/image4.png>
+[5]
+File: media/media/image5.png Graphic file (type bmp)
+<media/media/image5.png>
+
+Package fontspec Info: 
+(fontspec)             Font family 'NSC-w500.ttf(0)' created for font
+(fontspec)             'NSC-w500.ttf' with options
+(fontspec)             [Script={CJK},Path={fonts/},BoldFont={NSC-w700.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NSC-w500.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
+
+ [6]) (./main.aux)
+ ***********
+LaTeX2e <2026-06-01>
+L3 programming layer <2026/08/11>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 25626 strings out of 469768
+ 605416 string characters out of 5466040
+ 1248950 words of memory out of 5000000
+ 54117 multiletter control sequences out of 15000+600000
+ 633961 words of font info for 198 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 97i,16n,110p,1193b,988s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (6 pages).

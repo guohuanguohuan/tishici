@@ -1,0 +1,1 @@
+154:\liB{变式\textbf{1}}{简单(知识点二)}{}{在平行六面体\(ABCD-A_1B_1C_1D_1\)中，\(\overrightarrow{AB}=\overrightarrow{a}\)，\(\overrightarrow{AD}=\overrightarrow{b}\)，\(\overrightarrow{AA_1}=\overrightarrow{c}\)，则\nobreak\(\overrightarrow{D_1B}=\)\kongbai{}．(用\(\overrighta

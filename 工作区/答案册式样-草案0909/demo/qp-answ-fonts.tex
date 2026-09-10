@@ -1,0 +1,41 @@
+% ============================================================
+% qp-answ-fonts.tex —— 字体模块（答案册式样草案）
+% 依据：附则《全品基准总表》§字号/字距行＋《全品样张细节清单》§八（v4.3/v4.4 落库）
+%       ＋variantF/qp-fonts.tex（H1 落定档，2026-09-10）。
+% 纪律：xeCJK 一律 Path= 显式路径（TinyTeX fontconfig 不扫用户级字体目录，已实证）；
+%       Path= 值内禁宏（fontspec 对其 detokenize），故路径以字面量书写。
+% 复用：黑体族静态实例与楷/仿宋取自 variantF/fonts/（只读引用，不复制、不改动）。
+% ============================================================
+\setmainfont{Times New Roman}
+% 正文＝方正书宋 FZShuSong-Z01S（全品嵌字名同款，MD5 校验一致；只测量不取用见附则§八）
+\setCJKmainfont[
+  Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,
+  BoldFont=FZHei-B01S.ttf]{FZShuSong-Z01S.ttf}
+% 楷体/仿宋＝方正四款免费字体原件（与全品真身 FZKTK/FZFSK 同源同款）
+\setCJKfamilyfont{kai}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{FZKTK.TTF}
+\setCJKfamilyfont{fangsong}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{FZFSK.TTF}
+% ---- 黑体字重阶梯（思源黑体真字重静态实例；全品六族谱替代档，兰亭黑采购遗留） ----
+\setCJKfamilyfont{heizhang}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w600.ttf}
+\setCJKfamilyfont{hejie}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w315.ttf]{NSC-w315.ttf}
+\setCJKfamilyfont{hekeshi}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w600.ttf}
+\setCJKfamilyfont{heibf}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w600.ttf}
+\setCJKfamilyfont{heihao}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w700.ttf]{NSC-w500.ttf}
+% 数字族走 fontspec 拉丁族（xeCJK 把 ASCII 路由主字体，CJK 族字重对数字失效）；
+% Height/Depth 按 Times hhea 口径（asc 0.905／desc 0.212em）裁齐，防行盒顶溢。
+\newfontfamily{\numboldjian}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.905,Depth=0.212]{NSC-w700.ttf}
+\newfontfamily{\numbold}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.905,Depth=0.212]{NSC-w850.ttf}
+% ================= 访问宏 =================
+\newcommand{\heiti}{\CJKfamily{heibf}}
+\newcommand{\heizhang}{\CJKfamily{heizhang}}
+\newcommand{\hejie}{\CJKfamily{hejie}}
+\newcommand{\hekeshi}{\CJKfamily{hekeshi}}
+\newcommand{\heibf}{\CJKfamily{heibf}}
+\newcommand{\heihao}{\CJKfamily{heihao}}
+\newcommand{\kaishu}{\CJKfamily{kai}}
+\newcommand{\fangsong}{\CJKfamily{fangsong}}
+% 字符类：①①、★、数学符号区归 CJK（全品基准总表×variantF 同款）
+\xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
+\xeCJKDeclareCharClass{Default}{"221A}
+% H1 落定档：PunctStyle=banjiao（标点占宽压 0.5em、前后墨空档 15/16px）；
+%   CJKglue 0.10em——全品行内字心距 3.99mm＝字号＋0.10em 档（每行 21 汉字×3.986mm＝83.7mm）
+\xeCJKsetup{CheckSingle=true,PunctStyle=banjiao,CJKglue={\hskip 0.10em plus 0.05em minus 0.01em}}

@@ -1,0 +1,31 @@
+% 探针：行内胶成分取证（\showbox 看 set glue）——片F #41 机制确认用 v2
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\showboxbreadth=1000
+\showboxdepth=1000
+\begin{document}
+\message{^^J=== BL=\the\baselineskip ===}
+\message{^^J=== BOX G1: 单\CJKglue 单 (normalsize) ===}
+\setbox1=\hbox{简\CJKglue 单}
+\showbox1
+\message{^^J=== BOX G2: 简单 直接相邻（看 xeCJK 是否插胶） ===}
+\setbox3=\hbox{简单}
+\showbox3
+\message{^^J=== BOX G3: 撑满行（正文 10.05/18.25） ===}
+{\hsize=234.74pt
+\setbox0=\vbox{\noindent 在平行六面体中的向量运算及其线性表示与共面条件的判断方法与应用\par}
+\showbox0}
+\message{^^J=== BOX G4: 撑满行（tieside 10.5/15） ===}
+{\hsize=234.74pt
+\setbox2=\vbox{\noindent{\fontsize{10.5pt}{15pt}\selectfont [简单(知识点二)]在平行六面体中的向量运算}\par}
+\showbox2}
+\message{^^J=== BOX G5: \kongda 前后 ===}
+{\hsize=234.74pt
+\setbox4=\vbox{\noindent 单位向量模等于\kongda{单位向量}模等于\par}
+\showbox4}
+\end{document}

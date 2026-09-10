@@ -1,0 +1,29 @@
+% 片E 探针 E：\hangindent 负值（右侧缩短）替代 \parshape
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\begin{document}
+\begin{multicols}{2}
+\def\QPTEXT{已知正方体\emph{ABCD}-\emph{A\textsubscript{1}B\textsubscript{1}C\textsubscript{1}D\textsubscript{1}}中，\(\overrightarrow{A_{1}E}\)=\(\frac{1}{4}\) \(\overrightarrow{A_{1}C_{1}}\)，若\(\overrightarrow{AE} =\)\emph{x}\(\overrightarrow{AA_{1}}\)+\emph{y}(\(\overrightarrow{AB}\)+\(\overrightarrow{AD}\))，则\emph{x}\nobreak=\kongbai{}，\emph{y}\nobreak=\kongbai{}.}
+\def\QPLONG{[详解]过点\(B\)，\(D\)分别向\(AC\)作垂线，垂足分别为\(M\)，\(N\)，则可得\(AM = \frac{1}{2}\)，\(BM = \frac{\sqrt{3}}{2}\)，\(CN = \frac{1}{2}\)，\(DN = \frac{\sqrt{3}}{2}\)，\(MN = 1\)．由于\(\overrightarrow{BD} = \overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND}\)，所以\(|\overrightarrow{BD}|^{2} = {(\overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND})}^{2}\)\allowbreak\(= |\overrightarrow{BM}|^{2} + |\overrightarrow{MN}|^{2} + |\overrightarrow{ND}|^{2} + 2(\overrightarrow{BM} \cdot \overrightarrow{MN} + \overrightarrow{MN} \cdot \overrightarrow{ND} + \overrightarrow{BM} \cdot \overrightarrow{ND})\)\allowbreak\(= ( \frac{\sqrt{3}}{2} )^{2} + 1^{2} + ( \frac{\sqrt{3}}{2} )^{2} + 2 \times (0 + 0 + 0) = \frac{5}{2}\)，所以\(|\overrightarrow{BD}| = \frac{\sqrt{10}}{2}\)．故选:\emph{A}．}
+
+[S] 对照 hsize=T（应同旧 minipage 断行）\par
+\noindent\begingroup\hsize=46.368mm\raggedright \QPTEXT\par\endgroup
+\vspace{3mm}
+
+[T] hangindent=-36.432mm hangafter=-5（窄5行+通栏）\par
+\noindent\begingroup\hangindent=-36.432mm\hangafter=-5\raggedright \QPTEXT\par\endgroup
+\vspace{3mm}
+
+[U] hangindent=-36.432mm hangafter=-4（长文本，窄4行+通栏）\par
+\noindent\begingroup\hangindent=-36.432mm\hangafter=-4\raggedright \QPLONG\par\endgroup
+\vspace{3mm}
+
+[V] 对照 hsize=T 长文本（旧 minipage 断行，全窄）\par
+\noindent\begingroup\hsize=46.368mm\raggedright \QPLONG\par\endgroup
+\end{multicols}
+\end{document}

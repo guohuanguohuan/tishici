@@ -1,0 +1,27 @@
+% 探针：\liBsplit 变|式 边界刚性化择优（\showbox 看 set glue）——片F #41 用
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+\showboxbreadth=1000
+\showboxdepth=1000
+\begin{document}
+\message{^^J=== V0 现状（两族相邻） ===}
+\setbox0=\hbox to 234.74pt{{\fontsize{12.03pt}{15pt}\selectfont{\libianb 变}{\libians\libianslat 式\textbf{1}}}\hfill}
+\showbox0
+\message{^^J=== V1 \kern0pt 夹缝 ===}
+\setbox1=\hbox to 234.74pt{{\fontsize{12.03pt}{15pt}\selectfont{\libianb 变}\kern0pt{\libians\libianslat 式\textbf{1}}}\hfill}
+\showbox1
+\message{^^J=== V2 组内 CJKglue 归零 ===}
+\setbox2=\hbox to 234.74pt{{\fontsize{12.03pt}{15pt}\selectfont{\libianb 变}{\libians\libianslat \xeCJKsetup{CJKglue={\hskip0pt}}式\textbf{1}}}\hfill}
+\showbox2
+\message{^^J=== V3 \hbox{} 夹缝 ===}
+\setbox3=\hbox to 234.74pt{{\fontsize{12.03pt}{15pt}\selectfont{\libianb 变}\hbox{}{\libians\libianslat 式\textbf{1}}}\hfill}
+\showbox3
+\message{^^J=== V4 \xeCJKsetup 前置（组外先设） ===}
+\setbox4=\hbox to 234.74pt{{\fontsize{12.03pt}{15pt}\selectfont\xeCJKsetup{CJKglue={\hskip0pt}}{\libianb 变}{\libians\libianslat 式\textbf{1}}}\hfill}
+\showbox4
+\end{document}

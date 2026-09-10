@@ -1,0 +1,9 @@
+% 纯 tikz 依赖体检：不加 unicode-math，验证片段"仅依赖 tikz"可编译（向量标签回落 CM 粗正体）
+% fix-cm 仅为消除 CM 缺 6.29pt/7.11pt 字号时的 Font shape 警告（片段本身仍只依赖 tikz）
+\documentclass[border=0pt]{standalone}
+\usepackage{fix-cm}
+\usepackage{tikz}
+\pagestyle{empty}
+\begin{document}
+\input{sub3_投影三联.tikz}
+\end{document}

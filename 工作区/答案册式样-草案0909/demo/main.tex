@@ -1,0 +1,19 @@
+% ============================================================
+% 答案册式样草案 · 一页样页 demo（独立构建件，非成品件）
+% 件名：答案册式样-草案0909 / demo
+% 定位：全品答案册**无先例**（电子渠道无、用户无实体）——本页按已验证的
+%       全品宅样式（H1 落定档＋六拍板口径）**外推**出的答案册样页；
+%       全件标注「全品无先例·待实物校对」，仅供用户过目定式样。
+% 参数基准：附则《全品基准总表》（43 条）＋《全品样张细节清单》＋《全品零件库》
+%           ＋工作区/字替对照-0909/variantF（H1 落定档）。
+% 编译：xelatex main.tex ×2 → render.py（150dpi）
+% 模块切分：qp-answ-fonts → qp-answ-layout → qp-answ-headfoot → qp-answ-blocks
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-answ-fonts.tex}
+\input{qp-answ-layout.tex}
+\input{qp-answ-headfoot.tex}
+\input{qp-answ-blocks.tex}
+\begin{document}
+\input{body.tex}
+\end{document}

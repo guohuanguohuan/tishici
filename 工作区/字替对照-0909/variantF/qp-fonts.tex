@@ -113,6 +113,11 @@
 % 裁齐后行盒与 C 版 Times 同量级，字形渲染不受影响。
 \newfontfamily{\numbold}[Path=fonts/,Height=0.905,Depth=0.212]{NSC-w850.ttf}
 \newfontfamily{\numboldjian}[Path=fonts/,Height=0.905,Depth=0.212]{NSC-w700.ttf}
+% H3 片 0909c（E5 页码数字）：页码数字族＝Noto Sans SC Medium（w500）——全品页脚数字复测竖笔
+% 5-6px（14.176px/mm）、墨高 39px（2.77mm）；探针七档比对（w850→9px/w700→8/w600→6-7/
+% Medium→6/Regular→4-5）取 Medium（w500）；未裁 Height/Depth（页脚数字在 \raisebox[0pt][0pt]
+% 内、盒深不外溢，无需题号同款裁齐）。
+\newfontfamily{\numpnum}[Path=fonts/]{NotoSansSC-Medium.otf}
 % ---- 花形内字：真 Bold＋FakeSlant（斜体组合，撤仿粗） ----
 \setCJKfamilyfont{huabf}[Path=fonts/,FakeSlant=0.18,BoldFont=NotoSansSC-Black.otf]{NotoSansSC-Bold.otf}
 % ---- 数学平行号斜体源（∥＝U+2225）【退役 0909】：四项超差（倾角 −34.2°/笔粗 0.093em/
@@ -151,4 +156,14 @@
 \xeCJKDeclareCharClass{Default}{"221A}
 % v4.4（#21 标点收紧）：PunctStyle=plain——全角标点不悬挂不挤压，行尾标点禁出栏、行首禁标点；
 %   半角括号/半角标点转换在 postproc_daoxue.py 文本 pass 完成，此处只管断行纪律。
-\xeCJKsetup{CheckSingle=true,PunctStyle=plain}
+% H1 片 0909c（E2 标点挤压，全品 p04-p07 复测）：PunctStyle=plain→banjiao——全品逗/分/冒号
+%   advance≈0.5em（标点前后字心距反解 41.6px 吻合）、前后墨空档对称 15/16px（1.06/1.13mm）；
+%   我方 plain 时 advance 1.00–1.02em、标点后墨空档 35px 白洞。banjiao 后复测：标点前后 ink
+%   空档 14–17px@360dpi 为靶；行末断行行为同步复测（overfull／行首禁则勿改坏）。
+% H1 片 0909c（E1 行内字距）：CJKglue 默认 0pt plus 0.08\baselineskip（0 字距）——全品字心距
+%   56.25px 中位（3.97mm）对全品字号 ≈+0.10em（方正书版均匀撑满，55.5–58.5px 随行微调）；
+%   我方 51px（3.60mm）。加 0.10em plus 0.15em minus 0.01em：自然字心距 →10.27pt（字体自带）
+%   +1.009pt＝11.28pt＝3.98mm（56.4px）。plus 档标定：0.15em 档实测（v3）CJK 超拉行 2→10 处
+%   （片F「拉伸异常行＝0」断言，超拉行随 plus 档非单调——按实测取小档 0.05em）；单点最大
+%   0.15em＜0.5em 断言阈，共存不矛盾。minus 0.01em 供断行收紧。
+\xeCJKsetup{CheckSingle=true,PunctStyle=banjiao,CJKglue={\hskip 0.10em plus 0.05em minus 0.01em}}
