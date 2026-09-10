@@ -198,6 +198,93 @@ def col_rows(pno, cl):
     rows.sort(key=lambda r: r[0])
     return rows
 
+# ---- 片G 0910 共用口径：矢量图簇。六图（五例1 图＋条目3 三联）由位图改 \resizebox＋\input 的
+#      TikZ 矢量片段，PDF 内不再有 image 对象——凡依赖 raster 的图门（⑱/⑱-2/⑱-3/N6/⑮/(e)）
+#      统一改此口径：以「非轴对齐矢量墨」（斜线/曲线）聚簇，簇内跨度 ≥5mm 的斜长笔 ≥3 方算图
+#      （真图实测 ≥5；表线/正文/花形/√× 自绘/表内向量箭头均 <3），同 y 带 x 隙 ≤20mm 并簇
+#      （三联图三子图成一图）。实测（600dpi 全墨）另见 ⑱-2。
+_VEC_CACHE = {}
+
+
+def _diag_rects(page):
+    out = []
+    for o in page.get_drawings():
+        for it in o['items']:
+            if it[0] == 'l':
+                p1, p2 = it[1], it[2]
+                dx, dy = abs(p2.x - p1.x), abs(p2.y - p1.y)
+                if dx > 1.0 and dy > 1.0 and max(dx, dy) / PT > 2.0:
+                    out.append((pymupdf.Rect(min(p1.x, p2.x) - .3, min(p1.y, p2.y) - .3,
+                                             max(p1.x, p2.x) + .3, max(p1.y, p2.y) + .3),
+                                max(dx, dy) / PT >= 5.0))
+            elif it[0] == 'c':
+                ps = it[1:5]
+                xs = [q.x for q in ps]
+                ys = [q.y for q in ps]
+                w, h = max(xs) - min(xs), max(ys) - min(ys)
+                if max(w, h) / PT > 2.0 and w > 1.0 and h > 1.0:
+                    out.append((pymupdf.Rect(min(xs) - .3, min(ys) - .3, max(xs) + .3, max(ys) + .3),
+                                max(w, h) / PT >= 5.0))
+    return out
+
+
+def vec_clusters(pno):
+    """该页矢量图簇 [(rect, 斜长笔数)]。"""
+    if pno in _VEC_CACHE:
+        return _VEC_CACHE[pno]
+    pairs = _diag_rects(doc[pno - 1])
+    rs = [pymupdf.Rect(a) for a, _ in pairs]
+    lg = [1 if b else 0 for _, b in pairs]
+    gap = 8 / 25.4 * PT
+    par = list(range(len(rs)))
+
+    def find(i):
+        while par[i] != i:
+            par[i] = par[par[i]]
+            i = par[i]
+        return i
+
+    for i in range(len(rs)):
+        for j in range(i + 1, len(rs)):
+            a = pymupdf.Rect(rs[i])
+            a.x0 -= gap; a.y0 -= gap; a.x1 += gap; a.y1 += gap
+            if a.intersects(rs[j]):
+                x, y = find(i), find(j)
+                if x != y:
+                    par[x] = y
+    grp = {}
+    for i in range(len(rs)):
+        grp.setdefault(find(i), []).append(i)
+    cs = []
+    for g in grp.values():
+        r = pymupdf.Rect(rs[g[0]])
+        for k in g[1:]:
+            r |= rs[k]
+        cs.append([r, sum(lg[k] for k in g)])
+    changed = True
+    while changed:
+        changed = False
+        for i in range(len(cs)):
+            for j in range(i + 1, len(cs)):
+                a, b = cs[i][0], cs[j][0]
+                if (min(a.y1, b.y1) - max(a.y0, b.y0) > -3 * PT
+                        and max(a.x0, b.x0) - min(a.x1, b.x1) <= 20 * PT):
+                    cs[i] = [a | b, cs[i][1] + cs[j][1]]
+                    del cs[j]
+                    changed = True
+                    break
+            if changed:
+                break
+    cs = [c for c in cs if c[0].width / PT >= 15 and c[0].height / PT >= 10 and c[1] >= 3]
+    _VEC_CACHE[pno] = cs
+    return cs
+
+
+def in_fig(pno, x0, y0, x1, y1, pad=1.0):
+    """线段/小框是否落在某矢量图簇内（含 pad pt 容差）——供表线/印答线排除图内墨。"""
+    return any(g.x0 - pad <= x0 and x1 <= g.x1 + pad and g.y0 - pad <= y0 and y1 <= g.y1 + pad
+               for g, _n in vec_clusters(pno))
+
 # ---- ② 行距主峰 ----
 diffs = []
 for pno in range(1, n_pages + 1):
@@ -232,10 +319,13 @@ for pno in range(1, n_pages + 1):
                     grays.add(rgb[0])
     gray_detail.append(f'p{pno}={sorted(grays)}')
     grays_all |= grays
-    if not grays <= {0x4C, 0x4D, 0x77, 0x7A, 0xBD, 0xDD}:
+    if not grays <= {0x40, 0x4C, 0x4D, 0x77, 0x7A, 0xBD, 0xDD}:
         gray_ok = False
-check('③灰档全集恰{76,77,119,122,189,221} 且逐页⊆白名单', gray_ok and grays_all == {0x4C, 0x4D, 0x77, 0x7A, 0xBD, 0xDD},
+check('③灰档全集恰{64,76,77,119,122,189,221} 且逐页⊆白名单', gray_ok and grays_all == {0x40, 0x4C, 0x4D, 0x77, 0x7A, 0xBD, 0xDD},
       f'全集{sorted(grays_all)}；{" ".join(gray_detail)}')
+reg('③ 片G 0910 增第七档 cubegray 0x40(64)', 'g3-cube6（探六例1 正方体）灰棱＝素材源灰墨 #404040'
+    '（qp-blocks \\definecolor{cubegray}{gray}{0.25}→64）；旧位图时代该灰在像素内不入矢量色板，'
+    '矢量化后成为页面描边色——白名单 6 档→7 档（旧 {76,77,119,122,189,221} → 新 +{64}）')
 reg('③调色板对账', 'v4.3 五档＝midgray 0x77(119)／gray122 0x7A(122)／huarule 0x4D(77)／栏线 black!40 0x99(153)／'
     'pnumbg 0xDD(221)，与 qp-layout 定义一一对应（总账A/D/I＋拍板27）；E 0909 增第六档 footgray 0x4C(76)＝'
     '页脚小字（qp-headfoot，全品 p04 页脚小字暗核众数 76 实测）——F 收尾轮断言适配入白名单；'
@@ -1517,8 +1607,11 @@ kn_exempt = 3 - len(g_kn)
 #   元素无下带，沿 0908 栏末豁免先例注销不设红）；g_tm 6→5（条目对随分栏位移并集变化，2.71–3.56 落窗）。
 ok7b = (len(g_td) == 9 and all(3.3 <= v <= 4.8 for v in g_td)
         and len(g_kn) == 2 and all(2.7 <= v <= 5.8 for v in g_kn)
-        and len(g_tab_bot) == 2 and all(3.41 <= v <= 4.41 for v in g_tab_bot)
+        and len(g_tab_bot) == 3 and all(3.41 <= v <= 4.41 for v in g_tab_bot)
         and len(g_tm) == 5 and all(2.7 <= v <= 3.6 for v in g_tm))
+reg('⑦ 片G 0910 表底缝对数 2→3', 'H1 片 0909c 时表3 为栏末元素（无下带对）→ 豁免计数 2；'
+    '片G 六图下置后分页位移，表3 之下重新有块（实测 4.01/4.10/4.10 三对全落窗 3.41–4.41）'
+    '——旧「表3 栏末豁免」注记随之下线，计数门 2→3')
 reg('⑦ 表底缝 ×3（0909 片B 布局位移后）', '实测 4.04/4.09/4.01（p1 表1／p2 表2／p3 表3）；'
     '表3 因 #30 表高增（多行格垫底）自 p2 右栏移至 p3 左栏首，底后带对在场——旧 p2 右表栏末豁免项注销')
 reg('⑦ 条目缝口径（0908 五修＋片B 0909 #36 复标）',
@@ -1538,7 +1631,7 @@ if any(v < 3.7 for v in g_td):
 reg('⑦ 解析→◆知识点带对（登记不设门）', f'直接带对 n={len(g_jx_zsd)}——判断收尾行（×．）带隔断配对；'
     '缝由解析尾 \\addvspace{7pt}＋\\zsd 前距 tex 级锁（0908 \\zsd 内顺序换位恢复 max 语义），同位落点见 N10 中位 5.21')
 check('⑦块缝（◆探究点→例1 4.2±0.5×9，墨顶方差窗3.3-4.8／前块→◆知识点 ×2 单窗2.7-5.8／'
-      '表底→下块 3.91±0.5×2（表3 栏末豁免）／条目→条目 \\tiaomu 缝 ×%d 窗2.7-3.6）' % len(g_tm), ok7b,
+      '表底→下块 3.91±0.5×3（片G 0910：表3 下带对回归）／条目→条目 \\tiaomu 缝 ×%d 窗2.7-3.6）' % len(g_tm), ok7b,
       f'探究点缝{" ".join("%.2f" % v for v in g_td)}｜知识点缝{" ".join("%.2f" % v for v in g_kn)}｜'
       f'表底缝{" ".join("%.2f" % v for v in g_tab_bot)}｜解析→◆{" ".join("%.2f" % v for v in g_jx_zsd)}｜'
       f'条目缝{" ".join("%.2f" % v for v in g_tm)}')
@@ -1746,9 +1839,12 @@ for pno in range(1, n_pages + 1):
             else:
                 gaps_wrap.append(pno)   # 题干换行态：标签行末无水平后隙（dy≈17pt 下行起排）
 tie_ok = (len(gaps_pre) == 23 and all(2.1 <= v <= 3.3 for v in gaps_pre)
-          and len(gaps_post) == 20 and all(1.0 <= v <= 2.7 for v in gaps_post) and len(gaps_wrap) == 3)
-check('⑪题侧标签隙 标签→[ 2.7±0.6 ×23＋]→题干 2.2±0.6 ×20＋换行态3（TJ-03；F 片A 探二/探九题干归位后内联 +2）', tie_ok,
+          and len(gaps_post) == 23 and all(1.0 <= v <= 2.7 for v in gaps_post) and len(gaps_wrap) == 0)
+check('⑪题侧标签隙 标签→[ 2.7±0.6 ×23＋]→题干 2.2±0.6 ×23＋换行态0（TJ-03；片G 0910 探三/六/八题干回归内联）', tie_ok,
       f'前隙 n={len(gaps_pre)} {" ".join("%.2f" % v for v in gaps_pre)}｜后隙 n={len(gaps_post)} {" ".join("%.2f" % v for v in gaps_post)}')
+reg('⑪ 片G 0910 后隙/换行态计数 20/3 → 23/0', 'F 片A 时代探三/六/八题干走图旁 minipage（◆标签行题干位传空）'
+    '⇒ 标签行末无水平后隙＝换行态 3；片G 图下置后三组题干回归 \\tjdnr 第 5 参内联，'
+    '后隙全部可测（恒 2.20mm＝宏 \\hspace 定值）⇒ 内联 20→23、换行态 3→0；TJ-03 2.2mm 口径不变')
 reg('⑪ 题侧计数口径（0908；F 片A 0909 后隙 18→20）', '源文题侧 [简单/中档(知识点N)] 全数保留＝23（例1 9＋变式 9＋检测 5）；'
     '规格 ×14 系漏计例1，作废；隙距 2.7/2.2 由宏 \\hspace 给出恒定；后隙 18→20（探二/探九题干由并排 minipage 改内联，'
     '标签行末水平后隙可测 +2）、换行态 5→3（同因）；TJ-03 2.2mm 只锁内联态')
@@ -1853,6 +1949,8 @@ for pno in (1, 2):
             uw = ux1 - ux0
             if not (42 <= uw <= 60) or ux0 < MARGIN - 8 or ux1 > COLR + 8:
                 continue
+            if in_fig(pno, ux0, it[1].y - 0.6, ux1, it[1].y + 0.6):
+                continue   # 片G 0910：矢量图内水平棱（三联图 15–21mm 段）不算印答盒线——旧位图无此污染，锚定 20→21
             near = []
             for blk in page.get_text('dict')['blocks']:
                 for ln in blk.get('lines', []):

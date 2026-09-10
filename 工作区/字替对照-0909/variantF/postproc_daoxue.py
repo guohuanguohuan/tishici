@@ -133,18 +133,47 @@ log(f'2. 解析：讲部条目 {len(entries)} 个（编注 {sum(1 for e in entri
 log('2b. 组数核对：题部组 9 组（1.1.1.2～1.1.1.10，其中 1.1.1.8 含 2 题）＋讲部组 1 组（1.1.1.1）；'
     '【知识点】标签不排印（登记），题侧改挂（知识点N）（见 5g 映射台账）')
 
-# ---- 3. 图分档＋处置（v4.2-A6 重写；F 片A 0909 改图位与几何；片E 0909c 改绕图回流）：
-#      side=\parshape 绕图回流（图旁窄栏→图底以下通栏，几何档见 3c，全品截图实证）；
-#      center=详解内图维持居中独立行（40mm 提档）；三联图 45mm 居中不动。逐图定性登记见 reflow/emit 处 log。
-FIG = {'sub3_B_4.png': ('center', '60mm'),   # 条目3 投影三联图：居中独立行（v4.3 图区组 45→60mm 提档）
-       'image1.png': ('side', ''),           # 探究点二例1（题2）图：F 片A 0909 归位【详解】区（挂「连接CA₁」旁，源实证段168）
-       'image2.png': ('side', ''),           # 探究点三例1（题3）题干图：绕图回流（留题干）
-       'image3.png': ('side', ''),           # 探究点六例1（题6）题干图：绕图回流（留题干）
-       'image4.png': ('side', ''),           # 探究点八例1（题9）题干图：绕图回流（留题干）
-       'image5.png': ('side', '')}           # 探究点九例1（题10）图：F 片A 0909 归位【详解】区（挂「过点B，D分别向AC作垂线」旁）
+# ---- 3. 图分档＋处置（v4.2-A6 重写；F 片A 0909 改图位与几何；片E 0909c 改绕图回流；片G 0910 改图下置居中）：
+#      under=图下置居中独立行·源尺寸档（片G 0910 新口径，六图全走此档，几何与素材见 3d）；
+#      side=绕图回流（图旁窄栏→图底以下通栏，几何档见 3c）——片G 起例1 退场，定义与标定保留备用；
+#      center=居中独立行（40mm 提档）——三联图改 under 后仅余未知图名兜底。逐图定性登记见 reflow/emit 处 log。
+FIG = {'sub3_B_4.png': ('under', ''),   # 条目3 投影三联图：片G 0910 下置居中满栏（源 86.0mm 超栏封顶 \linewidth；旧 v4.3 居中 60mm）
+       'image1.png': ('under', ''),     # 探究点二例1（题2）图：片G 0910 下置居中·源尺寸 41.1mm（旧 F 片A 挂【详解】首块旁绕图）
+       'image2.png': ('under', ''),     # 探究点三例1（题3）题干图：片G 0910 下置居中·源尺寸 42.0mm（旧绕图回流）
+       'image3.png': ('under', ''),     # 探究点六例1（题6）题干图：片G 0910 下置居中·84.0mm 封顶（源 86.0mm，同比缩 0.9767）
+       'image4.png': ('under', ''),     # 探究点八例1（题9）题干图：片G 0910 下置居中·源尺寸 66.3mm（旧绕图回流）
+       'image5.png': ('under', '')}     # 探究点九例1（题10）图：片G 0910 下置居中·54.7mm（素材自然外框 56.564mm，同比缩 0.9671）
 FIGRE = re.compile(r'\\includegraphics\[(width=[\d.]+in,height=[\d.]+in)(,alt=\{[^}]*\})?\]\{([^}]+)\}')
 figs_seen = []
-SIDE_SPLIT = []   # 片E 0909c：绕图切分台账（前缀/余段字符数，通栏余段）
+SIDE_SPLIT = []   # 片E 0909c：绕图切分台账（前缀/余段字符数，通栏余段）——片G 0910 起例1 退场，保留备用
+
+# ---- 3d. 片G 0910 六图下置居中（源尺寸档）：位图 → 重绘 TikZ 矢量片段（素材 _tmp片G素材\，已逐要素核对＋
+#      600dpi 叠加终检通过），拷贝入件 figs/gN-xxx.tikz（片段仅依赖宿主导言 tikz＋qp-blocks 素材宏）。
+#      置宽＝素材 standalone 页实测宽（fitz 取证，即源位图排印宽），超栏者封顶栏宽；缩放一律 \resizebox
+#      同比（线宽/字号/虚线相位同缩，素材核对表认可的安全法）。图前距 1.9mm／图尾距 −1.0mm 沿用
+#      0908 居中图标定档（见 3 步 center 分支注），六图同档不逐图另标。
+TIKZ = {'image1.png': ('figs/g1-prism.tikz', 41.1),      # 探二例1 直三棱柱（素材实测 41.099×68.936mm）
+        'image2.png': ('figs/g2-cubeE.tikz', 42.0),      # 探三例1 正方体＋E 点（41.998×41.998）
+        'image3.png': ('figs/g3-cube6.tikz', 84.0),      # 探六例1 正方体（86.0×82.0 → 栏宽封顶 84.0，缩 0.9767）
+        'image4.png': ('figs/g4-dihedral.tikz', 66.3),   # 探八例1 二面角（66.301×35.673）
+        'image5.png': ('figs/g5-fold.tikz', 54.7),       # 探九例1 折叠矩形（自然外框 56.564×38.714 → 54.7，缩 0.9671）
+        'sub3_B_4.png': ('figs/g6-triple.tikz', 84.0)}   # 条目3 投影三联（86.0×22.842 → 满栏 84.0，缩 0.9767）
+STEMFIG = {3: 'image2.png', 6: 'image3.png', 8: 'image4.png'}       # 例1 题干图（片G 0910 下置）
+DETAILFIG = {2: 'image1.png', 9: 'image5.png'}                      # 例1 详解图（片G 0910 下置，仍在详解区）
+
+def under_center_row(name, tag):
+    r"""片G 0910：图下置居中独立行（源尺寸档）。形制＝3 步 center 分支同构（\par 起段＋1.9mm 前胶
+    ＋\makebox[\linewidth][c] 居中＋\resizebox 同比置宽＋−1.0mm 尾胶＋\penalty10000 禁断），
+    内容换 \input{figs/*.tikz} 矢量片段；满栏档直接取 \linewidth（与 makebox 同宽，不产生 overfull）。"""
+    path, w = TIKZ[name]
+    box = r'\linewidth' if abs(w - COLW_MM) < 0.01 else ('%.1fmm' % w)
+    figs_seen.append(('under', name, tag))
+    log(f'3d-A. 片G 图下置居中（{tag}／{name}）：{path}，置宽 {box}（源尺寸档；素材 standalone 实测同比缩），'
+        r'前距 1.9mm／尾距 −1.0mm 沿用 0908 居中图标定档')
+    return (r'\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]'
+            r'{\resizebox{' + box + r'}{!}{\input{' + path + r'}}}'
+            r'\par\vspace{-1.0mm}\penalty10000')
+
 
 # ---- 3c. F 片A 并排几何档（0909 全品截图实证）：文字左 \raggedright／图右侧／
 #      图墨右缘距栏右 2.6±1mm／图文墨缝 6.7±1.5mm／图墨顶比首行墨顶高 0.25mm（窗 ±1）。
@@ -252,6 +281,11 @@ def reflow(blocks_in, tag):
                 out.append(b[last:mm.start()].strip())
             name = mm.group(3).split('/')[-1]
             kind, w = FIG.get(name, ('center', '30mm'))
+            if kind == 'under':
+                # 片G 0910：图下置居中（源尺寸档）——图 token 就地替换为矢量片段独立行，前后文字各自成块
+                out.append(under_center_row(name, tag))
+                last = mm.end()
+                continue
             assert w, f'{tag}: {name} 未分档'
             tok = mm.group(0).replace(mm.group(1), 'width=' + w)
             if kind == 'side':
@@ -555,8 +589,12 @@ em(r'\tiaomuz{3}{投影向量：' + blk8[0] + '}')
 _n_emit0 = len(body)
 emit_blocks(reflow(blk8[1:], '知识点三'))
 assert body[_n_emit0].startswith(r'\bindp'), '条目3 首续段应为 \\bindp'
-assert body[-1].startswith(r'\bindp'), '条目3 末段应为 \\bindp（尾距挂载点）'
-body[-1] += r'\tiaomutail'
+# 片G 0910：三联图改下置独立行后可能落条目末段——尾距挂载点改「末**文字**段」（图段 \input{figs/ 不参与），
+# 否则 \tiaomutail 会错挂到图尾（条目 3→4 缝失去 0.35mm 标定档）。
+_tail = [i for i in range(_n_emit0, len(body))
+         if body[i].startswith(r'\bindp') and r'\input{figs/' not in body[i]]
+assert _tail, '条目3 续段异常（无 \\bindp 文字段）'
+body[_tail[-1]] += r'\tiaomutail'
 log('5e. 知识点三：条目 1～2（原 6～7 重编号）选编＋挖空印答＋编注并段（微提醒同段并排）；'
     '条目 3（原条目 8「投影向量」，v4.1 指令8 入号，题名「投影向量」取自源条目名）整段源文排印（含投影三联图 45mm 独立居中，编注并入首段段末——v3 漏排，v4 补排登记）；'
     'F 片B 0909 #28/#36：条目 3 同为拆段条目——首段 \\tiaomuz 零尾距（1.8mm 尾距曾落 (1)→如图① 中缝），'
@@ -714,30 +752,31 @@ for gi, gname in enumerate(grp_order, 1):
     # v4.4⑦（拍板2）：例1 数字 \textbf 加重；⑧（TJ-04）：探五例1（题5 答案 AD）挂多选标记 \duoxuan
     label = r'例\textbf{1}' + (r'\duoxuan' if gi == 5 else '')
     tjd_args = CN[gi-1] + '}{' + dotname + '}{' + label + '}{' + d['nanidu'] + '（知识点' + kn + '）'
-    stem_rest, side_tok = consume_side(d['stem'][1:], f'例{gi}')
-    detail_tok = None
-    if side_tok is None and gi in (2, 9):
-        # F 片A 0909：图归位【详解】区（源实证：探二图＝【详解】段后独立段「段168」、探九图与【详解】同段）——
-        # 抽图后挂详解首块文字旁（探二「连接CA₁」／探九「过点B，D分别向AC作垂线」），不再与题干并排
-        figname = 'image1.png' if gi == 2 else 'image5.png'
-        d['xiangjie'], detail_tok = extract_fig(d['xiangjie'], figname)
-        log(f'3-图. 探究点{CN[gi-1]}例1 图 {figname} 归位【详解】区：挂详解首块文字旁'
-            f'（{"连接CA₁" if gi == 2 else "过点B，D分别向AC作垂线"}），几何档 3c（全品并排实证）')
-    if side_tok is not None:
-        # 探三/六/八：题干图 minipage 并排（题干留位，几何档 3c）——◆标签行题干位传空，题干文字入图行左栏
-        em(r'\tjdnr{' + tjd_args + '}{}')
-        em(side_row(d['stem'][0], side_tok, f'例{gi}'))
-        log(f'3-图. 探究点{CN[gi-1]}例1 题干图→minipage 并排（文字左 0.56\\linewidth／图右按墨宽，'
-            f'几何档 3c：墨右缘距栏右 2.6±1mm／墨缝 6.7±1.5mm／图墨顶 −0.25mm 档）')
+    # ---- 片G 0910：例1 六图改「图下置居中·源尺寸」，F 片A／片E 的并排绕图（side_row/SIDE_DEF/split 切分）
+    #      对本组退场（定义与标定保留备用）。题干图＝◆标签行（题干首段）之下独立行；详解图＝【详解】首块
+    #      文字之下独立行（图仍在详解区，源归属不变）。图前后文字一律通栏排印，不再切分窄栏。----
+    stem_fig = STEMFIG.get(gi)
+    detail_fig = DETAILFIG.get(gi)
+    if stem_fig:
+        stem_rest, _stok = extract_fig(d['stem'][1:], stem_fig)
+        em(r'\tjdnr{' + tjd_args + '}{' + d['stem'][0] + '}')
+        emit_blocks([under_center_row(stem_fig, f'例{gi}题干')])
+        log(f'3d-B. 探究点{CN[gi-1]}例1 题干图 {stem_fig} → 下置居中（源尺寸档）：题干首段与图后余块'
+            r'均通栏排印，旧 side_row 图旁窄栏＋绕图切分对本组退场')
     else:
+        stem_rest = d['stem'][1:]
         em(r'\tjdnr{' + tjd_args + '}{' + d['stem'][0] + '}')
     emit_blocks(reflow(stem_rest, f'例{gi}'))
     emit_blocks(reflow(d['fenxi'], f'例{gi}'))
-    if detail_tok is not None:
-        # 详解首块与图并排（探二/探九）：图挂首块文字旁，其余详解块照常续排
+    if detail_fig:
+        # 详解首块文字照排，图紧随其后作独立行，其余详解块续排（探二/探九；源实证图属【详解】区）
+        d['xiangjie'], _dtok = extract_fig(d['xiangjie'], detail_fig)
         assert d['xiangjie'] and d['xiangjie'][0].startswith('【详解】'), \
             f'例{gi} 详解首块异常：{(d["xiangjie"] or [""])[0][:24]}'
-        em(side_row(d['xiangjie'][0], detail_tok, f'例{gi}详解'))
+        emit_blocks(reflow([d['xiangjie'][0]], f'例{gi}详解'))
+        emit_blocks([under_center_row(detail_fig, f'例{gi}详解')])
+        log(f'3d-B. 探究点{CN[gi-1]}例1 详解图 {detail_fig} → 下置居中（源尺寸档）：挂【详解】首块文字之下，'
+            r'旧 side_row 详解并排对本组退场')
         emit_blocks(reflow(d['xiangjie'][1:], f'例{gi}'))
     else:
         emit_blocks(reflow(d['xiangjie'], f'例{gi}'))
@@ -965,13 +1004,20 @@ log('6a-H2. E3 字母串连字符短横化（片H2 0909c）：ABC-A₁B₁C₁×
 n_gou, n_cha = body_text.count('√'), body_text.count('×')
 assert (n_gou, n_cha) == (7, 11), f'P-D √× 计数异常：√{n_gou}/7 ×{n_cha}/11'
 body_text = body_text.replace('√', r'\gou{}').replace('×', r'\cha{}')
-# R2 绑定（防孤字断行）：①则＋行内公式 21 处禁断（则不落行尾）；②「是(\kongwei)」3 处禁断；
+# R2 绑定（防孤字断行）：①则＋行内公式 21 处禁断（则不落行尾）；②「是(\kongwei)」4 处禁断；
 # ③探三题干 \emph{x}/\emph{y} 与 =空槽 绑定（y 孤字缺陷位）；④探八题干裸 ()→(\kongwei)（空位补齐）
+# 片G 0910 适配：探八题干图由并排绕图改下置，side_row 退场 ⇒ 其「题干尾空位 \hfill 右挂件」不再产生，
+# 裸 () 余量由 0 变 1——就地补 v4.4④ 定宽空位档（6.8mm），并并入 R2② 禁断绑定（防孤括号落行首）；
+# kongwei 总数维持 9（旧＝右挂件 1，新＝内联 1），右挂件计数随之下线（n_hang 1→0）。
+n_kw8 = body_text.count('()')
+assert n_kw8 == 1 and body_text.count('距离是()') == 1, \
+    f'R2 裸() 计数异常：{n_kw8}/1（片G 0910：探八例1 裸() 未被 side_row 消费，应恰 1 且在题干位）'
+body_text = body_text.replace('()', r'(\kongwei)')
 n_ze = body_text.count('则\\(')
 assert n_ze == 23, f'R2 则\\( 计数异常：{n_ze}/23（21 行，两行各 2 处）'
 body_text = body_text.replace('则\\(', '则\\nobreak\\(')
 n_shi = body_text.count('是(\\kongwei)')
-assert n_shi == 3, f'R2 是(\\kongwei) 计数异常：{n_shi}/3'
+assert n_shi == 4, f'R2 是(\\kongwei) 计数异常：{n_shi}/4（3 源空位＋片G 探八补 1）'
 body_text = body_text.replace('是(\\kongwei)', '是\\nobreak(\\kongwei)')
 n_ex = body_text.count(r'\emph{x}=\kongbai{}')
 n_wy = body_text.count(r'\emph{y}=\kongbai{}')
@@ -979,18 +1025,20 @@ assert (n_ex, n_wy) == (1, 1), f'R2 emph 绑定位计数异常：x{n_ex}/1 y{n_w
 body_text = body_text.replace(r'\emph{x}=\kongbai{}', r'\emph{x}\nobreak=\kongbai{}')
 body_text = body_text.replace(r'\emph{y}=\kongbai{}', r'\emph{y}\nobreak=\kongbai{}')
 n_kw8 = body_text.count('()')
-assert n_kw8 == 0, f'R2 裸() 计数异常：{n_kw8}/0（探八例1 裸() 已由 side_row 空位右挂消费，余量应 0）'
+assert n_kw8 == 0, f'R2 裸() 残留异常：{n_kw8}/0（片G 0910：探八裸() 已就地转 \\kongwei，此处应清 0）'
 assert ('()' not in body_text) and ('(~~~~)' not in body_text), '空位杂形残留'
-# R2⑤（F 收尾轮 V7d）：并排题干空位末行右挂（side_row 发射，探八例1 孤括号行消解；全品 p07 题1-3 右挂纪律）
+# R2⑤（F 收尾轮 V7d 设；片G 0910 下线）：并排题干空位末行右挂件随 side_row 退场——探八题干恢复通栏，
+# 空位改走内联 (\kongwei) 定宽档（旧 1 → 新 0），孤括号行缺陷位由 R2② \nobreak 禁断承担。
 n_hang = body_text.count('\\nobreak\\hfill(\\kongwei)')
-assert n_hang == 1, f'R2⑤ 并排题干空位右挂计数异常：{n_hang}/1'
+assert n_hang == 0, f'R2⑤ 并排题干空位右挂计数异常：{n_hang}/0（片G 0910 side_row 退场，右挂件下线）'
 log(f'6a-F. F 终审 pass：R1 定界符 \\left(/\\right)/\\left|/\\right|→普通 {n_lp}/{n_rp}/{n_lv}/{n_rv}、'
     f'\\left\\langle/\\right\\rangle→\\langle/\\rangle {n_la}/{n_ra}（清后 0 断言）；cases 豁免 \\left\\{{→\\Bigg\\{{ ×{n_lc}＋'
     f'\\right.\\ →\\Bigg. ×{n_rcs}（探七两处，堆叠定径留痕）；R4① ~~×{n_tilde}；R4③ 跨段断式接合 ×{n_join}（探二详解）；'
     f'R5 全角数学符 ＝{n_dj3}／＋{n_pl3}／－{n_mn3}（清后 0）；P-D √→\\gou{{}} ×{n_gou}（仿宋 FZFSK 路由）、×→\\cha{{}} ×{n_cha}（F 片C 0909 #34 后 TikZ 自绘）；'
-    f'R2 绑定 则\\nobreak\\( ×{n_ze}（21 行 23 处）、是\\nobreak(\\kongwei) ×{n_shi}、emph x/y\\nobreak= ×2、探八裸() 由 side_row 右挂消费 ×{n_kw8}、'
-    f'并排题干空位右挂 \\nobreak\\hfill(\\kongwei) ×{n_hang}（探八例1，孤括号行消解）；'
-    'kongwei 总数 8→9（§8 断言同步）')
+    f'R2 绑定 则\\nobreak\\( ×{n_ze}（21 行 23 处）、是\\nobreak(\\kongwei) ×{n_shi}（片G 0910：3 源＋探八补 1）、'
+    f'emph x/y\\nobreak= ×2、探八裸() 就地转 \\kongwei ×1（片G 0910：side_row 退场，右挂件不再消费，清后残留 {n_kw8}）；'
+    f'并排题干空位右挂 \\nobreak\\hfill(\\kongwei) ×{n_hang}（片G 0910 下线：旧 1→新 0，探八题干通栏、孤括号行由 \\nobreak 禁断消解）；'
+    'kongwei 总数 9 维持（v4.4④ 转换 8＋探八 1，口径由右挂改内联；§8 断言同步）')
 
 # ---- 6b. 分号守恒对账（拍板21；片段级，剥 \allowbreak 注入与空白差） ----
 # v4.4④：_norm 随转换 pass 同步规范化——全角（）→半角、(~~~~)→(\kongwei)、【分析】【详解】【点睛】→[ ]，
@@ -1106,8 +1154,10 @@ n_jx = body_text.count(r'\jiexi{')
 n_mini = body_text.count(r'\begin{minipage}')
 n_hao_bold = len(re.findall(r'\{\\fontsize\{11\.4pt\}\{14pt\}\\selectfont\\heihao \{\\numboldjian \d\}．\}', body_text))
 n_hao_old = len(re.findall(r'\\heihao \\textbf\{\d\}．', body_text))   # F 前 emission 残留应为 0
-n_side = len(re.findall(r'\\begin\{minipage\}\[t\]\{[\d.]+mm\}\\raggedright', body_text))  # F 片A：文字栏宽逐图标定（mm）；片E 0909c 切分后前缀仍此形（side×5 不变）
-n_split = len(SIDE_SPLIT)   # 片E 0909c：绕图切分余段（通栏独立段，探八/探九）
+n_side = len(re.findall(r'\\begin\{minipage\}\[t\]\{[\d.]+mm\}\\raggedright', body_text))  # F 片A 图旁窄栏形；片G 0910 例1 退场＝0
+n_split = len(SIDE_SPLIT)   # 片E 0909c 绕图切分余段；片G 0910 退场＝0
+n_under = body_text.count(r'\input{figs/')   # 片G 0910：图下置居中独立行（六图＝6，逐图 1 次 \input）
+n_gref = body_text.count(r'\includegraphics')   # 片G 0910：位图引用取消（旧 6，新 0；旧位图文件保留不删）
 n_duox = body_text.count(r'\duoxuan')
 n_kw2 = body_text.count(r'\kongwei')
 n_tie = body_text.count(r'\tieside{')
@@ -1128,7 +1178,8 @@ lianpai_hits = [m.group(0)[:30] for m in re.finditer(r'\\tiaomu\{\d\}\{[^\n]*?[^
 sub2_inline = [m.group(0)[:30] for m in re.finditer(r'[^\s{（]（[2-9]）', body_text)]
 log(f'8. 逻辑断言自检（数据面）：◆探究点 {n_tj}/9；例1 {n_li1}/9（数字 \\textbf 加重，探五带 \\duoxuan）；变式1 {n_bs}/9；【答案】行 {n_ans}/14；'
     f'★典型性理由 {n_star}/0（v4.2-E18 撤★）；【解析】简析 \\jiexi {n_jx}/14（变式9＋检测5，D 类16/17）；'
-    f'图文绕图回流 {n_side}/5 组（片E 0909c：图旁窄栏 minipage×5＋切分余段通栏 {n_split}/2——探八题干/探九详解；minipage 总 {n_mini}）；'
+    f'图文绕图回流 {n_side}/0 组（片G 0910：五例1 图 side_row 并排＋绕图切分退场，旧 5／切分 2 → 新 0／0；minipage 总 {n_mini}/0）；'
+    f'片G 图下置居中 {n_under}/6（源尺寸档；位图引用取消 {n_gref}/0——旧 media/media/*.png 保留不删，仅取消引用）；'
     f'多选标记 \\duoxuan {n_duox}/1（探五例1，题5 答案 AD）；空位 (\\kongwei) {n_kw2}/9（v4.4④ 转换 pass 8＋F 探八裸括号补 1）；'
     f'题侧 \\tieside {n_tie}/5（检测题侧直排；例1 题侧在 \\tjdnr 第 4 参由宏排印）；'
     f'变式标签 \\liB {{n_lib}}/9（F 片D 0909c：\\liB 拆双字重——变 FY-w700／式N FY-w450；旧形 \\li 残留 {n_li_old}/0）；'
@@ -1142,25 +1193,27 @@ log(f'8. 逻辑断言自检（数据面）：◆探究点 {n_tj}/9；例1 {n_li1
     f'超纲禁词（基本定理/空间直角）{cg_hits or "无"}；'
     f'「坐标」非否定式命中 {cg_zuobiao or "无"}（命制/演示文字超纲复查＝0）')
 assert n_kd == 20 and n_zt == 6, f'v4.1 印答/解析计数异常：kongda={n_kd} zhenti={n_zt}'
-assert n_star == 0 and n_jx == 14 and n_side == 5 and n_hao_bold == 5 and n_hao_old == 0 \
-        and n_lib == 9 and n_li_old == 0 and n_duox == 1 and n_kw2 == 9 and n_split == 2, \
-    f'v4.2-v4.4 计数异常：star={n_star} jiexi={n_jx} side={n_side}（⑩ side×5）haobold={n_hao_bold}(旧形{n_hao_old}) ' \
-    f'liB={n_lib}(旧形{n_li_old}) duoxuan={n_duox} kongwei={n_kw2}/9（F 探八补 1）split={n_split}/2（片E）'
+assert n_star == 0 and n_jx == 14 and n_side == 0 and n_hao_bold == 5 and n_hao_old == 0 \
+        and n_lib == 9 and n_li_old == 0 and n_duox == 1 and n_kw2 == 9 and n_split == 0 \
+        and n_under == 6 and n_gref == 0, \
+    f'v4.2-片G 计数异常：star={n_star} jiexi={n_jx} side={n_side}（片G 0910：side 退场应 0）haobold={n_hao_bold}(旧形{n_hao_old}) ' \
+    f'liB={n_lib}(旧形{n_li_old}) duoxuan={n_duox} kongwei={n_kw2}/9（F 探八补 1）split={n_split}/0（片G 退场）' \
+    f'under={n_under}/6（片G 下置六图）graphics={n_gref}/0（位图取消引用）'
 log('8a. R8 题源答案普查（sec.tex 十题，F 0909 补登记）：B/式/C/1¼/AD/60°/区间/−3/2/D/A——'
     '唯题5＝AD 多答（\\duoxuan 已挂，n_duox=1 断言维持）；普查结论＝源题答案全部在场，与【答案】行/【详解】逐一相符')
 log('8b. 命制对账：本轮新命制 14（变式 8＋检测 4＋诊断 2）≤上限 15，逐题亲算（见 5g/5h 各条）；'
     '沿用 v3 已亲算 5（检测1＋诊断块①2 道＋块②③第 1 道），逐条登记；'
     '变式六策覆盖：逆向化/概念辨析化/换载体/换设问/换数值/换条件')
-log('8c. F 片A 图定性处置台账（全件 6 图）＋片E 0909c 绕图回流（#40）：sub3_B_4＝条目3 投影三联图 60mm 居中（图区组，条5；'
-    '居中前距 1.9mm/尾距 -1.0mm（0908 标定回填），v4.4⑫ 下距窗 0.4–2.6）；'
-    'image1（探究点二例1）＝【详解】区绕图（F 片A 归位：挂「连接CA₁」详解首块旁，源实证图在【详解】段后独立段）；'
-    'image5（探究点九例1）＝【详解】区绕图（F 片A 归位：挂「过点B，D分别向AC作垂线」详解首块旁，源实证图与【详解】同段）；'
-    'image2（探究点三例1 题干图）／image3（探究点六例1 题干图）／image4（探究点八例1 题干图）＝题干绕图（留题干）；'
-    '五组同几何档（3c，全品截图实证）：图旁窄栏 text_w\\raggedright（image1 剪垫后冻结 27.2mm 不放大）／图盒宽按墨宽折算，'
-    '图墨右缘距栏右 2.6±1mm／图文墨缝 6.7±1.5mm／图墨顶比首行墨顶高 0.25mm（窗 ±1）；'
-    '片E 0909c 改文本切分绕图回流（图旁前缀窄栏＋余段通栏，SIDE_DEF split 标定切分点）：'
-    '探八题干第 4 行起、探九详解第 5 行起恢复通栏（探二/三/六段全在图旁不切分）；'
-    'raisebox 声明盒 [height=H][depth=\\height−H] 逐图反解（行高＝max(前缀,图盒)，盒深仍推后续到图底之下）')
+log('8c. 片G 0910 六图下置集成台账（全件 6 图；替代 F 片A 并排／片E 绕图口径）：'
+    '六图一律「图下置居中·源尺寸档」，内容换重绘 TikZ 矢量片段（figs/g1-prism…g6-triple.tikz，'
+    '素材 _tmp片G素材 逐要素核对＋600dpi 叠加终检通过），旧位图仅取消引用（media/media/*.png 保留不删）；'
+    '置宽：g1 探二 41.1／g2 探三 42.0／g3 探六 84.0（源 86.0 超栏封顶，缩 0.9767）／g4 探八 66.3／'
+    'g5 探九 54.7（素材自然外框 56.564，缩 0.9671）／g6 条目3 三联 84.0 满栏（旧 60mm，缩 0.9767）；'
+    '图前距 1.9mm／图尾距 −1.0mm 沿用 0908 居中图标定档，六图同档；缩放一律 \\resizebox 同比（不失真）；'
+    '图位：探三/六/八＝◆标签行（题干首段）之下独立行；探二/探九＝【详解】首块文字之下独立行（仍在详解区，'
+    '源归属不变）；三联＝条目3 原居中位就地换矢量；'
+    '退场机制：side_row 并排（minipage×5＋raisebox 声明盒）、SIDE_DEF 墨宽/右缘/窄栏标定、'
+    '片E 绕图切分（探八题干/探九详解余段通栏）、探八空位末行右挂件——定义与标定全部保留备用，本件不再调用')
 log('9. F 片B 0909（竖向间距与表格净空四意见；仅登记，改动明细见 5c/5e/4b/TABTOP 注释）：'
     '#28 条目2 (1)→(2)：拆段首段 \\tiaomuz 零尾距（8.21→6.41mm/墨 4.53→2.75）；'
     '#36 条目→条目缝：\\tiaomu 尾距 1.8→0.35mm＋拆段条目尾距移末段（\\tiaomutail）——全对 pitch 6.76mm、'

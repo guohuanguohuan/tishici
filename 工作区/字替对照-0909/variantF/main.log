@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  10 SEP 2026 11:32
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  10 SEP 2026 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1260,10 +1260,46 @@ Package fontspec Info:
 
  [1
 
-]
-File: media/media/sub3_B_4.png Graphic file (type bmp)
-<media/media/sub3_B_4.png>
- [2]
+] (./figs/g6-triple.tikz
+LaTeX Font Info:    Calculating math sizes for size <7.86> on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.01723pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.61203pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 4.0086pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.01794pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.61253pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.00896pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.01639pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.61143pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.00818pt on input line 34.
+LaTeX Font Info:    Calculating math sizes for size <7.11> on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.25223pt on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.07652pt on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 3.6261pt on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.25287pt on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.07698pt on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 3.62642pt on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.25146pt on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.07599pt on input line 38.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 3.62572pt on input line 38.
+) [2]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1341,38 +1377,169 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--126
 \TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/m/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 一\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 下 列 说 法 错 误 的
  []
 
-File: media/media/image1.png Graphic file (type bmp)
-<media/media/image1.png>
-
-Underfull \hbox (badness 7486) in paragraph at lines 154--154
+(./figs/g1-prism.tikz
+LaTeX Font Info:    Calculating math sizes for size <14.9> on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 15.19804pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.63858pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.59901pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 15.19942pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.63954pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.5997pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 15.19646pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.63747pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.59822pt on input line 27.
+LaTeX Font Info:    Calculating math sizes for size <9.68> on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.87363pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.9115pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 4.93681pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.87451pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.91211pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.93726pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.87259pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.91077pt on input line 27.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.9363pt on input line 27.
+LaTeX Font Info:    Calculating math sizes for size <17.3> on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 17.64607pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.35219pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.82303pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 17.64766pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.35329pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.82382pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 17.64423pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 12.35089pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.8221pt on input line 30.
+)
+Underfull \hbox (badness 7486) in paragraph at lines 156--156
 [][][][][][][][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 中，| $[] [] []$，| $[] [] []$，| $[] [] []$，|
  []
 
-File: media/media/image2.png Graphic file (type bmp)
-<media/media/image2.png>
-[3]
-File: media/media/image3.png Graphic file (type bmp)
-<media/media/image3.png>
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 261--261
+
+Underfull \hbox (badness 5802) in paragraph at lines 168--168
+\TU/FangYuanTi-w600圆-BEVL100.ttf(1)/m/n/12.03 例 \TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 二\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 正 方 体 \TU/TimesNewRoman(0)/m/it/10.09 ABCD\TU/TimesNewRoman(0)/m/n/10.09 -
+ []
+
+(./figs/g2-cubeE.tikz
+LaTeX Font Info:    Calculating math sizes for size <14.53> on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 14.82065pt on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.3744pt on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.41032pt on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 14.82199pt on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.37534pt on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.411pt on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 14.8191pt on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.3733pt on input line 26.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.40955pt on input line 26.
+) [3] [4] (./figs/g3-cube6.tikz
+LaTeX Font Info:    Calculating math sizes for size <17.5> on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 17.85007pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.49498pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.92503pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 17.85167pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.49611pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.92583pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 17.8482pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 12.49367pt on input line 34.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.9241pt on input line 34.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
 \TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中 档 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 长 方 体 $[][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
 \TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 $[][][] [] [][][] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
 [][] [] [] [] [] [][] [] [] [] [] [][][] [][][] [][] [] [][][][][] [][][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，|  则
  []
 
-File: media/media/image4.png Graphic file (type bmp)
-<media/media/image4.png>
-[5]
-File: media/media/image5.png Graphic file (type bmp)
-<media/media/image5.png>
+[5] (./figs/g4-dihedral.tikz
+LaTeX Font Info:    Calculating math sizes for size <16.03> on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 16.35066pt on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 11.4454pt on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.17532pt on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 16.35213pt on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 11.44643pt on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.17606pt on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 16.34895pt on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.44421pt on input line 33.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.17447pt on input line 33.
+) (./figs/g5-fold.tikz
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 14.68805pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.20004pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.14003pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 14.68936pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.20096pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.14067pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 14.68651pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.19897pt on input line 30.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.13928pt on input line 30.
+) [6]
 
 Package fontspec Info: 
 (fontspec)             Font family 'NSC-w500.ttf(0)' created for font
@@ -1387,7 +1554,7 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
 
- [6]) [7] (./main.aux)
+) [7] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
@@ -1398,12 +1565,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25614 strings out of 469768
- 604188 string characters out of 5466040
- 1190571 words of memory out of 5000000
- 54101 multiletter control sequences out of 15000+600000
- 633988 words of font info for 202 fonts, out of 8000000 for 9000
+ 26014 strings out of 469768
+ 617914 string characters out of 5466040
+ 1192214 words of memory out of 5000000
+ 54360 multiletter control sequences out of 15000+600000
+ 648536 words of font info for 352 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 97i,17n,110p,1193b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 97i,17n,110p,1193b,1231s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (7 pages).

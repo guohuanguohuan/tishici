@@ -30,7 +30,11 @@ v4.3 签名覆盖注：知识点条目号改半角「N.」（总账E），不以
 v4.4 签名适配（执行轮）：【答案】/【解析】→半角 [答案]/[解析] 入 SIG（拍板2 半角[]标签制）；
 子项号（N）转半角 (N) 后以 \(N 入 SIG（判断题全品式序号）；图构成＝5 并排 side 0.56（v4.4⑩ side×5）
 ＋1 居中 60mm＝6 张（总数不变，n_fig==6 维持）；【答案】行 14 维持（n_ans 计 [答案]）。
-预期（v4.4 复核）：图 6（5 并排 side 0.56＋1 居中 60mm）、[答案] 行 14。表线总数随分页漂移，不硬编码。"""
+预期（v4.4 复核）：图 6（5 并排 side 0.56＋1 居中 60mm）、[答案] 行 14。表线总数随分页漂移，不硬编码。
+片G 0910 (e) 换矢量口径：六图（五例1 图＋条目3 投影三联）由位图改重绘 TikZ 矢量片段
+（\resizebox＋\input{figs/*.tikz}，图下置居中·源尺寸档），PDF 内 image 对象 6→0——(e) 改判
+「非轴对齐矢量墨聚簇 ≥3 斜长笔」的图簇：门＝位图 n_fig==0 且矢量 n_vec==6 且全部落在栏带内
+（n_viol_vec==0）；ok 式相应改 n_fig==0 and n_vec==6。"""
 import os
 import re
 import pymupdf
@@ -78,10 +82,89 @@ def ink_left(page, y0, y1, cl, dpi=300):
 
 doc = pymupdf.open(BASE + r'\main.pdf')
 n_sig = n_viol_c = n_ans = n_rules = n_leftedge = n_viol_d = n_fig = n_viol_e = n_exempt = 0
+n_vec = n_viol_vec = 0
+
+
+# ---- 片G 0910 (e) 换矢量口径：六图系 \resizebox+\input 的 TikZ 片段，PDF 内无 image 对象
+#      （raster 计数 6→0），改以「非轴对齐矢量墨聚簇」认定图：簇内需有 ≥3 条跨度 ≥5mm 的斜长笔
+#      （真图 ≥5；表线/正文/花形/√× 自绘/表内向量箭头均 <3），同 y 带 x 隙 ≤20mm 者并簇（三联三子图）。
+def _diag_items(dr):
+    out = []
+    for o in dr:
+        for it in o['items']:
+            if it[0] == 'l':
+                p1, p2 = it[1], it[2]
+                dx, dy = abs(p2.x - p1.x), abs(p2.y - p1.y)
+                if dx > 1.0 and dy > 1.0 and max(dx, dy) / PT > 2.0:
+                    out.append((pymupdf.Rect(min(p1.x, p2.x) - .3, min(p1.y, p2.y) - .3,
+                                             max(p1.x, p2.x) + .3, max(p1.y, p2.y) + .3),
+                                max(dx, dy) / PT >= 5.0))
+            elif it[0] == 'c':
+                ps = it[1:5]
+                xs = [q.x for q in ps]
+                ys = [q.y for q in ps]
+                w, h = max(xs) - min(xs), max(ys) - min(ys)
+                if max(w, h) / PT > 2.0 and w > 1.0 and h > 1.0:
+                    out.append((pymupdf.Rect(min(xs) - .3, min(ys) - .3, max(xs) + .3, max(ys) + .3),
+                                max(w, h) / PT >= 5.0))
+    return out
+
+
+def _vec_clusters(page):
+    pairs = _diag_items(page.get_drawings())
+    rs = [pymupdf.Rect(a) for a, _ in pairs]
+    lg = [1 if b else 0 for _, b in pairs]
+    gap = 8 / 25.4 * PT
+    par = list(range(len(rs)))
+
+    def find(i):
+        while par[i] != i:
+            par[i] = par[par[i]]
+            i = par[i]
+        return i
+
+    for i in range(len(rs)):
+        for j in range(i + 1, len(rs)):
+            a = pymupdf.Rect(rs[i])
+            a.x0 -= gap; a.y0 -= gap; a.x1 += gap; a.y1 += gap
+            if a.intersects(rs[j]):
+                x, y = find(i), find(j)
+                if x != y:
+                    par[x] = y
+    grp = {}
+    for i in range(len(rs)):
+        grp.setdefault(find(i), []).append(i)
+    cs = []
+    for g in grp.values():
+        r = pymupdf.Rect(rs[g[0]])
+        for k in g[1:]:
+            r |= rs[k]
+        cs.append([r, sum(lg[k] for k in g)])
+    changed = True
+    while changed:                       # 同 y 带且 x 隙 ≤20mm → 并簇（三联三子图成一图）
+        changed = False
+        for i in range(len(cs)):
+            for j in range(i + 1, len(cs)):
+                a, b = cs[i][0], cs[j][0]
+                if (min(a.y1, b.y1) - max(a.y0, b.y0) > -3 * PT
+                        and max(a.x0, b.x0) - min(a.x1, b.x1) <= 20 * PT):
+                    cs[i] = [a | b, cs[i][1] + cs[j][1]]
+                    del cs[j]
+                    changed = True
+                    break
+            if changed:
+                break
+    return [c for c in cs if c[0].width / PT >= 15 and c[0].height / PT >= 10 and c[1] >= 3]
+
 for pno, page in enumerate(doc, 1):
     H = page.rect.height
     def coll(x0):
         return MARGIN if x0 < MID else MARGIN + COLW + COLSEP
+    # 片G 0910：矢量图簇——(d) 据此排除图内竖棱（旧位图无此污染：表线 64→74 系图棱被收），(e) 据此判图
+    vcs = [r for r, _n in _vec_clusters(page)]
+
+    def in_fig(r):
+        return any(pymupdf.Rect(g.x0 - 1.0, g.y0 - 1.0, g.x1 + 1.0, g.y1 + 1.0).contains(r) for g in vcs)
 
     lines = []
     for blk_ in page.get_text('dict')['blocks']:
@@ -118,6 +201,8 @@ for pno, page in enumerate(doc, 1):
         r = d['rect']
         if not (r.width <= 2.0 and r.height >= 4.0):
             continue
+        if in_fig(r):
+            continue   # 片G 0910：矢量图内竖棱（正方体竖棱等）不算表线——保 64 口径可比
         if abs(r.x0 - MID) < 1.0:
             continue   # multicol 栏线
         if 8.0 <= r.height <= 30.0 and any(0.5 <= r.x0 - c <= 3.0 for c in COLL):
@@ -131,7 +216,7 @@ for pno, page in enumerate(doc, 1):
         if any(abs(r.x0 - c) <= 1.0 for c in COLL):
             n_leftedge += 1   # 表左框线在场（== 栏左）
 
-    # (e) 图
+    # (e) 图——片G 0910：位图 6→0（旧 media/media/*.png 取消引用），六图改矢量口径
     for img in page.get_images(full=True):
         for r in page.get_image_rects(img[0]):
             n_fig += 1
@@ -139,11 +224,18 @@ for pno, page in enumerate(doc, 1):
             if not (r.x0 >= cl - 1.0 and r.x1 <= cl + COLW + 1.0):
                 n_viol_e += 1
                 print(f'   (e)违规图 x0={r.x0:.2f} x1={r.x1:.2f} 栏带=[{cl:.2f},{cl + COLW:.2f}] p{pno} y={r.y0:.1f}')
+    for r in vcs:
+        n_vec += 1
+        cl = coll(r.x0)
+        if not (r.x0 >= cl - 1.0 and r.x1 <= cl + COLW + 1.0):
+            n_viol_vec += 1
+            print(f'   (e)违规矢量图 x0={r.x0:.2f} x1={r.x1:.2f} 栏带=[{cl:.2f},{cl + COLW:.2f}] p{pno} y={r.y0:.1f}')
 
 print(f'—— 签名行 {n_sig}（其中[答案]{n_ans}；违规 {n_viol_c}）｜表线 {n_rules}（左框线 {n_leftedge}；'
-      f'违规 {n_viol_d}，花形豁免 {n_exempt}）｜图 {n_fig}（违规 {n_viol_e}）')
-viol = n_viol_c + n_viol_d + n_viol_e
-ok = viol == 0 and not fail and n_fig == 6 and n_ans == 14 and n_leftedge >= 6
+      f'违规 {n_viol_d}，花形豁免 {n_exempt}）｜位图 {n_fig}（违规 {n_viol_e}）｜'
+      f'矢量图 {n_vec}（违规 {n_viol_vec}）')
+viol = n_viol_c + n_viol_d + n_viol_e + n_viol_vec
+ok = viol == 0 and not fail and n_fig == 0 and n_vec == 6 and n_ans == 14 and n_leftedge >= 6
 if n_sig < 40:
     ok = False
     print(f'!! 签名行计数异常：{n_sig} < 40（签名口径失效嫌疑，人工复核）')
