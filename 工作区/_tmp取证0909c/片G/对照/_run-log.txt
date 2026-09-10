@@ -1,0 +1,19 @@
+main.pdf open ok, pages=7; seeds found: 6
+g6-triple p2 c2 | 600B 82.38×20.87 | 带墨R 82.30×21.00 | 裁片U 82.83×21.00 @(109.68,116.19)mm | 标签件 6
+   crop 508x143px ink-margin L/T/R/B=11/9/11/10 (pad≈9px)
+   saved: 终版-g6-triple-p2c2.png | 源-g6-triple-sub3_B_4.png 496x132 | 对照-g6-triple-p2c2.png | 上下文-g6-triple-p2c2.png 508x479
+g1-prism p3 c2 | 600B 41.27×63.71 | 带墨R 62.65×76.88 | 裁片U 41.49×68.92 @(130.04,78.14)mm | 标签件 22
+   crop 263x426px ink-margin L/T/R/B=8/9/10/10 (pad≈9px)
+   saved: 终版-g1-prism-p3c2.png | 源-g1-prism-image1.png 243x408 | 对照-g1-prism-p3c2.png | 上下文-g1-prism-p3c2.png 508x761
+g2-cubeE p4 c1 | 600B 43.43×41.87 | 带墨R 62.65×46.23 | 裁片U 41.15×41.32 @(38.78,47.70)mm | 标签件 7
+   crop 261x263px ink-margin L/T/R/B=8/9/10/10 (pad≈9px)
+   saved: 终版-g2-cubeE-p4c1.png | 源-g2-cubeE-image2.png 248x248 | 对照-g2-cubeE-p4c1.png | 上下文-g2-cubeE-p4c1.png 508x598
+g3-cube6 p5 c1 | 600B 69.17×66.08 | 带墨R 79.59×77.39 | 裁片U 79.59×77.39 @(18.63,80.89)mm | 标签件 89
+   crop 488x476px ink-margin L/T/R/B=8/9/10/10 (pad≈9px)
+   saved: 终版-g3-cube6-p5c1.png | 源-g3-cube6-image3.png 496x472 | 对照-g3-cube6-p5c1.png | 上下文-g3-cube6-p5c1.png 508x811
+g4-dihedral p6 c1 | 600B 56.98×32.39 | 带墨R 71.29×42.33 | 裁片U 61.64×32.34 @(27.09,123.80)mm | 标签件 4
+   crop 382x209px ink-margin L/T/R/B=8/9/10/9 (pad≈9px)
+   saved: 终版-g4-dihedral-p6c1.png | 源-g4-dihedral-image4.png 392x211 | 对照-g4-dihedral-p6c1.png | 上下文-g4-dihedral-p6c1.png 508x546
+g5-fold p6 c2 | 600B 50.72×29.72 | 带墨R 55.03×38.44 | 裁片U 55.03×38.44 @(123.26,151.24)mm | 标签件 5
+   crop 343x245px ink-margin L/T/R/B=8/9/10/9 (pad≈9px)
+   saved: 终版-g5-fold-p6c2.png | 源-g5-fold-image5.png 323x243 | 对照-g5-fold-p6c2.png | 上下文-g5-fold-p6c2.png 508x582
