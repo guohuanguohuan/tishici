@@ -1,0 +1,21 @@
+% ============================================================
+% 导学件答案册 v1（答案制A·配套册）——人教B版选必1 §1.1.1 第1课时 空间向量及其运算
+% 件名：字替对照-0909/导学件答案册-v1
+% 口径：用户拍板「全品式＝导学件正文不印答案/解析、答案单独成册」（2026-09-11 答案制A）。
+% 内容来源＝variantF/postproc_daoxue.py 6g 去答案0911 pass 移出块全量
+%   （素材＝工作区/_tmp取证0909c/片G/去答案0911/答案册素材0911.txt，逐块清单＝同目录 去答案清单.md）。
+% 形制复用＝靠齐样张-0910/答案册 四模块（qp-answ-fonts/layout/headfoot/blocks 逐字节承样张，
+%   字体路径本即字面量绝对路径，未复制任何字体二进制）＋样张 \txline 题型行/题型总结件做法
+%   （样张 0911 题型轮 body 本地件，随本件 body.tex 复用）。
+% 同号对应＝导学件题号：探究点一～九 例1/变式1＋课堂评价1～5（判分值 23 题与导学件正文一一对应）。
+% 组装：python 组装body.py（素材→body.tex，可重跑）→ xelatex main.tex ×2 → render.py
+% 模块切分：qp-answ-fonts → qp-answ-layout → qp-answ-headfoot → qp-answ-blocks → body.tex
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-answ-fonts.tex}
+\input{qp-answ-layout.tex}
+\input{qp-answ-headfoot.tex}
+\input{qp-answ-blocks.tex}
+\begin{document}
+\input{body.tex}
+\end{document}

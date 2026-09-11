@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[paperwidth=100mm,paperheight=200mm,left=10mm,right=10mm,top=10mm,bottom=10mm]{geometry}
+\usepackage{xeCJK}
+\setCJKmainfont[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/]{FZShuSong-Z01S.ttf}
+\parindent=0pt
+% A: par=5 hang=10 hangafter=1
+\newcommand{\A}[1]{\par{\hangindent10mm\hangafter=1\setlength{\parindent}{5mm}\noindent#1\par}}
+% B: par=0 hang=5 hangafter=1
+\newcommand{\B}[1]{\par{\hangindent5mm\hangafter=1\setlength{\parindent}{0mm}\noindent#1\par}}
+% C: par=5 hang=5 hangafter=2
+\newcommand{\C}[1]{\par{\hangindent5mm\hangafter=2\setlength{\parindent}{5mm}\noindent#1\par}}
+% D: par=5 hang=0
+\newcommand{\D}[1]{\par{\hangindent0mm\hangafter=1\setlength{\parindent}{5mm}\noindent#1\par}}
+\begin{document}
+A\par\A{第一段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三
+
+第二段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三}
+B\par\B{第一段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三
+
+第二段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三}
+C\par\C{第一段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三
+
+第二段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三}
+D\par\D{第一段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三
+
+第二段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三}
+\end{document}

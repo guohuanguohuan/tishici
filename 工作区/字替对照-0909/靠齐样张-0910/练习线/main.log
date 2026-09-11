@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  10 SEP 2026 16:54
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  11 SEP 2026 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,22 +1069,22 @@ File: pgflibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1121,19 +1121,19 @@ LaTeX Font Info:    ... okay on input line 114.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/texgyretermes-math.otf(1)/m/n --> TU/TimesNewRoman(0)/m/n on input line 114.
+(Font)                  TU/texgyretermes-math.otf(1)/m/n --> TU/TimesNewRoman(0)/m/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 114.
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 114.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 114.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 114.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 114.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 116.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 114.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 116.
 
 Package fontspec Info: 
 (fontspec)             Font family 'NSC-w315.ttf(0)' created for font
@@ -1176,43 +1176,43 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w600.ttf]/OT:script=hani;language=dflt;"
 
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 127.
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.71004pt on input line 127.
+(Font)              scaled to size 10.71004pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.49698pt on input line 127.
+(Font)              scaled to size 7.49698pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.35501pt on input line 127.
+(Font)              scaled to size 5.35501pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.711pt on input line 127.
+(Font)              scaled to size 10.711pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.49765pt on input line 127.
+(Font)              scaled to size 7.49765pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.3555pt on input line 127.
+(Font)              scaled to size 5.3555pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.70892pt on input line 127.
+(Font)              scaled to size 10.70892pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.4962pt on input line 127.
+(Font)              scaled to size 7.4962pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.35446pt on input line 127.
+(Font)              scaled to size 5.35446pt on input line 129.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.29182pt on input line 138.
+(Font)              scaled to size 10.29182pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.559pt on input line 138.
+(Font)              scaled to size 5.559pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 4.6308pt on input line 138.
+(Font)              scaled to size 4.6308pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.29276pt on input line 138.
+(Font)              scaled to size 10.29276pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.55951pt on input line 138.
+(Font)              scaled to size 5.55951pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.63123pt on input line 138.
+(Font)              scaled to size 4.63123pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.29076pt on input line 138.
+(Font)              scaled to size 10.29076pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.55843pt on input line 138.
+(Font)              scaled to size 5.55843pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.63033pt on input line 138.
+(Font)              scaled to size 4.63033pt on input line 140.
 [1
 
 ]
@@ -1231,12 +1231,12 @@ Package fontspec Info:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Black.otf]/OT:script=hani;language=dflt;slant=0.18;"
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 []\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 二\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 平 行 六 面 体 $[][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 []\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 二\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 平 行 六 面 体 $[][][][][]
  []
 
@@ -1249,10 +1249,10 @@ L3 programming layer <2026/08/11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25347 strings out of 469768
- 595829 string characters out of 5466040
- 1176884 words of memory out of 5000000
- 53903 multiletter control sequences out of 15000+600000
+ 25338 strings out of 469768
+ 595644 string characters out of 5466040
+ 1176454 words of memory out of 5000000
+ 53894 multiletter control sequences out of 15000+600000
  633564 words of font info for 149 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  97i,16n,110p,1193b,907s stack positions out of 10000i,1000n,20000p,200000b,200000s

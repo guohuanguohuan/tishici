@@ -15,6 +15,7 @@
 - XJ-1c 留痕缺标：含留痕关键词（留痕/废止/作废/不再适用/历史保留/转历史/出脑/退役）而无
   「▽」前缀的分句清单（分句界＝。；！？，、；A2 实测落点「▽」居「（」「，」之后，故分句内
   「▽」起之后视为已标、只查 ▽ 前的未标文头——与规格书 A2「幂等防护与 XJ-1c 判定对齐」同口径）；
+  句式豁免：「〔沿革→留痕档案…〕」指针句式非缺标（分句剥除该句式后无词集命中即豁免，2026-09-11 维护轮批）；
 - XJ-1d 占位符：「待回填」「TODO」类（白名单豁免制，白名单驻本文件头部常量 WHITELIST）；
 - XJ-1e 日期异常：未来日期（警告）、非法格式（月日历法不成立／分隔符混排，报错）；
   未补零（2026-9-6）与「年月日」混排横杠式不在检出面（2026年9月6日 全角式合法）。
@@ -51,6 +52,9 @@ LEN_ERROR = 2000
 
 # ===== XJ-1c 留痕词集（⑩规格书 A2 判定词集；「覆盖」不在词集） =====
 TRACE_KEYWORDS = ("留痕", "废止", "作废", "不再适用", "历史保留", "转历史", "出脑", "退役")
+# 指针句式豁免（2026-09-11 维护轮批）：「〔沿革→留痕档案…〕」系合法指针句式、非留痕缺标——
+# 分句内剥除该句式后再判词集；剥除后仍含词集者（留痕叙事＋指针混排）照报不误。
+TRACE_POINTER_RE = re.compile(r"〔沿革→留痕档案[^〕]*〕")
 
 # ===== XJ-1d 占位词集（「待回填」「TODO」类） =====
 PLACEHOLDER_PATTERNS = ("待回填", "TODO", "FIXME", "TBD", "待补", "待定")
@@ -328,6 +332,9 @@ def check_traceless(rel: str, lines: list, exemptions: list) -> list:
             cfrag = whitelisted_clause("XJ-1c", rel, unit)
             if cfrag:
                 exemptions.append(("XJ-1c", rel, i, f"分句级豁免「{cfrag}」｜{unit.strip()[:48]}"))
+                continue
+            if not any(k in TRACE_POINTER_RE.sub("", seg) for k in TRACE_KEYWORDS):
+                exemptions.append(("XJ-1c", rel, i, f"指针句式豁免〔沿革→留痕档案…〕｜{unit.strip()[:48]}"))
                 continue
             excerpt = seg.strip()[:80] + ("…" if len(seg.strip()) > 80 else "")
             hits.append(Hit("XJ-1c", LEVEL_WARN, rel, i, f"留痕词句未标▽：词={'/'.join(kws)}｜句：{excerpt}"))

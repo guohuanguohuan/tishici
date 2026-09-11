@@ -1,0 +1,4 @@
+C:\提示词\工作区\字替对照-0909\variantF\postproc_daoxue.py:430: SyntaxWarning: invalid escape sequence '\('
+  """v4.2-C15 修复：原把 \( \) 括号计入宽度致检测2/检测4 短数学项被判 1 项/行——
+C:\提示词\工作区\字替对照-0909\variantF\postproc_daoxue.py:1661: SyntaxWarning: invalid escape sequence '\z'
+  '\\cha/\\gou 残留恰 6＝\zhenhead 说明行×3（保留面）；台账追加两节＋课前预习素材0911.txt；'

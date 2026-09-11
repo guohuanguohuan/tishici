@@ -1,0 +1,180 @@
+去答案0911 移出内容全文（tex 原样，按导学件题号分组）——供 导学件答案册-v1/body.tex 组装（同号对应）
+
+=========== 探究点一·例1　[空间向量的概念辨析] ===========
+--[例[分析]]--
+\bindp [分析]根据零向量、单位向量、向量的模、相等向量、相反向量等概念逐一分析即可得出答案.
+--[例[详解]]--
+\bindp [详解]解：若\(| \overrightarrow{a} | = | \overrightarrow{b} |\)，则它们的方向相同时是相等向量，方向相反时是相反向量，还有可能方向既不相同，也不相反，A错；
+--[[详解/分析]续段]--
+\bindp 若\(\overrightarrow{a},\overrightarrow{b}\)为相反向量，则它们的和为零向量，B对；
+--[[详解/分析]续段]--
+\bindp 零向量的方向是任意的，C错；
+--[[详解/分析]续段]--
+\bindp 两个单位向量只是模都为1，方向不一定相同，D错.故选：B.
+
+=========== 探究点一·变式1　[空间向量的概念辨析] ===========
+--[答案行]--
+\ansline{\ansul{D}}
+--[简析行[解析]]--
+\jiexi{A规定成立；B模为0即零向量；C相等必等模；D平行不需等模(反例\(\overrightarrow{a}=2\overrightarrow{b}\))，故选D.}
+
+=========== 探究点二·例1　[空间向量的线性运算] ===========
+--[例[分析]]--
+\bindp [分析]连接\(CA_{1},\)根据直三棱柱的结构特征及空间向量减法的几何意义可得\(\overrightarrow{A_{1}B} = \overrightarrow{CB} - \overrightarrow{CA} - \overrightarrow{CC_{1}}\)，结合已知即可求表达式.
+--[例[详解]并排图文行]--
+\noindent\begin{minipage}[t]{48.000mm}\raggedright [详解]连接\(CA_{1},\)则\nobreak\(\overrightarrow{A_{1}B} = \overrightarrow{CB} - \overrightarrow{CA_{1}} = \overrightarrow{CB} - \overrightarrow{CA} - \overrightarrow{CC_{1}} =\overrightarrow{b} - \overrightarrow{a} - \overrightarrow{c}\).\end{minipage}\hspace{5.342mm}\begin{minipage}[t]{28.800mm}\centering\raisebox{\dimexpr-\height+3.332mm\relax}[\dimexpr3.332mm\relax][\dimexpr\height-3.332mm\relax]{\includegraphics[width=28.800mm,alt={@@@4e3aa752498e415b9cc3d6d60f7bb3fe}]{media/media/image1.png}}\end{minipage}\par
+--[故答案行]--
+\bindp 故答案为：\(\overrightarrow{b} - \overrightarrow{a} - \overrightarrow{c}\)
+
+=========== 探究点二·变式1　[空间向量的线性运算] ===========
+--[答案行]--
+\ansline{\ansul{\(\overrightarrow{a}-\overrightarrow{b}-\overrightarrow{c}\)}}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{D_1B}=\overrightarrow{D_1A_1}+\overrightarrow{A_1A}+\overrightarrow{AB}=-\overrightarrow{b}-\overrightarrow{c}+\overrightarrow{a}\).}
+
+=========== 探究点三·例1　[用基底表示向量] ===========
+--[例[分析]]--
+\bindp [分析]结合空间向量的线性运算列方程，由此求得\(x,y\)的值.
+--[例[详解]]--
+\bindp [详解]\(\overrightarrow{AE} = \overrightarrow{AA_{1}} + \overrightarrow{A_{1}E} = \overrightarrow{AA_{1}} + \frac{1}{4}\overrightarrow{A_{1}C_{1}} = \overrightarrow{AA_{1}} + \frac{1}{4}( \overrightarrow{AB} + \overrightarrow{AD} )\)，所以\(x = 1,y = \frac{1}{4}\).故答案为：\(1\)；\(\frac{1}{4}\)
+
+=========== 探究点三·变式1　[用基底表示向量] ===========
+--[答案行]--
+\ansline{\ansul{\(x=1\)}，\ansul{\(y=\frac{1}{2}\)}}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{AE}=\overrightarrow{AA_1}+\overrightarrow{A_1E}=\overrightarrow{AA_1}+\frac{1}{2}(\overrightarrow{AB}+\overrightarrow{AD})\)，故\(x=1\)，\(y=\frac{1}{2}\).}
+
+=========== 探究点四·例1　[共面向量的判定] ===========
+--[例[分析]]--
+\bindp [分析]利用空间向量共面定理逐一判断即可.
+--[例[详解]]--
+\bindp [详解]若\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共线，由\(\overrightarrow{p}\)=\emph{x}\(\overrightarrow{a}\)+\emph{y}\(\overrightarrow{b}\)知\(\overrightarrow{p}\)一定与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面，
+--[[详解/分析]续段]--
+\bindp 若\(\overrightarrow{a}\)，\(\overrightarrow{b}\)不共线，则满足共面定理，\(\overrightarrow{p}\)与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面，①对；
+--[[详解/分析]续段]--
+\bindp 同理③对；若\(\overrightarrow{p}\)与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面，且\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共线，则不一定有\(\overrightarrow{p}\)=\emph{x}\(\overrightarrow{a}\)+\emph{y}\(\overrightarrow{b}\)，故②不对；同理④不对，故选：C.
+
+=========== 探究点四·变式1　[共面向量的判定] ===========
+--[答案行]--
+\ansline{\ansul{共面}(\(\overrightarrow{MP}\)可由\(\overrightarrow{MA}\)，\(\overrightarrow{MB}\)线性表示，故\(\overrightarrow{MP}\)，\(\overrightarrow{MA}\)，\(\overrightarrow{MB}\)共面，即\(P\)在平面\(MAB\)内)}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\)为\(\overrightarrow{MA}\)、\(\overrightarrow{MB}\)的线性组合，故三向量共面，\(P\)在平面\(MAB\)内.}
+
+=========== 探究点五·例1　[数量积的概念与运算律] ===========
+--[例[分析]]--
+\bindp [分析]根据空间向量数量积的定义与运算律一一判断即可；
+--[例[详解]]--
+\bindp [详解]解：对于A：\({\overrightarrow{a}}^{2} = \overrightarrow{a} \cdot \overrightarrow{a} = | \overrightarrow{a} | \cdot | \overrightarrow{a} |\cos 0 = | \overrightarrow{a} |^{2}\)，故A正确；
+--[[详解/分析]续段]--
+\bindp 对于B：因为向量不能做除法，即\(\frac{\overrightarrow{b}}{\overrightarrow{a}}\)无意义，故B错误；
+--[[详解/分析]续段]--
+\bindp 对于C：\(( \overrightarrow{a} \cdot \overrightarrow{b} )^{2} = ( | \overrightarrow{a} | \cdot | \overrightarrow{b} |\cos\langle \overrightarrow{a},\overrightarrow{b} \rangle )^{2} = | \overrightarrow{a} |^{2} \cdot | \overrightarrow{b} |^{2}\cos^{2}\langle \overrightarrow{a},\overrightarrow{b} \rangle\)，故C错误；
+--[[详解/分析]续段]--
+\bindp 对于D：\(( \overrightarrow{a} - \overrightarrow{b} )^{2} = ( \overrightarrow{a} - \overrightarrow{b} ) \cdot ( \overrightarrow{a} - \overrightarrow{b} ) = {\overrightarrow{a}}^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + {\overrightarrow{b}}^{2}\)，故D正确；故选：AD
+
+=========== 探究点五·变式1　[数量积的概念与运算律] ===========
+--[答案行]--
+\ansline{\ansul{\(-11\)}}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{a}\cdot\overrightarrow{b}=2\times3\times\cos60^\circ=3\)；原式\(=\overrightarrow{a}^2+\overrightarrow{a}\cdot\overrightarrow{b}-2\overrightarrow{b}^2=4+3-18=-11\).}
+
+=========== 探究点六·例1　[数量积求夹角与投影] ===========
+--[例[分析]]--
+\bindp [分析]方法1：结合图形，平移向量，利用空间向量的夹角定义来求，但要注意向量夹角的范围；
+--[[详解/分析]续段]--
+\bindp 方法2：先求\(\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}\)，再利用公式\(\cos\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \rangle = \frac{\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}}{| \overrightarrow{BC_{1}} | \cdot | \overrightarrow{AC} |}\)求\(\cos\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \rangle\)，最后确定\(\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \rangle\)即可.
+--[例[详解]]--
+\bindp [详解]解：方法1：因为\(\overrightarrow{AD_{1}} = \overrightarrow{BC_{1}}\)，所以\(\angle CAD_{1}\)的大小就等于\(\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \rangle\)
+--[[详解/分析]续段]--
+\bindp 因为△\(CAD_{1}\)为等边三角形，所以\(\angle CAD_{1} = 60^{{^\circ}}\)，所以\(\overrightarrow{BC_{1}}\)与\(\overrightarrow{AC}\)的夹角的大小为\(60{^\circ}\).
+--[[详解/分析]续段]--
+\bindp 方法2．设正方体的棱长为1，\(\overrightarrow{BC_{1}} \cdot \overrightarrow{AC} = ( \overrightarrow{BC} + \overrightarrow{CC_{1}} ) \cdot ( \overrightarrow{AB} + \overrightarrow{BC} ) = ( \overrightarrow{AD} + \overrightarrow{AA_{1}} ) \cdot ( \overrightarrow{AB} + \overrightarrow{AD} )\)\allowbreak\(= \overrightarrow{AD} \cdot \overrightarrow{AB} + | \overrightarrow{AD} |^{2} + \overrightarrow{AA_{1}} \cdot \overrightarrow{AB} + \overrightarrow{AA_{1}} \cdot \overrightarrow{AD} = 0 + | \overrightarrow{AD} |^{2} + 0 + 0 = | \overrightarrow{AD} |^{2} = 1\)又因为\(| \overrightarrow{BC_{1}} | = \sqrt{2},| \overrightarrow{AC} | = \sqrt{2}\)，所以\(\cos\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \rangle = \frac{\overrightarrow{BC_{1}} \cdot \overrightarrow{AC}}{| \overrightarrow{BC_{1}} | \cdot | \overrightarrow{AC} |} = \frac{1}{\sqrt{2} \times \sqrt{2}} = \frac{1}{2}\)，
+因为\(\langle \overrightarrow{BC_{1}},\overrightarrow{AC} \rangle \in \lbrack 0,\pi\rbrack\)，所以\(\overrightarrow{BC_{1}}\)与\(\overrightarrow{AC}\)的夹角的大小为\(60{^\circ}\).
+
+=========== 探究点六·变式1　[数量积求夹角与投影] ===========
+--[答案行]--
+\ansline{\ansul{\(\frac{\sqrt{10}}{5}\)}}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{AB_1}\cdot\overrightarrow{AC}=(\overrightarrow{AB}+\overrightarrow{BB_1})\cdot(\overrightarrow{AB}+\overrightarrow{BC})=|\overrightarrow{AB}|^2=4\)，\(|\overrightarrow{AB_1}|=\sqrt{5}\)，\(|\overrightarrow{AC}|=2\sqrt{2}\)，故\(\cos\langle\overrightarrow{AB_1},\overrightarrow{AC}\rangle=\frac{4}{\sqrt{5}\times2\sqrt{2}}=\frac{\sqrt{10}}{5}\).}
+
+=========== 探究点七·例1　[数量积条件求参] ===========
+--[例[分析]]--
+\bindp [分析]根据\(( \overrightarrow{a} + \lambda\overrightarrow{b} ) \cdot ( \lambda\overrightarrow{a} - 2\overrightarrow{b} ) < 0\)，得出方程求得\(- 1 - \sqrt{3} < \lambda < - 1 + \sqrt{3}\)，若向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线时，则存在实数\(k < 0\)使得\(\overrightarrow{a} + \lambda\overrightarrow{b} = k(\lambda\overrightarrow{a} - 2\overrightarrow{b})\)成立，得到方程组\(\Bigg\{ \begin{array}{r}
+k\lambda = 1 \\
+\lambda = - 2k
+\end{array} \Bigg.\)无解，即可得到答案.
+--[例[详解]]--
+\bindp [详解]由向量\(\overrightarrow{a},\overrightarrow{b}\)，且\(| \overrightarrow{a} | = 2\)，\(| \overrightarrow{b} | = 1\)，\(\langle \overrightarrow{a},\overrightarrow{b} \rangle = 60^{\circ}\)，可得\(\overrightarrow{a} \cdot \overrightarrow{b} = 2 \times 1 \times \cos 60^{\circ} = 1\)，
+--[[详解/分析]续段]--
+\bindp 因为向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)的夹角为钝角，可得\(\cos\langle \overrightarrow{a} + \lambda\overrightarrow{b},\lambda\overrightarrow{a} - 2\overrightarrow{b} \rangle < 0\)且\(\cos\langle \overrightarrow{a} + \lambda\overrightarrow{b},\lambda\overrightarrow{a} - 2\overrightarrow{b} \rangle \neq - 1\)，由\(( \overrightarrow{a} + \lambda\overrightarrow{b} ) \cdot ( \lambda\overrightarrow{a} - 2\overrightarrow{b} ) < 0\)，即\(\lambda{\overrightarrow{a}}^{2}\text{+(}\lambda^{2} - 2)\overrightarrow{a} \cdot \overrightarrow{b} - 2\lambda{\overrightarrow{b}}^{2} < 0\)，所以\(\lambda^{2} + 2\lambda - 2 < 0\)，解得\(- 1 - \sqrt{3} < \lambda < - 1 + \sqrt{3}\)，
+--[[详解/分析]续段]--
+\bindp 若向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线时，存在实数\(k < 0\)，使得\(\overrightarrow{a} + \lambda\overrightarrow{b} = k(\lambda\overrightarrow{a} - 2\overrightarrow{b})\)成立，可得\(\Bigg\{ \begin{array}{r}
+k\lambda = 1 \\
+\lambda = - 2k
+\end{array} \Bigg.\)，此时方程组无解，所以不存在实数\(k\)使得向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)反向共线，所以实数\(\lambda\)的取值范围是\(( - 1 - \sqrt{3}, - 1 + \sqrt{3} )\).
+
+=========== 探究点七·变式1　[数量积条件求参] ===========
+--[答案行]--
+\ansline{\ansul{\(- \frac{3}{2}\)}}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{m}\cdot\overrightarrow{n}=(\overrightarrow{a}+\overrightarrow{b})\cdot(\overrightarrow{a}+\lambda\overrightarrow{b})=|\overrightarrow{a}|^2+\lambda|\overrightarrow{b}|^2+(1+\lambda)\overrightarrow{a}\cdot\overrightarrow{b}=18+16\lambda-12(1+\lambda)=6+4\lambda=0\)，故\(\lambda=-\frac{3}{2}\).}
+
+=========== 探究点八·例1　[数量积求距离(展开法)] ===========
+--[例[分析]]--
+\bindp [分析]由\(\overrightarrow{DB} = \overrightarrow{ED} + \overrightarrow{FE} + \overrightarrow{BF}\)，利用数量积运算性质展开即可得到答案
+--[例[详解]]--
+\bindp [详解]\(\because\overrightarrow{BD} = \overrightarrow{ED} + \overrightarrow{FE} + \overrightarrow{BF}\),\(\therefore| \overrightarrow{BD} |^{2} = | \overrightarrow{BF} |^{2} + | \overrightarrow{FE} |^{2} + | \overrightarrow{ED} |^{2} + 2\overrightarrow{BF} \bullet \overrightarrow{FE} + 2\overrightarrow{FE} \bullet \overrightarrow{ED} + 2\overrightarrow{BF} \bullet \overrightarrow{ED} = 1 + 1 + 1 - \sqrt{2}\)故\(| \overrightarrow{BD} | = \sqrt{3 - \sqrt{2}}\)故选\(D\)
+--[例[点睛]]--
+\bindp [点睛]本题是要求空间两点之间的距离，运用空间向量将其表示，然后计算得到结果，较为基础.
+
+=========== 探究点八·变式1　[数量积求距离(展开法)] ===========
+--[答案行]--
+\ansline{\ansul{\(\sqrt{2}\)}}
+--[简析行[解析]]--
+\jiexi{\(|\overrightarrow{BD}|^2=1+1+1+2\overrightarrow{BF}\cdot\overrightarrow{ED}=3+2\cos120^\circ=2\)，故\(|\overrightarrow{BD}|=\sqrt{2}\).}
+
+=========== 探究点九·例1　[数量积求距离(折叠矩形)] ===========
+--[例[分析]]--
+\bindp [分析]过点\(B\)，\(D\)分别向\(AC\)作垂线，垂足分别为\(M\)，\(N\)，由\(\overrightarrow{BD} = \overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND}\)，平方后结合长度和垂直关系可得解.
+--[例[详解]]--
+\bindp [详解]过点\(B\)，\(D\)分别向\(AC\)作垂线，垂足分别为\(M\)，\(N\)，则可得\(AM = \frac{1}{2}\)，\(BM = \frac{\sqrt{3}}{2}\)，\(CN = \frac{1}{2}\)，\(DN = \frac{\sqrt{3}}{2}\)，\(MN = 1\).由于\(\overrightarrow{BD} = \overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND}\)，所以\(|\overrightarrow{BD}|^{2} = {(\overrightarrow{BM} + \overrightarrow{MN} + \overrightarrow{ND})}^{2}\)\allowbreak\(= |\overrightarrow{BM}|^{2} + |\overrightarrow{MN}|^{2} + |\overrightarrow{ND}|^{2} + 2(\overrightarrow{BM} \cdot \overrightarrow{MN} + \overrightarrow{MN} \cdot \overrightarrow{ND} + \overrightarrow{BM} \cdot \overrightarrow{ND})\)\allowbreak\(= ( \frac{\sqrt{3}}{2} )^{2} + 1^{2} + ( \frac{\sqrt{3}}{2} )^{2} + 2 \times (0 + 0 + 0) = \frac{5}{2}\)，所以\(|\overrightarrow{BD}| = \frac{\sqrt{10}}{2}\).故选:\emph{A}.
+--[例[详解]配图行]--
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=42.5mm]{media/media/image5.png}}\par\vspace{-1.0mm}\penalty10000
+--[例[点睛]]--
+\bindp [点睛]本题主要考查了空间向量数量积的应用，属于基础题.
+
+=========== 探究点九·变式1　[数量积求距离(折叠矩形)] ===========
+--[答案行]--
+\ansline{\ansul{\(\frac{\sqrt{13}}{2}\)}}
+--[简析行[解析]]--
+\jiexi{\(BM=DN=\frac{\sqrt{3}}{2}\)，\(MN=1\)；两垂线向量夹角随二面角为\(60^\circ\)，\(\overrightarrow{BM}\cdot\overrightarrow{ND}=\frac{3}{4}\cos60^\circ=\frac{3}{8}\)；\(|\overrightarrow{BD}|^2=\frac{3}{4}+1+\frac{3}{4}+2\times\frac{3}{8}=\frac{13}{4}\)，故\(|\overrightarrow{BD}|=\frac{\sqrt{13}}{2}\).}
+
+=========== 课堂评价1　[] ===========
+--[答案行]--
+\ansline{\ansul{3}}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}||\overrightarrow{b}|\cos60^\circ=2\times3\times0.5=3\).}
+
+=========== 课堂评价2　[] ===========
+--[答案行]--
+\ansline{\ansul{B}}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{b}=\lambda\overrightarrow{a}\Rightarrow4=2\lambda\Rightarrow\lambda=2\)，\(k=2\)，选B.}
+
+=========== 课堂评价3　[] ===========
+--[答案行]--
+\ansline{\ansul{C}}
+--[简析行[解析]]--
+\jiexi{非零向量\(\overrightarrow{a}\cdot\overrightarrow{b}=0\Leftrightarrow\overrightarrow{a}\perp\overrightarrow{b}\)，充要条件，选C.}
+
+=========== 课堂评价4　[] ===========
+--[答案行]--
+\ansline{\ansul{D}}
+--[简析行[解析]]--
+\jiexi{取\(AC\)中点\(G\)，\(\overrightarrow{EF}=\overrightarrow{EG}+\overrightarrow{GF}=\frac{1}{2}\overrightarrow{BC}+\frac{1}{2}\overrightarrow{AD}\)，选D.}
+
+=========== 课堂评价5　[] ===========
+--[答案行(题5内联)]--
+\ansul{\(\sqrt{13}\)}
+--[简析行[解析]]--
+\jiexi{\(\overrightarrow{a}\cdot\overrightarrow{b}=4\times3\times\cos120^\circ=-6\)，\(|\overrightarrow{a}+\overrightarrow{b}|^2=16+9-12=13\)，故\(\sqrt{13}\).}

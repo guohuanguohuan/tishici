@@ -1,0 +1,229 @@
+% ============================================================
+% 靠齐样张-0910 · 练习线增量 2 页形制样张（全品《练习册》RJB 选必一 §1.1）
+% 页1＝滚动习题（一）〔范围 1.1〕（卷头＋四分区组行＋单选6/多选2/填空3/解答3 形制）
+% 页2＝课时训练（花形三档：基础巩固 10／综合提升 4／思维探索 2 ＝ 每课时恒 16 题）
+% 题面：一律取自 ../variantF/body.tex（选必1 §1.1.1 已落件题串）原样搬，禁编题；
+%       仅换「题号＋悬挂＋分区」形制宏，题干/选项/挖空串逐字不动（[答案][解析][详解] 全撤——
+%       全品答案另册物理隔离，练习册正文无答案行）。
+% 零件参数照抄《附则/全品零件库》：TJ-02 悬挂题号／TJ-03 题源标（\tieside）／TJ-04 多选标记（\duoxuan）
+%   ／TJ-05 分值括注（\qpTJeMark）／TJ-06 ★精选标／TJ-07 选项行距／TJ-09 挖空线／TJ-10 题间距
+%   ／JT-06 分区组行／JT-07 滚动卷头（未数值化，形制照练习册 p16 扫描页，本轮快扫实测见简报）
+%   ／HX-01 花形（练习册版 22.6×6.8mm，三档名用之，无底线无右词）／YJ-01 灰块页脚（练习册 31.0×7.8mm）
+% 版面基准沿 qp-layout（附则《全品基准总表》H1/H3 实测档）：左右 17.2mm／top 19.6mm／
+%   栏宽 84.0mm／栏距 7.6mm／行距 18.0pt／栏线 black!26（灰188）／正文 10.09pt 书宋＋Times 数学。
+% 编译：xelatex main.tex（两遍）→ python render150.py → png/page1-2.png
+% 模块 qp-*.tex 自 variantF 拷入，唯一改动＝字体 Path 绝对化（Path=fonts/ → variantF/fonts/ 字面量）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ============================================================
+% 练习线局部宏（公共模块语义不动；本段只加件，不改件）
+% ============================================================
+% 页脚件名＝练习册（qp-headfoot 预留四条参数宏＝他件复用入口）
+\renewcommand{\qpjianming}{练习册}
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+
+% ---------- YJ-01 灰块页脚·练习册档（块 31.0×7.8mm，导学案档 26.2mm 不动，本件另给） ----------
+% 三位数页码（全品练习册页码「011」式）；块几何/出血/数字距块内缘沿 qp-headfoot H3 实测口径
+\newcommand{\qpxsyema}{\ifnum\value{page}<10 00\fi\ifnum\value{page}>9 \ifnum\value{page}<100 0\fi\fi\arabic{page}}
+% 练习册块 31.0mm、外缘贴纸边（出血 17.2mm）→ 版心内占 31.0−17.2＝13.8mm；容器即版心内占宽，
+% L 版尾 \hss 吸右侧出血、R 版净宽 −17.2+31.0 恰＝容器（导学案档 26.2mm 时两值皆 9.0mm，同构）
+\newcommand{\lxshuziL}{\hbox to 13.8mm{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][l]{\rule[-3.145mm]{0pt}{7.8mm}\hspace{2.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema}}\hss}}
+\newcommand{\lxshuziR}{\hbox to 13.8mm{\kern-17.2mm\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][r]{\rule[-3.145mm]{0pt}{7.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema\hspace{2.75mm}}}}}
+\fancyfoot[RO]{\raisebox{-1.24mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}\hspace{3mm}\lxshuziL}}
+\fancyfoot[LE]{\raisebox{-1.24mm}[0pt][0pt]{\lxshuziR\hspace{3mm}\qphuitext\qpceming}}
+
+% ---------- JT-07 滚动卷头（零件库未数值化；形制照练习册 p16，本轮快扫实测值登记简报） ----------
+% p16 实测（14.176/14.057 px/mm）：卷名墨带 高5.69mm×宽44.72mm（含全高括号，汉字面高≈5.4mm＝节标题 18pt 档，
+%   竖笔 5px 与 p06 节标题「1.1 空间向量及其运算」同宽）→ 落 16.88pt \hejie（实施档，同 \jietitle）
+% 细横线 0.14mm≈0.4pt，起于卷名左缘、长 47.26mm（＝卷名宽＋2.7mm），卷名底→线 2.28mm
+% 「范围 1.1」墨高 2.42mm→8pt、中灰 median 102（同 JT-04 副题灰档）、线底→字顶 1.78mm
+% 「（时间：45 分钟　分值：100 分）」墨高 3.06mm→10.5pt 纯黑（JT-05 档）、范围底→行顶 5.05mm
+% 卷头三件皆居版心（p16 版心缘 x180/2658，中心 1419＝三件实测中心 1417~1419）
+\definecolor{gray102}{HTML}{666666}
+\newsavebox{\juanheabox}
+% ▶ 角标：FZShuSong 无 U+25B6（_probe.tex 实证 Missing character）→ TikZ 自绘
+%   p16 实测：竖条 0.78×3.84mm ＋ 间隙 0.78mm ＋ 右指实心三角 底2.60mm×高3.84mm，整标宽 4.02mm
+\newcommand{\juanmark}{{\begin{tikzpicture}[x=1mm,y=1mm,baseline={(0,0)}]
+  \fill (0,0) rectangle (0.78,3.84);
+  \fill (1.56,0) -- (1.56,3.84) -- (4.16,1.92) -- cycle;
+\end{tikzpicture}}}
+\newcommand{\juantou}[2]{%  #1＝卷名　#2＝范围串
+  \par\sbox{\juanheabox}{{\fontsize{16.88pt}{22pt}\selectfont\hejie\juanmark\hspace{1.76mm}#1}}%
+  {\centering
+   \raisebox{0.3mm}{\usebox{\juanheabox}}\par
+   \vspace{0.9mm}\nointerlineskip
+   \rule{\dimexpr\wd\juanheabox+2.7mm\relax}{0.4pt}\par
+   \vspace{0.35mm}
+   {\fontsize{8pt}{10pt}\selectfont\heiti\color{gray102}范围 #2\par}
+   \vspace{2.1mm}
+   {\fontsize{10.5pt}{15pt}\selectfont（时间：45 分钟　分值：100 分）\par}
+   \vspace{4.6mm}}}
+
+% ---------- JT-06 分区组行（「一、单项选择题」黑体加粗＋「：本题共…」宋体常规，同号 10.5pt 同行） ----------
+% 实测 p16：组名竖笔 4–5px vs 说明 1–2px（≈2.5×，落 \heibf 2.3× 档）；组行顶格不悬挂；
+% 组行底→首题顶 2.9mm（JT-06 登记值，实测同）；组行前距按 p16 快扫（上一组行/题末→组行）收紧档
+\newcommand{\zuhang}[2]{\par\glueguard{2}\addvspace{1.5mm}%
+  {\noindent{\fontsize{10.5pt}{18pt}\selectfont\heibf #1}{\fontsize{10.5pt}{18pt}\selectfont：#2}\par}%
+  \addvspace{1.3mm}}
+
+% ---------- HX-01 花形·三档名（练习册版 22.6×6.8mm；p06/p07 实测无底线、无右灰词，与导学案花形行异） ----------
+% \huadia 单枚 10.2mm（qp-blocks 导学案档），四枚两两重叠 o 排总宽＝10.2＋3(10.2−o)＝22.6 ⇒ o＝6.07mm
+\newcommand{\huadianOverlapLx}{-6.07mm}
+\newcommand{\dangbadge}[4]{\par\glueguard{0}\addvspace{2.4mm}\noindent
+  \huadia{#1}\hspace{\huadianOverlapLx}\huadia{#2}\hspace{\huadianOverlapLx}\huadia{#3}\hspace{\huadianOverlapLx}\huadia{#4}%
+  \par\addvspace{2.6mm}}
+
+% ---------- TJ-06 ★精选标（实心五角星 bbox 1.7mm、fill 0.36，紧贴题号左上） ----------
+% p07「★10.」实测：星 bbox 25×24px＝1.69×1.64mm（零件库 23×24px≈1.7mm 同档）；
+% 星顶高出数字顶 0.64mm、星底距数字基线 1.56mm → 星心基线上方 2.28mm；星→数字隙 0.85mm
+% 五角星取「胖档」内切比 r/R＝0.5（正五角星 0.382 档墨密仅 0.26，0.5 档＝0.35≈零件库 fill 0.36）
+\newcommand{\lxstar}{{\raisebox{2.28mm}[0pt][0pt]{\begin{tikzpicture}[x=1mm,y=1mm,baseline={(0,0)}]
+  \fill (0,0.894) -- (0.263,0.362) -- (0.850,0.277) -- (0.425,-0.138) -- (0.526,-0.723)
+        -- (0,-0.447) -- (-0.526,-0.723) -- (-0.425,-0.138) -- (-0.850,0.277) -- (-0.263,0.362) -- cycle;
+\end{tikzpicture}}}\kern0.85mm}
+
+% ---------- TJ-02 练习册悬挂题号（单号内收 5.75mm／双位 7.6mm；题号坐栏左缘，题干与续行同左缘） ----------
+% p06 实测：栏左缘 x180、题号 x182、题干/选项左缘 x261~262＝5.71~5.78mm（单号档）；
+% p07 实测：题号 x319（栏左 316）、题干 x424＝7.62mm（双位档）；带★题（p07 题10）题干 x466＝10.6mm
+%   ⇒ 星＋号占位后悬挂再加 2.9mm
+% 题号字重＝附则《全品样张细节清单》§三 v4.4：题号数字一律 \textbf 加重（练习册 1.7× 档），半角「N.」
+\newlength{\lxhang}
+\newcommand{\tihao}[2][]{%  #1＝可选 \lxstar　#2＝题号整数
+  \par\glueguard{1}%
+  \ifnum#2>9\setlength{\lxhang}{7.6mm}\else\setlength{\lxhang}{5.75mm}\fi
+  \ifx\relax#1\relax\else\addtolength{\lxhang}{2.9mm}\fi
+  \noindent\hangindent=\lxhang\hangafter=0
+  \llap{\hbox to\lxhang{#1\textbf{#2.}\hss}}}
+% 选项段（TJ-07 行距档＝例题区 19.2pt；左缘随题号悬挂；短选项网格合并沿附则§六漏洞③）
+\newcommand{\lxopt}[1]{\par\noindent\hangindent=\lxhang\hangafter=0
+  {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont #1\par}}
+% 样张略题行（题池受限，未排题以「余题略」标注；顶格、正文同号）
+\newcommand{\tielue}[1]{\par\glueguard{1}{\noindent\fontsize{10.5pt}{18pt}\selectfont（#1）\par}}
+% 解答题书写位留白（全品练习册 每课时 16 题占 2 页，留白承担；本样张按档给位）
+\newcommand{\xiexwei}[1]{\par\nobreak\vspace{#1}}
+
+\begin{document}
+
+% ============================================================
+% 第 1 页＝滚动习题（一）〔范围 1.1〕
+% 卷头通栏（ multicols 外），分区组行与题在双栏内
+% ============================================================
+\juantou{滚动习题（一）}{1.1}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\zuhang{一、单项选择题}{本大题共 6 小题，每小题 5 分，共 30 分.}
+
+\tihao{1}\tieside{简单(知识点一)}下列说法正确的是\nobreak(\kongwei)
+\lxopt{A．若\(| \overrightarrow{a} | = | \overrightarrow{b} |\)，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)或\(\overrightarrow{a} = - \overrightarrow{b}\)；}
+\lxopt{B．若\(\overrightarrow{a},\overrightarrow{b}\)为相反向量，则\nobreak\(\overrightarrow{a} + \overrightarrow{b} = \overrightarrow{0}\)；}
+\lxopt{C．零向量是没有方向的向量；}
+\lxopt{D．若\(\overrightarrow{a},\overrightarrow{b}\)是两个单位向量，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)}
+
+\tihao{2}\tieside{简单(知识点一)}下列说法错误的是\nobreak(\kongwei)
+\lxopt{A．零向量与任意向量都平行；}
+\lxopt{B．若\(|\overrightarrow{a}|=0\)，则\nobreak\(\overrightarrow{a}=\overrightarrow{0}\)；}
+\lxopt{C．若\(\overrightarrow{a}=\overrightarrow{b}\)，则\nobreak\(|\overrightarrow{a}|=|\overrightarrow{b}|\)；}
+\lxopt{D．若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则\nobreak\(|\overrightarrow{a}|=|\overrightarrow{b}|\)}
+
+\tihao{3}\tieside{简单(知识点三)}有下列说法:①若\(\overrightarrow{p} = x\overrightarrow{a} + y\overrightarrow{b}\)，则\nobreak\(\overrightarrow{p}\)与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面；②若\(\overrightarrow{p}\)与\(\overrightarrow{a}\)，\(\overrightarrow{b}\)共面，则\nobreak\(\overrightarrow{p}\)=\emph{x}\(\overrightarrow{a}\)+\emph{y}\(\overrightarrow{b}\)；③若\(\overrightarrow{MP}\)=\emph{x}\(\overrightarrow{MA}\)+\emph{y}\(\overrightarrow{MB}\)，则\emph{P}，\emph{M}，\emph{A}，\emph{B}共面；④若\emph{P}，\emph{M}，\emph{A}，\emph{B}共面，则\nobreak\(\overrightarrow{MP}\)=\emph{x}\(\overrightarrow{MA}\)+\emph{y}\(\overrightarrow{MB}\).其中正确的是\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．①②；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．①③④；}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．①③；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．②④}}
+
+
+\tihao{4}\tieside{简单(知识点二)}在空间四边形\(ABCD\)中，\(E\)，\(F\)分别为\(AB\)，\(CD\)的中点，则\nobreak\(\frac{1}{2}(\overrightarrow{AD}+\overrightarrow{BC})=\)(\kongwei)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(2\overrightarrow{EF}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(-\overrightarrow{EF}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\overrightarrow{FE}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(\overrightarrow{EF}\)}}
+
+\tihao{5}\tieside{简单(知识点二)}设\(\overrightarrow{e_1}\)，\(\overrightarrow{e_2}\)不共线，\(\overrightarrow{a}=2\overrightarrow{e_1}+\overrightarrow{e_2}\)，\(\overrightarrow{b}=4\overrightarrow{e_1}+k\overrightarrow{e_2}\)，若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，则\nobreak\(k=\)(\kongwei)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\frac{1}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(2\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(-\frac{1}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(3\)}}
+
+\tihao{6}\tieside{中档(知识点三)}已知矩形\(ABCD\)中，\(AB = 1\)，\(BC = \sqrt{3}\)，将矩形\(ABCD\)沿对角线\(AC\)折起，使平面\(ABC\)与平面\(ACD\)垂直，则\nobreak\(|\overrightarrow{BD}| =\)(\kongwei)．
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\frac{\sqrt{10}}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(\frac{\sqrt{6}}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\frac{\sqrt{5}}{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．2}}
+
+\zuhang{二、多项选择题}{本大题共 2 小题，每小题 6 分，共 12 分.}
+
+% 双制式（附则《全品样张细节清单》§九）：滚动习题／测评卷只在分区行声明多选，逐题不标 \duoxuan
+\tihao{7}\tieside{简单(知识点三)}设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)为空间中的任意两个非零向量，下列各式中正确的有(\kongwei)
+\lxopt{A．\({\overrightarrow{a}}^{2} = | \overrightarrow{a} |^{2}\)；}
+\lxopt{B．\(\frac{\overrightarrow{a} \cdot \overrightarrow{b}}{\overrightarrow{a} \cdot \overrightarrow{a}} = \frac{\overrightarrow{b}}{\overrightarrow{a}}\)；}
+\lxopt{C．\(( \overrightarrow{a} \cdot \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} \cdot {\overrightarrow{b}}^{2}\)；}
+\lxopt{D．\(( \overrightarrow{a} - \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + {\overrightarrow{b}}^{2}\)}
+\tielue{第 8 题略}
+
+\zuhang{三、填空题}{本大题共 3 小题，每小题 5 分，共 15 分.}
+
+\tihao{9}\tieside{简单(知识点三)}已知\(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，则\nobreak\(\overrightarrow{a}\cdot\overrightarrow{b}=\)\kongbai{}．
+
+\tihao{10}\tieside{简单(知识点三)}已知\(|\overrightarrow{a}|=4\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=120^\circ\)，则\nobreak\(|\overrightarrow{a}+\overrightarrow{b}|=\)\kongbai{}．
+
+\tihao{11}\tieside{中档(知识点三)}已知向量\(\overrightarrow{a},\overrightarrow{b}\)，且\(| \overrightarrow{a} | = 2\)，\(| \overrightarrow{b} | = 1\)，\(\langle \overrightarrow{a},\overrightarrow{b} \rangle = 60^{\circ}\)，则使向量\(\overrightarrow{a} + \lambda\overrightarrow{b}\)与\(\lambda\overrightarrow{a} - 2\overrightarrow{b}\)的夹角为钝角的实数\(\lambda\)的取值范围是\kongbai{}．
+
+\zuhang{四、解答题}{本题共 3 小题，共 43 分．解答应写出文字说明、证明过程或演算步骤.}
+\tielue{第 12～14 题略——样张只排至填空起始，解答档形制见第 2 页基础巩固末位}
+
+\end{multicols}
+
+% ============================================================
+% 第 2 页＝课时训练（三档 10＋4＋2＝16 题形制；样张题池受限，未排题标「余题略」）
+% 页首通栏＝课时标题（ZS-06 14pt 黑体加粗 2.7×，实施 \keshi 13pt \hekeshi）——照全品 p06 顶形制
+% ============================================================
+\clearpage
+\keshi{第1课时\quad 空间向量的概念及线性运算}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\tieside{简单(知识点三)}设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)均为非零空间向量，则“\(\overrightarrow{a}\cdot\overrightarrow{b}=0\)”是“\(\overrightarrow{a}\perp\overrightarrow{b}\)”的(\kongwei)
+\lxopt{A．充分不必要条件；}
+\lxopt{B．必要不充分条件；}
+\lxopt{C．充要条件；}
+\lxopt{D．既不充分也不必要条件}
+
+\tihao{2}\tieside{简单(知识点二)}在平行六面体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，\(\overrightarrow{AB}=\overrightarrow{a}\)，\(\overrightarrow{AD}=\overrightarrow{b}\)，\(\overrightarrow{AA_1}=\overrightarrow{c}\)，则\nobreak\(\overrightarrow{D_1B}=\)\kongbai{}．(用\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，\(\overrightarrow{c}\)表示)
+
+\tihao{3}\tieside{简单(知识点二)}在平行六面体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，点\(E\)在\(A_1C_1\)上，且\(\overrightarrow{A_1E}=\frac{1}{2}\overrightarrow{A_1C_1}\)，若\(\overrightarrow{AE}=x\overrightarrow{AA_1}+y(\overrightarrow{AB}+\overrightarrow{AD})\)，则\nobreak\(x=\)\kongbai{}，\(y=\)\kongbai{}．
+
+\tihao{4}\tieside{简单(知识点三)}已知\(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，则\nobreak\((\overrightarrow{a}+2\overrightarrow{b})\cdot(\overrightarrow{a}-\overrightarrow{b})=\)\kongbai{}．
+
+\tihao{5}\tieside{中档(知识点三)}在长方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，\(AB=2\)，\(AD=2\)，\(AA_1=1\)，则向量\(\overrightarrow{AB_1}\)与\(\overrightarrow{AC}\)夹角的余弦值为\kongbai{}．
+
+\tihao{6}\tieside{简单(知识点二)}在直三棱柱\(ABC\text{-}\penalty100 A_{1}B_{1}C_{1}\)中，若\(\overrightarrow{CA} = \overrightarrow{a},\overrightarrow{CB} = \overrightarrow{b},\overrightarrow{CC_{1}} = \overrightarrow{c},\)，则\nobreak\(\overrightarrow{A_{1}B}\)=\kongbai{}.(用\(\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}\)表示)
+
+\tielue{第 7～9 题略}
+
+% ★精选标（TJ-06）：基础巩固档末位解答题；★与难度正交（凡例＝精选重点题，全品基础档亦多★）
+% 分值括注（TJ-05）：题号后、宋体常规同号，练习册档末梯队 13/15
+\tihao[\lxstar]{10}\qpTJeMark{13}已知\(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\)，判断\(P\)，\(M\)，\(A\)，\(B\)四点是否共面，并说明理由．
+\xiexwei{16mm}
+
+\dangbadge{综}{合}{提}{升}
+
+\tihao{11}\tieside{简单(知识点三)}在大小为\(60^\circ\)的二面角\(A\text{-}\penalty100 EF\text{-}\penalty100 D\)中，四边形\(ABFE\)，\(CDEF\)都是边长为\(1\)的正方形，则\nobreak\(B\)，\(D\)两点间的距离为\kongbai{}．
+
+% 多选标记（TJ-04）：课时训练档逐题标，题号后半角窄括号、常规宋体同号不加粗（双制式另半见第 1 页分区行声明）
+\tihao{12}\duoxuan 设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)为空间中的任意两个非零向量，下列各式中正确的有(\kongwei)
+\lxopt{A．\({\overrightarrow{a}}^{2} = | \overrightarrow{a} |^{2}\)；}
+\lxopt{B．\(\frac{\overrightarrow{a} \cdot \overrightarrow{b}}{\overrightarrow{a} \cdot \overrightarrow{a}} = \frac{\overrightarrow{b}}{\overrightarrow{a}}\)；}
+\lxopt{C．\(( \overrightarrow{a} \cdot \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} \cdot {\overrightarrow{b}}^{2}\)；}
+\lxopt{D．\(( \overrightarrow{a} - \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + {\overrightarrow{b}}^{2}\)}
+
+\tielue{第 13～14 题略}
+
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\tieside{中档(知识点三)}已知矩形\(ABCD\)中，\(AB=1\)，\(BC=\sqrt{3}\)，将矩形\(ABCD\)沿对角线\(AC\)折起，使二面角\(B\text{-}\penalty100 AC\text{-}\penalty100 D\)的大小为\(60^\circ\)，则\nobreak\(|\overrightarrow{BD}|=\)\kongbai{}．
+
+\tielue{第 16 题略}
+
+\end{multicols}
+\end{document}

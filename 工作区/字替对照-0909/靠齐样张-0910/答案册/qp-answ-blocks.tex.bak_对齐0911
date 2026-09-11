@@ -1,0 +1,54 @@
+% ============================================================
+% qp-answ-blocks.tex —— 正文块宏模块（答案册式样草案）
+% 依据：附则《全品零件库》ZS/HX/TB/TJ/XB 各组＋《全品基准总表》＋variantF/qp-blocks.tex。
+% 答案册专属形态＝**全品无先例·外推**（全品正文层无【答案】【分析】【详解】【点睛】字样，
+%   〔体系-v44改版取证〕①标签与符号 §一实证）；挂靠件＝零件库 §五「候选匹配零件建议表」：
+%   答案行【答案】→ ①G3 编注件（正文级同号＋标签档）②D3 题源标式（半角[]内联）；
+%   本 demo 采「题源标式」＝半角 []＋正文同号＋常规字重＋纯黑（交接-20260909c §二.3 六拍板①）。
+% ============================================================
+\usepackage{needspace}
+\usepackage{tikz}
+
+% multicol 安全的防孤悬 guard（variantF 同款）
+\newcommand{\glueguard}[1]{\vskip 0pt plus #1\baselineskip\penalty-100\vskip 0pt plus -#1\baselineskip}
+
+% ---------- 章首（通栏；全品 ZS-01/Zs-02/ZS-03） ----------
+% 方块组＝浅 6.9mm 坐基线＋深 6.9mm 叠右上（对角角触）＋右下 2.3mm 小深块下探 2.8mm（union 13.8×16.6mm）；
+% 章名 20.67pt \heizhang 距方块 3.1mm；下横线 0.2pt 通栏（全品 ZS-03）。
+\newcommand{\zhangtitle}[1]{%
+  \par\addvspace{2pt}\noindent
+  {\color{pnumbg}\rule{6.9mm}{6.9mm}}%
+  \raisebox{6.9mm}[0pt][0pt]{\color{midgray}\rule{6.9mm}{6.9mm}}%
+  \hspace{-2.3mm}\raisebox{-2.8mm}[0pt][0pt]{\color{midgray}\rule{2.3mm}{2.3mm}}%
+  \hspace{3.1mm}%
+  {\fontsize{20.67pt}{30pt}\selectfont\heizhang #1}\par
+  \vspace{-0.3mm}\noindent\rule{\textwidth}{0.2pt}\par}
+% 节标题 16.88pt \hejie 居中（全品 ZS-04：节标题不加粗＝唯一不粗层级）；横线→节 6.9mm
+\newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{4.4mm}%
+  {\centering\fontsize{16.88pt}{22pt}\selectfont\hejie #1\par}\addvspace{3.4mm}}
+
+% ---------- 分区组行（全品 JT-06 同构：组名黑体加粗＋宋体常规说明，同号 10.09pt 同行） ----------
+\newcommand{\qufen}[2]{\par\glueguard{1}\addvspace{4pt}\noindent
+  {\heibf #1}{\fontsize{10.09pt}{16pt}\selectfont：#2}\par\nopagebreak\addvspace{2pt}}
+
+% ---------- 答案行/解析行 ----------
+% 悬挂深度＝题号宽档：全品练习册单号 5.7–5.8mm／双位 7.5–7.7mm（〔版式〕§2.3）；
+% 本 demo 题号 1–4 单号档，取 5.8mm。题号＝半角「N.」11.4pt（全品笔画 2.0× 档）。
+\newlength{\anshang}
+\setlength{\anshang}{5.8mm}
+% 标签件：半角 []＋正文同号＋常规字重＋纯黑（六拍板①；全品正文区无灰色注记）
+\newcommand{\anlabel}[1]{#1}
+% 题号——答案解析条目（全品对齐0911·全顶格：悬挂缩进废除——题号走 0pt 零宽盒顶格起、[答案] 行内跟随；
+% 续行与后续段一律顶格＝市调 6 本通行式样〔_调研-答案册版式0911/出处记录.md〕；与 导学件答案册-v1 同修）
+\newcommand{\ansitem}[2]{\par\glueguard{1}\addvspace{4pt}%
+  \noindent
+  \makebox[0pt][l]{{\fontsize{11.4pt}{13pt}\selectfont\heihao{\numboldjian #1.}}}%
+  \hspace*{\anshang}{\anlabel [答案]}\hspace{0.5em}#2\par}
+% [分析]/[详解]/[点睛] 行（全品对齐0911·全顶格：标签行与全部续段行首齐栏左缘，不再悬挂；【点睛】选配）
+\newcommand{\ansline}[2]{\par\noindent
+  {\anlabel [#1]}\hspace{0.5em}#2\par}
+% 图件（全品 TW-02 题下居中图档：27.7–36mm；图内字 7.3pt＝正文 72%）
+\newcommand{\figfont}{\fontsize{7.3pt}{9pt}\selectfont}
+\newcommand{\ansfig}[1]{\par\nopagebreak\vspace{1.4mm}%
+  \noindent\hspace*{\anshang}%
+  \makebox[\dimexpr\linewidth-\anshang\relax][c]{#1}\par\vspace{1.1mm}}

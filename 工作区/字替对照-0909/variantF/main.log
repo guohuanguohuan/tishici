@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  11 SEP 2026 08:33
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  11 SEP 2026 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1263,7 +1263,6 @@ Package fontspec Info:
 ]
 File: media/media/sub3_B_4.png Graphic file (type bmp)
 <media/media/sub3_B_4.png>
- [2]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1290,6 +1289,7 @@ Package fontspec Info:
 LaTeX Font Warning: Font shape `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n' undefined
 (Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 106.
 
+[2]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1333,18 +1333,17 @@ Package fontspec Info:
 (fontspec)             <->"[fonts/FY-w450BEVL100.ttf]/OT:script=hani;language=dflt;"
 
 
+
 LaTeX Font Warning: Font shape `TU/FY-w450BEVL100.ttf(0)/b/n' undefined
-(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 126.
+(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 116.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--126
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 \TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/m/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 一\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 下 列 说 法 错 误 的
  []
 
-File: media/media/image1.png Graphic file (type bmp)
-<media/media/image1.png>
 
-Underfull \hbox (badness 7486) in paragraph at lines 154--154
+Underfull \hbox (badness 7486) in paragraph at lines 134--134
 [][][][][][][][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 中，| $[] [] []$，| $[] [] []$，| $[] [] []$，|
  []
 
@@ -1353,26 +1352,24 @@ File: media/media/image2.png Graphic file (type bmp)
 [3]
 File: media/media/image3.png Graphic file (type bmp)
 <media/media/image3.png>
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 261--261
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 \TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中 档 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 长 方 体 $[][][][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 \TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/b/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 三\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 $[][][] [] [][][] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--289
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 [][] [] [] [] [] [][] [] [] [] [] [][][] [][][] [][] [] [][][][][] [][][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，|  则
  []
 
 File: media/media/image4.png Graphic file (type bmp)
 <media/media/image4.png>
-[5]
-File: media/media/image5.png Graphic file (type bmp)
-<media/media/image5.png>
+[4]
 
 Package fontspec Info: 
 (fontspec)             Font family 'NSC-w500.ttf(0)' created for font
@@ -1387,7 +1384,7 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
 
- [6]) [7] (./main.aux)
+) [5] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
@@ -1398,12 +1395,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25607 strings out of 469768
- 603448 string characters out of 5466040
- 1189427 words of memory out of 5000000
- 54094 multiletter control sequences out of 15000+600000
+ 25600 strings out of 469768
+ 603823 string characters out of 5466040
+ 1154240 words of memory out of 5000000
+ 54089 multiletter control sequences out of 15000+600000
  633988 words of font info for 202 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 97i,16n,110p,1193b,988s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 97i,16n,110p,1193b,970s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (7 pages).
+Output written on main.pdf (5 pages).

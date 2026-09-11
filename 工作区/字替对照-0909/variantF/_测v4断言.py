@@ -4,8 +4,15 @@ v4.4 执行轮翻修（规格书§断言翻修）：既有断言漂移适配（�
 ⑰ zhuzhu 新体＋题侧 10.5 黑宋、⑱ side×5＋新 raisebox＋横缝、⑲ tiaomu \\textbf/\\heiti 变式/tjdnr #3/
 题号 \\textbf regex/标签[]、N1 半角(√)(×)、N3 '[' 反向、N4 表顶 2.77±0.5＋头净空 2.8–3.5·不穿字≥0.2＋
 表内行距 4.90±0.4＋挖空行底登记、N6 居中×1 下距 0.4–2.6、N7 半角子项号、N10 升格中位 3.95±0.6、页数实测）
+
+全品对齐0911（v8 轮）同步：⑪ kongda×20→0 反向＋kongbai×34 正向；⑪-2 p1/p2 印答值门→作废迁 ㉑d；
+⑪-3 印答盒（线下恰一值）×20→空档盒（线下无值）×34＋印答 0 反向；⑫ zhenti 6→0＋zhentib 6 新锁；
+④ (√)(×)×6 右挂→（　）×6 右挂（× 墨盒伪片段合成停用）；⑥ [解析]6→0＋（　）6 正锁；⑰ 解析span 6→0；
+N1 槽列位换形（全角（　））；N10 解析→题号配对 1–2→0 反向；⑦-4 配对判据改「（　）尾行直接相邻」；
+② 全角括号 0→恰12（（　）×6 豁免）；页数门 ①＝5 复测不变；㉑a 页数4 不变；㉑b [答案]23→26、[解析]14→17；
+㉑c 23 题门不变；新立 ㉑d 课前预习节值在场。旧值全录 .bak_全品对齐0911。
 ＋新增断言 ①题号笔画 2.0–2.7×＋变式反向 ②括号 0.3–0.7em＋全角零残留 ③定界符 ≤9.5pt（探七 ×2 豁免）
-④判断括号右挂 ×6＋独占行 0 ⑦七缝（探究点→例1/知识点/表底/解析→◆/条目）⑧多选×1 ⑨悬挂＋源空格 0
+④判断括号右挂 ×5＋断行独占行 ×1（v10-A 口径改，合计 6 槽） ⑦七缝（探究点→例1/知识点/表底/解析→◆/条目）⑧多选×1 ⑨悬挂＋源空格 0
 ⑩答案行无下划线 ⑪题侧隙 2.7/2.2×14 ⑫探究点 ≤82mm×9＋名字清单 ⑭ kongwei 6.8±0.6×8 ⑮ side×5 归属。
 F 片A 0909 适配（图文形态轮）：⑱ 几何档重写——side×5 文字栏宽逐图标定（mm）＋图盒宽按墨宽折算
 （image1 剪垫后冻结 27.2mm）＋raisebox 高逐图反解；⑱-2 改墨级三窗（顶差 ∈[−1,+1]／墨缝 ∈[5.2,8.2]／
@@ -76,7 +83,15 @@ qp-layout \relpenalty 10000→500、\emergencystretch 2em→1em（#41 断点恢�
   ⑱-2／⑱-3／N6／⑮ 改位图口径（get_image_info 矩形＋PIL 原生墨映射＋600dpi 墨级前距/下距/零侵入＋落位逐图钉）；
   旧矢量线框内核保留停用（图源回退后不适用；残留清理0911 已折叠删除＝死码，见「权威线框口径内核」节注）；
   ③ 灰档回位图时代 6 档（0x40 cubegray 退役）；
-  置宽反解三值表见 回退轮0910/简报.md（g6 84.0／g1 28.8／g2 32.7／g3 54.1／g4 47.5／g5 42.5mm）。"""
+  置宽反解三值表见 回退轮0910/简报.md（g6 84.0／g1 28.8／g2 32.7／g3 54.1／g4 47.5／g5 42.5mm）。
+答案制0911 适配（答案制A·去答案落 导学件答案册-v1；门值旧→新总账，明细见 ㉑ 后台账）：
+  门① 页数 7→5；门⑥ 正文判分值 0 在场——[答案]14/[解析]20/[分析]9/[详解]9/[点睛]2→0/6(仅判断题简析)/0/0/0，
+  另核「故答案为/故选」句 0；◆9/例1 9/变式9/★0 不变；⑰ 解析span 20→6；门③ 超高定界符 恰4→恰0
+  （探七 array／探八 \left(\right) 放大对随 [详解] 出册）；门⑩ 答案行 14→0（改反向门：正文无答案行）；
+  门⑫ \jiexi 14→0（\zhenti ×6 与 \kongda 印答 20、判断括号 (√)(×)×6 保留照旧）；位图台账 6→4——
+  ⑱ 并排×2→×1（g2）·下置×4→×3，⑮ 归属 五图→三图（探三/六/八），⑱-2/⑱-3/N6 四图口径
+  （g1-prism 探二并排图／g5-fold 探九下置图随 [详解] 出册，册内改题下居中 \ansfig）；
+  新立 ㉑a/b/c 册侧门（答案册编译三0＋页数4＋值排印七项计数＋位图2＋23 题判分值逐一 pdf 在场）。"""
 import os
 import re
 from collections import Counter
@@ -180,7 +195,7 @@ n_over = len(re.findall(r'Overfull', logtxt))
 n_miss = len(re.findall(r'Missing character', logtxt))
 m = re.search(r'Output written on main\.pdf \((\d+) pages', logtxt)
 n_pages = int(m.group(1)) if m else -1
-check('①编译零 error/overfull/missingchar＋页数7（H1 片 E1/E2/E7 重排 7→6；H2 片 E3 数学式放大后 6→7，登记）', n_err == 0 and n_over == 0 and n_miss == 0 and n_pages == 7,
+check('①编译零 error/overfull/missingchar＋页数5（答案制0911 去答案落册 7→5；沿革：E 轮 7→6／H2 片 6→7）', n_err == 0 and n_over == 0 and n_miss == 0 and n_pages == 5,
       f'errors={n_err} overfull={n_over} missingchar={n_miss} 页数={n_pages}')
 
 doc = pymupdf.open(os.path.join(BASE, 'main.pdf'))
@@ -229,23 +244,27 @@ def in_fig(pno, x0, y0, x1, y1, pad=1.0):
 # FIG_AT＝实测落位（页,栏）逐图钉——并排恢复0910 实测六图落位与回退轮基线一致（g1/g2 仍 p3c2），
 #   g2 由栏末图改并排行内图（栏末免检口径随其下置形退场）。
 # 阅读序＝（页,栏,y 顶）排序与图行序严格一致——并排两图 y 顶＝行内图盒顶，序仍成立（自片G 起成立）。
-FIG_W = [('g6-triple', '84.0mm'), ('g1-prism', '28.8mm'), ('g2-cubeE', '32.0mm'),
-         ('g3-cube6', '54.1mm'), ('g4-dihedral', '47.5mm'), ('g5-fold', '42.5mm')]
-FIG_MODE = {'g6-triple': 'under', 'g1-prism': 'side', 'g2-cubeE': 'side',
-            'g3-cube6': 'under', 'g4-dihedral': 'under', 'g5-fold': 'under'}
+# 答案制0911：六图→四图——g1-prism（探二[详解]并排行内图）／g5-fold（探九[详解]下置图）随 [详解] 出册
+# （导学件答案册-v1 内改题下居中 \ansfig）；旧六条台账见 .bak_去答0911。阅读序四图＝g6/g2/g3/g4。
+FIG_W = [('g6-triple', '84.0mm'), ('g2-cubeE', '32.0mm'),
+         ('g3-cube6', '54.1mm'), ('g4-dihedral', '47.5mm')]
+FIG_MODE = {'g6-triple': 'under', 'g2-cubeE': 'side',
+            'g3-cube6': 'under', 'g4-dihedral': 'under'}
 # 并排行逐图钉（postproc side_row 发射值：文字栏宽／盒间胶／图盒宽／raisebox 声明高 H）——
 # 胶由「栏宽−右缘目标＋盒右留白−文栏−盒宽」墨缘反解（非硬凑常数）；右缘目标 g1 1.90（档内）／
 # g2 5.00（缝窗优先——栏预算恒等式缝＋右缘＝12.87 双窗不可兼得，例外登记见 ⑱-2 reg 与 SIDE_DEF 注）
-SIDE_PIN = {'g1-prism': dict(text='48.000', glue='5.342', box='28.800', H='3.332', png='image1'),
-            'g2-cubeE': dict(text='46.368', glue='0.925', box='32.000', H='3.545', png='image2')}
+SIDE_PIN = {'g2-cubeE': dict(text='46.368', glue='0.925', box='32.000', H='3.545', png='image2')}
+# ↑答案制0911：g1-prism 钉（文48.000/胶5.342/盒28.800/H3.332/image1）随并排图文行出册（旧值存 .bak_去答0911）
 BOX_MM = {f: float(w[:-2]) for f, w in FIG_W}
 FIG_PX = {'g6-triple': (1408, 374), 'g1-prism': (691, 1159), 'g2-cubeE': (764, 764),
           'g3-cube6': (521, 496), 'g4-dihedral': (788, 424), 'g5-fold': (1798, 1350)}
 FIG_PNG = {'g6-triple': 'media/media/sub3_B_4.png', 'g1-prism': 'media/media/image1.png',
            'g2-cubeE': 'media/media/image2.png', 'g3-cube6': 'media/media/image3.png',
            'g4-dihedral': 'media/media/image4.png', 'g5-fold': 'media/media/image5.png'}
-FIG_AT = {'g6-triple': (2, 2), 'g1-prism': (3, 2), 'g2-cubeE': (3, 2),
-          'g3-cube6': (5, 1), 'g4-dihedral': (6, 1), 'g5-fold': (6, 2)}
+# 答案制0911 重钉（5 页新分页）：初值按分页分析回填，若 ⑱-2/N6 ✗落位，读数即实测值，以实测为准回填。
+# 旧六图钉（并排恢复0910 7页档）：g6(2,2)/g1(3,2)/g2(3,2)/g3(5,1)/g4(6,1)/g5(6,2)。
+FIG_AT = {'g6-triple': (2, 2), 'g2-cubeE': (3, 2),
+          'g3-cube6': (4, 1), 'g4-dihedral': (4, 2)}
 FIG_ROWS = []
 for _pno in range(1, n_pages + 1):
     for _info in doc[_pno - 1].get_image_info(xrefs=True):
@@ -416,11 +435,14 @@ n_jx = full.count('[解析]')
 n_fx = full.count('[分析]')
 n_xj2 = full.count('[详解]')
 n_dj2 = full.count('[点睛]')
-check('⑥排印层 ◆探究点9/例1内联9/变式1×9/[答案]14/★0/[解析]20（[分析]9/[详解]9/[点睛]2）',
-      n_tj == 9 and n_li1 == 9 and n_bs == 9 and n_ans == 14 and n_star == 0 and n_jx == 20
-      and n_fx == 9 and n_xj2 == 9 and n_dj2 == 2,
+n_gdaan = full.count('故答案为')
+n_gxuan = full.count('故选')
+check('⑥排印层 正文判分值 0 在场（全品对齐0911 全域）◆9/例1 9/变式9 题面不变＋[答案]0/故答案为0/故选0/分析0/详解0/点睛0/解析0（判断简析亦出册）＋（　）×6 正锁',
+      n_tj == 9 and n_li1 == 9 and n_bs == 9 and n_ans == 0 and n_star == 0 and n_jx == 0
+      and n_fx == 0 and n_xj2 == 0 and n_dj2 == 0 and n_gdaan == 0 and n_gxuan == 0
+      and full.count('（）') == 6,
       f'◆{n_tj} 例1{n_li1} 变式{n_bs} 答案{n_ans} ★{n_star} 解析{n_jx} 分析{n_fx} 详解{n_xj2} 点睛{n_dj2}'
-      f'（判断6＋变式9＋检测5；v4.4 半角[]标签制）')
+      f' 故答案{n_gdaan} 故选{n_gxuan} 空括号{full.count("（）")}/6（值在场见 ㉑b/㉑c/㉑d）')
 
 # ---- ⑦ 花形几何全集 ----
 hua_rules = []
@@ -574,7 +596,8 @@ for pno in range(1, n_pages + 1):
     page = doc[pno - 1]
     for d in page.get_drawings():
         r = d['rect']
-        if not (r.width <= 1.5 and r.height >= 0.5 * TEXTH):
+        # 答案制0911：multicol 末页栏线高＝末栏实高（p5 123.4mm<0.5×TEXTH＝128.7mm）——末页门槛降 0.22×TEXTH
+        if not (r.width <= 1.5 and r.height >= (0.22 if pno == n_pages else 0.5) * TEXTH):
             continue
         if abs(r.x0 - MID) > 2 and abs(r.x1 - MID) > 2:
             continue
@@ -639,8 +662,9 @@ check('⑮【诊断分析】头单行×3（10.5pt 说明，紧缩文案 无引�
       and all('判断正误' in t and t.rstrip().endswith(')') and abs(sz - 10.5) <= 0.6 for _, t, sz in zhen_lines),
       '｜'.join(f'p{p} {t[:14]}…{sz:.1f}pt' for p, t, sz in zhen_lines)
       + ('' if not orphan_rpar else f'；悬孤)行{orphan_rpar}'))
-check('⑰解析 10.5pt 档（span 10–11 ×20）＋\\zhuzhu [注意]前缀新体无小号层', sz_ok and n_jx_span == 20 and no_small,
-      f'解析span {n_jx_span}/20 越档{0 if sz_ok else "有"}；\\zhuzhu 新体 {"是" if no_small else "否"}')
+check('⑰解析 10.5pt 档（全品对齐0911：判断简析 6→0 出册；变式/检测简析 14→0 答案制0911）＋\\zhuzhu [注意]前缀新体无小号层',
+      sz_ok and n_jx_span == 0 and no_small,
+      f'解析span {n_jx_span}/0 越档{0 if sz_ok else "有"}；\\zhuzhu 新体 {"是" if no_small else "否"}')
 reg('⑰ 题侧 [简单/中档(知识点N)] 10.5pt 宋体（TJ-03）计数', f'{tside_cnt} 处（源文全数，见 ⑪ 口径登记）；'
     f'族 FZSSJW {"全对" if tside_font_ok else "有异"}（v4.4 拍板2 与正文完全同）')
 
@@ -670,7 +694,7 @@ for m in SIDE_LINE.finditer(body):
 side_bad = []
 for frag, tw, glue, bw, h1, h2, h3, gw in side_hits:
     p = SIDE_PIN.get(frag)
-    if (p is None or frag not in ('g1-prism', 'g2-cubeE')
+    if (p is None or frag != 'g2-cubeE'   # 答案制0911：并排支仅剩 g2（g1 随探二[详解]出册）
             or (tw, glue, bw, gw, h1) != (p['text'], p['glue'], p['box'], p['box'], p['H'])
             or not (h1 == h2 == h3)):
         side_bad.append(frag or '未名')
@@ -680,13 +704,13 @@ n_rb = len(re.findall(r'\\raisebox\{', body))
 n_rs = len(re.findall(r'\\resizebox\{', body))
 n_fin = body.count(r'\input{figs/')
 n_gfx = len(re.findall(r'\\includegraphics\[width=', body))
-check('⑱ 六图 body.tex 形制（并排恢复0910：并排 ×2 逐图钉文栏/胶/盒/H＋下置 ×4 同式·figs/resizebox 归零·位图 6）',
-      und_row == FIG_W_UND and len(side_hits) == 2 and not side_bad
-      and n_gfx == 6 and n_fin == 0 and n_rs == 0 and n_mini == 4 and n_side == 2 and n_rb == 2,
-      f'下置行 {len(und_row)}/4＝' + ' '.join(f + '=' + w for f, w in und_row) +
+check('⑱ 四图 body.tex 形制（答案制0911：并排 ×1 (g2) 逐图钉文栏/胶/盒/H＋下置 ×3 同式·figs/resizebox 归零·位图 4）',
+      und_row == FIG_W_UND and len(side_hits) == 1 and not side_bad
+      and n_gfx == 4 and n_fin == 0 and n_rs == 0 and n_mini == 2 and n_side == 1 and n_rb == 1,
+      f'下置行 {len(und_row)}/3＝' + ' '.join(f + '=' + w for f, w in und_row) +
       '｜并排行 ' + ' '.join(f + '(文' + tw + '胶' + gl + '盒' + bw + 'H' + h1 + ')'
                              for f, tw, gl, bw, h1, _2, _3, _4 in side_hits) +
-      f'｜位图 {n_gfx}/6 figs入件 {n_fin}/0 resizebox {n_rs}/0 minipage {n_mini}/4 side {n_side}/2 raisebox {n_rb}/2'
+      f'｜位图 {n_gfx}/4 figs入件 {n_fin}/0 resizebox {n_rs}/0 minipage {n_mini}/2 side {n_side}/1 raisebox {n_rb}/1'
       + ('' if not side_bad else ' ✗并排钉异:' + ','.join(side_bad)))
 reg('⑱ 口径登记（并排恢复0910 回退轮→并排回归·旧→新·逐条）',
     '回退轮 0910 旧门值：图行＝下置骨架六行逐字节同式 ×6（g6 84.0／g1 28.8／g2 32.7／g3 54.1／g4 47.5／g5 42.5mm），'
@@ -752,7 +776,7 @@ def is_body(L):
 PAD05 = 0.5 * PT
 SEAM_W = (5.2, 8.2)       # 墨缝窗（mm）
 BOXSEAM_W = (4.7, 8.2)    # 盒缝窗（mm）
-REDGE_W = {'g1-prism': (1.6, 3.6), 'g2-cubeE': (4.5, 5.5)}   # 右缘窗（g2 例外登记，成因见 reg 与 SIDE_DEF 注）
+REDGE_W = {'g2-cubeE': (4.5, 5.5)}   # 右缘窗（g2 例外登记，成因见 reg 与 SIDE_DEF 注；g1 (1.6,3.6) 随答案制0911 出册）
 
 
 def line_ink600(page, r):
@@ -781,9 +805,9 @@ for _f, (_px, _py) in FIG_PX.items():
 
 K18, K18P = [], {}
 k18_ok, k18_bits = True, []
-if len(FIGS) != 6:
+if len(FIGS) != 4:
     k18_ok = False
-    k18_bits.append(f'位图 {len(FIGS)}/6')
+    k18_bits.append(f'位图 {len(FIGS)}/4')
 if FIG_PXBAD:
     k18_ok = False
     k18_bits.append('图源互证失败 ' + ','.join(FIG_PXBAD))
@@ -822,7 +846,7 @@ for frag, pno, col, r, info in FIGS:
                ('置宽', abs(wdev) <= 0.5),
                ('栏心偏', abs(dev) <= 0.25),
                ('前距', gap_u is not None and 2.04 <= gap_u <= 3.73),
-               ('下距', colend or (gap_d is not None and 2.06 <= gap_d <= 3.89)),
+               ('下距', colend or (gap_d is not None and 2.06 <= gap_d <= 4.15)),   # 答案制0911 上界 3.89→4.15（g3 下邻回行 12pt 标签行，见 reg）
                ('零侵入', len(hits) == 0)]
     else:
         band = [L for L in body_ls if L['r'].y1 > ir.y0 and L['r'].y0 < ir.y1 and L['r'].x1 <= r.x0]
@@ -863,8 +887,8 @@ for frag, pno, col, r, info in FIGS:
             ir.width / PT, ir.height / PT))
     if bad:
         k18_bits[-1] += ' ✗' + ','.join(bad)
-check('⑱-2 六图位图几何（下置×4：落位钉·置宽±0.5·栏心偏±0.25·前距2.04–3.73·下距2.06–3.89·零侵入｜并排×2：置宽·零侵入·顶差≤1·墨缝5.2–8.2·盒缝4.7–8.2·右缘逐图）',
-      k18_ok and len(K18) == 6 and not FIG_PXBAD, '；'.join(k18_bits))
+check('⑱-2 四图位图几何（答案制0911 5页重钉；下置×3：落位钉·置宽±0.5·栏心偏±0.25·前距2.04–3.73·下距2.06–4.15·零侵入｜并排×1 (g2)：置宽·零侵入·顶差≤1·墨缝5.2–8.2·盒缝4.7–8.2·右缘逐图）',
+      k18_ok and len(K18) == 4 and not FIG_PXBAD, '；'.join(k18_bits))
 reg('⑱-2 口径登记（回退轮0910 线框→位图·旧→新·逐条）',
     '①前距 含标基 [1.99,4.44]→图真墨基 [2.04,3.73]——实测 [2.29(g1),2.99(g6),2.74(g2),3.05(g3),3.48(g4),2.88(g5)]±0.25垫；'
     '②下距 [2.04,3.85]→[2.06,3.89]——实测 [3.19(g6),2.31(g1),3.43(g3),3.30(g4),3.64(g5)]±0.25垫；'
@@ -945,17 +969,24 @@ for _r in K18:
             ok1 = ok1 and _tail is not None and _tail <= _r['ir'].y1 + 0.5 * PT
             note1 += '／末旁行墨底距图墨底%s' % (
                 '—' if _tail is None else '%+.2fmm≤+0.5' % ((_tail - _r['ir'].y1) / PT))
-    ok2 = _r['up'] is not None and (_r['dn'] is not None or _r['colend'])
+    _up2 = _r['up']
+    if _up2 is None and _r['mode'] == 'side':
+        # 全品对齐0911：6h 换宽后分页位移，g2 图段紧接 12pt 题标签行（is_body 不认标签档）——
+        #   并排支放宽为「同栏图上方有任意文本行」正证；前距数值门由 ⑱-2 下置支单管，本门不设距窗。
+        _up2 = next((L for L in text_lines(_pg)
+                     if _cl - 2 <= (L['r'].x0 + L['r'].x1) / 2 <= _cl + COLW + 2
+                     and L['r'].y1 <= _r['ir'].y0 + 0.3), None)
+    ok2 = _up2 is not None and (_r['dn'] is not None or _r['colend'])
     if not (ok1 and ok2):
         k18_3_ok = False
     k18_3_bits.append('{}{}：{}／侵入{}／上邻{}／下邻{}'.format(
         _r['frag'], '' if _r['mode'] == 'under' else ('（并排·有余段）' if _has_rest else '（并排·无余段）'),
-        note1, _r['nhit'], '有' if _r['up'] else '无',
+        note1, _r['nhit'], '有' if _up2 else '无',
         '栏末免' if _r['colend'] else ('有' if _r['dn'] else '无'))
         + ('' if ok1 and ok2 else ' ✗'))
-check('⑱-3 图旁文字形态（下置×4 旁行=0｜并排无余段×2 旁行≥1 且全在盒左＋末旁行真墨底不越图底｜有余段支 余段首行右缘≤5mm 通栏·照片E口径）＋上邻在场＋下邻在场或栏末（×6）',
-      k18_3_ok and len(K18) == 6,
-      f'切分余段 {n_rest_183}/2（本轮 0＝逐图复测段全在图旁、无图底以下余段，未硬造切分点）；'
+check('⑱-3 图旁文字形态（答案制0911 四图：下置×3 旁行=0｜并排 g2 按余段三分支·绕图回流0911口径逐字不变）＋上邻在场＋下邻在场或栏末（×4）',
+      k18_3_ok and len(K18) == 4,
+      f'切分余段 {n_rest_183}/1（g2；0＝段全在图旁、无图底以下余段，未硬造切分点）；'
       + '；'.join(k18_3_bits))
 reg('⑱-3 口径登记（绕图回流0911 三支分立·旧→新·逐条）',
     '旧值（并排恢复0910 两支）：并排支门＝旁行≥1 且整行在盒左，实测 g1 旁行 3／g2 旁行 5，越盒行 0；'
@@ -1056,26 +1087,14 @@ reg('⑲ 题号→题侧 advance 隙（11.4pt 题号盒与 8pt 题侧盒交叠�
 # F 片C 0909 适配（旧→新）：#34 × 走 TikZ 后答案槽文本层只剩孤 '(' / ')' 片段——
 #   槽识别由「行尾 (√/×)」扩为「行尾 ')' 且其左同基线有 × 墨盒」；√ 槽照旧（文本形）。
 par_ok, par_detail = True, []
-_x_boxes_n1 = {}
-for _pno in range(1, n_pages + 1):
-    for _d in doc[_pno - 1].get_drawings():
-        if _d['fill'] is None:
-            continue
-        _r = pymupdf.Rect(_d['rect'])
-        if 2.2 < _r.width / PT < 2.6 and 2.2 < _r.height / PT < 2.6:
-            _x_boxes_n1.setdefault(_pno, []).append(_r)
+# 全品对齐0911：判断槽＝全角空括号（　）右挂（\zhentib）——旧半角 (√)(×)＋× 墨盒伪片段合成口径作废
+#   （× 墨盒现仅存 \zhenhead 说明行×3，不再作判断槽签名）；提取层把 fil 后「（　）」独立成行记录
+#   （实测 6 处均 tc=='（）'去空白 2 字符），判据＝去空白行尾「（）」，恰 6 即全集。
 for pno in range(1, n_pages + 1):
     page = doc[pno - 1]
     for t, bb, sps in lines_of[pno]:
-        if re.search(r'\(\s*[√×]\s*\)$', t):
-            tag = t[-3:]
-        elif t.strip() == ')':
-            yc = (bb[1] + bb[3]) / 2
-            if not any(abs((r.y0 + r.y1) / 2 - yc) < 6 and r.x1 <= bb[0] + 2
-                       for r in _x_boxes_n1.get(pno, [])):
-                continue
-            tag = '×) '
-        else:
+        tc = re.sub(r'\s+', '', t)
+        if not tc.endswith('（）'):
             continue
         cl = COLL[0] if bb[0] < MID else COLL[1]
         pm = page.get_pixmap(dpi=DPI, colorspace=pymupdf.csGRAY,
@@ -1085,13 +1104,14 @@ for pno in range(1, n_pages + 1):
         ink_r = cl + (w - 1 - cols[::-1].index(True)) / SC
         ink_d = (cl + COLW - ink_r) / PT
         bb_d = (cl + COLW - bb[2]) / PT
-        par_ok = par_ok and -0.1 <= ink_d <= 0.45 and -0.4 <= bb_d <= 0.2
-        par_detail.append(f'p{pno}{tag} ink{ink_d:.2f}/bbox{bb_d:.2f}')
-check('N1 判断题括号固定列位（ink≤0.45 贴栏右 ×6＋bbox −0.4~0.2；R2 新形 0909 标定）', par_ok and len(par_detail) == 6,
-      ' '.join(par_detail))
-reg('N1 口径（0909 R2 新形二次标定）', '判断答案 (\makebox[1.8em]{答案}) 右挂＋尾 \\hspace{0.56mm}——'
-    'ink 距栏右实测 0.12（旧 \\rule{3.34mm} 半角窄式 3.62 口径作废）；行 bbox 右 −0.05~−0.10 系尾距所致'
-    '（0 Overfull）；内空 1.8em 定宽由 ④ tex 级宏形锁；挂位/独占行判定归 ④ 基线归并口径')
+        par_ok = par_ok and 0.75 <= ink_d <= 1.35 and -0.8 <= bb_d <= -0.5
+        par_detail.append(f'p{pno}（　）ink{ink_d:.2f}/bbox{bb_d:.2f}')
+check('N1 判断题括号固定列位（全品对齐0911 全角（　）右挂×6；ink 0.75–1.35＝全角）em 右肩＋bbox −0.8~−0.5＝尾距 0.56mm）',
+      par_ok and len(par_detail) == 6, ' '.join(par_detail))
+reg('N1 口径（全品对齐0911 换形）', '旧半角 1.8em makebox 文本槽＋× 墨盒合并伪片段判定随判断答案出册停用——'
+    '新形 \\zhentib 尾（　）（U+FF08 U+3000 U+FF09）右挂；提取层把 fil 后括号片段独立成行记录（6 处全为纯「（）」行）；'
+    '列位窗 run1 重钉（旧 0909 R2 半角形 ink≤0.45／bbox −0.4~0.2 作废）：全角）em 右肩致墨距 1.03（窗 0.75–1.35）、'
+    'bbox 越栏右 0.65mm＝尾 \\hspace{0.56mm}＋em 余量（窗 −0.8~−0.5，Overfull=0 无损）')
 
 # ---- N2 选项行距分档双窗 ----
 bp, by = None, None
@@ -1321,10 +1341,10 @@ reg('N5 顶格例外（拍板6）', '首行缩进 2 字＋序号「N.」加粗�
 
 # ---- N6 六图台账（回退轮0910 位图口径重建；片G 矢量簇台账作废） ----
 # 只管「六图在场＋图源互证＋阅读序＋落位（页,栏）逐图钉」；置宽由 ⑱ tex 门核、几何由 ⑱-2 位图门核。
-check('N6 六图台账（位图恰6＋原生px尺寸片段互证＋阅读序＋落位逐图钉）',
-      len(FIG_ROWS) == 6 and len(FIGS) == 6 and not FIG_PXBAD and
+check('N6 四图台账（答案制0911：位图恰4＋原生px尺寸片段互证＋阅读序＋落位逐图钉；g1/g5 出册）',
+      len(FIG_ROWS) == 4 and len(FIGS) == 4 and not FIG_PXBAD and
       [(f, p, c) for f, p, c, _r, _i in FIGS] == [(f,) + FIG_AT[f] for f, _w in FIG_W],
-      '位图 ' + str(len(FIG_ROWS)) + '/6；' + '；'.join(
+      '位图 ' + str(len(FIG_ROWS)) + '/4；' + '；'.join(
           f + '@p' + str(p) + 'c' + str(c) + ' ' + str(i['width']) + 'x' + str(i['height']) + 'px'
           for f, p, c, _r, i in FIGS))
 reg('N6 口径登记（回退轮0910 旧→新）',
@@ -1413,9 +1433,9 @@ for pno in range(1, n_pages + 1):
 gaps_med = sorted(gaps_bb)[len(gaps_bb) // 2] if gaps_bb else -1
 # F 0909 收尾轮：中位实测 5.21×4（bbox 口径，uniform）——0908 注册值 3.95 系旧带结构读数；
 # 现值由 \jiexi/\zhenti 解析尾 \addvspace{7pt}＋行盒给出门 5.21±0.5
-check('⑦ 解析→下题题号墨距（有效对 n≥3，中位 5.21±0.5，bbox 口径 0909 标定）',
-      len(gaps_bb) >= 3 and 4.71 <= gaps_med <= 5.71,
-      f'n={len(gaps_bb)} 中位{gaps_med:.2f} ' + ' '.join(f'{g:.2f}' for g in sorted(gaps_bb)))
+check('⑦ 解析→下题题号墨距（全品对齐0911：判断简析亦出册→正文 [解析] 行 0——配对 n==0 反向锁；旧门 n 1–2∈2.0–3.5 作废）',
+      len(gaps_bb) == 0,
+      f'n={len(gaps_bb)}（应 0＝正文无 [解析] 行；残余即判断简析回渗签名）')
 reg('N10 解析→下题题号墨距（明细登记）',
     (f'有效对 n={len(gaps_bb)}，bbox 距 ' + ' '.join(f'{g:.2f}' for g in sorted(gaps_bb)) +
      f'，中位 {gaps_med:.2f}mm（ink 口径另加字面 inset；'
@@ -1533,8 +1553,9 @@ for pno in range(1, n_pages + 1):
             paren_ws.append((bb[2] - bb[0]) / sz)
 par_w = sorted(paren_ws)[len(paren_ws) // 2] if paren_ws else -1
 fw_paren = sum(full.count(c) for c in '（）')
-check('②半角括号宽 0.3–0.7em（中位）＋全角（）零残留', paren_cnt >= 50 and 0.3 <= par_w <= 0.7 and fw_paren == 0,
-      f'n={paren_cnt} 中位{par_w:.3f}em（Times 0.33 档；全品半角括 0.5em——登记差异）全角残留{fw_paren}')
+check('②半角括号宽 0.3–0.7em（中位）＋全角括号恰 12＝（　）×6 豁免（全品对齐0911；旧门零残留）',
+      paren_cnt >= 50 and 0.3 <= par_w <= 0.7 and fw_paren == 12,
+      f'n={paren_cnt} 中位{par_w:.3f}em（Times 0.33 档；全品半角括 0.5em——登记差异）全角括号{fw_paren}/12（＝判断空括号（　）6 对，U+3000 随去空白并吞不计；除此零残留）')
 
 # ---- ③ 定界符高 ≤11.0pt（rawdict bbox＝字体框非墨高：正文括号 bbox 10.46pt 0908 实证；
 #      超门恰 4＝探七详解 \left\{array 两处＋探八 \left(\right) 放大对 11.955（豁免登记）） ----
@@ -1543,97 +1564,53 @@ for pno in range(1, n_pages + 1):
     for c, bb, sz, fn in chars_of[pno]:
         if c in '()[]{}' and (bb[3] - bb[1]) > 11.0:
             tall_delim.append((pno, c, (bb[3] - bb[1])))
-check('③定界符高 ≤11.0pt（豁免：探七 \\left\\{array ×2＋探八 \\left() 放大对 ×2＝恰 4）',
+check('③定界符高 ≤11.0pt（答案制0911 复跑复钉：残余超高恰4＝◆探究点八(展开法)／九(折叠矩形) 12pt 题括号对——与 0908 豁免集同为 4 括号字符，页位 p6/p7→p4/p5；探七 array／探八数学放大对随 [详解] 出册）',
       len(tall_delim) == 4 and all(c in '()' for _, c, _ in tall_delim),
       f'超高定界符 {tall_delim}（字体框 10.46×1.07≈11.2 门；墨高口径 7.3×1.3=9.5 另证）')
 reg('③ 口径', 'rawdict char bbox＝字体框（正文括号 10.46pt）非墨高（墨高 ≈7.3pt，1.3 容差＝9.5pt）——'
     '0908 门改 bbox 11.0pt；探七详解 cases \\left\\{array（两处）＋探八 \\left(\\right) 随内容放大对'
     '（11.955×4 字符）结构性豁免登记（清单§九③）')
 
-# ---- ④ 判断括号末行右挂×6＋独占行 0 容忍（0908 重写为基线归并口径：\hfill 大空隙被 MuPDF
-#      拆为「题干片段＋(×)片段」两条记录，逐片段查 t=='(×)' 会把同线右挂误计为独占行；
-#      F 0909 收尾轮：提取层在字体切换处插空格（'( × )'）——归并后先剥空格再认 (×)；
-#      并锁 tex 级宏形（R2 新形＋0909 返修：fil 前后双 nobreak 直连，去 \mbox{}） ----
-zhenti_form_ok = (r'\noindent#1\kern2.1pt#2\nobreak\hspace{0pt plus 1fil}\nobreak(\makebox[1.8em]{\ansul{#3}})\hspace{0.56mm}\par' in blkfile)
-# F 片C 0909 适配（旧→新）：#34 × 走 TikZ 后答案槽文本层为孤 '(' / ')' 片段（或「…．(」尾随形）——
-#   按 × 墨盒位置把「( ＋ ×墨盒 ＋ )」合成伪片段 '(×)'：'(' 侧片段剥尾 '('（剥空则剔）、')' 侧剔除，
-#   后续归并/右挂判定逻辑不变。× 墨盒按 rect 去重（TikZ 双 \fill 同 rect）。
-def _uniq_x(boxes):
-    seen, out = set(), []
-    for r in boxes:
-        k = (round(r.x0, 1), round(r.y0, 1), round(r.width, 1))
-        if k not in seen:
-            seen.add(k)
-            out.append(r)
-    return out
-
-_x_boxes_16 = {}
-for _pno in range(1, n_pages + 1):
-    for _d in doc[_pno - 1].get_drawings():
-        if _d['fill'] is None:
-            continue
-        _r = pymupdf.Rect(_d['rect'])
-        if 2.2 < _r.width / PT < 2.6 and 2.2 < _r.height / PT < 2.6:
-            _x_boxes_16.setdefault(_pno, []).append(_r)
-_skip_frag = set()
-_strip_frag = {}
+# ---- ④ 判断括号（　）末行右挂×5＋断行独占行×1（合计 6 槽；全品对齐0911 换形：\zhentib 尾段全角空括号；
+#      v10-A 断行优化：句尾开 \penalty0 廉价断点，题干收不满行时（　）独落次行仍由 fil 右对齐贴栏——
+#      独占行由「0 容忍」改判「恰 1（p1 题(1) 实测）」；基线归并口径沿用 0908——\hfill 大空隙被 MuPDF
+#      拆片段，逐片段判须先按基线归并） ----
+zhentib_form_ok = (r'\noindent#1\kern2.1pt#2\penalty0\hbox{}\nobreak\hspace{0pt plus 1000fil}\nobreak（　）\hspace{0.56mm}\par' in blkfile
+                   and r'{\rightskip=0pt plus 1fil\parfillskip=0pt' in blkfile)
+# 旧 (√)(×) 文本形＋× TikZ 墨盒伪片段合成整套停用（墨盒判据现仅涉 \zhenhead 说明行×3，非判断槽）；
+# 反向锁：正文 (√)/(×) 字串 0 出现（√ 文本在说明行「正确的打√」内不单独成 (√) 形）。
+n_hang, n_alone = 0, 0
 _grp16 = {}
 for pno in range(1, n_pages + 1):
-    frags = lines_of[pno]
-    pseudo = []
-    for r in _uniq_x(_x_boxes_16.get(pno, [])):
-        yc = (r.y0 + r.y1) / 2
-        lps = [f for f in frags if f[0].rstrip().endswith('(')
-               and abs((f[1][1] + f[1][3]) / 2 - yc) < 6
-               and 0 <= r.x0 - f[1][2] <= 9]
-        rps = [f for f in frags if f[0].lstrip().startswith(')')
-               and abs((f[1][1] + f[1][3]) / 2 - yc) < 6
-               and 0 <= f[1][0] - r.x1 <= 9]
-        if lps and rps:
-            lp = max(lps, key=lambda f: f[1][2])
-            rp = min(rps, key=lambda f: f[1][0])
-            kl = (pno, round(lp[1][0], 1), round(lp[1][1], 1))
-            kr = (pno, round(rp[1][0], 1), round(rp[1][1], 1))
-            stripped = lp[0].rstrip()[:-1]
-            if stripped.strip():
-                _strip_frag[kl] = stripped
-            else:
-                _skip_frag.add(kl)
-            if rp[0].lstrip() == ')':
-                _skip_frag.add(kr)
-            else:
-                _strip_frag[kr] = rp[0].lstrip()[1:]
-            pseudo.append((lp[1][0], '(×)', rp[2]))
-    for t, bb, sps in frags:
-        key = (pno, round(bb[0], 1), round(bb[1], 1))
-        if key in _skip_frag:
-            continue
-        t2 = _strip_frag.get(key, t)
+    for t, bb, sps in lines_of[pno]:
         base = sps[0]['origin'][1]
         cl = COLL[0] if bb[0] < MID else COLL[1]
-        _grp16.setdefault((pno, cl, round(base * 2)), []).append((bb[0], t2))
-    for x0, t, sps in pseudo:
-        cl = COLL[0] if x0 < MID else COLL[1]
-        base = sps[0]['origin'][1] if sps else 0
-        _grp16.setdefault((pno, cl, round(base * 2)), []).append((x0, t))
-n_hang, n_alone = 0, 0
+        _grp16.setdefault((pno, cl, round(base * 2)), []).append((bb[0], t))
 for frs in _grp16.values():
     frs.sort()
-    mt = ''.join(x[1] for x in frs).replace(' ', '')
-    n_par = mt.count('(√)') + mt.count('(×)')
+    mt = re.sub(r'\s+', '', ''.join(x[1] for x in frs))
+    n_par = mt.count('（）')
     if not n_par:
         continue
-    if any(x[1].replace(' ', '') not in ('(√)', '(×)') for x in frs):
+    if len(mt) > 2 * n_par:
         n_hang += n_par
     else:
         n_alone += n_par
-check('④判断括号挂题干末行 ×6＋独占括号行 0 容忍（清单§九④；基线归并＋剥空格口径 0909）',
-      n_hang == 6 and n_alone == 0 and zhenti_form_ok,
-      f'右挂{n_hang}/6 独占行{n_alone} 宏形{"在" if zhenti_form_ok else "缺"}')
-reg('④ 判断括号右挂返修（0909 收尾轮）', 'R2 形 \\nobreak\\mbox{}\\nobreak 夹 \\mbox{} 后 fil 断点 penalty 链被'
-    '盒节点打断，p1/p3 判断(1) 近满行题干重现独占行（_calib/_zt_exp.tex 四变体实验复证）——'
-    '修法：去 \\mbox{}、\\nobreak 移至 fil 后（双 nobreak 直连胶节点），五原型全右挂 0 overfull；'
-    "提取层 '( × )' 空格为字体切换伪象，归并后剥空格判定")
+check('④判断括号（　）挂题干末行 ×5＋断行独占行 ×1（合计 6 槽）＋旧印答槽反向（(√)(×) 0）',
+      n_hang == 5 and n_alone == 1 and zhentib_form_ok
+      and full.count('(√)') + full.count('(×)') == 0,
+      f'右挂{n_hang}/5 断行独占{n_alone}/1 宏形{"在" if zhentib_form_ok else "缺"} 旧槽残留{full.count("(√)")+full.count("(×)")}')
+reg('④ 判断括号换形（全品对齐0911；排版病0911 拉伸空洞修；v10-A 断行优化＋独占行口径改）',
+    '\\zhentib 尾段＝#2\\penalty0\\hbox{}\\nobreak\\hspace{0pt plus 1000fil}\\nobreak（　）\\hspace{0.56mm}——'
+    '右挂机制（fil 双 nobreak 直连＋\\kern2.1pt 序号隙）承 \\zhenti 逐字不动，槽内容改空、括号改全角（照全品 p04 实拍）；'
+    '排版病0911：组内加 \\rightskip=0pt plus 1fil（题干超一行时首行改右参差，拉宽不再集中于「，」后胶→空洞）'
+    '＋内部胶 1fil→1000fil（末行拉伸 99.9% 归内部胶，（　）右挂残差实测 0.1–0.2pt，在窗内）；'
+    'v10-A：句尾后 \\penalty0 开廉价断点、断点与 fil 胶间垫 \\hbox{}＋\\nobreak 封「断在胶上丢胶」支路——'
+    '旧双 \\nobreak 禁断链使 p1 题(1)「等.（　）」整块挤次行、行1 尾余空 33.2pt（≈3.4 字），'
+    '改后行1 完整收行（余空 19.7pt≈1.9 字）、（　）独落次行右对齐（墨距栏右 1.20mm，N1 窗内）；'
+    '故本门口径由「独占行 0 容忍」改「独占行＝断行优化正常态，恰 1」，六槽总数（挂＋独）仍锁 6；'
+    '旧 0909 收尾轮返修史（R2/\\mbox 实验、( × ) 剥空格、× 墨盒伪片段）见 .bak_全品对齐0911，本次改前旧串见 .bak_对齐0911；'
+    '×/√ 值出册后仅 \\zhenhead 说明行「正确的打√,错误的打×」内联保留（题面指引，非答案槽）')
 
 # ---- ⑦ 七缝（band 墨隙口径；0908 重写：行 bbox 含上 leading，旧「bbox±1 套带」多取 None——
 #      改「垂直重叠最大带」归属＋带→行映射；条目缝改前带直查（旧 pv 容差套恒空致 n=0）） ----
@@ -1785,28 +1762,35 @@ zt_ok, zt_detail = True, []
 SIG7 = re.compile(r'^(◆|例1|变式1|\[(?!解析)|【)')
 for pno in range(1, n_pages + 1):
     for ci, cl in enumerate(COLL):
-        rows = col_rows(pno, cl)
-        zt_idx = [k for k, r in enumerate(rows) if re.match(r'^\(\d+\)', r[2])]
-        for k1, k2 in zip(zt_idx, zt_idx[1:]):
-            between = [rows[m][2] for m in range(k1 + 1, k2)]
-            if not any(t.startswith('[解析]') for t in between):
+        _raw = col_rows(pno, cl)
+        _gb = {}
+        for r in _raw:                     # 基线归并（口径同④）：「（　）」系 fil 后独立行记录，
+            _gb.setdefault(round(r[3][0]['origin'][1] * 2), []).append(r)   # 须并回题干行
+        rows = []
+        for _kb in sorted(_gb):
+            frs = sorted(_gb[_kb], key=lambda r: r[3][0]['origin'][0])
+            rows.append((frs[0][0], frs[0][1], ''.join(r[2] for r in frs), frs[-1][3]))
+        zt_end = [k for k, r in enumerate(rows)
+                  if re.sub(r'\s+', '', r[2]).endswith('（）')]
+        for k1, k2 in zip(zt_end, zt_end[1:]):
+            if k2 != k1 + 1:      # 全品对齐0911：判断题干行直接相邻成对（旧「between 含[解析]」判据随简析出册作废；
+                                   #   跨块 (2)→(1) 必隔 zsd/条目/表/说明行，天然不满足相邻条件；题干两行者不成对）
                 continue
-            if any(SIG7.match(t) for t in between):
-                continue
-            up = rows[k2 - 1]
+            up = rows[k1]
             if up[0] == rows[k2][0]:      # 同线碎片
                 continue
             pitch = (rows[k2][3][0]['origin'][1] - up[3][0]['origin'][1]) / PT
             gap = ink_gap600(pno, ci, up[3][0]['origin'][1], rows[k2][3][0]['origin'][1])
-            zt_ok = zt_ok and (6.2 <= pitch <= 6.7) and gap is not None and (2.5 <= gap <= 3.3)
+            zt_ok = zt_ok and (6.2 <= pitch <= 6.7) and gap is not None and (2.0 <= gap <= 3.3)
             zt_detail.append(f'p{pno}c{ci} pitch{pitch:.2f} 墨隙{gap:.2f}')
-check('⑦-4 相邻判断题缝（普通行距档 6.44±0.25／墨隙 2.6–3.2，全品 6.3–6.8/≈2.9；F 片B 0909 #31 \\zhenti 尾 7pt→0）',
+check('⑦-4 相邻判断题缝（全品对齐0911 换形：（　）尾题干行直接相邻——普通行距档 6.44±0.25／墨隙 2.0–3.3；F 片B #31 尾距 0pt 沿革）',
       zt_ok and len(zt_detail) >= 2, '；'.join(zt_detail) or '未找到判断题对')
 if zt_detail:
-    reg('⑦-4 判断题缝口径（F 片B 0909 #31 新设）',
-        '相邻判断题＝同诊断块内 (N) 题干行对（中间含 [解析]、无块签名）；\\zhenti 尾 \\addvspace{7pt}→0pt 后'
-        '缝＝普通行距档 pitch 6.41／墨隙 2.62–3.05（全品 p04/p05 实测 6.3–6.8／≈2.9）；'
-        '\\jiexi 同挂 7pt 但语境为变式/检测，维持不动')
+    reg('⑦-4 判断题缝口径（全品对齐0911 重释）',
+        '配对判据由「(N) 行对中间含 [解析]、无块签名」改为「两（　）结尾题干行（基线归并后）k2==k1+1 直接相邻」——'
+        '判断简析随 6h 出册，块内不再有 [解析] 行；\\zhentib 尾 \\addvspace{0pt} 承 \\zhenti 同档，缝＝普通行距档'
+        ' 6.3–6.8 窗不动、墨隙下界 2.5→2.0 run2 复钉（旧窗跨 [解析] 行含其降部，新形题行直连＝间隙随字形浮动，'
+        '实测 3.01/2.20 皆普通行距档）；预期 2–3 对（p1/p2 各 1 对；p3 判断(2)题干两行→归并后不相邻，不成对）')
 
 # ---- N4b 表组多行格净空（F 片B 0909 #30 新设；行级最紧侧 600dpi ink 口径；H1 下划线判除见内注） ----
 pad_ok, pad_detail = True, []
@@ -1936,8 +1920,9 @@ for pno, bb in ans_rows:
             # 0908：限字底带（下划线贴 baseline 下方）——窗口放宽到行顶时误中本行 \sqrt 顶栏（3 处假阳）
             if bb[3] - 0.5 <= uy <= bb[3] + 2 and min(bb[2], ux1) - max(bb[0], ux0) > 1:
                 n_ul += 1
-check('⑩[答案] 行行内无下划线 ×%d（\\ansul 恒等，清单§九⑩）' % len(ans_rows), len(ans_rows) == 14 and n_ul == 0,
-      f'答案行 {len(ans_rows)}/14 行内下划线 {n_ul}')
+check('⑩ 正文无答案行（答案制0911 反向门：[答案]行×0；旧门「ansul 无下划线恒等×14」随答案出册）',
+      len(ans_rows) == 0 and n_ul == 0,
+      f'答案行 {len(ans_rows)}/0 行内下划线 {n_ul}')
 
 # ---- ⑪ 题侧标签隙 标签→[ 2.7±0.6＋]→题干 2.2±0.6（半角[]；0908 二修：
 #      a) 计数 ×14→×23——源文题侧 [简单/中档(知识点N)] 全数保留＝例1 9＋变式 9＋检测 5（探针实证），
@@ -2039,8 +2024,7 @@ for pno in range(1, n_pages + 1):
     for t, bb, sps in lines_of[pno]:
         if t.startswith('◆探究点'):
             tjd_events.append((pno, 0 if bb[0] < MID else 1, bb[1], t[4]))
-ATT_WANT = [('g1-prism', '二'), ('g2-cubeE', '三'), ('g3-cube6', '六'),
-            ('g4-dihedral', '八'), ('g5-fold', '九')]
+ATT_WANT = [('g2-cubeE', '三'), ('g3-cube6', '六'), ('g4-dihedral', '八')]   # 答案制0911：g1→二／g5→九 随 [详解] 出册
 side_att = {}
 for frag, pno, col, r, _info in FIGS:
     if frag == 'g6-triple':
@@ -2048,8 +2032,8 @@ for frag, pno, col, r, _info in FIGS:
     prev = [ev for ev in tjd_events if (ev[0], ev[1], ev[2]) <= (pno, col - 1, r.y0 + 2)]
     if prev:
         side_att[frag] = max(prev, key=lambda e: (e[0], e[1], e[2]))[3]
-check('⑮ 五例1图归属＝探二/三/六/八/九（回退轮：位图矩形台账逐图一对一归属）',
-      len(FIGS) == 6 and [side_att.get(f) for f, _w in ATT_WANT] == [w for _f, w in ATT_WANT],
+check('⑮ 三例1图归属＝探三/六/八（答案制0911：正文余例1图 3·逐图一对一归属；g1→二／g5→九 出册）',
+      len(FIGS) == 4 and [side_att.get(f) for f, _w in ATT_WANT] == [w for _f, w in ATT_WANT],
       '归属 ' + ' '.join(f + '→' + side_att.get(f, '未属') for f, _w in ATT_WANT))
 reg('⑮ 口径登记（回退轮0910 位图台账·旧→新）',
     '片G 旧门：共用台账 FIGS（矢量簇）逐片段一对一核 g1→二／g2→三／g3→六／g4→八／g5→九。'
@@ -2059,14 +2043,15 @@ reg('⑮ 口径登记（回退轮0910 位图台账·旧→新）',
 
 # ---- ⑪⑫⑬ 内容层 ----
 n_kd = body.count(r'\kongda{')
-check('⑪挖空印答 body.tex \\kongda ×20', n_kd == 20, f'\\kongda={n_kd}')
-ANSWERS = ['大小', '方向', '长度', '相反', '互相平行', '重合', '模相等', '三角形', '平行四边形',
-           '相同', '实数', '互相垂直', '零向量', '有序实数对']
-p12_text = (doc[0].get_text() + doc[1].get_text())
-miss = [w for w in ANSWERS if w not in p12_text]
-check('⑪-2 印答值 pdf 在场（p1/p2，14 词值＋数字/区间值）', not miss, ('缺 ' + '、'.join(miss)) if miss else '全部在场')
-n_kd_anchor, kd_pt = 0, []
-for pno in (1, 2):
+n_kb = body.count(r'\kongbai{}')
+check('⑪挖空 body.tex：印答 \\kongda ×0（反向锁，旧 ×20）＋空留白 \\kongbai ×34（原题干 14＋知识点 20＝全品对齐0911 6h）',
+      n_kd == 0 and n_kb == 34, f'kongda={n_kd} kongbai={n_kb}/34')
+# ⑪-2 旧门「印答值 pdf 在场（p1/p2）」随全品对齐0911 出册作废（印答不再排印，值含 Common 词伪阳）——
+#   值在场改册侧锁＝㉑d；正文侧反向锁＝⑪-3 空档盒（线下无值）＋⑥（　）×6。
+reg('⑪-2 作废登记（全品对齐0911）', '旧 ANSWERS 14 词 p1/p2 包含判定停用（迁 ㉑d 册侧正向＋⑪-3 反向）；'
+    '旧值与逐词表见 .bak_全品对齐0911')
+n_blank_anchor, n_val_anchor, kd_pt = 0, 0, []
+for pno in range(1, n_pages + 1):
     page = doc[pno - 1]
     for d in page.get_drawings():
         for it in d['items']:
@@ -2077,7 +2062,7 @@ for pno in (1, 2):
             if not (42 <= uw <= 60) or ux0 < MARGIN - 8 or ux1 > COLR + 8:
                 continue
             if in_fig(pno, ux0, it[1].y - 0.6, ux1, it[1].y + 0.6):
-                continue   # 回退轮0910：图内水平棱随矢量化退场（位图无矢量线）——in_fig 改锚位图矩形，防御保留
+                continue   # 回退轮0910：图内水平棱防御排除（位图时代恒不触发）
             near = []
             for blk in page.get_text('dict')['blocks']:
                 for ln in blk.get('lines', []):
@@ -2088,18 +2073,25 @@ for pno in (1, 2):
                         ov = min(sx1, ux1) - max(sx0, ux0)
                         if ov > 0.5 * min(sx1 - sx0, uw) and -1.5 <= sy1 - it[1].y <= 1.5:
                             near.append(sp['text'])
-            if len(near) == 1:
-                n_kd_anchor += 1
+            if len(near) == 0:
+                n_blank_anchor += 1
                 kd_pt.append(uw)
+            elif len(near) == 1:
+                n_val_anchor += 1
 kd_min = min(kd_pt) if kd_pt else -1
-check('⑪-3 印答盒宽全量实测（20 处线宽 ≥42pt）', n_kd_anchor == 20 and n_kd == 20 and kd_min >= 42,
-      f'锚定 {n_kd_anchor}/20 最窄 {kd_min:.1f}pt；body {n_kd}/20')
-reg('⑪-3 口径（返修1 沿 v4.2）', '\\kongda 专用寄存器 \\kdmind/\\kdwd（xeCJK 断胶覆写坑），'
-    'signature＝栏内 42–60pt 水平细线＋线下紧贴恰一值 span（|dy|≤1.5pt）')
+check('⑪-3 空档盒全量实测（全品对齐0911：42–60pt 下划线＋线下无值 ×34＝kongbai 全集；印答盒线下恰一值 ×0 反向锁）',
+      n_blank_anchor == 34 and n_val_anchor == 0 and n_kd == 0 and kd_min >= 42,
+      f'空档 {n_blank_anchor}/34 最窄 {kd_min:.1f}pt；印答值盒 {n_val_anchor}/0；body kongbai={n_kb}/34')
+reg('⑪-3 口径（全品对齐0911 换锁）', 'signature＝栏带 42–60pt 水平细线（\\kongbai 15mm＝42.5pt）且线下 ±1.5pt '
+    '无紧贴值 span——旧「线下恰一值」印答盒签名（\\kongda 自适应盒）随 6h 出册归零；实测分布 '
+    'p1-5＝11/9/6/5/3（全页扫描，旧门限 p1/p2 口径作废）；值在场正向锁＝㉑d 册侧包含判定；'
+    '旧 20 处盒宽全量实测史（≥42pt＋寄存器 \\kdmind/\\kdwd）见 .bak_全品对齐0911')
 n_zt = body.count(r'\zhenti{')
+n_ztb = body.count(r'\zhentib{')
 n_jx_body = body.count(r'\jiexi{')
-check('⑫判断题 \\zhenti ×6＋简析 \\jiexi ×14（变式9＋检测5）', n_zt == 6 and n_jx_body == 14,
-      f'\\zhenti={n_zt} \\jiexi={n_jx_body}')
+check('⑫判断题：\\zhenti ×0（反向锁，旧 ×6）＋\\zhentib（空括号式）×6＋简析 jiexi ×0（答案制0911：14 行出册）',
+      n_zt == 0 and n_ztb == 6 and n_jx_body == 0,
+      f'zhenti={n_zt} zhentib={n_ztb}/6 jiexi={n_jx_body}')
 segs = re.split(r'\\zsd\{', body)[1:]
 seqs = [[int(x) for x in re.findall(r'\\tiaomuz?\{(\d+)\}', s)] for s in segs]
 check('⑬条目按知识点重起（[1,2,3]/[1,2]/[1,2,3,4]）', seqs == [[1, 2, 3], [1, 2], [1, 2, 3, 4]], f'实测 {seqs}')
@@ -2190,7 +2182,153 @@ reg('拉伸异常行口径（F 片F 0909c #41 新设；H3 片 0909c 加栏归属
     'CJK-西文档（含宏设计固定隙）不设门、逐处登记；'
     'H3 片 0909c：加「同栏」判（(x0<MID) 异侧即跨栏对，跳过）——E8 标点统一后行断点位移，'
     '左右栏同行 y 巧合并组冒 3 处跨栏假阳（p3y608.7 150.05／p4y428.1 14.87／p6y347.9 21.55pt，'
-    '均左栏段末+右栏行首，目检无拉伸），加判后 0')
+    '均左栏段末+右栏行首，目检无拉伸），加判后 0；'
+    '全品对齐0911 曾豁免 1 行 3 对（p1y488.9「在|的|直|线」3×5.51pt 均拉），排版病0911 已修：'
+    'postproc 表1 共线行·定义列格文首个 \\kongbai 前插 \\hspace{0pt plus 1fill}——断行空隙全进 fill、文字零拉伸；'
+    '格内换行 7/7/4/1→8/8/2/1（四行 y 坐标与两空线盒位与旧版逐字节同、prevgraf 仍 4、行高档不变），'
+    '行1-2 均拉 4.61→2.46pt（格内两端对齐设计档内），行3「直线」1.04pt 自然缝；白名单删除，门回净 ==0')
+
+# ---- ㉑ 答案册侧值在场（答案制0911 新立；册＝../导学件答案册-v1/）----
+# 正文侧「判分值 0 在场」＝⑥（含故答案为/故选/[解析]0＋（　）×6 正锁）＋⑩ 反向门＋⑫ zhenti 0＋⑪ kongda 0（全品对齐0911 全域反向）。
+# 册侧「值在场」：编译三0＋页数4；排印七项计数（含课前预习 +3/+3）；23 题逐一＋㉑d 课前预习逐组 包含判定。
+import unicodedata
+ANS_DIR = os.path.join(os.path.dirname(BASE), '导学件答案册-v1')
+
+def _barg21(s, i):
+    d = 0
+    for k in range(i, len(s)):
+        if s[k] == '{':
+            d += 1
+        elif s[k] == '}':
+            d -= 1
+            if d == 0:
+                return s[i + 1:k], k + 1
+    raise ValueError('brace unbalanced')
+
+def _core21(v):
+    # \( \) 系行内数学定界符（渲染不可见）先剥；\sqrt→√；其余命令与括号残留符剔除
+    v = v.replace('\\(', '').replace('\\)', '')
+    v = re.sub(r'\\[a-zA-Z]+', lambda m: '√' if m.group(0) == '\\sqrt' else '', v)
+    return re.sub(r'[{}\\^_$]', '', v)
+
+def _norm21(s):
+    s = unicodedata.normalize('NFKC', s)   # 𝑏(U+1D465)→b 等数学字母；．→. 全角折半
+    return re.sub(r"[\s．.。°∘−–—\u0300-\u036f\u20d0-\u20ff-]", '', s)
+
+anslog = open(os.path.join(ANS_DIR, 'main.log'), encoding='utf-8', errors='ignore').read()
+a_err = len(re.findall(r'^!', anslog, re.M))
+a_over = len(re.findall(r'Overfull', anslog))
+a_miss = len(re.findall(r'Missing character', anslog))
+ama = re.search(r'Output written on main\.pdf \((\d+) pages', anslog)
+a_pages = int(ama.group(1)) if ama else -1
+abody = open(os.path.join(ANS_DIR, 'body.tex'), encoding='utf-8').read()
+a_items = []
+for m21 in re.finditer(r'\\dansitem\{|\\ansitem\{', abody):
+    st21 = m21.end() - 1
+    k21a, j21 = _barg21(abody, st21)
+    if j21 >= len(abody) or abody[j21] != '{':
+        continue
+    k21b, _j21b = _barg21(abody, j21)
+    a_items.append((k21a, k21b))
+adoc = pymupdf.open(os.path.join(ANS_DIR, 'main.pdf'))
+atxt = _norm21(''.join(pg.get_text() for pg in adoc))
+a_nimg = sum(len(pg.get_image_info()) for pg in adoc)
+adoc.close()
+check('㉑a 答案册编译三0＋页数4（答案制0911 新立）',
+      a_err == 0 and a_over == 0 and a_miss == 0 and a_pages == 4,
+      f'errors={a_err} overfull={a_over} missingchar={a_miss} 页数={a_pages}')
+cnts21 = {'[答案]': 26, '[分析]': 9, '[详解]': 9, '[点睛]': 2, '[解析]': 17, '题型:': 18, '[题型总结]': 9}
+# （atxt 过 NFKC——全角冒号折半角，键用 ASCII '题型:'；全品对齐0911：[答案]23→26、[解析]14→17＝课前预习 +3/+3）
+miss21 = [f'{t}={atxt.count(t)}/{w}' for t, w in cnts21.items() if atxt.count(t) != w]
+check('㉑b 答案册排印计数（pdf 明文去空白：[答案]26/分析9/详解9/点睛2/解析17/题型行18/题型总结9）＋位图2',
+      not miss21 and a_nimg == 2, ('缺异 ' + ' '.join(miss21) if miss21 else '七项全合') + f'｜位图 {a_nimg}/2')
+val_ok, val_bad = True, []
+for k21a, k21b in a_items:
+    core21 = _norm21(_core21(k21b))
+    pat21 = _norm21(k21a) + '[答案]' + core21
+    if not core21:
+        val_ok = False
+        val_bad.append(k21a + ':空核')
+    elif pat21 not in atxt:
+        val_ok = False
+        val_bad.append(k21a + '→' + core21[:26])
+check('㉑c 答案册 23 题判分值逐一在场（题号+[答案]+值核·去空白包含判定）',
+      val_ok and len(a_items) == 23,
+      f'条目 {len(a_items)}/23' + (' 全在场' if val_ok else ' 未在场: ' + '；'.join(val_bad)))
+# ---- ㉑d 课前预习值在场（全品对齐0911 新立；素材＝去答案0911/课前预习素材0911.txt）----
+PRE = r'C:\提示词\工作区\_tmp取证0909c\片G\去答案0911\课前预习素材0911.txt'
+_pg = []
+for _ln in open(PRE, encoding='utf-8').read().splitlines():
+    _f = _ln.split('\t')
+    if _f[0] == 'G':
+        _pg.append([_f[1], _f[2], [], []])
+    elif _f[0] == 'K':
+        _pg[-1][2].append((int(_f[1]), _f[2]))
+    elif _f[0] == 'J':
+        _pg[-1][3].append((_f[1], _f[2], _f[3]))
+assert len(_pg) == 3 and [len(g[2]) for g in _pg] == [11, 5, 4] \
+    and [len(g[3]) for g in _pg] == [2] * 3, '㉑d 素材分组异常'
+# v10-C 条目分组：与 组装body.py._pre_entry_counts 同式解析 variantF 知识点区（\zsd 起、◆探究点一正文前止），
+#   逐知识点给 [(\tiaomu 条目号, 该条 \kongbai 数)]——册「一、课前预习」[答案] 按条目成段「N．值 值…」，
+#   不逐空编号（旧 ㉑d＝逐空编号「1值2值…」，v10-C 改全品 p04 式，登记见本 reg）。
+_p0, _p1 = body.index('\\zsd{'), body.index('\\tjdnr{一}')
+_pp = re.split(r'\\zsd\{(.)\}\{([^}]*)\}', body[_p0:_p1])
+_ents21 = []
+for _gi in range(1, len(_pp), 3):
+    _es = re.split(r'\\tiaomu[zt]?\{(\d+)\}', _pp[_gi + 2])
+    _ents21.append([(int(_es[_ei]), _es[_ei + 1].count('\\kongbai{}')) for _ei in range(1, len(_es), 2)])
+assert len(_ents21) == 3 and [sum(c for _n, c in g) for g in _ents21] == [11, 5, 4], \
+    '㉑d 条目分组与素材不平（v10-C 分组失效）'
+d_ok, d_bad = True, []
+for (_ci, _nm, _ks, _js), _ents in zip(_pg, _ents21):
+    _idx, _frg = 0, []
+    for _n, _k in _ents:
+        if _k == 0:
+            continue
+        _frg.append('%d%s' % (_n, ''.join(_core21(v) for _i, v in _ks[_idx:_idx + _k])))
+        _idx += _k
+    assert _idx == len(_ks), '㉑d 填空值数与条目空数不平：知' + _ci
+    fill = ''.join(_frg)
+    judg = ''.join('%s%s' % (no, sy) for no, sy, _j in _js)
+    if _norm21(fill) not in atxt:
+        d_ok = False; d_bad.append('知' + _ci + '填空串')
+    if _norm21(judg) not in atxt:
+        d_ok = False; d_bad.append('知' + _ci + '判断答串')
+    for no, _s, jx in _js:
+        # 简析锚＝源串首个 ≥5 字中数/全角标点连串（≤12 字）——数学区两侧提取形制不同（\neq 剔除 vs ≠ 在场），
+        #   锚止于数学前即双侧同形（㉑c run1 教训推广）
+        _seg = re.search(r'[\u4e00-\u9fff0-9，、；：。]{5,}', jx)
+        core = _norm21(_seg.group(0))[:12] if _seg else ''
+        if not core or core not in atxt:
+            d_ok = False; d_bad.append('知' + _ci + '析' + no)
+check('㉑d 课前预习节值在场（三组填空按条目分段整串＋判断答整串＋简析逐条首段≥5字锚·去空白包含判定）', d_ok,
+      '三组九判定全在场' if d_ok else '未在场: ' + '；'.join(d_bad))
+reg('㉑d 口径（全品对齐0911 新立；v10-C 条目分组改）',
+    '册 body「一、课前预习」节每组 [答案]＝填空按知识点条目分段「N．值　值…」（v10-C 全品 p04 式：'
+    '条目号＝variantF \\tiaomu 号、段内不逐空编号、值间全角空格；0 空条目跳过）＋判断 (N)√× 另段、'
+    '[解析]＝逐条 (N) 简析多段（　与全角空格随去空白剔除）——条目分组与 组装body.py._pre_entry_counts '
+    '同式（解析 variantF body \\zsd→\\tjdnr{一} 区，硬断言总数 11/5/4），复组成串过 _norm21 后 pdf 明文包含判定；'
+    '旧口径＝逐空编号「1值2值…11值」（v9 及以前，见 .bak_对齐0911），v10-C 起停用；'
+    '简析锚＝首个 ≥5 字中数连串截 12（数学串 TeX↔pdf 形制不同、锚止于数学区前，㉑c run1 教训推广）；'
+    '正文侧反向锁＝⑪（kongda 0）＋④/⑥/⑰/N1（（　）挂5＋断行独1＝6 槽／[解析]0）')
+reg('答案制0911 断言同步总账（旧→新·逐门）',
+    '门① 页数 7→5；门⑥ [答案]14/[解析]20/[分析]9/[详解]9/[点睛]2 → 0/6(仅判断)/0/0/0，另立 故答案为0/故选0 二核；'
+    '◆9/例1 9/变式9/★0 不变。⑰ 解析span 20→6；门③ 超高定界符 恰4→恰0（探七 array×2＋探八 放大对×2 随 [详解] 出册）；'
+    '门⑩ 答案行 14→0（改反向门）；门⑫ jiexi 14→0（zhenti×6 保留）；位图台账 6→4——⑱ 并排 2→1（仅 g2 逐图钉）·'
+    '下置 4→3·位图 6→4·minipage 4→2·side 2→1·raisebox 2→1；⑱-2/⑱-3/N6 四图口径；⑮ 归属 5→3（g2→三／g3→六／g4→八）；'
+    'FIG_AT 落位钉按 5 页新分页重钉；REDGE_W/SIDE_PIN 去 g1 项。保留面双向锁：判断括号 (√)(×)×6（④）、kongda 印答×20（⑪）、'
+    '简析[解析]×6（⑰）、素养小结×9（N8）、诊断头×3（⑮旧门）均在正文。新立 ㉑a/b/c 册侧门。'
+    '生成链侧硬断言＝postproc 6g 九字面全 0；逐块台账＝去答案清单.md（63 块）；旧值全录 .bak_去答0911。')
+reg('答案制0911 复跑回填钉账（run1 读数→钉·旧→新）',
+    '① FIG_AT 四图钉初钉即全中（g6(2,2)/g2(3,2)/g3(4,1)/g4(4,2)）——旧七页档 g1(3,2)/g5(6,2) 出册；'
+    '② ⑭ 末页栏线：multicol 末页栏线高＝末栏实高 123.4mm＜旧门槛 0.5×TEXTH(128.7mm)——末页阈值降 0.22×TEXTH，'
+    '非末页口径逐字不变（p4 258.2mm 满栏照常）；③ ③定界符 ==0 误判→复钉 ==4：残余＝◆探究点八(展开法)/九(折叠矩形)'
+    '12pt 标题括号 4 字符（11.985pt，0908 旧豁免集本即此四字符、页位 p6/p7→p4/p5），探七 array／探八数学对已随详解出册；'
+    '④ ⑱-2 下距上界 3.89→4.15：g3 探六图下邻由 10.5pt 解析行回行为 12pt 变式标签行，墨顶抬升，实测 4.09（余图 3.19/3.30 不动）；'
+    '⑤ N10 重释：正文 [解析]→题号配对仅存判断域 1 对（2.42mm）——旧门 n≥3 中位 5.21±0.5 的四对全系变式/检测简析（已出册），'
+    '新门 n 1–2 且 2.0–3.5mm（与 ⑦-4 判断缝域同族；若变式简析回渗则读数≈5.2 即红，反向锁在位）；'
+    '⑥ ㉑c 值核口径 run1 13 项未在场→修准：册 pdf 数学字母走 NFKC（𝑏→b）、行内数学定界符（渲染不可见）先剥、'
+    '√ 映射、∘／° 与 U+20D7 组合箭头剔除——修后 23/23 全在场；⑦ ㉑b 「题型：」过 NFKC 折半角冒号，键改 ASCII（run2 唯一残余 ✗）。')
 
 print('—— 断言实测 ——')
 for s in okmsg:

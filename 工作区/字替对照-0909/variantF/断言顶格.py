@@ -34,13 +34,20 @@ v4.4 签名适配（执行轮）：【答案】/【解析】→半角 [答案]/[
 子项号（N）转半角 (N) 后以 \(N 入 SIG（判断题全品式序号）；【答案】行 14 维持（n_ans 计 [答案]）。
 （「图构成＝5 并排 side 0.56＋1 居中 60mm」系旧史——图源回退后不适用，现形制见下「回退轮 0910」段
 位图六张。）
-预期（残留清理 0911 更正口径）：图 6（位图）、[答案] 行 14。表线总数随分页漂移，不硬编码。
+预期（答案制0911 更正口径）：图 4（位图——g1-prism/g5-fold 随 [详解] 出册另排 导学件答案册-v1）、
+[答案] 行 0（答案落册——(c) 改反向锁 n_ans==0，正文渗回即红；册侧值在场见 _测v4断言.py ㉑b/㉑c）。
+（旧档·残留清理 0911 口径：图 6、[答案] 行 14。）表线总数随分页漂移，不硬编码。
 回退轮 0910 (e) 换回位图口径：六图（五例1 图＋条目3 投影三联）由片G 的 TikZ 矢量重绘回退为原图
 位图（body.tex 六行 \includegraphics[width=…mm]{media/media/*.png}，图下置居中·反解宽档），
 PDF 内 image 对象 0→6——(e) 改以 page.get_image_info(xrefs=True) 逐页归集位图矩形并按原生像素
 尺寸认领 g1~g6：门＝位图 n_fig==6 且全部落在栏带内（n_viol_e==0）且与正文行零压字
 （n_press==0）；ok 式相应改 n_fig==6。矢量墨聚簇内核 _vec_clusters 自此不再参与 (e)；残留清理
-0911 已将其折叠删除（位图时代 0 簇＝死码，(d) 计数不变，见件内折叠注）。"""
+0911 已将其折叠删除（位图时代 0 簇＝死码，(d) 计数不变，见件内折叠注）。
+答案制0911 适配：(e) 位图 6→4（g1/g5 出册，余 g6/g2/g3/g4——(e) 判定式 n_fig==4）；n_ans 14→0（反向锁）；
+  页码块/签名口径不涉答案域，其余判据逐字不动；n_sig<40 异常阈值维持（实测见运行行）。
+全品对齐0911 复跑注：判断简析 6 行随 6h 出册→正文 [解析] 签名行退场，n_sig 基线 97→实测 91（恰 −6）；
+  判断行尾「（　）」系 fil 后独立片段行，（＋U+3000 不成「（\d」不匹配 SIG——天然不进 (c)，实测 0 违规；
+  (a)(b) 禁区 grep 不受 \zhentib/\kongbai 新宏影响（无 hangindent、无 \hspace*{2em}）。"""
 import os
 import re
 import pymupdf
@@ -176,7 +183,7 @@ print(f'—— 签名行 {n_sig}（其中[答案]{n_ans}；违规 {n_viol_c}）�
       f'违规 {n_viol_d}，花形豁免 {n_exempt}）｜位图×{n_fig}（尺寸认领 {n_named}/{n_fig}；'
       f'越栏 {n_viol_e}，压字 {n_press}）')
 viol = n_viol_c + n_viol_d + n_viol_e + n_press
-ok = viol == 0 and not fail and n_fig == 6 and n_ans == 14 and n_leftedge >= 6
+ok = viol == 0 and not fail and n_fig == 4 and n_ans == 0 and n_leftedge >= 6   # 答案制0911：n_fig 6→4、n_ans 14→0
 if n_sig < 40:
     ok = False
     print(f'!! 签名行计数异常：{n_sig} < 40（签名口径失效嫌疑，人工复核）')

@@ -1,0 +1,31 @@
+全品对齐0911 6h 素材：知识点填空 20 值（K）＋诊断判断 6 答案/简析（J）——供 组装body.py「课前预习」节
+# 制表符分隔；G=组次/知识点题名；K=组内序号/印答值；J=序号/√×/解析tex原样/题干明文14字
+G	一	空间向量的概念
+K	1	大小
+K	2	方向
+K	3	长度
+K	4	零
+K	5	0
+K	6	0
+K	7	1
+K	8	相反
+K	9	互相平行
+K	10	重合
+K	11	模相等
+J	(1)	×	模相等方向未必相同，还可能相反或斜交，两向量未必相等，故\cha{}.	两个空间向量的模相等则这两个
+J	(2)	√	相等向量方向相同，所在直线平行或重合，符合共线向量(平行向量)定义，故\gou{}.	相等向量一定是共线向量
+G	二	空间向量的线性运算
+K	1	三角形
+K	2	平行四边形
+K	3	相同
+K	4	相反
+K	5	实数
+J	(1)	×	平行传递需\(\overrightarrow{b}\neq\overrightarrow{0}\)；\(\overrightarrow{b}=\overrightarrow{0}\)时零向量与任意向量平行，传递性失效，故\cha{}.	若abbc则ac
+J	(2)	×	缺\(\overrightarrow{b}\neq\overrightarrow{0}\)前提；且\(\overrightarrow{a}=\overrightarrow{0}\)时\(\lambda\)不唯一，故\cha{}.	若ab则存在唯一实数使ab
+G	三	空间向量的夹角、数量积与共面
+K	1	[0°,180°]
+K	2	互相垂直
+K	3	零向量
+K	4	有序实数对
+J	(1)	√	\(\overrightarrow{p}\)是\(\overrightarrow{a}\)、\(\overrightarrow{b}\)的线性组合，由共面向量定理知三向量共面，故\gou{}.	若pxaybab不共线则pa
+J	(2)	×	数量积大于0仅保证\(\cos\theta>0\)，夹角\(\theta\in[0^\circ,90^\circ)\)；\(\theta=0^\circ\)(同向)时数量积也为正而非锐角，故\cha{}.	两个非零空间向量的数量积大于

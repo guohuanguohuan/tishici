@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[paperwidth=100mm,paperheight=200mm,left=10mm,right=10mm,top=10mm,bottom=10mm]{geometry}
+\usepackage{xeCJK}
+\setCJKmainfont[Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/]{FZShuSong-Z01S.ttf}
+\parindent=0pt
+\def\TXT{第一段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三
+
+第二段甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸甲乙丙丁戊己庚辛壬癸结束一二三}
+% E: everypar 重申悬挂
+\newcommand{\E}[1]{\par{\everypar{\hangindent5mm\hangafter=1\setlength{\parindent}{5mm}}\noindent#1\par}}
+% F: leftskip + 首行负跳
+\newcommand{\F}[1]{\par{\leftskip5mm\parindent0mm\noindent\hspace*{-5mm}#1\par}}
+\begin{document}
+E\par\E{\TXT}
+F\par\F{\TXT}
+\end{document}

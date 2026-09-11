@@ -1,0 +1,156 @@
+% ============================================================
+% body.tex —— 答案册·靠齐样张（恰 2 页代表性样页）
+% 源件：工作区/答案册式样-草案0909/demo/body.tex（1 页定稿形态）——本件按其**裁选重排**为 2 页：
+%   第 1 页＝册首页形制（册名行／全书连续页码／三层定位／条目样式）
+%   第 2 页＝解析页形制（答案行／[详解] 块／段内配图／并行解法标记／[点睛]）
+% 式样依据：《答案册式样草案》§六 十二条拍板（2026-09-10 定稿）＋增补拍板⑬⑭（2026-09-11 题型两项）＋§一 证据链表。
+% 题例：沿用 demo 自拟题 8 题（逐题亲算·数值已复核）＋0910 轮补拟 9 题（算式见简报§四）
+%       ＝17 题；0911 题型轮按「压缩选取代表」裁去凑页补拟题 2 道（原题 16、17）＝现 15 题。
+% 句末：本件已做句末点归一（全角实心点．），草案 #19 半角「.」＋空格档仍属题库线债，见简报偏差登记。
+% ============================================================
+
+% ============================================================
+% 题型件（0911 用户新口径：①逐题标「题型：××」②每题型一块「题型总结说明」）
+% 宏在本件就地定义，四个 qp-answ-*.tex 模块本轮零改动（fonts/blocks 与 demo 逐字节一致；
+%   layout/headfoot 的既有差异＝三修0910 已追认项，见简报§九）。
+% ① \txline ＝题型行：紧贴 [答案] 行下、[分析] 行前（用户建议档「紧贴题号行下」）；
+%   字体＝楷体（零件库 XB-01 内容楷体＝全品系「讲解」档），同号 10.09pt（守「正文区无小字层」XB-03），
+%   行距 12pt 密排（容量档，恰 2 页实测取此值）、纯黑无任何标记（沿拍板④ 平文口径）；
+%   v10-B 层级缩进（对齐0911）：题型行＝条目下内容行→左缘收一档 \qpind=5.0mm（旧＝悬挂深度 \anshang，
+%   与 导学件答案册-v1 同档同式）。
+% ② \txsummaryhead＋\txsumitem ＝题型总结说明块：标签行（半角 []＋黑体，沿拍板② 标签语言＋XB-01 标签行立）
+%   ＋楷体正文另起行（XB-01 件式：内容楷体、子项换行），三句＝识别信号／通法步骤／易错点；
+%   v10-B：标签行顶格；三行正文＝内容行→收一档 \qpind。
+% ============================================================
+\newcommand{\txline}[1]{\par\noindent\hspace*{\qpind}%
+  {\kaishu\fontsize{10.09pt}{12pt}\selectfont 题型：#1}\par}
+\newcommand{\txsummaryhead}[1]{\par\glueguard{1}\addvspace{3pt}\noindent
+  {\heibf\fontsize{10.09pt}{13pt}\selectfont [题型总结]\hspace{0.5em}#1}\par\nopagebreak}
+\newcommand{\txsumitem}[2]{\par\noindent\hspace*{\qpind}%
+  {\kaishu\fontsize{10.09pt}{12pt}\selectfont #1：#2}\par}
+
+% ---------- 页码（拍板⑧：全书连续制·全品练习册答案册实证起页 P75） ----------
+\setcounter{page}{75}
+
+% ---------- 册首行（拍板⑨：册名「参考答案」） ----------
+% 式样承载＝E2 节标题件（16.88pt 黑体常规·居中）——草案 §三 明载「封面/书脊/册名」属成书链重做债，
+% 册首行字号/位置无拍板依据，本样张为「册名可见」而临时承载，已登记待拍板。
+\par\nointerlineskip
+{\centering\fontsize{16.88pt}{22pt}\selectfont\hejie 参考答案\par}
+\vspace{2.4mm}
+
+% ============================================================
+% 第 1 页＝册首页形制（册名／页码／三层定位／条目样式）
+% ============================================================
+\zhangtitle{第一章\quad 空间向量与立体几何}
+\jietitle{1.1.1\quad 空间向量及其运算(练习件答案)}
+
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+
+\qufen{一、选择题}{本组共4题}
+
+\ansitem{1}{A}
+\txline{数量积运算}
+\ansline{分析}{把\(|\overrightarrow{a} + \overrightarrow{b}|\)先用数量积展开，再代入已知的模与数量积即可．}
+\ansline{详解}{\(|\overrightarrow{a} + \overrightarrow{b}|^{2} = |\overrightarrow{a}|^{2} + 2\overrightarrow{a} \cdot \overrightarrow{b} + |\overrightarrow{b}|^{2} = 4 + 2 \times ( - 3) + 9 = 7\)，所以\(|\overrightarrow{a} + \overrightarrow{b}| = \sqrt{7}\)．故选：A．}
+
+\ansitem{2}{C}
+\txline{数量积定义求夹角}
+\ansline{分析}{由数量积的定义式反解夹角余弦，再在\(0^{\circ}\)到\(180^{\circ}\)内定角．}
+\ansline{详解}{由\(\overrightarrow{a} \cdot \overrightarrow{b} = |\overrightarrow{a}||\overrightarrow{b}|\cos\langle \overrightarrow{a},\overrightarrow{b} \rangle\)得\(\cos\langle \overrightarrow{a},\overrightarrow{b} \rangle = \frac{- 6}{3 \times 4} = - \frac{1}{2}\)．因为\(\langle \overrightarrow{a},\overrightarrow{b} \rangle \in \lbrack 0^{\circ},180^{\circ}\rbrack\)，所以\(\langle \overrightarrow{a},\overrightarrow{b} \rangle = 120^{\circ}\)．故选：C．}
+
+\ansitem{3}{B}
+\txline{数量积运算}
+\ansline{分析}{两向量的和与差作数量积，按分配律展开后交叉项相消，只剩两个模的平方之差．}
+\ansline{详解}{\((\overrightarrow{a} + \overrightarrow{b}) \cdot (\overrightarrow{a} - \overrightarrow{b}) = |\overrightarrow{a}|^{2} - \overrightarrow{a} \cdot \overrightarrow{b} + \overrightarrow{b} \cdot \overrightarrow{a} - |\overrightarrow{b}|^{2} = |\overrightarrow{a}|^{2} - |\overrightarrow{b}|^{2} = 1 - 4 = - 3\)，与两向量所成角无关．故选：B．}
+
+\ansitem{4}{D}
+\txline{数量积运算}
+\ansline{分析}{把模的平方写成自身的数量积，展开后代入\(\overrightarrow{a} \cdot \overrightarrow{b}\)的值．}
+\ansline{详解}{\(|\overrightarrow{a} - \overrightarrow{b}|^{2} = |\overrightarrow{a}|^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + |\overrightarrow{b}|^{2} = 1 - 2 \times \frac{1}{2} + 1 = 1\)，所以\(|\overrightarrow{a} - \overrightarrow{b}| = 1\)．故选：D．}
+
+\qufen{二、填空题}{本组共6题}
+
+\ansitem{5}{\(- 4\)}
+\txline{共线向量定参数}
+\ansline{分析}{两向量共线即存在唯一实数\(\lambda\)使\(\overrightarrow{c} = \lambda\overrightarrow{d}\)，比较基底系数得方程组．}
+\ansline{详解}{因为\(\overrightarrow{a}\)，\(\overrightarrow{b}\)不共线，故\(\overrightarrow{c}\parallel\overrightarrow{d}\)等价于存在实数\(\lambda\)使\(2\overrightarrow{a} - 3\overrightarrow{b} = \lambda(k\overrightarrow{a} + 6\overrightarrow{b}) = \lambda k\overrightarrow{a} + 6\lambda\overrightarrow{b}\)．对应系数相等，得\(2 = \lambda k\)且\(- 3 = 6\lambda\)，解得\(\lambda = - \frac{1}{2}\)，\(k = - 4\)．}
+
+\ansitem{6}{(1)\(2\sqrt{3}\)；(2)\(4\)}
+\txline{数量积运算}
+\ansline{分析}{以同一顶点出发的三条棱向量为基底，把目标向量写成基底的和，再用两两垂直消去交叉项．}
+\ansline{详解}{由正方体知\(\overrightarrow{AB}\)，\(\overrightarrow{AD}\)，\(\overrightarrow{AA_{1}}\)两两垂直且模均为\(2\)．(1)\(\overrightarrow{AC_{1}} = \overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}\)，则\(|\overrightarrow{AC_{1}}|^{2} = |\overrightarrow{a}|^{2} + |\overrightarrow{b}|^{2} + |\overrightarrow{c}|^{2} + 2(\overrightarrow{a} \cdot \overrightarrow{b} + \overrightarrow{a} \cdot \overrightarrow{c} + \overrightarrow{b} \cdot \overrightarrow{c}) = 12 + 0 = 12\)，故\(AC_{1} = 2\sqrt{3}\)．(2)\(\overrightarrow{AB} \cdot \overrightarrow{AC_{1}} = \overrightarrow{a} \cdot (\overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}) = |\overrightarrow{a}|^{2} + \overrightarrow{a} \cdot \overrightarrow{b} + \overrightarrow{a} \cdot \overrightarrow{c} = 4\)．}
+
+\ansitem{7}{\(10\)}
+\txline{数量积运算}
+\ansline{分析}{先由模与夹角求出数量积，再把两个一次式的积按分配律展开，整理成\(|\overrightarrow{a}|^{2}\)、\(\overrightarrow{a} \cdot \overrightarrow{b}\)、\(|\overrightarrow{b}|^{2}\)三项．}
+\ansline{详解}{\(\overrightarrow{a} \cdot \overrightarrow{b} = 2 \times 1 \times \cos 120^{\circ} = - 1\)．又\((2\overrightarrow{a} + \overrightarrow{b}) \cdot (\overrightarrow{a} - 3\overrightarrow{b}) = 2|\overrightarrow{a}|^{2} - 6\overrightarrow{a} \cdot \overrightarrow{b} + \overrightarrow{a} \cdot \overrightarrow{b} - 3|\overrightarrow{b}|^{2} = 2|\overrightarrow{a}|^{2} - 5\overrightarrow{a} \cdot \overrightarrow{b} - 3|\overrightarrow{b}|^{2} = 8 + 5 - 3 = 10\)．}
+
+\ansitem{8}{\(\frac{\sqrt{3}}{3}\)}
+\txline{数量积定义求夹角}
+\ansline{分析}{两两垂直时交叉项全为零，先求出\(|\overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}|\)，再按数量积定义式反解夹角余弦．}
+\ansline{详解}{因为\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，\(\overrightarrow{c}\)两两垂直，所以\(|\overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}|^{2} = 1 + 1 + 1 = 3\)，即\(|\overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}| = \sqrt{3}\)．又\(\overrightarrow{a} \cdot (\overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}) = |\overrightarrow{a}|^{2} = 1\)，故\(\cos\langle \overrightarrow{a},\overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}\rangle = \frac{1}{1 \times \sqrt{3}} = \frac{\sqrt{3}}{3}\)．}
+
+\ansitem{9}{\(\frac{\sqrt{13}}{2}\)}
+\txline{数量积运算}
+\ansline{分析}{把\(\frac{1}{2}\overrightarrow{a} - \overrightarrow{b}\)的平方按数量积展开，三个已知量直接代入．}
+\ansline{详解}{\(\overrightarrow{a} \cdot \overrightarrow{b} = 1 \times 2 \times \cos 60^{\circ} = 1\)，所以\(|\frac{1}{2}\overrightarrow{a} - \overrightarrow{b}|^{2} = \frac{1}{4}|\overrightarrow{a}|^{2} - \overrightarrow{a} \cdot \overrightarrow{b} + |\overrightarrow{b}|^{2} = \frac{1}{4} - 1 + 4 = \frac{13}{4}\)，故\(|\frac{1}{2}\overrightarrow{a} - \overrightarrow{b}| = \frac{\sqrt{13}}{2}\)．}
+
+% 题号进入双位档：悬挂深度 5.8mm→7.6mm（草案 #22／C2 全品实测「单号 5.7–5.8／双位 7.5–7.7mm」）。
+% 单号档下「10.」墨宽 6.03mm＞5.8mm，会与 [答案] 左缘相撞（实测重叠 0.23mm），故必须换档。
+\setlength{\anshang}{7.6mm}
+\ansitem{10}{\(5\)}
+\txline{基底分解求模最值}
+\ansline{分析}{把\(\overrightarrow{a}\)沿\(\overrightarrow{e_{1}}\)、\(\overrightarrow{e_{2}}\)与它们的公垂方向分解，未知分量只增不减模长．}
+\ansline{详解}{设\(\overrightarrow{n}\)与\(\overrightarrow{e_{1}}\)、\(\overrightarrow{e_{2}}\)都垂直且\(|\overrightarrow{n}| = 1\)，则可设\(\overrightarrow{a} = 3\overrightarrow{e_{1}} + 4\overrightarrow{e_{2}} + t\overrightarrow{n}\)，此时\(\overrightarrow{a} \cdot \overrightarrow{e_{1}} = 3\)、\(\overrightarrow{a} \cdot \overrightarrow{e_{2}} = 4\)恒成立．于是\(|\overrightarrow{a}|^{2} = 9 + 16 + t^{2} \geqslant 25\)，当\(t = 0\)即\(\overrightarrow{a}\)与\(\overrightarrow{e_{1}}\)、\(\overrightarrow{e_{2}}\)共面时取等号，故\(|\overrightarrow{a}|\)的最小值为\(5\)．}
+
+% 0911 题型轮：撤除人为 \clearpage（原偏差⑥），题 1–17 连排于同一 multicol 流、两页自然断栏；
+% 两种形制不变：p1＝册首页形制（册名＋章标＋节标在此页），p2＝解析页形制（同节续页·无标题）。
+\setlength{\anshang}{7.6mm}   % 题号 10–15 双位档（#22；题 10 起已设，此处跨过撤除的分页点显式重申）
+
+\qufen{三、解答题}{本组共5题}
+
+\ansitem{11}{\(- 1\)}
+\txline{数量积运算}
+\ansline{分析}{把\(\overrightarrow{AE}\)与\(\overrightarrow{BD}\)都用从\(A\)出发的三条棱向量表示，再用垂直关系与模长作数量积．}
+\ansline{详解}{设\(\overrightarrow{AB} = \overrightarrow{a}\)，\(\overrightarrow{AD} = \overrightarrow{b}\)，\(\overrightarrow{AA_{1}} = \overrightarrow{c}\)，则\(|\overrightarrow{a}| = |\overrightarrow{b}| = |\overrightarrow{c}| = 1\)且两两垂直．因为\(E\)为\(BB_{1}\)的中点，所以\(\overrightarrow{AE} = \overrightarrow{AB} + \overrightarrow{BE} = \overrightarrow{a} + \frac{1}{2}\overrightarrow{c}\)；又\(\overrightarrow{BD} = \overrightarrow{AD} - \overrightarrow{AB} = \overrightarrow{b} - \overrightarrow{a}\)．于是
+\(\overrightarrow{AE} \cdot \overrightarrow{BD} = \allowbreak\left( \overrightarrow{a} + \frac{1}{2}\overrightarrow{c} \right) \cdot \allowbreak\left( \overrightarrow{b} - \overrightarrow{a} \right) = \overrightarrow{a} \cdot \overrightarrow{b} - |\overrightarrow{a}|^{2} + \frac{1}{2}\overrightarrow{c} \cdot \overrightarrow{b} - \frac{1}{2}\overrightarrow{c} \cdot \overrightarrow{a} = 0 - 1 + 0 - 0 = - 1\)．}
+% 回退轮0910：此题（正方体 ABCD-A₁B₁C₁D₁、E 为 BB₁ 中点）原配 AI 重绘三维 TikZ 立方体，
+%   用户令「禁画三维图、AI 画过的一律不要」；查 variantF/media/media/ 与 工作区/_tmp片G素材/
+%   均无该题原位图（草案简报 §288：本题系式样草案新拟演示题，立方体即为其原创图）→ 按令去图。
+\ansitem{12}{\(- \frac{1}{4}\overrightarrow{b}\)}
+\txline{求投影向量}
+\ansline{分析}{先用夹角余弦求数量积，再按投影向量公式直接代入，不必另求单位向量与夹角．}
+\ansline{详解}{\(\overrightarrow{a} \cdot \overrightarrow{b} = |\overrightarrow{a}||\overrightarrow{b}|\cos 120^{\circ} = 1 \times 2 \times \left( - \frac{1}{2} \right) = - 1\)，故\(\overrightarrow{a}\)在\(\overrightarrow{b}\)上的投影向量为\(\frac{\overrightarrow{a} \cdot \overrightarrow{b}}{|\overrightarrow{b}|^{2}}\overrightarrow{b} = - \frac{1}{4}\overrightarrow{b}\)．}
+\ansline{点睛}{投影向量是向量、投影数量是实数，两者名称与属性都不同，答题时不可混用．}
+
+\ansitem{13}{\(60^{\circ}\)}
+\txline{异面直线所成角}
+\ansline{分析}{异面直线所成角不超过\(90^{\circ}\)，先把两条直线对应的向量用基底表示，再用数量积求向量夹角．}
+\ansline{详解}{设\(\overrightarrow{AB} = \overrightarrow{a}\)，\(\overrightarrow{AD} = \overrightarrow{b}\)，\(\overrightarrow{AA_{1}} = \overrightarrow{c}\)，则\(|\overrightarrow{a}| = |\overrightarrow{b}| = |\overrightarrow{c}| = 1\)且两两垂直．\(\overrightarrow{A_{1}B} = \overrightarrow{a} - \overrightarrow{c}\)，\(\overrightarrow{BC_{1}} = \overrightarrow{b} + \overrightarrow{c}\)，于是\(\overrightarrow{A_{1}B} \cdot \overrightarrow{BC_{1}} = \allowbreak\left( \overrightarrow{a} - \overrightarrow{c} \right) \cdot \allowbreak\left( \overrightarrow{b} + \overrightarrow{c} \right) = - |\overrightarrow{c}|^{2} = - 1\)；又\(|\overrightarrow{A_{1}B}| = |\overrightarrow{BC_{1}}| = \sqrt{2}\)，故\(\cos\langle \overrightarrow{A_{1}B},\overrightarrow{BC_{1}} \rangle = - \frac{1}{2}\)，向量夹角为\(120^{\circ}\)．因为异面直线所成角取\(90^{\circ}\)以内的角，所以\(A_{1}B\)与\(BC_{1}\)所成的角为\(60^{\circ}\)．}
+
+\ansitem{14}{\(\sqrt{14}\)}
+\txline{数量积运算}
+\ansline{分析}{两两垂直即两两数量积为\(0\)，把模的平方按数量积展开后交叉项全消．}
+\ansline{详解}{因为\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，\(\overrightarrow{c}\)两两垂直，所以\(\overrightarrow{a} \cdot \overrightarrow{b} = \overrightarrow{a} \cdot \overrightarrow{c} = \overrightarrow{b} \cdot \overrightarrow{c} = 0\)．于是\(|\overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}|^{2} = |\overrightarrow{a}|^{2} + |\overrightarrow{b}|^{2} + |\overrightarrow{c}|^{2} = 1 + 4 + 9 = 14\)，故\(|\overrightarrow{a} + \overrightarrow{b} + \overrightarrow{c}| = \sqrt{14}\)．}
+
+\ansitem{15}{(1)\(\sqrt{7}\)；(2)\(\frac{2\sqrt{7}}{7}\)}
+\txline{数量积定义求夹角}
+\ansline{分析}{求模可走基底数量积法，也可在\(\overrightarrow{a}\)、\(\overrightarrow{b}\)确定的平面内建系把向量坐标化，两法并行，任取其一即可．}
+\ansline{解法一}{\(\overrightarrow{a} \cdot \overrightarrow{b} = 1 \times 2 \times \cos 60^{\circ} = 1\)，则\(|\overrightarrow{a} + \overrightarrow{b}|^{2} = |\overrightarrow{a}|^{2} + 2\overrightarrow{a} \cdot \overrightarrow{b} + |\overrightarrow{b}|^{2} = 1 + 2 + 4 = 7\)，故\(|\overrightarrow{a} + \overrightarrow{b}| = \sqrt{7}\)．又\(\overrightarrow{a} \cdot (\overrightarrow{a} + \overrightarrow{b}) = |\overrightarrow{a}|^{2} + \overrightarrow{a} \cdot \overrightarrow{b} = 2\)，所以\(\cos\langle \overrightarrow{a},\overrightarrow{a} + \overrightarrow{b}\rangle = \frac{2}{1 \times \sqrt{7}} = \frac{2\sqrt{7}}{7}\)．}
+\ansline{解法二}{以\(\overrightarrow{a}\)的方向为\(x\)轴正方向，在\(\overrightarrow{a}\)、\(\overrightarrow{b}\)确定的平面内建立直角坐标系，则\(\overrightarrow{a} = (1,0)\)，\(\overrightarrow{b} = (2\cos 60^{\circ},2\sin 60^{\circ}) = (1,\sqrt{3})\)，\(\overrightarrow{a} + \overrightarrow{b} = (2,\sqrt{3})\)．故\(|\overrightarrow{a} + \overrightarrow{b}| = \sqrt{4 + 3} = \sqrt{7}\)，\(\cos\langle \overrightarrow{a},\overrightarrow{a} + \overrightarrow{b}\rangle = \frac{1 \times 2 + 0 \times \sqrt{3}}{1 \times \sqrt{7}} = \frac{2\sqrt{7}}{7}\)．}
+\ansline{点睛}{两法结果一致可互为验算：能用基底表示的优先用数量积法，涉及具体夹角与长度时建系更省思考．}
+
+% 0911 题型轮容量裁选：原题 17（垂直条件求参数·0910 轮凑页补拟题）按用户「内容加不下时压缩选取代表」
+% 口径裁去（尾题裁选不涉重编号）；原题 16（等夹角基底展开·同为凑页补拟）同口径裁去；
+% 两题亲算记录仍存简报§五附（历史留档），题型覆盖六名俱全。两项新内容落位保 2 页优先，见简报§十一。
+% ---------- 题型总结说明块（0911 用户令②示例） ----------
+% 选本样张覆盖最多题型「数量积运算」（8/15 题）；三句文案系样张自拟（非题库既有），已登记简报§十一。
+\txsummaryhead{数量积运算}
+\txsumitem{识别信号}{题干给出模与夹角（或两两垂直、共线），求和差式或一次式的模与数量积之值．}
+\txsumitem{通法步骤}{模平方写成自身数量积，展开后代入交叉项（垂直则全为零），合并即得．}
+\txsumitem{易错点}{展开勿漏交叉项的 2 倍系数；钝角时数量积为负；向量夹角与异面线角取值范围勿混．}
+
+\end{multicols}

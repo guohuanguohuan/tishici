@@ -164,7 +164,12 @@
 \setlength{\headwidth}{\textwidth}
 % 段隙＝扫描页实测「墨隙 − 0.46mm 字余白」：p01 墨隙 4.41/4.34/2.71，p02 墨隙 2.35/4.41/3.48/3.20/3.27
 \fancyfoot[RO]{\jptxt\juanname\hspace{3.95mm}{\heitiao 测评卷}\hspace{3.88mm}卷\hspace{2.25mm}\jpnum{\pqt}}
-\fancyfoot[LE]{\jptxt\jpnum{\pqt}\hspace{1.9mm}卷\hspace{3.95mm}{\heitiao 全品学练考}%
+% v10-D 对齐0911（卷四防漏门②品牌/占位串）：偶页页脚「全品学练考」品牌串撤出成品——
+%   别家品牌不入印；余件序（页码·卷·学科·册名·RJB）与间距档不动。
+% 品牌0911（2026-09-11 用户拍板）：原品牌位换上自家品牌「羿郭工作室」——同位同字号同族，
+%   沿该位原有宏与字体设置（\jptxt 7.5pt＋\heitiao，五字替五字），前后隙复归原档
+%   3.95mm/3.0mm；余页脚元素与件序不动，奇页 RO 本无品牌串、不加。
+\fancyfoot[LE]{\jptxt\jpnum{\pqt}\hspace{1.9mm}卷\hspace{3.95mm}{\heitiao 羿郭工作室}%
   \hspace{3.0mm}高中数学\hspace{2.75mm}选择性必修第一册\hspace{2.8mm}RJB}
 
 % ------------------------------------------------------------
@@ -214,8 +219,6 @@
   \zuhang{四、解答题}{：本题共5小题，共77分.\ 解答应写出文字说明、证明过程或演算步骤.}
   \vgt{\hG}
   \ti{6}{\fenzhi{13}已知\(|\overrightarrow{a}|=4\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=120^\circ\)，求\(|\overrightarrow{a}+\overrightarrow{b}|\).}
-  \vgt{\hG}
-  \dablock{\(\sqrt{13}\)}
-  \xjblock{\(\overrightarrow{a}\cdot\overrightarrow{b}=|\overrightarrow{a}|\,|\overrightarrow{b}|\,\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=4\times3\times\left(-\frac{1}{2}\right)=-6\)；\(|\overrightarrow{a}+\overrightarrow{b}|^{2}=|\overrightarrow{a}|^{2}+2\overrightarrow{a}\cdot\overrightarrow{b}+|\overrightarrow{b}|^{2}=16-12+9=13\)，故\(|\overrightarrow{a}+\overrightarrow{b}|=\sqrt{13}\).}
+  % 答案制A（0911）：Q6 题下【答案】/【详解】块已移出卷面（题答分离，答案侧入册）；备份 main.tex.bak_答案制A0911
 }{}
 \end{document}

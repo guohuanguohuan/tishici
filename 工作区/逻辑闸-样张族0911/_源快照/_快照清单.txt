@@ -1,0 +1,24 @@
+ffad3586a22a60a799c9925ee232b301a16918b2f2dab75b4fdbb71136968387 *variantF_body.tex
+a77b3531c4ff833ec42508c64a6b9aff3106f5b1b004a4095cd3aa171724620a *variantF_qp-blocks.tex
+9beccce17029b726cb9fb96d42d6f24307f71c8209f58a7c21e29bd52513739e *导学增量_main.tex
+11b49eee5014c51fc95d32c03eee7998817c4f4f593e6976df231dec112fae4c *导学增量_qp-blocks.tex
+0deeba87b12b0372b2037f29387731126407e7d6363edce6958f6e4236639c79 *测评卷_main.tex
+de91fb674c94931b32a8a7272ac269ebfcaa5f3db7086773eee0922f01585306 *答案册v1_body.tex
+1dd6e649005e33df46f78648a4ff0e927a1f7e247552e85bdbaf2424bf6c511f *答案册v1_qp-answ-blocks.tex
+0239ff591e8a7bc3d2025d51d15fbb585fbd14767fa8533148dc081629c16448 *答案册样张_body.tex
+67e84530d94b3dd1bfd2d23de6925f25e0e23ff4ceba10cf68c72d822385b2d3 *答案册样张_main.tex
+7b73d1363b6fbd0696f376c114810b855fa7b86759c684e66c5821614f617b0a *练习线_main.tex
+total 196
+drwxr-xr-x 1 28120 197121     0 Sep 11 14:55 .
+drwxr-xr-x 1 28120 197121     0 Sep 11 14:55 ..
+-rw-r--r-- 1 28120 197121   890 Sep 11 14:55 _快照清单.txt
+-rw-r--r-- 1 28120 197121 27779 Sep 11 12:44 variantF_body.tex
+-rw-r--r-- 1 28120 197121 22452 Sep 11 14:26 variantF_qp-blocks.tex
+-rw-r--r-- 1 28120 197121 16134 Sep 11 14:32 导学增量_main.tex
+-rw-r--r-- 1 28120 197121 22215 Sep 11 14:32 导学增量_qp-blocks.tex
+-rw-r--r-- 1 28120 197121 17536 Sep 11 14:34 测评卷_main.tex
+-rw-r--r-- 1 28120 197121 23065 Sep 11 14:41 答案册v1_body.tex
+-rw-r--r-- 1 28120 197121  4493 Sep 11 14:36 答案册v1_qp-answ-blocks.tex
+-rw-r--r-- 1 28120 197121 18297 Sep 11 14:37 答案册样张_body.tex
+-rw-r--r-- 1 28120 197121  1482 Sep 10 16:29 答案册样张_main.tex
+-rw-r--r-- 1 28120 197121 19943 Sep 11 12:50 练习线_main.tex

@@ -588,7 +588,7 @@ kbtable('名称', '定义', '表示', [
     [r'零向量', r'长度为' + kb('0') + r'的向量叫做零向量', r'记作' + kb('0')],
     [r'单位向量', r'模等于' + kb('1') + r'的向量', r'用 \(e\) 表示，\(|e|=1\)'],
     [r'相反向量', r'与 \(\overrightarrow{a}\) 长度相同而方向' + kb('相反') + r'的向量', r'记作 \(-\overrightarrow{a}\)'],
-    [r'共线向量或平行向量', r'表示若干空间向量的有向线段所在的直线' + kb('互相平行') + r'或' + kb('重合'), r'记作 \(\overrightarrow{a}\parallel\overrightarrow{b}\)'],
+    [r'共线向量或平行向量', r'表示若干空间向量的有向线段所在的直线' + r'\hspace{0pt plus 1fill}' + kb('互相平行') + r'或' + kb('重合'), r'记作 \(\overrightarrow{a}\parallel\overrightarrow{b}\)'],
     [r'相等向量', r'方向相同且' + kb('模相等') + r'的向量', r'记作 \(\overrightarrow{a}=\overrightarrow{b}\)'],
 ], ('16', '35.6', '27.3'), tcsep=2)   # F：E 手改②上移——表1 末列 29→26.7mm（E 定稿值）；H1（E7 联动）：
                                      # 栏宽 82.8→84.0 → 列宽 +1.2mm（16/35/26.7→16/35.6/27.3，总 83.98＝栏宽−框线 2.4pt−tabcolsep）
@@ -1300,6 +1300,367 @@ log(f'6f. 句末标点0910（拍板A·E8 二期）：body.tex U+FF0E 全件 104 
     f'保留 {_n_ff0e_left}（K1 检测题号 {_cnt_ff0e["K1"]}／K2 选项标号 {_cnt_ff0e["K2"]}／K3 方法标号 {_cnt_ff0e["K3"]}／'
     f'K4 数学式内 {_cnt_ff0e["K4"]}）；转换后句末位残留 0、全件 U+FF0E＝{_n_ff0e_left}（＝104−{_cnt_ff0e["T"]}，断言）；'
     '引号内/省略号/区间坐标/小数点位 0 处；逐处清单＝_tmp取证0909c/片G/句末标点0910/逐处清单.txt')
+# ---- 6g. 去答案0911（答案制A·用户拍板：全品式＝正文不印答案/解析，答案单独成册）----
+# 口径基准＝靠齐样张-0910/导学增量（现行形制）：保留正文——\zhenti 判断题（√/×＋[解析]）与【素养小结】、
+#   \kongda 知识点挖空印答（课前预习区，非判分值）、题面/选项/填空位；一律移出正文——
+#   【例/变式/检测(课堂评价)/试题】的 \ansline [答案] 值、\jiexi 简析[解析]、例题 [分析]/[详解]/[点睛]
+#   全段（含「故答案为…/故选…」句、[详解] 续段与详解区配图——探二并排图文行 g1／探九下置图行 g5）。
+# 样张未覆盖块按「移出」默认执行并登记（简报）：例题 [分析]（导学增量正文即无 [分析]）、\jiexi 简析行
+#   （导学增量变式/检测无简析行）、详解区配图（属 [详解] 附件）。
+# 本 pass 为生成链末位（6f 句末归一之后、body.tex 落盘之前）：按空行分块跑状态机，判分值块从
+#   body_text 剔除，逐块落清单（页＝去答前 7 页档 pdf 检索归属题题干定位；位置＝body.tex 行号；
+#   块型；去向＝答案册 v1 对应条目）；移出内容全文另落 素材文件 供 导学件答案册-v1/body.tex 组装。
+import pymupdf as _fitz0911
+EVID_D0911 = r'C:\提示词\工作区\_tmp取证0909c\片G\去答案0911'
+os.makedirs(EVID_D0911, exist_ok=True)
+_blocks_d = body_text.split('\n\n')
+_line0_d = []            # 每块起始行号（1 基，去答前 body.tex）
+_ln = 1
+for _b in _blocks_d:
+    _line0_d.append(_ln)
+    _ln += _b.count('\n') + 2
+
+
+def _plain0911(s):
+    """tex → 检索用明文：去控制字/花括号/反斜杠串，仅留中英文数字（数学式整体丢弃）。"""
+    return re.sub(r'[^0-9A-Za-z\u4e00-\u9fff]', '', re.sub(r'\\[a-zA-Z@]+\*?', ' ', s))
+
+
+def _stemkey0911(b):
+    """块内最长连续 CJK 串 ≥5 字的前 10 字，作 pdf 页定位键。"""
+    runs = re.findall(r'[\u4e00-\u9fff]{5,}', b)
+    return max(runs, key=len)[:10] if runs else None
+
+
+# 去答前 7 页档＝页号定位源。复验0911 起优先用冻结副本（main.pdf 编译后即 5 页档，重跑须有恒定前档）；
+# 冻结件缺失时才回退现场 main.pdf（＝首次运行、尚未编译去答版的场景）。
+_pre_pdf = EVID_D0911 + r'\main-去答前档7页.pdf'
+if not os.path.exists(_pre_pdf):
+    _pre_pdf = BASE + r'\main.pdf'
+_doc_pre = _fitz0911.open(_pre_pdf)
+_pgtext = [p.get_text().replace('\n', '').replace(' ', '') for p in _doc_pre]
+
+
+def _page_of(key):
+    if not key:
+        return ''
+    for i, tx in enumerate(_pgtext, 1):
+        if key in tx:
+            return i
+    return '?'
+
+
+def _arg_split0911(b, head):
+    """拆宏两参：b == head{arg1}{arg2}（brace 计数），返回 (arg1, arg2) 或 None。"""
+    assert b.startswith(head + '{'), b[:20]
+    pos, n = len(head), len(b)
+
+    def _grab(i):
+        assert b[i] == '{', i
+        d, j = 0, i
+        while j < n:
+            if b[j] == '{':
+                d += 1
+            elif b[j] == '}':
+                d -= 1
+                if d == 0:
+                    return i + 1, j + 1
+            j += 1
+        raise AssertionError('花括号不平衡')
+    a1s, a1e = _grab(pos)
+    a2s, a2e = _grab(a1e)
+    assert b[a2e:].strip() == '', b[a2e:a2e + 20]
+    return b[a1s:a1e - 1], b[a2s:a2e - 1]
+
+
+# —— 状态机分型判据 ——
+_RE_ZONE_OPEN = re.compile(r'^\\bindp \[(分析|详解|点睛)\]')
+_RE_FUDDA = r'\bindp 故答案为'
+_RE_FIGUNDER = re.compile(r'^\\bindp \\par\\vspace\{1\.9mm\}\\penalty10000\\noindent\\makebox')
+_ST_START = re.compile(r'^\\(tjdnr|liB|xiaojie|bindopt|ansline|jiexi|jiancestem|jiance|huaxing|zsd|'
+                       r'zhenhead|zhenti|tiaomu|tiaomuz|vbox|vspace|begin|end)\b')
+
+
+_kept, _rows_d, _mat = [], [], []          # 留正文块／清单行（块级）／素材（题级）
+_cur_q, _cur_name, _in_zone, _cur_key = '课前预习', '', False, None
+_tj_seq = {'一': '一', '二': '二', '三': '三', '四': '四', '五': '五', '六': '六', '七': '七', '八': '八', '九': '九'}
+_moved_cnt = {}
+_pending_mat = None                        # 当前题素材收集器
+
+
+def _mat_start(qq):
+    global _pending_mat
+    if _pending_mat:
+        _mat.append(_pending_mat)
+    _pending_mat = dict(q=qq, items=[])
+
+
+def _zone_cont(b):
+    """详解/分析区续段：无标签的 \bindp 续排段（含区内下置图行——探九详解配图）＋含 [详解] 的并排图文行。"""
+    if b.startswith('\\bindp'):
+        return not (b.startswith('\\bindp {\\kaishu') or b.startswith('\\bindp ['))
+    return b.startswith(r'\noindent\begin{minipage}') and '[详解]' in b
+
+
+_d_i = 0
+for _b in _blocks_d:
+    _d_i += 1
+    _ln0 = _line0_d[_d_i - 1]
+    _ln1 = _ln0 + _b.count('\n')
+    kind = None
+    _nb = _b
+    # —— 题5 答案内联：\jiance{题干}{答案} → \jiancestem{题干}，答案值入册 ——
+    if _b.startswith(r'\jiance{'):
+        _a1, _a2 = _arg_split0911(_b, r'\jiance')
+        _m5 = re.search(r'\\numboldjian\s*(\d)', _a1)
+        _cur_q = f'课堂评价{_m5.group(1) if _m5 else "?"}'
+        _cur_key = _stemkey0911(_a1)
+        _in_zone = False
+        _mat_start(_cur_q)
+        _pending_mat['items'].append(('答案行(题5内联)', _a2))
+        _rows_d.append((_ln0, _ln1, _page_of(_cur_key or ''), '答案行(题5内联)', _cur_q, f'答案册·{_cur_q}·[答案]', _plain0911(_a2)[:30]))
+        _moved_cnt['答案行(题5内联)'] = _moved_cnt.get('答案行(题5内联)', 0) + 1
+        _kept.append(r'\jiancestem{' + _a1 + '}')
+        continue
+    # —— 归属推进（题面块留正文）——
+    if _b.startswith(r'\tjdnr{'):
+        _m = re.match(r'\\tjdnr\{(一|二|三|四|五|六|七|八|九)\}\{([^}]*)\}', _b)
+        _cur_q, _cur_name, _in_zone = f'探究点{_tj_seq[_m.group(1)]}·例1', _m.group(2), False
+        _cur_key = _stemkey0911(_b)
+        _mat_start(_cur_q)
+        _pending_mat['name'] = _cur_name
+    elif _b.startswith(r'\liB{'):
+        _in_zone = False
+        _cur_q = _cur_q.split('·')[0] + '·变式1'
+        _cur_key = _stemkey0911(_b)
+        _mat_start(_cur_q)
+        _pending_mat['name'] = _cur_name
+    elif _b.startswith(r'\jiancestem{'):
+        _in_zone = False
+        _m = re.search(r'\\numboldjian\s*(\d)', _b)
+        _cur_q = f'课堂评价{_m.group(1) if _m else "?"}'
+        _cur_key = _stemkey0911(_b)
+        _mat_start(_cur_q)
+    elif _b.startswith(r'\huaxing{'):
+        _in_zone = False
+        _cur_q = '课前预习' if '{前}' in _b else ('课中探究' if '{中}' in _b else '课堂评价')
+        _cur_key, _cur_name = None, ''
+    elif _ST_START.match(_b):
+        _in_zone = False
+    # —— 判分值块剔除（块型判定＋区内续段跟随）——
+    if _RE_ZONE_OPEN.match(_nb):
+        _lab = re.match(r'^\\bindp \[(分析|详解|点睛)\]', _nb).group(1)
+        kind = {'分析': '例[分析]', '详解': '例[详解]', '点睛': '例[点睛]'}[_lab]
+        _in_zone = True
+    elif _nb.startswith(_RE_FUDDA):
+        kind, _in_zone = '故答案行', True
+    elif _nb.startswith(r'\ansline{'):
+        kind = '答案行'
+    elif _nb.startswith(r'\jiexi{'):
+        kind = '简析行[解析]'
+    elif _in_zone and _zone_cont(_nb):
+        kind = ('例[详解]并排图文行' if _nb.startswith(r'\noindent\begin{minipage}') else
+                '例[详解]配图行' if _RE_FIGUNDER.match(_nb) else '[详解/分析]续段')
+    if kind:
+        _moved_cnt[kind] = _moved_cnt.get(kind, 0) + 1
+        _lab_d = {'答案行': '[答案]', '答案行(题5内联)': '[答案]', '简析行[解析]': '[解析]',
+                  '例[分析]': '[分析]', '例[详解]': '[详解]', '例[详解]并排图文行': '[详解]',
+                  '例[详解]配图行': '[详解]配图', '[详解/分析]续段': '[详解]续段',
+                  '例[点睛]': '[点睛]', '故答案行': '[答案]值句'}.get(kind, kind)
+        _pg_d = _page_of(_stemkey0911(_nb) or '') or _page_of(_cur_key or '')
+        _rows_d.append((_ln0, _ln1, _pg_d, kind, _cur_q, f'答案册·{_cur_q}·{_lab_d}', _plain0911(_nb)[:30]))
+        if _pending_mat is not None:
+            _pending_mat['items'].append((kind, _nb))
+        continue
+    _kept.append(_nb)
+if _pending_mat:
+    _mat.append(_pending_mat)
+_pre_npages = len(_pgtext)
+_doc_pre.close()
+body_text = '\n\n'.join(_kept)
+
+# —— 落盘后复扫硬门：正文判分值 0 在场（答案制A 生成链自锁）——
+for _lit in (r'\ansline{', r'\jiexi{', r'\jiance{', '[分析]', '[详解]', '[点睛]', '故答案为', '故选', '[答案]'):
+    assert body_text.count(_lit) == 0, f'去答0911 残留：{_lit} 仍 {body_text.count(_lit)} 处'
+assert body_text.count(r'\zhenti{') == 6 and body_text.count(r'\kongda{') == 20 \
+    and body_text.count(r'\xiaojie{') == 9 and body_text.count(r'\tjdnr{') == 9 \
+    and body_text.count(r'\liB{') == 9 and body_text.count(r'\jiancestem{') == 5, \
+    '去答0911 保留面计数异常（判断题6/印答20/小结9/例9/变式9/检测题面5 应全在场）'
+# 逐块型应然计数（去答前 399 行 body.tex 逐块目验钉档；漂移即 fail 人工复核）
+_SHOULD_D = {'答案行': 13, '答案行(题5内联)': 1, '简析行[解析]': 14, '例[分析]': 9, '例[详解]': 8,
+             '例[详解]并排图文行': 1, '例[详解]配图行': 1, '[详解/分析]续段': 13, '例[点睛]': 2, '故答案行': 1}
+assert _moved_cnt == _SHOULD_D and sum(_moved_cnt.values()) == len(_rows_d) == 63 \
+    and _pre_npages == 7, f'去答0911 移出块计数漂移：{_moved_cnt}（应然 {_SHOULD_D}）／清单 {len(_rows_d)}／前档 {_pre_npages} 页'
+
+# —— 去答案清单.md（逐块：页/位置/块型/去向）＋答案册素材（移出内容全文，按题分组）——
+_kind_order = ['答案行', '答案行(题5内联)', '简析行[解析]', '例[分析]', '例[详解]', '例[详解]并排图文行',
+               '例[详解]配图行', '[详解/分析]续段', '例[点睛]', '故答案行']
+with open(EVID_D0911 + r'\去答案清单.md', 'w', encoding='utf-8') as _fd:
+    _fd.write('# 去答案0911 清单（答案制A·导学件 variantF 正文判分值出逃）\n\n')
+    _fd.write('口径基准＝靠齐样张-0910/导学增量现行形制；落点＝postproc_daoxue.py 6g 去答案0911 pass（生成链，非手改）。\n')
+    _fd.write('页＝去答前 7 页档（冻结件 main-去答前档7页.pdf，复验0911；与去答前 body.tex.bak_去答0911 同步）按归属题题干定位；位置＝去答前 body.tex 行号区间。\n')
+    _fd.write('保留面：判断题×6（√/×＋[解析] 即时自查）、素养小结×9、知识点挖空印答 \\kongda×20、题面/选项/填空位。\n\n')
+    _fd.write('| 序 | 页 | 位置(body.tex) | 块型 | 归属 | 去向 | 首30字 |\n|---|---|---|---|---|---|---|\n')
+    for _k, (_l0, _l1, _pg, _kd, _qq, _qu, _ex) in enumerate(_rows_d, 1):
+        _fd.write(f'| {_k} | {_pg} | L{_l0}–{_l1} | {_kd} | {_qq} | {_qu} | {_ex} |\n')
+    _fd.write('\n## 分类合计（移出 ' + str(sum(_moved_cnt.values())) + ' 块）\n\n')
+    for _kd in _kind_order:
+        if _kd in _moved_cnt:
+            _fd.write(f'- {_kd}：{_moved_cnt[_kd]}\n')
+    _fd.write('\n> 样张未覆盖块按「移出」默认执行（登记简报）：例题[分析]×9、简析行[解析]×14、详解区配图×2（g1 并排图文行／g5 下置图行）。\n')
+with open(EVID_D0911 + r'\答案册素材0911.txt', 'w', encoding='utf-8') as _fm:
+    _fm.write('去答案0911 移出内容全文（tex 原样，按导学件题号分组）——供 导学件答案册-v1/body.tex 组装（同号对应）\n')
+    for _mt in _mat:
+        if not _mt['items']:
+            continue
+        _fm.write(f"\n=========== {_mt['q']}　[{_mt.get('name', '')}] ===========\n")
+        for _kd, _tx in _mt['items']:
+            _fm.write(f'--[{_kd}]--\n{_tx}\n')
+log('6g. 去答案0911（答案制A·用户拍板全品式）：正文判分值 0 在场（生成链硬断言 ×9 字面全 0）——移出 '
+    + str(sum(_moved_cnt.values())) + ' 块＝' + '、'.join(f'{_kd}×{_moved_cnt[_kd]}' for _kd in _kind_order if _kd in _moved_cnt)
+    + f'（答案行13＋题5内联1＝[答案]14、简析14、例[分析]9、例[详解]8＋并排图文行1（g1 随迁）、'
+    f'详解续段/配图/点睛/故答案 计 {sum(_moved_cnt.get(k,0) for k in ("[详解/分析]续段","例[详解]配图行","例[点睛]","故答案行"))}）；'
+    '保留面＝判断题6(√/×＋[解析])/小结9/印答20/例9/变式9/检测题面5（全部断言）；逐块清单＋素材落 '
+    'EVID_D0911；去向＝导学件答案册-v1（同号条目）。样张未覆盖块（例[分析]/简析/详解配图）按「移出」默认，登记简报')
+
+# ============ 6h. 全品对齐0911：知识点印答→空留白·诊断判断→全角空括号（答案全数另册） ============
+# 依据＝全品导学案 p04 实拍（工作区/全品结构提取/数学选必一/导学案页图/p04.png，0911 主脑目验）：
+#   知识点填空＝下划线全空、不印值；【诊断分析】＝题干行尾右挂全角空括号（　）、不印解析。
+# 正文侧改 \kongda{…}→\kongbai{} ×20、\zhenti{…}×4参→\zhentib{…}×2参 ×6（宏见 qp-blocks.tex）；
+# 答案与简析全量落册＝导学件答案册-v1「课前预习」节（素材＝课前预习素材0911.txt，本 pass 产出）；
+# 台账追加 去答案清单.md 两节（6g 每次 'w' 重写清单，本处 'a' 追加＝幂等）。
+_kb0_6h = body_text.count(r'\kongbai{}')
+
+
+def _argend6h(s, i):                     # i 在 '{' 上 → 配对 '}' 下标（花括号计数，任意嵌套）
+    d = 0
+    while True:
+        if s[i] == '{':
+            d += 1
+        elif s[i] == '}':
+            d -= 1
+            if d == 0:
+                return i
+        i += 1
+        if i >= len(s):
+            raise ValueError('6h: 花括号未闭合')
+
+
+def _args6h(s, i):                       # i 在首参 '{' 上 → (参数列表, 结束下标)
+    out = []
+    while i < len(s) and s[i] == '{':
+        e = _argend6h(s, i)
+        out.append(s[i + 1:e])
+        i = e + 1
+    return out, i
+
+
+def _line6h(s, i):                       # 原文整行（页定位键取上下文用）
+    a = s.rfind('\n', 0, i) + 1
+    b = s.find('\n', i)
+    return s[a:len(s) if b < 0 else b]
+
+
+# —— 判断题：\zhenti{号}{干}{答}{析} → \zhentib{号}{干} ——
+_rows_z6h = []                            # (现行行号, 序号, 题干, 符号, 解析tex)
+_p6h = 0
+while True:
+    k6h = body_text.find(r'\zhenti{', _p6h)
+    if k6h < 0:
+        break
+    a6h, e6h = _args6h(body_text, k6h + len(r'\zhenti'))
+    assert len(a6h) == 4, ('6h: zhenti 参数数异常', a6h)
+    sym6h = {r'\cha{}': '×', r'\gou{}': '√'}.get(a6h[2])
+    assert sym6h, ('6h: 判断题答案符未知', a6h[2])
+    _rows_z6h.append((body_text[:k6h].count('\n') + 1, a6h[0], a6h[1], sym6h, a6h[3]))
+    body_text = body_text[:k6h] + r'\zhentib{' + a6h[0] + '}{' + a6h[1] + '}' + body_text[e6h:]
+    _p6h = k6h + len(r'\zhentib{')
+
+# —— 知识点印答：\kongda{值} → \kongbai{}（组＝当前 \zsd 节，逐处登记） ——
+_rows_k6h = []                            # (现行行号, 组序, 组名, 组内序号, 值, 页定位键)
+_zsd6h = []
+_gi6h = 0
+_p6h = 0
+while True:
+    kz6h = body_text.find(r'\zsd{', _p6h)
+    kk6h = body_text.find(r'\kongda{', _p6h)
+    if kk6h < 0:
+        break
+    if 0 <= kz6h < kk6h:
+        a6h, e6h = _args6h(body_text, kz6h + len(r'\zsd'))
+        _zsd6h.append(a6h[1])
+        _gi6h = 0
+        _p6h = e6h
+        continue
+    a6h, e6h = _args6h(body_text, kk6h + len(r'\kongda'))
+    assert len(a6h) == 1 and not any(c in a6h[0] for c in '{}'), ('6h: kongda 值异常', a6h)
+    _gi6h += 1
+    _rows_k6h.append((body_text[:kk6h].count('\n') + 1, len(_zsd6h), _zsd6h[-1], _gi6h,
+                      a6h[0], _stemkey0911(_line6h(body_text, kk6h))))
+    body_text = body_text[:kk6h] + r'\kongbai{}' + body_text[e6h:]
+    _p6h = kk6h + len(r'\kongbai{}')
+
+# —— 硬断言（本 pass 自锁；页数/版式复核归双断言脚本） ——
+_cnt_k6h = [sum(1 for r in _rows_k6h if r[1] == g) for g in (1, 2, 3)]
+assert len(_rows_z6h) == 6 and len(_zsd6h) == 3 and _cnt_k6h == [11, 5, 4], \
+    ('6h: 计数漂移', len(_rows_z6h), len(_zsd6h), _cnt_k6h)
+assert body_text.count(r'\kongda{') == 0 and body_text.count(r'\zhenti{') == 0 \
+    and body_text.count(r'\zhentib{') == 6, '6h: 正文残留印答宏/判断题宏（反向锁破）'
+assert body_text.count(r'\kongbai{}') == _kb0_6h + 20 == 34, ('6h: kongbai 计数', _kb0_6h)
+assert body_text.count('[解析]') == 0, '6h: [解析] 字面残留'
+# 残留 \cha{}/\gou{} 恰 6＝三处 \\zhenhead 说明行「正确的打√,错误的打×」各 2（设计内保留面）
+assert body_text.count(r'\cha{') + body_text.count(r'\gou{') == 6, '6h: √×宏残留异常（应仅诊断头说明行×3）'
+# 判断行归组＝终文 \zsd 行号分界（转换逐处单行替换、行数不变，现行号即终文号）
+_lines6h = body_text.split('\n')
+_zsd_l6h = [n6h + 1 for n6h, l6h in enumerate(_lines6h) if r'\zsd{' in l6h]
+assert len(_zsd_l6h) == 3, ('6h: zsd 定位异常', _zsd_l6h)
+
+
+def _grp_of6h(lno):
+    g = sum(1 for z in _zsd_l6h if z < lno)
+    assert 1 <= g <= 3, ('6h: 判断行组归属异常', lno)
+    return g
+
+# —— 台账：去答案清单.md 追加两节 ——
+with open(EVID_D0911 + r'\去答案清单.md', 'a', encoding='utf-8') as _fa:
+    _fa.write('\n## 全品对齐0911·知识点答案出册（6h：\\kongda→\\kongbai 空留白）\n\n')
+    _fa.write('口径＝全品导学案 p04 实拍（填空下划线全空、不印值）；答案入《导学件答案册 v1》「一、课前预习」节。'
+              '页＝去答前 7 页档定位（同主表口径）；位置＝去答后现行 body.tex 行号。\n\n')
+    _fa.write('| 序 | 页 | 位置(body.tex) | 知识点 | 组内序号 | 原印答值 | 去向 |\n|---|---|---|---|---|---|---|\n')
+    for _n, (_l, _g, _gn, _i, _v, _key) in enumerate(_rows_k6h, 1):
+        _fa.write(f'| {_n} | {_page_of(_key)} | L{_l} | 知识点{_zsd6h[_g - 1]}（{["一","二","三"][_g-1]}） | {_i} | {_v} | 答案册·课前预习·知{["一","二","三"][_g-1]}·填{_i} |\n')
+    _fa.write('\n## 全品对齐0911·诊断分析答案出册（6h：印答√×与[解析]→全角空括号（　））\n\n')
+    _fa.write('正文式＝\\zhentib（题干右挂（　），无解析行）；答案与简析入同册同节。\n\n')
+    _fa.write('| 序 | 页 | 位置(body.tex) | 序号 | 题干首12字 | 答案 | 简析首16字 | 去向 |\n|---|---|---|---|---|---|---|---|\n')
+    for _n, (_l, _no, _qt, _sy, _jx) in enumerate(_rows_z6h, 1):
+        _fa.write(f'| {_n} | {_page_of(_stemkey0911(_qt))} | L{_l} | {_no} | {_plain0911(_qt)[:12]} | {_sy} | {_plain0911(_jx)[:16]} | 答案册·课前预习·判断{_no} |\n')
+
+# —— 册侧素材：课前预习素材0911.txt（组装body.py「课前预习」节输入） ——
+_CN6H = ['一', '二', '三']
+_grp6h = {g: [_CN6H[g - 1], _zsd6h[g - 1], [], []] for g in (1, 2, 3)}   # [组次, 知识点题名, K 行, J 行]
+for _l, _g, _gn, _i, _v, _key in _rows_k6h:
+    _grp6h[_g][2].append((_i, _v))
+for _l, _no, _qt, _sy, _jx in _rows_z6h:
+    _grp6h[_grp_of6h(_l)][3].append((_no, _sy, _jx, _qt))
+assert all(len(v[2]) > 0 and len(v[3]) == 2 for v in _grp6h.values()) \
+    and [len(v[2]) for v in _grp6h.values()] == [11, 5, 4], '6h: 素材分组不完整'
+with open(EVID_D0911 + r'\课前预习素材0911.txt', 'w', encoding='utf-8') as _fm:
+    _fm.write('全品对齐0911 6h 素材：知识点填空 20 值（K）＋诊断判断 6 答案/简析（J）——供 组装body.py「课前预习」节\n')
+    _fm.write('# 制表符分隔；G=组次/知识点题名；K=组内序号/印答值；J=序号/√×/解析tex原样/题干明文14字\n')
+    for _g in (1, 2, 3):
+        _ci6h, _gn6h, _ks6h, _js6h = _grp6h[_g]
+        _fm.write(f'G\t{_ci6h}\t{_gn6h}\n')
+        for _i, _v in _ks6h:
+            assert '\t' not in _v and '\n' not in _v, ('6h: 素材 K 字段含分隔符', _v)
+            _fm.write(f'K\t{_i}\t{_v}\n')
+        for _no, _sy, _jx, _qt in _js6h:
+            assert '\t' not in _jx and '\n' not in _jx, ('6h: 素材 J 字段含分隔符', _jx[:30])
+            _fm.write(f'J\t{_no}\t{_sy}\t{_jx}\t{_plain0911(_qt)[:14]}\n')
+log('6h. 全品对齐0911（答案制A·全品 p04 对齐）：\\kongda×20→\\kongbai 空留白（知识点一空11/二空5/三空4）、'
+    '\\zhenti×6→\\zhentib 全角空括号（　）（√×与简析出正文入册）；正文反向锁 kongda/zhenti/[解析] 全 0，'
+    '\\cha/\\gou 残留恰 6＝\\zhenhead 说明行×3（保留面）；台账追加两节＋课前预习素材0911.txt；'
+    '去向＝导学件答案册-v1「一、课前预习」节（组装body.py 消费）')
+
 open(BASE + r'\body.tex', 'w', encoding='utf-8').write(body_text + '\n')
 head = [
     r'\zhangtitle{第一章\quad 空间向量与立体几何}',
@@ -1396,36 +1757,40 @@ cg_zuobiao = [m.group(0) for m in re.finditer(r'.{6}坐标.{6}', body_text)
 # 命中仅报告供人工复核，不阻断（合法形态在同一扫描域内无法机判，逐条登记）。
 lianpai_hits = [m.group(0)[:30] for m in re.finditer(r'\\tiaomu\{\d\}\{[^\n]*?[^\s{（]（\d）', body_text)]
 sub2_inline = [m.group(0)[:30] for m in re.finditer(r'[^\s{（]（[2-9]）', body_text)]
-log(f'8. 逻辑断言自检（数据面）：◆探究点 {n_tj}/9；例1 {n_li1}/9（数字 \\textbf 加重，探五带 \\duoxuan）；变式1 {n_bs}/9；【答案】行 {n_ans}/14；'
-    f'★典型性理由 {n_star}/0（v4.2-E18 撤★）；【解析】简析 \\jiexi {n_jx}/14（变式9＋检测5，D 类16/17）；'
-    f'图文并排 {n_side}/2 组（并排恢复0910：g1/g2 回 side_row 图右文左；绕图回流0911：切分通道在位、逐图驱动＝'
-    f'启用 {n_split}/{n_split_arm}、复测无余段登记 {n_split_none}/2；minipage 总 {n_mini}/4）；'
-    f'下置居中四图（回退轮 0910 原位图档，骨架承片G）：图行逐字节同式 {n_figrow}/4、位图引用 {n_gref}/6（下置 4＋并排 2）、'
+log(f'8. 逻辑断言自检（数据面·答案制0911 后正文）：◆探究点 {n_tj}/9；例1 {n_li1}/9（数字 \\textbf 加重，探五带 \\duoxuan）；变式1 {n_bs}/9；'
+    f'【答案】行 {n_ans}/0（答案制0911：判分值行 0 在场，14 处全部出逃＝6g pass）；'
+    f'★典型性理由 {n_star}/0（v4.2-E18 撤★）；【解析】简析 \\jiexi {n_jx}/0（答案制0911：14 处出册）；'
+    f'图文并排 {n_side}/1 组（答案制0911：探二详解并排图文行随 [详解] 出册，正文余探三题干图行；发射侧 g1/g2 两 side 台账不变＝'
+    f'启用 {n_split}/{n_split_arm}、复测无余段登记 {n_split_none}/2；minipage 总 {n_mini}/2（并排行含双 minipage））；'
+    f'下置居中图（回退轮 0910 原位图档，骨架承片G）：图行逐字节同式 {n_figrow}/3（探九详解配图行出册）、位图引用 {n_gref}/4（下置 3＋并排 1）、'
     f'TikZ 入件 {n_under}/0（六件 .tikz 退役留盘不删）、\\resizebox {n_rs}/0（位图按声明宽直排）；'
     f'多选标记 \\duoxuan {n_duox}/1（探五例1，题5 答案 AD）；空位 (\\kongwei) {n_kw2}/9（v4.4④ 转换 pass 8＋F 探八裸括号补 1）；'
     f'题侧 \\tieside {n_tie}/5（检测题侧直排；例1 题侧在 \\tjdnr 第 4 参由宏排印）；'
     f'变式标签 \\liB {{n_lib}}/9（F 片D 0909c：\\liB 拆双字重——变 FY-w700／式N FY-w450；旧形 \\li 残留 {n_li_old}/0）；'
-    f'挖空印答 \\kongda {n_kd}/20（课前预习知识点区全部空，答案逐个核对条目语义）；'
-    f'题干留白 \\kongbai {n_kb_stem}（例题/变式/课堂检测，答案由【答案】/【详解】紧跟）；'
-    f'判断题 \\zhenti {n_zt}/6（第 4 参【解析】由宏排印，字面在 qp-blocks）；'
+    f'挖空印答 \\kongda {n_kd}/0（全品对齐0911 6h：20→\\kongbai 空留白）；'
+    f'题干留白 \\kongbai {n_kb_stem}/34（原 14＋知识点 20；答案制0911：答案/详解另册排印）；'
+    f'判断题 \\zhenti {n_zt}/0＋\\zhentib {body_text.count(chr(92) + "zhentib{")}/6（全品对齐0911 6h：空括号（　），√×与简析入册）；'
     f'检测题号 {{\\fontsize{{11.4pt}}{{14pt}}\\selectfont\\heihao {{\\numboldjian{{N}}．}} {n_hao_bold}/5（G20＋F 0909 升重：数字 \\numboldjian NSC-w700、「．」随 heihao BoldFont w700，E 手改上移）；旧形 \\textbf 残留 {n_hao_old}/0；'
     f'条目内「文字+(N)」连排命中 {lianpai_hits or "无"}（拍板3 机制断言：首子项连排合法，命中即报人工复核）；'
     f'（2）起未各自成段嫌疑 {sub2_inline or "无"}（应全为 \\bindp 段首，命中即报）；'
     f'悬空引用 {xuankong or "无"}；'
     f'超纲禁词（基本定理/空间直角）{cg_hits or "无"}；'
     f'「坐标」非否定式命中 {cg_zuobiao or "无"}（命制/演示文字超纲复查＝0）')
-assert n_kd == 20 and n_zt == 6, f'v4.1 印答/解析计数异常：kongda={n_kd} zhenti={n_zt}'
-assert n_star == 0 and n_jx == 14 and n_side == 2 and n_hao_bold == 5 and n_hao_old == 0 \
+assert n_kd == 0 and n_zt == 0 and body_text.count(r'\zhentib{') == 6 and n_kb_stem == 34, \
+    f'全品对齐0911 印答/判断题计数异常：kongda={n_kd}/0 zhenti={n_zt}/0 kongbai={n_kb_stem}/34'
+assert n_star == 0 and n_jx == 0 and n_ans == 0 and n_side == 1 and n_hao_bold == 5 and n_hao_old == 0 \
         and n_lib == 9 and n_li_old == 0 and n_duox == 1 and n_kw2 == 9 \
-        and n_split == n_split_arm and n_split_arm + n_split_none == n_side \
-        and n_under == 0 and n_gref == 6 and n_figrow == 4 and n_rs == 0, \
-    f'v4.2-片G/回退轮/并排恢复 计数异常：star={n_star} jiexi={n_jx} side={n_side}（并排恢复0910：g1/g2 并排应 2）haobold={n_hao_bold}(旧形{n_hao_old}) ' \
+        and n_split == n_split_arm and n_split_arm + n_split_none == 2 \
+        and n_under == 0 and n_gref == 4 and n_figrow == 3 and n_rs == 0 and n_mini == 2, \
+    f'v4.2-片G/回退轮/答案制0911 计数异常：star={n_star} jiexi={n_jx}/0 ans={n_ans}/0 side={n_side}/1（答案制0911：探二详解并排行出册，' \
+    f'发射侧两 side 台账 g1/g2 仍在）haobold={n_hao_bold}(旧形{n_hao_old}) ' \
     f'liB={n_lib}(旧形{n_li_old}) duoxuan={n_duox} kongwei={n_kw2}/9（F 探八补 1）' \
-    f'split={n_split}/{n_split_arm}（绕图回流0911 逐图驱动；无余段登记 {n_split_none}/{n_side}，' \
-    f'启用＋登记应覆盖全部 side 图）' \
-    f'figrow={n_figrow}/4（下置四图同式）graphics={n_gref}/6（位图：下置4＋并排2）under={n_under}/0（TikZ 退役）resizebox={n_rs}/0'
+    f'split={n_split}/{n_split_arm}（绕图回流0911 逐图驱动；无余段登记 {n_split_none}/2 发射侧）' \
+    f'figrow={n_figrow}/3（下置余三图同式，探九详解配图出册）graphics={n_gref}/4（位图：下置3＋并排1）' \
+    f'mini={n_mini}/2 under={n_under}/0（TikZ 退役）resizebox={n_rs}/0'
 log('8a. R8 题源答案普查（sec.tex 十题，F 0909 补登记）：B/式/C/1¼/AD/60°/区间/−3/2/D/A——'
-    '唯题5＝AD 多答（\\duoxuan 已挂，n_duox=1 断言维持）；普查结论＝源题答案全部在场，与【答案】行/【详解】逐一相符')
+    '唯题5＝AD 多答（\\duoxuan 已挂，n_duox=1 断言维持）；普查结论＝源题答案全部在场，与【答案】行/【详解】逐一相符'
+    '（答案制0911：判分值正文层已出逃＝6g，另册＝导学件答案册-v1 值在场）')
 log('8b. 命制对账：本轮新命制 14（变式 8＋检测 4＋诊断 2）≤上限 15，逐题亲算（见 5g/5h 各条）；'
     '沿用 v3 已亲算 5（检测1＋诊断块①2 道＋块②③第 1 道），逐条登记；'
     '变式六策覆盖：逆向化/概念辨析化/换载体/换设问/换数值/换条件')
@@ -1445,7 +1810,8 @@ log('8c. 六图集成台账（全件 6 图；图源＝回退轮 0910 原位位�
     '复测末旁行真墨底 g1 83.01（bbox 底 83.75）／g2 246.07mm 均高于图真墨底 114.43／248.10mm（⑱-3 门读数差 −31.42／−2.02mm）⇒两段'
     '「段全在图旁」＝无图底以下余段可切，启用数 0（在段内硬设切分点＝硬造余段，前缀断行必改＋三窗必退，'
     '违片E口径，故不为；机制代码与 ⑱-3 split 支在位待真余段出现即用）；探八空位末行右挂件仍退场'
-    '（g4 保持下置独立行，空位由 \\kongwei 原位排）')
+    '（g4 保持下置独立行，空位由 \\kongwei 原位排）；答案制0911：g1（探二详解并排图文行）/g5（探九详解区下置图行）'
+    '随 [详解] 出册另排（导学件答案册-v1），正文余位图 4＝g6 三联＋g2 探三题干＋g3 探六题干＋g4 探八题干')
 log('9. F 片B 0909（竖向间距与表格净空四意见；仅登记，改动明细见 5c/5e/4b/TABTOP 注释）：'
     '#28 条目2 (1)→(2)：拆段首段 \\tiaomuz 零尾距（8.21→6.41mm/墨 4.53→2.75）；'
     '#36 条目→条目缝：\\tiaomu 尾距 1.8→0.35mm＋拆段条目尾距移末段（\\tiaomutail）——全对 pitch 6.76mm、'

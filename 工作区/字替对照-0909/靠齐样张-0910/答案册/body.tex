@@ -16,16 +16,18 @@
 % ① \txline ＝题型行：紧贴 [答案] 行下、[分析] 行前（用户建议档「紧贴题号行下」）；
 %   字体＝楷体（零件库 XB-01 内容楷体＝全品系「讲解」档），同号 10.09pt（守「正文区无小字层」XB-03），
 %   行距 12pt 密排（容量档，恰 2 页实测取此值）、纯黑无任何标记（沿拍板④ 平文口径）；
-%   左缘＝悬挂深度（题号列恒空沿 校9/#21）。
+%   v10-B 层级缩进（对齐0911）：题型行＝条目下内容行→左缘收一档 \qpind=5.0mm（旧＝悬挂深度 \anshang，
+%   与 导学件答案册-v1 同档同式）。
 % ② \txsummaryhead＋\txsumitem ＝题型总结说明块：标签行（半角 []＋黑体，沿拍板② 标签语言＋XB-01 标签行立）
-%   ＋楷体正文另起行（XB-01 件式：内容楷体、子项换行），三句＝识别信号／通法步骤／易错点。
+%   ＋楷体正文另起行（XB-01 件式：内容楷体、子项换行），三句＝识别信号／通法步骤／易错点；
+%   v10-B：标签行顶格；三行正文＝内容行→收一档 \qpind（内容行换行时续行同档悬挂，\hangindent）。
 % ============================================================
-\newcommand{\txline}[1]{\par\noindent\hangindent=\anshang\hangafter=0
-  {\kaishu\fontsize{10.09pt}{12pt}\selectfont 题型：#1}\par}
+\newcommand{\txline}[1]{\par{\hangindent\qpind\hangafter=1\noindent\hspace*{\qpind}%
+  {\kaishu\fontsize{10.09pt}{12pt}\selectfont 题型：#1}\par}}
 \newcommand{\txsummaryhead}[1]{\par\glueguard{1}\addvspace{3pt}\noindent
   {\heibf\fontsize{10.09pt}{13pt}\selectfont [题型总结]\hspace{0.5em}#1}\par\nopagebreak}
-\newcommand{\txsumitem}[2]{\par\noindent
-  {\kaishu\fontsize{10.09pt}{12pt}\selectfont #1：#2}\par}
+\newcommand{\txsumitem}[2]{\par{\hangindent\qpind\hangafter=1\noindent\hspace*{\qpind}%
+  {\kaishu\fontsize{10.09pt}{12pt}\selectfont #1：#2}\par}}
 
 % ---------- 页码（拍板⑧：全书连续制·全品练习册答案册实证起页 P75） ----------
 \setcounter{page}{75}
