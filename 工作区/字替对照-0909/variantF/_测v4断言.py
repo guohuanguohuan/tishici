@@ -15,6 +15,10 @@ F 片A 0909 适配（图文形态轮）：⑱ 几何档重写——side×5 文�
 片E 0909c 适配（图文绕排回流轮，用户 #40）：⑱-3 新设——切分组（image4/image5）图底以下余段首行
 右缘 ≤5mm（通栏）＋图带零侵入；⑱/⑱-2 形不变（前缀仍 minipage 并排，几何三窗逐字同基线）；
 旧形「整段窄栏」＝#40 缺陷态，登记作废。
+绕图回流0911 适配（用户令「恢复绕图回流」，本轮零版面扰动）：⑱-3 并排支按「有无图底以下余段」三分立——有余段支＝
+片E 照片E 口径原样恢复（图底以下首个自栏左起视觉行右缘距栏右 ≤5mm 判通栏；零侵入复用 ⑱-2 K18[nhit] 不重算）；
+无余段支加「段全在图旁」正证门（末旁行 600dpi 真墨底 ≤ 图真墨底＋0.5mm）＝「不许硬造余段」的机器反向锁。
+本轮 g1/g2 实测走无余段支（门读数 g1 −31.42mm／g2 −2.02mm 贴线态），有余段支命中 0/2；其余门不回退。
 v4.3 窗口全部为 0908 执行轮 150dpi 墨口径／矢量实测回填（校准探针三轮，存 工作区/体系-v43执行-0908/）：
 ①编译零 error/overfull/missingchar；页数＝实测值（v4.4 标定轮回填，缝＋行距增量可能 7→8）
 ②行距主峰 17.5–18.5pt（\linespread{1} 实发 18pt）
@@ -66,7 +70,13 @@ F 片F 0909c 适配（排版弹性轮，用户 #41 字间距过远＋#43 序号�
   （#41：xeCJK 见用户 kern 不插 CJKglue，变|式 字间不再随行拉伸——基线 p3/p5 实测 6.18/14.91pt→0）；
   ④ \zhenti 宏形旧「\noindent#1#2\nobreak\hspace{0pt plus 1fil}\nobreak(…」→ 新「\noindent#1\kern2.1pt#2\nobreak…」
   （#43：序号后隙 ecglue→定值 kern 2.1pt，ink 实测 0.945–1.030mm 零拉伸，旧 1.094–4.239mm 随行浮动）；
-  qp-layout \relpenalty 10000→500、\emergencystretch 2em→1em（#41 断点恢复＋弹性收紧，三0 计数同基线）"""
+qp-layout \relpenalty 10000→500、\emergencystretch 2em→1em（#41 断点恢复＋弹性收紧，三0 计数同基线）
+  回退轮0910（图源回退轮，用户二次令「禁画三维图——AI 重绘六图全部退役、回用原图位图」）：
+  ⑱ tex 形制改核 includegraphics 位图图行 ×6（width=宽mm 直排；figs 入件归零、resizebox 归零，下置骨架逐字节承片G）；
+  ⑱-2／⑱-3／N6／⑮ 改位图口径（get_image_info 矩形＋PIL 原生墨映射＋600dpi 墨级前距/下距/零侵入＋落位逐图钉）；
+  旧矢量线框内核保留停用（图源回退后不适用；残留清理0911 已折叠删除＝死码，见「权威线框口径内核」节注）；
+  ③ 灰档回位图时代 6 档（0x40 cubegray 退役）；
+  置宽反解三值表见 回退轮0910/简报.md（g6 84.0／g1 28.8／g2 32.7／g3 54.1／g4 47.5／g5 42.5mm）。"""
 import os
 import re
 from collections import Counter
@@ -198,111 +208,55 @@ def col_rows(pno, cl):
     rows.sort(key=lambda r: r[0])
     return rows
 
-# ---- 片G 0910 共用口径：矢量图簇。六图（五例1 图＋条目3 三联）由位图改 \resizebox＋\input 的
-#      TikZ 矢量片段，PDF 内不再有 image 对象——凡依赖 raster 的图门（⑱/⑱-2/⑱-3/N6/⑮/(e)）
-#      统一改此口径：以「非轴对齐矢量墨」（斜线/曲线）聚簇，簇内跨度 ≥5mm 的斜长笔 ≥3 方算图
-#      （真图实测 ≥5；表线/正文/花形/√× 自绘/表内向量箭头均 <3），同 y 带 x 隙 ≤20mm 并簇
-#      （三联图三子图成一图）。实测（600dpi 全墨）另见 ⑱-2。
-_VEC_CACHE = {}
-
-
-def _diag_rects(page):
-    out = []
-    for o in page.get_drawings():
-        for it in o['items']:
-            if it[0] == 'l':
-                p1, p2 = it[1], it[2]
-                dx, dy = abs(p2.x - p1.x), abs(p2.y - p1.y)
-                if dx > 1.0 and dy > 1.0 and max(dx, dy) / PT > 2.0:
-                    out.append((pymupdf.Rect(min(p1.x, p2.x) - .3, min(p1.y, p2.y) - .3,
-                                             max(p1.x, p2.x) + .3, max(p1.y, p2.y) + .3),
-                                max(dx, dy) / PT >= 5.0))
-            elif it[0] == 'c':
-                ps = it[1:5]
-                xs = [q.x for q in ps]
-                ys = [q.y for q in ps]
-                w, h = max(xs) - min(xs), max(ys) - min(ys)
-                if max(w, h) / PT > 2.0 and w > 1.0 and h > 1.0:
-                    out.append((pymupdf.Rect(min(xs) - .3, min(ys) - .3, max(xs) + .3, max(ys) + .3),
-                                max(w, h) / PT >= 5.0))
-    return out
-
-
-def vec_clusters(pno):
-    """该页矢量图簇 [(rect, 斜长笔数)]。"""
-    if pno in _VEC_CACHE:
-        return _VEC_CACHE[pno]
-    pairs = _diag_rects(doc[pno - 1])
-    rs = [pymupdf.Rect(a) for a, _ in pairs]
-    lg = [1 if b else 0 for _, b in pairs]
-    gap = 8 / 25.4 * PT
-    par = list(range(len(rs)))
-
-    def find(i):
-        while par[i] != i:
-            par[i] = par[par[i]]
-            i = par[i]
-        return i
-
-    for i in range(len(rs)):
-        for j in range(i + 1, len(rs)):
-            a = pymupdf.Rect(rs[i])
-            a.x0 -= gap; a.y0 -= gap; a.x1 += gap; a.y1 += gap
-            if a.intersects(rs[j]):
-                x, y = find(i), find(j)
-                if x != y:
-                    par[x] = y
-    grp = {}
-    for i in range(len(rs)):
-        grp.setdefault(find(i), []).append(i)
-    cs = []
-    for g in grp.values():
-        r = pymupdf.Rect(rs[g[0]])
-        for k in g[1:]:
-            r |= rs[k]
-        cs.append([r, sum(lg[k] for k in g)])
-    changed = True
-    while changed:
-        changed = False
-        for i in range(len(cs)):
-            for j in range(i + 1, len(cs)):
-                a, b = cs[i][0], cs[j][0]
-                if (min(a.y1, b.y1) - max(a.y0, b.y0) > -3 * PT
-                        and max(a.x0, b.x0) - min(a.x1, b.x1) <= 20 * PT):
-                    cs[i] = [a | b, cs[i][1] + cs[j][1]]
-                    del cs[j]
-                    changed = True
-                    break
-            if changed:
-                break
-    cs = [c for c in cs if c[0].width / PT >= 15 and c[0].height / PT >= 10 and c[1] >= 3]
-    _VEC_CACHE[pno] = cs
-    return cs
+# ---- 片G 0910 矢量图簇口径（_diag_rects/vec_clusters/_VEC_CACHE）已随 残留清理0911 折叠删除 ----
+# 六图回位图后矢量层无图可聚（0 簇）；grep 证 vec_clusters/_diag_rects 全文 0 调用＝死码；in_fig 自
+# 回退轮0910 起改锚位图台账 FIG_ROWS（下），不受影响。原文见 .bak_残留清理0911。
 
 
 def in_fig(pno, x0, y0, x1, y1, pad=1.0):
-    """线段/小框是否落在某矢量图簇内（含 pad pt 容差）——供表线/印答线排除图内墨。"""
-    return any(g.x0 - pad <= x0 and x1 <= g.x1 + pad and g.y0 - pad <= y0 and y1 <= g.y1 + pad
-               for g, _n in vec_clusters(pno))
+    """线段/小框是否落在某位图图矩形内（含 pad pt 容差）——供印答盒线门排除图区墨（防御保留）。
+    回退轮0910：图源回位图后矢量层不再有图内棱，判据由矢量簇改锚共用台账 FIG_ROWS（位图矩形）。"""
+    return any(p == pno and g.x0 - pad <= x0 and x1 <= g.x1 + pad and g.y0 - pad <= y0 and y1 <= g.y1 + pad
+               for p, _c, _y, g, _info in FIG_ROWS)
 
 
-# ---- 片G 0910 六图下置·共用台账（⑱/⑱-2/⑱-3/N6/⑮ 五门唯一图源） ----
-# FIG_W＝body.tex 图行阅读序（＝\input{figs/…} 序）＋tex 声明置宽；BOX_MM＝声明置宽折 mm（缩档轮 0910
-#   起六图全为字面 mm 档，\linewidth 通栏档退场，无需再折算）；
-# FIG_AT＝预期落位（页, 栏）——固定版式件，落位推移即 N6 报错。
-# 矢量簇按（页, 栏, y 顶）排序即阅读序：下置图行各自成段，twocolumn 流序与片段序严格一致
-# （旧并排口径下图矩形与文字段同带，此式不成立——片G 起成立）。
-FIG_W = [('g6-triple', '80.8mm'), ('g1-prism', '41.1mm'), ('g2-cubeE', '42.0mm'),
-         ('g3-cube6', '36.3mm'), ('g4-dihedral', '30.5mm'), ('g5-fold', '28.2mm')]
-BOX_MM = {f: (84.0 if w == '\\linewidth' else float(w[:-2])) for f, w in FIG_W}
-FIG_AT = {'g6-triple': (2, 2), 'g1-prism': (3, 2), 'g2-cubeE': (4, 1),
+# ---- 回退轮0910 六图位图回退·共用台账（⑱/⑱-2/⑱-3/N6/⑮ 五门唯一图源；片G 矢量簇台账口径随图源回退作废；
+#      并排恢复0910：g1/g2 改图右文左并排形制，g3–g6 保持下置——形制逐图钉 FIG_MODE）----
+# 图源：AI TikZ 矢量重绘→原 Word 位图（media/media/*.png，用户 0910 二次令「禁画三维图——AI 画过的一律不要」）。
+# PDF 内图＝raster 对象——pymupdf get_image_info(xrefs=True) 取矩形，并以原生像素尺寸与片段互证（FIG_PX）。
+# FIG_W＝body.tex 图行阅读序＋tex 声明置宽（反解三值表取用宽：字母标签像素高→显示 2.65mm 反解、
+#   上限 84.0mm∧150dpi 自然尺寸；三值表见 回退轮0910/简报.md；并排恢复0910：g2 并排盒宽缩 32.0 入 TW-01）；
+# FIG_AT＝实测落位（页,栏）逐图钉——并排恢复0910 实测六图落位与回退轮基线一致（g1/g2 仍 p3c2），
+#   g2 由栏末图改并排行内图（栏末免检口径随其下置形退场）。
+# 阅读序＝（页,栏,y 顶）排序与图行序严格一致——并排两图 y 顶＝行内图盒顶，序仍成立（自片G 起成立）。
+FIG_W = [('g6-triple', '84.0mm'), ('g1-prism', '28.8mm'), ('g2-cubeE', '32.0mm'),
+         ('g3-cube6', '54.1mm'), ('g4-dihedral', '47.5mm'), ('g5-fold', '42.5mm')]
+FIG_MODE = {'g6-triple': 'under', 'g1-prism': 'side', 'g2-cubeE': 'side',
+            'g3-cube6': 'under', 'g4-dihedral': 'under', 'g5-fold': 'under'}
+# 并排行逐图钉（postproc side_row 发射值：文字栏宽／盒间胶／图盒宽／raisebox 声明高 H）——
+# 胶由「栏宽−右缘目标＋盒右留白−文栏−盒宽」墨缘反解（非硬凑常数）；右缘目标 g1 1.90（档内）／
+# g2 5.00（缝窗优先——栏预算恒等式缝＋右缘＝12.87 双窗不可兼得，例外登记见 ⑱-2 reg 与 SIDE_DEF 注）
+SIDE_PIN = {'g1-prism': dict(text='48.000', glue='5.342', box='28.800', H='3.332', png='image1'),
+            'g2-cubeE': dict(text='46.368', glue='0.925', box='32.000', H='3.545', png='image2')}
+BOX_MM = {f: float(w[:-2]) for f, w in FIG_W}
+FIG_PX = {'g6-triple': (1408, 374), 'g1-prism': (691, 1159), 'g2-cubeE': (764, 764),
+          'g3-cube6': (521, 496), 'g4-dihedral': (788, 424), 'g5-fold': (1798, 1350)}
+FIG_PNG = {'g6-triple': 'media/media/sub3_B_4.png', 'g1-prism': 'media/media/image1.png',
+           'g2-cubeE': 'media/media/image2.png', 'g3-cube6': 'media/media/image3.png',
+           'g4-dihedral': 'media/media/image4.png', 'g5-fold': 'media/media/image5.png'}
+FIG_AT = {'g6-triple': (2, 2), 'g1-prism': (3, 2), 'g2-cubeE': (3, 2),
           'g3-cube6': (5, 1), 'g4-dihedral': (6, 1), 'g5-fold': (6, 2)}
 FIG_ROWS = []
 for _pno in range(1, n_pages + 1):
-    for _r, _n in vec_clusters(_pno):
-        FIG_ROWS.append((_pno, 1 if _r.x0 < MID else 2, _r.y0, _r, _n))
+    for _info in doc[_pno - 1].get_image_info(xrefs=True):
+        _r = pymupdf.Rect(_info['bbox'])
+        FIG_ROWS.append((_pno, 1 if (_r.x0 + _r.x1) / 2 < MID else 2, _r.y0, _r, _info))
 FIG_ROWS.sort(key=lambda z: (z[0], z[1], z[2]))
-FIGS = [(f, p, c, r, n) for (f, _w), (p, c, _y, r, n) in zip(FIG_W, FIG_ROWS)]
+FIGS, FIG_PXBAD = [], []
+for (f, _w), (_p, _c, _y, _r, _info) in zip(FIG_W, FIG_ROWS):
+    if FIG_PX[f] != (_info['width'], _info['height']):
+        FIG_PXBAD.append(f + '≠' + str(_info['width']) + 'x' + str(_info['height']) + 'px')
+    FIGS.append((f, _p, _c, _r, _info))
 
 # ---- ② 行距主峰 ----
 diffs = []
@@ -338,13 +292,14 @@ for pno in range(1, n_pages + 1):
                     grays.add(rgb[0])
     gray_detail.append(f'p{pno}={sorted(grays)}')
     grays_all |= grays
-    if not grays <= {0x40, 0x4C, 0x4D, 0x77, 0x7A, 0xBD, 0xDD}:
+    if not grays <= {0x4C, 0x4D, 0x77, 0x7A, 0xBD, 0xDD}:
         gray_ok = False
-check('③灰档全集恰{64,76,77,119,122,189,221} 且逐页⊆白名单', gray_ok and grays_all == {0x40, 0x4C, 0x4D, 0x77, 0x7A, 0xBD, 0xDD},
+check('③灰档全集恰{76,77,119,122,189,221}（回退轮位图六档）且逐页⊆白名单', gray_ok and grays_all == {0x4C, 0x4D, 0x77, 0x7A, 0xBD, 0xDD},
       f'全集{sorted(grays_all)}；{" ".join(gray_detail)}')
-reg('③ 片G 0910 增第七档 cubegray 0x40(64)', 'g3-cube6（探六例1 正方体）灰棱＝素材源灰墨 #404040'
-    '（qp-blocks \\definecolor{cubegray}{gray}{0.25}→64）；旧位图时代该灰在像素内不入矢量色板，'
-    '矢量化后成为页面描边色——白名单 6 档→7 档（旧 {76,77,119,122,189,221} → 新 +{64}）')
+reg('③ 回退轮0910 灰档回档（7档→6档）',
+    '片G 0910 增第七档 cubegray 0x40(64)＝g3-cube6 矢量灰棱上浮为页面描边色；回退轮六图回用原位图后，'
+    '灰棱回到像素内、不入矢量色板——白名单回位图时代 6 档 {76,77,119,122,189,221}（0x40 退役）。'
+    'qp-blocks.tex 之 \\definecolor{cubegray} 定义保留未动（片段不再 \\input，不入页）。')
 reg('③调色板对账', 'v4.3 五档＝midgray 0x77(119)／gray122 0x7A(122)／huarule 0x4D(77)／栏线 black!40 0x99(153)／'
     'pnumbg 0xDD(221)，与 qp-layout 定义一一对应（总账A/D/I＋拍板27）；E 0909 增第六档 footgray 0x4C(76)＝'
     '页脚小字（qp-headfoot，全品 p04 页脚小字暗核众数 76 实测）——F 收尾轮断言适配入白名单；'
@@ -689,270 +644,76 @@ check('⑰解析 10.5pt 档（span 10–11 ×20）＋\\zhuzhu [注意]前缀新�
 reg('⑰ 题侧 [简单/中档(知识点N)] 10.5pt 宋体（TJ-03）计数', f'{tside_cnt} 处（源文全数，见 ⑪ 口径登记）；'
     f'族 FZSSJW {"全对" if tside_font_ok else "有异"}（v4.4 拍板2 与正文完全同）')
 
-# ---- ⑱ 六图下置·tex 形制门（片G 0910 整族改写·五门之首；旧「图文并排 side×5」口径作废） ----
-# 旧形（v4.4⑪→F 片A→片E）：`\begin{minipage}[t]{文字栏宽mm}\raggedright` 窄栏 ×5＋`\raisebox` 声明盒图 ×5
-#      ＋`\end{minipage}\hspace{胶}` ×5，图＝`\includegraphics` 位图；四要素须实测 5/5/5/5 方过门。
-# 新形（片G 唯一口径）：六图改 TikZ 矢量片段＋「下置」为独立行——
-#      `\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\resizebox{置宽}{!}
-#       {\input{figs/片段.tikz}}}\par\vspace{-1.0mm}\penalty10000`
-#      六处逐字节同式，只差片段名与置宽；置宽档逐图钉死（缩档轮 0910 起六图全为字面 mm 档，
-#      \linewidth 通栏档退场）——FIG_W 见共用台账。
+# ---- ⑱ 六图 tex 形制门（并排恢复0910：g1/g2 图右文左并排 ×2＋g3–g6 下置 ×4；位图时代） ----
+# 下置形（逐字节回退轮口径）：`\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]
+#      {\includegraphics[width=置宽mm]{media/media/图.png}}\par\vspace{-1.0mm}\penalty10000` ×4（g6/g3/g4/g5）。
+# 并排形（side_row 发射，几何档 3c 墨缘反解）：`\noindent\begin{minipage}[t]{文栏mm}\raggedright 段落文字
+#      \end{minipage}\hspace{胶mm}\begin{minipage}[t]{盒mm}\centering\raisebox{\dimexpr-\height+H\relax}
+#      [\dimexprH\relax][\dimexpr\height-H\relax]{\includegraphics[width=盒mm,alt={@@@…}]{media/media/图.png}}
+#      \end{minipage}\par` ×2（g1/g2）——文栏/胶/盒/H 逐图钉＝SIDE_PIN（胶＝栏宽−右缘目标＋盒右留白−文栏−盒宽
+#      墨缘反解，非硬凑常数；H＝c0＋盒上留白＋0.25 顶对齐反解）。
+# 片G 0910 旧形（\resizebox{\input{figs/…}} 下置 ×6）与回退轮旧门（六行逐字节同式·并排四要素归零）逐条作废。
 FIG_LINE = re.compile(r'\\bindp \\par\\vspace\{1\.9mm\}\\penalty10000\\noindent\\makebox\[\\linewidth\]\[c\]'
-                      r'\{\\resizebox\{([^{}]+)\}\{!\}\{\\input\{figs/([\w-]+)\.tikz\}\}\}'
+                      r'\{\\includegraphics\[width=([^{}]+)mm\]\{(media/media/[A-Za-z0-9_]+\.png)\}\}'
                       r'\\par\\vspace\{-1\.0mm\}\\penalty10000')
-fig_row = [(m.group(2), m.group(1)) for m in FIG_LINE.finditer(body)]
+SIDE_LINE = re.compile(r'\\noindent\\begin\{minipage\}\[t\]\{([\d.]+)mm\}\\raggedright .+?'
+                       r'\\end\{minipage\}\\hspace\{([\d.]+)mm\}\\begin\{minipage\}\[t\]\{([\d.]+)mm\}\\centering'
+                       r'\\raisebox\{\\dimexpr-\\height\+([\d.]+)mm\\relax\}\[\\dimexpr([\d.]+)mm\\relax\]'
+                       r'\[\\dimexpr\\height-([\d.]+)mm\\relax\]\{\\includegraphics\[width=([\d.]+)mm,'
+                       r'alt=\{@@@[^}]*\}\]\{(media/media/[a-z0-9_]+\.png)\}\}\\end\{minipage\}\\par')
+PNG2FRAG = {v: k for k, v in FIG_PNG.items()}
+und_row = [(PNG2FRAG.get(m.group(2), m.group(2)), m.group(1) + 'mm') for m in FIG_LINE.finditer(body)]
+FIG_W_UND = [(f, w) for f, w in FIG_W if FIG_MODE[f] == 'under']
+side_hits = []
+for m in SIDE_LINE.finditer(body):
+    side_hits.append((PNG2FRAG.get(m.group(8), m.group(8)),) + m.groups()[:7])
+side_bad = []
+for frag, tw, glue, bw, h1, h2, h3, gw in side_hits:
+    p = SIDE_PIN.get(frag)
+    if (p is None or frag not in ('g1-prism', 'g2-cubeE')
+            or (tw, glue, bw, gw, h1) != (p['text'], p['glue'], p['box'], p['box'], p['H'])
+            or not (h1 == h2 == h3)):
+        side_bad.append(frag or '未名')
 n_mini = body.count(r'\begin{minipage}')
 n_side = len(re.findall(r'\\begin\{minipage\}\[t\]\{[\d.]+mm\}\\raggedright', body))
 n_rb = len(re.findall(r'\\raisebox\{', body))
-n_gfx = body.count(r'\includegraphics')
+n_rs = len(re.findall(r'\\resizebox\{', body))
 n_fin = body.count(r'\input{figs/')
-check('⑱ 六图下置 body.tex 形制（图行 ×6 同式·置宽逐图钉·并排四要素归零）',
-      fig_row == FIG_W and n_fin == 6 and n_mini == 0 and n_side == 0 and n_rb == 0 and n_gfx == 0,
-      f'图行 {len(fig_row)}/6｜' + ' '.join(f + '=' + w for f, w in fig_row) +
-      f'｜figs 入件 {n_fin}/6 位图 {n_gfx}/0 minipage {n_mini}/0 side {n_side}/0 raisebox {n_rb}/0')
-reg('⑱ 口径登记（片G 0910 整族改写·旧→新）',
-    '旧门值（F 片A 0909／片E 0909c）：minipage ≥5、side ==5、raisebox 声明盒 ==5（且 -\\height+amm 与 bmm '
-    '两数相等）、盒间胶 ==5，实测 5/5/5/5 全绿＋\\includegraphics 位图 ×5。片G 六图矢量化并下置后四要素'
-    '全数退场（现实测 0/0/0/0/0）——旧并排绕图口径不保留代码路径，整族改「六图下置」五门：tex 形制（本条）'
-    '＋PDF 线框几何（⑱-2）＋图行不吞字（⑱-3）＋六图台账（N6）＋探究点归属（⑮）。')
-reg('⑱ 缩档轮 0910 置宽档改钉（旧→新·逐条）',
-    '六处 \resizebox 置宽档按 缩档测量/缩档测量.txt【一】反解值改钉（主判据＝字母字号 7.5pt，'
-    '系数 k_font＝7.5÷该图字母字号中位）：g6-triple \linewidth(84.0)→80.8mm（k 0.9613，'
-    '字号 7.80→7.50 随同比到档）；g3-cube6 \linewidth(84.0)→36.3mm（k 0.4318）；'
-    'g4-dihedral 66.3→30.5mm（k 0.4604）；g5-fold 54.7→28.2mm（k 0.5154）；'
-    'g1-prism 41.1mm、g2-cubeE 42.0mm 置宽不动（此二图属「字大图不大」：线框 31.62/31.79mm 本已在'
-    '27.7–36mm 档内，按反解缩置宽会掉到 18.8/21.8mm 破下沿 → 只改片段 \fontsize：'
-    'g1 14.90/17.30→6.83/7.93pt（×0.4584）、g2 14.53→7.53pt（×0.5181））。'
-    'BOX_MM 由 FIG_W 折算，随 FIG_W 同步（\linewidth 分支自此不再命中，作防御保留）。'
-    '同轮片段侧线宽回填（目标 有效线宽 0.21mm＝声明×有效系数）：g1 0.370→0.210／g2 0.308→0.210／'
-    'g3 0.43・0.59→0.498／g4 0.34→0.456／g5 0.3042→0.4096／g6 0.22 不动（0.22×0.9395＝0.2067 已档内）。')
+n_gfx = len(re.findall(r'\\includegraphics\[width=', body))
+check('⑱ 六图 body.tex 形制（并排恢复0910：并排 ×2 逐图钉文栏/胶/盒/H＋下置 ×4 同式·figs/resizebox 归零·位图 6）',
+      und_row == FIG_W_UND and len(side_hits) == 2 and not side_bad
+      and n_gfx == 6 and n_fin == 0 and n_rs == 0 and n_mini == 4 and n_side == 2 and n_rb == 2,
+      f'下置行 {len(und_row)}/4＝' + ' '.join(f + '=' + w for f, w in und_row) +
+      '｜并排行 ' + ' '.join(f + '(文' + tw + '胶' + gl + '盒' + bw + 'H' + h1 + ')'
+                             for f, tw, gl, bw, h1, _2, _3, _4 in side_hits) +
+      f'｜位图 {n_gfx}/6 figs入件 {n_fin}/0 resizebox {n_rs}/0 minipage {n_mini}/4 side {n_side}/2 raisebox {n_rb}/2'
+      + ('' if not side_bad else ' ✗并排钉异:' + ','.join(side_bad)))
+reg('⑱ 口径登记（并排恢复0910 回退轮→并排回归·旧→新·逐条）',
+    '回退轮 0910 旧门值：图行＝下置骨架六行逐字节同式 ×6（g6 84.0／g1 28.8／g2 32.7／g3 54.1／g4 47.5／g5 42.5mm），'
+    '并排四要素（minipage/side/raisebox/胶）全归零——本轮 g1/g2 复「图右文左」并排：'
+    '①下置行 6→4（g3–g6 骨架逐字节不动，置宽 84.0/54.1/47.5/42.5mm 不变）；'
+    '②并排行 0→2（形制逐图钉：g1 文栏 48.000/胶 5.342/盒 28.800/H 3.332；g2 文栏 46.368/胶 0.925/盒 32.000/H 3.545）；'
+    '③g2 声明宽 32.7→32.0mm（超 TW-01 上限 0.7mm 缩档入档，标签等效字号 ≈7.35pt≥7.0 下限，不设例外）；'
+    '④minipage 0→4／side 0→2／raisebox 0→2；resizebox／figs 入件继续归零。')
+reg('⑱ 置宽档沿革（回退轮0910 反解三值表→并排恢复0910·逐条）',
+    '六图置宽按「位图原生像素中字母标签高→显示标签高 2.65mm(≈7.5pt) 反解；校验上限 84.0mm∧150dpi 自然尺寸」钉'
+    '（量法＝回退轮0910/量标签高.py 连通域主簇中位）：'
+    'g6-triple 84.0mm（反解 133.26 被上限 84.00 截断；标签主簇中位 28px/位图 1408px）；'
+    'g1-prism 28.8mm（反解 28.84；63.5px/691px）；g2-cubeE 32.7→并排 32.0mm（反解 32.65；62px/764px——'
+    '并排盒宽按 TW-01 上限 32 截档，标签等效 ≈7.35pt）；'
+    'g3-cube6 54.1mm（54.14；25.5px/521px）；g4-dihedral 47.5mm（47.46；44px/788px）；'
+    'g5-fold 42.5mm（42.54；112px/1798px）。缩档轮 0910 旧档 80.8/41.1/42.0/36.3/30.5/28.2mm 已作废（回退轮登记沿用）。')
 
-# ---- 片G 0910 权威线框口径内核（口径源＝工作区/_tmp取证0909c/片G/权威实测.py；改口径须两处同步） ----
-# 【口径一句话】图墨＝"真压在矢量笔画上的墨"：簇内全部笔画（含轴对齐棱、虚线、填充块，线宽外放 0.8pt）按原样
-#   重放到同尺寸空白页得 600dpi 蒙版 M → 件内真墨 A∩M 的 8 邻接连通域之并＝线框 W（量尺寸/定间距的基准；
-#   图内标签与正文墨在原理上撑不大 W）；图内标签走文本层认领 → 与 W 并成含标签框 F；前距/下距一律墨级。
-#   素材 standalone 走同一函数 ×k 得预测，Δ＝件内−预测（线框基为权威验收量，与字体无关）。
-# 【为什么】旧三套数互斥的根因＝判据取"种子簇外接矩形"：蹭边标签吞/不吞由 0.1mm 级刀口翻转（g3 −3.51／
-#   g2 +2.54 皆此），且绝对尺寸两侧都被撑大（g4 两侧同吞侥幸相消、g6 还漏收线框块）——详见权威实测.py【甲】【五】。
+# ---- 片G 0910 权威线框口径内核（口径源＝工作区/_tmp取证0909c/片G/权威实测.py）——残留清理0911 折叠 ----
+# 【删】内核主体（矢量笔画重放/线框 W/标签认领：strokes/clusters/_dashstr/_gray/_replay/ink_mask/
+#   comps_rect/sub_ink/measure_fig/fig_lock 及其专属常数）——六图回用原位图后判据原理性不适用
+#   （回退轮0910 起停用），grep 证 measure_fig/fig_lock 全文 0 调用＝死码；原文见 .bak_残留清理0911；
+#   原 ⑱-2 执行块已由回退轮0910 换为下方「六图位图几何门」。
+# 【留】text_lines/is_body（位图 ⑱-2/⑱-3 门沿用）＋BODY_SIZE/BODY_MINW（is_body 依赖）＋numpy 导入
+#   （line_ink600 等位图门沿用）。
 import numpy as _np
-KDPI, KTHR = 600, 200
-GAP_CLUSTER = 8 / 25.4 * PT
-YTOL = 3 * PT
-XGAP = 20 * PT
-MINLONG = 3
-LONG_MM, SEED_MM = 5.0, 2.0
-REPLAY_PAD = 0.8
-MASK_DIL = 1
 BODY_SIZE = (9.6, 11.2)
 BODY_MINW = 4.0 * PT
-LAB_R = 3.5 * PT
-LAB_MAXW, LAB_MAXH = 22 * PT, 15 * PT
-LAB_PAD = 1.2
-MIN_PIX = 4
-COLC = 72.0 / KDPI
-DELTA_OK = 0.50
-ISO_OK = 0.005
-SHAPE_OK = 0.005
-K_SRC = 'C:/提示词/工作区/_tmp片G素材/'
-K_MAP = [   # (标签, 素材 standalone, 声明置宽 mm, 件内片段, 预期落位(页,栏))
-    # 声明置宽列＝⑱ tex 门 FIG_W 的同比内核档（缩档轮 0910：80.8/41.1/42.0/36.3/30.5/28.2，
-    #   旧档 84.0(\linewidth)/41.1/42.0/84.0(\linewidth)/66.3/54.7）——两表任一未同步即 ⑱-2 全红。
-    ('g6 三联', 'sub3_投影三联-纯tikz体检.pdf', 80.8, 'g6-triple', (2, 2)),
-    ('g1 棱柱', 'img1_tikz.pdf', 41.1, 'g1-prism', (3, 2)),
-    ('g2 正方体E', 'image2_重绘.pdf', 42.0, 'g2-cubeE', (4, 1)),
-    ('g3 正方体6', 'tikz_tan6.pdf', 36.3, 'g3-cube6', (5, 1)),
-    ('g4 二面角', '片G-image4-二面角-standalone.pdf', 30.5, 'g4-dihedral', (6, 1)),
-    ('g5 折叠', 'fig-image5-fold.pdf', 28.2, 'g5-fold', (6, 2)),
-]
-
-
-def strokes(page):
-    out = []
-    for o in page.get_drawings():
-        col, fill = o.get('color'), o.get('fill')
-        if col is None and fill is None:
-            continue
-        wd = o.get('width') or 1.0
-        base = dict(w=wd, col=col, fill=fill, cap=o.get('lineCap') or 0,
-                    join=o.get('lineJoin') or 0, dashes=o.get('dashes'))
-        for it in o['items']:
-            kind = it[0]
-            if kind == 'l':
-                p1, p2 = it[1], it[2]
-                dx, dy = abs(p2.x - p1.x), abs(p2.y - p1.y)
-                span = max(dx, dy) / PT
-                dg = dx > 1.0 and dy > 1.0 and span > SEED_MM
-                out.append(dict(base, kind='l', pts=[p1, p2],
-                                rect=pymupdf.Rect(min(p1.x, p2.x), min(p1.y, p2.y),
-                                                  max(p1.x, p2.x), max(p1.y, p2.y)),
-                                seed=dg, long=dg and span >= LONG_MM))
-            elif kind == 'c':
-                ps = list(it[1:5])
-                xs = [q.x for q in ps]
-                ys = [q.y for q in ps]
-                w, h = max(xs) - min(xs), max(ys) - min(ys)
-                span = max(w, h) / PT
-                dg = w > 1.0 and h > 1.0 and span > SEED_MM
-                blk = (not dg) and 0.6 * PT <= span * PT <= 4 * PT and min(w, h) > 0.5
-                out.append(dict(base, kind='c', pts=ps,
-                                rect=pymupdf.Rect(min(xs), min(ys), max(xs), max(ys)),
-                                seed=dg or blk, long=dg and span >= LONG_MM))
-            elif kind in ('re', 'qu'):
-                r = pymupdf.Rect(it[1])
-                blk = 0.6 * PT <= r.width <= 4 * PT and 0.6 * PT <= r.height <= 4 * PT
-                out.append(dict(base, kind=kind, pts=None, rect=r, seed=blk, long=False))
-    return out
-
-
-def clusters(stk):
-    idx = [i for i, s in enumerate(stk) if s['seed']]
-    rs = [pymupdf.Rect(stk[i]['rect']) for i in idx]
-    lg = [1 if stk[i]['long'] else 0 for i in idx]
-    par = list(range(len(rs)))
-
-    def find(i):
-        while par[i] != i:
-            par[i] = par[par[i]]
-            i = par[i]
-        return i
-
-    for i in range(len(rs)):
-        for j in range(i + 1, len(rs)):
-            a = pymupdf.Rect(rs[i])
-            a.x0 -= GAP_CLUSTER
-            a.y0 -= GAP_CLUSTER
-            a.x1 += GAP_CLUSTER
-            a.y1 += GAP_CLUSTER
-            if a.intersects(rs[j]):
-                x, y = find(i), find(j)
-                if x != y:
-                    par[x] = y
-    grp = {}
-    for i in range(len(rs)):
-        grp.setdefault(find(i), []).append(i)
-    cs = []
-    for g in grp.values():
-        r = pymupdf.Rect(rs[g[0]])
-        for t in g[1:]:
-            r |= rs[t]
-        cs.append([r, sum(lg[t] for t in g), [idx[t] for t in g]])
-    changed = True
-    while changed:
-        changed = False
-        for i in range(len(cs)):
-            for j in range(i + 1, len(cs)):
-                a, b = cs[i][0], cs[j][0]
-                oy = min(a.y1, b.y1) - max(a.y0, b.y0)
-                ox = min(a.x1, b.x1) - max(a.x0, b.x0)
-                if (oy > -YTOL and max(a.x0, b.x0) - min(a.x1, b.x1) <= XGAP) or \
-                   (ox > -YTOL and max(a.y0, b.y0) - min(a.y1, b.y1) <= XGAP):
-                    cs[i] = [a | b, cs[i][1] + cs[j][1], cs[i][2] + cs[j][2]]
-                    del cs[j]
-                    changed = True
-                    break
-            if changed:
-                break
-    return [c for c in cs if c[0].width / PT >= 15 and c[0].height / PT >= 10 and c[1] >= MINLONG]
-
-
-def _dashstr(d, scale=1.0):
-    if not d:
-        return None
-    arr = d['array'] if isinstance(d, dict) else d
-    ph = float(d.get('phase', 0.0)) if isinstance(d, dict) else 0.0
-    try:
-        arr = [float(v) * scale for v in arr]
-    except Exception:
-        return None
-    if not arr or sum(arr) <= 0:
-        return None
-    return '[' + ' '.join('%.4f' % v for v in arr) + '] %.4f' % ph
-
-
-def _gray(pix):
-    w, h, n, s = pix.width, pix.height, pix.n, pix.samples
-    return _np.frombuffer(s, dtype=_np.uint8).reshape(h, w, n)[:, :, :3].mean(axis=2)
-
-
-def _replay(page, clip, stk, inidx, dashed, pad=REPLAY_PAD):
-    """笔画重放到同尺寸空白页 → 600dpi 二值蒙版。dashed=False 即权威笔画蒙版 M。"""
-    from scipy import ndimage
-    nd = pymupdf.open()
-    npg = nd.new_page(width=page.rect.width, height=page.rect.height)
-    for i in inidx:
-        s = stk[i]
-        if s['fill'] is not None and s['col'] is None:
-            fc = s['fill']
-            if s['kind'] == 'qu':
-                npg.draw_quad(pymupdf.Quad(s['rect']), color=None, fill=fc)
-            elif s['pts'] and len(s['pts']) >= 3:
-                npg.draw_polyline(s['pts'] + [s['pts'][0]], color=None, fill=fc)
-            else:
-                npg.draw_rect(s['rect'], color=None, fill=fc)
-            continue
-        sc = s['col'] or (0, 0, 0)
-        wdt = s['w'] + pad
-        ds = _dashstr(s['dashes']) if dashed else None
-        try:
-            if s['kind'] == 'l':
-                npg.draw_line(s['pts'][0], s['pts'][1], color=sc, width=wdt,
-                              lineCap=s['cap'], lineJoin=s['join'], dashes=ds)
-            elif s['kind'] == 'c':
-                p = s['pts']
-                npg.draw_bezier(p[0], p[1], p[2], p[3], color=sc, width=wdt,
-                                lineCap=s['cap'], lineJoin=s['join'], dashes=ds)
-            else:
-                npg.draw_rect(s['rect'], color=sc, width=wdt, dashes=ds)
-        except Exception:
-            npg.draw_rect(s['rect'], color=sc, width=wdt)
-    a = _gray(npg.get_pixmap(dpi=KDPI, clip=clip))
-    nd.close()
-    m = a < 250
-    if MASK_DIL:
-        m = ndimage.binary_dilation(m, _np.ones((3, 3), bool), iterations=MASK_DIL)
-    return m
-
-
-def ink_mask(page, clip):
-    return _gray(page.get_pixmap(dpi=KDPI, clip=clip)) < KTHR
-
-
-def comps_rect(mask, ox, oy, minpix=MIN_PIX, dilate=0):
-    """掩膜 → 8 邻接各连通域真墨 bbox（pt 绝对坐标）。dilate>0 时仅用于并域，bbox 取真墨。"""
-    from scipy import ndimage
-    st = _np.ones((3, 3), bool)
-    lab, _cnt = ndimage.label(
-        ndimage.binary_dilation(mask, st, iterations=dilate) if dilate else mask, structure=st)
-    out = []
-    for i, sl in enumerate(ndimage.find_objects(lab), 1):
-        if sl is None:
-            continue
-        sub = mask[sl] & (lab[sl] == i)
-        if sub.sum() < minpix:
-            continue
-        ys, xs = _np.nonzero(sub)
-        out.append(pymupdf.Rect(ox + (sl[1].start + xs.min()) * COLC,
-                                oy + (sl[0].start + ys.min()) * COLC,
-                                ox + (sl[1].start + xs.max() + 1) * COLC,
-                                oy + (sl[0].start + ys.max() + 1) * COLC))
-    return out
-
-
-def sub_ink(mask, ox, oy, rect, band):
-    """band 掩膜内、rect∩band 部分的真墨 bbox（无墨返回 None）。"""
-    x0, y0 = max(rect.x0, band.x0), max(rect.y0, band.y0)
-    x1, y1 = min(rect.x1, band.x1), min(rect.y1, band.y1)
-    if x1 <= x0 or y1 <= y0:
-        return None
-    c0, r0 = max(int((x0 - ox) / COLC), 0), max(int((y0 - oy) / COLC), 0)
-    c1 = min(int((x1 - ox) / COLC) + 1, mask.shape[1])
-    r1 = min(int((y1 - oy) / COLC) + 1, mask.shape[0])
-    sub = mask[r0:r1, c0:c1]
-    if not sub.any():
-        return None
-    ys, xs = _np.nonzero(sub)
-    return pymupdf.Rect(ox + (c0 + xs.min()) * COLC, oy + (r0 + ys.min()) * COLC,
-                        ox + (c0 + xs.max() + 1) * COLC, oy + (r0 + ys.max() + 1) * COLC)
 
 
 def text_lines(page):
@@ -973,227 +734,246 @@ def is_body(L):
     return BODY_SIZE[0] <= L['sz'] <= BODY_SIZE[1] and L['r'].width >= BODY_MINW
 
 
-def measure_fig(page, stk, clus, lines, labr=LAB_R, src=False, box_mm=None):
-    """一个图簇 → 权威读数 dict。src=True 用于素材整页（无正文，全部文本行皆图内标签）。"""
-    r, nlong, members = clus
-    if src:
-        col, cl, cw = 1, page.rect.x0, page.rect.width
-    else:
-        col, cl = (1, MARGIN) if r.x0 < MID else (2, MARGIN + COLW + COLSEP)
-        cw = COLW
-    H = page.rect.height
-    my = [L for L in lines if cl - 2 <= (L['r'].x0 + L['r'].x1) / 2 <= cl + cw + 2]
-    body = [] if src else [L for L in my if is_body(L)]
-    if src:
-        band = pymupdf.Rect(page.rect.x0 + 0.1, page.rect.y0 + 0.1,
-                            page.rect.x1 - 0.1, page.rect.y1 - 0.1)
-    else:
-        upb = [L['r'] for L in body if L['r'].y1 <= r.y0 + 0.5]
-        dnb = [L['r'] for L in body if L['r'].y0 >= r.y1 - 0.5]
-        y0 = (min(x.y0 for x in upb) if upb else r.y0 - 6 * PT) - 2 * PT
-        y1 = (max(x.y1 for x in dnb) if dnb else r.y1 + 6 * PT) + 2 * PT
-        band = pymupdf.Rect(cl + 0.15, max(1.0, y0), cl + cw - 0.15, min(H - 1.0, y1))
-    near = pymupdf.Rect(r.x0 - 0.3 * PT, r.y0 - 0.3 * PT, r.x1 + 0.3 * PT, r.y1 + 0.3 * PT)
-    inidx = [i for i, s in enumerate(stk)
-             if near.intersects(s['rect']) and band.contains(s['rect'])]
-    if not inidx:
-        return None
-    A = ink_mask(page, band)
-    M = _replay(page, band, stk, inidx, dashed=False)
-    Md = _replay(page, band, stk, inidx, dashed=True)
-    WM = A & M
-    Wc = comps_rect(WM, band.x0, band.y0)
-    if not Wc:
-        return None
-    W = Wc[0]
-    for q in Wc[1:]:
-        W |= q
-    geo = pymupdf.Rect(stk[inidx[0]]['rect'])
-    for i in inidx[1:]:
-        geo |= stk[i]['rect']
-    claim = pymupdf.Rect(W.x0 - labr, W.y0 - labr, W.x1 + labr, W.y1 + labr)
-    labs = []
-    for L in my:
-        if not src and is_body(L):
-            continue
-        lr = L['r']
-        if lr.width > LAB_MAXW or lr.height > LAB_MAXH or not lr.intersects(claim):
-            continue
-        if any(B['r'].intersects(lr) for B in body):
-            continue
-        ib = sub_ink(A, band.x0, band.y0,
-                     pymupdf.Rect(lr.x0 - LAB_PAD, lr.y0 - LAB_PAD,
-                                  lr.x1 + LAB_PAD, lr.y1 + LAB_PAD), band)
-        if ib is None or ib.width > LAB_MAXW or ib.height > LAB_MAXH:
-            continue
-        labs.append(dict(t=L['t'], bbox=lr, ink=ib, sz=L['sz']))
-    F = pymupdf.Rect(W)
-    for L in labs:
-        F |= L['ink']
-    out = dict(col=col, cl=cl, cw=cw, nlong=nlong, nstroke=len(inidx), W=W, F=F,
-               labs=labs, nlab=len(labs), band=band, nWpx=int(WM.sum()),
-               alive=int((WM & Md).sum()), geo=geo, src=src)
-    if not src:
-        Fin = pymupdf.Rect(F.x0 - 0.3 * PT, F.y0 - 0.3 * PT, F.x1 + 0.3 * PT, F.y1 + 0.3 * PT)
-        rows = []
-        for L in body:
-            ib = sub_ink(A, band.x0, band.y0, L['r'], band)
-            if ib is not None:
-                rows.append(dict(t=L['t'], bbox=L['r'], ink=ib))
-        out['hits'] = [R for R in rows if R['bbox'].intersects(Fin) or R['ink'].intersects(Fin)]
-        out['above'] = [R for R in rows if R['bbox'].y1 <= F.y0 + 0.3 * PT]
-        out['below'] = [R for R in rows if R['bbox'].y0 >= F.y1 - 0.3 * PT]
-        out['up'] = max(out['above'], key=lambda z: z['bbox'].y1) if out['above'] else None
-        out['dn'] = min(out['below'], key=lambda z: z['bbox'].y0) if out['below'] else None
-        cc = cl + COLW / 2
-        if box_mm:
-            out['box'] = (cc - box_mm * PT / 2, cc + box_mm * PT / 2)
-        out['cc'] = cc
-    return out
+# ---- ⑱-2 六图位图几何门（回退轮0910 位图口径；并排恢复0910 增 g1/g2 并排分支＋盒缝门，下置四图门值不动） ----
+# 旧线框门值（片G 0910·缩档轮复标后，逐条作废登记）：前距含标 [1.99,4.44]／下距含标 [2.04,3.85]／
+#   栏心偏线框基 ±1.45／Δ线框 ≤0.50（g5 无锁定改不变量 |rx−ry|≤0.005 等三项）／越声明盒 ≤0.30／
+#   标签数件内==素材／虚线保真率 ≥0.99／正文相交=0／落位逐图。
+# 下置四图门（回退轮口径沿用）：落位（页,栏）逐图钉 FIG_AT；置宽 |PDF 矩形宽−tex 声明宽|≤0.5mm；
+#   居中＝栏心偏 |·|≤0.25；前距 墨级 ∈[2.04,3.73]；下距 墨级 ∈[2.06,3.89]（栏末图免检——并排恢复0910
+#   后 g2 不再下置，栏末免检实例归零，机制保留）；零侵入＝正文行 600dpi 真墨 ∩（图矩形外扩 0.5mm）==0。
+# 并排两图门（本轮新立，600dpi 墨级，口径承 F 片A 三窗＋盒缝回归）：落位钉＋置宽±0.5＋零侵入（并排支
+#   外扩窗依「图真墨矩形」而非声明盒——盒底白边不计入，实测 g2 图真墨底→下邻通栏行真墨顶 0.66mm）；
+#   顶差＝图墨顶−带内首行文墨顶 ∈[−1,+1]（目标 −0.25 档）；
+#   墨缝＝图墨左缘−带内文墨右缘 max ∈[5.2,8.2]（全品最小缝 6.7±1.5——缝按墨缘反解，非声明盒硬凑）；
+#   盒缝＝图盒左缘−带内文墨右缘 max ∈[4.7,8.2]（盒缝门回归：旧教训「墨缝过门、盒缝观感远」，盒缝与观感
+#     同尺；下限＝墨缝下限−图盒左留白容差 0.5）；右缘＝栏右−图墨右缘 逐图窗 REDGE_W；
+#   图旁文字在场＝带内文行 ≥1（并排形制正证）；栏心偏/前距/下距＝下置形口径，并排行内图不适用（免检登记）。
+# 图真墨矩形 ir＝位图原生墨 bbox（PIL <128）按 PDF 矩形同比映射——下置以前距/下距为基，并排以顶差/墨缝为基。
+PAD05 = 0.5 * PT
+SEAM_W = (5.2, 8.2)       # 墨缝窗（mm）
+BOXSEAM_W = (4.7, 8.2)    # 盒缝窗（mm）
+REDGE_W = {'g1-prism': (1.6, 3.6), 'g2-cubeE': (4.5, 5.5)}   # 右缘窗（g2 例外登记，成因见 reg 与 SIDE_DEF 注）
 
 
-def fig_lock(frag):
-    """片段 tex 是否声明画布锁定（use as bounding box）；无锁定返回 None。"""
-    try:
-        s = open(os.path.join(BASE, 'figs', frag + '.tikz'), encoding='utf-8').read()
-    except Exception:
+def line_ink600(page, r):
+    """区域 600dpi 真墨 bbox（pt 绝对坐标）；无墨返回 None。"""
+    pm = page.get_pixmap(dpi=600, colorspace=pymupdf.csGRAY, clip=r)
+    a = _np.frombuffer(pm.samples, dtype=_np.uint8).reshape(pm.height, pm.width)
+    m = a < 128
+    if not m.any():
         return None
-    m = re.search(r'(?:use as bounding box\]?|useasboundingbox)\s*\(\s*([-\d.]+)\s*,\s*([-\d.]+)'
-                  r'\s*\)\s*rectangle\s*\(\s*([-\d.]+)\s*,\s*([-\d.]+)\s*\)', s)
-    if not m:
-        return None
-    x0, y0, x1, y1 = (float(v) for v in m.groups())
-    return (x1 - x0, y1 - y0)
+    ys, xs = _np.nonzero(m)
+    sc = 72.0 / 600
+    return pymupdf.Rect(r.x0 + xs.min() * sc, r.y0 + ys.min() * sc,
+                        r.x0 + (xs.max() + 1) * sc, r.y0 + (ys.max() + 1) * sc)
 
 
-# ---- ⑱-2 六图线框几何门（片G 0910 整族改写·权威线框口径；旧"位图墨级三窗"口径作废） ----
-# 门值由权威实测直读（窗＝实测极值±0.25mm 墨级安全垫）。缩档轮 0910 复标（来源＝本轮
-# 缩档测量/缩档后-权威实测.txt【七】＋六图含标基读数）：
-#   前距 含标 [1.99,4.44]（旧 [1.99,4.14]；实测极值 2.24/4.19，g1 标签缩档后含标墨顶下移、上缝抬到 4.19）；
-#   下距 含标 [2.04,3.85]（旧 [2.04,4.36]；实测极值 2.29/3.60——旧上沿 4.36 由 g3 的 4.11 撑出，
-#        g3 缩档后下距回落到 3.09，按方法学（极值±垫）随实测收口，非放宽）；
-#   栏心偏 线框基 |·|≤1.45（实测 max 0.79 在窗内，不动）；Δ线框（件内−素材×k）有画布锁定五图 ≤0.50mm
-#        （实测 max 0.13，不动）；
-#   无锁定片段（g5）不适用同比参考系 → 改核不变量（|rx−ry|≤0.005 实测 0.00060＋形状比差≤0.005 实测
-#        0.00146/0.00237＋|含标宽−置宽|≤0.30mm 实测 0.04）；
-#   硬门：正文相交=0／越声明盒≤0.30mm（实测 max 0.12＝g5）／标签数件内==素材／虚线保真率≥0.99（实测 1.000）。
-K18, K18P = [], {}          # 逐图读数（⑱-3 复用）／按片段名索引
+from PIL import Image as _PILImage
+INK_NAT = {}
+for _f, (_px, _py) in FIG_PX.items():
+    _im = _PILImage.open(os.path.join(BASE, FIG_PNG[_f]))
+    if _im.mode in ('RGBA', 'LA', 'P'):
+        _bg = _PILImage.new('RGBA', _im.size, (255, 255, 255, 255))
+        _im = _PILImage.alpha_composite(_bg, _im.convert('RGBA'))
+    _a = _np.asarray(_im.convert('L')) < 128
+    _ys, _xs = _np.nonzero(_a)
+    INK_NAT[_f] = (_xs.min() / _px, _ys.min() / _py, (_xs.max() + 1) / _px, (_ys.max() + 1) / _py)
+
+K18, K18P = [], {}
 k18_ok, k18_bits = True, []
-_kfigs = []
-for _p in range(1, n_pages + 1):
-    for _c in clusters(strokes(doc[_p - 1])):
-        _kfigs.append((_p, 1 if _c[0].x0 < MID else 2, _c[0].y0, _c))
-_kfigs.sort(key=lambda z: (z[0], z[1], z[2]))
-if len(_kfigs) != 6:
+if len(FIGS) != 6:
     k18_ok = False
-    k18_bits.append(f'簇数 {len(_kfigs)}/6')
-for (_p, _c01, _y, _clus), (tag, srcf, boxmm, frag, at) in zip(_kfigs, K_MAP):
-    pg = doc[_p - 1]
-    m = measure_fig(pg, strokes(pg), _clus, text_lines(pg), box_mm=boxmm)
-    sd = pymupdf.open(K_SRC + srcf)
-    sp = sd[0]
-    sstk = strokes(sp)
-    scl = clusters(sstk)
-    k = boxmm / (sp.rect.width / PT)
-    ms = measure_fig(sp, sstk, scl[0], text_lines(sp), labr=LAB_R / k, src=True) if scl else None
-    sd.close()
-    if m is None or ms is None:
-        k18_ok = False
-        k18_bits.append(f'{frag} 测量失败(m={m is not None} ms={ms is not None} 素材簇{len(scl)})')
-        continue
-    Wm, Fm, Ws, Fs = m['W'], m['F'], ms['W'], ms['F']
-    dw, dh = Wm.width / PT - Ws.width / PT * k, Wm.height / PT - Ws.height / PT * k
-    rx, ry = Wm.width / Ws.width, Wm.height / Ws.height
-    shp = abs(Wm.width / Fm.width - Ws.width / Fs.width)
-    shph = abs(Wm.height / Fm.height - Ws.height / Fs.height)
-    gap_u = (Fm.y0 - m['up']['ink'].y1) / PT if m['up'] else None
-    gap_d = (m['dn']['ink'].y0 - Fm.y1) / PT if m['dn'] else None
-    dev = ((Wm.x0 + Wm.x1) / 2 - (m['cl'] + COLW / 2)) / PT
-    bx0, bx1 = m['cc'] - boxmm * PT / 2, m['cc'] + boxmm * PT / 2
-    over = max(0.0, bx0 - Fm.x0, Fm.x1 - bx1) / PT
-    fid = (m['alive'] / m['nWpx']) if m['nWpx'] else 0.0
-    lock = fig_lock(frag) is not None
-    oks = [('前距', gap_u is not None and 1.99 <= gap_u <= 4.44),
-           ('下距', gap_d is not None and 2.04 <= gap_d <= 3.85),
-           ('栏心偏', abs(dev) <= 1.45),
-           ('零侵入', len(m['hits']) == 0),
-           ('越盒', over <= 0.30),
-           ('标签数', m['nlab'] == ms['nlab']),
-           ('虚线', fid >= 0.99)]
-    if lock:
-        oks.append(('Δ线框', abs(dw) <= DELTA_OK and abs(dh) <= DELTA_OK))
+    k18_bits.append(f'位图 {len(FIGS)}/6')
+if FIG_PXBAD:
+    k18_ok = False
+    k18_bits.append('图源互证失败 ' + ','.join(FIG_PXBAD))
+for frag, pno, col, r, info in FIGS:
+    mode = FIG_MODE[frag]
+    box = BOX_MM[frag]
+    cl = COLL[col - 1]
+    fx0, fy0, fx1, fy1 = INK_NAT[frag]
+    ir = pymupdf.Rect(r.x0 + fx0 * r.width, r.y0 + fy0 * r.height,
+                      r.x0 + fx1 * r.width, r.y0 + fy1 * r.height)
+    pg = doc[pno - 1]
+    body_ls = [L for L in text_lines(pg) if is_body(L)
+               and cl - 2 <= (L['r'].x0 + L['r'].x1) / 2 <= cl + COLW + 2]
+    for L in body_ls:
+        L['ink'] = line_ink600(pg, L['r']) or L['r']
+    above = [L for L in body_ls if L['ink'].y1 <= ir.y0 + 0.3]
+    below = [L for L in body_ls if L['ink'].y0 >= ir.y1 - 0.3]
+    up = max(above, key=lambda z: z['ink'].y1) if above else None
+    dn = min(below, key=lambda z: z['ink'].y0) if below else None
+    gap_u = (ir.y0 - up['ink'].y1) / PT if up else None
+    gap_d = (dn['ink'].y0 - ir.y1) / PT if dn else None
+    colend = dn is None and ir.y1 > BODY_BOT - 2 * PT   # 栏末图（下邻流次栏）
+    dev = ((r.x0 + r.x1) / 2 - (cl + COLW / 2)) / PT
+    wdev = r.width / PT - box
+    # 侵入判据分形制（并排恢复0910）：下置支＝声明盒外扩 0.5mm（回退轮口径逐字不变）；并排支＝图真墨
+    #   矩形外扩 0.5mm——声明盒底含 PNG 内白边（g2 盒底比真墨底低 0.93pt），而行内并排图之下紧接
+    #   通栏段系形制固有（g2 下邻 [分析] 行真墨顶距声明盒底 0.33mm／距图真墨底 0.66mm，目验无触碰）。
+    infl = (pymupdf.Rect(ir.x0 - PAD05, ir.y0 - PAD05, ir.x1 + PAD05, ir.y1 + PAD05) if mode == 'side'
+            else pymupdf.Rect(r.x0 - PAD05, r.y0 - PAD05, r.x1 + PAD05, r.y1 + PAD05))
+    hits = ([L for L in body_ls if L['ink'].intersects(infl)] if mode == 'side'
+            else [L for L in body_ls if L['r'].intersects(infl) or L['ink'].intersects(infl)])
+    seam = boxseam = redge = topdiff = None
+    nband = 0
+    if mode == 'under':
+        oks = [('落位', (pno, col) == FIG_AT[frag]),
+               ('置宽', abs(wdev) <= 0.5),
+               ('栏心偏', abs(dev) <= 0.25),
+               ('前距', gap_u is not None and 2.04 <= gap_u <= 3.73),
+               ('下距', colend or (gap_d is not None and 2.06 <= gap_d <= 3.89)),
+               ('零侵入', len(hits) == 0)]
     else:
-        oks.append(('无锁定不变量', abs(rx - ry) <= ISO_OK and shp <= SHAPE_OK and shph <= SHAPE_OK
-                    and abs(Fm.width / PT - boxmm) <= 0.30))
+        band = [L for L in body_ls if L['r'].y1 > ir.y0 and L['r'].y0 < ir.y1 and L['r'].x1 <= r.x0]
+        nband = len(band)
+        best = max((L['ink'].x1 for L in band), default=None)
+        first = min(band, key=lambda z: z['r'].y0) if band else None
+        if best is not None:
+            seam = (ir.x0 - best) / PT
+            boxseam = (r.x0 - best) / PT
+        if first is not None:
+            topdiff = (ir.y0 - first['ink'].y0) / PT
+        redge = (cl + COLW - ir.x1) / PT
+        rw = REDGE_W[frag]
+        oks = [('落位', (pno, col) == FIG_AT[frag]),
+               ('置宽', abs(wdev) <= 0.5),
+               ('零侵入', len(hits) == 0),
+               ('图旁文字在场', nband >= 1),
+               ('顶差', topdiff is not None and abs(topdiff) <= 1.0),
+               ('墨缝', seam is not None and SEAM_W[0] <= seam <= SEAM_W[1]),
+               ('盒缝', boxseam is not None and BOXSEAM_W[0] <= boxseam <= BOXSEAM_W[1]),
+               ('右缘', redge is not None and rw[0] <= redge <= rw[1])]
     bad = [n for n, o in oks if not o]
     if bad:
         k18_ok = False
-    if (_p, _c01) != at:
-        k18_ok = False
-        bad = bad + ['落位']
-    K18.append(dict(frag=frag, pno=_p, col=_c01, m=m, ms=ms, k=k, dw=dw, dh=dh, lock=lock,
-                    gap_u=gap_u, gap_d=gap_d, dev=dev, over=over, fid=fid, bad=bad))
+    K18.append(dict(frag=frag, mode=mode, pno=pno, col=col, r=r, ir=ir, up=up, dn=dn, colend=colend,
+                    gap_u=gap_u, gap_d=gap_d, dev=dev, wdev=wdev, nhit=len(hits), bad=bad,
+                    seam=seam, boxseam=boxseam, redge=redge, topdiff=topdiff, nband=nband))
     K18P[frag] = K18[-1]
-    k18_bits.append('{}@p{}c{} W{:.2f}×{:.2f} Δ{}{:+.2f}/{}{:+.2f} 前{} 下{} 偏{:+.2f} 越{:.2f} 标{}/{} 虚{:.3f}{}'.format(
-        frag, _p, _c01, Wm.width / PT, Wm.height / PT,
-        '' if lock else 'g5不变量', dw, '' if lock else '', dh,
-        '—' if gap_u is None else f'{gap_u:.2f}', '—' if gap_d is None else f'{gap_d:.2f}',
-        dev, over, m['nlab'], ms['nlab'], fid,
-        '' if not bad else ' ✗' + ','.join(bad)))
-check('⑱-2 六图线框几何（前距 1.99–4.44／下距 2.04–3.85／栏心偏 ±1.45／Δ 或 g5 不变量／零侵入=0）',
-      k18_ok and len(K18) == 6, '；'.join(k18_bits))
-reg('⑱-2 口径登记（片G 0910 整族改写·旧→新）',
-    '旧门值（F 片A 0909／片E 0909c）：raster 图矩形（side×5）600dpi 墨级三窗——顶差 |·|≤1／墨缝 5.2–9.0／'
-    '右缘 1.6–3.6，旧实测 5/5 全绿；片G 六图下置后 PDF 内 raster 对象 =0（实测），旧门无对象可测。'
-    '新门＝权威线框口径（内核节）：前距/下距含标基窗、栏心偏线框基 ±1.45、Δ线框 ≤0.50mm（无锁定片段 g5 改核'
-    '不变量：|rx−ry|≤0.005＋形状比差≤0.005＋|含标宽−置宽|≤0.30）、正文相交=0、越声明盒≤0.30mm、'
-    '标签数件内==素材、虚线保真率≥0.99、落位逐图；门值来源＝_tmp取证0909c/片G/run4-权威实测.txt【七】。'
-    '旧"线框列"判据（种子外接矩形吞标签）经权威实测【甲】C/【五】证伪，整体作废；旧→新残差归因：'
-    'g3 −3.51／g2 +2.54＝判据刀口伪差、g5 +1.29＝无画布锁定参考系缺陷（改件动作，本轮不做，登记）。')
-reg('⑱-2 缩档轮 0910 窗值复标（旧→新·逐条）',
-    '按「实测极值±0.25mm 墨级安全垫」重标，来源＝靠齐样张-0910/缩档测量/缩档后-权威实测.txt【七】：'
-    '①前距含标窗 [1.99,4.14]→[1.99,4.44]——旧上沿 4.14 系改件前极值 3.89(g4)＋垫，缩档后新极值 '
-    '2.24(g5)/4.19(g1)：g1 置宽不动、只把标签 15.14/17.58→6.94/8.06pt，含标墨顶由标签顶改回线框顶承，'
-    '上缝抬到 4.19（旧 2.24）→ 上沿须放 0.30；'
-    '②下距含标窗 [2.04,4.36]→[2.04,3.85]——旧上沿 4.36 由改件前 g3 的 4.11 撑出，g3 缩到 36.3mm 后'
-    '下距回落 3.09，新极值 2.29(g1)/3.60(g2) → 上沿按方法学收到 3.85（收窗非放宽，六图读数全落新窗内）；'
-    '③栏心偏 ±1.45 不动（新实测 max |0.79|＝g2）；④Δ线框 ≤0.50 不动（有锁定五图新实测 max 0.13＝g2）；'
-    '⑤g5 无锁定不变量三项不动（新实测 |rx−ry|＝0.00060／形状比差 0.00146・0.00237／'
-    '|含标宽−置宽|＝0.04mm；Δ线框 +0.70/+0.47 仍属参考系错位、不入 Δ 门）；'
-    '⑥硬门读数：正文相交 0／越盒 max 0.12(g5)≤0.30／标签数件内==素材 21・6・9・8・6・6／虚线保真率 1.000。'
-    '另登记：K_MAP 置宽列同步改 80.8/41.1/42.0/36.3/30.5/28.2（旧 84.0/41.1/42.0/84.0/66.3/54.7），'
-    '与 ⑱ FIG_W 同源——两表任一未同步即 k／Δ 全错。')
+    if mode == 'under':
+        k18_bits.append('{}@p{}c{} 宽{:+.2f} 偏{:+.2f} 前{} 下{} 侵入{} 墨{:.1f}x{:.1f}'.format(
+            frag, pno, col, wdev, dev,
+            '—' if gap_u is None else '{:.2f}'.format(gap_u),
+            '栏末免' if colend else ('—' if gap_d is None else '{:.2f}'.format(gap_d)),
+            len(hits), ir.width / PT, ir.height / PT))
+    else:
+        k18_bits.append('{}@p{}c{}并排 宽{:+.2f} 顶{:+.2f} 墨缝{:.2f} 盒缝{:.2f} 右缘{:.2f} 旁行{} 侵入{} 墨{:.1f}x{:.1f}'.format(
+            frag, pno, col, wdev, topdiff, seam, boxseam, redge, nband, len(hits),
+            ir.width / PT, ir.height / PT))
+    if bad:
+        k18_bits[-1] += ' ✗' + ','.join(bad)
+check('⑱-2 六图位图几何（下置×4：落位钉·置宽±0.5·栏心偏±0.25·前距2.04–3.73·下距2.06–3.89·零侵入｜并排×2：置宽·零侵入·顶差≤1·墨缝5.2–8.2·盒缝4.7–8.2·右缘逐图）',
+      k18_ok and len(K18) == 6 and not FIG_PXBAD, '；'.join(k18_bits))
+reg('⑱-2 口径登记（回退轮0910 线框→位图·旧→新·逐条）',
+    '①前距 含标基 [1.99,4.44]→图真墨基 [2.04,3.73]——实测 [2.29(g1),2.99(g6),2.74(g2),3.05(g3),3.48(g4),2.88(g5)]±0.25垫；'
+    '②下距 [2.04,3.85]→[2.06,3.89]——实测 [3.19(g6),2.31(g1),3.43(g3),3.30(g4),3.64(g5)]±0.25垫；'
+    '③栏心偏 线框基±1.45→矩形基±0.25（实测 max 0.005）；④置宽±0.5mm 新立（实测偏差 0.00）；'
+    '⑤Δ线框/越盒/标签数==素材/虚线保真率/正文相交——判据依矢量重放、位图无对象→作废，'
+    '零侵入以墨级重建（正文行 600dpi 真墨 ∩ 矩形外扩 0.5mm，实测六图 0）；'
+    '⑥落位钉 FIG_AT——g2 旧 p4c1→新 p3c2（置宽 42.0→32.7mm 缩小后 p3 右栏容图至栏末，[分析]起文字流 p4c1；'
+    '图墨底距版心下际 3.5pt）＝栏末图，下距/下邻免检、前距/居中/零侵入照常。')
+reg('⑱-2 并排恢复0910 口径登记（g1/g2 下置→并排·旧→新·逐条）',
+    'g1/g2 两图门由下置六项改并排八项：①栏心偏 ±0.25／前距 [2.04,3.73]／下距 [2.06,3.89]——下置形口径，'
+    '行内并排图不适用，免检登记（旧实测 g1 前2.29/下2.31、g2 前2.74/下栏末免 随下置形退场）；'
+    '②新立顶差 ∈[−1,+1]（实测 g1 −0.40／g2 −0.23，raisebox H 反解目标 −0.25 档）；③新立墨缝 ∈[5.2,8.2]'
+    '（实测 g1 5.63／g2 7.83——胶由墨缘反解：g1 右缘目标 1.90 档内、g2 见例外）；④新立盒缝 ∈[4.7,8.2]'
+    '（实测 g1 5.59／g2 7.46——盒缝门回归，与墨缝同尺核，销「墨缝过门、盒缝观感远」脱钩账）；'
+    '⑤新立右缘逐图窗：g1 [1.6,3.6] 实测 1.90 档内；g2 [4.5,5.5] 实测 5.04＝例外登记——栏预算恒等式 '
+    '墨缝＋右缘＝84−图墨宽 31.33−文墨右缘 39.8＝12.87，题干 raggedright 合法断点仅 39.8/47.3/49.6 三档'
+    '（47.3 档触 xeCJK 行首标点令、49.6 档压盒缝为负、连字符断行违正方体名完整性先例，皆弃），'
+    '文短 6.5mm 致缝窗与右缘窗不可兼得——取缝窗优先（用户「观感脱钩」判据），右缘超档 1.45mm；'
+    '⑥图旁文字在场 ≥1 行（实测 g1 带内 3 行／g2 带内 5 行）；⑦g2 置宽钉 32.7→32.0mm（并排盒宽缩档）；'
+    '⑧零侵入外扩窗分形制：下置支沿用声明盒（回退轮读数逐字不变），并排支改依图真墨矩形——声明盒底含 '
+    'PNG 内白边（g2 盒底比真墨底低 0.93pt），行内并排图之下紧接通栏段系形制固有：g2 下邻 [分析] 行真墨顶'
+    '距声明盒底 0.33mm（旧口径判为侵入 1 行＝假阳）、距图真墨底 0.66mm，400dpi 目验（并排恢复0910/目验_g2带.png）'
+    '无触碰；并排两支修后实测侵入 0/0。')
 
-# ---- ⑱-3 下置独立行·图旁零文字门（片G 0910 整族改写；旧"绕图回流/切分余段"口径作废） ----
-# 旧形（片E 0909c #40）：并排绕图——切分组（image4/image5）图底以下余段首行须通栏（右缘 ≤5mm），
-#   图带零侵入用「文字行 x 越入图墨 x 带」判。片G 起六图全下置为独立行（图行独立成段），
-#   「图旁窄栏／余段」对象整体消失。新门两项（复用 ⑱-2 内核读数 K18，不重算）：
-# ①图旁零文字：与含标签框 F 垂直重叠 >1pt 的正文行 == 0——并排退场的直接检验（比 ⑱-2 相交门更严：
-#   不许任何文字与图共处一行）；②上下邻行在场：图的上/下正文邻行均须存在（图被正文包夹，
-#   防孤立成段或与段失联）。距离与相交由 ⑱-2 线框门承担，本条只管「下置形态」本身。
+# ---- ⑱-3 图旁文字形态门（回退轮0910 建立；并排恢复0910 两支；绕图回流0911 三支＝补「并排有余段」支） ----
+# 门三项（形制分支判据；几何读数复用 ⑱-2 K18，侵入不重算）：
+# ①图旁文字判据分形制——下置支（g3–g6）：同栏正文行与位图矩形垂直重叠 >1pt 者 ==0（独立行正证，
+#   并排残留直接检验）；并排两支共用底座：重叠行 ≥1（图旁文字在场）且全部整行在图盒左缘之左
+#   （x1 ≤ 盒左+1pt，越入盒右/跨盒即红）；位图标签在像素内，矩形即含标签框——旧「含标框 F」等价物。
+# ②并排按「有无图底以下余段」再分两支（识别＝片E 0909c body.tex 级 row_rest 判据：side 行下一元素
+#   不以 \bindp/\tjdnr 等段首宏起＝切分余段独立段）：
+#   无余段支（本轮 g1/g2 实测形制，split 键在位＝None）：另立「段全在图旁」正证——末旁行 600dpi 真墨底
+#     ≤ 图真墨底＋0.5mm（越出图底＝该段真有图底以下文字而未切，红；门读数 g1 −31.42mm／g2 −2.02mm 贴线）；
+#   有余段支（绕图回流启用态＝片E 照片E口径）：图真墨底以下首个「自栏左起」（行内最左 x0 ≤ 栏左+5pt）
+#     视觉行＝余段首行，其右缘距栏右 ≤5mm 判通栏（窄栏断行止于图旁，越图底者必为通栏——同段前缀
+#     断点不可越栏右）；H2 口径保留：按 y0 差 <3.0pt 聚视觉行，图旁行尾段碎片不误判为图下首行。
+# ③上下邻行在场＝上邻必须有；下邻须有、或为「栏末图」（K18.colend：图墨底贴版心下际 ≤2mm 且下无同栏
+#   正文行）——并排恢复0910 后 g2 回并排，栏末免检实例归零，机制保留。
 k18_3_ok, k18_3_bits = True, []
+# 余段识别（片E 0909c row_rest 判据原样复用）：side 行（含位图 minipage）之后紧跟的非段首宏元素
+els_183 = body.split('\n\n')
+rest_183 = {}
+for _i, _e in enumerate(els_183):
+    _m_img = re.search(r'image(\d)\.png', _e)
+    if '\\begin{minipage}[t]' in _e and _m_img:
+        _nxt = els_183[_i + 1] if _i + 1 < len(els_183) else ''
+        _is_rest = bool(_nxt) and not re.match(
+            r'\\(bindp|bindopt|tjdnr|liB|ansline|jiexi|xiaojie|zsd|zhenti|vbox|huaxing)', _nxt)
+        rest_183['image' + _m_img.group(1)] = _nxt if _is_rest else ''
+n_rest_183 = sum(1 for _v in rest_183.values() if _v)
 for _r in K18:
-    _m = _r['m']
     _pg = doc[_r['pno'] - 1]
+    _cl = COLL[_r['col'] - 1]
     _rows = [L for L in text_lines(_pg)
-             if _m['cl'] - 2 <= (L['r'].x0 + L['r'].x1) / 2 <= _m['cl'] + COLW + 2 and is_body(L)]
+             if _cl - 2 <= (L['r'].x0 + L['r'].x1) / 2 <= _cl + COLW + 2 and is_body(L)]
     _side = [L for L in _rows
-             if min(L['r'].y1, _m['F'].y1) - max(L['r'].y0, _m['F'].y0) > 1 * PT]
-    ok1 = not _side
-    ok2 = _m['up'] is not None and _m['dn'] is not None
+             if min(L['r'].y1, _r['r'].y1) - max(L['r'].y0, _r['r'].y0) > 1 * PT]
+    _png = SIDE_PIN.get(_r['frag'], {}).get('png')
+    _has_rest = bool(rest_183.get(_png, '')) if _png else False
+    ok1, note1 = not _side, '旁行%d' % len(_side)
+    if _r['mode'] == 'side':
+        ok1 = bool(_side) and all(L['r'].x1 <= _r['r'].x0 + 1 for L in _side)
+        if _has_rest:      # 有余段支（照片E口径）：图底以下首个自栏左起视觉行＝余段首行，右缘距栏右 ≤5mm
+            _below = sorted([L['r'] for L in _rows if L['r'].x1 <= _cl + COLW + 2
+                             and L['r'].y0 >= _r['ir'].y1 - 1 * PT], key=lambda b: b.y0)
+            _vrows = []
+            for _bb in _below:
+                if _vrows and _bb.y0 - _vrows[-1][0] < 3.0:
+                    _vrows[-1][1].append(_bb)
+                else:
+                    _vrows.append((_bb.y0, [_bb]))
+            _fr = next((g for _y, g in _vrows if min(b.x0 for b in g) <= _cl + 5.0), None)
+            _re = (_cl + COLW - max(b.x1 for b in _fr)) / PT if _fr else None
+            ok1 = ok1 and _re is not None and _re <= 5.0
+            note1 += '／余段首行右缘%s' % ('无行✗' if _re is None else '%.2fmm≤5' % _re)
+        else:              # 无余段支：段全在图旁正证——末旁行真墨底 ≤ 图真墨底＋0.5mm
+            _tail = max((line_ink600(_pg, L['r']) or L['r']).y1 for L in _side) if _side else None
+            ok1 = ok1 and _tail is not None and _tail <= _r['ir'].y1 + 0.5 * PT
+            note1 += '／末旁行墨底距图墨底%s' % (
+                '—' if _tail is None else '%+.2fmm≤+0.5' % ((_tail - _r['ir'].y1) / PT))
+    ok2 = _r['up'] is not None and (_r['dn'] is not None or _r['colend'])
     if not (ok1 and ok2):
         k18_3_ok = False
-    k18_3_bits.append('{}：旁文字{}／上邻{}／下邻{}'.format(
-        _r['frag'], len(_side), '有' if _m['up'] else '无', '有' if _m['dn'] else '无')
+    k18_3_bits.append('{}{}：{}／侵入{}／上邻{}／下邻{}'.format(
+        _r['frag'], '' if _r['mode'] == 'under' else ('（并排·有余段）' if _has_rest else '（并排·无余段）'),
+        note1, _r['nhit'], '有' if _r['up'] else '无',
+        '栏末免' if _r['colend'] else ('有' if _r['dn'] else '无'))
         + ('' if ok1 and ok2 else ' ✗'))
-check('⑱-3 下置独立行·图旁零文字（旁行=0）＋上下邻行在场（×6）', k18_3_ok and len(K18) == 6,
-      '；'.join(k18_3_bits))
-reg('⑱-3 口径登记（片G 0910 整族改写·旧→新）',
-    '旧形（片E 0909c #40）：并排绕图——切分组（image4/image5）＝图旁前缀窄栏＋余段通栏独立段，'
-    '旧门＝余段首行右缘 ≤5mm＋图带零侵入（文字行 x 越入图墨带），旧实测 2/2 切分、探八/九全绿。'
-    '片G 六图改 TikZ 矢量＋下置独立行后「图旁窄栏／余段」对象整体退场（body.tex 内 minipage／raisebox／'
-    'image*.png 实测 0），旧门无对象可测、作废。新门：①任何正文行与含标签框 F 的垂直重叠 >1pt 者 == 0'
-    '（零并排文字）；②六图上下必各有正文邻行（up/dn 在场）。两条均为实测直读，无新增常数。')
+check('⑱-3 图旁文字形态（下置×4 旁行=0｜并排无余段×2 旁行≥1 且全在盒左＋末旁行真墨底不越图底｜有余段支 余段首行右缘≤5mm 通栏·照片E口径）＋上邻在场＋下邻在场或栏末（×6）',
+      k18_3_ok and len(K18) == 6,
+      f'切分余段 {n_rest_183}/2（本轮 0＝逐图复测段全在图旁、无图底以下余段，未硬造切分点）；'
+      + '；'.join(k18_3_bits))
+reg('⑱-3 口径登记（绕图回流0911 三支分立·旧→新·逐条）',
+    '旧值（并排恢复0910 两支）：并排支门＝旁行≥1 且整行在盒左，实测 g1 旁行 3／g2 旁行 5，越盒行 0；'
+    '下置支＝旁行 0（g6/g3/g4/g5）；侵入由 ⑱-2 单管。'
+    '新值（本轮三支）：①并排支按 body.tex row_rest 判据再分两支——无余段支（g1/g2 实走）加「段全在图旁」'
+    '正证门＝末旁行 600dpi 真墨底 ≤ 图真墨底＋0.5mm（门读数 g1 −31.42mm／g2 −2.02mm 贴线态；探针 bbox 口径 g1 −30.68mm），此门系'
+    '「不许硬造余段」的机器反向锁：真有行越图底而未切，该支即红，逼出补真值 split 键；'
+    '②有余段支（照片E 0909c 口径原样恢复）＝图底以下首个自栏左起视觉行右缘距栏右 ≤5mm 判通栏，'
+    '本轮命中 0/2（无真余段可测，支在位待用）；机制在位性由临时探针实证（g2 硬加真值 split 键"，若"→'
+    '重编译→本支命中：余段首行右缘距栏右 0.00mm＝通栏正证、旁行 5→3，同轮「拉伸异常行＝0」门当场 ✗2 处'
+    '（"，"逼到行首致 xeCJK 撑出 17.75pt 空档）＝硬造余段必破他门之反证，取证 绕图回流0910/探针-硬造0911/；'
+    '③侵入统一复用 ⑱-2 K18[nhit] 读数不重算（本轮 0/0）；下置支逐字不动（旁行 0×4）。')
+reg('⑱-3 沿革登记（回退轮0910 重建→并排恢复0910 分支·逐条·承旧档）',
+    '片G 旧门：①正文行与含标框 F（线框 W＋标签文本层认领）垂直重叠>1pt==0；②up/dn 两邻皆必须有——'
+    'F 由矢量内核产出，位图不适用。回退轮新门：①同栏正文行与位图矩形垂直重叠>1pt==0（实测六图 0）；'
+    '②上邻必须有＋下邻有或栏末（g2@p3c2 一处免检）。并排恢复0910：①按 FIG_MODE 分支——下置四图沿用'
+    '「旁行=0」（实测 g6/g3/g4/g5 全 0），并排两图反转为「旁行≥1 且整行在盒左」（实测 g1 旁行 3／g2 旁行 5，'
+    '越盒行 0）；②栏末免检实例归零（g2 不再下置），机制保留；本条管「图旁文字形态」，⑱-2 零侵入管「墨距外扩」。')
 
 # ---- ⑲ 字重阶梯（tex 级）＋字号档 ----
 # F 0909 收尾轮适配：E 起「FZHei＋FakeBold 仿粗值表」整轨退役，换 NSC 静态实例挂载
@@ -1539,21 +1319,19 @@ reg('N5 首行内容 x 换轨（H3 片 0909c，学习目标后隙 \\kern7.83pt�
 reg('N5 顶格例外（拍板6）', '首行缩进 2 字＋序号「N.」加粗后空 1 字（\\mubiaomu \\hangindent=8.3mm），'
     '断言顶格.py 已同步登记 8.3mm 悬挂合法')
 
-# ---- N6 六图台账（片G 0910 整族改写：旧「居中位图 60±1 ×1」口径作废） ----
-# 旧形（v4.4⑫→F 收尾轮）：居中独立位图恰 1（三联图 sub3_B_4），宽 60±1mm＋ink 上距 2.3–3.3/下距 0.4–3.5；
-# 片G 起六图全为 TikZ 矢量下置独立行，PDF 内无 raster 图——旧口径无对象可测，作废并登记；
-# 上/下距与零侵入移入 ⑱-2（线框几何门，逐图窗），本条只管「六图在场＋落位（页,栏）逐图钉」。
-check('N6 六图台账（矢量簇 ×6＋阅读序片段互证＋落位逐图钉）',
-      len(FIG_ROWS) == 6 and FIGS and
-      [(f, p, c) for f, p, c, _r, _n in FIGS] == [(f,) + FIG_AT[f] for f, _w in FIG_W],
-      '簇 ' + str(len(FIG_ROWS)) + '/6；' + '；'.join(
-          f + '@p' + str(p) + 'c' + str(c) + ' 斜长笔' + str(n) for f, p, c, _r, n in FIGS))
-reg('N6 口径登记（片G 0910 旧→新）',
-    '旧门值：居中独立位图 ==1（60±1mm，ink 上距 2.3–3.3/下距 0.4–3.5，窗史：v4.4⑫ 下距 0.3→0.4–2.9、'
-    '0909 收尾轮放 3.5〔数学结构行上伸墨带顶抬升〕；旧实测 p2 图 60.0 前 2.83/后 3.39 全绿）。'
-    '新门：矢量簇恰 6（共用台账 FIGS）且逐图落位（页,栏）==FIG_AT——g6@p2c2／g1@p3c2／g2@p4c1／'
-    'g3@p5c1／g4@p6c1／g5@p6c2；置宽档由 ⑱ tex 形制门核（缩档轮 0910 后＝80.8/41.1/42.0/36.3/30.5/28.2mm，'
-    '旧 84.0/41.1/42.0/84.0/66.3/54.7mm；本轮复验落位六图 (页,栏) 逐图未位移）。')
+# ---- N6 六图台账（回退轮0910 位图口径重建；片G 矢量簇台账作废） ----
+# 只管「六图在场＋图源互证＋阅读序＋落位（页,栏）逐图钉」；置宽由 ⑱ tex 门核、几何由 ⑱-2 位图门核。
+check('N6 六图台账（位图恰6＋原生px尺寸片段互证＋阅读序＋落位逐图钉）',
+      len(FIG_ROWS) == 6 and len(FIGS) == 6 and not FIG_PXBAD and
+      [(f, p, c) for f, p, c, _r, _i in FIGS] == [(f,) + FIG_AT[f] for f, _w in FIG_W],
+      '位图 ' + str(len(FIG_ROWS)) + '/6；' + '；'.join(
+          f + '@p' + str(p) + 'c' + str(c) + ' ' + str(i['width']) + 'x' + str(i['height']) + 'px'
+          for f, p, c, _r, i in FIGS))
+reg('N6 口径登记（回退轮0910 旧→新）',
+    '片G 旧门：矢量簇恰 6（斜长笔聚簇）＋落位==FIG_AT（g6@p2c2／g1@p3c2／g2@p4c1／g3@p5c1／g4@p6c1／g5@p6c2）。'
+    '新门：PDF raster 对象恰 6、逐图原生像素尺寸（FIG_PX）与片段一对一互证、阅读序（页,栏,y）与 FIG_W 一致、'
+    '落位逐图钉——g2 p4c1→p3c2（栏末图，缩图后回流），余五图未位移；'
+    '置宽档＝84.0/28.8/32.7/54.1/47.5/42.5mm（片G 旧档 80.8/41.1/42.0/36.3/30.5/28.2mm 作废）。')
 reg('N6 图内字≥7pt 等效断言＝SKIP 登记', '需图源文字像素高折算（任务书条5允许缺口登记）：'
     'sub3_B_4 原生 1408×374px 打印 60mm（≈597dpi 级），图内字等效远超 7pt 档，无降质风险；逐图提档另行任务')
 reg('N6 图组下距 3.39 登记（0909 收尾轮）', 'p2 图后邻带 (3) 行含投影向量数学结构——上伸墨带顶抬升，'
@@ -1625,7 +1403,9 @@ for pno in range(1, n_pages + 1):
                 if m1 or m2:
                     break
                 blk_bot = max(blk_bot, rows[j][1]); last_txt = tt; j += 1
-            if j >= len(rows) or not re.search(r'[。．；？！]$', last_txt):
+            # 句末标点0910（拍板A：全件句末「．」→「.」，题号/序号位保留）：收口判据字符类补 ASCII「.」——
+            # 旧类 [。．；？！] 的「。」自 6e 起恒 0、「．」自 6f 起只存序号位（不再是行末），不补点即配对全灭假 ✗。
+            if j >= len(rows) or not re.search(r'[。．；？！.]$', last_txt):
                 continue
             d_ = (rows[j][0] - blk_bot) / PT
             if 0.5 < d_ < 15:
@@ -2177,9 +1957,14 @@ for pno in range(1, n_pages + 1):
             else:
                 gaps_wrap.append(pno)   # 题干换行态：标签行末无水平后隙（dy≈17pt 下行起排）
 tie_ok = (len(gaps_pre) == 23 and all(2.1 <= v <= 3.3 for v in gaps_pre)
-          and len(gaps_post) == 23 and all(1.0 <= v <= 2.7 for v in gaps_post) and len(gaps_wrap) == 0)
-check('⑪题侧标签隙 标签→[ 2.7±0.6 ×23＋]→题干 2.2±0.6 ×23＋换行态0（TJ-03；片G 0910 探三/六/八题干回归内联）', tie_ok,
-      f'前隙 n={len(gaps_pre)} {" ".join("%.2f" % v for v in gaps_pre)}｜后隙 n={len(gaps_post)} {" ".join("%.2f" % v for v in gaps_post)}')
+          and len(gaps_post) == 22 and all(1.0 <= v <= 2.7 for v in gaps_post) and len(gaps_wrap) == 1)
+check('⑪题侧标签隙 标签→[ 2.7±0.6 ×23＋]→题干 2.2±0.6 ×22＋换行态1（TJ-03；并排恢复0910 探三题干回图旁 minipage）', tie_ok,
+      f'前隙 n={len(gaps_pre)} {" ".join("%.2f" % v for v in gaps_pre)}｜后隙 n={len(gaps_post)} {" ".join("%.2f" % v for v in gaps_post)}'
+      f'｜换行态 {len(gaps_wrap)}（p{",".join(str(x) for x in gaps_wrap)}）')
+reg('⑪ 并排恢复0910 后隙/换行态计数 23/0 → 22/1', '探三例1 题干由下置形回归图旁 minipage（◆标签行题干位传空）'
+    '⇒ 该标签行末无水平后隙＝换行态 0→1、内联 23→22；探二图挂【详解】区不入标签行，故仅 1 处（F 片A 时代'
+    '探三/六/八三处同态＝3）。前隙恒 23（标签→[ 由宏 \\hspace 定值，与题干形态无关），实测窗内 2.14–2.70；'
+    'TJ-03 2.2mm 口径不变（只锁内联态）。')
 reg('⑪ 片G 0910 后隙/换行态计数 20/3 → 23/0', 'F 片A 时代探三/六/八题干走图旁 minipage（◆标签行题干位传空）'
     '⇒ 标签行末无水平后隙＝换行态 3；片G 图下置后三组题干回归 \\tjdnr 第 5 参内联，'
     '后隙全部可测（恒 2.20mm＝宏 \\hspace 定值）⇒ 内联 20→23、换行态 3→0；TJ-03 2.2mm 口径不变')
@@ -2244,11 +2029,11 @@ if kw_stray:
     reg('⑭ 空位杂对登记', '窗外 () 相邻对 ' + ' '.join(f'p{p}y{y:.0f}/{v:.2f}' for p, y, v in kw_stray)
         + '（成因＝源文空()，非 \\kongwei 产物；p6 y157.8 Times10.5 gap0.00 实证）')
 
-# ---- ⑮ 五例1图归属＝探二/三/六/八/九（片G 0910 下置口径：矢量簇台账＋阅读序归属） ----
-# F 片A 0909 适配：归属键改阅读序（页, 栏, y）——旧键（页, y）在同 y 双栏标题（p5 六/七 同 y 17.5）
+# ---- ⑮ 五例1图归属＝探二/三/六/八/九（回退轮0910 位图台账口径；片G 矢量簇台账作废） ----
+# F 片A 0909 适配：归属键＝阅读序（页, 栏, y）——旧键（页, y）在同 y 双栏标题（p5 六/七 同 y 17.5）
 # 与跨栏流（p6 九标题在左栏、其图在右栏顶）两处误归属（实测旧：{七,三,二,八}）。
-# 片G 0910 适配：取图键由 raster（get_images×get_image_rects）改共用台账 FIGS（矢量簇）；三联图旧由
-# 「居中独立」判据排除，今六图皆居中独立——改由片段名 g6-triple（条目3 投影图，非探究点图）排除。
+# 片G 0910 适配：三联图旧由「居中独立」判据排除，今六图皆居中独立——改由片段名 g6-triple（条目3 投影图，非探究点图）排除。
+# 回退轮0910 适配：取图键由矢量簇台账改位图矩形台账（共用台账 FIGS 元组形制不变，归属算法零改动）。
 tjd_events = []   # (pno, col, y, 序) — ◆探究点行（col：0 左栏／1 右栏）
 for pno in range(1, n_pages + 1):
     for t, bb, sps in lines_of[pno]:
@@ -2257,20 +2042,20 @@ for pno in range(1, n_pages + 1):
 ATT_WANT = [('g1-prism', '二'), ('g2-cubeE', '三'), ('g3-cube6', '六'),
             ('g4-dihedral', '八'), ('g5-fold', '九')]
 side_att = {}
-for frag, pno, col, r, _n in FIGS:
+for frag, pno, col, r, _info in FIGS:
     if frag == 'g6-triple':
         continue
     prev = [ev for ev in tjd_events if (ev[0], ev[1], ev[2]) <= (pno, col - 1, r.y0 + 2)]
     if prev:
         side_att[frag] = max(prev, key=lambda e: (e[0], e[1], e[2]))[3]
-check('⑮ 五例1图归属＝探二/三/六/八/九（片G：矢量簇台账逐图一对一归属）',
+check('⑮ 五例1图归属＝探二/三/六/八/九（回退轮：位图矩形台账逐图一对一归属）',
       len(FIGS) == 6 and [side_att.get(f) for f, _w in ATT_WANT] == [w for _f, w in ATT_WANT],
       '归属 ' + ' '.join(f + '→' + side_att.get(f, '未属') for f, _w in ATT_WANT))
-reg('⑮ 口径登记（片G 0910 旧→新）',
-    '旧门（F 片A 0909）：raster 图矩形（get_images×get_image_rects、居中档排除）×5 → 归属集合 '
-    '=={二,三,六,八,九}（旧实测 5/5 全绿）；新门：共用台账 FIGS（矢量簇）逐片段一对一核 '
-    'g1→二／g2→三／g3→六／g4→八／g5→九（片段置宽档与源尺寸逐图互证，见 ⑱ 与基准总表图档行），'
-    '三联 g6 系条目3 图不入归属。集合等式→逐图映射等式，口径加强（旧式可容五图错挂而集合仍等）。')
+reg('⑮ 口径登记（回退轮0910 位图台账·旧→新）',
+    '片G 旧门：共用台账 FIGS（矢量簇）逐片段一对一核 g1→二／g2→三／g3→六／g4→八／g5→九。'
+    '新门：FIGS 改位图矩形台账（元组形制同），归属算法与期望映射不变——g2 落位 p4c1→p3c2 后，'
+    '其前最近 ◆探究点 仍为「三」（p3c2 y610），五图归属实测 {二,三,六,八,九} 逐图不变；'
+    '三联 g6 系条目3 图不入归属（口径承片G）。')
 
 # ---- ⑪⑫⑬ 内容层 ----
 n_kd = body.count(r'\kongda{')
@@ -2292,7 +2077,7 @@ for pno in (1, 2):
             if not (42 <= uw <= 60) or ux0 < MARGIN - 8 or ux1 > COLR + 8:
                 continue
             if in_fig(pno, ux0, it[1].y - 0.6, ux1, it[1].y + 0.6):
-                continue   # 片G 0910：矢量图内水平棱（三联图 15–21mm 段）不算印答盒线——旧位图无此污染，锚定 20→21
+                continue   # 回退轮0910：图内水平棱随矢量化退场（位图无矢量线）——in_fig 改锚位图矩形，防御保留
             near = []
             for blk in page.get_text('dict')['blocks']:
                 for ln in blk.get('lines', []):

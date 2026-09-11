@@ -1,0 +1,10 @@
+# ---- ⑱ 六图下置·tex 形制门（回退轮0910：图源回用原位图，片G 矢量形制口径作废） ----
+# 旧形（片G 0910）：`\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\resizebox{置宽}{!}
+#      {\input{figs/片段.tikz}}}\par\vspace{-1.0mm}\penalty10000` ×6——用户 0910 二次令「禁画三维图；以前 AI 画过的一律不要」退役。
+# 新形（回退轮唯一口径）：下置骨架六行逐字节不变，仅图盒改位图——
+#      `\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=置宽mm]
+#       {media/media/图.png}}\par\vspace{-1.0mm}\penalty10000`
+#      置宽逐图钉死（反解三值表取用宽，见共用台账注与 回退轮0910/简报.md）。
+FIG_LINE = re.compile(r'\bindp \par\vspace\{1\.9mm\}\penalty10000\noindent\makebox\[\linewidth\]\[c\]'
+                      r'\{\includegraphics\[width=([^{}]+)mm\]\{(media/media/[A-Za-z0-9_]+\.png)\}\}'
+                      r'\par\vspace\{-1\.0mm\}\penalty10000')

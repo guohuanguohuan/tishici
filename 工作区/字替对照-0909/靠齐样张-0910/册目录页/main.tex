@@ -1,0 +1,178 @@
+% ============================================================
+% 册目录页样张（照全品导学案目录形态，2026-09-10）
+% 形制依据：全品导学案选必一目录页 p02/p03（工作区/全品结构提取/数学选必一/导学案页图/）
+%   像素实测（360dpi 扫描，1px=0.2pt；版心＝项目同款 174.5mm；坐标换算＝扫描纸面x−17.2）：
+%   ·页眉：CONTENTS 特大灰字（cap 18.9mm，「CO」#A6A6A6＋「NTENTS」#C7C7C7 双色，墨底基线 46.27）＋
+%     ZS-01 同构方块组（右上 6.3×6.8 #909090／左下 8.2×8.5 #C7C7C7／小块 2.5×2.4 #A6A6A6）＋
+%     「目录」27.8pt Black #636363＋灰竖条 1.7×3.0＠136.3＋「导学案」9pt #909090；
+%   ·章带（p1 方块顶 63.98／p2 204.29）：序号白字灰块 7.4mm #7A7A7A＋章名 11.8pt Bold #202020＋
+%     PART ONE/TWO 6.4pt #636363 加字距（基线＝块底）＋点划横线（0.42/0.29mm #B0B0B0）至行右缘；
+%   ·行网格：p1 间距 23.18pt（8.176mm）／p2 22.84pt（8.056mm）；节/小节行 8.8pt NSC-w600、
+%     课时行 7.7pt NSC-Regular（「第 N 课时」1.45em 接题名）；缩进（版心左起）
+%     节 16.2／小节 21.3／课时 29.5mm；行右缘＝版心右内收 4.7mm（页码 7.6pt 黑）；
+%     点线 0.4mm 方点＠0.99mm #CCCCCC。
+%   ·本章总结＝黑圆播放图标 2.8mm＋8.8pt w600；参考答案行＝◆＋8.8pt w600，缩进 5.2mm。
+% 排版机制：tikz 全 overlay（零尺寸，不占行高）＋\lineskiplimit=-1pt＋\baselineskip=23.18pt
+%   →任意两行基线距＝\vspace{X}+当前\baselineskip，全程基线行程表钉死（见正文注释）。
+% 配页件口径（公共规则打印装订节）：本件不设页脚页码（\pagestyle{empty}），无页眉。
+% 编译：xelatex main.tex ×2 → render.py（png/ 150dpi）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ================= 册目录页专用层（仅本件使用；不动公共模块语义） =================
+% 配页件：撤页脚页码（qp-headfoot 的 fancy 页脚不适用于本件型）
+\pagestyle{empty}
+% 基线行程表机制（行距 23.18pt／负 lineskiplimit）在 \begin{document} 体内赋值——
+% \begin{document} 末尾的 \normalsize 会重置 \baselineskip 回 18pt，导言区赋值无效（实测）。
+\setlength{\parskip}{0pt}
+% ---- 目录页灰阶（全品目录页实测灰值） ----
+\definecolor{tocA6}{HTML}{A6A6A6}   % CONTENTS「CO」/小块（灰166）
+\definecolor{tocC7}{HTML}{C7C7C7}   % CONTENTS「NTENTS」/浅方块（灰199）
+\definecolor{toc144}{HTML}{909090}  % 深方块/「导学案」（灰144）
+\definecolor{toc9D}{HTML}{9D9D9D}   % 目录旁竖条（灰~157）
+\definecolor{tocB0}{HTML}{B0B0B0}   % 章点划线（灰176）
+\definecolor{tocCC}{HTML}{CCCCCC}   % 条目点线（灰204）
+\definecolor{toc63}{HTML}{636363}   % 「目录」/PART ONE（灰99）
+\definecolor{toc20}{HTML}{202020}   % 章名（灰32）
+
+% ---- 目录页专用字族（全部指向 variantF/fonts 字面量绝对路径，不复制二进制） ----
+\newfontfamily{\toccont}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{NSC-w850.ttf}
+\newfontfamily{\tocnum}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.905,Depth=0.212]{NSC-w600.ttf}
+\newfontfamily{\tocreglat}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.905,Depth=0.212]{NotoSansSC-Regular.otf}
+\newfontfamily{\tocpg}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.705,Depth=0.212]{NotoSansSC-Regular.otf}
+\setCJKfamilyfont{tocreg}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{NotoSansSC-Regular.otf}
+\setCJKfamilyfont{tocbig}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{NotoSansSC-Black.otf}
+\newcommand{\toczs}{\CJKfamily{tocreg}}
+\newcommand{\tocmu}{\CJKfamily{tocbig}}
+
+% ---- 行零件 ----
+% 点线：0.4mm 方点＠0.99mm 间距，抬高 1.05mm（实测点带居行高中位）
+\newcommand{\tocdots}{\leaders\hbox to 0.99mm{\hss\textcolor{tocCC}{\rule[1.05mm]{0.4mm}{0.4mm}}\hss}\hfill}
+% 条目行：#1=缩进 #2=内容 #3=页码；行宽＝版心宽−4.7mm（页码右缘＝版心右内收 4.7mm）
+\newcommand{\tocrow}[3]{\noindent\hbox to \dimexpr\textwidth-4.7mm\relax{%
+  \hskip#1#2\hspace{1.6mm}\tocdots\hspace{1.6mm}\makebox[7.5mm][r]{{\tocpg\fontsize{7.6pt}{8.4pt}\selectfont#3}}}\par}
+% 节行／小节行：8.8pt NSC-w600，号→题名 0.62em
+\newcommand{\tocsec}[3]{\tocrow{16.19mm}{{\tocnum\fontsize{8.8pt}{10pt}\selectfont#1}\hspace{0.62em}{\heizhang\fontsize{8.8pt}{10pt}\selectfont#2}}{#3}}
+\newcommand{\tocsub}[3]{\tocrow{21.34mm}{{\tocnum\fontsize{8.8pt}{10pt}\selectfont#1}\hspace{0.62em}{\heizhang\fontsize{8.8pt}{10pt}\selectfont#2}}{#3}}
+% 课时行：7.7pt NSC-Regular，「第 N 课时」→题名 1.45em
+\newcommand{\toclesson}[3]{\tocrow{29.45mm}{{\toczs\tocreglat\fontsize{7.7pt}{9pt}\selectfont 第\,#1\,课时}\hspace{1.45em}{\toczs\fontsize{7.7pt}{9pt}\selectfont#2}}{#3}}
+% 本章总结图标：黑圆 2.8mm＋白三角（播放标）
+\newcommand{\tocplayicon}{\begin{tikzpicture}[x=1mm,y=1mm,overlay]
+  \fill (0,1.41) circle (1.41mm);
+  \fill[white] (-0.55,2.13) -- (-0.55,0.69) -- (0.72,1.41) -- cycle;
+\end{tikzpicture}}
+% 图标随行内缩进走（overlay 零宽，故以 \hbox 包裹占位 3.3mm）
+\newcommand{\tocplaybox}{\hbox to 3.3mm{\hss\tocplayicon\hss}}
+\newcommand{\toczong}[2]{\tocrow{15.70mm}{\tocplaybox{\heizhang\fontsize{8.8pt}{10pt}\selectfont#1}}{#2}}
+% 参考答案行：◆＋8.8pt w600，缩进 5.2mm（与页眉块/章块左缘同族）
+\newcommand{\tocans}[2]{\tocrow{5.18mm}{{\heizhang\fontsize{8.8pt}{10pt}\selectfont ◆\hspace{0.9em}#1}}{#2}}
+
+% ---- 章带（overlay，坐标＝扫描纸面x−17.2，基线＝方块底）----
+% #1=序号 #2=章名 #3=英文部名
+\newcommand{\tocchapter}[3]{\par\nopagebreak\noindent
+  \begin{tikzpicture}[x=1mm,y=1mm,overlay]
+    \fill[gray122] (5.23,0) rectangle ++(7.4,7.4);
+    \node[anchor=center,inner sep=0pt] at (8.93,3.62)
+      {\textcolor{white}{\toccont\fontsize{13.5pt}{14pt}\selectfont#1}};
+    \node[anchor=base west,inner sep=0pt] at (15.75,3.3)
+      {\color{toc20}\heijie\fontsize{11.8pt}{14pt}\selectfont#2};
+    \node[anchor=base west,inner sep=0pt] at (15.08,-0.38)
+      {\color{toc63}\numpnum\fontsize{6.4pt}{7pt}\selectfont#3};
+    \draw[tocB0,line width=0.15mm,dash pattern=on 0.42mm off 0.29mm] (40.64,1.0) -- (170.9,1.0);
+  \end{tikzpicture}\par}
+
+% ---- 页眉（overlay，基线＝CONTENTS 墨底＝纸面 46.27）----
+\newcommand{\tocheader}{\par\noindent
+  \begin{tikzpicture}[x=1mm,y=1mm,overlay]
+    \node[anchor=base west,inner sep=0pt] at (4.45,-1.26)
+      {\scalebox{0.710}[1.0]{\toccont\fontsize{70.5pt}{70.5pt}\selectfont{\color{tocA6}CO}{\color{tocC7}NTENTS}}};
+    \fill[toc144] (108.29,13.2) rectangle ++(6.3,6.8);
+    \fill[tocC7] (100.81,5.4) rectangle ++(8.2,8.5);
+    \fill[tocA6] (103.65,3.0) rectangle ++(2.5,2.4);
+    \node[anchor=base west,inner sep=0pt] at (113.3,1.3)
+      {\color{toc63}\tocmu\fontsize{27.8pt}{30pt}\selectfont 目录};
+    \fill[toc9D] (136.3,4.9) rectangle ++(1.7,3.0);
+    \node[anchor=base west,inner sep=0pt] at (137.8,4.6)
+      {\color{toc144}\heibian\fontsize{9pt}{10pt}\selectfont 导学案};
+  \end{tikzpicture}\par}
+
+\begin{document}
+% 基线行程表机制：行距 p1 23.18pt／p2 22.84pt（组内覆盖）；负 lineskiplimit＝行间胶恒取
+% \baselineskip−盒高深，基线距可被 \vspace 精确编程（含负值收紧）
+% 【须在 document 体内赋值】\begin{document} 末尾的 \normalsize 会把 \baselineskip 重置回 18pt
+\baselineskip=23.26pt
+\lineskiplimit=-1pt
+\lineskip=0pt
+% ================= 第 1 页（照扫描 p02） =================
+% 基线行程表（纸面 mm）：页眉 46.27 →章1带 71.39 →行1 75.81 →（+8.176×14）本章总结 190.37
+%   →章2带 211.70 →行2.1 219.57 →（+8.176×6）末行 268.63
+\vspace*{13.58mm}
+\tocheader
+\vspace{17.86mm}
+\tocchapter{01}{第一章\quad 空间向量与立体几何}{P\hspace{0.93em}A\hspace{0.93em}R\hspace{0.93em}T\hspace{1.50em}O\hspace{0.93em}N\hspace{0.93em}E}
+\vspace{-3.29mm}
+\tocsec{1.1}{空间向量及其运算}{139}
+\tocsub{1.1.1}{空间向量及其运算}{139}
+\toclesson{1}{空间向量的概念及线性运算}{139}
+\toclesson{2}{空间向量的数量积}{143}
+\tocsub{1.1.2}{空间向量基本定理}{145}
+\tocsub{1.1.3}{空间向量的坐标与空间直角坐标系}{149}
+\toclesson{1}{空间向量的坐标及运算}{149}
+\toclesson{2}{空间直角坐标系及空间向量坐标的应用}{152}
+\tocsec{1.2}{空间向量在立体几何中的应用}{155}
+\tocsub{1.2.1}{空间中的点、直线与空间向量}{155}
+\tocsub{1.2.2}{空间中的平面与空间向量}{159}
+\tocsub{1.2.3}{直线与平面的夹角}{163}
+\tocsub{1.2.4}{二面角}{165}
+\tocsub{1.2.5}{空间中的距离}{169}
+\toczong{本章总结}{172}
+\vspace{12.97mm}
+\tocchapter{02}{第二章\quad 平面解析几何}{P\hspace{0.93em}A\hspace{0.93em}R\hspace{0.93em}T\hspace{1.50em}T\hspace{0.93em}W\hspace{0.93em}O}
+\vspace{0.27mm}
+\tocsec{2.1}{坐标法}{176}
+\tocsec{2.2}{直线及其方程}{178}
+\tocsub{2.2.1}{直线的倾斜角与斜率}{178}
+\tocsub{2.2.2}{直线的方程}{182}
+\toclesson{1}{直线的点斜式方程与斜截式方程}{182}
+\toclesson{2}{直线的两点式方程}{184}
+\toclesson{3}{直线的一般式方程}{186}
+% ================= 第 2 页（照扫描 p03：第 3 课时行后翻页） =================
+% 基线行程表：续页行距 22.84pt；首行 28.76 →（+8.056×24）本章总结 222.10 →+16.17 参考答案 238.27
+\newpage
+{\baselineskip=22.92pt
+\vspace*{-2.25mm}
+\tocsub{2.2.3}{两条直线的位置关系}{189}
+\toclesson{1}{两条直线的交点、平行与重合}{189}
+\toclesson{2}{与直线相关的垂直与对称}{192}
+\tocsub{2.2.4}{点到直线的距离}{194}
+\tocsec{2.3}{圆及其方程}{197}
+\tocsub{2.3.1}{圆的标准方程}{197}
+\tocsub{2.3.2}{圆的一般方程}{200}
+\tocsub{2.3.3}{直线与圆的位置关系}{202}
+\tocsub{2.3.4}{圆与圆的位置关系}{204}
+\tocsec{2.4}{曲线与方程}{207}
+\tocsec{2.5}{椭圆及其方程}{209}
+\tocsub{2.5.1}{椭圆的标准方程}{209}
+\tocsub{2.5.2}{椭圆的几何性质}{212}
+\toclesson{1}{椭圆的几何性质}{212}
+\toclesson{2}{椭圆的几何性质的综合应用}{214}
+\tocsec{2.6}{双曲线及其方程}{216}
+\tocsub{2.6.1}{双曲线的标准方程}{216}
+\tocsub{2.6.2}{双曲线的几何性质}{220}
+\tocsec{2.7}{抛物线及其方程}{223}
+\tocsub{2.7.1}{抛物线的标准方程}{223}
+\tocsub{2.7.2}{抛物线的几何性质}{225}
+\tocsec{2.8}{直线与圆锥曲线的位置关系}{228}
+\toclesson{1}{直线与圆锥曲线的位置关系（一）}{228}
+\toclesson{2}{直线与圆锥曲线的位置关系（二）}{232}
+\toczong{本章总结}{236}
+\vspace{8.20mm}
+\tocans{参考答案（单独成册）}{241}
+\par}
+\end{document}

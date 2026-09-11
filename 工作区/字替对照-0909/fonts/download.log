@@ -1,0 +1,32 @@
+OK   [direct] 8299104B 2.6s https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Light.otf -> NotoSansSC-Light.otf
+OK   [direct] 8331336B 2.4s https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf -> NotoSansSC-Regular.otf
+OK   [direct] 8345436B 3.0s https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Medium.otf -> NotoSansSC-Medium.otf
+OK   [direct] 8543168B 2.4s https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Bold.otf -> NotoSansSC-Bold.otf
+OK   [direct] 8855916B 2.7s https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/SubsetOTF/SC/NotoSansSC-Black.otf -> NotoSansSC-Black.otf
+OK   [direct] 4301B 0.6s https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE -> LICENSE-NotoSansSC-OFL.txt
+TREE ok branch=master blobs=581
+方圆体 hits: []
+普惠体 hits: ["assets/font/中文/阿里巴巴普惠体/Alibaba-PuHuiTi-Bold.ttf", "assets/font/中文/阿里巴巴普惠体/Alibaba-PuHuiTi-Heavy.ttf", "assets/font/中文/阿里巴巴普惠体/Alibaba-PuHuiTi-Light.ttf", "assets/font/中文/阿里巴巴普惠体/Alibaba-PuHuiTi-Medium.ttf", "assets/font/中文/阿里巴巴普惠体/Alibaba-PuHuiTi-Regular.ttf"]
+OK   [direct] 9312212B 3.1s https://raw.githubusercontent.com/wordshub/free-font/master/assets/font/%E4%B8%AD%E6%96%87/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%99%AE%E6%83%A0%E4%BD%93/Alibaba-PuHuiTi-Bold.ttf -> PuHuiTi__Alibaba-PuHuiTi-Bold.ttf
+OK   [direct] 2167400B 1.7s https://raw.githubusercontent.com/wordshub/free-font/master/assets/font/%E4%B8%AD%E6%96%87/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%99%AE%E6%83%A0%E4%BD%93/Alibaba-PuHuiTi-Heavy.ttf -> PuHuiTi__Alibaba-PuHuiTi-Heavy.ttf
+OK   [direct] 9560068B 3.3s https://raw.githubusercontent.com/wordshub/free-font/master/assets/font/%E4%B8%AD%E6%96%87/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%99%AE%E6%83%A0%E4%BD%93/Alibaba-PuHuiTi-Medium.ttf -> PuHuiTi__Alibaba-PuHuiTi-Medium.ttf
+OK   [direct] 9724448B 4.5s https://raw.githubusercontent.com/wordshub/free-font/master/assets/font/%E4%B8%AD%E6%96%87/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%99%AE%E6%83%A0%E4%BD%93/Alibaba-PuHuiTi-Regular.ttf -> PuHuiTi__Alibaba-PuHuiTi-Regular.ttf
+HarmonyOS hits: []
+=== SUMMARY ===
+GOT  NotoSansSC-Light.otf
+GOT  NotoSansSC-Regular.otf
+GOT  NotoSansSC-Medium.otf
+GOT  NotoSansSC-Bold.otf
+GOT  NotoSansSC-Black.otf
+GOT  NOTO-LICENSE-OFL.txt
+FILE LICENSE-NotoSansSC-OFL.txt 4301
+FILE NotoSansSC-Black.otf 8855916
+FILE NotoSansSC-Bold.otf 8543168
+FILE NotoSansSC-Light.otf 8299104
+FILE NotoSansSC-Medium.otf 8345436
+FILE NotoSansSC-Regular.otf 8331336
+FILE PuHuiTi__Alibaba-PuHuiTi-Bold.ttf 9312212
+FILE PuHuiTi__Alibaba-PuHuiTi-Heavy.ttf 2167400
+FILE PuHuiTi__Alibaba-PuHuiTi-Medium.ttf 9560068
+FILE PuHuiTi__Alibaba-PuHuiTi-Regular.ttf 9724448
+=== END ===

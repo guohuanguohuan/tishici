@@ -117,7 +117,9 @@
 %   整行内收 5.7mm；4/2/1 项每行网格
 \newcommand{\optline}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
   {\fontsize{10.5pt}{19pt}\selectfont #1}\par}
-\newcommand{\optII}[2]{\makebox[57.1mm][l]{#1}#2}
+%   两项槽距 53.05mm＝扫描页 p01 两项行众数实测（6 行第二项墨起 67.70–67.77mm − 行左缘 14.65–14.72mm，
+%   14.062px/mm 口径，阈 128/160 稳定；57.1 旧档系栏宽半程推值，0910 槽距轮改标定，证据＝片G/槽距0910）
+\newcommand{\optII}[2]{\makebox[53.05mm][l]{#1}#2}
 \newcommand{\optIV}[4]{\makebox[21.5mm][l]{#1}\makebox[21.5mm][l]{#2}\makebox[21.5mm][l]{#3}#4}
 % TJ-08 括号固定列位：右括号右缘距栏右 5.4mm
 \newcommand{\kw}{\hfill（\hspace{3.6mm}）\hspace*{5.4mm}}
@@ -182,7 +184,7 @@
 %   题目按卷型跨栏续排（扫描页 p01 三栏满排；本样张材料截排 6 题，故栏3 自然留白）
 \jpthree{\jphead
   \ti{1}{下列说法正确的是\kw}
-  \optline{\optII{A．若\(| \overrightarrow{a} | = | \overrightarrow{b} |\)，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)或}{\(\overrightarrow{a} = - \overrightarrow{b}\)；}}
+  \optline{A．若\(| \overrightarrow{a} | = | \overrightarrow{b} |\)，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)或\(\overrightarrow{a} = - \overrightarrow{b}\)；}
   \optline{B．若\(\overrightarrow{a},\overrightarrow{b}\)为相反向量，则\nobreak\(\overrightarrow{a} + \overrightarrow{b} = \overrightarrow{0}\)；}
   \optline{C．零向量是没有方向的向量；}
   \optline{D．若\(\overrightarrow{a},\overrightarrow{b}\)是两个单位向量，则\nobreak\(\overrightarrow{a} = \overrightarrow{b}\)}

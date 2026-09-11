@@ -1,0 +1,7 @@
+C:\提示词\工作区\字替对照-0909\variantF\postproc_daoxue.py:425: SyntaxWarning: invalid escape sequence '\('
+  """v4.2-C15 修复：原把 \( \) 括号计入宽度致检测2/检测4 短数学项被判 1 项/行——
+Traceback (most recent call last):
+  File "C:\提示词\工作区\字替对照-0909\variantF\postproc_daoxue.py", line 1122, in <module>
+    assert n_ze == 23, f'R2 则\\( 计数异常：{n_ze}/23（21 行，两行各 2 处）'
+           ^^^^^^^^^^
+AssertionError: R2 则\( 计数异常：22/23（21 行，两行各 2 处）

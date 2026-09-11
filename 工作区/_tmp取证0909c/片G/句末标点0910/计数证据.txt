@@ -1,0 +1,36 @@
+句末标点0910｜计数证据（独立复核脚本 _计数证据0910.py 产出）
+================================================================================================
+一、tex 源面
+  body.tex        U+FF0E「．」 改前 104 → 改后 42（净减 62）
+  body.tex        U+3002「。」 改前 0 → 改后 0
+  body.tex        ASCII「.」   改前 207 → 改后 269（净增 62）
+  chapterhead.tex U+FF0E「．」 改前 1 → 改后 0；ASCII「.」 3 → 4
+  逐行对照：行数 401→401，行长全等（仅 1:1 换字符）＝True；改动行 50 行
+  改动行内「．」净减 62＝ASCII「.」净增 62（逐处守恒，无夹带改动）
+  改动行号＝[9, 11, 13, 15, 34, 36, 40, 42, 60, 62, 66, 68, 72, 74, 80, 82, 100, 102, 138, 156, 160, 176, 180, 204, 208, 236, 240, 248, 254, 258, 261, 263, 267, 275, 291, 295, 315, 317, 321, 329, 335, 341, 345, 357, 361, 369, 383, 391, 393, 395]
+  其他字符零漂移：剥「．/.」后逐行等＝True
+  chapterhead 改动行＝[8]
+
+二、分类计数（postproc 6f 断言值＝独立扫描器 _scan_ff0e.py 复算值）
+  改前 body.tex 含「．」行数 77；总处数 104
+  句末转 T 62｜保留 42（K1 检测题号 5／K2 选项标号 36／K3 方法标号 1／K4 数学式内 0）
+  改后 body.tex 残留「．」 42 ＝ 5＋36＋1＋0 ＝ 42 ✓（断言 104−62）
+  改后句末位残留（复扫判据同路）＝0（postproc 内 assert 通过；本脚本三、PDF 面 42 互证）
+
+三、PDF 面（main.pdf，终态编译产物）
+  页数 7｜PDF 文本层 U+FF0E 42（＝源面 42，无丢字）｜U+3002 0
+  文本层 ASCII「.」 131
+  逐处字符几何（rawdict advance 宽，pt）：
+    6f转·知识点1 定义收口              p1 「.」 advance=2.51pt size=10.05pt font=TimesNewRomanPSMT → 期望 (2.51, 'TimesNewRomanPSMT') ✓
+    6f转·判断题干收口                 p1 「.」 advance=2.51pt size=10.05pt font=TimesNewRomanPSMT → 期望 (2.51, 'TimesNewRomanPSMT') ✓
+    6f转·答案句收口(选B)              p7 「.」 advance=2.51pt size=10.05pt font=TimesNewRomanPSMT → 期望 (2.51, 'TimesNewRomanPSMT') ✓
+    6e旧转·编注收口(对照)              p1 「.」 advance=2.51pt size=10.05pt font=TimesNewRomanPSMT → 期望 (2.51, 'TimesNewRomanPSMT') ✓
+    6e旧转·编注收口(对照2)             p1 「.」 advance=2.51pt size=10.05pt font=TimesNewRomanPSMT → 期望 (2.51, 'TimesNewRomanPSMT') ✓
+    K1 检测题号(留)                 p7 「．」 advance=11.36pt size=11.36pt font=NotoSansSC-Thin → 期望 (11.36, 'NotoSansSC-Thin') ✓
+    K2 选项标号(留)                 p7 「．」 advance=10.46pt size=10.46pt font=FZSSJW--GB1-0 → 期望 (10.46, 'FZSSJW--GB1-0') ✓
+    K2 选项标号网格(留)               p7 「．」 advance=10.46pt size=10.46pt font=FZSSJW--GB1-0 → 期望 (10.46, 'FZSSJW--GB1-0') ✓
+
+四、签名行漂移登记（断言顶格.py 口径，非本轮设门项）
+  改前 签名行 128 → 改后 125；三处系 PDF 文本层「孤立片段」并组（p4「2．」＝分数分母 2＋句末点、
+  p5「2．」同、p7「D．」＝答案字母 D＋句末点）——改后该片段以「2.」「D.」读入，不再误入「N．」/「A．」
+  题号签名集；违规计数两侧均 0（(c)(d)(e) 违规 0），页数 7 不变。

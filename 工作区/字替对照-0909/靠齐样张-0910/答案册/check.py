@@ -171,6 +171,9 @@ print("   册首行「参考答案」居中：中心=%.2fmm（版心中 105.00�
              and l["bbox"][1] * PT2MM < 30))
 print("   【】残留＝%s（拍板② 半角标签）；「知识点」出现＝%d 次（拍板③ 不印）"
       % (bool(re.search(r"[【】]", t1 + t2)), (t1 + t2).count("知识点")))
+# 0911 题型轮探针：①逐题「题型：××」行 ②「[题型总结]」说明块
+print("   「题型：」行＝%d 处（0911 题型轮·靶 15＝逐题无漏）；「[题型总结]」块＝%d 处（靶 1）"
+      % ((t1 + t2).count("题型："), (t1 + t2).count("[题型总结]")))
 # 拍板④ 答案值平文：源件不得出现下划线/底纹手段（\underline、\colorbox、\ansul、shade）
 src = open(os.path.join(HERE, "body.tex"), encoding="utf-8").read()
 mod = "".join(open(os.path.join(HERE, f), encoding="utf-8").read()

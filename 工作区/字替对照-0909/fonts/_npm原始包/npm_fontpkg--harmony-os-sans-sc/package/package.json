@@ -1,0 +1,34 @@
+{
+  "name": "@fontpkg/harmony-os-sans-sc",
+  "version": "1.0.3",
+  "description": "Font package for HarmonyOS Sans SC",
+  "keywords": [
+    "font",
+    "fonts",
+    "harmony-os-sans-sc",
+    "HarmonyOS Sans SC"
+  ],
+  "license": "SEE LICENSE IN README.md",
+  "files": [
+    "HarmonyOS_Sans_SC_Black.ttf",
+    "HarmonyOS_Sans_SC_Black.ttf",
+    "HarmonyOS_Sans_SC_Bold.ttf",
+    "HarmonyOS_Sans_SC_Bold.ttf",
+    "HarmonyOS_Sans_SC_Light.ttf",
+    "HarmonyOS_Sans_SC_Light.ttf",
+    "HarmonyOS_Sans_SC_Medium.ttf",
+    "HarmonyOS_Sans_SC_Medium.ttf",
+    "HarmonyOS_Sans_SC_Regular.ttf",
+    "HarmonyOS_Sans_SC_Regular.ttf",
+    "HarmonyOS_Sans_SC_Thin.ttf",
+    "HarmonyOS_Sans_SC_Thin.ttf"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/fontpkg"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

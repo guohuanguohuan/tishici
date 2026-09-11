@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 r"""顶格断言（v4.1 指令5 口径，替代断言题号列.py；v4.2 随结构变化复查适配）：
 v4.1 撤全部悬挂缩进（\parindent=0pt、hangindent 全撤、题号列恒空制废除），正文一切行、表、图从栏左起。
-v4.2 结构变化三点复查：①题干图 minipage 并排行（左 0.56\linewidth 题干／右 0.40\linewidth 图）——
-题干行非签名行不进 (c)，图仍在栏带内进 (e)；②选项网格 4 槽行（0.25\linewidth）与 2 槽行同机制，
+v4.2 结构变化三点复查：①【旧史（图源回退后不适用）】题干图 minipage 并排行（左 0.56\linewidth
+题干／右 0.40\linewidth 图）已退场——「题干行非签名行不进 (c)」判据本身不受影响；②选项网格 4 槽行
+（0.25\linewidth）与 2 槽行同机制，
 B．/C．/D．以「同视觉行左侧存在更靠前文本」排除；③【解析】简析行（\jiexi）与②③小结拆行均为顶格
 签名行，进 (c) 正常判。检查面：
   (a) body.tex 结构 grep：无 \hangindent / \hspace*{7mm} / \hspace*{2em}（顶格化残留扫描；\kern0.15em
@@ -18,8 +19,10 @@ B．/C．/D．以「同视觉行左侧存在更靠前文本」排除；③【解
       左框线在场（页上存在 x0==栏左±1 的表线）＝表盒子顶格；表内部竖线（列分隔/右框）位置
       随内容驱动列宽（表1 16/33/30、表2 10/37/32、表3 起调 10/36/33，v4.2-C14）任意，不判 x0==栏左。
       豁免 multicol 栏线（x0≈栏中缝，v4.2-A3 恢复）、花形行 tcbox 左竖边（高 8~30pt 且距栏左 ≤3pt）。
-  (e) 图 6 张全部在栏带内（x0≥栏左−1 且 x1≤栏右+1；并排图位于右 minipage 槽位，仍在栏带内）。
-  片E 0909c（#40 绕图回流）：图旁前缀仍为 minipage 并排（本断言口径不变）；图底以下余段改通栏
+  (e) 位图×6：PDF 内 raster 图对象恰 6（\includegraphics 引原图位图），全部在栏带内
+      （x0≥栏左−1 且 x1≤栏右+1）、且图矩形与正文行 bbox 零压字（相交行数＝0）。
+  片E 0909c（#40 绕图回流）：「图旁前缀仍为 minipage 并排」系旧史（图源回退后不适用——题干图并排
+  已退场；并排恢复0910 g1/g2 文左图右另是一形，见 (e)）；图底以下余段改通栏
   独立段（探八题干第 4 行起、探九详解第 5 行起）——余段行以栏左起、达栏右，签名行口径不受影响。
 登记豁免：p1 学习目标块（multicols 外通栏区）\mubiaomu 楷体条目悬挂保留——v4.3 拍板6 顶格例外，
 hangindent=8.3mm（qp-titles:46 定义，不在 body——(a) grep 不误报；N5 断言窗 23.3±0.6mm 另行实测）
@@ -28,13 +31,16 @@ hangindent=8.3mm（qp-titles:46 定义，不在 body——(a) grep 不误报；N
 v4.3 签名覆盖注：知识点条目号改半角「N.」（总账E），不以全角「．」入 SIG——顶格性由 \tiaomu
 行首 \noindent 机制保证；全角「N．」仅存检测题号（postproc \heihao），照常入 (c)。
 v4.4 签名适配（执行轮）：【答案】/【解析】→半角 [答案]/[解析] 入 SIG（拍板2 半角[]标签制）；
-子项号（N）转半角 (N) 后以 \(N 入 SIG（判断题全品式序号）；图构成＝5 并排 side 0.56（v4.4⑩ side×5）
-＋1 居中 60mm＝6 张（总数不变，n_fig==6 维持）；【答案】行 14 维持（n_ans 计 [答案]）。
-预期（v4.4 复核）：图 6（5 并排 side 0.56＋1 居中 60mm）、[答案] 行 14。表线总数随分页漂移，不硬编码。
-片G 0910 (e) 换矢量口径：六图（五例1 图＋条目3 投影三联）由位图改重绘 TikZ 矢量片段
-（\resizebox＋\input{figs/*.tikz}，图下置居中·源尺寸档），PDF 内 image 对象 6→0——(e) 改判
-「非轴对齐矢量墨聚簇 ≥3 斜长笔」的图簇：门＝位图 n_fig==0 且矢量 n_vec==6 且全部落在栏带内
-（n_viol_vec==0）；ok 式相应改 n_fig==0 and n_vec==6。"""
+子项号（N）转半角 (N) 后以 \(N 入 SIG（判断题全品式序号）；【答案】行 14 维持（n_ans 计 [答案]）。
+（「图构成＝5 并排 side 0.56＋1 居中 60mm」系旧史——图源回退后不适用，现形制见下「回退轮 0910」段
+位图六张。）
+预期（残留清理 0911 更正口径）：图 6（位图）、[答案] 行 14。表线总数随分页漂移，不硬编码。
+回退轮 0910 (e) 换回位图口径：六图（五例1 图＋条目3 投影三联）由片G 的 TikZ 矢量重绘回退为原图
+位图（body.tex 六行 \includegraphics[width=…mm]{media/media/*.png}，图下置居中·反解宽档），
+PDF 内 image 对象 0→6——(e) 改以 page.get_image_info(xrefs=True) 逐页归集位图矩形并按原生像素
+尺寸认领 g1~g6：门＝位图 n_fig==6 且全部落在栏带内（n_viol_e==0）且与正文行零压字
+（n_press==0）；ok 式相应改 n_fig==6。矢量墨聚簇内核 _vec_clusters 自此不再参与 (e)；残留清理
+0911 已将其折叠删除（位图时代 0 簇＝死码，(d) 计数不变，见件内折叠注）。"""
 import os
 import re
 import pymupdf
@@ -82,90 +88,22 @@ def ink_left(page, y0, y1, cl, dpi=300):
 
 doc = pymupdf.open(BASE + r'\main.pdf')
 n_sig = n_viol_c = n_ans = n_rules = n_leftedge = n_viol_d = n_fig = n_viol_e = n_exempt = 0
-n_vec = n_viol_vec = 0
+n_press = n_named = 0
+# (e) 位图身份认领：原生像素尺寸 → 图号（回退轮 0910 六图源文件，见 素材 media/media/*.png）；
+#     仅供打印定位与「恰 6」佐证，不参与判定。像素尺寸为钉死值——换图源（重采样/换档）须同步本表。
+FIG_PX = {(1408, 374): 'g6-triple', (691, 1159): 'g1-prism', (764, 764): 'g2-cubeE',
+          (521, 496): 'g3-cube6', (788, 424): 'g4-dihedral', (1798, 1350): 'g5-fold'}
 
 
-# ---- 片G 0910 (e) 换矢量口径：六图系 \resizebox+\input 的 TikZ 片段，PDF 内无 image 对象
-#      （raster 计数 6→0），改以「非轴对齐矢量墨聚簇」认定图：簇内需有 ≥3 条跨度 ≥5mm 的斜长笔
-#      （真图 ≥5；表线/正文/花形/√× 自绘/表内向量箭头均 <3），同 y 带 x 隙 ≤20mm 者并簇（三联三子图）。
-def _diag_items(dr):
-    out = []
-    for o in dr:
-        for it in o['items']:
-            if it[0] == 'l':
-                p1, p2 = it[1], it[2]
-                dx, dy = abs(p2.x - p1.x), abs(p2.y - p1.y)
-                if dx > 1.0 and dy > 1.0 and max(dx, dy) / PT > 2.0:
-                    out.append((pymupdf.Rect(min(p1.x, p2.x) - .3, min(p1.y, p2.y) - .3,
-                                             max(p1.x, p2.x) + .3, max(p1.y, p2.y) + .3),
-                                max(dx, dy) / PT >= 5.0))
-            elif it[0] == 'c':
-                ps = it[1:5]
-                xs = [q.x for q in ps]
-                ys = [q.y for q in ps]
-                w, h = max(xs) - min(xs), max(ys) - min(ys)
-                if max(w, h) / PT > 2.0 and w > 1.0 and h > 1.0:
-                    out.append((pymupdf.Rect(min(xs) - .3, min(ys) - .3, max(xs) + .3, max(ys) + .3),
-                                max(w, h) / PT >= 5.0))
-    return out
-
-
-def _vec_clusters(page):
-    pairs = _diag_items(page.get_drawings())
-    rs = [pymupdf.Rect(a) for a, _ in pairs]
-    lg = [1 if b else 0 for _, b in pairs]
-    gap = 8 / 25.4 * PT
-    par = list(range(len(rs)))
-
-    def find(i):
-        while par[i] != i:
-            par[i] = par[par[i]]
-            i = par[i]
-        return i
-
-    for i in range(len(rs)):
-        for j in range(i + 1, len(rs)):
-            a = pymupdf.Rect(rs[i])
-            a.x0 -= gap; a.y0 -= gap; a.x1 += gap; a.y1 += gap
-            if a.intersects(rs[j]):
-                x, y = find(i), find(j)
-                if x != y:
-                    par[x] = y
-    grp = {}
-    for i in range(len(rs)):
-        grp.setdefault(find(i), []).append(i)
-    cs = []
-    for g in grp.values():
-        r = pymupdf.Rect(rs[g[0]])
-        for k in g[1:]:
-            r |= rs[k]
-        cs.append([r, sum(lg[k] for k in g)])
-    changed = True
-    while changed:                       # 同 y 带且 x 隙 ≤20mm → 并簇（三联三子图成一图）
-        changed = False
-        for i in range(len(cs)):
-            for j in range(i + 1, len(cs)):
-                a, b = cs[i][0], cs[j][0]
-                if (min(a.y1, b.y1) - max(a.y0, b.y0) > -3 * PT
-                        and max(a.x0, b.x0) - min(a.x1, b.x1) <= 20 * PT):
-                    cs[i] = [a | b, cs[i][1] + cs[j][1]]
-                    del cs[j]
-                    changed = True
-                    break
-            if changed:
-                break
-    return [c for c in cs if c[0].width / PT >= 15 and c[0].height / PT >= 10 and c[1] >= 3]
+# ---- 矢量墨聚簇内核（_diag_items/_vec_clusters，片G 0910 建、回退轮0910 起只服务 (d)）已随
+#      残留清理0911 折叠删除：六图回位图后实测 0 簇＝死码，(d) in_fig 恒不触发、表线计数逐字节
+#      不变；删前 grep 证无调用。原文见 断言顶格.py.bak_残留清理0911；qp-blocks.tex 的 \huadia
+#      素材宏不在此件、未动。
 
 for pno, page in enumerate(doc, 1):
     H = page.rect.height
     def coll(x0):
         return MARGIN if x0 < MID else MARGIN + COLW + COLSEP
-    # 片G 0910：矢量图簇——(d) 据此排除图内竖棱（旧位图无此污染：表线 64→74 系图棱被收），(e) 据此判图
-    vcs = [r for r, _n in _vec_clusters(page)]
-
-    def in_fig(r):
-        return any(pymupdf.Rect(g.x0 - 1.0, g.y0 - 1.0, g.x1 + 1.0, g.y1 + 1.0).contains(r) for g in vcs)
-
     lines = []
     for blk_ in page.get_text('dict')['blocks']:
         for ln in blk_.get('lines', []):
@@ -201,8 +139,6 @@ for pno, page in enumerate(doc, 1):
         r = d['rect']
         if not (r.width <= 2.0 and r.height >= 4.0):
             continue
-        if in_fig(r):
-            continue   # 片G 0910：矢量图内竖棱（正方体竖棱等）不算表线——保 64 口径可比
         if abs(r.x0 - MID) < 1.0:
             continue   # multicol 栏线
         if 8.0 <= r.height <= 30.0 and any(0.5 <= r.x0 - c <= 3.0 for c in COLL):
@@ -216,26 +152,31 @@ for pno, page in enumerate(doc, 1):
         if any(abs(r.x0 - c) <= 1.0 for c in COLL):
             n_leftedge += 1   # 表左框线在场（== 栏左）
 
-    # (e) 图——片G 0910：位图 6→0（旧 media/media/*.png 取消引用），六图改矢量口径
-    for img in page.get_images(full=True):
-        for r in page.get_image_rects(img[0]):
-            n_fig += 1
-            cl = coll(r.x0)
-            if not (r.x0 >= cl - 1.0 and r.x1 <= cl + COLW + 1.0):
-                n_viol_e += 1
-                print(f'   (e)违规图 x0={r.x0:.2f} x1={r.x1:.2f} 栏带=[{cl:.2f},{cl + COLW:.2f}] p{pno} y={r.y0:.1f}')
-    for r in vcs:
-        n_vec += 1
+    # (e) 图——回退轮 0910 位图口径：\includegraphics 引入的原图位图（media/media/*.png），
+    #     逐页归集 PDF 内 raster 图对象；违规＝越栏 ∨ 压字（图矩形与任一正文行 bbox 相交），零容忍。
+    for info in page.get_image_info(xrefs=True):
+        r = pymupdf.Rect(info['bbox'])
+        n_fig += 1
+        tag = FIG_PX.get((info['width'], info['height']))
+        if tag:
+            n_named += 1
+        else:
+            tag = '未认领(%dx%d)' % (info['width'], info['height'])
         cl = coll(r.x0)
         if not (r.x0 >= cl - 1.0 and r.x1 <= cl + COLW + 1.0):
-            n_viol_vec += 1
-            print(f'   (e)违规矢量图 x0={r.x0:.2f} x1={r.x1:.2f} 栏带=[{cl:.2f},{cl + COLW:.2f}] p{pno} y={r.y0:.1f}')
+            n_viol_e += 1
+            print(f'   (e)越栏图 {tag} x0={r.x0:.2f} x1={r.x1:.2f} 栏带=[{cl:.2f},{cl + COLW:.2f}] p{pno} y={r.y0:.1f}')
+        hit = [t for t, rr, _b in lines if rr.intersects(r)]
+        if hit:
+            n_press += 1
+            print(f'   (e)压字图 {tag} 矩形=[{r.x0:.2f},{r.y0:.2f},{r.x1:.2f},{r.y1:.2f}]'
+                  f' 相交正文行 {len(hit)} 首行={hit[0][:14]} p{pno}')
 
 print(f'—— 签名行 {n_sig}（其中[答案]{n_ans}；违规 {n_viol_c}）｜表线 {n_rules}（左框线 {n_leftedge}；'
-      f'违规 {n_viol_d}，花形豁免 {n_exempt}）｜位图 {n_fig}（违规 {n_viol_e}）｜'
-      f'矢量图 {n_vec}（违规 {n_viol_vec}）')
-viol = n_viol_c + n_viol_d + n_viol_e + n_viol_vec
-ok = viol == 0 and not fail and n_fig == 0 and n_vec == 6 and n_ans == 14 and n_leftedge >= 6
+      f'违规 {n_viol_d}，花形豁免 {n_exempt}）｜位图×{n_fig}（尺寸认领 {n_named}/{n_fig}；'
+      f'越栏 {n_viol_e}，压字 {n_press}）')
+viol = n_viol_c + n_viol_d + n_viol_e + n_press
+ok = viol == 0 and not fail and n_fig == 6 and n_ans == 14 and n_leftedge >= 6
 if n_sig < 40:
     ok = False
     print(f'!! 签名行计数异常：{n_sig} < 40（签名口径失效嫌疑，人工复核）')

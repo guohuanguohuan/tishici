@@ -1,0 +1,18 @@
+% 线审0910 探针：六片段按 body.tex 同宽置入，一图一页，供矢量属性审计
+\documentclass{article}
+\pagestyle{empty}
+\usepackage{tikz}
+\usepackage{graphicx}
+\newcommand{\qldrop}{0.649mm}
+\newcommand{\qldsub}[1]{\raisebox{-\qldrop}{\fontsize{9.68pt}{9.68pt}\selectfont $#1$}}
+\newcommand{\qlabs}[3]{$#1$\kern#3\qldsub{#2}}
+\newcommand{\qlab}[1]{$#1$}
+\definecolor{cubegray}{gray}{0.25}
+\begin{document}
+\resizebox{80.8mm}{!}{\input{C:/提示词/工作区/字替对照-0909/variantF/figs/g6-triple.tikz}}\newpage
+\resizebox{41.1mm}{!}{\input{C:/提示词/工作区/字替对照-0909/variantF/figs/g1-prism.tikz}}\newpage
+\resizebox{42.0mm}{!}{\input{C:/提示词/工作区/字替对照-0909/variantF/figs/g2-cubeE.tikz}}\newpage
+\resizebox{36.3mm}{!}{\input{C:/提示词/工作区/字替对照-0909/variantF/figs/g3-cube6.tikz}}\newpage
+\resizebox{30.5mm}{!}{\input{C:/提示词/工作区/字替对照-0909/variantF/figs/g4-dihedral.tikz}}\newpage
+\resizebox{28.2mm}{!}{\input{C:/提示词/工作区/字替对照-0909/variantF/figs/g5-fold.tikz}}
+\end{document}
