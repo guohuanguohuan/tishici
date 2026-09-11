@@ -1,0 +1,264 @@
+% ============================================================
+% 导学件/main.tex —— 物理样张试点扩件6·物理导学件切片（答案制A·正文侧，2–3 页）
+% 取材＝必修3 第12章简单卷《12.2 闭合电路的欧姆定律》（源件元素 57–118）：
+%   讲部条目（概念理解／电动势与电压对比／闭合电路关系式／U-I图像三要素）
+%   ＋例 3、4、5（题号重排为例1–3）＋自拟变式 2 道、课堂评价 5 题（逐题亲算）。
+% 结构＝数学 L1 导学件五段闭环（工作区/字替对照-0909/靠齐样张-0910/导学增量/main.tex 为形制基准）：
+%   学习目标→课前预习（填空＋诊断分析判断挂每知识点后）→课中探究（探究点×2：例＋变式＋素养小结）
+%   →课堂评价（恒 5 题）。
+% 物理导学案特有五组件实物（全品覆盖对表-0911 D 行缺口3 挂钩项，本轮全部落位）：
+%   ①素养标签 \sylabel——5 枚举全见件：[教材链接][物理观念][科学推理][科学思维][科学探究]
+%     （源＝全品物理导学案 p4–7 逐处，物理导学案全文.txt 元素级实证）；
+%   ②[反思感悟]块 \fanxi——例1/例3 后书写留白行（全品 p4 例1 后等同位）；
+%   ③规范答题区自评表 \guifanbiao——例2 后（全品 p8 例3 同构：分步给分＋自评 √/×）；
+%   ④拓展延伸块 \tuoZhan——例2 后追问（全品 p8 例4 同位）；
+%   ⑤限时总量行 \xszl＋小题分值说明行 \xzsm——课堂评价组头（全品物理练习册每卷头两行同形，
+%     源值「40分钟/54分」为课时卷档；本切片取课堂评价组档 15分钟/20分 与组内配额自洽：
+%     3 单选×4 分＋2 填空×4 分＝20 分；量产拍板时二选一，随件上报）。
+% 学习任务制→探究点制：全品物理「学习任务一/二/三」名义不跟（对表 D 行已拍板偏离），骨架＝探究点（L1 统一）。
+% 件型词：\qpjianming＝导学件——骨架五枚举（讲练/实验卷/学史切片/知识清单/测评卷）外新值，
+%   依据＝对表缺口3「试点六件扩七件：补物理导学件切片」，随件上报登记。
+% 答案制A：正文 0 答案宏（\ansline/\jiexi/\kongda 禁入；判断题走 \zhentib 空括号形）；
+%   答案册切片＝同目录 答案册/main.tex（同构同号：课前预习逐空对号①—⑭＋判断(1)(2)＋
+%   例1/变式1/例2/拓展延伸/例3/变式2＋课堂评价1–5，题号集与正文零缺漏零多余）。
+% 源位图对账（旧件＝高中物理/高中物理同步/人教版必修3 第12章 电能 能量守恒定律·简单卷（10题）.docx，
+%   word/media 原样提取仅改名，零加工；彩色源图原样保留——纯灰断言豁免已入公共规则§7）：
+%   例2-双灯电路图.png←image3.png[元89]；例3-电源电阻UI图像.png←image8.png[元107]；
+%   讲-电源UI图像三要素.png←image4.png[元96]。
+% 件型层宏登记（骨架 §五「试点件按需在 main 自建并登记」）：\sylabel／\fanxi／\tuoZhan／
+%   \guifanbiao／\xszl／\xzsm／\pingtou（v11 课堂评价组头同式）／\liubai（v11 书写留白＋水印同式）。
+% 页脚＝形制 A 默认（灰块·导学档 26.2mm；素面——品牌位只落测评卷与封面件，《全品基准总表》§三）。
+% 编译：xelatex ×2（三0判据见骨架 README §六）；目验：python ../骨架/render.py . main 300。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第12章\quad 电能\quad 能量守恒定律}
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{导学件}
+% 品牌位：导学件＝素面（\ifqpbrand 默认 false，勿开）
+
+% ---------- 件型层宏①：素养标签（5 枚举标签件，全品物理导学案 p4–7 同位） ----------
+% 用法 \sylabel{科学思维}{内容}：[枚举词]＝\heiti 半角窄括号（拍板3【】三件套之外走半角[]），
+%   素面无底纹无色（底纹减法守则）；内容随文同号接排。
+\newcommand{\sylabel}[2]{\par\glueguard{1}%
+  \noindent{\heiti [#1]}\hspace{0.4em}#2\par\addvspace{0.8mm}}
+
+% ---------- 件型层宏②：[反思感悟]块（例后书写留白行，全品 p4 同位） ----------
+% #1＝书写线条数；线＝gray122 0.4pt 通栏、行距 6.2mm（样张目验档，待物理线拍板归零件库）。
+% 防断栏：标签＋线组整体装 \vbox（单箱不可拆，栏末断点处整块顺延次栏，仿 v11 \vbox 整体装栏法；
+%   块高约 20mm 远小于栏高，无 overfull vbox 风险）。
+\newcount\FXN
+\newcommand{\fanxi}[1]{\par\glueguard{1}\addvspace{1.2mm}%
+  \vbox{%
+    \noindent{\heiti [反思感悟]}\par\vskip 2.4mm
+    \FXN=#1\relax
+    \loop \noindent\textcolor{gray122}{\rule{\linewidth}{0.4pt}}\par\vskip 6.2mm
+      \advance\FXN by -1 \ifnum\FXN>0\repeat
+    \vskip -1.2mm}}
+
+% ---------- 件型层宏④：拓展延伸块（例后追问，全品 p8 例4 同位；形同素养标签） ----------
+\newcommand{\tuoZhan}[1]{\par\glueguard{2}\addvspace{1.6mm}%
+  \noindent{\heiti [拓展延伸]}\hspace{0.4em}#1\par\addvspace{1mm}}
+
+% ---------- 件型层宏③：规范答题区自评表（全品 p8 例3 同构） ----------
+% 三列＝规范答题区（书写位 34mm）｜自评项目（共N分）｜自评+得分；表线 gray122（BG-01），
+% 外框 0.8pt＝\thickhline、内线 0.4pt（qp-layout 默认），内横线只封右两列（\cline{2-3}，
+% 左列书写位通高）；表头行高走 BG-02 9.0mm 档（strut 7mm＋extrarowheight 1.7mm）。
+\newcommand{\guifanbiao}[1]{\par\addvspace{2.2mm}\glueguard{2}%
+  \begingroup\arrayrulecolor{gray122}\setlength{\tabcolsep}{2pt}%
+  \noindent\begin{tabular}{|p{27mm}|p{29.6mm}|p{19.6mm}|}
+    \thickhline
+    {\heiti 规范答题区}\par\vspace*{40mm} &
+    \multicolumn{1}{|c|}{自评项目（共#1分）\rule{0pt}{7mm}} &
+    \multicolumn{1}{c|}{自评+得分\rule{0pt}{7mm}} \\
+    \cline{2-3}
+    & 书写工整无涂抹（是否加分项） & （√或×） \\
+    \cline{2-3}
+    & 有必要的文字说明（1分） & \\
+    \cline{2-3}
+    & 有解题关键公式（5分） & \\
+    \cline{2-3}
+    & 结果为数字的带有单位（2分） & \\
+  \thickhline
+  \end{tabular}\endgroup\par\addvspace{1mm}}
+
+% ---------- 件型层宏⑤：限时总量行＋小题分值说明行（全品物理练习册每卷头两行同形，括号半角＝拍板3） ----------
+\newcommand{\xszl}[2]{\par\addvspace{1.6mm}\centerline{(#1)\quad (#2)}\par}
+\newcommand{\xzsm}[1]{\par\addvspace{0.4mm}\centerline{(#1)}\par\addvspace{1.2mm}}
+
+% ---------- 件型层宏：课堂评价组头／书写留白＋水印（数学 v11 导学增量同式） ----------
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+
+\begin{document}
+% ===== 通栏标题区（multicols 外） =====
+\zhangtitle{第12章\quad 电能\quad 能量守恒定律}
+\jietitle{12.2 闭合电路的欧姆定律}
+\keshi{第1课时\quad 电动势与闭合电路的欧姆定律}
+\mubiaoline
+\mubiaomu{1}{理解电动势的概念，知道电动势与电压的区别，能从能量转化的观点理解闭合电路的欧姆定律；}
+\mubiaomu{2}{会分析电源的$U$-$I$图像，能计算路端电压与短路电流，并据此分析电源的输出功率．}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 一、课前预习（知识导学填空＋诊断分析挂每个知识点之后）
+% ============================================================
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\sylabel{教材链接}{阅读教材，完成下列填空．}
+
+\zsd{一}{电动势}
+
+\tiaomu{1}{定义式：$E=$\kongbai{}（式中 $W$ 为非静电力做的功，$q$ 为电荷量）；电动势是\kongbai{}（选填“矢”或“标”）量．}
+
+\sylabel{物理观念}{物理意义：电动势表征电源把\kongbai{}转化为电能本领的大小；蓄电池的电动势为 $2\,\unit{V}$，表明在电源内移送 $1\,\unit{C}$ 的电荷时，可将\kongbai{} $\unit{J}$ 的化学能转化为电能．}
+
+\tiaomu{2}{与电压的对比：$E=\frac{W_{\text{非}}}{q}$ 表征\kongbai{}的性质，$U=\frac{W_{\text{电场力}}}{q}$ 表征\kongbai{}的性质；电动势等于电源未接入电路时两极间的\kongbai{}．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{电动势由电源自身的性质决定，与外电路的组成无关．}
+
+\zhentib{(2)}{电源接入电路后，用电压表测得的两极间电压总略大于电源电动势的准确值．}
+
+\zsd{二}{闭合电路的欧姆定律}
+
+\sylabel{科学推理}{用能量守恒的观点推导：非静电力做的功等于内、外电路中电场力做功之和，即 $E=$\kongbai{}；结合欧姆定律可得纯电阻闭合电路的欧姆定律 $I=$\kongbai{}．}
+
+\tiaomu{1}{路端电压：$U=$\kongbai{}；外电阻 $R$ 增大时，路端电压 $U$ 逐渐\kongbai{}（选填“增大”或“减小”）．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{外电路断路时，路端电压为零．}
+
+\zhentib{(2)}{外电路中接入电动机等非纯电阻元件时，$I=\frac{E}{R+r}$ 仍可直接用于求电路中的电流．}
+
+\zsd{三}{电源的$U$-$I$图像}
+
+\sylabel{科学思维}{读图三要素：图线与纵轴的截距等于\kongbai{}；与横轴的截距等于\kongbai{}；图线斜率的绝对值等于\kongbai{}．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{同一电源的$U$-$I$图线斜率的绝对值越大，电源的内阻越小．}
+
+\liubai[9mm]{此处书写}
+
+% ============================================================
+% 二、课中探究（探究点×2：知识讲解＋例＋变式＋素养小结）
+% ============================================================
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{电动势与电压的理解}{例\textbf{1}}{简单(知识点一)}{关于电动势，下列说法正确的是\nobreak(\kongwei)}
+
+\sylabel{科学思维}{电动势与电压的辨析要害：两定义式中 $W$ 的含义不同——$E$ 中 $W$ 为非静电力做的功，表征电源的性质；$U$ 中 $W$ 为电场力做的功，表征电场的性质；电源未接入电路时，两极间电压才等于电动势．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．电源电动势越大，说明电源把其他形式的能转化为电能的本领越大；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．用电压表直接测量电源两极间电压得到的数值，实际上总略大于电源电动势的准确值；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．电源电动势总等于内、外电路上的电压之和，所以它的数值与外电路的组成有关；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．电源电动势等于电源正、负极之间的电势差\par}
+
+\fanxi{2}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{下列关于电源电动势的说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．公式$E=\frac{W}{q}$表明电动势与$W$成正比、与$q$成反比；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．把电源的正、负极用导线直接相连时，该电源的电动势将变大；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．电动势是矢量，方向由电源负极指向正极；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．1号干电池的电动势比铅蓄电池的小，表明前者把化学能转化为电能的本领较弱\par}
+
+\xiaojie{①识别：题干围绕电动势的定义式、决定因素、标矢性与物理意义罗列说法要求辨误时，判归本题型；②操作：抓住“定义式非决定式、由电源自身决定、是标量”三条要害逐项核验，选项偷换“非静电力做功／电场力做功”即错．}
+
+\tjdnr{二}{闭合电路的计算与$U$-$I$图像}{例\textbf{2}}{中档(知识点二)}{（8分）如图所示，电源的电动势$E=10\,\unit{V}$，闭合开关S后，标有“$6\,\unit{V}$\quad $12\,\unit{W}$”的两盏灯恰能正常发光．求：}
+
+\qpfig[32]{例2-双灯电路图}
+
+\bindp （1）通过每盏灯的电流 $I_1$；\par
+\bindp （2）电源的内阻 $r$．\par
+
+\guifanbiao{8}
+
+\tuoZhan{若把例2中的两盏灯改为串联接入原电源（设灯丝电阻不变），通过计算说明两灯能否正常发光．}
+
+\sylabel{科学推理}{计算规范：先局部（用电器额定条件）→再整体（闭合电路欧姆定律）→后局部（回代验算）；纯电阻电路方可用 $I=\frac{E}{R+r}$．}
+
+\li{例\textbf{3}}{中档(知识点三)}{如图所示的$U$-$I$图像中，直线Ⅰ为某电源的路端电压与电流的关系，直线Ⅱ为某一电阻$R$的伏安特性曲线．用该电源直接与电阻$R$连接成闭合电路，由图像可知\nobreak(\kongwei)}{}
+
+\qpfig[34]{例3-电源电阻UI图像}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．电源的输出电压为$2\,\unit{V}$；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．电源的电动势为$3\,\unit{V}$，内阻为$0.5\,\unit{\upOmega}$；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．电源的输出功率为$3.0\,\unit{W}$；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．电源的效率为$60\%$\par}
+
+\fanxi{2}
+
+\liB{变式\textbf{2}}{中档(知识点三)}{}{某电源的路端电压$U$随电流$I$变化的图线与纵轴交于$(0,\,4.5\,\unit{V})$，与横轴交于$(3.0\,\unit{A},\,0)$，则该电源的电动势$E=$\kongbai{}，内阻$r=$\kongbai{}．}
+
+\xiaojie{①识别：题干给出电路或电源$U$-$I$图线求路端电压、内阻、输出功率时，判归本题型；②操作：读图抓“纵截距$E$、横截距$I_{\text{短}}$、斜率绝对值$r$、两线交点即工作点”四要素，计算题按“局部额定→整体欧姆定律→回代验算”顺序列式．}
+
+% ============================================================
+% 三、课堂评价（恒 5 题＝3 单选＋2 填空；限时总量行＋小题分值说明行＝物理特有组件⑤）
+% ============================================================
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\xszl{时间:15分钟}{总分:20分}
+\xzsm{选择题每小题4分}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}一节干电池的电动势为$1.5\,\unit{V}$，其物理意义是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．该电池储存的化学能为$1.5\,\unit{J}$；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．电池接入电路后，其两极间电压保持$1.5\,\unit{V}$不变；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．电池内部非静电力每把$1\,\unit{C}$的正电荷从负极搬运到正极做功$1.5\,\unit{J}$；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．电路中每通过$1\,\unit{C}$的电荷量，外电路消耗的电能为$1.5\,\unit{J}$\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}电源的电动势$E=3\,\unit{V}$、内阻$r=0.5\,\unit{\upOmega}$，外电路电阻$R=5.5\,\unit{\upOmega}$，则闭合电路中的电流$I$与路端电压$U$分别为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．$0.5\,\unit{A}$，$2.75\,\unit{V}$；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．$0.5\,\unit{A}$，$3\,\unit{V}$；}\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．$6\,\unit{A}$，$3\,\unit{V}$；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．$0.6\,\unit{A}$，$2.7\,\unit{V}$}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}关于闭合电路，下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．外电路断开时，路端电压为零；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．外电路短路时，路端电压趋于电源电动势；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．路端电压随外电阻的增大而增大，但总小于电源电动势；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．外电路电阻增大时，电源的效率降低\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}电动势$E=6\,\unit{V}$、内阻$r=1\,\unit{\upOmega}$的电源与阻值$R=5\,\unit{\upOmega}$的定值电阻连成闭合电路，则电路中的电流$I=$\kongbai{}，路端电压$U=$\kongbai{}．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{中档(知识点三)}\hspace{2.2mm}将例2中的电源（$E=10\,\unit{V}$，$r=1\,\unit{\upOmega}$）与滑动变阻器$R$连成闭合电路，当$R=4\,\unit{\upOmega}$时，路端电压$U=$\kongbai{}，电源的输出功率$P_{\text{出}}=$\kongbai{}．}
+
+\end{multicols}
+\end{document}
