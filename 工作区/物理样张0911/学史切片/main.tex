@@ -1,0 +1,110 @@
+% ============================================================
+% 学史切片/main.tex —— 物理学史切片件（试点件4·必修第三册）样张
+% 族＝正文族形制 A（页脚灰块·导学档，默认生效）；内容件（非配页件）：
+%   部分独立页码制（自成部分，页码自 1 起）；无答案结构（叙事件，答案制A 不涉及）；
+%   页脚素面（\ifqpbrand 默认 false——品牌位只测评卷/封面落，《全品基准总表》§三品牌位行）。
+% 全件 0 图（学史清单全库图数=0，立项盘点 §1.2）——qp-figs 不装（骨架 README §七-4）。
+% 结构：头部（件标题＋使用说明＋五类标签图例）＝multicols 外通栏区；
+%   条目段（第九～十三章 20 条，条目号本册内连续 1–20）＋总览表 B3＝栏内。
+% 件型层自建宏（随件登记，勿回骨架）：
+%   \huidi＝灰底标记点，源制 colorbox 灰 A6A6A6（同知识清单件条款，README §七-3；
+%     fboxsep 0.2mm 紧贴＝docx character shading 形）；span 逐条取证＝
+%     源 docx run 级 shading（探针 _src/probe_huidi.py → _src/必修三灰底.txt）。
+%   \xszhang＝栏内章标题，13pt \hekeshi 居中（借课时档；栏内宏不用 \Needspace，沿 qp-blocks 栏内习语）。
+%   \xsguanlian＝教材关联行（仿宋说明行档，拍板4a）；\xszhuxian＝历史主线行（楷体）。
+%   \xslabel＝【】标签行（承 \mubiaoline 形，文字开放）；条目内容用 \mubiaomu（楷体悬挂档）。
+% 表＝总览表 B3（2 列 7 行，表格规范：栏内≤3 列、列宽内容感知、表头 C7C7C7 底纹不入七类计数、
+%   首列禁逐字竖排——列宽 32mm 保足 8 字；表线深灰 122、外框 0.8pt＞内线 0.4pt，BG-01/02/04）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+
+% ---------- 件型层参数（qp-phy-params 单点覆盖） ----------
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{学史切片}
+\renewcommand{\qpzhangming}{物理学史}
+% \qpbrand 开关不动（false＝素面）；\qpceming 随 \qpbuce 自动＝高中物理 必修第三册(人教版)
+
+% ---------- 件型层宏 ----------
+\definecolor{tblhead}{HTML}{C7C7C7}   % 表头行底纹（表格规范⑤，不入七类计数）
+\definecolor{huidiA6}{gray}{0.651}    % A6A6A6 需背灰底（166/255；gray 模型单值——README §七-3 字面
+                                      % \colorbox[gray]{0,0.651,0.651} 三值式 xcolor 解析炸，件侧改具名色）
+\newcommand{\huidi}[1]{{\setlength{\fboxsep}{0.2mm}\colorbox{huidiA6}{#1}}}
+\newcommand{\xslabel}[1]{\par\glueguard{2}\addvspace{2.0mm}\noindent\biaoqian{#1}\par\nopagebreak\vspace{-2pt}}
+\newcommand{\xszhang}[1]{\par\glueguard{2}\addvspace{1.2mm}%
+  {\centering\fontsize{13pt}{18pt}\selectfont\hekeshi #1\par}\addvspace{0.2mm}}
+\newcommand{\xsguanlian}[1]{\noindent{\fangsong 教材关联：#1}\par}
+\newcommand{\xszhuxian}[1]{\noindent{\kaishu 历史主线｜#1}\par}
+
+\begin{document}
+% ===== 头部（通栏区） =====
+\zhangtitle{物理学史（必修第三册）}
+\xslabel{【使用说明】}
+\mubiaomu{1}{依据2019人教版高中物理教材按册、章整理；本件为必修第三册部分，条目号在本册内连续。}
+{\fontsize{10.5pt}{16pt}\selectfont\kaishu 标签五级：\biaoqian{【必记】}高考高频史实，须能准确默出（人物＋成就＋年代）。}\par
+{\fontsize{10.5pt}{16pt}\selectfont\kaishu\biaoqian{【易错】}归因与口径纠错；\biaoqian{【了解】}低频拓展或教材未点名、按史实补注的条目。}\par
+{\fontsize{10.5pt}{16pt}\selectfont\kaishu\biaoqian{【方法史】}蕴含的物理思想方法；\biaoqian{【关联】}与本章知识或其他章的联系。}\par
+{\fontsize{10.5pt}{16pt}\selectfont\kaishu\huidi{浅灰底纹}部分为必背内容（人名、年代、关键成就与绑定公式），叙述文字不铺灰底；译名从教材：笛卡儿、卡文迪什、巴耳末等，教材未出现的人名采用通行译名。}\par
+% ===== 条目段（栏内；条目号本册内连续 1–20） =====
+\begin{multicols}{2}
+\xszhang{第九章\quad 静电场及其应用}
+\xsguanlian{9.1 电荷；9.2 库仑定律；9.3 电场\quad 电场强度；9.4 静电的防止与利用}
+\xszhuxian{从「两类电」的辨认、正负电荷的命名，到库仑用扭秤定量测力，再到密立根测出元电荷，电学由定性观察走向精密测量。}
+\tiaomu{1}{\biaoqian{【必记】}美国科学家\huidi{富兰克林}通过实验发现\huidi{雷电}的性质与摩擦产生的电的性质完全相同，并\huidi{命名了正电荷和负电荷}；避雷针的应用与他的工作密切相关（必修三9.1节、9.4节）。}
+\tiaomu{2}{\biaoqian{【必记】}\huidi{1785年}，法国科学家\huidi{库仑}设计了精妙的\huidi{扭秤实验}研究电荷间的作用力，建立\huidi{库仑定律}（必修三9.2节）。}
+\tiaomu{3}{\biaoqian{【必记】}元电荷$e$的数值最早是由美国物理学家\huidi{密立根}通过（油滴）实验\huidi{测得}的，他因此获得\huidi{诺贝尔物理学奖}（1923年颁奖，为史实补充；必修三9.1节）。}
+\tiaomu{4}{\biaoqian{【了解】}18世纪30年代，\huidi{杜菲}已区分「两类电」并总结同类相斥、异类相吸（史实，教材未提及）。}
+\tiaomu{5}{\biaoqian{【易错】}不写「富兰克林发现自然界有两种电荷」——教材口径是富兰克林\huidi{命名正负电荷}；静电力常量$k$的测定不宜归给库仑或高斯，高考以\huidi{库仑扭秤实验和库仑定律}为稳妥口径。}
+
+\xszhang{第十章\quad 静电场中的能量}
+\xsguanlian{10.1 电势能和电势；10.2 电势差；10.3 电势差与电场强度的关系；10.4 电容器的电容；10.5 带电粒子在电场中的运动}
+\xszhuxian{法拉第用「场」和「力线」取代超距作用图景，让看不见的电场变得可以描述（场的观念在9.3节引入，本章从能量角度深化）。}
+\tiaomu{6}{\biaoqian{【必记】}19世纪30年代，英国科学家\huidi{法拉第}提出电荷周围存在\huidi{电场}的观点，并采用画\huidi{电场线}的简洁方法描述电场（「力线」概念由法拉第提出，「场」的概念由\huidi{麦克斯韦}等人完善）；场的观念改变了只用超距作用理解相互作用的方式（必修三9.3节）。}
+\tiaomu{7}{\biaoqian{【易错】}电场线是为描述电场而引入的\huidi{模型}，不是真实存在的物质曲线。}
+
+\xszhang{第十一章\quad 电路及其应用}
+\xsguanlian{11.1 电源和电流；11.2 导体的电阻；11.3 实验：导体电阻率的测量；11.4 串联电路和并联电路；11.5 实验：练习使用多用电表}
+\xszhuxian{欧姆把电流、电压和电阻联系起来；极低温下电阻竟能突然消失。}
+\tiaomu{8}{\biaoqian{【必记】}\huidi{欧姆}通过实验研究电流、电压和电阻的关系，形成\huidi{欧姆定律}（适用于线性元件；史实，教材必修三11.2节未叙事）。}
+\tiaomu{9}{\biaoqian{【了解】}\huidi{1911年}，荷兰物理学家\huidi{昂内斯}（Heike Kamerlingh Onnes，译名统一作「昂内斯」）发现汞在低温下电阻突然消失——\huidi{超导现象}（史实，教材必修三11.2节叙述超导现象但未点名昂内斯）。}
+\tiaomu{10}{\biaoqian{【了解】}1986—1987年，华裔美国籍科学家\huidi{朱经武}与中国科学家\huidi{赵忠贤}相继研制出钇—钡—铜—氧系高温超导材料，把超导转变温度提高到\huidi{90 K}（必修三11.2节）。}
+
+\xszhang{第十二章\quad 电能\quad 能量守恒定律}
+\xsguanlian{12.1 电路中的能量转化；12.2 闭合电路的欧姆定律；12.3 实验：电池电动势和内阻的测量；12.4 能源与可持续发展}
+\xszhuxian{电池提供的能量去了哪里：闭合电路是能量守恒在电路中的完整表达。}
+\tiaomu{11}{\biaoqian{【必记】}电流通过导体产生热量的规律——\huidi{焦耳定律}（$Q=I^{2}Rt$）最初是由\huidi{焦耳}通过实验直接得到的（必修三12.1节）。}
+\tiaomu{12}{\biaoqian{【关联】}\huidi{焦耳}的电热实验把电路中的能量转化与普遍的\huidi{能量守恒}联系起来；能量守恒定律的建立史见必修二第八章、选必三3.1节。}
+
+\xszhang{第十三章\quad 电磁感应与电磁波初步}
+\xsguanlian{13.1 磁场\quad 磁感线；13.2 磁感应强度\quad 磁通量；13.3 电磁感应现象及应用；13.4 电磁波的发现及应用；13.5 能量量子化}
+\xszhuxian{奥斯特发现「电生磁」，安培提出分子电流假说，法拉第发现「磁生电」，麦克斯韦把变化的电场和磁场统一为电磁波，赫兹再用实验捕捉到这种波；我国古代对磁的认识是这条线的最早源头。}
+\tiaomu{13}{\biaoqian{【了解】}我国春秋战国时期的一些著作已有关于\huidi{磁石}的记载和描述，\huidi{指南针}是我国古代四大发明之一（必修三13.1节）。}
+\tiaomu{14}{\biaoqian{【必记】}\huidi{1820年}，丹麦物理学家\huidi{奥斯特}发现\huidi{电流的磁效应}，首次揭示了电与磁的联系，并于同年7月发表论文宣布这一发现（必修三13.1节）。}
+\tiaomu{15}{\biaoqian{【必记】}法国物理学家\huidi{安培}研究电流间的相互作用，提出\huidi{「分子电流」假说}；\huidi{安培定则}（右手螺旋定则）用于判断电流周围磁场的方向（必修三13.1节）。}
+\tiaomu{16}{\biaoqian{【必记】}\huidi{法拉第}在1822年的日记中写下「由磁产生电」的设想，为此探索了10年；\huidi{1831年8月29日}首次观察到电磁感应现象，并领悟到「磁生电」是一种在\huidi{变化、运动的过程}中才能出现的效应（必修三13.3节）。}
+\tiaomu{17}{\biaoqian{【必记】}英国物理学家\huidi{麦克斯韦}系统总结前人成果并建立\huidi{经典电磁场理论}，据此预言\huidi{电磁波}，并指出\huidi{光是电磁波}；\huidi{1886年}，德国科学家\huidi{赫兹}通过实验捕捉到电磁波，证实了麦克斯韦的电磁场理论，还观察到电磁波的\huidi{反射、折射、干涉、偏振、衍射}等现象，并测得电磁波在真空中的速度等于光速（必修三13.4节）。}
+\tiaomu{18}{\biaoqian{【必记】}\huidi{1900年底}，德国物理学家\huidi{普朗克}为得出与实验相符的黑体辐射公式，大胆假设：振动着的带电微粒的能量只能是最小能量值$\varepsilon$的整数倍——\huidi{能量子}$\varepsilon=h\nu$，开启了量子理论（必修三13.5节、选必三4.1节）。}
+\tiaomu{19}{\biaoqian{【易错】}左手定则通常称\huidi{弗莱明左手定则}，不归于安培（史实，教材未提及）。}
+\tiaomu{20}{\biaoqian{【了解】}被誉为\huidi{「天眼之父」的南仁东}（1945—2017）是我国\huidi{FAST}（500米口径球面射电望远镜）工程的杰出代表（必修三第十三章科学漫步「聆听宇宙」）。}
+% ===== 总览表 B3（2 列 7 行；栏内表，表格规范②③⑤⑥款） =====
+% 标题与表打包 \vbox 不可分（防标题孤儿/表跨栏）；表行缝局部降档 \tabrowglue→2.2mm 平档
+% （BG-03 4.65 系题区表多行格标定窗，导航总览表件侧降档，随件登记）。
+\noindent\vbox{\xszhang{六册章节总览}%
+{\arrayrulecolor{gray122}\def\tabrowglue{1.0mm}\setlength{\extrarowheight}{0.8mm}%
+\begin{tabular}{|>{\centering\arraybackslash}p{32mm}|>{\raggedright\arraybackslash}p{47mm}|}
+\thickhline
+\rowcolor{tblhead}{\heitiao 册次} & \multicolumn{1}{>{\columncolor{tblhead}}c|}{{\heitiao 章节}} \\ \hline
+\rowreset 必修第一册 & 第一章\ 运动的描述；第二章\ 匀变速直线运动的研究；第三章\ 相互作用——力；第四章\ 运动和力的关系\marklines \\[\tabrowglue]\hline
+\rowreset 必修第二册 & 第五章\ 抛体运动；第六章\ 圆周运动；第七章\ 万有引力与宇宙航行；第八章\ 机械能守恒定律\marklines \\[\tabrowglue]\hline
+\rowreset 必修第三册 & 第九章\ 静电场及其应用；第十章\ 静电场中的能量；第十一章\ 电路及其应用；第十二章\ 电能\ 能量守恒定律；第十三章\ 电磁感应与电磁波初步\marklines \\[\tabrowglue]\hline
+\rowreset 选择性必修第一册 & 第一章\ 动量守恒定律；第二章\ 机械振动；第三章\ 机械波；第四章\ 光\marklines \\[\tabrowglue]\hline
+\rowreset 选择性必修第二册 & 第一章\ 安培力与洛伦兹力；第二章\ 电磁感应；第三章\ 交变电流；第四章\ 电磁振荡与电磁波；第五章\ 传感器\marklines \\[\tabrowglue]\hline
+\rowreset 选择性必修第三册 & 第一章\ 分子动理论；第二章\ 气体、固体和液体；第三章\ 热力学定律；第四章\ 原子结构和波粒二象性；第五章\ 原子核\marklines \\[\tabrowglue]\hline
+\thickhline
+\end{tabular}}}\end{multicols}
+\end{document}

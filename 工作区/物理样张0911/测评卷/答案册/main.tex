@@ -1,0 +1,62 @@
+% ============================================================
+% 测评卷/答案册/main.tex —— 试点件5·答案册切片（答案制A·另册侧，对接验证）
+% 与 ../main.tex（测评卷正文侧）同构同号：卷（单元素养测评卷（一））→分区组（一、选择题／
+%   二、计算题）→题分层一致；题号集 {1,2,3,4} 逐题对账（零缺漏零多余）。
+% 装载＝答案册族（骨架 README §二）；页脚＝qp-answ-headfoot 自带形制 B 几何·件名固定
+%   「参考答案」（不随件型词换）；答案册侧素面——品牌位只落测评卷正文页脚与封面件。
+% 答案/解析文案＝源件 11 章简单卷各题块【答案】/【详解】清洗（【难度】/【知识点】标签字段
+%   按新制删除；题4 源答案「（1）6.25×10^10个」量值随文，本册按分制值列（答案册件条款③））。
+% 编译：xelatex ×2（三 0 判据见骨架 README §六）；目验：python ../../骨架/render.py . main 300。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+\renewcommand{\qpzhangming}{第11章\quad 电路及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+
+\begin{document}
+\zhangtitle{参考答案}
+\jietitle{单元素养测评卷（一）}
+
+\begin{multicols}{2}
+
+\qufen{一、选择题}{第1—3题。}
+
+\ansitem{1}{C}
+\ansline{详解}{AC．从能量转化的角度来看，电源在搬运电荷的过程中，需要克服电场力做功，
+  将其他形式的能转化为电能，电源的作用不是提供电荷，故A错误、C正确；
+  B．电源是将其他形式能转化为电能的装置，故B错误；
+  D．电源内部电子实际是由正极被搬运到负极的，而选项说成由负极搬运到正极，方向相反，故D错误。
+  故选C。}
+
+\ansitem{2}{D}
+\ansline{详解}{AB．W是功率的单位、h是时间的单位，Wh为能量的单位；mA是电流的单位、h是时间的
+  单位，mAh为电荷量的单位，故A、B错误；
+  C．由铭牌数据可知，该电池放电时能输出的总能量约为 $E=Pt=11.4\times3600$\unit{J}$=4.104\times10^{4}$\unit{J}，故C错误；
+  D．该电池放电时能输出的总电荷量约为 $Q=It=3\times60\times60$\unit{C}$=1.08\times10^{4}$\unit{C}，故D正确。
+  故选D。}
+
+\ansitem{3}{D}
+\ansline{详解}{负离子的定向移动也能产生电流，A错误；电解液内正、负离子向相反方向移动，
+  正离子产生的电流为 $I_{1}=\dfrac{n_{1}e}{t}$，负离子产生的电流为 $I_{2}=\dfrac{n_{2}e}{t}$，
+  两者方向相同、电流加强，总电流为 $I=I_{1}+I_{2}=\dfrac{(n_{1}+n_{2})e}{t}$，B、C错误，D正确。
+  故选D。}
+
+\qufen{二、计算题}{第4题。}
+
+\ansitem{4}{(1)$6.25\times10^{10}$　(2)$7.4\times10^{-13}$\unit{m/s}　(3)$1.4\times10^{10}$\unit{s}}
+\ansline{详解}{（1）电子个数
+  $N=\dfrac{q}{e}=\dfrac{It}{e}=\dfrac{1\times10^{-8}\times1}{1.6\times10^{-19}}=6.25\times10^{10}$；
+  （2）由公式 $I=neSv$ 得
+  $v=\dfrac{I}{neS}=\dfrac{1\times10^{-8}}{8.5\times10^{28}\times1.6\times10^{-19}\times1\times10^{-6}}$\unit{m/s}，
+  即 $v\approx7.4\times10^{-13}$\unit{m/s}；
+  （3）由 $v=\dfrac{x}{t}$ 得时间
+  $t=\dfrac{x}{v}=\dfrac{1\times10^{-2}}{7.4\times10^{-13}}$\unit{s}$\approx1.4\times10^{10}$\unit{s}。}
+
+\end{multicols}
+\end{document}

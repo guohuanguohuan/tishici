@@ -1,0 +1,135 @@
+% ============================================================
+% 册目录页.tex —— 物理样张试点件6·配页套之一（册目录页件，1 页）
+% 件型依据：公共规则§11 册目录页件条款（教材式目录＝缩进列表非表格；章行一级加粗不设页码、
+%   件级行二级缩进整行 C7C7C7 浅底纹＋行尾「·本N页」＋页码列「P」前缀、讲练件下节级行三级
+%   缩进（字号降级＝§7 例外清单「册目录页降级节级行」位）、标题下小注「页码＝所在本部分内页码
+%   （各本独立起算）」、无页眉页脚不计页＝\pagestyle{empty}）＋高中同步总控任务E①册目录页三要素。
+% 新行型验证（D6）：册末两枚「部分行」＝物理学史切片＋实验集训篇——与普通件型行区分：
+%   ①不铺 C7C7C7 通行底纹，改行首 3.1mm 深灰(122) 方块图标；②置册末（不入章下），
+%   口径＝§11「物理学史切片、实验集训篇各自成本」＋总控任务E 装订序（各章本之后册末依次
+%   排学史切片本、实验集训本）。各部分页码恒＝P1（部分独立页码制 从1 起算，实值非占位）。
+% 件级行枚举＝新线件型族（看板八十一裁决＋八十三-④：全品没有的件型不单立，知识清单/旧三卷
+%   不入 LaTeX 线件型族）：章下件级行＝导学件/练习件/实验卷/测评卷四行（滚动卷件、拓展册＝族内
+%   按需行，试点不展开、正式版按定稿册实际结构生成）；旧「知识清单（完成）」行与简单卷/中档卷/冲刺卷
+%   行一律撤出；学史切片不入章下、以册末新行型承载（避免与部分行双计）。
+%   答案册行＝族内在册件型，由册末「◆ 参考答案（另册）」行承载。
+% 词面统一（主脑裁 0911）：物理线件型词与数学族统一＝导学件/练习件（全品物理＝导学案＋练习册
+%   分册；§11 原文「讲练件」系旧线名，讲练切片样张仅存作形制参照、量产件型不用此词）；节级行
+%   随导学件（教材节结构由导学件承载，与数学导学案目录同构）。
+% 节级行演示＝仅第11章导学件下展开教材五节（三级缩进示范位；正式版各章导学件下同构展开，
+%   超一张 A4 时按§11 降级顺位①缩字号删节级层处置）。
+% 数据同源（题量从文件名读取口径；占位档＝N）：
+%   实验卷题量＝旧体系统件文件名实测：第9章（2题1条）／第12章（10题3条）／第11章（14题3条）／
+%     第13章（1题1条）；第10章无实验卷件（台账无实验内容件型不产出，总控任务D 款）→该章不设实验卷行。
+%   导学件/练习件/测评卷＝新体系未定稿，题量与页数以 N 占位（「·本N页」「PN」同规则，
+%     定稿随盖章实测回填——§11 页码列生成纪律）；节级页码＝定位工具在位后回填，先以 PN 占位。
+%   学史切片条数＝本册 20 条（试点件4 学史切片 main.tex 同数对账）。
+%   章名/节名＝2019 人教版必修第三册教材目录（与试点件4 教材关联行同源）。
+% 形态承数学先例（工作区/字替对照-0909/靠齐样张-0910/册目录页/main.tex）：点线前导
+%   （0.4mm 方点＠0.99mm，灰204 纯灰合规）＋页码右缘停靠；底纹/图标/点线全部纯灰阶（色系总则）。
+% 装载＝正文族（无位图，qp-figs 不装，沿试点件4 先例）；行零件＝件型层自建（本件专用，
+%   登记＝配页套头注，勿回骨架）。编译：xelatex ×2（三0 判据见骨架 README §六）；
+%   目验：python ../骨架/render.py 配页套 册目录页 300 → png/。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+
+% ---------- 配页件属性：不设页脚页码与页眉、不计页（公共规则§11） ----------
+\pagestyle{empty}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% ---------- 件型层色档（纯灰阶，色系总则） ----------
+\definecolor{muluC7}{HTML}{C7C7C7}    % 件级行通行浅底纹（§11 块标签芯片同视觉语言）
+\definecolor{muluCC}{HTML}{CCCCCC}    % 点线前导（承数学先例实测灰 204）
+
+% ---------- 件型层行零件（登记见头注） ----------
+% 点线＝0.4mm 方点＠0.99mm（数学先例同款几何，色换纯灰 204）；
+% 底纹行专用深档＝灰122（试点目验 0911：204 点压 C7C7C7 底纹上对比≈5 级不可辨，
+% 前导改灰122＝表线同族档，白底行维持 204 不动）
+\newcommand{\muludots}{\leaders\hbox to 0.99mm{\hss\textcolor{muluCC}{\rule[1.05mm]{0.4mm}{0.4mm}}\hss}\hfill}
+\newcommand{\muludotsD}{\leaders\hbox to 0.99mm{\hss\textcolor{gray122}{\rule[1.05mm]{0.4mm}{0.4mm}}\hss}\hfill}
+% 普通行：#1 缩进 #2 内容 #3 页码尾柱（停靠宽 24mm）；整行单 \hbox，断行零风险
+\newcommand{\mulurow}[3]{\noindent\hbox to \textwidth{\hskip#1\hbox to \dimexpr\textwidth-#1\relax{%
+  #2\hspace{1.4mm}\muludots\hspace{1.4mm}\makebox[24mm][r]{#3}}}\par}
+% 件级行＝通行 C7C7C7 底纹条（fboxsep 0，底纹严丝合缝到页码柱右缘内收 1.5mm；前导走深档 \muludotsD）
+\newcommand{\mulupiewrow}[3]{\noindent\hbox to \textwidth{\hskip#1\begingroup\setlength{\fboxsep}{0pt}%
+  \colorbox{muluC7}{\hbox to \dimexpr\textwidth-#1\relax{%
+  \hskip1.5mm#2\hspace{1.6mm}\muludotsD\hspace{1.6mm}\makebox[24mm][r]{#3}\strut\hskip1.5mm}}\endgroup}\par}
+% 章行＝一级无缩进、加粗（heitiao）、不设页码列
+\newcommand{\muluzhang}[1]{\par\vspace{2.6mm}\noindent
+  {\fontsize{12pt}{16.5pt}\selectfont\heitiao #1}\par\vspace{1.4mm}}
+% 新行型＝册末部分行：行首 3.1mm 深灰方块图标＋加粗名＋小注（不铺通行底纹，与件级行区分）
+\newcommand{\mupartrow}[2]{\noindent\hbox to \textwidth{%
+  {\raisebox{-0.5mm}{\color{gray122}\rule{3.1mm}{3.1mm}}}\hspace{2.2mm}#1\hspace{1.4mm}\muludots\hspace{1.4mm}%
+  \makebox[24mm][r]{#2}}\par}
+
+\begin{document}
+% ===== 标题区（全部左对齐，§7） =====
+\vspace*{1.5mm}
+\noindent{\fontsize{24pt}{32pt}\selectfont\heizhang 目\hspace{0.6em}录}\par
+\vspace{0.8mm}
+\noindent{\fontsize{11pt}{15pt}\selectfont\heitiao 高中物理\quad 必修第三册（人教版）}\par
+\vspace{1.6mm}
+\noindent{\fontsize{8pt}{12pt}\selectfont\fangsong 页码＝所在本部分内页码（各本独立起算）}\par
+\noindent{\fontsize{8pt}{12pt}\selectfont\fangsong\textcolor{midgray}{「·本N页」「PN」中 N＝占位档，定稿随盖章实测与节页码定位工具回填（§11 页码列生成纪律）}}\par
+\vspace{1.2mm}
+
+% ===== 目录树（章行→件级行→节级行；件级行通行浅底纹） =====
+{\fontsize{10.09pt}{14.6pt}\selectfont
+
+\muluzhang{第9章\quad 静电场及其应用}
+\mulupiewrow{6mm}{导学件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{练习件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{实验卷（2题1条）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{测评卷（N题）}{P1\ \ ·本N页}
+
+\muluzhang{第10章\quad 静电场中的能量}
+\mulupiewrow{6mm}{导学件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{练习件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{测评卷（N题）}{P1\ \ ·本N页}% 第10章无实验卷件（台账无实验内容，不产出——总控任务D 款）
+
+\muluzhang{第11章\quad 电路及其应用}
+\mulupiewrow{6mm}{导学件（N题）}{P1\ \ ·本N页}% ↓节级行随导学件（三级缩进、字号降级行＝§7 例外清单位）
+{\fontsize{9.3pt}{13.2pt}\selectfont
+\mulurow{15mm}{11.1\quad 电源和电流}{PN}
+\mulurow{15mm}{11.2\quad 导体的电阻}{PN}
+\mulurow{15mm}{11.3\quad 实验：导体电阻率的测量}{PN}
+\mulurow{15mm}{11.4\quad 串联电路和并联电路}{PN}
+\mulurow{15mm}{11.5\quad 实验：练习使用多用电表}{PN}}%
+\mulupiewrow{6mm}{练习件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{实验卷（14题3条）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{测评卷（N题）}{P1\ \ ·本N页}
+
+\muluzhang{第12章\quad 电能\quad 能量守恒定律}
+\mulupiewrow{6mm}{导学件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{练习件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{实验卷（10题3条）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{测评卷（N题）}{P1\ \ ·本N页}
+
+\muluzhang{第13章\quad 电磁感应与电磁波初步}
+\mulupiewrow{6mm}{导学件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{练习件（N题）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{实验卷（1题1条）}{P1\ \ ·本N页}
+\mulupiewrow{6mm}{测评卷（N题）}{P1\ \ ·本N页}
+
+% ===== 册末新行型（部分行：各自成本——§11/总控任务E；与普通件型行区分） =====
+\vspace{2.4mm}
+{\fontsize{11pt}{16pt}\selectfont
+\mupartrow{{\heitiao 物理学史切片}\,\allowbreak{\fontsize{8.5pt}{16pt}\selectfont\textcolor{midgray}{（本册20条·必修三各章条目·自成部分）}}}{P1\ \ ·本N页}\par}
+\vspace{1.2mm}
+{\fontsize{11pt}{16pt}\selectfont
+\mupartrow{{\heitiao 实验集训篇}\,\allowbreak{\fontsize{8.5pt}{16pt}\selectfont\textcolor{midgray}{（第9、11、12、13章实验卷按章序汇入·自成部分）}}}{P1\ \ ·本N页}\par}
+
+% ===== 答案另册行（答案制A：正文不印答案、答案单独成册——《全品基准总表》§三） =====
+\vspace{2.4mm}
+\noindent\hbox to \textwidth{%
+  {\heizhang ◆}\hspace{2.2mm}{\fontsize{10.09pt}{14.6pt}\selectfont 参考答案（另册·随部分分装）}%
+  \hspace{1.4mm}\muludots\hspace{1.4mm}\makebox[24mm][r]{PN\ \ ·本N页}}\par
+}%
+\end{document}

@@ -1,0 +1,37 @@
+% ============================================================
+% smoke/main.tex —— 物理骨架 smoke 页（Hello 级，一页）
+% 目的：验证骨架六件＋图族＋页脚（品牌位＋页码块出血）在物理字串下编译三 0。
+% 编译（本目录）：xelatex -interaction=nonstopmode main.tex ×2（三 0 判据见 ../README.md）
+% 目验：python ../render.py（300dpi → png/page1.png）
+% 件侧模板即此文件的 \input 序列与导言结构；换件＝换参数宏与正文。
+% 结构纪律（承数学 L1）：章/节/小节/课时标题＝multicols 外通栏区；正文块宏＝栏内。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% ---------- 件型层：物理参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第11章\quad 电路及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{讲练}
+\qpbrandtrue   % smoke 专用：演示品牌位（成品件按《全品基准总表》§三品牌位纪律，测评卷/封面才开）
+\graphicspath{{C:/提示词/工作区/物理样张0911/骨架/figs/}}
+
+\begin{document}
+% ===== 通栏标题区（multicols 外） =====
+\zhangtitle{第11章\quad 电路及其应用}
+\jietitle{11.2 闭合电路的欧姆定律}
+\begin{multicols}{2}
+\zsd{1}{电动势与内阻}
+\tiaomu{1}{电源是通过非静电力做功把其他形式的能转化为电势能的装置，电动势在数值上等于非静电力把\unit{1C}的正电荷在电源内从负极移送到正极所做的功。}
+\tiaomu{2}{闭合电路欧姆定律：$I=\dfrac{E}{R+r}$，其中$r$为电源内阻，路端电压$U=E-Ir$。}
+\li{例1}{难度（闭合电路欧姆定律）}{如图所示，电源电动势$E=\unit{3.0V}$、内阻$r=\unit{1.0\upOmega}$，定值电阻$R=\unit{4.0\upOmega}$，则电路中的电流$I$与路端电压$U$分别为\kongbai}{。}
+\qpfigrd{读数-刻度图}
+\tiaomu{3}{上图＝必修3 第11章实验卷题1-2 读数刻度源位图，经骨架 \texttt{qpfigrd} 按 TW-RD 默认档 \qpRDWdef mm 置宽；刻度图低于下限将出编译告警（QP-FIGS）。}
+\end{multicols}
+\end{document}

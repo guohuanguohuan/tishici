@@ -1,0 +1,32 @@
+% ============================================================
+% smoke-answ/main.tex —— 物理骨架 smoke 页·答案册族（Hello 级，一页）
+% 验证答案册四件（qp-answ-fonts/layout/headfoot/blocks）＋qp-figs 物理化后可编三 0。
+% 编译（本目录）：xelatex main.tex ×2；目验：python ../render.py。
+% 答案册族与正文族二选一装载（宏名重叠），件侧勿混编。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+\renewcommand{\qpzhangming}{第11章\quad 电路及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+\graphicspath{{C:/提示词/工作区/物理样张0911/骨架/figs/}}
+
+\begin{document}
+\zhangtitle{参考答案}
+\jietitle{11.2 闭合电路的欧姆定律}
+\begin{multicols}{2}
+\qufen{一、选择题}{本题共2小题。}
+\ansitem{1}{B}
+\ansline{分析}{由闭合电路欧姆定律直接求电流，再由$U=E-Ir$求路端电压。}
+\ansline{详解}{$I=\dfrac{E}{R+r}=\dfrac{3.0}{4.0+1.0}\,\unit{A}=\unit{0.6A}$，
+  路端电压$U=IR=\unit{2.4V}$，故选B。}
+\ansitem{2}{41.20\quad1.199/1.200}
+\ansline{分析}{读数刻度图题多值并列形制（C3 试点样本位）——主尺＋游标两值、测微器估读区间并列答案。}
+\ansfig{\includegraphics[width=40mm]{读数-刻度图}}
+\end{multicols}
+\end{document}

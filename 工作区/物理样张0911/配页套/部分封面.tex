@@ -1,0 +1,130 @@
+% ============================================================
+% 部分封面.tex —— 物理样张试点件6·配页套之二（部分封面件，1 张）
+% 件型依据：公共规则§11 部分封面件条款——每部分一张；配页件属性＝不计页、不设页脚页码与页眉
+%   （\pagestyle{empty}）、不属任何部分；要素枚举＝品牌（羿郭工作室）＋册名（高中物理）＋
+%   章号＋章名＋件型（大字区＝件型词，章号缩为普通要素行）＋统计行（题量三档）＋一句导读
+%   （创作位：统计性文案一句为限、【编注】起段＝§5 创作层铁规①，挂块标签芯片底纹不加粗）＋
+%   章节主题图（TikZ、图内零文字、每章一张该章全部部分封面复用）＋「本章部分」行（该章实有
+%   部分按装订序动态生成）。品牌落位纪律＝《全品基准总表》§三品牌位行（封面/部分封面落
+%   羿郭工作室；本页无页脚，品牌以要素行呈现）。
+% 主题图纪律：＝二维电路示意图（TikZ 矢量零件，属封面主题装饰位非题图——图红线不涉题图重绘；
+%   对照先例＝测评卷件 JT-01 丝带角饰自绘）；禁三维、禁 AI 重绘三维（公共规则§7 三维禁重绘令）；
+%   图内零文字（§7 绘图条款从严：连字母/数字标注也不挂，纯电路符号）；线条/填充全纯灰阶
+%   （色系总则：黑线＋pnumbg(DDDDDD) 电阻填充＋gray122 结点圆点）。
+%   电路拓扑（自洽核验 0911）：电池组（两格）→开关（断开位示意）→灯泡（⊗ 圆内叉）→线圈
+%   （三凸弧＝电磁元件）→电流表（圆）→〔两支路电阻并联合于上下汇流条〕回电源——混联电路，
+%   呼应第11章 串并联＋实验（电表）＋电磁主题（线圈）。
+% 词面统一（主脑裁 0911）：物理线件型词与数学族统一＝导学件/练习件（全品物理＝导学案＋练习册
+%   分册；「讲练件」系旧线名，讲练切片样张仅存作形制参照、量产件型不用此词）；本件大字区件型词
+%   ＝练习（练习件之部分封面）。
+% 统计行数据同源（占位口径随件上报）：题量三档简单15·中档13·难2（合计30）＝旧体系第11章
+%   三卷文件名实测（系难度档位统计、非件型名；新体系练习件定稿后以题号块档位实测替换，§11 恒等口径）；
+%   实验卷14题3条＝源文件名；测评卷＝新体系未定稿、以（N题）占位；导读句为白名单创作位一句，
+%   亲算核验＝句义与 11.1–11.5 教材节序逐一对照（电流微观图景→欧姆定律/电阻→电阻率测量实验→串并联→多用电表）。
+% 本章部分行动态枚举＝新线件型族（看板八十一：知识清单/旧三卷不入 LaTeX 线件型族）装订序：
+%   导学件→练习件→实验卷（汇入册末实验集训篇）→测评卷→拓展册（按需行）；滚动卷件＝册级滚动件不随章列。
+% 装载＝正文族（图＝TikZ 自绘，无位图，qp-figs 不装）；编译：xelatex ×2（三0 判据见骨架
+%   README §六）；目验：python ../骨架/render.py 配页套 部分封面 300 → png/。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+
+% ---------- 件型层参数（品牌名经 \qppinpai 单点件对账，勿另写字面） ----------
+\renewcommand{\qpzhangming}{第11章\quad 电路及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{练习}   % 词面统一（主脑裁 0911）：物理件型词＝导学件/练习件，「讲练」旧线名不用
+% ---------- 配页件属性：不设页脚页码与页眉、不计页（公共规则§11） ----------
+\pagestyle{empty}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% ---------- 件型层色档（纯灰阶） ----------
+\definecolor{chipC7}{HTML}{C7C7C7}    % 【编注】块标签芯片底纹（C7C7C7 同族）
+\definecolor{coverline}{HTML}{4D4D4D} % 品牌下细线（灰77 同 huarule 档）
+
+% ---------- 件型层零件：【编注】芯片（底纹不加粗，§5 铁规①） ----------
+\newcommand{\bzchip}{{\setlength{\fboxsep}{0.8pt}\colorbox{chipC7}{{\heibian 【编注】\/}}}}
+
+\begin{document}
+% ===== 品牌行（左上，全部文字左对齐＝§7 无例外条款） =====
+\vspace*{7mm}
+\noindent{\fontsize{13pt}{17pt}\selectfont\heitiao\qppinpai}%
+\hspace{4mm}{\fontsize{8.5pt}{17pt}\selectfont\heibian\textcolor{midgray}{·部分封面}}\par
+\vspace{1.2mm}
+\noindent{\color{coverline}\rule{\textwidth}{0.25pt}}\par
+
+% ===== 册名区 =====
+\vspace{16mm}
+\noindent{\fontsize{26pt}{36pt}\selectfont\heizhang 高中物理}\par
+\vspace{1.2mm}
+\noindent{\fontsize{12pt}{16pt}\selectfont\heibian \qpbuce（\qpbbiao）}\par
+
+% ===== 大字区＝件型词（§11：章号缩为普通要素行，随下方程名行） =====
+\vspace{14mm}
+\noindent{\color{midgray}\rule[0.4mm]{2.8mm}{15.5mm}}\hspace{4.2mm}%
+{\fontsize{44pt}{52pt}\selectfont\heizhang \qpjianming}\par
+\vspace{4.5mm}
+\noindent{\fontsize{14pt}{20pt}\selectfont\heijie \qpzhangming}\par
+
+% ===== 统计行（题量三档；数据同源见头注） =====
+\vspace{4.5mm}
+\noindent{\fontsize{10.5pt}{16pt}\selectfont 本章统计：练习件30题（简单15·中档13·难2）｜实验卷14题3条｜测评卷（N题）}\par
+\vspace{1.6mm}
+
+% ===== 一句导读（创作位一句为限，【编注】起段） =====
+\noindent{\fontsize{10.5pt}{16pt}\selectfont\bzchip\ {\kaishu 本章从电流的微观图景建立欧姆定律与串、并联规律，并落到电阻率的测量与多用电表的实验操作上。}}\par
+\vspace{1.6mm}
+
+% ===== 本章部分行（装订序动态生成，§11） =====
+\noindent{\fontsize{9.5pt}{14pt}\selectfont\fangsong\textcolor{midgray}{本章部分（按装订序）：导学件·练习件·实验卷（汇入册末实验集训篇）·测评卷·拓展册（按需）}}\par
+
+% ===== 章节主题图（TikZ 二维电路示意，图内零文字；置页脚区上方通栏） =====
+\vfill
+\noindent\hbox to \textwidth{\hfill
+\begin{tikzpicture}[x=1mm,y=1mm,line width=0.45mm,draw=black]
+  % —— 左缘电池组（两格：长板/短板交替）——
+  \draw (14,64) -- (14,43);
+  \draw (8,43) -- (20,43);
+  \draw[line width=1.15mm] (11,39.5) -- (17,39.5);
+  \draw (14,39.5) -- (14,34.5);
+  \draw (8,34.5) -- (20,34.5);
+  \draw[line width=1.15mm] (11,31) -- (17,31);
+  \draw (14,31) -- (14,8);
+  % —— 顶缘：开关（断开位）——
+  \draw (14,64) -- (26,64);
+  \fill (26,64) circle (1.05mm);
+  \draw (26,64) -- (38.5,70.5);
+  \draw (41.5,64) circle (1.05mm);
+  % —— 顶缘：灯泡（圆内叉）——
+  \draw (43,64) -- (52,64);
+  \draw (58,64) circle (6mm);
+  \draw (53.9,59.9) -- (62.1,68.1);
+  \draw (53.9,68.1) -- (62.1,59.9);
+  % —— 顶缘：线圈（电磁元件，三凸弧）——
+  \draw (64,64) -- (76,64);
+  \draw (76,64) .. controls (80,73.5) and (84,73.5) .. (88,64);
+  \draw (88,64) .. controls (92,73.5) and (96,73.5) .. (100,64);
+  \draw (100,64) .. controls (104,73.5) and (108,73.5) .. (112,64);
+  \draw (112,64) -- (150,64);
+  % —— 并联合两支路（上/下汇流条之间，中支路与右支路）——
+  \fill (120,64) circle (1.1mm);
+  \draw (120,64) -- (120,40);
+  \draw[fill=pnumbg] (115,40) rectangle (125,28);
+  \draw (120,28) -- (120,8);
+  \draw (150,64) -- (150,40);
+  \draw[fill=pnumbg] (145,40) rectangle (155,28);
+  \draw (150,28) -- (150,8);
+  % —— 底缘：电流表（圆）＋汇流条回电源 ——
+  \draw (14,8) -- (64,8);
+  \draw (70,8) circle (6mm);
+  \draw (76,8) -- (120,8);
+  \fill (120,8) circle (1.1mm);
+  \draw (120,8) -- (150,8);
+\end{tikzpicture}\hfill}\par
+\vspace*{10mm}
+\end{document}

@@ -1,0 +1,28 @@
+% ============================================================
+% qp-phy-params.tex —— 物理件型参数单点件（骨架 0911 新设）
+% 职责：学科/册名/版权标记/件型词/章名/卷名/品牌 的**唯一默认值处**；
+%   qp-headfoot（正文族）与 qp-answ-headfoot（答案册族）两件均 \input 本件取参。
+% 件侧用法＝main.tex 在 \input 模块之后 \renewcommand 覆盖（勿改本件默认）；
+%   本件由 qp-headfoot.tex / qp-answ-headfoot.tex 以绝对路径自动装载，件侧勿单独 \input。
+% 口径依据：
+%   册名「高中物理」＝立项盘点（物理样张线）；件型词五枚举＝高中同步总控件型体系
+%     讲练｜实验卷｜学史切片｜知识清单｜测评卷（物理件型词，替代数学「导学件/练习册」系）。
+%   品牌＝羿郭工作室＝《附则/全品基准总表》§三 品牌位行（2026-09-11 用户批）：
+%     落位＝测评卷页脚品牌位（原全品串位）＋封面/部分封面件；其余正文件页脚素面。
+%   教材＝2019 人教版（通称 A 版）：页脚版本短标＝RJ（数学 B 版先例 RJB；物理总标待
+%     主脑拍板，件侧可 \renewcommand{\qpbbiaoS}{…} 覆盖）。
+% ============================================================
+\newcommand{\qpyxueke}{高中物理}          % 学科名（页脚册名前段/封面）
+\newcommand{\qpbuce}{必修第三册}           % 册名（件侧必换：必修第一～三册/选择性必修第一～三册）
+\newcommand{\qpbbiao}{人教版}             % 版权全称（册名括号内）
+\newcommand{\qpbbiaoS}{RJ}                % 版权短标（测评卷页脚尾部，数学先例「RJB」位）
+\newcommand{\qpceming}{\qpyxueke\quad\qpbuce(\qpbbiao)}   % 灰块页脚偶页册名串（同数学 L1 构串法）
+\newcommand{\qpjianming}{讲练}            % 件型词（枚举：讲练/实验卷/学史切片/知识清单/测评卷）
+\newcommand{\qpzhangming}{第11章\quad 电路及其应用}       % 章名（件侧必换）
+\newcommand{\juanname}{单元素养测评卷（一）}               % 卷名（测评卷件侧必换；他件型不用）
+\newcommand{\qppinpai}{羿郭工作室}         % 自有品牌名（品牌位纪律见件头注）
+% 品牌开关：默认 false＝素面（导学/实验/清单/学史/答案册口径）；测评卷件与骨架 smoke 置 true。
+\newif\ifqpbrand
+\qpbrandfalse
+% 页码置双位（测评卷 YJ-02「01/02」形制）：
+\newcommand{\pqt}{\ifnum\value{page}<10 0\fi\thepage}

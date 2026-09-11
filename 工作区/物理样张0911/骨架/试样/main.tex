@@ -1,0 +1,64 @@
+% ============================================================
+% 试样/main.tex —— 参数试样页（一页·供用户拍板 0911）
+% 两题待拍：
+%   ①A3 彩色源位图灰度化政策——左半＝彩色光路源位图原样引用，右半＝同图灰度化版
+%     （源＝人教版选必1 第4章 光·中档卷 image4：甲=球体折射照片·乙=光路图带蓝色虚线 PQ）；
+%   ②A2 读数刻度图显示宽下限——下半＝必修3 第11章实验卷题1-2 刻度图（20/50分度游标卡尺
+%     ＋螺旋测微器）按 30/40/50mm 三候选档并排，各标显示宽。
+% 编译（本目录）：xelatex main.tex ×2；目验：python ../render.py（300dpi）。
+% 图族纪律：本页面三图全部源位图 \includegraphics 引用，零重绘；灰度版＝PIL 亮度变换
+%   生成的**判据试样副本**（非成品加工链——成品若拍「灰度化」亦走同源批量脚本，不动源件）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+\renewcommand{\qpzhangming}{参数试样}
+\renewcommand{\qpjianming}{拍板页}
+\graphicspath{{C:/提示词/工作区/物理样张0911/骨架/figs/}}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+% ===== 页题（通栏·样张说明级，非成品标题层级） =====
+{\fontsize{15.1pt}{20pt}\selectfont\heibf 物理样张线·参数试样页（A3 灰度化口径 × A2 读数图宽下限）}\par
+\vspace{1mm}
+{\fontsize{10.09pt}{14pt}\selectfont 本页供拍板用，非成品件。上半＝彩色源位图原样引用 vs 同图灰度化版；下半＝读数刻度图三候选显示宽并排（TW-RD 档，骨架默认 \qpRDWdef mm）。}\par
+\vspace{2mm}
+
+% ===== 上半：A3 彩色 vs 灰度（左右并排，各 84mm 栏位） =====
+\noindent
+\begin{minipage}[t]{84mm}
+  \centerline{\includegraphics[width=80mm]{光路-彩色源图}}\par
+  \vspace{0.8mm}
+  {\fontsize{9pt}{12pt}\selectfont\centering
+   【左】彩色光路源位图·原样引用（显示宽 80mm）\par
+   源＝选必1 第4章 光·中档卷 image4（甲照片＋乙光路图，乙含蓝色虚线 PQ）}
+\end{minipage}\hfill
+\begin{minipage}[t]{84mm}
+  \centerline{\includegraphics[width=80mm]{光路-灰度化版}}\par
+  \vspace{0.8mm}
+  {\fontsize{9pt}{12pt}\selectfont\centering
+   【右】同图灰度化版（PIL ITU-R 601 亮度·显示宽 80mm）\par
+   损失点自查：甲照片色调层次、乙蓝色虚线与黑实线的色相区分}
+\end{minipage}\par
+\vspace{2mm}
+{\fontsize{9pt}{12pt}\selectfont 拍板项 A3：色系总则「纯灰断言」是否豁免源位图——选「彩色保留（豁免）」则光族源图直印；选「一律灰度」则右半为成品形态。}\par
+\vspace{4mm}
+
+% ===== 下半：A2 读数刻度图 30/40/50mm 三档并排 =====
+{\fontsize{12.03pt}{16pt}\selectfont\heibf A2 读数刻度图·显示宽三候选档（源＝必修3 第11章实验卷 题1-2 图，20/50分度游标卡尺＋螺旋测微器）}\par
+\vspace{1.5mm}
+\noindent\hbox to\textwidth{%
+  \vtop{\hsize46mm\centerline{\includegraphics[width=30mm]{读数-刻度图}}\vskip0.6mm
+    \centerline{\fontsize{9pt}{12pt}\selectfont 候选 A＝30mm}}\hfill
+  \vtop{\hsize46mm\centerline{\includegraphics[width=40mm]{读数-刻度图}}\vskip0.6mm
+    \centerline{\fontsize{9pt}{12pt}\selectfont 候选 B＝40mm（骨架现默认）}}\hfill
+  \vtop{\hsize52mm\centerline{\includegraphics[width=50mm]{读数-刻度图}}\vskip0.6mm
+    \centerline{\fontsize{9pt}{12pt}\selectfont 候选 C＝50mm}}}\par
+\vspace{1.5mm}
+{\fontsize{9pt}{12pt}\selectfont 拍板项 A2：以「主尺毫米刻线不粘连、游标第 5 格对位可辨、测微器 15/20/25 标注可读」为下限判据（建议对样张 10× 放大目验），终值回填 \texttt{qp-parts.tex} TW-RD 段并升《全品零件库》。}\par
+\end{document}

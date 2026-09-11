@@ -1,0 +1,74 @@
+% ============================================================
+% 【物理骨架 0911｜继承件】＝数学 L1 答案册块宏原样继承（来源
+%   工作区/字替对照-0909/靠齐样张-0910/答案册/qp-answ-blocks.tex，md5 c6025f1b…）。
+%   答案册件条款①同构同号/②层级缩进 5.0mm/③六条改进随此继承；物理增量（C3 多值读数
+%   「41.20/1.199##1.200##」并列形制）在试点件内按样本验证，暂不落本件宏。
+%   答案册配图＝位图，用 qp-figs.tex 的 \qpfig 族（经 \ansfig 包一层居中）。
+% ============================================================
+% qp-answ-blocks.tex —— 正文块宏模块（答案册式样草案）
+% 依据：附则《全品零件库》ZS/HX/TB/TJ/XB 各组＋《全品基准总表》＋variantF/qp-blocks.tex。
+% 答案册专属形态＝**全品无先例·外推**（全品正文层无【答案】【分析】【详解】【点睛】字样，
+%   〔体系-v44改版取证〕①标签与符号 §一实证）；挂靠件＝零件库 §五「候选匹配零件建议表」：
+%   答案行【答案】→ ①G3 编注件（正文级同号＋标签档）②D3 题源标式（半角[]内联）；
+%   本 demo 采「题源标式」＝半角 []＋正文同号＋常规字重＋纯黑（交接-20260909c §二.3 六拍板①）。
+% ============================================================
+\usepackage{needspace}
+\usepackage{tikz}
+
+% multicol 安全的防孤悬 guard（variantF 同款）
+\newcommand{\glueguard}[1]{\vskip 0pt plus #1\baselineskip\penalty-100\vskip 0pt plus -#1\baselineskip}
+
+% ---------- 章首（通栏；全品 ZS-01/Zs-02/ZS-03） ----------
+% 方块组＝浅 6.9mm 坐基线＋深 6.9mm 叠右上（对角角触）＋右下 2.3mm 小深块下探 2.8mm（union 13.8×16.6mm）；
+% 章名 20.67pt \heizhang 距方块 3.1mm；下横线 0.2pt 通栏（全品 ZS-03）。
+\newcommand{\zhangtitle}[1]{%
+  \par\addvspace{2pt}\noindent
+  {\color{pnumbg}\rule{6.9mm}{6.9mm}}%
+  \raisebox{6.9mm}[0pt][0pt]{\color{midgray}\rule{6.9mm}{6.9mm}}%
+  \hspace{-2.3mm}\raisebox{-2.8mm}[0pt][0pt]{\color{midgray}\rule{2.3mm}{2.3mm}}%
+  \hspace{3.1mm}%
+  {\fontsize{20.67pt}{30pt}\selectfont\heizhang #1}\par
+  \vspace{-0.3mm}\noindent\rule{\textwidth}{0.2pt}\par}
+% 节标题 16.88pt \hejie 居中（全品 ZS-04：节标题不加粗＝唯一不粗层级）；横线→节 6.9mm
+\newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{4.4mm}%
+  {\centering\fontsize{16.88pt}{22pt}\selectfont\hejie #1\par}\addvspace{3.4mm}}
+
+% ---------- 分区组行（全品 JT-06 同构：组名黑体加粗＋宋体常规说明，同号 10.09pt 同行） ----------
+\newcommand{\qufen}[2]{\par\glueguard{1}\addvspace{4pt}\noindent
+  {\heibf #1}{\fontsize{10.09pt}{16pt}\selectfont：#2}\par\nopagebreak\addvspace{2pt}}
+
+% ---------- 答案行/解析行 ----------
+% 悬挂深度＝题号宽档：全品练习册单号 5.7–5.8mm／双位 7.5–7.7mm（〔版式〕§2.3）；
+% 本 demo 题号 1–4 单号档，取 5.8mm。题号＝半角「N.」11.4pt（全品笔画 2.0× 档）。
+\newlength{\anshang}
+\setlength{\anshang}{5.8mm}
+% 标签件：半角 []＋正文同号＋常规字重＋纯黑（六拍板①；全品正文区无灰色注记）
+\newcommand{\anlabel}[1]{#1}
+% ---------- v10-B 全品式层级缩进（对齐0911，替代 v8「全顶格」）----------
+% 依据＝草案 §7.1 更正版／§7.6 主脑像素实测：全品 p1 条目行≈70px／内容·续行≈100px，净缩进
+% ≈30px≈1.4 字→本件一档取 5.0mm。条目/标签行基左缘起排；内容与续行收一档；同条目内后续段
+% 一律收一档（\parindent 同值）。
+% 悬挂/缩进参数走 \everypar 重申：TeX 按「段首」取 \hangindent/\hangafter，段内空行另起段若
+% 不重申，其续行会掉回栏左缘（探针 _tmp-hang探针/t2 实测：仅段首重申者悬挂生效）。
+\newlength{\qpind}
+\setlength{\qpind}{5.0mm}
+% 知识点标题行（v10-B：全品「知识点N」实测居中于栏内〔§7.6〕——组名一行＋说明一行，两行各自
+% 居中于栏（合成整行居中时说明段会折出「——序与导学件同」居中孤尾，故分段）；
+% \qufen 分区组行仍顶格＝标签行口径不动）
+\newcommand{\kdhead}[2]{\par\glueguard{1}\addvspace{4pt}%
+  {\centering{\heibf #1}\par{\fontsize{10.09pt}{16pt}\selectfont#2\par}\nopagebreak\addvspace{2pt}}}
+% 题号——答案解析条目（v10-B：题号走 0pt 零宽盒顶格起、[答案] 行内跟随；续行与后续段收一档 \qpind）
+\newcommand{\ansitem}[2]{\par\glueguard{1}\addvspace{4pt}%
+  {\everypar{\hangindent\qpind\hangafter=1\setlength{\parindent}{\qpind}}%
+  \noindent
+  \makebox[0pt][l]{{\fontsize{11.4pt}{13pt}\selectfont\heihao{\numboldjian #1.}}}%
+  \hspace*{\anshang}{\anlabel [答案]}\hspace{0.5em}#2\par}}
+% [分析]/[详解]/[点睛]/[解析] 行（v10-B：标签行顶格起；续行与后续段收一档；【点睛】选配）
+\newcommand{\ansline}[2]{\par
+  {\everypar{\hangindent\qpind\hangafter=1\setlength{\parindent}{\qpind}}%
+  \noindent{\anlabel [#1]}\hspace{0.5em}#2\par}}
+% 图件（全品 TW-02 题下居中图档：27.7–36mm；图内字 7.3pt＝正文 72%）
+\newcommand{\figfont}{\fontsize{7.3pt}{9pt}\selectfont}
+\newcommand{\ansfig}[1]{\par\nopagebreak\vspace{1.4mm}%
+  \noindent\hspace*{\anshang}%
+  \makebox[\dimexpr\linewidth-\anshang\relax][c]{#1}\par\vspace{1.1mm}}

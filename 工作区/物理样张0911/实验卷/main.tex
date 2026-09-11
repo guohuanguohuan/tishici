@@ -1,0 +1,183 @@
+% ============================================================
+% 实验卷/main.tex —— 物理样张试点件2·实验卷切片（答案制A·正文侧）
+% 取材＝必修3 第11章实验卷《11.3 实验：导体电阻率的测量》（源件元素 3–127）：
+%   条目组11「影响导体电阻的因素（实验探究）」置首（＋(3)数据记录表＝B2 空格待填形制试点）
+%   ＋读数刻度图题 1–2（\qpfigrd，显示宽 84mm＝通栏位取上限，≥TW-RD 下限 50mm）
+%   ＋电路图题 3–6（源位图 \qpfig）。
+% 装载＝正文族（骨架 README §二）；页脚＝形制 A（\qpjianming＝实验卷；素面——品牌位只落
+%   测评卷形制 C 位与封面件，《全品基准总表》§三品牌位行）。
+% 答案制A：本件正文不印答案/解析（\ansline/\jiexi/\kongda 禁入）；答案册切片＝同目录
+%   答案册/main.tex（同构同号，题号集 1–6 对账；条目组11＝讲学栏目无答案，不入对账）。
+% 图红线：figs/ 全部＝旧件 docx word/media 源位图原样提取（仅改名，零加工；彩色源图
+%   原样保留——纯灰断言豁免已入规），禁矢量化重绘/禁 AI 三维。
+% 源位图对账（旧件＝高中物理/高中物理同步/人教版必修3 第11章 电路及其应用·实验卷（14题3条）.docx）：
+%   条11-四导体电路.png←expimg1.png[元5]；题1-50分度卡尺测微器.png←image32.png[元14]；
+%   题2-10分度卡尺测微器.png←image33.png[元22]；题3-甲乙丙丁四联图.jpeg←expimg1.jpeg[元37]；
+%   题4-甲测微器乙实物.png←expimg2.png[元61]；题4-丙IU图像.png←expimg3.png[元71]；
+%   题5-伏安法电路图.png←image61.png[元100]；题6-虚线框.png←expimg4.png[元112]；
+%   答案-题3-实物连线.jpeg←expimg2.jpeg[元45]；答案-题6-电路图.png←expimg5.png[元119]（后两张＝答案侧图）。
+% 编译：xelatex ×2（三0判据见骨架 README §六）；目验：python ../骨架/render.py . main 300。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第11章\quad 电路及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{实验卷}
+% 品牌位：实验卷＝素面（\ifqpbrand 默认 false，勿开）
+
+\begin{document}
+% ===== 通栏标题区（multicols 外） =====
+\zhangtitle{第11章\quad 电路及其应用}
+\jietitle{11.3 实验：导体电阻率的测量}
+
+\begin{multicols}{2}
+
+% ---------- 条目组（实验卷形制＝条目组置首，题组号沿用源件讲练号） ----------
+\tiaomu{11}{影响导体电阻的因素（实验探究）}
+
+（1）实验装置：如图所示，$a$、$b$、$c$、$d$ 是四条不同的金属导体。导体 $b$、$c$、$d$ 在长度、横截面积、材料三个因素方面，分别只有一个因素与导体 $a$ 不同。
+
+\qpfig[46]{条11-四导体电路}
+
+（2）实验原理
+
+①四个不同的导体串联，电流相同，因此，电阻之比等于相应的电压之比。
+
+②用控制变量法，探究导体的电阻与长度、横截面积、材料的关系。
+
+（3）数据记录：用图中电压表分别测出各导体两端的电压，把示数填入下表，并比较各导体电阻与导体 $a$ 的阻值之比。
+
+{\setlength{\tabcolsep}{3pt}\arrayrulecolor{gray122}
+\vspace{2.55mm}
+\noindent\begin{tabular}{!{\vline width 0.8pt}>{\fontsize{10.5pt}{13.9pt}\selectfont\centering\arraybackslash}m{13mm}!{\vline width 0.4pt}>{\fontsize{10.5pt}{13.9pt}\selectfont\centering\arraybackslash}m{31.5mm}!{\vline width 0.4pt}>{\fontsize{10.5pt}{13.9pt}\selectfont\centering\arraybackslash}m{31.5mm}!{\vline width 0.8pt}}
+\thickhline
+\makebox[\linewidth]{\textbf{导体}} & \makebox[\linewidth]{\textbf{电压表示数 $U/\unit{V}$}} & \makebox[\linewidth]{\textbf{电阻与 $a$ 的比值}} \\[0.45mm]
+\hline
+$a$ & & \\[1.3mm] \hline
+$b$ & & \\[1.3mm] \hline
+$c$ & & \\[1.3mm] \hline
+$d$ & & \\[1.3mm]
+\thickhline
+\end{tabular}\par\addvspace{2.8mm}
+}
+
+% ---------- 三级讲标题（小节位） ----------
+\xiaojietitle{游标卡尺与螺旋测微器的读数}
+
+\tiaomu{1}{用50分度游标卡尺测量笔芯的两端点间的距离和用螺旋测微器测量直径分别如图所示，则笔芯的长度 $L_{0}=$\kongbai\unit{mm}，$d=$\kongbai\unit{mm}。}
+
+\qpfigrd[68]{题1-50分度卡尺测微器}
+
+\tiaomu{2}{用游标卡尺测量圆柱体的内径如图所示，圆柱体的内径为\kongbai\unit{mm}；用螺旋测微器测量一金属丝的直径如图所示，金属丝的直径为\kongbai\unit{mm}。}
+
+\qpfigrd[68]{题2-10分度卡尺测微器}
+
+\xiaojietitle{金属丝电阻率的测量实验}
+
+\tiaomu{3}{为研究某金属导线材料的电阻率，实验小组用如图甲所示电路进行实验，调节金属导线上可动接线柱 $Q$ 的位置（如图乙所示），可以改变导线接入电路的长度，可动接线柱 $Q$ 有一定的电阻，但阻值未知。实验器材如下：}
+
+待测金属导线一根；
+
+电压表一个，量程 $0\sim3$\unit{V}，内阻约为 $\unit{3k\upOmega}$；
+
+电流表一个，量程 $0\sim0.6$\unit{A}，内阻约为 $\unit{0.1\upOmega}$；
+
+滑动变阻器 $R_{1}$（阻值范围 $0\sim10\unit{\upOmega}$，允许通过的最大电流为 $0.1$\unit{A}）；
+
+滑动变阻器 $R_{2}$（阻值范围 $0\sim20\unit{\upOmega}$，允许通过的最大电流为 $1$\unit{A}）；
+
+干电池两节，开关一个，导线若干，螺旋测微器一只。
+
+\qpfig[78]{题3-甲乙丙丁四联图}
+
+（1）请以笔画线代替导线，将图乙中未连接的导线补完整\kongbai。
+
+（2）滑动变阻器应该选\kongbai（选填“$R_{1}$”或“$R_{2}$”）；图甲中开关 $\unit{S}$ 闭合之前，应将滑动变阻器的滑片 $\unit{P}$ 置于\kongbai{}端（选填“$A$”或“$B$”）。
+
+（3）用螺旋测微器测量金属导线的直径如图丙所示，则导线的直径 $d=$\kongbai\unit{mm}。
+
+（4）多次改变导线接入电路的长度 $L$，测量不同长度时的电阻 $R_{x}$，作 $R_{x}$-$L$ 图像如图丁所示，测得图像中直线的斜率为 $k$，则该金属材料的电阻率为\kongbai（用 $k$ 和 $d$ 表示）。
+
+（5）仅考虑测量电阻时电表内阻的影响，根据实验数据求出的该金属材料的电阻率比真实值\kongbai（选填“偏大”“偏小”或“无影响”）。
+
+\tiaomu{4}{某学习小组对两种型号铅笔芯的电阻率进行测量。实验器材如下：}
+
+\qpfig[64]{题4-甲测微器乙实物}
+
+学生电源（输出电压 $0\sim16$\unit{V}）；
+
+滑动变阻器（最大阻值 $\unit{10\upOmega}$，额定电流 $\unit{2\ A}$）；
+
+电压表 $V$（量程 $\unit{3\ V}$，内阻未知）；
+
+电流表 $A$（量程 $\unit{3\ A}$，内阻未知）；
+
+待测铅笔芯 $R$（$X$ 型号、$Y$ 型号）；
+
+游标卡尺，螺旋测微器，开关 $S$，单刀双掷开关 $K$，导线若干。
+
+回答以下问题：
+
+（1）把待测铅笔芯接入图乙所示电路，闭合开关 $S$ 后，将滑动变阻器滑片由最右端向左调节到合适位置，将单刀双掷开关 $K$ 分别掷到 $1$、$2$ 端，观察到电压表示数变化比电流表示数变化更明显，则测量铅笔芯电阻时应将 $K$ 掷到\kongbai（填“1”或“2”）端；
+
+（2）正确连接电路，得到 $Y$ 型号铅笔芯 $I$-$U$ 图像如图丙所示，求得电阻 $R_{Y}=$\kongbai\unit{\upOmega}（保留3位有效数字）；采用同样方法得到 $X$ 型号铅笔芯的电阻为 $\unit{1.70\upOmega}$；
+
+\qpfig[52]{题4-丙IU图像}
+
+（3）使用螺旋测微器测得 $X$、$Y$ 型号铅笔芯的直径分别为 $D_{1}$、$D_{2}$，$D_{1}<D_{2}$，测量过程中接入电路的铅笔芯长度相等，则 $X$ 型号铅笔芯的电阻率\kongbai（填“大于”或“小于”）$Y$ 型号铅笔芯的电阻率。
+
+\tiaomu{5}{用伏安法测量一定值电阻的实验，所用的器材及规格如下：}
+
+待测电阻 $R_{x}$（约 $\unit{6\upOmega}$）；
+
+直流电流表（量程 $0\sim0.6$\unit{A}，内阻约 $\unit{2\upOmega}$）；
+
+直流电压表（量程 $0\sim3$\unit{V}，内阻约 $\unit{5k\upOmega}$）；
+
+直流电源（输出电压 $\unit{3\ V}$，内阻可不计）；
+
+滑动变阻器（$0\sim15\unit{\upOmega}$，允许最大电流 $\unit{1\ A}$）；
+
+电键一只，导线若干。
+
+\qpfig[42]{题5-伏安法电路图}
+
+（1）闭合开关前滑片应置于滑动变阻器的\kongbai{}端（填“左”或“右”）。
+
+（2）如图所示，若考虑电表内阻的影响，用两表示数算出 $R_{\text{测}}$，则\kongbai。
+
+\bindopt A．$R_{\text{测}}$ 比 $R$ 的真实值大\par
+\bindopt B．$R_{\text{测}}$ 比 $R$ 的真实值小\par
+\bindopt C．引起误差的原因是电压表分流\par
+\bindopt D．引起误差的原因是电流表分压\par
+
+\tiaomu{6}{（1）在探究“决定导线电阻因素”的实验中，需要进行以下测量：欲用伏安法测定一段电阻丝的电阻，其阻值约为 $\unit{12\upOmega}$，要求测量结果尽量准确，这位同学想使被测电阻 $R$ 两端的电压从零开始调节。他可选用的器材有：}
+
+①下列器材中，电流表应选用\kongbai、电压表应选用\kongbai、滑动变阻器应选用\kongbai（填器材前的标号）。
+
+②在如图所示的虚线框内画出你设计的实验电路图\kongbai。
+
+\qpfig[45]{题6-虚线框}
+
+A．电池组 $E$（$\unit{6\ V}$，内阻很小）；B．电流表 $A_{1}$（$0\sim3$\unit{A}，内阻约 $\unit{0.1\upOmega}$）
+
+C．电流表 $A_{2}$（$0\sim0.6$\unit{A}，内阻约 $\unit{1\upOmega}$）；D．电压表 $V_{1}$（$0\sim3$\unit{V}，内阻约 $\unit{3k\upOmega}$）
+
+E．电压表 $V_{2}$（$0\sim6$\unit{V}，内阻约 $\unit{6k\upOmega}$）
+
+F．滑动变阻器 $R_{1}$（$0\sim5\unit{\upOmega}$，$\unit{2\ A}$）
+
+G．滑动变阻器 $R_{2}$（$0\sim1\unit{k\upOmega}$，$\unit{1\ A}$）
+
+H．电键、导线
+
+\end{multicols}
+\end{document}

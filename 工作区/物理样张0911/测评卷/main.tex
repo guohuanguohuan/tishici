@@ -1,0 +1,195 @@
+% ============================================================
+% 测评卷/main.tex —— 物理样张试点件5·测评卷切片（答案制A·正文侧，2 页）
+% 取材＝必修3 第11章简单卷（15题）题 1–4＋卷首形制（立项盘点 §三·序5）：
+%   题1 电源的说法（元10–19，无图）；题2 手机电池铭牌（元20–36，图＝元21）；
+%   题3 盐水导电等效电流（元41–62，图＝元42）；题4 电流微观表达式计算（元71–85，无图）。
+%   简单卷讲部寄生段（节标题/讲标题/条目/横幅图）不入卷面——测评卷只留题块＋卷首零件。
+% 装载＝正文族（骨架 README §二）；页脚＝形制 C（\qpFootTextRow·YJ-02 文字行，无灰块）
+%   ＋品牌位开（\qpbrandtrue＝羿郭工作室，落偶页 LE 原全品串位——《全品基准总表》§三品牌位行）。
+% 卷头 JT-01～06 件型层＝照抄数学测评卷模板（工作区/字替对照-0909/靠齐样张-0910/测评卷/main.tex）：
+%   丝带角饰「数学」改「物理」；字内距 0.04em 件型档随带；8 开横放三栏页面参数同档；
+%   二次 \geometry 后已补 \setlength{\headwidth}{\textwidth}（骨架 README §四-C 坑规）。
+% 件型层登记（随件上报）：①两项槽距 53.05mm、选项行距 19pt＝沿数学件型层实测档（栏宽同为
+%   120mm，物理未另扫）；②题2 铭牌位图显示宽 44mm＝TW-02 档上限 36mm 的件型层放宽（黑底
+%   白字密文照片，保可读；仍 ≤84mm 硬闸）；题3 装置图 24mm＝TW-01 档内；③卷面文案为切片
+%   占位口径：时间/分值（90分钟/100分）与组行题数分值按截排 4 题自洽拟定，正式排整卷时
+%   随全卷结构替换；卷名＝骨架默认「单元素养测评卷（一）」（与默认章名 第11章 成对）。
+% 答案制A：正文 0 答案宏——源题块【答案】/【难度】/【知识点】/【详解】标签行全部不入卷面
+%   （选择题行尾只挂（　）＝TJ-08 \kw 固定列位）；答案侧＝同目录 答案册/main.tex
+%   （同构同号，题号集 {1,2,3,4} 对账，零缺漏零多余）。
+% 图红线：figs/ ＝旧件 docx word/media 源位图原样提取（仅改名零加工；彩色源图原样保留），
+%   禁矢量化重绘/禁 AI 三维。源位图对账：题2-手机电池铭牌.png←image8.png[元21]；
+%   题3-盐水导电装置图.png←image10.png[元42]。
+% 编译：xelatex ×2（三 0 判据见骨架 README §六）；目验：python ../骨架/render.py . main 300。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}   % 自动装载 qp-phy-params.tex
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpjianming}{测评卷}
+% \qpzhangming＝默认 第11章\quad 电路及其应用；\qpbuce＝默认 必修第三册；
+% \juanname＝默认 单元素养测评卷（一）；\qpbbiaoS＝默认 RJ——本件均随默认。
+\qpbrandtrue       % 品牌位开（形制 C 偶页 LE＝羿郭工作室）
+\qpFootTextRow     % 页脚换形制 C（YJ-02 文字行·测评卷档，覆盖默认形制 A 灰块）
+
+% ------------------------------------------------------------
+% 件型层 A｜页面：8 开横放三栏（照数学测评卷模板档：左右缘 8.9mm、栏宽 120.0mm、栏距 11.0mm；
+%   顶 12.0mm＝JT-02 填写行行顶距页顶；底 17.6mm；footskip 7.1mm＝YJ-02 带底距页底换算）
+% ------------------------------------------------------------
+\geometry{paperwidth=399.8mm,paperheight=284.2mm,left=8.9mm,right=8.9mm,
+  top=12.0mm,bottom=17.6mm,twoside,headheight=0pt,headsep=0pt,footskip=7.1mm}
+\setlength{\topskip}{0pt}          % 首行基线＝版心顶（配合 \jpcol 零高参考盒，三栏等高起排）
+\raggedbottom                      % 测评卷栏底自然参差，不强拉 flush
+\renewcommand{\normalsize}{\fontsize{10.5pt}{17.7pt}\selectfont}  % 测评卷：10.5pt 宋体／行距主峰 17.7pt
+\linespread{1}\normalsize
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newlength{\jpcolw}\setlength{\jpcolw}{120.0mm}
+\newlength{\jpgap}\setlength{\jpgap}{11.0mm}
+% 字内距件型级覆盖：导学件 0.10em → 测评卷实测 0.04em（数学件型层标定随带，骨架 README §七-5）
+\xeCJKsetup{CJKglue={\hskip 0.04em plus 0.04em minus 0.01em}}
+
+% 色档（扫描页实测灰值直译；零件库登记值见 qp-parts JT-01/03/04 注）
+\definecolor{silklight}{gray}{0.8235}   % 灰210 浅带（\qpJTaGrayLight）
+\definecolor{silkdark}{gray}{0.6510}    % 灰166 深带（\qpJTaGrayDeep）
+\definecolor{juanrule}{gray}{0.1255}    % 灰32 卷名下划线（\qpJTcRuleGray）
+\definecolor{subgrey}{gray}{0.4}        % 灰102 副题（\qpJTdGray）
+
+% ------------------------------------------------------------
+% 件型层 B｜JT-01 丝带角饰——TikZ 矢量零件（卷头形制件，非题图——图红线不涉）
+%   几何＝数学 p01 逐像素实测档原样照抄；白字「数学」改「物理」（骨架 README §七-5）
+% ------------------------------------------------------------
+\newcommand{\juanmathSize}{17pt}   % 「物理」字号：沿数学件型层实测档（\qpJTaMathSize=26pt 系墨高反推登记值）
+\newcommand{\sishou}{%
+  \begin{tikzpicture}[overlay,remember picture,x=1mm,y=1mm]
+    \path (current page.north west) coordinate (O);
+    \begin{scope}[shift={(O)}]
+      \fill[silklight] (6.9,-9.39) -- (40.1,-9.39) -- (6.9,-42.59) -- cycle;
+      \draw[white,line width=0.28mm] (9.21,-40.29) -- (9.21,-11.63) -- (37.87,-11.63);
+      \fill[silkdark] (22.94,-8.21) -- (34.15,-8.21) -- (5.78,-36.58) -- (5.78,-25.37) -- cycle;
+      % 两端折影：外缘斜边外侧各一枚直角边 1.0mm 的等腰直角小三角（实测灰同 166）
+      \fill[silkdark] (34.15,-8.21) -- (34.15,-9.20) -- (33.16,-9.20) -- cycle;
+      \fill[silkdark] (5.78,-36.58) -- (6.78,-36.58) -- (6.78,-35.58) -- cycle;
+      \node[white,inner sep=0pt,anchor=center,rotate=45] at (17.23,-19.74)
+        {\fontsize{\juanmathSize}{\juanmathSize}\selectfont\heitiao 物理};
+    \end{scope}
+  \end{tikzpicture}}
+
+% ------------------------------------------------------------
+% 件型层 C｜卷头零件（JT-02～JT-06）＋题区零件（TJ-02/05/07/08）——照数学模板
+%   卷头各行以基线距排布（零高参考盒＋\nointerlineskip\vskip）；\vgt{目标基线距} 供正文段间使用
+% ------------------------------------------------------------
+\newcommand{\zeroheight}[1]{\raisebox{0pt}[0pt][0pt]{#1}}
+\newcommand{\jpcen}[1]{\hbox to\jpcolw{\hfil\zeroheight{#1}\hfil}\nointerlineskip}
+\newcommand{\jpright}[1]{\hbox to\jpcolw{\hfill\zeroheight{#1}}\nointerlineskip}
+\newcommand{\vgt}[1]{\par\vskip\dimexpr#1-6.25mm\relax}
+
+% JT-02 填写行：标签黑体加粗 11pt 纯黑＋冒号＋下划线 10.4mm×0.2mm，三组间距 1.4mm
+\newcommand{\tianxieg}[1]{{\fontsize{\qpJTbLabelSize}{13pt}\selectfont\heitiao #1：}%
+  \rule[-0.62mm]{\qpJTbLineLen}{0.2mm}}
+\newcommand{\jtianxie}{\tianxieg{班级}\hspace{\qpJTbGapGrp}\tianxieg{姓名}%
+  \hspace{\qpJTbGapGrp}\tianxieg{得分}}
+% JT-03 卷名：黑体加粗纯黑＋下划线 0.4pt×71.0mm 灰32；零行内字距；卷名串走 \juanname 与页脚对账
+\newcommand{\juanmingSize}{20.5pt}
+\newcommand{\jjuanming}{{\fontsize{\juanmingSize}{26pt}\selectfont\heizhang
+  \renewcommand{\CJKglue}{\hskip 0pt}\juanname}}
+\newcommand{\jjunrule}{{\color{juanrule}\rule{\qpJTcRuleLen}{\qpJTcRule}}}
+% JT-04 副题：14pt 黑体加粗 灰102 居中（标题级＝撤字内距，与卷名同理）；物理副题＝章名
+\newcommand{\jfuti}{{\fontsize{\qpJTdSize}{18pt}\selectfont\heitiao\color{subgrey}%
+  \renewcommand{\CJKglue}{\hskip 0pt}第11章\quad 电路及其应用}}
+% JT-05 时间分值行：10.5pt 宋体常规 居中（值＝件型层占位文案，见头注③）
+\newcommand{\jptime}{{\fontsize{\qpJTeSize}{17.7pt}\selectfont（时间：90分钟\quad 分值：100分）}}
+% JT-06 分区组行：组名黑体加粗＋说明宋体常规，同号 10.5pt 同行；续行内收 5.7mm（TJ-02 实测）
+\newcommand{\zuhang}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{\qpJTfSize}{17.7pt}\selectfont\heitiao #1}#2\par}
+% TJ-02 悬挂题号：半角「N.」特粗黑体数字 11.4pt＋隙 2.7mm，续行内收 5.7mm
+\newcommand{\ti}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{11.4pt}{17.7pt}\selectfont\heihao{\numboldjian #1}.}\hspace{2.7mm}#2\par}
+% TJ-05 分值括注（题号后、宋体常规同号）
+\newcommand{\fenzhi}[1]{（#1分）}
+% TJ-07 选项行：10.5pt 常规、行距 19pt（数学件型层档）；整行内收 5.7mm；4/2/1 项每行网格
+\newcommand{\optline}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  {\fontsize{10.5pt}{19pt}\selectfont #1}\par}
+% 两项槽距 53.05mm＝数学扫描页 p01 两项行众数实测档（同栏宽 120mm 随带，见头注①）
+\newcommand{\optII}[2]{\makebox[53.05mm][l]{#1}#2}
+\newcommand{\optIV}[4]{\makebox[21.5mm][l]{#1}\makebox[21.5mm][l]{#2}\makebox[21.5mm][l]{#3}#4}
+% TJ-08 括号固定列位：右括号右缘距栏右 5.4mm
+\newcommand{\kw}{\hfill（\hspace{3.6mm}）\hspace*{5.4mm}}
+
+% 卷头基线距（数学扫描页实测档随带）
+\newdimen\hA \hA=3.03mm    % 版心顶→填写行基线（JT-02）
+\newdimen\hB \hB=12.12mm   % 填写行→卷名基线（JT-03）
+\newdimen\hC \hC=1.89mm    % 卷名→下划线
+\newdimen\hD \hD=5.95mm    % 下划线→副题基线（JT-04）
+\newdimen\hE \hE=8.04mm    % 副题→时间行基线（JT-05）
+\newdimen\hF \hF=5.70mm    % 时间行→组行段顶（JT-06）
+\newdimen\hG \hG=6.35mm    % 组行末→首题基线
+\newcommand{\jphead}{\hbox to\jpcolw{\sishou\hfill}\nointerlineskip
+  \vskip\hA\jpright{\jtianxie}%
+  \vskip\hB\jpcen{\jjuanming}%
+  \vskip\hC\jpcen{\jjunrule}%
+  \vskip\hD\jpcen{\jfuti}%
+  \vskip\hE\jpcen{\jptime}%
+  \vskip\hF
+  \zuhang{一、选择题}{：本题共3小题，每小题6分，共18分.\ 在每小题给出的四个选项中，只有一项是符合题目要求的.}%
+  \vgt{\hG}}
+
+% ------------------------------------------------------------
+% 件型层 D｜形制 C 页脚（\qpFootTextRow）随 8 开横放的 \headwidth 钉回（骨架 README §四-C 坑规：
+%   fancyhdr 首置随 qp-layout 首次 \geometry（A4）定 175.6mm，二次 \geometry 不换页型不回改）
+% ------------------------------------------------------------
+\setlength{\headwidth}{\textwidth}
+
+% ------------------------------------------------------------
+% 件型层 E｜三栏排布器（照数学模板：三栏顶边等高起排于版心顶，零高参考盒）
+% ------------------------------------------------------------
+\newcommand{\jpcol}[1]{\raisebox{0pt}[0pt][0pt]{\vtop{\hsize\jpcolw\parskip0pt\parindent0pt
+  \fontsize{10.5pt}{17.7pt}\selectfont\relax#1}}}
+\newcommand{\jpthree}[3]{\nointerlineskip\noindent\jpcol{#1}\hspace{\jpgap}\jpcol{#2}%
+  \hspace{\jpgap}\jpcol{#3}\par}
+% 栏首零高锚线：\vtop 参考点＝首行基线，\topskip=0 会把它顶在版心顶上（墨顶反高约 3.1mm）；
+% 先垫一条零高空行，真正首行基线落到「版心顶＋字高」处＝墨顶与版心顶齐平。卷头页栏1 首件是
+% 丝带零高 hbox，天然自带此锚，无需再加
+\newcommand{\jplead}{\hbox{}\nointerlineskip}
+
+\begin{document}
+% ===================== 第 1 页＝卷头页（栏1 卷头＋题1；栏2 题2；栏3 题3） =====================
+\jpthree{\jphead
+  \ti{1}{下列说法中，正确的是\kw}
+  \optline{A．电源的作用是提供电荷；}
+  \optline{B．电源实质上也是一个用电器，也需要外界提供能量；}
+  \optline{C．电源的作用就是将其他形式的能转化为电能；}
+  \optline{D．电源的作用是在电源内部把电子由负极不断地搬运到正极，从而保持稳定的电势差}
+}{\jplead
+  \ti{2}{如图为某手机电池的铭牌，第一行标有“$3.8$\unit{V}，$3000$\unit{mAh}（$11.4$\unit{Wh}）”.对该铭牌参数的分析，下列说法正确的是\kw}
+  \qpfig[44]{题2-手机电池铭牌}
+  \optline{\optII{A．铭牌中的Wh是功率的单位；}{B．铭牌中的mAh是能量的单位；}}
+  \optline{C．该电池放电时能输出的总能量约为 $11.4$\unit{J}；}
+  \optline{D．该电池放电时能输出的总电荷量约为 $1.08\times10^{4}$\unit{C}}
+}{\jplead
+  \ti{3}{如图所示，电源正负极分别接 $A$、$B$ 金属板，给容器内的盐水通电，$t$ 时间内通过溶液内截面 $S$ 的一价正离子数是 $n_{1}$，一价负离子数是 $n_{2}$，设元电荷为 $e$，以下说法中正确的是\kw}
+  \qpfig[24]{题3-盐水导电装置图}
+  \optline{A．只有正离子的定向移动才能产生电流；}
+  \optline{B．电解液内正、负离子向相反方向移动，电流抵消；}
+  \optline{\optII{C．电流 $I=\dfrac{n_{1}e}{t}$；}{D．电流 $I=\dfrac{(n_{1}+n_{2})e}{t}$}}
+}
+\newpage
+% ===================== 第 2 页＝内页（栏1 组行二＋题4；栏2/栏3＝截排留白） =====================
+%   偶页页脚＝形制 C LE 带：页码02·卷·品牌位（羿郭工作室）·学科·册名·RJ——品牌像素目验页
+\jpthree{\jplead
+  \zuhang{二、计算题}{：本题共1小题，共18分.\ 解答应写出必要的文字说明、方程式和重要演算步骤.}
+  \vgt{\hG}
+  \ti{4}{\fenzhi{18}某导线中的电流 $I=1\times10^{-8}$\unit{A}，导线的横截面积 $S=1$\unit{mm^{2}}.已知电子电荷量 $e=1.6\times10^{-19}$\unit{C}，导体每立方米内有 $n=8.5\times10^{28}$ 个自由电子.\ 求：}
+  （1）在 $1$\unit{s} 内定向移动通过导线横截面的电子个数 $N$；
+
+  （2）自由电子定向移动的速度大小 $v$；
+
+  （3）自由电子沿导线定向移动 $1$\unit{cm} 所需要的时间 $t$.
+}{}{}
+\end{document}

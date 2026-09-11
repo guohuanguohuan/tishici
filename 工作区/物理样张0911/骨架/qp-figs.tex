@@ -1,0 +1,74 @@
+% ============================================================
+% qp-figs.tex —— 物理图族模块（骨架 0911 新设；正文族与答案册族共用）
+% 红线（立项盘点 §二 A 组＋公共规则「优先用原图、三维禁重绘」）：
+%   ① 物理图族一律**源位图引用**（\includegraphics），全库 1010png+21jpg 零矢量存量；
+%   ② 禁矢量化重绘（TikZ 复刻源图不立项；补绘属逐图例外登记，须另批）；
+%   ③ 禁 AI 三维图（A6 三维装置/立体磁场图一律源位图）；
+%   ④ 硬闸＝显示宽不超栏宽 84.0mm（《缩档轮-规格》），超闸编译期告警（QP-FIGS）。
+% 件目录约定：源位图放件目录 figs/ 下（本件已 \graphicspath{{figs/}}，引用名可省扩展名）。
+% 档位登记（零件库 TW 系＋物理新设 TW-RD，见 qp-parts.tex 尾段）：
+%   TW-01 题侧嵌图 26.5–32mm ／ TW-02 题下居中 27.7–36mm ／ TW-03 并排每张 18–24mm
+%   TW-04 选项小图 9–13mm ／ TW-RD 读数刻度图 候选 30/40/50mm（待拍板，默认 40）
+%   图内标签判据 ≈7.5pt 对位图不适用（源图原样，缩档只改显示宽）；刻度图按 TW-RD 另判。
+% ============================================================
+\usepackage{graphicx}
+\graphicspath{{figs/}}
+
+% ---------- 宽度硬闸 ----------
+\newlength{\qpfigwd}
+\newcommand{\qpFigMaxW}{84.0mm}
+\newcommand{\qpfigsetw}[1]{\setlength{\qpfigwd}{#1mm}%
+  \ifdim\qpfigwd>\qpFigMaxW\relax
+    \GenericWarning{QP-FIGS: 显示宽 #1mm 超栏宽硬闸 \qpFigMaxW}{QP-FIGS 警告: 图显示宽 #1mm 超栏宽硬闸\space 请缩档或登记例外}%
+  \fi}
+% 子图标签（(甲)(乙) 物理新设 v1 待目验）：宋体 7.5pt 级、置每子图下居中
+\newcommand{\qpfigsub}[1]{{\fontsize{7.5pt}{9pt}\selectfont（#1）}}
+
+% ---------- TW-02 题下居中图（默认档 32mm＝区间中值；上距 2.8／下距 2.2mm＝\qpTWbGapUp/Dn） ----------
+% 用法：\qpfig{file} 或 \qpfig[30.5]{file}（#1＝显示宽 mm 数值）
+\newcommand{\qpfig}[2][32]{\par\addvspace{2.8mm}\begingroup\qpfigsetw{#1}%
+  \noindent\centerline{\includegraphics[width=\qpfigwd]{#2}}\endgroup\addvspace{2.2mm}}
+
+% ---------- TW-03 并排双图／三图（默认每张 22mm；(甲)(乙)/(甲)(乙)(丙)） ----------
+% 盒间胶＝\hfill 均分（墨缘定胶属逐图活，样张阶段以档内宽度+居中缝为准，TW-03 硬闸不变）
+% 注：\vtop 内 \hsize 须局部钉为图宽——否则 \centerline 按外层 \hsize（栏宽 84mm）铺盒必 overfull
+%   （试样页 0911 实证 999pt 超宽，同修本族）。
+\newcommand{\qpfigpair}[3][22]{\par\addvspace{2.8mm}\begingroup\qpfigsetw{#1}%
+  \noindent\hbox to\linewidth{\hfill
+    \vtop{\hsize\qpfigwd\centerline{\includegraphics[width=\qpfigwd]{#2}}\vskip0.6mm\centerline{\qpfigsub{甲}}}%
+    \hfill\hfill
+    \vtop{\hsize\qpfigwd\centerline{\includegraphics[width=\qpfigwd]{#3}}\vskip0.6mm\centerline{\qpfigsub{乙}}}%
+    \hfill}\endgroup\addvspace{2.2mm}}
+\newcommand{\qpfigtrio}[4][18]{\par\addvspace{2.8mm}\begingroup\qpfigsetw{#1}%
+  \noindent\hbox to\linewidth{\hfill
+    \vtop{\hsize\qpfigwd\centerline{\includegraphics[width=\qpfigwd]{#2}}\vskip0.6mm\centerline{\qpfigsub{甲}}}%
+    \hfill
+    \vtop{\hsize\qpfigwd\centerline{\includegraphics[width=\qpfigwd]{#3}}\vskip0.6mm\centerline{\qpfigsub{乙}}}%
+    \hfill
+    \vtop{\hsize\qpfigwd\centerline{\includegraphics[width=\qpfigwd]{#4}}\vskip0.6mm\centerline{\qpfigsub{丙}}}%
+    \hfill}\endgroup\addvspace{2.2mm}}
+
+% ---------- TW-RD 读数刻度图（游标卡尺/螺旋测微器/表盘；显示宽下限待拍板） ----------
+% 默认宽走 \qpRDWdef（qp-parts.tex 尾段注册，候选 30/40/50mm，试样页对照后回填）；
+% 刻度可读是硬需求——本族**只许放大不许低于下限**：\qpfigrd[宽] 若低于 \qpRDWdef 告警。
+\newcommand{\qpfigrd}[2][\qpRDWdef]{\par\addvspace{2.8mm}\begingroup
+  \ifdim\dimexpr#1mm\relax<\dimexpr\qpRDWdef mm\relax
+    \GenericWarning{QP-FIGS: 读数图宽 #1mm 低于下限 \qpRDWdef mm}{QP-FIGS 警告: 读数刻度图显示宽低于 TW-RD 下限}%
+  \fi
+  \qpfigsetw{#1}%
+  \noindent\centerline{\includegraphics[width=\qpfigwd]{#2}}\endgroup\addvspace{2.2mm}}
+
+% ---------- TW-04 选项小图行（一行 N 张 9–13mm；行内自排示例：件侧
+%     {\qpfigopt{9.5}{f1}\qpfigopt{9.5}{f2}…} 直排于选项行） ----------
+\newcommand{\qpfigopt}[2]{\begingroup\qpfigsetw{#1}\raisebox{-\totalheight}{\includegraphics[width=\qpfigwd]{#2}}\endgroup}
+% 注：\raisebox 负总高使图底对齐基线下方（选项行小图）；大图勿用本宏，走 \qpfig。
+
+% ---------- 物理量记号小挂（立项盘点 C4：继承数学式骨架＋少量新挂） ----------
+% 单位正体：V=4\,\unit{V} 式（数学模式内使用；\, 薄隙由调用侧给）
+% 坑规（smoke 0911 实证）：unicode-math 下 \Omega 默认发 \symbb（U+1D6FA 缺字），单位/量值内
+%   希腊字母一律取 \up 前缀直立族——\unit{1.0\upOmega}、\unit{\upmu m} 式。
+\newcommand{\unit}[1]{\ensuremath{\mathrm{#1}}}
+% 矢量记号：\vect{F} ＝ 向量箭头（继承 unicode-math/Termes \overrightarrow，正体字母自动斜体化随数学族）
+\newcommand{\vect}[1]{\ensuremath{\overrightarrow{#1}}}
+% ×10 幂：\powten{-3} → ×10^{-3}（单位行内常用）
+\newcommand{\powten}[1]{\ensuremath{\times10^{#1}}}
