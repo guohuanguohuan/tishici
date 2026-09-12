@@ -1,0 +1,223 @@
+% ============================================================
+% M2 轮4 成卷·S6 件1 —— 单元素养测评卷（一）第一章（19 题足额·新高考 19 题式）
+% 2026-09-12｜执行：S6 成卷代理（Kimi K2.8 第三臂首派，看板九十四）
+% 样式基线＝v11 测评卷样张（工作区/字替对照-0909/靠齐样张-0910/测评卷/），
+%   六宏（qp-fonts/layout/parts/headfoot/titles/blocks）原样拷贝、零改动；件型层照抄样张
+%   （页面/卷头/\zuhang 四节头/页脚羿郭工作室/三栏器），仅替换成卷正文＋卷末题号-答案表。
+% 题源（选型规则＝排产单 §一.4⑤＋看板九十①）：
+%   ④后备净余量 12 件＋存疑②选入 1 件＋命制件 7 件（难6×1／简7×3／简8×3）＝19；
+%   题型转换 4 件（复习A·4／复习A·1／习题1—2B·3／习题1—1A·8 由题组转选择，数学不动）；
+%   滚A/滚B 题不入卷（卷间不撞题）；衔接 29 题不入卷；答案制A＝题答分离，卷末题号-答案表。
+% 编译门：xelatex main.tex ×2 遍 → python render.py（150dpi → png/pageN.png）；三 0 读数见卷件值台账。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ------------------------------------------------------------
+% 件型层 A｜页面：8 开横放三栏（照 v11 样张件型层，零改动）
+% ------------------------------------------------------------
+\geometry{paperwidth=399.8mm,paperheight=284.2mm,left=8.9mm,right=8.9mm,
+  top=12.0mm,bottom=17.6mm,twoside,headheight=0pt,headsep=0pt,footskip=7.1mm}
+\setlength{\topskip}{0pt}
+\raggedbottom
+\renewcommand{\normalsize}{\fontsize{10.5pt}{17.7pt}\selectfont}
+\linespread{1}\normalsize
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newlength{\jpcolw}\setlength{\jpcolw}{120.0mm}
+\newlength{\jpgap}\setlength{\jpgap}{11.0mm}
+\xeCJKsetup{CJKglue={\hskip 0.04em plus 0.04em minus 0.01em}}
+
+\definecolor{silklight}{gray}{0.8235}
+\definecolor{silkdark}{gray}{0.6510}
+\definecolor{juanrule}{gray}{0.1255}
+\definecolor{subgrey}{gray}{0.4}
+
+% ------------------------------------------------------------
+% 件型层 B｜JT-01 丝带角饰（照抄样张）
+% ------------------------------------------------------------
+\newcommand{\juanmathSize}{17pt}
+\newcommand{\sishou}{%
+  \begin{tikzpicture}[overlay,remember picture,x=1mm,y=1mm]
+    \path (current page.north west) coordinate (O);
+    \begin{scope}[shift={(O)}]
+      \fill[silklight] (6.9,-9.39) -- (40.1,-9.39) -- (6.9,-42.59) -- cycle;
+      \draw[white,line width=0.28mm] (9.21,-40.29) -- (9.21,-11.63) -- (37.87,-11.63);
+      \fill[silkdark] (22.94,-8.21) -- (34.15,-8.21) -- (5.78,-36.58) -- (5.78,-25.37) -- cycle;
+      \fill[silkdark] (34.15,-8.21) -- (34.15,-9.20) -- (33.16,-9.20) -- cycle;
+      \fill[silkdark] (5.78,-36.58) -- (6.78,-36.58) -- (6.78,-35.58) -- cycle;
+      \node[white,inner sep=0pt,anchor=center,rotate=45] at (17.23,-19.74)
+        {\fontsize{\juanmathSize}{\juanmathSize}\selectfont\heitiao 数学};
+    \end{scope}
+  \end{tikzpicture}}
+
+% ------------------------------------------------------------
+% 件型层 C｜卷头零件＋题区零件（照抄样张；另补 \qpart 解答小问／\daanbiao 卷末答案表）
+% ------------------------------------------------------------
+\newcommand{\zeroheight}[1]{\raisebox{0pt}[0pt][0pt]{#1}}
+\newcommand{\jpcen}[1]{\hbox to\jpcolw{\hfil\zeroheight{#1}\hfil}\nointerlineskip}
+\newcommand{\jpright}[1]{\hbox to\jpcolw{\hfill\zeroheight{#1}}\nointerlineskip}
+\newcommand{\vgt}[1]{\par\vskip\dimexpr#1-6.25mm\relax}
+
+\newcommand{\tianxieg}[1]{{\fontsize{\qpJTbLabelSize}{13pt}\selectfont\heitiao #1：}%
+  \rule[-0.62mm]{\qpJTbLineLen}{0.2mm}}
+\newcommand{\jtianxie}{\tianxieg{班级}\hspace{\qpJTbGapGrp}\tianxieg{姓名}%
+  \hspace{\qpJTbGapGrp}\tianxieg{得分}}
+\newcommand{\juanmingSize}{20.5pt}
+\newcommand{\jjuanming}{{\fontsize{\juanmingSize}{26pt}\selectfont\heizhang
+  \renewcommand{\CJKglue}{\hskip 0pt}单元素养测评卷（一）}}
+\newcommand{\jjunrule}{{\color{juanrule}\rule{\qpJTcRuleLen}{\qpJTcRule}}}
+\newcommand{\jfuti}{{\fontsize{\qpJTdSize}{18pt}\selectfont\heitiao\color{subgrey}%
+  \renewcommand{\CJKglue}{\hskip 0pt}第一章}}
+\newcommand{\jptime}{{\fontsize{\qpJTeSize}{17.7pt}\selectfont（时间：120分钟\quad 分值：150分）}}
+\newcommand{\zuhang}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{\qpJTfSize}{17.7pt}\selectfont\heitiao #1}#2\par}
+\newcommand{\ti}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{11.4pt}{17.7pt}\selectfont\heihao{\numboldjian #1}.}\hspace{2.7mm}#2\par}
+\newcommand{\fenzhi}[1]{（#1分）}
+\newcommand{\optline}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  {\fontsize{10.5pt}{19pt}\selectfont #1}\par}
+\newcommand{\optII}[2]{\makebox[53.05mm][l]{#1}#2}
+\newcommand{\optIV}[4]{\makebox[21.5mm][l]{#1}\makebox[21.5mm][l]{#2}\makebox[21.5mm][l]{#3}#4}
+\newcommand{\kw}{\hfill（\hspace{3.6mm}）\hspace*{5.4mm}}
+% 解答题小问行（续行内收 5.7mm，与题号悬挂同位）
+\newcommand{\qpart}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  \hspace*{5.7mm}{\fontsize{10.5pt}{17.7pt}\selectfont #1}\par}
+
+\newdimen\hA \hA=3.03mm
+\newdimen\hB \hB=12.12mm
+\newdimen\hC \hC=1.89mm
+\newdimen\hD \hD=5.95mm
+\newdimen\hE \hE=8.04mm
+\newdimen\hF \hF=5.70mm
+\newdimen\hG \hG=6.35mm
+\newcommand{\jphead}{\hbox to\jpcolw{\sishou\hfill}\nointerlineskip
+  \vskip\hA\jpright{\jtianxie}%
+  \vskip\hB\jpcen{\jjuanming}%
+  \vskip\hC\jpcen{\jjunrule}%
+  \vskip\hD\jpcen{\jfuti}%
+  \vskip\hE\jpcen{\jptime}%
+  \vskip\hF
+  \zuhang{一、选择题}{：本题共8小题，每小题5分，共40分．\ 在每小题给出的四个选项中，只有一项是符合题目要求的．}%
+  \vgt{\hG}}
+
+% ------------------------------------------------------------
+% 件型层 D｜YJ-02 文字行页脚（照抄样张：奇页右置卷名·测评卷，偶页左置羿郭工作室品牌）
+% ------------------------------------------------------------
+\newcommand{\jpnum}[1]{{\fontsize{\qpYJbNumSize}{\qpYJbNumSize}\selectfont\numbold #1}}
+\newcommand{\jptxtsize}{7.5pt}
+\newcommand{\jptxt}{\fontsize{\jptxtsize}{\jptxtsize}\selectfont}
+\newcommand{\juanname}{单元素养测评卷（一）}
+\newcommand{\pqt}{\ifnum\value{page}<10 0\fi\thepage}
+\setlength{\headwidth}{\textwidth}
+\fancyfoot[RO]{\jptxt\juanname\hspace{3.95mm}{\heitiao 测评卷}\hspace{3.88mm}卷\hspace{2.25mm}\jpnum{\pqt}}
+\fancyfoot[LE]{\jptxt\jpnum{\pqt}\hspace{1.9mm}卷\hspace{3.95mm}{\heitiao 羿郭工作室}%
+  \hspace{3.0mm}高中数学\hspace{2.75mm}选择性必修第一册\hspace{2.8mm}RJB}
+
+% ------------------------------------------------------------
+% 件型层 E｜三栏排布器（照抄样张）
+% ------------------------------------------------------------
+\newcommand{\jpcol}[1]{\raisebox{0pt}[0pt][0pt]{\vtop{\hsize\jpcolw\parskip0pt\parindent0pt
+  \fontsize{10.5pt}{17.7pt}\selectfont\relax#1}}}
+\newcommand{\jpthree}[3]{\nointerlineskip\noindent\jpcol{#1}\hspace{\jpgap}\jpcol{#2}%
+  \hspace{\jpgap}\jpcol{#3}\par}
+\newcommand{\jplead}{\hbox{}\nointerlineskip}
+
+% 卷末题号-答案表（全品式登记项，看板八十三⑤）：两排小表，题号/答案双行
+\newcommand{\datu}[1]{{\fontsize{9pt}{12pt}\selectfont #1}}
+\newcommand{\dabiao}{%
+  \par\vgt{\hG}\noindent{\fontsize{10.5pt}{17.7pt}\selectfont\heitiao 答案速查}\par\nopagebreak
+  \vskip 1.2mm\noindent\datu{\setlength{\tabcolsep}{1.4pt}%
+  \begin{tabular}{|c|*{19}{c|}}
+  \hline
+  题号 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 \\ \hline
+  答案 & D & B & A & A & C & C & A & A & ABC & ABC & ABD & \(\frac{7}{5}\) & \(\frac{1}{6},-\frac{3}{2}\) & \(\sqrt{3}\) & 略 & 略 & 略 & 略 & 略 \\ \hline
+  \end{tabular}}\par}
+
+\begin{document}
+%装配轮G7跨本连续页码（方案B）setcounter 注入位
+\setcounter{page}{83}
+% ===================== 第 1 页：栏1 卷头＋Q1–Q2；栏2 Q3–Q5；栏3 Q6–Q8 =====================
+\jpthree{\jphead
+  \ti{1}{已知 \(A(-1,0,1)\)，\(B(2,4,3)\)，\(C(5,8,5)\)，则这三点\kw}
+  \optline{\optII{A．构成等腰三角形；}{B．构成直角三角形；}}
+  \optline{\optII{C．构成等腰直角三角形；}{D．不能构成三角形．}}
+  \ti{2}{在正方体 \(ABCD-A_1B_1C_1D_1\) 中，二面角 \(C_1-AB-C\) 的大小为\kw}
+  \optline{\optIV{A．\(30^\circ\)；}{B．\(45^\circ\)；}{C．\(60^\circ\)；}{D．\(90^\circ\)．}}
+}{\jplead
+  \ti{3}{已知 \(PA\perp\) 平面 \(ABC\)，且在 \(\triangle ABC\) 中 \(AB\perp BC\)，则直线 \(PC\) 与平面 \(ABC\) 所成的角是\kw}
+  \optline{\optIV{A．\(\angle PCA\)；}{B．\(\angle PCB\)；}{C．\(\angle APC\)；}{D．\(\angle PAC\)．}}
+  \ti{4}{在空间直角坐标系 \(O-xyz\) 中，已知点 \(C(2,1,2)\)，则点 \(A(2,2,0)\) 到直线 \(OC\) 的距离为\kw}
+  \optline{\optIV{A．\(2\)；}{B．\(\sqrt{2}\)；}{C．\(2\sqrt{2}\)；}{D．\(4\)．}}
+  \ti{5}{已知 \(P\) 是二面角 \(\alpha-l-\beta\) 的棱 \(l\) 上一点，\(M\) 是半平面 \(\alpha\) 内一点，\(N\) 是半平面 \(\beta\) 内一点（\(M\)，\(N\) 均与 \(P\) 不重合），则下列条件中，能使 \(\angle MPN\) 成为二面角 \(\alpha-l-\beta\) 的平面角的是\kw}
+  \optline{A．\(MP\perp l\)；}
+  \optline{B．\(NP\perp l\)；}
+  \optline{C．\(MP\perp l\) 且 \(NP\perp l\)；}
+  \optline{D．\(MP\perp NP\)．}
+}{\jplead
+  \ti{6}{已知直线 \(l\) 的一个方向向量为 \(\overrightarrow{a}=(0,1,\sqrt{3})\)，平面 \(\alpha\) 的一个法向量为 \(\overrightarrow{n}=(0,0,1)\)，则 \(l\) 与 \(\alpha\) 所成的角为\kw}
+  \optline{\optIV{A．\(30^\circ\)；}{B．\(45^\circ\)；}{C．\(60^\circ\)；}{D．\(90^\circ\)．}}
+  \ti{7}{已知点 \(A(1,2,1)\)，\(B(-1,3,4)\)，\(D(1,1,1)\)，若 \(\overrightarrow{AP}=2\overrightarrow{PB}\)，则 \(\left|\overrightarrow{PD}\right|=\)\kw}
+  \optline{\optII{A．\(\frac{\sqrt{77}}{3}\)；}{B．\(\frac{\sqrt{65}}{3}\)；}}
+  \optline{\optII{C．\(\frac{\sqrt{41}}{3}\)；}{D．\(\frac{\sqrt{77}}{9}\)．}}
+  \ti{8}{已知点 \(A(-2,3,0)\)，\(B(1,3,2)\)，\(P\) 为线段 \(AB\) 上一点，且 \(AP:PB=2:3\)，则点 \(P\) 的坐标为\kw}
+  \optline{\optII{A．\(\left(-\frac{4}{5},3,\frac{4}{5}\right)\)；}{B．\(\left(-\frac{1}{5},3,\frac{6}{5}\right)\)；}}
+  \optline{\optII{C．\(\left(-\frac{4}{5},3,\frac{6}{5}\right)\)；}{D．\(\left(-\frac{1}{5},3,\frac{4}{5}\right)\)．}}
+}
+\newpage
+% ===================== 第 2 页：栏1 组行二＋Q9–Q10；栏2 Q11＋组行三＋Q12–Q13；栏3 Q14＋组行四＋Q15 =====================
+\jpthree{\jplead
+  \zuhang{二、选择题}{：本题共3小题，每小题6分，共18分．\ 在每小题给出的选项中，有多项符合题目要求．}%
+  \vgt{\hG}
+  \ti{9}{\fenzhi{6}已知向量 \(\overrightarrow{a}=(-3,2,5)\)，\(\overrightarrow{b}=(1,-3,0)\)，\(\overrightarrow{c}=(7,-2,1)\)，则下列结论正确的是\kw}
+  \optline{A．\(\overrightarrow{a}+\overrightarrow{b}+\overrightarrow{c}=(5,-3,6)\)；}
+  \optline{B．\((\overrightarrow{a}+\overrightarrow{b})\cdot\overrightarrow{c}=-7\)；}
+  \optline{C．\(\left|\overrightarrow{a}+\overrightarrow{b}+\overrightarrow{c}\right|=\sqrt{70}\)；}
+  \optline{D．\(\left|\overrightarrow{a}\right|+\left|\overrightarrow{b}\right|+\left|\overrightarrow{c}\right|=\sqrt{38}+\sqrt{10}+\sqrt{6}\)．}
+  \ti{10}{\fenzhi{6}已知四棱锥 \(P-ABCD\) 中，底面 \(ABCD\) 为矩形，\(PD\perp\) 平面 \(ABCD\)，且 \(PD=3\)，\(AB=5\)，\(BC=4\)，则下列结论正确的是\kw}
+  \optline{A．\(PC\) 与 \(AB\) 所成角的余弦值为 \(\frac{5\sqrt{34}}{34}\)；}
+  \optline{B．\(PD\) 与 \(AB\) 所成角为 \(90^\circ\)；}
+  \optline{C．\(PA\) 与 \(BC\) 所成角的余弦值为 \(\frac{4}{5}\)；}
+  \optline{D．\(PA\) 与 \(BC\) 所成角的余弦值为 \(-\frac{4}{5}\)．}
+}{\jplead
+  \ti{11}{\fenzhi{6}已知 \(AB\)，\(AC\)，\(AD\) 为长方体的三条棱，且 \(A(1,2,1)\)，\(B(1,5,1)\)，\(C(1,2,7)\)，\(D(3,2,1)\)，则下列结论正确的是\kw}
+  \optline{A．\(\left|\overrightarrow{AB}\right|=3\)；}
+  \optline{B．\(\left|\overrightarrow{AC}\right|=6\)；}
+  \optline{C．\(\left|\overrightarrow{AD}\right|=4\)；}
+  \optline{D．长方体的体对角线长为 \(7\)．}
+  \vgt{\hG}
+  \zuhang{三、填空题}{：本题共3小题，每小题5分，共15分．}%
+  \vgt{\hG}
+  \ti{12}{\fenzhi{5}已知 \(\overrightarrow{a}=(1,1,0)\)，\(\overrightarrow{b}=(-1,0,2)\)，且 \(k\overrightarrow{a}+\overrightarrow{b}\) 与 \(2\overrightarrow{a}-\overrightarrow{b}\) 互相垂直，则 \(k=\)\kongbai}
+  \ti{13}{\fenzhi{5}若 \(\overrightarrow{a}=(2x,1,3)\)，\(\overrightarrow{b}=(1,-2y,9)\)，且 \(\overrightarrow{a}\) 与 \(\overrightarrow{b}\) 共线，则 \(x=\)\kongbai，\(y=\)\kongbai}
+}{\jplead
+  \ti{14}{\fenzhi{5}在空间直角坐标系 \(O-xyz\) 中，平面 \(\alpha\) 经过 \(A(1,0,0)\)，\(B(0,1,0)\)，\(C(0,0,1)\) 三点，点 \(P(1,1,2)\)，则点 \(P\) 到平面 \(\alpha\) 的距离为\kongbai}
+  \vgt{\hG}
+  \zuhang{四、解答题}{：本题共5小题，共77分．\ 解答应写出文字说明、证明过程或演算步骤．}%
+  \vgt{\hG}
+  \ti{15}{\fenzhi{13}已知 \(A(1,0,1)\)，\(B(0,1,0)\)，\(C(0,0,1)\)，求平面 \(ABC\) 的一个单位法向量的坐标．}
+  \vgt{\hG}
+  \ti{16}{\fenzhi{15}已知 \(ABCD-A_1B_1C_1D_1\) 是正方体，求直线 \(A_1D\) 与直线 \(BD_1\) 所成角的大小．}
+}
+\newpage
+% ===================== 第 3 页：栏1 Q17；栏2 Q18；栏3 Q19＋答案速查表 =====================
+\jpthree{\jplead
+  \ti{17}{\fenzhi{15}已知 \(AB\) 是圆 \(O\) 的直径，且 \(AB=4\)，\(PA\) 垂直于圆 \(O\) 所在的平面，且 \(PA=2\sqrt{3}\)，\(M\) 是圆周上一点，且 \(\angle ABM=30^\circ\)，求二面角 \(A-BM-P\) 的大小．}
+}{\jplead
+  \ti{18}{\fenzhi{15}三棱锥 \(A-BCD\) 中，平面 \(ABC\) 与平面 \(DBC\) 互相垂直，且 \(AB=BC=BD\)，\(\angle CBA=\angle CBD=120^\circ\)．求：}
+  \qpart{（1）\(AD\) 所在直线和平面 \(BCD\) 所成角的大小；}
+  \qpart{（2）\(AD\) 所在直线与直线 \(BC\) 所成角的大小；}
+  \qpart{（3）二面角 \(A-BD-C\) 的正弦值．}
+}{\jplead
+  \ti{19}{\fenzhi{19}在棱长为 \(4\) 的正方体 \(ABCD-A_1B_1C_1D_1\) 中，点 \(P\) 在底面 \(ABCD\)（含边界）内运动，且满足 \(\overrightarrow{PA_1}\cdot\overrightarrow{PC_1}=m\)（\(m\) 为常数）．}
+  \qpart{（1）以 \(A\) 为原点，\(\overrightarrow{AB}\)，\(\overrightarrow{AD}\)，\(\overrightarrow{AA_1}\) 的方向为 \(x\) 轴、\(y\) 轴、\(z\) 轴正方向建立空间直角坐标系．当 \(m=12\) 时，求点 \(P\) 轨迹的方程，说明轨迹形状，并求轨迹的长度；}
+  \qpart{（2）若点 \(P\) 的轨迹与底面正方形的边界恰好有 \(4\) 个公共点，求 \(m\) 的所有可能值；}
+  \qpart{（3）当 \(m=16\) 时，求 \(\left|\overrightarrow{PB_1}\right|\) 的所有可能取值．}
+  \dabiao
+}
+\end{document}

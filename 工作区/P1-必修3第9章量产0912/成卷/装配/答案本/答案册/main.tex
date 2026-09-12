@@ -1,0 +1,32 @@
+% ============================================================
+% 答案册·P1 轮4 成卷 S5（骨架＋注值一体件——工艺照数学 M2 轮4 成卷/答案册/移植）
+% 件名：工作区/P1-必修3第9章量产0912/成卷/答案册/main.tex
+% 样式基线：PL1 冻结（物理样张0911/骨架/，原目录零改动——四宏＋parts/figs 绝对路径只读引用，
+%   装载序照骨架 README §二「答案册族」：answ-fonts/answ-layout/parts/answ-headfoot/answ-blocks/figs）；
+%   参数：章名＝第9章 静电场及其应用、册名＝必修第三册（qp-phy-params 默认即第三册，件侧重声明）、
+%   件名＝参考答案（qp-answ-headfoot 固定文案，不随件型词枚举）。
+% 同构同号（照数学排产单 §一.5/§二.1 口径）：与导学件／练习件／拓展册／测评卷四本
+%   逐册同构；题号集相等零缺漏＝对号断言（check_pairs.py）；不印交叉页码（拍板）。
+% 四本框架：【甲】导学件 4 节（含章末·本章易错过关 5 题，件型词承导学件）→【乙】练习件 4 节
+%   （9.2/9.3 第 2 题位＝略位，与件面同）→【丙】拓展册 PENDING（46 题，批5b 在产）→
+%   【丁】测评卷 PENDING（19 题式，批5b 在产）。PENDING 键走断言白名单（check_pairs.py）。
+% 组装路线：body.tex＝组装S5.py 产出（勿手改）——按《取值映射模板.md》槽位自批1~5a 值台账
+%   取值注入，注入前过 `钉值门.py`（防回卷）；每键一行 `% pair:键` 对号契约。
+% 编译：xelatex main.tex ×2 → render.py（150dpi）→ 三 0 判据＝grep `^!`/Overfull/Missing character
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-answ-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% ---------- 件侧参数（单点件默认值按需覆盖，勿改骨架默认） ----------
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+% 品牌位：答案册＝素面（\ifqpbrand 默认 false，勿开）
+
+\begin{document}
+\input{body.tex}
+\end{document}

@@ -1,0 +1,1938 @@
+% ============================================================
+% body.tex —— 答案册·M2 轮4 S5【组装器产出】——勿手改（组装S5.py 为唯一值源，防 6g 回卷）
+% 生成：2026-09-12｜键数：631｜对号契约：每键一行 `%% pair:键`（check_pairs 扫描口径）
+% 版式：册首行/章标/节标/分区组行/条目宏五模块在 main.tex＋qp-answ-*（骨架口径原样）；悬挂两档＝单号 5.8mm／双位 7.6mm。
+% ============================================================
+\setcounter{page}{1}   % 独立册起页 1；装配轮按四本跨本连续页码（G7）改写
+\par\nointerlineskip
+{\centering\fontsize{16.88pt}{22pt}\selectfont\hejie 参考答案\par}
+\vspace{2.4mm}
+\zhangtitle{第一章\quad 空间向量与立体几何}
+
+% ---- body 局部宏：值串向量缩写 \ov{X}（提供式——重名时让位）；判断符号用 \(\surd\)/$\times$（宏包无 amssymb，均为 kernel 符号） ----
+\providecommand{\ov}[1]{\overrightarrow{#1}}
+
+% ============================================================
+% 【甲】导学件答案（10 课时＋1.1.1 前衔接填空六条（不计题）＋衔接-1~29＋章末 28）
+% ============================================================
+\jietitle{1.1.1\quad 空间向量及其运算(导学件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\qufen{第一课时\quad 空间向量及其运算(课1)}{课前预习＋课中探究（例1×4／变式1×4）＋课堂评价5}
+% ---- 第一课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时01-预习填空
+\ansline{预习填空}{知识点一：大小、方向；长度；零；0、\(\overrightarrow{0}\)、1、相反、平行、重合、模相等。知识点二：三角形、平行四边形；相同；相反；唯一。知识点三：同一平面；不共线。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时01-判1
+% pair:导-课时01-判2
+% pair:导-课时01-判3
+% pair:导-课时01-判4
+% pair:导-课时01-判5
+\ansline{答案}{(1)$\times$\quad (2)\(\surd\)\quad (3)$\times$\quad (4)\(\surd\)\quad (5)$\times$}
+\vskip 0pt minus 1.2pt
+% pair:导-课时01-探1-例1
+% pair:导-课时01-探1-变式1
+\ansline{探究一}{例1 B；变式1 D}
+\vskip 0pt minus 1.2pt
+% pair:导-课时01-探2-例1
+% pair:导-课时01-探2-变式1
+\ansline{探究二}{例1 \(\overrightarrow{b}-\overrightarrow{a}-\overrightarrow{c}\)；变式1 \(\overrightarrow{a}-\overrightarrow{b}-\overrightarrow{c}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时01-探3-例1
+% pair:导-课时01-探3-变式1
+\ansline{探究三}{例1 \(x=1\)，\(y=\dfrac{1}{4}\)；变式1 \(x=1\)，\(y=\dfrac{1}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时01-探4-例1
+% pair:导-课时01-探4-变式1
+\ansline{探究四}{例1 C（①③）；变式1 共面}
+\vskip 0pt minus 1.2pt
+% pair:导-课时01-评1
+% pair:导-课时01-评2
+% pair:导-课时01-评3
+% pair:导-课时01-评4
+% pair:导-课时01-评5
+\ansline{评价}{1．C；2．B（2）；3．D（\(\overrightarrow{EF}\)）；4．\(-\overrightarrow{a}+\dfrac{1}{2}\overrightarrow{b}+\dfrac{1}{2}\overrightarrow{c}\)；5．3}
+\vskip 0pt minus 1.2pt
+\qufen{第二课时\quad 空间向量及其运算(课2·数量积域)}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}
+% ---- 第二课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时02-预习填空
+\ansline{预习填空}{知识点一：\(0^{\circ}\le\langle\overrightarrow{a},\overrightarrow{b}\rangle\le180^{\circ}\)；垂直。知识点二：零向量；\(\overrightarrow{b}\cdot\overrightarrow{a}\)；\(\lambda\)；\(\overrightarrow{a}\cdot\overrightarrow{c}+\overrightarrow{b}\cdot\overrightarrow{c}\)。知识点三：无空。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时02-判1
+% pair:导-课时02-判2
+% pair:导-课时02-判3
+% pair:导-课时02-判4
+% pair:导-课时02-判5
+\ansline{答案}{(1)$\times$\quad (2)$\times$\quad (3)$\times$\quad (4)$\times$\quad (5)知识点三(1)$\times$；(2)\(\surd\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时02-探1-例1
+% pair:导-课时02-探1-变式1
+\ansline{探究一}{例1 AD；变式1 \(-11\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时02-探2-例1
+% pair:导-课时02-探2-变式1
+\ansline{探究二}{例1 \(60^{\circ}\)；变式1 \(\dfrac{\sqrt{10}}{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时02-探3-例1
+% pair:导-课时02-探3-变式1
+\ansline{探究三}{例1 \((-1-\sqrt{3},\,-1+\sqrt{3})\)；变式1 \(-\dfrac{3}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时02-探4-例1
+% pair:导-课时02-探4-变式1
+\ansline{探究四}{例1 D；变式1 \(\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时02-探5-例1
+% pair:导-课时02-探5-变式1
+\ansline{探究五}{例1 A；变式1 \(\dfrac{\sqrt{7}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时02-评1
+% pair:导-课时02-评2
+% pair:导-课时02-评3
+% pair:导-课时02-评4
+% pair:导-课时02-评5
+\ansline{评价}{1．A（\(-1\)）；2．C（充要）；3．C（\(60^{\circ}\)）；4．2；5．0}
+\vskip 0pt minus 1.2pt
+\qufen{1.1.1 前·衔接：平面向量必会}{纯知识点填空六条——不计题、不占衔接-号段}
+% （纯知识点陈述条目，无答题值、无对号键——题面库衔接节 §一）
+\jietitle{1.1.2\quad 空间向量基本定理(导学件答案)}
+\qufen{第三课时\quad 空间向量基本定理}{课前预习＋课中探究（例1×4／变式1×4）＋课堂评价5}
+% ---- 第三课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时03-预习填空
+\ansline{预习填空}{知识点一：不共面；唯一；基底；基向量；两个不共线；三个不共面。知识点二：两两互相垂直；1；两两垂直。知识点三：同一平面；1。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时03-判1
+% pair:导-课时03-判2
+% pair:导-课时03-判3
+% pair:导-课时03-判4
+% pair:导-课时03-判5
+\ansline{答案}{(1)\(\surd\)\quad (2)$\times$\quad (3)\(\surd\)\quad (4)$\times$\quad (5)\(\surd\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时03-探1-例1
+% pair:导-课时03-探1-变式1
+\ansline{探究一}{例1 D；变式1 A}
+\vskip 0pt minus 1.2pt
+% pair:导-课时03-探2-例1
+% pair:导-课时03-探2-变式1
+\ansline{探究二}{例1 BC；变式1 \(x=-\dfrac{1}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时03-探3-例1
+% pair:导-课时03-探3-变式1
+\ansline{探究三}{例1 (1)证明见解析；(2)\(x+y+z=\dfrac{1}{3}\)；变式1 \(-\dfrac{1}{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时03-探4-例1
+% pair:导-课时03-探4-变式1
+\ansline{探究四}{例1 B；变式1 3}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{C 项所涉夹角实算 \(\cos\langle\overrightarrow{B_{1}C},\overrightarrow{AA_{1}}\rangle=-\dfrac{1}{2}\)，夹角恰 \(120^{\circ}\)——讲部详解 \(120^{\circ}\) 正确（2026-09-12 逻辑闸撤销 S2 改字义务：S2 亲算 \(|B_{1}C|=6\sqrt{2}\) 系误算，实 \(|B_{1}C|=6\)，经盲解＋numpy 坐标三重验证）；C 项不正确系其另有错点，键 B 与结论不变。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时03-评1
+% pair:导-课时03-评2
+% pair:导-课时03-评3
+% pair:导-课时03-评4
+% pair:导-课时03-评5
+\ansline{评价}{1．B；2．C；3．B；4．\(m=2\)，\(n=4\)；5．\(-2\)}
+\vskip 0pt minus 1.2pt
+\jietitle{1.1.3\quad 空间向量及其运算的坐标表示(导学件答案)}
+\qufen{第四课时\quad 空间直角坐标系与坐标(课1)}{课前预习＋课中探究（例1×3／变式×5 含变式2）＋课堂评价5}
+% ---- 第四课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时04-预习填空
+\ansline{预习填空}{知识点一：单位正交基底；空间直角坐标系 \(Oxyz\)；原点；坐标向量；坐标平面；八；\(135^{\circ}\)（或 \(45^{\circ}\)）；\(90^{\circ}\)；\(x\) 轴正方向；\(y\) 轴正方向；\(z\) 轴正方向。知识点二：有序实数组 \((x,y,z)\)；\(A(x,y,z)\)；横坐标；唯一；\(\overrightarrow{a}=(x,y,z)\)。知识点三：\((a_{1}+b_{1},a_{2}+b_{2},a_{3}+b_{3})\)；\((a_{1}-b_{1},a_{2}-b_{2},a_{3}-b_{3})\)；\((\lambda a_{1},\lambda a_{2},\lambda a_{3})\)；\(a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}\)；\(\sqrt{(a_{2}-a_{1})^{2}+(b_{2}-b_{1})^{2}+(c_{2}-c_{1})^{2}}\)；\(\left(\dfrac{x_{1}+x_{2}}{2},\dfrac{y_{1}+y_{2}}{2},\dfrac{z_{1}+z_{2}}{2}\right)\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时04-判1
+% pair:导-课时04-判2
+% pair:导-课时04-判3
+% pair:导-课时04-判4
+% pair:导-课时04-判5
+\ansline{答案}{(1)\(\surd\)\quad (2)$\times$\quad (3)\(\surd\)\quad (4)$\times$\quad (5)\(\surd\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时04-探1-例1
+% pair:导-课时04-探1-变式1
+% pair:导-课时04-探1-变式2
+\ansline{探究一}{例1 \(A(0,0,0)\)，\(B(2,0,0)\)，\(C(0,2,0)\)，\(P(0,0,3)\)；\(Q\left(0,1,\dfrac{3}{2}\right)\)；\(M\left(0,t,3-\dfrac{3}{2}t\right)\)（\(0\le t\le 2\)）；变式1 \(C_{1}(2,3,2)\)；\(M\left(1,\dfrac{3}{2},1\right)\)；变式2 \(A(0,0,0)\)，\(B(2,0,0)\)，\(C(2,2,0)\)，\(D(0,2,0)\)，\(P(0,0,2)\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时04-探2-例1
+% pair:导-课时04-探2-变式1
+\ansline{探究二}{例1 C（\(\overrightarrow{BC}=(0,-4,-2)\)）；变式1 \(P_{1}(-2,-1,3)\)；\(P_{2}(2,1,-3)\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时04-探3-例1
+% pair:导-课时04-探3-变式1
+% pair:导-课时04-探3-变式2
+\ansline{探究三}{例1 A（\(\sqrt{3}\)）；变式1 \(M(1,3,2)\)；\(|OM|=\sqrt{14}\)；变式2 距离 \(2\)；\(\sqrt{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时04-评1
+% pair:导-课时04-评2
+% pair:导-课时04-评3
+% pair:导-课时04-评4
+% pair:导-课时04-评5
+\ansline{评价}{1．A；2．C（\(2\sqrt{3}\)）；3．C（\(yOz\) 坐标平面内）；4．\((-1,2,3)\)；5．\(2\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+\qufen{第五课时\quad 坐标表示(课2)}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}
+% ---- 第五课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时05-预习填空
+\ansline{预习填空}{知识点一：\(\lambda b_{1}\)；\(\lambda b_{2}\)；\(\lambda b_{3}\)；\(a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}=0\)。知识点二：\(\sqrt{a_{1}^{2}+a_{2}^{2}+a_{3}^{2}}\)；\(\dfrac{\overrightarrow{a}\cdot\overrightarrow{b}}{|\overrightarrow{a}||\overrightarrow{b}|}\)；\(\dfrac{\overrightarrow{a}\cdot\overrightarrow{b}}{|\overrightarrow{b}|}\)。知识点三：\(1-\lambda\)；\(\overrightarrow{DC}\)；互相平分。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时05-判1
+% pair:导-课时05-判2
+% pair:导-课时05-判3
+% pair:导-课时05-判4
+% pair:导-课时05-判5
+\ansline{答案}{(1)\(\surd\)\quad (2)$\times$\quad (3)\(\surd\)\quad (4)$\times$\quad (5)\(\surd\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时05-探1-例1
+% pair:导-课时05-探1-变式1
+\ansline{探究一}{例1 \((2,-2,4)\) 或 \((-2,2,-4)\)；变式1 \(\left(\dfrac{2}{3},\dfrac{1}{3},-\dfrac{2}{3}\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时05-探2-例1
+% pair:导-课时05-探2-变式1
+\ansline{探究二}{例1 B（\(-\dfrac{\sqrt{6}}{6}\)）；变式1 \(\dfrac{\sqrt{2}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时05-探3-例1
+% pair:导-课时05-探3-变式1
+\ansline{探究三}{例1 (1)\(x=6\)，\(y=\dfrac{15}{2}\)；(2)\((x,y)=(-4,2)\) 或 \(\left(\dfrac{116}{41},-\dfrac{142}{41}\right)\)；变式1 \(\overrightarrow{n}=(1,-1,1)\)（不唯一）}
+\vskip 0pt minus 1.2pt
+% pair:导-课时05-探4-例1
+% pair:导-课时05-探4-变式1
+\ansline{探究四}{例1 (1)\(|PM|=\dfrac{2\sqrt{13}}{3}\)；(2)最小值 \(\dfrac{\sqrt{6}}{4}\)；变式1 \(P(2,2,0)\)；\(|OP|=2\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时05-探5-例1
+% pair:导-课时05-探5-变式1
+\ansline{探究五}{例1 (1)\([0,3,5]\)；(2)①\([-2,2,\dfrac{3}{2}]\)；②\(t=-2\)，\(|AM|=2\)；变式1 \(\overrightarrow{a}\cdot\overrightarrow{b}=\dfrac{5}{2}\)；\(|\overrightarrow{a}+\overrightarrow{b}|=\sqrt{11}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时05-评1
+% pair:导-课时05-评2
+% pair:导-课时05-评3
+% pair:导-课时05-评4
+% pair:导-课时05-评5
+\ansline{评价}{1．A；2．B（\(3\sqrt{2}\)）；3．A（\((3,2,4)\)）；4．\(\dfrac{1}{2}\)；5．\(m=-2\)}
+\vskip 0pt minus 1.2pt
+\jietitle{1.2.1\quad 空间中的点、直线与空间向量(导学件答案)}
+\qufen{1.2.1 前·几何衔接位}{衔接-1～衔接-29 同号段——五组排布、组内四约束（汇总 §3.2）}
+% pair:导-衔接-1
+\ansline{衔接-1}{\(\dfrac{3}{7}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-2
+\ansline{衔接-2}{\(1:3\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-3
+\ansline{衔接-3}{\(\dfrac{2}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-4
+\ansline{衔接-4}{\(1:4\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-5
+\ansline{衔接-5}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(\angle OAB=\angle ODC\)＋对顶角 \(\Rightarrow\triangle OAB\sim\triangle ODC\) \(\Rightarrow OA:OD=OB:OC\Rightarrow\triangle OAD\sim\triangle OBC\Rightarrow\angle DAC=\angle CBD\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-6
+\ansline{衔接-6}{\(\dfrac{4}{5}\)；\(\dfrac{16}{9}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-7
+\ansline{衔接-7}{(1)\(30^{\circ}\)；(2)\(8\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-8
+\ansline{衔接-8}{B（\(6\)）}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-9
+\ansline{衔接-9}{\(816/25\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-10
+\ansline{衔接-10}{(1)\(20\)，\(12\)，\(16\) cm；(2)\(\dfrac{36}{5}\)，\(\dfrac{64}{5}\) cm}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-11
+\ansline{衔接-11}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{双射影：\(AE\cdot AB=AD^{2}=AF\cdot AC\)；(2) 共角夹边成比例逆相似。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-12
+\ansline{衔接-12}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{内角平分线定理：过 \(C\) 作平行线法（面积法同源）。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-13
+\ansline{衔接-13}{\(\dfrac{35}{9}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-14
+\ansline{衔接-14}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{外角平分线定理；合比一步补足：\(BD:DC=AB:AC\Rightarrow BD:(BD+DC)=AB:(AB+AC)\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-15
+\ansline{衔接-15}{\(\dfrac{55}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-16
+\ansline{衔接-16}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{重心三等分（向量/中位线双链）；取 \(AC\) 中点（源详解「\(BC\)、\(AE\) 的中点」应作 \(AC\)）。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-17
+\ansline{衔接-17}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{双高 \(\Rightarrow H\)、\(D\)、\(C\)、\(E\) 与 \(A\)、\(B\)、\(D\)、\(E\) 两组四点共圆，转角即得 \(CH\) 延长线\(\perp AB\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-18
+\ansline{衔接-18}{(1)\(\angle BPC=90^{\circ}+\dfrac{1}{2}\angle BAC\)；(2)\(\angle BOC=2\angle BAC\)；(3)\(4\angle BPC-\angle BOC=360^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-19
+\ansline{衔接-19}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{切线长相等三元一次 \(\Rightarrow AE=AF=\dfrac{b+c-a}{2}\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-20
+\ansline{衔接-20}{\(r=\dfrac{2S}{a+b+c}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-21
+\ansline{衔接-21}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{重心＝内心 \(\Rightarrow\) 中线即角平分线 \(\Rightarrow\) 逐向等腰 \(\Rightarrow\) 等边。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-22
+\ansline{衔接-22}{(1)\(S=2\sqrt{2}\)，\(BE=\dfrac{4\sqrt{2}}{3}\)；(2)\(r=\dfrac{\sqrt{2}}{2}\)；(3)\(R=\dfrac{9\sqrt{2}}{8}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{答案栏按详解栏重建（(2) 即用衔接-20 公式；(3) \(R=\dfrac{abc}{4S}\)）。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-23
+\ansline{衔接-23}{\(\sqrt{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-24
+\ansline{衔接-24}{\(20\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-25
+\ansline{衔接-25}{\(45^{\circ}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(AH=2R|\cos A|=BC=2R\sin A\)（\(A\) 钝）\(\Rightarrow A=135^{\circ}\Rightarrow\angle BHC=180^{\circ}-A\)；源同值两制留一制。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-26
+\ansline{衔接-26}{\(75^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-27
+\ansline{衔接-27}{\(\sqrt{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-28
+\ansline{衔接-28}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{垂心＝重心 \(\Rightarrow\) 中线\(\perp\)对边 \(\Rightarrow\) 等腰循环 \(\Rightarrow\) 正三角形。}
+\vskip 0pt minus 1.2pt
+% pair:导-衔接-29
+\ansline{衔接-29}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{五点共圆链；定值 (1)\(120^{\circ}\) (2)\(240^{\circ}\)（\(A=60^{\circ}\) 条件下）。}
+\vskip 0pt minus 1.2pt
+\qufen{第六课时\quad 空间中的点、直线与空间向量}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}
+% ---- 第六课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时06-预习填空
+\ansline{预习填空}{知识点一：\(\overrightarrow{OP}\)；非零；平行；\(\overrightarrow{OA}+t\overrightarrow{a}\)。知识点二：\(\lambda\overrightarrow{u_{2}}\)；\(\overrightarrow{u_{1}}\cdot\overrightarrow{u_{2}}=0\)。知识点三：\(0^{\circ}\le\theta\le90^{\circ}\)；\(\left|\cos\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle\right|\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时06-判1
+% pair:导-课时06-判2
+% pair:导-课时06-判3
+% pair:导-课时06-判4
+% pair:导-课时06-判5
+\ansline{答案}{(1)$\times$\quad (2)\(\surd\)\quad (3)$\times$\quad (4)\(\surd\)\quad (5)$\times$}
+\vskip 0pt minus 1.2pt
+% pair:导-课时06-探1-例1
+% pair:导-课时06-探1-变式1
+\ansline{探究一}{例1 证明见解析；变式1 C（\((-1,0,2)\)）}
+\vskip 0pt minus 1.2pt
+% pair:导-课时06-探2-例1
+% pair:导-课时06-探2-变式1
+\ansline{探究二}{例1 A（\(30^{\circ}\)）；变式1 B（\(\dfrac{\sqrt{2}}{4}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{首句按题面改「\(\triangle ABC\) 为等边三角形」（讲部详解误作直角三角形；结果 \(\dfrac{\sqrt{2}}{4}\) 不变）。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时06-探3-例1
+% pair:导-课时06-探3-变式1
+\ansline{探究三}{例1 \(\dfrac{\pi}{4}\)；\(\dfrac{\sqrt{2}}{2}a\)；变式1 \(\dfrac{5}{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时06-探4-例1
+% pair:导-课时06-探4-变式1
+\ansline{探究四}{例1 \(M\) 在线段 \(FH\) 上（答案不唯一）；变式1 \(DM\perp PC\)（或 \(BM\perp PC\)）}
+\vskip 0pt minus 1.2pt
+% pair:导-课时06-探5-例1
+% pair:导-课时06-探5-变式1
+\ansline{探究五}{例1 AD；变式1 AC}
+\vskip 0pt minus 1.2pt
+% pair:导-课时06-评1
+% pair:导-课时06-评2
+% pair:导-课时06-评3
+% pair:导-课时06-评4
+% pair:导-课时06-评5
+\ansline{评价}{1．A；2．C（\(60^{\circ}\)）；3．C（充要）；4．\(-\dfrac{\sqrt{3}}{3}\)；\(\dfrac{\sqrt{3}}{3}\)；5．\((5,-1,5)\) 或 \((-3,3,-3)\)（写一个即可）}
+\vskip 0pt minus 1.2pt
+\jietitle{1.2.2\quad 空间中的平面与空间向量(导学件答案)}
+\qufen{第七课时\quad 空间中的平面与空间向量}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}
+% ---- 第七课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时07-预习填空
+\ansline{预习填空}{知识点一：①\(\overrightarrow{OA}+x\overrightarrow{AB}+y\overrightarrow{AC}\)；②法向量、\(\overrightarrow{AP}\)；③平行。知识点二：①\(\overrightarrow{u}\cdot\overrightarrow{n}=0\)；②\(\overrightarrow{n_{1}}\parallel\overrightarrow{n_{2}}\)；③存在 \(\lambda\in\mathbb{R}\) 使 \(\overrightarrow{u}=\lambda\overrightarrow{n}\)；④\(\overrightarrow{n_{1}}\cdot\overrightarrow{n_{2}}=0\)。知识点三：①射影、斜线；③公共部分。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时07-判1
+% pair:导-课时07-判2
+% pair:导-课时07-判3
+% pair:导-课时07-判4
+% pair:导-课时07-判5
+\ansline{答案}{(1)$\times$\quad (2)$\times$\quad (3)$\times$\quad (4)\(\surd\)\quad (5)\(\surd\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时07-探1-例1
+% pair:导-课时07-探1-变式1
+\ansline{探究一}{例1 A；变式1 A}
+\vskip 0pt minus 1.2pt
+% pair:导-课时07-探2-例1
+% pair:导-课时07-探2-变式1
+\ansline{探究二}{例1 (1)(2)证明见解析；变式1 证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{两面法向量均 \((1,1,-1)\)（共线），且验证 \(A\) 不在面 \(BC_{1}D\) 内——两平面不重合，故平行。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时07-探3-例1
+% pair:导-课时07-探3-变式1
+\ansline{探究三}{例1 (1)存在；(2)不存在；变式1 不存在}
+\vskip 0pt minus 1.2pt
+% pair:导-课时07-探4-例1
+% pair:导-课时07-探4-变式1
+\ansline{探究四}{例1 ABC（选错误项）；变式1 AD}
+\vskip 0pt minus 1.2pt
+% pair:导-课时07-探5-例1
+% pair:导-课时07-探5-变式1
+\ansline{探究五}{例1 B；变式1 D}
+\vskip 0pt minus 1.2pt
+% pair:导-课时07-评1
+% pair:导-课时07-评2
+% pair:导-课时07-评3
+% pair:导-课时07-评4
+% pair:导-课时07-评5
+\ansline{评价}{1．A（\(l\perp\alpha\)）；2．C（相交但不垂直）；3．B（直角梯形）；4．\(d=-3\)；5．\(m=0\)}
+\vskip 0pt minus 1.2pt
+\jietitle{1.2.3\quad 直线与平面的夹角(导学件答案)}
+\qufen{第八课时\quad 直线与平面的夹角}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}
+% ---- 第八课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时08-预习填空
+\ansline{预习填空}{知识点一：\(90^{\circ}\)；\(0^{\circ}\)；\(\angle ABA^{\prime}\)；\([0^{\circ},90^{\circ}]\)；所有直线；\(AB\cos\theta\)。知识点二：\(\sin\langle\overrightarrow{v},\overrightarrow{n}\rangle\)；\(\left|\cos\langle\overrightarrow{v},\overrightarrow{n}\rangle\right|\)。知识点三：\(\cos\angle AOB\cdot\cos\angle BOC\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时08-判1
+% pair:导-课时08-判2
+% pair:导-课时08-判3
+% pair:导-课时08-判4
+% pair:导-课时08-判5
+\ansline{答案}{(1)$\times$\quad (2)$\times$\quad (3)$\times$\quad (4)\(\surd\)\quad (5)\(\surd\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时08-探1-例1
+% pair:导-课时08-探1-变式1
+\ansline{探究一}{例1 \(\dfrac{\sqrt{3}}{3}\)；变式1 \(45^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时08-探2-例1
+% pair:导-课时08-探2-变式1
+\ansline{探究二}{例1 ①\(\lambda=\dfrac{1}{2}\) 或 \(1\)；②③不存在；变式1 A（\(30^{\circ}\)）}
+\vskip 0pt minus 1.2pt
+% pair:导-课时08-探3-例1
+% pair:导-课时08-探3-变式1
+\ansline{探究三}{例1 \(45^{\circ}\)；变式1 (1)证明见解析；(2)\(\dfrac{\sqrt{7}}{7}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时08-探4-例1
+% pair:导-课时08-探4-变式1
+\ansline{探究四}{例1 \(\sqrt{2}\)；变式1 \(\left(\dfrac{1}{2},1\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时08-探5-例1
+% pair:导-课时08-探5-变式1
+\ansline{探究五}{例1 (1)证明见解析；(2)最大值 \(\dfrac{\sqrt{6}}{3}\)；变式1 \([45^{\circ},90^{\circ}]\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时08-评1
+% pair:导-课时08-评2
+% pair:导-课时08-评3
+% pair:导-课时08-评4
+% pair:导-课时08-评5
+\ansline{评价}{1．C（\([0^{\circ},90^{\circ}]\)）；2．A；3．C（\(60^{\circ}\)）；4．无数；5．\(\dfrac{4}{9}\)}
+\vskip 0pt minus 1.2pt
+\jietitle{1.2.4\quad 二面角(导学件答案)}
+\qufen{第九课时\quad 二面角}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}
+% ---- 第九课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时09-预习填空
+\ansline{预习填空}{知识点一：两个半平面；棱。知识点二：任一（棱上）；与棱垂直；\([0^{\circ},180^{\circ}]\)。知识点三：\(\dfrac{\overrightarrow{n_{1}}\cdot\overrightarrow{n_{2}}}{|\overrightarrow{n_{1}}||\overrightarrow{n_{2}}|}\)；相等；\(\dfrac{S^{\prime}}{S}\)；\(\dfrac{\cos\gamma-\cos\alpha\cos\beta}{\sin\alpha\sin\beta}\)；\(\cos\alpha\cos\beta\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时09-判1
+% pair:导-课时09-判2
+% pair:导-课时09-判3
+% pair:导-课时09-判4
+% pair:导-课时09-判5
+\ansline{答案}{(1)$\times$\quad (2)\(\surd\)\quad (3)$\times$\quad (4)\(\surd\)\quad (5)\(\surd\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时09-探1-例1
+% pair:导-课时09-探1-变式1
+\ansline{探究一}{例1 \(-\dfrac{\sqrt{3}}{3}\)；变式1 \(\dfrac{2\sqrt{7}}{7}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(\angle APD=90^{\circ}\)（实算 \(\angle ADP=45^{\circ}\)，结论 \(PD\perp PA\) 仍真）。}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{求的是平面 \(FAD\) 与平面 \(ADC\) 的夹角（「与」字两处按源件勘正）。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时09-探2-例1
+% pair:导-课时09-探2-变式1
+\ansline{探究二}{例1 (1)\(\sqrt{2}\)；(2)\(\dfrac{\sqrt{3}}{2}\)；变式1 \(\dfrac{6\sqrt{13}}{13}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{方程组路独立可解（不承叉乘法；删法一，仅留法二与题后反思）。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时09-探3-例1
+% pair:导-课时09-探3-变式1
+\ansline{探究三}{例1 \(-\dfrac{\sqrt{5}}{5}\)；变式1 \(120^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时09-探4-例1
+% pair:导-课时09-探4-变式1
+\ansline{探究四}{例1 \(\dfrac{\sqrt{6}}{4}\)；变式1 \(\dfrac{\sqrt{2}}{4}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{空间余弦定理先证后用（建系可另证，注记随册）。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时09-探5-例1
+% pair:导-课时09-探5-变式1
+\ansline{探究五}{例1 \(\dfrac{\sqrt{3}}{3}\)；变式1 \(\sqrt{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时09-评1
+% pair:导-课时09-评2
+% pair:导-课时09-评3
+% pair:导-课时09-评4
+% pair:导-课时09-评5
+\ansline{评价}{1．B；2．C；3．A；4．1；5．\(\dfrac{\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+\jietitle{1.2.5\quad 空间中的距离(导学件答案)}
+\qufen{第十课时\quad 空间中的距离}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}
+% ---- 第十课时（1.1.x/1.2.x 同构槽序：预习→判断→探究→评价）----
+% pair:导-课时10-预习填空
+\ansline{预习填空}{知识点一：\(\overrightarrow{AP}\cdot\overrightarrow{u}\)；\(\dfrac{\overrightarrow{AP}\cdot\overrightarrow{u}}{|\overrightarrow{u}|}\)；\(\dfrac{|\overrightarrow{AB}\cdot\overrightarrow{n}|}{|\overrightarrow{n}|}\)。知识点二：\(m\)；任一点；任一点；垂直；相交。知识点三：\(\dfrac{3V}{S}\)；\(\dfrac{\sqrt{6}a}{3}\)；\(\dfrac{\sqrt{6}a}{12}\)；\(3:1\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时10-判1
+% pair:导-课时10-判2
+% pair:导-课时10-判3
+% pair:导-课时10-判4
+% pair:导-课时10-判5
+\ansline{答案}{(1)$\times$\quad (2)\(\surd\)\quad (3)\(\surd\)\quad (4)$\times$\quad (5)$\times$}
+\vskip 0pt minus 1.2pt
+% pair:导-课时10-探1-例1
+% pair:导-课时10-探1-变式1
+\ansline{探究一}{例1 B（\(d=2\)）；变式1 \(\dfrac{8}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时10-探2-例1
+% pair:导-课时10-探2-变式1
+\ansline{探究二}{例1 (1)\(4\)；(2)\(\sqrt{3}\)；变式1 \(\sqrt{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时10-探3-例1
+% pair:导-课时10-探3-变式1
+\ansline{探究三}{例1 (1)\(\dfrac{2\sqrt{5}}{5}\)；(2)\(\sqrt{2}\)；变式1 \(\dfrac{5}{3}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(AB\parallel DC\)，\(DC\subset\) 平面 \(EFCD\)（源详解衍字已正）；点到面 \(EFCD\) 的距离。}
+\vskip 0pt minus 1.2pt
+% pair:导-课时10-探4-例1
+% pair:导-课时10-探4-变式1
+\ansline{探究四}{例1 C（\(5\sqrt{2}\)）；变式1 \(\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-课时10-探5-例1
+% pair:导-课时10-探5-变式1
+\ansline{探究五}{例1 \(\dfrac{\sqrt{6}a}{12}\)；变式1 C（\(\dfrac{1}{4}\)）}
+\vskip 0pt minus 1.2pt
+% pair:导-课时10-评1
+% pair:导-课时10-评2
+% pair:导-课时10-评3
+% pair:导-课时10-评4
+% pair:导-课时10-评5
+\ansline{评价}{1．A；2．A；3．B；4．\(\dfrac{3\sqrt{2}}{2}\)；5．\(\dfrac{3-\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+\jietitle{本章总结提升(导学件答案)}
+\qufen{章末·题型归类}{题型 12 型（例12／变式12）＋精选高考题组 4 题}
+% pair:导-章末-例1
+\dansitem{例1}{B（仅②真）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例2
+\dansitem{例2}{(1)\(90^{\circ}\)；(2)\(45^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例3
+\dansitem{例3}{ABC（\(D\) 支 \(D=b^{2}\) 恒正）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例4
+\dansitem{例4}{C（①②真③假）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例5
+\dansitem{例5}{④（逐条对称律验）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例6
+\dansitem{例6}{(1)\(\dfrac{1}{2}\)；(2)\(\dfrac{\sqrt{6}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例7
+\dansitem{例7}{\(m=-2\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例8
+\dansitem{例8}{B（\(\lambda=2\)）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例9
+\dansitem{例9}{D}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例10
+\dansitem{例10}{(1)\(3\sqrt{3}\)；(2)\(5\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例11
+\dansitem{例11}{\(\dfrac{3\sqrt{3}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-例12
+\dansitem{例12}{A（\(\dfrac{2\sqrt{2}}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式1
+\dansitem{变式1}{C（③④）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式2
+\dansitem{变式2}{(1)\(\pi\)；(2)\(\dfrac{\pi}{3}\)；(3)\(\dfrac{2\pi}{3}\)；(4)\(\dfrac{\pi}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式3
+\dansitem{变式3}{最小值 \(-\dfrac{3}{2}\)；\(P\) 为高线 \(AM\) 中点（\(M\) 为 \(BC\) 中点）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式4
+\dansitem{变式4}{证明见解析}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式5
+\dansitem{变式5}{\(A_{1}(-1,-2,0)\)，\(B_{1}(3,-1,-2)\)，\(C_{1}(4,1,-1)\)，\(D_{1}(0,0,1)\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式6
+\dansitem{变式6}{(1)\(\sqrt{3}\)；(2)\(a=1\)，\(\cos=\dfrac{1}{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式7
+\dansitem{变式7}{C（\(x+y=-4\)）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式8
+\dansitem{变式8}{存在；\(|MN|=\dfrac{\sqrt{6}}{3}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(D\) 原点系 \(D(0,0,0)\)，\(A(2,0,0)\)，\(B(2,2,0)\)，\(D_{1}(0,0,1)\)：\(M\left(\dfrac{2}{3},0,\dfrac{2}{3}\right)\)，\(N\left(\dfrac{1}{3},\dfrac{1}{3},0\right)\)。}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式9
+\dansitem{变式9}{AD}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式10
+\dansitem{变式10}{\(\dfrac{2\sqrt{30}}{15}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式11
+\dansitem{变式11}{(1)\(\dfrac{3}{2}\)；(2)\(-\dfrac{2\sqrt{7}}{7}\)}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-变式12
+\dansitem{变式12}{BC}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-高考1
+\dansitem{高考1}{\(P\) 为 \(CC_{1}\) 中点（答案不唯一，开放条件填充）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-高考2
+\dansitem{高考2}{①\(\Leftrightarrow\)③（①作条件③作结论、③\(\Rightarrow\)①亦可；②不能作条件也不能作结论）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-高考3
+\dansitem{高考3}{(1)证明见解析；(2)\(\dfrac{2}{3}\)（①②两路同值）}
+\vskip 0pt minus 1.2pt
+% pair:导-章末-高考4
+\dansitem{高考4}{(1)证明见解析；(2)存在，\(\dfrac{PM}{PD}=\dfrac{1}{3}\)}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+
+% ============================================================
+% 【乙】练习件答案（10 课时×16 题＝160；题号 1~9 单号档、题 10~16 双位档）
+% ============================================================
+\jietitle{1.1.1\quad 空间向量及其运算(练习件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{第一课时\quad 1.1.1(课1)}{本课时共16题——题号与练习件同号}
+% pair:练-课时01-1
+\ansitem{1}{C}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-2
+\ansitem{2}{\(\overrightarrow{a}-\overrightarrow{b}-\overrightarrow{c}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-3
+\ansitem{3}{\(x=1\)，\(y=\dfrac{1}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-4
+\ansitem{4}{\(-11\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-5
+\ansitem{5}{\(\dfrac{\sqrt{10}}{5}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(C\) 在底面！\(AB_{1}=(2,0,1)\)、\(AC=(2,2,0)\)，\(\cos=\dfrac{4}{\sqrt{5}\cdot 2\sqrt{2}}=\dfrac{\sqrt{10}}{5}\)。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-6
+\ansitem{6}{\(\overrightarrow{b}-\overrightarrow{a}-\overrightarrow{c}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-7
+\ansitem{7}{共面}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\) 系数和 \(3+(-2)=1\)。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-8
+\ansitem{8}{\(\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-9
+\ansitem{9}{AD}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时01-10
+\ansitem{10}{\(\dfrac{\sqrt{7}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-11
+\ansitem{11}{(1)\(2\overrightarrow{AG}\)；(2)\(\overrightarrow{MD}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-12
+\ansitem{12}{A}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(AB\) 与 \(A_{1}C_{1}\) 成 \(45^{\circ}\)；B \(135^{\circ}\)、C \(90^{\circ}\)、D \(180^{\circ}\) 逐项坐标验。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-13
+\ansitem{13}{\(\overrightarrow{MN}=-\dfrac{1}{2}\overrightarrow{a}+\dfrac{1}{2}\overrightarrow{c}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(=\dfrac{1}{2}(\overrightarrow{BB_{1}}+\overrightarrow{A_{1}D_{1}})\)。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-14
+\ansitem{14}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(MN\parallel BD\) 且 \(MN=\dfrac{1}{2}BD\)（中位线）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-15
+\ansitem{15}{(1)\(\dfrac{a^{2}}{2}\)；(2)\(-\dfrac{a^{2}}{2}\)；(3)\(-\dfrac{a^{2}}{2}\)；(4)\(\dfrac{a^{2}}{4}\)；(5)\(-\dfrac{a^{2}}{4}\)；(6)\(\dfrac{a^{2}}{4}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时01-16
+\ansitem{16}{最小值 \(-\dfrac{3}{2}\)；\(P\) 为高线 \(AM\) 中点}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(f=2\left[x^{2}+y^{2}-\sqrt{3}y\right]\) 配方。}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{5.8mm}
+\qufen{第二课时\quad 1.1.1(课2)}{本课时共16题——题号与练习件同号}
+% pair:练-课时02-1
+\ansitem{1}{B（仅②真）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-2
+\ansitem{2}{C（③④）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-3
+\ansitem{3}{B（平行四边形）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-4
+\ansitem{4}{\(\overrightarrow{0}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-5
+\ansitem{5}{\(\dfrac{5}{6}\overrightarrow{a}+\dfrac{9}{2}\overrightarrow{b}-\dfrac{7}{6}\overrightarrow{c}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-6
+\ansitem{6}{(1)共面；(2)共面；(3)不共面}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-7
+\ansitem{7}{(1)\(90^{\circ}\)；(2)\(45^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-8
+\ansitem{8}{\(\dfrac{3\pi}{4}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-9
+\ansitem{9}{B（\(-\overrightarrow{a}+\overrightarrow{b}+\overrightarrow{c}\)）}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时02-10
+\ansitem{10}{A（\(A\)、\(B\)、\(D\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-11
+\ansitem{11}{C（\(1\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-12
+\ansitem{12}{D（\(0\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-13
+\ansitem{13}{ABC}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-14
+\ansitem{14}{(1)\(\pi\)；(2)\(\dfrac{\pi}{3}\)；(3)\(\dfrac{2\pi}{3}\)；(4)\(\dfrac{\pi}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-15
+\ansitem{15}{(1)\(\lambda=\dfrac{3}{4}\)，\(h=2\)；(2)\(\dfrac{3\sqrt{5}}{25}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(1+h^{2}(1-\lambda)=0\) 与 \(1+h^{2}(1-\lambda)^{2}=\dfrac{5}{4}\) 联立 \(\Rightarrow h^{2}=4\)、\(\lambda=\dfrac{3}{4}\)。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时02-16
+\ansitem{16}{(1)证明 \(\overrightarrow{PB}+2\overrightarrow{PC}=3\overrightarrow{PM}\)；(2)最小值 \(-\dfrac{5}{3}\)，\(P\) 为 \(AM\) 中点}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(M\) 定点，系数和 \(1+2=3\)。}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{1.1.2\quad 空间向量基本定理(练习件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{第三课时\quad 1.1.2}{本课时共16题——题号与练习件同号}
+% pair:练-课时03-1
+\ansitem{1}{D}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-2
+\ansitem{2}{C（2 个真）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-3
+\ansitem{3}{ABC}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-4
+\ansitem{4}{BC}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-5
+\ansitem{5}{B（\(\dfrac{1}{2}\overrightarrow{a}-\overrightarrow{b}+\dfrac{1}{2}\overrightarrow{c}\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-6
+\ansitem{6}{C（\((3,1,3)\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-7
+\ansitem{7}{\(x=1\)，\(y=-3\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-8
+\ansitem{8}{\(x=3\)，\(y=-2\)，\(z=1\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-9
+\ansitem{9}{\(\overrightarrow{OE}=\dfrac{1}{2}\overrightarrow{a}+\dfrac{1}{4}\overrightarrow{b}+\dfrac{1}{4}\overrightarrow{c}\)}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时03-10
+\ansitem{10}{(1)证明 \(A\)、\(E\)、\(C_{1}\)、\(F\) 共面；(2)\(x+y+z=\dfrac{1}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-11
+\ansitem{11}{\(\lambda=\dfrac{65}{7}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-12
+\ansitem{12}{\(\overrightarrow{PG}=\dfrac{1}{3}\overrightarrow{i}+\dfrac{2}{3}\overrightarrow{j}-\dfrac{2}{3}\overrightarrow{k}\)；\(\overrightarrow{BG}=-\dfrac{2}{3}\overrightarrow{i}+\dfrac{2}{3}\overrightarrow{j}+\dfrac{1}{3}\overrightarrow{k}\)；\(\overrightarrow{AG}=\dfrac{1}{3}\overrightarrow{i}+\dfrac{2}{3}\overrightarrow{j}+\dfrac{1}{3}\overrightarrow{k}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-13
+\ansitem{13}{B（\(AC_{1}\cdot BD=0\) 恒）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-14
+\ansitem{14}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(EF\parallel B_{1}D_{1}\parallel BD\)，故共面。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-15
+\ansitem{15}{共面（\(\overrightarrow{p}-\overrightarrow{q}=\overrightarrow{b}-\overrightarrow{c}=\overrightarrow{r}\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时03-16
+\ansitem{16}{充要条件证明}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{1.1.3\quad 空间向量及其运算的坐标表示(练习件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{第四课时\quad 1.1.3(课1)}{本课时共16题——题号与练习件同号}
+% pair:练-课时04-1
+\ansitem{1}{(1)\((-1,1,-2)\)；(2)\((1,-1,0)\)；(3)\((0,2,3)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-2
+\ansitem{2}{(1)\((-8,8,4)\)；(2)\((-6,-9,-2)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-3
+\ansitem{3}{(1)\((1,1,-1)\)；(2)\((1,1,1)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-4
+\ansitem{4}{\(\left(2,3,\dfrac{7}{2}\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-5
+\ansitem{5}{\(|OM|=\sqrt{x^{2}+y^{2}+z^{2}}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-6
+\ansitem{6}{(1)\((13,-4,3)\)；(2)\(7\)；(3)\(-121\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-7
+\ansitem{7}{C（\((0,-4,-2)\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-8
+\ansitem{8}{④（仅④真）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-9
+\ansitem{9}{开放题（常见建系位逐顶点坐标）}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时04-10
+\ansitem{10}{D（\(\left(2,2,\dfrac{4}{3}\right)\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-11
+\ansitem{11}{(1)\(A(0,0,0)\)，\(B(2,0,0)\)，\(C(0,2,0)\)，\(P(0,0,3)\)；(2)\(Q\left(0,1,\dfrac{3}{2}\right)\)；(3)\(M\left(0,t,3-\dfrac{3}{2}t\right)\)，\(t\in[0,2]\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-12
+\ansitem{12}{A（\((1,1,1)\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-13
+\ansitem{13}{\(A_{1}(-1,-2,0)\)，\(B_{1}(3,-1,-2)\)，\(C_{1}(4,1,-1)\)，\(D_{1}(0,0,1)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-14
+\ansitem{14}{①\(\Leftrightarrow\)③（②不作条件，不作结论）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-15
+\ansitem{15}{(1)\((x-2)^{2}+(y-2)^{2}=4\)（\(m=12\)），圆，长 \(4\pi\)；(2)\(m=12\) 或 \(16\)；(3)\(|PB_{1}|\in\{4,\ 4\sqrt{2},\ 4\sqrt{3}\}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时04-16
+\ansitem{16}{(1)\(-1\)；(2)\(t=0\) 或 \(-2\)；(3)\(t=0\)：\(45^{\circ}\)；\(t=-2\)：\(135^{\circ}\)}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{5.8mm}
+\qufen{第五课时\quad 1.1.3(课2)}{本课时共16题——题号与练习件同号}
+% pair:练-课时05-1
+\ansitem{1}{(1)(2) 均平行}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-2
+\ansitem{2}{(1)(2) 均垂直}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-3
+\ansitem{3}{\((2,-2,4)\) 或 \((-2,2,-4)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-4
+\ansitem{4}{C\(\left(\dfrac{5}{3},2,-4\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-5
+\ansitem{5}{D\((5,13,-3)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-6
+\ansitem{6}{\(m=-2\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-7
+\ansitem{7}{C（\(-4\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-8
+\ansitem{8}{(1)\(\dfrac{1}{2}\)；(2)\(\dfrac{\sqrt{6}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-9
+\ansitem{9}{\(\overrightarrow{n}=\lambda(1,1,1)\)（\(\lambda\neq 0\)）}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时05-10
+\ansitem{10}{\(\dfrac{17\sqrt{29}}{29}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-11
+\ansitem{11}{(1)\(\sqrt{3}\)；(2)\(a=1\)，\(\cos=\dfrac{1}{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-12
+\ansitem{12}{(1)\(\dfrac{2\sqrt{13}}{3}\)；(2)\(\dfrac{\sqrt{6}}{4}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-13
+\ansitem{13}{(1)\(x=6\)，\(y=\dfrac{15}{2}\)；(2)\((-4,2)\) 或 \(\left(\dfrac{116}{41},-\dfrac{142}{41}\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-14
+\ansitem{14}{(1)\([0,3,5]\)；①\(\left[-2,2,\dfrac{3}{2}\right]\)；②\(|AM|=2\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-15
+\ansitem{15}{(1)\(m=\pm 1\)；(2)不存在；(3)\(\left[-\dfrac{2}{5},\dfrac{2}{5}\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时05-16
+\ansitem{16}{(1)\((1-\lambda)^{2}+\mu^{2}=\dfrac{1}{4}\)，\(\lambda\in\left[\dfrac{1}{2},1\right]\)；(2)\([-2\sqrt{2},-2]\)}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{1.2.1\quad 空间中的点、直线与空间向量(练习件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{第六课时\quad 1.2.1}{本课时共16题——题号与练习件同号}
+% pair:练-课时06-1
+\ansitem{1}{A}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-2
+\ansitem{2}{\((1,-1,0)\) 的任一非零倍数}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-3
+\ansitem{3}{(1)(2) 均平行}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-4
+\ansitem{4}{B（\(\lambda=2\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-5
+\ansitem{5}{B（\(m=2\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-6
+\ansitem{6}{C\((9,12,10)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-7
+\ansitem{7}{C\((-1,0,2)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-8
+\ansitem{8}{\(90^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-9
+\ansitem{9}{(1)\(BC\)、\(CD\)、\(B^{\prime}C^{\prime}\)、\(C^{\prime}D^{\prime}\)；(2)\(60^{\circ}\)／\(150^{\circ}\)／\(90^{\circ}\)}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时06-10
+\ansitem{10}{证明见解析（\(\overrightarrow{MN}=\dfrac{1}{2}\overrightarrow{B_{1}C}\)）}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{正方形对角线互相平分——中点 \(M\)、\(N\) 为对角线交点链，且【知识点】按向量口径重标。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-11
+\ansitem{11}{(1)(2) 证明见解析}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-12
+\ansitem{12}{B（\(\dfrac{\sqrt{2}}{4}\)）}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(\cos\langle\overrightarrow{PD},\overrightarrow{AC}\rangle=\dfrac{\sqrt{2}}{4}\)（等号后补分隔：\(\cos=\dfrac{|\overrightarrow{PD}\cdot\overrightarrow{AC}|}{|\overrightarrow{PD}||\overrightarrow{AC}|}\)）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-13
+\ansitem{13}{\(45^{\circ}\)、\(\dfrac{\sqrt{2}}{2}a\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(\cos\langle\overrightarrow{EF},\overrightarrow{AB}\rangle=\dfrac{\overrightarrow{EF}\cdot\overrightarrow{AB}}{|\overrightarrow{EF}||\overrightarrow{AB}|}\)（补分隔）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-14
+\ansitem{14}{\(M\) 在线段 \(FH\) 上（例 \(M=F\)，答案不唯一）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-15
+\ansitem{15}{AD}
+\vskip 0pt minus 1.2pt
+% pair:练-课时06-16
+\ansitem{16}{存在：\(\overrightarrow{AM}=\dfrac{2}{3}\overrightarrow{AD_{1}}\)、\(\overrightarrow{BN}=\dfrac{5}{6}\overrightarrow{BD}\)，\(|MN|=\dfrac{\sqrt{6}}{3}\)}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{1.2.2\quad 空间中的平面与空间向量(练习件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{第七课时\quad 1.2.2}{本课时共16题——题号与练习件同号}
+% pair:练-课时07-1
+\ansitem{1}{A\((-1,2,-1)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-2
+\ansitem{2}{A\((2,3,3)\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-3
+\ansitem{3}{D}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-4
+\ansitem{4}{AD}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-5
+\ansitem{5}{A（平行）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-6
+\ansitem{6}{(1)(2) 均 \(\alpha\parallel\beta\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-7
+\ansitem{7}{垂直}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-8
+\ansitem{8}{\(-3\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-9
+\ansitem{9}{\(P\) 为 \(CC_{1}\) 中点（答案不唯一）}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时07-10
+\ansitem{10}{证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{末句应为 \(DB\cap DM=D\)（源详解「\(DB\cap DM=M\)」勘正）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-11
+\ansitem{11}{(1)(2) 证明见解析}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{法向量共线 \(\Rightarrow\) 平行或重合——补「两平面不重合」完备句。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-12
+\ansitem{12}{(1)存在，\(PE=\dfrac{a^{2}+c^{2}}{2a^{2}+c^{2}}PC\)；(2)不存在}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-13
+\ansitem{13}{D（\(\left(0,\dfrac{2}{3}\right]\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-14
+\ansitem{14}{B（\(2\) 个）}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{④维持相似比口径讲解。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-15
+\ansitem{15}{(1)(2) 证明见解析}
+\vskip 0pt minus 1.2pt
+% pair:练-课时07-16
+\ansitem{16}{(1)证明见解析；(2)\(V=\dfrac{8}{3}\)}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{1.2.3\quad 直线与平面的夹角(练习件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{第八课时\quad 1.2.3}{本课时共16题——题号与练习件同号}
+% pair:练-课时08-1
+\ansitem{1}{(1)\(3\sqrt{3}\)；(2)\(5\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-2
+\ansitem{2}{\(\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle=\theta\) 或 \(\pi-\theta\)，即 \(\cos\theta=\left|\cos\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle\right|\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-3
+\ansitem{3}{(1)\(60^{\circ}\)；(2)\(45^{\circ}\)；(3)\(0^{\circ}\)；(4)\(90^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-4
+\ansitem{4}{\(45^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-5
+\ansitem{5}{\(\dfrac{\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-6
+\ansitem{6}{\(\dfrac{2\sqrt{30}}{15}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-7
+\ansitem{7}{选①：\(\lambda=\dfrac{1}{2}\) 或 \(1\)；选②③：\(\lambda\) 不存在}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-8
+\ansitem{8}{(1)证明见解析；(2)\(\dfrac{\sqrt{7}}{7}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{二面角定义法前序合法（基准表第18行判例）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-9
+\ansitem{9}{(1)证明见解析；(2)\(\dfrac{2}{3}\)（选①②同值）}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时08-10
+\ansitem{10}{(1)证明见解析；(2)最大值 \(\dfrac{\sqrt{6}}{3}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{方法二「平面 \(QDC\)」（源详解「平面 \(QOC\)」勘正；值无误）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-11
+\ansitem{11}{\(BC=\sqrt{100-24\sqrt{3}}\) 或 \(\sqrt{100+24\sqrt{3}}\) cm}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-12
+\ansitem{12}{A（\(\angle PCA\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-13
+\ansitem{13}{\(30^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-14
+\ansitem{14}{C（\(60^{\circ}\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-15
+\ansitem{15}{\(\dfrac{2}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时08-16
+\ansitem{16}{(1)\(C(2,2,0)\)、\(P(0,0,2)\)；(2)\(\dfrac{\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{1.2.4\quad 二面角(练习件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{第九课时\quad 1.2.4}{本课时共16题——题号与练习件同号}
+% pair:练-课时09-1
+\ansitem{1}{\(\dfrac{3\sqrt{3}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-2
+\ansitem{2}{\(7\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-3
+\ansitem{3}{(1)证明见解析；(2)\(\dfrac{2\sqrt{7}}{7}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-4
+\ansitem{4}{(1)证明见解析；(2)\(-\dfrac{\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-5
+\ansitem{5}{(1)证明见解析；(2)\(\dfrac{2\sqrt{5}}{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-6
+\ansitem{6}{(1)证明见解析；(2)存在，\(\dfrac{PM}{PD}=\dfrac{1}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-7
+\ansitem{7}{(1)\(\dfrac{3}{2}\)；(2)\(-\dfrac{2\sqrt{7}}{7}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{(2) 印钝制 \(-\dfrac{2\sqrt{7}}{7}\)（取锐 \(\dfrac{2\sqrt{7}}{7}\) 两制并存挂账——教材 PDF 无答案栏，钉-7 保持待钉并呈报）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-8
+\ansitem{8}{(1)证明见解析；(2)\(30^{\circ}\)；(3)\(SE:EC=2:1\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-9
+\ansitem{9}{C（\(MP\perp l\) 且 \(NP\perp l\)）}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时09-10
+\ansitem{10}{\(90^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-11
+\ansitem{11}{5}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-12
+\ansitem{12}{C（\(60^{\circ}\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-13
+\ansitem{13}{12}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-14
+\ansitem{14}{\(60^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-15
+\ansitem{15}{(1)证明见解析；(2)\(30^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时09-16
+\ansitem{16}{B（\(45^{\circ}\)）}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{1.2.5\quad 空间中的距离(练习件答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{第十课时\quad 1.2.5}{本课时共16题——题号与练习件同号}
+% pair:练-课时10-1
+\ansitem{1}{B（d=2）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-2
+\ansitem{2}{C（\(\dfrac{1}{3}\)）}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(ACD_{1}\) 面 \(x-2y+2z=0\)，\(d=\dfrac{1}{3}\)；「y 轴」两处按源件勘正。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-3
+\ansitem{3}{A（\(\dfrac{2\sqrt{2}}{3}\)）}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(|\overrightarrow{BA}\times\overrightarrow{BC}|=2\sqrt{2}\)、\(|BC|=3\)；向量坐标不加模线（源详解勘正）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-4
+\ansitem{4}{\(\dfrac{2\sqrt{3}}{3}\) cm}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-5
+\ansitem{5}{\(\dfrac{2\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-6
+\ansitem{6}{(1)\(\dfrac{\sqrt{3}}{3}\)；(2)\(\dfrac{\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-7
+\ansitem{7}{\(\dfrac{\sqrt{6}a}{12}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-8
+\ansitem{8}{C（\(\dfrac{1}{4}\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-9
+\ansitem{9}{(1)\(4\)；(2)\(\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}   % 题 10 起双位档
+% pair:练-课时10-10
+\ansitem{10}{(1)\(\dfrac{2\sqrt{5}}{5}\)；(2)\(\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-11
+\ansitem{11}{C（\(5\sqrt{2}\)）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-12
+\ansitem{12}{BC}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{D 项应为 \(\dfrac{5}{6}\)（源详解嵌套绝对值与括号错位勘正）。}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-13
+\ansitem{13}{(1)\(\dfrac{5\sqrt{34}}{34}\)；(2)\(0\)；(3)\(\dfrac{4}{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-14
+\ansitem{14}{\(\dfrac{\sqrt{2}}{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-15
+\ansitem{15}{A（2）}
+\vskip 0pt minus 1.2pt
+% pair:练-课时10-16
+\ansitem{16}{\(\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{应为连线段 CP（\(\overrightarrow{CP}=(1,1,1)\parallel\overrightarrow{n}\) 实为垂线段），且垂足恰为 C，\(d=|PC|=\sqrt{3}\) 第二路可验。}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+
+% ============================================================
+% 【丙】拓展册答案（拓-001~160 连续流水、057 撤下＝义A-1/钉-6 哨兵，159 题）
+% ============================================================
+\jietitle{拓展册(答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{7.6mm}   % 拓-三位号＝双位档起
+\qufen{一、1.1.1 域}{拓-001～010}
+% pair:拓-001
+\ansitem{001}{C（①②③⑤假；④真）}
+\vskip 0pt minus 1.2pt
+% pair:拓-002
+\ansitem{002}{D}
+\vskip 0pt minus 1.2pt
+% pair:拓-003
+\ansitem{003}{A（\(4\ov{PG}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-004
+\ansitem{004}{(1)\(0\)；(2)\(1\)；(3)\(1\)；(4)\(-1\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-005
+\ansitem{005}{\(-2\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-006
+\ansitem{006}{\(\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-007
+\ansitem{007}{\(\sqrt{13}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-008
+\ansitem{008}{D（\(\arccos\dfrac{1}{4}\approx 75.5^{\circ}\)，非特殊角）}
+\vskip 0pt minus 1.2pt
+% pair:拓-009
+\ansitem{009}{\(0\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-010
+\ansitem{010}{B（\(k=2\)）}
+\vskip 0pt minus 1.2pt
+\qufen{二、1.1.2 域}{拓-011～017}
+% pair:拓-011
+\ansitem{011}{C（系数和 \(11-6-4=1\)，\(M\in\) 平面 \(BA_{1}D_{1}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-012
+\ansitem{012}{(1)(2)证明见解析；(3)\(\ov{OM}=\dfrac{1}{4}(\ov{OA}+\ov{OB}+\ov{OC}+\ov{OD})\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-013
+\ansitem{013}{\(\ov{OG}=\dfrac{1}{6}\ov{a}+\dfrac{1}{3}\ov{b}+\dfrac{1}{3}\ov{c}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-014
+\ansitem{014}{共面（\(\ov{c}=-2\ov{a}+\ov{b}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-015
+\ansitem{015}{A（\(\ov{AM}\cdot\ov{MN}=-\dfrac{4}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-016
+\ansitem{016}{一定共面}
+\vskip 0pt minus 1.2pt
+% pair:拓-017
+\ansitem{017}{\(\ov{OC}\)}
+\vskip 0pt minus 1.2pt
+\qufen{三、1.1.3 域}{拓-018～037}
+% pair:拓-018
+\ansitem{018}{\(F(0,0,0)\)、\(A(0,4,0)\)、\(B(-3,0,0)\)、\(C(3,0,0)\)、\(A_{1}(0,4,5)\)、\(B_{1}(-3,0,5)\)、\(C_{1}(3,0,5)\)、\(E(3,0,\dfrac{5}{2})\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-019
+\ansitem{019}{\((\pm\dfrac{1}{2},\pm\dfrac{1}{2},\pm\dfrac{1}{2})\)（8 个顶点取遍正负号组合）}
+\vskip 0pt minus 1.2pt
+% pair:拓-020
+\ansitem{020}{\(P\left(\dfrac{2}{3},\dfrac{2}{3},\dfrac{1}{3}\right)\)（\(D\) 为原点系）}
+\vskip 0pt minus 1.2pt
+% pair:拓-021
+\ansitem{021}{A（\(P(1,1,-1)\)，\(|\ov{OP}|=\sqrt{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-022
+\ansitem{022}{D（\(2\sqrt{14}\)；\(A^{\prime}(3,3,-1)\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-023
+\ansitem{023}{(1)\(9\)；(2)\(-454\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-024
+\ansitem{024}{\(|\ov{a}+\ov{b}|^{2}=307\)，\(|\ov{a}-\ov{b}|^{2}=107\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-025
+\ansitem{025}{\(\lambda=3\)（\(-2\) 由 \(\lambda>0\) 舍）}
+\vskip 0pt minus 1.2pt
+% pair:拓-026
+\ansitem{026}{(1)\(0^{\circ}\)；(2)\(180^{\circ}\)；(3)\(90^{\circ}\)；(4)\(60^{\circ}\)；(5)\(150^{\circ}\)；(6)\(45^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-027
+\ansitem{027}{B（\(\lambda=-\dfrac{\sqrt{6}}{6}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-028
+\ansitem{028}{(1)证明见解析；(2)\(\dfrac{\sqrt{30}}{15}\)；(3)\(\dfrac{\sqrt{22}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-029
+\ansitem{029}{\(xy=-16\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-030
+\ansitem{030}{B（\(x=\dfrac{1}{2}\)，\(y=-4\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-031
+\ansitem{031}{\(\left(\dfrac{3}{2},\dfrac{3}{2},\dfrac{3\sqrt{2}}{2}\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-032
+\ansitem{032}{(1)\(60^{\circ}\)；(2)\(\dfrac{\sqrt{2}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-033
+\ansitem{033}{(1)\(\left(\dfrac{2}{\sqrt{38}},-\dfrac{3}{\sqrt{38}},\dfrac{5}{\sqrt{38}}\right)\)；(2)\(\left(0,-\dfrac{3}{5},\dfrac{4}{5}\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-034
+\ansitem{034}{A（\(\left[\dfrac{\sqrt{6}}{2},\sqrt{2}\right]\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-035
+\ansitem{035}{\(k=\dfrac{7}{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-036
+\ansitem{036}{\(D(2,0,5)\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-037
+\ansitem{037}{存在，\(x=-\dfrac{86}{51}\)}
+\vskip 0pt minus 1.2pt
+\qufen{四、1.2.1 域}{拓-038～042}
+% pair:拓-038
+\ansitem{038}{A（\(30^{\circ}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-039
+\ansitem{039}{(1)\(\sqrt{2}\)；(2)\(\dfrac{\sqrt{14}}{7}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-040
+\ansitem{040}{C（\(\dfrac{\sqrt{3}}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-041
+\ansitem{041}{\(\ov{DM}\perp\ov{PC}\)（或 \(\ov{BM}\perp\ov{PC}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-042
+\ansitem{042}{证明见解析}
+\vskip 0pt minus 1.2pt
+\qufen{五、1.2.2 域}{拓-043～050}
+% pair:拓-043
+\ansitem{043}{ABC（错误结论为 A、B、C）}
+\vskip 0pt minus 1.2pt
+% pair:拓-044
+\ansitem{044}{(1)证明见解析；(2)存在，\(\ov{DG}=2\ov{GB}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-045
+\ansitem{045}{BC}
+\vskip 0pt minus 1.2pt
+% pair:拓-046
+\ansitem{046}{证明见解析}
+\vskip 0pt minus 1.2pt
+% pair:拓-047
+\ansitem{047}{证明见解析}
+\vskip 0pt minus 1.2pt
+% pair:拓-048
+\ansitem{048}{ACD}
+\vskip 0pt minus 1.2pt
+% pair:拓-049
+\ansitem{049}{(1)证明见解析（\(n=(0,2,1)\)）；(2)\(\dfrac{\sqrt{5}}{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-050
+\ansitem{050}{\(\ov{BN}/\ov{NC}=1\)，轨迹长 \(6\)（答案不唯一，\(k=2\) 时长 \(4\) 亦可）}
+\vskip 0pt minus 1.2pt
+\qufen{六、1.2.3 域}{拓-051～058（057 撤下）}
+% pair:拓-051
+\ansitem{051}{\(45^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-052
+\ansitem{052}{\(\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-053
+\ansitem{053}{\(\left(\dfrac{1}{4},\dfrac{1}{2}\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-054
+\ansitem{054}{(1)证明见解析；(2)\(\dfrac{9}{13}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-055
+\ansitem{055}{三面所成角均为 \(\arccos\dfrac{\sqrt{6}}{3}\)（余弦值均 \(\dfrac{\sqrt{6}}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-056
+\ansitem{056}{\(45^{\circ}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-058
+\ansitem{058}{\(\dfrac{\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+\qufen{七、1.2.4 域}{拓-059～079}
+% pair:拓-059
+\ansitem{059}{(1)\(\sqrt{2}\)；(2)\(\dfrac{\sqrt{3}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-060
+\ansitem{060}{(1)证明见解析；(2)\(\dfrac{\sqrt{5}}{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-061
+\ansitem{061}{(1)证明见解析；(2)\(\dfrac{11}{13}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-062
+\ansitem{062}{(1)证明见解析；(2)\(\dfrac{1}{3}\)；(3)\(\dfrac{\pi}{4}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-063
+\ansitem{063}{(1)\(D\) 为棱 \(CC_{1}\) 的中点（\(CD=2\)）；(2)\(\dfrac{\pi}{4}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-064
+\ansitem{064}{(1)证明见解析；(2)\(\dfrac{\pi}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-065
+\ansitem{065}{(1)证明见解析；(2)①\(\dfrac{1}{3}\)；②\(\dfrac{\sqrt{6}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-066
+\ansitem{066}{\(\dfrac{\sqrt{6}}{4}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-067
+\ansitem{067}{\(-\dfrac{\sqrt{5}}{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-068
+\ansitem{068}{(a)\(\dfrac{1}{3}\)；(b)\(\left(\dfrac{\sqrt{10}}{10},\dfrac{\sqrt{2}}{2}\right)\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-069
+\ansitem{069}{(1)证明见解析；(2)\(\dfrac{\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-070
+\ansitem{070}{(1)证明见解析；(2)\(\dfrac{\sqrt{111}}{8}\)；(3)\(\dfrac{5\sqrt{37}}{37}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-071
+\ansitem{071}{(1)证明见解析；(2)\(\dfrac{\sqrt{6}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-072
+\ansitem{072}{BD}
+\vskip 0pt minus 1.2pt
+% pair:拓-073
+\ansitem{073}{(1)证明见解析；(2)三支均证出}
+\vskip 0pt minus 1.2pt
+% pair:拓-074
+\ansitem{074}{(1)证明见解析；(2)①\(\dfrac{2\sqrt{7}}{7}\)；②\(-\dfrac{2\sqrt{19}}{19}\)；③\(\dfrac{2\sqrt{51}}{17}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-075
+\ansitem{075}{(1)证明见解析；(2)选①③或②③；(3)\(\dfrac{\sqrt{10}}{10}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-076
+\ansitem{076}{(1)证明见解析；(2)三支同答 \(\dfrac{4\sqrt{53}}{53}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-077
+\ansitem{077}{(1)\(\dfrac{1}{3}\)；(2)不存在}
+\vskip 0pt minus 1.2pt
+% pair:拓-078
+\ansitem{078}{(1)证明见解析；(2)存在，\(M\) 为棱 \(SA\) 上靠近 \(A\) 的三等分点（\(\ov{AM}=\dfrac{1}{3}\ov{AS}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-079
+\ansitem{079}{与 \(yOz\) 面 \(\dfrac{6}{7}\)、\(zOx\) 面 \(\dfrac{3}{7}\)、\(xOy\) 面 \(\dfrac{2}{7}\)}
+\vskip 0pt minus 1.2pt
+\qufen{八、1.2.5 域}{拓-080～160（057 已撤，域外不涉）}
+% pair:拓-080
+\ansitem{080}{\(\dfrac{\sqrt{6}}{4}a\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-081
+\ansitem{081}{A（\(36\pi\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-082
+\ansitem{082}{C（\(\sqrt{2}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-083
+\ansitem{083}{D（\(\dfrac{3\sqrt{2}}{2}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-084
+\ansitem{084}{\(\dfrac{3}{2}+\dfrac{\sqrt{6}}{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-085
+\ansitem{085}{\(\dfrac{4\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-086
+\ansitem{086}{\(\sqrt{6}\pi\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-087
+\ansitem{087}{C（\(\dfrac{5\pi}{2}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-088
+\ansitem{088}{\(2\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-089
+\ansitem{089}{D（\(1\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-090
+\ansitem{090}{\(\dfrac{32\pi}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-091
+\ansitem{091}{\(4\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-092
+\ansitem{092}{A（\(25\pi\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-093
+\ansitem{093}{\(36\pi-16\sqrt{2}\pi\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-094
+\ansitem{094}{D（\(\dfrac{20\pi}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-095
+\ansitem{095}{\(\dfrac{28\pi}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-096
+\ansitem{096}{D（\(112\pi\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-097
+\ansitem{097}{D（\(\dfrac{52\pi}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-098
+\ansitem{098}{\(2\sqrt{2}-2\)；\(\dfrac{3}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-099
+\ansitem{099}{\(32\sqrt{3}\pi\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-100
+\ansitem{100}{C（\((3-2\sqrt{2})\pi\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-101
+\ansitem{101}{\(\dfrac{6\sqrt{3}}{\pi}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-102
+\ansitem{102}{\(8\pi\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-103
+\ansitem{103}{C（\(\dfrac{2\pi}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-104
+\ansitem{104}{D（\(\dfrac{9}{4}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-105
+\ansitem{105}{\((2-\sqrt{2})a\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-106
+\ansitem{106}{\(6\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-107
+\ansitem{107}{A（\(\dfrac{\sqrt{3}}{2}\pi\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-108
+\ansitem{108}{C（\(\dfrac{\sqrt{6}}{12}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-109
+\ansitem{109}{ABC}
+\vskip 0pt minus 1.2pt
+% pair:拓-110
+\ansitem{110}{B（\(\dfrac{4}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-111
+\ansitem{111}{\(4\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-112
+\ansitem{112}{\(2\sqrt{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-113
+\ansitem{113}{\(\left[0,\dfrac{4}{3}\right]\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-114
+\ansitem{114}{B（\(4\sqrt{6}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-115
+\ansitem{115}{A（\(\sqrt{2}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-116
+\ansitem{116}{B（\(\sqrt{2}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-117
+\ansitem{117}{B（\(6\pi\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-118
+\ansitem{118}{A（\(2:1\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-119
+\ansitem{119}{\(12\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-120
+\ansitem{120}{A（\(81\pi\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-121
+\ansitem{121}{A（\(\dfrac{13\pi}{6}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-122
+\ansitem{122}{C（\(2\pi\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-123
+\ansitem{123}{D（\(\left[\dfrac{16\pi}{9},3\pi\right]\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-124
+\ansitem{124}{B（\(\left[\dfrac{8\pi}{9},\dfrac{3\pi}{2}\right]\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-125
+\ansitem{125}{\(\dfrac{7\pi}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-126
+\ansitem{126}{\(4\sqrt{3}\pi\)；\(2\sqrt{2}\pi\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-127
+\ansitem{127}{\(\sqrt{5}\)；\(\dfrac{65\sqrt{10}\pi}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-128
+\ansitem{128}{D（\(4\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-129
+\ansitem{129}{A（\(12+4\sqrt{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-130
+\ansitem{130}{A（\(\dfrac{1}{4}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-131
+\ansitem{131}{BC}
+\vskip 0pt minus 1.2pt
+% pair:拓-132
+\ansitem{132}{\(2\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-133
+\ansitem{133}{\(\dfrac{\sqrt{13}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-134
+\ansitem{134}{\(11\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-135
+\ansitem{135}{D（\(\sqrt{7}+1\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-136
+\ansitem{136}{C（\(\dfrac{16\sqrt{2}\pi}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-137
+\ansitem{137}{A（\(r=1\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-138
+\ansitem{138}{D（\(\dfrac{7\pi}{2}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-139
+\ansitem{139}{\(2\sqrt{3}\)；\(\dfrac{9}{4}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-140
+\ansitem{140}{B（圆）}
+\vskip 0pt minus 1.2pt
+% pair:拓-141
+\ansitem{141}{B（圆）}
+\vskip 0pt minus 1.2pt
+% pair:拓-142
+\ansitem{142}{D（四条直线）}
+\vskip 0pt minus 1.2pt
+% pair:拓-143
+\ansitem{143}{\(\dfrac{2\sqrt{5}}{3}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-144
+\ansitem{144}{\(m=1\)；\(0<m<\sqrt{2}\) 且 \(m\neq 1\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-145
+\ansitem{145}{\(\dfrac{\sqrt{2}+1}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-146
+\ansitem{146}{\(\sqrt{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-147
+\ansitem{147}{\(\dfrac{1}{4}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-148
+\ansitem{148}{(1)证明成立；(2)\(B_{1}D=\dfrac{1}{2}\)（此时 \(\sin\theta_{\min}=\dfrac{\sqrt{3}}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-149
+\ansitem{149}{(1)成立；(2)\(\dfrac{\sqrt{6}}{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-150
+\ansitem{150}{C（\(\dfrac{7}{8}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-151
+\ansitem{151}{C（\(\dfrac{5\sqrt{2}a^{3}}{12}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-152
+\ansitem{152}{\(\dfrac{46\sqrt{2}}{3}\)；\(22\pi\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-153
+\ansitem{153}{B（\(a>b>d>c\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-154
+\ansitem{154}{②③④（①假）}
+\vskip 0pt minus 1.2pt
+% pair:拓-155
+\ansitem{155}{C（\(45^{\circ}\) 或 \(60^{\circ}\)）}
+\vskip 0pt minus 1.2pt
+% pair:拓-156
+\ansitem{156}{(1)成立（\(AD\parallel\) 平面 \(B_{1}PQ\)）；(2)\(\dfrac{\sqrt{6}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-157
+\ansitem{157}{(1)\(4\)；(2)\(\dfrac{\sqrt{5}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-158
+\ansitem{158}{\(\dfrac{\sqrt{2}}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-159
+\ansitem{159}{\(\dfrac{30\sqrt{233}}{233}\)}
+\vskip 0pt minus 1.2pt
+% pair:拓-160
+\ansitem{160}{\(\dfrac{3\sqrt{13}}{2}\)}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+
+% ============================================================
+% 【丁】测评卷＋滚动卷A/B 答案（解答位全解＝义7-2，承卷末速查「略」）
+% ============================================================
+\jietitle{测评卷(答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{一、单项选择题}{本组共8题}
+% pair:测-1
+\ansitem{1}{D}
+\vskip 0pt minus 1.2pt
+% pair:测-2
+\ansitem{2}{B（\(45^{\circ}\)）}
+\vskip 0pt minus 1.2pt
+% pair:测-3
+\ansitem{3}{A（\(\angle PCA\)）}
+\vskip 0pt minus 1.2pt
+% pair:测-4
+\ansitem{4}{A（\(2\)）}
+\vskip 0pt minus 1.2pt
+% pair:测-5
+\ansitem{5}{C}
+\vskip 0pt minus 1.2pt
+% pair:测-6
+\ansitem{6}{C（\(60^{\circ}\)）}
+\vskip 0pt minus 1.2pt
+% pair:测-7
+\ansitem{7}{A（\(\dfrac{\sqrt{77}}{3}\)）}
+\vskip 0pt minus 1.2pt
+% pair:测-8
+\ansitem{8}{A（\(\left(-\dfrac{4}{5},3,\dfrac{4}{5}\right)\)）}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{5.8mm}
+\qufen{二、多项选择题}{本组共3题}
+% pair:测-9
+\ansitem{9}{ABC}
+\vskip 0pt minus 1.2pt
+% pair:测-10
+\ansitem{10}{ABC}
+\vskip 0pt minus 1.2pt
+% pair:测-11
+\ansitem{11}{ABD}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}
+\qufen{三、填空题}{本组共3题}
+% pair:测-12
+\ansitem{12}{\(\dfrac{7}{5}\)}
+\vskip 0pt minus 1.2pt
+% pair:测-13
+\ansitem{13}{\(x=\dfrac{1}{6}\)，\(y=-\dfrac{3}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:测-14
+\ansitem{14}{\(\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{5.8mm}
+\qufen{四、解答题}{本组共5题}
+% pair:测-15
+\ansitem{15}{\(\left(0,\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}\right)\)（方向可反）}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(\ov{AB}=(-1,1,-1)\)、\(\ov{AC}=(-1,0,0)\)。设 \(\ov{n}=(x,y,z)\)：\(\ov{n}\cdot\ov{AC}=0\) 得 \(x=0\)；\(\ov{n}\cdot\ov{AB}=0\) 得 \(y=z\)。取 \(\ov{n}=(0,1,1)\)，\(|\ov{n}|=\sqrt{2}\)，单位化得 \(\left(0,\dfrac{\sqrt{2}}{2},\dfrac{\sqrt{2}}{2}\right)\)（方向可反）。}
+\vskip 0pt minus 1.2pt
+% pair:测-16
+\ansitem{16}{\(90^{\circ}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{以 \(D\) 为原点、棱长为 \(1\)：\(\ov{A_{1}D}=(-1,0,-1)\)、\(\ov{BD_{1}}=(-1,-1,1)\)，\(\cos\langle\ov{A_{1}D},\ov{BD_{1}}\rangle=\dfrac{1-1}{\sqrt{2}\cdot\sqrt{3}}=0\)，所成角 \(90^{\circ}\)。}
+\vskip 0pt minus 1.2pt
+% pair:测-17
+\ansitem{17}{\(60^{\circ}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{\(\angle AMB=90^{\circ}\)（直径所对圆周角），故 \(BM\perp AM\)；又 \(PA\perp\) 圆面得 \(BM\perp PA\)，于是 \(BM\perp\) 平面 \(PAM\)，\(PM\perp BM\)——\(\angle PMA\) 即二面角 \(A\text{-}BM\text{-}P\) 的平面角。\(AM=AB\cos 60^{\circ}=2\)，\(\mathrm{Rt}\triangle PAM\) 中 \(\tan\angle PMA=\dfrac{PA}{AM}=\dfrac{2\sqrt{3}}{2}=\sqrt{3}\)，\(\angle PMA=60^{\circ}\)。}
+\vskip 0pt minus 1.2pt
+% pair:测-18
+\ansitem{18}{(1)\(45^{\circ}\)；(2)\(90^{\circ}\)；(3)\(\dfrac{2\sqrt{5}}{5}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{设棱长 \(a\)，\(B\) 为原点、\(BC\) 为 \(x\) 轴、面 \(BCD\) 为 \(xy\) 面（两平面垂直、交线 \(BC\)）：\(C(a,0,0)\)、\(D\left(-\dfrac{a}{2},\dfrac{\sqrt{3}a}{2},0\right)\)、\(A\left(-\dfrac{a}{2},0,\dfrac{\sqrt{3}a}{2}\right)\)。(1) \(A\) 到面 \(BCD\) 距离 \(\dfrac{\sqrt{3}a}{2}\)、\(|\ov{AD}|=\dfrac{\sqrt{6}a}{2}\)，\(\sin\theta=\dfrac{\sqrt{2}}{2}\)，\(45^{\circ}\)。(2) \(\ov{AD}\cdot\ov{BC}=0\)，\(90^{\circ}\)。(3) 面 \(ABD\) 法向量 \(\ov{n}=(3,\sqrt{3},\sqrt{3})\)，与面 \(BCD\) 法向量 \((0,0,1)\) 夹角余弦 \(\dfrac{\sqrt{3}}{\sqrt{15}}=\dfrac{\sqrt{5}}{5}\)，正弦 \(\dfrac{2\sqrt{5}}{5}\)。}
+\vskip 0pt minus 1.2pt
+% pair:测-19
+\ansitem{19}{(1)\((x-2)^{2}+(y-2)^{2}=4\)，内切圆，\(4\pi\)；(2)\(m=12\) 或 \(16\)；(3)\(4\)、\(4\sqrt{2}\)、\(4\sqrt{3}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{设 \(P(x,y,0)\)：\(\ov{PA_{1}}\cdot\ov{PC_{1}}=(x-2)^{2}+(y-2)^{2}+8=m\)，轨迹为底面内以 \((2,2)\) 为心、\(r^{2}=m-8\) 的圆（\(m\ge 8\)）。(1) \(m=12\)：\(r=2\)＝边心距，圆为底面内切圆，长 \(2\pi\times 2=4\pi\)。(2) 按 \(r\) 对 \(2\)、\(2\sqrt{2}\) 双门槛分档：恰 \(4\) 个公共点 \(\iff m=12\)（四边各相切）或 \(m=16\)（过四顶点）。(3) \(m=16\) 时轨迹缩为四顶点，\(|\ov{PB_{1}}|\) 依次为 \(4\sqrt{2}\)、\(4\)、\(4\sqrt{2}\)、\(4\sqrt{3}\)，可能值 \(4\)、\(4\sqrt{2}\)、\(4\sqrt{3}\)。}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{滚动测评卷A(答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{一、单项选择题}{本组共7题}
+% pair:滚A-1
+\ansitem{1}{A}
+\vskip 0pt minus 1.2pt
+% pair:滚A-2
+\ansitem{2}{A}
+\vskip 0pt minus 1.2pt
+% pair:滚A-3
+\ansitem{3}{D}
+\vskip 0pt minus 1.2pt
+% pair:滚A-4
+\ansitem{4}{A}
+\vskip 0pt minus 1.2pt
+% pair:滚A-5
+\ansitem{5}{D}
+\vskip 0pt minus 1.2pt
+% pair:滚A-6
+\ansitem{6}{A}
+\vskip 0pt minus 1.2pt
+% pair:滚A-7
+\ansitem{7}{D}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{5.8mm}
+\qufen{二、多项选择题}{本组共2题}
+% pair:滚A-8
+\ansitem{8}{ABC}
+\vskip 0pt minus 1.2pt
+% pair:滚A-9
+\ansitem{9}{ABC}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}
+\qufen{三、填空题}{本组共3题}
+% pair:滚A-10
+\ansitem{10}{\((3,0,0)\)}
+\vskip 0pt minus 1.2pt
+% pair:滚A-11
+\ansitem{11}{\(\dfrac{1}{6}\)}
+\vskip 0pt minus 1.2pt
+% pair:滚A-12
+\ansitem{12}{(1)平行；(2)\(\cos\varphi\)；(3)\(90^{\circ}\)}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{5.8mm}
+\qufen{四、解答题}{本组共4题}
+% pair:滚A-13
+\ansitem{13}{证明：\(|\ov{AC}|^{2}+|\ov{BD}|^{2}=2|\ov{a}|^{2}+2|\ov{b}|^{2}\)（＝四边平方和）}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{设 \(\ov{AB}=\ov{a}\)、\(\ov{AD}=\ov{b}\)，则 \(\ov{AC}=\ov{a}+\ov{b}\)、\(\ov{BD}=\ov{b}-\ov{a}\)。\(|\ov{AC}|^{2}+|\ov{BD}|^{2}=|\ov{a}+\ov{b}|^{2}+|\ov{b}-\ov{a}|^{2}=2|\ov{a}|^{2}+2|\ov{b}|^{2}\)；而四边平方和 \(=2(|\ov{a}|^{2}+|\ov{b}|^{2})\)，两式相等，证毕。}
+\vskip 0pt minus 1.2pt
+% pair:滚A-14
+\ansitem{14}{(1)\(\ov{AP}=\dfrac{1}{3}\ov{a}+\dfrac{1}{3}\ov{b}+\dfrac{1}{3}\ov{c}\)；(2)不共线}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{(1) \(E\) 为 \(CD\) 中点，\(\ov{AE}=\dfrac{1}{2}(\ov{b}+\ov{c})\)；\(BP=\dfrac{2}{3}\ov{BE}\)，\(\ov{AP}=\ov{a}+\dfrac{2}{3}(\ov{AE}-\ov{a})=\dfrac{1}{3}\ov{a}+\dfrac{1}{3}\ov{b}+\dfrac{1}{3}\ov{c}\)。(2) \(\ov{a},\ov{b},\ov{c}\) 不共面＝空间基底，分解唯一；若 \(A,P,Q\) 共线，\(\ov{AQ}=k\ov{AP}\) 按基底比较给 \(k=2\) 且 \(k=1\)，矛盾，故不共线。}
+\vskip 0pt minus 1.2pt
+% pair:滚A-15
+\ansitem{15}{(1)\(A(2,0,0)\)、\(C(0,2,0)\)、\(B_{1}(2,2,2)\)、\(D_{1}(0,0,2)\)；(2)六棱均 \(2\sqrt{2}\)，正四面体；(3)\(G\left(\dfrac{2}{3},\dfrac{4}{3},\dfrac{4}{3}\right)\)，\(|\ov{AG}|=\dfrac{4\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{(2) 六棱逐对计算均 \(2\sqrt{2}\)，四面体 \(ACB_{1}D_{1}\) 为正四面体。(3) 设 \(G(x,y,z)\)，由 \(\ov{GC}+\ov{GB_{1}}+\ov{GD_{1}}=\ov{0}\) 得 \((2-2x,4-3y,4-3z)=\ov{0}\)，解得 \(G\left(\dfrac{2}{3},\dfrac{4}{3},\dfrac{4}{3}\right)\)；\(\ov{AG}=\left(-\dfrac{4}{3},\dfrac{4}{3},\dfrac{4}{3}\right)\)，\(\ov{AG}\cdot\ov{CB_{1}}=\ov{AG}\cdot\ov{CD_{1}}=0\)（均垂直），\(|\ov{AG}|=\sqrt{3\cdot\dfrac{16}{9}}=\dfrac{4\sqrt{3}}{3}\)。}
+\vskip 0pt minus 1.2pt
+% pair:滚A-16
+\ansitem{16}{(1)\(4\)；\(4+t^{2}\)；\(8+t^{2}\)；(2)恒为以 \(B\) 为直角顶点的直角三角形，等腰仅 \(t=0\)；(3)\(\tan\theta\in\left[\dfrac{2\sqrt{13}}{13},1\right]\)，最大 \(45^{\circ}\)（\(t=0\)）}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{(1) \(P(0,2,t)\)：\(|\ov{AB}|^{2}=4\)、\(|\ov{PB}|^{2}=4+t^{2}\)、\(|\ov{PA}|^{2}=8+t^{2}\)。(2) 三顶点分类：\(A\) 处 \(\ov{AB}\cdot\ov{AP}=4\neq0\)；\(P\) 处 \(\ov{PA}\cdot\ov{PB}=4+t^{2}>0\) 恒正；仅 \(B\) 处 \(\ov{BA}\cdot\ov{BP}=0\) 对一切 \(t\in[0,3]\) 成立，且三点恒不共线——恒为以 \(B\) 为直角顶点的直角三角形。等腰三分支：\(|AB|=|PB|\iff t=0\)，另两支无解——等腰仅 \(t=0\)。(3) \(\tan\theta=\dfrac{|\ov{AB}|}{|\ov{BP}|}=\dfrac{2}{\sqrt{4+t^{2}}}\)，\(4+t^{2}\in[4,13]\)，\(\tan\theta\in\left[\dfrac{2\sqrt{13}}{13},1\right]\)，最大值 \(1\) 在 \(t=0\) 取得（\(\theta=45^{\circ}\)）。}
+\vskip 0pt minus 1.2pt
+\end{multicols}
+\jietitle{滚动测评卷B(答案)}
+\begin{multicols}{2}
+\raggedcolumns
+\emergencystretch=1em
+\setlength{\anshang}{5.8mm}
+\qufen{一、单项选择题}{本组共6题}
+% pair:滚B-1
+\ansitem{1}{A}
+\vskip 0pt minus 1.2pt
+% pair:滚B-2
+\ansitem{2}{A}
+\vskip 0pt minus 1.2pt
+% pair:滚B-3
+\ansitem{3}{B}
+\vskip 0pt minus 1.2pt
+% pair:滚B-4
+\ansitem{4}{A}
+\vskip 0pt minus 1.2pt
+% pair:滚B-5
+\ansitem{5}{C}
+\vskip 0pt minus 1.2pt
+% pair:滚B-6
+\ansitem{6}{C}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{5.8mm}
+\qufen{二、多项选择题}{本组共3题}
+% pair:滚B-7
+\ansitem{7}{AC}
+\vskip 0pt minus 1.2pt
+% pair:滚B-8
+\ansitem{8}{ABC}
+\vskip 0pt minus 1.2pt
+% pair:滚B-9
+\ansitem{9}{AB}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{7.6mm}
+\qufen{三、填空题}{本组共3题}
+% pair:滚B-10
+\ansitem{10}{\((0)\)}
+\vskip 0pt minus 1.2pt
+% pair:滚B-11
+\ansitem{11}{\(\dfrac{7}{2}\)}
+\vskip 0pt minus 1.2pt
+% pair:滚B-12
+\ansitem{12}{\(\dfrac{2\sqrt{3}}{3}\)}
+\vskip 0pt minus 1.2pt
+\setlength{\anshang}{5.8mm}
+\qufen{四、解答题}{本组共4题}
+% pair:滚B-13
+\ansitem{13}{(1)\(A(2,0,0)\)、\(B_{1}(2,2,4)\)、\(E(2,2,2)\)；(2)\(\dfrac{\sqrt{10}}{5}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{(2) \(\ov{AE}=(0,2,2)\)、\(\ov{CB_{1}}=(2,0,4)\)，\(\cos\langle\ov{AE},\ov{CB_{1}}\rangle=\dfrac{8}{2\sqrt{2}\cdot 2\sqrt{5}}=\dfrac{\sqrt{10}}{5}\)。}
+\vskip 0pt minus 1.2pt
+% pair:滚B-14
+\ansitem{14}{(1)\(\ov{n}=(6,3,2)\)；(2)\(t=-2\)；(3)\(\dfrac{13}{7}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{(1) \(\ov{AB}=(-1,2,0)\)、\(\ov{AC}=(-1,0,3)\)，联立 \(\ov{n}\cdot\ov{AB}=\ov{n}\cdot\ov{AC}=0\) 取 \(\ov{n}=(6,3,2)\)。(2) \(\ov{AQ}=(0,t,3)\)，\(\ov{n}\cdot\ov{AQ}=3t+6=0\)，\(t=-2\)。(3) \(\ov{AD}=(1,1,2)\)，\(d=\dfrac{|\ov{n}\cdot\ov{AD}|}{|\ov{n}|}=\dfrac{13}{\sqrt{49}}=\dfrac{13}{7}\)。}
+\vskip 0pt minus 1.2pt
+% pair:滚B-15
+\ansitem{15}{(1)\(BC\perp\) 面 \(PAB\)、\(AE\perp\) 面 \(PBC\)（\(AE\) 长即距离）；(2)\(AB=2\sqrt{3}\)；(3)\(\dfrac{\sqrt{5}}{5}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{(1) \(PA\perp\) 面 \(ABC\) 得 \(PA\perp BC\)，又 \(AB\perp BC\)，故 \(BC\perp\) 平面 \(PAB\)；于是 \(BC\perp AE\)，结合 \(AE\perp PB\) 得 \(AE\perp\) 平面 \(PBC\)，垂足在面内——\(AE\) 长即点 \(A\) 到面 \(PBC\) 的距离。(2) 设 \(AB=x\)：\(\mathrm{Rt}\triangle PAB\) 中 \(AE=\dfrac{PA\cdot AB}{PB}=\dfrac{2x}{\sqrt{x^{2}+4}}=\sqrt{3}\)，解得 \(x^{2}=12\)，\(AB=2\sqrt{3}\)。(3) \(PB\) 为 \(PC\) 在面 \(PAB\) 内的射影，\(\sin\angle CPB=\dfrac{BC}{PC}=\dfrac{2}{\sqrt{16+4}}=\dfrac{\sqrt{5}}{5}\)。}
+\vskip 0pt minus 1.2pt
+% pair:滚B-16
+\ansitem{16}{(1)\(120^{\circ}\)；(2)\(\dfrac{\sqrt{3}}{2}\)；(3)\(\dfrac{\sqrt{3}}{4}\)}
+\vskip 0pt minus 1.2pt
+\ansline{解析}{(1) 取 \(AC\) 中点 \(O\)：\(BO\perp AC\)、\(DO\perp AC\)，\(BO=DO=1\)，\(\cos\angle BOD=\dfrac{1+1-3}{2\cdot 1\cdot 1}=-\dfrac{1}{2}\)，二面角 \(B\text{-}AC\text{-}D\) 为 \(120^{\circ}\)。(2) \(AC\perp\) 平面 \(BOD\)，面 \(BOD\perp\) 面 \(ACD\)、交线 \(OD\)；作 \(BH\perp OD\)，则 \(BH\perp\) 面 \(ACD\)，\(BH=BO\sin 60^{\circ}=\dfrac{\sqrt{3}}{2}\) 即距离。(3) \(\sin\theta=\dfrac{BH}{AB}=\dfrac{\sqrt{3}/2}{2}=\dfrac{\sqrt{3}}{4}\)。}
+\vskip 0pt minus 1.2pt
+\end{multicols}

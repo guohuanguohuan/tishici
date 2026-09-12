@@ -1,0 +1,64 @@
+% ============================================================
+% 学史切片/第9章静电学史/main.tex —— P1 轮4 成卷·批5a 之一（物理学史·第九章独立切片，按章拍板）
+% 依据：源盘点 §四（第9章＝4【必记】＋1【易错】＋历史主线＋关键公式；法拉第条挂第10章**不随章**）
+%   ＋拍板⑦「学史切片按章 1 片 5 条」（看板八十八）；源文＝`高中物理/参考/组卷网/2026高考物理
+%   物理学史知识清单（未检查完）.docx` 第9章段（全文行 84~92；dump_docx 重提件
+%   工作区/_tmpP1成卷0912/批5a/学史清单-全文0912.txt，与源盘点 §四逐条核对一致）。
+% 样式＝PL1 学史切片样张（工作区/物理样张0911/学史切片/main.tex）拷贝再改，原目录零改动：
+%   正文族形制 A（页脚灰块·导学档，素面）；部分独立页码制；无答案结构；全件 0 图——qp-figs 不装。
+% 结构：头部（件标题＋使用说明＋标签图例）＝multicols 外通栏区；条目段（第九章 1 片＝
+%   教材关联＋历史主线＋关键公式＋条目 1–5〔4 必记＋1 易错〕＋法拉第挂章口径关联注）＝栏内。
+% 章片不载样张「六册章节总览」表（册级件行型，随配页件轮）——随件登记。
+% 件型层宏（承样张原样拷贝）：\huidi／\xslabel／\xszhang／\xsguanlian／\xszhuxian。
+% 编译：xelatex ×2（三 0 判据＝error/Overfull/Missing character 全 0）；
+%   目验：python 工作区/物理样张0911/骨架/render.py . main 150。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+
+% ---------- 件型层参数（qp-phy-params 单点覆盖） ----------
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{学史切片}
+\renewcommand{\qpzhangming}{物理学史}
+% \qpbrand 开关不动（false＝素面）；\qpceming 随 \qpbuce 自动＝高中物理 必修第三册(人教版)
+
+% ---------- 件型层宏（承 PL1 学史切片样张原样拷贝） ----------
+\definecolor{huidiA6}{gray}{0.651}    % A6A6A6 需背灰底（166/255；gray 模型单值，样张同款具名色）
+\newcommand{\huidi}[1]{{\setlength{\fboxsep}{0.2mm}\colorbox{huidiA6}{#1}}}
+\newcommand{\xslabel}[1]{\par\glueguard{2}\addvspace{2.0mm}\noindent\biaoqian{#1}\par\nopagebreak\vspace{-2pt}}
+\newcommand{\xszhang}[1]{\par\glueguard{2}\addvspace{1.2mm}%
+  {\centering\fontsize{13pt}{18pt}\selectfont\hekeshi #1\par}\addvspace{0.2mm}}
+\newcommand{\xsguanlian}[1]{\noindent{\fangsong 教材关联：#1}\par}
+\newcommand{\xszhuxian}[1]{\noindent{\kaishu 历史主线｜#1}\par}
+
+\begin{document}
+% ===== 头部（通栏区） =====
+\zhangtitle{物理学史（第九章·静电场及其应用）}
+\xslabel{【使用说明】}
+\mubiaomu{1}{依据2019人教版高中物理教材按章整理；本件为必修第三册第九章独立切片，条目号在本章内连续．}
+{\fontsize{10.5pt}{16pt}\selectfont\kaishu 标签五级：\biaoqian{【必记】}高考高频史实，须能准确默出（人物＋成就＋年代）．}\par
+{\fontsize{10.5pt}{16pt}\selectfont\kaishu\biaoqian{【易错】}归因与口径纠错；\biaoqian{【了解】}低频拓展或教材未点名、按史实补注的条目．}\par
+{\fontsize{10.5pt}{16pt}\selectfont\kaishu\biaoqian{【方法史】}蕴含的物理思想方法；\biaoqian{【关联】}与本章知识或其他章的联系．}\par
+{\fontsize{10.5pt}{16pt}\selectfont\kaishu\huidi{浅灰底纹}部分为必背内容（人名、年代、关键成就与绑定公式），叙述文字不铺灰底；译名从教材：笛卡儿、卡文迪什、巴耳末等，教材未出现的人名采用通行译名．}\par
+% ===== 条目段（栏内；条目号本章内连续 1–5） =====
+\begin{multicols}{2}
+\emergencystretch=1em
+\xszhang{第九章\quad 静电场及其应用}
+\xsguanlian{9.1 电荷；9.2 库仑定律；9.3 电场\quad 电场强度；9.4 静电的防止与利用}
+\xszhuxian{从「两类电」的辨认、正负电荷的命名，到库仑用扭秤定量测力，再到密立根测出最小电荷单位，电学由定性观察走向精密测量．}
+\xslabel{【关键公式】}
+{\noindent\hangindent=8.3mm\hangafter=1{\kaishu \huidi{库仑定律}$F=\dfrac{k|q_1 q_2|}{r^{2}}$（条件：\huidi{真空中的点电荷}；方向沿两电荷连线）；\huidi{元电荷}$e=1.602\,176\,634\times10^{-19}\,\mathrm{C}$（教材常用近似值 $1.60\times10^{-19}\,\mathrm{C}$）．}\par}
+\tiaomu{1}{\biaoqian{【必记】}\huidi{18世纪30年代}，\huidi{杜菲}区分「两类电」，并总结\huidi{同类相斥、异类相吸}；\huidi{富兰克林}后来采用\huidi{正、负电荷的命名}并研究雷电（杜菲条系史实补充，教材未提及；必修三9.1节）．}
+\tiaomu{2}{\biaoqian{【必记】}\huidi{富兰克林}通过电学研究，论证\huidi{闪电是一种放电现象}，并推动\huidi{避雷针}的应用（必修三9.1节、9.4节）．}
+\tiaomu{3}{\biaoqian{【必记】}\huidi{1785年}，法国科学家\huidi{库仑}设计了精妙的\huidi{扭秤实验}研究电荷间的作用力，建立\huidi{库仑定律}（必修三9.2节）．}
+\tiaomu{4}{\biaoqian{【必记】}元电荷$e$的数值最早是由美国物理学家\huidi{密立根}通过（油滴）实验\huidi{测得}的，其关键结果约在\huidi{1910年前后}发表，并获\huidi{诺贝尔物理学奖}（1923年颁奖，为史实补充；必修三9.1节）．}
+\tiaomu{5}{\biaoqian{【易错】}不写「富兰克林发现自然界有两种电荷」——教材口径是富兰克林\huidi{命名正负电荷}；静电力常量$k$的测定不宜归给库仑或高斯，高考以\huidi{库仑扭秤实验和库仑定律}为稳妥口径．}
+\xslabel{【关联】}
+{\noindent{\fangsong 法拉第「场／力线」学史条目挂第十章切片（9.3节引入的电场线内容，其学史条目不随本章走，防误挂）；欧姆、法拉第电磁感应等条目分见第十一、十三章切片．}\par}
+\end{multicols}
+\end{document}

@@ -1,0 +1,24 @@
+OK   测-1  |册: B |卷: B
+OK   测-2  |册: A |卷: A
+OK   测-3  |册: C |卷: C
+OK   测-4  |册: D |卷: D
+OK   测-5  |册: C |卷: C
+OK   测-6  |册: D |卷: D
+OK   测-7  |册: B |卷: B
+OK   测-8  |册: D |卷: D
+OK   测-9  |册: AC |卷: AC
+OK   测-10 |册: CD |卷: CD
+OK   测-11 |册: AC |卷: AC
+OK   测-12 |册: 带负电;带正电;张开 |卷: 带负电;带正电;张开
+OK   测-13 |册: <;{kgm^{3}s^{-4}A^{-2}} |卷: <;{kgm^{3}s^{-4}A^{-2}}
+OK   测-14 |册: 处处为零;\frac{4kq}{(2R+l)^{2}};水平向左（指向q一侧） |卷: 处处为零;\frac{4kq}{(2R+l)^{2}};水平向左（指向q一侧）
+OK   测-15 |册: -\frac{q}{4} |卷: -\frac{q}{4}
+OK   测-16 |册: mgtan\alpha;\frac{mgtan\alpha}{q},水平向右;\frac{mgr^{2}tan\alpha}{kq} |卷: mgtan\alpha;\frac{mgtan\alpha}{q},水平向右;\frac{mgr^{2}tan\alpha}{kq}
+OK   测-17 |册: 12{N};6\times10^{-5}{C};1.6{kg} |卷: 12{N};6\times10^{-5}{C};1.6{kg}
+OK   测-18 |册: \frac{kq^{2}}{gL^{2}};2\sqrt{3}g |卷: \frac{kq^{2}}{gL^{2}};2\sqrt{3}g
+OK   测-19 |册: |\frac{3kq}{8R^{2}}-2E| |卷: |\frac{3kq}{8R^{2}}-2E|
+
+排布层差异（值本体一致、写法不同）： [16, 17]
+   测-16：卷面速查作 $mgtan\alpha$（函数名未用 \tan 正体）；册面作 $mg\tan\alpha$
+   测-17：卷面速查单位前无薄空格 $12{N}$；册面作 $12\,\unit{N}$
+对账结论：19/19 值本体逐位一致 ✓（义6-3 关闭；排布层差异随义6-2 清扫）

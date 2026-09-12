@@ -1,0 +1,285 @@
+% ============================================================
+% 导学件/9.4静电的防止与利用/main.tex —— P1 轮4 成卷·批4（9.4 静电的防止与利用 导学件，答案制A·正文侧）
+% 取材（中间件＝工作区/_tmpP1成卷0912/批4/）：
+%   课前预习知识梳理＝《简单卷》9.4 讲部（[216]-[244]：静电平衡过程/三点理解/电荷分布特点/屏蔽两情形表/
+%     应用和防止表）＋讲和练 9.4 讲块（[963]-[969] 同文）＋教材序列（书18 平衡与尖端→书19 屏蔽→书20 危害与
+%     演示/雷火炼殿→书21 静电吸附）；本件零学史（依派工口径：富兰克林条随学史切片，批5 产）。
+%   课中探究 例1（探究点二）配图＝简单卷讲部屏蔽两情形原图（[234]＝image31/32，原样提取仅改名，\qpfigpair）。
+%   讲部例占用盘点（先行结论）：9.4 域 docx 池讲部例 0 可用——讲和练例55/中24/中25/中26/中27 已全量入练习件
+%     16 槽与拓展归置（中27/Q61/简10/Q66/49题9/49题12）；定稿 §三 点名 3 导学候选（Q61 说理位／简10 演示位／
+%     Q66 原因双选）本轮核认＝维持拓展册归置不动（消费优先级 拓展册＞导学件，成卷轮不抢收），导学件例/变式
+%     全命制。
+%   其余例/变式/评价/判断＝本件命制（18 条＝判断 6＋例/变式 6＋拓展延伸 1＋评价 5；逐题亲算见 成卷/批4值台账.md）。
+%   〔2026-09-12 收尾轮B 计数勘正：本行并头注互斥口径行原作「16 条」，与自载分解（6＋6＋1＋5）及件面实数
+%   （判 6＋例 3＋变式 3＋拓展 1＋评 5＝18，零照用件）不合——照 9.1（17＝6＋5＋1＋5＋照用1）/9.3（18）体例
+%   并 就绪报告 §附录A 命制位口径核正为 18；同勘 批4值台账 §四/§五/§六-8；逻辑闸片验收档 §四附带观察在案〕
+% 学习目标→课前预习（知识梳理填空＋诊断分析判断）→课中探究（3 探究点：例＋变式＋素养小结）→课堂评价（恒 5）。
+% 五组件全见件：素养标签 5 枚举（教材链接/物理观念/科学探究/科学推理/科学思维）／[反思感悟]×2／规范答题区自评表
+%   （6 分档，挂探究三例1 后）／[拓展延伸]／限时总量行＋小题分值说明行（15 分钟/20 分·课堂组档，承批1/批2 实态）。
+% 答案制A：正文 0 答案宏；全部答案值与判断答案入 成卷/批4值台账.md（答案册轮取值依据），本件不印。
+% 互斥口径：本件 18 条命制与练习件 9.4 题面零同文设计——考角同知识点不同考查（命制简件考角＝屏蔽/尖端/
+%   平衡特征），设计层逐题避让（过程向/撤场/机理本质/应用填空/现象辨认 vs 练习件的直判/四图/反推/分类）；
+%   近族登记（探究二例1↔Q61 拓展件、评价1↔题3、评价4↔题8、探究二变式1↔题7）见台账 §五。
+% 件型层宏登记（承 9.1/9.2 导学件件型层，原样）：\sylabel／\fanxi／\tuoZhan／\guifanbiao（6 分档）／\xszl／\xzsm／
+%   \pingtou／\liubai。
+% 页脚＝形制 A 默认（灰块·导学档 26.2mm；素面）。
+% 编译：xelatex ×2（三 0）；目验：python 工作区/物理样张0911/骨架/render.py . main 150。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+\renewcommand{\qpjianming}{导学件}
+% 品牌位：导学件＝素面（\ifqpbrand 默认 false，勿开）
+
+% ---------- 件型层宏①：素养标签 ----------
+\newcommand{\sylabel}[2]{\par\glueguard{1}%
+  \noindent{\heiti [#1]}\hspace{0.4em}#2\par\addvspace{0.8mm}}
+
+% ---------- 件型层宏②：[反思感悟]块 ----------
+\newcount\FXN
+\newcommand{\fanxi}[1]{\par\glueguard{1}\addvspace{1.2mm}%
+  \vbox{%
+    \noindent{\heiti [反思感悟]}\par\vskip 2.4mm
+    \FXN=#1\relax
+    \loop \noindent\textcolor{gray122}{\rule{\linewidth}{0.4pt}}\par\vskip 6.2mm
+      \advance\FXN by -1 \ifnum\FXN>0\repeat
+    \vskip -1.2mm}}
+
+% ---------- 件型层宏④：拓展延伸块 ----------
+\newcommand{\tuoZhan}[1]{\par\glueguard{2}\addvspace{1.6mm}%
+  \noindent{\heiti [拓展延伸]}\hspace{0.4em}#1\par\addvspace{1mm}}
+
+% ---------- 件型层宏③：规范答题区自评表（6 分档） ----------
+\newcommand{\guifanbiao}[1]{\par\addvspace{2.2mm}\glueguard{2}%
+  \begingroup\arrayrulecolor{gray122}\setlength{\tabcolsep}{2pt}%
+  \noindent\begin{tabular}{|p{27mm}|p{29.6mm}|p{19.6mm}|}
+    \thickhline
+    {\heiti 规范答题区}\par\vspace*{40mm} &
+    \multicolumn{1}{|c|}{自评项目（共#1分）\rule{0pt}{7mm}} &
+    \multicolumn{1}{c|}{自评+得分\rule{0pt}{7mm}} \\
+    \cline{2-3}
+    & 书写工整无涂抹（是否加分项） & （√或×） \\
+    \cline{2-3}
+    & 有必要的文字说明（1分） & \\
+    \cline{2-3}
+    & 有解题关键公式（3分） & \\
+    \cline{2-3}
+    & 结果为数字的带有单位（2分） & \\
+    \thickhline
+  \end{tabular}\endgroup\par\addvspace{1mm}}
+
+% ---------- 件型层宏⑤：限时总量行＋小题分值说明行 ----------
+\newcommand{\xszl}[2]{\par\addvspace{1.6mm}\centerline{(#1)\quad (#2)}\par}
+\newcommand{\xzsm}[1]{\par\addvspace{0.4mm}\centerline{(#1)}\par\addvspace{1.2mm}}
+
+% ---------- 件型层宏：课堂评价组头／书写留白＋水印 ----------
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+
+\begin{document}
+%装配轮G7跨本连续页码 setcounter 注入位（五本式·方案B）
+\setcounter{page}{11}
+% ===== 通栏标题区（multicols 外） =====
+\zhangtitle{第9章\quad 静电场及其应用}
+\jietitle{9.4\quad 静电的防止与利用}
+\keshi{第1课时\quad 静电的防止与利用}
+\mubiaoline
+\mubiaomu{1}{知道静电平衡的概念，理解处于静电平衡的导体内部场强处处为零、净电荷只分布在导体的外表面，能解释导体表面电荷分布与尖端放电的关系；}
+\mubiaomu{2}{知道静电屏蔽现象，理解静电屏蔽的实质和接地的作用，能分析“外电场不影响腔内、腔内电场经接地不影响腔外”的简单情境；}
+\mubiaomu{3}{了解静电的危害与防止途径，知道静电吸附原理及静电除尘、静电喷漆、静电复印等应用，能运用所学知识解释生产、生活中的静电现象．}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 一、课前预习（知识梳理填空＋诊断分析判断挂每个知识点之后）
+% ============================================================
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\sylabel{教材链接}{阅读教材，完成下列填空．}
+
+\zsd{一}{静电平衡与尖端放电}
+
+\tiaomu{1}{金属导体放入电场强度为 $E_0$ 的电场中，自由电荷在电场力作用下定向移动，导体两端出现等量异号电荷（感应电荷）；感应电荷产生的附加电场 $E'$ 与原电场方向\kongbai{}，使导体内部合场强逐渐减小；当合场强\kongbai{}时，自由电荷不再发生定向移动，导体达到静电平衡．}
+
+\tiaomu{2}{处于静电平衡的导体，内部场强处处为零；净电荷只分布在导体的\kongbai{}；外表面越尖锐的位置，电荷的密度越\kongbai{}．}
+
+\tiaomu{3}{导体尖端附近场强很强，能使空气中残留的带电粒子剧烈运动并与空气分子碰撞，使空气分子中的正负电荷分离，这个现象叫作空气的\kongbai{}；与尖端电荷异号的带电粒子奔向尖端并与之中和，相当于导体从尖端失去电荷，这个现象叫作\kongbai{}．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{静电平衡是自由电荷发生定向移动的结果，达到静电平衡时，自由电荷不再发生定向移动．}
+
+\zhentib{(2)}{静电平衡时，导体表面越尖锐的位置，电荷的密度越小．}
+
+\zsd{二}{静电屏蔽}
+
+\tiaomu{1}{静电平衡时，空腔导体的内表面\kongbai{}（选填“有电荷”或“没有电荷”），壳壁内场强为零，电场线不会进入空腔，即无论外部电场怎样，导体内部都不会有电场，这种现象叫作\kongbai{}．}
+
+\tiaomu{2}{实现静电屏蔽不一定要用密封的金属容器，\kongbai{}也能起到屏蔽作用．}
+
+\tiaomu{3}{空腔导体\kongbai{}时，外表面的感应电荷将传给大地，腔内带电体对外部空间没有影响．}
+
+\sylabel{科学探究}{动手做一做教材中的演示实验：用金属网把验电器罩起来，再让带电金属球靠近验电器，观察金属箔片是否张开；把金属网换成不接地的和接地的各试一次．可操作的证据是建立静电屏蔽概念的基础．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{只有接地的金属壳才能起静电屏蔽作用．}
+
+\zhentib{(2)}{静电屏蔽的实质是感应电荷的电场与外电场叠加，使导体壳内部空间的合场强为零．}
+
+\zsd{三}{静电的防止与利用}
+
+\tiaomu{1}{静电有危害也有用途．防止静电危害的基本办法是尽快把产生的静电\kongbai{}，避免越积越多．}
+
+\tiaomu{2}{防止静电的途径主要有：①避免产生静电，例如在可能情况下选用不易产生静电的材料；②避免静电的积累，产生的静电要设法导走，例如增加空气湿度、\kongbai{}等．}
+
+\tiaomu{3}{静电的利用：带电粒子在电场中受\kongbai{}作用而向电极运动、最后被吸附在电极上，依据这一原理的应用有静电除尘、静电喷漆、静电复印等；此外还可利用高压产生的电场进行静电保鲜、静电灭菌、农作物种子处理等．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{加油站给车加油前触摸一下静电释放器，是为了把人体上积累的静电导走，防止放电引发危险．}
+
+\zhentib{(2)}{静电除尘、静电喷漆、静电复印都是利用静电力使带电微粒定向移动并沉积在电极上．}
+
+\liubai[9mm]{此处书写}
+
+% ============================================================
+% 二、课中探究（探究点×3：例＋变式＋素养小结）
+% ============================================================
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{静电平衡的特征}{例\textbf{1}}{简单(知识点一)}{一块原来不带电的金属导体被放进匀强电场后，会逐渐达到静电平衡．在从放入电场到达到静电平衡的过程中，关于导体内自由电子的移动和导体内电场的变化，下列说法正确的是\nobreak(\kongwei)}
+
+\sylabel{物理观念}{静电平衡是一种稳定状态：导体内的自由电子在电场力作用下定向移动，两端积累起等量异号的感应电荷；感应电荷的附加电场与外电场方向相反，合场强逐渐减小，直至处处为零，自由电荷不再定向移动．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．自由电子逆着电场方向定向移动，导体一端逐渐积累负电荷、另一端积累正电荷，直到导体内部合场强处处为零；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．自由电子顺着电场方向定向移动，导体两端积累起等量同种电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．感应电荷在导体内部产生的电场与原电场方向相同，使导体内部的合场强不断增大；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．达到静电平衡后，导体内部的电场就是原来的匀强电场\par}
+
+\fanxi{2}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{例1中的导体达到静电平衡后，若把外电场撤去，关于撤去外电场后导体上的感应电荷，下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．感应电荷仍保持不动，导体两端仍带等量异号电荷；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．感应电荷在导体内产生的电场使自由电子重新定向移动，正、负感应电荷相互中和，导体恢复不带电；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．导体将带上与原来符号相反的净电荷；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．感应电荷不经过电荷移动就会自行消失\par}
+
+\xiaojie{①识别：题干描述导体放入电场后的“过程”或“撤去外场后的变化”，围绕感应电荷的来去设问时，判归本题型；②操作：抓住两条——电子带负电、受力方向与电场方向相反；平衡的条件是“合场强处处为零”．撤去外场后，只剩下感应电荷自身的电场，自由电荷在其中移动直至合场强再次为零，感应电荷随之中和．}
+
+\tjdnr{二}{静电屏蔽}{例\textbf{1}}{简单(知识点二)}{关于静电屏蔽，下列说法正确的是\nobreak(\kongwei)}
+
+\qpfigpair[32]{例2-屏蔽外场不入内}{例2-屏蔽接地内场不外泄}
+
+\sylabel{科学推理}{屏蔽是“叠加”的结果，不是“挡墙”：左图中外部电荷的电场与球壳上感应电荷的电场在壳内叠加为零，腔内不受影响；右图中接地球壳把外表面的感应电荷传给了大地，腔内电荷对外界不再有影响．判断屏蔽问题，先看“源在壳内还是壳外”，再看“壳是否接地”．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．静电屏蔽的实质是：导体壳（网）上感应电荷产生的电场与外电场在壳内空间叠加，使合场强处处为零；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．只有密封的金属容器才能起到静电屏蔽作用，金属网不能屏蔽；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．给金属壳接地，是为了把外电场“挡住”，使外电场进不了壳内；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．用绝缘体做成的封闭外壳也能对内部起到静电屏蔽作用\par}
+
+\fanxi{2}
+
+\liB{变式\textbf{1}}{简单(知识点二)}{}{在电子技术中，封闭金属壳（网）能保护内部电路不受外界电场干扰，这是利用了\kongbai{}；若要使空腔内带电体产生的电场不影响壳外空间，金属壳还必须\kongbai{}．}
+
+\xiaojie{①识别：题干涉及“仪器/电路被金属壳（网）保护”“腔内带电体不影响外界”等说法时，判归本题型；②操作：第一步定源（在壳内还是壳外），第二步看接地——源在壳外，不接地即可屏蔽；源在壳内，必须接地才能把电荷经“壳＋大地”导走．记住：屏蔽外场无需接地，屏蔽内场必须接地．}
+
+\tjdnr{三}{尖端放电与静电的防止、利用}{例\textbf{1}}{简单(知识点三)}{下列关于尖端放电的说法正确的是\nobreak(\kongwei)}
+
+\sylabel{科学思维}{尖端放电与“火花放电”不同：前者是导体尖端处强场使空气持续电离、电荷经尖端缓慢流失；后者是积累电荷瞬间击穿空气．辨析时抓两个要点——“是否发生在尖端”与“是否持续”．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．导体尖端附近电场很强，能使空气中的分子发生电离，其中与尖端电荷异号的带电粒子奔向尖端，与尖端上的电荷中和，相当于导体从尖端失去电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．尖端放电说明导体尖端的电荷通过放电创生出了新的电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．任何形状的金属导体在空气中都能随时发生尖端放电；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．尖端放电只与导体带电多少有关，与导体形状无关\par}
+
+\guifanbiao{6}
+
+\tuoZhan{高压输电设备中导体的表面要尽量做得光滑，而避雷针的顶端却要做得很尖．请你用“导体表面电荷分布与尖端放电”的知识，分别解释这两种做法的道理．}
+
+\liB{变式\textbf{1}}{简单(知识点三)}{}{下列现象中，属于尖端放电现象的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．干燥天气脱化纤毛衣时听到的“噼啪”声；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．夜间高压输电线周围出现的绿色光晕——电晕；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．用带电的塑料梳子吸引细小纸屑；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．油罐车尾部拖着的铁链能把车上的静电导入大地\par}
+
+\xiaojie{①识别：题干列举生产生活现象，要求辨认“尖端放电”或“静电的利用/防止”时，判归本题型；②操作：先找“尖端/强场/空气电离”三要素判断是否尖端放电，再按“利用静电力做功＝应用”“把静电导走或削弱起电＝防止”归类．}
+
+% ============================================================
+% 三、课堂评价（恒 5 题＝3 单选＋2 填空）
+% ============================================================
+\Needspace*{10\baselineskip}
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\xszl{时间:15分钟}{总分:20分}
+\xzsm{选择题每小题4分}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}处于静电平衡状态的导体，下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．导体内部场强处处为零，指的是外电场与感应电荷产生的附加电场在导体内叠加后的合场强为零；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．导体内部的电场只有感应电荷产生的电场；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．导体上的净电荷均匀分布在整个导体体积内；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．导体内部场强为零，是因为外电场被导体“挡住”穿不进导体\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}防止静电危害的基本办法是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．尽量不使物体之间相互接触；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．尽快把产生的静电导走，避免越积越多；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．让空气保持绝对干燥；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．把所有用电设备的外壳都用绝缘体包裹\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{中档(知识点三)}\hspace{2.2mm}关于避雷针能避免雷击的原因，下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．雷雨云接近建筑物时，避雷针通过静电感应出现与云层相反的电荷，这些电荷经尖端放电不断向大气释放、中和空气中的电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．避雷针的尖端把雷电的电荷全部吸收并储存在针体内；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．避雷针利用静电屏蔽，使云层产生的电场影响不到建筑物；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．避雷针的顶端做成球形时，防雷效果最好\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}处于静电平衡的导体，外表面越尖锐的位置，电荷的密度越\kongbai{}，周围的电场强度越\kongbai{}．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{中档(知识点二)}\hspace{2.2mm}野外高压输电线上方还有两条与大地相连的导线，它们与输电线一起形成一个稀疏的金属“网”，把高压线屏蔽起来使其免遭雷击，这是利用了\kongbai{}现象．}
+
+\end{multicols}
+\end{document}

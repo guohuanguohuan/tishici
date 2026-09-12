@@ -1,0 +1,217 @@
+% ============================================================
+% 练习件/9.3电场电场强度/main.tex —— P1 轮4 成卷·批3（9.3 电场 电场强度 练习件，答案制A·正文侧）
+% 题源＝定稿-9.3 §1.2 槽位表 16 槽，卷面题号 1~16 照槽序：
+%   题1←简1（简7·源Q37）｜题2＝【空槽】原简2（简8·源Q48）本轮出列报缺（主脑口径），版式留空不凑题
+%   题3←简3（49题7·块10）｜题4←简4（49题10·块13）｜题5←简5（47题5·块8）｜题6←简6（47题18·块21）
+%   题7←简7（Q45·回捞练45）｜题8←简8（Q42·回捞练42）｜题9←简9（命制-P1-9.3-简-1）｜题10←简10（命制-P1-9.3-简-2）
+%   题11←中1（中17·源Q36）｜题12←中2（中18·源Q43）｜题13←中3（中19·源Q47）｜题14←中4（中20·源Q49）
+%   题15←难1（冲1·源Q19）｜题16←难2（冲4·源Q46）。
+% 题面抽切＝dump_docx --slice（简单卷 184:198／中档卷 299:374／冲刺卷 1:78／47讲 117:127＋397:419／
+%   49讲 123:134＋159:172／讲和练 750:812；中间件 工作区/_tmpP1成卷0912/批3/）；命制题面照
+%   命制-9.2+9.3-三题-题面.md；答案制A——【答案/难度/知识点/详解】全撤出正文（值台账＝成卷/批3值台账.md）。
+% 用题必办执行（定稿-9.3 §六）：①中17 详解[315] 公式框脱符「xB2」→ x_B²＝答案册轮修复项（正文侧不涉）；
+%   ②47题5 源【知识点】标签不确＝拟改「匀强电场＋库仑力双球平衡·绳竖直定性判断」（标签在答案册侧，正文不印）；
+%   ③47题18 三问计算式题式适配本样张（计算题式，书写位 16mm）；方向「水平向右」依图；
+%   ④冲4 详解两步跳跃处按亲算补全版重写（均匀壳核算＋镜像记账）＝答案册轮义务；
+%   ⑤冲1 详解矢量三角形辅图必随＝答案册轮备料（_tmp…/批3/冲1-详解矢量三角形-答案册轮.png）；
+%   ⑥47题18 受力图（[元406]）、47题5 受力分析图（[元126]）＝答案册轮备料（_tmp…/批3/ 同名两幅）；中20 电性、
+%   中19 电性标注、49题10 甲乙双载体、Q45 方向语、Q42 对折几何＝均依图（页检结论见值台账 §三）。
+% 图源（word/media 原样提取仅改名，零加工）：题1←简单卷[e188 image24]｜题3←49讲[e124 image18]｜
+%   题4←49讲[e160 image21]（2553×1034，甲照片＋乙简图双载体）｜题5←47讲[e118 image10]｜题6←47讲[e401 image29]｜
+%   题7←讲和练[e802 image64]（N球环）｜题8←讲和练[e753 image61]（532×800 竖幅）｜题11←中档卷[e304 image22]（甲乙合图）｜
+%   题12←中档卷[e324 image23]（2480×1620）｜题13←中档卷[e340 image24]（2833×845 三构型合图）｜
+%   题14←中档卷[e359 image25]｜题15←冲刺卷[e6 image1]（1470×820）｜题16←冲刺卷[e65 image6]（2405×976，本章最难图读）。
+% 版式＝PL1 练习件样张（三档 基础巩固1~10／综合提升11~14／思维探索15~16；形制 B 练习册档页脚；件型词＝练习）；
+%   限时行照批1 试值档（40 分钟档，选择 4 分/计算 8 分），总分＝14×4＋1×8＝64（本件构成 14选＋1计算，总额随构成）。
+% 件型层宏登记：\dangbadge／\tihao／\lxopt／\tielue（略题行，承 PL1 样张）／\xiexwei／\xszongline。
+% 编译：xelatex ×2（三 0）；目验：python 工作区/物理样张0911/骨架/render.py . main 150。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+\renewcommand{\qpjianming}{练习}
+\qpFooterBlockLX   % 形制 B＝练习册档 31.0mm 灰块页脚（批1/批2 及 PL1 样张同款）
+
+% ---------- HX-01 花形·三档名（练习册版，无底线无右词） ----------
+\newcommand{\huadianOverlapLx}{-5.1mm}
+\newcommand{\dangbadge}[4]{\par\glueguard{0}\addvspace{2.4mm}\noindent
+  \huadia{#1}\hspace{\huadianOverlapLx}\huadia{#2}\hspace{\huadianOverlapLx}\huadia{#3}\hspace{\huadianOverlapLx}\huadia{#4}%
+  \par\addvspace{2.6mm}}
+
+% ---------- TJ-02 练习册悬挂题号（单号 5.75mm／双位 7.6mm） ----------
+\newlength{\lxhang}
+\newcommand{\tihao}[1]{\par\glueguard{1}%
+  \ifnum#1>9\setlength{\lxhang}{7.6mm}\else\setlength{\lxhang}{5.75mm}\fi
+  \noindent\hangindent=\lxhang\hangafter=0
+  \llap{\hbox to\lxhang{\textbf{#1.}\hss}}}
+\newcommand{\lxopt}[1]{\par\noindent\hangindent=\lxhang\hangafter=0
+  {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont #1\par}}
+% ---------- 略题行（承 PL1 练习件样张 \tielue） ----------
+\newcommand{\tielue}[1]{\par\glueguard{1}{\noindent\fontsize{10.5pt}{18pt}\selectfont（#1）\par}}
+% ---------- 书写位（承 M2 批产口径） ----------
+\newcommand{\xiexwei}[1]{\par\nobreak\vspace{#1 minus 3mm}}
+% ---------- 限时总量行＋小题分值说明行（沿 PL1 练习件样张） ----------
+\newcommand{\xszongline}[3]{\par\addvspace{0.9mm}%
+  {\centering
+   {\fontsize{10.5pt}{16pt}\selectfont（时间：#1\quad 总分：#2）\par}%
+   \vspace{0.3mm}%
+   {\fontsize{10.5pt}{16pt}\selectfont（#3）\par}%
+   \vspace{1.6mm}}}
+
+\begin{document}
+%装配轮G7跨本连续页码 setcounter 注入位（五本式·方案B）
+\setcounter{page}{24}
+
+% ===== 课时标题＋限时总量行（通栏，multicols 外） =====
+\keshi{第1课时\quad 电场　电场强度}
+\xszongline{40 分钟}{64 分}{选择题每小题 4 分\quad 计算题每小题 8 分}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============ 基础巩固（简单档 1~10） ============
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\tieside{简单(选择题)}在一个圆的直径上有一对等量异种电荷，它们在圆心$O$处产生的电场强度大小是$E_1$；如果把正电荷从$a$处移到$c$，已知$Oc$与$Oa$的夹角为$60^\circ$，此时$O$点的电场强度大小变为$E_2$，则$E_1$与$E_2$之比为\nobreak(\kongwei)
+
+\qpfig[38]{题1-圆上等量异种电荷}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．$1:2$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．$2:1$；}}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．$2:\sqrt{3}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．$\sqrt{3}:2$}}
+
+\tielue{第 2 题略}
+
+\tihao{3}\tieside{简单(选择题)}电场中某区域的电场分布如图所示，$a$、$b$是电场中的两点．下列说法正确的是\nobreak(\kongwei)
+
+\qpfig[56]{题3-电场线疏密ab两点}
+
+\lxopt{A．$a$、$b$两点的场强相等；}
+\lxopt{B．$a$点的场强小于$b$点的场强；}
+\lxopt{C．同一个点电荷在$a$点所受的电场力小于在$b$点所受的电场力；}
+\lxopt{D．同一个点电荷在$a$点所受的电场力大于在$b$点所受的电场力}
+
+\tihao{4}\tieside{简单(选择题)}把头发屑悬浮在蓖麻油里，加上电场，可以模拟出电场线的分布情况，如图甲是模拟孤立点电荷和金属板之间的电场照片，乙图为简化后的电场线分布情况，则\nobreak(\kongwei)
+
+\qpfig[78]{题4-蓖麻油实验甲乙}
+
+\lxopt{A．由图甲可知，电场线是真实存在的；}
+\lxopt{B．图甲中，没有头发屑的地方没有电场；}
+\lxopt{C．图乙中$A$点的电场强度大于$B$点的电场强度；}
+\lxopt{D．在图乙电场中$A$点静止释放的质子能沿着电场线运动到$B$点}
+
+\tihao{5}\tieside{简单(选择题)}如图，空间存在一方向水平向右的匀强电场，两个带电小球$P$和$Q$用相同的绝缘细绳悬挂在水平天花板下，两细绳都恰好与天花板垂直，则\nobreak(\kongwei)
+
+\qpfig[40]{题5-匀强场双球悬线}
+
+\lxopt{A．$P$和$Q$都带正电荷；}
+\lxopt{B．$P$和$Q$都带负电荷；}
+\lxopt{C．$P$带正电荷，$Q$带负电荷；}
+\lxopt{D．$P$带负电荷，$Q$带正电荷}
+
+\tihao{6}\tieside{简单(计算题)}电场对放入其中的电荷有力的作用．如图所示，带电球$C$置于铁架台旁，把系在丝线上的带电小球$A$挂在铁架台的$P$点．小球$A$静止时与带电球$C$处于同一水平线上，丝线与竖直方向的偏角为$\alpha$．已知$A$球的质量为$m$，电荷量为$+q$，重力加速度为$g$，静电力常量为$k$，两球可视为点电荷．
+\lxopt{（1）画出小球$A$静止时的受力图，并求带电球$C$对小球$A$的静电力$F$的大小；}
+\lxopt{（2）写出电场强度的定义式，并据此求出带电球$C$在小球$A$所在处产生的电场的场强$E_A$的大小和方向；}
+\lxopt{（3）若已知小球$A$静止时与带电球$C$的距离为$r$，求带电球$C$所带的电荷量$Q$．}
+\qpfig[42]{题6-带电球C与悬球A}
+\xiexwei{16mm}
+
+\tihao{7}\tieside{中档(选择题)}如图所示，在一半径为$R$的圆周上均匀分布有$N$个绝缘带电小球（可视为质点）无间隙排列，其中$A$点的小球带电荷量为$+3q$，其余小球带电荷量为$+q$，此时圆心$O$点的电场强度大小为$E$，现仅撤去$A$点的小球，则$O$点的电场强度为\nobreak(\kongwei)
+
+\qpfig[42]{题7-圆周N球A点位}
+
+\lxopt{A．大小为$E$，方向沿$AO$连线斜向下；}
+\lxopt{B．大小为$\frac{E}{2}$，方向沿$AO$连线斜向上；}
+\lxopt{C．大小为$\frac{E}{3}$，方向沿$AO$连线斜向上；}
+\lxopt{D．大小为$\frac{E}{4}$，方向沿$AO$连线斜向上}
+
+\tihao{8}\tieside{中档(选择题)}把均匀带电的绝缘棒$AB$弯成如图所示的半圆状，测得圆心$O$处的电场强度大小为$E$．$C$是半圆$AB$上的二等分点，将$\overset{\frown}{BC}$沿$CO$对折，使$\overset{\frown}{AC}$与$\overset{\frown}{BC}$重叠，则重叠部分在$O$点产生的电场强度大小为\nobreak(\kongwei)
+
+\qpfig[32]{题8-半圆绝缘棒对折}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．$\frac{E}{2}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．$\frac{\sqrt{2}E}{2}$；}}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．$\sqrt{2}E$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．$\sqrt{3}E$}}
+
+\tihao{9}\tieside{简单(选择题)}真空中的点电荷$Q$带正电，电荷量为$1.0\times10^{-8}\,\unit{C}$．$P$点与$Q$相距$0.30\,\unit{m}$．关于$P$点的电场强度，下列说法正确的是\nobreak(\kongwei)
+
+\lxopt{A．大小为$1.0\times10^{3}\,\unit{N/C}$，方向沿$QP$连线由$Q$指向$P$；}
+\lxopt{B．大小为$3.0\times10^{2}\,\unit{N/C}$，方向沿$QP$连线由$Q$指向$P$；}
+\lxopt{C．大小为$1.0\times10^{3}\,\unit{N/C}$，方向沿$QP$连线由$P$指向$Q$；}
+\lxopt{D．大小为$9.0\times10^{3}\,\unit{N/C}$，方向沿$QP$连线由$P$指向$Q$}
+
+\tihao{10}\tieside{简单(选择题)}在电场中的$P$点放入一个电荷量为$2.0\times10^{-8}\,\unit{C}$的正试探电荷，它受到的静电力大小为$6.0\times10^{-4}\,\unit{N}$．下列说法正确的是\nobreak(\kongwei)
+
+\lxopt{A．$P$点电场强度的大小为$3.0\times10^{4}\,\unit{N/C}$，方向与该试探电荷所受静电力方向相同；}
+\lxopt{B．$P$点电场强度的大小为$3.0\times10^{4}\,\unit{N/C}$；若改用电荷量为$4.0\times10^{-8}\,\unit{C}$的正试探电荷，$P$点电场强度将增大；}
+\lxopt{C．$P$点电场强度的大小为$3.3\times10^{-5}\,\unit{N/C}$，方向与该试探电荷所受静电力方向相反；}
+\lxopt{D．把试探电荷移走后，$P$点的电场强度变为零}
+
+% ============ 综合提升（中档档 11~14） ============
+\dangbadge{综}{合}{提}{升}
+
+\tihao{11}\tieside{中档(选择题)}如图甲所示，真空中$Ox$坐标轴上的$O$点放有一个点电荷$Q$，坐标轴上$A$点坐标为$0.1\,\unit{m}$，在$A$、$B$两点放两个电荷量不同、均带正电的试探电荷，$A$、$B$两点的试探电荷受到静电力的方向都跟$x$轴正方向相同，静电力的大小$F$跟试探电荷电荷量$q$的关系分别如图乙中直线$a$、$b$所示．下列说法正确的是\nobreak(\kongwei)
+
+\qpfig[72]{题11-Fq图象甲乙}
+
+\lxopt{A．$B$点的电场强度大小为$0.25\,\unit{N/C}$；}
+\lxopt{B．$A$、$B$点的电场强度的大小之比为$4:1$；}
+\lxopt{C．点电荷$Q$是负点电荷；}
+\lxopt{D．$B$的位置坐标为$0.4\,\unit{m}$}
+
+\tihao{12}\tieside{中档(选择题)}已知均匀带电球体在球的外部产生的电场与一个位于球心的、电荷量相等的点电荷产生的电场相同．如图所示，半径为$R$的球体上均匀分布着电荷量为$Q$的电荷，在过球心$O$的直线上有$A$、$B$两个点，$O$和$B$、$B$和$A$间的距离均为$R$．现以$OB$为直径在球内挖一球形空腔，若静电力常量为$k$，球的体积公式为$V=\frac{4}{3}\pi r^{3}$，则$A$点处场强的大小为\nobreak(\kongwei)
+
+\qpfig[46]{题12-球体挖球形空腔}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．$\frac{5kQ}{36R^{2}}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．$\frac{7kQ}{36R^{2}}$；}}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．$\frac{7kQ}{32R^{2}}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．$\frac{3kQ}{16R^{2}}$}}
+
+\tihao{13}\tieside{中档(选择题)}在如图所示的电场中，各点电荷带电量大小都是$q$，甲图中的$A$、$B$为对称点，乙、丙两图的点电荷间距离都为$L$，虚线是两侧点电荷的中垂线，两点电荷连线上的$O$、$C$和$O$、$D$间距离也是$L$，下列说法正确的是\nobreak(\kongwei)
+
+\qpfig[78]{题13-等量点电荷三构型}
+
+\lxopt{A．图甲中$A$、$B$两点电场强度相同；}
+\lxopt{B．图乙和图丙中，$O$点的电场强度大小相等；}
+\lxopt{C．图乙中$C$点的电场强度大于图丙中$D$点的电场强度；}
+\lxopt{D．乙图中从$O$点沿虚线向上的电场强度变大，而丙图中变小}
+
+\tihao{14}\tieside{中档(选择题)}如图所示，带等量异种电荷的$A$、$B$小球通过绝缘细线悬挂于匀强电场中处于静止，细线与竖直方向夹角相等，小球$A$、$B$在同一高度，设小球$A$的质量为$m_A$，$B$的质量为$m_B$，则下列说法正确的是\nobreak(\kongwei)
+
+\qpfig[44]{题14-匀强场中双球偏角}
+
+\lxopt{A．小球$A$带负电、小球$B$带正电，且$m_A>m_B$；}
+\lxopt{B．小球$A$带负电、小球$B$带正电，且$m_A=m_B$；}
+\lxopt{C．小球$A$带正电、小球$B$带负电，且$m_A>m_B$；}
+\lxopt{D．小球$A$带正电、小球$B$带负电，且$m_A=m_B$}
+
+% ============ 思维探索（难档 15~16） ============
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\tieside{难(选择题)}如图，真空中有三个点电荷固定在同一直线上，电荷量分别为$Q_1$、$Q_2$和$Q_3$，$P$点和三个点电荷的连线与点电荷所在直线的夹角分别为$60^\circ$、$90^\circ$和$30^\circ$．若位于$P$点的某负点电荷在这三个电荷的静电力作用下平衡，$q>0$，则三个点电荷的电荷量可能为\nobreak(\kongwei)
+
+\qpfig[58]{题15-三点电荷与P点}
+
+\lxopt{A．$Q_1=2q$，$Q_2=\sqrt{3}q$，$Q_3=2\sqrt{3}q$；}
+\lxopt{B．$Q_1=-2q$，$Q_2=-\sqrt{2}q$，$Q_3=-2\sqrt{3}q$；}
+\lxopt{C．$Q_1=-2q$，$Q_2=\sqrt{3}q$，$Q_3=-2\sqrt{3}q$；}
+\lxopt{D．$Q_1=2q$，$Q_2=\sqrt{2}q$，$Q_3=2\sqrt{3}q$}
+
+\tihao{16}\tieside{难(选择题)}均匀带电的球壳在球外空间产生的电场等效于电荷集中于球心处的点电荷产生的电场．如图所示，在绝缘球$\frac{2}{3}$球面$AA_1B_1B$上均匀分布正电荷，总电荷量为$q$；在剩余$\frac{1}{3}$球面$AB$上均匀分布负电荷，总电荷量是$\frac{1}{2}q$．球半径为$R$，球心为$O$，$CD$为$\frac{2}{3}$球面$AA_1B_1B$的对称轴，在轴线上有$M$、$N$两点，且$OM=ON=2R$，$A_1A=B_1B$，$A_1A\parallel B_1B\parallel CD$．已知$\frac{1}{3}$球面$A_1B_1$在$M$点的场强大小为$E$，静电力常量为$k$，则$N$点的场强大小为\nobreak(\kongwei)
+
+\qpfig[78]{题16-球壳双层割补}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．$E$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．$2E$；}}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．$\left|\frac{3kq}{8R^{2}}-2E\right|$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．$\frac{kq}{12R^{2}}+E$}}
+
+\end{multicols}
+\end{document}

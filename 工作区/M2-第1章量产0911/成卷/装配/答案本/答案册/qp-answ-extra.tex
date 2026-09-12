@@ -1,0 +1,25 @@
+% ============================================================
+% qp-answ-extra.tex —— 答案册第五模块：题号条目扩展宏（S5 骨架新增）
+% 来源与依据：
+%   ① \dansitem＝`导学件答案册-v1/组装body.py` ③ 组册段原样收编（CJK 题号条目——
+%      「例1/变式1」非数字号，题号走 \heihao 中文族、无「.」点；v10-B 层级缩进口径同 \ansitem）；
+%   ② \txline／\txsummaryhead／\txsumitem＝靠齐样张 body.tex 就地宏（0911 题型轮三件式：
+%      逐题「题型：××」行＋每题型一块「[题型总结]」识别信号/通法步骤/易错点）参数化收编——
+%      样张四宏模块本轮零改动（样张原目录未动）。
+% 口径：数字号条目用 qp-answ-blocks.tex \ansitem（悬挂 \anshang 两档 5.8/7.6mm）；
+%   中文号条目用本件 \dansitem（悬挂同走 \anshang）；题型行/总结行收一档 \qpind。
+% ============================================================
+% ---------- 中文号条目（例 N／变式 N——导学件课中探究位） ----------
+\newcommand{\dansitem}[2]{\par\glueguard{1}\addvspace{4pt}%
+  {\everypar{\hangindent\qpind\hangafter=1\setlength{\parindent}{\qpind}}%
+  \noindent
+  \makebox[0pt][l]{{\fontsize{11.4pt}{13pt}\selectfont\heihao #1}}%
+  \hspace*{\anshang}{\anlabel [答案]}\hspace{0.5em}#2\par}}
+% ---------- 题型行（0911 题型轮①：紧贴条目行下、[分析] 行前；楷体同号 10.09pt 纯黑平文） ----------
+\newcommand{\txline}[1]{\par{\hangindent\qpind\hangafter=1\noindent\hspace*{\qpind}%
+  {\kaishu\fontsize{10.09pt}{12pt}\selectfont 题型：#1}\par}}
+% ---------- 题型总结块（0911 题型轮②：标签行黑体＋三行楷体内容） ----------
+\newcommand{\txsummaryhead}[1]{\par\glueguard{1}\addvspace{3pt}\noindent
+  {\heibf\fontsize{10.09pt}{13pt}\selectfont [题型总结]\hspace{0.5em}#1}\par\nopagebreak}
+\newcommand{\txsumitem}[2]{\par{\hangindent\qpind\hangafter=1\noindent\hspace*{\qpind}%
+  {\kaishu\fontsize{10.09pt}{12pt}\selectfont #1：#2}\par}}

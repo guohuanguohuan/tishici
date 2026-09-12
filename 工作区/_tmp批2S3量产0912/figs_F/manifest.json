@@ -1,0 +1,67 @@
+{
+ "F2_29": {
+  "doc": "单元2",
+  "n": 1,
+  "figs": [
+   {
+    "file": "F2_29_0.png",
+    "src": "image14.png",
+    "cx": 1476375,
+    "cy": 1724025
+   }
+  ],
+  "start": null
+ },
+ "F3_11": {
+  "doc": "单元3",
+  "n": 1,
+  "figs": [
+   {
+    "file": "F3_11_0.png",
+    "src": "image6.png",
+    "cx": 2371725,
+    "cy": 2362200
+   }
+  ],
+  "start": null
+ },
+ "F5_7": {
+  "doc": "单元5",
+  "n": 1,
+  "figs": [
+   {
+    "file": "F5_7_0.png",
+    "src": "image2.png",
+    "cx": 1933575,
+    "cy": 1838325
+   }
+  ],
+  "start": null
+ },
+ "F6_3": {
+  "doc": "单元6",
+  "n": 1,
+  "figs": [
+   {
+    "file": "F6_3_0.png",
+    "src": "image22.png",
+    "cx": 1771650,
+    "cy": 1352550
+   }
+  ],
+  "start": null
+ },
+ "F6_8": {
+  "doc": "单元6",
+  "n": 1,
+  "figs": [
+   {
+    "file": "F6_8_0.png",
+    "src": "image33.png",
+    "cx": 1809750,
+    "cy": 1714500
+   }
+  ],
+  "start": null
+ }
+}

@@ -1,0 +1,23 @@
+% ============================================================
+% 答案册·M2 轮4 成卷 S5（骨架件——结构/宏先行，答案值待四本台账齐后注入）
+% 件名：工作区/M2-第1章量产0911/成卷/答案册/main.tex
+% 样式基线：L1 冻结（tag 558f801，v11 样张包 21 页现行）——四宏原样拷贝自
+%   `工作区/字替对照-0909/靠齐样张-0910/答案册/`（fonts/layout/headfoot/blocks 逐字节一致，
+%   样张原目录未动）；本件新增第五模块 qp-answ-extra.tex＝题型行/题型总结/中文号条目宏
+%   （样张 body.tex 就地宏 0911 题型轮三件式＋组装body.py \dansitem 参数化收编）。
+% 同构同号（排产单 §一.5/§二.1）：与导学件／练习件／拓展册／测评卷（滚动卷随测评本）四本
+%   逐册同构；题号集相等零缺漏＝对号断言（`check_pairs.py`）；衔接-1~29 同号段；课堂评价 1~5、
+%   例 N/变式 N 同构对号；不印交叉页码（拍板）。
+% 组装路线：body.tex＝组装器产出（勿手改）——S5 组装器按《取值映射模板.md》槽位自四本值台账
+%   取值注入，注入前过 `钉值门.py`（防 6g 回卷）；装配轮按四本连续页码改写 \setcounter{page}。
+% 编译：xelatex main.tex ×2 → render.py（150dpi）→ check.py（复用样张 check.py 口径）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-answ-fonts.tex}
+\input{qp-answ-layout.tex}
+\input{qp-answ-headfoot.tex}
+\input{qp-answ-blocks.tex}
+\input{qp-answ-extra.tex}
+\begin{document}
+\input{body.tex}
+\end{document}

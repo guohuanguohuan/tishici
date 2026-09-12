@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  12 SEP 2026 12:03
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  12 SEP 2026 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1068,22 +1068,22 @@ File: pgflibraryshapes.geometric.code.tex 2026-08-01 v3.1.12 (3.1.12)
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1120,19 +1120,19 @@ LaTeX Font Info:    ... okay on input line 54.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/texgyretermes-math.otf(1)/m/n --> TU/TimesNewRoman(0)/m/n on input line 54.
+(Font)                  TU/texgyretermes-math.otf(1)/m/n --> TU/TimesNewRoman(0)/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 54.
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 54.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 54.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 54.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 54.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 60.
 
 Package fontspec Info: 
 (fontspec)             Font family 'NSC-w600.ttf(0)' created for font
@@ -1147,6 +1147,64 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w600.ttf]/OT:script=hani;language=dflt;"
 
+
+Package fontspec Info: 
+(fontspec)             Font family 'NSC-w315.ttf(0)' created for font
+(fontspec)             'NSC-w315.ttf' with options
+(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},BoldFont={NSC-w315.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w315.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w315.ttf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FZFSK.TTF(1)' created for font 'FZFSK.TTF'
+(fontspec)             with options
+(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/FZFSK.TTF]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NotoSansSC-Bold.otf(0)' created for font
+(fontspec)             'NotoSansSC-Bold.otf' with options
+(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},BoldFont={NotoSansSC-Bold.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
+
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.29182pt on input line 79.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.559pt on input line 79.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 4.6308pt on input line 79.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.29276pt on input line 79.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.55951pt on input line 79.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.63123pt on input line 79.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.29076pt on input line 79.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.55843pt on input line 79.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.63033pt on input line 79.
 
 Package fontspec Info: 
 (fontspec)             Font family 'NotoSansSC-Medium.otf(1)' created for font
@@ -1175,20 +1233,6 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'NotoSansSC-Bold.otf(0)' created for font
-(fontspec)             'NotoSansSC-Bold.otf' with options
-(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},BoldFont={NotoSansSC-Bold.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
-
-
-Package fontspec Info: 
 (fontspec)             Font family 'NotoSansSC-Bold.otf(1)' created for font
 (fontspec)             'NotoSansSC-Bold.otf' with options
 (fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},FakeSlant={0.18},BoldFont={NotoSansSC-Black.otf}].
@@ -1201,55 +1245,25 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Black.otf]/OT:script=hani;language=dflt;slant=0.18;"
 
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.29182pt on input line 74.
+(Font)              scaled to size 10.71004pt on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.559pt on input line 74.
+(Font)              scaled to size 7.49698pt on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 4.6308pt on input line 74.
+(Font)              scaled to size 5.35501pt on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.29276pt on input line 74.
+(Font)              scaled to size 10.711pt on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.55951pt on input line 74.
+(Font)              scaled to size 7.49765pt on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.63123pt on input line 74.
+(Font)              scaled to size 5.3555pt on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.29076pt on input line 74.
+(Font)              scaled to size 10.70892pt on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.55843pt on input line 74.
+(Font)              scaled to size 7.4962pt on input line 126.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.63033pt on input line 74.
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.71004pt on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.49698pt on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.35501pt on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.711pt on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.49765pt on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.3555pt on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.70892pt on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.4962pt on input line 88.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.35446pt on input line 88.
-
-Package fontspec Info: 
-(fontspec)             Font family 'FZFSK.TTF(1)' created for font 'FZFSK.TTF'
-(fontspec)             with options
-(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/FZFSK.TTF]/OT:script=hani;language=dflt;"
-
+(Font)              scaled to size 5.35446pt on input line 126.
 [1
 
 ]
@@ -1277,8 +1291,9 @@ Package fontspec Info:
 
 
 LaTeX Font Warning: Font shape `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n' undefined
-(Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 144.
+(Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 182.
 
+[2]
 
 Package fontspec Info: 
 (fontspec)             Script 'CJK' not explicitly supported within font
@@ -1322,22 +1337,22 @@ Package fontspec Info:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/FY-w450BEVL100.ttf]/OT:script=hani;language=dflt;"
 
 
+
 LaTeX Font Warning: Font shape `TU/FY-w450BEVL100.ttf(0)/b/n' undefined
-(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 156.
+(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 194.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--156
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
 \TU/FY-w700BEVL100.ttf(0)/m/n/12.03 变\TU/FY-w450BEVL100.ttf(1)/m/n/12.03 式\TU/FY-w450BEVL100.ttf(0)/m/n/12.03 1 \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简 单 \TU/TimesNewRoman(0)/m/n/10.5 (\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 知 识 点 一\TU/TimesNewRoman(0)/m/n/10.5 )] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 下 列 说 法 错 误 的
  []
 
 
-Underfull \hbox (badness 7486) in paragraph at lines 176--176
+Underfull \hbox (badness 7486) in paragraph at lines 214--214
 [][][][][][][][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 中，| $[] [] []$，| $[] [] []$，| $[] [] []$，|
  []
 
 File: figs/image2.png Graphic file (type bmp)
 <figs/image2.png>
-[2]
 
 Package fontspec Info: 
 (fontspec)             Font family 'NSC-w500.ttf(0)' created for font
@@ -1352,7 +1367,7 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
 
- [3] (./main.aux)
+[3] [4] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
@@ -1363,12 +1378,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25554 strings out of 469768
- 607772 string characters out of 5466040
- 1166486 words of memory out of 5000000
- 54066 multiletter control sequences out of 15000+600000
- 633876 words of font info for 188 fonts, out of 8000000 for 9000
+ 25669 strings out of 469768
+ 614785 string characters out of 5466040
+ 1160072 words of memory out of 5000000
+ 54167 multiletter control sequences out of 15000+600000
+ 633980 words of font info for 201 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 97i,17n,110p,1193b,975s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 97i,16n,110p,1193b,923s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (3 pages).
+Output written on main.pdf (4 pages).
