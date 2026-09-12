@@ -1,0 +1,239 @@
+% ============================================================
+% S2 导学件量产·批3 件1 —— 1.2.1 空间中的点、直线与空间向量（课时6 导学件）
+% 轮4 成卷·S2 批3｜2026-09-12｜生成链：xelatex main.tex（两遍）→ python render.py（150dpi → png/pageN.png）
+%
+% 模板承 v11 样张族（经 课时02 首件／批1 两件）：六宏＝原样拷贝（L1 冻结参数零改动）；
+%   课时页形制与局部宏（\pingtou/\liubai/\zhankong）照抄 课时02/课时03。
+% 图＝源图位图（禁绘三维，公共规则§5）：figs/ 四件自 讲练件（上）定稿 docx word/media/ 原件解包
+%   （image13/image14/image17/image22/image37，元素362/373/398/405/415，未改绘），alt 缺失＝§四-5 照登。
+%
+% 取材链登记（盘点结论，详见 成卷/导学件/批3值台账.md）：
+%   ① 讲练件（上）§1.2.1 讲部实态（dump_docx --slice 323:429 取证＝工作区/_tmp批3S2量产0912/讲上-1.2.1全文.txt）：
+%      知识讲解〔基〕条目 5 条（1.2.1-1～-5）；题型例题 9 题，其中 1.2.1.2-1 已移交 1.2.2（法向量对 1.2.1 超纲，
+%      定稿B §1.3/§6.3，旧号注销）——本件不用；节内净 8 题（-2～-9）全部入本件课中探究（例1×5＋变式1×3 同文位）。
+%   ② 探究点随讲部题型段＝5 个：一 用向量证明平行与垂直（1.2.1.3 段 -3 例／-2 变，同段双题入例变＝试点课2 件
+%      1.1.1.8 段口径）；二 异面直线所成角·建系法（1.2.1.5 段 -6 例／1.2.1.4 段 -4 变，易→中）；
+%      三 异面直线所成角·基底法（1.2.1.4 段 -5 例／变式命制）；四 开放性条件探究（1.2.1.6 段 -7 例／-8 变，
+%      -8 题面按讲部编注[407]复原平面名＝清稿性修复，登记）；五 位置关系综合判定（1.2.1.7 段 -9 难例／变式命制）。
+%   ③ 与课时06 练习轴 16 题互斥口径：课中探究同文件 -3/-2/-4/-5/-7/-9 六题与练习轴第 11/7/12/13/14/15 题同文
+%      （题源＝讲部同号，A-2「照用」计数互斥登记，同题双印不并计）；-6/-8 未入练习轴。命制位＝判断 5＋
+%      变式二处（探究三/五）＋评价 5＝12 题，与 16 题逐题零同文（题面/设问形态均异，断言见台账）。
+%   ④ 课前预习 ZSD一/二＝讲部条目 1.2.1-1～-5 同文化用（挖空值不印＝全品 p04 式）；ZSD三＝教材 1.2.1
+%      「两条直线所成角」段同文化用（_tmp教材全文.txt 行2239–2250 实证：θ=〈v₁,v₂〉或 π−〈v₁,v₂〉、
+%      cosθ=|cos〈v₁,v₂〉｜、平行直线所成角规定 0°——白名单·教材原文）；判断/评价＝恒命制位，逐题亲算登台账。
+%   ⑤ 句末标点：同文段承源「.」，新命制句用「．」（G8 成卷轮统一清扫，本件不单点改）。
+% 编译门：三 0（error＝0／Overfull＝0／Missing character＝0，Underfull 仅计数）——读数见批3值台账。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ================= 页脚参数宏（qp-headfoot 文件头明示的复用入口，非模块语义改动） =================
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+\renewcommand{\qpjianming}{导学件}
+
+% ================= 局部宏（照抄 v11 导学增量/main.tex 冻结定义；不动公共模块） =================
+% 课堂评价组头（XB-02 \zhenhead 同构：\biaoqian 1.3× 标签＋仿宋说明行；恒 5 题说明）
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+% 书写留白＋斜置浅灰水印（导学案正文属性：答案另册→正文留书写位；斜置 25°／black!12）
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+% 纯书写占位留白（无水印）
+\newcommand{\zhankong}[1]{\par\nobreak\addvspace{#1}\nopagebreak\noindent}
+
+\begin{document}
+
+% ============================================================
+% 课时页（第6课时；五段闭环，承 v11 导学增量课时页样板形制）
+% ============================================================
+\keshi{第6课时\quad 空间中的点、直线与空间向量}
+\mubiaoline
+\mubiaomu{1}{了解点的位置向量，理解直线的方向向量与空间直线的向量表示式，会表示直线上的动点；}
+\mubiaomu{2}{掌握直线与直线平行、垂直的向量判定，能用向量方法证明平行与垂直问题；}
+\mubiaomu{3}{掌握用空间向量求两条直线(异面直线)所成角的坐标法与基底法，会用开放条件的逆向探究，体会几何问题代数化的转化思想.}
+
+\vspace{1.7mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ---------- 课前预习（知识导学填空＋诊断分析挂每个知识点之后；ZSD一/二＝讲部条目同文化用，ZSD三＝教材 1.2.1 所成角段化用） ----------
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{点的位置向量与直线的向量表示}
+
+\tiaomu{1}{位置向量：在空间中，取一定点\(O\)作为基点，那么空间中任意一点\(P\)就可以用向量\kongbai{}来表示，该向量称为点\(P\)的位置向量．\zhuzhu{以定点\(O\)为基点统一表示点的工具；直线的向量表示式由它出发推得.}}
+
+\tiaomu{2}{直线的方向向量：如图，\(O\)是直线\(l\)上一点，在直线\(l\)上取\kongbai{}向量\(\overrightarrow{a}\)，则对于直线\(l\)上的任意一点\(P\)，存在实数\(\lambda\)，使得\(\overrightarrow{OP}=\lambda\overrightarrow{a}\)；把与向量\(\overrightarrow{a}\)\kongbai{}的非零向量称为直线\(l\)的方向向量．直线可以由其上一点和它的方向向量确定．\zhuzhu{方向向量不唯一，相差非零倍数均可，取坐标最简者便于计算.}}
+
+\tiaomu{3}{空间直线的向量表示式：取定空间任意一点\(O\)，点\(P\)在直线\(l\)上的充要条件是存在实数\(t\)，使\(\overrightarrow{OP}=\)\kongbai{}\quad①(\(\overrightarrow{a}=\overrightarrow{AB}\))．\zhuzhu{把「点＋方向向量」合成直线上动点的参数形式，是处理动点、共线与求参数问题的桥梁.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{给定一条直线，它的方向向量是唯一的．}
+
+\zhentib{(2)}{直线\(l\)的方向向量为\(\overrightarrow{a}\)，若点\(A\)，\(B\)都在\(l\)上，则\(\overrightarrow{AB}\parallel\overrightarrow{a}\)．}
+
+\zsd{二}{直线与直线平行、垂直的向量判定}
+
+\tiaomu{1}{直线与直线平行：设\(\overrightarrow{u_{1}},\overrightarrow{u_{2}}\)分别是直线\(l_{1},l_{2}\)的方向向量，则\(l_{1}\parallel l_{2}\Leftrightarrow\overrightarrow{u_{1}}\parallel\overrightarrow{u_{2}}\Leftrightarrow\exists\lambda\in\mathbf{R}\)，使得\(\overrightarrow{u_{1}}=\)\kongbai{}．}
+
+\tiaomu{2}{直线与直线垂直：设直线\(l_{1},l_{2}\)的方向向量分别为\(\overrightarrow{u_{1}},\overrightarrow{u_{2}}\)，则\(l_{1}\perp l_{2}\Leftrightarrow\overrightarrow{u_{1}}\perp\overrightarrow{u_{2}}\Leftrightarrow\)\kongbai{}．\zhuzhu{两方向向量数量积为0即判垂直，比几何证法直接；此判据不要求两直线相交(异面垂直同样成立).}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{设\(\overrightarrow{v_{1}},\overrightarrow{v_{2}}\)分别是直线\(l_{1},l_{2}\)的方向向量，若\(\overrightarrow{v_{1}}\parallel\overrightarrow{v_{2}}\)，则\(l_{1}\parallel l_{2}\)．}
+
+\zhentib{(2)}{设\(\overrightarrow{v_{1}},\overrightarrow{v_{2}}\)分别是直线\(l_{1},l_{2}\)的方向向量，若\(\overrightarrow{v_{1}}\perp\overrightarrow{v_{2}}\)，则\(l_{1}\perp l_{2}\)．}
+
+\zsd{三}{空间中两条直线所成的角}
+
+\tiaomu{1}{两条直线所成角：空间中两条相交直线所成角的大小，指它们相交所得到的不大于直角的角的大小；两条异面直线所成角的大小，等于分别与它们平行或重合的两条相交直线所成角的大小；空间中两条平行直线所成角的大小规定为\(0^{\circ}\)．因此，空间中任意两条直线所成角\(\theta\)的范围是\kongbai{}．}
+
+\tiaomu{2}{向量公式：设\(\overrightarrow{v_{1}},\overrightarrow{v_{2}}\)分别是空间中直线\(l_{1},l_{2}\)的方向向量，且\(l_{1}\)与\(l_{2}\)所成角的大小为\(\theta\)，则\(\theta=\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle\)或\(\theta=\pi-\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle\)；特别地，\(\sin\theta=\sin\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle\)，\(\cos\theta=\)\kongbai{}．\zhuzhu{加绝对值保证所成角落在(0°,90°]；忘取绝对值是求异面直线所成角的最常见错误.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{两条异面直线所成的角等于它们的方向向量的夹角．}
+
+\liubai[9mm]{此处书写}
+
+% ---------- 课中探究（探究点5个＝讲部题型段5个；例1/变式1同文位＝讲部题面逐字(记号LaTeX化)；素养小结＝讲部题型通式编注化用） ----------
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{用向量证明平行与垂直}{例\textbf{1}}{中档(知识点二)}{如图，在四棱锥\(P-ABCD\)中，底面\(ABCD\)是正方形，侧面\(PAD\perp\)底面\(ABCD\)，且\(PA=PD=\frac{\sqrt{2}}{2}AD\)，若\(E\)、\(F\)分别为\(PC\)、\(BD\)的中点.求证：(1)\(EF\parallel\)平面\(PAD\)；(2)\(EF\perp\)平面\(PDC\).（用向量方法证明）}
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=30.0mm]{figs/image13.png}}\par\vspace{-1.0mm}\penalty10000
+
+\liubai[12mm]{解答书写区}
+
+\liB{变式\textbf{1}}{中档(知识点二)}{}{已知点\(A(0,1,0)\)，\(B(-1,0,-1)\)，\(C(2,1,1)\)，点\(P(x,0,z)\)，若\(PA\perp\)平面\(ABC\)，则点\(P\)的坐标为(\kongwei).}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\((1,0,-2)\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\((1,0,2)\)；}\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\((-1,0,2)\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\((2,0,-1)\)}\par}
+
+\xiaojie{①识别：题干要求用向量方法证明线面平行或垂直(或据垂直关系求点的坐标)时，判归本题型.}
+
+\bindp {\kaishu ②操作：写出相关直线的方向向量与平面内两个不共线向量；用数量积为零证垂直，用共面向量判据(或方向向量与平面内两不共线向量的组合关系)证平行.}
+
+\bindp {\kaishu ③收束：补足「直线不在平面内、两直线相交」等判定条件下结论.}
+
+\tjdnr{二}{异面直线所成角(建系法)}{例\textbf{1}}{简单(知识点三)}{已知正四棱柱\(ABCD\text{-}A_{1}B_{1}C_{1}D_{1}\)中，\(AB=1\)，\(CC_{1}=2\)，点\(E\)为\(CC_{1}\)的中点，则异面直线\(AC_{1}\)与\(BE\)所成的角等于(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(30^{\circ}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(45^{\circ}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(60^{\circ}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(90^{\circ}\)}\par}
+
+\liubai[6mm]{解答书写区}
+
+\liB{变式\textbf{1}}{中档(知识点三)}{}{如图，在三棱锥\(P-ABC\)中，\(\triangle ABC\)为等边三角形，\(\triangle PAC\)为等腰直角三角形，\(PA=PC=4\)，平面\(PAC\perp\)平面\(ABC\)，\(D\)为\(AB\)的中点，则异面直线\(AC\)与\(PD\)所成角的余弦值为(\kongwei)}
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=43.0mm]{figs/image14.png}}\par\vspace{-1.0mm}\penalty10000
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\frac{1}{4}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(\frac{\sqrt{2}}{4}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(-\frac{\sqrt{2}}{4}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(\frac{1}{2}\)}\par}
+
+\xiaojie{①识别：题干在长方体、正四棱柱等规则几何体(或可证出垂线的几何体)中求异面直线所成角时，判归本题型.}
+
+\bindp {\kaishu ②操作：以两两垂直的棱(或先构造垂足)为轴建系，写出相关点坐标得两条方向向量.}
+
+\bindp {\kaishu ③收束：代入夹角公式先取绝对值得余弦，再由余弦值定角(所成角范围(0°,90°]).}
+
+\tjdnr{三}{异面直线所成角(基底法)}{例\textbf{1}}{中档(知识点三)}{棱长为\(a\)的正四面体\(ABCD\)中，\(E\)，\(F\)分别为棱\(AD\)，\(BC\)的中点，则异面直线\(EF\)与\(AB\)所成角的大小是\kongbai{}，线段\(EF\)的长度为\kongbai{}.}
+
+\liubai[10mm]{解答书写区}
+
+\liB{变式\textbf{1}}{中档(知识点三)}{}{已知\(\{\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}\}\)是空间的一个基底，\(|\overrightarrow{a}|=|\overrightarrow{b}|=|\overrightarrow{c}|=1\)，且\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，\(\overrightarrow{c}\)中任意两个向量的夹角都是\(60^{\circ}\)，则向量\(\overrightarrow{m}=\overrightarrow{a}+\overrightarrow{b}\)与\(\overrightarrow{n}=\overrightarrow{b}+\overrightarrow{c}\)所成角的余弦值为\kongbai{}．}
+
+\xiaojie{①识别：题干在不方便建系的几何体中求异面直线所成角、或直接给出基底求两向量夹角时，判归本题型.}
+
+\bindp {\kaishu ②操作：选定基底并算清全部基本数量积，把两条直线的方向向量用基底表示，展开算数量积与模长.}
+
+\bindp {\kaishu ③收束：代入\(\cos\theta=|\cos\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle|\)取绝对值定角.}
+
+\tjdnr{四}{开放性条件探究}{例\textbf{1}}{中档(知识点二)}{如图所示，在正四棱柱\(ABCD-A_{1}B_{1}C_{1}D_{1}\)中，\(E\)，\(F\)，\(G\)，\(H\)分别是棱\(CC_{1}\)，\(C_{1}D_{1}\)，\(D_{1}D\)，\(DC\)的中点，\(N\)是\(BC\)的中点，点\(M\)在四边形\(EFGH\)及其内部运动，则\(M\)只需满足条件\kongbai{}时，就有\(MN\parallel\)平面\(B_{1}BDD_{1}\)．}
+
+\bindp （注：请填上你认为正确的一个条件即可，不必考虑全部可能情况）
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=24.0mm]{figs/image17.png}}\par\vspace{-1.0mm}\penalty10000
+
+\liubai[6mm]{解答书写区}
+
+\liB{变式\textbf{1}}{中档(知识点二)}{}{如图，在四棱锥\(P-ABCD\)中，\(PA\perp\)底面\(ABCD\)且底面各边都相等，\(M\)是\(PC\)上一点，当点\(M\)满足\kongbai{}时，平面\(MBD\perp\)平面\(PCD\)．（只要填写一个你认为正确的条件即可）}
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=32.0mm]{figs/image22.png}}\par\vspace{-1.0mm}\penalty10000
+
+\xiaojie{①识别：题干为开放填空——补充一个条件使线面平行或面面垂直成立时，判归本题型.}
+
+\bindp {\kaishu ②操作：从结论倒推，把目标平行或垂直转化为过某点的平行线、垂线条件，借助中点、中位线或已有垂直关系构造一个可行方案.}
+
+\bindp {\kaishu ③收束：验证方案能推出结论后再作答(答案不唯一，填一个即可).}
+
+\tjdnr{五}{位置关系的综合判定}{例\textbf{1}\duoxuan}{难(知识点三)}{中国古代数学著作《九章算术》中，记载了一种称为“曲池”的几何体，该几何体的上下底面平行，且均为扇环形（扇环是指圆环被扇形截得的部分），现有一个如图所示的曲池，它的高为2，\(AA_{1}\)，\(BB_{1}\)，\(CC_{1}\)，\(DD_{1}\)均与曲池的底面垂直，底面扇环对应的两个圆的半径分别为1和2，对应的圆心角为\(90^{\circ}\)，则以下命题正确的是(\kongwei)}
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=30.0mm]{figs/image37.png}}\par\vspace{-1.0mm}\penalty10000
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．\(AB_{1}\)与\(CD_{1}\)成角的余弦值为\(\frac{4}{5}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．\(A_{1}\)，\(B\)，\(C\)，\(D_{1}\)四点不共面；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．弧\(A_{1}D_{1}\)上存在一点\(E\)，使得\(BE\parallel CD_{1}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．以\(C\)点为球心，\(\sqrt{5}\)为半径的球面与曲池上底面的交线长为\(\frac{2}{3}\pi\)\par}
+
+\liubai[8mm]{解答书写区}
+
+\liB{变式\textbf{1}\duoxuan}{中档(知识点三)}{}{在棱长为2的正方体\(ABCD-A_{1}B_{1}C_{1}D_{1}\)中，\(E\)，\(F\)分别为棱\(AA_{1}\)，\(CC_{1}\)的中点，则下列说法正确的是(\kongwei)．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．异面直线\(DE\)与\(BF\)所成角的余弦值为\(\frac{3}{5}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．\(A\)，\(E\)，\(C_{1}\)，\(F\)四点不共面；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．直线\(EF\)与\(BD\)所成的角为\(90^{\circ}\)；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．直线\(EF\)与\(A_{1}C_{1}\)异面\par}
+
+\xiaojie{①识别：题干以不规则几何体(或常规模型)为载体、多选判断位置关系与度量时，判归本题型.}
+
+\bindp {\kaishu ②操作：先理清几何体的结构特征(平行、垂直、长度与角度)，再建系或作辅助图逐项计算夹角、共面性、位置关系.}
+
+\bindp {\kaishu ③收束：逐项判定汇总选项，夹角计算勿忘取绝对值.}
+
+% ---------- 课堂评价（恒 5 题＝3 单选＋2 填空；4 简单＋1 中档≤例题；提示词形制；全命制——逐题亲算登批3值台账） ----------
+\vbox{
+
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}已知直线\(l\)过点\(A(1,0,2)\)，方向向量\(\overrightarrow{v}=(2,1,-1)\)，则下列各点在直线\(l\)上的是(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\((3,1,1)\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\((3,-1,1)\)；}\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\((-1,1,3)\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\((3,1,2)\)}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}空间中两条直线\(l_{1}\)，\(l_{2}\)的方向向量分别为\(\overrightarrow{v_{1}}=(1,1,0)\)，\(\overrightarrow{v_{2}}=(0,1,1)\)，则这两条直线(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．平行；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．垂直；}\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．所成角为\(60^{\circ}\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．所成角为\(120^{\circ}\)}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}设\(\overrightarrow{v_{1}}\)，\(\overrightarrow{v_{2}}\)分别是两条不重合直线\(l_{1}\)，\(l_{2}\)的方向向量，则“\(\overrightarrow{v_{1}}\parallel\overrightarrow{v_{2}}\)”是“\(l_{1}\parallel l_{2}\)”的(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．充分不必要条件；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．必要不充分条件；}\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．充要条件；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．既不充分也不必要条件}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}已知直线\(l_{1}\)，\(l_{2}\)的方向向量分别为\(\overrightarrow{v_{1}}=(1,0,0)\)，\(\overrightarrow{v_{2}}=(-1,1,1)\)，则\(\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle\)的余弦值为\kongbai{}，直线\(l_{1}\)与\(l_{2}\)所成角的余弦值为\kongbai{}．{\zhushi{(提示：向量夹角可直接取\(\cos\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle=\frac{\overrightarrow{v_{1}}\cdot\overrightarrow{v_{2}}}{|\overrightarrow{v_{1}}||\overrightarrow{v_{2}}|}\)，而所成角须取绝对值)}}}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{中档(知识点一)}\hspace{2.2mm}已知点\(M(1,1,1)\)，直线\(l\)过点\(M\)且方向向量\(\overrightarrow{v}=(2,-1,2)\)，点\(N\)在\(l\)上且\(|\overrightarrow{MN}|=6\)，则点\(N\)的坐标为\kongbai{}．{\zhushi{(提示：由直线的向量表示式\(\overrightarrow{ON}=\overrightarrow{OM}+t\overrightarrow{v}\)，且\(|\overrightarrow{v}|=3\)，先由\(|t|\,|\overrightarrow{v}|=6\)定出\(t\)；\(N\)有两个，写出一个即可，两个都写不扣分)}}}
+
+}
+
+\end{multicols}
+\end{document}

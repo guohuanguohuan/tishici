@@ -1,0 +1,209 @@
+% ============================================================
+% S2 导学件量产·批3 件2 —— 1.2.1 前几何衔接位（衔接1～29 独立节页）
+% 轮4 成卷·S2 批3｜2026-09-12｜生成链：xelatex main.tex（两遍）→ python render.py（150dpi → png/pageN.png）
+%
+% 内容源＝`成卷/题面库/衔接节.md`（29 题已冻＋五组排布序＋组内序约束＋四心填空讲块[190]–[214]＋点拨段[301]）；
+%   排布硬约束＝全章定稿汇总 §3.2/§3.3（组内序四条：①衔接18 先于衔接24/29（张角结论前置，源号 -3→-9/-14）；
+%   ②衔接20 与衔接22(2) 同页推导（等面积/切线长「公式—数值」讲一次，源号 -5 与 -7(2) 同式约束对组二侧
+%   即衔接5 与衔接7(2) 同页）；③垂心族(衔接17/23/25)与两心重合族(衔接21/28)分节排布勿邻接堆叠；
+%   ④图指代用题必配图（衔接2/3 等，题面【图】21 处全带）——成品版面按 衔接1→29 升序即满足组序，
+%   编译后跑序断言（R7 防「白做29题」）见批3值台账。
+% 件样式＝承练习件版式（练习线 分区组行\zuhang＋悬挂题号＋选项件 \lxopt 局部宏照抄 v11 练习线/main.tex；
+%   四心讲块＝全品课前预习式扩展：\zsd 同构标题宏局部件＋\tiaomu 条目）；六宏＝原样拷贝零改动。
+% 图＝源图位图（禁绘三维）：figs/ 28 件自 衔接件（29题）.docx word/media/ 原件解包未改绘
+%   （题面 21 处＋讲块 7 处；源 extent 微小（5–9mm 档）＝源件版式病，成品按像素比例放大至可读宽，登记）。
+% 页码口径：本件为导学件册内 1.2.1 前插页，页脚件名＝导学件；跨本连续页码＝装订轮。
+% 答案同号段：答案册同节同号 衔接-1～衔接-29（排产单 §2.1/§五.5）；版面题号印式「衔接N.」＝号段映射登记台账。
+% 编译门：三 0——读数见批3值台账。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ================= 页脚参数宏 =================
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+\renewcommand{\qpjianming}{导学件}
+
+% ================= 局部宏（承练习线冻结件形制，公共模块语义不动） =================
+% JT-06 分区组行（照抄 练习线/main.tex 定义）——本件作五组组行
+\newcommand{\zuhang}[2]{\par\glueguard{2}\addvspace{1.5mm}%
+  {\noindent{\fontsize{10.5pt}{18pt}\selectfont\heibf #1}{\fontsize{10.5pt}{18pt}\selectfont：#2}\par}%
+  \addvspace{1.3mm}}
+% TJ-07 选项段（照抄 练习线/main.tex 定义；行距＝例题区档 19.2pt）
+\newcommand{\lxopt}[1]{\par\noindent\hangindent=\xhang\hangafter=0
+  {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont #1\par}}
+% 衔接悬挂题号（TJ-02 同构：题号「衔接N.」黑体加粗坐栏左缘，单号 11.0mm／双位 13.0mm）
+\newlength{\xhang}
+\newcommand{\xthao}[1]{\par\glueguard{1}%
+  \ifnum#1>9\setlength{\xhang}{13.0mm}\else\setlength{\xhang}{11.0mm}\fi
+  \noindent\hangindent=\xhang\hangafter=0
+  \llap{\hbox to\xhang{{\heibf 衔接}\textbf{#1.}\hss}}}
+% 小题行（同悬挂续行）
+\newcommand{\subl}[1]{\par\noindent\hangindent=\xhang\hangafter=0 #1\par}
+% 源图位图居中定行（承导学件 \bindp 图式）
+\newcommand{\fig}[2][34.0mm]{\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=#1]{figs/#2.png}}\par\vspace{-1.0mm}\penalty10000}
+% 知识讲块标题（\zsd 同构件：◆＋12.03pt \heibf，仅去「知识点N」编号——讲块不占知识点号段）
+\newcommand{\zhublock}[1]{\par\addvspace{6.3pt}\glueguard{4}%
+  \noindent{\fontsize{12.03pt}{17pt}\selectfont\heibf \huafu\hspace{2.4mm}#1}\par\addvspace{2pt}}
+% 点拨行（源「点拨 　…」仿宋件）
+\newcommand{\diangu}[1]{\par\glueguard{2}\addvspace{1.2mm}\noindent{\fangsong 【点拨】#1}\par\addvspace{1.2mm}}
+
+\begin{document}
+
+% ============================================================
+% 衔接节页（1.2.1 前几何衔接位；五组排布＋四心讲块置第四组之前＋点拨段[301]原样＋方法链接三挂点）
+% ============================================================
+\keshi{衔接\quad 初等几何必会（1.2.1 前）}
+
+\vspace{1.0mm}
+{\fangsong 本节复习 1.2.1《空间中的点、直线与空间向量》必用的初等几何知识，共 29 题，独立编号衔接1—衔接29（答案册同节同号）．\par}
+
+\vspace{1.2mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ---------------- 第一组：平行线分线段成比例／相似／中位线（衔接1～5） ----------------
+\zuhang{一、平行线分线段成比例、相似与中位线}{本组 5 题(衔接必会)}
+
+\xthao{1}\tieside{衔接必会}如图，在\(\triangle ABC\)中，\(\frac{AD}{AB}=\frac{1}{4}\)，\(\frac{AE}{AC}=\frac{1}{2}\)，\(BE\)和\(CD\)相交于点\(F\)，则\(\frac{DF}{DC}=\)\kongbai{}.
+\fig[30.0mm]{image8}
+
+\xthao{2}\tieside{衔接必会}如图，已知\(M\)为平行四边形\(ABCD\)的边\(AB\)的中点，\(CM\)交\(BD\)于点\(E\)，则图中阴影部分的面积与平行四边形\(ABCD\)面积的比是\kongbai{}.
+\fig[26.0mm]{image10}
+
+\xthao{3}\tieside{衔接必会}如图，\(D\)，\(E\)分别为边\(AB\)，\(AC\)的中点，则\(\frac{BP}{BE}\)的值\kongbai{}.
+\fig[45.0mm]{image11}
+
+\xthao{4}\tieside{衔接必会}如图，\(BD\)、\(CE\)是\(\triangle ABC\)的中线，\(P\)、\(Q\)分别是\(BD\)、\(CE\)的中点，则\(PQ:BC\)等于\kongbai{}.
+\fig[34.0mm]{image13}
+
+\xthao{5}\tieside{衔接必会}如图，四边形\(ABCD\)的对角线相交于点\(O\)，\(\angle BAC=\angle CDB\)，求证：\(\angle DAC=\angle CBD\).
+\fig[34.0mm]{image15}
+
+% ---------------- 第二组：射影定理组（衔接6～11） ----------------
+\zuhang{二、射影定理组}{本组 6 题(衔接必会)}
+
+\xthao{6}\tieside{衔接必会}在\(\mathrm{Rt}\triangle ABC\)中，\(\angle BAC=90^{\circ}\)，\(AD\perp BC\)于点\(D\)，若\(\frac{AC}{AB}=\frac{3}{4}\)，则\(\frac{AD}{AC}=\)\kongbai{}，\(\frac{BD}{CD}=\)\kongbai{}.
+\fig[38.0mm]{image16}
+
+\xthao{7}\tieside{衔接必会}如图，在\(\triangle ABC\)中，\(\angle ACB=90^{\circ}\)，\(CD\perp AB\)，\(AD=6\)，\(CD=2\sqrt{3}\)，求：
+\fig[30.0mm]{image17}
+\subl {(1)\(\angle A\)的度数；\quad (2)\(\triangle ABC\)的面积.}
+
+\xthao{8}\tieside{衔接必会}一个直角三角形的一条直角边为\(3\)，斜边上的高为\(2.4\)，则这个直角三角形的面积为(\kongwei)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\xhang-1em\relax][l]{A．\(7.2\)；}\makebox[\dimexpr0.5\linewidth-0.5\xhang-1em\relax][l]{B．\(6\)；}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\xhang-1em\relax][l]{C．\(12\)；}\makebox[\dimexpr0.5\linewidth-0.5\xhang-1em\relax][l]{D．\(24\)}}
+
+\xthao{9}\tieside{衔接必会}已知在梯形\(ABCD\)中，\(DC\parallel AB\)，\(\angle D=90^{\circ}\)，\(AC\perp BC\)，\(AB=10\)，\(AC=6\)，则此梯形的面积为\kongbai{}.
+\fig[40.0mm]{image19}
+
+\xthao{10}\tieside{衔接必会}已知直角三角形周长为\(48\,\mathrm{cm}\)，一锐角平分线分对边为\(3:5\)两部分.
+\fig[24.0mm]{image20}
+\subl {(1)求直角三角形的三边长；(2)求两直角边在斜边上的射影的长.}
+
+\xthao{11}\tieside{衔接必会}如图，在\(\triangle ABC\)中，\(AD\)为\(BC\)边上的高，过\(D\)作\(DE\perp AB\)，\(DF\perp AC\)，\(E\)，\(F\)为垂足.求证：
+\fig[38.0mm]{image22}
+\subl {(1)\(AE\cdot AB=AF\cdot AC\)；(2)\(\triangle AEF\backsim\triangle ACB\).}
+
+% ---------------- 第三组：内角／外角平分线定理（衔接12～15） ----------------
+\zuhang{三、三角形的内角与外角平分线定理}{本组 4 题(衔接必会)}
+
+\xthao{12}\tieside{衔接必会}已知，如图所示，\(AD\)是\(\triangle ABC\)的内角\(\angle BAC\)的平分线，求证：\(\frac{BA}{AC}=\frac{BD}{DC}\).
+\fig[34.0mm]{image6}
+
+\xthao{13}\tieside{衔接必会}如图，在\(\triangle ABC\)中，\(AD\)是角\(BAC\)的平分线，\(AB=5\,\mathrm{cm}\)，\(AC=4\,\mathrm{cm}\)，\(BC=7\,\mathrm{cm}\)，求\(BD\)的长.
+\fig[32.0mm]{image25}
+
+\xthao{14}\tieside{衔接必会}已知，如图所示，\(AD\)是\(\triangle ABC\)中\(\angle BAC\)的外角\(\angle CAF\)的平分线，求证：\(\frac{BA}{AC}=\frac{BD}{DC}\).
+\fig[38.0mm]{image7}
+
+\xthao{15}\tieside{衔接必会}在\(\triangle ABC\)中，\(AD\)是\(\angle BAC\)的平分线，\(AB-AC=5\)，\(BD-CD=3\)，\(DC=8\)，则\(AB=\)\kongbai{}.
+\fig[40.0mm]{image27}
+
+% ---------------- 四心填空讲块（源元素[190]–[214]，置第四组之前；全品课前预习式扩展） ----------------
+\zhublock{知识讲块\quad 三角形的“四心”}
+
+\tiaomuz{1}{三角形的重心：(1)三角形的三条中线相交于一点，这个交点称为三角形的重心.\zhuzhu{点\(D\)、\(E\)、\(F\)是中点，则点\(O\)是\(\triangle ABC\)的重心.}}
+\fig[36.0mm]{image28}
+\bindp (2)三角形的重心在三角形的内部，恰好是每条中线的三等分点．如上图，\(AO=2OD\)，\(CO=2OE\)，\(BO=2OF\)．\par\addvspace{0.80mm}
+\tiaomutail
+
+\tiaomuz{2}{三角形的内心：(1)三角形的三条角平分线相交于一点，是三角形的内心.\zhuzhu{\(AD\)、\(CE\)、\(BF\)是角平分线，则点\(O\)是\(\triangle ABC\)的内心.}}
+\fig[34.0mm]{image29}
+\bindp (2)三角形的内心在三角形的内部，它到三角形的三边的距离相等.
+\fig[38.0mm]{image30}\tiaomutail
+
+\tiaomuz{3}{三角形的垂心：(1)三角形的三条高所在直线相交于一点，该点称为三角形的垂心.}
+\fig[38.0mm]{image31}
+\bindp (2)锐角三角形的垂心一定在三角形的内部，直角三角形的垂心为他的直角顶点，钝角三角形的垂心在三角形的外部.
+\fig[60.0mm]{image32}\tiaomutail
+
+\tiaomuz{4}{三角形的外心：(1)三角形三边的垂直平分线所在直线相交于一点，该点称为三角形的外心.\zhuzhu{\(OE\)、\(OD\)、\(OF\)分别是\(AB\)、\(BC\)、\(AC\)的垂直平分线，点\(O\)是三角形的外心.}}
+\fig[40.0mm]{image33}
+\bindp (2)三角形的外心到三个顶点的距离相等.
+\fig[38.0mm]{image34}\tiaomutail
+
+\tiaomu{5}{拓展：(1)等腰三角形底边上三线（角平分线、中线、高线）合一.因而在等腰三角形\(ABC\)中，三角形的内心\(I\)、重心\(G\)、垂心\(H\)必然在一条直线上.(2)正三角形三条边长相等，三个角相等，且四心（内心、重心、垂心、外心）合一，该点称为正三角形的中心.}
+
+% ---------------- 第四组：三角形四心性质证明（衔接16～20） ----------------
+\zuhang{四、三角形“四心”的性质证明}{本组 5 题(衔接必会)}
+
+\xthao{16}\tieside{衔接必会}求证\(D\)、\(E\)、\(F\)分别为\(\triangle ABC\)三边\(BC\)、\(CA\)、\(AB\)的中点，\(AD\)、\(BE\)、\(CF\)交于一点，且三条中线都被该点分成\(2:1\).
+\fig[36.0mm]{image35}
+
+\xthao{17}\tieside{衔接必会}已知\(\triangle ABC\)中，\(AD\perp BC\)于\(D\)，\(BE\perp AC\)于\(E\)，\(AD\)与\(BE\)交于\(H\)点，求证\(CH\perp AB\).
+\fig[34.0mm]{image36}
+
+\xthao{18}\tieside{衔接必会}已知：\(\triangle ABC\)是三边都不相等的三角形，点\(O\)和点\(P\)是这个三角形内部两点.
+\subl {(1)如图①，如果点\(P\)是这个三角形三个内角平分线的交点，那么\(\angle BPC\)和\(\angle BAC\)有怎样的数量关系？请说明理由；}
+\subl {(2)如图②，如果点\(O\)是这个三角形三边垂直平分线的交点，那么\(\angle BOC\)和\(\angle BAC\)有怎样的数量关系？请说明理由；}
+\subl {(3)如图③，如果点\(P\)（三角形三个内角平分线的交点），点\(O\)（三角形三边垂直平分线的交点）同时在不等边\(\triangle ABC\)的内部，那么\(\angle BPC\)和\(\angle BOC\)有怎样的数量关系？请直接回答.}
+\fig[84.0mm]{image37}
+
+\xthao{19}\tieside{衔接必会}已知\(\triangle ABC\)的三边长分别为\(BC=a\)，\(AC=b\)，\(AB=c\)，\(I\)为\(\triangle ABC\)的内心，且\(I\)在\(\triangle ABC\)的边\(BC\)，\(AC\)，\(AB\)上的射影分别为\(D\)，\(E\)，\(F\)，求证：\(AE=AF=\frac{b+c-a}{2}\).
+\fig[40.0mm]{image39}
+
+\xthao{20}\tieside{衔接必会}若三角形\(ABC\)的面积为\(S\)，且三边长分别为\(a\)、\(b\)、\(c\)，求三角形的内切圆的半径.
+
+% ---------------- 第五组：三角形四心运用（衔接21～29） ----------------
+\zuhang{五、三角形“四心”的运用}{本组 9 题(衔接必会)}
+
+\xthao{21}\tieside{衔接必会}若已知\(O\)为三角形\(ABC\)的重心和内心，求证三角形\(ABC\)为等边三角形.
+
+\xthao{22}\tieside{衔接必会}在\(\triangle ABC\)中，\(AB=AC=3\)，\(BC=2\)，求
+\subl {(1)\(\triangle ABC\)的面积\(S_{\triangle ABC}\)及\(AC\)边上的高\(BE\)；(2)\(\triangle ABC\)的内切圆的半径\(r\)；(3)\(\triangle ABC\)的外接圆的半径\(R\).}
+
+\xthao{23}\tieside{衔接必会}在\(\triangle ABC\)中，\(AB=10\)，\(AD\)是\(BC\)边上的高，已知\(AD=BD\)，点\(H\)、\(O\)分别是\(\triangle ABC\)的垂心和外心，则\(HO\)的最小长度为\kongbai{}.
+\fig[32.0mm]{image46}
+\diangu{建立直角坐标系，把几何问题转化为代数问题（把\(OH\)线段的最小值化为代数式\(\frac{5}{2}(m-2\sqrt{2})^{2}+5\)的最小值），这是解析几何的方法，在高中经常用到.}
+
+\xthao{24}\tieside{衔接必会}\(O\)是\(\triangle ABC\)的内切圆圆心，\(\angle C=90^{\circ}\)，\(\angle BOC=105^{\circ}\)，\(BC=20\,\mathrm{cm}\)，则\(AC\)长为\kongbai{}\(\mathrm{cm}\).
+
+\xthao{25}\tieside{衔接必会}在\(\triangle ABC\)中，\(\angle A\)是钝角，\(H\)是垂心，\(AH=BC\)，则\(\angle BHC=\)\kongbai{}.
+
+\xthao{26}\tieside{衔接必会}在\(\triangle ABC\)中，两中线\(AD\)与\(CF\)相交于点\(G\)，若\(\angle AFC=45^{\circ}\)，\(\angle AGC=60^{\circ}\)，则\(\angle ACF\)的度数为\kongbai{}.
+
+\xthao{27}\tieside{衔接必会}如图，在\(\mathrm{Rt}\triangle ABC\)中，\(\angle BCA=90^{\circ}\)，中线\(CM\)垂直于中线\(BN\)，且\(BC=2\)，求\(BN\)的长.
+\fig[42.0mm]{image51}
+
+\xthao{28}\tieside{衔接必会}求证：若三角形的垂心和重心重合，求证：该三角形为正三角形．
+
+\xthao{29}\tieside{衔接必会}锐角\(\triangle ABC\)中，\(AB>BC>CA\)，\(O\)、\(I\)、\(H\)分别是它的外心、内心、垂心，已知\(\angle A=60^{\circ}\)，求证：
+\subl {(1)\(\angle OIH-\angle ABC\)是一个定值；(2)\(\angle OIH+\angle ACB\)也是一个定值.}
+\fig[40.0mm]{image54}
+
+% ---------------- 方法链接（汇总 §3.3 三挂点逐一点名；点拨段[301]原样已随衔接23） ----------------
+\zhublock{方法链接\quad 本章的三处接口}
+
+\bindp ①等面积法：衔接20 的“\(r=\frac{2S}{a+b+c}\)”（衔接22(2) 即用此式算数）到本章升维为内切球“\(r=\frac{3V}{S_{\text{全}}}\)”——1.2.5 的“体积＋内切球”题组即该法的空间用场；
+
+\bindp ②张角与外接圆半径：衔接18(2) 的外心张角“\(\angle BOC=2\angle A\)”与衔接22(3) 求\(R\)（勾股／方程，\(R^{2}=\)弦心距\({}^{2}+\)半弦\({}^{2}\)）直通本章核心算法“外接球球心在过底面外心且垂直底面的轴上”——平面圆→空间球直接升维；
+
+\bindp ③坐标法：衔接23 以\(D\)为原点、\(BC\) 所在直线与高线\(DA\)为两轴建系求\(OH\)最值，正是本章 1.1.3 空间直角坐标系的预告——衔接23 后点拨“解析几何的方法，在高中经常用到”即此挂点.\par\addvspace{0.80mm}
+
+\end{multicols}
+\end{document}

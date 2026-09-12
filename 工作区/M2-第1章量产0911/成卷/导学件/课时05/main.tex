@@ -1,0 +1,222 @@
+% ============================================================
+% S2 导学件量产·批2 件2 —— 1.1.3 第2课时 空间向量运算的坐标表示（课时5 导学件）
+% 轮4 成卷·S2 批2（glm 单臂重派·九十二协议）｜2026-09-12｜生成链：xelatex main.tex（两遍）→ python render.py（150dpi → png/pageN.png）
+%
+% 模板承 v11 样张族 `工作区/字替对照-0909/靠齐样张-0910/导学增量/`：六宏＝原样拷贝（L1 冻结参数零改动），
+%   课时页形制与局部宏（\pingtou/\liubai/\zhankong）照抄 课时02 首件（首件五步之「组装」＝直接拷贝结构改内容）。
+% 图＝源图位图（禁绘三维，公共规则§5）：figs/image11.png（T7 正方体图）、figs/image12.png（T9 斜60°平行六面体图）
+%   自 讲练件（上）定稿 docx word/media/ 原件复制（md5 与 docx 逐字节一致，未改绘），
+%   源 UUID 不在手＝alt 缺失风险照 S2就绪报告§四-5 登记，图位台账源＝元素405 rId18／元素427 rId19（见批2值台账）。
+%
+% 取材链登记（首件五步之「盘点」结论，详见 成卷/导学件/批2值台账.md）：
+%   ① 讲练件（上）§1.1.3 讲部实态（dump_docx --slice 198:321 取证＝工作区/_tmp批2S2量产0912/讲上-1.1.3全文.txt）：
+%      课2 域（坐标运算与应用）讲部可承题＝1.1.3.3-3（T3）、1.1.3.4-5（T5）、1.1.3.6-8（T8）、1.1.3.5-7（T7）、
+%      1.1.3.7-9（T9）→ 探究点数＝5（随题型段实态）；1.1.3.8-10（T10 轨迹综合，域跨课1/课2）本件未占用，登记备后轮。
+%   ② 课中探究 例1×5＝讲部同文搬运（题面逐字，记号 LaTeX 化）：探究一←1.1.3.3-3｜探究二←1.1.3.4-5｜探究三←1.1.3.6-8｜
+%      探究四←1.1.3.5-7（带图）｜探究五←1.1.3.7-9（带图）；T3/T8/T7/T9 与课时05 练习轴第3/13/12/14题同文（练习轴
+%      题源即讲部池）＝A-2「照用」双印登记；T5 与两轴 32 题零同文。T9 题面「ABCD-ABC_(1)D_(1)」系转储下标迁移缺失，
+%      按点集（A₁/B₁/C₁/D₁ 均被引用）复原为 \(ABCD-A_1B_1C_1D_1\)，同批1件2「|AC₁|=6」记号复原口径，非改题。
+%   ③ 变式1×5＋素养小结×5＋课前预习判断 5＋课堂评价恒 5＝本轮新命制/化用（1.1.3 无 v11 冻结件可回收），
+%      逐题亲算登批2值台账；ZSD一/二条目＝讲部 1.1.3-6 同文化用（拆平行垂直／模夹角投影两块），ZSD三条目＝
+%      定比分点与平行四边形坐标条件（编注化用，承第4课时中点公式）；投影数量条目＝承第2课时投影向量（坐标化）。
+%   ④ 课堂评价恒 5（3 单选＋2 填空＝4 简单＋1 中档≤例题中档；填空带提示词＝G5 内构）＝全命制。
+%   ⑤ 与练习轴（题面库/课时05-1.1.3课2.md 16 题）互斥口径：命制位（判断5＋变式5＋评价5 共 15 题）零同文
+%      （逐题比对断言见批2值台账）；例1×4 照用同文属 A-2 计数口径内（同题双印、题数不并计）。
+%   ⑥ 句末标点：同文段承源「.」，新命制句用「．」（G8 成卷轮统一清扫，本件不单点改）。
+% 编译门：三 0（error＝0／Overfull＝0／Missing character＝0，Underfull 仅计数）——读数见批2值台账。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ================= 页脚参数宏（qp-headfoot 文件头明示的复用入口，非模块语义改动） =================
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+\renewcommand{\qpjianming}{导学件}
+
+% ================= 局部宏（照抄 v11 导学增量/main.tex 冻结定义；不动公共模块） =================
+% 课堂评价组头（XB-02 \zhenhead 同构：\biaoqian 1.3× 标签＋仿宋说明行；恒 5 题说明）
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+% 书写留白＋斜置浅灰水印（导学案正文属性：答案另册→正文留书写位；斜置 25°／black!12）
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+% 纯书写占位留白（无水印）
+\newcommand{\zhankong}[1]{\par\nobreak\addvspace{#1}\nopagebreak\noindent}
+
+\begin{document}
+
+% ============================================================
+% 课时页（第5课时；五段闭环，承 v11 导学增量课时页样板形制）
+% ============================================================
+\keshi{第5课时\quad 空间向量运算的坐标表示}
+\mubiaoline
+\mubiaomu{1}{理解平行、垂直的坐标判定，会用分量成比例与数量积为零证明位置关系、求参数；}
+\mubiaomu{2}{掌握模、夹角与投影数量的坐标公式，能求模与夹角，并按夹角范围讨论参数的符号；}
+\mubiaomu{3}{会用定比分点与距离公式处理分点、动点最值问题，并能类比迁移解决新定义坐标系下的向量运算.}
+
+\vspace{1.7mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ---------- 课前预习（知识导学填空＋诊断分析；ZSD一/二＝讲部 1.1.3-6 同文化用拆块，ZSD三＝编注化用承第4课时） ----------
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{平行与垂直的坐标判定}
+
+\tiaomu{1}{平行：设\(\overrightarrow{a}=(a_{1},a_{2},a_{3})\)，\(\overrightarrow{b}=(b_{1},b_{2},b_{3})\)且\(\overrightarrow{b}\neq\overrightarrow{0}\)，则\(\overrightarrow{a}\parallel\overrightarrow{b}\Leftrightarrow\overrightarrow{a}=\lambda\overrightarrow{b}\Leftrightarrow a_{1}=\)\kongbai{}，\(a_{2}=\)\kongbai{}，\(a_{3}=\)\kongbai{}.\zhuzhu{平行看分量成比例；已知平行求参数时列比例式，注意分母不为零，解后勿漏检验.}}
+
+\tiaomu{2}{垂直：\(\overrightarrow{a}\perp\overrightarrow{b}\Leftrightarrow\overrightarrow{a}\cdot\overrightarrow{b}=0\Leftrightarrow\)\kongbai{}.\zhuzhu{垂直看数量积为零，是坐标法证明垂直的主路径；两向量垂直时各分量不必有零.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{已知\(\overrightarrow{a}=(1,2,-2)\)，\(\overrightarrow{b}=(-2,-4,4)\)，则\(\overrightarrow{a}\parallel\overrightarrow{b}\)．}
+
+\zhentib{(2)}{若\(\overrightarrow{a}\cdot\overrightarrow{b}=0\)，则\(\overrightarrow{a}\)，\(\overrightarrow{b}\)中至少有一个为零向量．}
+
+\zsd{二}{模、夹角与投影数量}
+
+\tiaomu{1}{模：\(|\overrightarrow{a}|=\)\kongbai{}\(=\sqrt{a_{1}^{2}+a_{2}^{2}+a_{3}^{2}}\)，其中\(\overrightarrow{a}=(a_{1},a_{2},a_{3})\).\zhuzhu{模的坐标式与两点间距离公式同形；求模先平方展开再开方，勿丢项.}}
+
+\tiaomu{2}{夹角：\(\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=\frac{\overrightarrow{a}\cdot\overrightarrow{b}}{|\overrightarrow{a}|\,|\overrightarrow{b}|}=\)\kongbai{}（分量式）.\zhuzhu{夹角范围\[0,\pi\]；先算\(\overrightarrow{a}\cdot\overrightarrow{b}\)与两个模再代入；由余弦值的正负定夹角的锐钝，取负时勿漏共线反向的排除.}}
+
+\tiaomu{3}{(承第2课时)投影数量：向量\(\overrightarrow{a}\)在向量\(\overrightarrow{b}\)上的投影数量为\kongbai{}；投影向量为\(\frac{\overrightarrow{a}\cdot\overrightarrow{b}}{|\overrightarrow{b}|}\cdot\frac{\overrightarrow{b}}{|\overrightarrow{b}|}\).\zhuzhu{投影数量是数量、可正可负；坐标法下先算\(\overrightarrow{a}\cdot\overrightarrow{b}\)与\(|\overrightarrow{b}|\)再相除.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{向量\(\overrightarrow{a}\)在\(\overrightarrow{b}\)上的投影数量的符号与\(\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle\)的符号相同．}
+
+\zhentib{(2)}{若\(\overrightarrow{a}\cdot\overrightarrow{b}<0\)，则\(\langle\overrightarrow{a},\overrightarrow{b}\rangle\)一定是钝角．}
+
+\zsd{三}{定比分点与平行四边形}
+
+\tiaomu{1}{(承第4课时)定比分点：若点\(C\)在线段\(AB\)上，且\(\overrightarrow{AC}=\lambda\overrightarrow{AB}\)\((0\leq\lambda\leq1)\)，则\(\overrightarrow{OC}=\)\kongbai{}\(\overrightarrow{OA}+\lambda\overrightarrow{OB}\)；特别地，\(\lambda=\frac{1}{2}\)时即为中点坐标公式.\zhuzhu{分点的位置由\(\lambda\)决定，\(\lambda\)越接近\(1\)越靠近\(B\)；由分点坐标可反求线段长度比.}}
+
+\tiaomu{2}{平行四边形的坐标条件：四边形\(ABCD\)为平行四边形\(\Leftrightarrow\overrightarrow{AB}=\)\kongbai{}；此时对角线\(AC\)与\(BD\)的中点\kongbai{}，即\(A+C=B+D\)（坐标分量分别相等）.\zhuzhu{已知平行四边形三个顶点求第四顶点，由\(A+C=B+D\)按字母顺序直接迁移.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{在平行四边形\(ABCD\)中，已知\(A(1,2,3)\)，\(B(2,0,5)\)，\(C(4,1,3)\)，则\(D(3,3,1)\)．}
+
+\liubai[9mm]{此处书写}
+
+% ---------- 课中探究（探究点一~五随课2域题型段实态；例1×5＝讲部同文照用，变式1×5＋小结＝本轮命制/化用） ----------
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{坐标运算与求向量坐标}{例\textbf{1}}{简单(知识点一)}{若\(\overrightarrow{a}=(1,-1,2)\)，向量\(\overrightarrow{AB}\)与\(\overrightarrow{a}\)平行且\(|\overrightarrow{AB}|=2\sqrt{6}\)，则\(\overrightarrow{AB}=\)\kongbai{}.}
+
+\liubai[6mm]{解答书写区}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{已知向量\(\overrightarrow{a}=(2,1,-2)\)，则与\(\overrightarrow{a}\)同向的单位向量的坐标为\kongbai{}.}
+
+\xiaojie{①识别：题干给出向量坐标、以平行(共线)或模长为条件求向量坐标或参数时，判归本题型.}
+
+\bindp {\kaishu ②操作：第一步按坐标运算法则逐项计算；遇平行设 \(\lambda\) 倍（或分量成比例）、遇模长列分量平方和方程.}
+
+\bindp {\kaishu ③收束：同向与反向（或正负根）都要讨论，最后写出全部解.}
+
+\tjdnr{二}{坐标法求夹角与投影}{例\textbf{1}}{中档(知识点二)}{已知\(\overrightarrow{a}=(1,0,0)\)，\(\overrightarrow{b}=(0,-1,1)\)，若\(\overrightarrow{a}+\lambda\overrightarrow{b}\)与\(\overrightarrow{b}\)的夹角为\(120^{\circ}\)，则\(\lambda\)的值为(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\frac{\sqrt{6}}{6}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(-\frac{\sqrt{6}}{6}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\pm\frac{\sqrt{6}}{6}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(\pm\sqrt{6}\)}\par}
+
+\liubai[6mm]{解答书写区}
+
+\liB{变式\textbf{1}}{简单(知识点二)}{}{已知向量\(\overrightarrow{a}=(2,2,1)\)，\(\overrightarrow{b}=(1,0,-1)\)，则\(\overrightarrow{a}\)在\(\overrightarrow{b}\)上的投影数量为\kongbai{}.}
+
+\xiaojie{①识别：题干给出坐标求夹角（或投影数量）、或以夹角为条件反求参数时，判归本题型.}
+
+\bindp {\kaishu ②操作：第一步写出 \(\overrightarrow{a}\cdot\overrightarrow{b}\) 与 \(|\overrightarrow{a}|\)、\(|\overrightarrow{b}|\)（动向量用含参式），代入夹角余弦公式列方程或不等式.}
+
+\bindp {\kaishu ③收束：按夹角范围取舍参数符号（钝角取负且排除共线反向），投影数量按 \(\overrightarrow{a}\cdot\overrightarrow{b}/|\overrightarrow{b}|\) 直接计算.}
+
+\tjdnr{三}{平行与垂直的坐标判定求参}{例\textbf{1}}{中档(知识点一)}{已知向量\(\overrightarrow{a}=(2,4,5)\)，\(\overrightarrow{b}=(3,x,y)\)．}
+
+\bindp (1)若\(\overrightarrow{a}\parallel\overrightarrow{b}\)，求实数\(x\)，\(y\)的值；(2)若\(\overrightarrow{a}\perp\overrightarrow{b}\)，且\(|\overrightarrow{b}|=\sqrt{29}\)，求实数\(x\)，\(y\)的值．
+
+\liubai[12mm]{解答书写区}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{已知向量\(\overrightarrow{a}=(1,1,0)\)，\(\overrightarrow{b}=(0,1,1)\)，求一个向量\(\overrightarrow{n}\)，使\(\overrightarrow{n}\perp\overrightarrow{a}\)且\(\overrightarrow{n}\perp\overrightarrow{b}\)，并写出\(\overrightarrow{n}\)的坐标.}
+
+\xiaojie{①识别：题干所给向量坐标含参数、并以平行或垂直为条件求参（或求与之同时垂直的向量）时，判归本题型.}
+
+\bindp {\kaishu ②操作：第一步按「平行—分量成比例（设 \(\lambda\)）、垂直—数量积为零」翻译条件；构造向量时设 \(\overrightarrow{n}=(x,y,z)\) 列方程组.}
+
+\bindp {\kaishu ③收束：联立附加条件（如模长）解方程组，检验后写出全部参数组合；同时垂直两向量的解不唯一，取其一即可.}
+
+\tjdnr{四}{坐标法求距离与最值}{例\textbf{1}}{中档(知识点二)}{如图，以棱长为\(1\)的正方体的三条棱所在直线为坐标轴，建立空间直角坐标系\(O\text{-}\penalty100 xyz\)，点\(P\)在线段\(AB\)上，点\(Q\)在线段\(DC\)上.}
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=45.0mm]{figs/image11.png}}\par\vspace{-1.0mm}\penalty10000
+
+\bindp (1)当\(\overrightarrow{PB}=2\overrightarrow{AP}\)，且点\(P\)关于\(y\)轴的对称点为\(M\)时，求\(|PM|\)的长度；(2)当点\(P\)是面对角线\(AB\)的中点，点\(Q\)在面对角线\(DC\)上运动时，探究\(|PQ|\)的最小值.
+
+\liubai[12mm]{解答书写区}
+
+\liB{变式\textbf{1}}{中档(知识点三)}{}{在空间直角坐标系中，已知\(A(3,0,1)\)，\(B(0,6,-2)\)，点\(P\)在线段\(AB\)上，且\(|AP|=\frac{1}{2}|PB|\)，则点\(P\)的坐标为\kongbai{}；\(|\overrightarrow{OP}|=\)\kongbai{}.}
+
+\xiaojie{①识别：题干在几何体（或坐标系）中以分点、对称点、动点求距离最值时，判归本题型.}
+
+\bindp {\kaishu ②操作：第一步写出相关点坐标（分点用定比分点、动点用参数）；再用距离公式把目标长度写成参数的函数.}
+
+\bindp {\kaishu ③收束：由配方或端点比较求最值，最后回到图形检验位置.}
+
+\tjdnr{五}{新定义坐标系下的向量运算}{例\textbf{1}}{中档(知识点二)}{空间中，两两互相垂直且有公共原点的三条数轴构成直角坐标系，如果坐标系中有两条坐标轴不垂直，那么这样的坐标系称为“斜坐标系”.现有一种空间斜坐标系，它任意两条数轴的夹角均为\(60^{\circ}\)，我们将这种坐标系称为“斜\(60^{\circ}\)坐标系”.我们类比空间直角坐标系，定义“空间斜\(60^{\circ}\)坐标系”下向量的斜\(60^{\circ}\)坐标：\(\overrightarrow{i}\)，\(\overrightarrow{j}\)，\(\overrightarrow{k}\)分别为“斜\(60^{\circ}\)坐标系”下三条数轴（\(x\)轴、\(y\)轴、\(z\)轴）正方向的单位向量，若向量\(\overrightarrow{n}=x\overrightarrow{i}+y\overrightarrow{j}+z\overrightarrow{k}\)，则\(\overrightarrow{n}\)与有序实数组\((x,y,z)\)相对应，称向量\(\overrightarrow{n}\)的斜\(60^{\circ}\)坐标为\([x,y,z]\)，记作\(\overrightarrow{n}=[x,y,z]\).}
+
+\bindp (1)若\(\overrightarrow{a}=[1,2,3]\)，\(\overrightarrow{b}=[-1,1,2]\)，求\(\overrightarrow{a}+\overrightarrow{b}\)的斜\(60^{\circ}\)坐标；
+
+\bindp (2)在平行六面体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，\(AB=AD=2\)，\(AA_1=3\)，\(\angle BAD=\angle BAA_1=\angle DAA_1=60^{\circ}\)，如图，以\(\{\overrightarrow{AB},\overrightarrow{AD},\overrightarrow{AA_1}\}\)为基底建立“空间斜\(60^{\circ}\)坐标系”.
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=58.0mm]{figs/image12.png}}\par\vspace{-1.0mm}\penalty10000
+
+\bindp ①若\(BE=EB_{1}\)，求向量\(\overrightarrow{ED_{1}}\)的斜\(60^{\circ}\)坐标；②若\(\overrightarrow{AM}=[2,t,0]\)，且\(\overrightarrow{AM}\perp\overrightarrow{AC_{1}}\)，求\(|AM|\).
+
+\liubai[12mm]{解答书写区}
+
+\liB{变式\textbf{1}}{中档(知识点二)}{}{在“斜\(60^{\circ}\)坐标系”中，\(\overrightarrow{i}\)，\(\overrightarrow{j}\)，\(\overrightarrow{k}\)为三轴正方向的单位向量且两两夹角均为\(60^{\circ}\)，设\(\overrightarrow{a}=\overrightarrow{i}+\overrightarrow{j}\)，\(\overrightarrow{b}=\overrightarrow{j}+\overrightarrow{k}\)，则\(\overrightarrow{a}\cdot\overrightarrow{b}=\)\kongbai{}；\(|\overrightarrow{a}+\overrightarrow{b}|=\)\kongbai{}.}
+
+\xiaojie{①识别：题干自定义新坐标系（轴间夹角非直角）并给出坐标定义时，判归本题型.}
+
+\bindp {\kaishu ②操作：第一步把新坐标还原成基向量的线性组合 \(x\overrightarrow{i}+y\overrightarrow{j}+z\overrightarrow{k}\)；再按新系基向量的数量积（含轴间夹角项 \(\overrightarrow{i}\cdot\overrightarrow{j}=\cos60^{\circ}\) 等）展开运算.}
+
+\bindp {\kaishu ③收束：类比直角坐标系的方法求解，最后化回新坐标作答.}
+
+% ---------- 课堂评价（恒 5 题＝3 单选＋2 填空；4 简单＋1 中档≤例题；提示词形制；全命制——逐题亲算登批2值台账） ----------
+\vbox{
+
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}下列各组向量中，互相平行的是(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．\(\overrightarrow{a}=(1,2,3)\)，\(\overrightarrow{b}=(2,4,6)\)；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．\(\overrightarrow{a}=(1,0,1)\)，\(\overrightarrow{b}=(1,1,0)\)；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．\(\overrightarrow{a}=(1,-1,2)\)，\(\overrightarrow{b}=(-2,2,4)\)；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．\(\overrightarrow{a}=(2,0,-3)\)，\(\overrightarrow{b}=(-4,1,6)\)}\par
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}已知向量\(\overrightarrow{a}=(1,2,2)\)，\(\overrightarrow{b}=(2,1,-2)\)，则\(|\overrightarrow{a}-\overrightarrow{b}|=\)(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(3\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(3\sqrt{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\sqrt{3}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(9\)}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}在平行四边形\(ABCD\)中，已知\(A(1,0,2)\)，\(B(2,1,0)\)，\(C(4,3,2)\)，则顶点\(D\)的坐标为(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\((3,2,4)\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\((-1,-2,0)\)；}\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\((3,-2,4)\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\((-3,2,-4)\)}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}已知向量\(\overrightarrow{a}=(1,1,0)\)，\(\overrightarrow{b}=(1,0,1)\)，则\(\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=\)\kongbai{}．{\zhushi{(提示：先算\(\overrightarrow{a}\cdot\overrightarrow{b}\)与\(|\overrightarrow{a}|\)、\(|\overrightarrow{b}|\)，再代入夹角余弦公式)}}}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{中档(知识点一)}\hspace{2.2mm}已知向量\(\overrightarrow{a}=(1,1,2)\)，\(\overrightarrow{b}=(0,2,-1)\)，且\(m\overrightarrow{a}+\overrightarrow{b}\)与\(2\overrightarrow{a}-\overrightarrow{b}\)平行，则实数\(m=\)\kongbai{}．{\zhushi{(提示：平行即对应分量成比例；注意\(2\overrightarrow{a}-\overrightarrow{b}\)的纵坐标为\(0\)，须先由纵坐标定\(m\))}}}
+
+}
+
+\end{multicols}
+\end{document}
