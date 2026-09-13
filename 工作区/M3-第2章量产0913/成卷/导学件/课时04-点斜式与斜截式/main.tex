@@ -1,0 +1,367 @@
+% ============================================================
+% M3 S2 导学件·波1 片件 —— 课时04 点斜式与斜截式（2.2.2上）
+% 生成：M3 成卷轮 S2 波1臂2｜2026-09-14｜编译 cwd＝本目录（中文路径禁 \input 绝对路径）
+%   xelatex main-true.tex ×2 → 含详解印本；xelatex main-false.tex ×2 → 纯题版（单源双本）
+% 输入链（全只读）：题面库 课时04-点斜式与斜截式.md（题面逐字装配；【注】行＝装配层注记不印，
+%   题首「（预习注：…）」行＝印面照录）＋ -答案侧.md（值逐字回嵌）
+%   ＋ 定稿/批A-课时04-点斜式与斜截式.md（详解回嵌源，04-E4 预习注先例在案）；
+%   toolchain＝qp-m3.sty（钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，本地挂载副本，破损即停）。
+% 母版体例：承 成卷/导学件/课时01-坐标法/母版体例说明.md（骨架/宏用法/门谱跑法原样照抄）。
+% 键账：件内 ansblock 键集 ≡ 题面库片键集 ≡ manifest 键序（22 键，零缺漏零多余）；
+%   预习位零键零答案（口令④前口径）；印面号 1—22＝探究 1—17＋课堂评价 18—22，
+%   键↔号映射见 值台账-课时04.json。
+% 括线判据（承重墙禁放宽，toolchain钉档§三.1）：估高＞8 行（chars/23 栏宽口径）→ 括线模，
+%   逐键读数入值台账；其余灰底。本片括线键：E4、E2、E10、T1（估高12/12/9/25 行）。
+% 门谱读数：见 过程件 工作区/_tmpM3S2波1臂2_0914/（编译 log、门谱输出、目验 PNG 双档）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（探针实证 0914：书宋缺 U+2212，▱ 诸字库皆缺→NSC 子块；
+%     禁改 sty 本体保 md5；无 ▱/− 用件的片可整块照抄，零副作用） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（纯题档/详解档三零门：CJK 胶收缩 0.01→0.05em；应急伸展曾试 12em/2em，
+%     2026-09-14 实测撤行回落 sty 默认 1em 三零仍守，故不设该行——补丁最少化；
+%     只动伸缩分量不动自然宽度，版面纹理零漂；Underfull 治理读数见过程件） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 页脚件名（qp-headfoot 复用入口） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件}%
+
+\begin{document}
+
+\zhangtitle{第二章\quad 平面解析几何}
+\jietitle{2.2.2 直线的点斜式与斜截式}
+\mubiaoline
+\mubiaomu{1}{理解直线方程的点斜式、斜截式的推导过程与结构特征，能根据条件直接写出直线方程，并会在两种形式间互化；}
+\mubiaomu{2}{理解直线截距的概念（在\(x\)轴、在\(y\)轴上的截距），能正确求直线在两坐标轴上的截距，会判定给出的点与直线的位置关系；}
+\mubiaomu{3}{会用点斜式、斜截式讨论截距取值范围、直线系恒过定点等问题，体会“数形结合、以算代证”的解析几何基本方法.}
+
+\vspace{1.7mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 课前预习（知识点导学填空；零键零答案——预习键位按检查口令④裁定前口径，
+% \kongbai 空线＋\zhentib 题面形，两档等形不泄答）
+% ============================================================
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{直线的点斜式}
+
+\tiaomu{1}{经过点\(P(x_0,y_0)\)且斜率为\(k\)的直线方程为\(y-y_0=\)\kongbai{}，此方程叫做直线方程的点斜式．\zhuzhu{点斜式“一点＋一斜率”两要素齐备才能写；倾斜角为\(90^\circ\)的直线没有斜率，其方程为\(x=x_0\)，点斜式表示不了它.}}
+
+\zsd{二}{直线的斜截式与截距}
+
+\tiaomu{1}{斜率为\(k\)，且在\(y\)轴上的截距为\(b\)的直线方程为\kongbai{}，此方程叫做直线方程的斜截式．\zhuzhu{斜截式“一斜率＋一截距”两要素；\(b\)是直线与\(y\)轴交点的纵坐标，可正、可负、可为零.}}
+
+\tiaomu{2}{若直线\(l\)与\(x\)轴相交于点\((a,0)\)，则称实数\kongbai{}为直线\(l\)在\(x\)轴上的截距；类似地可定义在\(y\)轴上的截距．\zhuzhu{截距是交点的坐标，不是长度：水平直线\(y=b\)（\(b\neq0\)）在\(x\)轴上没有截距；过原点的直线在两轴上的截距都是0.}}
+
+\zsd{三}{特殊位置的直线与恒过定点的直线系}
+
+\tiaomu{1}{斜率为0的直线与\(x\)轴平行或重合，方程形如\(y=b\)——纵坐标相同的两点连线即此类直线；与\(x\)轴垂直的直线方程形如\kongbai{}——横坐标相同的两点连线即此类直线．\zhuzhu{“横同竖斜”要分清的正是这两类特殊位置，直写方程前先观察两点坐标特征.}}
+
+\tiaomu{2}{把含参直线方程按参数\(k\)整理为\(k(x-x_0)+(y_0-y)=0\) 型，令\(k\)的系数与其余因式同时为0，解得的点\((x_0,y_0)\)就是直线系恒过的\kongbai{}．\zhuzhu{直线系\(y-y_0=k(x-x_0)\)不含竖直线\(x=x_0\)；恒过定点问题先整理再定点，判断象限、面积问题时把定点作旋转中心画图.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{经过定点\(P_0(x_0,y_0)\)的任意一条直线都可以用点斜式表示．}
+
+\zhentib{(2)}{直线\(y=kx+b\)在\(y\)轴上的截距就是它与\(y\)轴的交点．}
+
+\liubai[9mm]{此处书写}
+
+% ============================================================
+% 课中探究（考点探究〔例+变式〕＝练/拓槽 17 键；题后紧跟答案＝ansblock 内嵌，
+% 值照答案侧逐字，详解承批A 回嵌＋印面清洗注记见值台账）
+% ============================================================
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+% ---------- 探究点一 点斜式、斜截式的直写与系数辨识 ----------
+\tjdnr{一}{点斜式、斜截式的直写与系数辨识}{例\textbf{1}}{简单(知识点一)}{根据下列条件求直线的点斜式方程：}
+
+\bindp (1) 经过点\(A(2,5)\)，斜率为4； (2) 经过点\(B(-2,2)\)，倾斜角为\(30^\circ\)．
+\xiexwei{10mm}
+
+\begin{ansblock}[2章-练-课时04-E7]
+% ans:2章-练-课时04-E7
+\ansitem{1}{(1) y−5＝4(x−2)；(2) y−2＝(√3/3)(x＋2)}
+\ansnote{详解}{(1) 由点斜式\(y-y_0=k(x-x_0)\)，得\(y-5=4(x-2)\)．\par\noindent (2) 斜率\(k=\tan30^\circ=\sqrt{3}/3\)，故\(y-2=(\sqrt{3}/3)[x-(-2)]=(\sqrt{3}/3)(x+2)\)．}
+\end{ansblock}
+
+\liB{变式\textbf{2}}{简单(知识点二)}{}{根据下列条件求直线的斜截式方程：}
+
+\bindp (1) 斜率是\(\sqrt{3}/2\)，截距是\(-2\)； (2) 倾斜角是\(135^\circ\)，截距是3．
+\xiexwei{10mm}
+
+\begin{ansblock}[2章-练-课时04-E8]
+% ans:2章-练-课时04-E8
+\ansitem{2}{(1) y＝(√3/2)x−2；(2) y＝−x＋3}
+\ansnote{详解}{(1) \(k=\sqrt{3}/2\)，\(b=-2\)，由斜截式\(y=kx+b\)得\(y=(\sqrt{3}/2)x-2\)．\par\noindent (2) \(k=\tan135^\circ=-1\)，\(b=3\)，故\(y=-x+3\)．}
+\end{ansblock}
+
+\liB{变式\textbf{3}}{简单(知识点二)}{}{直线\(y-b=2(x-a)\)在\(y\)轴上的截距为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(a+b\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(2a-b\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(b-2a\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(|2a-b|\)}\par}
+
+\begin{ansblock}[2章-练-课时04-E1]
+% ans:2章-练-课时04-E1
+\ansitem{3}{C}
+\ansnote{详解}{将\(y-b=2(x-a)\)化为斜截式：\(y=2x-2a+b\)，故直线在\(y\)轴上的截距为\(b-2a\)（\(x=0\)时的纵坐标值，可正可负，不加绝对值）．选：C．}
+\end{ansblock}
+
+\liB{变式\textbf{4}}{中档(知识点二)}{}{根据下列直线方程，分别求出直线的斜率及在\(y\)轴上的截距：}
+
+\bindp (1) \(y-2=x+1\)； (2) \(y+4=\sqrt{3}(x-2)\)； (3) \(4x+y-3=0\)．
+\xiexwei{12mm}
+
+\begin{ansblock}[2章-练-课时04-E9]
+% ans:2章-练-课时04-E9
+\ansitem{4}{(1) k＝1，b＝3；(2) k＝√3，b＝−2√3−4；(3) k＝−4，b＝3}
+\ansnote{详解}{(1) \(y-2=x+1\)化为\(y=x+3\)，故\(k=1\)，截距\(b=3\)（定点\((-1,2)\)）；\par\noindent (2) 化为\(y=\sqrt{3}x-2\sqrt{3}-4\)，故\(k=\sqrt{3}\)，截距\(b=-2\sqrt{3}-4\)；\par\noindent (3) 化为\(y=-4x+3\)，故\(k=-4\)，截距\(b=3\)．}
+\end{ansblock}
+
+\liB{变式\textbf{5}}{中档(知识点二)}{}{已知直线\(ax+by-1=0\)在\(y\)轴上的截距为\(-1\)，且它的倾斜角是直线\(\sqrt{3}x-y-\sqrt{3}=0\)的倾斜角的2倍，则\(a\)，\(b\)的值分别为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(\sqrt{3}\)，1}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(\sqrt{3}\)，\(-1\)}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(-\sqrt{3}\)，1}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(-\sqrt{3}\)，\(-1\)}}\par
+
+\begin{ansblock}[2章-练-课时04-E3]
+% ans:2章-练-课时04-E3
+\ansitem{5}{D}
+\ansnote{详解}{直线\(\sqrt{3}x-y-\sqrt{3}=0\)的斜率为\(\sqrt{3}\)，倾斜角\(\alpha\)满足\(\tan\alpha=\sqrt{3}\)，\(\alpha=60^\circ\)；所求直线倾斜角\(\beta=2\alpha=120^\circ\)，斜率\(k=\tan120^\circ=-\sqrt{3}\)；又在\(y\)轴上的截距为\(-1\)，故斜截式方程为\(y=-\sqrt{3}x-1\)，即\(\sqrt{3}x+y+1=0\)，比对\(ax+by-1=0\)的常数项须为\(-1\)，须将\(\sqrt{3}x+y+1=0\)两边乘\(-1\)得\(-\sqrt{3}x-y-1=0\)，所以\(a=-\sqrt{3}\)，\(b=-1\)．选：D．}
+\end{ansblock}
+
+\xiaojie{①识别：以“写出方程、读出斜率与截距”为目标的题，条件对号入座点斜式（点＋斜率）或斜截式（斜率＋截距），判归本题型；倾斜角先化斜率\(k=\tan\alpha\)再写式.}
+\bindp {\kaishu ②操作：点斜式、斜截式直写后一律整式化简；由方程读截距，先化斜截式，\(x=0\)的纵坐标即\(y\)轴截距，令\(y=0\)解得的\(x\)即\(x\)轴截距.}
+\bindp {\kaishu ③收束：截距是可正、可负、可零的实数不是长度；含参形式互化时比较常数项符号（如化为\(ax+by-1=0\)须两边乘\(-1\)），防止\(a\)，\(b\)符号致误.}
+
+% ---------- 探究点二 点在直线上·截距概念·特殊位置直线 ----------
+\tjdnr{二}{点在直线上·截距概念·特殊位置直线}{例\textbf{6}}{简单(知识点一)}{判断下列各点是否在直线\(y=-6x+7\)上：\(A(0,7)\)，\(B(2,5)\)，\(C(1,1)\)．}
+\xiexwei{8mm}
+
+\begin{ansblock}[2章-练-课时04-E5]
+% ans:2章-练-课时04-E5
+\ansitem{6}{A在，B不在，C在．}
+\ansnote{详解}{\(x=0\)时\(y=-6\times0+7=7\)，故\(A(0,7)\)在直线上；\par\noindent\(x=2\)时\(y=-12+7=-5\neq5\)，故\(B(2,5)\)不在直线上；\par\noindent\(x=1\)时\(y=-6+7=1\)，故\(C(1,1)\)在直线上．}
+\end{ansblock}
+
+\liB{变式\textbf{7}}{简单(知识点一)}{}{已知点\((a,1)\)，\((-1,b)\)确定的直线方程是\(y=-3x+1\)，求\(a\)，\(b\)的值．}
+\xiexwei{8mm}
+
+\begin{ansblock}[2章-练-课时04-E6]
+% ans:2章-练-课时04-E6
+\ansitem{7}{a＝0；b＝4}
+\ansnote{详解}{两点都满足直线方程：\(1=-3a+1\)，得\(a=0\)；\(b=-3\times(-1)+1=4\)．\par\noindent（检验：\(a=0\)时两点为\((0,1)\)、\((-1,4)\)，确为\(y=-3x+1\)上两点，两点横坐标不等，直线唯一．）}
+\end{ansblock}
+
+\liB{变式\textbf{8}}{中档(知识点二)}{}{判断下列命题的真假：}
+
+\bindp (1) 如果直线\(l\)的斜率不存在，则直线\(l\)在\(x\)轴上的截距唯一；
+\bindp (2) 如果直线\(l\)的斜率存在，则直线\(l\)的截距唯一；
+\bindp (3) 存在直线\(l\)，使得\(l\)在\(x\)轴上的截距与在\(y\)轴上的截距都为0．
+\xiexwei{8mm}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时04-E10]
+% ans:2章-练-课时04-E10
+\ansitem{8}{(1) 真；(2) 假；(3) 真}
+\ansnote{详解}{(1) 斜率不存在时\(l\)为竖直线\(x=m\)，它与\(x\)轴恰有一个交点\((m,0)\)，\(x\)轴截距为\(m\)，唯一，真命题；\par\noindent (2) 斜率存在时\(l\)与\(y\)轴必只有一个交点（\(y\)轴截距唯一），但与\(x\)轴未必相交：水平直线\(y=b\)（\(b\neq0\)，如\(y=1\)）与\(x\)轴无交点，\(x\)轴截距不存在，故“截距唯一”为假命题；\par\noindent (3) 过原点的直线（如\(y=x\)）与两轴交点都为原点\((0,0)\)，两截距都为0，真命题．}
+\end{ansblock}}
+
+\liB{变式\textbf{9}}{简单(知识点三)}{}{经过\(M(3,2)\)与\(N(6,2)\)两点的直线的方程为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(x=2\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(y=2\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(x=3\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(x=6\)}\par}
+
+\begin{ansblock}[2章-练-课时04-E11]
+% ans:2章-练-课时04-E11
+\ansitem{9}{B}
+\ansnote{详解}{\(M\)、\(N\)纵坐标相等（都为2），直线\(MN\)与\(x\)轴平行，斜率为0，方程为\(y=2\)（同纵坐标的两点连线与\(x\)轴平行）．选：B．}
+\end{ansblock}
+
+\liB{变式\textbf{10}}{简单(知识点三)}{}{分别求下列直线的方程：}
+
+\bindp (1) 经过\(A(0,-1)\)，\(B(-1,1)\)的直线\(l_1\)； (2) 经过\(C(3,-1)\)，\(D(-2,-1)\)的直线\(l_2\)； (3) 经过\(E(1,3)\)，\(F(1,-2)\)的直线\(l_3\)．
+\xiexwei{12mm}
+
+\begin{ansblock}[2章-练-课时04-E15]
+% ans:2章-练-课时04-E15
+\ansitem{10}{(1) y＝−2x−1；(2) y＝−1；(3) x＝1}
+\ansnote{详解}{(1) 两点横、纵坐标均不等，斜率\(k=(1+1)/(-1-0)=-2\)，点斜式（用\(A\)）：\(y+1=-2(x-0)\)，即\(y=-2x-1\)；\par\noindent (2) \(C\)、\(D\)纵坐标同为\(-1\)，\(l_2\parallel x\)轴，方程为\(y=-1\)（纵坐标相同，与\(x\)轴平行）；\par\noindent (3) \(E\)、\(F\)横坐标同为1，\(l_3\perp x\)轴，方程为\(x=1\)（横坐标相同，为竖直线\(x=1\)）．}
+\end{ansblock}
+
+\liB{变式\textbf{11}}{简单(知识点二)}{}{（预习注：本题详解同判括注使用课时05将学的截距式 \(x/a+y/b=1\)；可先按预习研读，正式学习见课时05）}
+
+\bindp 直线\(5x-2y-10=0\)在\(x\)轴上的截距为\(a\)，在\(y\)轴上的截距为\(b\)，则有\nobreak(\kongwei)
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(a=2\)，\(b=5\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(a=2\)，\(b=-5\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(a=-2\)，\(b=5\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(a=-2\)，\(b=-5\)}\par}
+
+\begin{ansblock}[2章-练-课时04-E13]
+% ans:2章-练-课时04-E13
+\ansitem{11}{B}
+\ansnote{详解}{令\(y=0\)得\(x=2\)；令\(x=0\)得\(y=-5\)．即\(a=2\)，\(b=-5\)（化截距式\(x/2+y/(-5)=1\)同判）．选：B．}
+\end{ansblock}
+
+\xiaojie{①识别：以判定点在直线上、由直线上点反求参数、辨析截距概念命题、由特殊两点直写方程为目标的题，判归本题型；新定义距离类先译成坐标运算再套用.}
+\bindp {\kaishu ②操作：点在直线上＝坐标代入方程成立；特殊位置线先观察两点“横同”或“纵同”：纵同写\(y=b\)，横同写\(x=a\)，其余情形算斜率走点斜式.}
+\bindp {\kaishu ③收束：斜率不存在不影响\(x\)轴截距（竖直线截距唯一）；斜率存在时\(y\)轴截距恒唯一，但\(x\)轴截距须排除水平线；过原点直线两截距皆0，是“截距相等”族的隐藏情形.}
+
+% ---------- 探究点三 截距分类与恒过定点问题 ----------
+\tjdnr{三}{截距分类与恒过定点问题}{例\textbf{12}}{中档(知识点二)}{直线\(l\)在\(x\)轴上的截距比在\(y\)轴上的截距大1，且过定点\(A(6,-2)\)，则直线\(l\)的方程为\kongbai{}．}
+\xiexwei{10mm}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时04-E4]
+% ans:2章-练-课时04-E4
+\ansitem{12}{x＋2y−2＝0或2x＋3y−6＝0}
+\ansnote{详解}{设直线在\(x\)轴上的截距为\(a\)（\(a\neq0\)且\(a-1\neq0\)），则在\(y\)轴上的截距为\(a-1\)，由截距式：\(x/a+y/(a-1)=1\)．\par\noindent 将\((6,-2)\)代入：\(6/a-2/(a-1)=1\)，去分母：\(6(a-1)-2a=a(a-1)\)，即\(4a-6=a^{2}-a\)，\(a^{2}-5a+6=0\)，解得\(a=2\)或\(a=3\)．\par\noindent \(a=2\)时：\(x/2+y/1=1\)，即\(x+2y-2=0\)；\(a=3\)时：\(x/3+y/2=1\)，即\(2x+3y-6=0\)．\par\noindent （另须检验截距为0的情形：若过原点，设\(y=mx\)，代\((6,-2)\)得\(m=-1/3\)，此时两截距都为0，差为\(0\neq1\)，不合．）所以直线\(l\)的方程为\(x+2y-2=0\)或\(2x+3y-6=0\)．}
+\end{ansblock}}
+
+\liB{变式\textbf{13}}{中档(知识点三)}{}{若直线\(l\)经过点\(P(2,3)\)，且在\(x\)轴上的截距的取值范围是\((-1,3)\)，则其斜率\(k\)的取值范围是\nobreak(\kongwei)}
+
+\lxopt{A．\((-\infty,-3)\cup(1,+\infty)\)}
+
+\lxopt{B．\((-1,1/3)\)}
+
+\lxopt{C．\((-3,1)\)}
+
+\lxopt{D．\((-\infty,-1)\cup(1/3,+\infty)\)}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时04-E2]
+% ans:2章-练-课时04-E2
+\ansitem{13}{A}
+\ansnote{详解}{设\(l\)与\(x\)轴交于\(M_0(t,0)\)，则\(t\in(-1,3)\)且\(t\neq2\)（\(t=2\)时直线过\(P\)与\(x\)轴交点同横坐标，即\(x=2\)，斜率不存在，截距为\(2\in(-1,3)\)——此情形\(k\)不存在，题设“斜率\(k\)”已默认存在，排除）．\(k=(3-0)/(2-t)=3/(2-t)\)．当\(t\in(-1,2)\)时\(2-t\in(0,3)\)，\(k=3/(2-t)\in(1,+\infty)\)；当\(t\in(2,3)\)时\(2-t\in(-1,0)\)，\(k\in(-\infty,-3)\)．故\(k\in(-\infty,-3)\cup(1,+\infty)\)．选：A．（临界图法同件源：取\(x\)轴上两端点\(M(-1,0)\)、\(N(3,0)\)，\(k_{PM}=3/3=1\)，\(k_{PN}=3/(-1)=-3\)，\(l\)与开线段\(MN\)（挖去\((2,0)\)上方对应竖线）相交即\(k>1\)或\(k<-3\)．）}
+\end{ansblock}}
+
+\liB{变式\textbf{14}}{简单(知识点二)}{}{（预习注：本题部分详解使用课时05将学的截距式 \(x/a+y/b=1\)；可先按预习研读，正式学习见课时05）}
+
+\bindp 过点\(A(1,4)\)，且横、纵截距的绝对值相等的直线共有\nobreak(\kongwei)
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．1条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．2条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．3条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．4条}\par}
+
+\begin{ansblock}[2章-练-课时04-E12]
+% ans:2章-练-课时04-E12
+\ansitem{14}{C}
+\ansnote{详解}{分类：①过原点（两截距均为0）：\(y=4x\)，1条；\par\noindent ②不过原点，设\(x/a+y/b=1\)，\(|a|=|b|\neq0\)：代入\((1,4)\)得\(1/a+4/b=1\)．\(b=a\)时\(5/a=1\)，\(a=5\)（\(x+y=5\)）；\(b=-a\)时\(1/a-4/a=1\)，\(a=-3\)（\(-x/3+y/3=1\)，即\(y-x=3\)）．共2条．\par\noindent 合计3条．选：C．}
+\end{ansblock}
+
+\liB{变式\textbf{15}}{中档(知识点二)}{}{（预习注：本题部分详解使用课时05将学的截距式 \(x/a+y/b=1\)；可先按预习研读，正式学习见课时05）}
+
+\bindp 过点\(P(4,1)\)作直线\(l\)分别交\(x\)轴、\(y\)轴正半轴于\(A\)，\(B\)两点，\(O\)为坐标原点．当\(|OA|+|OB|\)取最小值时，直线\(l\)的方程为\kongbai{}．
+\xiexwei{8mm}
+
+\begin{ansblock}[2章-练-课时04-E14]
+% ans:2章-练-课时04-E14
+\ansitem{15}{x＋2y−6＝0}
+\ansnote{详解}{设\(l:x/a+y/b=1\)（\(a>0\)，\(b>0\)），代入\(P(4,1)\)：\(4/a+1/b=1\)．\par\noindent\(|OA|+|OB|=a+b=(a+b)(4/a+1/b)=5+4b/a+a/b\geqslant5+2\sqrt{(4b/a)\cdot(a/b)}=9\)，当且仅当\(4b/a=a/b\)即\(a=2b\)时取等；联立\(4/a+1/b=1\)代入\(a=2b\)：\(4/(2b)+1/b=1\)\(\Rightarrow3/b=1\)\(\Rightarrow b=3\)，\(a=6\)．\par\noindent 此时\(l\)为\(x/6+y/3=1\)，即\(x+2y-6=0\)．}
+\end{ansblock}
+
+\liB{变式\textbf{16}}{中档(知识点二)}{}{（预习注：本题(2)问详解使用课时05将学的截距式 \(x/a+y/b=1\)；可先按预习研读，正式学习见课时05）}
+
+\bindp 根据下列条件，求直线的方程：
+\bindp (1) 过点\(A(-3,2)\)，且（在\(y\)轴上的）截距是\(-2\)；
+\bindp (2) 过点\(A(3,0)\)，且在两坐标轴上的截距和为5．
+\xiexwei{12mm}
+
+\begin{ansblock}[2章-练-课时04-E16]
+% ans:2章-练-课时04-E16
+\ansitem{16}{(1) y＝−(4/3)x−2；(2) x/3＋y/2＝1（即2x＋3y−6＝0）}
+\ansnote{详解}{(1) 截距\(b=-2\)，直线过\((0,-2)\)与\((-3,2)\)，斜率\(k=(2+2)/(-3-0)=-4/3\)，斜截式\(y=-(4/3)x-2\)；\par\noindent (2) 直线过\((3,0)\)，故\(x\)轴截距\(a=3\)（非零），\(y\)轴截距\(b=5-3=2\)（非零），由截距式\(x/3+y/2=1\)，即\(2x+3y-6=0\)．}
+\end{ansblock}
+
+\tjdnr{三}{截距分类与恒过定点问题}{例\textbf{17}}{中偏难(知识点三)}{已知直线\(l\)：\(kx-y+4k+2=0\)（\(k\in\mathbf{R}\)）．}
+
+\bindp (1) 若直线\(l\)不经过第四象限，求\(k\)的取值范围；
+\bindp (2) 若直线\(l\)交\(x\)轴的负半轴于点\(A\)，交\(y\)轴的正半轴于点\(B\)，\(O\)为坐标原点，设\(\triangle AOB\)的面积为\(S\)，求\(S\)的最小值及此时直线\(l\)的方程．
+\xiexwei{10mm}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-拓-课时04-T1]
+% ans:2章-拓-课时04-T1
+\ansitem{17}{(1) k≥0；(2) S的最小值为16，此时直线l的方程为x−2y＋8＝0}
+\ansnote{详解}{(1) 将方程整理为\(k(x+4)+(-y+2)=0\)，令\(x+4=0\)且\(y=2\)，得直线恒过定点\((-4,2)\)（在第二象限）．斜率\(k=\tan\theta\)．过\((-4,2)\)的直线不经过第四象限，当且仅当它“向右上或水平张开”：由临界位置（过\((-4,2)\)与原点方向）逆时针转到竖直位置均不进入第四象限，即倾斜角\(\theta\in[0^\circ,90^\circ]\)，故\(k\geqslant0\)（\(k\)不存在时直线\(x=-4\)也不过第四象限，但它不在\(y=kx+b\)的参数范围内——题设方程本身取遍\(k\in\mathbf{R}\)时不含竖直线，而\(x=-4\)无法由该方程表示，故不另计）；\(k<0\)时直线向右下倾斜，自第二象限的点\((-4,2)\)出发必穿过第四象限，不合．所以\(k\geqslant0\)．\par\noindent (2) 由题意\(A\)、\(B\)存在且\(a<0\)、\(b>0\)（竖直线\(x=-4\)不与\(y\)轴相交，此时\(k=0\)给\(y=2\)与\(x\)轴不相交，均已在端点情形排除，直线可设为截距式\(x/a+y/b=1\)，\(a<0\)，\(b>0\)）．\((-4,2)\)在直线上：\(-4/a+2/b=1\)．因\(a<0\)，\(b>0\)，\(-4/a>0\)，\(2/b>0\)，\(1=-4/a+2/b\geqslant2\sqrt{(-4/a)\cdot(2/b)}=2\sqrt{-8/(ab)}\)，两边平方得\(1\geqslant-32/(ab)\)，即\(-ab\geqslant32\)，\(ab\leqslant-32\)．\(S=(1/2)|OA|\cdot|OB|=(1/2)(-a)b=-ab/2\geqslant16\)，当且仅当\(-4/a=2/b=1/2\)，即\(a=-8\)，\(b=4\)时取等号．此时直线为\(x/(-8)+y/4=1\)，化简得\(x-2y+8=0\)．所以\(S\)的最小值为16，此时直线\(l\)的方程为\(x-2y+8=0\)．}
+\end{ansblock}}
+
+\xiaojie{①识别：以截距分类计数、截距和积最值、含参直线恒过定点与象限、面积为目标的问题，判归本题型；截距式\(x/a+y/b=1\)（课时05课）已按题首预习注先行使用.}
+\bindp {\kaishu ②操作：截距问题先分“过原点”与“不过原点”两类；含参直线按参数\(k\)整理，令\(k\)的系数与其余因式同时为零解定点；最值问题凑基本不等式并验取等条件.}
+\bindp {\kaishu ③收束：截距可正可负可零，零截距单列检验；象限、面积结论回看图形定符号，取等时回代直线方程收口.}
+
+% ============================================================
+% 课堂评价 G5（恒5＝3单选+2填空＝导槽 G1~G5；ketang 新制顺排可跨栏，禁 \vbox 装栏）
+% 印面号 18—22；多选门：本片正文多选 0（题面库多选数0）≤2 合规
+% ============================================================
+\begin{ketang}{本组共5题（第18—22题），18—20为单选，21—22为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 18}．}\hspace{4.1mm}\tieside{中档(知识点三)}\hspace{2.2mm}直线\(y=k(x-1)\)（\(k\in\mathbf{R}\)）是\nobreak(\kongwei)}
+
+\lxopt{A．过点\((1,0)\)的一切直线}
+
+\lxopt{B．过点\((-1,0)\)的一切直线}
+
+\lxopt{C．过点\((1,0)\)且除\(x\)轴外的一切直线}
+
+\lxopt{D．过点\((1,0)\)且除直线\(x=1\)外的一切直线}
+
+\begin{ansblock}[2章-导-课时04-G1]
+% ans:2章-导-课时04-G1
+\ansitem{18}{D}
+\ansnote{详解}{对任意\(k\in\mathbf{R}\)，\(x=1\)时\(y=k(1-1)=0\)，故直线恒过点\((1,0)\)；又方程形式本身要求斜率\(k\)存在，故不含与\(y\)轴平行的直线\(x=1\)；反之，过\((1,0)\)且斜率存在的每条直线都可写成该形．所以它表示过点\((1,0)\)且除直线\(x=1\)外的一切直线．选：D．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 19}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}已知直线的点斜式方程为\(y-3=\sqrt{3}(x-4)\)，则这条直线经过的定点、倾斜角分别是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\((4,3)\)，\(60^\circ\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\((-3,-4)\)，\(60^\circ\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\((4,3)\)，\(30^\circ\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\((-4,-3)\)，\(60^\circ\)}\par}
+
+\begin{ansblock}[2章-导-课时04-G2]
+% ans:2章-导-课时04-G2
+\ansitem{19}{A}
+\ansnote{详解}{由点斜式\(y-y_0=k(x-x_0)\)的结构知直线过定点\((4,3)\)，斜率\(k=\sqrt{3}\)，即\(\tan\alpha=\sqrt{3}\)，倾斜角\(\alpha=60^\circ\)．选：A．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 20}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}已知直线的倾斜角为\(60^\circ\)，在\(y\)轴上的截距为\(-2\)，则此直线的方程为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(y=\sqrt{3}x+2\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(y=-\sqrt{3}x+2\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(y=-\sqrt{3}x-2\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(y=\sqrt{3}x-2\)}\par}
+
+\begin{ansblock}[2章-导-课时04-G3]
+% ans:2章-导-课时04-G3
+\ansitem{20}{D}
+\ansnote{详解}{直线的斜率为\(\tan60^\circ=\sqrt{3}\)，又\(y\)轴上的截距\(b=-2\)，由斜截式得\(y=\sqrt{3}x-2\)．故选：D．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 21}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}在\(y\)轴上的截距为\(-6\)，且与\(y\)轴相交成\(30^\circ\)角的直线方程是\kongbai{}．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-导-课时04-G4]
+% ans:2章-导-课时04-G4
+\ansitem{21}{y＝√3x−6或y＝−√3x−6}
+\ansnote{详解}{直线与\(y\)轴相交成\(30^\circ\)角，则其倾斜角为\(90^\circ-30^\circ=60^\circ\)或\(90^\circ+30^\circ=120^\circ\)，斜率为\(\sqrt{3}\)或\(-\sqrt{3}\)；又\(b=-6\)，由斜截式得所求方程为\(y=\sqrt{3}x-6\)或\(y=-\sqrt{3}x-6\)．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 22}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}与直线\(y=3x+4\)在\(y\)轴上有相同的截距、且和它关于\(y\)轴对称的直线方程为\kongbai{}．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-导-课时04-G5]
+% ans:2章-导-课时04-G5
+\ansitem{22}{y＝−3x＋4}
+\ansnote{详解}{所求直线与\(y=3x+4\)关于\(y\)轴对称：斜率互为相反数（\(k=-3\)），与\(y\)轴交点\((0,4)\)不变（截距仍为4），故方程为\(y=-3x+4\)．}
+\end{ansblock}
+
+\end{ketang}
+
+% ---- 尾块（\tailfill 置 \end{multicols} 前；无参＝内容尾随框，件侧不擅自定高） ----
+\tailfill
+
+\end{multicols}
+\end{document}
