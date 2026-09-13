@@ -551,8 +551,9 @@ def main(argv):
         if '旗' in ln or '跳过' in ln:
             print(ln)
     print(f'—— 槽{tots}（过{totp}／旗{totf}）形旗{totn} ——')
-    verdict = '[PASS] 槽宽门全过（零误报档）' if (totf == 0 and totn == 0) else \
-              f'[FAIL] 旗{totf}+形旗{totn}，超宽/形制违例须拆行或双盒改制后复跑'
+    modename = '零误报档' if cfg['k'] == K_ZEROFP else '严格档'
+    verdict = f'[PASS] 槽宽门全过（{modename}｜槽{tots}／旗0）' if (totf == 0 and totn == 0) else \
+              f'[FAIL] 旗{totf}+形旗{totn}（{modename}），超宽/形制违例须拆行或双盒改制后复跑'
     print(verdict)
     if cfg['out']:
         with open(cfg['out'], 'w', encoding='utf-8') as fh:
