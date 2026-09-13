@@ -1,0 +1,167 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main-true.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(./main.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexart.cls (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-xetex.def))
+Document Class: ctexart 2026/08/11 v2.6.5 Chinese adapter for class article (CTEX)
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg) (./qp-m3.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty)
+new hooks used!!
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/needspace/needspace.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def)))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex)))
+No file main-true.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+
+LaTeX Font Warning: Font shape `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n' undefined
+(Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 83.
+
+M3-ANSKEY: 2章-练-课时18-01
+[1]
+
+LaTeX Font Warning: Font shape `TU/FY-w450BEVL100.ttf(0)/b/n' undefined
+(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 94.
+
+M3-ANSKEY: 2章-练-课时18-07
+M3-ANSKEY: 2章-练-课时18-08
+M3-ANSKEY: 2章-练-课时18-10
+[2]
+M3-ANSKEY: 2章-练-课时18-11
+! Missing $ inserted.
+<inserted text> 
+                $
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing { inserted.
+<to be read again> 
+                   _
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing { inserted.
+<to be read again> 
+                   _
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing { inserted.
+<to be read again> 
+                   _
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing { inserted.
+<to be read again> 
+                   _
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing { inserted.
+<to be read again> 
+                   _
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing $ inserted.
+<inserted text> 
+                $
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing } inserted.
+<inserted text> 
+                }
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing } inserted.
+<inserted text> 
+                }
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing } inserted.
+<inserted text> 
+                }
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing } inserted.
+<inserted text> 
+                }
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+! Missing } inserted.
+<inserted text> 
+                }
+l.149 ...条件中任选一个补充在上面问题中并作答（注：如果选择多个条件作答，按第一个计分）．}
+                                                  
+Missing character: There is no ， (U+FF0C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no ， (U+FF0C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 从 (U+4ECE) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 下 (U+4E0B) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 列 (U+5217) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 条 (U+6761) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 件 (U+4EF6) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 中 (U+4E2D) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 任 (U+4EFB) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 选 (U+9009) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 一 (U+4E00) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 个 (U+4E2A) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 补 (U+8865) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 充 (U+5145) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 在 (U+5728) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 上 (U+4E0A) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 面 (U+9762) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 问 (U+95EE) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 题 (U+9898) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 中 (U+4E2D) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 并 (U+5E76) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 作 (U+4F5C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 答 (U+7B54) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no （ (U+FF08) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 注 (U+6CE8) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no ： (U+FF1A) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 如 (U+5982) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 果 (U+679C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 选 (U+9009) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 择 (U+62E9) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 多 (U+591A) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 个 (U+4E2A) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 条 (U+6761) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 件 (U+4EF6) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 作 (U+4F5C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 答 (U+7B54) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no ， (U+FF0C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 按 (U+6309) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 第 (U+7B2C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 一 (U+4E00) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 个 (U+4E2A) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 计 (U+8BA1) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no 分 (U+5206) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no ） (U+FF09) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+Missing character: There is no ． (U+FF0E) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;!
+M3-ANSKEY: 2章-练-课时18-09
+[3]
+M3-ANSKEY: 2章-练-课时18-03
+M3-ANSKEY: 2章-练-课时18-04
+M3-ANSKEY: 2章-练-课时18-05
+[4]
+M3-ANSKEY: 2章-练-课时18-06
+M3-ANSKEY: 2章-练-课时18-15
+[5]
+M3-ANSKEY: 2章-练-课时18-02
+M3-ANSKEY: 2章-练-课时18-12
+M3-ANSKEY: 2章-练-课时18-13
+[6]
+M3-ANSKEY: 2章-练-课时18-14
+M3-ANSKEY: 2章-练-课时18-16
+[7]
+M3-ANSKEY: 2章-导-课时18-G1
+M3-ANSKEY: 2章-导-课时18-G2
+M3-ANSKEY: 2章-导-课时18-G3
+M3-ANSKEY: 2章-导-课时18-G4
+M3-ANSKEY: 2章-导-课时18-G5
+[8] [9] (./main-true.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) )
+(see the transcript file for additional information)
+Output written on main-true.pdf (9 pages).
+Transcript written on main-true.log.
