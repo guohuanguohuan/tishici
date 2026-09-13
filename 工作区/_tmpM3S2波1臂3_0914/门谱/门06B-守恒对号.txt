@@ -1,0 +1,27 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+== ① tex 层 ==
+  [绿] 锚数=21｜21
+  [绿] 块数=21｜21
+  [绿] 锚集合≡manifest键集合(双向diff)｜缺[] 浮[]
+  [绿] 块集合≡锚集合(双向diff)
+  [绿] 锚序＝印面装配序（登记用，非逻辑键序）
+  [绿] ansitem 号序≡1..21 连号｜21枚
+  [绿] ansnote{详解} 计数=21 键均有详解行｜21
+== ② log 层 ==
+  [绿] true ANSKEY 集合≡manifest(双向diff)｜21键
+  [绿] false ANSKEY 集合≡manifest(双向diff)｜21键
+  [绿] 两档 ANSKEY 逐位同序（同装配序编译）
+== ③ PDF 层 ==
+  [绿] true 号序≡1..21 连号(对号门)｜21枚
+  [绿] true [答案] 总计=21｜21
+  [绿] true [详解] 计数≡tex ansnote｜21/21
+  [绿] false [答案]＝0｜0
+  [绿] false [详解]＝0｜0
+  [绿] false 泄答词「证明见详解」＝0｜0
+  [绿] false 泄答词「证明过程」＝0｜0
+  [绿] false 泄答词「答案」＝0｜0
+  [绿] 尾块「笔记与错题整理」true 恰1｜1
+  [绿] 尾块「笔记与错题整理」false 恰1｜1
+  [绿] 页数 false≤true｜true=5 false=3
+
+守恒对号门： 全绿

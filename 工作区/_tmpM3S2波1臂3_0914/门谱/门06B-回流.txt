@@ -1,0 +1,10 @@
+  [绿] \newpage ×0
+  [绿] \clearpage ×0
+  [绿] \pagebreak ×0
+  [绿] \vbox ×0
+  [绿] \vtop ×0
+  [绿] \ketangboxed ×0
+  [绿] \columnbreak ×0
+  [绿] \eject ×0
+
+回流门： 全绿（零强制跳页）
