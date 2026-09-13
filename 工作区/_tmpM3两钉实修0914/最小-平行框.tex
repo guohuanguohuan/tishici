@@ -1,0 +1,14 @@
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% 最小用例：5 处 \parallel（对照滚A 原印面 p1 的 5 处 ∥＝10 个矢量笔画框）
+% 件型层字号对齐 8 开件（10.5pt），使笔画框形貌与滚A p1 同标定（≈5.5×10.2pt）
+\renewcommand{\normalsize}{\fontsize{10.5pt}{17.7pt}\selectfont}
+\begin{document}
+\typeout{PAR-MIN-BODY: \meaning\parallel}
+\noindent
+$a \parallel b$\\
+$c \parallel d$\\
+$\vec{u} \parallel \vec{v}$\\
+$l_1 \parallel l_2$\\
+$\alpha \parallel \beta$
+\end{document}

@@ -1,0 +1,17 @@
+% ============================================================
+% M3 冒烟·常驻探针②（M2 案②\parallel TikZ 矢量框钉）→ 探针-平行框.pdf
+% 钉：qp-m3.sty 补丁② \parallel 复刻改挂 \AddToHook{begindocument/end}（:104-108，md5 7c393036…钉版）
+% 绿线（log grep，两遍连编同读数；macro 体须含 tikzpicture）：
+%   M3-PAR-BEGINDOCEND: macro:->\mathrel {\begin {tikzpicture}…
+%   M3-PAR-BODY:        macro:->\mathrel {\begin {tikzpicture}…
+%   （旧病两处均 the character ∥＝unicode-math 后手覆盖；钉后独立后段钩复位 TikZ）
+% 印面另含 1 处 \parallel＝2 个矢量笔画框（≈5.5×10.2pt），可作 PDF 层复核。
+% 跑法：xelatex 探针-平行框.tex（两遍），cwd＝本目录（sty 本地挂载）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\AddToHook{begindocument/end}{\typeout{M3-PAR-BEGINDOCEND: \meaning\parallel}}
+\begin{document}
+\typeout{M3-PAR-BODY: \meaning\parallel}
+$\vec{a} \parallel \vec{b}$
+\end{document}

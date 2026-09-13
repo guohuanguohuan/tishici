@@ -1,0 +1,16 @@
+% ============================================================
+% M3 冒烟·常驻探针①（M2 案①速查表行高钉）→ 探针-速查表.pdf
+% 钉：qp-m3.sty 补丁① \setlength{\extrarowheight}{1.7mm}（:162 后，md5 7c393036…钉版）
+% 绿线（log grep，两遍连编同读数）：
+%   M3-EH-VALUE: 4.83694pt   （＝1.7mm；旧病 0.0pt）
+%   M3-TAB-HT:   27.26637pt  （2行3线表盒高；旧病 22.18758pt，Δ=+5.07879pt=1.05×1.7mm）
+% 跑法：xelatex 探针-速查表.tex（两遍），cwd＝本目录（sty 本地挂载）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\begin{document}
+\setbox0=\hbox{\begin{tabular}{|c|}\hline A\\ \hline B\\ \hline\end{tabular}}%
+\typeout{M3-EH-VALUE: \the\extrarowheight}
+\typeout{M3-TAB-HT: \the\ht0}
+x
+\end{document}

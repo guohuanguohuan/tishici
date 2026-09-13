@@ -102,7 +102,13 @@
 \newcommand{\kaishu}{\CJKfamily{kai}}
 \newcommand{\fangsong}{\CJKfamily{fangsong}}
 % \parallel 复刻全品 ∥ 几何（TikZ 双平行四边形，M2 variantF 标定档）
-\AtBeginDocument{\renewcommand{\parallel}{\mathrel{\begin{tikzpicture}[x=1em,y=1em,baseline={(0,0)}]
+% 【补丁②·改挂 begindocument/end】原 :105 用 \AtBeginDocument（＝begindocument 阶段）注册，
+%   注册序在本文件 :116 \RequirePackage{unicode-math} 之前；unicode-math 于 \begin{document}
+%   阶段重排数学符号（\parallel → U+2225 math char），注册序在后故后手覆盖（p-m3 探针实证：
+%   HOOK105-POST 已是 TikZ、STAGE-BEGINDOC-LATE 已退回 ∥）。begindocument/end 阶段晚于全部
+%   begindocument 钩（含件面导言后补注册），为最稳位；保底替代＝本块移至 :117 \setmathfont
+%   之后仍用 \AtBeginDocument（序即在其后，等价于试迁 parprobe 的件面末位注册实证档）。
+\AddToHook{begindocument/end}{\renewcommand{\parallel}{\mathrel{\begin{tikzpicture}[x=1em,y=1em,baseline={(0,0)}]
   \fill (-0.412,-0.016) -- (-0.375,-0.016) -- (0.114,0.956) -- (0.077,0.956) -- cycle;
   \fill (-0.115,-0.016) -- (-0.078,-0.016) -- (0.411,0.956) -- (0.374,0.956) -- cycle;
 \end{tikzpicture}}}}
@@ -160,6 +166,12 @@
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\floatpagefraction}{0.85}
 \setlength{\arrayrulewidth}{0.4pt}
+% 【补丁①·复刻六宏 qp-layout.tex:130】全局行高垫 1.7mm——v4.3 首版 4.1mm 直译超 3.2mm、0908 修
+%   0.6/0.4/1.0mm 三轮回填，F 片B #30 甲案标定终值 1.7mm（E=1.7 时 padT 3.4–3.5 落窗、表头行高
+%   9.18≈全品 9.03；E≥1.8 表头出窗）。漏复刻实证：件面速查表行高回落 0.28–0.36%（试迁报告 §四.1，
+%   测评卷 p3 表首行 y0 196.0→190.9＝−5.1pt）。生效域＝全局 dimen（array.sty 分配），导言一设
+%   全件生效，与 M2 六宏口径一致；须全局设、不入分组。
+\setlength{\extrarowheight}{1.7mm}
 \newcount\rowmax
 \newcount\celllines
 \newcommand{\rowreset}{\global\rowmax=0 }

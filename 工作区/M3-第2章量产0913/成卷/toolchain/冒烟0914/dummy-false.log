@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 00:08
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 00:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,7 +564,7 @@ Package fontspec Info:
 (fontspec)             <->s*[1.02]"[texgyretermes-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.7502pt on input line 117.
+(Font)              scaled to size 10.7502pt on input line 123.
 
 Package fontspec Info: 
 (fontspec)             texgyretermes-math scale = 1.02.
@@ -594,15 +594,15 @@ Package fontspec Info:
 (fontspec)             <9.1692519->s*[1.02]"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>s*[1.02]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>s*[1.02]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.7502pt on input line 117.
+(Font)              scaled to size 10.7502pt on input line 123.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 117.
+(Font)              `operators' in the math version `normal' on input line 123.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/texgyretermes-math.otf(1)/m/n on input line 117.
+(Font)                  OT1/cmr/m/n --> TU/texgyretermes-math.otf(1)/m/n on input line 123.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 117.
+(Font)              `operators' in the math version `bold' on input line 123.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/texgyretermes-math.otf(1)/b/n on input line 117.
+(Font)                  OT1/cmr/bx/n --> TU/texgyretermes-math.otf(1)/b/n on input line 123.
 
 Package fontspec Info: 
 (fontspec)             texgyretermes-math scale = 1.02.
@@ -658,13 +658,13 @@ Package fontspec Info:
 (fontspec)             <9.1692519->s*[1.020102]"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>s*[1.020102]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>s*[1.020102]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 117.
+(Font)              `symbols' in the math version `normal' on input line 123.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/texgyretermes-math.otf(2)/m/n on input line 117.
+(Font)                  OMS/cmsy/m/n --> TU/texgyretermes-math.otf(2)/m/n on input line 123.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 117.
+(Font)              `symbols' in the math version `bold' on input line 123.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/texgyretermes-math.otf(2)/b/n on input line 117.
+(Font)                  OMS/cmsy/b/n --> TU/texgyretermes-math.otf(2)/b/n on input line 123.
 
 Package fontspec Info: 
 (fontspec)             texgyretermes-math scale = 1.02.
@@ -714,13 +714,13 @@ Package fontspec Info:
 (fontspec)             <9.1692519->s*[1.019898]"[texgyretermes-math.otf]/OT:script=math;language=dflt;"<6.79789365-9.1692519>s*[1.019898]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.79789365>s*[1.019898]"[texgyretermes-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 117.
+(Font)              `largesymbols' in the math version `normal' on input line 123.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/m/n on input line 117.
+(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/m/n on input line 123.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 117.
+(Font)              `largesymbols' in the math version `bold' on input line 123.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/b/n on input line 117.
+(Font)                  OMX/cmex/m/n --> TU/texgyretermes-math.otf(3)/b/n on input line 123.
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
@@ -1399,7 +1399,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  25605 strings out of 469768
  609392 string characters out of 5466040
- 1141595 words of memory out of 5000000
+ 1141833 words of memory out of 5000000
  54119 multiletter control sequences out of 15000+600000
  633972 words of font info for 200 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
