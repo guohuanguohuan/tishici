@@ -1,0 +1,19 @@
+% 符号探针：值行高风险字形三零核验（∈ ∪ ① ② ₁ ≤ ≥ ≠ π ⊥ ∠ ‖ ＋ ＝ ＜ ＞ − √ ² ± 「」〔〕）
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+\begin{document}
+\begin{multicols}{2}
+探针一：x$\in$[−2,2]，y$\in$[−1,1]，S=2π；m$\in$[−6,−4]$\cup$[0,2]；a$\in$(0,1]。
+
+探针二：选①：椭圆；选②：线段F$_1$F$_2$，y=0（−4≤x≤4）；0＜a＜4；a＞4。
+
+探针三：(±√(5−m),0)（0＜m＜5）；x²＋y²＝1；〔图注：示意〕；「8」字形；‖PF₁|−|PF₂|｜。
+
+探针四：k$_{PA}$·k$_{PB}$＝−1/4；⊥∠∥∈∉∪∩⊂≥≤≠≈±×÷⁄→⟺▍。
+\end{multicols}
+\end{document}
