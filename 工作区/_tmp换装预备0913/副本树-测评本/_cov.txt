@@ -1,0 +1,144 @@
+
+=== 测评卷 ===
+  ✓ 测评卷/main：\ti 题号序列逐字不变（19 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19
+  ✓ 测评卷/main-pure：\ti 题号序列逐字不变（19 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19
+  ✓ 测评卷/main-ctl：\ti 题号序列逐字不变（19 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16、17、18、19
+  ✓ 测评卷/main：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 测评卷/main-pure：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 测评卷/main-ctl：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 测评卷/main：\fenzhi 分值多重集不变　6 6 6 5 5 5 13 15 15 15 19
+  ✓ 测评卷/main-pure：\fenzhi 分值多重集不变　6 6 6 5 5 5 13 15 15 15 19
+  ✓ 测评卷/main-ctl：\fenzhi 分值多重集不变　6 6 6 5 5 5 13 15 15 15 19
+  ✓ 测评卷/main：\zuhang 组行不变（4 处）
+  ✓ 测评卷/main-pure：\zuhang 组行不变（4 处）
+  ✓ 测评卷/main-ctl：\zuhang 组行不变（4 处）
+  ✓ 测评卷/main：时间制式原样保留　['时间：120分钟']
+  ✓ 测评卷/main-pure：时间制式原样保留　['时间：120分钟']
+  ✓ 测评卷/main-ctl：时间制式原样保留　['时间：120分钟']
+  ✓ 测评卷/main：分值制式原样保留　['分值：150分']
+  ✓ 测评卷/main-pure：分值制式原样保留　['分值：150分']
+  ✓ 测评卷/main-ctl：分值制式原样保留　['分值：150分']
+  ✓ 测评卷/main：卷名定义原样保留　['\\newcommand{\\juanname}{单元素']
+  ✓ 测评卷/main-pure：卷名定义原样保留　['\\newcommand{\\juanname}{单元素']
+  ✓ 测评卷/main-ctl：卷名定义原样保留　['\\newcommand{\\juanname}{单元素']
+  ✓ 测评卷/main：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 测评卷/main-pure：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 测评卷/main-ctl：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 测评卷/main：副题宏体原样保留　[]
+  ✓ 测评卷/main-pure：副题宏体原样保留　[]
+  ✓ 测评卷/main-ctl：副题宏体原样保留　[]
+  ✓ 测评卷/main：\jpthree 三栏器调用次数不变（4）
+  ✓ 测评卷/main：栏宽 \jpcolw=120.0mm 未改
+  ✓ 测评卷/main：件型层定义除白名单外逐字不变（共 44 条）　差异 \providecommand{\ov}[1]{\overright
+  ✓ 测评卷/main-pure：\jpthree 三栏器调用次数不变（4）
+  ✓ 测评卷/main-pure：栏宽 \jpcolw=120.0mm 未改
+  ✓ 测评卷/main-pure：件型层定义除白名单外逐字不变（共 44 条）　差异 \providecommand{\ov}[1]{\overright
+  ✓ 测评卷/main-ctl：\jpthree 三栏器调用次数不变（4）
+  ✓ 测评卷/main-ctl：栏宽 \jpcolw=120.0mm 未改
+  ✓ 测评卷/main-ctl：件型层定义除白名单外逐字不变（共 44 条）
+  插入行 86，删除行 7
+  ✓ 测评卷：插入行全在白名单内
+  ✓ 测评卷：删除行全在白名单内（题面零删）
+  ✓ 测评卷：ansblock 键数 == 键账 19　测-1…测-19
+  ✓ 测评卷：每键配一条 % ans: 件内锚且同序　19 锚
+  ✓ 测评卷：\ansitem 题号集 == \ti 题号集
+  ✓ 测评卷：两档键数相同（印本档＝纯题档）
+  ✓ 测评卷：对照件零迁移（只换装不回嵌）
+  ✓ 测评卷：速查表已包 \ifshowans（纯题档不得漏答案表）
+
+=== 滚动卷A ===
+  ✓ 滚动卷A/main：\ti 题号序列逐字不变（16 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16
+  ✓ 滚动卷A/main-pure：\ti 题号序列逐字不变（16 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16
+  ✓ 滚动卷A/main-ctl：\ti 题号序列逐字不变（16 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16
+  ✓ 滚动卷A/main：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 滚动卷A/main-pure：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 滚动卷A/main-ctl：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 滚动卷A/main：\fenzhi 分值多重集不变　8 10 10 12
+  ✓ 滚动卷A/main-pure：\fenzhi 分值多重集不变　8 10 10 12
+  ✓ 滚动卷A/main-ctl：\fenzhi 分值多重集不变　8 10 10 12
+  ✓ 滚动卷A/main：\zuhang 组行不变（4 处）
+  ✓ 滚动卷A/main-pure：\zuhang 组行不变（4 处）
+  ✓ 滚动卷A/main-ctl：\zuhang 组行不变（4 处）
+  ✓ 滚动卷A/main：时间制式原样保留　['时间：40分钟']
+  ✓ 滚动卷A/main-pure：时间制式原样保留　['时间：40分钟']
+  ✓ 滚动卷A/main-ctl：时间制式原样保留　['时间：40分钟']
+  ✓ 滚动卷A/main：分值制式原样保留　['分值：100分']
+  ✓ 滚动卷A/main-pure：分值制式原样保留　['分值：100分']
+  ✓ 滚动卷A/main-ctl：分值制式原样保留　['分值：100分']
+  ✓ 滚动卷A/main：卷名定义原样保留　['\\newcommand{\\juanname}{滚动测']
+  ✓ 滚动卷A/main-pure：卷名定义原样保留　['\\newcommand{\\juanname}{滚动测']
+  ✓ 滚动卷A/main-ctl：卷名定义原样保留　['\\newcommand{\\juanname}{滚动测']
+  ✓ 滚动卷A/main：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 滚动卷A/main-pure：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 滚动卷A/main-ctl：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 滚动卷A/main：副题宏体原样保留　[]
+  ✓ 滚动卷A/main-pure：副题宏体原样保留　[]
+  ✓ 滚动卷A/main-ctl：副题宏体原样保留　[]
+  ✓ 滚动卷A/main：\jpthree 三栏器调用次数不变（3）
+  ✓ 滚动卷A/main：栏宽 \jpcolw=120.0mm 未改
+  ✓ 滚动卷A/main：件型层定义除白名单外逐字不变（共 44 条）　差异 \providecommand{\ov}[1]{\overright
+  ✓ 滚动卷A/main-pure：\jpthree 三栏器调用次数不变（3）
+  ✓ 滚动卷A/main-pure：栏宽 \jpcolw=120.0mm 未改
+  ✓ 滚动卷A/main-pure：件型层定义除白名单外逐字不变（共 44 条）　差异 \providecommand{\ov}[1]{\overright
+  ✓ 滚动卷A/main-ctl：\jpthree 三栏器调用次数不变（3）
+  ✓ 滚动卷A/main-ctl：栏宽 \jpcolw=120.0mm 未改
+  ✓ 滚动卷A/main-ctl：件型层定义除白名单外逐字不变（共 44 条）
+  插入行 73，删除行 7
+  ✓ 滚动卷A：插入行全在白名单内
+  ✓ 滚动卷A：删除行全在白名单内（题面零删）
+  ✓ 滚动卷A：ansblock 键数 == 键账 16　滚A-1…滚A-16
+  ✓ 滚动卷A：每键配一条 % ans: 件内锚且同序　16 锚
+  ✓ 滚动卷A：\ansitem 题号集 == \ti 题号集
+  ✓ 滚动卷A：两档键数相同（印本档＝纯题档）
+  ✓ 滚动卷A：对照件零迁移（只换装不回嵌）
+  ✓ 滚动卷A：速查表已包 \ifshowans（纯题档不得漏答案表）
+
+=== 滚动卷B ===
+  ✓ 滚动卷B/main：\ti 题号序列逐字不变（16 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16
+  ✓ 滚动卷B/main-pure：\ti 题号序列逐字不变（16 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16
+  ✓ 滚动卷B/main-ctl：\ti 题号序列逐字不变（16 题）　1、2、3、4、5、6、7、8、9、10、11、12、13、14、15、16
+  ✓ 滚动卷B/main：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 滚动卷B/main-pure：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 滚动卷B/main-ctl：题干正文（\ti{N}{…} 全串）逐字不变
+  ✓ 滚动卷B/main：\fenzhi 分值多重集不变　8 10 10 12
+  ✓ 滚动卷B/main-pure：\fenzhi 分值多重集不变　8 10 10 12
+  ✓ 滚动卷B/main-ctl：\fenzhi 分值多重集不变　8 10 10 12
+  ✓ 滚动卷B/main：\zuhang 组行不变（4 处）
+  ✓ 滚动卷B/main-pure：\zuhang 组行不变（4 处）
+  ✓ 滚动卷B/main-ctl：\zuhang 组行不变（4 处）
+  ✓ 滚动卷B/main：时间制式原样保留　['时间：40分钟']
+  ✓ 滚动卷B/main-pure：时间制式原样保留　['时间：40分钟']
+  ✓ 滚动卷B/main-ctl：时间制式原样保留　['时间：40分钟']
+  ✓ 滚动卷B/main：分值制式原样保留　['分值：100分']
+  ✓ 滚动卷B/main-pure：分值制式原样保留　['分值：100分']
+  ✓ 滚动卷B/main-ctl：分值制式原样保留　['分值：100分']
+  ✓ 滚动卷B/main：卷名定义原样保留　['\\newcommand{\\juanname}{滚动测']
+  ✓ 滚动卷B/main-pure：卷名定义原样保留　['\\newcommand{\\juanname}{滚动测']
+  ✓ 滚动卷B/main-ctl：卷名定义原样保留　['\\newcommand{\\juanname}{滚动测']
+  ✓ 滚动卷B/main：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 滚动卷B/main-pure：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 滚动卷B/main-ctl：卷名宏体原样保留　['\\jjuanming}{{\\fontsize{\\ju']
+  ✓ 滚动卷B/main：副题宏体原样保留　[]
+  ✓ 滚动卷B/main-pure：副题宏体原样保留　[]
+  ✓ 滚动卷B/main-ctl：副题宏体原样保留　[]
+  ✓ 滚动卷B/main：\jpthree 三栏器调用次数不变（3）
+  ✓ 滚动卷B/main：栏宽 \jpcolw=120.0mm 未改
+  ✓ 滚动卷B/main：件型层定义除白名单外逐字不变（共 44 条）　差异 \providecommand{\ov}[1]{\overright
+  ✓ 滚动卷B/main-pure：\jpthree 三栏器调用次数不变（3）
+  ✓ 滚动卷B/main-pure：栏宽 \jpcolw=120.0mm 未改
+  ✓ 滚动卷B/main-pure：件型层定义除白名单外逐字不变（共 44 条）　差异 \providecommand{\ov}[1]{\overright
+  ✓ 滚动卷B/main-ctl：\jpthree 三栏器调用次数不变（3）
+  ✓ 滚动卷B/main-ctl：栏宽 \jpcolw=120.0mm 未改
+  ✓ 滚动卷B/main-ctl：件型层定义除白名单外逐字不变（共 44 条）
+  插入行 73，删除行 7
+  ✓ 滚动卷B：插入行全在白名单内
+  ✓ 滚动卷B：删除行全在白名单内（题面零删）
+  ✓ 滚动卷B：ansblock 键数 == 键账 16　滚B-1…滚B-16
+  ✓ 滚动卷B：每键配一条 % ans: 件内锚且同序　16 锚
+  ✓ 滚动卷B：\ansitem 题号集 == \ti 题号集
+  ✓ 滚动卷B：两档键数相同（印本档＝纯题档）
+  ✓ 滚动卷B：对照件零迁移（只换装不回嵌）
+  ✓ 滚动卷B：速查表已包 \ifshowans（纯题档不得漏答案表）
+
+=== 汇总 ===
+通过 132 项，未过 0 项
