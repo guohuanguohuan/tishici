@@ -1,0 +1,41 @@
+% ============================================================
+% M3 S2 导学件·波1 片件 —— 课时01 坐标法（2.1）＝全波母版（五臂照抄件）
+% 生成：M3 成卷轮 S2 母版代理｜2026-09-14｜编译 cwd＝本目录（中文路径禁 \input 绝对路径）
+%   xelatex main-true.tex ×2 → 含详解印本；xelatex main-false.tex ×2 → 纯题版（单源双本）
+% 输入链（全只读）：题面库 课时01-坐标法.md（题面逐字装配）＋ -答案侧.md（值逐字回嵌）
+%   ＋ 定稿/批A-课时01-坐标法.md（详解回嵌源）；toolchain＝qp-m3.sty（钉后版
+%   md5 7c3930362be8a0a2bdf21bbf8ac16573，本地挂载副本，破损即停）。
+% 母版体例：详见《母版体例说明.md》（结构骨架/宏用法/门谱跑法/常见坑）。
+% 键账：件内 ansblock 键集 ≡ 题面库片键集 ≡ manifest 键序（23 键，零缺漏零多余）；
+%   预习位零键零答案（口令④裁定前口径）；印面号 1—23＝探究 1—18＋课堂评价 19—23，
+%   键↔号映射见 值台账-课时01.json。
+% 括线判据（承重墙禁放宽）：估高＞8 行（chars/23 栏宽口径）→ 括线模，逐键读数入值台账；
+%   其余灰底。本片括线键：E2、E3、E14、T1、T2（估高读数见台账）。
+% 门谱读数：见 过程件 工作区/_tmpM3S2母版0914/（编译 log、门谱输出、目验 PNG 双档）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（探针实证 0914：书宋缺 U+2212，▱ 诸字库皆缺→NSC 子块；
+%     禁改 sty 本体保 md5；无 ▱/− 用件的片可整块照抄，零副作用） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（纯题档/详解档三零门：CJK 胶收缩 0.01→0.05em、应急伸展 1→2em；
+%     只动伸缩分量不动自然宽度，版面纹理零漂；Underfull 治理读数见过程件） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+\emergencystretch=12em%
+% —— 页脚件名（qp-headfoot 复用入口） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件}%
+
+\begin{document}
+\liB{变式\textbf{6}}{中档(知识点二)}{}{已知\(A(-1,3)\)，\(B(3,3)\)，\(C\left(1,2\sqrt{3}+3\right)\)，证明\(\triangle ABC\)是等边三角形．}
+\xiexwei{12mm}
+
+\begin{ansblock}[2章-练-课时01-E8]
+% ans:2章-练-课时01-E8
+\ansitem{6}{证明见详解．}
+\ansnote{详解}{由两点间距离公式：\noindent\(|AB|=\sqrt{(3+1)^{2}+(3-3)^{2}}=\sqrt{16}=4\)；\noindent\(|AC|=\sqrt{(1+1)^{2}+(2\sqrt{3}+3-3)^{2}}=\sqrt{4+12}=4\)；\noindent\(|BC|=\sqrt{(1-3)^{2}+(2\sqrt{3}+3-3)^{2}}=\sqrt{4+12}=4\)．\noindent所以\(|AB|=|AC|=|BC|\)，故\(\triangle ABC\)是等边三角形．}
+\end{ansblock}
+\end{document}
