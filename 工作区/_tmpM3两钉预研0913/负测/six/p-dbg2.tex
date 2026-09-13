@@ -1,0 +1,10 @@
+\documentclass[fontset=none]{ctexart}\makeatletter\DebugHooksOn\makeatother
+\input{qp-fonts.tex}\input{qp-layout.tex}\input{qp-parts.tex}\input{qp-headfoot.tex}\input{qp-titles.tex}\input{qp-blocks.tex}
+% 六宏世界同款阶段探针（对照：为何六宏世界同序注册却存活）
+\AddToHook{begindocument/before}{\typeout{STAGE-ENDPRE: \meaning\parallel | EH=\the\extrarowheight}}
+\AtBeginDocument{\typeout{STAGE-BEGINDOC-LATE: \meaning\parallel}}
+\AddToHook{begindocument/end}{\typeout{STAGE-BEGINDOCEND: \meaning\parallel}}
+\begin{document}
+\typeout{STAGE-BODY: \meaning\parallel | EH=\the\extrarowheight}
+x
+\end{document}

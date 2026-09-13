@@ -1,0 +1,11 @@
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% 阶段探针：\parallel 语义与 \extrarowheight 值在各钩阶段读数
+% 钩序＝注册序：qp-m3:105（begindocument）→ 本件导言两钩 → 文档体
+\AddToHook{begindocument/before}{\typeout{STAGE-ENDPRE: \meaning\parallel | EH=\the\extrarowheight}}
+\AtBeginDocument{\typeout{STAGE-BEGINDOC-LATE: \meaning\parallel}}
+\AddToHook{begindocument/end}{\typeout{STAGE-BEGINDOCEND: \meaning\parallel}}
+\begin{document}
+\typeout{STAGE-BODY: \meaning\parallel | EH=\the\extrarowheight}
+x
+\end{document}

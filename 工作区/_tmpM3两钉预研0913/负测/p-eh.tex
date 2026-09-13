@@ -1,0 +1,9 @@
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\begin{document}
+% 表高探针：2 行 3 线单列 tabular 的自然盒高——extrarowheight 有无直接进 ht
+\setbox0=\hbox{\begin{tabular}{|c|}\hline A\\ \hline B\\ \hline\end{tabular}}%
+\typeout{EH-VALUE: \the\extrarowheight}
+\typeout{TAB-HT: \the\ht0}
+x
+\end{document}
