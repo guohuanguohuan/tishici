@@ -1,0 +1,17 @@
+% 探针：17 片新增符号 ∪ ∞ ∈ 及值面其余符号字模校验（补位4a 0914）
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\usepackage{pifont}%
+\xeCJKDeclareCharClass{Default}{"2212}%
+\xeCJKDeclareCharClass{Default}{"2013}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.30em minus 0.05em}}%
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件}%
+\begin{document}
+符号集探针：∪ ∞ ∈ − √ ² ³ ≤ ≥ ± ‖ × ．
+值面样张：k∈\{√2,−√2,3/2\} 或 k∈(−∞,−√2)∪(−√2,√2)∪(√2,3/2)；|k|<√6/3；k=±√6/3；(x−1/2)²+(y−1)²=1；y=x−1；m∈(−2,2)；A（m=−3）
+详解样张：\(\Delta=72k^{2}-48\)，\(x_{1}x_{2}=-p^{2}\)，\(\overrightarrow{OA}\cdot\overrightarrow{OB}=-3\)，\(\angle AF_{2}B=90^{\circ}\)，\(\Leftrightarrow\)、\(\Rightarrow\)、\(\forall t\in\mathrm{R}\)、\(\mp\)。
+\end{document}
