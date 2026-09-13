@@ -1,0 +1,351 @@
+% ============================================================
+% M3 新派 toolchain 原型·冒烟件（dummy.tex，2026-09-13）
+% 位置：工作区/_tmpM3toolchain0913/（与 qp-m3.sty 同目录；M2 目录零改动）
+% 编译：xelatex dummy-true.tex ×2 → dummy-true.pdf（含详解印本）
+%       xelatex dummy-false.tex ×2 → dummy-false.pdf（纯题版）
+%       三零门：log 内 error=0／Overfull=0／Missing character=0（Underfull 仅计数）
+%
+% 本件样例↔要件对照：
+%   [要件①] \showans 开关：全件答案/详解走 ansblock＋开关化旧宏（\kongda/\zhenti/\ansline/
+%            \jiexi/\xiaojie）；纯题版整块不印、\kongda 退空线、\zhenti 退空括号题面形。
+%   [要件②] 题后紧跟答案版式：每题块→紧邻 ansblock（灰底默认＋括线模各一例）；
+%            小题分层＝\anssub 二档悬挂（衔接变式1／练习题7）；钉值键注＝[键]可选参
+%            ＋体内 % ans:键 注释锚（log 层 M3-ANSKEY 行，grep 编译日志可验）。
+%   [要件③] 课堂评价回流：ketang 新制（撤 \vbox 整体装栏，按栏余量顺排可跨栏）——
+%            衔接节/课时1 两处；ketangboxed＝旧制对照件（复现右栏全空病灶，量产禁用）。
+%   [要件④] 尾页填充块：\tailfill 两处（课时1 尾＝吃尾空无参档；练习位尾＝定高 40mm 档）。
+%   [要件⑤] 衔接节一等课时件型：\xjkeshi＋知识点条（\zsd/\tiaomu/\xjtk）＋考点探究
+%            （\tjdnr 例＋\liB 变式）＋课堂评价 G5 恒5（ketang 内 3单选+2填空）。
+% 题面＝选必1 第2章开篇最简自撰题（冒烟用，非命制产出，不入题面库）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}
+\renewcommand{\qpjianming}{M3冒烟件}
+
+\begin{document}
+
+\zhangtitle{第二章\quad 平面解析几何}
+\jietitle{2.1 坐标法}
+
+% ============================================================
+% 衔接节一等课时件型（要件⑤骨架＋要件①②③④样例）
+% ============================================================
+\xjkeshi{坐标法必会（2.1 前）}
+\vspace{1.2mm}
+{\fangsong 本块复习必修二中直线与坐标的必会知识，为衔接节预习材料；含知识点条、考点探究（例题＋变式）与课堂评价（恒5题）三轴，按一等课时件型编成．\par}
+\vspace{1.2mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\xjtk{①}{两点\(A(x_1,y_1)\)，\(B(x_2,y_2)\)的中点坐标为\kongda{\(\left(\frac{x_1+x_2}{2},\frac{y_1+y_2}{2}\right)\)}；\(A(1,2)\)，\(B(3,4)\)时为\kongda{\((2,3)\)}．}
+
+\xjtk{②}{两点距离\(|AB|=\)\kongda{\(\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\)}；当\(A(1,2)\)，\(B(3,4)\)时\(|AB|=\)\kongda{\(2\sqrt{2}\)}．}
+
+\xjtk{③}{过两点\(A(x_1,y_1)\)，\(B(x_2,y_2)\)（\(x_1\neq x_2\)）的直线斜率\(k=\)\kongda{\(\frac{y_2-y_1}{x_2-x_1}\)}；倾斜角\(\alpha\)与斜率的关系为\(k=\)\kongda{\(\tan\alpha\)}（\(\alpha\neq 90^\circ\)）．}
+
+\zsd{一}{坐标法基本量}
+
+\tiaomu{1}{数轴上的基本公式：设点\(A\)，\(B\)的坐标分别为\(x_1\)，\(x_2\)，则有向线段\(\overrightarrow{AB}\)的数量\(AB_{\overrightarrow{}}=x_2-x_1\)，\(|AB|=\)\kongbai{}．}
+
+\tiaomu{2}{平面直角坐标系中，两点的距离由\kongbai{}定理转化为坐标计算；中点公式是\kongbai{}法的核心工具（用坐标算几何量）．\zhuzhu{坐标法的基本思路：几何关系代数化，算完再回译成几何结论．}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhenti{(1)}{过两点\(A(0,0)\)，\(B(1,1)\)的直线斜率为\(1\)．}{\gou}{由斜率公式\(k=\frac{1-0}{1-0}=1\)．}
+
+\zhentib{(2)}{任何一条直线都有斜率．}
+
+% ---- 考点探究（例题＋变式，题后紧跟答案＝要件②） ----
+\tjdnr{一}{两点间距离与中点}{例\textbf{1}}{简单(知识点一)}{已知点\(A(1,2)\)，\(B(3,4)\)，求线段\(AB\)的中点坐标与长度．}
+
+\begin{ansblock}[2.1-xj-li1]
+% ans:2.1-xj-li1 中点(2,3)；|AB|=2√2
+\ansitem{1}{中点\((2,3)\)，\(|AB|=2\sqrt{2}\)．}
+\ansnote{详解}{中点坐标为\(\left(\frac{1+3}{2},\frac{2+4}{2}\right)=(2,3)\)；\(|AB|=\sqrt{(3-1)^{2}+(4-2)^{2}}=\sqrt{8}=2\sqrt{2}\)．}
+\end{ansblock}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{已知\(A(1,1)\)，\(B(3,5)\)，\(C(5,9)\)三点：(1)求\(AB\)，\(BC\)的斜率；(2)判断\(A\)，\(B\)，\(C\)是否共线并说明理由．}
+
+\begin{ansblock}[2.1-xj-bian1]
+% ans:2.1-xj-bian1 kAB=kBC=2；共线
+\anssub{(1)}{\(k_{AB}=\frac{5-1}{3-1}=2\)，\(k_{BC}=\frac{9-5}{5-3}=2\)．}
+\anssub{(2)}{共线：两斜率相等且\(AB\)，\(BC\)过公共点\(B\)．}
+\end{ansblock}
+
+\xiaojie{①识别：给定点坐标求几何量（距离/中点/斜率）或以几何量反判位置关系时，用坐标法．②操作：先设坐标，套距离/中点/斜率公式，再回译结论．}
+
+% ---- 课堂评价 G5（要件③新制 ketang：撤整块装栏，顺排可跨栏） ----
+\begin{ketang}{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}直线\(x=1\)的倾斜角为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(30^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(45^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(90^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(180^\circ\)}\par}
+
+\begin{ansblock}[2.1-pingjia-1]
+\ansitem{1}{\(C\)．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}过点\((0,0)\)与\((1,1)\)的直线斜率为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(-1\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(1\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\pm 1\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．不存在}\par}
+
+\begin{ansblock}[2.1-pingjia-2]
+\ansitem{2}{\(B\)．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}点\((1,2)\)到直线\(x=3\)的距离为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(1\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(2\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(3\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(4\)}\par}
+
+\begin{ansblock}[2.1-pingjia-3]
+\ansitem{3}{\(B\)（\(|3-1|=2\)）．}
+\end{ansblock}
+
+% \columnbreak＝multicol 手动断栏逃生口（尾区平衡棘手时装配层可用，登记冒烟报告遗留）
+\columnbreak
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}已知\(A(0,0)\)，\(B(3,4)\)，则\(|AB|=\)\kongbai{}．{\zhushi{(提示：套两点间距离公式，注意先平方再开方)}}}
+
+\begin{ansblock}[2.1-pingjia-4]
+\ansitem{4}{\(5\)．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}线段\(AB\)的中点为\((2,3)\)，且\(A(1,2)\)，则\(B\)点坐标为\kongbai{}．}
+
+\begin{ansblock}[2.1-pingjia-5]
+\ansitem{5}{\((3,4)\)．}
+\end{ansblock}
+
+\end{ketang}
+
+% ---- 尾页填充块（要件④·定高档：栏内定高 30mm，吃不满不溢） ----
+\tailfill[30mm]
+
+\end{multicols}
+
+% ============================================================
+% 课时页（导学件形：课前预习印答开关＋课中探究紧跟答案＋课堂评价回流＋尾页填充块）
+% ============================================================
+\xiaojietitle{2.2 直线及其方程}
+\keshi{第1课时\quad 直线的倾斜角与斜率}
+\mubiaoline
+\mubiaomu{1}{理解直线的倾斜角与斜率的概念，掌握斜率公式；}
+\mubiaomu{2}{会用斜率公式求直线的斜率，并能由斜率判定两直线的位置关系；}
+\mubiaomu{3}{初步体会坐标法把几何问题代数化的思想.}
+
+\vspace{1.7mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{倾斜角与斜率}
+
+\tiaomu{1}{倾斜角：当直线\(l\)与\(x\)轴相交时，取\(x\)轴为基准，直线\(l\)向上的方向与\(x\)轴正方向所成的\kongbai{}角叫做直线\(l\)的倾斜角，范围是\kongda{\(0^\circ\leqslant\alpha<180^\circ\)}．}
+
+\tiaomu{2}{斜率：倾斜角\(\alpha(\alpha\neq 90^\circ)\)的正切值叫做斜率，即\(k=\)\kongda{\(\tan\alpha\)}；斜率公式\(k=\)\kongda{\(\frac{y_2-y_1}{x_2-x_1}\)}．\zhuzhu{倾斜角\(90^\circ\)的直线斜率不存在；斜率相等的两直线平行或重合．}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhenti{(1)}{若两条直线的斜率相等，则这两条直线平行或重合．}{\gou}{斜率相等即倾斜角相同，两直线平行或重合．}
+
+\zhenti{(2)}{直线的倾斜角越大，斜率越大．}{\cha}{倾斜角越过\(90^\circ\)时正切值变号，不单调递增（如\(60^\circ\)与\(120^\circ\)的斜率\(\sqrt{3}>-\sqrt{3}\)不反序）．}
+
+\liubai[9mm]{此处书写}
+
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{求斜率与倾斜角}{例\textbf{1}}{简单(知识点一)}{已知直线\(l\)过点\(A(-1,2)\)，\(B(3,-2)\)，求\(l\)的斜率与倾斜角．}
+
+\begin{ansblock}[2.2-1-li1]
+% ans:2.2-1-li1 k=-1；倾斜角135°
+\ansitem{1}{斜率\(-1\)，倾斜角\(135^\circ\)．}
+\ansnote{详解}{\(k=\frac{-2-2}{3-(-1)}=\frac{-4}{4}=-1\)；由\(\tan\alpha=-1\)且\(\alpha\in[0^\circ,180^\circ)\)，得\(\alpha=135^\circ\)．}
+\end{ansblock}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{直线\(l\)过点\((2,3)\)，且与直线\(y=2x+1\)平行，求\(l\)的方程．}
+
+\begin{ansblock}[2.2-1-bian1]
+\ansitem{1}{\(y=2x-1\)（即\(2x-y-1=0\)）．}
+\ansnote{详解}{平行则斜率相等\(k=2\)；由点斜式\(y-3=2(x-2)\)，化简得\(y=2x-1\)．}
+\end{ansblock}
+
+\xiaojie{①识别：给点求斜率/倾斜角，或由斜率条件求直线方程．②操作：先求斜率，再由\(\tan\alpha=k\)在\([0^\circ,180^\circ)\)内定角；求方程用点斜式后化一般式．}
+
+% ---- 课堂评价 G5（新制 ketang：本块较高，实证按栏余量顺排、可跨栏不断流） ----
+\begin{ketang}{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}直线\(y=\sqrt{3}x+1\)的倾斜角为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(30^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(45^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(60^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(120^\circ\)}\par}
+
+\begin{ansblock}[2.2-1-pingjia-1]
+\ansitem{1}{\(C\)（\(\tan 60^\circ=\sqrt{3}\)）．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}过点\((2,-1)\)与\((-1,2)\)的直线斜率为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(1\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(-1\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(\pm 1\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(0\)}\par}
+
+\begin{ansblock}[2.2-1-pingjia-2]
+\ansitem{2}{\(B\)（\(k=\frac{2-(-1)}{-1-2}=-1\)）．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}直线\(x-\sqrt{3}y+2=0\)的斜率为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\frac{\sqrt{3}}{3}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(\sqrt{3}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(-\frac{\sqrt{3}}{3}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(-\sqrt{3}\)}\par}
+
+\begin{ansblock}[2.2-1-pingjia-3]
+\ansitem{3}{\(A\)（\(y=\frac{\sqrt{3}}{3}x+\frac{2\sqrt{3}}{3}\)）．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}点\((2,1)\)到直线\(x=-1\)的距离为\kongbai{}．}
+
+\begin{ansblock}[2.2-1-pingjia-4]
+\ansitem{4}{\(3\)．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}直线\(3x+4y-12=0\)与两坐标轴围成的三角形的面积为\kongbai{}．{\zhushi{(提示：先求两截距，再套直角三角形面积公式)}}}
+
+\begin{ansblock}[2.2-1-pingjia-5]
+\ansitem{5}{\(6\)（横截距\(4\)、纵截距\(3\)，\(\frac{1}{2}\times 4\times 3=6\)）．}
+\end{ansblock}
+
+\end{ketang}
+
+% ---- 尾页填充块（要件④·无参档：\vfill 吃本栏尾空） ----
+\tailfill
+
+\end{multicols}
+
+% ============================================================
+% 旧制对照件（ketangboxed＝M2 \vbox 整体装栏原形，复现「右栏全空」病灶；量产禁用）
+% 体＝恒题面判断 5 条（两档等形，页差归因不混入答案块）
+% ============================================================
+\keshi{旧制对照\quad 课堂评价整体装栏（病灶复现位）}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+{\fangsong 以下用旧制 ketangboxed 装栏：整节为不可切块，栏余量不足时整块跳下一栏/页，留出右栏全空——规格书 v2 §四.二.10② 撤此制，本位仅作改前改后目验对照．\par}
+\vspace{1.2mm}
+
+\begin{ketangboxed}{本组共5题，判断正误．}
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}垂直于\(x\)轴的直线倾斜角为\(90^\circ\)．}
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}斜率不存在的直线倾斜角为\(90^\circ\)．}
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}经过原点与点\((1,2)\)的直线方程为\(y=2x\)．}
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}任何直线的倾斜角都小于\(180^\circ\)．}
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}两直线斜率互为相反数时一定垂直．}
+\end{ketangboxed}
+
+\end{multicols}
+
+% ============================================================
+% 练习位（练习件形：悬挂题号＋题后紧跟答案＋括线模样例＋定高尾页填充块）
+% ============================================================
+\keshi{第1课时\quad 巩固练习}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\zu{斜率·直读×填空} \tieside{简单(知识点一)}直线\(y=-2x+3\)的斜率为\kongbai{}．
+
+\begin{ansblock}[2.2-1-lian-01]
+\ansitem{1}{\(-2\)．}
+\end{ansblock}
+
+\tihao{2}\zu{斜率公式×填空} \tieside{简单(知识点一)}过点\((1,2)\)与\((2,4)\)的直线斜率为\kongbai{}．
+
+\begin{ansblock}[2.2-1-lian-02]
+\ansitem{2}{\(2\)．}
+\end{ansblock}
+
+\tihao{3}\zu{点线距离×填空} \tieside{简单(知识点一)}点\((0,0)\)到直线\(3x+4y-5=0\)的距离为\kongbai{}．
+
+\begin{ansblock}[2.2-1-lian-03]
+% ans:2.2-1-lian-03 d=1
+\ansitem{3}{\(1\)（\(d=\frac{|-5|}{\sqrt{3^{2}+4^{2}}}=1\)）．}
+\end{ansblock}
+
+\tihao{4}\zu{圆的标准方程×填空} \tieside{简单(知识点二)}圆\(x^{2}+y^{2}-4x+2y=0\)的圆心坐标为\kongbai{}，半径为\kongbai{}．
+
+\begin{ansblock}[2.2-1-lian-04]
+\ansitem{4}{圆心\((2,-1)\)，半径\(\sqrt{5}\)（配方\((x-2)^{2}+(y+1)^{2}=5\)）．}
+\end{ansblock}
+
+\tihao{5}\zu{椭圆离心率×单选} \tieside{简单(知识点三)}椭圆\(\frac{x^{2}}{4}+\frac{y^{2}}{3}=1\)的离心率为\nobreak(\kongwei)
+
+\lxopt{A．\(\frac{1}{2}\)；}
+\lxopt{B．\(\frac{\sqrt{3}}{2}\)；}
+\lxopt{C．\(\frac{1}{3}\)；}
+\lxopt{D．\(\frac{2}{3}\)}
+
+\begin{ansblock}[2.2-1-lian-05]
+\ansitem{5}{\(A\)（\(a=2\)，\(c=\sqrt{4-3}=1\)，\(e=\frac{1}{2}\)）．}
+\end{ansblock}
+
+\dangbadge{综}{合}{提}{升}
+
+\tihao{6}\zu{直线方程·一般式×解答} \tieside{中档(知识点一)}求过点\((1,1)\)且斜率为\(2\)的直线方程，并化为一般式．
+\xiexwei{18mm}
+
+% 括线模样例（\ansblockgrayfalse；长详解宜用此模——可跨栏断开）
+{\ansblockgrayfalse
+\begin{ansblock}[2.2-1-lian-06]\anskey{2.2-1-lian-06}% 编译层锚点独立用法示例（与可选参等价）
+\ansitem{6}{\(2x-y-1=0\)．}
+\ansnote{详解}{由点斜式\(y-1=2(x-1)\)，展开得\(y=2x-1\)，移项化一般式\(2x-y-1=0\)．}
+\end{ansblock}}
+
+\tihao{7}\zu{直线方程·面积×解答两问} \tieside{中档(知识点一)}直线\(l\)过点\((0,1)\)且斜率为\(1\)：(1)求\(l\)的方程；(2)求\(l\)与两坐标轴围成的三角形的面积．
+\xiexwei{22mm}
+
+\begin{ansblock}[2.2-1-lian-07]
+% ans:2.2-1-lian-07 y=x+1；S=1/2
+\anssub{(1)}{\(y=x+1\)（即\(x-y+1=0\)）．}
+\anssub{(2)}{\(S=\frac{1}{2}\times 1\times 1=\frac{1}{2}\)．}
+\ansnote{详解}{(1)点斜式\(y-1=x\)，即\(y=x+1\)；(2)横截距\(-1\)、纵截距\(1\)，面积\(\frac{1}{2}\)．}
+\end{ansblock}
+
+\tihao{8}\zu{截距·直读×填空} \tieside{简单(知识点一)}直线\(y=3x-2\)在\(y\)轴上的截距为\kongbai{}．
+
+\begin{ansblock}[2.2-1-lian-08]
+\ansitem{8}{\(-2\)．}
+\end{ansblock}
+
+\tihao{9}\zu{截距式·方程×填空} \tieside{简单(知识点一)}过点\((1,0)\)与\((0,1)\)的直线方程为\kongbai{}．
+
+\begin{ansblock}[2.2-1-lian-09]
+\ansitem{9}{\(x+y-1=0\)．}
+\end{ansblock}
+
+\tihao{10}\zu{斜率反求角×单选} \tieside{简单(知识点一)}斜率为\(-1\)的直线的倾斜角为\nobreak(\kongwei)
+
+\lxopt{A．\(45^\circ\)；}
+\lxopt{B．\(135^\circ\)；}
+\lxopt{C．\(-45^\circ\)；}
+\lxopt{D．\(90^\circ\)}
+
+\begin{ansblock}[2.2-1-lian-10]
+\ansitem{10}{\(B\)（\(\tan\alpha=-1\)且\(\alpha\in[0^\circ,180^\circ)\)）．}
+\end{ansblock}
+
+\tihao{11}\zu{位置关系·平行×填空} \tieside{中档(知识点一)}两直线\(2x-y+1=0\)与\(2x-y-3=0\)的位置关系是\kongbai{}．
+
+\begin{ansblock}[2.2-1-lian-11]
+\ansitem{11}{平行（斜率均\(2\)且截距不同）．}
+\end{ansblock}
+
+\tihao{12}\zu{对称点×解答} \tieside{中档(知识点一)}求点\((2,-1)\)关于直线\(y=x\)的对称点的坐标．
+\xiexwei{18mm}
+
+\begin{ansblock}[2.2-1-lian-12]
+% ans:2.2-1-lian-12 (-1,2)
+\ansitem{12}{\((-1,2)\)．}
+\ansnote{详解}{点\((a,b)\)关于\(y=x\)的对称点为\((b,a)\)，故\((2,-1)\)的对称点为\((-1,2)\)．}
+\end{ansblock}
+
+\end{multicols}
+
+% ---- 尾页填充块（要件④·整页级吃空位：multicols 外调用，\vfill 吃本页尾空） ----
+\tailfill
+\end{document}
