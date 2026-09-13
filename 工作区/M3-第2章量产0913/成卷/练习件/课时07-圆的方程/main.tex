@@ -1,0 +1,239 @@
+% ============================================================
+% M3 S3 练习件·W2 臂A 片件 —— 课时07 圆的方程（2.3.1＋2.3.2 合）
+% 生成：M3 成卷轮 S3 W2 臂A｜2026-09-14｜编译 cwd＝本目录（中文路径禁 \input 绝对路径）
+%   xelatex main-true.tex ×2 → 含详解印本；xelatex main-false.tex ×2 → 纯题版（单源双本）
+% 输入链（全只读）：题面库 课时07-圆的方程.md（题面逐字装配）＋ -答案侧.md（值逐字回嵌）
+%   ＋ 定稿/批B-课时07-圆的方程（2.3.1加2.3.2合）.md（详解回嵌源）；toolchain＝qp-m3.sty
+%   （钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，本地挂载副本，破损即停）。
+% 母版体例：整目录照抄 成卷/练习件/课时01-坐标法/（骨架/宏用法/门谱原样，只换内容层）。
+% 键账：件内 ansblock 键集 ≡ 题面库片练键集 ≡ manifest 练键序 T1~T16（16 键，零缺漏零多余；
+%   本片键式＝T 式，承 canonical 键名总表批B 口径）；导学键 G1~G5 不入本件（导学件域）；
+%   拓区隔离：2章-拓/测/滚 键不入本件（S4 拓展册收）。
+% 卷式例外案B：练习件不属卷式——答案块物理落点恒为题后 ansblock，禁卷末附卷制；
+%   全线括线模（导言 \ansblockgrayfalse 一次置定，件内不切换；灰底盒不可跨栏断，练习件禁用）。
+% 题序＝manifest 练键序 T1~T16（零重排）；印面题号 1~16 连号（\tihao 号＝\ansitem 号同键）；
+%   三档切位 1~7／8~14／15~16（照库序切位，非难度重排）。
+% 槽配实录：单选8（T1~T6、T8、T9）＋多选2（T7、T10，≤4 合规）＋填空4（T11~T14）＋解答2
+%   （T15~T16）；波次方案基线 10选4填2解 为槽配基线，本片实配照题面侧头标（批B §二配额同口径）。
+% 批B 注记照办：T15 与富矿件7-#23 同题取成品版（题面侧【注】行不入印面）；抽验销项②
+%   「源分析 8x 系笔误应为 8y」系题面注勘误不印，详解行本正确、照定稿落盘版回嵌；
+%   T15(3) 导数分支表述（①a>1/4 ②−1<a<1/4 ③a<−1 三支定号）已随批B 落盘版锚定照录。
+% 选项槽位：默认四连排（0.25\linewidth−0.25\lxhang），超宽降档梯 四连排→两连排
+%   （0.5\linewidth−0.5\lxhang−0.25em）→单列 \lxopt；禁缩字号/负 kern/删标点凑宽。
+%   本片实测降档：题1/2/4/5/7/10 降档（题7 单列、余两连排），余四连排（真算读数见值台账）。
+% 解答书写区：T15 三问 \liubai[32mm]、T16 单问 \liubai[16mm]（默认 16mm、两问 24mm、
+%   三问及以上 32mm、cap 40mm；纯题档吞 ansblock 不吞 \liubai）。
+% 填空印答：T11~T14 题面空位 \kongda{值}（详解版印答、纯题版退定宽空线，两档等形）；
+%   T13 三空/T14 两空逐空 \kongda，值取答案侧「值：」行同串按空位拆分（印答与 ansitem 同源零漂）；
+%   T12 开放题 \kongda 载答案侧全值（含「（答案不唯一）」尾注）。
+% 难度词口径：题面侧头标第 4 字段未带档位词者，照题面库全库主档映射 0.94→简单、
+%   0.85→中档、0.65→中档（带档位词者照录；登记见值台账「难度词口径」）。
+% 知识点口径注记：照导学件课时07 课前预习·知识导学（\zsd）三条映射——
+%   一＝圆的标准方程、二＝点与圆的位置关系、三＝圆的一般方程与表圆条件；
+%   导学件课时探究组序（一＝点与圆、二＝标准方程求法、三＝一般方程）与 \zsd 序在07 异序，
+%   本件 \tieside 照知识导学（\zsd）口径分派（异动回核点，登记见值台账「知识点口径」）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承导学件母版；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承导学件母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 练习件全线括线模（S3 波次方案 §四.3：导言一次置定、件内不切换） ——
+\ansblockgrayfalse
+% —— 页脚件名（qp-headfoot 复用入口） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{练习件}%
+
+\begin{document}
+
+\keshi{第7课时\quad 圆的方程}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 基础巩固（题1~7＝T1~T7：单选6＋多选1；题后紧跟答案制，全线括线 ansblock）
+% ============================================================
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\zu{圆的标准方程求法×单选} \tieside{简单(知识点二)}若点\((5a+1,12a)\)在圆\((x-1)^{2}+y^{2}=1\)的内部，则实数\(a\)的取值范围是\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(-1<a<1\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(-1/3<a<1/3\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(-1/5<a<1/5\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(-1/13<a<1/13\)}\par}
+
+\begin{ansblock}[2章-练-课时07-T1]
+% ans:2章-练-课时07-T1
+\ansitem{1}{D}
+\ansnote{详解}{\((5a+1-1)^{2}+(12a)^{2}=25a^{2}+144a^{2}=169a^{2}<1\Longrightarrow |a|<1/13\)，选D。}
+\end{ansblock}
+
+\tihao{2}\zu{圆的标准方程求法×单选} \tieside{简单(知识点二)}若点\((4a-1,3a+2)\)不在圆\((x+1)^{2}+(y-2)^{2}=25\)的外部，则\(a\)的取值范围是\nobreak(\kongwei)\par
+
+\lxopt{A．\(-\sqrt{5}/5<a<\sqrt{5}/5\)}
+
+\lxopt{B．\(-1<a<1\)}
+
+\lxopt{C．\(-\sqrt{5}/5\leqslant a\leqslant \sqrt{5}/5\)}
+
+\lxopt{D．\(-1\leqslant a\leqslant 1\)}
+
+\begin{ansblock}[2章-练-课时07-T2]
+% ans:2章-练-课时07-T2
+\ansitem{2}{D}
+\ansnote{详解}{\((4a-1+1)^{2}+(3a+2-2)^{2}=16a^{2}+9a^{2}=25a^{2}\leqslant 25\Longrightarrow a^{2}\leqslant 1\Longrightarrow -1\leqslant a\leqslant 1\)，选D。}
+\end{ansblock}
+
+\tihao{3}\zu{圆的标准方程求法×单选} \tieside{中档(知识点二)}若原点在圆\((x-3)^{2}+(y+4)^{2}=m\)的外部，则实数\(m\)的取值范围是\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(m>25\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(m>5\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(0<m<25\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(0<m<5\)}\par}
+
+\begin{ansblock}[2章-练-课时07-T3]
+% ans:2章-练-课时07-T3
+\ansitem{3}{C}
+\ansnote{详解}{表圆需\(m>0\)。原点在圆外\(\Longleftrightarrow (0-3)^{2}+(0+4)^{2}=25>m\)。故\(0<m<25\)，选C。}
+\end{ansblock}
+
+\tihao{4}\zu{圆的一般方程与表圆条件×单选} \tieside{简单(知识点三)}若曲线\(C\)：\(x^{2}+y^{2}+2ax-4ay-10a=0\)表示圆，则实数\(a\)的取值范围为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\((-2,0)\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\((-\infty,-2)\cup(0,+\infty)\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\([-2,0]\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\((-\infty,-2]\cup[0,+\infty)\)}\par}
+
+\begin{ansblock}[2章-练-课时07-T4]
+% ans:2章-练-课时07-T4
+\ansitem{4}{B}
+\ansnote{详解}{\(x^{2}\)与\(y^{2}\)系数均为1。\ \(D^{2}+E^{2}-4F=4a^{2}+16a^{2}+40a=20a(a+2)>0\Longrightarrow a>0\)或\(a<-2\)，选B。}
+\end{ansblock}
+
+\tihao{5}\zu{圆的一般方程与表圆条件×单选} \tieside{中档(知识点三)}已知点\(A(1,2)\)在圆\(C\)：\(x^{2}+y^{2}+mx-2y+2=0\)外，则实数\(m\)的取值范围为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\((-3,-2)\cup(2,+\infty)\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\((-3,-2)\cup(3,+\infty)\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\((-2,+\infty)\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\((-3,+\infty)\)}\par}
+
+\begin{ansblock}[2章-练-课时07-T5]
+% ans:2章-练-课时07-T5
+\ansitem{5}{A}
+\ansnote{详解}{表圆：\(m^{2}+(-2)^{2}-4\cdot 2>0\Longrightarrow m^{2}>4\Longrightarrow m>2\)或\(m<-2\)。点在圆外：\(1+4+m-4+2=m+3>0\Longrightarrow m>-3\)。取交：\((-3,-2)\cup(2,+\infty)\)，选A。}
+\end{ansblock}
+
+\tihao{6}\zu{圆的一般方程与表圆条件×单选} \tieside{中档(知识点三)}若圆\(C\)：\(x^{2}+y^{2}-2(m-1)x+2(m-1)y+2m^{2}-6m+4=0\)过坐标原点，则实数\(m\)的值为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(2\)或\(1\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(-2\)或\(-1\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(2\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(-1\)}\par}
+
+\begin{ansblock}[2章-练-课时07-T6]
+% ans:2章-练-课时07-T6
+\ansitem{6}{C}
+\ansnote{详解}{过原点\(\Longleftrightarrow F=2m^{2}-6m+4=0\Longrightarrow m=1\)或2。\par\noindent 表圆条件：\(D^{2}+E^{2}-4F=4(m-1)^{2}+4(m-1)^{2}-4(2m^{2}-6m+4)=8(m^{2}-2m+1)-8m^{2}+24m-16=8m-8>0\Longrightarrow m>1\)。舍\(m=1\)，得\(m=2\)，选C。}
+\end{ansblock}
+
+\tihao{7}\duoxuan\hspace{0.6em}\zu{圆的标准方程求法×多选} \tieside{中档(知识点一)}圆\((x-2)^{2}+y^{2}=5\)，则\nobreak(\kongwei)\par
+
+\lxopt{A．关于点\((2,0)\)对称}
+
+\lxopt{B．关于直线\(y=0\)对称}
+
+\lxopt{C．关于直线\(x+3y-2=0\)对称}
+
+\lxopt{D．关于直线\(x-y+2=0\)对称}
+
+\begin{ansblock}[2章-练-课时07-T7]
+% ans:2章-练-课时07-T7
+\ansitem{7}{ABC}
+\ansnote{详解}{圆心\((2,0)\)。圆关于圆心中心对称（A对）；圆心在\(x\)轴上\(\Longrightarrow\)关于\(y=0\)对称（B对）；\(x+3y-2=0\)过\((2,0)\)（\(2+0-2=0\)）\(\Longrightarrow\)过圆心的直线是圆的对称轴（C对）；\(x-y+2=0\)：\(2-0+2=4\neq 0\)不过圆心，D错。选ABC。}
+\end{ansblock}
+
+% ============================================================
+% 综合提升（题8~14＝T8~T14：单选2＋多选1＋填空4；题后紧跟答案制，全线括线 ansblock）
+% ============================================================
+\dangbadge{综}{合}{提}{升}
+
+\tihao{8}\zu{圆的一般方程与表圆条件×单选} \tieside{简单(知识点三)}已知圆\(C\)：\(x^{2}+y^{2}+2x-2my-4-4m=0\)（\(m\in R\)），则当圆\(C\)的面积最小时，圆上的点到坐标原点的距离的最大值为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\(\sqrt{5}\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\(6\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\(\sqrt{5}-1\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\(\sqrt{5}+1\)}\par}
+
+\begin{ansblock}[2章-练-课时07-T8]
+% ans:2章-练-课时07-T8
+\ansitem{8}{D}
+\ansnote{详解}{配方：\((x+1)^{2}+(y-m)^{2}=m^{2}+4m+5=(m+2)^{2}+1\)。\(r_{\min}=1\)当\(m=-2\)，此时圆心\((-1,-2)\)。\(|OC|=\sqrt{5}>r\)，圆上点到\(O\)距离最大\(=|OC|+r=\sqrt{5}+1\)，选D。}
+\end{ansblock}
+
+\tihao{9}\zu{圆的标准方程求法×单选} \tieside{中档(知识点一)}若圆\((x-3)^{2}+(y+5)^{2}=r^{2}\)上的点到直线\(4x-3y-2=0\)的最短距离为1，则圆的半径\(r\)为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\(4\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\(5\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\(6\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\(9\)}\par}
+
+\begin{ansblock}[2章-练-课时07-T9]
+% ans:2章-练-课时07-T9
+\ansitem{9}{A}
+\ansnote{详解}{圆心\((3,-5)\)。\(d=|12+15-2|/5=25/5=5\)。圆上点到直线最短距离\(=d-r\)（\(d>r\)时）\(=1\Longrightarrow r=4\)，选A。}
+\end{ansblock}
+
+\tihao{10}\duoxuan\hspace{0.6em}\zu{圆的标准方程求法×多选} \tieside{中档(知识点一)}若直线\(l\)将圆\(x^{2}+y^{2}-2x+4y-4=0\)平分，且在两坐标轴上的截距相等，则直线\(l\)的方程为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(x-y+1=0\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(x-2y=0\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(x+y+1=0\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(2x+y=0\)}\par}
+
+\begin{ansblock}[2章-练-课时07-T10]
+% ans:2章-练-课时07-T10
+\ansitem{10}{CD}
+\ansnote{详解}{圆心\((1,-2)\)。\(l\)平分圆\(\Longleftrightarrow l\)过圆心。截距相等分两类：①截距均为0：\(l\)过原点，\(k=-2/1=-2\)，\(l\)：\(2x+y=0\)（D对）；②截距\(a\neq 0\)：\(x/a+y/a=1\)，代入\((1,-2)\)：\((1-2)/a=1\Longrightarrow a=-1\)，\(l\)：\(x+y+1=0\)（C对）。\par\noindent 检验：A过\((1,-2)\)? \(1+2+1=4\neq 0\)；B过\((1,-2)\)? \(1+4=5\neq 0\)，均不过圆心。选CD。}
+\end{ansblock}
+
+\tihao{11}\zu{圆的一般方程与表圆条件×填空} \tieside{中档(知识点三)}圆心在直线\(2x-y-7=0\)上的圆\(C\)与\(y\)轴交于\(A(0,-4)\)，\(B(0,-2)\)两点，则圆\(C\)的一般方程为\kongda{x²+y²−4x+6y+8=0}．
+
+\begin{ansblock}[2章-练-课时07-T11]
+% ans:2章-练-课时07-T11
+\ansitem{11}{x²+y²−4x+6y+8=0}
+\ansnote{详解}{圆心在\(AB\)中垂线\(y=-3\)上，又在\(2x-y-7=0\)上：\(2x+3-7=0\Longrightarrow x=2\)，圆心\((2,-3)\)。\(r^{2}=4+(-3+4)^{2}=5\)。标准方程\((x-2)^{2}+(y+3)^{2}=5\)，展开：\(x^{2}+y^{2}-4x+6y+8=0\)。\par\noindent （验：\(A(0,-4)\)：\(16-24+8=0\)；\(B(0,-2)\)：\(4-12+8=0\)。）}
+\end{ansblock}
+
+\tihao{12}\zu{圆的标准方程求法×填空} \tieside{简单(知识点一)}圆心在\(x\)轴上且过点\((1,3)\)的一个圆的标准方程可以是\kongda{(x−1)²+y²=9（答案不唯一）}．（写出一个即可）
+
+\begin{ansblock}[2章-练-课时07-T12]
+% ans:2章-练-课时07-T12
+\ansitem{12}{(x−1)²+y²=9（答案不唯一）}
+\ansnote{详解}{圆心\((a,0)\)，\(r^{2}=(1-a)^{2}+9\)。取\(a=1\)：\(r=3\)，得\((x-1)^{2}+y^{2}=9\)。（一般形式\((x-a)^{2}+y^{2}=(1-a)^{2}+9\)，\(a\in R\)均合。）}
+\end{ansblock}
+
+\tihao{13}\zu{圆的标准方程求法×填空} \tieside{中档(知识点一)}已知点\(P(m,n)\)在圆\(C\)：\((x-2)^{2}+(y-2)^{2}=9\)上运动，则\((m+2)^{2}+(n+1)^{2}\)的最大值为\kongda{64}，最小值为\kongda{4}，\(\sqrt{m^{2}+n^{2}}\)的范围为\kongda{[3−2√2, 3+2√2]}．
+
+\begin{ansblock}[2章-练-课时07-T13]
+% ans:2章-练-课时07-T13
+\ansitem{13}{64；4；[3−2√2, 3+2√2]}
+\ansnote{详解}{\((m+2)^{2}+(n+1)^{2}=|P-(-2,-1)|^{2}\)。圆心\(C(2,2)\)，\(r=3\)；\(|C-(-2,-1)|=\sqrt{16+9}=5\)。距离范围\([5-3,5+3]=[2,8]\)，平方范围\([4,64]\)，最大64、最小4。\par\noindent \(\sqrt{m^{2}+n^{2}}=|PO|\)，\(|OC|=2\sqrt{2}<3\)，故范围\([3-2\sqrt{2},3+2\sqrt{2}]\)。}
+\end{ansblock}
+
+\tihao{14}\zu{圆的一般方程与表圆条件×填空} \tieside{中档(知识点三)}已知\(a\in R\)，方程\(a^{2}x^{2}+(a+2)y^{2}+4x+8y+5a=0\)表示圆，则圆心坐标是\kongda{(−2,−4)}，半径是\kongda{5}．
+
+\begin{ansblock}[2章-练-课时07-T14]
+% ans:2章-练-课时07-T14
+\ansitem{14}{(−2,−4)；5}
+\ansnote{详解}{表圆需\(a^{2}=a+2\Longrightarrow a=-1\)或2。\(a=2\)：\(4x^{2}+4y^{2}+4x+8y+10=0\)，除以4配方得半径平方为负，舍。\(a=-1\)：\(x^{2}+y^{2}+4x+8y-5=0\)，\((x+2)^{2}+(y+4)^{2}=25\)。圆心\((-2,-4)\)，半径5。}
+\end{ansblock}
+
+% ============================================================
+% 思维探索（题15~16＝T15~T16：解答2，居末档照库序；三问32mm／单问16mm）
+% ============================================================
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\zu{圆的一般方程与表圆条件×解答} \tieside{中档(知识点三)}已知曲线\(C\)：\((1+a)x^{2}+(1+a)y^{2}-4x+8ay=0\)．
+(1) 当\(a\)取何值时，方程表示圆？
+(2) 求证：不论\(a\)为何值，曲线\(C\)必过两定点．
+(3) 当曲线\(C\)表示圆时，求圆面积最小时\(a\)的值．
+\liubai[32mm]{解答书写区}
+
+\begin{ansblock}[2章-练-课时07-T15]
+% ans:2章-练-课时07-T15
+\ansitem{15}{(1) a≠−1；(2) 恒过 (0,0) 与 (16/5, −8/5)；(3) a=1/4}
+\ansnote{详解}{(1) \(a\neq -1\)时\(x^{2}\)、\(y^{2}\)系数同为\(1+a\neq 0\)，两边除以\((1+a)\)化一般式，\(D^{2}+E^{2}-4F=(16+64a^{2})/(1+a)^{2}>0\)恒成立，表圆；\(a=-1\)时二次项消失，方程退化为直线\(-4x-8y=0\)，不合。故\(a\neq -1\)。\par\noindent (2) 方程按\(a\)整理：\((x^{2}+y^{2}-4x)+a(x^{2}+y^{2}+8y)=0\)。两定点须对一切\(a\)成立\(\Longleftrightarrow x^{2}+y^{2}-4x=0\)且\(x^{2}+y^{2}+8y=0\)。相减：\(4x+8y=0\)，\(x=-2y\)。代入\(x^{2}+y^{2}-4x=0\)：\(5y^{2}=0\)得\((0,0)\)；代入\(x^{2}+y^{2}+8y=0\)：\(5y^{2}+8y=0\Longrightarrow y=0\)（已得）或\(y=-8/5\)，\(x=16/5\)。定点\((0,0)\)与\((16/5,-8/5)\)。（验\((16/5,-8/5)\)：\(x^{2}+y^{2}=256/25+64/25=320/25\)；\(4x=64/5=320/25\)；\(8y=-64/5\)，两式皆零。）\par\noindent (3) 表圆时\(r^{2}=[4+16a^{2}]/(1+a)^{2}\)。令\(f(a)=(4+16a^{2})/(1+a)^{2}\)（\(a\neq -1\)），\(f'(a)=[32a(1+a)-2(4+16a^{2})]/(1+a)^{3}=(32a-8)/(1+a)^{3}\)，驻点\(a=1/4\)。符号按分支定号：①\(a>1/4\)：分子\(32a-8>0\)、分母\((1+a)^{3}>0\)，\(f'>0\)；②\(-1<a<1/4\)：分子\(<0\)、分母\(>0\)，\(f'<0\)；③\(a<-1\)：分子\(<0\)，但分母\((1+a)^{3}<0\)，\(f'>0\)——该支\(f\)单调递增且\(a\to -1^{-}\)时\(f\to+\infty\)、\(f\)恒大于\(16>16/5\)，不产生最小值。故\(f\)仅在\(a=1/4\)处取得最小值（\(16/5\)）。（几何：定点弦\((0,0)\)—\((16/5,-8/5)\)为公共弦，圆族中过两定点的圆以该弦为直径时半径最小，与上互证。）故\(a=1/4\)。}
+\end{ansblock}
+
+\tihao{16}\zu{圆的一般方程与表圆条件×解答} \tieside{中档(知识点三)}已知圆\(C\)：\(x^{2}+y^{2}+Dx+Ey+3=0\)，圆心在直线\(x+y-1=0\)上，且圆心在第二象限，半径长为\(\sqrt{2}\)，求圆的一般方程．
+\liubai[16mm]{解答书写区}
+
+\begin{ansblock}[2章-练-课时07-T16]
+% ans:2章-练-课时07-T16
+\ansitem{16}{x²+y²+2x−4y+3=0}
+\ansnote{详解}{圆心\((-D/2,-E/2)\)在\(x+y-1=0\)上：\(-D/2-E/2-1=0\Longrightarrow D+E=-2\)。\par\noindent \(r^{2}=(D^{2}+E^{2}-4F)/4=(D^{2}+E^{2}-12)/4=2\Longrightarrow D^{2}+E^{2}=20\)。由\(E=-2-D\)：\(D^{2}+(D+2)^{2}=20\Longrightarrow 2D^{2}+4D-16=0\Longrightarrow D^{2}+2D-8=0\Longrightarrow D=2\)或\(-4\)。\(D=2\Longrightarrow E=-4\)，圆心\((-1,2)\)第二象限；\(D=-4\Longrightarrow E=2\)，圆心\((2,-1)\)第四象限，舍。故\(D=2\)，\(E=-4\)，圆的一般方程\(x^{2}+y^{2}+2x-4y+3=0\)。（验\(r^{2}=(4+16-12)/4=2\)。）}
+\end{ansblock}
+
+% ---- 尾块（\tailfill 置 \end{multicols} 前；无参＝内容尾随框，每件恰 1 处） ----
+\tailfill
+
+\end{multicols}
+\end{document}

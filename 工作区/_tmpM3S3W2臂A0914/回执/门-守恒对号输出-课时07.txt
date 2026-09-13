@@ -1,0 +1,33 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+== ① tex 层 ==
+  [绿] 锚数=16｜16
+  [绿] 块数=16｜16
+  [绿] 锚集合≡manifest练键集合(双向diff)｜缺[] 浮[]
+  [绿] 块集合≡锚集合(双向diff)
+  [绿] 锚序＝manifest练键序＝印面装配序
+  [绿] ansitem 号序≡1..16 连号｜16枚
+  [绿] ansnote{详解} 计数=16（题后紧跟制·键键有详解）｜16
+  [绿] 拓区隔离：件键集零 拓/测/滚 前缀｜[]
+  [绿] 拓区隔离：tex 全文「2章-拓-」×0｜0
+  [绿] 拓区隔离：tex 全文「2章-测-」×0｜0
+  [绿] 拓区隔离：tex 全文「2章-滚-」×0｜0
+== ② log 层 ==
+  [绿] true ANSKEY 集合≡manifest练键集(双向diff)｜16键
+  [绿] false ANSKEY 集合≡manifest练键集(双向diff)｜16键
+  [绿] 两档 ANSKEY 16 逐位同序（同装配序编译）
+  [绿] 拓区隔离：log 两档键集零 拓/测/滚 前缀｜[]
+== ③ PDF 层 ==
+  [绿] true 号序≡1..16 连号(对号门)｜16枚
+  [绿] true [答案] 总计=16｜16
+  [绿] true [详解] 计数≡tex ansnote｜16/16
+  [绿] false [答案]＝0｜0
+  [绿] false [详解]＝0｜0
+  [绿] false 泄答词「证明见详解」＝0｜0
+  [绿] false 泄答词「证明过程」＝0｜0
+  [绿] false 泄答词「[答案]」＝0｜0
+  [绿] false 泄答词「[详解]」＝0｜0
+  [绿] 尾块「笔记与错题整理」true 恰1｜1
+  [绿] 尾块「笔记与错题整理」false 恰1｜1
+  [绿] 页数 false≤true｜true=3 false=2
+
+守恒对号门： 全绿
