@@ -1,0 +1,46 @@
+M3 成卷轮 S2 波1 补位臂3·门谱全项终检复跑记录｜2026-09-14
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ 课时09 课时09-圆与圆的位置关系
+  sty锁 md5=7c3930362be8a0a2bdf21bbf8ac16573 合
+  编译 main-false（×2 遍后读数）: 错0 溢0 under0 缺字0 ANSKEY21
+  编译 main-true（×2 遍后读数）: 错0 溢0 under0 缺字0 ANSKEY21
+  页数双档: true=5 false=3（false≤true 合）
+  门-守恒对号.py: 守恒对号门： 全绿
+  门-值快照键型判模.py: 值快照键型判模门： 全绿
+  门-回流.py: 回流门： 全绿（零强制跳页）
+  键账对平门: [PASS] 键账三源集合对平（对集合不对数）
+  makebox槽宽门 --mode zero-fp: [PASS] 槽宽门全过（零误报档｜槽43／旗0）
+  makebox槽宽门 --mode strict: [PASS] 槽宽门全过（严格档｜槽43／旗0）
+  CJK 审计: 零命中
+  台账指纹↔盘上: tex合 true合 false合｜items 21 键
+
+◆ 课时14 课时14-2.6.2双曲线性质
+  sty锁 md5=7c3930362be8a0a2bdf21bbf8ac16573 合
+  编译 main-false（×2 遍后读数）: 错0 溢0 under0 缺字0 ANSKEY71
+  编译 main-true（×2 遍后读数）: 错0 溢0 under0 缺字0 ANSKEY71
+  页数双档: true=18 false=8（false≤true 合）
+  门-守恒对号.py: 守恒对号门： 全绿
+  门-值快照键型判模.py: 值快照键型判模门： 全绿
+  门-回流.py: 回流门： 全绿（零强制跳页）
+  键账对平门: [PASS] 键账三源集合对平（对集合不对数）
+  makebox槽宽门 --mode zero-fp: [PASS] 槽宽门全过（零误报档｜槽68／旗0）
+  makebox槽宽门 --mode strict: [PASS] 槽宽门全过（严格档｜槽68／旗0）
+  CJK 审计: 零命中
+  台账指纹↔盘上: tex合 true合 false合｜items 71 键
+
+◆ 课时15 课时15-2.7.1抛物线方程
+  sty锁 md5=7c3930362be8a0a2bdf21bbf8ac16573 合
+  编译 main-false（×2 遍后读数）: 错0 溢0 under0 缺字0 ANSKEY36
+  编译 main-true（×2 遍后读数）: 错0 溢0 under0 缺字0 ANSKEY36
+  页数双档: true=10 false=5（false≤true 合）
+  门-守恒对号.py: 守恒对号门： 全绿
+  门-值快照键型判模.py: 值快照键型判模门： 全绿
+  门-回流.py: 回流门： 全绿（零强制跳页）
+  键账对平门: [PASS] 键账三源集合对平（对集合不对数）
+  makebox槽宽门 --mode zero-fp: [PASS] 槽宽门全过（零误报档｜槽40／旗0）
+  makebox槽宽门 --mode strict: [PASS] 槽宽门全过（严格档｜槽40／旗0）
+  CJK 审计: 零命中
+  台账指纹↔盘上: tex合 true合 false合｜items 36 键
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+终检判定：三片门谱全项全绿
