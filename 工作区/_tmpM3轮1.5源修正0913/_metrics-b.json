@@ -1,0 +1,82 @@
+{
+ "D 人教B版选必1 第2章 平面解析几何（2.8）·": {
+  "old": {
+   "bytes": 2522608,
+   "entries": 87,
+   "media": 68,
+   "paras": 1776,
+   "tables": 3,
+   "drawings": 79,
+   "blips": 79,
+   "omath": 4034,
+   "omathpara": 780,
+   "rad": 521,
+   "frac": 1957,
+   "shd_all": 293,
+   "pBdr": 101,
+   "rels": 78,
+   "chars": 90369,
+   "sha_text": "b286023e67cf",
+   "sha_docxml": "aada992fbfec"
+  },
+  "new": {
+   "bytes": 2522080,
+   "entries": 87,
+   "media": 68,
+   "paras": 1776,
+   "tables": 3,
+   "drawings": 79,
+   "blips": 79,
+   "omath": 4030,
+   "omathpara": 780,
+   "rad": 521,
+   "frac": 1957,
+   "shd_all": 293,
+   "pBdr": 101,
+   "rels": 78,
+   "chars": 90280,
+   "sha_text": "bd5504af9604",
+   "sha_docxml": "7840c571d6e0"
+  }
+ },
+ "S 模块8大招2动点问题处理策略（解题大招）.doc": {
+  "old": {
+   "bytes": 898415,
+   "entries": 66,
+   "media": 49,
+   "paras": 318,
+   "tables": 0,
+   "drawings": 64,
+   "blips": 64,
+   "omath": 546,
+   "omathpara": 546,
+   "rad": 43,
+   "frac": 118,
+   "shd_all": 317,
+   "pBdr": 0,
+   "rels": 57,
+   "chars": 9452,
+   "sha_text": "5b4ce47c0563",
+   "sha_docxml": "3bb90264a344"
+  },
+  "new": {
+   "bytes": 898410,
+   "entries": 66,
+   "media": 49,
+   "paras": 318,
+   "tables": 0,
+   "drawings": 64,
+   "blips": 64,
+   "omath": 546,
+   "omathpara": 546,
+   "rad": 43,
+   "frac": 118,
+   "shd_all": 317,
+   "pBdr": 0,
+   "rels": 57,
+   "chars": 9452,
+   "sha_text": "6b8ecf8d0714",
+   "sha_docxml": "11071755200c"
+  }
+ }
+}

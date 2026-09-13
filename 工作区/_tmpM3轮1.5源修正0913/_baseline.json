@@ -1,0 +1,38 @@
+{
+ "A": {
+  "file": "高中数学/高中数学同步/人教B版选必1 第2章 平面解析几何（2.3.4—2.5.2）·讲练件（90题）.docx",
+  "bytes": 3101530,
+  "sha256_zip": "23e1694e42645208",
+  "sha256_docxml": "5fbe955d50d6d3ab",
+  "entries": 83,
+  "media": 64,
+  "paras": 1532,
+  "tables": 4,
+  "drawings": 66,
+  "blips": 66,
+  "omath": 2914,
+  "rad": 415,
+  "frac": 1119,
+  "rels": 74,
+  "chars": 68839,
+  "sha256_text": "f964154187da97e6"
+ },
+ "S": {
+  "file": "高中数学/参考/组卷网/高中数学解题大招（二级结论）荟萃/04_原始资料/模块8解析几何/模块8大招2动点问题处理策略（解题大招）.docx",
+  "bytes": 903655,
+  "sha256_zip": "5ba7601f42fab0d9",
+  "sha256_docxml": "c0aaa567c20cd850",
+  "entries": 66,
+  "media": 49,
+  "paras": 318,
+  "tables": 0,
+  "drawings": 64,
+  "blips": 64,
+  "omath": 546,
+  "rad": 45,
+  "frac": 118,
+  "rels": 57,
+  "chars": 9452,
+  "sha256_text": "811ced96218ae82f"
+ }
+}

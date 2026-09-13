@@ -1,0 +1,82 @@
+{
+ "A 成品卷②": {
+  "old": {
+   "bytes": 3101530,
+   "entries": 83,
+   "media": 64,
+   "paras": 1532,
+   "tables": 4,
+   "drawings": 66,
+   "blips": 66,
+   "omath": 2914,
+   "omathpara": 5,
+   "rad": 415,
+   "frac": 1119,
+   "shd_all": 537,
+   "rids": 7913,
+   "rels": 74,
+   "chars": 68839,
+   "sha_text": "f964154187da",
+   "sha_docxml": "5fbe955d50d6"
+  },
+  "new": {
+   "bytes": 3101414,
+   "entries": 83,
+   "media": 64,
+   "paras": 1531,
+   "tables": 4,
+   "drawings": 66,
+   "blips": 66,
+   "omath": 2914,
+   "omathpara": 5,
+   "rad": 415,
+   "frac": 1119,
+   "shd_all": 537,
+   "rids": 7911,
+   "rels": 74,
+   "chars": 68811,
+   "sha_text": "9e942560b56c",
+   "sha_docxml": "391e0b5f08bf"
+  }
+ },
+ "S 大招2源": {
+  "old": {
+   "bytes": 903655,
+   "entries": 66,
+   "media": 49,
+   "paras": 318,
+   "tables": 0,
+   "drawings": 64,
+   "blips": 64,
+   "omath": 546,
+   "omathpara": 546,
+   "rad": 45,
+   "frac": 118,
+   "shd_all": 317,
+   "rids": 1281,
+   "rels": 57,
+   "chars": 9452,
+   "sha_text": "811ced96218a",
+   "sha_docxml": "c0aaa567c20c"
+  },
+  "new": {
+   "bytes": 898415,
+   "entries": 66,
+   "media": 49,
+   "paras": 318,
+   "tables": 0,
+   "drawings": 64,
+   "blips": 64,
+   "omath": 546,
+   "omathpara": 546,
+   "rad": 43,
+   "frac": 118,
+   "shd_all": 317,
+   "rids": 1281,
+   "rels": 57,
+   "chars": 9452,
+   "sha_text": "5b4ce47c0563",
+   "sha_docxml": "3bb90264a344"
+  }
+ }
+}

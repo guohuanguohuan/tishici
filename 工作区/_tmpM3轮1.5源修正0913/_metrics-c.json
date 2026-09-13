@@ -1,0 +1,82 @@
+{
+ "D 人教B版选必1 第2章 平面解析几何（2.8）·": {
+  "old": {
+   "bytes": 2522080,
+   "entries": 87,
+   "media": 68,
+   "paras": 1776,
+   "tables": 3,
+   "drawings": 79,
+   "blips": 79,
+   "omath": 4030,
+   "omathpara": 780,
+   "rad": 521,
+   "frac": 1957,
+   "shd_all": 293,
+   "pBdr": 101,
+   "rels": 78,
+   "chars": 90280,
+   "sha_text": "bd5504af9604",
+   "sha_docxml": "7840c571d6e0"
+  },
+  "new": {
+   "bytes": 2521966,
+   "entries": 87,
+   "media": 68,
+   "paras": 1776,
+   "tables": 3,
+   "drawings": 79,
+   "blips": 79,
+   "omath": 4028,
+   "omathpara": 780,
+   "rad": 521,
+   "frac": 1957,
+   "shd_all": 293,
+   "pBdr": 101,
+   "rels": 78,
+   "chars": 90224,
+   "sha_text": "dfff684a75b2",
+   "sha_docxml": "56e6297c8ed5"
+  }
+ },
+ "S 人教B版选必1 第2章 平面解析几何（2.8）·": {
+  "old": {
+   "bytes": 2522080,
+   "entries": 87,
+   "media": 68,
+   "paras": 1776,
+   "tables": 3,
+   "drawings": 79,
+   "blips": 79,
+   "omath": 4030,
+   "omathpara": 780,
+   "rad": 521,
+   "frac": 1957,
+   "shd_all": 293,
+   "pBdr": 101,
+   "rels": 78,
+   "chars": 90280,
+   "sha_text": "bd5504af9604",
+   "sha_docxml": "7840c571d6e0"
+  },
+  "new": {
+   "bytes": 2521966,
+   "entries": 87,
+   "media": 68,
+   "paras": 1776,
+   "tables": 3,
+   "drawings": 79,
+   "blips": 79,
+   "omath": 4028,
+   "omathpara": 780,
+   "rad": 521,
+   "frac": 1957,
+   "shd_all": 293,
+   "pBdr": 101,
+   "rels": 78,
+   "chars": 90224,
+   "sha_text": "dfff684a75b2",
+   "sha_docxml": "56e6297c8ed5"
+  }
+ }
+}
