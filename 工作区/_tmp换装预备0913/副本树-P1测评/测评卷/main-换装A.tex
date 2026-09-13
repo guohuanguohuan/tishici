@@ -1,0 +1,402 @@
+% —— 副本树-P1测评 试迁件（由 main.tex 机器迁移生成；正件 main.tex 只读对照）——
+% —— 案＝A｜A＝逐题块尾 ansblock（草案 §1.2 测评行字面口径）／B＝卷末答案附卷（件面物理约束替代）——
+% ============================================================
+% 成卷/测评卷/main.tex —— P1 轮4 成卷·批5b（第9章 静电场及其应用 单元素养测评卷（一），答案制A·正文侧）
+% 卷式＝PL1 物理样张测评卷冻结卷式（工作区/物理样张0911/测评卷/main.tex）原样承件型层：
+%   8 开横放三栏（左右缘 8.9mm／栏宽 120.0mm／栏距 11.0mm／顶 12.0mm／底 17.6mm／footskip 7.1mm）、
+%   10.5pt 宋体／行距主峰 17.7pt、字内距 0.04em、丝带角饰「物理」灰210＋灰166、卷头 JT-01~06 基线距、
+%   题区 TJ-02 悬挂题号（内收 5.7mm）／TJ-05 分值括注／TJ-07 选项行 19pt／TJ-08 \kw 固定列位、
+%   形制 C 页脚（\qpFootTextRow·YJ-02 文字行）＋品牌位开（\qpbrandtrue＝羿郭工作室）、二次 \geometry 后
+%   \setlength{\headwidth}{\textwidth}（骨架 README §四-C 坑规）。卷末速查表（「××速查」印面题名见宏体）承 M2 数学测评卷先例
+%   （看板八十三⑤登记项），本件因 12~14 题取值含长单位式与三空，19 列单表必 Overfull →
+%   改「选择题 11 列单表＋填空/解答流水行」式（件型层偏离已登记于 批5b值台账 §六）。
+% 结构＝19 题／100 分／90 分钟：一、单选 8×4＝32｜二、多选 3×6＝18｜三、填空 3×5＝15｜
+%   四、解答 5 题＝35（5/6/6/8/10）。章覆盖＝9.1×5（1,2,9,12,15）＋9.2×5（3,4,10,17,18）
+%   ＋9.3×5（5,6,13,16,19）＋9.4×4（7,8,11,14）。
+% 取材＝16 题取自本册 成卷/练习件 四件成品 LaTeX（14 题逐题照抄＋2 题随件题型适配＝测14 中24 选择→填空三空、
+%   测19 冲4 选择→直接解答；宏换卷式件层：\tihao→\ti{n}、\lxopt→\optline、\tieside 与 \duoxuan 撤出＝
+%   卷面零键值零标签、题侧标不印）、3 题照抄 成卷/拓展册 成品（拓43→测8、拓17→测10、拓40→测13）；
+%   16＋3＝19 题闭合；全部取值以各批值台账为唯一依据。
+% 答案制A：正文 0 答案宏——选择题行尾只挂（　）＝TJ-08 \kw；卷末「答案速查」＝全品式登记项（形制件，非题面答案）。
+% 图红线：figs/ ＝源 docx word/media 位图原样提取或正文件同 md5 复用（仅改名零加工；照片/彩色源图原样保留）；
+%   禁矢量化重绘／禁 AI 三维；显示宽全部 ≤78mm（栏宽 84mm 硬闸内）。源位图对账见 批5b值台账 §二。
+% 编译：xelatex ×2（三 0）；目验：python 工作区/物理样张0911/骨架/render.py . main 150。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}   % 自动装载 qp-phy-params.tex
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% —— 换装 overlay 挂接（副本树试迁；七模块后、\begin{document} 前，承 sty 头用法）——
+\usepackage{qp-m3p-overlay}
+\ansblockgrayfalse % P1 测评卷＝8开横放三栏不可回流件型：ansblock 一律括线模（草案 §1.2 测评行＋§5.1；试迁实测另见报告）
+% \jpcol 局部补丁（试迁实证·必打）：PL1 \jpcol vtop 只设 \hsize 未设 \linewidth，
+%   overlay 括线模/尾块 \rule{\linewidth} 按外层 382mm 出栏＝Overfull \hbox 745pt×40。
+%   本补丁＝原件 \jpcol 同体＋\linewidth\jpcolw 钉栏宽（零删改，\AtBeginDocument 后置覆盖，纯插入）。
+\AtBeginDocument{\renewcommand{\jpcol}[1]{\raisebox{0pt}[0pt][0pt]{\vtop{\hsize\jpcolw\linewidth\jpcolw\parskip0pt\parindent0pt\fontsize{10.5pt}{17.7pt}\selectfont\relax#1}}}}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpjianming}{测评卷}
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+% \juanname＝默认 单元素养测评卷（一）；\qpbuce＝默认 必修第三册；\qpbbiaoS＝默认 RJ——本件均随默认。
+\qpbrandtrue       % 品牌位开（形制 C 偶页 LE＝羿郭工作室）
+\qpFootTextRow     % 页脚换形制 C（YJ-02 文字行·测评卷档，覆盖默认形制 A 灰块）
+
+% ------------------------------------------------------------
+% 件型层 A｜页面：8 开横放三栏（PL1 冻结档照抄）
+% ------------------------------------------------------------
+\geometry{paperwidth=399.8mm,paperheight=284.2mm,left=8.9mm,right=8.9mm,
+  top=12.0mm,bottom=17.6mm,twoside,headheight=0pt,headsep=0pt,footskip=7.1mm}
+\setlength{\topskip}{0pt}          % 首行基线＝版心顶（配合 \jpcol 零高参考盒，三栏等高起排）
+\raggedbottom                      % 测评卷栏底自然参差，不强拉 flush
+\renewcommand{\normalsize}{\fontsize{10.5pt}{17.7pt}\selectfont}  % 测评卷：10.5pt 宋体／行距主峰 17.7pt
+\linespread{1}\normalsize
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newlength{\jpcolw}\setlength{\jpcolw}{120.0mm}
+\newlength{\jpgap}\setlength{\jpgap}{11.0mm}
+% 字内距件型级覆盖：导学件 0.10em → 测评卷实测 0.04em（数学件型层档随带）
+\xeCJKsetup{CJKglue={\hskip 0.04em plus 0.04em minus 0.01em}}
+
+% 色档（扫描页实测灰值直译；零件库登记值见 qp-parts JT-01/03/04 注）
+\definecolor{silklight}{gray}{0.8235}   % 灰210 浅带（\qpJTaGrayLight）
+\definecolor{silkdark}{gray}{0.6510}    % 灰166 深带（\qpJTaGrayDeep）
+\definecolor{juanrule}{gray}{0.1255}    % 灰32 卷名下划线（\qpJTcRuleGray）
+\definecolor{subgrey}{gray}{0.4}        % 灰102 副题（\qpJTdGray）
+
+% ------------------------------------------------------------
+% 件型层 B｜JT-01 丝带角饰——TikZ 矢量零件（卷头形制件，非题图——图红线不涉）
+%   几何＝数学 p01 逐像素实测档原样照抄；白字「数学」改「物理」
+% ------------------------------------------------------------
+\newcommand{\juanmathSize}{17pt}
+\newcommand{\sishou}{%
+  \begin{tikzpicture}[overlay,remember picture,x=1mm,y=1mm]
+    \path (current page.north west) coordinate (O);
+    \begin{scope}[shift={(O)}]
+      \fill[silklight] (6.9,-9.39) -- (40.1,-9.39) -- (6.9,-42.59) -- cycle;
+      \draw[white,line width=0.28mm] (9.21,-40.29) -- (9.21,-11.63) -- (37.87,-11.63);
+      \fill[silkdark] (22.94,-8.21) -- (34.15,-8.21) -- (5.78,-36.58) -- (5.78,-25.37) -- cycle;
+      % 两端折影：外缘斜边外侧各一枚直角边 1.0mm 的等腰直角小三角（实测灰同 166）
+      \fill[silkdark] (34.15,-8.21) -- (34.15,-9.20) -- (33.16,-9.20) -- cycle;
+      \fill[silkdark] (5.78,-36.58) -- (6.78,-36.58) -- (6.78,-35.58) -- cycle;
+      \node[white,inner sep=0pt,anchor=center,rotate=45] at (17.23,-19.74)
+        {\fontsize{\juanmathSize}{\juanmathSize}\selectfont\heitiao 物理};
+    \end{scope}
+  \end{tikzpicture}}
+
+% ------------------------------------------------------------
+% 件型层 C｜卷头零件（JT-02～JT-06）＋题区零件（TJ-02/05/07/08）——照 PL1 卷式
+% ------------------------------------------------------------
+\newcommand{\zeroheight}[1]{\raisebox{0pt}[0pt][0pt]{#1}}
+\newcommand{\jpcen}[1]{\hbox to\jpcolw{\hfil\zeroheight{#1}\hfil}\nointerlineskip}
+\newcommand{\jpright}[1]{\hbox to\jpcolw{\hfill\zeroheight{#1}}\nointerlineskip}
+\newcommand{\vgt}[1]{\par\vskip\dimexpr#1-6.25mm\relax}
+
+% JT-02 填写行：标签黑体加粗 11pt 纯黑＋冒号＋下划线 10.4mm×0.2mm，三组间距 1.4mm
+\newcommand{\tianxieg}[1]{{\fontsize{\qpJTbLabelSize}{13pt}\selectfont\heitiao #1：}%
+  \rule[-0.62mm]{\qpJTbLineLen}{0.2mm}}
+\newcommand{\jtianxie}{\tianxieg{班级}\hspace{\qpJTbGapGrp}\tianxieg{姓名}%
+  \hspace{\qpJTbGapGrp}\tianxieg{得分}}
+% JT-03 卷名：黑体加粗纯黑＋下划线 0.4pt×71.0mm 灰32；卷名串走 \juanname 与页脚对账
+\newcommand{\juanmingSize}{20.5pt}
+\newcommand{\jjuanming}{{\fontsize{\juanmingSize}{26pt}\selectfont\heizhang
+  \renewcommand{\CJKglue}{\hskip 0pt}\juanname}}
+\newcommand{\jjunrule}{{\color{juanrule}\rule{\qpJTcRuleLen}{\qpJTcRule}}}
+% JT-04 副题：14pt 黑体加粗 灰102 居中＝本章章名
+\newcommand{\jfuti}{{\fontsize{\qpJTdSize}{18pt}\selectfont\heitiao\color{subgrey}%
+  \renewcommand{\CJKglue}{\hskip 0pt}第9章\quad 静电场及其应用}}
+% JT-05 时间分值行：10.5pt 宋体常规 居中
+\newcommand{\jptime}{{\fontsize{\qpJTeSize}{17.7pt}\selectfont（时间：90分钟\quad 分值：100分）}}
+% JT-06 分区组行：组名黑体加粗＋说明宋体常规，同号 10.5pt 同行；续行内收 5.7mm（TJ-02 实测）
+\newcommand{\zuhang}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{\qpJTfSize}{17.7pt}\selectfont\heitiao #1}#2\par}
+% TJ-02 悬挂题号：半角「N.」特粗黑体数字 11.4pt＋隙 2.7mm，续行内收 5.7mm
+\newcommand{\ti}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{11.4pt}{17.7pt}\selectfont\heihao{\numboldjian #1}.}\hspace{2.7mm}#2\par}
+% TJ-05 分值括注（题号后、宋体常规同号）
+\newcommand{\fenzhi}[1]{（#1分）}
+% TJ-07 选项行：10.5pt 常规、行距 19pt；整行内收 5.7mm；4/2/1 项每行网格
+\newcommand{\optline}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  {\fontsize{10.5pt}{19pt}\selectfont #1}\par}
+% 两项槽距 53.05mm／四项槽距 21.5mm＝数学扫描页 p01 实测档（同栏宽 120mm 随带）
+\newcommand{\optII}[2]{\makebox[53.05mm][l]{#1}#2}
+\newcommand{\optIV}[4]{\makebox[21.5mm][l]{#1}\makebox[21.5mm][l]{#2}\makebox[21.5mm][l]{#3}#4}
+% TJ-08 括号固定列位：右括号右缘距栏右 5.4mm
+\newcommand{\kw}{\hfill（\hspace{3.6mm}）\hspace*{5.4mm}}
+% 解答书写位（承批1~4 \xiexwei 口径：#1 minus 3mm 弹性）
+\newcommand{\xiexwei}[1]{\par\nobreak\vspace{#1 minus 3mm}}
+
+% 卷头基线距（数学扫描页实测档随带）
+\newdimen\hA \hA=3.03mm    % 版心顶→填写行基线（JT-02）
+\newdimen\hB \hB=12.12mm   % 填写行→卷名基线（JT-03）
+\newdimen\hC \hC=1.89mm    % 卷名→下划线
+\newdimen\hD \hD=5.95mm    % 下划线→副题基线（JT-04）
+\newdimen\hE \hE=8.04mm    % 副题→时间行基线（JT-05）
+\newdimen\hF \hF=5.70mm    % 时间行→组行段顶（JT-06）
+\newdimen\hG \hG=6.35mm    % 组行末→首题基线
+\newcommand{\jphead}{\hbox to\jpcolw{\sishou\hfill}\nointerlineskip
+  \vskip\hA\jpright{\jtianxie}%
+  \vskip\hB\jpcen{\jjuanming}%
+  \vskip\hC\jpcen{\jjunrule}%
+  \vskip\hD\jpcen{\jfuti}%
+  \vskip\hE\jpcen{\jptime}%
+  \vskip\hF
+  \zuhang{一、选择题}{：本题共8小题，每小题4分，共32分.\ 在每小题给出的四个选项中，只有一项是符合题目要求的.}%
+  \vgt{\hG}}
+
+% ------------------------------------------------------------
+% 件型层 D｜形制 C 页脚（\qpFootTextRow）随 8 开横放的 \headwidth 钉回（骨架 README §四-C 坑规）
+% ------------------------------------------------------------
+\setlength{\headwidth}{\textwidth}
+
+% ------------------------------------------------------------
+% 件型层 E｜三栏排布器（照 PL1 卷式：三栏顶边等高起排于版心顶，零高参考盒）
+% ------------------------------------------------------------
+\newcommand{\jpcol}[1]{\raisebox{0pt}[0pt][0pt]{\vtop{\hsize\jpcolw\parskip0pt\parindent0pt
+  \fontsize{10.5pt}{17.7pt}\selectfont\relax#1}}}
+\newcommand{\jpthree}[3]{\nointerlineskip\noindent\jpcol{#1}\hspace{\jpgap}\jpcol{#2}%
+  \hspace{\jpgap}\jpcol{#3}\par}
+\newcommand{\jplead}{\hbox{}\nointerlineskip}
+
+% 卷末速查表（承 M2 数学测评卷先例＝全品式登记项；式＝选择题 1~11 列单表＋填空/解答流水行，见头注）
+\newcommand{\datu}[1]{{\fontsize{9pt}{12pt}\selectfont #1}}
+\newcommand{\dabiao}{%
+  \par\vgt{\hG}\noindent{\fontsize{10.5pt}{17.7pt}\selectfont\heitiao 答案速查}\par\nopagebreak
+  \vskip 1.2mm\noindent\datu{\setlength{\tabcolsep}{1.4pt}%
+  \begin{tabular}{|c|*{11}{c|}}
+  \hline
+  题号 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \hline
+  答案 & B & A & C & D & C & D & B & D & AC & CD & AC \\ \hline
+  \end{tabular}}\par
+  \vskip 1.2mm\noindent\datu{12．带负电；带正电；张开\quad 13．$<$；$\unit{kg\cdot m^{3}\cdot s^{-4}\cdot A^{-2}}$}%
+  \par\vskip 0.6mm\noindent\datu{14．处处为零；$\frac{4kq}{(2R+l)^{2}}$；水平向左（指向 $q$ 一侧）\quad 15．$-\frac{q}{4}$}%
+  \par\vskip 0.6mm\noindent\datu{16．$mgtan\alpha$；$\frac{mgtan\alpha}{q}$，水平向右；$\frac{mgr^{2}tan\alpha}{kq}$%
+  \quad 17．$12$\unit{N}；$6\times10^{-5}$\unit{C}；$1.6$\unit{kg}}%
+  \par\vskip 0.6mm\noindent\datu{18．$\frac{kq^{2}}{gL^{2}}$；$2\sqrt{3}g$\quad 19．$\left|\frac{3kq}{8R^{2}}-2E\right|$}%
+  \par}
+
+\begin{document}
+% ===================== 第 1 页＝卷头页（栏1 卷头＋题1~3；栏2 题4~6；栏3 题7~9） =====================
+\jpthree{\jphead
+  % 题1｜9.1 练习件题1（简1·源Q3）｜单选 4 分
+  \ti{1}{如图所示，用金属箔做成一个不带电的圆环放在绝缘桌面上，某同学用与毛皮摩擦的橡胶笔套慢慢靠近圆环，圆环最后被吸到笔套上，下列说法正确的是\kw}
+  \qpfig[30]{题1-笔套与金属箔圆环}
+  \optline{A．笔套的起电方式属于接触起电；}
+  \optline{B．笔套靠近圆环过程中，圆环上靠近笔套一侧带正电；}
+  \optline{C．笔套接触圆环后，圆环带正电；}
+  \optline{D．笔套接触圆环后，笔套所带的电荷全部被中和}
+  \begin{ansblock}[测-1]
+  % ans:测-1
+  \ansitem{1}{B}
+  \end{ansblock}
+  % 题2｜9.1 练习件题3（简2·源Q11）｜单选 4 分
+  \ti{2}{关于电荷，下列说法正确的是\kw}
+  \optline{A．在国际单位制中，电荷量的单位是库仑；}
+  \optline{B．元电荷 $e$ 的数值，最早是科学家卡文迪什测得的；}
+  \optline{C．电荷量很小的电荷就是元电荷；}
+  \optline{D．物体所带的电荷量可以是任意的}
+  \begin{ansblock}[测-2]
+  % ans:测-2
+  \ansitem{2}{A}
+  \end{ansblock}
+  % 题3｜9.2 练习件题1（简1·源Q14）｜单选 4 分
+  \ti{3}{$A$、$B$、$C$ 三点在同一直线上，$AB:BC=1:1$，$B$ 点位于 $A$、$C$ 之间，在 $A$ 处固定一电荷量为 $Q$ 的点电荷。当在 $B$ 处放一电荷量为 $-q$ 的点电荷时，$Q$ 所受的静电力为 $F$；移去 $B$ 处电荷，在 $C$ 处放一电荷量为 $-2q$ 的点电荷，则 $Q$ 所受的静电力为\kw}
+  \qpfig[62]{题3-共线三点ABC}
+  \optline{\optII{A．$\frac{F}{8}$；}{B．$\frac{F}{4}$；}}
+  \optline{\optII{C．$\frac{F}{2}$；}{D．$F$}}
+  \begin{ansblock}[测-3]
+  % ans:测-3
+  \ansitem{3}{C}
+  \end{ansblock}
+}{\jplead
+  % 题4｜9.2 练习件题7（简7·47题15）｜单选 4 分
+  \ti{4}{“顿牟缀芥”是东汉王充在《论衡·乱龙篇》中记载的摩擦起电现象，意指摩擦后的带电琥珀能吸引轻小物体。现做如下简化：在某处固定一个电荷量为 $Q$ 的带正电的点电荷，在其正下方 $h$ 处有一个原子。在点电荷的电场的作用下原子的负电荷中心与正电荷中心会分开很小的距离 $l$。点电荷与原子之间产生作用力 $F$。你可能不会求解 $F$，但是你可以通过物理分析进行判断，关于 $F$ 的表达式，可能正确的是（式中 $k$ 为静电力常量）\kw}
+  \qpfig[18]{题4-点电荷与原子极化}
+  \optline{\optII{A．$F=0$；}{B．$F=\frac{kQq}{l^{2}}$；}}
+  \optline{\optII{C．$F=\frac{2kQq}{h^{2}}$；}{D．$F=\frac{2kQql}{h^{3}}$}}
+  \begin{ansblock}[测-4]
+  % ans:测-4
+  \ansitem{4}{D}
+  \end{ansblock}
+  % 题5｜9.3 练习件题1（简1·源Q37）｜单选 4 分
+  \ti{5}{在一个圆的直径上有一对等量异种电荷，它们在圆心 $O$ 处产生的电场强度大小是 $E_1$；如果把正电荷从 $a$ 处移到 $c$，已知 $Oc$ 与 $Oa$ 的夹角为 $60^\circ$，此时 $O$ 点的电场强度大小变为 $E_2$，则 $E_1$ 与 $E_2$ 之比为\kw}
+  \qpfig[38]{题5-圆上等量异种电荷}
+  \optline{\optII{A．$1:2$；}{B．$2:1$；}}
+  \optline{\optII{C．$2:\sqrt{3}$；}{D．$\sqrt{3}:2$}}
+  \begin{ansblock}[测-5]
+  % ans:测-5
+  \ansitem{5}{C}
+  \end{ansblock}
+  % 题6｜9.3 练习件题11（中1·中17·源Q36）｜单选 4 分
+  \ti{6}{如图甲所示，真空中 $Ox$ 坐标轴上的 $O$ 点放有一个点电荷 $Q$，坐标轴上 $A$ 点坐标为 $0.1\,\unit{m}$，在 $A$、$B$ 两点放两个电荷量不同、均带正电的试探电荷，$A$、$B$ 两点的试探电荷受到静电力的方向都跟 $x$ 轴正方向相同，静电力的大小 $F$ 跟试探电荷电荷量 $q$ 的关系分别如图乙中直线 $a$、$b$ 所示．下列说法正确的是\kw}
+  \qpfig[72]{题6-Fq图象甲乙}
+  \optline{A．$B$ 点的电场强度大小为 $0.25\,\unit{N/C}$；}
+  \optline{B．$A$、$B$ 点的电场强度的大小之比为 $4:1$；}
+  \optline{C．点电荷 $Q$ 是负点电荷；}
+  \optline{D．$B$ 的位置坐标为 $0.4\,\unit{m}$}
+  \begin{ansblock}[测-6]
+  % ans:测-6
+  \ansitem{6}{D}
+  \end{ansblock}
+}{\jplead
+  % 题7｜9.4 练习件题1（简1·简9·源Q56）｜单选 4 分
+  \ti{7}{下列与避雷针工作的物理原理相同的是\kw}
+  \optline{A．静电喷涂中油漆微粒自动沉积在工件表面；}
+  \optline{B．燃气灶中点火器的放电电极制作成钉尖形；}
+  \optline{C．高压带电作业工人穿戴的工作服；}
+  \optline{D．高压输电线上方的两根接地导线}
+  \begin{ansblock}[测-7]
+  % ans:测-7
+  \ansitem{7}{B}
+  \end{ansblock}
+  % 题8｜讲和练 Q61（拓展册题43）｜单选 4 分
+  \ti{8}{如图所示，用金属网把验电器罩起来，再使带电金属球靠近验电器，则以下关于验电器箔片的说法正确的是\kw}
+  \qpfig[42]{题8-金属网罩验电器}
+  \optline{A．验电器箔片会张开，因为带电金属球的电场会存在于整个空间的；}
+  \optline{B．验电器箔片可能会张开，只要带电金属球所带电荷量足够大就可以；}
+  \optline{C．验电器箔片不会张开，因为金属网罩把电荷都导到地球上去了；}
+  \optline{D．验电器箔片不会张开，因为金属网罩会出现感应电荷抵消掉带电金属球在网罩内的电场}
+  \begin{ansblock}[测-8]
+  % ans:测-8
+  \ansitem{8}{D}
+  \end{ansblock}
+  \vgt{\hG}
+  % ============ 二、多选题 ============
+  \zuhang{二、选择题}{：本题共3小题，每小题6分，共18分.\ 在每小题给出的四个选项中，有多项符合题目要求.}
+  \vgt{\hG}
+  % 题9｜9.1 练习件题12（Q5·回捞练5·多选）｜多选 6 分
+  \ti{9}{有 $A$、$B$、$C$ 三个完全相同的金属球，$A$ 带 $1.2\times10^{-8}\,\unit{C}$ 的正电荷，$B$、$C$ 不带电，现用相互接触的方法使它们都带电，则 $A$、$B$、$C$ 所带的电荷量可能是\kw}
+  \optline{A．$4.0\times10^{-9}\,\unit{C}$，$4.0\times10^{-9}\,\unit{C}$，$4.0\times10^{-9}\,\unit{C}$；}
+  \optline{B．$6.0\times10^{-9}\,\unit{C}$，$4.0\times10^{-9}\,\unit{C}$，$4.0\times10^{-9}\,\unit{C}$；}
+  \optline{C．$6.0\times10^{-9}\,\unit{C}$，$3.0\times10^{-9}\,\unit{C}$，$3.0\times10^{-9}\,\unit{C}$；}
+  \optline{D．$5.0\times10^{-9}\,\unit{C}$，$5.0\times10^{-9}\,\unit{C}$，$5.0\times10^{-9}\,\unit{C}$}
+  \begin{ansblock}[测-9]
+  % ans:测-9
+  \ansitem{9}{AC}
+  \end{ansblock}
+}
+\newpage
+% ===================== 第 2 页（栏1 题10~14＋组行三；栏2 组行四＋题15；栏3 题16） =====================
+\jpthree{\jplead
+  % 题10｜讲和练 Q28（拓展册题17·多选）｜多选 6 分
+  \ti{10}{如图所示，两根绝缘轻绳将两个大小和材料均相同的带正电小球（可视为质点）系于同一点，$A$ 球靠在绝缘墙壁上，$B$ 球保持静止状态．两球所带电荷量分别为 $Q_A=2q$ 和 $Q_B=4q$．现将 $B$ 球与 $A$ 球接触后再次释放，稳定后两球均静止，下列说法中正确的是\kw}
+  \qpfig[28]{题10-双绳AB靠墙}
+  \optline{\optII{A．$B$ 球的电荷量不变；}{B．轻绳对 $B$ 球的拉力（矢量）不变；}}
+  \optline{C．$A$、$B$ 两球间库仑力增大（指大小）；}
+  \optline{D．$A$、$B$ 两球间距离增大}
+  \begin{ansblock}[测-10]
+  % ans:测-10
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{10}{CD}
+  \end{ansblock}
+  % 题11｜9.4 练习件题14（中4·中26·源Q62·多选）｜多选 6 分
+  \ti{11}{如图所示，绝缘金属球壳的空腔内、外各有一小球 $B$ 和 $A$，球壳接地．下列说法正确的是\kw}
+  \qpfig[44]{题11-接地球壳双球}
+  \optline{A．若 $A$ 球带电，则球壳内的 $B$ 球处的电场强度为零；}
+  \optline{B．若 $B$ 球带电，则 $A$ 球处的电场强度不为零；}
+  \optline{C．若 $A$ 球和 $B$ 球均带电，则彼此也不会相互影响；}
+  \optline{D．若 $A$ 球和 $B$ 球均带电，则由于球壳接地，$A$ 球对 $B$ 球没有影响，但 $B$ 球对 $A$ 球有影响}
+  \begin{ansblock}[测-11]
+  % ans:测-11
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{11}{AC}
+  \end{ansblock}
+  \vgt{\hG}
+  % ============ 三、填空题 ============
+  \zuhang{三、填空题}{：本题共3小题，每小题5分，共15分.}
+  \vgt{\hG}
+  % 题12｜9.1 练习件题6（Q6·回捞例6·填空）｜填空 5 分
+  \ti{12}{如图所示，两个不带电的金属导体 $A$ 和 $B$，用一对绝缘柱支持使它们彼此接触。现把带正电的小球 $C$ 靠近导体 $A$，贴在 $A$、$B$ 下部的金属箔片都张开，此时 $A$ 端\kongbai{}，$B$ 端\kongbai{}（选填“带正电”“带负电”或“不带电”）。这时手持绝缘柱把 $A$ 和 $B$ 分开，然后移去 $C$，贴在 $A$、$B$ 下部的金属箔片都将处于\kongbai{}状态。（选填“张开”或“闭合”）}
+  \qpfig[52]{题12-感应实验双导体}
+  \begin{ansblock}[测-12]
+  % ans:测-12
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{12}{带负电；带正电；张开}
+  \end{ansblock}
+}{\jplead
+  % 题13｜47题1（拓展册题40·填空双空）｜填空 5 分
+  \ti{13}{水平面上有一带电荷量为 $Q$ 的均匀带电圆环，圆心为 $O$．其中央轴线上距离 $O$ 点为 $d$ 的位置处有一带电荷量为 $q$ 的点电荷．若点电荷受到的电场力为 $F$，则 $F$\kongbai{} $k\frac{Qq}{d^{2}}$（$k$ 为静电力常量）（选填“$>$”“$<$”或“$=$”）；静电力常量 $k$ 的单位可表示为\kongbai{}（用“SI单位制”中的基本单位表示）．}
+  \begin{ansblock}[测-13]
+  % ans:测-13
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{13}{$<$；$\unit{kg\cdot m^{3}\cdot s^{-4}\cdot A^{-2}}$}
+  \end{ansblock}
+  % 题14｜9.4 练习件题11（中1·中24·源Q54）题型适配：选择→填空三空｜填空 5 分
+  \ti{14}{如图所示，长为 $l$ 的导体棒原来不带电，现将一个带正电的点电荷 $q$ 放在棒的中心轴线上距离棒的左端 $R$ 处．当棒达到静电平衡后，导体棒内部的合场强\kongbai{}；感应电荷在棒的中点 $O$ 处产生的场强大小为\kongbai{}，方向\kongbai{}．}
+  \qpfig[62]{题14-导体棒与点电荷}
+  \begin{ansblock}[测-14]
+  % ans:测-14
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{14}{处处为零；$\dfrac{4kq}{(2R+l)^{2}}$；水平向左（指向 $q$ 一侧）}
+  \end{ansblock}
+  \vgt{\hG}
+  % ============ 四、解答题 ============
+  \zuhang{四、解答题}{：本题共5小题，共35分.\ 解答应写出必要的文字说明、方程式和重要演算步骤.}
+  \vgt{\hG}
+  % 题15｜9.1 练习件题11（中1·源Q2·计算）｜解答 5 分
+  \ti{15}{\fenzhi{5}三个相同的金属球 $A$、$B$、$C$，先让 $A$ 球带上正电，靠近相互接触的 $B$、$C$ 球，将 $B$、$C$ 分开，用手摸一下 $A$ 球，将 $A$ 球上的电荷导入大地。若此时 $B$ 球所带电荷量为 $+q$，用 $A$ 球再去接触 $B$，然后再接触 $C$，最后 $A$ 所带的电荷量是多少？}
+  \xiexwei{100mm}
+  \begin{ansblock}[测-15]
+  % ans:测-15
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{15}{$-\dfrac{q}{4}$}
+  \end{ansblock}
+}{\jplead
+  % 题16｜9.3 练习件题6（简6·47题18·计算三问）｜解答 6 分
+  \ti{16}{\fenzhi{6}电场对放入其中的电荷有力的作用．如图所示，带电球 $C$ 置于铁架台旁，把系在丝线上的带电小球 $A$ 挂在铁架台的 $P$ 点．小球 $A$ 静止时与带电球 $C$ 处于同一水平线上，丝线与竖直方向的偏角为 $\alpha$．已知 $A$ 球的质量为 $m$，电荷量为 $+q$，重力加速度为 $g$，静电力常量为 $k$，两球可视为点电荷．}
+  \optline{（1）画出小球 $A$ 静止时的受力图，并求带电球 $C$ 对小球 $A$ 的静电力 $F$ 的大小；}
+  \optline{（2）写出电场强度的定义式，并据此求出带电球 $C$ 在小球 $A$ 所在处产生的电场的场强 $E_A$ 的大小和方向；}
+  \optline{（3）若已知小球 $A$ 静止时与带电球 $C$ 的距离为 $r$，求带电球 $C$ 所带的电荷量 $Q$．}
+  \qpfig[42]{题16-带电球C与悬球A}
+  \xiexwei{140mm}
+  \begin{ansblock}[测-16]
+  % ans:测-16
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{16}{$mg\tan\alpha$；$\dfrac{mg\tan\alpha}{q}$，水平向右；$\dfrac{mgr^{2}\tan\alpha}{kq}$}
+  \end{ansblock}
+}
+\newpage
+% ===================== 第 3 页（栏1 题17；栏2 题18；栏3 题19＋卷末速查） =====================
+\jpthree{\jplead
+  % 题17｜9.2 练习件题8（简8·中9·源Q24·计算三问）｜解答 6 分
+  \ti{17}{\fenzhi{6}如图所示，把电荷量 $q_1=2\times10^{-6}\,\unit{C}$、质量 $m_1=0.9\,\unit{kg}$ 的带正电小球用绝缘细线悬挂在水平天花板上，带正电的物块放置在倾角 $\theta=37^\circ$ 的光滑固定斜面上。当小球与物块间的连线水平且细线与水平方向的夹角为 $37^\circ$ 时，小球与物块均静止，此时两者之间的距离 $d=0.3\,\unit{m}$。已知静电力常量 $k=9.0\times10^{9}\,\unit{N\cdot m^2/C^2}$，小球及物块均可视为点电荷，重力加速度大小 $g=10\,\unit{m/s^2}$，$\sin37^\circ=0.6$，$\cos37^\circ=0.8$。求：}
+  \optline{（1）小球与物块间的库仑力大小 $F_1$；}
+  \optline{（2）物块的电荷量大小 $q_2$；}
+  \optline{（3）物块的质量 $m_2$。}
+  \qpfig[55]{题17-悬球与斜面块}
+  \xiexwei{130mm}
+  \begin{ansblock}[测-17]
+  % ans:测-17
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{17}{$12\,\unit{N}$；$6\times10^{-5}\,\unit{C}$；$1.6\,\unit{kg}$}
+  \end{ansblock}
+}{\jplead
+  % 题18｜9.2 练习件题14（中4·中16·源Q35·计算两问）｜解答 8 分
+  \ti{18}{\fenzhi{8}如图所示，两个带正电小球 $A$、$B$ 固定在同一水平线上，长为 $3L$ 的光滑绝缘细线穿过带正电的小环 $C$，两端分别连接在 $A$、$B$ 球上，小环 $C$ 静止时 $BC$ 竖直，$AC$ 与 $AB$ 的夹角为 $30^\circ$，已知 $A$、$B$、$C$ 的带电量分别为 $8q$、$q$、$q$，静电力常量为 $k$，重力加速度为 $g$，忽略小球和环的大小，求：}
+  \optline{（1）小环 $C$ 的质量；}
+  \optline{（2）剪断细线的一瞬间，小环 $C$ 的加速度多大。}
+  \qpfig[50]{题18-活结绳三角构型}
+  \xiexwei{150mm}
+  \begin{ansblock}[测-18]
+  % ans:测-18
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{18}{$\dfrac{kq^{2}}{gL^{2}}$；$2\sqrt{3}g$}
+  \end{ansblock}
+}{\jplead
+  % 题19｜9.3 练习件题16（难2·冲4·源Q46）题型适配：选择→直接解答｜解答 10 分（压轴）
+  \ti{19}{\fenzhi{10}均匀带电的球壳在球外空间产生的电场等效于电荷集中于球心处的点电荷产生的电场．如图所示，在绝缘球 $\frac{2}{3}$ 球面 $AA_1B_1B$ 上均匀分布正电荷，总电荷量为 $q$；在剩余 $\frac{1}{3}$ 球面 $AB$ 上均匀分布负电荷，总电荷量是 $\frac{1}{2}q$．球半径为 $R$，球心为 $O$，$CD$ 为 $\frac{2}{3}$ 球面 $AA_1B_1B$ 的对称轴，在轴线上有 $M$、$N$ 两点，且 $OM=ON=2R$，$A_1A=B_1B$，$A_1A\parallel B_1B\parallel CD$．已知 $\frac{1}{3}$ 球面 $A_1B_1$ 在 $M$ 点的场强大小为 $E$，静电力常量为 $k$，求 $N$ 点的场强大小．}
+  \qpfig[78]{题19-球壳双层割补}
+  \xiexwei{100mm}
+  \begin{ansblock}[测-19]
+  % ans:测-19
+  \setlength{\anshang}{7.6mm}% 题10起双位档（照答案册 body.tex 同值，块内局部）
+  \ansitem{19}{$\left|\dfrac{3kq}{8R^{2}}-2E\right|$}
+  \end{ansblock}
+  \dabiao
+  \tailfill
+}
+\end{document}
