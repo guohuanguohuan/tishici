@@ -1,0 +1,611 @@
+[
+ {
+  "片": "衔接节",
+  "目录": "衔接节",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 6,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 27,
+  "ANSKEY键数false": 27,
+  "manifest键数": 27,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 27,
+  "泄答false": 0
+ },
+ {
+  "片": "课时01",
+  "目录": "课时01-坐标法",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 6,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 23,
+  "ANSKEY键数false": 23,
+  "manifest键数": 23,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 23,
+  "泄答false": 0
+ },
+ {
+  "片": "课时02",
+  "目录": "课时02-倾斜角与斜率",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 5,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 25,
+  "ANSKEY键数false": 25,
+  "manifest键数": 25,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 25,
+  "泄答false": 0
+ },
+ {
+  "片": "课时03",
+  "目录": "课时03-方向向量与法向量",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 5,
+  "false页": 2,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时04",
+  "目录": "课时04-点斜式与斜截式",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 5,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 22,
+  "ANSKEY键数false": 22,
+  "manifest键数": 22,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 22,
+  "泄答false": 0
+ },
+ {
+  "片": "课时05",
+  "目录": "课时05-两点式与一般式",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 7,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 24,
+  "ANSKEY键数false": 24,
+  "manifest键数": 24,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 24,
+  "泄答false": 0
+ },
+ {
+  "片": "课时07",
+  "目录": "课时07-圆的方程",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 5,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时08",
+  "目录": "课时08-直线与圆的位置关系",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 5,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时09",
+  "目录": "课时09-圆与圆的位置关系",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 5,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时10",
+  "目录": "课时10-2.4曲线与方程",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 6,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时11",
+  "目录": "课时11-2.5.1椭圆的标准方程",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 6,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时12",
+  "目录": "课时12-2.5.2椭圆的几何性质",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 6,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时13",
+  "目录": "课时13-2.6.1双曲线的标准方程",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 7,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时14",
+  "目录": "课时14-2.6.2双曲线性质",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 18,
+  "false页": 8,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 71,
+  "ANSKEY键数false": 71,
+  "manifest键数": 71,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 71,
+  "泄答false": 0
+ },
+ {
+  "片": "课时15",
+  "目录": "课时15-2.7.1抛物线方程",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 10,
+  "false页": 5,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 36,
+  "ANSKEY键数false": 36,
+  "manifest键数": 36,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 36,
+  "泄答false": 0
+ },
+ {
+  "片": "课时16",
+  "目录": "课时16-2.7.2抛物线性质",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 12,
+  "false页": 5,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 50,
+  "ANSKEY键数false": 50,
+  "manifest键数": 50,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 50,
+  "泄答false": 0
+ },
+ {
+  "片": "课时17",
+  "目录": "课时17-2.8①压轴综合一",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 14,
+  "false页": 4,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 42,
+  "ANSKEY键数false": 42,
+  "manifest键数": 42,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 0,
+  "泄答false": 0
+ },
+ {
+  "片": "课时18",
+  "目录": "课时18-2.8②压轴综合二",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 9,
+  "false页": 4,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时19",
+  "目录": "课时19-章末总结与复习",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 7,
+  "false页": 4,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时06B",
+  "目录": "课时06B-2.2.4点到直线距离",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 5,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ },
+ {
+  "片": "课时06",
+  "目录": "课时06-两条直线的位置关系",
+  "三零": true,
+  "true读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "false读": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "true页": 5,
+  "false页": 3,
+  "页数false不超true": true,
+  "ANSKEY两档集合相等": true,
+  "ANSKEY键数true": 21,
+  "ANSKEY键数false": 21,
+  "manifest键数": 21,
+  "ANSKEY等于manifest": true,
+  "尾块true": 1,
+  "尾块false": 1,
+  "答案行true": 21,
+  "泄答false": 0
+ }
+]
