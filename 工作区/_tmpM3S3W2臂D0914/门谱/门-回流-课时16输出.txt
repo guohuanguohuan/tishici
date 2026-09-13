@@ -1,0 +1,17 @@
+  [绿] \newpage ×0｜0
+  [绿] \clearpage ×0｜0
+  [绿] \pagebreak ×0｜0
+  [绿] \vbox ×0｜0
+  [绿] \vtop ×0｜0
+  [绿] \ketangboxed ×0｜0
+  [绿] \columnbreak ×0｜0
+  [绿] \eject ×0｜0
+  [绿] \vfill ×0｜0
+  [绿] \begin{ketang} ×0（练习件不设课堂评价）｜0
+  [绿] \tailfill 恰1（尾块每件恰一处）｜1
+  [绿] \duoxuan 计数＝manifest 期望值多选数 1（≤4）｜1
+  [绿] \liubai 计数＝解答题数 12（题2~8、12~16，题面侧头标实录）｜12
+  [绿] \liubai 逐题高度 16~40mm 带内（题3 四小题 32mm＋题15 两问 24mm＋余 16mm）｜['16mm', '32mm', '16mm', '16mm', '16mm', '16mm', '16mm', '16mm', '16mm', '16mm', '24mm', '16mm']
+  [绿] \kongda 计数＝0（本片零填空）｜0
+
+回流门： 全绿（零强制跳页＋件型纪律合规）
