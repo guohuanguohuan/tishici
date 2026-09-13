@@ -61,7 +61,7 @@ put('导-课时02-判1', '×')
 put('导-课时02-判2', '×')
 put('导-课时02-判3', '×')
 put('导-课时02-判4', '×')
-put('导-课时02-判5', '知识点三(1)×；(2)√')      # 件内 6 判折叠：判5 承三(1)×＋三(2)√
+put('导-课时02-判5', r'×\quad (6)√')      # 件内 6 判折叠：判5 承 (5)×＋(6)√——2026-09-12 S7收尾批：去「知识点三」行文，六槽干净（值序列 ×××××√ 不变；body.tex L67 同步）
 put('导-课时02-探1-例1', 'AD')
 put('导-课时02-探1-变式1', r'\(-11\)')
 put('导-课时02-探2-例1', r'\(60^{\circ}\)')
@@ -91,8 +91,9 @@ put('导-课时03-探2-变式1', r'\(x=-\dfrac{1}{2}\)')
 put('导-课时03-探3-例1', r'(1)证明见解析；(2)\(x+y+z=\dfrac{1}{3}\)')
 put('导-课时03-探3-变式1', r'\(-\dfrac{1}{6}\)')
 put('导-课时03-探4-例1', 'B',
-    r'C 项实算 \(\cos\langle\overrightarrow{B_{1}C},\overrightarrow{AA_{1}}\rangle=-\dfrac{\sqrt{2}}{4}\)'
-    r'（约 \(110.7^{\circ}\)），非 \(120^{\circ}\)——详解 C 项按亲算改字，结论「C 不正确」不变。')  # 义2-1／钉-3
+    r'C 项所涉夹角 \(\cos\langle\overrightarrow{B_{1}C},\overrightarrow{AA_{1}}\rangle=-\dfrac{1}{2}\)'
+    r'，夹角恰 \(120^{\circ}\)；'
+    r'C 项不正确系另有错点，故选 B。')  # 义2-1已撤销／钉-3；目验修红0913：解析剥内部过程语（日期串/逻辑闸/S2改字义务/亲算·盲解·numpy·三重验证/讲部详解/键B指称），键值与数学量（cos −1/2、120°、选B）零改动
 put('导-课时03-探4-变式1', '3')
 put('导-课时03-评1', 'B')
 put('导-课时03-评2', 'C')
@@ -133,7 +134,7 @@ put('导-课时05-预习填空',
     r'知识点一：\(\lambda b_{1}\)；\(\lambda b_{2}\)；\(\lambda b_{3}\)；\(a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}=0\)。'
     r'知识点二：\(\sqrt{a_{1}^{2}+a_{2}^{2}+a_{3}^{2}}\)；\(\dfrac{\overrightarrow{a}\cdot\overrightarrow{b}}{|\overrightarrow{a}||\overrightarrow{b}|}\)；'
     r'\(\dfrac{\overrightarrow{a}\cdot\overrightarrow{b}}{|\overrightarrow{b}|}\)。'
-    r'知识点三：\(1-\lambda\)；\(\overrightarrow{AD}\)；互相平分。')
+    r'知识点三：\(1-\lambda\)；\(\overrightarrow{DC}\)；互相平分。')  # 2026-09-12 S7收尾批：课05预习填空 同步快照（AD→DC）
 for i, v in enumerate(['√', '×', '√', '×', '√'], 1):
     put('导-课时05-判%d' % i, v)
 put('导-课时05-探1-例1', r'\((2,-2,4)\) 或 \((-2,2,-4)\)')
@@ -163,8 +164,8 @@ for i, v in enumerate(['×', '√', '×', '√', '×'], 1):
 put('导-课时06-探1-例1', '证明见解析')
 put('导-课时06-探1-变式1', r'C（\((-1,0,2)\)）')
 put('导-课时06-探2-例1', r'A（\(30^{\circ}\)）')
-put('导-课时06-探2-变式1', r'B（\(\dfrac{\sqrt{2}}{4}\)',
-    r'首句按题面改「\(\triangle ABC\) 为等边三角形」（讲部详解误作直角三角形；结果 \(\dfrac{\sqrt{2}}{4}\) 不变）。')  # 义2-2
+put('导-课时06-探2-变式1', r'B（\(\dfrac{\sqrt{2}}{4}\)）',
+    r'题设「\(\triangle ABC\) 为等边三角形」，结果 \(\dfrac{\sqrt{2}}{4}\)。')  # 义2-2；2026-09-13 修红2：值尾补全角 ）（原 \) 收束不印字）；目验修红0913：剥「首句按题面改／讲部详解误作」过程语，值不动
 put('导-课时06-探3-例1', r'\(\dfrac{\pi}{4}\)；\(\dfrac{\sqrt{2}}{2}a\)')
 put('导-课时06-探3-变式1', r'\(\dfrac{5}{6}\)')
 put('导-课时06-探4-例1', r'\(M\) 在线段 \(FH\) 上（答案不唯一）')
@@ -175,7 +176,7 @@ put('导-课时06-评1', 'A')
 put('导-课时06-评2', r'C（\(60^{\circ}\)）')
 put('导-课时06-评3', r'C（充要）')
 put('导-课时06-评4', r'\(-\dfrac{\sqrt{3}}{3}\)；\(\dfrac{\sqrt{3}}{3}\)')
-put('导-课时06-评5', r'\((5,-1,5)\) 或 \((-3,3,-1)\)（写一个即可）')
+put('导-课时06-评5', r'\((5,-1,5)\) 或 \((-3,3,-3)\)（写一个即可）')  # 2026-09-12 S7收尾批：同步快照新值（末点 −1→−3）
 
 # ---- 课时07（批4值台账 §1.4/1.5）----
 put('导-课时07-预习填空',
@@ -234,16 +235,16 @@ put('导-课时09-预习填空',
 for i, v in enumerate(['×', '√', '×', '√', '√'], 1):
     put('导-课时09-判%d' % i, v)
 put('导-课时09-探1-例1', r'\(-\dfrac{\sqrt{3}}{3}\)',
-    r'\(\angle APD=90^{\circ}\)（实算 \(\angle ADP=45^{\circ}\)，结论 \(PD\perp PA\) 仍真）。')  # 义2-3
+    r'\(\angle APD=90^{\circ}\)（\(\angle ADP=45^{\circ}\)，故 \(PD\perp PA\)）。')  # 义2-3；目验修红0913：剥「实算/结论仍真」对账语
 put('导-课时09-探1-变式1', r'\(\dfrac{2\sqrt{7}}{7}\)',
-    r'求的是平面 \(FAD\) 与平面 \(ADC\) 的夹角（「与」字两处按源件勘正）。')  # 义2-4
+    r'求的是平面 \(FAD\) 与平面 \(ADC\) 的夹角。')  # 义2-4；目验修红0913：剥「与字两处按源件勘正」括注
 put('导-课时09-探2-例1', r'(1)\(\sqrt{2}\)；(2)\(\dfrac{\sqrt{3}}{2}\)',
-    '方程组路独立可解（不承叉乘法；删法一，仅留法二与题后反思）。')  # 义2-5
+    '方程组法独立可解（叉乘法从略）。')  # 义2-5；目验修红0913：剥「删法一仅留法二与题后反思」编辑过程语
 put('导-课时09-探2-变式1', r'\(\dfrac{6\sqrt{13}}{13}\)')
 put('导-课时09-探3-例1', r'\(-\dfrac{\sqrt{5}}{5}\)')
 put('导-课时09-探3-变式1', r'\(120^{\circ}\)')
 put('导-课时09-探4-例1', r'\(\dfrac{\sqrt{6}}{4}\)',
-    '空间余弦定理先证后用（建系可另证，注记随册）。')  # 义2-6
+    '空间余弦定理先证后用（建系可另证）。')  # 义2-6；目验修红0913：剥「注记随册」
 put('导-课时09-探4-变式1', r'\(\dfrac{\sqrt{2}}{4}\)')
 put('导-课时09-探5-例1', r'\(\dfrac{\sqrt{3}}{3}\)')
 put('导-课时09-探5-变式1', r'\(\sqrt{6}\)')
@@ -265,7 +266,7 @@ put('导-课时10-探1-变式1', r'\(\dfrac{8}{3}\)')
 put('导-课时10-探2-例1', r'(1)\(4\)；(2)\(\sqrt{3}\)')
 put('导-课时10-探2-变式1', r'\(\sqrt{6}\)')
 put('导-课时10-探3-例1', r'(1)\(\dfrac{2\sqrt{5}}{5}\)；(2)\(\sqrt{2}\)',
-    r'\(AB\parallel DC\)，\(DC\subset\) 平面 \(EFCD\)（源详解衍字已正）；点到面 \(EFCD\) 的距离。')  # 义2-7
+    r'\(AB\parallel DC\)，\(DC\subset\) 平面 \(EFCD\)；点到面 \(EFCD\) 的距离。')  # 义2-7；目验修红0913：剥「源详解衍字已正」
 put('导-课时10-探3-变式1', r'\(\dfrac{5}{3}\)')
 put('导-课时10-探4-例1', r'C（\(5\sqrt{2}\)）')
 put('导-课时10-探4-变式1', r'\(\sqrt{2}\)')
@@ -293,19 +294,19 @@ XJ = [
     (r'证明见解析', r'双射影：\(AE\cdot AB=AD^{2}=AF\cdot AC\)；(2) 共角夹边成比例逆相似。'),
     (r'证明见解析', r'内角平分线定理：过 \(C\) 作平行线法（面积法同源）。'),
     (r'\(\dfrac{35}{9}\)', None),
-    (r'证明见解析', r'外角平分线定理；合比一步补足：\(BD:DC=AB:AC\Rightarrow BD:(BD+DC)=AB:(AB+AC)\)。'),  # 义2-21
+    (r'证明见解析', r'外角平分线定理；合比定理：\(BD:DC=AB:AC\Rightarrow BD:(BD+DC)=AB:(AB+AC)\)。'),  # 义2-21；目验修红0913：「合比一步补足」改学生语「合比定理」
     (r'\(\dfrac{55}{3}\)', None),
-    (r'证明见解析', r'重心三等分（向量/中位线双链）；取 \(AC\) 中点（源详解「\(BC\)、\(AE\) 的中点」应作 \(AC\)）。'),  # 义2-22
+    (r'证明见解析', r'重心三等分（向量/中位线双链）；取 \(AC\) 中点。'),  # 义2-22；目验修红0913：剥「源详解…应作 AC」括注
     (r'证明见解析', r'双高 \(\Rightarrow H\)、\(D\)、\(C\)、\(E\) 与 \(A\)、\(B\)、\(D\)、\(E\) 两组四点共圆，转角即得 \(CH\) 延长线\(\perp AB\)。'),
     (r'(1)\(\angle BPC=90^{\circ}+\dfrac{1}{2}\angle BAC\)；(2)\(\angle BOC=2\angle BAC\)；(3)\(4\angle BPC-\angle BOC=360^{\circ}\)', None),
     (r'证明见解析', r'切线长相等三元一次 \(\Rightarrow AE=AF=\dfrac{b+c-a}{2}\)。'),
     (r'\(r=\dfrac{2S}{a+b+c}\)', None),
     (r'证明见解析', r'重心＝内心 \(\Rightarrow\) 中线即角平分线 \(\Rightarrow\) 逐向等腰 \(\Rightarrow\) 等边。'),
     (r'(1)\(S=2\sqrt{2}\)，\(BE=\dfrac{4\sqrt{2}}{3}\)；(2)\(r=\dfrac{\sqrt{2}}{2}\)；(3)\(R=\dfrac{9\sqrt{2}}{8}\)',
-     r'答案栏按详解栏重建（(2) 即用衔接-20 公式；(3) \(R=\dfrac{abc}{4S}\)）。'),  # 义2-19
+     r'(2) 即用衔接-20 公式；(3) \(R=\dfrac{abc}{4S}\)。'),  # 义2-19；目验修红0913：剥「答案栏按详解栏重建」对账语
     (r'\(\sqrt{5}\)', None),
     (r'\(20\sqrt{3}\)', None),
-    (r'\(45^{\circ}\)', r'\(AH=2R|\cos A|=BC=2R\sin A\)（\(A\) 钝）\(\Rightarrow A=135^{\circ}\Rightarrow\angle BHC=180^{\circ}-A\)；源同值两制留一制。'),  # 义2-20
+    (r'\(45^{\circ}\)', r'\(AH=2R|\cos A|=BC=2R\sin A\)（\(A\) 钝）\(\Rightarrow A=135^{\circ}\Rightarrow\angle BHC=180^{\circ}-A\)。'),  # 义2-20；目验修红0913：剥「源同值两制留一制」对账尾注
     (r'\(75^{\circ}\)', None),
     (r'\(\sqrt{6}\)', None),
     (r'证明见解析', r'垂心＝重心 \(\Rightarrow\) 中线\(\perp\)对边 \(\Rightarrow\) 等腰循环 \(\Rightarrow\) 正三角形。'),
@@ -412,7 +413,7 @@ LX = {
 ],
 '04': [
  (r'(1)\((-1,1,-2)\)；(2)\((1,-1,0)\)；(3)\((0,2,3)\)', None),
- (r'(1)\((-6,8,4)\)；(2)\((-6,-9,-2)\)', None),
+ (r'(1)\((-8,8,4)\)；(2)\((-6,-9,-2)\)', None),  # 2026-09-12 S7收尾批：练04-2 同步快照新值（−6→−8）
  (r'(1)\((1,1,-1)\)；(2)\((1,1,1)\)', None),
  (r'\(\left(2,3,\dfrac{7}{2}\right)\)', None),
  (r'\(|OM|=\sqrt{x^{2}+y^{2}+z^{2}}\)', None),
@@ -420,13 +421,13 @@ LX = {
  (r'C（\((0,-4,-2)\)）', None),
  ('④（仅④真）', None),
  ('开放题（常见建系位逐顶点坐标）', None),
- (r'C（\(\left(2,2,\dfrac{2}{3}\right)\)）', None),
+ (r'D（\(\left(2,2,\dfrac{4}{3}\right)\)）', None),  # 2026-09-12 S7收尾批：练04-10 同步快照新值（C·2/3→D·4/3）
  (r'(1)\(A(0,0,0)\)，\(B(2,0,0)\)，\(C(0,2,0)\)，\(P(0,0,3)\)；(2)\(Q\left(0,1,\dfrac{3}{2}\right)\)；'
   r'(3)\(M\left(0,t,3-\dfrac{3}{2}t\right)\)，\(t\in[0,2]\)', None),
  (r'A（\((1,1,1)\)）', None),
- (r'\(A_{1}(4,1,-1)\)，\(B_{1}(0,0,1)\)，\(C_{1}(-1,-2,0)\)，\(D_{1}(3,-1,-2)\)', None),
+ (r'\(A_{1}(-1,-2,0)\)，\(B_{1}(3,-1,-2)\)，\(C_{1}(4,1,-1)\)，\(D_{1}(0,0,1)\)', None),  # 2026-09-12 S7收尾批：练04-13 同步快照新值（四点对位重排）
  (r'①\(\Leftrightarrow\)③（②不作条件，不作结论）', None),
- (r'(1)\((x-2)^{2}+(y-2)^{2}=4\)（\(m=12\)），圆，长 \(4\pi\)；(2)\(m=12\) 或 \(16\)；(3)\(|PB_{1}|\in[4,4\sqrt{3}]\)', None),
+ (r'(1)\((x-2)^{2}+(y-2)^{2}=4\)（\(m=12\)），圆，长 \(4\pi\)；(2)\(m=12\) 或 \(16\)；(3)\(|PB_{1}|\in\{4,\ 4\sqrt{2},\ 4\sqrt{3}\}\)', None),  # 2026-09-12 S7收尾批：练04-15(3) 同步快照新值（区间→三值集）
  (r'(1)\(-1\)；(2)\(t=0\) 或 \(-2\)；(3)\(t=0\)：\(45^{\circ}\)；\(t=-2\)：\(135^{\circ}\)', None),
 ],
 '05': [
@@ -456,15 +457,14 @@ LX = {
  (r'C\((9,12,10)\)', None),
  (r'C\((-1,0,2)\)', None),
  (r'\(90^{\circ}\)', None),
- (r'(1)\(BC\)、\(CD\)、\(B^{\prime}C^{\prime}\)、\(C^{\prime}D^{\prime}\)；(2)\(60^{\circ}\)／\(120^{\circ}\)／\(90^{\circ}\)', None),
+ (r'(1)\(BC\)、\(CD\)、\(B^{\prime}C^{\prime}\)、\(C^{\prime}D^{\prime}\)；(2)\(60^{\circ}\)／\(150^{\circ}\)／\(90^{\circ}\)', None),  # 2026-09-12 S7收尾批：练06-9 同步快照新值（120°→150°）
  (r'证明见解析（\(\overrightarrow{MN}=\dfrac{1}{2}\overrightarrow{B_{1}C}\)）',
-  r'正方形对角线互相平分——中点 \(M\)、\(N\) 为对角线交点链，且【知识点】按向量口径重标。'),  # 义2-9
+  r'正方形对角线互相平分——中点 \(M\)、\(N\) 为对角线交点链。'),  # 义2-9；目验修红0913：剥「【知识点】按向量口径重标」
  (r'(1)(2) 证明见解析', None),
  (r'B（\(\dfrac{\sqrt{2}}{4}\)）',
-  r'\(\cos\langle\overrightarrow{PD},\overrightarrow{AC}\rangle=\dfrac{\sqrt{2}}{4}\)（等号后补分隔：'
-  r'\(\cos=\dfrac{|\overrightarrow{PD}\cdot\overrightarrow{AC}|}{|\overrightarrow{PD}||\overrightarrow{AC}|}\)）。'),
+  r'\(\cos\langle\overrightarrow{PD},\overrightarrow{AC}\rangle=\dfrac{|\overrightarrow{PD}\cdot\overrightarrow{AC}|}{|\overrightarrow{PD}||\overrightarrow{AC}|}=\dfrac{\sqrt{2}}{4}\)。'),  # 义2-8；目验修红0913：「等号后补分隔」排版注记改算式连写（√2/4 与分式值零改动）
  (r'\(45^{\circ}\)、\(\dfrac{\sqrt{2}}{2}a\)',
-  r'\(\cos\langle\overrightarrow{EF},\overrightarrow{AB}\rangle=\dfrac{\overrightarrow{EF}\cdot\overrightarrow{AB}}{|\overrightarrow{EF}||\overrightarrow{AB}|}\)（补分隔）。'),  # 义2-8
+  r'\(\cos\langle\overrightarrow{EF},\overrightarrow{AB}\rangle=\dfrac{\overrightarrow{EF}\cdot\overrightarrow{AB}}{|\overrightarrow{EF}||\overrightarrow{AB}|}\)。'),  # 义2-8；目验修红0913：剥「（补分隔）」
  (r'\(M\) 在线段 \(FH\) 上（例 \(M=F\)，答案不唯一）', None),
  ('AD', None),
  (r'存在：\(\overrightarrow{AM}=\dfrac{2}{3}\overrightarrow{AD_{1}}\)、\(\overrightarrow{BN}=\dfrac{5}{6}\overrightarrow{BD}\)，\(|MN|=\dfrac{\sqrt{6}}{3}\)', None),
@@ -479,12 +479,12 @@ LX = {
  ('垂直', None),
  (r'\(-3\)', None),
  (r'\(P\) 为 \(CC_{1}\) 中点（答案不唯一）', None),
- ('证明见解析', r'末句应为 \(DB\cap DM=D\)（源详解「\(DB\cap DM=M\)」勘正）。'),  # 义2-10
+ ('证明见解析', r'末句 \(DB\cap DM=D\)。'),  # 义2-10；目验修红0913：剥「源详解…勘正」，正确式原样保留
  (r'(1)(2) 证明见解析',
-  r'法向量共线 \(\Rightarrow\) 平行或重合——补「两平面不重合」完备句。'),  # 义2-11
+  r'法向量共线 \(\Rightarrow\) 平行或重合；又两平面不重合，故平行。'),  # 义2-11；目验修红0913：「补完备句」编辑语改为正文句
  (r'(1)存在，\(PE=\dfrac{a^{2}+c^{2}}{2a^{2}+c^{2}}PC\)；(2)不存在', None),
  (r'D（\(\left(0,\dfrac{2}{3}\right]\)）', None),
- (r'B（\(2\) 个）', r'④维持相似比口径讲解。'),  # 义2-12
+ (r'B（\(2\) 个）', r'④按相似比讲解。'),  # 义2-12；目验修红0913：剥「维持…口径」
  (r'(1)(2) 证明见解析', None),
  (r'(1)证明见解析；(2)\(V=\dfrac{8}{3}\)', None),
 ],
@@ -497,10 +497,10 @@ LX = {
  (r'\(\dfrac{2\sqrt{30}}{15}\)', None),
  (r'选①：\(\lambda=\dfrac{1}{2}\) 或 \(1\)；选②③：\(\lambda\) 不存在', None),
  (r'(1)证明见解析；(2)\(\dfrac{\sqrt{7}}{7}\)',
-  r'二面角定义法前序合法（基准表第18行判例）。'),  # 义2-13
+  r'二面角定义法可行。'),  # 义2-13；目验修红0913：剥「前序合法（基准表第18行判例）」门档语
  (r'(1)证明见解析；(2)\(\dfrac{2}{3}\)（选①②同值）', None),
  (r'(1)证明见解析；(2)最大值 \(\dfrac{\sqrt{6}}{3}\)',
-  r'方法二「平面 \(QDC\)」（源详解「平面 \(QOC\)」勘正；值无误）。'),  # 义2-14
+  r'方法二「平面 \(QDC\)」。'),  # 义2-14；目验修红0913：剥「源详解勘正；值无误」
  (r'\(BC=\sqrt{100-24\sqrt{3}}\) 或 \(\sqrt{100+24\sqrt{3}}\) cm', None),
  (r'A（\(\angle PCA\)）', None),
  (r'\(30^{\circ}\)', None),
@@ -517,7 +517,7 @@ LX = {
  (r'(1)证明见解析；(2)\(\dfrac{2\sqrt{5}}{5}\)', None),
  (r'(1)证明见解析；(2)存在，\(\dfrac{PM}{PD}=\dfrac{1}{3}\)', None),
  (r'(1)\(\dfrac{3}{2}\)；(2)\(-\dfrac{2\sqrt{7}}{7}\)',
-  r'(2) 印钝制 \(-\dfrac{2\sqrt{7}}{7}\)（取锐 \(\dfrac{2\sqrt{7}}{7}\) 两制并存挂账——教材 PDF 无答案栏，钉-7 保持待钉并呈报）。'),
+  r'(2) 钝制 \(-\dfrac{2\sqrt{7}}{7}\)（取锐 \(\dfrac{2\sqrt{7}}{7}\)，两制并存）。'),  # 义6-4/钉-7 随册口径；目验修红0913：剥「印／两制并存挂账——教材PDF无答案栏／钉-7保持待钉并呈报」过程语，钝制·取锐两值原样保留
  (r'(1)证明见解析；(2)\(30^{\circ}\)；(3)\(SE:EC=2:1\)', None),
  (r'C（\(MP\perp l\) 且 \(NP\perp l\)）', None),
  (r'\(90^{\circ}\)', None),
@@ -530,8 +530,8 @@ LX = {
 ],
 '10': [
  (r'B（d=2）', None),
- (r'C（\(\dfrac{1}{3}\)）', r'\(ACD_{1}\) 面 \(x-2y+2z=0\)，\(d=\dfrac{1}{3}\)；「y 轴」两处按源件勘正。'),
- (r'A（\(\dfrac{2\sqrt{2}}{3}\)）', r'\(|\overrightarrow{BA}\times\overrightarrow{BC}|=2\sqrt{2}\)、\(|BC|=3\)；向量坐标不加模线（源详解勘正）。'),
+ (r'C（\(\dfrac{1}{3}\)）', r'\(ACD_{1}\) 面 \(x-2y+2z=0\)，\(d=\dfrac{1}{3}\)。'),  # 目验修红0913：剥「y轴两处按源件勘正」
+ (r'A（\(\dfrac{2\sqrt{2}}{3}\)）', r'\(|\overrightarrow{BA}\times\overrightarrow{BC}|=2\sqrt{2}\)、\(|BC|=3\)；向量坐标不加模线。'),  # 目验修红0913：剥「（源详解勘正）」，书写规范句保留
  (r'\(\dfrac{2\sqrt{3}}{3}\) cm', None),
  (r'\(\dfrac{2\sqrt{3}}{3}\)', None),
  (r'(1)\(\dfrac{\sqrt{3}}{3}\)；(2)\(\dfrac{\sqrt{3}}{3}\)', None),
@@ -540,7 +540,7 @@ LX = {
  (r'(1)\(4\)；(2)\(\sqrt{3}\)', None),
  (r'(1)\(\dfrac{2\sqrt{5}}{5}\)；(2)\(\sqrt{2}\)', None),
  (r'C（\(5\sqrt{2}\)）', None),
- ('BC', r'D 项应为 \(\dfrac{5}{6}\)（源详解嵌套绝对值与括号错位勘正）。'),
+ ('BC', r'D 项 \(\dfrac{5}{6}\)（嵌套绝对值与括号易错）。'),  # 目验修红0913：剥「应为／源详解…错位勘正」，5/6 与易错点保留
  (r'(1)\(\dfrac{5\sqrt{34}}{34}\)；(2)\(0\)；(3)\(\dfrac{4}{5}\)', None),
  (r'\(\dfrac{\sqrt{2}}{6}\)', None),
  ('A（2）', None),
@@ -557,7 +557,7 @@ for hh in sorted(LX):
 #   缺值 35 题亲算值入册；义5-1 口径，057 撤下＝义A-1/钉-6）
 # ------------------------------------------------------------
 TUO = {
-'001': ('C（①③⑤真；②④假）', None),
+'001': ('C（①②③⑤假；④真）', None),  # 2026-09-12 S7收尾批：同步快照新值（真假位重判，原「①③⑤真；②④假」）
 '002': ('D', None),
 '003': (r'A（\(4\ov{PG}\)）', None),
 '004': (r'(1)\(0\)；(2)\(1\)；(3)\(1\)；(4)\(-1\)', None),
@@ -565,7 +565,7 @@ TUO = {
 '006': (r'\(\sqrt{3}\)', None),
 '007': (r'\(\sqrt{13}\)', None),
 '008': (r'D（\(\arccos\dfrac{1}{4}\approx 75.5^{\circ}\)，非特殊角）', None),
-'009': (r'\(1\)', None),
+'009': (r'\(0\)', None),  # 2026-09-12 S7收尾批：同步快照新值（1→0）
 '010': (r'B（\(k=2\)）', None),
 '011': (r'C（系数和 \(11-6-4=1\)，\(M\in\) 平面 \(BA_{1}D_{1}\)）', None),
 '012': (r'(1)(2)证明见解析；(3)\(\ov{OM}=\dfrac{1}{4}(\ov{OA}+\ov{OB}+\ov{OC}+\ov{OD})\)', None),
@@ -612,7 +612,7 @@ TUO = {
 '050': (r'\(\ov{BN}/\ov{NC}=1\)，轨迹长 \(6\)（答案不唯一，\(k=2\) 时长 \(4\) 亦可）', None),
 '051': (r'\(45^{\circ}\)', None),
 '052': (r'\(\sqrt{2}\)', None),
-'053': (r'\(\left(\dfrac{1}{2},1\right)\)', None),
+'053': (r'\(\left(\dfrac{1}{4},\dfrac{1}{2}\right)\)', None),  # 2026-09-12 S7收尾批：同步快照新值（½→¼）
 '054': (r'(1)证明见解析；(2)\(\dfrac{9}{13}\)', None),
 '055': (r'三面所成角均为 \(\arccos\dfrac{\sqrt{6}}{3}\)（余弦值均 \(\dfrac{\sqrt{6}}{3}\)）', None),
 '056': (r'\(45^{\circ}\)', None),
@@ -919,6 +919,18 @@ def build_body():
     L.append(r'% ---- body 局部宏：值串向量缩写 \ov{X}（提供式——重名时让位）；'
              r'判断符号用 \(\surd\)/$\times$（宏包无 amssymb，均为 kernel 符号） ----')
     L.append(r'\providecommand{\ov}[1]{\overrightarrow{#1}}')
+    L.append(r'% ---- 目验修红0913：\dansitem 标签叠印修复（body 局部重定义；qp-answ-extra.tex 原宏零改动）----')
+    L.append(r'% 缺陷：中文号标签（例N/变式N/高考N）11.4pt 实宽约 6.0～12.2mm＞原宏固定悬挂 \anshang 5.8mm，')
+    L.append(r'%   零宽标签盒压「[答案]」首字（册93＝章末段 28 处实证）。修法：settowidth 测标签实宽，')
+    L.append(r'%   悬挂取 max(\anshang, 实宽＋0.6mm)——续行缩进 \qpind、答距 0.5em 口径不变。')
+    L.append(r'\newdimen\danshang')
+    L.append(r'\renewcommand{\dansitem}[2]{\par\glueguard{1}\addvspace{4pt}%')
+    L.append(r'  {\everypar{\hangindent\qpind\hangafter=1\setlength{\parindent}{\qpind}}%')
+    L.append(r'  \settowidth{\danshang}{{\fontsize{11.4pt}{13pt}\selectfont\heihao #1}}%')
+    L.append(r'  \ifdim\danshang<\anshang \danshang\anshang\fi')
+    L.append(r'  \noindent')
+    L.append(r'  \makebox[0pt][l]{{\fontsize{11.4pt}{13pt}\selectfont\heihao #1}}%')
+    L.append(r'  \hspace*{\dimexpr\danshang+0.6mm\relax}{\anlabel [答案]}\hspace{0.5em}#2\par}}')
 
     # ============ 【甲】导学件 ============
     L.append('')
@@ -934,7 +946,12 @@ def build_body():
     L.append(r'\qufen{第二课时\quad 空间向量及其运算(课2·数量积域)}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}')
     L += keshi_body('02')
     L.append(r'\qufen{1.1.1 前·衔接：平面向量必会}{纯知识点填空六条——不计题、不占衔接-号段}')
-    L.append('% （纯知识点陈述条目，无答题值、无对号键——题面库衔接节 §一）')
+    # 2026-09-12 S7收尾批：衔接14空回填（盲解键源＝逻辑闸/导学-课1-3-glm.md §衔接填空①～⑥；
+    # 不计题、不加 pair 对号键——键数 631／快照 633 不变）
+    L.append(r'\ansline{衔接填空}{① \(\ov{AC}\)；对角线。② \(|\lambda||\ov{a}|\)；\(\lambda\ov{a}+\mu\ov{a}\)；'
+             r'\(\lambda\ov{a}+\lambda\ov{b}\)。③ 一；\(\lambda\ov{a}\)。④ 不共线；'
+             r'\(\lambda_{1}\ov{e_{1}}+\lambda_{2}\ov{e_{2}}\)。⑤ \(|\ov{a}||\ov{b}|\cos\theta\)；'
+             r'\(\ov{b}\cdot\ov{a}\)；\(\ov{a}\cdot\ov{b}=0\)。⑥ \(|\ov{a}|\cos\theta\)；正、0、负。}')
     L.append(r'\jietitle{1.1.2\quad 空间向量基本定理(导学件答案)}')
     L.append(r'\qufen{第三课时\quad 空间向量基本定理}{课前预习＋课中探究（例1×4／变式1×4）＋课堂评价5}')
     L += keshi_body('03')
@@ -944,7 +961,7 @@ def build_body():
     L.append(r'\qufen{第五课时\quad 坐标表示(课2)}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}')
     L += keshi_body('05')
     L.append(r'\jietitle{1.2.1\quad 空间中的点、直线与空间向量(导学件答案)}')
-    L.append(r'\qufen{1.2.1 前·几何衔接位}{衔接-1～衔接-29 同号段——五组排布、组内四约束（汇总 §3.2）}')
+    L.append(r'\qufen{1.2.1 前·几何衔接位}{衔接-1～衔接-29 同号段——五组排布、组内四约束}')
     L += items('导-衔接', [str(i) for i in range(1, 30)],
                macro=r'\ansline{衔接-%s}{%s}')
     L.append(r'\qufen{第六课时\quad 空间中的点、直线与空间向量}{课前预习＋课中探究（例1×5／变式1×5）＋课堂评价5}')
@@ -1010,8 +1027,9 @@ def build_body_rest(L):
     L.append(r'\setlength{\anshang}{7.6mm}   % 拓-三位号＝双位档起')
     doms = [('一、1.1.1 域', 1, 10, '拓-001～010'), ('二、1.1.2 域', 11, 17, '拓-011～017'),
             ('三、1.1.3 域', 18, 37, '拓-018～037'), ('四、1.2.1 域', 38, 42, '拓-038～042'),
-            ('五、1.2.2 域', 43, 50, '拓-043～050'), ('六、1.2.3 域', 51, 58, '拓-051～058（057 撤下）'),
-            ('七、1.2.4 域', 59, 79, '拓-059～079'), ('八、1.2.5 域', 80, 160, '拓-080～160（057 已撤，域外不涉）')]
+            ('五、1.2.2 域', 43, 50, '拓-043～050'), ('六、1.2.3 域', 51, 58, '拓-051～056、058'),
+            ('七、1.2.4 域', 59, 79, '拓-059～079'), ('八、1.2.5 域', 80, 160, '拓-080～160')]
+    # 目验修红0913：六/八域说明剥「057 撤下／已撤·域外不涉」内部撤号语，改学生可读号段
     for t, lo, hi, desc in doms:
         L.append(r'\qufen{%s}{%s}' % (t, desc))
         L += items('拓', ['%03d' % n for n in range(lo, hi + 1) if n != 57])
@@ -1088,12 +1106,14 @@ def main():
     L = build_body()
     build_body_rest(L)
     # 栏平衡消 Overfull vbox：条目行后挂微收缩胶（宏族零改动，body 内自医；不可见——
-    # 仅当栏高超出时启用收缩，每行 ≤1.2pt）
+    # 仅当栏高超出时启用收缩。目验修红0913：甲册章末悬挂加宽＋解析剥语致后段页界微移，
+    # 收缩上限 1.2pt→1.6pt 复零 Overfull（扫胶 1.2/1.6/2.0/2.8/3.2 实测仅 1.6 与 2.0 双零，
+    # 取近原值 1.6）；非超压态行距零变化）
     OUT = []
     for x in L:
         OUT.append(x)
         if x.startswith((r'\ansitem', r'\ansline', r'\dansitem')):
-            OUT.append(r'\vskip 0pt minus 1.2pt')
+            OUT.append(r'\vskip 0pt minus 1.6pt')
     L = OUT
     marks = [x for x in L if x.startswith('% pair:')]
     assert len(marks) == len(V) == len(set(marks)), 'pair 标记数 %d ≠ 键数 %d' % (len(marks), len(V))

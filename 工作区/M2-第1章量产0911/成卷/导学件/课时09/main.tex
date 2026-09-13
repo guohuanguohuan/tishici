@@ -7,6 +7,15 @@
 % 图＝源图位图（禁绘三维，公共规则§5）：figs/ 六件自 讲练件（上）定稿 docx word/media/ 原件解包
 %   （restored351/image88/image116/image117/sub3_B_13/sub3_B_15，元素814/798/1138/1159/739/751，未改绘），
 %   alt 缺失＝§四-5 照登。figs 与 docx 逐字节一致（解包原件）。
+% 〔修图轮0913〕探究点一例1 配图换绘＝figPABCD_redraw0913.png（redraw351 退役不删，留存 figs/ 备查）：
+%   装配本 p34 目验红旗——restored351（源书位图原件，元素814）题干不符：图内点集 C/A/M/B/A/D 缺顶点 P、
+%   多题干外点 M、C 标注上残留坐标红字「(0.88,1.34,4.34)」，且彩色半透明面＋红箭头风格悖全书黑白线稿
+%   （灰度印刷糊中灰）。本体＝两半平面二面角 GeoGebra 截图，点集拓扑与题干四棱锥 P-ABCD 不合（含双 A
+%   标注），改标注不可达「与题干相符」，按修图令「重绘兜底」执行＝公共规则§5 三维禁重绘之用户逐件明示例外。
+%   重绘＝精确坐标模型（AB∥CD，∠BAP=∠CDP=90°，PA=PD=AB=DC=1，∠APD=90°：A=(0,0,0) B=(1,0,0)
+%   C=(1,√2,0) D=(0,√2,0) P=(0,√2/2,√2/2)），虚实线＝凸体面可见性判定（虚 CD/DA/PD，实 AB/BC/PA/PB/PC，
+%   非手摆），cm 斜体标注，纯黑线白底零彩色（像素级断言 dev=0），图内零中文零记号。脚本＝
+%   工作区/_tmp修图探点一课时09_0913/draw_fig.py；实证读数见修图轮回报（三零＋页数零变化＋600dpi 目验）。
 %
 % 取材链登记（盘点结论，详见 成卷/导学件/批5值台账.md）：
 %   ① 讲练件（上）§1.2.4 讲部实态（dump_docx --slice 727:1254 取证＝工作区/_tmp批5S2量产0912/讲上-1.2.4全文.txt）：
@@ -109,7 +118,7 @@
 
 \tjdnr{一}{建系向量法求二面角(锐钝判定)}{例\textbf{1}}{中档(知识点一)}{如图，在四棱锥\(P\text{-}ABCD\)中，\(AB\parallel CD\)，且\(\angle BAP=\angle CDP=90^{\circ}\)．(1)证明：平面\(PAB\perp\)平面\(PAD\)；(2)若\(PA=PD=AB=DC\)，\(\angle APD=90^{\circ}\)，求二面角\(A\text{-}PB\text{-}C\)的余弦值.}
 
-\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=40.0mm]{figs/restored351.png}}\par\vspace{-1.0mm}\penalty10000
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=40.0mm]{figs/figPABCD_redraw0913.png}}\par\vspace{-1.0mm}\penalty10000
 
 \liubai[12mm]{解答书写区}
 
@@ -169,7 +178,7 @@
 
 \liubai[8mm]{解答书写区}
 
-\liB{变式\textbf{1}}{简单(知识点一)}{}{将边长为2的正三角形\(ABC\)沿高线\(AD\)折成直二面角\(B\text{-}AD\text{-}C\)，则折后\(B\)，\(C\)两点间的距离为\kongbai{}．}
+\liB{变式\textbf{1}}{简单(知识点一)}{}{将边长为\(2\sqrt{3}\)的正三角形\(ABC\)沿高线\(AD\)折成直二面角\(B\text{-}AD\text{-}C\)，则折后\(B\)，\(C\)两点间的距离为\kongbai{}．}
 
 \xiaojie{①识别：平面图形翻折后求两平面的夹角(二面角)或翻折后线段长时，判归本题型.}
 

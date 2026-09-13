@@ -1,5 +1,4 @@
 This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
- restricted \write18 enabled.
 entering extended mode
 (./main.tex
 LaTeX2e <2026-06-01>
@@ -16,7 +15,7 @@ new hooks used!!
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 [1]
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 |  |\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 （\TU/TimesNewRoman(0)/m/n/10.5 2\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ）|  在 $[] [] []$ 的 条 件 下，| $[] []$$[]$；|
 [2] (./main.aux) )
 (see the transcript file for additional information)

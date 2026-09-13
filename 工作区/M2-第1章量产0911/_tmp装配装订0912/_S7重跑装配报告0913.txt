@@ -1,0 +1,33 @@
+导学本/课时01         起  1  4页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时02         起  5  3页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时03         起  8  3页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时04         起 11  3页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时05         起 14  3页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/衔接节-1.2.1前   起 17  4页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时06         起 21  4页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时07         起 25  4页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时08         起 29  4页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时09         起 33  3页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/课时10         起 36  3页 err=0 ovr=0 mch=0 rc=0 OK
+导学本/章末-本章总结提升    起 39  6页 err=0 ovr=0 mch=0 rc=0 OK
+■ 导学本.pdf 合并 44 页
+练习本/课时01         起 45  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时02         起 47  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时03         起 49  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时04         起 51  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时05         起 53  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时06         起 55  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时07         起 57  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时08         起 59  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时09         起 61  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/课时10         起 63  2页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/拓展册-上册       起 65  5页 err=0 ovr=0 mch=0 rc=0 OK
+练习本/拓展册-下册       起 70 13页 err=0 ovr=0 mch=0 rc=0 OK
+■ 练习本.pdf 合并 38 页
+测评本/测评卷          起 83  3页 err=0 ovr=0 mch=0 rc=0 OK
+测评本/滚动卷A         起 86  2页 err=0 ovr=0 mch=0 rc=0 OK
+测评本/滚动卷B         起 88  2页 err=0 ovr=0 mch=0 rc=0 OK
+■ 测评本.pdf 合并 7 页
+答案本/答案册          起 90 13页 err=0 ovr=0 mch=0 rc=0 OK
+■ 答案本.pdf 合并 13 页
+EXIT=0

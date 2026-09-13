@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  12 SEP 2026 22:49
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  13 SEP 2026 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1105,33 +1105,34 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w600.ttf]/OT:script=hani;language=dflt;"
 
+\danshang=\dimen332
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.29182pt on input line 25.
+(Font)              scaled to size 10.29182pt on input line 37.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.559pt on input line 25.
+(Font)              scaled to size 5.559pt on input line 37.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 4.6308pt on input line 25.
+(Font)              scaled to size 4.6308pt on input line 37.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.29276pt on input line 25.
+(Font)              scaled to size 10.29276pt on input line 37.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.55951pt on input line 25.
+(Font)              scaled to size 5.55951pt on input line 37.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.63123pt on input line 25.
+(Font)              scaled to size 4.63123pt on input line 37.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.29076pt on input line 25.
+(Font)              scaled to size 10.29076pt on input line 37.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.55843pt on input line 25.
+(Font)              scaled to size 5.55843pt on input line 37.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.63033pt on input line 25.
+(Font)              scaled to size 4.63033pt on input line 37.
  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
+Underfull \hbox (badness 10000) in paragraph at lines 239--239
 [] [][] [] [][] [] [][] [] [][] [] [][][][] [] [][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
 \TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 解 析\TU/TimesNewRoman(0)/m/n/10.09 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 切 线 长 相 等 三 元 一 次 $[] [][] [] [][] []
  []
 
@@ -1150,28 +1151,36 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
 
- [4] [5]
-Underfull \hbox (badness 6825) in paragraph at lines 847--847
+
+Underfull \hbox (badness 10000) in paragraph at lines 599--599
+[]| \TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 答 案\TU/TimesNewRoman(0)/m/n/10.09 ] $[][][][][][] [][][] [][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，| $[][][][][] [][][] [][][]$，|
+ []
+
+[4] [5]
+Underfull \hbox (badness 6825) in paragraph at lines 860--860
 []| \TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 答 案\TU/TimesNewRoman(0)/m/n/10.09 ] (1)$[][][][] [][] [][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，| $[][][][] [][] [][]$，| $[][][][] [][] [][]$，|
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 904--904
+Underfull \hbox (badness 10000) in paragraph at lines 917--917
 []| \TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 答 案\TU/TimesNewRoman(0)/m/n/10.09 ] (1)$[] [] []$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，| $[] [] []$；| \TU/TimesNewRoman(0)/m/n/10.09 (2)$[][][][] [][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 或
  []
 
 
-Underfull \hbox (badness 5985) in paragraph at lines 913--913
+Underfull \hbox (badness 5985) in paragraph at lines 926--926
 []| \TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 答 案\TU/TimesNewRoman(0)/m/n/10.09 ] (1)$[][] [] [][][] [] [][] [] []$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，| $[] [] []$；|
  []
 
 [6] [7] [8] [9] [10] [11]
-Underfull \hbox (badness 6944) in paragraph at lines 1860--1860
+Underfull \hbox (badness 6944) in paragraph at lines 1873--1873
 []| \TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 答 案\TU/TimesNewRoman(0)/m/n/10.09 ] (1)$[][][][] [][] [][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 、| $[][][][] [][] [][]$、| $[][][][][] [][] [][]$、|
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 1921--1921
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 1934--1934
 \TU/TimesNewRoman(0)/m/n/10.09 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 解 析\TU/TimesNewRoman(0)/m/n/10.09 ] (2) $[] [] [][][] [][] [][]$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 、| $[] [] [][][] [][] [][]$，|
  []
 
@@ -1182,12 +1191,12 @@ L3 programming layer <2026/08/11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 24518 strings out of 469768
- 580725 string characters out of 5466040
- 1127756 words of memory out of 5000000
- 53121 multiletter control sequences out of 15000+600000
+ 24486 strings out of 469768
+ 578258 string characters out of 5466040
+ 1153756 words of memory out of 5000000
+ 53089 multiletter control sequences out of 15000+600000
  631739 words of font info for 116 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 97i,16n,110p,1198b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 97i,16n,110p,1198b,738s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (13 pages).

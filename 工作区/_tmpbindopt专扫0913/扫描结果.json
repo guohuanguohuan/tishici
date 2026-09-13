@@ -1,0 +1,1184 @@
+{
+ "recs": [
+  {
+   "file": "课时01",
+   "qid": "例[例1]",
+   "line": 238,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -13.87
+   ],
+   "over_slot": -18.12,
+   "over_col": -25.55,
+   "red": false,
+   "plain": "A.1234;|B.134;"
+  },
+  {
+   "file": "课时01",
+   "qid": "例[例1]",
+   "line": 240,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -22.2
+   ],
+   "over_slot": -25.67,
+   "over_col": -33.1,
+   "red": false,
+   "plain": "C.13;|D.24"
+  },
+  {
+   "file": "课时01",
+   "qid": "检2",
+   "line": 271,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -8.22,
+    -9.26,
+    -5.94
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.14,
+   "red": false,
+   "plain": "A.12;|B.2;|C.-12;|D.3"
+  },
+  {
+   "file": "课时01",
+   "qid": "检3",
+   "line": 275,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -4.04,
+    -3.65,
+    -6.13
+   ],
+   "over_slot": -9.85,
+   "over_col": -17.24,
+   "red": false,
+   "plain": "A.2EF;|B.-EF;|C.FE;|D.EF"
+  },
+  {
+   "file": "课时02",
+   "qid": "例[例1]",
+   "line": 167,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -25.94
+   ],
+   "over_slot": -26.12,
+   "over_col": -33.55,
+   "red": false,
+   "plain": "A.√3;|B.√2;"
+  },
+  {
+   "file": "课时02",
+   "qid": "例[例1]",
+   "line": 169,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -28.47
+   ],
+   "over_slot": -22.08,
+   "over_col": -29.51,
+   "red": false,
+   "plain": "C.1;|D.3-√2"
+  },
+  {
+   "file": "课时02",
+   "qid": "例[例1]",
+   "line": 183,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -4.05,
+    -6.15,
+    -6.15
+   ],
+   "over_slot": -12.79,
+   "over_col": -20.18,
+   "red": false,
+   "plain": "A.√102;|B.√62;|C.√52;|D.2"
+  },
+  {
+   "file": "课时02",
+   "qid": "检1",
+   "line": 204,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -6.59,
+    -9.28,
+    -6.78
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.18,
+   "red": false,
+   "plain": "A.-1;|B.1;|C.-2;|D.2"
+  },
+  {
+   "file": "课时02",
+   "qid": "检2",
+   "line": 208,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -1.69
+   ],
+   "over_slot": -1.88,
+   "over_col": -9.32,
+   "red": false,
+   "plain": "A.充分不必要条件;|B.必要不充分条件;"
+  },
+  {
+   "file": "课时02",
+   "qid": "检2",
+   "line": 210,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -14.08
+   ],
+   "over_slot": 6.81,
+   "over_col": -0.63,
+   "red": false,
+   "plain": "C.充要条件;|D.既不充分也不必要条件"
+  },
+  {
+   "file": "课时02",
+   "qid": "检3",
+   "line": 214,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -5.79,
+    -6.01,
+    -5.99
+   ],
+   "over_slot": -9.65,
+   "over_col": -17.07,
+   "red": false,
+   "plain": "A.30∘;|B.45∘;|C.60∘;|D.90∘"
+  },
+  {
+   "file": "课时03",
+   "qid": "检1",
+   "line": 218,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -17.93
+   ],
+   "over_slot": -18.12,
+   "over_col": -25.55,
+   "red": false,
+   "plain": "A.必共线;|B.必共面;"
+  },
+  {
+   "file": "课时03",
+   "qid": "检1",
+   "line": 220,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -14.08
+   ],
+   "over_slot": -9.43,
+   "over_col": -16.86,
+   "red": false,
+   "plain": "C.必不共面;|D.必为单位向量"
+  },
+  {
+   "file": "课时03",
+   "qid": "检3",
+   "line": 234,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -12.51
+   ],
+   "over_slot": -12.7,
+   "over_col": -20.13,
+   "red": false,
+   "plain": "A.12a+12b+c;|B.12a+12b-c;"
+  },
+  {
+   "file": "课时03",
+   "qid": "检3",
+   "line": 236,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -18.19
+   ],
+   "over_slot": -16.22,
+   "over_col": -23.65,
+   "red": false,
+   "plain": "C.a+b-c;|D.12a-12b-c"
+  },
+  {
+   "file": "课时04",
+   "qid": "例[例1]",
+   "line": 136,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -18.3
+   ],
+   "over_slot": -15.99,
+   "over_col": -23.43,
+   "red": false,
+   "plain": "A.0,4,2;|B.-2,0,0;"
+  },
+  {
+   "file": "课时04",
+   "qid": "例[例1]",
+   "line": 138,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -13.54
+   ],
+   "over_slot": -19.49,
+   "over_col": -26.92,
+   "red": false,
+   "plain": "C.0,-4,-2;|D.2,0,-2"
+  },
+  {
+   "file": "课时04",
+   "qid": "例[例1]",
+   "line": 152,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -6.79,
+    -6.98,
+    -9.26
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.14,
+   "red": false,
+   "plain": "A.√3;|B.√2;|C.2;|D.3"
+  },
+  {
+   "file": "课时04",
+   "qid": "检2",
+   "line": 187,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -9.06,
+    -5.09,
+    -5.1
+   ],
+   "over_slot": -8.59,
+   "over_col": -16.02,
+   "red": false,
+   "plain": "A.2;|B.2√2;|C.2√3;|D.4√3"
+  },
+  {
+   "file": "课时04",
+   "qid": "检3",
+   "line": 191,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -20.69
+   ],
+   "over_slot": -3.42,
+   "over_col": -9.94,
+   "red": false,
+   "plain": "A.y轴上;|B.zOx坐标平面内;"
+  },
+  {
+   "file": "课时04",
+   "qid": "检3",
+   "line": 193,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -4.44
+   ],
+   "over_slot": -23.36,
+   "over_col": -29.87,
+   "red": false,
+   "plain": "C.yOz坐标平面内;|D.x轴上"
+  },
+  {
+   "file": "课时05",
+   "qid": "例[例1]",
+   "line": 128,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -5.94,
+    -3.66,
+    -3.66
+   ],
+   "over_slot": -7.99,
+   "over_col": -15.38,
+   "red": false,
+   "plain": "A.√66;|B.-√66;|C.±√66;|D.±√6"
+  },
+  {
+   "file": "课时05",
+   "qid": "检2",
+   "line": 209,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -9.07,
+    -5.1,
+    -6.99
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.18,
+   "red": false,
+   "plain": "A.3;|B.3√2;|C.√3;|D.9"
+  },
+  {
+   "file": "课时05",
+   "qid": "检3",
+   "line": 213,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -18.32
+   ],
+   "over_slot": -13.52,
+   "over_col": -20.96,
+   "red": false,
+   "plain": "A.3,2,4;|B.-1,-2,0;"
+  },
+  {
+   "file": "课时05",
+   "qid": "检3",
+   "line": 215,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -16.04
+   ],
+   "over_slot": -17.03,
+   "over_col": -24.46,
+   "red": false,
+   "plain": "C.3,-2,4;|D.-3,2,-4"
+  },
+  {
+   "file": "课时06",
+   "qid": "变[变式\\textbf{1]",
+   "line": 121,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -15.82
+   ],
+   "over_slot": -18.49,
+   "over_col": -25.89,
+   "red": false,
+   "plain": "A.1,0,-2;|B.1,0,2;"
+  },
+  {
+   "file": "课时06",
+   "qid": "变[变式\\textbf{1]",
+   "line": 123,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -16.02
+   ],
+   "over_slot": -19.5,
+   "over_col": -26.89,
+   "red": false,
+   "plain": "C.-1,0,2;|D.2,0,-1"
+  },
+  {
+   "file": "课时06",
+   "qid": "例[例1]",
+   "line": 133,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -5.79,
+    -6.01,
+    -5.99
+   ],
+   "over_slot": -9.65,
+   "over_col": -17.04,
+   "red": false,
+   "plain": "A.30∘;|B.45∘;|C.60∘;|D.90∘"
+  },
+  {
+   "file": "课时06",
+   "qid": "变[变式\\textbf{1]",
+   "line": 141,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -8.23,
+    -6.14,
+    -3.65
+   ],
+   "over_slot": -12.33,
+   "over_col": -19.75,
+   "red": false,
+   "plain": "A.14;|B.√24;|C.-√24;|D.12"
+  },
+  {
+   "file": "课时06",
+   "qid": "检1",
+   "line": 218,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -18.33
+   ],
+   "over_slot": -16.04,
+   "over_col": -23.43,
+   "red": false,
+   "plain": "A.3,1,1;|B.3,-1,1;"
+  },
+  {
+   "file": "课时06",
+   "qid": "检1",
+   "line": 220,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -16.05
+   ],
+   "over_slot": -22.0,
+   "over_col": -29.39,
+   "red": false,
+   "plain": "C.-1,1,3;|D.3,1,2"
+  },
+  {
+   "file": "课时06",
+   "qid": "检2",
+   "line": 224,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -21.99
+   ],
+   "over_slot": -22.18,
+   "over_col": -29.58,
+   "red": false,
+   "plain": "A.平行;|B.垂直;"
+  },
+  {
+   "file": "课时06",
+   "qid": "检2",
+   "line": 226,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -7.99
+   ],
+   "over_slot": -9.74,
+   "over_col": -17.14,
+   "red": false,
+   "plain": "C.所成角为60∘;|D.所成角为120∘"
+  },
+  {
+   "file": "课时06",
+   "qid": "检3",
+   "line": 230,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -1.69
+   ],
+   "over_slot": -1.88,
+   "over_col": -9.28,
+   "red": false,
+   "plain": "A.充分不必要条件;|B.必要不充分条件;"
+  },
+  {
+   "file": "课时06",
+   "qid": "检3",
+   "line": 232,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -14.08
+   ],
+   "over_slot": 6.81,
+   "over_col": -0.59,
+   "red": false,
+   "plain": "C.充要条件;|D.既不充分也不必要条件"
+  },
+  {
+   "file": "课时07",
+   "qid": "例[例1]",
+   "line": 127,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -13.35
+   ],
+   "over_slot": -18.51,
+   "over_col": -25.9,
+   "red": false,
+   "plain": "A.-1,2,-1;|B.1,2,1;"
+  },
+  {
+   "file": "课时07",
+   "qid": "例[例1]",
+   "line": 129,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -16.04
+   ],
+   "over_slot": -19.51,
+   "over_col": -26.91,
+   "red": false,
+   "plain": "C.1,2,-1;|D.-1,2,1"
+  },
+  {
+   "file": "课时07",
+   "qid": "变[变式\\textbf{1]",
+   "line": 133,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -15.94
+   ],
+   "over_slot": -13.63,
+   "over_col": -21.02,
+   "red": false,
+   "plain": "A.P2,3,3;|B.P-2,0,1;"
+  },
+  {
+   "file": "课时07",
+   "qid": "变[变式\\textbf{1]",
+   "line": 135,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -13.65
+   ],
+   "over_slot": -17.14,
+   "over_col": -24.54,
+   "red": false,
+   "plain": "C.P-4,4,0;|D.P3,-3,4"
+  },
+  {
+   "file": "课时07",
+   "qid": "例[例1]",
+   "line": 213,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -9.11,
+    -9.31,
+    -9.31
+   ],
+   "over_slot": -12.79,
+   "over_col": -20.22,
+   "red": false,
+   "plain": "A.1;|B.2;|C.3;|D.4"
+  },
+  {
+   "file": "课时07",
+   "qid": "变[变式\\textbf{1]",
+   "line": 219,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -19.98
+   ],
+   "over_slot": -19.71,
+   "over_col": -27.15,
+   "red": false,
+   "plain": "A.23,1;|B.13,23;"
+  },
+  {
+   "file": "课时07",
+   "qid": "变[变式\\textbf{1]",
+   "line": 221,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -20.18
+   ],
+   "over_slot": -23.64,
+   "over_col": -31.08,
+   "red": false,
+   "plain": "C.0,13;|D.0,23"
+  },
+  {
+   "file": "课时07",
+   "qid": "检1",
+   "line": 238,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -21.95
+   ],
+   "over_slot": -21.59,
+   "over_col": -28.98,
+   "red": false,
+   "plain": "A.l⟂α;|B.l∥α;"
+  },
+  {
+   "file": "课时07",
+   "qid": "检2",
+   "line": 246,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -21.99
+   ],
+   "over_slot": -22.18,
+   "over_col": -29.58,
+   "red": false,
+   "plain": "A.平行;|B.垂直;"
+  },
+  {
+   "file": "课时07",
+   "qid": "检2",
+   "line": 248,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -5.96
+   ],
+   "over_slot": -13.49,
+   "over_col": -20.88,
+   "red": false,
+   "plain": "C.相交但不垂直;|D.以上都不对"
+  },
+  {
+   "file": "课时07",
+   "qid": "检3",
+   "line": 252,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -21.99
+   ],
+   "over_slot": -14.06,
+   "over_col": -21.46,
+   "red": false,
+   "plain": "A.矩形;|B.直角梯形;"
+  },
+  {
+   "file": "课时07",
+   "qid": "检3",
+   "line": 254,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -14.08
+   ],
+   "over_slot": -13.49,
+   "over_col": -20.88,
+   "red": false,
+   "plain": "C.正六边形;|D.等边三角形"
+  },
+  {
+   "file": "课时08",
+   "qid": "变[变式\\textbf{1]",
+   "line": 139,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -5.79,
+    -6.01,
+    -5.99
+   ],
+   "over_slot": -9.65,
+   "over_col": -17.07,
+   "red": false,
+   "plain": "A.30∘;|B.45∘;|C.60∘;|D.90∘"
+  },
+  {
+   "file": "课时08",
+   "qid": "检1",
+   "line": 200,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -17.13
+   ],
+   "over_slot": -17.32,
+   "over_col": -24.72,
+   "red": false,
+   "plain": "A.0∘,90∘;|B.0∘,90∘;"
+  },
+  {
+   "file": "课时08",
+   "qid": "检1",
+   "line": 202,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -17.38
+   ],
+   "over_slot": -18.97,
+   "over_col": -26.37,
+   "red": false,
+   "plain": "C.0∘,90∘;|D.0∘,180∘"
+  },
+  {
+   "file": "课时08",
+   "qid": "检2",
+   "line": 206,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -25.09
+   ],
+   "over_slot": -27.56,
+   "over_col": -34.96,
+   "red": false,
+   "plain": "A.√22;|B.12;"
+  },
+  {
+   "file": "课时08",
+   "qid": "检2",
+   "line": 208,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -25.3
+   ],
+   "over_slot": -29.2,
+   "over_col": -36.59,
+   "red": false,
+   "plain": "C.√32;|D.√33"
+  },
+  {
+   "file": "课时08",
+   "qid": "检3",
+   "line": 212,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -5.79,
+    -6.01,
+    -5.99
+   ],
+   "over_slot": -9.65,
+   "over_col": -17.04,
+   "red": false,
+   "plain": "A.30∘;|B.45∘;|C.60∘;|D.90∘"
+  },
+  {
+   "file": "课时09",
+   "qid": "检2",
+   "line": 208,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -24.94
+   ],
+   "over_slot": -25.13,
+   "over_col": -32.57,
+   "red": false,
+   "plain": "A.30∘;|B.60∘;"
+  },
+  {
+   "file": "课时09",
+   "qid": "检2",
+   "line": 210,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -13.51
+   ],
+   "over_slot": -26.91,
+   "over_col": -33.42,
+   "red": false,
+   "plain": "C.60∘或120∘;|D.150∘"
+  },
+  {
+   "file": "课时09",
+   "qid": "检3",
+   "line": 214,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -8.22,
+    -6.15,
+    -6.14
+   ],
+   "over_slot": -12.33,
+   "over_col": -19.76,
+   "red": false,
+   "plain": "A.12;|B.√32;|C.√22;|D.13"
+  },
+  {
+   "file": "课时10",
+   "qid": "例[例1]",
+   "line": 113,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -6.79,
+    -9.26,
+    -9.28
+   ],
+   "over_slot": -10.47,
+   "over_col": -17.86,
+   "red": false,
+   "plain": "A.√3;|B.2;|C.6;|D.√6"
+  },
+  {
+   "file": "课时10",
+   "qid": "例[例1]",
+   "line": 155,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -23.21
+   ],
+   "over_slot": -21.51,
+   "over_col": -28.91,
+   "red": false,
+   "plain": "A.5√22;|B.10√33;"
+  },
+  {
+   "file": "课时10",
+   "qid": "例[例1]",
+   "line": 157,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -24.25
+   ],
+   "over_slot": -25.41,
+   "over_col": -32.8,
+   "red": false,
+   "plain": "C.5√2;|D.20√33"
+  },
+  {
+   "file": "课时10",
+   "qid": "变[变式\\textbf{1]",
+   "line": 175,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -8.22,
+    -8.43,
+    -8.43
+   ],
+   "over_slot": -12.33,
+   "over_col": -19.72,
+   "red": false,
+   "plain": "A.12;|B.13;|C.14;|D.15"
+  },
+  {
+   "file": "课时10",
+   "qid": "检1",
+   "line": 192,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -8.23,
+    -6.15,
+    -8.42
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.18,
+   "red": false,
+   "plain": "A.13;|B.√66;|C.23;|D.1"
+  },
+  {
+   "file": "课时10",
+   "qid": "检3",
+   "line": 206,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -9.06,
+    -9.28,
+    -6.14
+   ],
+   "over_slot": -12.33,
+   "over_col": -19.75,
+   "red": false,
+   "plain": "A.2;|B.1;|C.√22;|D.12"
+  },
+  {
+   "file": "衔接节-1.2.1前",
+   "qid": "?",
+   "line": 101,
+   "kind": "双盒",
+   "macro": "\\lxopt{\\makebox[\\dimexpr0.5\\linewidth-0.5\\xhang-1em\\relax][l]{A．\\(7.2\\)；}\\makebox[\\dimexpr0.5\\linewidth-0.5\\xhang-1em\\relax][l]{B．\\(6\\)；}}",
+   "page": 1,
+   "overlaps": [
+    -19.89
+   ],
+   "over_slot": -28.42,
+   "over_col": -30.35,
+   "red": false,
+   "plain": "A.7.2;|B.6;"
+  },
+  {
+   "file": "衔接节-1.2.1前",
+   "qid": "?",
+   "line": 102,
+   "kind": "双盒",
+   "macro": "\\lxopt{\\makebox[\\dimexpr0.5\\linewidth-0.5\\xhang-1em\\relax][l]{C．\\(12\\)；}\\makebox[\\dimexpr0.5\\linewidth-0.5\\xhang-1em\\relax][l]{D．\\(24\\)}}",
+   "page": 1,
+   "overlaps": [
+    -21.04
+   ],
+   "over_slot": -30.01,
+   "over_col": -31.94,
+   "red": false,
+   "plain": "C.12;|D.24"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "?",
+   "line": 87,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 1,
+   "overlaps": [
+    -9.06,
+    -9.28,
+    -9.26
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.14,
+   "red": false,
+   "plain": "A.0;|B.1;|C.2;|D.3"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "变[变式\\textbf{1]",
+   "line": 96,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 1,
+   "overlaps": [
+    -2.84,
+    -3.04,
+    -3.04
+   ],
+   "over_slot": -6.52,
+   "over_col": -13.91,
+   "red": false,
+   "plain": "A.12;|B.23;|C.34;|D.14"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "变[变式\\textbf{2]",
+   "line": 133,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 1,
+   "overlaps": [
+    -14.88
+   ],
+   "over_slot": -16.73,
+   "over_col": -24.16,
+   "red": false,
+   "plain": "A.AD1·B1C;|B.BD1·AC;"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "变[变式\\textbf{2]",
+   "line": 135,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 1,
+   "overlaps": [
+    -17.14
+   ],
+   "over_slot": -20.38,
+   "over_col": -27.82,
+   "red": false,
+   "plain": "C.AB·AD1;|D.BD1·BC"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "变[变式\\textbf{3]",
+   "line": 159,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 2,
+   "overlaps": [
+    -9.06,
+    -9.28,
+    -9.26
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.14,
+   "red": false,
+   "plain": "A.0;|B.1;|C.2;|D.3"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "变[变式\\textbf{7]",
+   "line": 226,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -6.59,
+    -9.28,
+    -6.79
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.14,
+   "red": false,
+   "plain": "A.-1;|B.1;|C.-4;|D.4"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "变[变式\\textbf{7]",
+   "line": 241,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -9.07,
+    -9.26,
+    -9.28
+   ],
+   "over_slot": -12.76,
+   "over_col": -20.14,
+   "red": false,
+   "plain": "A.1;|B.2;|C.3;|D.4"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "变[变式\\textbf{8]",
+   "line": 259,
+   "kind": "双盒",
+   "macro": "\\bindopt",
+   "page": 3,
+   "overlaps": [
+    -21.95
+   ],
+   "over_slot": -21.59,
+   "over_col": -29.02,
+   "red": false,
+   "plain": "A.l⟂α;|B.l∥α;"
+  },
+  {
+   "file": "章末-本章总结提升",
+   "qid": "变[变式\\textbf{11]",
+   "line": 327,
+   "kind": "4连排",
+   "macro": "\\bindopt",
+   "page": 4,
+   "overlaps": [
+    -4.04,
+    -9.28,
+    -6.98
+   ],
+   "over_slot": -8.58,
+   "over_col": -16.0,
+   "red": false,
+   "plain": "A.2√23;|B.1;|C.√2;|D.2√2"
+  },
+  {
+   "file": "课时03",
+   "qid": "额外",
+   "line": "-",
+   "kind": "2槽(0.25?)",
+   "macro": "extra",
+   "page": 3,
+   "overlaps": [
+    1.82
+   ],
+   "over_slot": 4.97,
+   "over_col": -39.02,
+   "red": false,
+   "plain": "A.|AC1|=6;B.AC1⟂BD;"
+  }
+ ],
+ "unpaired_tex": [],
+ "extras": [
+  {
+   "file": "课时03",
+   "page": 3,
+   "y": 269.6,
+   "kind": "2槽(0.25?)",
+   "n": 2,
+   "pitches": [
+    59.1
+   ],
+   "overlaps": [
+    1.82
+   ],
+   "over_col": -39.02,
+   "over_slot": 4.97,
+   "text": "A.|AC1|=6;B.AC1⟂BD;",
+   "key": "AAC16|BAC1BD"
+  }
+ ]
+}
