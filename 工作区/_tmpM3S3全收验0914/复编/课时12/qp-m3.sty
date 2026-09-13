@@ -1,0 +1,600 @@
+% ============================================================
+% qp-m3.sty —— M3 新派 toolchain 原型·宏包件（v0.1，2026-09-13）
+% 位置：工作区/_tmpM3toolchain0913/（改造件，M2 宏族目录零改动＝红线遵守）
+% 回源：工作区/M2-第1章量产0911/成卷/{导学件/课时01,练习件/课时01,答案册}/ qp-*.tex 六宏族
+%       ＋两件型 main.tex 局部宏（\pingtou/\liubai/\zhankong/\xjtk；\tihao/\lxopt/\xiexwei/\dangbadge）
+%       ＋答案册 qp-answ-blocks（\ansitem/\anshang/\qpind 同字号规约回填）
+% 用法：\documentclass[fontset=none]{ctexart} + \usepackage{qp-m3}
+%       纯题版：\usepackage[pure]{qp-m3}  或  导言 \showansfalse  或  包装件 \def\mthreepure{1}
+%
+% ── M3 规格书 v2 四制落位（规格书-v1.md §四·二 1/3/9/10 条）──
+% ① \showans 开关（题后紧跟答案制·纯题开关制）：\newif\ifshowans，默认 true＝含详解印本。
+%    false 时：ansblock 整块不印、\ansitem/\anssub/\ansnote/\ansline/\jiexi/\xiaojie 不印、
+%    \zhenti 退 \zhentib 形（空括号题面）、\kongda 退定宽空线（题面形态不变、版面不塌）。
+%    逻辑闸/盲窗纪律不变：题面与详解生产层仍分文件，仅装配层合并印面（本宏包只管装配层）。
+% ② ansblock 统一答案环境（题后紧跟答案版式）：题目块→紧邻 ansblock；
+%    双模可切——灰底（\ansblockgraytrue 默认，ansbg 浅灰盒）／括线（\ansblockgrayfalse，
+%    上下 hairline 区隔、可跨栏断开）；内字号＝正文 10.09pt/18pt＝M2 答案册同规约；
+%    内件 \ansitem（题号[答案]条）／\ansnote（[详解][点睛]行）／\anssub（小题分层二档悬挂）。
+% ③ 课堂评价回流：ketang 环境＝撤 M2 的 \vbox 整体装栏（不可切块＝右栏全空病灶根因，
+%    见 M2 课时01 main.tex「课堂评价」\vbox 与 qp-blocks v4.2-⑦ 登记），改 \glueguard
+%    软绑定按栏余量顺排、可跨栏。ketangboxed＝旧制保留对照件（仅复现病灶用，量产禁用）。
+% ④ 尾页填充块：\tailfill[高度]——课时/件尾插入「笔记与错题整理」版式框，
+%    与「解答书写区」(\liubai) 同设计语言（斜置浅灰水印＋开放书写区＋hairline 上下线）；
+%    无可选参时块内 \vfill 吃尾空（自动吃满本栏余量），给可选参为定高块；
+%    \tailfillused 布尔供装配层断言「件尾已置填充块」。
+% ⑤ 衔接节一等课时件型：\xjkeshi（衔接课时标题）＋既有 \zsd/\tiaomu（知识点条）＋
+%    \tjdnr/\liB（考点探究 例+变式）＋ ketang（课堂评价 G5 恒5）骨架宏就位，
+%    配额 16 同课时制在装配层执行（本宏包不锁数量）。
+%
+% ── 钉值键注·新锚点格式（规格书 v2 §四.2「键式不变、锚点迁移」）──
+%   源层锚点：% ans:<键> 写在 ansblock 体内行首注释（键式沿用四元组键，grep 即得）；
+%   编译层锚点：\begin{ansblock}[<键>] 或 \anskey{<键>} —— 两档编译模式均向 log 发射
+%     「M3-ANSKEY: <键>」行，供钉值门/对号断言（题面库键↔件内答案键）机器取锚。
+%   对号门对纯题版同样可跑（锚点发射不随 \ifshowans 关断）。
+%
+% 红线：M2 宏族只读；本件自带全量宏定义，不 \input M2 目录任何文件；编译 xelatex。
+% 字体：沿用 L1 冻结挂载（Path= 字面量绝对路径，纪律沿 M2——Path 值内禁宏）。
+% ============================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{qp-m3}[2026/09/13 v0.1 M3 题后紧跟答案制 toolchain 原型（L1 宏族改造件）]
+
+% ================= 0. \showans 开关（要件①） =================
+\newif\ifshowans
+\showanstrue                              % 默认＝含详解印本（正式件）
+\DeclareOption{pure}{\showansfalse}       % 纯题版：包选项
+\ProcessOptions\relax
+% 包装件开关（冒烟双档壳用；须在 \usepackage{qp-m3} 之前 \def\mthreepure{1}）
+\ifdefined\mthreepure\ifnum\mthreepure=1 \showansfalse\fi\fi
+
+% ================= 1. 字体模块（承 M2 qp-fonts E/F 版，宏名与挂载零改动） =================
+\setmainfont{Times New Roman}
+\setCJKmainfont[
+  Path=C:/Users/28120/AppData/Local/Microsoft/Windows/Fonts/,
+  BoldFont=FZHei-B01S.ttf]{FZShuSong-Z01S.ttf}
+\setCJKfamilyfont{kai}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{FZKTK.TTF}
+\setCJKfamilyfont{fangsong}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{FZFSK.TTF}
+\newfontfamily{\fangsonglat}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{FZFSK.TTF}
+\newcommand{\gou}{{\fangsonglat\symbol{"221A}}}
+\newcommand{\cha}{}% 占位；实体在 \AtBeginDocument 落 TikZ（45° 双线自绘错号，M2 拍板A）
+\AtBeginDocument{\renewcommand{\cha}{{\begin{tikzpicture}[x=1em,y=1em,baseline={(0,0)}]
+  \fill (-0.3399,-0.0727) -- (-0.3117,-0.1009) -- (0.3399,0.5507) -- (0.3117,0.5789) -- cycle;
+  \fill (-0.3399,0.5507) -- (-0.3117,0.5789) -- (0.3399,-0.0727) -- (0.3117,-0.1009) -- cycle;
+\end{tikzpicture}}}}
+% ---- 字重阶梯族（思源黑体真字重；BoldFont=self 保组内 \bfseries 回落干净） ----
+\setCJKfamilyfont{heizhang}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w600.ttf}
+\setCJKfamilyfont{heijie}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Bold.otf}
+\setCJKfamilyfont{heitiao}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Bold.otf}
+\setCJKfamilyfont{heibf}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w600.ttf}
+\setCJKfamilyfont{heihao}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w700.ttf]{NSC-w500.ttf}
+\setCJKfamilyfont{heibian}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Medium.otf}
+\setCJKfamilyfont{hei}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Medium.otf}
+\setCJKfamilyfont{hejie}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w315.ttf]{NSC-w315.ttf}
+\setCJKfamilyfont{hekeshi}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w600.ttf}
+\setCJKfamilyfont{libian}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=FY-w400BEVL100.ttf]{FY-w400BEVL100.ttf}
+\newfontfamily{\libianlat}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{FY-w400BEVL100.ttf}
+\setCJKfamilyfont{libianb}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=FY-w700BEVL100.ttf]{FY-w700BEVL100.ttf}
+\setCJKfamilyfont{libians}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=FY-w450BEVL100.ttf]{FY-w450BEVL100.ttf}
+\newfontfamily{\libianslat}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{FY-w450BEVL100.ttf}
+% 数字族 Height/Depth 按 Times hhea 口径裁齐（M2 E 版：防课堂评价 \vbox 顶溢病复发）
+\newfontfamily{\numbold}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.905,Depth=0.212]{NSC-w850.ttf}
+\newfontfamily{\numboldjian}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.905,Depth=0.212]{NSC-w700.ttf}
+\newfontfamily{\numpnum}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{NotoSansSC-Medium.otf}
+\setCJKfamilyfont{huabf}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,FakeSlant=0.18,BoldFont=NotoSansSC-Black.otf]{NotoSansSC-Bold.otf}
+\setCJKfamilyfont{sympx}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,FakeSlant=0.2,BoldFont=NotoSansSC-Bold.otf]{NotoSansSC-Medium.otf}
+\setCJKfamilyfont{lihei}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=FangYuanTi-w600圆-BEVL100.ttf]{FangYuanTi-w600圆-BEVL100.ttf}
+\newfontfamily{\lilat}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{FangYuanTi-w600圆-BEVL100.ttf}
+% ---- 访问宏（宏名不动，调用侧零改动） ----
+\newcommand{\heiti}{\CJKfamily{hei}}
+\newcommand{\heizhang}{\CJKfamily{heizhang}}
+\newcommand{\heijie}{\CJKfamily{heijie}}
+\newcommand{\hejie}{\CJKfamily{hejie}}
+\newcommand{\hekeshi}{\CJKfamily{hekeshi}}
+\newcommand{\libian}{\CJKfamily{libian}}
+\newcommand{\libianb}{\CJKfamily{libianb}}
+\newcommand{\libians}{\CJKfamily{libians}}
+\newcommand{\heitiao}{\CJKfamily{heitiao}}
+\newcommand{\heibf}{\CJKfamily{heibf}}
+\newcommand{\heihao}{\CJKfamily{heihao}}
+\newcommand{\heibian}{\CJKfamily{heibian}}
+\newcommand{\huabf}{\CJKfamily{huabf}}
+\newcommand{\lihei}{\CJKfamily{lihei}}
+\newcommand{\kaishu}{\CJKfamily{kai}}
+\newcommand{\fangsong}{\CJKfamily{fangsong}}
+% \parallel 复刻全品 ∥ 几何（TikZ 双平行四边形，M2 variantF 标定档）
+% 【补丁②·改挂 begindocument/end】原 :105 用 \AtBeginDocument（＝begindocument 阶段）注册，
+%   注册序在本文件 :116 \RequirePackage{unicode-math} 之前；unicode-math 于 \begin{document}
+%   阶段重排数学符号（\parallel → U+2225 math char），注册序在后故后手覆盖（p-m3 探针实证：
+%   HOOK105-POST 已是 TikZ、STAGE-BEGINDOC-LATE 已退回 ∥）。begindocument/end 阶段晚于全部
+%   begindocument 钩（含件面导言后补注册），为最稳位；保底替代＝本块移至 :117 \setmathfont
+%   之后仍用 \AtBeginDocument（序即在其后，等价于试迁 parprobe 的件面末位注册实证档）。
+\AddToHook{begindocument/end}{\renewcommand{\parallel}{\mathrel{\begin{tikzpicture}[x=1em,y=1em,baseline={(0,0)}]
+  \fill (-0.412,-0.016) -- (-0.375,-0.016) -- (0.114,0.956) -- (0.077,0.956) -- cycle;
+  \fill (-0.115,-0.016) -- (-0.078,-0.016) -- (0.411,0.956) -- (0.374,0.956) -- cycle;
+\end{tikzpicture}}}}
+\xeCJKDeclareCharClass{CJK}{"2460->"24FF, "2600->"26FF, "2200->"22FF, "25A0->"25FF}
+\xeCJKDeclareCharClass{Default}{"221A}  % √ 划回拉丁类（\gou 恒走 FZFSK）
+\xeCJKsetup{CheckSingle=true,PunctStyle=banjiao,CJKglue={\hskip 0.10em plus 0.05em minus 0.01em}}
+
+% ================= 2. 版面模块（承 M2 qp-layout H1/E3/E6/E7 落定档，零改动） =================
+\RequirePackage[a4paper,left=17.2mm,right=17.2mm,top=19.6mm,bottom=20mm,twoside,headheight=0pt,headsep=0pt,footskip=13pt]{geometry}
+\RequirePackage{amsmath}
+\RequirePackage{unicode-math}
+\setmathfont{texgyretermes-math.otf}[Scale=1.02]
+\thickmuskip=5mu
+\medmuskip=2mu plus 2mu minus 4mu
+\let\frac\dfrac
+\RequirePackage{graphicx}
+\RequirePackage{xcolor}
+\RequirePackage{colortbl}
+\RequirePackage{multirow,array,calc}
+\RequirePackage{multicol}
+% M3 档：multicol 平衡容差——题后紧跟答案制引入不可拆灰底答案块后，末栏平衡微超量
+%   （<8pt＝2.8mm）由栏顶压缩胶吸收，免 Overfull \vbox 假红（multicol 原生旋钮，默认 2pt；
+%   量产若见连续顶格压缩可回调）。
+\multicolundershoot=8pt
+\multicolovershoot=0pt
+% ---------- 颜色（v4.3 调色板全量承袭 ＋ M3 新增 ansbg/ansrule 两档） ----------
+\definecolor{midgray}{HTML}{777777}
+\definecolor{gray122}{HTML}{7A7A7A}
+\definecolor{huarule}{HTML}{4D4D4D}
+\definecolor{pnumbg}{HTML}{DDDDDD}
+\definecolor{ansbg}{HTML}{F0F0F0}     % M3 新增：ansblock 灰底（浅于页码灰块一档，正文可读）
+\definecolor{ansrule}{HTML}{7A7A7A}   % M3 新增：ansblock 括线/尾页框线（灰122 同档）
+\setlength{\columnsep}{7.6mm}
+\setlength{\columnseprule}{0.4pt}
+\renewcommand{\columnseprulecolor}{\color{black!26}}
+\setlength{\multicolsep}{0pt}
+\renewcommand{\normalsize}{\fontsize{10.09pt}{18.0pt}\selectfont}
+\linespread{1}
+\normalsize
+\DeclareMathSizes{10.09}{10.09}{5.45}{4.54}
+\setlength{\parindent}{0pt}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\tolerance=9999
+\emergencystretch=1em
+\binoppenalty=100
+\relpenalty=500
+\flushbottom
+\raggedcolumns
+\setcounter{topnumber}{4}
+\setcounter{totalnumber}{4}
+\setcounter{bottomnumber}{2}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.85}
+\setlength{\arrayrulewidth}{0.4pt}
+% 【补丁①·复刻六宏 qp-layout.tex:130】全局行高垫 1.7mm——v4.3 首版 4.1mm 直译超 3.2mm、0908 修
+%   0.6/0.4/1.0mm 三轮回填，F 片B #30 甲案标定终值 1.7mm（E=1.7 时 padT 3.4–3.5 落窗、表头行高
+%   9.18≈全品 9.03；E≥1.8 表头出窗）。漏复刻实证：件面速查表行高回落 0.28–0.36%（试迁报告 §四.1，
+%   测评卷 p3 表首行 y0 196.0→190.9＝−5.1pt）。生效域＝全局 dimen（array.sty 分配），导言一设
+%   全件生效，与 M2 六宏口径一致；须全局设、不入分组。
+\setlength{\extrarowheight}{1.7mm}
+\newcount\rowmax
+\newcount\celllines
+\newcommand{\rowreset}{\global\rowmax=0 }
+\newcommand{\marklines}{\par\celllines=\prevgraf\relax
+  \ifnum\celllines>\rowmax \global\rowmax=\celllines \fi}
+\newcommand{\tabrowglue}{\ifnum\rowmax>2 7.60mm\else\ifnum\rowmax>1 4.65mm\else 0.85mm\fi\fi}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.05}
+\renewcommand{\multirowsetup}{\centering}
+
+% ================= 3. 零件参数注册表（承 M2 qp-parts 全量，参数一字不改） =================
+% ---- ZS 章首组 ----
+\newcommand{\qpZSaSq}{6.9mm}
+\newcommand{\qpZSaSmallSq}{2.3mm}
+\newcommand{\qpZSaGapTitle}{3.1mm}
+\newcommand{\qpZSaOverTop}{7.1mm}
+\newcommand{\qpZSaGrayHi}{144}
+\newcommand{\qpZSaGrayLo}{199}
+\newcommand{\qpZSaGrayEdge}{166}
+\newcommand{\qpZSbSize}{22pt}
+\newcommand{\qpZSbStroke}{4.0}
+\newcommand{\qpZSbLeft}{16.9mm}
+\newcommand{\qpZSbInkH}{6.76mm}
+\newcommand{\qpZScRule}{0.2pt}
+\newcommand{\qpZSdSize}{18pt}
+\newcommand{\qpZSdStroke}{1.7}
+\newcommand{\qpZSdGapRule}{6.9mm}
+\newcommand{\qpZSeSize}{15pt}
+\newcommand{\qpZSeStroke}{3.3}
+\newcommand{\qpZSeGapJie}{5.5mm}
+\newcommand{\qpZSfSize}{14pt}
+\newcommand{\qpZSfStroke}{2.7}
+\newcommand{\qpZSfGapXiaojie}{5.9mm}
+\newcommand{\qpZSgLabelSize}{11pt}
+\newcommand{\qpZSgLabelStroke}{1.3}
+\newcommand{\qpZSgLabelW}{18.5mm}
+\newcommand{\qpZSgBodySize}{10.5pt}
+\newcommand{\qpZSgLeadInd}{15.2mm}
+\newcommand{\qpZSgHang}{8.3mm}
+\newcommand{\qpZSgGapFirst}{5.8mm}
+% ---- HX 花形行组 ----
+\newcommand{\qpHXaW}{23.5mm}
+\newcommand{\qpHXaH}{6.7mm}
+\newcommand{\qpHXaOverlap}{1.06mm}
+\newcommand{\qpHXaRuleLo}{0.4pt}
+\newcommand{\qpHXaRuleHi}{0.6pt}
+\newcommand{\qpHXaInnerSize}{11pt}
+\newcommand{\qpHXaSlant}{0.18}
+\newcommand{\qpHXbLen}{80.7mm}
+\newcommand{\qpHXbThick}{1.2pt}
+\newcommand{\qpHXbGray}{77}
+\newcommand{\qpHXbIndL}{2.77mm}
+\newcommand{\qpHXbIndR}{4.03mm}
+\newcommand{\qpHXcSize}{6.5pt}
+\newcommand{\qpHXcGray}{122}
+\newcommand{\qpHXcSitUp}{0.43mm}
+\newcommand{\qpHXdPre}{4.5mm}
+\newcommand{\qpHXdPost}{5.19mm}
+\newcommand{\qpHXdRowH}{7.1mm}
+% ---- TB 条目/标题组 ----
+\newcommand{\qpTBaSize}{12pt}
+\newcommand{\qpTBaStroke}{2.3}
+\newcommand{\qpTBaIndent}{0.7mm}
+\newcommand{\qpTBaDiaMark}{0.63em}
+\newcommand{\qpTBaDiaGap}{2.4mm}
+\newcommand{\qpTBbStroke}{2.7}
+\newcommand{\qpTBcSize}{12pt}
+\newcommand{\qpTBcStroke}{2.3}
+\newcommand{\qpTBcLead}{2em}
+\newcommand{\qpTBcLineLead}{1.17}
+\newcommand{\qpTBcGapPre}{5.19mm}
+\newcommand{\qpTBdSize}{12pt}
+\newcommand{\qpTBdGap}{1.3mm}
+\newcommand{\qpTBeSize}{12pt}
+\newcommand{\qpTBfStroke}{1.0}
+\newcommand{\qpTBfEdgeGap}{0.56mm}
+% ---- TJ 题区组 ----
+\newcommand{\qpTJaStroke}{2.0}
+\newcommand{\qpTJaSize}{11.4pt}
+\newcommand{\qpTJbHangOne}{5.75mm}
+\newcommand{\qpTJbHangTwo}{7.6mm}
+\newcommand{\qpTJcSize}{10.5pt}
+\newcommand{\qpTJcGapPre}{2.7mm}
+\newcommand{\qpTJcGapPost}{2.2mm}
+\newcommand{\qpTJdMark}{(多选题)}
+\newcommand{\qpTJeMark}[1]{(#1分)}
+\newcommand{\qpTJfStarW}{1.7mm}
+\newcommand{\qpTJfFill}{0.36}
+\newcommand{\qpTJgSize}{10.5pt}
+\newcommand{\qpTJgLeadLiti}{19.2pt}
+\newcommand{\qpTJgLeadPingjia}{21.0pt}
+\newcommand{\qpTJhEdgeGap}{5.4mm}
+\newcommand{\qpTJiLenDx}{15.5mm}
+\newcommand{\qpTJiLenLx}{14.7mm}
+\newcommand{\qpTJiThick}{0.14mm}
+\newcommand{\qpTJiDrop}{0.71mm}
+\newcommand{\qpTJjGapMid}{4.4mm}
+\newcommand{\qpTJjGapMin}{2.2mm}
+% ---- BG 表格组 ----
+\newcommand{\qpBGaFrameLo}{0.6pt}
+\newcommand{\qpBGaFrameHi}{0.8pt}
+\newcommand{\qpBGaInner}{0.4pt}
+\newcommand{\qpBGaGray}{122}
+\newcommand{\qpBGbHeadH}{9.11mm}
+\newcommand{\qpBGbHeadHAlt}{7.33mm}
+\newcommand{\qpBGcRowH}{7.26mm}
+\newcommand{\qpBGcPad}{4.1mm}
+\newcommand{\qpBGcKongLenLo}{13mm}
+\newcommand{\qpBGcKongLenHi}{16mm}
+\newcommand{\qpBGdRatio}{1:2.09:2.04}
+\newcommand{\qpBGdTableW}{83.7mm}
+\newcommand{\qpBGdPreGap}{2.77mm}
+% ---- TW 图位组 ----
+\newcommand{\qpTWaWLo}{26.5mm}
+\newcommand{\qpTWaWHi}{32mm}
+\newcommand{\qpTWaGap}{4.2mm}
+\newcommand{\qpTWbWLo}{27.7mm}
+\newcommand{\qpTWbWHi}{36mm}
+\newcommand{\qpTWbGapUp}{2.8mm}
+\newcommand{\qpTWbGapDn}{2.2mm}
+\newcommand{\qpTWcWLo}{18mm}
+\newcommand{\qpTWcWHi}{24mm}
+\newcommand{\qpTWdWLo}{9mm}
+\newcommand{\qpTWdWHi}{13mm}
+\newcommand{\qpTWeSize}{7pt}
+% ---- XB 小结/标签组 ----
+\newcommand{\qpXBaLabelStroke}{1.3}
+\newcommand{\qpXBaBodySize}{10.5pt}
+\newcommand{\qpXBbBodySize}{10.5pt}
+\newcommand{\qpXBcBodySize}{10.5pt}
+% ---- YJ 页脚组 ----
+\newcommand{\qpYJaBlockLx}{31.0mm}
+\newcommand{\qpYJaBlockDx}{26.2mm}
+\newcommand{\qpYJaBlockH}{7.8mm}
+\newcommand{\qpYJaGray}{221}
+\newcommand{\qpYJaBottom}{11.2mm}
+\newcommand{\qpYJbBandH}{3.4mm}
+\newcommand{\qpYJbBottom}{10.5mm}
+\newcommand{\qpYJbNumSize}{14pt}
+\newcommand{\qpYJbTextSize}{8.5pt}
+% ---- JT 卷头组 ----
+\newcommand{\qpJTaBboxW}{41.2mm}
+\newcommand{\qpJTaBboxH}{56.3mm}
+\newcommand{\qpJTaGrayDeep}{166}
+\newcommand{\qpJTaGrayLight}{210}
+\newcommand{\qpJTaMathSize}{26pt}
+\newcommand{\qpJTbLabelSize}{11pt}
+\newcommand{\qpJTbLineLen}{10.4mm}
+\newcommand{\qpJTbGapGrp}{1.4mm}
+\newcommand{\qpJTbTop}{12.0mm}
+\newcommand{\qpJTcSize}{22pt}
+\newcommand{\qpJTcW}{68.2mm}
+\newcommand{\qpJTcRule}{0.4pt}
+\newcommand{\qpJTcRuleLen}{71.0mm}
+\newcommand{\qpJTcRuleGray}{32}
+\newcommand{\qpJTcGapRule}{1.1mm}
+\newcommand{\qpJTcGapFill}{5.7mm}
+\newcommand{\qpJTdSize}{14pt}
+\newcommand{\qpJTdGray}{102}
+\newcommand{\qpJTdGapRule}{2.1mm}
+\newcommand{\qpJTeSize}{10.5pt}
+\newcommand{\qpJTeGapSub}{4.9mm}
+\newcommand{\qpJTfSize}{10.5pt}
+\newcommand{\qpJTfGapTime}{5.4mm}
+\newcommand{\qpJTfGapFirst}{2.9mm}
+\newcommand{\qpJTgHead}{}
+\newcommand{\qpTSaFlow}{}
+
+% ================= 4. 页眉页脚（承 M2 qp-headfoot，H3 片 E5 档） =================
+\RequirePackage{fancyhdr}
+\newcommand{\qpzhangming}{第二章\quad 平面解析几何}
+\newcommand{\qpjieming}{2.1 坐标法}
+\newcommand{\qpjianming}{导学件}
+\newcommand{\qpceming}{高中数学\quad 选择性必修第二册(人教B版)}
+\newcommand{\qpshuziR}{\hbox to 9mm{\kern-17.2mm\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[26.2mm][r]{\rule[-3.145mm]{0pt}{7.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\thepage\hspace{2.75mm}}}}}
+\newcommand{\qpshuziL}{\hbox to 9mm{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[26.2mm][l]{\rule[-3.145mm]{0pt}{7.8mm}\hspace{2.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\thepage}}\hss}}
+\definecolor{footgray}{HTML}{4C4C4C}
+\newcommand{\qphuitext}{\fontsize{5.24pt}{7pt}\selectfont\color{footgray}}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[RO]{\raisebox{-1.24mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}\hspace{3mm}\qpshuziL}}
+\fancyfoot[LE]{\raisebox{-1.24mm}[0pt][0pt]{\qpshuziR\hspace{3mm}\qphuitext\qpceming}}
+
+% ================= 5. 标题模块（承 M2 qp-titles ＋ M3 要件⑤ \xjkeshi） =================
+\RequirePackage{needspace}
+\newcommand{\corrgJie}{-2.5mm}
+\newcommand{\corrgXiaojie}{-2.6mm}
+\newcommand{\corrgKeshi}{-2.4mm}
+\newcommand{\corrgMubiao}{-2.5mm}
+\newcommand{\zhangtitle}[1]{%
+  \par\addvspace{2pt}\noindent
+  {\color{pnumbg}\rule{6.9mm}{6.9mm}}%
+  \raisebox{6.9mm}[0pt][0pt]{\color{midgray}\rule{6.9mm}{6.9mm}}%
+  \hspace{-2.3mm}\raisebox{-2.8mm}[0pt][0pt]{\color{midgray}\rule{2.3mm}{2.3mm}}%
+  \hspace{3.1mm}%
+  {\fontsize{20.67pt}{30pt}\selectfont\heizhang #1}\par
+  \vspace{-0.3mm}\noindent\rule{\textwidth}{0.2pt}\par}
+\newcommand{\jietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr6.9mm+\corrgJie\relax}%
+  {\centering\fontsize{16.88pt}{22pt}\selectfont\hejie #1\par}}
+\newcommand{\xiaojietitle}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr5.5mm+\corrgXiaojie\relax}%
+  {\centering\fontsize{15.1pt}{22pt}\selectfont\heijie #1\par}}
+\newcommand{\keshi}[1]{\par\Needspace*{3\baselineskip}\addvspace{\dimexpr5.9mm+\corrgKeshi\relax}%
+  {\centering\fontsize{13pt}{20pt}\selectfont\hekeshi #1\par}}
+% M3 要件⑤：衔接节一等课时件型——标题位（「衔接」前缀恒带，量产不手写前缀防漂）
+\newcommand{\xjkeshi}[1]{\keshi{衔接\quad #1}}
+\newcommand{\mubiaoline}{\par\glueguard{2}\addvspace{\dimexpr5.8mm+\corrgMubiao\relax}\noindent\biaoqian{【学习目标】}\par\nopagebreak\vspace{-2pt}}
+\newcommand{\mubiaomu}[2]{\noindent\hangindent=8.3mm\hangafter=1
+  {\fontsize{10.5pt}{17pt}\selectfont\kaishu\hspace*{2em}{\heitiao #1.}\kern7.83pt#2\par}}
+
+% ================= 6. 正文块宏（承 M2 qp-blocks ＋ 两件型局部宏收编） =================
+\RequirePackage{tikz}
+\usetikzlibrary{shapes.geometric}
+% ---- multicol 安全防孤悬 guard（M2 原件） ----
+\newcommand{\glueguard}[1]{\vskip 0pt plus #1\baselineskip\penalty-100\vskip 0pt plus -#1\baselineskip}
+\newcommand{\biaoqian}[1]{{\heibian #1}}
+\newcommand{\anlabel}[1]{#1}
+\newcommand{\tieside}[1]{{\fontsize{10.5pt}{15pt}\selectfont [#1]}}
+\newcommand{\duoxuan}{{\normalfont\fontsize{10.5pt}{15pt}\selectfont(多选题)}}
+\newcommand{\kongbai}{\underline{\hspace*{15mm}}}
+% 挖空印答（M3 开关化：纯题版退定宽空线，版面两档等形——开关生效点之一）
+\newlength{\kdmind}
+\newlength{\kdwd}
+\newcommand{\kongda}[1]{{\setlength{\kdmind}{15mm}\settowidth{\kdwd}{#1}%
+  \ifdim\kdwd>\kdmind \kdmind=\kdwd\fi
+  \ifshowans
+    \hspace{0.15em plus 0.35em minus 0.05em}\underline{\makebox[\kdmind][c]{#1}}\hspace{0.15em plus 0.35em minus 0.05em}%
+  \else
+    \underline{\makebox[\kdmind][c]{}}%
+  \fi}}
+\newcommand{\ansul}[1]{#1}
+\newcommand{\kongwei}{\makebox[6.8mm]{}}
+\newcommand{\tiaomucore}[2]{\par\glueguard{1}\noindent{\heitiao {\numbold #1.}}\kern8.5pt#2\par}
+\newcommand{\tiaomu}[2]{\tiaomucore{#1}{#2}\addvspace{0.35mm}}
+\newcommand{\tiaomuz}[2]{\tiaomucore{#1}{#2}\addvspace{0mm}}
+\newcommand{\tiaomutail}{\par\addvspace{0.35mm}}
+\newcommand{\zhuzhu}[1]{\par\nopagebreak\noindent[注意]\hspace{0.4em}#1\par}
+\newcommand{\zhushi}[1]{\hspace{0.5em}#1}
+% ---- 花形组调参区（M2 渲染实测回填档） ----
+\newcommand{\huaruleRaise}{-2.25mm}
+\newcommand{\huawordRaise}{-1.1mm}
+\newcommand{\huadianOverlap}{-5.1mm}
+\newcommand{\huadia}[1]{\tikz[baseline=(huaxd.base)]\node[diamond,draw=black,fill=white,line width=0.5pt,inner sep=0pt,%
+  minimum width=10.2mm,minimum height=6.7mm,rounded corners=1.8mm]%
+  (huaxd){\fontsize{11pt}{11pt}\selectfont\huabf #1};}
+\newcommand{\huaxing}[5]{\par\glueguard{0}\addvspace{3.37mm}\noindent
+  \makebox[0pt][l]{\raisebox{\huaruleRaise}[0pt][0pt]{\hspace*{2.77mm}\textcolor{huarule}{\rule{\dimexpr\linewidth-6.77mm\relax}{1.2pt}}}}%
+  \huadia{#1}\hspace{\huadianOverlap}\huadia{#2}\hspace{\huadianOverlap}\huadia{#3}\hspace{\huadianOverlap}\huadia{#4}%
+  \hfill\raisebox{\huawordRaise}[0pt][0pt]{\fontsize{6.5pt}{8pt}\selectfont\color{gray122}#5}\hspace*{4mm}\par
+  \addvspace{3pt}}
+\newcommand{\thickhline}{\noalign{\special{color push rgb 0.478 0.478 0.478}\hrule height 0.8pt\special{color pop}}}
+\newcommand{\huafu}{\raisebox{1.2pt}{\fontsize{8.6pt}{8.6pt}\selectfont◆}}
+\newcommand{\zsd}[2]{\par\addvspace{6.3pt}\glueguard{4}%
+  \noindent{\fontsize{12.03pt}{17pt}\selectfont\heibf \huafu\hspace{2.4mm}知识点#1\quad #2}\par\addvspace{2pt}}
+\newcommand{\tjdnr}[5]{\par\glueguard{2}\addvspace{3pt}%
+  \noindent{\fontsize{12.03pt}{17pt}\selectfont\heibf \huafu\hspace{2.4mm}探究点#1\hspace{2em}#2}\par
+  \addvspace{2.0mm}%
+  \nopagebreak\noindent{\fontsize{12.03pt}{15pt}\selectfont\lihei\lilat #3}%
+  \hspace{2.7mm}\tieside{#4}\hspace{2.2mm}#5\par}
+\newcommand{\li}[4]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent{\fontsize{12.03pt}{15pt}\selectfont\lihei\lilat #1}%
+  \hspace{2.7mm}\tieside{#2}\hspace{2.2mm}#3#4\par}
+\def\liBsplit#1#2\liBstop{{\libianb #1}\kern0pt\liBsplitb#2\liBstop}
+\def\liBsplitb#1#2\liBstop{{\libians #1}\kern2.5pt{\libianslat #2}}
+\newcommand{\liB}[4]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent{\fontsize{12.03pt}{15pt}\selectfont\liBsplit#1\liBstop}%
+  \hspace{2.7mm}\tieside{#2}\hspace{2.2mm}#3#4\par}
+\newcommand{\bindopt}{\penalty10000\noindent}
+\newcommand{\bindp}{\noindent}
+% 【素养小结】（M3 开关化：属讲解层，纯题版不印）
+\newcommand{\xiaojie}[1]{\ifshowans\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【素养小结】}\par\nopagebreak\noindent{\kaishu #1}\par\fi}
+\newcommand{\zhenhead}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【诊断分析】}{\fangsong #1}\par\addvspace{2pt}}
+% 判断题·题面形（全品 p04 右挂空括号，两档恒印）
+\newcommand{\zhentib}[2]{\par\glueguard{1}%
+  {\rightskip=0pt plus 1fil\parfillskip=0pt\emergencystretch=3em\noindent#1\kern2.1pt#2\penalty0\hbox{}\nobreak\hspace{0pt plus 1000fil}\nobreak（　）\hspace{0.56mm}\par}%
+  \addvspace{0pt}}
+% 判断题·带答案形（M3 开关化：纯题版退 \zhentib 题面形）
+\newcommand{\zhenti}[4]{\ifshowans
+  \par\glueguard{1}%
+  {\parfillskip=0pt\emergencystretch=3em\noindent#1\kern2.1pt#2\nobreak\hspace{0pt plus 1fil}\nobreak(\makebox[1.8em]{\ansul{#3}})\hspace{0.56mm}\par}%
+  \nopagebreak\noindent{\anlabel{[解析]}\hspace{0.5em}#4}\par\addvspace{0pt}%
+  \else
+  \zhentib{#1}{#2}%
+  \fi}
+% 简析行（M3 开关化）
+\newcommand{\jiexi}[1]{\ifshowans\nopagebreak\noindent{\anlabel{[解析]}\hspace{0.5em}#1}\par\addvspace{7pt}\fi}
+% 答案行（M3 开关化；变式/检测语境独立使用）
+\newcommand{\ansline}[1]{\ifshowans\par\glueguard{2}\noindent\anlabel{[答案]}\hspace{0.5em}#1\par\fi}
+\newcommand{\jiancestem}[1]{\par\glueguard{4}\addvspace{2pt}%
+  \noindent #1\par}
+\newcommand{\jiance}[2]{\jiancestem{#1}\ansline{#2}}
+% ---- 件型局部宏收编（M2 两件型 main.tex 冻结定义上提，零改动） ----
+% 课堂评价组头（导学件局部宏；ketang 环境内部使用，亦可独立用）
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+% 书写留白＋斜置浅灰水印（解答书写区·设计语言基准件，要件④同语言回源）
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+\newcommand{\zhankong}[1]{\par\nobreak\addvspace{#1}\nopagebreak\noindent}
+% 衔接填空条目（导学件衔接位）
+\newcommand{\xjtk}[2]{\par\glueguard{1}\noindent{\heitiao 衔接填空#1}\kern8.5pt#2\par\addvspace{0.35mm}}
+% 练习件三件套：悬挂题号／选项段／书写位留白／三档花形组
+\newlength{\lxhang}
+\newcommand{\tihao}[2][]{%
+  \par\glueguard{1}%
+  \ifnum#2>9\setlength{\lxhang}{7.6mm}\else\setlength{\lxhang}{5.75mm}\fi
+  \ifx\relax#1\relax\else\addtolength{\lxhang}{2.9mm}\fi
+  \noindent\hangindent=\lxhang\hangafter=0
+  \llap{\hbox to\lxhang{#1\textbf{#2.}\hss}}}
+\newcommand{\lxopt}[1]{\par\noindent\hangindent=\lxhang\hangafter=0
+  {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont #1\par}}
+\newcommand{\xiexwei}[1]{\par\nobreak\vspace{#1 minus 3mm}}
+\newcommand{\zu}[1]{\textbf{#1}}
+\newcommand{\huadianOverlapLx}{-5.1mm}
+\newcommand{\dangbadge}[4]{\par\glueguard{0}\addvspace{2.4mm}\noindent
+  \huadia{#1}\hspace{\huadianOverlapLx}\huadia{#2}\hspace{\huadianOverlapLx}\huadia{#3}\hspace{\huadianOverlapLx}\huadia{#4}%
+  \par\addvspace{2.6mm}}
+% ---- 答案册同构内件（承 qp-answ-blocks v10-B 全品式层级缩进；同字号规约＝正文 10.09pt/18pt） ----
+\newlength{\qpind}
+\setlength{\qpind}{5.0mm}                 % 一档缩进（全品条目行≈70px/内容行≈100px 反推档）
+\newlength{\anshang}
+\setlength{\anshang}{5.8mm}               % 题号宽悬挂（全品练习册单号 5.7–5.8mm 档）
+\newlength{\anssubind}
+\setlength{\anssubind}{4.5mm}             % M3 新增：小题分层二档深
+% 题号——[答案]条（答案册 \ansitem 原形承入；M3 开关化）
+\newcommand{\ansitem}[2]{\ifshowans\par\glueguard{1}\addvspace{2pt}%
+  {\everypar{\hangindent\qpind\hangafter=1\setlength{\parindent}{\qpind}}%
+  \noindent
+  \makebox[0pt][l]{{\fontsize{11.4pt}{13pt}\selectfont\heihao{\numboldjian #1.}}}%
+  \hspace*{\anshang}{\anlabel [答案]}\hspace{0.5em}#2\par}\fi}
+% [标签]行（答案册 \ansline 两参形改名承入，防与导学单参 \ansline 撞名；M3 开关化）
+\newcommand{\ansnote}[2]{\ifshowans\par
+  {\everypar{\hangindent\qpind\hangafter=1\setlength{\parindent}{\qpind}}%
+  \noindent{\anlabel [#1]}\hspace{0.5em}#2\par}\fi}
+% 小题分层答条（M3 新增：二档悬挂，(1)(2) 小问逐条）
+\newcommand{\anssub}[2]{\ifshowans\par\glueguard{1}%
+  {\everypar{\hangindent\dimexpr\qpind+\anssubind\relax\hangafter=1}%
+  \noindent\hspace*{\dimexpr\qpind+\anssubind\relax}#1\hspace{0.6em}#2\par}\fi}
+% 图件（答案册 \ansfig 承入）
+\newcommand{\figfont}{\fontsize{7.3pt}{9pt}\selectfont}
+\newcommand{\ansfig}[1]{\par\nopagebreak\vspace{1.4mm}%
+  \noindent\hspace*{\anshang}%
+  \makebox[\dimexpr\linewidth-\anshang\relax][c]{#1}\par\vspace{1.1mm}}
+% 分区组行（答案册 \qufen 承入，测评/滚动件型备用）
+\newcommand{\qufen}[2]{\par\glueguard{1}\addvspace{4pt}\noindent
+  {\heibf #1}{\fontsize{10.09pt}{16pt}\selectfont：#2}\par\nopagebreak\addvspace{2pt}}
+
+% ================= 7a. ansblock 统一答案环境（要件①②） =================
+% 用法：\begin{ansblock}[键] 答案/详解体 \end{ansblock}
+%   双模：\ansblockgraytrue（默认）＝灰底盒（不可跨栏断，适合短块）；
+%         \ansblockgrayfalse＝括线式（上下 hairline，可断，适合长详解）。
+%   纯题版（\showansfalse）：整块吞掉不印；[键] 锚点照常发射（对号门两档可跑）。
+%   内部悬挂：一档 \qpind；小问用 \anssub。体内可放 % ans:<键> 源层注释锚。
+\newif\ifansblockgray
+\ansblockgraytrue
+\newcommand{\anskey}[1]{\typeout{M3-ANSKEY: #1}\ignorespaces}
+\newsavebox{\ansblockbox}
+% —— 灰底模（lrbox 收集 minipage→关闭时 colorbox 上色；宽自补偿 fboxsep，零 overfull） ——
+% 撤「\colorbox…\bgroup 跨宏配平」法：xcolor \colorbox#1#{…} 定界抓参只认字面花括号，
+% \bgroup 不入参数平衡→minipage 逃出着色盒（首编实证：灰底块全数失踪且零报错）。
+\newcommand{\ansgrayopen}{\begingroup\setlength{\fboxsep}{2.5pt}%
+  \begin{lrbox}{\ansblockbox}\begin{minipage}{\dimexpr\linewidth-5pt\relax}%
+  \everypar{\hangindent\qpind\hangafter=1}\setlength{\parindent}{\qpind}}
+\newcommand{\ansgrayclose}{\end{minipage}\end{lrbox}%
+  \noindent\colorbox{ansbg}{\usebox{\ansblockbox}}\par\endgroup\addvspace{1.6mm}}
+% —— 括线模（hairline 上下线，可跨栏） ——
+\newcommand{\ansruledopen}{\par\nobreak\addvspace{2.2pt}\nobreak
+  \noindent{\color{ansrule}\rule{\linewidth}{0.5pt}}\par\nointerlineskip\vskip 1.6mm\nobreak
+  \begingroup\everypar{\hangindent\qpind\hangafter=1}\setlength{\parindent}{\qpind}}
+\newcommand{\ansruledclose}{\par\nobreak\vskip 1.2mm
+  \noindent{\color{ansrule}\rule{\linewidth}{0.5pt}}\par\endgroup\addvspace{3pt}}
+% —— 纯题版吞体（收集进弃置盒，零印面） ——
+\newcommand{\ansblockgobble}{\par\begingroup\setbox\z@\vbox\bgroup\ignorespaces}
+\newcommand{\ansblockbegin}[1]{%
+  \ifx\relax#1\relax\else\typeout{M3-ANSKEY: #1}\fi
+  \ifshowans
+    \par\addvspace{1.4mm minus 1.4mm}% 可断可缩：灰盒与前题不焊死（multicol vsplit 需切点）
+    \ifansblockgray\ansgrayopen\else\ansruledopen\fi
+  \else
+    \ansblockgobble
+  \fi}
+\newcommand{\ansblockend}{%
+  \ifshowans
+    \ifansblockgray\ansgrayclose\else\ansruledclose\fi
+  \else
+    \egroup\endgroup
+  \fi}
+\newenvironment{ansblock}[1][]{\ansblockbegin{#1}}{\ansblockend}
+% （定义区恒执行：\ifansgray 只在环境开启瞬间求值，双模宏必须无条件存在）
+% ================= 7b. 课堂评价回流（要件③） =================
+% 新制 ketang：撤 M2 \vbox 整体装栏（不可切块＝右栏全空病灶根因），\glueguard 软绑定
+%   首题、正文按栏余量顺排、可跨栏。体＝\jiancestem…（G5 恒5 由装配层配额断言锁）。
+\newenvironment{ketang}[1]{\par\glueguard{2}%
+  \huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}%
+  \pingtou{#1}}{}
+% 旧制对照件（复现「右栏全空」病灶用；量产禁用——规格书 v2 §四.二.10② 撤强制跳页）
+\newenvironment{ketangboxed}[1]{\par\vbox\bgroup
+  \huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}%
+  \pingtou{#1}}{\egroup}
+
+% ================= 7c. 尾页填充块（要件④） =================
+% \tailfill[高度]：件尾「笔记与错题整理」框。无参＝\vfill 吃尾空（本栏余量全吸收）；
+%   有参＝定高块。设计语言承 \liubai（斜置浅灰水印＋开放书写区）＋hairline 框线。
+% \tailfillused 布尔：装配层可断言「件尾已置填充块」。
+\newif\iftailfillused
+\tailfillusedfalse
+\NewDocumentCommand{\tailfill}{o}{%
+  \par\nopagebreak\tailfillusedtrue
+  \addvspace{2.4mm minus 2.4mm}% 可断：尾块不与前置答案块焊死（multicol 平衡切点保护）
+  \noindent{\color{ansrule}\rule{\linewidth}{0.4pt}}\par
+  \nointerlineskip\vskip 1.6mm minus 1.6mm\nobreak
+  \noindent{\heibian 笔记与错题整理}%
+    \hfill{\fontsize{6.5pt}{8pt}\selectfont\color{gray122}课堂笔记\quad 错题重做\quad 疑问登记}\par
+  \nointerlineskip\vskip 2.2mm minus 2.2mm\nobreak
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti 此处笔记}}}}\par
+  \nointerlineskip
+  \IfNoValueTF{#1}{\vskip 0pt plus 1fill minus 14mm}{\vskip #1 minus 14mm}%
+  \nointerlineskip\vskip 1.2mm minus 1.2mm\nobreak
+  \noindent{\color{ansrule}\rule{\linewidth}{0.4pt}}\par}

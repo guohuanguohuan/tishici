@@ -1,0 +1,27 @@
+一致  Q41.t/( (3/4)√(2d/g) ): got=1 want=1
+一致  Q41.a/g: got=2 want=2
+一致  Q45.yA/(Ed²/4U): got=1 want=1
+一致  Q45.t2/(t1/2): got=1 want=1
+一致  Q45.t/(d√(2m/eU)): got=1 want=1
+一致  Q46.v: got=1.33333e+07 want=1.33333e+07
+一致  Q46.y/cm: got=0.36 want=0.36
+一致  Q46.φA/V: got=27.2 want=27.2
+一致  Q54.a2/g: got=0.5 want=0.5
+一致  Q54.v²/(6gd): got=1 want=1
+一致  Q57.vm: got=4 want=4
+一致  Q57.a2: got=4 want=4
+一致  Q57.E: got=50000 want=50000
+一致  Q51.v8/√(16eU/m): got=1 want=1
+一致  Q51.L8/(2T√(eU/m)): got=1 want=1
+一致  Q51.能量式自洽: got=1 want=1
+一致  Q60.Ek/( (3√2−2)mgR/2 ): got=1 want=1
+一致  Q60.v0/(½√(gR/2)): got=1 want=1
+一致  Q61.vC²: got=9 want=9
+一致  Q61.t: got=0.64 want=0.64
+一致  Q61.Ek: got=7.3 want=7.3
+一致  Q70.v_max: got=20 want=20
+一致  Q70.Ekm: got=20 want=20
+一致  Q70.a_max(t=3): got=10 want=10
+一致  Q30.Q: got=0.0022 want=0.0022
+---
+合计 25 项，不一致 0 项

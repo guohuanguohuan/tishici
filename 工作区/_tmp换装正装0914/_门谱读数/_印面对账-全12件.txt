@@ -1,0 +1,13 @@
+[过] 章末-本章总结提升：item 区 0｜note 区 29｜anssub 续行 0｜pure 全零
+[过] 衔接节-1.2.1前：item 区 29｜note 区 12｜anssub 续行 0｜pure 全零
+[过] 课时01：item 区 10｜note 区 10｜anssub 续行 0｜pure 全零
+[过] 课时02：item 区 10｜note 区 11｜anssub 续行 1｜pure 全零
+[过] 课时03：item 区 10｜note 区 10｜anssub 续行 0｜pure 全零
+[过] 课时04：item 区 10｜note 区 9｜anssub 续行 0｜pure 全零
+[过] 课时05：item 区 10｜note 区 11｜anssub 续行 0｜pure 全零
+[过] 课时06：item 区 10｜note 区 12｜anssub 续行 0｜pure 全零
+[过] 课时07：item 区 10｜note 区 12｜anssub 续行 0｜pure 全零
+[过] 课时08：item 区 10｜note 区 11｜anssub 续行 0｜pure 全零
+[过] 课时09：item 区 10｜note 区 15｜anssub 续行 0｜pure 全零
+[过] 课时10：item 区 10｜note 区 12｜anssub 续行 0｜pure 全零
+印面对账：全过
