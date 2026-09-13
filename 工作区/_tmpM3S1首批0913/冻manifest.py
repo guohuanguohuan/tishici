@@ -27,16 +27,18 @@ MANI = os.path.join(TMUB, 'manifest')
 DING = os.path.join(ROOT, '定稿')
 
 SLICES = {
-    '课时06':  '定稿/批B-课时06-两条直线的位置关系.md',
-    '课时06B': '定稿/批B补-课时06B-2.2.4 点到直线距离.md',
-    '课时07':  '定稿/批B-课时07-圆的方程（2.3.1加2.3.2合）.md',
-    '课时08':  '定稿/批B-课时08-直线与圆的位置关系.md',
-    '课时09':  '定稿/批B-课时09-圆与圆的位置关系.md',
+    '课时06':  ('两条直线的位置关系', '定稿/批B-课时06-两条直线的位置关系.md'),
+    '课时06B': ('2.2.4点到直线距离', '定稿/批B补-课时06B-2.2.4 点到直线距离.md'),
+    '课时07':  ('圆的方程', '定稿/批B-课时07-圆的方程（2.3.1加2.3.2合）.md'),
+    '课时08':  ('直线与圆的位置关系', '定稿/批B-课时08-直线与圆的位置关系.md'),
+    '课时09':  ('圆与圆的位置关系', '定稿/批B-课时09-圆与圆的位置关系.md'),
 }
 MULTI_EXP = {'课时06': 2, '课时06B': 1, '课时07': 2, '课时08': 0, '课时09': 4}
 
 
 def sha(t):
+    if isinstance(t, bytes):
+        return hashlib.sha256(t).hexdigest()
     return hashlib.sha256(t.encode('utf-8')).hexdigest()
 
 
@@ -85,9 +87,10 @@ def parse_answers(path):
     return out
 
 
-def freeze(slice_name, src_rel):
-    qp = os.path.join(TMUB, '%s.md' % slice_name)
-    ap = os.path.join(TMUB, '%s-答案侧.md' % slice_name)
+def freeze(slice_name, spec, stamp=None):
+    title, src_rel = spec
+    qp = os.path.join(TMUB, '%s-%s.md' % (slice_name, title))
+    ap = os.path.join(TMUB, '%s-%s-答案侧.md' % (slice_name, title))
     sp = os.path.join(DING, os.path.basename(src_rel))
     for p in (qp, ap, sp):
         assert os.path.exists(p), '缺件：%s' % p
@@ -112,14 +115,14 @@ def freeze(slice_name, src_rel):
         '多选键': multi,
         '对号门期望': '题面侧键集＝答案侧锚点集＝manifest键清单（%d=%d=%d，序一致零缺漏）；'
                   '多选门≤4（本片%d，%s）；题面全文/答案块哈希逐一相符；片冻后不可变，变更→重冻→下游回冲'
-                  % (len(qkeys), len(akes), len(qkeys), len(multi),
+                  % (len(qkeys), len(akeys), len(qkeys), len(multi),
                      '触顶合规' if MULTI_EXP[slice_name] == 4 and len(multi) == 4 else '合规'),
     }
     assert exp['导学键数'] == 5 and exp['练习键数'] == 16, '%s 导学/练习键数异常：%d/%d' % (
         slice_name, exp['导学键数'], exp['练习键数'])
     assert exp['多选数'] == MULTI_EXP[slice_name], '%s 多选数 %d ≠ 期望 %d' % (
         slice_name, exp['多选数'], MULTI_EXP[slice_name])
-    stamp = datetime.now().astimezone().strftime('%Y-%m-%dT%H:%M:%S%z')
+    stamp = stamp or datetime.now().astimezone().strftime('%Y-%m-%dT%H:%M:%S%z')
     mani = {
         '片': slice_name,
         '章': 'M3选必1第2章',
@@ -143,9 +146,15 @@ def freeze(slice_name, src_rel):
 
 
 def main():
-    names = sys.argv[1:] or list(SLICES)
+    args = sys.argv[1:]
+    stamp = None
+    if '--stamp' in args:
+        i = args.index('--stamp')
+        stamp = args[i + 1]
+        args = args[:i] + args[i + 2:]
+    names = args or list(SLICES)
     for n in names:
-        freeze(n, SLICES[n])
+        freeze(n, SLICES[n], stamp)
 
 
 if __name__ == '__main__':
