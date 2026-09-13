@@ -1,0 +1,129 @@
+% ============================================================
+% P1 骨架 overlay 冒烟件（dummy-p1.tex，2026-09-13）
+% 位置：工作区/_tmp换装预备0913/（与 qp-m3p-overlay.sty 同目录）
+% 编译：xelatex dummy-p1-true.tex ×2 → dummy-p1-true.pdf（含详解印本）
+%       xelatex dummy-p1-false.tex ×2 → dummy-p1-false.pdf（纯题版）
+%       三零门：log 内 error=0／Overfull=0／Missing character=0（Underfull 仅计数）
+% 制式：仿 _tmpM3toolchain0913 冒烟件（单源双壳，\mthreepure 壳开关）。
+% 骨架＝P1 成卷件同款七模块 \input（绝对路径，只读挂载，零改动）；
+% overlay 挂载点＝七模块之后（换装方案草案 §1.4 制法）。
+% 件型层宏镜像＝P1 导学件 9.1 main.tex 原样（\pingtou/\liubai 在 overlay 之后定义——
+%   验证 overlay 零收编件型层宏名、件内 \newcommand 不撞名）。
+% 四制样例：
+%   ①开关：\kongda/\xiaojie/\zhenti/\ansline/\jiexi 各一处走开关体；
+%   ②ansblock：灰底短块（键 P1-9.1-YX-01）＋括线长块（键 P1-9.1-YX-02）＋
+%     \anskey 独立锚一处（P1-9.1-KT-01）＝3 发射两档恒等；
+%   ③ketang：一处（组头说明内嵌形，内含 2 \jiancestem 样例）；
+%   ④tailfill：无参吃尾空档一处（multicols 后、\end{document} 前＝件尾位）。
+% 题面＝冒烟自撰样例（非命制产出，不入题面库）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+\usepackage{qp-m3p-overlay}
+
+% ---------- 件型层参数（承 P1 导学件同位） ----------
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{P1冒烟件}
+
+% ---------- 件型层宏镜像（P1 导学件原样；在 overlay 之后定义＝不撞名实证位） ----------
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+
+\begin{document}
+
+\zhangtitle{第9章\quad 静电场及其应用}
+\jietitle{9.1\quad 电荷（冒烟样例）}
+\keshi{第1课时\quad overlay 四制冒烟}
+\mubiaoline
+\mubiaomu{1}{验证纯题开关（\string\ifshowans 族）、ansblock 双模、ketang 回流与 tailfill 尾块在 P1 骨架下可用；}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ===== 课前预习样例（\kongbai＋灰底短块 ansblock＋\anssub 小问） =====
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{冒烟知识点}
+
+\tiaomu{1}{自然界中只存在两种电荷：用丝绸摩擦过的玻璃棒带\kongbai{}电荷，用毛皮摩擦过的橡胶棒带\kongbai{}电荷．}
+
+\begin{ansblock}[P1-9.1-YX-01]
+% ans:P1-9.1-YX-01
+\ansitem{1}{正；负}
+\anssub{(1)}{吸引}\anssub{(2)}{排斥}
+\ansnote{详解}{摩擦起电的实质是电子的转移：失去电子的物体带正电，得到电子的物体带负电．}
+\end{ansblock}
+
+\tiaomu{2}{元电荷的电荷量为\kongda{$1.6\times10^{-19}$} $\mathrm{C}$，所有带电体的电荷量都是它的整数倍．}
+
+% ===== 括线长块（\ansblockgrayfalse 局部档）＋\zhenti 开关退形 =====
+{\ansblockgrayfalse
+\begin{ansblock}[P1-9.1-YX-02]
+% ans:P1-9.1-YX-02
+\ansitem{2}{$1.6\times10^{-19}$}
+\ansnote{详解}{元电荷是最小电荷量单位，实验测得 $e=1.6\times10^{-19}\,\mathrm{C}$；带电体的电荷量只能是元电荷的整数倍，不存在分数倍带电的宏观带电体，这是电荷量子化的基本内容，也是本章计算的常用常数，需熟记．}
+\ansnote{点睛}{比荷为电荷量与质量之比，电子比荷约为 $1.76\times10^{11}\,\mathrm{C/kg}$．}
+\end{ansblock}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{用丝绸摩擦过的玻璃棒带正电，说明摩擦过程中创造了正电荷．}
+
+\zhentib{(2)}{摩擦起电的实质是电子从一个物体转移到另一个物体．}
+
+\zhenti{(3)}{某带电体的电荷量可能是 $2.4\times10^{-19}\,\mathrm{C}$}{×}{带电体的电荷量只能是元电荷的整数倍，$1.5e$ 不是整数倍．}
+
+% ===== 课中探究样例（\tjdnr 例＋\bindopt＋\xiaojie 开关体） =====
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{电荷的相互作用}{例\textbf{1}}{简单(知识点一)}{甲、乙、丙是三个完全相同的金属小球，甲带正电，乙带负电，丙原来不带电（用绝缘支架支持）．关于三个球之间的相互作用，下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．甲、乙相互排斥；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．甲、丙相互吸引，乙、丙相互排斥；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．甲、丙相互吸引，乙、丙也相互吸引；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．甲、丙之间没有力的作用\par}
+
+\ansline{A}
+
+\jiexi{同种电荷相互排斥，故甲、乙相互排斥；丙不带电时与两球均有吸引作用．}
+
+\xiaojie{①识别：题干给出小球的带电情况、要求判断相互作用方向时，判归本题型；②操作：先判电性，同种相斥、异种相吸，吸引不能反推电性．}
+
+% ===== 课堂评价回流样例（ketang 新制顺排；组头内嵌＝迁移后不另手写 \huaxing） =====
+\anskey{P1-9.1-KT-01}
+
+\begin{ketang}{本组共2题，冒烟样例.}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}用干燥的塑料梳子梳头后，梳子能吸引碎纸屑．下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．梳子与头发摩擦的过程中创造了电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．梳子带电后，能吸引轻小的不带电物体\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{中档(知识点二)}\hspace{2.2mm}完全相同的金属球甲、乙，甲带电荷量 $+6.0\times10^{-9}\,\mathrm{C}$，乙不带电．接触后再分开，甲带电荷量\kongbai{}．}
+
+\end{ketang}
+
+\liubai[6mm]{此处书写}
+
+\end{multicols}
+
+% ===== 尾页填充块（无参吃尾空档；件尾位＝\end{document} 前） =====
+\tailfill
+
+\end{document}

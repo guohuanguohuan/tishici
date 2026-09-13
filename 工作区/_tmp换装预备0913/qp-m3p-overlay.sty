@@ -1,0 +1,177 @@
+% ============================================================
+% qp-m3p-overlay.sty —— P1 骨架 overlay 适配层（v0.1，2026-09-13）
+% 位置：工作区/_tmp换装预备0913/（换装轮预备目录；零 git；P1 成卷件与物理样张骨架只读）
+% 依据：换装方案草案 §1.4（P1 toolchain 变体——不做 qp-m3 直套 P1，另研 overlay）
+% 回源：工作区/_tmpM3toolchain0913/qp-m3.sty v0.1（抽段：要件①②③④，字号基准核 P1 实际正文档）
+%
+% ── P1 骨架（物理样张0911/骨架 七模块）与 qp-m3 宏族差异面（研制判据）──
+%   1. 装载形制：P1＝\input 七模块绝对路径（fonts/layout/parts/headfoot〔内联 phy-params〕/
+%      titles/blocks/figs），无包机制；qp-m3＝单一 .sty。overlay 须以 \usepackage 挂在
+%      七模块 \input 之后、\begin{document} 之前。
+%   2. 答案制：P1 qp-blocks＝答案制A（\ansline/\jiexi/\kongda/\zhenti/\xiaojie 恒印、
+%      正文 0 答案宏、判断走 \zhentib 空括号形）；qp-m3＝\ifshowans 开关族。
+%   3. 版面/字号：P1 qp-layout＝数学 L1 零参数继承（10.09pt/18pt、margin 17.2mm、
+%      栏距 7.6mm）与 qp-m3 版面模块同档——内件字号基准零改；差异在 P1 无 ansbg/ansrule
+%      色与 multicolundershoot 调档（本件补齐）。
+%   4. P1 独有件：qp-figs（\qpfig 位图/\unit）、qp-phy-params（\qpbuce 册名、页脚三形制）；
+%      件型层宏在件 main.tex 内自建（导学件 \pingtou/\liubai/\sylabel/\fanxi/\tuoZhan/
+%      \guifanbiao/\xszl/\xzsm；练习件 \tihao 单参/\lxopt/\xiexwei/\dangbadge/\xszongline）。
+%      overlay 生成点在件型层宏之前——故零收编件型层宏名（防件内 \newcommand 撞名炸）：
+%      ketang 组头内嵌自有形（不依赖也不定义 \pingtou）。
+%   5. 签名差异登记：P1 练习件 \tihao 单参 vs qp-m3 \tihao[可选]双参——overlay 不收编
+%      \tihao/\lxopt/\xiexwei/\dangbadge（换装副本沿用件内原定义）。
+%   6. 名占用边界：四制名（showans/ansblock/anskey/ketang/tailfill）在 P1 正文件骨架零占用；
+%      \ansitem/\qpind/\anshang 仅答案册 qp-answ-* 模块占用——本件禁挂答案册件（答案册在
+%      换装副本中降级为迁移源不编译，见草案 §0.3）。
+%
+% 用法（P1 件导言）：
+%   \documentclass[fontset=none]{ctexart}
+%   \input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}…（七模块原样保留）
+%   \usepackage{qp-m3p-overlay}
+%   纯题版：\usepackage[pure]{qp-m3p-overlay} 或 导言 \showansfalse 或 \def\mthreepure{1}
+%   （壳开关 \mthreepure 须在 \usepackage 之前 \def，承 qp-m3 冒烟双壳制式）
+%
+% 四制落位（＝qp-m3 规格书 v2 §四·二 1/9/10 条抽段，M2 专属要件⑤衔接节不在 P1 变体）：
+%   ① \showans 开关族：开关本体＋[pure]/\mthreepure 双入口＋存量讲解层宏开关化
+%      （\ansline/\jiexi/\kongda/\zhenti/\xiaojie 以 \renewcommand 换 qp-m3 开关体，
+%      签名与 P1 qp-blocks 原件逐一相同——件内调用零改动）。
+%   ② ansblock 统一答案环境：[键]可选参＋\anskey 双锚点（log 发射 M3-ANSKEY，两档恒发射，
+%      对号门两档可跑）；灰底/括线双模（\ansblockgraytrue 默认）；内件 \ansitem/\anssub/\ansnote。
+%   ③ 课堂评价回流：ketang 环境（撤 P1 成卷件 \vbox 整体装栏改顺排可跨栏；组头形承
+%      件内 \pingtou 同款内嵌）。ketangboxed 旧制对照件不收录（草案 §1.3.1 禁用）。
+%   ④ 尾页填充块：\tailfill[高度]（无参＝吃尾空；\iftailfillused 布尔供装配断言）。
+% 红线：物理样张骨架与 P1/M2 成卷件只读；本件自带四制全量定义，不 \input 任何成卷/骨架文件。
+% ============================================================
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{qp-m3p-overlay}[2026/09/13 v0.1 P1 骨架 overlay 适配层（四制件：showans/ansblock/ketang/tailfill）]
+
+% ================= 0. 装载卫兵（须在 P1 七模块之后） =================
+\ifdefined\glueguard\else
+  \PackageError{qp-m3p-overlay}{P1 骨架七模块未装载}{本包须在 \string\input\ 物理样张0911/骨架 七模块之后、\string\begin\string{document\string} 之前加载。}\fi
+\ifdefined\huaxing\else
+  \PackageError{qp-m3p-overlay}{P1 骨架 qp-blocks 未装载}{缺 \string\huaxing——ketang/ansblock 依赖。}\fi
+\ifdefined\numboldjian\else
+  \PackageError{qp-m3p-overlay}{P1 骨架 qp-fonts 未装载}{缺 \string\numboldjian——ansitem 题号依赖。}\fi
+
+% ================= 1. 要件① \showans 开关族 =================
+\ifdefined\ifshowans\else\newif\ifshowans\fi
+\showanstrue                              % 默认＝含详解印本（正式件）
+\DeclareOption{pure}{\showansfalse}       % 纯题版：包选项
+\ProcessOptions\relax
+% 壳层开关（冒烟双档壳用；须在 \usepackage 之前 \def\mthreepure{1}）
+\ifdefined\mthreepure\ifnum\mthreepure=1 \showansfalse\fi\fi
+% ---- 存量讲解层宏开关化（\renewcommand，签名与 P1 qp-blocks 原件逐一相同） ----
+% 答案行（P1 原形恒印→开关化）
+\renewcommand{\ansline}[1]{\ifshowans\par\glueguard{2}\noindent\anlabel{[答案]}\hspace{0.5em}#1\par\fi}
+% 简析行（开关化）
+\renewcommand{\jiexi}[1]{\ifshowans\nopagebreak\noindent{\anlabel{[解析]}\hspace{0.5em}#1}\par\addvspace{7pt}\fi}
+% 【素养小结】（属讲解层，纯题版不印）
+\renewcommand{\xiaojie}[1]{\ifshowans\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【素养小结】}\par\nopagebreak\noindent{\kaishu #1}\par\fi}
+% 挖空印答（纯题版退定宽空线，题面形态不变、版面两档等形；\kdmind/\kdwd 承 P1 qp-blocks）
+\ifdefined\kdmind\else\newlength{\kdmind}\fi
+\ifdefined\kdwd\else\newlength{\kdwd}\fi
+\renewcommand{\kongda}[1]{{\setlength{\kdmind}{15mm}\settowidth{\kdwd}{#1}%
+  \ifdim\kdwd>\kdmind \kdmind=\kdwd\fi
+  \ifshowans
+    \hspace{0.15em plus 0.35em minus 0.05em}\underline{\makebox[\kdmind][c]{#1}}\hspace{0.15em plus 0.35em minus 0.05em}%
+  \else
+    \underline{\makebox[\kdmind][c]{}}
+  \fi}}
+% 判断题带答案形（纯题版退 \zhentib 空括号题面形——P1 qp-blocks \zhentib 承用不重定义）
+\renewcommand{\zhenti}[4]{\ifshowans
+  \par\glueguard{1}%
+  {\parfillskip=0pt\emergencystretch=3em\noindent#1\kern2.1pt#2\nobreak\hspace{0pt plus 1fil}\nobreak(\makebox[1.8em]{\ansul{#3}})\hspace{0.56mm}\par}%
+  \nopagebreak\noindent{\anlabel{[解析]}\hspace{0.5em}#4}\par\addvspace{0pt}%
+  \else
+  \zhentib{#1}{#2}%
+  \fi}
+
+% ================= 2. 要件② ansblock 统一答案环境 =================
+% 配套色（P1 qp-layout 调色板无此两色）
+\providecolor{ansbg}{HTML}{F0F0F0}        % 灰底（浅于页码灰块一档）
+\providecolor{ansrule}{HTML}{7A7A7A}      % 括线/尾页框线（灰122 同档）
+% multicol 平衡容差（M3 档 8pt＝2.8mm 栏顶压缩胶吸收，防不可拆灰底块末栏假红；P1 骨架未设）
+\ifdefined\multicolundershoot\multicolundershoot=8pt\fi
+% 内件悬挂寄存器（与答案册 qp-answ-blocks 同值档；正文件骨架未定义故可 \newlength）
+\newlength{\qpind}\setlength{\qpind}{5.0mm}
+\newlength{\anshang}\setlength{\anshang}{5.8mm}
+\newlength{\anssubind}\setlength{\anssubind}{4.5mm}
+% —— 编译层锚点（两档恒发射，供钉值门/对号断言 log 取锚） ——
+\newcommand{\anskey}[1]{\typeout{M3-ANSKEY: #1}\ignorespaces}
+\newsavebox{\ansblockbox}
+% —— 灰底模（lrbox 收 minipage→关闭时 colorbox 上色；宽自补偿 fboxsep，零 overfull） ——
+\newcommand{\ansgrayopen}{\begingroup\setlength{\fboxsep}{2.5pt}%
+  \begin{lrbox}{\ansblockbox}\begin{minipage}{\dimexpr\linewidth-5pt\relax}%
+  \everypar{\hangindent\qpind\hangafter=1}\setlength{\parindent}{\qpind}}
+\newcommand{\ansgrayclose}{\end{minipage}\end{lrbox}%
+  \noindent\colorbox{ansbg}{\usebox{\ansblockbox}}\par\endgroup\addvspace{1.6mm}}
+% —— 括线模（hairline 上下线，可跨栏断开） ——
+\newcommand{\ansruledopen}{\par\nobreak\addvspace{2.2pt}\nobreak
+  \noindent{\color{ansrule}\rule{\linewidth}{0.5pt}}\par\nointerlineskip\vskip 1.6mm\nobreak
+  \begingroup\everypar{\hangindent\qpind\hangafter=1}\setlength{\parindent}{\qpind}}
+\newcommand{\ansruledclose}{\par\nobreak\vskip 1.2mm
+  \noindent{\color{ansrule}\rule{\linewidth}{0.5pt}}\par\endgroup\addvspace{3pt}}
+% —— 纯题版吞体（收集进弃置盒，零印面） ——
+\newcommand{\ansblockgobble}{\par\begingroup\setbox\z@\vbox\bgroup\ignorespaces}
+\newcommand{\ansblockbegin}[1]{%
+  \ifx\relax#1\relax\else\typeout{M3-ANSKEY: #1}\fi
+  \ifshowans
+    \par\addvspace{1.4mm minus 1.4mm}% 可断可缩：灰盒与前题不焊死（multicol vsplit 需切点）
+    \ifansblockgray\ansgrayopen\else\ansruledopen\fi
+  \else
+    \ansblockgobble
+  \fi}
+\newcommand{\ansblockend}{%
+  \ifshowans
+    \ifansblockgray\ansgrayclose\else\ansruledclose\fi
+  \else
+    \egroup\endgroup
+  \fi}
+% —— 双模开关（定义区恒执行：只在环境开启瞬间求值） ——
+\newif\ifansblockgray
+\ansblockgraytrue
+\newenvironment{ansblock}[1][]{\ansblockbegin{#1}}{\ansblockend}
+% ---- 内件三宏（字号基准＝P1 实际正文档 10.09pt/18pt 同源，题号 11.4pt＝P1 检测题号档） ----
+% 题号——[答案]条（开关化）
+\newcommand{\ansitem}[2]{\ifshowans\par\glueguard{1}\addvspace{2pt}%
+  {\everypar{\hangindent\qpind\hangafter=1\setlength{\parindent}{\qpind}}%
+  \noindent
+  \makebox[0pt][l]{{\fontsize{11.4pt}{13pt}\selectfont\heihao{\numboldjian #1.}}}%
+  \hspace*{\anshang}{\anlabel [答案]}\hspace{0.5em}#2\par}\fi}
+% [标签]行（[详解]/[点睛]用；开关化）
+\newcommand{\ansnote}[2]{\ifshowans\par
+  {\everypar{\hangindent\qpind\hangafter=1\setlength{\parindent}{\qpind}}%
+  \noindent{\anlabel [#1]}\hspace{0.5em}#2\par}\fi}
+% 小题分层答条（(1)(2) 小问逐条，二档悬挂；开关化）
+\newcommand{\anssub}[2]{\ifshowans\par\glueguard{1}%
+  {\everypar{\hangindent\dimexpr\qpind+\anssubind\relax\hangafter=1}%
+  \noindent\hspace*{\dimexpr\qpind+\anssubind\relax}#1\hspace{0.6em}#2\par}\fi}
+
+% ================= 3. 要件③ 课堂评价回流 =================
+% 新制 ketang：撤 P1 成卷件「课堂评价 \vbox」整体装栏（不可切块＝右栏全空病灶根因），
+% \glueguard 软绑定按栏余量顺排、可跨栏。组头内嵌自有形（零依赖件内 \pingtou——防撞名，
+% 见头部差异面 4）。ketangboxed 旧制不收录（草案 §1.3.1 禁用）。
+\newenvironment{ketang}[1]{\par\glueguard{2}%
+  \huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}%
+  \par\addvspace{2pt}\noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}{}
+
+% ================= 4. 要件④ 尾页填充块 =================
+% \tailfill[高度]：件尾「笔记与错题整理」框。无参＝\vfill 吃尾空（本栏余量全吸收）；
+%   有参＝定高块。\iftailfillused 布尔供装配层断言「件尾已置填充块」。
+\ifdefined\iftailfillused\else\newif\iftailfillused\fi
+\tailfillusedfalse
+\NewDocumentCommand{\tailfill}{o}{%
+  \par\nopagebreak\tailfillusedtrue
+  \addvspace{2.4mm minus 2.4mm}% 可断：尾块不与前置答案块焊死（multicol 平衡切点保护）
+  \noindent{\color{ansrule}\rule{\linewidth}{0.4pt}}\par
+  \nointerlineskip\vskip 1.6mm minus 1.6mm\nobreak
+  \noindent{\heibian 笔记与错题整理}%
+    \hfill{\fontsize{6.5pt}{8pt}\selectfont\color{gray122}课堂笔记\quad 错题重做\quad 疑问登记}\par
+  \nointerlineskip\vskip 2.2mm minus 2.2mm\nobreak
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti 此处笔记}}}}\par
+  \nointerlineskip
+  \IfNoValueTF{#1}{\vskip 0pt plus 1fill minus 14mm}{\vskip #1 minus 14mm}%
+  \nointerlineskip\vskip 1.2mm minus 1.2mm\nobreak
+  \noindent{\color{ansrule}\rule{\linewidth}{0.4pt}}\par}
+% ================= overlay 完 =================
