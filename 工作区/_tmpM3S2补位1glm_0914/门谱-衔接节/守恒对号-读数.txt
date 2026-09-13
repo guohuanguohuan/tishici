@@ -1,0 +1,29 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+== ① tex 层 ==
+  [绿] 锚数=27｜27
+  [绿] 块数=27｜27
+  [绿] 锚集合≡manifest键集合(双向diff)｜缺[] 浮[]
+  [绿] 块集合≡锚集合(双向diff)
+  [绿] 锚序＝印面装配序（登记用，非逻辑键序）
+  [绿] ansitem 号序≡1..27 连号｜27枚
+  [绿] ansnote{详解} 计数=27（键键有详解）｜27
+  [绿] 多选门：\duoxuan＝0（本片多选 0 合规）｜0
+== ② log 层 ==
+  [绿] true ANSKEY 集合≡manifest(双向diff)｜27键
+  [绿] false ANSKEY 集合≡manifest(双向diff)｜27键
+  [绿] 两档 ANSKEY 逐位同序（同装配序编译）
+== ③ PDF 层 ==
+  [绿] true 号序≡1..27 连号(对号门)｜27枚
+  [绿] true [答案] 总计=27｜27
+  [绿] true [详解] 计数≡tex ansnote｜27/27
+  [绿] false [答案]＝0｜0
+  [绿] false [详解]＝0｜0
+  [绿] false 泄答词「证明见详解」＝0｜0
+  [绿] false 泄答词「证明过程」＝0｜0
+  [绿] false 泄答词「答案」＝0｜0
+  [绿] false 泄答词「详解」＝0｜0
+  [绿] 尾块「笔记与错题整理」true 恰1｜1
+  [绿] 尾块「笔记与错题整理」false 恰1｜1
+  [绿] 页数 false≤true｜true=6 false=3
+
+守恒对号门： 全绿
