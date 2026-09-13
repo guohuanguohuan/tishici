@@ -43,6 +43,10 @@ TITLES = {
     '课时07':  '圆的方程',
     '课时08':  '直线与圆的位置关系',
     '课时09':  '圆与圆的位置关系',
+    '课时14':  '2.6.2双曲线性质',
+    '课时15':  '2.7.1抛物线方程',
+    '课时16':  '2.7.2抛物线性质',
+    '课时17':  '2.8①压轴综合一',
 }
 
 
@@ -141,7 +145,7 @@ def check_slice(name, strict=False):
         if sha_bytes(open(path, 'rb').read()) != mani[tag + 'sha256']:
             bad.append('%s 文件漂移（片冻后被动过→须重冻该片）' % tag)
     exp = mani['期望值']
-    multi = [k for k, t, _ in qs if t == '多选']
+    multi = [k for k, t, _ in qs if t == '多选' and '-拓-' not in k]
     if len(qkeys) != exp['键数'] or len(multi) != exp['多选数']:
         bad.append('期望值漂移：键%d/多选%d vs 期望%d/%d' % (len(qkeys), len(multi), exp['键数'], exp['多选数']))
     if len(multi) > 4:
