@@ -126,3 +126,4 @@
 - 传 Windows 路径给 python 一律 cygpath -w（Bash 吞一层反斜杠阻断变量展开，发信曾 exit=1）；整行居中长标题会折出居中孤尾，应显式分段各居中｜工具坑
 - 2026-09-14 ZCode 通道打通轮——独有教训：①Electron 桌面软件内嵌 CLI 调用法＝ELECTRON_RUN_AS_NODE=1＋主程序 exe 当 Node 直跑 resources 内 .cjs 入口（ZCode 实证；GUI 在跑时裸调 exe 被单实例吞参 exit 0 假成功）②minified 包配置静默拒＝zod strict 校验失败时 loaded:false 不抛错，报错文案与真实原因脱钩——排查先削到最小配置形再逐字段加回③headless 任务完成感知＝后台任务进程退出自动通知（automatic_notification），勿 TaskOutput 轮等④headless 会话与 GUI 各立存储根（cli/ vs v2/），桌面端不可见≠没跑成
 - 2026-09-14 ZCode 桌面可见通道——独有教训：①桌面端实时可见正解＝automations 表直插一次性任务（调度器 20s 轮询认领），--surface desktop 是伪线索（跑完不入任务库）②派发 model 字段留空＝随工作区默认模型跑飞（误发 qwen 实证、用户当场指正），必须显式钉型③自动化超时窗 5 分钟：next_run_at 早于 now-5min 被按 computer_asleep 跳过不执行
+- 2026-09-14 ZCode 三改轮——独有教训：①思考档核验以 rollout 的 output_config.effort 为准（variant 字段 CLI 侧为空不代表非 max）②CLI 挂图用 --attach 绝对路径，中文路径无碍③yolo 权限冒烟用「自主写文件＋回读核验」双证，build 档不会自动写

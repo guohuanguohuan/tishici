@@ -7,7 +7,7 @@
 #   python 工具/glm53flash-zcode桌面.py dispatch "任务书" ["标题"]   # 仅派发
 #   python 工具/glm53flash-zcode桌面.py run "任务书" ["标题"]        # 派发并等回执(默认)
 #   python 工具/glm53flash-zcode桌面.py wait <automation_id>        # 等回执
-# 钉死: model=builtin:zai-coding-plan/GLM-5.3-Flash, thought_level=max, mode=build
+# 钉死: model=builtin:zai-coding-plan/GLM-5.3-Flash, thought_level=max, mode=yolo(完全访问)
 import sqlite3, sys, time, uuid, json, glob, io
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
@@ -32,7 +32,7 @@ def dispatch(prompt, title):
             0, 0, 1, "active",
             now + 5000, None, 0, None,
             "idle", 0, None, None,
-            "build", "max", now, now]
+            "yolo", "max", now, now]
     db = sqlite3.connect(DB, timeout=15)
     db.execute(f"INSERT INTO automations ({','.join(COLS)}) VALUES ({','.join('?'*len(vals))})", vals)
     db.commit(); db.close()
