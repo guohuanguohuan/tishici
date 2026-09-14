@@ -1,0 +1,15 @@
+_工具/印面对账练习.py: line 8: L.[答案]: command not found
+_工具/印面对账练习.py: line 8: [解析]: command not found
+_工具/印面对账练习.py: line 8: r印面对账练习.py — [E] 件面等价腿·练习本 12 件（对集合不对数·波1 印面对账.py 同制）。
+
+口径：件面真源＝main.tex 诸 ansblock 内件宏标签：
+  \ansitem{L}{…} → true 印面应现 ；\ansnote{解析}{…} → 应现 。
+判定：true 各标签计数＝件面期望计数（计数相等而集合不同亦红）；pure 全零（泄答红）。
+用法: python 印面对账练习.py   # 全 12 件，退出码 0/1
+: No such file or directory
+_工具/印面对账练习.py: line 9: import: command not found
+_工具/印面对账练习.py: line 10: import: command not found
+_工具/印面对账练习.py: line 11: import: command not found
+_工具/印面对账练习.py: line 12: import: command not found
+_工具/印面对账练习.py: line 14: syntax error near unexpected token `encoding='utf-8''
+_工具/印面对账练习.py: line 14: `sys.stdout.reconfigure(encoding='utf-8')'

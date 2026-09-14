@@ -293,11 +293,11 @@
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "指纹": {
-  "main.tex.md5": "581b144663180cdbce4af7fdc43bf099",
-  "main-true.pdf.md5": "b0280ceb8744170cb2d034729c4ac85c",
-  "main-false.pdf.md5": "d9b949d14895d408a6c0cf51b9254f84",
+  "main.tex.md5": "94334047f9af15bc5c0abdc8084f772e",
+  "main-true.pdf.md5": "336fe62fc336134b47daba3eb62db309",
+  "main-false.pdf.md5": "1f3bd92df7062e74512ebccb0de14304",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
-  "双档读数": "true 0错0溢0under0缺字 ANSKEY=16 4页；false 同 2页"
+  "双档读数": "true 0错0溢0under0缺字 ANSKEY=16 4页；false 同 2页（S4 印前 0914 复编）"
  },
  "门谱": [
   "门-守恒对号-课时06.py（全绿）",
@@ -307,5 +307,7 @@
   "makebox槽宽门.py zero-fp/strict 双档 0旗（槽32）",
   "CJK 审计 rg \\\\w+\\p{Han} 零命中"
  ],
- "gen": "门谱/gen台账-课时06.py 2026-09-14"
+ "gen": "门谱/gen台账-课时06.py 2026-09-14",
+ "知识点预排注记": "知识点 N 预排（一平行判定/二垂直判定/三交点与综合）与导学件06 落盘分册确有异动，S4 印前回核（0914，键联法逐题 16 席）：6 席按落盘切分改号（题4/6/11/14→知识点一，题9/15→知识点二）；题1（S3 同域候选）键联对读取符不改；改后 16/16 相符，门谱复跑全绿（门谱S4/）。",
+ "变更注记": "S4 印前处置（0914）：知识点N 键联回核改号；值台账指纹/读数刷新（本字段）；门谱复跑全绿见 工作区/_tmpM3印前处置0914/门谱S4/。"
 }

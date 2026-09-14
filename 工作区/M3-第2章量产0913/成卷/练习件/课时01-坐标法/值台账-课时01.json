@@ -289,11 +289,11 @@
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "指纹": {
-  "main.tex.md5": "1c1d4efe32ed32656f4f84b1cbb1edd4",
-  "main-true.pdf.md5": "279f05229a684b3b8ff694c207c8aae4",
-  "main-false.pdf.md5": "a9191f7f5ca193b879fb9c2812f0f4c9",
+  "main.tex.md5": "e7fb9af42e5d6e62412187893d78b691",
+  "main-true.pdf.md5": "8271a92f907a394e5f24279c72243e98",
+  "main-false.pdf.md5": "f086fab2e39e8f7ee3652b52c1b41445",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
-  "双档读数": "true 0错0溢0under0缺字 ANSKEY=16 4页；false 同 2页"
+  "双档读数": "true 0错0溢0under0缺字 ANSKEY=16 4页；false 同 2页（S4 印前 0914 复编）"
  },
  "门谱": [
   "门-守恒对号.py（全绿）",
@@ -303,5 +303,7 @@
   "makebox槽宽门.py zero-fp/strict 双档 0旗",
   "CJK 审计 rg \\\\w+\\p{Han} 零命中"
  ],
- "gen": "门谱/gen台账.py 2026-09-14"
+ "gen": "门谱/gen台账.py 2026-09-14",
+ "知识点口径": "S4 印前回核（0914，键联法全片扫描）：知识点 N 照导学件落盘切分逐题回核，1 席 处改号（题10 二→三（导学席变式13 贴 知识点三，坐标法域））；改后键联对读 16/16 相符，门谱复跑全绿（门谱S4/）。",
+ "变更注记": "S4 印前处置（0914）：知识点N 键联回核改号；值台账指纹/读数刷新（本字段）；门谱复跑全绿见 工作区/_tmpM3印前处置0914/门谱S4/。"
 }

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 05:19
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 08:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1251,25 +1251,27 @@ Package fontspec Info:
 LaTeX Font Warning: Font shape `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n' undefined
 (Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 85.
 
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 87.
+File: figs/02-E1.png Graphic file (type bmp)
+<figs/02-E1.png>
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.71004pt on input line 87.
+(Font)              scaled to size 10.71004pt on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.49698pt on input line 87.
+(Font)              scaled to size 7.49698pt on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.35501pt on input line 87.
+(Font)              scaled to size 5.35501pt on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.711pt on input line 87.
+(Font)              scaled to size 10.711pt on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.49765pt on input line 87.
+(Font)              scaled to size 7.49765pt on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.3555pt on input line 87.
+(Font)              scaled to size 5.3555pt on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.70892pt on input line 87.
+(Font)              scaled to size 10.70892pt on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.4962pt on input line 87.
+(Font)              scaled to size 7.4962pt on input line 88.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.35446pt on input line 87.
+(Font)              scaled to size 5.35446pt on input line 88.
 M3-ANSKEY: 2章-练-课时02-E1
 
 Package fontspec Info: 
@@ -1329,7 +1331,7 @@ Package fontspec Info:
 
 
 LaTeX Font Warning: Font shape `TU/FY-w450BEVL100.ttf(0)/b/n' undefined
-(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 96.
+(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 97.
 
 M3-ANSKEY: 2章-练-课时02-E9
 M3-ANSKEY: 2章-练-课时02-E15
@@ -1354,8 +1356,8 @@ M3-ANSKEY: 2章-练-课时02-E14
 M3-ANSKEY: 2章-练-课时02-E10
 M3-ANSKEY: 2章-练-课时02-E6
 M3-ANSKEY: 2章-练-课时02-E2
-M3-ANSKEY: 2章-练-课时02-E8
 [2]
+M3-ANSKEY: 2章-练-课时02-E8
 M3-ANSKEY: 2章-练-课时02-E3
 M3-ANSKEY: 2章-练-课时02-E4
 M3-ANSKEY: 2章-练-课时02-E5
@@ -1384,12 +1386,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 25762 strings out of 469768
- 621240 string characters out of 5466040
- 1166743 words of memory out of 5000000
- 54289 multiletter control sequences out of 15000+600000
+ 25773 strings out of 469768
+ 621418 string characters out of 5466040
+ 1166601 words of memory out of 5000000
+ 54297 multiletter control sequences out of 15000+600000
  633876 words of font info for 188 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 112i,17n,124p,1273b,1010s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 112i,16n,124p,1273b,1010s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main-true.pdf (5 pages).

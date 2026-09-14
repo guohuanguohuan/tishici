@@ -1,0 +1,6 @@
+测评卷/main err=0 Oh=0 Ov=0 Miss=0 ANSKEY=19 pages=4
+测评卷/main-pure err=0 Oh=0 Ov=0 Miss=0 ANSKEY=19 pages=3
+滚动卷A/main err=0 Oh=0 Ov=0 Miss=0 ANSKEY=16 pages=3
+滚动卷A/main-pure err=0 Oh=0 Ov=0 Miss=0 ANSKEY=16 pages=2
+滚动卷B/main err=0 Oh=0 Ov=0 Miss=0 ANSKEY=16 pages=3
+滚动卷B/main-pure err=0 Oh=0 Ov=0 Miss=0 ANSKEY=16 pages=2

@@ -1,0 +1,26 @@
+% 探针2：危险字符路由 NSC 子块（字替对照 variantF NSC-w500）覆盖面测试
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\xeCJKDeclareCharClass{Default}{"2212}%
+\xeCJKDeclareCharClass{Default}{"2013}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"2013->"2013}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"2200->"2200}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"2203->"2213}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"21A9->"21AA}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"21CF->"21CF}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"21D2->"21D4}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"2305->"2305}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"2713->"2718}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"27E6->"27E7}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"27F9->"27FA}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"2933->"2933}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"2A0D->"2A0D}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"2A1D->"2A1D}%
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+\begin{document}
+\obeylines
+NSC-ROUTE-BEGIN
+– ∀ ∎ ∓ ⇏ ⇒ ⇔ ✓ ✗ ⟦ ⟧ ⟹ ⟺ ‹›
+NSC-ROUTE-END
+\end{document}

@@ -36,9 +36,9 @@
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "件指纹": {
-  "main.tex.md5": "4992bbb1ba3dce0117b6d0340473a0fd",
-  "main-true.pdf.md5": "12aad312afc45d11fbccca0f26ac49b5",
-  "main-false.pdf.md5": "1597319c44faa5d7250b0ea10f442435",
+  "main.tex.md5": "32a42af2fa2ad4ea3efc1e057435df4c",
+  "main-true.pdf.md5": "a9aac9da34e09d7629d0729bd2adbccd",
+  "main-false.pdf.md5": "58686c635c2c16d7692c756c8a7dfe77",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
   "双档读数": "true 0错0溢0under0缺字 ANSKEY=21 6页；false 同 3页"
  },
@@ -75,5 +75,6 @@
   "2章-练-课时12-简9": "档位勘误 #19 承接：件4-#19 原注「总表/亲算记0.94」系半误，亲算②实记0.85＝源标，总表 L413 已 0913 勘误回写——12-简9 无档位偏差；落实数 1",
   "2章-导-课时12-G2": "源0.85／查重总表·亲算②记0.94，同属简档档位不变（系数差异挂区末注）；落实数 1",
   "字形替换": "・(U+30FB) 书宋缺字→·(U+00B7)（难2 stem 加斯帕尔·蒙日）；▱→文字「平行四边形」（中4）；△ 一律 \\triangle；落实数 2"
- }
+ },
+ "变更注记": "S4 印前处置（0914）：图债插桩回冲（\\ansfig，题面「如图」处）；件指纹刷新（本字段）；复编译三零承证见 工作区/_tmpM3印前处置0914/复编读数S4.json。"
 }

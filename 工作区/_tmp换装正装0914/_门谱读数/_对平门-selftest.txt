@@ -1,88 +1,88 @@
-[源] 答案册pair=键账对平门-selftest-xdfyocpf：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 答案册pair=键账对平门-selftest-vv9qsjxr：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
 [源] 键账json=键账：4 键（[E] --keys 同制式）
-[件] 键账对平门-selftest-xdfyocpf/ok.tex：行首锚 4｜编译锚 4｜实题 4（naive 含注释 5·剔假命中 1）
+[件] 键账对平门-selftest-vv9qsjxr/ok.tex：行首锚 4｜编译锚 4｜实题 4（naive 含注释 5·剔假命中 1）
     [假命中·不计] \ti 注释行 ok.tex:2｜% \ti{9} 注释行假命中（P1 核销同款）
     [假命中·不计] 非行首 ans: ok.tex:3｜% % ans:测-77 双注释假锚（不计）
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 编译锚(ansblock)=键账对平门-selftest-xdfyocpf(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
 [PASS] 键账三源集合对平（对集合不对数）
 [selftest PASS] P0 健康件（含注释行/行尾注/双注释假命中·全剔后真放行）：退出码 0（期望 0）
 
-[源] 答案册pair=键账对平门-selftest-xdfyocpf：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 答案册pair=键账对平门-selftest-vv9qsjxr：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
 [源] 键账json=键账：4 键（[E] --keys 同制式）
-[件] 键账对平门-selftest-xdfyocpf/miss.tex：行首锚 3｜编译锚 3｜实题 3（naive 含注释 4·剔假命中 1）
+[件] 键账对平门-selftest-vv9qsjxr/miss.tex：行首锚 3｜编译锚 3｜实题 3（naive 含注释 4·剔假命中 1）
     [假命中·不计] \ti 注释行 miss.tex:2｜% \ti{9} 注释行假命中（P1 核销同款）
     [假命中·不计] 非行首 ans: miss.tex:3｜% % ans:测-77 双注释假锚（不计）
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(3)：答案册pair=键账对平门-selftest-xdfyocpf有件面锚(% ans:)=键账对平门-selftest-xdfyocpf无（缺 1）['测-3'] → FAIL
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(3)：答案册pair=键账对平门-selftest-xdfyocpf有编译锚(ansblock)=键账对平门-selftest-xdfyocpf无（缺 1）['测-3'] → FAIL
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(3)：答案册pair=键账对平门-selftest-xdfyocpf有实题(\ti)=键账对平门-selftest-xdfyocpf无（缺 1）['测-3'] → FAIL
-[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(3)：键账json=键账有件面锚(% ans:)=键账对平门-selftest-xdfyocpf无（缺 1）['测-3'] → FAIL
-[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(3)：键账json=键账有编译锚(ansblock)=键账对平门-selftest-xdfyocpf无（缺 1）['测-3'] → FAIL
-[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(3)：键账json=键账有实题(\ti)=键账对平门-selftest-xdfyocpf无（缺 1）['测-3'] → FAIL
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(3)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(3)↔实题(\ti)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 编译锚(ansblock)=键账对平门-selftest-xdfyocpf(3)↔实题(\ti)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(3)：答案册pair=键账对平门-selftest-vv9qsjxr有件面锚(% ans:)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-3'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(3)：答案册pair=键账对平门-selftest-vv9qsjxr有编译锚(ansblock)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-3'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(3)：答案册pair=键账对平门-selftest-vv9qsjxr有实题(\ti)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-3'] → FAIL
+[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(3)：键账json=键账有件面锚(% ans:)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-3'] → FAIL
+[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(3)：键账json=键账有编译锚(ansblock)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-3'] → FAIL
+[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(3)：键账json=键账有实题(\ti)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-3'] → FAIL
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(3)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(3)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(3)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
 [FAIL] 6 对集合不平，须定位键名回查
 [selftest PASS] N1 缺键（锚+块+实题缺 测-3）真拦：退出码 1（期望 1）
 
-[源] 答案册pair=键账对平门-selftest-xdfyocpf：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 答案册pair=键账对平门-selftest-vv9qsjxr：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
 [源] 键账json=键账：4 键（[E] --keys 同制式）
-[件] 键账对平门-selftest-xdfyocpf/ghost.tex：行首锚 5｜编译锚 5｜实题 6（naive 含注释 7·剔假命中 1）
+[件] 键账对平门-selftest-vv9qsjxr/ghost.tex：行首锚 5｜编译锚 5｜实题 6（naive 含注释 7·剔假命中 1）
     [假命中·不计] \ti 注释行 ghost.tex:2｜% \ti{9} 注释行假命中（P1 核销同款）
     [假命中·不计] 非行首 ans: ghost.tex:3｜% % ans:测-77 双注释假锚（不计）
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(5)：件面锚(% ans:)=键账对平门-selftest-xdfyocpf有答案册pair=键账对平门-selftest-xdfyocpf无（浮 1）['测-99'] → FAIL
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(5)：编译锚(ansblock)=键账对平门-selftest-xdfyocpf有答案册pair=键账对平门-selftest-xdfyocpf无（浮 1）['测-99'] → FAIL
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(6)：实题(\ti)=键账对平门-selftest-xdfyocpf有答案册pair=键账对平门-selftest-xdfyocpf无（浮 2）['测-88', '测-99'] → FAIL
-[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(5)：件面锚(% ans:)=键账对平门-selftest-xdfyocpf有键账json=键账无（浮 1）['测-99'] → FAIL
-[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(5)：编译锚(ansblock)=键账对平门-selftest-xdfyocpf有键账json=键账无（浮 1）['测-99'] → FAIL
-[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(6)：实题(\ti)=键账对平门-selftest-xdfyocpf有键账json=键账无（浮 2）['测-88', '测-99'] → FAIL
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(5)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(5)：集合相等 5↔5 → PASS
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(5)↔实题(\ti)=键账对平门-selftest-xdfyocpf(6)：实题(\ti)=键账对平门-selftest-xdfyocpf有件面锚(% ans:)=键账对平门-selftest-xdfyocpf无（浮 1）['测-88'] → FAIL
-[对账] 编译锚(ansblock)=键账对平门-selftest-xdfyocpf(5)↔实题(\ti)=键账对平门-selftest-xdfyocpf(6)：实题(\ti)=键账对平门-selftest-xdfyocpf有编译锚(ansblock)=键账对平门-selftest-xdfyocpf无（浮 1）['测-88'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(5)：件面锚(% ans:)=键账对平门-selftest-vv9qsjxr有答案册pair=键账对平门-selftest-vv9qsjxr无（浮 1）['测-99'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(5)：编译锚(ansblock)=键账对平门-selftest-vv9qsjxr有答案册pair=键账对平门-selftest-vv9qsjxr无（浮 1）['测-99'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(6)：实题(\ti)=键账对平门-selftest-vv9qsjxr有答案册pair=键账对平门-selftest-vv9qsjxr无（浮 2）['测-88', '测-99'] → FAIL
+[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(5)：件面锚(% ans:)=键账对平门-selftest-vv9qsjxr有键账json=键账无（浮 1）['测-99'] → FAIL
+[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(5)：编译锚(ansblock)=键账对平门-selftest-vv9qsjxr有键账json=键账无（浮 1）['测-99'] → FAIL
+[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(6)：实题(\ti)=键账对平门-selftest-vv9qsjxr有键账json=键账无（浮 2）['测-88', '测-99'] → FAIL
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(5)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(5)：集合相等 5↔5 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(5)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(6)：实题(\ti)=键账对平门-selftest-vv9qsjxr有件面锚(% ans:)=键账对平门-selftest-vv9qsjxr无（浮 1）['测-88'] → FAIL
+[对账] 编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(5)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(6)：实题(\ti)=键账对平门-selftest-vv9qsjxr有编译锚(ansblock)=键账对平门-selftest-vv9qsjxr无（浮 1）['测-88'] → FAIL
 [FAIL] 8 对集合不平，须定位键名回查
 [selftest PASS] N2 浮键（件面多 测-99 锚＋实题浮 88）真拦：退出码 1（期望 1）
 
-[源] 答案册pair=键账对平门-selftest-xdfyocpf：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 答案册pair=键账对平门-selftest-vv9qsjxr：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
 [源] 键账json=键账：4 键（[E] --keys 同制式）
-[件] 键账对平门-selftest-xdfyocpf/shift.tex：行首锚 4｜编译锚 4｜实题 4（naive 含注释 4·剔假命中 0）
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(4)：答案册pair=键账对平门-selftest-xdfyocpf有实题(\ti)=键账对平门-selftest-xdfyocpf无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-xdfyocpf有答案册pair=键账对平门-selftest-xdfyocpf无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
-[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(4)：键账json=键账有实题(\ti)=键账对平门-selftest-xdfyocpf无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-xdfyocpf有键账json=键账无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(4)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(4)：集合相等 4↔4 → PASS
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(4)：件面锚(% ans:)=键账对平门-selftest-xdfyocpf有实题(\ti)=键账对平门-selftest-xdfyocpf无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-xdfyocpf有件面锚(% ans:)=键账对平门-selftest-xdfyocpf无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
-[对账] 编译锚(ansblock)=键账对平门-selftest-xdfyocpf(4)↔实题(\ti)=键账对平门-selftest-xdfyocpf(4)：编译锚(ansblock)=键账对平门-selftest-xdfyocpf有实题(\ti)=键账对平门-selftest-xdfyocpf无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-xdfyocpf有编译锚(ansblock)=键账对平门-selftest-xdfyocpf无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
+[件] 键账对平门-selftest-vv9qsjxr/shift.tex：行首锚 4｜编译锚 4｜实题 4（naive 含注释 4·剔假命中 0）
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(4)：答案册pair=键账对平门-selftest-vv9qsjxr有实题(\ti)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-vv9qsjxr有答案册pair=键账对平门-selftest-vv9qsjxr无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
+[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(4)：键账json=键账有实题(\ti)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-vv9qsjxr有键账json=键账无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(4)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(4)：集合相等 4↔4 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(4)：件面锚(% ans:)=键账对平门-selftest-vv9qsjxr有实题(\ti)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-vv9qsjxr有件面锚(% ans:)=键账对平门-selftest-vv9qsjxr无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
+[对账] 编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(4)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(4)：编译锚(ansblock)=键账对平门-selftest-vv9qsjxr有实题(\ti)=键账对平门-selftest-vv9qsjxr无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-vv9qsjxr有编译锚(ansblock)=键账对平门-selftest-vv9qsjxr无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
 [FAIL] 4 对集合不平，须定位键名回查
 [selftest PASS] N3 挪号假对平（锚/块齐·实题号挪成 2..5·计数等集合不等）真拦：退出码 1（期望 1）
 
-[源] 答案册pair=键账对平门-selftest-xdfyocpf：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 答案册pair=键账对平门-selftest-vv9qsjxr：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
 [源] 键账json=键账：4 键（[E] --keys 同制式）
-[件] 键账对平门-selftest-xdfyocpf/miss2.tex：行首锚 3｜编译锚 3｜实题 3（naive 含注释 4·剔假命中 1）
+[件] 键账对平门-selftest-vv9qsjxr/miss2.tex：行首锚 3｜编译锚 3｜实题 3（naive 含注释 4·剔假命中 1）
     [假命中·不计] \ti 注释行 miss2.tex:2｜% \ti{9} 注释行假命中（P1 核销同款）
     [假命中·不计] 非行首 ans: miss2.tex:3｜% % ans:测-77 双注释假锚（不计）
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(3)↔键账json=键账(3)：集合相等 3↔3 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(3)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(3)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 答案册pair=键账对平门-selftest-xdfyocpf(3)↔实题(\ti)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 键账json=键账(3)↔件面锚(% ans:)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 键账json=键账(3)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 键账json=键账(3)↔实题(\ti)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(3)↔编译锚(ansblock)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 件面锚(% ans:)=键账对平门-selftest-xdfyocpf(3)↔实题(\ti)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
-[对账] 编译锚(ansblock)=键账对平门-selftest-xdfyocpf(3)↔实题(\ti)=键账对平门-selftest-xdfyocpf(3)：集合相等 3↔3 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(3)↔键账json=键账(3)：集合相等 3↔3 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(3)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(3)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 答案册pair=键账对平门-selftest-vv9qsjxr(3)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 键账json=键账(3)↔件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 键账json=键账(3)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 键账json=键账(3)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(3)↔编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-vv9qsjxr(3)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
+[对账] 编译锚(ansblock)=键账对平门-selftest-vv9qsjxr(3)↔实题(\ti)=键账对平门-selftest-vv9qsjxr(3)：集合相等 3↔3 → PASS
 [核销] --waive 测-3@（设计内差·挂哨放行）
 [PASS] 键账三源集合对平（对集合不对数）
 [selftest PASS] P4 核销（N1 缺键 --waive 测-3@ 全源摘除挂哨后转绿）：退出码 0（期望 0）

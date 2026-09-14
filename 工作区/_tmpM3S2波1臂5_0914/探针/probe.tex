@@ -1,0 +1,18 @@
+% 符号探针：四片（课时16–19）源件∪批DE 全部非ASCII非CJK字符，text/math 双模
+% preamble 照抄母版（qp-m3 钉后版＋U+2212 路由＋CJKglue）
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+\begin{document}
+\obeylines
+TEXT-MODE-BEGIN
+² § − → · √ ₁ ₂ ① ② ③ △ π ∠ ∞ ④ — ° ₀ λ ± ⑤ ⊥ Δ ∈ ∪ Γ ≠ ≤ ⇔ ≥ ∥ ′ ⑦ ≡ ↔ p̃ ¾ ⟺ ½ ⇒ ✓ ∎ ⟹ ✗ ≈ θ ⁴ ³ ⊙ ∓ – ⟦ ⟧ ₃ ₄ ¼ ≌ ∀ ⇏ ⁺ ∽ ∩ ∝ p̄ ⊙ π
+TEXT-MODE-END
+MATH-MODE-BEGIN
+$²$ $−$ $·$ $√$ $₁$ $₂$ $△$ $π$ $∠$ $∞$ $°$ $₀$ $λ$ $±$ $⊥$ $Δ$ $∈$ $∪$ $Γ$ $≠$ $≤$ $⇔$ $≥$ $∥$ $′$ $≡$ $↔$ $p̃$ $¾$ $⟺$ $½$ $⇒$ $✓$ $∎$ $⟹$ $✗$ $≈$ $θ$ $⁴$ $³$ $⊙$ $∓$ $⟦$ $⟧$ $₃$ $₄$ $¼$ $≌$ $∀$ $⇏$ $⁺$ $∽$ $∩$ $∝$ $p̄$ $π$
+MATH-MODE-END
+\end{document}

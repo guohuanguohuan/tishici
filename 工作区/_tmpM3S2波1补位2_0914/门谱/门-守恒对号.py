@@ -1,0 +1,112 @@
+# -*- coding: utf-8 -*-
+r"""门-守恒对号.py — M3 S2 波1臂2（课时04/05/06）·答案块守恒断言（双档）＋对号门＋尾块门＋页数门。
+母版件＝工作区/_tmpM3S2母版0914/门谱/门-守恒对号.py，逻辑零改动，键数 N 由 manifest 键序实取。
+
+断言面：
+  ①tex 层：行首注释锚 % ans:键 ≡ ansblock[键] ≡ manifest 键序（N 键，集合双向 diff）。
+  ②log 层：M3-ANSKEY 键序（true/false 两档各 N）集合≡manifest（对集合不对数）。
+  ③PDF 层（fitz）：true「N. [答案]」号序≡1..N 连号；[答案]＝N；[详解]≡tex ansnote；
+      false 泄答词＝0；尾块两档恰 1；页数 false≤true。
+  ④配额：\jiancestem＝5（G5 恒5 装配锁）；\duoxuan 出现次数≤2。
+用法: python 门-守恒对号.py <件>     件∈{04,05,06}
+退出码: 0＝全过；1＝有红。红线：件树与题面库/定稿只读，本脚本零写入。
+"""
+import io
+import json
+import os
+import re
+import sys
+
+import fitz  # pymupdf
+
+if not (getattr(sys.stdout, 'encoding', '') or '').lower().startswith('utf'):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
+ROOT = 'C:/提示词/工作区/M3-第2章量产0913'
+PIECES = {
+    '04': '课时04-点斜式与斜截式',
+    '05': '课时05-两点式与一般式',
+    '06': '课时06-两条直线的位置关系',
+}
+tag = sys.argv[1] if len(sys.argv) > 1 else '04'
+assert tag in PIECES, f'件须∈{list(PIECES)}'
+PIECE = f'{ROOT}/成卷/导学件/{PIECES[tag]}'
+MANIFEST = f'{ROOT}/成卷/题面库/manifest/课时{tag}.manifest.json'
+
+RE_ANCHOR = re.compile(r'^[ \t]*%[ \t]*ans:(\S+)', re.M)
+RE_BLOCK = re.compile(r'\\begin\{ansblock\}\[([^\]]+)\]')
+RE_NUM = re.compile(r'\\ansitem\{(\d+)\}\{')
+RE_NOTE = re.compile(r'\\ansnote\{详解\}')
+RE_KEYLOG = re.compile(r'^M3-ANSKEY: (.+)$', re.M)
+RE_PDF_NUM = re.compile(r'(\d+)\.\s*\[答案\]')
+
+reds = []
+def check(name, ok, detail=''):
+    t = '绿' if ok else '红'
+    print(f'  [{t}] {name}' + (f'｜{detail}' if detail else ''))
+    if not ok:
+        reds.append(name)
+
+src = open(os.path.join(PIECE, 'main.tex'), encoding='utf-8').read()
+manifest = json.load(open(MANIFEST, encoding='utf-8'))
+keyseq = manifest['键序']
+N = len(keyseq)
+
+print(f'== 件＝课时{tag}｜N={N} ==')
+print('== ① tex 层 ==')
+anchors = RE_ANCHOR.findall(src)
+blocks = RE_BLOCK.findall(src)
+check(f'锚数={N}', len(anchors) == N, f'{len(anchors)}')
+check(f'块数={N}', len(blocks) == N, f'{len(blocks)}')
+check(f'锚集合≡manifest键集合(双向diff)', set(anchors) == set(keyseq) and len(set(anchors)) == N,
+      f'缺{sorted(set(keyseq) - set(anchors))} 浮{sorted(set(anchors) - set(keyseq))}')
+check('块集合≡锚集合(双向diff)', set(blocks) == set(anchors), '')
+check('锚序＝印面装配序（登记用，非逻辑键序）', anchors == blocks, '')
+nums = [int(n) for n in RE_NUM.findall(src)]
+check(f'ansitem 号序≡1..{N} 连号', nums == list(range(1, N + 1)), f'{len(nums)}枚' if len(nums) == N else f'{nums}')
+note_cnt = len(RE_NOTE.findall(src))
+check(f'ansnote{{详解}} 计数＝{N}（键均有详解行）', note_cnt == N, f'{note_cnt}')
+jc = len(re.findall(r'\\jiancestem\{', src))
+check('\\jiancestem＝5（G5恒5）', jc == 5, f'{jc}')
+dx = len(re.findall(r'\\duoxuan\b', src))
+check('\\duoxuan 多选≤2', dx <= 2, f'{dx}')
+
+print('== ② log 层 ==')
+logs = {}
+for t in ('true', 'false'):
+    tl = open(os.path.join(PIECE, f'main-{t}.log'), encoding='utf-8', errors='replace').read()
+    logs[t] = RE_KEYLOG.findall(tl)
+check('true ANSKEY 集合≡manifest(双向diff)', set(logs['true']) == set(keyseq), f'{len(logs["true"])}键')
+check('false ANSKEY 集合≡manifest(双向diff)', set(logs['false']) == set(keyseq), f'{len(logs["false"])}键')
+check('两档 ANSKEY 逐位同序（同装配序编译）', logs['true'] == logs['false'], '')
+
+print('== ③ PDF 层 ==')
+pdf = {}
+for t in ('true', 'false'):
+    doc = fitz.open(os.path.join(PIECE, f'main-{t}.pdf'))
+    pdf[t] = {'n': len(doc), 'text': '\n'.join(p.get_text() for p in doc)}
+    doc.close()
+
+tnums = [int(m) for m in RE_PDF_NUM.findall(pdf['true']['text'])]
+check(f'true 号序≡1..{N} 连号(对号门)', tnums == list(range(1, N + 1)), f'{len(tnums)}枚')
+check(f'true [答案] 总计＝{N}', pdf['true']['text'].count('[答案]') == N,
+      f'{pdf["true"]["text"].count("[答案]")}')
+check('true [详解] 计数≡tex ansnote', pdf['true']['text'].count('[详解]') == note_cnt,
+      f'{pdf["true"]["text"].count("[详解]")}/{note_cnt}')
+check('false [答案]＝0', pdf['false']['text'].count('[答案]') == 0,
+      f'{pdf["false"]["text"].count("[答案]")}')
+check('false [详解]＝0', pdf['false']['text'].count('[详解]') == 0,
+      f'{pdf["false"]["text"].count("[详解]")}')
+for w in ('证明见详解', '证明过程', '答案'):
+    check(f'false 泄答词「{w}」＝0', pdf['false']['text'].count(w) == 0,
+          f'{pdf["false"]["text"].count(w)}')
+check('尾块「笔记与错题整理」true 恰1', pdf['true']['text'].count('笔记与错题整理') == 1,
+      f'{pdf["true"]["text"].count("笔记与错题整理")}')
+check('尾块「笔记与错题整理」false 恰1', pdf['false']['text'].count('笔记与错题整理') == 1,
+      f'{pdf["false"]["text"].count("笔记与错题整理")}')
+check('页数 false≤true', pdf['false']['n'] <= pdf['true']['n'],
+      f'true={pdf["true"]["n"]} false={pdf["false"]["n"]}')
+
+print()
+print('守恒对号门：', '全绿' if not reds else f'红 {len(reds)} 项：{reds}')
+sys.exit(0 if not reds else 1)

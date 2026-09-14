@@ -40,9 +40,9 @@
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "件指纹": {
-  "main.tex.md5": "40ac87669c84337c431c961e0a9f9f3b",
-  "main-true.pdf.md5": "ce72fe92d08550e3ff2088ea3c7822a9",
-  "main-false.pdf.md5": "7fc1177126222bac64fc778422d337fb",
+  "main.tex.md5": "619f0aab2bf43ea2f038f30301b9c5a9",
+  "main-true.pdf.md5": "38c0c44077e8fe650abfd161a68fcc69",
+  "main-false.pdf.md5": "6ef862cc31d395fbf1dd70837b4de949",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
   "双档读数": "true 错0溢0under0缺字0 ANSKEY=25 5页；false 错0溢0under0缺字0 ANSKEY=25 3页"
  },
@@ -72,5 +72,6 @@
   "2章-拓-课时02-T2": 18,
   "2章-拓-课时02-T3": 19,
   "2章-拓-课时02-T4": 20
- }
+ },
+ "变更注记": "S4 印前处置（0914）：图债插桩回冲（\\ansfig，题面「如图」处）；件指纹刷新（本字段）；复编译三零承证见 工作区/_tmpM3印前处置0914/复编读数S4.json。"
 }

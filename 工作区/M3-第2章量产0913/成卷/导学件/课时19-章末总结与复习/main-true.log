@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 05:47
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 08:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1370,16 +1370,21 @@ LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
 M3-ANSKEY: 2章-练-课时19-07
 M3-ANSKEY: 2章-练-课时19-08
 M3-ANSKEY: 2章-练-课时19-09
+File: figs/19-10.png Graphic file (type bmp)
+<figs/19-10.png>
 M3-ANSKEY: 2章-练-课时19-10
 [3]
 M3-ANSKEY: 2章-练-课时19-11
 M3-ANSKEY: 2章-练-课时19-12
-M3-ANSKEY: 2章-练-课时19-13
 [4]
+M3-ANSKEY: 2章-练-课时19-13
 M3-ANSKEY: 2章-练-课时19-14
 M3-ANSKEY: 2章-练-课时19-15
-M3-ANSKEY: 2章-练-课时19-16
 [5]
+File: figs/19-16.png Graphic file (type bmp)
+<figs/19-16.png>
+
+M3-ANSKEY: 2章-练-课时19-16
 M3-ANSKEY: 2章-导-课时19-G1
 M3-ANSKEY: 2章-导-课时19-G2
 M3-ANSKEY: 2章-导-课时19-G3
@@ -1397,12 +1402,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 25902 strings out of 469768
- 630403 string characters out of 5466040
- 1149064 words of memory out of 5000000
- 54425 multiletter control sequences out of 15000+600000
+ 25922 strings out of 469768
+ 630750 string characters out of 5466040
+ 1147325 words of memory out of 5000000
+ 54441 multiletter control sequences out of 15000+600000
  633900 words of font info for 191 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 112i,17n,124p,1603b,1008s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 112i,17n,124p,1603b,1010s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main-true.pdf (7 pages).

@@ -1,0 +1,13 @@
+[过] 课时01：页 2→true 3/pure 2｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 0｜pure p1 md5＝原（67fcd6d3）
+[过] 课时02：页 2→true 2/pure 2｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 0｜pure p1 md5＝原（687d358e）
+[过] 课时03：页 2→true 3/pure 2｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 0｜pure p1 md5＝原（3380a3f9）
+[过] 课时04：页 2→true 3/pure 3｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 4｜pure p1 md5＝原（591e372c）
+[过] 课时05：页 2→true 3/pure 2｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 0｜pure p1 md5＝原（5edbb29e）
+[过] 课时06：页 2→true 3/pure 2｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 0｜pure p1 md5＝原（8e5206f0）
+[过] 课时07：页 2→true 3/pure 3｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 4｜pure p1 md5＝原（98e1b784）
+[过] 课时08：页 2→true 3/pure 2｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 0｜pure p1 md5＝原（8deb6ca3）
+[过] 课时09：页 2→true 3/pure 3｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 4｜pure p1 md5＝原（efc61c53）
+[过] 课时10：页 2→true 3/pure 3｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 4｜pure p1 md5＝原（8fb88765）
+[过] 上册：页 5→true 6/pure 5｜true 缺原段 0｜pure 缺原段 0（页数差伪段 0：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 0｜pure p1 md5＝原（3ba952dc）
+[过] 下册：页 13→true 15/pure 12｜true 缺原段 0｜pure 缺原段 0（页数差伪段 4：页脚/页码族）｜pure 新增＝尾块族 5 段＋页脚伪段 0｜pure p1 md5＝原（a3110dd4）
+页级对勘（练习本）：全过 12 件

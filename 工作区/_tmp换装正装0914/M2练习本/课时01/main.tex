@@ -1,0 +1,193 @@
+% ============================================================
+% M2 轮4 S3 · 练习件 第1课时（§1.1.1 课1 空间向量的概念及线性运算）
+% 题面：照题面库 成卷/题面库/课时01-1.1.1课1.md 全 16 题冻结入卷（卷面题号＝库序 1~16）；
+%       冻结 10 题取 v11 练习线同文（练-课-1~6/10/11/12/15），组名/难度照库头第 3/4 字段。
+% 模板基线＝练习线样张（六宏零改动拷入）；版式＝练习线 p2 课时训练
+%       （\keshi＋multicols＋花形三档 基础巩固1~10／综合提升11~14／思维探索15~16）。
+% 图源：本件无图（库第12题图依赖已文字化）。
+% 取值/组名照登对照/图位/登记事项：见 ../批1值台账.md 课时01 节。
+% 编译：xelatex main.tex（两遍）→ python render.py → png/pageN.png
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3} % 换装：六宏→qp-m3 单包（钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，两补钉随版）
+
+% ============================================================
+% 练习件局部宏（照练习线样张页2形制搬入；本段只加件，不改件）
+% ============================================================
+% 页脚件名＝练习件（\qpjianming 登记值：本轮排产单 §一.2）
+\renewcommand{\qpjianming}{练习件}
+\renewcommand{\qpceming}{高中数学\quad 选择性必修第一册(人教B版)} % 换装回钉：qp-m3 默认册名＝选必二，防页脚漂移（试迁规约·试迁报告§四 B3 实证必改）
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+
+% ---------- YJ-01 灰块页脚·练习册档（块 31.0×7.8mm，照练习线样张 31.0mm 修正版） ----------
+\newcommand{\qpxsyema}{\ifnum\value{page}<10 00\fi\ifnum\value{page}>9 \ifnum\value{page}<100 0\fi\fi\arabic{page}}
+\newcommand{\lxshuziL}{\hbox to 13.8mm{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][l]{\rule[-3.145mm]{0pt}{7.8mm}\hspace{2.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema}}\hss}}
+\newcommand{\lxshuziR}{\hbox to 13.8mm{\kern-17.2mm\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][r]{\rule[-3.145mm]{0pt}{7.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema\hspace{2.75mm}}}}}
+\fancyfoot[RO]{\raisebox{-1.24mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}\hspace{3mm}\lxshuziL}}
+\fancyfoot[LE]{\raisebox{-1.24mm}[0pt][0pt]{\lxshuziR\hspace{3mm}\qphuitext\qpceming}}
+
+% ---------- HX-01 花形·三档名（练习册版 25.5×6.8mm，重叠 o＝5.1mm，照练习线样张裁定值） ----------
+% 局部宏 \huadianOverlapLx 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 局部宏 \dangbadge 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+
+% ---------- TJ-02 练习册悬挂题号（单号 5.75mm／双位 7.6mm，题号 \textbf 加重） ----------
+% 长度 \lxhang 已由 qp-m3 分配，预删防重复定义
+% 局部宏 \tihao 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 选项段（TJ-07 行距档；左缘随题号悬挂）
+% 局部宏 \lxopt 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 解答题书写位留白（每课时 16 题的书写位承担件）
+% 局部宏 \xiexwei 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 组名栏占位宏（组名照题面库头第 3 字段照登，排产单 §二.3）
+% 局部宏 \zu 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+
+\begin{document}
+
+% ============================================================
+% 课时训练（三档 10＋4＋2＝16 题）
+% ============================================================
+\keshi{第1课时\quad 空间向量的概念及线性运算}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\zu{概念·条件判定×选择} \tieside{简单(知识点三)}设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)均为非零空间向量，则“\(\overrightarrow{a}\cdot\overrightarrow{b}=0\)”是“\(\overrightarrow{a}\perp\overrightarrow{b}\)”的\nobreak(\kongwei)
+\lxopt{A．充分不必要条件；}
+\lxopt{B．必要不充分条件；}
+\lxopt{C．充要条件；}
+\lxopt{D．既不充分也不必要条件}
+\begin{ansblock}[练-课时01-1]
+% ans:练-课时01-1
+\ansitem{1}{C}
+\end{ansblock}
+
+\tihao{2}\zu{基底表示×填空} \tieside{简单(知识点二)}在平行六面体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，\(\overrightarrow{AB}=\overrightarrow{a}\)，\(\overrightarrow{AD}=\overrightarrow{b}\)，\(\overrightarrow{AA_1}=\overrightarrow{c}\)，则\nobreak\(\overrightarrow{D_1B}=\)\kongbai{}．(用\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，\(\overrightarrow{c}\)表示)
+\begin{ansblock}[练-课时01-2]
+% ans:练-课时01-2
+\ansitem{2}{\(\overrightarrow{a}-\overrightarrow{b}-\overrightarrow{c}\)}
+\end{ansblock}
+
+\tihao{3}\zu{基底表示·定系数×填空} \tieside{简单(知识点二)}在平行六面体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，点\(E\)在\(A_1C_1\)上，且\(\overrightarrow{A_1E}=\frac{1}{2}\overrightarrow{A_1C_1}\)，若\(\overrightarrow{AE}=x\overrightarrow{AA_1}+y(\overrightarrow{AB}+\overrightarrow{AD})\)，则\nobreak\(x=\)\kongbai{}，\(y=\)\kongbai{}．
+\begin{ansblock}[练-课时01-3]
+% ans:练-课时01-3
+\ansitem{3}{\(x=1\)，\(y=\dfrac{1}{2}\)}
+\end{ansblock}
+
+\tihao{4}\zu{数量积运算×填空} \tieside{简单(知识点三)}已知\(|\overrightarrow{a}|=2\)，\(|\overrightarrow{b}|=3\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=60^\circ\)，则\nobreak\((\overrightarrow{a}+2\overrightarrow{b})\cdot(\overrightarrow{a}-\overrightarrow{b})=\)\kongbai{}．
+\begin{ansblock}[练-课时01-4]
+% ans:练-课时01-4
+\ansitem{4}{\(-11\)}
+\end{ansblock}
+
+\tihao{5}\zu{数量积·夹角×填空} \tieside{中档(知识点三)}在长方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，\(AB=2\)，\(AD=2\)，\(AA_1=1\)，则向量\(\overrightarrow{AB_1}\)与\(\overrightarrow{AC}\)夹角的余弦值为\kongbai{}．
+\begin{ansblock}[练-课时01-5]
+% ans:练-课时01-5
+\ansitem{5}{\(\dfrac{\sqrt{10}}{5}\)}
+\ansnote{解析}{\(C\) 在底面！\(AB_{1}=(2,0,1)\)、\(AC=(2,2,0)\)，\(\cos=\dfrac{4}{\sqrt{5}\cdot 2\sqrt{2}}=\dfrac{\sqrt{10}}{5}\)。}
+\end{ansblock}
+
+\tihao{6}\zu{基底表示×填空} \tieside{简单(知识点二)}在直三棱柱\(ABC\text{-}\penalty100 A_{1}B_{1}C_{1}\)中，若\(\overrightarrow{CA} = \overrightarrow{a}\)，\(\overrightarrow{CB} = \overrightarrow{b}\)，\(\overrightarrow{CC_{1}} = \overrightarrow{c}\)，则\nobreak\(\overrightarrow{A_{1}B}\)=\kongbai{}.(用\(\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}\)表示)
+\begin{ansblock}[练-课时01-6]
+% ans:练-课时01-6
+\ansitem{6}{\(\overrightarrow{b}-\overrightarrow{a}-\overrightarrow{c}\)}
+\end{ansblock}
+
+\tihao{7}\zu{共面判定×解答} \tieside{简单(知识点三)}已知\(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\)，判断\(P\)，\(M\)，\(A\)，\(B\)四点是否共面，并说明理由．
+\xiexwei{20mm}
+\begin{ansblock}[练-课时01-7]
+% ans:练-课时01-7
+\ansitem{7}{共面}
+\ansnote{解析}{\(\overrightarrow{MP}=3\overrightarrow{MA}-2\overrightarrow{MB}\) 系数和 \(3+(-2)=1\)。}
+\end{ansblock}
+
+\tihao{8}\zu{数量积·距离×填空} \tieside{简单(知识点三)}在大小为\(60^\circ\)的二面角\(A\text{-}\penalty100 EF\text{-}\penalty100 D\)中，四边形\(ABFE\)，\(CDEF\)都是边长为\(1\)的正方形，则\nobreak\(B\)，\(D\)两点间的距离为\kongbai{}．
+\begin{ansblock}[练-课时01-8]
+% ans:练-课时01-8
+\ansitem{8}{\(\sqrt{2}\)}
+\end{ansblock}
+
+\tihao{9}\duoxuan\zu{数量积辨析多选×多选} \tieside{简单(知识点三)}设\(\overrightarrow{a}\)，\(\overrightarrow{b}\)为空间中的任意两个非零向量，下列各式中正确的有(\kongwei)
+\lxopt{A．\({\overrightarrow{a}}^{2} = | \overrightarrow{a} |^{2}\)；}
+\lxopt{B．\(\frac{\overrightarrow{a} \cdot \overrightarrow{b}}{\overrightarrow{a} \cdot \overrightarrow{a}} = \frac{\overrightarrow{b}}{\overrightarrow{a}}\)；}
+\lxopt{C．\(( \overrightarrow{a} \cdot \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} \cdot {\overrightarrow{b}}^{2}\)；}
+\lxopt{D．\(( \overrightarrow{a} - \overrightarrow{b} )^{2} = {\overrightarrow{a}}^{2} - 2\overrightarrow{a} \cdot \overrightarrow{b} + {\overrightarrow{b}}^{2}\)}
+\begin{ansblock}[练-课时01-9]
+% ans:练-课时01-9
+\ansitem{9}{AD}
+\end{ansblock}
+
+\tihao{10}\zu{翻折·距离×填空} \tieside{中档(知识点三)}已知矩形\(ABCD\)中，\(AB=1\)，\(BC=\sqrt{3}\)，将矩形\(ABCD\)沿对角线\(AC\)折起，使二面角\(B\text{-}\penalty100 AC\text{-}\penalty100 D\)的大小为\(60^\circ\)，则\nobreak\(|\overrightarrow{BD}|=\)\kongbai{}．
+\begin{ansblock}[练-课时01-10]
+% ans:练-课时01-10
+\setlength{\anshang}{7.6mm}% 题10 起双位档（照答案册同值，块内局部）
+\ansitem{10}{\(\dfrac{\sqrt{7}}{2}\)}
+\end{ansblock}
+
+\dangbadge{综}{合}{提}{升}
+
+\tihao{11}\zu{W7 空间四边形中点链化简×计算题组} \tieside{简单}在空间四边形\(ABCD\)中，连接\(AC\)，\(BD\)，设\(M\)，\(G\)分别是\(BC\)，\(CD\)的中点，化简下列各向量表达式：
+\lxopt{(1)\(\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{AD}\)；}
+\lxopt{(2)\(\overrightarrow{AD}-\frac{1}{2}(\overrightarrow{AB}+\overrightarrow{AC})\)．}
+\xiexwei{44mm}
+\begin{ansblock}[练-课时01-11]
+% ans:练-课时01-11
+\setlength{\anshang}{7.6mm}% 题11 起双位档（照答案册同值，块内局部）
+\ansitem{11}{(1)\(2\overrightarrow{AG}\)；(2)\(\overrightarrow{MD}\)}
+\end{ansblock}
+
+\tihao{12}\zu{W17 正方体夹角辨析选型×单选} \tieside{简单}在正方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，下列各对向量的夹角为\(45^\circ\)的是\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(\overrightarrow{AB}\)与\(\overrightarrow{A_1C_1}\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(\overrightarrow{AB}\)与\(\overrightarrow{C_1A_1}\)；}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(\overrightarrow{AB}\)与\(\overrightarrow{A_1D_1}\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(\overrightarrow{AB}\)与\(\overrightarrow{B_1A_1}\)}}
+\begin{ansblock}[练-课时01-12]
+% ans:练-课时01-12
+\setlength{\anshang}{7.6mm}% 题12 起双位档（照答案册同值，块内局部）
+\ansitem{12}{A}
+\ansnote{解析}{\(AB\) 与 \(A_{1}C_{1}\) 成 \(45^{\circ}\)；B \(135^{\circ}\)、C \(90^{\circ}\)、D \(180^{\circ}\) 逐项坐标验。}
+\end{ansblock}
+
+\tihao{13}\zu{W22 正方体中点向量表示×解答} \tieside{中档}在正方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，点\(M\)，\(N\)分别是面对角线\(A_1B\)与\(B_1D_1\)的中点，若\(\overrightarrow{DA}=\overrightarrow{a}\)，\(\overrightarrow{DC}=\overrightarrow{b}\)，\(\overrightarrow{DD_1}=\overrightarrow{c}\)，将\(\overrightarrow{MN}\)用向量\(\overrightarrow{a}\)，\(\overrightarrow{b}\)，\(\overrightarrow{c}\)表示出来．
+\xiexwei{80mm}
+\begin{ansblock}[练-课时01-13]
+% ans:练-课时01-13
+\setlength{\anshang}{7.6mm}% 题13 起双位档（照答案册同值，块内局部）
+\ansitem{13}{\(\overrightarrow{MN}=-\dfrac{1}{2}\overrightarrow{a}+\dfrac{1}{2}\overrightarrow{c}\)}
+\ansnote{解析}{\(=\dfrac{1}{2}(\overrightarrow{BB_{1}}+\overrightarrow{A_{1}D_{1}})\)。}
+\end{ansblock}
+
+\tihao{14}\zu{W22 中位线平行且等于\(\frac{1}{2}\)BD 证明} \tieside{中档}已知正方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，\(M\)与\(N\)分别是棱\(BB_1\)与对角线\(CA_1\)的中点．求证：\(MN\parallel BD\)且\(MN=\frac{1}{2}BD\)．
+\xiexwei{80mm}
+\begin{ansblock}[练-课时01-14]
+% ans:练-课时01-14
+\setlength{\anshang}{7.6mm}% 题14 起双位档（照答案册同值，块内局部）
+\ansitem{14}{证明见解析}
+\ansnote{解析}{\(MN\parallel BD\) 且 \(MN=\dfrac{1}{2}BD\)（中位线）。}
+\end{ansblock}
+
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\zu{W24 正四面体基底数量积×六小问题组} \tieside{难}已知四面体\(ABCD\)的每条棱长都等于\(a\)，点\(E\)，\(F\)，\(G\)分别是棱\(AB\)，\(AD\)，\(DC\)的中点，求下列向量的数量积：
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{(1)\(\overrightarrow{AB}\cdot\overrightarrow{AC}\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{(2)\(\overrightarrow{AD}\cdot\overrightarrow{DB}\)；}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{(3)\(\overrightarrow{GF}\cdot\overrightarrow{AC}\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{(4)\(\overrightarrow{EF}\cdot\overrightarrow{BC}\)；}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{(5)\(\overrightarrow{FG}\cdot\overrightarrow{BA}\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{(6)\(\overrightarrow{GE}\cdot\overrightarrow{GF}\)．}}
+\xiexwei{100mm}
+\begin{ansblock}[练-课时01-15]
+% ans:练-课时01-15
+\setlength{\anshang}{7.6mm}% 题15 起双位档（照答案册同值，块内局部）
+\ansitem{15}{(1)\(\dfrac{a^{2}}{2}\)；(2)\(-\dfrac{a^{2}}{2}\)；(3)\(-\dfrac{a^{2}}{2}\)；(4)\(\dfrac{a^{2}}{4}\)；(5)\(-\dfrac{a^{2}}{4}\)；(6)\(\dfrac{a^{2}}{4}\)}
+\end{ansblock}
+
+\tihao{16}\zu{W25 面内动点数量积最值 PA·(PB+PC)×解答} \tieside{难}已知\(\triangle ABC\)是边长为\(2\)的等边三角形，\(P\)为平面\(ABC\)内的一点，求\(\overrightarrow{PA}\cdot(\overrightarrow{PB}+\overrightarrow{PC})\)的最小值．
+\xiexwei{100mm}
+\begin{ansblock}[练-课时01-16]
+% ans:练-课时01-16
+\setlength{\anshang}{7.6mm}% 题16 起双位档（照答案册同值，块内局部）
+\ansitem{16}{最小值 \(-\dfrac{3}{2}\)；\(P\) 为高线 \(AM\) 中点}
+\ansnote{解析}{\(f=2\left[x^{2}+y^{2}-\sqrt{3}y\right]\) 配方。}
+\end{ansblock}
+
+\end{multicols}
+
+\tailfill
+\end{document}

@@ -1,0 +1,22 @@
+% 探针6：二分定位 underfull 幻影断行来源（裸段 / multicols / ansblock 三变体）
+\def\mthreepure{0}
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\usepackage{pifont}%
+\xeCJKDeclareCharClass{Default}{"2212}%
+\xeCJKDeclareCharClass{Default}{"2013}%
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+\begin{document}
+% v1 裸段
+故 \(|OA|\cdot|OB|=\sqrt{x_{A}x_{B}}\cdot\sqrt{x_{A}x_{B}+2p(x_{A}+x_{B})+4p^{2}}\)，代入韦达读数得 \((p/2)\cdot\sqrt{p^{2}/4+6p^{2}+4p^{2}}=(p/2)\cdot(\sqrt{41}/2)p=\sqrt{41}p^{2}/4\)．
+
+\begin{multicols}{2}
+% v2 multicols 内裸段
+又 \(|CN|=\sqrt{(x_{0}-5)^{2}+y_{0}^{2}}=\sqrt{(x_{0}-5)^{2}+8x_{0}}\)，即 \(\sqrt{(x_{0}-1)^{2}+24}\geqslant 2\sqrt{6}\)，当且仅当 \(x_{0}=1\)（\(N(1,\pm 2\sqrt{2})\)）且 \(C\)、\(M\)、\(N\) 三点共线（\(M\) 为线段 \(CN\) 与圆的交点）时取等——取等可行：\(C(5,0)\) 在圆内（\(|CB|=1<2\)）而 \(N\) 在圆外（\(|NB|^{2}=(x_{0}-6)^{2}+8x_{0}=(x_{0}-2)^{2}+32>4\) 恒成立），线段 \(CN\) 必与圆相交．最小值 \(2\sqrt{6}\)，选 D．
+{\ansblockgrayfalse
+\begin{ansblock}[probe-v3]
+% v3 ansblock（括线）内同段
+又 \(|CN|=\sqrt{(x_{0}-5)^{2}+y_{0}^{2}}=\sqrt{(x_{0}-5)^{2}+8x_{0}}\)，即 \(\sqrt{(x_{0}-1)^{2}+24}\geqslant 2\sqrt{6}\)，当且仅当 \(x_{0}=1\)（\(N(1,\pm 2\sqrt{2})\)）且 \(C\)、\(M\)、\(N\) 三点共线（\(M\) 为线段 \(CN\) 与圆的交点）时取等——取等可行：\(C(5,0)\) 在圆内（\(|CB|=1<2\)）而 \(N\) 在圆外（\(|NB|^{2}=(x_{0}-6)^{2}+8x_{0}=(x_{0}-2)^{2}+32>4\) 恒成立），线段 \(CN\) 必与圆相交．最小值 \(2\sqrt{6}\)，选 D．
+\end{ansblock}}
+\end{multicols}
+\end{document}

@@ -1,0 +1,191 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main-true.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(./main.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexart.cls (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-xetex.def))
+Document Class: ctexart 2026/08/11 v2.6.5 Chinese adapter for class article (CTEX)
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexhook.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctexpatch.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctexopts.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/ctex-c5size.clo)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ctex/config/ctex.cfg) (./qp-m3.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty)
+new hooks used!!
+) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/needspace/needspace.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def)))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex)) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex))) (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex (c:/Users/28120/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex))) (./main-true.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+M3-ANSKEY: 拓-059
+
+Underfull \hbox (badness 7468) in paragraph at lines 91--92
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中 偏 易\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 四 棱 锥 $[][][][][][]$ 中\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] []$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 底
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 面 $[][][][]$\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] [] [][]$,$[][] [] [][] [] [][] [] []$,$[][] []
+M3-ANSKEY: 拓-060
+
+Underfull \hbox (badness 8019) in paragraph at lines 103--104
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 如 图\TU/TimesNewRoman(0)/m/n/10.09 ,$[][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 是 三 棱 锥 $[][][][][]$ 的 高\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] []
+M3-ANSKEY: 拓-061
+M3-ANSKEY: 拓-062
+M3-ANSKEY: 拓-063
+[1]
+M3-ANSKEY: 拓-064
+M3-ANSKEY: 拓-065
+M3-ANSKEY: 拓-066
+M3-ANSKEY: 拓-067
+M3-ANSKEY: 拓-068
+
+Underfull \hbox (badness 5403) in paragraph at lines 194--195
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 如 图 \TU/TimesNewRoman(0)/m/n/10.09 (1), \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 直 角 梯 形 $[][][][]$ 中\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] []
+M3-ANSKEY: 拓-069
+[2]
+M3-ANSKEY: 拓-070
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 如 图 \TU/TimesNewRoman(0)/m/n/10.09 1, \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 直 角 梯 形 $[][][][]$ 中\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] []
+M3-ANSKEY: 拓-071
+M3-ANSKEY: 拓-072
+M3-ANSKEY: 拓-073
+M3-ANSKEY: 拓-074
+[3]
+M3-ANSKEY: 拓-075
+M3-ANSKEY: 拓-076
+M3-ANSKEY: 拓-077
+M3-ANSKEY: 拓-078
+M3-ANSKEY: 拓-079
+M3-ANSKEY: 拓-080
+M3-ANSKEY: 拓-081
+[4]
+M3-ANSKEY: 拓-082
+M3-ANSKEY: 拓-083
+M3-ANSKEY: 拓-084
+M3-ANSKEY: 拓-085
+M3-ANSKEY: 拓-086
+M3-ANSKEY: 拓-087
+M3-ANSKEY: 拓-088
+M3-ANSKEY: 拓-089
+M3-ANSKEY: 拓-090
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 在 三 棱 锥 $[][][][][]$ 中\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] []
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+[]$\TU/TimesNewRoman(0)/m/n/10.09 ,$[][][][] [] []$,$[][][][] [] []$,$[][] [] [][]$,$[][] [] [][]$,
+M3-ANSKEY: 拓-091
+[5]
+M3-ANSKEY: 拓-092
+M3-ANSKEY: 拓-093
+M3-ANSKEY: 拓-094
+M3-ANSKEY: 拓-095
+M3-ANSKEY: 拓-096
+M3-ANSKEY: 拓-097
+M3-ANSKEY: 拓-098
+M3-ANSKEY: 拓-099
+M3-ANSKEY: 拓-100
+M3-ANSKEY: 拓-101
+[6]
+M3-ANSKEY: 拓-102
+M3-ANSKEY: 拓-103
+M3-ANSKEY: 拓-104
+M3-ANSKEY: 拓-105
+M3-ANSKEY: 拓-106
+M3-ANSKEY: 拓-107
+M3-ANSKEY: 拓-108
+M3-ANSKEY: 拓-109
+M3-ANSKEY: 拓-110
+M3-ANSKEY: 拓-111
+M3-ANSKEY: 拓-112
+M3-ANSKEY: 拓-113
+[7]
+M3-ANSKEY: 拓-114
+M3-ANSKEY: 拓-115
+M3-ANSKEY: 拓-116
+M3-ANSKEY: 拓-117
+M3-ANSKEY: 拓-118
+M3-ANSKEY: 拓-119
+M3-ANSKEY: 拓-120
+M3-ANSKEY: 拓-121
+
+Underfull \hbox (badness 6758) in paragraph at lines 728--729
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 如 图\TU/TimesNewRoman(0)/m/n/10.09 , \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 三 棱 锥 $[][][][][]$ 中\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] []$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 平 面
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
+[][][]$\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] [] [][]$,$[][] [] [][] [] [][] [] []$,$[]$,$[]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 分 别 为
+[8]
+M3-ANSKEY: 拓-122
+
+Underfull \hbox (badness 7613) in paragraph at lines 740--741
+[][] [] [][] [] []$\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] [] [][]$, \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 点 $[]$\TU/TimesNewRoman(0)/m/n/10.09 ,$[]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 分 别 是 线 段
+M3-ANSKEY: 拓-123
+M3-ANSKEY: 拓-124
+
+Underfull \hbox (badness 5711) in paragraph at lines 764--765
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 如 图\TU/TimesNewRoman(0)/m/n/10.09 , \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 在 三 棱 锥 $[][][][][]$ 中\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] []$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 平 面
+M3-ANSKEY: 拓-125
+M3-ANSKEY: 拓-126
+M3-ANSKEY: 拓-127
+[9]
+M3-ANSKEY: 拓-128
+M3-ANSKEY: 拓-129
+M3-ANSKEY: 拓-130
+M3-ANSKEY: 拓-131
+M3-ANSKEY: 拓-132
+
+Underfull \hbox (badness 6708) in paragraph at lines 849--850
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 如 图\TU/TimesNewRoman(0)/m/n/10.09 , \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 直 三 棱 柱 $[][][][][][][][][][]$ 中\TU/TimesNewRoman(0)/m/n/10.09 ,$[][][] []
+[10]
+M3-ANSKEY: 拓-133
+M3-ANSKEY: 拓-134
+M3-ANSKEY: 拓-135
+M3-ANSKEY: 拓-136
+M3-ANSKEY: 拓-137
+[11]
+M3-ANSKEY: 拓-138
+M3-ANSKEY: 拓-139
+M3-ANSKEY: 拓-140
+M3-ANSKEY: 拓-141
+M3-ANSKEY: 拓-142
+M3-ANSKEY: 拓-143
+M3-ANSKEY: 拓-144
+M3-ANSKEY: 拓-145
+[12]
+M3-ANSKEY: 拓-146
+M3-ANSKEY: 拓-147
+
+Underfull \hbox (badness 10000) in paragraph at lines 989--990
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 长 方 体 $[][][][][][][][][][][][][]$\TU/TimesNewRoman(0)/m/n/10.09 ,$[][] [] []$,$[][] []
+M3-ANSKEY: 拓-148
+M3-ANSKEY: 拓-149
+M3-ANSKEY: 拓-150
+M3-ANSKEY: 拓-151
+[13]
+M3-ANSKEY: 拓-152
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1050
+[]\TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 简\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 设 $[]$ 为 多 面 体 $[]$ 的 一 个 顶 点\TU/TimesNewRoman(0)/m/n/10.09 , \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 定
+
+Underfull \hbox (badness 5533) in paragraph at lines 1049--1050
+\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 义 多 面 体 $[]$ 在 $[]$ 处 的 离 散 曲 率 为 $[] []
+
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1050
+[][][][][][][][] [] [][][][][][] [] [] [] [][][][][][] []
+
+Underfull \hbox (badness 5578) in paragraph at lines 1049--1050
+[][][][][][][]$\TU/TimesNewRoman(0)/m/n/10.09 , \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 其 中 $[][]$\TU/TimesNewRoman(0)/m/n/10.09 ($[] [] [][] [][] [][] [] [] []$,$[] [] []$) \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 为 多
+M3-ANSKEY: 拓-153
+M3-ANSKEY: 拓-154
+M3-ANSKEY: 拓-155
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1088
+[][][][][][]$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 为 菱 形\TU/TimesNewRoman(0)/m/n/10.09 ,$[][][][][][] [] [][][][][][] [] [][][]$,$[][] []
+M3-ANSKEY: 拓-156
+M3-ANSKEY: 拓-157
+[14]
+M3-ANSKEY: 拓-158
+M3-ANSKEY: 拓-159
+M3-ANSKEY: 拓-160
+[15] (./main-true.aux) ) )
+(see the transcript file for additional information)
+Output written on main-true.pdf (15 pages).
+Transcript written on main-true.log.

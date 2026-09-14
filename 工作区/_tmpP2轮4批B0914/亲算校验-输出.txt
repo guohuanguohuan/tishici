@@ -1,0 +1,43 @@
+PASS  R4B-02a 定义路线 1eV/J: got=1.6e-19 want=1.6e-19
+PASS  R4B-02b W=qU 路线 100eV/J: got=1.5999999999999998e-17 want=1.6e-17
+PASS  R4B-02c 两路线互等: got=1.5999999999999998e-17 want=1.5999999999999998e-17
+PASS  R4B-04a U_AB: got=-200.0 want=-200.0
+PASS  R4B-04b U_BC: got=400.0 want=400.0
+PASS  R4B-04c U_AC: got=200.0 want=200.0
+PASS  R4B-04d 能量账路线 B>A>C: got=1 want=1
+PASS  R4B-04e 换电荷 W_AC': got=-4.0000000000000003e-07 want=-4e-07
+PASS  R4B-05a 耐压 U_m=Ed: got=3000.0 want=3000.0
+PASS  R4B-05b 工况 E=U/d: got=300000.0 want=300000.0
+PASS  R4B-05c 判不击穿(1/10阈值): got=0.1 want=0.1
+PASS  R4B-06a φ_M: got=200.0 want=200.0
+PASS  R4B-06b φ_P 路线①: got=120.0 want=120.0
+PASS  R4B-06c φ_P 路线②: got=120.00000000000001 want=120.0
+PASS  R4B-06d D项 改M接地φ_P: got=-80.0 want=-80.0
+PASS  R4B-08a U=Ed 配凑: got=900.0 want=900.0
+PASS  R4B-08b a: got=6399999999999999.0 want=6400000000000000.0
+PASS  R4B-08c y 分步: got=0.004999999999999999 want=0.005
+PASS  R4B-08d y 闭式: got=0.004999999999999999 want=0.005
+PASS  R4B-08e tanθ 分步: got=0.3333333333333333 want=0.3333333333333333
+PASS  R4B-08f tanθ 闭式: got=0.3333333333333333 want=0.3333333333333333
+PASS  R4B-08g 不落极板 y<d/2: got=1 want=1
+PASS  R4B-09a Ek 路线①: got=3.6e-18 want=3.6e-18
+PASS  R4B-09b Ek 路线②: got=3.6e-18 want=3.6e-18
+PASS  R4B-09c v 两路线互等: got=2828427.12474619 want=2828427.12474619
+PASS  R4B-09d v=2.8×10⁶: got=2.82842712474619 want=2.83
+PASS  R4B-10a 初速同 tan_p/tan_α: got=2.0 want=2.0
+PASS  R4B-10b 初动能同 tan_p/tan_α: got=0.5 want=0.5
+PASS  R4B-11a E: got=12500.0 want=12500.0
+PASS  R4B-11b F: got=1.9999999999999998e-15 want=2e-15
+PASS  R4B-11c v 路线①: got=20000.0 want=20000.0
+PASS  R4B-11d v 路线②: got=20000.0 want=20000.0
+PASS  R4B-11e d加倍 F 减半: got=0.5 want=0.5
+PASS  R4B-11f d加倍 v 不变: got=1.0 want=1.0
+PASS  R4B-12 E_甲/E_乙: got=4.0 want=4.0
+PASS  R4B-13a W 路线①: got=-2.4000000000000003e-08 want=-2.4e-08
+PASS  R4B-13b W 路线②: got=-2.4000000000000003e-08 want=-2.4e-08
+PASS  R4B-13c ΔEp=+2.4×10⁻⁸: got=2.4000000000000003e-08 want=2.4e-08
+PASS  R4B-01a 垂直线 A、B 等势: got=0.0 want=0.0
+PASS  R4B-01b 沿场线 φ_B−φ_C>0: got=1 want=1
+PASS  R4B-01c 电子B→C W<0: got=-3.2e-18 want=-3.2e-18
+----------------------------------------------------------------
+批B亲算校验：全一致 PASS

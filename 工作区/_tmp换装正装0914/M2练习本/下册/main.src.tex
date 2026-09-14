@@ -1,0 +1,624 @@
+% ============================================================
+% 拓展册（下）· 拓-059～160（域 1.2.4～1.2.5）
+% 依据：题面库/拓展册.md（冻结稿）＋排产单 §一.6＋汇总 §4＋定稿C §1.3/§2.4/§3.4
+% 版式：练习线 qp-* 六宏零改动；页脚件名＝拓展册（下）；三位数页码沿用（册间流水 059 起）
+% 口径：题侧禁源号；组名行只给 ≥2 成员组打；难度档照总底表；图＝源位图零改绘，宽夹 [22,38]mm；
+%       并置注记 7 件（85→84／96→95／115→117／122→126／124→123／130→128／141→140）；
+%       教材侧占位 1 件（拓-157）＝装配轮 2026-09-12 处置销清：题面文字自足→删题首「如图所示，」语＋
+%       撤 \tuzhan 占位行（文字化销债，同上册 046/047/057/058 口径）；本册无占位外图位欠账
+% 转写登记（定稿C §3.4 文字化落地）：
+%       拓-059 两处【图】补全「直三棱柱ABC−A₁B₁C₁」「A₁C」；
+%       拓-071 「DABE／DA₁BE」系 Δ 线性化残写，还原「△ABE」「△A₁BE」；
+%       拓-107 题干 PA/PB/PC 文字化、选项 D＝√3/3π（§3.4 目验值，清稿§二-1 结案转呈）；
+%       拓-116 题面直径3、母线3、棱长a 文字化，选项 A=1/B=√2/C=√3/D=2，不须原图；
+%       拓-136 问句补「则该圆锥的体积为」（清稿§二-2）；
+%       救回图 4 件：拓-059（解析段建系图）、拓-067（解析段图）、拓-070（解析段图1图2）、
+%                    拓-098（解析段图1）、拓-118（解析段轴截面图）——源位图零改绘
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ============================================================
+% 局部层（练习线样张同源；公共模块语义不动）
+% ============================================================
+\renewcommand{\qpjianming}{拓展册}
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+
+% YJ-01 灰块页脚·练习册档（三位数页码，照练习线样张实测档）
+\newcommand{\qpxsyema}{\ifnum\value{page}<10 00\fi\ifnum\value{page}>9 \ifnum\value{page}<100 0\fi\fi\arabic{page}}
+\newcommand{\lxshuziL}{\hbox to 13.8mm{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][l]{\rule[-3.145mm]{0pt}{7.8mm}\hspace{2.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema}}\hss}}
+\newcommand{\lxshuziR}{\hbox to 13.8mm{\kern-17.2mm\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][r]{\rule[-3.145mm]{0pt}{7.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema\hspace{2.75mm}}}}}
+\fancyfoot[RO]{\raisebox{-1.24mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}（下）\hspace{3mm}\lxshuziL}}
+\fancyfoot[LE]{\raisebox{-1.24mm}[0pt][0pt]{\lxshuziR\hspace{3mm}\qphuitext\qpceming}}
+
+% TJ-02 悬挂题号（练习线档）
+\newlength{\lxhang}
+\newcommand{\tihao}[1]{\par\glueguard{1}%
+  \ifnum#1>9\setlength{\lxhang}{7.6mm}\else\setlength{\lxhang}{5.75mm}\fi
+  \noindent\hangindent=\lxhang\hangafter=0
+  \llap{\hbox to\lxhang{\textbf{#1.}\hss}}}
+% 选项段（TJ-07 行距档）
+\newcommand{\lxopt}[1]{\par\noindent\hangindent=\lxhang\hangafter=0
+  {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont #1\par}}
+
+\definecolor{gray102}{HTML}{666666}
+% 组名行（拓展册档＝独立行；只给 ≥2 成员组打；候选名正名随立组轮）
+\newcommand{\zu}[1]{\par\glueguard{2}\addvspace{2.4mm}\noindent
+  {\fontsize{10.5pt}{18pt}\selectfont\heibf 【#1】}\hspace{1mm}%
+  {\fontsize{8pt}{11pt}\selectfont\heiti\color{gray102}候选名·待立组轮正名}\par\addvspace{1.2mm}}
+% 源位图（零改绘；宽夹 [22,38]mm）
+\newcommand{\tu}[2]{\par\begingroup\centering\includegraphics[width=#2]{figs/#1}\par\endgroup}
+% 教材侧占位（图位清单在案，待补）
+\newcommand{\tuzhan}[1]{\par\begingroup\centering{\fontsize{9pt}{12pt}\selectfont\color{gray102}【图位占位：#1】}\par\endgroup}
+% 并置注记（同型换数件，方法讲解随主件）
+\newcommand{\bingzhi}[1]{\zhuzhu{本件为 #1 的同型换数并置件，方法讲解随主件（答案册同页排布）.}}
+% 罕见字回退（FZShuSong cmap 缺 U+81D1 臑；SimSun 覆盖 GB18030）
+\newCJKfontfamily\bunao[Path=C:/Windows/Fonts/,FontIndex=0]{simsun.ttc}
+\newcommand{\nao}{{\bunao 臑}}
+
+\begin{document}
+
+\zhangtitle{拓展册（下）}
+
+% ============================================================
+% 七、1.2.4 域（21 题·7 组）
+% ============================================================
+\jietitle{1.2.4　二面角}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\zu{二面角·建系向量法组}
+% 拓-059｜池-3（1.2.4.2.1-3）｜中｜图 t059_0.png（解析段建系图移用）
+% 转写登记：两处【图】按定稿C §3.4 补全「直三棱柱ABC−A₁B₁C₁」「A₁C」
+\tihao{59}\tieside{中}如图,直三棱柱$ABC\text{-}A_1B_1C_1$的体积为4,$\triangle A_1BC$的面积为$2\sqrt{2}$.
+(1)求$A$到平面$A_1BC$的距离;
+(2)设$D$为$A_1C$的中点,$AA_1=AB$,平面$A_1BC\perp$平面$ABB_1A_1$,求二面角$A\text{-}BD\text{-}C$的正弦值.
+【大招指引】(1)由等体积法运算即可得解;
+\tu{t059_0.png}{38.0mm}
+
+% 拓-060｜池-4（1.2.4.2.2-4）｜中偏易｜图 t060_0.png t060_1.png
+\tihao{60}\tieside{中偏易}在四棱锥$P\text{-}ABCD$中,$PD\perp$底面$ABCD$,$CD\parallel AB$,$AD=DC=CB=1$,$AB=2$,$DP=\sqrt{3}$.
+\tu{t060_0.png}{38.0mm}
+\tu{t060_1.png}{38.0mm}
+(1)证明:$BD\perp PA$;
+(2)求$PD$与平面$PAB$所成的角的正弦值.
+
+% 拓-061｜池-5（1.2.4.2.3-5）｜中｜图 t061_0.png t061_1.png
+\tihao{61}\tieside{中}如图,$PO$是三棱锥$P\text{-}ABC$的高,$PA=PB$,$AB\perp AC$,$E$是$PB$的中点.
+\tu{t061_0.png}{38.0mm}
+\tu{t061_1.png}{38.0mm}
+(1)证明:$OE\parallel$平面$PAC$;
+(2)若$\angle ABO=\angle CBO=30°$,$PO=3$,$PA=5$,求二面角$C\text{-}AE\text{-}B$正弦值.
+
+\zu{二面角·视图载体综合组}
+% 拓-062｜池-7（1.2.4.2.x-7）｜中偏易｜双图 t062_0.png t062_1.png（缺图即不可读级）
+\tihao{62}\tieside{中偏易}四棱锥$P\text{-}ABCD$的直观图(如图(1))及左视图(如图(2)),底面$ABCD$是边长为2的正方形,平面$PAB\perp$平面$ABCD$,$PA=PB$.
+\tu{t062_0.png}{38.0mm}
+\tu{t062_1.png}{38.0mm}
+(1)求证:$AD\perp PB$;
+(2)求异面直线$PD$与$AB$所成角的余弦值;
+(3)求平面$PAB$与平面$PCD$所成锐二面角的大小.
+
+% 拓-063｜F6·15｜中｜图 t063_0.png（缺图即不可读级）
+\tihao{63}\tieside{中}如图,在直三棱柱$ABC\text{-}A_1B_1C_1$中,底面$ABC$为等腰直角三角形,$AB=BC=2$,$CC_1=4$,$D$点在棱$CC_1$上(与端点不重合).
+\tu{t063_0.png}{38.0mm}
+(1)试确定$D$在棱$CC_1$上的位置,使得$B_1D\perp AD$;
+(2)在(1)的条件下,求平面$ABD$与平面$A_1BC_1$所成锐二面角的大小.
+
+% 拓-064｜F6·18｜中｜图 t064_0.png
+% 登记注（源面标注 NEF→NFC₁，答案册轮执行）
+\tihao{64}\tieside{中}《九章算术》中,将底面为长方形且有一条侧棱与底面垂直的四棱锥称之为阳马,如图,已知在正方体$ABCD\text{-}A_1B_1C_1D_1$中,$AB=2$,$E$为$AA_1$的中点,$F$为$DD_1$的中点,$AN=\frac{1}{3}NB$.
+\tu{t064_0.png}{38.0mm}
+(1)求证:四棱锥$N\text{-}EFC_1B_1$为阳马;
+(2)求平面$NEF$与平面$NFC_1$所成二面角的大小.
+
+% 拓-065｜F5·22｜中偏上｜图 t065_0.png（缺图即不可读级）
+\tihao{65}\tieside{中偏上}如图,在四棱锥$P\text{-}ABCD$中,$PC\perp$底面$ABCD$,$ABCD$是直角梯形,$AD\perp DC$,$AB\parallel DC$,$AB=2AD=2CD=2$,点$E$是$PB$的中点.
+\tu{t065_0.png}{38.0mm}
+(1)证明:平面$EAC\perp$平面$PBC$;
+(2)若直线$PB$与平面$PAC$所成角的正弦值为$\frac{\sqrt{3}}{3}$;
+①求三棱锥$P\text{-}ACE$的体积;
+②求二面角$P\text{-}AC\text{-}E$的余弦值.
+
+\zu{二面角·方法特例组}
+% 拓-066｜池-8（1.2.4.2.x-8）｜中（空间余弦定理先证后用：答案册轮）
+\tihao{66}\tieside{中}$AB$是圆的直径,$PA$垂直于圆所在的平面,$C$是圆上的点,平面$PAC\perp$平面$PBC$,若$AB=2$,$AC=1$,$PA=1$,求二面角$C\text{-}PB\text{-}A$的余弦值.
+
+% 拓-067｜池-9（1.2.4.2.x-9）｜中偏上｜图 t067_0.png（解析段图移用）
+\tihao{67}\tieside{中偏上}如图$\triangle ABC$与$\triangle BCD$所在平面垂直,且$AB=BC=BD$,$\angle ABC=\angle DBC=120°$,则二面角$A\text{-}BD\text{-}C$的余弦值为\kongbai.
+\tu{t067_0.png}{38.0mm}
+
+% 拓-068｜池-11（1.2.4.2.x-11）｜中偏上｜图 t068_0.png
+% 登记注：标签只取知识点名（清稿注，答案册轮）
+\tihao{68}\tieside{中偏上}如图:正方体$ABCD\text{-}A_1B_1C_1D_1$的棱长为2,$M$,$N$分别为棱$AB$,$BC$的中点,则二面角$B_1\text{-}MN\text{-}B$的余弦值为\kongbai;若点$P$为线段$B_1N$上的动点(不包括端点),设异面直线$C_1P$与$MN$所成角为$\theta$,则$\cos\theta$的取值范围是\kongbai.
+\tu{t068_0.png}{38.0mm}
+
+\zu{二面角·翻折族}
+% 拓-069｜池-10（1.2.4.2.x-10）｜中｜图 t069_0.png
+\tihao{69}\tieside{中}如图(1),在直角梯形$ABCD$中,$AB\parallel CD$,$AB\perp BC$,且$BC=CD=\frac{1}{2}AB=2$,取$AB$的中点$O$,连结$OD$,并将$\triangle AOD$沿着$OD$翻折,翻折后$AC=2\sqrt{3}$,点$M$,$N$分别是线段$AD$,$AB$的中点,如图(2).
+\tu{t069_0.png}{38.0mm}
+(1)求证:$AC\perp OM$;
+(2)求平面$OMN$与平面$OBCD$夹角的余弦值.
+【法一答案思路】先完成第(1)问并锁定$OM\perp AC$,再利用$OA\perp$平面$OBCD$,把$\triangle OMN$在平面$OBCD$上的正射影化为一个直角三角形,用面积比求余弦。
+【法二答案思路】先完成第(1)问的垂直证明,再以$O$为原点建立空间直角坐标系,求平面$OMN$的法向量并计算夹角余弦。
+
+% 拓-070｜池-12（1.2.4.2.x-12）｜中偏上｜双图 t070_0.png t070_1.png（解析段图(1)(2)移用）
+% 登记注：重复句删一（答案册轮）
+\tihao{70}\tieside{中偏上}如图,一个正$\triangle ABC'$和一个平行四边形$ABDE$在同一个平面内,其中$AB=8$,$BD=AD=\sqrt{43}$,$AB$,$DE$的中点分别为$F$,$G$. 现沿直线$AB$将$\triangle ABC'$翻折成$\triangle ABC$,使二面角$C\text{-}AB\text{-}D$为120°,设$CE$中点为$H$.
+\tu{t070_0.png}{38.0mm}
+\tu{t070_1.png}{38.0mm}
+(1)求证:平面$CDF\parallel$平面$AGH$;
+(2)求异面直线$AB$与$CE$所成角的正切值;
+(3)求二面角$C\text{-}DE\text{-}F$的余弦值.
+
+% 拓-071｜池-13（1.2.4.2.x-13）｜中｜图 t071_0.png（双图合幅：图1 图2）
+% 转写登记：DABE／DA₁BE 系 Δ 线性化残写，还原 △ABE／△A₁BE
+\tihao{71}\tieside{中}如图1,在直角梯形$ABCD$中,$AD\parallel BC$,$\angle BAD=\frac{\pi}{2}$,$AB=BC=1$,$AD=2$,$E$是$AD$的中点,$O$是$AC$与$BE$的交点.将$\triangle ABE$沿$BE$折起到$\triangle A_1BE$的位置,如图2.
+\tu{t071_0.png}{38.0mm}
+(Ⅰ)证明:$CD\perp$平面$A_1OC$;
+(Ⅱ)若平面$A_1BE\perp$平面$BCDE$,求平面$A_1BC$与平面$A_1CD$夹角的余弦值.
+
+% 拓-072｜F5·16｜中
+\tihao{72}\tieside{中}(多选)正方形$ABCD$沿对角线$BD$折成直二面角,下列结论正确的是\nobreak(　　).
+\lxopt{A.$AD$与$BC$所成的角为30°}
+\lxopt{B.$AC$与$BD$所成的角为90°}
+\lxopt{C.$BC$与平面$ACD$所成角的正弦值为$\frac{\sqrt{3}}{3}$}
+\lxopt{D.平面$ABC$与平面$BCD$所成锐二面角的正切值是$\sqrt{2}$}
+
+\zu{二面角·结构不良族}
+% 拓-073｜F6·6｜中｜图 t073_0.png
+% 登记注：轴名句按本章坐标系改写（答案册轮）
+\tihao{73}\tieside{中}如图,在三棱锥$A\text{-}BCD$中,$\triangle BCD$是边长为2的等边三角形,$AB=AC$,$O$是$BC$的中点,$OA\perp CD$.
+\tu{t073_0.png}{38.0mm}
+(1)证明:平面$ABC\perp$平面$BCD$;
+(2)若$E$是棱$AC$上的一点,从①$CE=2EA$;②二面角$E\text{-}BD\text{-}C$大小为60°;③$A\text{-}BCD$的体积为$\sqrt{3}$这三个论断中选取两个作为条件,证明另外一个成立.
+
+% 拓-074｜F6·7｜中｜图 t074_0.png
+% 登记注：「DB→BC」「N→B」两处（答案册轮）
+\tihao{74}\tieside{中}如图,在四棱锥$P\text{-}ABCD$中,平面$ABCD\perp$平面$PCD$,底面$ABCD$为梯形,$AB\parallel CD$,$AD\perp DC$,且$AB=1$,$AD=DC=DP=2$,$\angle PDC=120°$.
+\tu{t074_0.png}{38.0mm}
+(1)求证:$AD\perp PC$;
+(2)从①平面$PAB$与平面$ABC$所成的锐二面角,②二面角$P\text{-}BD\text{-}C$,③二面角$P\text{-}BC\text{-}D$这三个条件中任选一个,补充在横线上,并作答.求\kongbai{}的余弦值.
+
+% 拓-075｜F6·11｜中偏上｜图 t075_0.png
+\tihao{75}\tieside{中偏上}如图,直四棱柱$ABCD\text{-}A_1B_1C_1D_1$中,底面$ABCD$是边长为1的正方形,点$E$在棱$BB_1$上.
+\tu{t075_0.png}{38.0mm}
+(1)求证:$A_1C_1\perp DE$;
+(2)从条件①、条件②、条件③这三个条件中选择两个作为已知,使得$DB_1\perp$平面$EA_1C_1$,并给出证明.
+条件①:$E$为$BB_1$的中点;条件②:$BD_1\parallel$平面$EA_1C_1$;条件③:$DB_1\perp BD_1$.
+(3)在(2)的条件下,求平面$EA_1C_1$与平面$DA_1C_1$夹角的余弦值.
+
+% 拓-076｜F6·10｜难｜图 t076_0.png
+% 登记注：四条纠错随题（定稿C §3，答案册轮）
+\tihao{76}\tieside{难}如图,在三棱柱$ABC\text{-}A_1B_1C_1$中,底面$ABC$是边长为2的正三角形,侧面$ACC_1A_1$是菱形,平面$ACC_1A_1\perp$平面$ABC$,$E$,$F$分别是棱$A_1C_1$,$BC$的中点,$G$是棱$CC_1$上一点,且$C_1G=2GC$.
+\tu{t076_0.png}{38.0mm}
+(1)证明:$EF\parallel$平面$ABB_1A_1$;
+(2)从①三棱锥$C_1\text{-}ABC$的体积为1;②$C_1C$与底面$ABC$所成的角为60°;③异面直线$BB_1$与$AE$所成的角为30°这三个条件中选择一个作为已知,求二面角$A\text{-}EG\text{-}F$的余弦值.
+
+\zu{二面角·存在性组}
+% 拓-077｜F6·12｜中偏易｜图 t077_0.png
+\tihao{77}\tieside{中偏易}如图,在正方体$ABCD\text{-}A_1B_1C_1D_1$中,$M$是棱$C_1D_1$的中点.
+\tu{t077_0.png}{38.0mm}
+(1)求二面角$D\text{-}AC\text{-}M$的余弦值;
+(2)在棱$CC_1$(包含端点)上是否存在点$E$,使$BE\parallel$平面$ACM$,给出你的结论,并证明.
+
+% 拓-078｜F7·22｜中｜图 t078_0.png
+% 登记注：λ 负根补全（答案册轮）
+\tihao{78}\tieside{中}如图,在四棱锥$S\text{-}ABCD$中,四边形$ABCD$是矩形,$\triangle SAD$是等边三角形,平面$SAD\perp$平面$ABCD$,$AB=1$,$P$为棱$AD$的中点,四棱锥$S\text{-}ABCD$的体积为$\frac{2\sqrt{3}}{3}$.
+\tu{t078_0.png}{38.0mm}
+(1)若$E$为棱$SA$的中点,$F$为棱$SB$的中点,求证:平面$PEF\parallel$平面$SCD$.
+(2)在棱$SA$上是否存在点$M$,使得平面$PMB$与平面$SAD$所成锐二面角的余弦值为$\frac{\sqrt{30}}{10}$?若存在,指出点$M$的位置;若不存在,请说明理由.
+
+% 拓-079｜1.2.4练习B·1｜中（教材组：单员不设组名行）
+\tihao{79}\tieside{中}已知$A(1,0,0)$,$B(0,2,0)$,$C(0,0,3)$,分别求平面$ABC$与三个坐标平面所成角的余弦值.
+
+\end{multicols}
+
+% ============================================================
+% 八、1.2.5 域（81 题·15 组）
+% ============================================================
+\jietitle{1.2.5　空间中的距离}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\zu{外接球·补形模型组}
+% 拓-080｜池-4｜简
+\tihao{80}\tieside{简}棱长为$a$的正四面体的外接球半径为\kongbai.
+
+% 拓-081｜池-5｜中｜图 t081_0.png
+\tihao{81}\tieside{中}在正三棱锥$P\text{-}ABC$中,$PA\perp PB$,$P$到平面$ABC$的距离为2,则该三棱锥外接球的表面积为\nobreak(\kongwei)
+\tu{t081_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$36\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$16\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{16\pi}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$4\pi$}}
+
+% 拓-082｜池-6｜中｜图 t082_0.png
+\tihao{82}\tieside{中}已知正四面体$P\text{-}ABC$的外接球的体积为$\frac{\sqrt{3}}{2}\pi$, 则该正四面体的棱长为\nobreak(　　)
+\tu{t082_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$1$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\sqrt{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\sqrt{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\sqrt{6}$}}
+
+% 拓-083｜池-7｜中｜图 t083_0.png
+\tihao{83}\tieside{中}四面体$ABCD$中,$AB=CD=2$,其余棱长均为4,则该四面体外接球半径为\nobreak(　　)
+\tu{t083_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\sqrt{14}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{\sqrt{14}}{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$3\sqrt{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{3\sqrt{2}}{2}$}}
+
+% 拓-084｜池-8｜中
+\tihao{84}\tieside{中}在三棱锥$P\text{-}ABC$中,三条棱$PA$、$PB$、$PC$两两垂直,且$PA=1$、$PB=2$、$PC=2$.若点$Q$为三棱锥$P\text{-}ABC$的外接球球面上任意一点,则$Q$到面$ABC$距离的最大值为\kongbai.
+
+% 拓-085｜池-9｜中｜图 t085_0.png｜并置注记（主件拓-84）
+\tihao{85}\tieside{中}已知三棱锥$S\text{-}ABC$,满足$SA$,$SB$,$SC$两两垂直,且$SA=SB=SC=2$,$Q$是三棱锥$S\text{-}ABC$外接球上一动点,求点$Q$到平面$ABC$的距离的最大值.
+\tu{t085_0.png}{38.0mm}
+\bingzhi{拓-84}
+
+% 拓-086｜池-10｜中
+\tihao{86}\tieside{中}已知三棱锥$P\text{-}ABC$的四个顶点在球$O$的球面上,$PA=PB=PC$,$\triangle ABC$是边长为2正三角形,$E$,$F$分别是$PA$,$AB$的中点,$\angle CEF=90°$,则球$O$的体积为\kongbai.
+
+% 拓-087｜池-11｜中
+\tihao{87}\tieside{中}已知矩形$ABCD$,$AB=1$,$AD=\sqrt{2}$,$E$为$AD$的中点,现分别沿$BE$,$CE$将$\triangle ABE$,$\triangle DCE$翻折,使点$A$,$D$重合,记为点$P$,则几何体$P\text{-}BCE$的外接球表面积为
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$10\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$5\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{5\pi}{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{5\sqrt{5}\pi}{12}$}}
+
+% 拓-088｜池-13｜中
+\tihao{88}\tieside{中}已知直三棱柱$ABC\text{-}A_1B_1C_1$中,$\angle BAC=90°$,侧面$BCC_1B_1$的面积为16,则直三棱柱$ABC\text{-}A_1B_1C_1$外接球的半径的最小值为
+
+% 拓-089｜池-14｜简
+\tihao{89}\tieside{简}已知四棱锥$P\text{-}ABCD$中,$PA\perp$平面$ABCD$,底面$ABCD$是矩形,$AD=3AB=3PA$,若四棱锥$P\text{-}ABCD$外接球的表面积为$11\pi$,则四棱锥$P\text{-}ABCD$的体积为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$3$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$2$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\sqrt{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$1$}}
+
+% 拓-090｜池-15｜中
+\tihao{90}\tieside{中}已知在三棱锥$P\text{-}ABC$中,$V_{P\text{-}ABC}=\frac{4\sqrt{3}}{3}$,$\angle APC=\frac{\pi}{4}$,$\angle BPC=\frac{\pi}{3}$,$PA\perp AC$,$PB\perp BC$,且平面$PAC\perp$平面$PBC$,那么三棱锥$P\text{-}ABC$外接球的体积为 \kongbai.
+
+% 拓-091｜池-24｜中｜图 t091_0.png
+\tihao{91}\tieside{中}在正方体$ABCD\text{-}A_1B_1C_1D_1$中,$M$是线段$A_1C_1$的中点,若四面体$M\text{-}ABD$的外接球体积为$36\pi$,则正方体棱长为\kongbai.
+\tu{t091_0.png}{38.0mm}
+
+% 拓-092｜池-25｜中｜图 t092_0.png
+\tihao{92}\tieside{中}已知四面体$ABCD$的体积为3,从顶点$B$出发的三条棱$BA$,$BC$,$BD$两两垂直,若$BA=4$,则该四面体外接球表面积的最小值为\nobreak(　　)
+\tu{t092_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$25\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$50\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{125}{6}\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{125}{3}\pi$}}
+
+% 拓-093｜池-42｜中
+% 登记注：「长方形→正方形」已落（清稿）；下标混用随详解（答案册轮核）
+\tihao{93}\tieside{中}在《九章算术》中,将底面为正方形且有一条侧棱与底面垂直的四棱锥称之为阳马.若四棱锥$M\text{-}ABCD$为阳马,侧棱$MA\perp$底面$ABCD$,且$MA=BC=AB=2$,则该阳马的外接球与内切球表面积之和为\kongbai.
+
+\zu{外接球·折叠双外心组}
+% 拓-094｜池-16｜中
+\tihao{94}\tieside{中}已知三棱锥$A\text{-}BCD$中,$\triangle ABD$与$\triangle BCD$是边长为2的等边三角形且二面角$A\text{-}BD\text{-}C$为直二面角,则三棱锥$A\text{-}BCD$的外接球的表面积为\nobreak(\ \ \ )
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{10\pi}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$5\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$6\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{20\pi}{3}$}}
+
+% 拓-095｜池-17｜中
+\tihao{95}\tieside{中}已知菱形$ABCD$的边长为2,对角线$BD=2$,现将$\triangle ABD$沿$BD$折起,使得二面角$A\text{-}BD\text{-}C$为120°,则折得几何体$ABCD$的外接球的表面积为 \kongbai.
+
+% 拓-096｜池-18｜中｜并置注记（主件拓-95）
+\tihao{96}\tieside{中}在菱形$ABCD$中,$A=\frac{\pi}{3}$,$AB=4\sqrt{3}$,将$\triangle ABD$沿$BD$折起到$\triangle PBD$的位置,二面角$P\text{-}BD\text{-}C$的大小为$\frac{2\pi}{3}$,则三棱锥$P\text{-}BCD$的外接球的表面积为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$2\sqrt{3}\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$2\sqrt{7}\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$72\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$112\pi$}}
+\bingzhi{拓-95}
+
+% 拓-097｜池-19｜难
+\tihao{97}\tieside{难}在三棱锥$P\text{-}ABC$中,$PA=PB=AC=BC=2$,$AB=2\sqrt{3}$,$PC=1$,则三棱锥$P\text{-}ABC$的外接球的表面积为\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{4\pi}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$4\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$12\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{52\pi}{3}$}}
+
+% 拓-098｜池-50｜难｜图 t098_0.png（解析段图1移用，缺图即不可读级）
+% 登记注：有向距离定侧（答案册轮，定稿C §3.5 口径）
+\tihao{98}\tieside{难}在三棱锥$S\text{-}ABC$中,$AB=6$,$BC=8$,$AC=10$,二面角$S\text{-}AB\text{-}C$、$S\text{-}AC\text{-}B$、$S\text{-}BC\text{-}A$的大小均为$\frac{\pi}{4}$,设三棱锥$S\text{-}ABC$的外接球球心为$O$,直线$SO$交平面$ABC$于点$M$,则三棱锥$S\text{-}ABC$的内切球半径为\kongbai,$\frac{SO}{OM}=$\kongbai
+\tu{t098_0.png}{38.0mm}
+
+\zu{内切球·切接公式直取组}
+% 拓-099｜池-30｜中
+\tihao{99}\tieside{中}在《九章算术》中,将四个面都为直角三角形的三棱锥称为鳖\nao{}.已知鳖\nao{}$A\text{-}BCD$中,$AB\perp$平面$BCD$,且$BC=CD=4$,当该鳖\nao{}的内切球的半径为$2(\sqrt{2}-1)$时,它的外接球体积为\kongbai.
+
+% 拓-100｜池-31｜中｜（源无图，不设）
+\tihao{100}\tieside{中}在《九章算术》中,将四个面都是直角三角形的四面体称为鳖\nao{}.在鳖\nao{}$A\text{-}BCD$中,$AB\perp$平面$BCD$,$BC\perp CD$,且$AB=BC=CD=1$,则其内切球表面积为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$3\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\sqrt{3}\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$(3-2\sqrt{2})\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$(\sqrt{2}-1)\pi$}}
+
+% 拓-101｜池-34｜简（转写登记：S2→S₂）
+\tihao{101}\tieside{简}一个正四面体表面积为$S_1$,其内切球表面积为$S_2$.则$\frac{S_1}{S_2}=$\kongbai.
+
+% 拓-102｜池-36｜中
+\tihao{102}\tieside{中}已知圆锥的底面半径为2,高为$4\sqrt{2}$,则该圆锥的内切球表面积为\kongbai.
+
+% 拓-103｜池-38｜中
+\tihao{103}\tieside{中}已知一个平放的各棱长为4的三棱锥内有一个小球,现从该三棱锥顶端向锥内注水,小球慢慢上浮.当注入的水的体积是该三棱锥体积的$\frac{7}{8}$时,小球恰与该三棱锥各侧面及水面相切(小球完全浮在水面上方),则小球的表面积等于\kongbai.
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{7\pi}{6}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{4\pi}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{2\pi}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{\pi}{2}$}}
+
+% 拓-104｜池-39｜中
+\tihao{104}\tieside{中}四棱锥$P\text{-}ABCD$的底面$ABCD$是边长为6的正方形,且$PA=PB=PC=PD$,若一个半径为1的球与此四棱锥所有面都相切,则该四棱锥的高是\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$6$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$5$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{9}{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{9}{4}$}}
+
+% 拓-105｜池-41｜中
+% 登记注：「易知」补论证（答案册轮）
+\tihao{105}\tieside{中}在四棱锥$P\text{-}ABCD$中,底面$ABCD$是边长为$2a$的正方形,$PD\perp$底面$ABCD$,且$PD=2a$,若在这个四棱锥内放一球,则此球的最大半径为\kongbai.
+
+% 拓-106｜池-44｜简
+\tihao{106}\tieside{简}体积为$\frac{4\pi}{3}$的球与正三棱柱的所有面均相切,则该棱柱的体积为\kongbai.
+
+% 拓-107｜池-45｜中
+% 转写登记：题干 PA/PB/PC 文字化、选项 D＝√3/3π（定稿C §3.4 目验值；清稿§二-1 结案转呈）
+\tihao{107}\tieside{中}已知三棱锥$P\text{-}ABC$的所有棱长都相等,现沿$PA$、$PB$、$PC$三条侧棱剪开,将其表面展开成一个平面图形,若这个平面图形外接圆的半径为$2\sqrt{6}$,则三棱锥$P\text{-}ABC$的内切球的体积为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$\frac{\sqrt{3}}{2}\pi$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$\frac{\sqrt{6}}{3}\pi$;}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$\frac{\sqrt{6}}{2}\pi$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$\frac{\sqrt{3}}{3}\pi$}}
+
+% 拓-108｜池-49｜难
+% 登记注：空隙位置论证补（答案册轮）
+\tihao{108}\tieside{难}棱长为2的正四面体内切一球,然后在正四面体和该球形成的空隙处各放入一个小球,则这些小球的最大半径为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{\sqrt{3}}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{\sqrt{2}}{6}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{\sqrt{6}}{12}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{\sqrt{6}}{6}$}}
+
+\zu{内切球·动点与向量组}
+% 拓-109｜池-12｜难｜图 t109_0.png
+\tihao{109}\tieside{难}已知正三棱锥$P\text{-}ABC$的侧面均为等腰直角三角形,动点$E$在其内切球上,动点$F$在其外接球上,且线段$EF$长度的最小值为$2\sqrt{3}-3$,设该正三棱锥内切球的球心为$O_1$,外接球的球心为$O_2$,则\nobreak(　　)
+\tu{t109_0.png}{38.0mm}
+\lxopt{A.$O_1$,$O_2$,$P$三点共线}
+\lxopt{B.$PO_1\perp$平面$ABC$}
+\lxopt{C.正三棱锥$P\text{-}ABC$外接球的体积为$\frac{27\sqrt{3}}{2}\pi$}
+\lxopt{D.正三棱锥$P\text{-}ABC$内切球的表面积为$(6-2\sqrt{3})\pi$}
+
+% 拓-110｜池-37｜中
+\tihao{110}\tieside{中}正四面体的棱长为2,$MN$是它内切球的一条弦(把球面上任意2个点之间的线段称为球的弦),$P$为正四面体表面上的动点,当弦$MN$最长时,$\overrightarrow{PM}\cdot\overrightarrow{PN}$的最大值为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{1}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{4}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{1}{6}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{2}{3}$}}
+
+% 拓-111｜池-43｜中
+\tihao{111}\tieside{中}正四面体(四个面均为正三角形的四面体)的外接球和内切球上各有一个动点$P$、$Q$,若线段$PQ$长度的最大值为$\frac{4}{3}\sqrt{6}$,则这个四面体的棱长为\kongbai.
+
+% 拓-112｜习题1—2C·1｜难
+\tihao{112}\tieside{难}已知直线$l$经过$A(3,3,3)$,$B(0,6,0)$两点,求点$P(0,0,6)$到$l$的距离.
+
+% 拓-113｜F7·16｜中
+% 登记注：知识点标重标（答案册轮）
+\tihao{113}\tieside{中}已知球$O$是棱长为2的正八面体(八个面都是全等的等边三角形)的内切球,$MN$为球$O$的一条直径,点$P$为正八面体表面上的一个动点,则$\overrightarrow{PM}\cdot\overrightarrow{PN}$的取值范围是\kongbai.
+
+\zu{内切球·转动临界组}
+% 拓-114｜池-26｜中
+\tihao{114}\tieside{中}在棱长为12的正方体内有一个正四面体,该四面体外接球的球心与正方体的中心重合,且该四面体可以在正方体内任意转动,则该四面体的棱长的最大值为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$2\sqrt{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$4\sqrt{6}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$3\sqrt{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$6\sqrt{4}$}}
+
+% 拓-115｜池-32｜中｜并置注记（主件拓-117）
+\tihao{115}\tieside{中}已知棱长为6的正四面体内有一个正方体玩具,若正方体玩具可以在该正四面体内任意转动,则这个正方体玩具的棱长最大值为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\sqrt{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$2\sqrt{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\sqrt{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$2\sqrt{3}$}}
+\bingzhi{拓-117}
+
+% 拓-116｜池-48｜难
+% 转写登记：题面直径3、母线3、棱长a 文字化（定稿C §3.4），不须原图
+\tihao{116}\tieside{难}已知一圆锥底面圆的直径是3,圆锥的母线长为3,在该圆锥内放置一个棱长为$a$的正四面体(每条棱长都为$a$的三棱锥),并且正四面体可以在该圆锥内任意转动,则$a$的最大值为\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$1$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\sqrt{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\sqrt{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$2$}}
+
+% 拓-117｜池-51｜中
+\tihao{117}\tieside{中}一个棱长为6的正四面体内部有一个任意旋转的正方体,当正方体的棱长取得最大值时,正方体的外接球的表面积是()
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$4\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$6\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$12\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$24\pi$}}
+
+\zu{圆锥切接·最值组}
+% 拓-118｜池-40｜中｜图 t118_0.png（解析段轴截面图移用，缺图即不可读级）
+\tihao{118}\tieside{中}若圆锥的内切球(球面与圆锥的侧面以及底面都相切)的半径为1,当该圆锥体积取最小值时,该圆锥体积与其内切球体积比为\nobreak(\kongwei)
+\tu{t118_0.png}{32.5mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$2{:}1$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$4{:}1$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$8{:}1$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$8{:}3$}}
+
+% 拓-119｜池-46｜难
+\tihao{119}\tieside{难}已知球$O$是底面半径为4、高为$8\sqrt{2}$的圆锥的内切球,若球$O$内有一个内接正三棱柱,则当该正三棱柱的侧面积最大时,正三棱柱的体积为\kongbai.
+
+% 拓-120｜池-47｜难
+% 登记注：删 f′(r) 残段＋记号统一（答案册轮）
+\tihao{120}\tieside{难}已知圆锥内切球(与圆锥侧面、底面均相切的球)的半径为2,当该圆锥的表面积最小时,其外接球的表面积为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$81\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$96\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$108\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$126\pi$}}
+
+\zu{球的截面组}
+% 拓-121｜池-29｜中｜图 t121_0.png
+\tihao{121}\tieside{中}已知正方体$ABCD\text{-}A_1B_1C_1D_1$的棱长为2,$E$为棱$CC_1$上的一点,且满足平面$BDE\perp$平面$A_1BD$,则平面$A_1BD$截四面体$ABCE$的外接球所得截面的面积为\nobreak(　　)
+\tu{t121_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{13}{6}\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{25}{12}\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{8}{3}\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{2}{3}\pi$}}
+
+% 拓-122｜池-52｜中｜图 t122_0.png t122_1.png｜并置注记（主件拓-126）
+\tihao{122}\tieside{中}如图,在三棱锥$S\text{-}ABC$中,$SB\perp$平面$ABC$,$AB\perp BC$,$SB=AB=BC=2$,$P$,$Q$分别为$AB$,$BC$的中点,则平面$SPQ$截三棱锥$S\text{-}ABC$的外接球所得截面的面积为\nobreak(\kongwei)
+\tu{t122_0.png}{38.0mm}
+\tu{t122_1.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\sqrt{2}\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$2\pi$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$2\sqrt{2}\pi$}}
+\bingzhi{拓-126}
+
+% 拓-123｜池-53｜中｜图 t123_0.png
+\tihao{123}\tieside{中}已知三棱锥$S\text{-}ABC$中,$SA\perp$平面$ABC$,$SA=AB=BC=2$,$AC=2\sqrt{2}$,点$E$,$F$分别是线段$AB$,$BC$的中点,直线$AF$,$CE$相交于点$G$,则过点$G$的平面$\alpha$与截三棱锥$S\text{-}ABC$的外接球$O$所得截面面积的取值范围为\nobreak(\kongwei)
+\tu{t123_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$[\frac{4\pi}{3},4\pi]$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$[\frac{4\pi}{3},3\pi]$;}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$[\frac{16\pi}{9},4\pi]$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$[\frac{16\pi}{9},3\pi]$}}
+
+% 拓-124｜池-55｜中｜图 t124_0.png｜并置注记（主件拓-123）
+\tihao{124}\tieside{中}已知三棱锥$S\text{-}ABC$中,$SA\perp$平面$ABC$,$SA=AB=BC=\sqrt{2}$,$AC=2$,点$E$,$F$分别是线段$AB$,$BC$的中点,直线$AF$,$CE$相交于点$G$,则过点$G$的平面$\alpha$与截三棱锥$S\text{-}ABC$的外接球$O$所得截面面积的取值范围为\nobreak(　　)
+\tu{t124_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$[\frac{8\pi}{9},2\pi]$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$[\frac{8\pi}{9},\frac{3}{2}\pi]$;}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$[\frac{2\pi}{3},\frac{3}{2}\pi]$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$[\frac{2\pi}{3},2\pi]$}}
+\bingzhi{拓-123}
+
+% 拓-125｜池-56｜中｜图 t125_0.png
+% 登记注：C₁ 补定义＋坐标路重建（答案册轮）
+\tihao{125}\tieside{中}如图,在三棱锥$P\text{-}ABC$中,$PA\perp$平面$ABC$,$\angle ACB=90°$,$PA=CA=CB=2$,若$D$,$E$分别为棱$PA$,$AB$的中点,过$C$,$D$,$E$三点的平面截三棱锥$P\text{-}ABC$的外接球,则截面的面积为\kongbai.
+\tu{t125_0.png}{38.0mm}
+
+% 拓-126｜池-57｜中｜图 t126_0.png（缺图即不可读级）
+% 登记注：−y＋2z 勘误（答案册轮）
+\tihao{126}\tieside{中}如图,在三棱锥$S\text{-}ABC$中,$SB\perp AB$,$SB\perp BC$ , $AB\perp BC$,$SB=AB=BC=2$,$P$, $Q$分别为棱$AB$, $BC$的中点,$O$为三棱锥$S\text{-}ABC$外接球的球心,则球$O$的体积为\kongbai;平面$SPQ$截球$O$所得截面的周长为\kongbai.
+\tu{t126_0.png}{38.0mm}
+
+% 拓-127｜池-72｜中
+\tihao{127}\tieside{中}已知球$O$的表面积为$100\pi\text{cm}^2$,$P$是球$O$内的定点,$OP=\sqrt{10}\text{cm}$,过$P$的动直线交球面于$A$,$B$两点,$AB=4\sqrt{5}\text{cm}$,则球心$O$到$AB$的距离为\kongbai$\text{cm}$;若点$A$,$B$的轨迹分别为圆台$O_1O_2$的上、下底面的圆周,则圆台$O_1O_2$的体积为\kongbai$\text{cm}^3$.
+
+\zu{多面体截面组}
+% 拓-128｜池-22｜中｜图 t128_0.png t128_1.png
+\tihao{128}\tieside{中}已知四面体$ABCD$为正四面体,$AB=4$,$E$,$F$分别是$AD$,$BC$中点.若用一个与$EF$垂直,且与四面体的每一个面都相交的平面$\alpha$去截该四面体,由此得到一个多边形截面,则该多边形截面面积最大值为\nobreak(　　)
+\tu{t128_0.png}{38.0mm}
+\tu{t128_1.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$1$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$2$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$3$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$4$}}
+
+% 拓-129｜池-27｜难
+\tihao{129}\tieside{难}已知棱长为4的正四面体$A\text{-}BCD$,用所有与点$A$,$B$,$C$,$D$距离均相等的平面截该四面体,则所有截面的面积和为\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$12+4\sqrt{3}$\ \ \ ;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$16+4\sqrt{3}$;}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$8\sqrt{3}$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$4\sqrt{3}$}}
+
+% 拓-130｜池-54｜中｜双图 t130_0.png t130_1.png｜并置注记（主件拓-128）｜缺图即不可读级
+% 登记注：归⑧组修正（定稿C §3.4）
+\tihao{130}\tieside{中}如图,已知四面体$ABCD$为正四面体,$AB=1$,$E$,$F$分别是$AD$,$BC$中点.若用一个与直线$EF$垂直,且与四面体的每一个面都相交的平面$\alpha$去截该四面体,由此得到一个多边形截面,则该多边形截面面积最大值为
+\tu{t130_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{1}{4}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{\sqrt{2}}{4}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{\sqrt{3}}{4}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$1$}}
+\tu{t130_1.png}{38.0mm}
+\bingzhi{拓-128}
+
+% 拓-131｜池-58｜中｜图 t131_0.png（缺图即不可读级）
+% 登记注：归⑧组修正（定稿C §3.4）
+\tihao{131}\tieside{中}已知正方体$ABCD\text{-}A_1B_1C_1D_1$的边长为2,点$N$在棱$CC_1$上,$C_1N=2NC$,点$M$在棱$BC$上(点$M$异于$B$,$C$两点),若平面$AMN$截正方体$ABCD\text{-}A_1B_1C_1D_1$所得的截面为五边形,则$CM$长的取值可能为\nobreak(　　)
+\tu{t131_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$1$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{1}{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{\sqrt{2}}{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{3}{4}$}}
+
+\zu{展开·最短路径组}
+% 拓-132｜池-59｜中｜图 t132_0.png
+% 登记注：A₁ 补定义（答案册轮）
+\tihao{132}\tieside{中}如图,设正三棱锥$P\text{-}ABC$的侧棱长为2,$\angle APB=40°$,$E$,$F$分别是$BP$,$CP$上的点,过$A$,$E$,$F$作三棱锥的截面,则截面$\triangle AEF$周长的最小值为 \kongbai.
+\tu{t132_0.png}{38.0mm}
+
+% 拓-133｜池-60｜中｜图 t133_0.png（缺图即不可读级）
+% 登记注：排除理由改「路更长」＋补绕 AA₁ 路（答案册轮）
+\tihao{133}\tieside{中}如图,直三棱柱$ABC\text{-}A_1B_1C_1$中,$AA_1=2$,$AB=AC=1$,$\angle BAC=120°$,点$E$、$F$分别是棱$AB$、$CC_1$的中点,一只蚂蚁从点$E$出发,绕过三棱柱$ABC\text{-}A_1B_1C_1$的一条棱爬到点$F$处,则这只蚂蚁爬行的最短路程是\kongbai.
+\tu{t133_0.png}{38.0mm}
+
+% 拓-134｜池-61｜中
+% 登记注：倍角下标随详解（答案册轮）
+\tihao{134}\tieside{中}在正三棱锥$P\text{-}ABC$(顶点在底面的射影是底面正三角形的中心)中,$AB=4$,$PA=8$,过$A$作与$PB$,$PC$分别交于$D$和$E$的截面,则截面$\triangle ADE$的周长的最小值是\kongbai.
+
+% 拓-135｜池-62｜中｜图 t135_0.png
+\tihao{135}\tieside{中}如图,在四棱锥$P\text{-}ABCD$中,平面$PAB\perp$平面$ABCD$,底面$ABCD$是正方形,$\triangle PAB$是边长为2的正三角形,$E$,$F$分别是棱$PD$,$PC$上的动点,则$AE+EF+BF$的最小值是\nobreak(\kongwei)
+\tu{t135_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\sqrt{2}+2$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\sqrt{2}+3$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\sqrt{7}+2$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\sqrt{7}+1$}}
+
+% 拓-136｜池-63｜中｜图 t136_0.jpg t136_1.png
+% 转写登记：问句补「则该圆锥的体积为」（对照源件；清稿§二-2）
+\tihao{136}\tieside{中}在意大利,有一座满是``斗笠''的灰白小镇阿尔贝罗贝洛,这些圆锥形屋顶的奇特小屋名叫Trullo,于1996年被收入世界文化遗产名录,现测量一个Trullo的屋顶,得到母线$SA$长为6米(其中$S$为圆锥顶点,$O$为圆锥底面圆心),$C$是母线$SA$的靠近点$S$的三等分点.从点$A$到点$C$绕圆锥顶侧面一周安装灯带,若灯带的最短长度为$2\sqrt{13}$米,则该圆锥的体积为\nobreak(　　)
+\tu{t136_0.jpg}{38.0mm}
+\tu{t136_1.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$12\pi$立方米;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$16\sqrt{2}\pi$立方米;}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$\frac{16\sqrt{2}}{3}\pi$立方米;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$\frac{12\sqrt{3}}{3}\pi$立方米}}
+
+% 拓-137｜池-64｜中｜图 t137_0.png
+\tihao{137}\tieside{中}如图,圆锥的母线$AB$长为2,底面圆的半径为$r$,若一只蚂蚁从圆锥的点$B$出发,沿表面爬到$AC$的中点$D$处,则其爬行的最短路线长为$\sqrt{5}$,则圆锥的底面圆的半径为\nobreak(　　)
+\tu{t137_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$1$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$2$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$3$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{3}{2}$}}
+
+% 拓-138｜池-65｜中｜图 t138_0.png
+\tihao{138}\tieside{中}在《九章算术》中,将底面为矩形且有一条侧棱与底面垂直的四棱锥称为``阳马''.如图,在``阳马''$P\text{-}ABCD$中,$PA\perp$底面$ABCD$,$AD=2AB=2PA=2$,$F$是棱$BC$的中点,点$E$是棱$AB$上的动点,则当$\triangle PEF$的周长最小时,三棱锥$P\text{-}AEF$外接球的表面积为\nobreak(　　)
+\tu{t138_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{7\sqrt{14}\pi}{24}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{7\sqrt{14}\pi}{8}$;}}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{7\pi}{4}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{7\pi}{2}$}}
+
+\zu{动点轨迹组}
+% 拓-139｜池-66｜难｜图 t139_0.png
+% 登记注：柯西→投影路改写（答案册轮，定稿C §3.6）
+\tihao{139}\tieside{难}古希腊数学家阿波罗尼奥斯发现:平面上到两定点$A$,$B$距离之比为常数$\lambda$($\lambda>0$且$\lambda\neq1$)的点的轨迹是一个圆心在直线$AB$上的圆,该圆简称为阿氏圆.根据以上信息,解决下面的问题:如图,在长方体$ABCD\text{-}A_1B_1C_1D_1$中,$AB=2AD=2AA_1=6$,点$E$在棱$AB$上,$BE=2AE$,动点$P$满足$\overrightarrow{BP}=\sqrt{3}\overrightarrow{PE}$.若点$P$在平面$ABCD$内运动,则点$P$所形成的阿氏圆的半径为\kongbai;若点$P$在长方体$ABCD\text{-}A_1B_1C_1D_1$内部运动,$F$为棱$C_1D_1$的中点,$M$为$CP$的中点,则三棱锥$M\text{-}B_1CF$的体积的最小值为\kongbai.
+\tu{t139_0.png}{38.0mm}
+
+% 拓-140｜池-67｜中｜图 t140_0.png
+\tihao{140}\tieside{中}已知正方体$ABCD\text{-}A_1B_1C_1D_1$,空间一动点$P$满足$A_1P\perp AB_1$,且$\angle APB_1=\angle ADB_1$,则点$P$的轨迹为
+\tu{t140_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.直线;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.圆;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.椭圆;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.抛物线}}
+
+% 拓-141｜池-68｜简｜并置注记（主件拓-140，同图同情境）
+\tihao{141}\tieside{简}已知正四面体$ABCD$,空间一动点$P$满足$BP\perp AD$,且$\triangle PAD$的面积为定值,则点$P$的轨迹为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.直线;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.圆;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.椭圆;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.抛物线}}
+\bingzhi{拓-140}
+
+% 拓-142｜池-69｜中
+\tihao{142}\tieside{中}空间中平面$\alpha$、平面$\beta$、平面$\gamma$两两垂直,点$P$到三个平面的距离分别为$d_1$、$d_2$、$d_3$,若$6d_1=3d_2=2d_3$,则点$P$的轨迹是\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.一条射线;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.一条直线;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.三条直线;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.四条直线}}
+
+% 拓-143｜池-70｜中
+% 登记注：N 为 AD 中点脱字（答案册轮）
+\tihao{143}\tieside{中}在四棱锥$P\text{-}ABCD$中,四边形$ABCD$是边长为2的菱形,$\angle DAB=60°$,$PA=PD$,$\angle APD=90°$,平面$PAD\perp$平面$ABCD$,$Q$点是$\triangle PBC$内的一个动点(含边界),且满足$DQ\perp AC$,则$Q$点所形成的轨迹长度是\kongbai.
+
+% 拓-144｜池-71｜中｜图 t144_0.png
+% 登记注：标签重写义务（答案册轮）
+\tihao{144}\tieside{中}如图所示,$A$是平面$\alpha$内一定点,$B$是平面$\alpha$外一定点,直线$AB$与平面$\alpha$所成角为45°.设平面$\alpha$内的动点$C$到$A$点、$B$点距离分别为$d_1$、$d_2$($d_1$,$d_2>0$),且$m=\frac{d_1}{d_2}$.若点$C$的轨迹是一条直线,则$m=$\kongbai;若点$C$的轨迹是圆,则$m$的取值范围是\kongbai.
+\tu{t144_0.png}{38.0mm}
+
+% 拓-145｜池-73｜难
+\tihao{145}\tieside{难}我们定义空间中从同一点出发的三条两两垂直的直线构成空间直角坐标系,这三条直线分别定义为$x$轴,$y$轴,$z$轴.棱长为1的正四面体$ABCD$在空间直角坐标系中运动,运动过程中始终保持点$A$在$x$轴上,点$B$在$y$轴上,则棱$CD$的中点$E$距离坐标原点的最远距离为\kongbai.
+
+\zu{动点最值·角最值组}
+% 拓-146｜池-74｜中｜图 t146_0.png
+% 登记注：「对角线AB」标号携图核对（定稿C §3.4）
+\tihao{146}\tieside{中}如图,在棱长为2的正方体中,点$P$在正方体的对角线$AB$上,点$Q$在正方体的棱$CD$上,若$P$为动点,$Q$为动点,则$PQ$的最小值为\kongbai.
+\tu{t146_0.png}{38.0mm}
+
+% 拓-147｜池-75｜中
+\tihao{147}\tieside{中}长方体$ABCD\text{-}A_1B_1C_1D_1$,$AB=1$,$AD=2$,$AA_1=3$,$P$是棱$DD_1$上动点,则$\triangle PA_1C$的面积最小时,$\frac{DP}{PD_1}$的值为多少
+
+% 拓-148｜池-76｜中｜图 t148_0.png
+\tihao{148}\tieside{中}在直三棱柱 $ABC\text{-}A_1B_1C_1$ 中,侧面 $AA_1B_1B$ 为正方形,棱 $AB$ 与 $BC$ 的长度均为 2。点 $E$、$F$ 分别为 $AC$、$CC_1$ 的中点,点 $D$ 在棱 $A_1B_1$ 上,直线 $BF \perp$棱 $A_1B_1$。
+\tu{t148_0.png}{38.0mm}
+(1)求证:直线 $BF \perp$直线 $DE$;
+(2)当 $B_1D$ 为何值时,平面 $BB_1C_1C$ 与平面 $DFE$ 所成二面角的$\sin$最小?
+
+% 拓-149｜池-77｜中｜图 t149_0.png
+\tihao{149}\tieside{中}如图,已知三棱柱$ABC\text{-}A_1B_1C_1$中,$AB=AC=2$,$A_1A=A_1B=A_1C=2\sqrt{2}$,$\angle BAC=90°$,$E$是$BC$的中点,$F$是线段$A_1C_1$上一点.
+\tu{t149_0.png}{38.0mm}
+(1)求证:$AB\perp EF$;
+(2)设$P$是棱$AA_1$上的动点(不包括边界),当$\triangle PBC$的面积最小时,求棱锥$P\text{-}ABC$的体积.
+
+% 拓-150｜池-78｜难｜图 t150_0.png
+\tihao{150}\tieside{难}如图,在正四面体$A\text{-}BCD$中,$AF=\frac{1}{3}AD$,$E$为$AB$中点,$P$是棱$CD$上的动点,则当异面直线$BP$与$EF$所成角的$\sin$最小时,$\frac{CP}{CD}=$\nobreak(　　)
+\tu{t150_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{5}{6}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{6}{7}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{7}{8}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{8}{9}$}}
+
+\zu{新语境·新定义组}
+% 拓-151｜池-20｜中｜图 t151_0.png
+\tihao{151}\tieside{中}所有面都只由一种正多边形构成的多面体称为正多面体.已知一个正四面体$QPTR$和一个正八面体$AEFBHC$的棱长都是$a$(如图),把它们拼接起来,使它们一个表面重合,得到一个新多面体,则新多面体的体积为\nobreak(　　)
+\tu{t151_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{\sqrt{2}}{12}a^3$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{\sqrt{2}}{6}a^3$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$\frac{5\sqrt{2}}{12}a^3$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{\sqrt{2}}{2}a^3$}}
+
+% 拓-152｜池-28｜难｜图 t152_0.png
+\tihao{152}\tieside{难}某些正多面体亦被称为``柏拉图多面体'',它们具有高度的对称性和次序感,结构完美.``柏拉图多面体''只存在正四面体、正六面体、正八面体、正十二面体、正二十面体5种.半正多面体亦被称为``阿基米德多面体'',它们是由边数不完全相同的正多边形为面围成的凸多面体.如图,将一个正四面体的每一条棱三等分,截去原正四面体顶点所在的四个小正四面体,就实现了最简单的``柏拉图多面体''到``阿基米德多面体''的变换.若图中``阿基米德多面体''的表面积为$28\sqrt{3}$,则该``阿基米德多面体''的体积是\kongbai;其外接球的表面积是\kongbai
+\tu{t152_0.png}{38.0mm}
+
+% 拓-153｜池-79｜简
+\tihao{153}\tieside{简}设$P$为多面体$M$的一个顶点,定义多面体$M$在$P$处的离散曲率为$1-\frac{1}{2\pi}(\angle Q_1PQ_2+\angle Q_2PQ_3+\cdots+ \angle Q_{k-1}PQ_k+\angle Q_kPQ_1)$,其中$Q_i$($i=1,2,3,\cdots,k$,$k\geq3$) 为多面体$M$的所有与点$P$相邻的顶点,且平面$Q_1PQ_2$,$Q_2PQ_3$,$\cdots$,$Q_{k-1}PQ_k$,$Q_kPQ_1$遍历多面体$M$的所有以$P$为公共点的面,正四面体、正八面体、正十二面体和正二十面体(每个面都是全等的正多边形的多面体是正多面体),若它们在各顶点处的离散曲率分别是$a$,$b$,$c$,$d$,则$a$,$b$,$c$,$d$的大小关系是\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$a>b>c>d$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$a>b>d>c$;}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$b>a>d>c$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$c>d>b>a$}}
+
+% 拓-154｜F6·16｜中｜图 t154_0.png（强图依赖，缺图即不可读级）
+% 登记注：第①设问错（答案册轮）
+\tihao{154}\tieside{中}半正多面体(semiregularsolid)亦称``阿基米德多面体'',是由边数不全相同的正多边形围成的多面体,体现了数学的对称美.二十四等边体就是一种半正多面体,是由正方体切截而成的,它由八个正三角形和六个正方形构成(如图所示),若它的所有棱长都为$\sqrt{2}$,则正确的是\kongbai
+\tu{t154_0.png}{38.0mm}
+①$BF\perp$平面$EAB$;
+②该二十四等边体的体积为$\frac{20}{3}$;
+③该二十四等边体外接球的表面积为$8\pi$;
+④$PN$与平面$EBFN$所成角的正弦值为$\frac{\sqrt{2}}{2}$.
+
+% 角主干边缘件组（单员，不设组名行；知识本体属 1.2.1，册内入角族附录注）
+% 拓-155｜池-21｜中｜图 t155_0.png
+\tihao{155}\tieside{中}已知四面体$ABCD$满足$AB\perp BC$,$BC\perp CD$,$AB=BC=CD=2\sqrt{3}$,且该四面体的体积为6,则异面直线$AD$与$BC$所成角的大小为\nobreak(　　)
+\tu{t155_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$45°$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$60°$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$45°$或$60°$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$60°$或$30°$}}
+
+\zu{综合大题组}
+% 拓-156｜F7·20｜中｜图 t156_0.png
+% 登记注：【分析】空缺＋等号链补「=」（答案册轮）
+\tihao{156}\tieside{中}如图,三棱柱$ABC\text{-}A_1B_1C_1$中,四边形$A_1C_1CA$为菱形,$\angle B_1A_1A=\angle C_1A_1A=60°$,$AC=4$,$AB=2$,平面$ACC_1A_1\perp$平面$ABB_1A_1$,$Q$在线段$AC$上移动,$P$为棱$AA_1$的中点.
+\tu{t156_0.png}{38.0mm}
+(1)若$Q$为线段$AC$的中点,$H$为$BQ$中点,延长$AH$交$BC$于$D$,求证:$AD\parallel$平面$B_1PQ$;
+(2)若二面角$B_1\text{-}PQ\text{-}C_1$的平面角的余弦值为$\frac{\sqrt{13}}{13}$,求点$P$到平面$BQB_1$的距离.
+
+% 拓-157｜习题1—2C·5｜难｜占位
+\tihao{157}\tieside{难}已知四棱锥$E\text{-}ABCD$中,$ABCD$是直角梯形,$\angle ABC=\angle BAD=90°$,$BE\perp$平面$ABCD$,$AB=BC=BE=2AD=6$.
+(1)求点$B$到平面$CDE$的距离;
+(2)求二面角$A\text{-}CD\text{-}E$的正切值.
+
+% 拓-158｜1.2.5练习B·1｜难
+\tihao{158}\tieside{难}已知正四面体$ABCD$的棱长都为1,点$M$,$N$分别是$AB$,$CD$的中点,求$M$,$N$这两点间的距离.
+
+\zu{距离延伸组}
+% 拓-159｜1.2.5练习B·4｜中
+\tihao{159}\tieside{中}已知$A(2,2,0)$,$B(1,4,2)$,$C(0,0,5)$,求原点$O$到平面$ABC$的距离.
+
+% 拓-160｜复习题B·12｜中
+\tihao{160}\tieside{中}已知$AB$垂直于平面$\alpha$,垂足为点$B$,且$AO$与$\alpha$相交于点$O$,$\angle AOB=60°$,射线$OC$在$\alpha$内,且$\angle BOC=30°$,$OA=6$,求点$A$到直线$OC$的距离.
+
+\end{multicols}
+\end{document}

@@ -1,0 +1,12 @@
+_工具/值守恒门练习.py: line 7: r值守恒门练习.py — 波2 件面值守恒（钉值门件侧延伸；波1 值守恒门.py 同制，树＝M2练习本）。
+
+口径：迁移器对 kmap（册解析练习 parse_book_lt）逐键重渲染，与件面 ansblock 逐字比对——
+  块数/键集合/块体（剥 % ans: 行）三维全对平＝值零漂移链闭合（册切丁↔快照↔件面）。
+用法: python 值守恒门练习.py   # 全 12 件，退出码 0/1
+: No such file or directory
+_工具/值守恒门练习.py: line 8: import: command not found
+_工具/值守恒门练习.py: line 9: import: command not found
+_工具/值守恒门练习.py: line 10: import: command not found
+_工具/值守恒门练习.py: line 11: import: command not found
+_工具/值守恒门练习.py: line 13: syntax error near unexpected token `encoding='utf-8''
+_工具/值守恒门练习.py: line 13: `sys.stdout.reconfigure(encoding='utf-8')'

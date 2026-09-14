@@ -57,9 +57,9 @@
   "注记": "本地挂载副本（钉后版 7c3930362be8a0a2bdf21bbf8ac16573），禁改保 md5；破损即停"
  },
  "件指纹": {
-  "main.tex.md5": "60d55e65668a23001f0712dfc4a18be3",
-  "main-true.pdf.md5": "640907105c94e2ac6650b25f3c9358e8",
-  "main-false.pdf.md5": "0a2fa9b8a66aa9a6033c410f0f5d38c5",
+  "main.tex.md5": "353d1c24c37ccea18929d3b7d3cfa9c3",
+  "main-true.pdf.md5": "642a7aea226b4e6f190fd29145878b99",
+  "main-false.pdf.md5": "b513adffb740b62ee46cbe94459b6afe",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
   "双档读数": "true 0错0溢0under0缺字 ANSKEY=42 14页；false 同 4页"
  },
@@ -106,5 +106,6 @@
   "2章-拓-课时17-19": 20,
   "2章-拓-课时17-20": 35,
   "2章-拓-课时17-21": 36
- }
+ },
+ "变更注记": "S4 印前处置（0914）：拓17-01 三行 \\lxopt 数值回源（A 4/5、B 6/5、C 8/5）＋详解尾括注摘除；件指纹刷新（本字段）；复编译三零承证见 工作区/_tmpM3印前处置0914/复编读数S4.json。"
 }

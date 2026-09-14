@@ -290,11 +290,11 @@
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "指纹": {
-  "main.tex.md5": "498d03f1283745e7f97d9d433fe51930",
-  "main-true.pdf.md5": "65b844cd22f9f7d94dcf34ceff73b937",
-  "main-false.pdf.md5": "813fca663f452b9666149bc257251b75",
+  "main.tex.md5": "1cfc844ff6df2600cdda6d064d38259b",
+  "main-true.pdf.md5": "298dd4dfd02e3b3817fb3dabeb53c8a5",
+  "main-false.pdf.md5": "e15cda480b4d534f525c6bacfd63192b",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
-  "双档读数": "true 0错0溢0under0缺字 ANSKEY=16 3页；false 同 2页"
+  "双档读数": "true 0错0溢0under0缺字 ANSKEY=16 3页；false 同 2页（S4 印前 0914 复编）"
  },
  "门谱": [
   "门-守恒对号-课时08.py（全绿）",
@@ -304,5 +304,7 @@
   "makebox槽宽门.py zero-fp/strict 双档 0旗（槽40）",
   "CJK 审计 rg \\\\w+\\p{Han} 零命中"
  ],
- "gen": "门谱/gen台账-课时08.py 2026-09-14"
+ "gen": "门谱/gen台账-课时08.py 2026-09-14",
+ "知识点口径": "照导学件 zsd 知识导学口径：一＝直线与圆的位置关系、二＝圆的切线、三＝弦长与圆心角。S4 印前回核（0914，键联法）：原贴系 tjdnr 讲练节序（二弦长/三切线），与 zsd 二/三互易，11 席按 zsd 改号（题1~4 二→三；题6/7/9/10/14/15 三→二；题16 一→二）；改后 16/16 合 zsd 口径，门谱复跑全绿（门谱S4/）。",
+ "变更注记": "S4 印前处置（0914）：知识点N 键联回核改号；值台账指纹/读数刷新（本字段）；门谱复跑全绿见 工作区/_tmpM3印前处置0914/门谱S4/。"
 }

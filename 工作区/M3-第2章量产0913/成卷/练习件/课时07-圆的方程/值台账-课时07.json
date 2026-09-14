@@ -286,18 +286,18 @@
  "图债": "无（全件零图依赖，题面无「如图」占位，includegraphics 零处）",
  "清洗口径": "印面 ✓ 记号全剔（检验句文句保留，rg 实测 0 残留）；详解句号照录批B 原文「。」",
  "难度词口径": "照题面 \\tieside 第1字段：0.94→简单、0.85→中档、0.65→中档；题1/2/4/8/12(T1/T2/T4/T8/T12) 简单，余11键中档",
- "知识点口径": "照导学件 zsd 知识导学口径：一＝圆的标准方程、二＝点与圆位置关系、三＝一般方程与表圆条件；zsd 与 tjdnr 异序，已作异动回核点登记",
+ "知识点口径": "照导学件 zsd 知识导学口径：一＝圆的标准方程、二＝点与圆位置关系、三＝一般方程与表圆条件；zsd 与 tjdnr 异序（登记在案）。S4 印前回核（0914，键联法）：题9 一→二（圆上点到直线最值，落盘 tjdnr 一 点与圆位置 → zsd 二）；改后 16/16 合 zsd 口径，门谱复跑全绿（门谱S4/）。",
  "toolchain锁": {
   "file": "qp-m3.sty",
   "md5": "7c3930362be8a0a2bdf21bbf8ac16573",
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "指纹": {
-  "main.tex.md5": "d06deaf846bc52e80ea1c5ac7c72da04",
-  "main-true.pdf.md5": "6e710d66773b39a241e5487d95bf1625",
-  "main-false.pdf.md5": "441afea16bf64c7a13fbcd2e00b5e545",
+  "main.tex.md5": "c99db9764efb955af839b374d9ae142c",
+  "main-true.pdf.md5": "4037fe0ee8b060a5c0299b061aafb968",
+  "main-false.pdf.md5": "b1c75d1d3d0651d897e6ec100baa517e",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
-  "双档读数": "true 0错0溢0under0缺字 ANSKEY=16 3页；false 同 2页"
+  "双档读数": "true 0错0溢0under0缺字 ANSKEY=16 3页；false 同 2页（S4 印前 0914 复编）"
  },
  "门谱": [
   "门-守恒对号-课时07.py（全绿）",
@@ -307,5 +307,6 @@
   "makebox槽宽门.py zero-fp/strict 双档 0旗（槽32）",
   "CJK 审计 rg \\\\w+\\p{Han} 零命中"
  ],
- "gen": "门谱/gen台账-课时07.py 2026-09-14"
+ "gen": "门谱/gen台账-课时07.py 2026-09-14",
+ "变更注记": "S4 印前处置（0914）：知识点N 键联回核改号；值台账指纹/读数刷新（本字段）；门谱复跑全绿见 工作区/_tmpM3印前处置0914/门谱S4/。"
 }

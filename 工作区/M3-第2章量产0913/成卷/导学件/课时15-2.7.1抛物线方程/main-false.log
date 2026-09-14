@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 05:04
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 08:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,16 +1368,19 @@ M3-ANSKEY: 2章-练-课时15-10
 M3-ANSKEY: 2章-练-课时15-12
 M3-ANSKEY: 2章-拓-课时15-14
 M3-ANSKEY: 2章-练-课时15-13
+File: figs/15-16.png Graphic file (type bmp)
+<figs/15-16.png>
 M3-ANSKEY: 2章-练-课时15-16
 M3-ANSKEY: 2章-拓-课时15-01
-M3-ANSKEY: 2章-拓-课时15-09
 [3]
+M3-ANSKEY: 2章-拓-课时15-09
 M3-ANSKEY: 2章-拓-课时15-03
 M3-ANSKEY: 2章-拓-课时15-04
 M3-ANSKEY: 2章-拓-课时15-05
 M3-ANSKEY: 2章-拓-课时15-06
 M3-ANSKEY: 2章-拓-课时15-02
 M3-ANSKEY: 2章-练-课时15-15
+[4]
 
 Package fontspec Info: 
 (fontspec)             Font family 'NSC-w500.ttf(0)' created for font
@@ -1392,8 +1395,8 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
 
+
 M3-ANSKEY: 2章-导-课时15-G1
-[4]
 M3-ANSKEY: 2章-导-课时15-G2
 M3-ANSKEY: 2章-导-课时15-G3
 M3-ANSKEY: 2章-导-课时15-G4
@@ -1409,10 +1412,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 25855 strings out of 469768
- 627127 string characters out of 5466040
- 1135370 words of memory out of 5000000
- 54382 multiletter control sequences out of 15000+600000
+ 25866 strings out of 469768
+ 627305 string characters out of 5466040
+ 1135407 words of memory out of 5000000
+ 54390 multiletter control sequences out of 15000+600000
  633868 words of font info for 187 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  112i,17n,124p,1274b,1010s stack positions out of 10000i,1000n,20000p,200000b,200000s

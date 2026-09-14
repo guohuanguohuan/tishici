@@ -1,0 +1,20 @@
+% 探针7：改写方案验证——247 用「与…之积」拆首链；353 用平方形消双根式边界
+\def\mthreepure{0}
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+\usepackage{pifont}%
+\xeCJKDeclareCharClass{Default}{"2212}%
+\xeCJKDeclareCharClass{Default}{"2013}%
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+\begin{document}
+\begin{multicols}{2}
+{\ansblockgrayfalse
+\begin{ansblock}[probe-f243]
+\ansnote{详解}{\tracingparagraphs=1 (1) 过 \(F(p/2,0)\)、倾斜角 \(\pi/4\) 的直线为 \(y=x-p/2\)．代入 \(y^{2}=2px\)：\((x-p/2)^{2}=2px\)，即 \(x^{2}-3px+p^{2}/4=0\)（\(\Delta=9p^{2}-p^{2}=8p^{2}>0\)）．设 \(A(x_{A},y_{A})\)、\(B(x_{B},y_{B})\)，则 \(x_{A}+x_{B}=3p\)，\(x_{A}x_{B}=p^{2}/4\)．由定义（焦半径），\par\noindent \(|AB|=|AF|+|BF|=(x_{A}+p/2)+(x_{B}+p/2)=x_{A}+x_{B}+p=4p\)．\par\noindent (2) 该弦所在直线与 \(x\) 轴交于 \(F\)，两端点 \(A\)、\(B\) 分居 \(x\) 轴两侧，纵坐标一正一负，其积为负：\par\noindent \(y_{A}y_{B}=(x_{A}-p/2)(x_{B}-p/2)=x_{A}x_{B}-(p/2)(x_{A}+x_{B})+p^{2}/4=p^{2}/4-3p^{2}/2+p^{2}/4=-p^{2}\)（与焦点弦结论 \(y_{1}y_{2}=-p^{2}\) 相符，此即符号判据）．\par\noindent 于是 \(x_{A}x_{B}+y_{A}y_{B}=p^{2}/4-p^{2}=-3p^{2}/4\)．又 \(|OA|^{2}=x_{A}^{2}+y_{A}^{2}=x_{A}^{2}+2px_{A}=x_{A}(x_{A}+2p)\)，同理 \(|OB|^{2}=x_{B}(x_{B}+2p)\)．\par\noindent 故 \(|OA|\cdot|OB|\) 等于 \(\sqrt{x_{A}x_{B}}\) 与 \(\sqrt{x_{A}x_{B}+2p(x_{A}+x_{B})+4p^{2}}\) 之积，代入韦达读数得 \((p/2)\cdot\sqrt{p^{2}/4+6p^{2}+4p^{2}}=(p/2)\cdot(\sqrt{41}/2)p=\sqrt{41}p^{2}/4\)．\par\noindent 在 \(\triangle AOB\) 中由余弦定理，\(\cos\angle AOB=(|OA|^{2}+|OB|^{2}-|AB|^{2})/(2|OA|\cdot|OB|)\)．\par\noindent 而 \(|OA|^{2}+|OB|^{2}-|AB|^{2}=(x_{A}-x_{B})^{2}+(y_{A}-y_{B})^{2}=2(x_{A}x_{B}+y_{A}y_{B})=-3p^{2}/2\)，\par\noindent 故 \(\cos\angle AOB=(-3p^{2}/4)/(\sqrt{41}p^{2}/4)=-3/\sqrt{41}=-3\sqrt{41}/41\)，\(p^{2}\) 全部约去，与 \(p\) 无关．}
+\end{ansblock}}
+{\ansblockgrayfalse
+\begin{ansblock}[probe-f353]
+\ansnote{详解}{\(M(x,y)\) 在以 \(B(6,0)\) 为圆心、2 为半径的圆上：\((x-6)^{2}+y^{2}=4\)；\(N(x_{0},y_{0})\) 满足 \(y_{0}^{2}=8x_{0}\)（\(x_{0}\geqslant 0\)）．在圆约束下加权配凑：\par\noindent \((1/4)|MA|^{2}=(1/4)[(x-2)^{2}+y^{2}]=(1/4)[(x-2)^{2}+y^{2}]+(3/4)[(x-6)^{2}+y^{2}-4]=(x-5)^{2}+y^{2}\)（所加项在圆上为 0），即 \((1/2)|MA|=|MC|\)，其中 \(C(5,0)\)．\par\noindent 于是 \(|MN|+(1/2)|MA|=|MN|+|MC|\geqslant|CN|\)．\par\noindent 又 \(|CN|^{2}=(x_{0}-5)^{2}+y_{0}^{2}=(x_{0}-5)^{2}+8x_{0}=(x_{0}-1)^{2}+24\geqslant 24\)，故 \(|CN|\geqslant 2\sqrt{6}\)，当且仅当 \(x_{0}=1\)（\(N(1,\pm 2\sqrt{2})\)）且 \(C\)、\(M\)、\(N\) 三点共线（\(M\) 为线段 \(CN\) 与圆的交点）时取等——取等可行：\(C(5,0)\) 在圆内（\(|CB|=1<2\)）而 \(N\) 在圆外（\(|NB|^{2}=(x_{0}-6)^{2}+8x_{0}=(x_{0}-2)^{2}+32>4\) 恒成立），线段 \(CN\) 必与圆相交．最小值 \(2\sqrt{6}\)，选 D．}
+\end{ansblock}}
+\end{multicols}
+\end{document}
