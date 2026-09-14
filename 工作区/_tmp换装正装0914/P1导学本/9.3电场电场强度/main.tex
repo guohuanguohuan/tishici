@@ -1,0 +1,341 @@
+% ============================================================
+% 导学件/9.3电场电场强度/main.tex —— P1 轮4 成卷·批3（9.3 电场 电场强度 导学件，答案制A·正文侧）
+% 取材：
+%   课前预习知识梳理＝教材 9.3 节序（电场书11→E=F/q 书11~12→点电荷场强 E=kQ/r² 书13~14→叠加书14→
+%     电场线书15→匀强电场书16）改写填空；[科学探究] 蓖麻油模拟电场线实验（书15 演示）配图＝教材 PDF
+%     书15 矢量图裁切（原图 317×219，fitz 原图提取，零重绘，figs/预习-模拟电场线照片.png）；
+%   课中探究 例/变式、诊断判断、课堂评价＝本件命制（18 条＝判断 6＋例/变式 6＋拓展延伸 1＋评价 5；
+%     逐题亲算账见 成卷/批3值台账.md §二）——本件无照用件（教材共槽 4 处 9.3-4/B5/B6/9.3-2·6 仅作互引登记）。
+%   [拓展延伸]＝微元法铺垫（定稿-9.3 §七-7 预案：微元-极限方法经导学件承载，供拓展侧冲3/47题1 消费位阶；
+%     本件以「细圆环环心场强＝0」为对称配题落地）。
+% 结构＝PL1 导学件样张五段闭环（9.1/9.2 两件同式）：学习目标→课前预习（知识梳理填空＋诊断分析判断）→
+%   课中探究（3 探究点：例＋变式＋素养小结）→课堂评价（恒 5 题＝3 单选＋2 填空）。
+% 物理导学案五组件（全见件）：素养标签 5 枚举（教材链接/科学探究/物理观念/科学推理/科学思维；分配＝预习×2＋
+%   探究一/二/三各 1）／[反思感悟] 书写留白×2（探究一例1、探究二例1 后）／规范答题区自评表（探究二变式1 后·6 分档）／
+%   拓展延伸×1（探究二．微元法）／限时总量行＋小题分值说明行（课堂评价组头：15 分钟/20 分·课堂组档）。
+% 答案制A：正文 0 答案宏（\ansline/\jiexi/\kongda 禁入；判断题走 \zhentib 空括号形）；
+%   全部答案值与判断答案入 成卷/批3值台账.md（答案册轮取值依据），本件不印。
+% 互斥口径：本件例/变式/评价/判断全为命制，与练习件 9.3 正文 15 题题面零同文（设计层避让＋定稿域比对，
+%   逐条机制级比对结论见值台账 §五-4）；练习件题2＝空槽（简8 报缺）不涉。
+% 件型层宏登记（承 9.1/9.2 导学件件型层，原样）：\sylabel／\fanxi／\tuoZhan／\guifanbiao（6 分档）／
+%   \xszl／\xzsm／\pingtou／\liubai。
+% 页脚＝形制 A 默认（灰块·导学档 26.2mm；素面——品牌位不开）。
+% 编译：xelatex ×2（三 0）；目验：python 工作区/物理样张0911/骨架/render.py . main 150。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% —— 换装 overlay 挂接（换装正装波4a；七模块后、\begin{document} 前，承 sty 头用法）——
+\usepackage{qp-m3p-overlay}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{导学件}
+% 品牌位：导学件＝素面（\ifqpbrand 默认 false，勿开）
+
+% ---------- 件型层宏①：素养标签 ----------
+\newcommand{\sylabel}[2]{\par\glueguard{1}%
+  \noindent{\heiti [#1]}\hspace{0.4em}#2\par\addvspace{0.8mm}}
+
+% ---------- 件型层宏②：[反思感悟]块 ----------
+\newcount\FXN
+\newcommand{\fanxi}[1]{\par\glueguard{1}\addvspace{1.2mm}%
+  \vbox{%
+    \noindent{\heiti [反思感悟]}\par\vskip 2.4mm
+    \FXN=#1\relax
+    \loop \noindent\textcolor{gray122}{\rule{\linewidth}{0.4pt}}\par\vskip 6.2mm
+      \advance\FXN by -1 \ifnum\FXN>0\repeat
+    \vskip -1.2mm}}
+
+% ---------- 件型层宏④：拓展延伸块 ----------
+\newcommand{\tuoZhan}[1]{\par\glueguard{2}\addvspace{1.6mm}%
+  \noindent{\heiti [拓展延伸]}\hspace{0.4em}#1\par\addvspace{1mm}}
+
+% ---------- 件型层宏③：规范答题区自评表（6 分档） ----------
+\newcommand{\guifanbiao}[1]{\par\addvspace{2.2mm}\glueguard{2}%
+  \begingroup\arrayrulecolor{gray122}\setlength{\tabcolsep}{2pt}%
+  \noindent\begin{tabular}{|p{27mm}|p{29.6mm}|p{19.6mm}|}
+    \thickhline
+    {\heiti 规范答题区}\par\vspace*{40mm} &
+    \multicolumn{1}{|c|}{自评项目（共#1分）\rule{0pt}{7mm}} &
+    \multicolumn{1}{c|}{自评+得分\rule{0pt}{7mm}} \\
+    \cline{2-3}
+    & 书写工整无涂抹（是否加分项） & （√或×） \\
+    \cline{2-3}
+    & 有必要的文字说明（1分） & \\
+    \cline{2-3}
+    & 有解题关键公式（3分） & \\
+    \cline{2-3}
+    & 结果为数字的带有单位（2分） & \\
+    \thickhline
+  \end{tabular}\endgroup\par\addvspace{1mm}}
+
+% ---------- 件型层宏⑤：限时总量行＋小题分值说明行 ----------
+\newcommand{\xszl}[2]{\par\addvspace{1.6mm}\centerline{(#1)\quad (#2)}\par}
+\newcommand{\xzsm}[1]{\par\addvspace{0.4mm}\centerline{(#1)}\par\addvspace{1.2mm}}
+
+% ---------- 件型层宏：课堂评价组头／书写留白＋水印 ----------
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+
+\begin{document}
+% ===== 通栏标题区（multicols 外） =====
+\zhangtitle{第9章\quad 静电场及其应用}
+\jietitle{9.3\quad 电场　电场强度}
+\keshi{第1课时\quad 电场　电场强度}
+\mubiaoline
+\mubiaomu{1}{知道电场的客观存在与基本性质，理解电场强度的定义式 $E=\frac{F}{q}$ 和它的矢量性，会用定义式进行计算并判断方向；}
+\mubiaomu{2}{知道点电荷的电场强度公式 $E=k\frac{Q}{r^{2}}$，会求多个点电荷在某点产生的电场强度的矢量和；}
+\mubiaomu{3}{知道电场线的特点，会用电场线描述电场，知道匀强电场．}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 一、课前预习（知识梳理填空＋诊断分析判断挂每个知识点之后）
+% ============================================================
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\sylabel{教材链接}{阅读教材，完成下列填空．}
+
+\zsd{一}{电场与电场强度}
+
+\tiaomu{1}{电荷的周围存在着由它产生的\kongbai{}；电场的基本性质是对放入其中的电荷有\kongbai{}的作用．}
+
+\tiaomu{2}{电场强度：放入电场中某点的电荷所受的静电力与它的\kongbai{}之比，叫作该点的电场强度，用 $E$ 表示，定义式为 $E=$\kongbai{}；电场强度的单位是\kongbai{}，符号是 $\unit{N/C}$．}
+
+\tiaomu{3}{电场强度是\kongbai{}（选填“矢量”或“标量”）；规定电场中某点的电场强度方向与\kongbai{}电荷在该点所受静电力的方向相同；电场中某点的电场强度由\kongbai{}本身决定，与是否放入试探电荷\kongbai{}（选填“有关”或“无关”）．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{电场是一种客观存在的物质．}
+\begin{ansblock}[导-课时93-判1]
+% ans:导-课时93-判1
+\ansitem{(1)}{\(\surd\)}
+\end{ansblock}
+
+\zhentib{(2)}{由 $E=\frac{F}{q}$ 可知，电场中某点的电场强度与试探电荷所受的静电力成正比、与试探电荷的电荷量成反比．}
+\begin{ansblock}[导-课时93-判2]
+% ans:导-课时93-判2
+\ansitem{(2)}{$\times$}
+\end{ansblock}
+
+\zsd{二}{点电荷的电场与场强的叠加}
+
+\tiaomu{1}{点电荷的电场强度：真空中电荷量为 $Q$ 的点电荷，在距离它 $r$ 处产生的电场强度大小为 $E=$\kongbai{}；若 $Q$ 为正电荷，则该处电场强度的方向\kongbai{} $Q$，若 $Q$ 为负电荷，则\kongbai{} $Q$．}
+
+\tiaomu{2}{电场强度的叠加：电场中某点的电场强度为各个点电荷单独在该点产生的电场强度的\kongbai{}（选填“矢量和”或“代数和”）．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{等量异种点电荷连线的中垂线上，各点的电场强度方向都与两电荷的连线平行．}
+\begin{ansblock}[导-课时93-判3]
+% ans:导-课时93-判3
+\ansitem{(1)}{\(\surd\)}
+\end{ansblock}
+
+\zhentib{(2)}{等量同种点电荷连线中点处的电场强度为零．}
+\begin{ansblock}[导-课时93-判4]
+% ans:导-课时93-判4
+\ansitem{(2)}{\(\surd\)}
+\end{ansblock}
+
+\zsd{三}{电场线与匀强电场}
+
+\tiaomu{1}{电场线：电场线是画在电场中的一条条有方向的曲线，曲线上每点的\kongbai{}方向表示该点的电场强度方向；电场线是\kongbai{}（选填“真实存在”或“假想”）的曲线；在同一幅图中，电场线越密的地方电场强度越\kongbai{}．}
+
+\tiaomu{2}{匀强电场：如果电场中各点的电场强度大小\kongbai{}、方向\kongbai{}，这个电场就叫作匀强电场；匀强电场的电场线是间隔相等的\kongbai{}．}
+
+\sylabel{科学探究}{把头发碎屑悬浮在蓖麻油里，加上电场，碎屑就会沿电场强度的方向排列起来，显示出电场线的分布情况——电场线不是实际存在的线，这个实验只是用来模拟电场线的分布．}
+
+\qpfig[40]{预习-模拟电场线照片}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{电场线一定是带电粒子的运动轨迹．}
+\begin{ansblock}[导-课时93-判5]
+% ans:导-课时93-判5
+\ansitem{(1)}{$\times$}
+\end{ansblock}
+
+\zhentib{(2)}{沿电场线方向，电场强度一定越来越小．}
+\begin{ansblock}[导-课时93-判6]
+% ans:导-课时93-判6
+\ansitem{(2)}{$\times$}
+\end{ansblock}
+
+\liubai[9mm]{此处书写}
+\begin{ansblock}[导-课时93-预习填空]
+% ans:导-课时93-预习填空
+\ansitem{预习填空}{知识点一：电场；力；电荷量；$\dfrac{F}{q}$；牛顿每库仑；矢量；正；电场；无关。知识点二：$k\dfrac{Q}{r^{2}}$；背离；指向；矢量和。知识点三：切线；假想；大；相等；相同；平行直线。}
+\end{ansblock}
+
+% ============================================================
+% 二、课中探究（探究点×3：例＋变式＋素养小结）
+% ============================================================
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{电场强度的定义与理解}{例\textbf{1}}{简单(知识点一)}{关于电场强度，下列说法正确的是\nobreak(\kongwei)}
+
+\sylabel{物理观念}{电场强度是描述电场力的性质的物理量：$E=\frac{F}{q}$ 是比值定义式，电场中某点的电场强度由电场本身决定，与试探电荷无关；电场强度是矢量，规定其方向与正电荷在该点所受静电力的方向相同．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．电场中某点的电场强度与放在该点的试探电荷的电荷量成反比；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．电场中某点的电场强度方向与放在该点的负试探电荷所受静电力的方向相同；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．电场强度是矢量，规定其方向与正电荷在该点所受静电力的方向相同；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．若在电场中某点不放试探电荷，则该点的电场强度为零\par}
+\begin{ansblock}[导-课时93-探1-例1]
+% ans:导-课时93-探1-例1
+\ansitem{例1}{C}
+\end{ansblock}
+
+\fanxi{2}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{在电场中的某点放入一个电荷量为 $4.0\times10^{-9}\,\unit{C}$ 的负试探电荷，它受到的静电力大小为 $2.0\times10^{-5}\,\unit{N}$，方向水平向左．则该点的电场强度大小为\kongbai{}，方向\kongbai{}．}
+\begin{ansblock}[导-课时93-探1-变式1]
+% ans:导-课时93-探1-变式1
+\ansitem{变式1}{$5.0\times10^{3}\,\unit{N/C}$，水平向右}
+\end{ansblock}
+
+\xiaojie{①识别：题干围绕电场强度的定义式 $E=\frac{F}{q}$、电场强度的决定因素或方向规定设问时，判归本题型；②操作：先按定义式算大小——电场强度由电场本身决定，与试探电荷的电荷量、电性无关；再由“正电荷受力方向即电场强度方向、负电荷受力方向与电场强度方向相反”定方向．}
+
+\tjdnr{二}{点电荷的电场与场强的叠加}{例\textbf{1}}{中档(知识点二)}{真空中有三个电荷量均为 $+q$ 的点电荷，分别固定在边长为 $L$ 的等边三角形的三个顶点上，则三角形中心 $O$ 处的电场强度大小为\kongbai{}．}
+
+\sylabel{科学推理}{求多个点电荷在某点产生的合场强，先用 $E=k\frac{Q}{r^{2}}$ 逐个算出各点电荷单独产生的电场强度，再按平行四边形定则求矢量和；等量电荷对称分布时，常可先由对称性判断各分场强的夹角关系再合成．}
+\begin{ansblock}[导-课时93-探2-例1]
+% ans:导-课时93-探2-例1
+\ansitem{例1}{$0$}
+\end{ansblock}
+
+\fanxi{2}
+
+\liB{变式\textbf{1}}{中档(知识点二)}{}{两个点电荷甲、乙分别带电荷量 $+9q$ 和 $-q$，固定在相距为 $L$ 的两点．求甲、乙连线中点处电场强度的大小和方向．}
+\begin{ansblock}[导-课时93-探2-变式1]
+% ans:导-课时93-探2-变式1
+\ansitem{变式1}{$\dfrac{40kq}{L^{2}}$，由甲指向乙}
+\end{ansblock}
+
+\guifanbiao{6}
+
+\tuoZhan{把均匀带电的细圆环分割成很多小段（每一小段都可视为点电荷，电荷量为 $\Delta q$），先用 $E=k\frac{\Delta q}{r^{2}}$ 估算每小段在圆心处产生的电场强度，再结合对称性把各小段的电场强度矢量求和——试分析：均匀带电细圆环在其圆心处产生的电场强度是多少？}
+\begin{ansblock}[导-课时93-拓展]
+% ans:导-课时93-拓展
+\ansitem{拓展延伸}{$0$（对径微元两两等大反向抵消）}
+\end{ansblock}
+
+\xiaojie{①识别：题干给出若干点电荷（或可等效为点电荷的带电体）及其位置、要求某点的场强时，判归本题型；②操作：逐源算 $E=k\frac{Q}{r^{2}}$ → 定各分场强方向（正电荷背离源、负电荷指向源）→ 按平行四边形定则合成；对称构型先作对称性抵消判断再合成．}
+
+\tjdnr{三}{电场线与匀强电场}{例\textbf{1}}{简单(知识点三)}{关于电场线，下列说法正确的是\nobreak(\kongwei)}
+
+\sylabel{科学思维}{电场线是假想的曲线，但可以形象地描述电场：电场线上某点的切线方向表示该点的电场强度方向，电场线的疏密表示电场强度的大小；电场线从正电荷或无限远出发，终止于无限远或负电荷，且不相交．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．电场线是电场中真实存在的曲线；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．电场线上某点的切线方向表示该点的电场强度方向；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．两条电场线在电场中可以相交；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．电场线一定从负电荷出发、终止于正电荷\par}
+\begin{ansblock}[导-课时93-探3-例1]
+% ans:导-课时93-探3-例1
+\ansitem{例1}{B}
+\end{ansblock}
+
+\liB{变式\textbf{1}}{简单(知识点三)}{}{在匀强电场中，一个带电荷量为 $q$ 的正电荷沿电场线方向从 $A$ 点移动到 $B$ 点．关于它所受的静电力，下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．逐渐变大；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．逐渐变小；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．保持不变；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．无法判断\par}
+\begin{ansblock}[导-课时93-探3-变式1]
+% ans:导-课时93-探3-变式1
+\ansitem{变式1}{C（保持不变）}
+\end{ansblock}
+
+\xiaojie{①识别：题干给出电场线（或匀强电场）并要求判断场强大小、方向或静电力时，判归本题型；②操作：切线方向定场强方向、疏密定场强大小；匀强电场中各点场强大小方向都相同，静电力 $F=qE$ 处处相同．}
+
+% ============================================================
+% 三、课堂评价（恒 5 题＝3 单选＋2 填空）
+% ============================================================
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\xszl{时间:15分钟}{总分:20分}
+\xzsm{选择题每小题4分}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}在电场中的某点先后放入两个试探电荷：先放入电荷量为 $+q$ 的试探电荷甲，测得它受到的静电力为 $F$；取走甲，再放入电荷量为 $+2q$ 的试探电荷乙．下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．该点电场强度的大小为 $\frac{F}{q}$，方向与甲所受静电力的方向相同；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．乙在该点受到的静电力为 $\frac{F}{2}$；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．放入乙后，该点的电场强度变为原来的 2 倍；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．放入乙后，该点的电场强度变为原来的 $\frac{1}{2}$\par}
+\begin{ansblock}[导-课时93-评1]
+% ans:导-课时93-评1
+\ansitem{1}{A}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}真空中有一个电荷量为 $Q$ 的点电荷，在距离它 $r$ 处的 $P$ 点产生的电场强度大小为 $E$．若把点电荷的电荷量变为 $2Q$（其他条件不变），则 $P$ 点的电场强度变为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．$\frac{E}{4}$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．$\frac{E}{2}$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．$2E$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．$4E$\par}
+\begin{ansblock}[导-课时93-评2]
+% ans:导-课时93-评2
+\ansitem{2}{C（$2E$）}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{中档(知识点二)}\hspace{2.2mm}两个点电荷 $A$、$B$ 分别带电荷量 $+Q$ 和 $+4Q$，固定在相距 $2L$ 的两点，则 $A$、$B$ 连线中点处的电场强度大小为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．$\frac{5kQ}{L^{2}}$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．$\frac{3kQ}{L^{2}}$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．$\frac{kQ}{L^{2}}$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．0\par}
+\begin{ansblock}[导-课时93-评3]
+% ans:导-课时93-评3
+\ansitem{3}{B（$\dfrac{3kQ}{L^{2}}$，由 B 指向 A）}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}在电场强度为 $2.0\times10^{4}\,\unit{N/C}$、方向水平向右的匀强电场中，放入一个电荷量为 $+5.0\times10^{-9}\,\unit{C}$ 的电荷，它受到的静电力大小为\kongbai{}，方向\kongbai{}．}
+\begin{ansblock}[导-课时93-评4]
+% ans:导-课时93-评4
+\ansitem{4}{$1.0\times10^{-4}\,\unit{N}$，水平向右}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{中档(知识点二)}\hspace{2.2mm}真空中两个等量异种点电荷带电荷量大小均为 $Q$，相距 $2r$，则它们连线中点处的电场强度大小为\kongbai{}，方向\kongbai{}．}
+\begin{ansblock}[导-课时93-评5]
+% ans:导-课时93-评5
+\ansitem{5}{$\dfrac{2kQ}{r^{2}}$，由正电荷指向负电荷}
+\end{ansblock}
+
+\end{multicols}
+
+\tailfill
+\end{document}

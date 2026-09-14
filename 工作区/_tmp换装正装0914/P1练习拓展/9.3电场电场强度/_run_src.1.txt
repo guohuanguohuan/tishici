@@ -1,0 +1,13 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex)
+ restricted \write18 enabled.
+entering extended mode
+! I can't find file `main-src.tex'.
+<*> main-src.tex
+                
+(Press Enter to retry, or Control-Z to exit)
+Please type another input file name
+! Emergency stop.
+<*> main-src.tex
+                
+No pages of output.
+Transcript written on texput.log.

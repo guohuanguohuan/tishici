@@ -1,0 +1,7 @@
+# P1 测评本·编译三零双档汇总（波5，2026-09-14）
+
+- 印本档true（两遍稳态）：Error 0｜Overfull h0·v0｜Missing char 0（三零✓）｜M3-ANSKEY 19 键｜页数 4
+- 纯题档pure（两遍稳态）：Error 0｜Overfull h0·v0｜Missing char 0（三零✓）｜M3-ANSKEY 19 键｜页数 3
+
+- 两档 M3-ANSKEY 键集合恒等：✓｜＝键账 测-1..19：✓
+- M3-TAILFILL：true log 1 处（附卷尾块）｜pure log 0 处（附卷整页跳过＝设计内）
