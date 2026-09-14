@@ -29,6 +29,11 @@ EPREAMBLE = r'''% ------------------------------------------------------------
 % ------------------------------------------------------------
 \setlength{\columnsep}{\jpgap}
 \setlength{\columnseprule}{0pt}
+% 栏底降部收口：article 默认 \\maxdepth=4pt（1.41mm）＝末行盒可伸出列高，
+%   266.6＋1.41＝268.0 越腿3 设计线 267.6（滚B 括线底规实证）。收 2.5pt（0.88mm）
+%   → 列墨底 ≤267.48，门线内；只影响贴线末行落点，排印间距零变动。
+\maxdepth=2.5pt
+\splitmaxdepth=2.5pt
 \newenvironment{juancols}
   {\begin{multicols}{3}\fontsize{10.5pt}{17.7pt}\selectfont}%
   {\end{multicols}}
@@ -51,7 +56,8 @@ JUNK_EXACT = {'\\jpthree{', '\\jpthree{\\jplead', '}{', '}', '}\\jplead', '}{\\j
 
 
 def is_junk(s):
-    return (s == '' or s.startswith('%') or s.startswith('\\newpage')
+    return (s == '' or s == '\\begin{document}' or s.startswith('%')
+            or s.startswith('\\newpage')
             or s.startswith('\\ifshowans') or s == '\\fi'
             or s.startswith('\\anskey{')
             or s in JUNK_EXACT)
@@ -65,6 +71,8 @@ def parse_old(text):
     app = text[i1:]
     flow = []
     for ln in body.splitlines():
+        if ln.lstrip().startswith('\\jpthree{'):
+            ln = ln.lstrip()[len('\\jpthree{'):]      # 剥栏组前缀，保行内内容（如 \jphead）
         s = ln.strip()
         if is_junk(s):
             continue

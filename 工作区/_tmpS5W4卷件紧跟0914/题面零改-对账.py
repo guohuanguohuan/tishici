@@ -26,6 +26,8 @@ def body_zone(tex, endmark):
 def qstream(tex, endmark):
     out = []
     for ln in body_zone(tex, endmark).split('\n'):
+        if ln.lstrip().startswith('\\jpthree{'):
+            ln = ln.lstrip()[len('\\jpthree{'):]      # 与重产器同规则：剥栏组前缀
         if QRE.match(ln.strip()):
             out.append(ln)
     return out
@@ -36,6 +38,15 @@ def blocks(tex):
     for m in re.finditer(r'\\begin\{ansblock\}\[([^\]]+)\].*?\\end\{ansblock\}', tex, re.S):
         d[m.group(1)] = m.group(0)
     return d
+
+
+def code_only(tex):
+    """去注释体（% 起注释，\\% 转义豁免）——退役查代码不查注记。"""
+    out = []
+    for ln in tex.split('\n'):
+        m = re.search(r'(?<!\\)%', ln)
+        out.append(ln if not m else ln[:m.start()])
+    return '\n'.join(out)
 
 
 def main():
@@ -55,13 +66,14 @@ def main():
             bad += 1
             print('红｜[%s] 答案块非逐字节恒等' % vol)
             continue
-        # C. 退役落位
+        # C. 退役落位（查去注释代码体）
+        code = code_only(new)
         gone = {
-            '\\anskey 补偿': ('\\anskey{' in new, bak.count('\\anskey{')),
-            '\\dabiao 定义/调用': ('\\dabiao' in new, bak.count('\\dabiao')),
-            '\\jpthree/\\jpcol 零高栏': (('\\jpthree' in new or '\\jpcol{' in new), bak.count('\\jpthree')),
-            '卷末附卷参考答案': ('参考答案' in new, bak.count('参考答案')),
-            '\\ifshowans\\dabiao\\fi 行': (bool(re.search(r'^\\ifshowans\\dabiao\\fi', new, re.M)), 1),
+            '\\anskey 补偿': ('\\anskey{' in code, bak.count('\\anskey{')),
+            '\\dabiao 定义/调用': ('\\dabiao' in code, bak.count('\\dabiao')),
+            '\\jpthree/\\jpcol 零高栏': (('\\jpthree' in code or '\\newcommand{\\jpcol}' in code), bak.count('\\jpthree')),
+            '卷末附卷参考答案': ('参考答案' in code, bak.count('参考答案')),
+            '\\ifshowans\\dabiao\\fi 行': (bool(re.search(r'^\\ifshowans\\dabiao\\fi', code, re.M)), 1),
         }
         left = [k for k, (still, _) in gone.items() if still]
         print('[%s] 题面流 %d 行逐字节恒等｜答案块 %d/%d 键逐字节恒等｜退役残留：%s' % (

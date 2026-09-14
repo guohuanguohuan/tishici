@@ -37,9 +37,13 @@ XELATEX_DEF = r'C:/Users/28120/AppData/Roaming/TinyTeX/bin/windows/xelatex.exe'
 COLS_MM = [(8.9, 128.9), (139.9, 259.9), (270.9, 390.9)]
 BOTTOM_LIMIT = 267.6          # 设计线＝text block 底 266.6＋1.0 容差
 FOOT_TOP_MM = 268.3           # 页脚签名带起点（页脚行 y0 实测 ≥268；fancy 页脚 7.5pt/14pt 号码）
-FOOT_RE = re.compile(r'羿郭工作室|测评卷|单元素养测评卷|选择性必修|RJB|^卷\s*\d+$|^卷$|^\d{1,3}$')
-# 体墨溢出仍必拦：ansblock 括线为 drawings（不豁免），120mm 发丝线越 267.6 即红。
+FOOT_RE = re.compile(r'羿郭工作室|测评卷|滚动卷|高中数学|单元素养测评卷|选择性必修|RJB|^卷\s*\d+$|^卷$|^\d{1,3}$|^[）(（]$|^[A-G]$')
+# 体墨溢出仍必拦：ansblock 括线为 drawings（不豁免），120mm 发丝线越 267.6 即红；
+#   长题面行（含 [答案]/[解析] 标签 span）均不含白名单式样，短碎片豁免不构成体墨逃逸通道。
 FOOT_REGAP = 1.0              # 量测容差
+# 阶段二修订（0914）：span bbox 取字体降部 metric，系统性高估墨底（实测贴线案例高估 0.043mm）。
+#   凡栏底 metric 读数落在 (267.5, FOOT_TOP_MM) 贴线带，改以 600dpi 像素实测墨迹底复核，
+#   判线不变 267.6mm——「实测」语义以漆墨为准，metric 仍为快筛与越线主判。
 
 
 def shp(msg):
@@ -137,6 +141,8 @@ def page_body_bottoms(pdf):
                 items.append((tuple(r), ''))
         for bbox, txt in items:
             x0, y0, x1, y1 = [v / MM2PT for v in bbox]
+            if not txt.strip():
+                continue                                # 空格 span：有框无墨，不入墨底核算
             if y0 > FOOT_TOP_MM and txt and FOOT_RE.search(txt.strip()):
                 continue                                  # 页脚签名带豁免
             cx = (x0 + x1) / 2.0
@@ -149,15 +155,41 @@ def page_body_bottoms(pdf):
     return out
 
 
+def pixel_ink_bottom(pg, col_band_mm):
+    """600dpi 像素实测：栏带内（页顶→页脚带上缘）墨迹最低边缘 mm；空带返回 0.0。"""
+    a, b = col_band_mm
+    clip = pymupdf.Rect(a * MM2PT, 0.0, b * MM2PT, FOOT_TOP_MM * MM2PT)
+    pm = pg.get_pixmap(dpi=600, clip=clip)
+    w, h, n = pm.width, pm.height, pm.n
+    buf = pm.samples
+    for row in range(h - 1, -1, -1):
+        r0 = row * w * n
+        for cx in range(w):
+            i = r0 + cx * n
+            if buf[i] < 250 or buf[i + 1] < 250 or buf[i + 2] < 250:
+                return (row + 1) / 600.0 * 25.4
+    return 0.0
+
+
 def leg3(tag, pdf):
     shp('—— 腿3 每栏底＜纸边（%s）——' % tag)
     worst = 0.0
+    doc = pymupdf.open(pdf)
     for pno, col_bot in page_body_bottoms(pdf):
+        pg = doc[pno - 1]
         for c, y in sorted(col_bot.items()):
             if y > BOTTOM_LIMIT:
-                fail('腿3：p%d 栏%d 底 %.1fmm ＞ %.1fmm（出栏出纸）' % (pno, c, y, BOTTOM_LIMIT))
+                if y >= FOOT_TOP_MM:
+                    fail('腿3：p%d 栏%d 底 %.1fmm ≥ 页脚带 %.1fmm（体墨入脚带）' % (pno, c, y, FOOT_TOP_MM))
+                ink = pixel_ink_bottom(pg, COLS_MM[c - 1])
+                if ink > BOTTOM_LIMIT:
+                    fail('腿3：p%d 栏%d 贴线复核：像素墨底 %.3fmm ＞ %.1fmm（真越线）' % (pno, c, ink, BOTTOM_LIMIT))
+                shp('  p%d 栏%d 贴线复核：metric %.1f → 像素实测 %.3fmm ＜ %.1f ✓'
+                    % (pno, c, y, ink, BOTTOM_LIMIT))
+                y = ink
             worst = max(worst, y)
         shp('  p%d 栏底 %s mm' % (pno, ' '.join('栏%d:%.1f' % (c, y) for c, y in sorted(col_bot.items()))))
+    doc.close()
     shp('腿3 PASS（%s）：全栏墨底峰 %.1fmm ＜ %.1f（设计线，兼＜277 脚带线）' % (tag, worst, BOTTOM_LIMIT))
 
 
@@ -175,11 +207,12 @@ def main():
     if a.keys and len(keys) != a.keys:
         fail('块数 %d ≠ --keys %d' % (len(keys), a.keys))
     leg1(tis, keys)
-    true_txt = pymupdf.open(os.path.join(d, 'main.pdf'))[0].get_text()
-    false_txt = pymupdf.open(os.path.join(d, 'main-pure.pdf'))[0].get_text()
-    for pg in range(1, len(pymupdf.open(os.path.join(d, 'main.pdf')))):
-        true_txt += pymupdf.open(os.path.join(d, 'main.pdf'))[pg].get_text()
-        false_txt += pymupdf.open(os.path.join(d, 'main-pure.pdf'))[pg].get_text()
+    true_txt = false_txt = ''
+    dt = pymupdf.open(os.path.join(d, 'main.pdf'))
+    df = pymupdf.open(os.path.join(d, 'main-pure.pdf'))
+    true_txt = ''.join(dt[i].get_text() for i in range(dt.page_count))
+    false_txt = ''.join(df[i].get_text() for i in range(df.page_count))
+    dt.close(); df.close()
     if a.selftest:
         try:
             leg2(d, tis, keys, nnotes, false_txt, true_txt,

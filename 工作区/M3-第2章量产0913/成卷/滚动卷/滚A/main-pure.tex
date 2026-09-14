@@ -130,6 +130,11 @@
 % ------------------------------------------------------------
 \setlength{\columnsep}{\jpgap}
 \setlength{\columnseprule}{0pt}
+% 栏底降部收口：article 默认 \\maxdepth=4pt（1.41mm）＝末行盒可伸出列高，
+%   266.6＋1.41＝268.0 越腿3 设计线 267.6（滚B 括线底规实证）。收 2.5pt（0.88mm）
+%   → 列墨底 ≤267.48，门线内；只影响贴线末行落点，排印间距零变动。
+\maxdepth=2.5pt
+\splitmaxdepth=2.5pt
 \newenvironment{juancols}
   {\begin{multicols}{3}\fontsize{10.5pt}{17.7pt}\selectfont}%
   {\end{multicols}}
@@ -137,8 +142,7 @@
 \begin{document}
 % ============ S5-W4 阶段二：题-答-解析同流（三栏回流制），案B 手分页/附卷退役 ============
 \begin{juancols}
-\begin{document}
-\jpthree{\jphead
+\jphead
   \ti{1}{经过两点 \(C(3,1)\)、\(D(-2,0)\) 的直线 \(l_{1}\) 与经过点 \(M(1,-4)\) 且斜率为 \(\dfrac{1}{5}\) 的直线 \(l_{2}\) 的位置关系为\kw}
   \optline{\optIV{A．平行；}{B．垂直；}{C．重合；}{D．无法确定．}}
   \begin{ansblock}[2章-滚A-1]

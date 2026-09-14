@@ -1,0 +1,114 @@
+题面零改举证｜滚动卷B｜S5-W4 阶段二 回流制重产 2026-09-14
+口径：双侧同剔结构件（\jpthree 三器/\newpage/页横幅/壳行）＋退役件（速查挂载/\anskey 补偿）
+＋ansblock（旧附卷块/新内联块整块剔）＋导言宏区；余行逐行比对。
+旧件题流 53 行 vs 新件题流 53 行 → 逐行一致（零改）
+
+—— 旧件题流全文 ——
+  \ti{1}{已知向量 \(\overrightarrow{a}\)，\(\overrightarrow{b}\) 满足 \(\left|\overrightarrow{a}\right|=2\)，\(\left|\overrightarrow{b}\right|=1\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=120^\circ\)，则 \(\overrightarrow{a}\cdot(\overrightarrow{a}+2\overrightarrow{b})=\)\kw}
+  \optline{\optIV{A．\(2\)；}{B．\(-2\)；}{C．\(6\)；}{D．\(8\)．}}
+  \ti{2}{在 \(\triangle ABC\) 中，\(\angle A=90^\circ\)，\(AB=2\)，\(AC=1\)，则 \(\overrightarrow{BC}\cdot\overrightarrow{AB}=\)\kw}
+  \optline{\optIV{A．\(-4\)；}{B．\(-2\)；}{C．\(2\)；}{D．\(4\)．}}
+  \ti{3}{设 \(\{\overrightarrow{e_1},\overrightarrow{e_2},\overrightarrow{e_3}\}\) 是空间的一个基底，\(\overrightarrow{a}=\overrightarrow{e_1}+\overrightarrow{e_2}\)，\(\overrightarrow{b}=\overrightarrow{e_2}+\overrightarrow{e_3}\)，则下列向量中能与 \(\overrightarrow{a}\)，\(\overrightarrow{b}\) 构成空间另一个基底的是\kw}
+  \optline{\optII{A．\(\overrightarrow{e_1}-\overrightarrow{e_3}\)；}{B．\(\overrightarrow{e_1}+\overrightarrow{e_2}+\overrightarrow{e_3}\)；}}
+  \optline{\optII{C．\(\overrightarrow{a}+2\overrightarrow{b}\)；}{D．\(\overrightarrow{a}+\overrightarrow{b}\)．}}
+  \ti{4}{设空间中一点 \(S(1,2,-1)\)，下列各点中，到点 \(S\) 的距离等于 \(3\) 的是\kw}
+  \optline{\optIV{A．\((1,2,2)\)；}{B．\((0,0,0)\)；}{C．\((1,2,-2)\)；}{D．\((2,1,1)\)．}}
+  \ti{5}{直线 \(l\) 与平面 \(\alpha\) 相交于点 \(B\)，点 \(A\notin\alpha\)，\(AA'\perp\alpha\) 于点 \(A'\)．若 \(AA'=2\sqrt{3}\)，\(A'B=2\)，则直线 \(AB\) 与平面 \(\alpha\) 所成角的大小为\kw}
+  \optline{\optIV{A．\(30^\circ\)；}{B．\(45^\circ\)；}{C．\(60^\circ\)；}{D．\(90^\circ\)．}}
+  \ti{6}{已知平面 \(\alpha\) 与平面 \(\beta\) 的法向量的夹角为 \(60^\circ\)，且二面角 \(\alpha-l-\beta\) 为钝角，则该二面角的大小是\kw}
+  \optline{\optIV{A．\(30^\circ\)；}{B．\(60^\circ\)；}{C．\(120^\circ\)；}{D．\(150^\circ\)．}}
+  \zuhang{二、选择题}{：本题共3小题，每小题5分，共15分．\ 在每小题给出的选项中，有多项符合题目要求．（全部选对得5分，部分选对得2分，有选错的得0分）}%
+  \vgt{\hG}
+  \ti{7}{下列说法正确的是\kw}
+  \optline{A．两条平行直线的方向向量必定共线；}
+  \optline{B．若空间中两条直线没有公共点，则这两条直线互相平行；}
+  \optline{C．两条直线所成角的余弦值，等于它们方向向量夹角余弦值的绝对值；}
+  \optline{D．若一条直线与一个平面内的无数条直线都垂直，则这条直线与该平面垂直．}
+  \ti{8}{在棱长为 \(1\) 的正方体 \(ABCD-A_1B_1C_1D_1\) 中，下列结论正确的是\kw}
+  \optline{A．异面直线 \(A_1B\) 与 \(B_1C\) 所成的角为 \(60^\circ\)；}
+  \optline{B．\(AC_1\perp BD\)；}
+  \optline{C．直线 \(AA_1\) 与 \(BC_1\) 所成的角为 \(45^\circ\)；}
+  \optline{D．向量 \(\overrightarrow{AB_1}\) 的模等于 \(1\)．}
+  \ti{9}{在棱长为 \(1\) 的正方体 \(ABCD-A_1B_1C_1D_1\) 中，下列有关二面角的结论正确的是\kw}
+  \optline{A．二面角 \(D-AB-A_1\) 是直二面角；}
+  \optline{B．二面角 \(C_1-BD-C\) 的余弦值为 \(\frac{\sqrt{3}}{3}\)；}
+  \optline{C．二面角 \(B_1-AC-D_1\) 的余弦值为 \(\frac{\sqrt{3}}{3}\)；}
+  \optline{D．二面角 \(A_1-CD-B\) 的大小为 \(60^\circ\)．}
+  \zuhang{三、填空题}{：本题共3小题，每小题5分，共15分．}%
+  \vgt{\hG}
+  \ti{10}{已知向量 \(\overrightarrow{a}=(1,2,2)\)，\(\overrightarrow{b}=(1,-2,2)\)，则向量 \(\overrightarrow{a}+\overrightarrow{b}\) 与 \(\overrightarrow{a}-\overrightarrow{b}\) 夹角的余弦值为\kongbai}
+  \ti{11}{平面直角坐标系中，三点 \(A(1,2)\)，\(B(5,10)\)，\(C(3,2k-1)\) 在同一条直线上，则实数 \(k=\)\kongbai}
+  \ti{12}{棱长为 \(2\) 的正方体 \(ABCD-A_1B_1C_1D_1\) 中，点 \(E\) 在棱 \(DD_1\) 上运动，则点 \(E\) 到平面 \(A_1BD\) 的距离与点 \(E\) 到平面 \(AB_1D_1\) 的距离之和等于\kongbai}
+  \vgt{\hG}
+  \zuhang{四、解答题}{：本题共4小题，共40分．\ 解答应写出文字说明、证明过程或演算步骤．}%
+  \vgt{\hG}
+  \ti{13}{\fenzhi{8}长方体 \(ABCD-A_1B_1C_1D_1\) 中，\(AB=AD=2\)，\(AA_1=4\)，\(E\) 为棱 \(BB_1\) 的中点．以 \(D\) 为原点，射线 \(DA\)，\(DC\)，\(DD_1\) 分别为 \(x\) 轴、\(y\) 轴、\(z\) 轴的正方向建立空间直角坐标系．}
+  \qpart{（1）写出点 \(A\)，\(B_1\)，\(E\) 的坐标；}
+  \qpart{（2）求向量 \(\overrightarrow{AE}\) 与 \(\overrightarrow{CB_1}\) 夹角的余弦值．}
+  \ti{14}{\fenzhi{10}已知空间中三点 \(A(1,0,0)\)，\(B(0,2,0)\)，\(C(0,0,3)\)．}
+  \qpart{（1）求平面 \(ABC\) 的一个法向量；}
+  \qpart{（2）若点 \(Q(1,t,3)\)（\(t\in\mathbf{R}\)）在平面 \(ABC\) 内，求 \(t\) 的值；}
+  \qpart{（3）求点 \(D(2,1,2)\) 到平面 \(ABC\) 的距离．}
+  \ti{15}{\fenzhi{10}三棱锥 \(P-ABC\) 中，\(PA\perp\) 平面 \(ABC\)，\(AB\perp BC\)，\(PA=2\)，\(BC=2\)．}
+  \qpart{（1）求证：\(BC\perp\) 平面 \(PAB\)；并在平面 \(PAB\) 内过 \(A\) 作 \(AE\perp PB\) 于 \(E\)，说明线段 \(AE\) 的长就是点 \(A\) 到平面 \(PBC\) 的距离；}
+  \qpart{（2）若 \(AE=\sqrt{3}\)，求 \(AB\) 的长；}
+  \qpart{（3）在（2）的条件下，求直线 \(PC\) 与平面 \(PAB\) 所成角的正弦值．}
+  \ti{16}{\fenzhi{12}四面体 \(ABCD\) 中，\(AB=BC=AD=DC=2\)，\(AC=2\sqrt{3}\)，\(BD=\sqrt{3}\)．}
+  \qpart{（1）求二面角 \(B-AC-D\) 的大小；}
+  \qpart{（2）求点 \(B\) 到平面 \(ACD\) 的距离；}
+  \qpart{（3）求直线 \(AB\) 与平面 \(ACD\) 所成角的正弦值．}
+
+—— 新件题流全文 ——
+  \ti{1}{已知向量 \(\overrightarrow{a}\)，\(\overrightarrow{b}\) 满足 \(\left|\overrightarrow{a}\right|=2\)，\(\left|\overrightarrow{b}\right|=1\)，\(\langle\overrightarrow{a},\overrightarrow{b}\rangle=120^\circ\)，则 \(\overrightarrow{a}\cdot(\overrightarrow{a}+2\overrightarrow{b})=\)\kw}
+  \optline{\optIV{A．\(2\)；}{B．\(-2\)；}{C．\(6\)；}{D．\(8\)．}}
+  \ti{2}{在 \(\triangle ABC\) 中，\(\angle A=90^\circ\)，\(AB=2\)，\(AC=1\)，则 \(\overrightarrow{BC}\cdot\overrightarrow{AB}=\)\kw}
+  \optline{\optIV{A．\(-4\)；}{B．\(-2\)；}{C．\(2\)；}{D．\(4\)．}}
+  \ti{3}{设 \(\{\overrightarrow{e_1},\overrightarrow{e_2},\overrightarrow{e_3}\}\) 是空间的一个基底，\(\overrightarrow{a}=\overrightarrow{e_1}+\overrightarrow{e_2}\)，\(\overrightarrow{b}=\overrightarrow{e_2}+\overrightarrow{e_3}\)，则下列向量中能与 \(\overrightarrow{a}\)，\(\overrightarrow{b}\) 构成空间另一个基底的是\kw}
+  \optline{\optII{A．\(\overrightarrow{e_1}-\overrightarrow{e_3}\)；}{B．\(\overrightarrow{e_1}+\overrightarrow{e_2}+\overrightarrow{e_3}\)；}}
+  \optline{\optII{C．\(\overrightarrow{a}+2\overrightarrow{b}\)；}{D．\(\overrightarrow{a}+\overrightarrow{b}\)．}}
+  \ti{4}{设空间中一点 \(S(1,2,-1)\)，下列各点中，到点 \(S\) 的距离等于 \(3\) 的是\kw}
+  \optline{\optIV{A．\((1,2,2)\)；}{B．\((0,0,0)\)；}{C．\((1,2,-2)\)；}{D．\((2,1,1)\)．}}
+  \ti{5}{直线 \(l\) 与平面 \(\alpha\) 相交于点 \(B\)，点 \(A\notin\alpha\)，\(AA'\perp\alpha\) 于点 \(A'\)．若 \(AA'=2\sqrt{3}\)，\(A'B=2\)，则直线 \(AB\) 与平面 \(\alpha\) 所成角的大小为\kw}
+  \optline{\optIV{A．\(30^\circ\)；}{B．\(45^\circ\)；}{C．\(60^\circ\)；}{D．\(90^\circ\)．}}
+  \ti{6}{已知平面 \(\alpha\) 与平面 \(\beta\) 的法向量的夹角为 \(60^\circ\)，且二面角 \(\alpha-l-\beta\) 为钝角，则该二面角的大小是\kw}
+  \optline{\optIV{A．\(30^\circ\)；}{B．\(60^\circ\)；}{C．\(120^\circ\)；}{D．\(150^\circ\)．}}
+  \zuhang{二、选择题}{：本题共3小题，每小题5分，共15分．\ 在每小题给出的选项中，有多项符合题目要求．（全部选对得5分，部分选对得2分，有选错的得0分）}%
+  \vgt{\hG}
+  \ti{7}{下列说法正确的是\kw}
+  \optline{A．两条平行直线的方向向量必定共线；}
+  \optline{B．若空间中两条直线没有公共点，则这两条直线互相平行；}
+  \optline{C．两条直线所成角的余弦值，等于它们方向向量夹角余弦值的绝对值；}
+  \optline{D．若一条直线与一个平面内的无数条直线都垂直，则这条直线与该平面垂直．}
+  \ti{8}{在棱长为 \(1\) 的正方体 \(ABCD-A_1B_1C_1D_1\) 中，下列结论正确的是\kw}
+  \optline{A．异面直线 \(A_1B\) 与 \(B_1C\) 所成的角为 \(60^\circ\)；}
+  \optline{B．\(AC_1\perp BD\)；}
+  \optline{C．直线 \(AA_1\) 与 \(BC_1\) 所成的角为 \(45^\circ\)；}
+  \optline{D．向量 \(\overrightarrow{AB_1}\) 的模等于 \(1\)．}
+  \ti{9}{在棱长为 \(1\) 的正方体 \(ABCD-A_1B_1C_1D_1\) 中，下列有关二面角的结论正确的是\kw}
+  \optline{A．二面角 \(D-AB-A_1\) 是直二面角；}
+  \optline{B．二面角 \(C_1-BD-C\) 的余弦值为 \(\frac{\sqrt{3}}{3}\)；}
+  \optline{C．二面角 \(B_1-AC-D_1\) 的余弦值为 \(\frac{\sqrt{3}}{3}\)；}
+  \optline{D．二面角 \(A_1-CD-B\) 的大小为 \(60^\circ\)．}
+  \zuhang{三、填空题}{：本题共3小题，每小题5分，共15分．}%
+  \vgt{\hG}
+  \ti{10}{已知向量 \(\overrightarrow{a}=(1,2,2)\)，\(\overrightarrow{b}=(1,-2,2)\)，则向量 \(\overrightarrow{a}+\overrightarrow{b}\) 与 \(\overrightarrow{a}-\overrightarrow{b}\) 夹角的余弦值为\kongbai}
+  \ti{11}{平面直角坐标系中，三点 \(A(1,2)\)，\(B(5,10)\)，\(C(3,2k-1)\) 在同一条直线上，则实数 \(k=\)\kongbai}
+  \ti{12}{棱长为 \(2\) 的正方体 \(ABCD-A_1B_1C_1D_1\) 中，点 \(E\) 在棱 \(DD_1\) 上运动，则点 \(E\) 到平面 \(A_1BD\) 的距离与点 \(E\) 到平面 \(AB_1D_1\) 的距离之和等于\kongbai}
+  \vgt{\hG}
+  \zuhang{四、解答题}{：本题共4小题，共40分．\ 解答应写出文字说明、证明过程或演算步骤．}%
+  \vgt{\hG}
+  \ti{13}{\fenzhi{8}长方体 \(ABCD-A_1B_1C_1D_1\) 中，\(AB=AD=2\)，\(AA_1=4\)，\(E\) 为棱 \(BB_1\) 的中点．以 \(D\) 为原点，射线 \(DA\)，\(DC\)，\(DD_1\) 分别为 \(x\) 轴、\(y\) 轴、\(z\) 轴的正方向建立空间直角坐标系．}
+  \qpart{（1）写出点 \(A\)，\(B_1\)，\(E\) 的坐标；}
+  \qpart{（2）求向量 \(\overrightarrow{AE}\) 与 \(\overrightarrow{CB_1}\) 夹角的余弦值．}
+  \ti{14}{\fenzhi{10}已知空间中三点 \(A(1,0,0)\)，\(B(0,2,0)\)，\(C(0,0,3)\)．}
+  \qpart{（1）求平面 \(ABC\) 的一个法向量；}
+  \qpart{（2）若点 \(Q(1,t,3)\)（\(t\in\mathbf{R}\)）在平面 \(ABC\) 内，求 \(t\) 的值；}
+  \qpart{（3）求点 \(D(2,1,2)\) 到平面 \(ABC\) 的距离．}
+  \ti{15}{\fenzhi{10}三棱锥 \(P-ABC\) 中，\(PA\perp\) 平面 \(ABC\)，\(AB\perp BC\)，\(PA=2\)，\(BC=2\)．}
+  \qpart{（1）求证：\(BC\perp\) 平面 \(PAB\)；并在平面 \(PAB\) 内过 \(A\) 作 \(AE\perp PB\) 于 \(E\)，说明线段 \(AE\) 的长就是点 \(A\) 到平面 \(PBC\) 的距离；}
+  \qpart{（2）若 \(AE=\sqrt{3}\)，求 \(AB\) 的长；}
+  \qpart{（3）在（2）的条件下，求直线 \(PC\) 与平面 \(PAB\) 所成角的正弦值．}
+  \ti{16}{\fenzhi{12}四面体 \(ABCD\) 中，\(AB=BC=AD=DC=2\)，\(AC=2\sqrt{3}\)，\(BD=\sqrt{3}\)．}
+  \qpart{（1）求二面角 \(B-AC-D\) 的大小；}
+  \qpart{（2）求点 \(B\) 到平面 \(ACD\) 的距离；}
+  \qpart{（3）求直线 \(AB\) 与平面 \(ACD\) 所成角的正弦值．}

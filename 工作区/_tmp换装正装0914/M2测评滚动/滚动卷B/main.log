@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 08:32
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1123,7 +1123,7 @@ LaTeX Font Info:    ... okay on input line 136.
 * \footskip=20.20146pt
 * \marginparwidth=65.0pt
 * \marginparsep=11.0pt
-* \columnsep=21.6241pt
+* \columnsep=31.29802pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
@@ -1190,47 +1190,25 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
 
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 171.
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.71004pt on input line 171.
+(Font)              scaled to size 10.71004pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.49698pt on input line 171.
+(Font)              scaled to size 7.49698pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.35501pt on input line 171.
+(Font)              scaled to size 5.35501pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.711pt on input line 171.
+(Font)              scaled to size 10.711pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.49765pt on input line 171.
+(Font)              scaled to size 7.49765pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.3555pt on input line 171.
+(Font)              scaled to size 5.3555pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.70892pt on input line 171.
+(Font)              scaled to size 10.70892pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.4962pt on input line 171.
+(Font)              scaled to size 7.4962pt on input line 140.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.35446pt on input line 171.
-[1
-
-]
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.18004pt on input line 204.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.12003pt on input line 204.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.10002pt on input line 204.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.18086pt on input line 204.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.12057pt on input line 204.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.10048pt on input line 204.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.17908pt on input line 204.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.11938pt on input line 204.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.09949pt on input line 204.
- [2]
+(Font)              scaled to size 5.35446pt on input line 140.
 M3-ANSKEY: 滚B-1
 M3-ANSKEY: 滚B-2
 M3-ANSKEY: 滚B-3
@@ -1246,20 +1224,23 @@ M3-ANSKEY: 滚B-12
 M3-ANSKEY: 滚B-13
 M3-ANSKEY: 滚B-14
 M3-ANSKEY: 滚B-15
+[1
+
+]
 M3-ANSKEY: 滚B-16
-[3] (./main.aux)
+[2] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25470 strings out of 469768
- 598830 string characters out of 5466040
- 1157145 words of memory out of 5000000
- 54042 multiletter control sequences out of 15000+600000
- 633210 words of font info for 148 fonts, out of 8000000 for 9000
+ 25416 strings out of 469768
+ 595905 string characters out of 5466040
+ 1156688 words of memory out of 5000000
+ 54004 multiletter control sequences out of 15000+600000
+ 631872 words of font info for 132 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 107i,13n,121p,1277b,946s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,11n,121p,1277b,995s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (3 pages).
+Output written on main.pdf (2 pages).

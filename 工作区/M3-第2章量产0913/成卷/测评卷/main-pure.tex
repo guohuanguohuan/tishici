@@ -126,6 +126,11 @@
 % ------------------------------------------------------------
 \setlength{\columnsep}{\jpgap}
 \setlength{\columnseprule}{0pt}
+% 栏底降部收口：article 默认 \\maxdepth=4pt（1.41mm）＝末行盒可伸出列高，
+%   266.6＋1.41＝268.0 越腿3 设计线 267.6（滚B 括线底规实证）。收 2.5pt（0.88mm）
+%   → 列墨底 ≤267.48，门线内；只影响贴线末行落点，排印间距零变动。
+\maxdepth=2.5pt
+\splitmaxdepth=2.5pt
 \newenvironment{juancols}
   {\begin{multicols}{3}\fontsize{10.5pt}{17.7pt}\selectfont}%
   {\end{multicols}}
@@ -133,8 +138,7 @@
 \begin{document}
 % ============ S5-W4 阶段二：题-答-解析同流（三栏回流制），案B 手分页/附卷退役 ============
 \begin{juancols}
-\begin{document}
-\jpthree{\jphead
+\jphead
   \ti{1}{已知点 \(A(-1,4)\)，\(B(7,-2)\)，则线段 \(AB\) 的中点坐标与 \(|AB|\) 的值分别为\kw}
   \optline{\optII{A．\((3,1)\)，\(10\)；}{B．\((6,2)\)，\(10\)；}}
   \optline{\optII{C．\((3,1)\)，\(100\)；}{D．\((4,2)\)，\(10\)．}}

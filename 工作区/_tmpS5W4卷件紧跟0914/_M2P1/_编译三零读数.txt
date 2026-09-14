@@ -1,0 +1,8 @@
+M2测评滚动/测评卷 main：遍1 exit=0 错0 溢0 under0 缺字0 ANSKEY=19 页2｜遍2 exit=0 错0 溢0 unde
+M2测评滚动/测评卷 main-pure：遍1 exit=0 错0 溢0 under0 缺字0 ANSKEY=19 页1｜遍2 exit=0 错0 溢0 unde
+M2测评滚动/滚动卷A main：遍1 exit=0 错0 溢0 under1 缺字0 ANSKEY=16 页2｜遍2 exit=0 错0 溢0 unde
+M2测评滚动/滚动卷A main-pure：遍1 exit=0 错0 溢0 under1 缺字0 ANSKEY=16 页1｜遍2 exit=0 错0 溢0 unde
+M2测评滚动/滚动卷B main：遍1 exit=0 错0 溢0 under0 缺字0 ANSKEY=16 页2｜遍2 exit=0 错0 溢0 unde
+M2测评滚动/滚动卷B main-pure：遍1 exit=0 错0 溢0 under0 缺字0 ANSKEY=16 页1｜遍2 exit=0 错0 溢0 unde
+P1测评本/测评卷 main：遍1 exit=0 错0 溢0 under0 缺字0 ANSKEY=19 页3｜遍2 exit=0 错0 溢0 unde
+P1测评本/测评卷 main-pure：遍1 exit=0 错0 溢0 under0 缺字0 ANSKEY=19 页3｜遍2 exit=0 错0 溢0 unde
