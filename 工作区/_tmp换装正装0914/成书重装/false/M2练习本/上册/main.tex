@@ -1,0 +1,661 @@
+% ============================================================
+% 拓展册（上）· 拓-001～058（域 1.1.1～1.2.3）
+% 依据：题面库/拓展册.md（冻结稿）＋排产单 §一.6（随练习件版式）＋汇总 §4
+% 版式：练习线 qp-* 六宏零改动（md5 登记于值台账）；页脚件名＝拓展册；三位数页码沿用
+% 口径：题侧禁源号（排产单 §2.2 规则1）；组名行只给 ≥2 成员组打，组名＝候选名待立组轮正名；
+%       难度档照总底表（简/中/难/中偏易/中偏上）；图＝源位图零改绘，宽夹 [22,38]mm；
+%       教材侧占位 6 件＝装配轮 2026-09-12 处置销清：拓-020 回源位图落位（t020_0.png＝人教B选必1
+%       printed p28 第9题图矢量转 400dpi 位图＋底色白化清理，非改绘）；拓-046/047/058 题面文字
+%       自足→删题首「如图所示，」语＋撤 \tuzhan 占位行（文字化销债，批6「有言无图删语」先例）；
+%       拓-157 同口径（下册）；\tuzhan 宏零引用保留（防回卷）。
+%       拓-057 整题撤重（＝习题1—2C·4，正文籍在练习件课时10 #14，批3 §四-13③ 双置案装配轮执行）；
+%       卷面保留原号跳空（56 后直接 58），与答案册拓展域「057 撤下」对号档一致（义A-1/钉-6 哨兵），
+%       批3 原文「并重编号」废止——重编号将与答案册已印键位 058~160 错位。
+% 转写登记：拓-026 OMML 扁平值还原（12→1/2、√32→√3/2、√22→√2/2）；
+%       拓-020 BP=(1/3)BD₁ 还原；拓-024 ｜a±b｜2→平方；拓-101 S2→S₂（下册）；
+%       拓-041 两处行内式小图目验文字化（MBD⊥／PCD）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3} % 换装：六宏→qp-m3 单包（钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，两补钉随版）
+
+% ============================================================
+% 局部层（练习线样张同源；公共模块语义不动）
+% ============================================================
+\renewcommand{\qpjianming}{拓展册}
+\renewcommand{\qpceming}{高中数学\quad 选择性必修第一册(人教B版)} % 换装回钉：qp-m3 默认册名＝选必二，防页脚漂移（试迁规约·试迁报告§四 B3 实证必改）
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+
+% YJ-01 灰块页脚·练习册档（三位数页码「011」式，照练习线样张实测档）
+\newcommand{\qpxsyema}{\ifnum\value{page}<10 00\fi\ifnum\value{page}>9 \ifnum\value{page}<100 0\fi\fi\arabic{page}}
+\newcommand{\lxshuziL}{\hbox to 13.8mm{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][l]{\rule[-3.145mm]{0pt}{7.8mm}\hspace{2.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema}}\hss}}
+\newcommand{\lxshuziR}{\hbox to 13.8mm{\kern-17.2mm\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][r]{\rule[-3.145mm]{0pt}{7.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema\hspace{2.75mm}}}}}
+\fancyfoot[RO]{\raisebox{-1.24mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}（上）\hspace{3mm}\lxshuziL}}
+\fancyfoot[LE]{\raisebox{-1.24mm}[0pt][0pt]{\lxshuziR\hspace{3mm}\qphuitext\qpceming}}
+
+% TJ-02 悬挂题号（练习线档：单号 5.75mm／双位 7.6mm；题号 \textbf 加重）
+% 长度 \lxhang 已由 qp-m3 分配，预删防重复定义
+\renewcommand{\tihao}[1]{\par\glueguard{1}%
+  \ifnum#1>9\setlength{\lxhang}{7.6mm}\else\setlength{\lxhang}{5.75mm}\fi
+  \noindent\hangindent=\lxhang\hangafter=0
+  \llap{\hbox to\lxhang{\textbf{#1.}\hss}}}
+% 选项段（TJ-07 行距档）
+% 局部宏 \lxopt 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+
+\definecolor{gray102}{HTML}{666666}
+% 组名行（拓展册档＝独立行；只给 ≥2 成员组打；候选名正名随立组轮，S3 同口径集中替换）
+\renewcommand{\zu}[1]{\par\glueguard{2}\addvspace{2.4mm}\noindent
+  {\fontsize{10.5pt}{18pt}\selectfont\heibf 【#1】}\hspace{1mm}%
+  {\fontsize{8pt}{11pt}\selectfont\heiti\color{gray102}候选名·待立组轮正名}\par\addvspace{1.2mm}}
+% 源位图（零改绘；宽夹 [22,38]mm）
+\newcommand{\tu}[2]{\par\begingroup\centering\includegraphics[width=#2]{figs/#1}\par\endgroup}
+% 教材侧占位（图位清单在案，待补）
+\newcommand{\tuzhan}[1]{\par\begingroup\centering{\fontsize{9pt}{12pt}\selectfont\color{gray102}【图位占位：#1】}\par\endgroup}
+% 罕见字回退（FZShuSong cmap 缺 U+81D1 臑，实测 Missing character；SimSun 覆盖 GB18030）
+\newCJKfontfamily\bunao[Path=C:/Windows/Fonts/,FontIndex=0]{simsun.ttc}
+\newcommand{\nao}{{\bunao 臑}}
+
+% \ov 系答案册 body 局部宏，随值迁入件内补定义（实测 qp-m3 无 \ov，不撞名）
+\providecommand{\ov}[1]{\overrightarrow{#1}}
+
+\begin{document}
+%成书重装五本跨本连续页码（G7方案B，承M2/M3装配先例）setcounter 注入位
+\setcounter{page}{65}
+
+\zhangtitle{拓展册（上）}
+
+% ============================================================
+% 一、1.1.1 域（10 题）
+% ============================================================
+\jietitle{1.1.1　空间向量及其运算}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\zu{概念辨析组}
+% 拓-001｜F7·4｜中
+\tihao{1}\tieside{中}以下命题中,不正确的个数为\nobreak(\kongwei)
+①``$|\overrightarrow{a}|-|\overrightarrow{b}|=|\overrightarrow{a}+\overrightarrow{b}|$''是``$\overrightarrow{a},\overrightarrow{b}$共线''的充要条件;②若$\overrightarrow{a}\parallel\overrightarrow{b}$,则存在唯一的实数$\lambda$,使得$\overrightarrow{a}=\lambda\overrightarrow{b}$;③若$\overrightarrow{a}\cdot\overrightarrow{b}=0$,$\overrightarrow{b}\cdot\overrightarrow{c}=0$,则$\overrightarrow{a}=\overrightarrow{c}$;④若$\{\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}\}$为空间的一个基底,则$\{\overrightarrow{a}+\overrightarrow{b},\overrightarrow{b}+\overrightarrow{c},\overrightarrow{c}+\overrightarrow{a}\}$构成空间的另一个基底;⑤$|(\overrightarrow{a}\cdot\overrightarrow{b})\cdot\overrightarrow{c}|=|\overrightarrow{a}|\cdot|\overrightarrow{b}|\cdot|\overrightarrow{c}|$.
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.2}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.3}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.4}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.5}}
+\begin{ansblock}[拓-001]
+% ans:拓-001
+\ansitem{1}{C（①②③⑤假；④真）}
+\end{ansblock}
+
+% 拓-002｜F2·3｜简
+\tihao{2}\tieside{简}下列命题是真命题的是\nobreak(\kongwei)
+\lxopt{A.若分别表示空间两向量的有向线段所在的直线是异面直线,则这两个向量不是共面向量;}
+\lxopt{B.$\overrightarrow{AB}=\overrightarrow{CD}$的充要条件是$A$与$C$重合,$B$与$D$重合;}
+\lxopt{C.若向量$\overrightarrow{AB}$,$\overrightarrow{CD}$满足$|\overrightarrow{AB}|>|\overrightarrow{CD}|$,且$\overrightarrow{AB}$与$\overrightarrow{CD}$同向,则$\overrightarrow{AB}>\overrightarrow{CD}$;}
+\lxopt{D.若两个非零向量$\overrightarrow{AB}$与$\overrightarrow{CD}$满足$\overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{0}$,则$\overrightarrow{AB}\parallel\overrightarrow{CD}$}
+\begin{ansblock}[拓-002]
+% ans:拓-002
+\ansitem{2}{D}
+\end{ansblock}
+
+% 拓-003｜复习题B·1｜简（化简组：单员不设组名行）
+\tihao{3}\tieside{简}已知$G$是正方形$ABCD$的中心,点$P$为正方形$ABCD$所在平面外一点,则$\overrightarrow{PA}+\overrightarrow{PB}+\overrightarrow{PC}+\overrightarrow{PD}=$(　　).
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{(A)$4\overrightarrow{PG}$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{(B)$3\overrightarrow{PG}$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{(C)$2\overrightarrow{PG}$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{(D)$\overrightarrow{PG}$}}
+\begin{ansblock}[拓-003]
+% ans:拓-003
+\ansitem{3}{A（\(4\ov{PG}\)）}
+\end{ansblock}
+
+\zu{数量积直算组}
+% 拓-004｜1.1.1练习B·4｜简
+\tihao{4}\tieside{简}已知正方体$ABCD\text{-}A'B'C'D'$的棱长为1,求:
+(1)$\overrightarrow{AB}\cdot\overrightarrow{B'C'}$;
+(2)$\overrightarrow{AB}\cdot\overrightarrow{D'C'}$;
+(3)$\overrightarrow{AB}\cdot\overrightarrow{A'C'}$;
+(4)$\overrightarrow{B'D}\cdot\overrightarrow{AB}$.
+\begin{ansblock}[拓-004]
+% ans:拓-004
+\ansitem{4}{(1)\(0\)；(2)\(1\)；(3)\(1\)；(4)\(-1\)}
+\end{ansblock}
+
+% 拓-005｜1.1.1练习B·6｜简
+\tihao{5}\tieside{简}已知$|\overrightarrow{a}|=4$,向量$\overrightarrow{e}$为单位向量,$\langle\overrightarrow{a},\overrightarrow{e}\rangle=\frac{2\pi}{3}$,求向量$\overrightarrow{a}$在向量$\overrightarrow{e}$方向上的投影的数量.
+\begin{ansblock}[拓-005]
+% ans:拓-005
+\ansitem{5}{\(-2\)}
+\end{ansblock}
+
+\zu{模-角互求组}
+% 拓-006｜复习题B·5｜简
+\tihao{6}\tieside{简}已知$\overrightarrow{a}$,$\overrightarrow{b}$都是空间向量,且$|\overrightarrow{a}|=|\overrightarrow{b}|=|\overrightarrow{a}+\overrightarrow{b}|=1$,求$|\overrightarrow{a}-\overrightarrow{b}|$.
+\begin{ansblock}[拓-006]
+% ans:拓-006
+\ansitem{6}{\(\sqrt{3}\)}
+\end{ansblock}
+
+% 拓-007｜习题1—1B·3｜简
+\tihao{7}\tieside{简}已知向量$\overrightarrow{a}$,$\overrightarrow{b}$均为单位向量,且它们的夹角为$60^\circ$,求$|\overrightarrow{a}+3\overrightarrow{b}|$.
+\begin{ansblock}[拓-007]
+% ans:拓-007
+\ansitem{7}{\(\sqrt{13}\)}
+\end{ansblock}
+
+% 拓-008｜F2·23｜中
+\tihao{8}\tieside{中}已知空间向量$\overrightarrow{a}$,$\overrightarrow{b}$,$\overrightarrow{c}$满足$\overrightarrow{a}+\overrightarrow{b}+\overrightarrow{c}=\overrightarrow{0}$,$|\overrightarrow{a}|=2$,$|\overrightarrow{b}|=3$,$|\overrightarrow{c}|=4$,则$\overrightarrow{a}$与$\overrightarrow{b}$的夹角为\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.30°}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.45°}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.60°}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.以上都不对}}
+\begin{ansblock}[拓-008]
+% ans:拓-008
+\ansitem{8}{D（\(\arccos\dfrac{1}{4}\approx 75.5^{\circ}\)，非特殊角）}
+\end{ansblock}
+
+% 拓-009｜1.1.2练习B·5｜中（数量积求值组：单员不设组名行）
+\tihao{9}\tieside{中}已知直三棱柱$ABC\text{-}A_1B_1C_1$中,$\angle ABC=60^\circ$,$AB=2$,$BC=CC_1=1$,求$\overrightarrow{AB_1}\cdot\overrightarrow{BC_1}$.
+\begin{ansblock}[拓-009]
+% ans:拓-009
+\ansitem{9}{\(0\)}
+\end{ansblock}
+
+% 拓-010｜导-P2（池题面63）｜简（共线法族：单员不设组名行）
+\tihao{10}\tieside{简}设$\overrightarrow{e_1}$,$\overrightarrow{e_2}$不共线,$\overrightarrow{a}=2\overrightarrow{e_1}+\overrightarrow{e_2}$,$\overrightarrow{b}=4\overrightarrow{e_1}+k\overrightarrow{e_2}$,若$\overrightarrow{a}\parallel\overrightarrow{b}$,则$k=$(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\frac{1}{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$2$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$-\frac{1}{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$3$}}
+\begin{ansblock}[拓-010]
+% ans:拓-010
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{10}{B（\(k=2\)）}
+\end{ansblock}
+
+\end{multicols}
+
+% ============================================================
+% 二、1.1.2 域（7 题；组皆单员，不设组名行）
+% ============================================================
+\jietitle{1.1.2　空间向量基本定理}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% 拓-011｜F3·8｜中
+\tihao{11}\tieside{中}已知在正方体$ABCD\text{-}A_1B_1C_1D_1$中,$P$,$M$为空间任意两点,如果$\overrightarrow{PM}=\overrightarrow{PB_1}+7\overrightarrow{BA}+6\overrightarrow{AA_1}-4\overrightarrow{A_1D_1}$,那么点$M$必\nobreak(\kongwei)
+\lxopt{A.在平面$BAD_1$内 \quad B.在平面$BA_1D$内}
+\lxopt{C.在平面$BA_1D_1$内 \quad D.在平面$AB_1C_1$内}
+\begin{ansblock}[拓-011]
+% ans:拓-011
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{11}{C（系数和 \(11-6-4=1\)，\(M\in\) 平面 \(BA_{1}D_{1}\)）}
+\end{ansblock}
+
+% 拓-012｜F3·10｜中
+\tihao{12}\tieside{中}已知$E$,$F$,$G$,$H$分别是空间四边形$ABCD$的边$AB$,$BC$,$CD$,$DA$的中点.
+(1)用向量法证明$E$,$F$,$G$,$H$四点共面;
+(2)用向量法证明:$BD\parallel$平面$EFGH$;
+(3)设$M$是$EG$和$FH$的交点,求证:对空间任一点$O$,有$\overrightarrow{OM}=\frac{1}{4}(\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD})$.
+\begin{ansblock}[拓-012]
+% ans:拓-012
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{12}{(1)(2)证明见解析；(3)\(\ov{OM}=\dfrac{1}{4}(\ov{OA}+\ov{OB}+\ov{OC}+\ov{OD})\)}
+\end{ansblock}
+
+% 拓-013｜复习题B·3｜中
+\tihao{13}\tieside{中}已知三棱锥$O\text{-}ABC$中,$M$,$N$分别是$OA$,$BC$的中点,点$G$在$MN$上,且$MG=2GN$.设$\overrightarrow{OA}=\overrightarrow{a}$,$\overrightarrow{OB}=\overrightarrow{b}$,$\overrightarrow{OC}=\overrightarrow{c}$,试用基底$\{\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}\}$表示向量$\overrightarrow{OG}$.
+\begin{ansblock}[拓-013]
+% ans:拓-013
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{13}{\(\ov{OG}=\dfrac{1}{6}\ov{a}+\dfrac{1}{3}\ov{b}+\dfrac{1}{3}\ov{c}\)}
+\end{ansblock}
+
+% 拓-014｜复习题C·1｜难
+\tihao{14}\tieside{难}已知$\overrightarrow{a}=\overrightarrow{i}-2\overrightarrow{j}+\overrightarrow{k}$,$\overrightarrow{b}=-\overrightarrow{i}+3\overrightarrow{j}+2\overrightarrow{k}$,$\overrightarrow{c}=-3\overrightarrow{i}+7\overrightarrow{j}$,证明这三个向量共面.
+\begin{ansblock}[拓-014]
+% ans:拓-014
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{14}{共面（\(\ov{c}=-2\ov{a}+\ov{b}\)）}
+\end{ansblock}
+
+% 拓-015｜F7·7｜难
+\tihao{15}\tieside{难}在棱长为2的正四面体$ABCD$中,点$M$满足$\overrightarrow{AM}=x\overrightarrow{AB}+y\overrightarrow{AC}-(x+y-1)\overrightarrow{AD}$,点$N$满足$\overrightarrow{BN}=\lambda\overrightarrow{BA}+(1-\lambda)\overrightarrow{BC}$,当$\overrightarrow{AM}$、$\overrightarrow{BN}$最短时,$\overrightarrow{AM}\cdot\overrightarrow{MN}=$(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$-\frac{4}{3}$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\frac{4}{3}$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$-\frac{1}{3}$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$\frac{1}{3}$}}
+\begin{ansblock}[拓-015]
+% ans:拓-015
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{15}{A（\(\ov{AM}\cdot\ov{MN}=-\dfrac{4}{3}\)）}
+\end{ansblock}
+
+% 拓-016｜习题1—1C·1｜难
+\tihao{16}\tieside{难}如果存在三个不全为0的实数$x$,$y$,$z$,使得$x\overrightarrow{a}+y\overrightarrow{b}+z\overrightarrow{c}=\overrightarrow{0}$,那么向量$\overrightarrow{a}$,$\overrightarrow{b}$,$\overrightarrow{c}$是否一定共面?为什么?
+\begin{ansblock}[拓-016]
+% ans:拓-016
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{16}{一定共面}
+\end{ansblock}
+
+% 拓-017｜习题1—1C·3｜难
+\tihao{17}\tieside{难}已知向量$\overrightarrow{OA}$,$\overrightarrow{OB}$,$\overrightarrow{OC}$可以构成空间向量的一组基底,则这三个向量中哪一个向量可以与向量$\overrightarrow{OA}+\overrightarrow{OB}$和向量$\overrightarrow{OA}-\overrightarrow{OB}$构成空间向量的另一组基底?
+\begin{ansblock}[拓-017]
+% ans:拓-017
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{17}{\(\ov{OC}\)}
+\end{ansblock}
+
+\end{multicols}
+
+% ============================================================
+% 三、1.1.3 域（20 题）
+% ============================================================
+\jietitle{1.1.3　空间向量的坐标与空间直角坐标系}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\zu{建系写坐标组}
+% 拓-018｜F4·2｜中｜图 t018_0.png
+\tihao{18}\tieside{中}在直三棱柱$ABC\text{-}A_1B_1C_1$中,$\triangle ABC$为等腰三角形,$AB=AC=AA_1$,$E$、$F$分别是$CC_1$、$BC$的中点,且$AB=5$,$BC=6$,请建立空间直角坐标系,并求各点的坐标.
+\tu{t018_0.png}{38.0mm}
+\begin{ansblock}[拓-018]
+% ans:拓-018
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{18}{\(F(0,0,0)\)、\(A(0,4,0)\)、\(B(-3,0,0)\)、\(C(3,0,0)\)、\(A_{1}(0,4,5)\)、\(B_{1}(-3,0,5)\)、\(C_{1}(3,0,5)\)、\(E(3,0,\dfrac{5}{2})\)}
+\end{ansblock}
+
+% 拓-019｜习题1—1A·3｜简
+\tihao{19}\tieside{简}一个棱长为1的正方体,对称中心在原点且每一个面都平行于坐标平面,写出这个正方体8个顶点的坐标.
+\begin{ansblock}[拓-019]
+% ans:拓-019
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{19}{\((\pm\dfrac{1}{2},\pm\dfrac{1}{2},\pm\dfrac{1}{2})\)（8 个顶点取遍正负号组合）}
+\end{ansblock}
+
+% 拓-020｜习题1—1B·9｜中｜占位
+\tihao{20}\tieside{中}已知正方体$ABCD\text{-}A_1B_1C_1D_1$的棱长为1,$P$为$BD_1$上一点,且$\overrightarrow{BP}=\frac{1}{3}\overrightarrow{BD_1}$.建立如图所示的空间直角坐标系,求点$P$的坐标.
+\tu{t020_0.png}{30.0mm}
+\begin{ansblock}[拓-020]
+% ans:拓-020
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{20}{\(P\left(\dfrac{2}{3},\dfrac{2}{3},\dfrac{1}{3}\right)\)（\(D\) 为原点系）}
+\end{ansblock}
+
+% 拓-021｜池T6（1.1.3.5-6）｜简（中点坐标组：单员不设组名行）
+\tihao{21}\tieside{简}在空间直角坐标系中,已知$M(-1,0,2)$,$N(3,2,-4)$,则$MN$的中点$P$到坐标原点$O$的距离为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$\sqrt{3}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$\sqrt{2}$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$2$;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$3$}}
+\begin{ansblock}[拓-021]
+% ans:拓-021
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{21}{A（\(P(1,1,-1)\)，\(|\ov{OP}|=\sqrt{3}\)）}
+\end{ansblock}
+
+% 拓-022｜F4·21｜简（对称组：单员）
+\tihao{22}\tieside{简}求空间中点$A(3,3,1)$关于平面$XOY$的对称点$A'$与$B(-1,1,5)$的长度为
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.$6$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.$2\sqrt{6}$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.$4\sqrt{3}$}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.$2\sqrt{14}$}}
+\begin{ansblock}[拓-022]
+% ans:拓-022
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{22}{D（\(2\sqrt{14}\)；\(A^{\prime}(3,3,-1)\)）}
+\end{ansblock}
+
+% 拓-023｜1.1.3练习B·2｜简（坐标运算组：单员）
+\tihao{23}\tieside{简}已知$\overrightarrow{a}=(2,-3,1)$,$\overrightarrow{b}=(2,0,3)$,$\overrightarrow{c}=(0,0,2)$,求:
+(1)$\overrightarrow{a}\cdot(\overrightarrow{b}+\overrightarrow{c})$;
+(2)$(\overrightarrow{a}+6\overrightarrow{b})\cdot(\overrightarrow{a}-6\overrightarrow{b})$.
+\begin{ansblock}[拓-023]
+% ans:拓-023
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{23}{(1)\(9\)；(2)\(-454\)}
+\end{ansblock}
+
+\zu{模-角互求组}
+% 拓-024｜1.1.3练习B·7｜简
+\tihao{24}\tieside{简}已知$\overrightarrow{a}=(5,-3,12)$,$\overrightarrow{b}=(-2,0,5)$,求$|\overrightarrow{a}+\overrightarrow{b}|^{2}$,$|\overrightarrow{a}-\overrightarrow{b}|^{2}$.
+\begin{ansblock}[拓-024]
+% ans:拓-024
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{24}{\(|\ov{a}+\ov{b}|^{2}=307\)，\(|\ov{a}-\ov{b}|^{2}=107\)}
+\end{ansblock}
+
+% 拓-025｜F4·12｜简
+\tihao{25}\tieside{简}已知向量$\overrightarrow{a}=(0,-1,1)$,$\overrightarrow{b}=(4,1,0)$,$|\lambda\overrightarrow{a}+\overrightarrow{b}|=\sqrt{29}$,且$\lambda>0$,则$\lambda=$\kongbai.
+\begin{ansblock}[拓-025]
+% ans:拓-025
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{25}{\(\lambda=3\)（\(-2\) 由 \(\lambda>0\) 舍）}
+\end{ansblock}
+
+% 拓-026｜1.1.3练习B·1｜简
+\tihao{26}\tieside{简}已知$\overrightarrow{a}$,$\overrightarrow{b}$是空间向量,根据下列各条件分别求$\langle\overrightarrow{a},\overrightarrow{b}\rangle$:
+(1)$\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=1$;\quad(2)$\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=-1$;\quad(3)$\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=0$;
+(4)$\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=\frac{1}{2}$;\quad(5)$\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=-\frac{\sqrt{3}}{2}$;\quad(6)$\cos\langle\overrightarrow{a},\overrightarrow{b}\rangle=\frac{\sqrt{2}}{2}$.
+\begin{ansblock}[拓-026]
+% ans:拓-026
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{26}{(1)\(0^{\circ}\)；(2)\(180^{\circ}\)；(3)\(90^{\circ}\)；(4)\(60^{\circ}\)；(5)\(150^{\circ}\)；(6)\(45^{\circ}\)}
+\end{ansblock}
+
+% 拓-027｜池T5（1.1.3.4-5）｜中（夹角反求组：单员）
+\tihao{27}\tieside{中}已知$\overrightarrow{a}=(1,0,0)$,$\overrightarrow{b}=(0,-1,1)$,若$\overrightarrow{a}+\lambda\overrightarrow{b}$与$\overrightarrow{b}$的夹角为120°,则$\lambda$的值为\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$\frac{\sqrt{6}}{6}$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$-\frac{\sqrt{6}}{6}$;}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$\pm\frac{\sqrt{6}}{6}$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$\pm\sqrt{6}$}}
+\begin{ansblock}[拓-027]
+% ans:拓-027
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{27}{B（\(\lambda=-\dfrac{\sqrt{6}}{6}\)）}
+\end{ansblock}
+
+% 拓-028｜F3·15｜中（综合链组：单员）｜图 t028_0.png
+\tihao{28}\tieside{中}棱长为2的正方体中,$E$,$F$分别是$DD_1$,$DB$的中点,$G$在棱$CD$上,且$CG=\frac{1}{3}CD$,$H$是$C_1G$的中点.
+\tu{t028_0.png}{38.0mm}
+(1)证明:$EF\perp B_1C$.
+(2)求$\cos\langle\overrightarrow{EF},\overrightarrow{C_1G}\rangle$.
+(3)求$FH$的长.
+\begin{ansblock}[拓-028]
+% ans:拓-028
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{28}{(1)证明见解析；(2)\(\dfrac{\sqrt{30}}{15}\)；(3)\(\dfrac{\sqrt{22}}{3}\)}
+\end{ansblock}
+
+% 拓-029｜1.1.3练习B·6｜简（平行垂直条件组：单员）
+\tihao{29}\tieside{简}已知$\overrightarrow{a}=(-2,x,5)$与$\overrightarrow{b}=(-8,y,0)$垂直,求$x$,$y$应满足的条件.
+\begin{ansblock}[拓-029]
+% ans:拓-029
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{29}{\(xy=-16\)}
+\end{ansblock}
+
+% 拓-030｜F7·3｜中（组合平行组：单员）
+\tihao{30}\tieside{中}已知$\overrightarrow{a}=(1,2,-y)$,$\overrightarrow{b}=(x,1,2)$,且$(\overrightarrow{a}+2\overrightarrow{b})\parallel(2\overrightarrow{a}-\overrightarrow{b})$,则\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$x=\frac{1}{3}$,$y=1$}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$x=\frac{1}{2}$,$y=-4$}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$x=2$,$y=-\frac{1}{4}$}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$x=1$,$y=-1$}}
+\begin{ansblock}[拓-030]
+% ans:拓-030
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{30}{B（\(x=\dfrac{1}{2}\)，\(y=-4\)）}
+\end{ansblock}
+
+\zu{投影组}
+% 拓-031｜F2·17｜中
+\tihao{31}\tieside{中}已知向量$\overrightarrow{a}$,$\overrightarrow{b}$满足$\overrightarrow{a}=(1,1,\sqrt{2})$,$|\overrightarrow{b}|=2$,且$|\overrightarrow{a}+\overrightarrow{b}|=\sqrt{3}|\overrightarrow{a}-\overrightarrow{b}|$.则$\overrightarrow{a}+\overrightarrow{b}$在$\overrightarrow{a}$上的投影向量的坐标为\kongbai.
+\begin{ansblock}[拓-031]
+% ans:拓-031
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{31}{\(\left(\dfrac{3}{2},\dfrac{3}{2},\dfrac{3\sqrt{2}}{2}\right)\)}
+\end{ansblock}
+
+% 拓-032｜p36 漏收⑫｜简
+\tihao{32}\tieside{简}已知$A(2,-5,1)$,$B(2,-2,4)$,$C(1,-4,1)$,求:
+(1)$\langle\overrightarrow{AB},\overrightarrow{AC}\rangle$;
+(2)$\overrightarrow{AC}$在$\overrightarrow{AB}$上的投影的数量.
+\begin{ansblock}[拓-032]
+% ans:拓-032
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{32}{(1)\(60^{\circ}\)；(2)\(\dfrac{\sqrt{2}}{2}\)}
+\end{ansblock}
+
+% 拓-033｜习题1—1A·6｜简（单位向量组：单员）
+\tihao{33}\tieside{简}分别求与$\overrightarrow{a}$方向相同的单位向量:
+(1)$\overrightarrow{a}=(2,-3,5)$;
+(2)$\overrightarrow{a}=(0,-3,4)$.
+\begin{ansblock}[拓-033]
+% ans:拓-033
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{33}{(1)\(\left(\dfrac{2}{\sqrt{38}},-\dfrac{3}{\sqrt{38}},\dfrac{5}{\sqrt{38}}\right)\)；(2)\(\left(0,-\dfrac{3}{5},\dfrac{4}{5}\right)\)}
+\end{ansblock}
+
+% 拓-034｜池T10（1.1.3.8-10）｜中（动点轨迹组：单员）
+\tihao{34}\tieside{中}在棱长为1的正方体$ABCD\text{-}A_1B_1C_1D_1$中,$P$是底面$ABCD$上(含边界)一动点,满足$A_1P\perp AC_1$,则线段$A_1P$长度的取值范围\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$[\frac{\sqrt{6}}{2},\sqrt{2}]$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$[\frac{\sqrt{6}}{2},\sqrt{3}]$;}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$[1,\sqrt{2}]$;}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$[\sqrt{2},\sqrt{3}]$}}
+\begin{ansblock}[拓-034]
+% ans:拓-034
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{34}{A（\(\left[\dfrac{\sqrt{6}}{2},\sqrt{2}\right]\)）}
+\end{ansblock}
+
+% 拓-035｜复习题B·2｜简（垂直条件组：单员）
+\tihao{35}\tieside{简}已知$\overrightarrow{a}=(1,1,0)$,$\overrightarrow{b}=(-1,0,2)$,且$k\overrightarrow{a}+\overrightarrow{b}$与$2\overrightarrow{a}-\overrightarrow{b}$互相垂直,求$k$的值.
+\begin{ansblock}[拓-035]
+% ans:拓-035
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{35}{\(k=\dfrac{7}{5}\)}
+\end{ansblock}
+
+% 拓-036｜复习题B·8｜简（坐标面交点组：单员）
+\tihao{36}\tieside{简}已知$O$为坐标原点,$OABC$是四面体,$A(0,3,5)$,$B(2,2,0)$,$C(0,5,0)$,直线$BD$与直线$CA$平行,并且与坐标平面$zOx$相交于点$D$,求点$D$的坐标.
+\begin{ansblock}[拓-036]
+% ans:拓-036
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{36}{\(D(2,0,5)\)}
+\end{ansblock}
+
+% 拓-037｜p36 漏收⑩｜中（存在性问×垂直坐标条件组：单员）
+\tihao{37}\tieside{中}已知点$A(2,3,-1)$,$B(8,-2,4)$,$C(3,0,5)$,是否存在实数$x$,使$\overrightarrow{AB}$与$\overrightarrow{AB}+x\overrightarrow{AC}$垂直?
+\begin{ansblock}[拓-037]
+% ans:拓-037
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{37}{存在，\(x=-\dfrac{86}{51}\)}
+\end{ansblock}
+
+\end{multicols}
+
+% ============================================================
+% 四、1.2.1 域（5 题）
+% ============================================================
+\jietitle{1.2.1　空间中的点、直线与空间向量}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\zu{异面直线所成角组}
+% 拓-038｜池1.2.1.5-6｜简
+\tihao{38}\tieside{简}已知正四棱柱$ABCD\text{-}A_1B_1C_1D_1$中,$AB=1$,$CC_1=2$,点$E$为$CC_1$的中点,则异面直线$AC_1$与$BE$所成的角等于\nobreak(　　)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A.30°;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B.45°;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C.60°;}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D.90°}}
+\begin{ansblock}[拓-038]
+% ans:拓-038
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{38}{A（\(30^{\circ}\)）}
+\end{ansblock}
+
+% 拓-039｜F2·26｜中｜图 t039_0.png
+\tihao{39}\tieside{中}如图,已知平行六面体$ABCD\text{-}A_1B_1C_1D_1$中,底面$ABCD$是边长为1的正方形,$AA_1=2$,$\angle A_1AB=\angle A_1AD=120°$.
+\tu{t039_0.png}{38.0mm}
+(1)求线段$AC_1$的长;
+(2)求异面直线$AC_1$与$A_1D$所成角的余弦值;
+\begin{ansblock}[拓-039]
+% ans:拓-039
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{39}{(1)\(\sqrt{2}\)；(2)\(\dfrac{\sqrt{14}}{7}\)}
+\end{ansblock}
+
+% 拓-040｜F5·15｜中｜图 t040_0.png（解析段构造图移用，缺图即不可读级）
+\tihao{40}\tieside{中}在《九章算术》中,将四个面都是直角三角形的四面体称为鳖\nao{},在鳖\nao{}$A\text{-}BCD$中,$AB\perp$平面$BCD$,$BC\perp CD$,且$AB=BC=CD$,$M$为$AD$的中点,则异面直线$BM$与$CD$夹角的余弦值为\nobreak(　　)
+\tu{t040_0.png}{38.0mm}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A.$\frac{\sqrt{2}}{3}$}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B.$\frac{\sqrt{3}}{4}$}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C.$\frac{\sqrt{3}}{3}$}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D.$\frac{\sqrt{2}}{4}$}}
+\begin{ansblock}[拓-040]
+% ans:拓-040
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{40}{C（\(\dfrac{\sqrt{3}}{3}\)）}
+\end{ansblock}
+
+% 拓-041｜池1.2.1.6-8｜中｜开放性条件探究组（单员不设行）｜图 t041_0.png
+% 转写登记：题面两处行内式小图目验文字化＝「MBD⊥」「PCD」
+\tihao{41}\tieside{中}如图,在四棱锥$P\text{-}ABCD$中,$PA\perp$底面$ABCD$且底面各边都相等,$M$是$PC$上一点, 当点$M$满足\kongbai{}时,平面$MBD\perp$平面$PCD$(只要填写一个你认为正确的条件即可)
+\tu{t041_0.png}{38.0mm}
+\begin{ansblock}[拓-041]
+% ans:拓-041
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{41}{\(\ov{DM}\perp\ov{PC}\)（或 \(\ov{BM}\perp\ov{PC}\)）}
+\end{ansblock}
+
+% 拓-042｜1.2.1练习B·5｜难（对棱垂直证明组：单员）
+\tihao{42}\tieside{难}已知空间四边形$ABCD$中,$AD\perp BC$,$AB\perp CD$,求证:$AC\perp BD$.
+\begin{ansblock}[拓-042]
+% ans:拓-042
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{42}{证明见解析}
+\end{ansblock}
+
+\end{multicols}
+
+% ============================================================
+% 五、1.2.2 域（8 题）
+% ============================================================
+\jietitle{1.2.2　空间中的平面与空间向量}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% 拓-043｜池1.2.2.5-5｜中（存在性·含参多选组：单员）｜图 t043_0.png
+\tihao{43}\tieside{中}如图,在三棱柱$ABC\text{-}A_1B_1C_1$中,侧棱$AA_1\perp$底面$A_1B_1C_1$,$\angle BAC=90°$,$AB=AC=AA_1=1$,$D$是棱$CC_1$的中点,$P$是$AD$的延长线与$A_1C_1$的延长线的交点.若点$Q$在直线$B_1P$上,则下列结论错误的是\nobreak(　　).
+\tu{t043_0.png}{38.0mm}
+\lxopt{A.当$Q$为线段$B_1P$的中点时,$DQ\perp$平面$A_1BD$}
+\lxopt{B.当$Q$为线段$B_1P$的三等分点时,$DQ\perp$平面$A_1BD$}
+\lxopt{C.在线段$B_1P$的延长线上,存在一点$Q$,使得$DQ\perp$平面$A_1BD$}
+\lxopt{D.不存在点$Q$,使$DQ$与平面$A_1BD$垂直}
+\begin{ansblock}[拓-043]
+% ans:拓-043
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{43}{ABC（错误结论为 A、B、C）}
+\end{ansblock}
+
+% 拓-044｜F6·13｜中（综合法证明组：单员）｜图 t044_0.png
+\tihao{44}\tieside{中}如图,在三棱锥$A\text{-}BCD$中,$AB\perp AD$,$BC\perp BD$,平面$ABD\perp$平面$BCD$.
+\tu{t044_0.png}{38.0mm}
+(1)求证:$AD\perp AC$;
+(2)已知$DE=2EA$,$DF=2FC$,则棱$BD$上是否存在点$G$,使得平面$EFG\parallel$平面$ABC$?若存在,确定点$G$的位置;若不存在,请说明理由.
+\begin{ansblock}[拓-044]
+% ans:拓-044
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{44}{(1)证明见解析；(2)存在，\(\ov{DG}=2\ov{GB}\)}
+\end{ansblock}
+
+% 拓-045｜F7·10｜中偏上（截面＋点面距复合多选组：单员）｜图 t045_0.png
+\tihao{45}\tieside{中偏上}正方体$ABCD\text{-}A_1B_1C_1D_1$的棱长为1,$E$,$F$,$G$分别为$BC$,$CC_1$,$BB_1$的中点.则\nobreak(\kongwei)
+\tu{t045_0.png}{38.0mm}
+\lxopt{A.直线$D_1D$与直线$AF$垂直}
+\lxopt{B.直线$A_1G$与平面$AEF$平行}
+\lxopt{C.平面$AEF$截正方体所得的截面面积为$\frac{9}{8}$}
+\lxopt{D.点$C$与点$G$到平面$AEF$的距离相等}
+\begin{ansblock}[拓-045]
+% ans:拓-045
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{45}{BC}
+\end{ansblock}
+
+\zu{线面垂直·综合法证明组}
+% 拓-046｜1.2.2练习B·4｜中｜占位
+\tihao{46}\tieside{中}已知四棱锥$P\text{-}ABCD$的底面$ABCD$是平行四边形,且$PA\perp$底面$ABCD$,如果$BC\perp PB$,求证:$ABCD$是矩形.
+\begin{ansblock}[拓-046]
+% ans:拓-046
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{46}{证明见解析}
+\end{ansblock}
+
+% 拓-047｜1.2.2练习B·5｜中｜占位
+\tihao{47}\tieside{中}已知$\triangle ABC$中,$AC=BC$,$D$为$AB$的中点,$O$为$CD$上一点,$PO\perp$平面$ABC$,求证:$AB\perp PC$.
+\begin{ansblock}[拓-047]
+% ans:拓-047
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{47}{证明见解析}
+\end{ansblock}
+
+% 拓-048｜F7·11｜难（位置关系综合判定组：单员）｜图 t048_0.png
+\tihao{48}\tieside{难}如图,在长方体$ABCD\text{-}A_1B_1C_1D_1$,$AB=\sqrt{3}AD=\sqrt{3}AA_1=\sqrt{3}$,点$P$为线段$A_1C$上的动点,则下列结论正确的是\nobreak(　　)
+\tu{t048_0.png}{38.0mm}
+\lxopt{A.当$A_1C=2A_1P$时,$B_1$,$P$,$D$三点共线}
+\lxopt{B.当$AP\perp A_1C$时,$AP\perp D_1P$}
+\lxopt{C.当$A_1C=3A_1P$时,$D_1P\parallel$平面$BDC_1$}
+\lxopt{D.当$A_1C=5A_1P$时,$A_1C\perp$平面$D_1AP$}
+\begin{ansblock}[拓-048]
+% ans:拓-048
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{48}{ACD}
+\end{ansblock}
+
+% 拓-049｜习题1—2C·2｜难（线面平行＋线面距组：单员）
+\tihao{49}\tieside{难}已知正方体$ABCD\text{-}A'B'C'D'$中,$E$为$A'B'$的中点,$F$为$CD$的中点.
+(1)求证:$BE\parallel$平面$A'FD'$;
+(2)若正方体的棱长为1,求$BE$到平面$A'FD'$的距离.
+\begin{ansblock}[拓-049]
+% ans:拓-049
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{49}{(1)证明见解析（\(n=(0,2,1)\)）；(2)\(\dfrac{\sqrt{5}}{5}\)}
+\end{ansblock}
+
+% 拓-050｜F6·5｜中（动点轨迹组：单员；真域 1.1.3 注）｜图 t050_0.png
+\tihao{50}\tieside{中}如图,在棱长为6的正方体$ABCD\text{-}A_1B_1C_1D_1$中,$E$,$F$,$G$,$H$分别为棱$CC_1$,$C_1D_1$,$DD_1$,$DC$的中点,点$M$在四边形$EFGH$及其内部运动,$N$是棱$BC$上的点.当$\frac{BN}{NC}=$\kongbai{}时(在线上填入确定的常数),若$MN\perp A_1C_1$,则动点$M$的轨迹长为\kongbai{}(填写一组关系即可).
+\tu{t050_0.png}{38.0mm}
+\begin{ansblock}[拓-050]
+% ans:拓-050
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{50}{\(\ov{BN}/\ov{NC}=1\)，轨迹长 \(6\)（答案不唯一，\(k=2\) 时长 \(4\) 亦可）}
+\end{ansblock}
+
+\end{multicols}
+
+% ============================================================
+% 六、1.2.3 域（8 题）
+% ============================================================
+\jietitle{1.2.3　直线与平面的夹角}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\zu{折叠族}
+% 拓-051｜池1.2.3.2.3-4｜中｜图 t051_0.png t051_1.png（翻折前后双图）
+\tihao{51}\tieside{中}如下图所示,矩形$ABCD$中,$AB=2\sqrt{2}$,$AD=2$,沿$BD$将$\triangle BCD$折起,使得点$C$在平面$ABD$上的射影落在$AB$上,则直线$BC$与平面$ABD$所成的角为\kongbai.
+\tu{t051_0.png}{38.0mm}
+\tu{t051_1.png}{38.0mm}
+\begin{ansblock}[拓-051]
+% ans:拓-051
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{51}{\(45^{\circ}\)}
+\end{ansblock}
+
+% 拓-052｜池1.2.3.2.4-5｜中（平行六面体棱长最值组：单员）｜图 t052_0.png
+\tihao{52}\tieside{中}平行六面体$ABCD\text{-}A_1B_1C_1D_1$中,已知底面四边形$ABCD$为正方形,$\angle A_1AB=\angle A_1AD=\frac{\pi}{3}$,其中$AB=a$,$AA_1=b$,体对角线$A_1C=1$,则$b$的最大值为\kongbai.
+\tu{t052_0.png}{38.0mm}
+\begin{ansblock}[拓-052]
+% ans:拓-052
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{52}{\(\sqrt{2}\)}
+\end{ansblock}
+
+% 拓-053｜池1.2.3.2.5-6｜中（折叠族第二员，组名行随拓-051）｜图 t053_0.png
+\tihao{53}\tieside{中}如图,在长方形$ABCD$中,$AB=2$,$BC=1$,$E$为$DC$的中点,$F$为线段$EC$(端点除外)上一动点,现将$\triangle AFD$沿$AF$折起,使平面$ABD\perp$平面$ABC$,在平面$ABD$内过点$D$作$DK\perp AB$,$K$为垂足,设$AK=t$,则$t$的取值范围是\kongbai.
+\tu{t053_0.png}{38.0mm}
+\begin{ansblock}[拓-053]
+% ans:拓-053
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{53}{\(\left(\dfrac{1}{4},\dfrac{1}{2}\right)\)}
+\end{ansblock}
+
+% 拓-054｜F6·9｜中（三棱柱开放条件组：单员）｜图 t054_0.png
+\tihao{54}\tieside{中}如图,在三棱柱$ABC\text{-}A_1B_1C_1$中,四边形$AA_1C_1C$是边长为4的菱形,$AB=BC=\sqrt{13}$,点$D$为棱$AC$上动点(不与$A$,$C$重合),平面$B_1BD$与棱$A_1C_1$交于点$E$.
+\tu{t054_0.png}{38.0mm}
+(1)求证:$BB_1\parallel DE$;
+(2)若$\frac{AD}{AC}=\frac{3}{4}$,从条件①、条件②、条件③这三个条件中选择两个条件作为已知,求直线$AB$与平面$B_1BDE$所成角的正弦值.条件①:平面$ABC\perp$平面$AA_1C_1C$;条件②:$\angle A_1AC=60°$;条件③:$A_1B=\sqrt{21}$.
+\begin{ansblock}[拓-054]
+% ans:拓-054
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{54}{(1)证明见解析；(2)\(\dfrac{9}{13}\)}
+\end{ansblock}
+
+% 拓-055｜1.2.3练习B·1｜中（体对角线三面角组：单员）
+\tihao{55}\tieside{中}已知$ABCD\text{-}A_1B_1C_1D_1$是正方体,找出体对角线$BD_1$分别与平面$ABCD$、平面$ABB_1A_1$、平面$BCC_1B_1$所成的角,并求这些角的余弦值.
+\begin{ansblock}[拓-055]
+% ans:拓-055
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{55}{三面所成角均为 \(\arccos\dfrac{\sqrt{6}}{3}\)（余弦值均 \(\dfrac{\sqrt{6}}{3}\)）}
+\end{ansblock}
+
+% 拓-056｜1.2.3练习B·2｜中（三余弦直用组：单员）
+\tihao{56}\tieside{中}已知$l$是平面$\alpha$内的一条直线,$m$是平面$\alpha$的一条斜线,且$m$在平面$\alpha$内的射影为$m'$,若$l$与$m$的夹角为60°,$l$与$m'$的夹角为45°,求$m$与平面$\alpha$所成角的大小.
+\begin{ansblock}[拓-056]
+% ans:拓-056
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{56}{\(45^{\circ}\)}
+\end{ansblock}
+
+% 拓-057｜习题1—2C·4｜整题撤重（装配轮 2026-09-12，批3 §四-13③）：同文已籍练习件课时10 #14，
+%           答案册拓展域无 057 键（057 撤下哨兵）；号位跳空保留对号，不重编号。
+
+% 拓-058｜复习题B·9｜难（三面角线面角组：单员）｜占位
+\tihao{58}\tieside{难}已知三个平面$AOB$,$BOC$,$AOC$相交于点$O$,且$\angle AOB=\angle BOC=\angle AOC=60°$,求直线$OA$与平面$BOC$所成角的余弦值.
+\begin{ansblock}[拓-058]
+% ans:拓-058
+\setlength{\anshang}{7.6mm}% 拓-三位号＝双位档起（照答案册同值，块内局部）
+\ansitem{58}{\(\dfrac{\sqrt{3}}{3}\)}
+\end{ansblock}
+
+\end{multicols}
+
+\tailfill
+\end{document}

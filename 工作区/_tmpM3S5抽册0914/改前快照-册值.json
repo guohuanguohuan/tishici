@@ -1,0 +1,365 @@
+{
+ "导学件-衔接节": {
+  "快照sha256": "5b0fdea6e0d401bc67d6fb6303208b9479d07aebe87d84eb2aed1fcdabcf1875",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "PDF[true]：[答案] 计数＝27",
+   "PDF[true]：号序≡正册true号序（逐位＝同序同号印面证）",
+   "PDF[true]：号序≡1..27 连号",
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：[答案] 计数＝27",
+   "PDF[false]：号序≡正册true号序（逐位＝同序同号印面证）",
+   "PDF[false]：号序≡1..27 连号",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 27,
+  "门读数行数": 38
+ },
+ "导学件-课时01": {
+  "快照sha256": "2ba20638d2c656915d8f6f76a37773558e998f3be410aea66b56bc26beb75841",
+  "红": [],
+  "键数": 23,
+  "门读数行数": 38
+ },
+ "导学件-课时02": {
+  "快照sha256": "bca8e8b9deffc86584b175babd7cbbef609365c33ec1cb2c3f1eaecde40b760a",
+  "红": [
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 25,
+  "门读数行数": 38
+ },
+ "导学件-课时03": {
+  "快照sha256": "553674e55aba52e5a791f25e0cb1eb3371a94a46fdb9569d6c096913c693497d",
+  "红": [],
+  "键数": 21,
+  "门读数行数": 38
+ },
+ "导学件-课时04": {
+  "快照sha256": "9f9813f22e5f0dfe8398162e3f99b45f665cde79ffe0560292b18178c551b39c",
+  "红": [],
+  "键数": 22,
+  "门读数行数": 38
+ },
+ "导学件-课时05": {
+  "快照sha256": "23d12b24165948dcd2798457949b2a4b98a1df2118aa5225a3e2d5872dec00fc",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 24,
+  "门读数行数": 38
+ },
+ "导学件-课时06": {
+  "快照sha256": "d51dd7af958c3e6eaaa6fab3ba8f820b9e35060ca6499ccc89caf01ea1d7102f",
+  "红": [
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 21,
+  "门读数行数": 38
+ },
+ "导学件-课时06B": {
+  "快照sha256": "aef5a6188be95de4c279951000ef33076df1e3081164b95e36b1279b232207b7",
+  "红": [
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 21,
+  "门读数行数": 36
+ },
+ "导学件-课时07": {
+  "快照sha256": "ff20d56c42efe3dcfe5678ee2dbdbe2092d02a957146b28d556907c5c11d7b0a",
+  "红": [
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 21,
+  "门读数行数": 36
+ },
+ "导学件-课时08": {
+  "快照sha256": "31b5710657e423cddc84f62cfa347b30ccf8a91bcfa873e900ac94f717fd2595",
+  "红": [
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 21,
+  "门读数行数": 36
+ },
+ "导学件-课时09": {
+  "快照sha256": "a86347e0612be8cbe0256dddc0ca09985ff1bb1c3c86ac2dcebf616ebd33bf96",
+  "红": [
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 21,
+  "门读数行数": 38
+ },
+ "导学件-课时10": {
+  "快照sha256": "287630768df4f8e0585c10ae51c1946898346d749cca468522f43212efcb01df",
+  "红": [],
+  "键数": 21,
+  "门读数行数": 38
+ },
+ "导学件-课时11": {
+  "快照sha256": "da8025066e19e8e99b15a18dff4622b6f8bc57b53e23a9e422e23a48199cbda7",
+  "红": [],
+  "键数": 21,
+  "门读数行数": 38
+ },
+ "导学件-课时12": {
+  "快照sha256": "a821a4bd8ad581c437375508f205ca459ba76fbdaec60a02ee564a84148d5147",
+  "红": [],
+  "键数": 21,
+  "门读数行数": 38
+ },
+ "导学件-课时13": {
+  "快照sha256": "26f4af4851c6b708f13eaf90aee34232fb5dac8af94107401b4351006738ddc3",
+  "红": [
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 21,
+  "门读数行数": 38
+ },
+ "导学件-课时14": {
+  "快照sha256": "5b486434f5f80525c68bcf46cf0d12c2d8e384036b11f21f6f432c679ef6554c",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 71,
+  "门读数行数": 38
+ },
+ "导学件-课时15": {
+  "快照sha256": "d91a9605fcd7e6d1b21e5e3d26eacf3ebbbf1044fdb7e7376c4fa5ade17c863f",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 36,
+  "门读数行数": 38
+ },
+ "导学件-课时16": {
+  "快照sha256": "dd93d37407270b95b5728a42325015c4fd4dd7bae8e6d37487e90f3b35fafac1",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 50,
+  "门读数行数": 38
+ },
+ "导学件-课时17": {
+  "快照sha256": "6d4e76ebc0ba6794fd3c3b199cf51c9e1ce408693caa6d816295dc950bb42bf3",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "PDF[true]：号序≡正册true号序（逐位＝同序同号印面证）",
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：号序≡正册true号序（逐位＝同序同号印面证）",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 42,
+  "门读数行数": 38
+ },
+ "导学件-课时18": {
+  "快照sha256": "3f024bb80504a3cfcc6ce735c93dc13ca854fcbf6a4186b96fca39fce5b268c3",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 21,
+  "门读数行数": 38
+ },
+ "导学件-课时19": {
+  "快照sha256": "b3c587c157e5fe58dd67359d197dcc604464628b99b1378d67b7bd9e0a8fce13",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 21,
+  "门读数行数": 36
+ },
+ "练习件-衔接节": {
+  "快照sha256": "d85817853d58571b202a2fc8dac70a105bd1c4a0b3126ee7f6feb29edddd1c23",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "PDF[true]：[答案] 计数＝16",
+   "PDF[true]：号序≡正册true号序（逐位＝同序同号印面证）",
+   "PDF[true]：号序≡1..16 连号",
+   "PDF[false]：[答案] 计数＝16",
+   "PDF[false]：号序≡正册true号序（逐位＝同序同号印面证）",
+   "PDF[false]：号序≡1..16 连号"
+  ],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时01": {
+  "快照sha256": "1f8861491594e551d69a579f7938477fee6326072bea792473287a065f2d3754",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时02": {
+  "快照sha256": "ca1101c288ebb0745da3b3a9e29218cc9b02e84c77be7457e583ff4fb95a274b",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时03": {
+  "快照sha256": "4fa2e5e075052566aff4774e546fa78b8598e71ac3eac928fd0c07e3899fd76a",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时04": {
+  "快照sha256": "a44d6203913b8b64feae1cdf0535d2006f2c11970c98348de6c0156c3ec9a25b",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时05": {
+  "快照sha256": "6b73326ae14354d304233d5df120c2ef50c790ef8f3c991a717d1dab33127957",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时06": {
+  "快照sha256": "256c1f9cb262b15b245fb6297a33a7a89cbe4db57b95ce8635196cdc301b12f4",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时06B": {
+  "快照sha256": "974867e43271f5b13dbc8e73e77b8412dcf9b535af39ea0b72790a9ad1dedf39",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 36
+ },
+ "练习件-课时07": {
+  "快照sha256": "ede00004883196f62ea1e25eef77014bbbeb8ce3aa455ef36a56e077bc87cca7",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时08": {
+  "快照sha256": "633ece311db2f71e4b04660cd2570006fde2e299834c0f7ad0a75c6a7c1be65a",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时09": {
+  "快照sha256": "d660286f66b40eaa5731b990aff8e1c329318f0d17a3cf586fc0953272e1850b",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时10": {
+  "快照sha256": "c0f7093bcceb7099413a207c500c75dcd5c28cdaecca279d7b8e145d21fe7592",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时11": {
+  "快照sha256": "8715c9543d6a8eadc33a4865913aa6ca6555b4354e9aff95f367bcfba688d054",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时12": {
+  "快照sha256": "2a75f91381a0bd2656d2679847cff44fb05402e1382086e09f4c001cee9ac497",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时13": {
+  "快照sha256": "dcfa4e452939ccf86322f1b89962762a5125edb78b73b890b9fd526aa4fbaae9",
+  "红": [
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时14": {
+  "快照sha256": "3de741947ee4eba41d39d0687059e7b384f10deda735dedd17782f51f7865ecc",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时15": {
+  "快照sha256": "5812d01af844d7c9e7b5b556d4faeefac08fc60e7051d048cdc21abe3317d869",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时16": {
+  "快照sha256": "562d0ac5b2dd6c6894711cda4749fe8d8a900ef9740b5cef3f459dd3a0ab1354",
+  "红": [],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时17": {
+  "快照sha256": "ccda576ba34b46a73a984476f6e0aeed5aee07a28bc947dc2fe4b7f13bb1c974",
+  "红": [
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时18": {
+  "快照sha256": "c05ebdc767dcff12f8a5b6c9947cae6804dcc6939780d8a102cdc89effed7893",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0"
+  ],
+  "键数": 16,
+  "门读数行数": 38
+ },
+ "练习件-课时19": {
+  "快照sha256": "3ce9f201583b4fc7288184c9c3abda7bdf6e319f61fe7f897256c46c91a27920",
+  "红": [
+   "三零[true#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[true#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#1]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "三零[false#2]：error/Overfull/Underfull/Missing＝0/0/0/0 且 exit=0",
+   "PDF[true]：逐键值印面在册（空白归一＋NFKC折形）",
+   "PDF[false]：逐键值印面在册（空白归一＋NFKC折形）"
+  ],
+  "键数": 16,
+  "门读数行数": 38
+ }
+}

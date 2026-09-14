@@ -1,0 +1,607 @@
+{
+ "sty_md5": {
+  "qp-m3": "7c3930362be8a0a2bdf21bbf8ac16573",
+  "overlay-v0.2": "94ca406ee6a7c89a188e20d63b2d095a",
+  "overlay-v0.1": "da54d841927284052336cf9709ff6fb2"
+ },
+ "chains": {
+  "true": {
+   "M2": 102,
+   "P1": 51
+  },
+  "false": {
+   "M2": 82,
+   "P1": 40
+  }
+ },
+ "modes": {
+  "true": {
+   "books": [
+    {
+     "book": "M2导学本",
+     "chain": "M2",
+     "pdf": "true/M2导学本.pdf",
+     "start": 1,
+     "pieces": [
+      {
+       "rel": "衔接节-1.2.1前",
+       "disp": "衔接（1.2.1 前）",
+       "mark": "衔接节-1.2.1前",
+       "start": 1,
+       "pages": 5
+      },
+      {
+       "rel": "课时01",
+       "disp": "第1课时",
+       "mark": "课时01",
+       "start": 6,
+       "pages": 4
+      },
+      {
+       "rel": "课时02",
+       "disp": "第2课时",
+       "mark": "课时02",
+       "start": 10,
+       "pages": 3
+      },
+      {
+       "rel": "课时03",
+       "disp": "第3课时",
+       "mark": "课时03",
+       "start": 13,
+       "pages": 3
+      },
+      {
+       "rel": "课时04",
+       "disp": "第4课时",
+       "mark": "课时04",
+       "start": 16,
+       "pages": 4
+      },
+      {
+       "rel": "课时05",
+       "disp": "第5课时",
+       "mark": "课时05",
+       "start": 20,
+       "pages": 4
+      },
+      {
+       "rel": "课时06",
+       "disp": "第6课时",
+       "mark": "课时06",
+       "start": 24,
+       "pages": 4
+      },
+      {
+       "rel": "课时07",
+       "disp": "第7课时",
+       "mark": "课时07",
+       "start": 28,
+       "pages": 4
+      },
+      {
+       "rel": "课时08",
+       "disp": "第8课时",
+       "mark": "课时08",
+       "start": 32,
+       "pages": 4
+      },
+      {
+       "rel": "课时09",
+       "disp": "第9课时",
+       "mark": "课时09",
+       "start": 36,
+       "pages": 4
+      },
+      {
+       "rel": "课时10",
+       "disp": "第10课时",
+       "mark": "课时10",
+       "start": 40,
+       "pages": 4
+      },
+      {
+       "rel": "章末-本章总结提升",
+       "disp": "章末·本章总结提升",
+       "mark": "章末-本章总结提升",
+       "start": 44,
+       "pages": 8
+      }
+     ],
+     "bookmarks": 12,
+     "pages": 51
+    },
+    {
+     "book": "M2练习本",
+     "chain": "M2",
+     "pdf": "true/M2练习本.pdf",
+     "start": 52,
+     "pieces": [
+      {
+       "rel": "课时01",
+       "disp": "第1课时 配套练习",
+       "mark": "课时01",
+       "start": 52,
+       "pages": 3
+      },
+      {
+       "rel": "课时02",
+       "disp": "第2课时 配套练习",
+       "mark": "课时02",
+       "start": 55,
+       "pages": 2
+      },
+      {
+       "rel": "课时03",
+       "disp": "第3课时 配套练习",
+       "mark": "课时03",
+       "start": 57,
+       "pages": 3
+      },
+      {
+       "rel": "课时04",
+       "disp": "第4课时 配套练习",
+       "mark": "课时04",
+       "start": 60,
+       "pages": 3
+      },
+      {
+       "rel": "课时05",
+       "disp": "第5课时 配套练习",
+       "mark": "课时05",
+       "start": 63,
+       "pages": 3
+      },
+      {
+       "rel": "课时06",
+       "disp": "第6课时 配套练习",
+       "mark": "课时06",
+       "start": 66,
+       "pages": 3
+      },
+      {
+       "rel": "课时07",
+       "disp": "第7课时 配套练习",
+       "mark": "课时07",
+       "start": 69,
+       "pages": 3
+      },
+      {
+       "rel": "课时08",
+       "disp": "第8课时 配套练习",
+       "mark": "课时08",
+       "start": 72,
+       "pages": 3
+      },
+      {
+       "rel": "课时09",
+       "disp": "第9课时 配套练习",
+       "mark": "课时09",
+       "start": 75,
+       "pages": 3
+      },
+      {
+       "rel": "课时10",
+       "disp": "第10课时 配套练习",
+       "mark": "课时10",
+       "start": 78,
+       "pages": 3
+      },
+      {
+       "rel": "上册",
+       "disp": "拓展册·上册（1.1.1~1.2.3）",
+       "mark": "上册",
+       "start": 81,
+       "pages": 6
+      },
+      {
+       "rel": "下册",
+       "disp": "拓展册·下册（1.2.4~1.2.5）",
+       "mark": "下册",
+       "start": 87,
+       "pages": 15
+      }
+     ],
+     "bookmarks": 12,
+     "pages": 50
+    },
+    {
+     "book": "P1导学本",
+     "chain": "P1",
+     "pdf": "true/P1导学本.pdf",
+     "start": 1,
+     "pieces": [
+      {
+       "rel": "9.1电荷",
+       "disp": "9.1 电荷",
+       "mark": "9.1电荷",
+       "start": 1,
+       "pages": 4
+      },
+      {
+       "rel": "9.2库仑定律",
+       "disp": "9.2 库仑定律",
+       "mark": "9.2库仑定律",
+       "start": 5,
+       "pages": 4
+      },
+      {
+       "rel": "9.3电场电场强度",
+       "disp": "9.3 电场 电场强度",
+       "mark": "9.3电场电场强度",
+       "start": 9,
+       "pages": 4
+      },
+      {
+       "rel": "9.4静电的防止与利用",
+       "disp": "9.4 静电的防止与利用",
+       "mark": "9.4静电的防止与利用",
+       "start": 13,
+       "pages": 4
+      },
+      {
+       "rel": "章末-本章易错过关",
+       "disp": "章末·本章易错过关",
+       "mark": "章末-本章易错过关",
+       "start": 17,
+       "pages": 3
+      }
+     ],
+     "bookmarks": 5,
+     "pages": 19
+    },
+    {
+     "book": "P1练习本",
+     "chain": "P1",
+     "pdf": "true/P1练习本.pdf",
+     "start": 20,
+     "pieces": [
+      {
+       "rel": "9.1电荷",
+       "disp": "9.1 配套练习",
+       "mark": "9.1电荷",
+       "start": 20,
+       "pages": 6
+      },
+      {
+       "rel": "9.2库仑定律",
+       "disp": "9.2 配套练习",
+       "mark": "9.2库仑定律",
+       "start": 26,
+       "pages": 5
+      },
+      {
+       "rel": "9.3电场电场强度",
+       "disp": "9.3 配套练习",
+       "mark": "9.3电场电场强度",
+       "start": 31,
+       "pages": 4
+      },
+      {
+       "rel": "9.4静电的防止与利用",
+       "disp": "9.4 配套练习",
+       "mark": "9.4静电的防止与利用",
+       "start": 35,
+       "pages": 5
+      }
+     ],
+     "bookmarks": 4,
+     "pages": 20
+    },
+    {
+     "book": "P1拓展本",
+     "chain": "P1",
+     "pdf": "true/P1拓展本.pdf",
+     "start": 40,
+     "pieces": [
+      {
+       "rel": "拓展册",
+       "disp": "拓展册（第9章 静电场及其应用）",
+       "mark": "拓展册",
+       "start": 40,
+       "pages": 11
+      }
+     ],
+     "bookmarks": 1,
+     "pages": 11
+    }
+   ],
+   "total_pages": 151,
+   "total_bookmarks": 34
+  },
+  "false": {
+   "books": [
+    {
+     "book": "M2导学本",
+     "chain": "M2",
+     "pdf": "false/M2导学本.pdf",
+     "start": 1,
+     "pieces": [
+      {
+       "rel": "衔接节-1.2.1前",
+       "disp": "衔接（1.2.1 前）",
+       "mark": "衔接节-1.2.1前",
+       "start": 1,
+       "pages": 4
+      },
+      {
+       "rel": "课时01",
+       "disp": "第1课时",
+       "mark": "课时01",
+       "start": 5,
+       "pages": 3
+      },
+      {
+       "rel": "课时02",
+       "disp": "第2课时",
+       "mark": "课时02",
+       "start": 8,
+       "pages": 3
+      },
+      {
+       "rel": "课时03",
+       "disp": "第3课时",
+       "mark": "课时03",
+       "start": 11,
+       "pages": 3
+      },
+      {
+       "rel": "课时04",
+       "disp": "第4课时",
+       "mark": "课时04",
+       "start": 14,
+       "pages": 3
+      },
+      {
+       "rel": "课时05",
+       "disp": "第5课时",
+       "mark": "课时05",
+       "start": 17,
+       "pages": 3
+      },
+      {
+       "rel": "课时06",
+       "disp": "第6课时",
+       "mark": "课时06",
+       "start": 20,
+       "pages": 3
+      },
+      {
+       "rel": "课时07",
+       "disp": "第7课时",
+       "mark": "课时07",
+       "start": 23,
+       "pages": 3
+      },
+      {
+       "rel": "课时08",
+       "disp": "第8课时",
+       "mark": "课时08",
+       "start": 26,
+       "pages": 3
+      },
+      {
+       "rel": "课时09",
+       "disp": "第9课时",
+       "mark": "课时09",
+       "start": 29,
+       "pages": 3
+      },
+      {
+       "rel": "课时10",
+       "disp": "第10课时",
+       "mark": "课时10",
+       "start": 32,
+       "pages": 3
+      },
+      {
+       "rel": "章末-本章总结提升",
+       "disp": "章末·本章总结提升",
+       "mark": "章末-本章总结提升",
+       "start": 35,
+       "pages": 6
+      }
+     ],
+     "bookmarks": 12,
+     "pages": 40
+    },
+    {
+     "book": "M2练习本",
+     "chain": "M2",
+     "pdf": "false/M2练习本.pdf",
+     "start": 41,
+     "pieces": [
+      {
+       "rel": "课时01",
+       "disp": "第1课时 配套练习",
+       "mark": "课时01",
+       "start": 41,
+       "pages": 2
+      },
+      {
+       "rel": "课时02",
+       "disp": "第2课时 配套练习",
+       "mark": "课时02",
+       "start": 43,
+       "pages": 2
+      },
+      {
+       "rel": "课时03",
+       "disp": "第3课时 配套练习",
+       "mark": "课时03",
+       "start": 45,
+       "pages": 2
+      },
+      {
+       "rel": "课时04",
+       "disp": "第4课时 配套练习",
+       "mark": "课时04",
+       "start": 47,
+       "pages": 3
+      },
+      {
+       "rel": "课时05",
+       "disp": "第5课时 配套练习",
+       "mark": "课时05",
+       "start": 50,
+       "pages": 2
+      },
+      {
+       "rel": "课时06",
+       "disp": "第6课时 配套练习",
+       "mark": "课时06",
+       "start": 52,
+       "pages": 2
+      },
+      {
+       "rel": "课时07",
+       "disp": "第7课时 配套练习",
+       "mark": "课时07",
+       "start": 54,
+       "pages": 3
+      },
+      {
+       "rel": "课时08",
+       "disp": "第8课时 配套练习",
+       "mark": "课时08",
+       "start": 57,
+       "pages": 2
+      },
+      {
+       "rel": "课时09",
+       "disp": "第9课时 配套练习",
+       "mark": "课时09",
+       "start": 59,
+       "pages": 3
+      },
+      {
+       "rel": "课时10",
+       "disp": "第10课时 配套练习",
+       "mark": "课时10",
+       "start": 62,
+       "pages": 3
+      },
+      {
+       "rel": "上册",
+       "disp": "拓展册·上册（1.1.1~1.2.3）",
+       "mark": "上册",
+       "start": 65,
+       "pages": 5
+      },
+      {
+       "rel": "下册",
+       "disp": "拓展册·下册（1.2.4~1.2.5）",
+       "mark": "下册",
+       "start": 70,
+       "pages": 12
+      }
+     ],
+     "bookmarks": 12,
+     "pages": 41
+    },
+    {
+     "book": "P1导学本",
+     "chain": "P1",
+     "pdf": "false/P1导学本.pdf",
+     "start": 1,
+     "pieces": [
+      {
+       "rel": "9.1电荷",
+       "disp": "9.1 电荷",
+       "mark": "9.1电荷",
+       "start": 1,
+       "pages": 3
+      },
+      {
+       "rel": "9.2库仑定律",
+       "disp": "9.2 库仑定律",
+       "mark": "9.2库仑定律",
+       "start": 4,
+       "pages": 3
+      },
+      {
+       "rel": "9.3电场电场强度",
+       "disp": "9.3 电场 电场强度",
+       "mark": "9.3电场电场强度",
+       "start": 7,
+       "pages": 3
+      },
+      {
+       "rel": "9.4静电的防止与利用",
+       "disp": "9.4 静电的防止与利用",
+       "mark": "9.4静电的防止与利用",
+       "start": 10,
+       "pages": 4
+      },
+      {
+       "rel": "章末-本章易错过关",
+       "disp": "章末·本章易错过关",
+       "mark": "章末-本章易错过关",
+       "start": 14,
+       "pages": 2
+      }
+     ],
+     "bookmarks": 5,
+     "pages": 15
+    },
+    {
+     "book": "P1练习本",
+     "chain": "P1",
+     "pdf": "false/P1练习本.pdf",
+     "start": 16,
+     "pieces": [
+      {
+       "rel": "9.1电荷",
+       "disp": "9.1 配套练习",
+       "mark": "9.1电荷",
+       "start": 16,
+       "pages": 3
+      },
+      {
+       "rel": "9.2库仑定律",
+       "disp": "9.2 配套练习",
+       "mark": "9.2库仑定律",
+       "start": 19,
+       "pages": 4
+      },
+      {
+       "rel": "9.3电场电场强度",
+       "disp": "9.3 配套练习",
+       "mark": "9.3电场电场强度",
+       "start": 23,
+       "pages": 4
+      },
+      {
+       "rel": "9.4静电的防止与利用",
+       "disp": "9.4 配套练习",
+       "mark": "9.4静电的防止与利用",
+       "start": 27,
+       "pages": 3
+      }
+     ],
+     "bookmarks": 4,
+     "pages": 14
+    },
+    {
+     "book": "P1拓展本",
+     "chain": "P1",
+     "pdf": "false/P1拓展本.pdf",
+     "start": 30,
+     "pieces": [
+      {
+       "rel": "拓展册",
+       "disp": "拓展册（第9章 静电场及其应用）",
+       "mark": "拓展册",
+       "start": 30,
+       "pages": 10
+      }
+     ],
+     "bookmarks": 1,
+     "pages": 10
+    }
+   ],
+   "total_pages": 120,
+   "total_bookmarks": 34
+  }
+ }
+}

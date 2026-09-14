@@ -1,0 +1,221 @@
+% ============================================================
+% M3 S3 练习件·W1 臂C 片件 —— 课时06B 点到直线距离与平行线距离（2.2.4·选学补位）
+% 生成：M3 成卷轮 S3 W1 臂C｜2026-09-14｜编译 cwd＝本目录（中文路径禁 \input 绝对路径）
+%   xelatex main-true.tex ×2 → 含详解印本；xelatex main-false.tex ×2 → 纯题版（单源双本）
+% 输入链（全只读）：题面库 课时06B-2.2.4点到直线距离.md（题面逐字装配）＋ -答案侧.md（值逐字回嵌）
+%   ＋ 定稿/批B补-课时06B-2.2.4 点到直线距离.md（详解回嵌源）；toolchain＝qp-m3.sty（钉后版
+%   md5 7c3930362be8a0a2bdf21bbf8ac16573，本地挂载副本，破损即停）。
+% 母版体例：整目录照抄 成卷/练习件/课时01-坐标法/（骨架/宏用法/门谱原样，只换内容层）。
+% 选学注记（件头标，批B-课时06 T13/T16 前引注同口径）：本件系选学补位课时（人教B版
+%   §2.2.4），序位于课时06（§2.2.3）与课时07（§2.3.1）之间（canonical 键名总表显式登记），
+%   印面 \keshi 标「（选学）」＋件首 \zhuzhu 选学注记一行，与导学件 06B 承接口径一致。
+% 键账：件内 ansblock 键集 ≡ 题面库片练键集 ≡ manifest 练键序 T1~T16（16 键，零缺漏零多余；
+%   本片键式＝T 式，承 canonical 键名总表批B 口径，非母版批A E 式）；导学键 G1~G5 不入本件
+%   （导学件域）；拓区隔离：2章-拓/测/滚 键不入本件（S4 拓展册收）。
+% 卷式例外案B：练习件不属卷式——答案块物理落点恒为题后 ansblock，禁卷末附卷制；
+%   全线括线模（导言 \ansblockgrayfalse 一次置定，件内不切换；灰底盒不可跨栏断，练习件禁用）。
+% 题序＝manifest 练键序 T1~T16（零重排）；印面题号 1~16 连号（\tihao 号＝\ansitem 号同键）；
+%   三档切位 1~7／8~14／15~16（照库序切位，非难度重排）。
+% 槽配实录：单选9（T1~T9）＋多选1（T10，≤4 合规）＋填空4（T11~T14）＋解答2（T15~T16）；
+%   本片实配照题面侧头标（批B补 §三 配额恒等：9单选＋1多选＋4填空＋2解答 同口径）。
+% 选项槽位：默认四连排（0.25\linewidth−0.25\lxhang），超宽降档梯 四连排→两连排
+%   （0.5\linewidth−0.5\lxhang−0.25em）→单列 \lxopt；禁缩字号/负 kern/删标点凑宽。
+%   本片实测降档：题1 两连排、题5 两连排、题6 两连排、题8 两连排，余四连排（真算读数
+%   见值台账「降档登记」＋回执）。
+% 解答书写区：T15 两问 \liubai[24mm]、T16 单问 \liubai[16mm]（默认 16mm、两问 24mm、
+%   三问及以上 32mm、cap 40mm；纯题档吞 ansblock 不吞 \liubai）。
+% 填空印答：T11~T14 题面空位 \kongda{值}（详解版印答、纯题版退定宽空线，两档等形）；
+%   T13 空位值「2+√2」、T11 空位值系答案侧「值：」行同串（印答与 ansitem 同源零漂）。
+% 难度词口径：题面侧头标第 4 字段未带档位词，照题面库全库主档映射 0.94→简单、
+%   0.85→中档、0.65→中档（登记见值台账「难度词口径」）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承导学件母版；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承导学件母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 练习件全线括线模（S3 波次方案 §四.3：导言一次置定、件内不切换） ——
+\ansblockgrayfalse
+% —— 页脚件名（qp-headfoot 复用入口） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{练习件}%
+
+\begin{document}
+%装配轮S6三本跨本连续页码（G7方案B）setcounter 注入位
+\setcounter{page}{90}
+
+\keshi{第6B课时\quad 点到直线距离与平行线距离（选学）}
+\zhuzhu{选学注记：本课时节为选学补位（人教B版§2.2.4），序位在课时06（§2.2.3）与课时07（§2.3.1）之间，可与§2.2.3 交点坐标配套使用；课时06 件内 T13/T16 已加「需选学§2.2.4(06B)」前引注.}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 基础巩固（题1~7＝T1~T7：单选7；题后紧跟答案制，全线括线 ansblock）
+% ============================================================
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\zu{点到直线距离与平行线距离×单选} \tieside{中档(知识点一)}求在\(y\)轴上且到直线\(3x+4y+5=0\)的距离等于5的点的坐标\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\((0,5)\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\((0,-15/2)\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\((0,5)\)或\((0,-15/2)\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\((5,0)\)或\((-5,0)\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T1]
+% ans:2章-练-课时06B-T1
+\ansitem{1}{C}
+\ansnote{详解}{设点\((0,t)\)，\(d=|4t+5|/\sqrt{3^{2}+4^{2}}=|4t+5|/5=5\)，即\(|4t+5|=25\)，解得\(t=5\)或\(t=-15/2\)．所求点为\((0,5)\)或\((0,-15/2)\)，选C．（D 中\((5,0)\)、\((-5,0)\)到直线的距离分别为4与2，不合，系轴别混淆干扰项．）}
+\end{ansblock}
+
+\tihao{2}\zu{点（线）关于直线的对称×单选} \tieside{简单(知识点三)}光线从点\(A(-3,5)\)射到\(x\)轴上，经反射以后经过点\(B(2,10)\)，则光线从\(A\)到\(B\)经过的路程为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\(5\sqrt{2}\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\(2\sqrt{5}\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\(5\sqrt{10}\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\(10\sqrt{5}\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T2]
+% ans:2章-练-课时06B-T2
+\ansitem{2}{C}
+\ansnote{详解}{\(A\)关于反射面\(x\)轴的对称点为\(A'(-3,-5)\)．由反射角等于入射角，光路\(A\to\)反射点\(M\to B\)的总长等于直线段\(|A'MB|\)的最短值\(|A'B|=\sqrt{(2+3)^{2}+(10+5)^{2}}=\sqrt{250}=5\sqrt{10}\)，选C．}
+\end{ansblock}
+
+\tihao{3}\zu{点到直线距离与平行线距离×单选} \tieside{中档(知识点一)}已知点\(A(1,3)\)，\(B(2,1)\)，\(C(-1,0)\)，则\(\triangle ABC\)的面积为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\(7\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\(13/2\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\(5\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\(7/2\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T3]
+% ans:2章-练-课时06B-T3
+\ansitem{3}{D}
+\ansnote{详解}{以\(BC\)为底：\(|BC|=\sqrt{(-1-2)^{2}+(0-1)^{2}}=\sqrt{10}\)；直线\(BC\)过\(B(2,1)\)、\(C(-1,0)\)，斜率\(1/3\)，方程\(x-3y+1=0\)．\(A(1,3)\)到\(BC\)的高\(h=|1-9+1|/\sqrt{1^{2}+(-3)^{2}}=7/\sqrt{10}\)．\(S=(1/2)\times\sqrt{10}\times 7/\sqrt{10}=7/2\)，选D．}
+\end{ansblock}
+
+\tihao{4}\zu{点（线）关于直线的对称×单选} \tieside{中档(知识点三)}设定点\(A(3,1)\)，\(B\)是\(x\)轴上的动点，\(C\)是直线\(y=x\)上的动点，则\(\triangle ABC\)周长的最小值是\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\(\sqrt{5}\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\(2\sqrt{5}\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\(3\sqrt{5}\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\(\sqrt{10}\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T4]
+% ans:2章-练-课时06B-T4
+\ansitem{4}{B}
+\ansnote{详解}{\(A(3,1)\)关于\(y=x\)的对称点\(A_1(1,3)\)（对称式\((x,y)\to(y,x)\)），关于\(x\)轴的对称点\(A_2(3,-1)\)．则\(|AC|=|A_1C|\)，\(|AB|=|A_2B|\)，周长\(=|A_1C|+|CB|+|BA_2|\geqslant|A_1A_2|\)．取等检验：直线\(A_1A_2\)为\(y=-2x+5\)，与\(y=x\)交于\((5/3,5/3)\)、与\(x\)轴交于\((5/2,0)\)，均落在允许动点范围内，等号可取．最小值\(=|A_1A_2|=\sqrt{(3-1)^{2}+(-1-3)^{2}}=\sqrt{20}=2\sqrt{5}\)，选B．}
+\end{ansblock}
+
+\tihao{5}\zu{点到直线距离与平行线距离×单选} \tieside{中档(知识点二)}已知两平行直线\(l_1\)，\(l_2\)分别过点\(P(-1,3)\)，\(Q(2,-1)\)，它们分别绕\(P\)，\(Q\)旋转，但始终保持平行，则\(l_1\)，\(l_2\)之间的距离的取值范围是\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\((0,+\infty)\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\([0,5]\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\((0,5]\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\([0,\sqrt{17}]\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T5]
+% ans:2章-练-课时06B-T5
+\ansitem{5}{C}
+\ansnote{详解}{两线过\(P\)、\(Q\)且始终平行．当两线均与\(PQ\)垂直时距离最大，最大值\(=|PQ|=\sqrt{(2+1)^{2}+(-1-3)^{2}}=5\)；当两线向重合方向旋转时距离趋于0，但重合时不能分别过两不同点，0取不到．故\(d\in(0,5]\)，选C．}
+\end{ansblock}
+
+\tihao{6}\zu{点到直线距离与平行线距离×单选} \tieside{中档(知识点二)}设两条直线的方程分别为\(x+y+a=0\)，\(x+y+b=0\)，已知\(a\)，\(b\)是方程\(x^{2}+x+c=0\)的两个实根，且\(0\leqslant c\leqslant 1/8\)，则这两条直线之间的距离的最大值和最小值分别为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(\sqrt{3}/3\)，\(\sqrt{2}/3\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(\sqrt{3}/3\)，\(1/3\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(\sqrt{2}/2\)，\(1/2\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(\sqrt{2}/2\)，\(\sqrt{2}/3\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T6]
+% ans:2章-练-课时06B-T6
+\ansitem{6}{C}
+\ansnote{详解}{两线平行，\(d=|a-b|/\sqrt{2}\)．由韦达定理\(a+b=-1\)，\(ab=c\)，故\(|a-b|=\sqrt{(a+b)^{2}-4ab}=\sqrt{1-4c}\)．由\(0\leqslant c\leqslant 1/8\)得\(1/2\leqslant 1-4c\leqslant 1\)，故\(\sqrt{2}/2\leqslant|a-b|\leqslant 1\)．于是\(d\in[1/2,\sqrt{2}/2]\)：最大值\(\sqrt{2}/2\)，最小值\(1/2\)，选C．（实根存在性：\(\Delta=1-4c\geqslant 0\)由\(c\leqslant 1/8\)保证．）}
+\end{ansblock}
+
+\tihao{7}\zu{点（线）关于直线的对称×单选} \tieside{中档(知识点三)}若点\(A(a+2,b+2)\)与\(B(b-a,-b)\)关于直线\(4x+3y-11=0\)对称，则实数\(a\)，\(b\)的值分别为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\(-1\)，\(2\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\(4\)，\(-2\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\(2\)，\(4\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\(4\)，\(2\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T7]
+% ans:2章-练-课时06B-T7
+\ansitem{7}{D}
+\ansnote{详解}{对称\(\Leftrightarrow AB\perp l\)且\(AB\)中点在\(l\)上．\(k_{AB}=(-b-(b+2))/((b-a)-(a+2))=(-2b-2)/(b-2a-2)=3/4\)，整理得\(-8b-8=3b-6a-6\)，即\(6a-11b-2=0\)①．中点坐标\(((b+2)/2,1)\)，代入\(4x+3y-11=0\)：\(2(b+2)+3-11=0\)，得\(b=2\)；代回①：\(6a-22-2=0\)，\(a=4\)．故\(a=4\)，\(b=2\)，选D．}
+\end{ansblock}
+
+% ============================================================
+% 综合提升（题8~14＝T8~T14：单选2＋多选1＋填空4；填空题面空位 \kongda 印答）
+% ============================================================
+\dangbadge{综}{合}{提}{升}
+
+\tihao{8}\zu{点到直线距离与平行线距离×单选} \tieside{中档(知识点二)}已知点\(P\)，\(Q\)分别在直线\(l_1\)：\(x+y+2=0\)与直线\(l_2\)：\(x+y-1=0\)上，且\(PQ\perp l_1\)，点\(A(-3,-3)\)，\(B(3/2,1/2)\)，则\(|AP|+|PQ|+|QB|\)的最小值为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(\sqrt{130}/2\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(\sqrt{13}+3\sqrt{2}/2\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(\sqrt{13}\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(3\sqrt{2}\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T8]
+% ans:2章-练-课时06B-T8
+\ansitem{8}{B}
+\ansnote{详解}{两线平行，\(|PQ|\)等于平行线间距离，为定值\(=|2-(-1)|/\sqrt{2}=3\sqrt{2}/2\)；且向量\(QP\)恒为\(l_1\)指向\(l_2\)的法向位移\((3/2,3/2)\)．作平移\(A'=A+(3/2,3/2)=(-3/2,-3/2)\)，则\(AA'\parallel QP\)且\(|AA'|=|QP|\)，四边形\(AA'QP\)为平行四边形，故\(|AP|=|A'Q|\)．于是\(|AP|+|PQ|+|QB|=|A'Q|+3\sqrt{2}/2+|QB|\geqslant|A'B|+3\sqrt{2}/2\)，当\(A'\)、\(Q\)、\(B\)共线（\(Q\)在线段上）时取等．\(|A'B|=\sqrt{(3/2+3/2)^{2}+(1/2+3/2)^{2}}=\sqrt{13}\)；取等点验证：线段\(A'B\)上参数\(t=4/5\)处的点\((9/10,1/10)\)满足\(9/10+1/10-1=0\)，确在\(l_2\)上，等号可取．故最小值\(=\sqrt{13}+3\sqrt{2}/2\)，选B．}
+\end{ansblock}
+
+\tihao{9}\zu{点到直线距离与平行线距离×单选} \tieside{中档(知识点一)}若直线\(l\)过点\((2,\sqrt{3})\)，倾斜角为\(120^\circ\)，则点\((1,-\sqrt{3})\)到直线\(l\)的距离为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\(\sqrt{3}/2\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\(\sqrt{3}\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\(3\sqrt{3}/2\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\(5\sqrt{3}/2\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T9]
+% ans:2章-练-课时06B-T9
+\ansitem{9}{C}
+\ansnote{详解}{\(k=\tan 120^\circ=-\sqrt{3}\)，直线\(l\)：\(y-\sqrt{3}=-\sqrt{3}(x-2)\)，即\(\sqrt{3}x+y-3\sqrt{3}=0\)．\(d=|\sqrt{3}\times 1-\sqrt{3}-3\sqrt{3}|/\sqrt{(\sqrt{3})^{2}+1^{2}}=3\sqrt{3}/2\)，选C．}
+\end{ansblock}
+
+\tihao{10}\duoxuan\hspace{0.6em}\zu{点到直线距离与平行线距离×多选} \tieside{简单(知识点二)}若两条平行直线\(l_1\)：\(x-2y+m=0\)与\(l_2\)：\(2x+ny-6=0\)之间的距离是\(2\sqrt{5}\)，则\(m+n\)的可能值为\nobreak(\kongwei)\par
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\(3\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\(-17\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\(-3\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\(17\)}\par}
+
+\begin{ansblock}[2章-练-课时06B-T10]
+% ans:2章-练-课时06B-T10
+\ansitem{10}{AB}
+\ansnote{详解}{平行\(\Leftrightarrow 1/2=(-2)/n\)（\(n\neq 0\)），得\(n=-4\)．\(l_2\)：\(2x-4y-6=0\)，即\(x-2y-3=0\)．\(d=|m-(-3)|/\sqrt{1^{2}+(-2)^{2}}=|m+3|/\sqrt{5}=2\sqrt{5}\)，得\(|m+3|=10\)，\(m=7\)或\(m=-13\)．故\(m+n=3\)或\(-17\)，选AB．}
+\end{ansblock}
+
+\tihao{11}\zu{点到直线距离与平行线距离×填空} \tieside{中档(知识点二)}在同一平面内，已知直线\(l_1\)：\(2x+3y=1\)和直线\(l_2\)：\(4x+6y-9=0\)，若直线\(l\)到直线\(l_1\)的距离与到直线\(l_2\)的距离之比为\(2:1\)，则直线\(l\)的方程为\kongda{2x+3y−8=0 或 6x+9y−10=0}．
+
+\begin{ansblock}[2章-练-课时06B-T11]
+% ans:2章-练-课时06B-T11
+\ansitem{11}{2x+3y−8=0 或 6x+9y−10=0}
+\ansnote{详解}{\(l_1\)化为\(4x+6y-2=0\)．\(l\)与两线均平行，设\(l\)：\(4x+6y+C=0\)（\(C\neq -2\)且\(C\neq -9\)）．由\(|C+2|/\sqrt{52}=2\times|C+9|/\sqrt{52}\)，即\(|C+2|=2|C+9|\)：\(C+2=2(C+9)\)得\(C=-16\)；\(C+2=-2(C+9)\)得\(C=-20/3\)．故\(l\)：\(4x+6y-16=0\)即\(2x+3y-8=0\)（带域外侧），或\(4x+6y-20/3=0\)即\(6x+9y-10=0\)（带域内侧，此时到\(l_1\)、\(l_2\)距离分别为\(14/3\)与\(7/3\)的等比缩放，比值确为\(2:1\)）．两解均保留．}
+\end{ansblock}
+
+\tihao{12}\zu{点到直线距离与平行线距离×填空} \tieside{中档(知识点一)}若点\(M(m,n)\)为直线\(l\)：\(3x+4y+2=0\)上的动点，则\(m^{2}+n^{2}\)的最小值为\kongda{4/25}．
+
+\begin{ansblock}[2章-练-课时06B-T12]
+% ans:2章-练-课时06B-T12
+\ansitem{12}{4/25}
+\ansnote{详解}{\(m^{2}+n^{2}=|OM|^{2}\)，其最小值在\(OM\)垂直于\(l\)时取得，即原点到\(l\)的距离：\(d=|0+0+2|/\sqrt{3^{2}+4^{2}}=2/5\)．故\(m^{2}+n^{2}\)的最小值为\(d^{2}=4/25\)．}
+\end{ansblock}
+
+\tihao{13}\zu{点到直线距离与平行线距离×填空} \tieside{中档(知识点一)}点\(A(1,1)\)到直线\(x\cos\theta+y\sin\theta-2=0\)的距离的最大值是\kongda{2+√2}．
+
+\begin{ansblock}[2章-练-课时06B-T13]
+% ans:2章-练-课时06B-T13
+\ansitem{13}{2+√2}
+\ansnote{详解}{\(d=|\cos\theta+\sin\theta-2|/\sqrt{\cos^{2}\theta+\sin^{2}\theta}=|\sqrt{2}\sin(\theta+\pi/4)-2|\)．因\(\sqrt{2}\sin(\theta+\pi/4)\leqslant\sqrt{2}<2\)，绝对值内恒为负，\(d=2-\sqrt{2}\sin(\theta+\pi/4)\)，当\(\sin(\theta+\pi/4)=-1\)时取最大值\(2+\sqrt{2}\)．}
+\end{ansblock}
+
+\tihao{14}\zu{点到直线距离与平行线距离×填空} \tieside{中档(知识点二)}已知\(m\)，\(n\)，\(a\)，\(b\in R\)，且满足\(3m+4n=6\)，\(3a+4b=1\)，则\(\sqrt{(m-a)^{2}+(n-b)^{2}}\)的最小值为\kongda{1}．
+
+\begin{ansblock}[2章-练-课时06B-T14]
+% ans:2章-练-课时06B-T14
+\ansitem{14}{1}
+\ansnote{详解}{设\(A(m,n)\)，\(B(a,b)\)，则\(A\)在直线\(3x+4y-6=0\)上，\(B\)在直线\(3x+4y-1=0\)上，所求即\(|AB|\)．两线平行，当\(AB\)沿公垂方向时最短，最小值为平行线间距离：\(d=|-6-(-1)|/\sqrt{3^{2}+4^{2}}=5/5=1\)．}
+\end{ansblock}
+
+% ============================================================
+% 思维探索（题15~16＝T15~T16：解答2，居末档照库序；书写区 两问24mm／单问16mm）
+% ============================================================
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\zu{点到直线距离与平行线距离×解答} \tieside{中档(知识点三)}已知\(\triangle ABC\)的内角平分线\(CD\)的方程为\(2x+y-1=0\)，两个顶点为\(A(1,2)\)，\(B(-1,-1)\)．
+（1）求点\(A\)到直线\(CD\)的距离；
+（2）求点\(C\)的坐标．
+\liubai[24mm]{解答书写区}
+
+\begin{ansblock}[2章-练-课时06B-T15]
+% ans:2章-练-课时06B-T15
+\ansitem{15}{（1）3√5/5；（2）C(−13/5, 31/5)。}
+\ansnote{详解}{（1）\(d=|2\times 1+2-1|/\sqrt{2^{2}+1^{2}}=3/\sqrt{5}=3\sqrt{5}/5\)．\par\noindent （2）内角平分线性质：\(A\)关于\(CD\)的对称点\(A'\)落在边\(BC\)所在直线上．设\(A'(x,y)\)：中点\(((x+1)/2,(y+2)/2)\)在\(CD\)上，得\((x+1)+(y+2)/2-1=0\)，即\(2x+y+2=0\)；\(AA'\perp CD\)，\(k_{CD}=-2\)，故\(k_{AA'}=1/2\)，得\((y-2)/(x-1)=1/2\)，即\(x-2y+3=0\)．联立解得\(x=-7/5\)，\(y=4/5\)，即\(A'(-7/5,4/5)\)．直线\(BC\)过\(B(-1,-1)\)与\(A'\)，斜率\(=(4/5+1)/(-7/5+1)=(9/5)/(-2/5)=-9/2\)，方程\(y+1=-(9/2)(x+1)\)，即\(9x+2y+11=0\)．\(C\)为\(BC\)与\(CD\)的交点：把\(y=1-2x\)代入，\(9x+2(1-2x)+11=0\)，\(5x+13=0\)，\(x=-13/5\)，\(y=1-2\times(-13/5)=31/5\)．故\(C(-13/5,31/5)\)．}
+\end{ansblock}
+
+\tihao{16}\zu{点到直线距离与平行线距离×解答} \tieside{中档(知识点一)}已知三条直线\(l_1\)：\(2x-y+3=0\)，\(l_2\)：\(-4x+2y+1=0\)和\(l_3\)：\(x+y-1=0\)．能否找到一点\(P\)，使得点\(P\)同时满足下列三个条件：（1）\(P\)是第一象限的点；（2）\(P\)点到\(l_1\)的距离是\(P\)点到\(l_2\)的距离的\(1/2\)；（3）\(P\)点到\(l_1\)的距离与\(P\)点到\(l_3\)的距离之比是\(\sqrt{2}:\sqrt{5}\)？若能，求出\(P\)点的坐标；若不能，说明理由．
+\liubai[16mm]{解答书写区}
+
+\begin{ansblock}[2章-练-课时06B-T16]
+% ans:2章-练-课时06B-T16
+\ansitem{16}{能，P(1/9, 37/18)。}
+\ansnote{详解}{设\(P(x_0,y_0)\)，记\(u=2x_0-y_0\)．\par\noindent 条件（3）：\(|u+3|/\sqrt{5}=(\sqrt{2}/\sqrt{5})\cdot|x_0+y_0-1|/\sqrt{2}\)，即\(|u+3|=|x_0+y_0-1|\)，平方去绝对值：\((u+3)^{2}-(x_0+y_0-1)^{2}=(u+3+x_0+y_0-1)(u+3-x_0-y_0+1)=(3x_0+2)(x_0-2y_0+4)=0\)．\(x_0=-2/3<0\)与第一象限矛盾，舍；故\(x_0-2y_0+4=0\)①．\par\noindent 条件（2）：\(d_1=|u+3|/\sqrt{5}\)，\(d_2=|-2u+1|/(2\sqrt{5})\)，由\(d_1=(1/2)d_2\)得\(4|u+3|=|1-2u|\)，平方：\((4u+12)^{2}-(1-2u)^{2}=(6u+11)(2u+13)=0\)，\(u=-11/6\)或\(u=-13/2\)，即\(2x_0-y_0+11/6=0\)②或\(2x_0-y_0+13/2=0\)③．\par\noindent 联立逐一检验：②与①：由②\(y_0=2x_0+11/6\)，代入①：\(x_0-4x_0-11/3+4=0\)，\(-3x_0+1/3=0\)，\(x_0=1/9>0\)，\(y_0=2/9+11/6=4/18+33/18=37/18>0\)，在第一象限．③与①：由③\(y_0=2x_0+13/2\)，代入①：\(x_0-4x_0-13+4=0\)，\(x_0=-3<0\)，舍．\par\noindent 终检\(P(1/9,37/18)\)：\(d_1=|2/9-37/18+3|/\sqrt{5}=(21/18)/\sqrt{5}=7/(6\sqrt{5})\)；\(d_2=|-8/18+74/18+1|/(2\sqrt{5})=(14/3)/(2\sqrt{5})=7/(3\sqrt{5})\)，\(d_1=(1/2)d_2\)；\(d_3=|1/9+37/18-1|/\sqrt{2}=(21/18)/\sqrt{2}=7/(6\sqrt{2})\)，\(d_1:d_3=\sqrt{2}:\sqrt{5}\)．故存在满足三条件的点\(P(1/9,37/18)\)．}
+\end{ansblock}
+
+% ---- 尾块（\tailfill 置 \end{multicols} 前；无参＝内容尾随框，每件恰 1 处） ----
+\tailfill
+
+\end{multicols}
+\end{document}

@@ -3,8 +3,8 @@
 % 2026-09-14｜执行：M3 S4 卷件生产臂
 % 骨架＝M2 测评卷 main.tex 件型层 A~E 照抄；卷名/副题/键式改 M3（2章-测-N）。
 % 题源：卷面蓝图 §一 19 席矩阵（口袋账 3｜账内 11｜扩容 2｜命制 3）；
-%   案B 附卷制：答案迁卷末附卷、逐题 % ans: 锚、速查表纯题档 \ifshowans 吞、
-%   纯题档 \anskey 补偿发射（M3-ANSKEY 双档恒等）。
+%   S5-W4 阶段二重产（0914）：案B 附卷制退役——三栏回流制 \juancols，答案块随题入流
+%   （题后紧跟）；卷末附卷页／\anskey 补偿发射／速查表 \dabiao 全撤，锚点 ansblock 恒发。
 % 形态转换（生产报告「形态转换登记」节留痕）：测4 填空→单选（双解封装 C）；
 %   测12 单选→填空（蓝图授权「两形任取，填空呈现」）；测17 填空→解答；
 %   测18 填空→解答；测19 单选→解答（最小改设问，题干逐字）。
@@ -116,194 +116,163 @@
   \hspace{3.0mm}高中数学\hspace{2.75mm}选择性必修第一册\hspace{2.8mm}RJB}
 
 % ------------------------------------------------------------
-% 件型层 E｜三栏排布器（照抄样张）
+% 件型层 E′｜三栏排布器（S5-W4 阶段二：零高固定栏 → multicols 三栏回流）
+%   观感三参数锁定：栏宽 \jpcolw=120mm（＝multicol 列宽）、栏距 \jpgap=11mm（＝\columnsep，
+%   同旧手拼 \hspace{\jpgap}）、无栏线（旧手拼三栏本无线）。全幅 382＝3×120＋2×11。
+%   退役（案B）：\jpcol 零高申报／\jpthree 手分栏／\jplead／「\setlength\linewidth 换装补钉」
+%   ／卷末附卷页／\anskey 补偿发射／速查表 \datu+\dabiao——答案块随题入流，
+%   锚点由 ansblockbegin 恒发（sty:556，双档 M3-ANSKEY 恒等由源结构保证）。
+%   [D] 门「零高固定栏承件族」判定随零高结构消失自然失配，卷件退出承件族走 strict 严档。
 % ------------------------------------------------------------
-\newcommand{\jpcol}[1]{\raisebox{0pt}[0pt][0pt]{\vtop{\hsize\jpcolw\parskip0pt\parindent0pt
-  \setlength\linewidth{\jpcolw}\setlength\columnwidth{\jpcolw}   % 换装补钉：qp-m3 括线盒按 \linewidth 取宽
-  \fontsize{10.5pt}{17.7pt}\selectfont\relax#1}}}
-\newcommand{\jpthree}[3]{\nointerlineskip\noindent\jpcol{#1}\hspace{\jpgap}\jpcol{#2}%
-  \hspace{\jpgap}\jpcol{#3}\par}
-\newcommand{\jplead}{\hbox{}\nointerlineskip}
-
-% 卷末答案速查表（案B：速查表＝答案承载件，纯题档随开关吞）
-\newcommand{\datu}[1]{{\fontsize{9pt}{12pt}\selectfont #1}}
-\newcommand{\dabiao}{%
-  \par\vgt{\hG}\noindent{\fontsize{10.5pt}{17.7pt}\selectfont\heitiao 答案速查}\par\nopagebreak
-  \vskip 1.2mm\noindent\datu{\setlength{\tabcolsep}{1.4pt}%
-  \begin{tabular}{|c|*{19}{c|}}
-  \hline
-  题号 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 \\ \hline
-  答案 & A & C & A & C & A & B & A & A & AB & BCD & BCD & \(y=1\) & \((x-1)^{2}+y^{2}=4\) & \(1+\sqrt{3}\) & 略 & 略 & 略 & 略 & 略 \\ \hline
-  \end{tabular}}\par}
+\setlength{\columnsep}{\jpgap}
+\setlength{\columnseprule}{0pt}
+\newenvironment{juancols}
+  {\begin{multicols}{3}\fontsize{10.5pt}{17.7pt}\selectfont}%
+  {\end{multicols}}
 
 \begin{document}
-% ===================== 第 1 页：栏1 卷头＋Q1–Q2；栏2 Q3–Q5；栏3 Q6–Q8 =====================
+% ============ S5-W4 阶段二：题-答-解析同流（三栏回流制），案B 手分页/附卷退役 ============
+\begin{juancols}
+\begin{document}
 \jpthree{\jphead
   \ti{1}{已知点 \(A(-1,4)\)，\(B(7,-2)\)，则线段 \(AB\) 的中点坐标与 \(|AB|\) 的值分别为\kw}
   \optline{\optII{A．\((3,1)\)，\(10\)；}{B．\((6,2)\)，\(10\)；}}
   \optline{\optII{C．\((3,1)\)，\(100\)；}{D．\((4,2)\)，\(10\)．}}
+  \begin{ansblock}[2章-测-1]
+  % ans:2章-测-1
+  \ansitem{1}{A}
+  \ansnote{解析}{中点 \(M=\left(\dfrac{-1+7}{2},\dfrac{4-2}{2}\right)=(3,1)\)；\(|AB|=\sqrt{8^{2}+(-6)^{2}}=10\)。B 系中点漏除以 \(2\)；C 系忘开方；D 系中点算误。故选 A。}
+  \end{ansblock}
   \ti{2}{下列说法中正确的是\kw}
   \optline{A．若两条直线斜率相等，则它们互相平行；}
   \optline{B．若 \(l_{1}\parallel l_{2}\)，则 \(k_{l_{1}}=k_{l_{2}}\)；}
   \optline{C．若两条直线中有一条直线的斜率不存在，另一条直线的斜率存在，则这两条直线相交；}
   \optline{D．若两条直线的斜率都不存在，则它们相互平行．}
-}{\jplead
+  \begin{ansblock}[2章-测-2]
+  % ans:2章-测-2
+  \ansitem{2}{C}
+  \end{ansblock}
   \ti{3}{已知点 \(A(1,4)\)，\(B(5,2)\)，点 \(P\) 为直线 \(l\colon x+y=0\) 上的动点，则 \(|PA|+|PB|\) 的最小值为\kw}
   \optline{\optIV{A．\(3\sqrt{10}\)；}{B．\(2\sqrt{5}\)；}{C．\(\sqrt{34}\)；}{D．\(3\sqrt{5}\)．}}
+  \begin{ansblock}[2章-测-3]
+  % ans:2章-测-3
+  \ansitem{3}{A}
+  \ansnote{解析}{\(A\)、\(B\) 代入 \(x+y=0\) 左侧均大于 \(0\)，同侧。设 \(A\) 关于 \(l\) 的对称点 \(A'(-4,-1)\)，则 \(|PA|+|PB|=|PA'|+|PB|\geq|A'B|\)，取等点 \(P_{0}\left(-\dfrac{1}{4},\dfrac{1}{4}\right)\in l\)。最小值 \(=|A'B|=\sqrt{9^{2}+3^{2}}=3\sqrt{10}\)。故选 A。}
+  \end{ansblock}
   \ti{4}{与 \(y\) 轴相交于 \(A(0,2)\)、\(B(0,6)\) 两点，且半径等于 \(2\sqrt{2}\) 的圆的方程是\kw}
   \optline{\optII{A．\((x+2)^{2}+(y-4)^{2}=8\)；}{B．\((x-2)^{2}+(y-4)^{2}=8\)；}}
   \optline{C．\((x+2)^{2}+(y-4)^{2}=8\) 或 \((x-2)^{2}+(y-4)^{2}=8\)；}
   \optline{D．\((x-2)^{2}+(y+4)^{2}=8\)．}
+  \begin{ansblock}[2章-测-4]
+  % ans:2章-测-4
+  \ansitem{4}{C（两圆并取）}
+  \end{ansblock}
   \ti{5}{已知两点 \(A(3,0)\)，\(B(0,3)\)，动点 \(P\) 满足 \(|PA|^{2}+|PB|^{2}=10\)，则 \(P\) 的轨迹方程为\kw}
   \optline{\optII{A．\(x^{2}+y^{2}-3x-3y+4=0\)；}{B．\(x^{2}+y^{2}-3x-3y-4=0\)；}}
   \optline{\optII{C．\(x^{2}+y^{2}+3x+3y+4=0\)；}{D．\(x^{2}+y^{2}-3x-3y+10=0\)．}}
-}{\jplead
+  \begin{ansblock}[2章-测-5]
+  % ans:2章-测-5
+  \ansitem{5}{A}
+  \ansnote{解析}{设 \(P(x,y)\)：\((x-3)^{2}+y^{2}+x^{2}+(y-3)^{2}=10\)，化简得 \(x^{2}+y^{2}-3x-3y+4=0\)，即 \(\left(x-\dfrac{3}{2}\right)^{2}+\left(y-\dfrac{3}{2}\right)^{2}=\dfrac{1}{2}\)。全过程同解变形，且 \(A\)、\(B\) 均不满足条件，纯粹性与完备性同时成立。故选 A。}
+  \end{ansblock}
   \ti{6}{到两定点 \(F_{1}(-3,0)\)，\(F_{2}(3,0)\) 的距离之差的绝对值等于 \(6\) 的点 \(M\) 的轨迹为\kw}
   \optline{\optIV{A．椭圆；}{B．两条射线；}{C．双曲线；}{D．线段．}}
+  \begin{ansblock}[2章-测-6]
+  % ans:2章-测-6
+  \ansitem{6}{B（两条射线）}
+  \end{ansblock}
   \ti{7}{若抛物线 \(y^{2}=\dfrac{4}{m}x\) 的焦点与椭圆 \(\dfrac{x^{2}}{7}+\dfrac{y^{2}}{3}=1\) 的左焦点重合，则 \(m\) 的值为\kw}
   \optline{\optIV{A．\(-\dfrac{1}{2}\)；}{B．\(\dfrac{1}{2}\)；}{C．\(-2\)；}{D．\(2\)．}}
+  \begin{ansblock}[2章-测-7]
+  % ans:2章-测-7
+  \ansitem{7}{A（\(m=-\dfrac{1}{2}\)）}
+  \end{ansblock}
   \ti{8}{已知 \(F_{1}\)，\(F_{2}\) 分别是双曲线 \(C\colon \dfrac{x^{2}}{3}-\dfrac{y^{2}}{9}=1\) 的左、右焦点，过 \(F_{2}\) 的直线与双曲线 \(C\) 的右支交于 \(A\)，\(B\) 两点，\(\triangle AF_{1}F_{2}\) 和 \(\triangle BF_{1}F_{2}\) 的内心分别为 \(M\)，\(N\)，则 \(|MN|\) 的取值范围是\kw}
   \optline{\optIV{A．\([2\sqrt{3},4)\)；}{B．\([2\sqrt{3},3)\)；}{C．\([2\sqrt{3},+\infty)\)；}{D．\((2\sqrt{3},3)\)．}}
-}
-\newpage
-% ===================== 第 2 页：栏1 组行二＋Q9–Q10；栏2 Q11＋组行三＋Q12–Q13；栏3 Q14＋组行四＋Q15 =====================
-\jpthree{\jplead
+  \begin{ansblock}[2章-测-8]
+  % ans:2章-测-8
+  \ansitem{8}{A（\([2\sqrt{3},4)\)）}
+  \end{ansblock}
   \zuhang{二、选择题}{：本题共3小题，每小题6分，共18分．\ 在每小题给出的选项中，有多项符合题目要求．}%
   \vgt{\hG}
   \ti{9}{\fenzhi{6}点 \(M(1,1)\) 到抛物线 \(y=ax^{2}\) 的准线的距离为 \(2\)，则 \(a\) 的值可以为\kw}
   \optline{\optIV{A．\(\dfrac{1}{4}\)；}{B．\(-\dfrac{1}{12}\)；}{C．\(\dfrac{1}{12}\)；}{D．\(-\dfrac{1}{4}\)．}}
+  \begin{ansblock}[2章-测-9]
+  % ans:2章-测-9
+  \ansitem{9}{AB}
+  \end{ansblock}
   \ti{10}{\fenzhi{6}已知 \(F_{1}\)、\(F_{2}\) 分别为双曲线 \(\dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{b^{2}}=1\)（\(a>0\)，\(b>0\)）的左、右焦点，且 \(|F_{1}F_{2}|=\dfrac{2b^{2}}{a}\)，点 \(P\) 为双曲线右支一点，\(I\) 为 \(\triangle PF_{1}F_{2}\) 的内心，若 \(S_{\triangle IPF_{1}}=S_{\triangle IPF_{2}}+\lambda S_{\triangle IF_{1}F_{2}}\) 成立，则下列结论正确的有\kw}
   \optline{A．当 \(PF_{2}\perp x\) 轴时，\(\angle PF_{1}F_{2}=30^{\circ}\)；}
   \optline{B．离心率 \(e=\dfrac{1+\sqrt{5}}{2}\)；}
   \optline{C．\(\lambda=\dfrac{\sqrt{5}-1}{2}\)；}
   \optline{D．点 \(I\) 的横坐标为定值 \(a\)．}
-}{\jplead
+  \begin{ansblock}[2章-测-10]
+  % ans:2章-测-10
+  \ansitem{10}{BCD}
+  \end{ansblock}
   \ti{11}{\fenzhi{6}已知线段 \(BC\) 的长度为 \(4\)，线段 \(AB\) 的长度为 \(m\)，点 \(D\)，\(G\) 满足 \(\overrightarrow{AD}=\overrightarrow{DC}\)，\(\overrightarrow{DG}\cdot\overrightarrow{AC}=0\)，且 \(G\) 点在直线 \(AB\) 上，若以 \(BC\) 所在直线为 \(x\) 轴，\(BC\) 的中垂线为 \(y\) 轴建立平面直角坐标系，则\kw}
   \optline{A．当 \(m=4\) 时，点 \(G\) 的轨迹为圆；}
   \optline{B．当 \(6\leq m\leq 8\) 时，点 \(G\) 的轨迹为椭圆，且椭圆的离心率取值范围为 \(\left[\dfrac{1}{2},\dfrac{2}{3}\right]\)；}
   \optline{C．当 \(m=2\) 时，点 \(G\) 的轨迹为双曲线，且该双曲线的渐近线方程为 \(y=\pm\sqrt{3}x\)；}
   \optline{D．当 \(m=5\) 时，\(\triangle BCG\) 面积的最大值为 \(3\)．}
+  \begin{ansblock}[2章-测-11]
+  % ans:2章-测-11
+  \ansitem{11}{BCD}
+  \end{ansblock}
   \vgt{\hG}
   \zuhang{三、填空题}{：本题共3小题，每小题5分，共15分．}%
   \vgt{\hG}
   \ti{12}{\fenzhi{5}抛物线 \(x^{2}=-4y\) 的准线方程为\kongbai}
+  \begin{ansblock}[2章-测-12]
+  % ans:2章-测-12
+  \ansitem{12}{\(y=1\)}
+  \end{ansblock}
   \ti{13}{\fenzhi{5}过抛物线 \(y^{2}=4x\) 的焦点 \(F\) 作垂直于 \(x\) 轴的直线，交抛物线于 \(A\)，\(B\) 两点，则以 \(F\) 为圆心，\(AB\) 为直径的圆的方程是\kongbai}
-}{\jplead
+  \begin{ansblock}[2章-测-13]
+  % ans:2章-测-13
+  \ansitem{13}{\((x-1)^{2}+y^{2}=4\)}
+  \end{ansblock}
   \ti{14}{\fenzhi{5}双曲线 \(C\colon \dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{b^{2}}=1\)（\(a>0\)，\(b>0\)）的左、右焦点分别为 \(F_{1}\)，\(F_{2}\)，右支上有一点 \(M\)，满足 \(\angle F_{1}MF_{2}=90^{\circ}\)，\(\triangle F_{1}MF_{2}\) 的内切圆与 \(y\) 轴相切，则双曲线 \(C\) 的离心率为\kongbai}
+  \begin{ansblock}[2章-测-14]
+  % ans:2章-测-14
+  \ansitem{14}{\(1+\sqrt{3}\)}
+  \end{ansblock}
   \vgt{\hG}
   \zuhang{四、解答题}{：本题共5小题，共77分．\ 解答应写出文字说明、证明过程或演算步骤．}%
   \vgt{\hG}
   \ti{15}{\fenzhi{13}已知 \(P(1,2)\) 在抛物线 \(C\colon y^{2}=2px\) 上．}
   \qpart{（1）求抛物线 \(C\) 的方程；}
   \qpart{（2）\(A\)，\(B\) 是抛物线 \(C\) 上的两个动点，如果直线 \(PA\) 的斜率与直线 \(PB\) 的斜率之和为 \(2\)，证明：直线 \(AB\) 过定点．}
-}
-\newpage
-% ===================== 第 3 页：栏1 Q16–Q17；栏2 Q18–Q19；栏3 Q19 续＋答案速查表 =====================
-\jpthree{\jplead
-  \ti{16}{\fenzhi{14}已知椭圆 \(C\)：\(\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{3}=1\)（\(a>\sqrt{3}\)）的离心率为 \(\dfrac{\sqrt{2}}{2}\)．}
-  \qpart{（1）求椭圆 \(C\) 的方程；}
-  \qpart{（2）若直线 \(l\) 经过 \(C\) 的左焦点 \(F_{1}\) 且与 \(C\) 相交于 \(B\)、\(D\) 两点，以线段 \(BD\) 为直径的圆经过椭圆 \(C\) 的右焦点 \(F_{2}\)，求 \(l\) 的方程．}
-  \ti{17}{\fenzhi{15}椭圆 \(\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}=1\)（\(a>b>0\)）离心率为 \(\dfrac{\sqrt{3}}{3}\)，直线 \(x-2y+b=0\) 与椭圆交于 \(P\)，\(Q\) 两点，且 \(PQ\) 中点为 \(E\)，\(O\) 为原点，求直线 \(OE\) 的斜率．}
-}{\jplead
-  \ti{18}{\fenzhi{16}在平面直角坐标系 \(xOy\) 中，已知点 \(M\) 是双曲线 \(\dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{b^{2}}=1\)（\(a>0\)，\(b>0\)）上的异于顶点的任意一点，过点 \(M\) 作双曲线的切线 \(l\)，若 \(k_{OM}\cdot k_{l}=\dfrac{1}{3}\)，求双曲线离心率 \(e\) 的值．}
-  \ti{19}{\fenzhi{19}已知双曲线 \(\dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{3a^{2}}=1\) 与椭圆 \(\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}=16\)（\(a>b>0\)）共焦点，且双曲线与直线 \(y=4bx-3\) 相切，求 \(a\) 的值．}
-}{\jplead
-  \ifshowans\dabiao\fi   % 换装案B：速查表＝答案承载件，纯题档随开关吞（防漏答案）
-  \ifshowans\else % 案B双锚补丁：附卷页整页跳过，纯题档在此补偿发射 19 键（两档 M3-ANSKEY 恒等，对号门两档可跑）
-  \anskey{2章-测-1}\anskey{2章-测-2}\anskey{2章-测-3}\anskey{2章-测-4}\anskey{2章-测-5}\anskey{2章-测-6}\anskey{2章-测-7}\anskey{2章-测-8}\anskey{2章-测-9}\anskey{2章-测-10}\anskey{2章-测-11}\anskey{2章-测-12}\anskey{2章-测-13}\anskey{2章-测-14}\anskey{2章-测-15}\anskey{2章-测-16}\anskey{2章-测-17}\anskey{2章-测-18}\anskey{2章-测-19}
-  \fi
-}
-% ===================== 卷末附卷：参考答案（案B 附卷制：仅含详解档成页；纯题档整页跳过） =====================
-\ifshowans
-\newpage
-\jpthree{\jplead
-  \par\vskip 2.0mm\noindent{\fontsize{\qpJTfSize}{17.7pt}\selectfont\heitiao 参考答案}\hspace{0.6em}{\fontsize{\qpJTeSize}{17.7pt}\selectfont（单元素养测评卷（二）·含详解档）}\par\nopagebreak
-  \begin{ansblock}[2章-测-1]
-  % ans:2章-测-1
-  \ansitem{1}{A}
-  \ansnote{解析}{中点 \(M=\left(\dfrac{-1+7}{2},\dfrac{4-2}{2}\right)=(3,1)\)；\(|AB|=\sqrt{8^{2}+(-6)^{2}}=10\)。B 系中点漏除以 \(2\)；C 系忘开方；D 系中点算误。故选 A。}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-2]
-  % ans:2章-测-2
-  \ansitem{2}{C}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-3]
-  % ans:2章-测-3
-  \ansitem{3}{A}
-  \ansnote{解析}{\(A\)、\(B\) 代入 \(x+y=0\) 左侧均大于 \(0\)，同侧。设 \(A\) 关于 \(l\) 的对称点 \(A'(-4,-1)\)，则 \(|PA|+|PB|=|PA'|+|PB|\geq|A'B|\)，取等点 \(P_{0}\left(-\dfrac{1}{4},\dfrac{1}{4}\right)\in l\)。最小值 \(=|A'B|=\sqrt{9^{2}+3^{2}}=3\sqrt{10}\)。故选 A。}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-4]
-  % ans:2章-测-4
-  \ansitem{4}{C（两圆并取）}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-5]
-  % ans:2章-测-5
-  \ansitem{5}{A}
-  \ansnote{解析}{设 \(P(x,y)\)：\((x-3)^{2}+y^{2}+x^{2}+(y-3)^{2}=10\)，化简得 \(x^{2}+y^{2}-3x-3y+4=0\)，即 \(\left(x-\dfrac{3}{2}\right)^{2}+\left(y-\dfrac{3}{2}\right)^{2}=\dfrac{1}{2}\)。全过程同解变形，且 \(A\)、\(B\) 均不满足条件，纯粹性与完备性同时成立。故选 A。}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-6]
-  % ans:2章-测-6
-  \ansitem{6}{B（两条射线）}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-7]
-  % ans:2章-测-7
-  \ansitem{7}{A（\(m=-\dfrac{1}{2}\)）}
-  \end{ansblock}
-}{\jplead
-  \begin{ansblock}[2章-测-8]
-  % ans:2章-测-8
-  \ansitem{8}{A（\([2\sqrt{3},4)\)）}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-9]
-  % ans:2章-测-9
-  \ansitem{9}{AB}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-10]
-  % ans:2章-测-10
-  \ansitem{10}{BCD}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-11]
-  % ans:2章-测-11
-  \ansitem{11}{BCD}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-12]
-  % ans:2章-测-12
-  \ansitem{12}{\(y=1\)}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-13]
-  % ans:2章-测-13
-  \ansitem{13}{\((x-1)^{2}+y^{2}=4\)}
-  \end{ansblock}
-  \begin{ansblock}[2章-测-14]
-  % ans:2章-测-14
-  \ansitem{14}{\(1+\sqrt{3}\)}
-  \end{ansblock}
-}{\jplead
   \begin{ansblock}[2章-测-15]
   % ans:2章-测-15
   \ansitem{15}{(1)\(y^{2}=4x\)；(2)直线 \(AB\) 恒过定点 \((-1,0)\)}
   \ansnote{解析}{(1) \(4=2p\)，\(p=2\)，\(y^{2}=4x\)。(2) 设 \(AB\)：\(x=my+t\)，与 \(y^{2}=4x\) 联立得 \(y^{2}-4my-4t=0\)，\(y_{1}+y_{2}=4m\)，\(y_{1}y_{2}=-4t\)（\(\Delta>0\) 须 \(m^{2}+t>0\)）。\(k_{PA}=\dfrac{4}{y_{1}+2}\)，\(k_{PB}=\dfrac{4}{y_{2}+2}\)，由 \(k_{PA}+k_{PB}=2\) 得 \(y_{1}y_{2}=4\)，故 \(-4t=4\)，\(t=-1\)，直线 \(AB\) 恒过定点 \((-1,0)\)。}
   \end{ansblock}
+  \ti{16}{\fenzhi{14}已知椭圆 \(C\)：\(\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{3}=1\)（\(a>\sqrt{3}\)）的离心率为 \(\dfrac{\sqrt{2}}{2}\)．}
+  \qpart{（1）求椭圆 \(C\) 的方程；}
+  \qpart{（2）若直线 \(l\) 经过 \(C\) 的左焦点 \(F_{1}\) 且与 \(C\) 相交于 \(B\)、\(D\) 两点，以线段 \(BD\) 为直径的圆经过椭圆 \(C\) 的右焦点 \(F_{2}\)，求 \(l\) 的方程．}
   \begin{ansblock}[2章-测-16]
   % ans:2章-测-16
   \ansitem{16}{(1)\(\dfrac{x^{2}}{6}+\dfrac{y^{2}}{3}=1\)；(2)\(x-\sqrt{7}y+\sqrt{3}=0\) 或 \(x+\sqrt{7}y+\sqrt{3}=0\)}
   \ansnote{解析}{(1) \(b=\sqrt{3}\)，\(\dfrac{c}{a}=\dfrac{\sqrt{2}}{2}\)，\(a^{2}=b^{2}+c^{2}\) 解得 \(a=\sqrt{6}\)。(2) \(F_{1}(-\sqrt{3},0)\)、\(F_{2}(\sqrt{3},0)\)，设 \(l\)：\(x=my-\sqrt{3}\)，代入得 \((m^{2}+2)y^{2}-2\sqrt{3}my-3=0\)（\(\Delta>0\) 恒成立），\(\overrightarrow{F_{2}B}\cdot\overrightarrow{F_{2}D}=0\) 即 \(x_{1}x_{2}-\sqrt{3}(x_{1}+x_{2})+y_{1}y_{2}+3=0\)，代入韦达整理得 \(m^{2}=7\)，\(m=\pm\sqrt{7}\)，\(l\)：\(x-\sqrt{7}y+\sqrt{3}=0\) 或 \(x+\sqrt{7}y+\sqrt{3}=0\)。}
   \end{ansblock}
+  \ti{17}{\fenzhi{15}椭圆 \(\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}=1\)（\(a>b>0\)）离心率为 \(\dfrac{\sqrt{3}}{3}\)，直线 \(x-2y+b=0\) 与椭圆交于 \(P\)，\(Q\) 两点，且 \(PQ\) 中点为 \(E\)，\(O\) 为原点，求直线 \(OE\) 的斜率．}
   \begin{ansblock}[2章-测-17]
   % ans:2章-测-17
   \ansitem{17}{\(-\dfrac{4}{3}\)}
   \ansnote{解析}{由 \(e=\dfrac{\sqrt{3}}{3}\) 得 \(\dfrac{b^{2}}{a^{2}}=\dfrac{2}{3}\)。设 \(P(x_{1},y_{1})\)、\(Q(x_{2},y_{2})\)，\(k_{PQ}=\dfrac{1}{2}\)，两式作差得 \(\dfrac{(y_{1}-y_{2})(y_{1}+y_{2})}{(x_{1}-x_{2})(x_{1}+x_{2})}=-\dfrac{b^{2}}{a^{2}}=-\dfrac{2}{3}\)，即 \(k_{PQ}\cdot k_{OE}=-\dfrac{2}{3}\)，故 \(k_{OE}=-\dfrac{4}{3}\)。回代验 \(\Delta\)：联立化简得 \(11x^{2}+6bx-9b^{2}=0\)，\(\Delta=432b^{2}>0\)，弦恒存在。}
   \end{ansblock}
+  \ti{18}{\fenzhi{16}在平面直角坐标系 \(xOy\) 中，已知点 \(M\) 是双曲线 \(\dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{b^{2}}=1\)（\(a>0\)，\(b>0\)）上的异于顶点的任意一点，过点 \(M\) 作双曲线的切线 \(l\)，若 \(k_{OM}\cdot k_{l}=\dfrac{1}{3}\)，求双曲线离心率 \(e\) 的值．}
   \begin{ansblock}[2章-测-18]
   % ans:2章-测-18
   \ansitem{18}{\(\dfrac{2\sqrt{3}}{3}\)}
   \ansnote{解析}{当 \(y>0\) 时 \(y'=\dfrac{b^{2}x}{a^{2}y}\)，得切线方程 \(\dfrac{x_{0}}{a^{2}}x-\dfrac{y_{0}}{b^{2}}y=1\)（\(y\leq 0\) 时同理成立）。设 \(M(m,n)\)：\(k_{l}=\dfrac{b^{2}m}{a^{2}n}\)，\(k_{OM}=\dfrac{n}{m}\)，由 \(k_{OM}\cdot k_{l}=\dfrac{1}{3}\) 得 \(\dfrac{b^{2}}{a^{2}}=\dfrac{1}{3}\)，故 \(e=\sqrt{1+\dfrac{1}{3}}=\dfrac{2\sqrt{3}}{3}\)。}
   \end{ansblock}
+  \ti{19}{\fenzhi{19}已知双曲线 \(\dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{3a^{2}}=1\) 与椭圆 \(\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}}=16\)（\(a>b>0\)）共焦点，且双曲线与直线 \(y=4bx-3\) 相切，求 \(a\) 的值．}
   \begin{ansblock}[2章-测-19]
   % ans:2章-测-19
   \ansitem{19}{\(a=1\)}
   \ansnote{解析}{共焦点：\(3a^{2}+a^{2}=16(a^{2}-b^{2})\)，即 \(3a^{2}=4b^{2}\)。联立 \(y=4bx-3\) 化简得 \((3-16b^{2})x^{2}+24bx-9-3a^{2}=0\)，相切即 \(\Delta=0\)：\(48b^{2}+(3-16b^{2})(3+a^{2})=0\)，代入 \(3a^{2}=4b^{2}\) 得 \(4a^{4}-a^{2}-3=0\)，\(a^{2}=1\)，\(a=1\)（负值舍去）。}
   \end{ansblock}
-}
-\fi
+\end{juancols}
 \end{document}

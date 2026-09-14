@@ -1,0 +1,290 @@
+% ============================================================
+% M3 成卷轮 S4 件3 —— 滚动测评卷（B）第二章（全章）（16 题·40 分钟 100 分）
+% 2026-09-14｜执行：M3 S4 卷件生产臂
+% 骨架＝M2 滚动卷A main.tex 件型层 A~E 照抄；卷名/副题/键式改 M3（2章-滚B-N）。
+% 卷式（D案重切 0914 修订臂）：单选 7×5＝35｜多选 2×5＝10（全对5/部分2/有错0）｜填空 3×5＝15｜解答 8+10+10+12＝40。
+% 题源：蓝图 §三 16 席矩阵（账内 9｜扩容 2＋机动 1｜口袋账 1｜命制 3）：
+%   滚B-1 主钉 2章件13-#29 实为「三选一结构不良解答题」（直线+弦长，2.2/2.3 域）——
+%   与蓝图 2.1 坐标法·单选 双不合（正中蓝图「域指纹核」条件态预设），弃用上报；
+%   启用测1 备钉池 2章件2-#44（✅净三门空·0.94 简·2.1 斜率域·蓝图 §4.1 单席纪律 #44 不双用，
+%   测1 K1 主钉命制不动）＋填空→单选选项封装（测4 先例）。
+% 案B 附卷制：答案迁卷末附卷、% ans: 锚、速查表纯题档吞、\anskey 补偿发射。
+% 形态转换（生产报告留痕）：滚B-2/滚B-3 设问微调（求→则…为）；滚B-1 填空→单选（选项封装）；
+%   滚B-5 解答→单选（选项封装）；滚B-10/滚B-14 单选→填空/解答（去选项）；滚B-7 单选源
+%   （唯一正确项 C）曾入多选槽（形态张力）——军师二案定夺采 D案卷式重切：席7 物理位移
+%   入单选组第 7 位（印面序号 8/9 不变，题面/选项/答案/值零动），本件即重切后版。
+% 图债：滚B-6 源题面含「如图」（文字自足），登图形工位 manifest 待补，禁绘不占位。
+% 编译门：xelatex main.tex ×2 / main-pure.tex ×2（sishou remember picture 硬依赖）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage[pure]{qp-m3}
+\ansblockgrayfalse   % 换装（测评/滚动＝8 开三栏件）：答案块一律括线模（方案草案§1.2.5/§5.1）
+\providecommand{\ov}[1]{\overrightarrow{#1}}
+
+% ------------------------------------------------------------
+% 件型层 A｜页面：8 开横放三栏（承测评卷件型层）
+% ------------------------------------------------------------
+\geometry{paperwidth=399.8mm,paperheight=284.2mm,left=8.9mm,right=8.9mm,
+  top=12.0mm,bottom=17.6mm,twoside,headheight=0pt,headsep=0pt,footskip=7.1mm}
+\setlength{\topskip}{0pt}
+\raggedbottom
+\renewcommand{\normalsize}{\fontsize{10.5pt}{17.7pt}\selectfont}
+\linespread{1}\normalsize
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newlength{\jpcolw}\setlength{\jpcolw}{120.0mm}
+\newlength{\jpgap}\setlength{\jpgap}{11.0mm}
+\xeCJKsetup{CJKglue={\hskip 0.04em plus 0.04em minus 0.01em}}
+
+\definecolor{silklight}{gray}{0.8235}
+\definecolor{silkdark}{gray}{0.6510}
+\definecolor{juanrule}{gray}{0.1255}
+\definecolor{subgrey}{gray}{0.4}
+
+% ------------------------------------------------------------
+% 件型层 B｜JT-01 丝带角饰（照抄测评卷件型层）
+% ------------------------------------------------------------
+\newcommand{\juanmathSize}{17pt}
+\newcommand{\sishou}{%
+  \begin{tikzpicture}[overlay,remember picture,x=1mm,y=1mm]
+    \path (current page.north west) coordinate (O);
+    \begin{scope}[shift={(O)}]
+      \fill[silklight] (6.9,-9.39) -- (40.1,-9.39) -- (6.9,-42.59) -- cycle;
+      \draw[white,line width=0.28mm] (9.21,-40.29) -- (9.21,-11.63) -- (37.87,-11.63);
+      \fill[silkdark] (22.94,-8.21) -- (34.15,-8.21) -- (5.78,-36.58) -- (5.78,-25.37) -- cycle;
+      \fill[silkdark] (34.15,-8.21) -- (34.15,-9.20) -- (33.16,-9.20) -- cycle;
+      \fill[silkdark] (5.78,-36.58) -- (6.78,-36.58) -- (6.78,-35.58) -- cycle;
+      \node[white,inner sep=0pt,anchor=center,rotate=45] at (17.23,-19.74)
+        {\fontsize{\juanmathSize}{\juanmathSize}\selectfont\heitiao 数学};
+    \end{scope}
+  \end{tikzpicture}}
+
+% ------------------------------------------------------------
+% 件型层 C｜卷头零件＋题区零件（承测评卷件型层；卷名/副题/时间按滚B 卷式改文）
+% ------------------------------------------------------------
+\newcommand{\zeroheight}[1]{\raisebox{0pt}[0pt][0pt]{#1}}
+\newcommand{\jpcen}[1]{\hbox to\jpcolw{\hfil\zeroheight{#1}\hfil}\nointerlineskip}
+\newcommand{\jpright}[1]{\hbox to\jpcolw{\hfill\zeroheight{#1}}\nointerlineskip}
+\newcommand{\vgt}[1]{\par\vskip\dimexpr#1-6.25mm\relax}
+
+\newcommand{\tianxieg}[1]{{\fontsize{\qpJTbLabelSize}{13pt}\selectfont\heitiao #1：}%
+  \rule[-0.62mm]{\qpJTbLineLen}{0.2mm}}
+\newcommand{\jtianxie}{\tianxieg{班级}\hspace{\qpJTbGapGrp}\tianxieg{姓名}%
+  \hspace{\qpJTbGapGrp}\tianxieg{得分}}
+\newcommand{\juanmingSize}{20.5pt}
+\newcommand{\jjuanming}{{\fontsize{\juanmingSize}{26pt}\selectfont\heizhang
+  \renewcommand{\CJKglue}{\hskip 0pt}滚动测评卷（B）}}
+\newcommand{\jjunrule}{{\color{juanrule}\rule{58.0mm}{\qpJTcRule}}}
+\newcommand{\jfuti}{{\fontsize{\qpJTdSize}{18pt}\selectfont\heitiao\color{subgrey}%
+  \renewcommand{\CJKglue}{\hskip 0pt}第二章（全章）}}
+\newcommand{\jptime}{{\fontsize{\qpJTeSize}{17.7pt}\selectfont（时间：40分钟\quad 分值：100分）}}
+\newcommand{\zuhang}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{\qpJTfSize}{17.7pt}\selectfont\heitiao #1}#2\par}
+\newcommand{\ti}[2]{\par\noindent\hangindent=5.7mm\hangafter=1
+  {\fontsize{11.4pt}{17.7pt}\selectfont\heihao{\numboldjian #1}.}\hspace{2.7mm}#2\par}
+\newcommand{\fenzhi}[1]{（#1分）}
+\newcommand{\optline}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  {\fontsize{10.5pt}{19pt}\selectfont #1}\par}
+\newcommand{\optII}[2]{\makebox[53.05mm][l]{#1}#2}
+\newcommand{\optIV}[4]{\makebox[21.5mm][l]{#1}\makebox[21.5mm][l]{#2}\makebox[21.5mm][l]{#3}#4}
+\newcommand{\kw}{\hfill（\hspace{3.6mm}）\hspace*{5.4mm}}
+\newcommand{\qpart}[1]{\par\noindent\hangindent=5.7mm\hangafter=0
+  \hspace*{5.7mm}{\fontsize{10.5pt}{17.7pt}\selectfont #1}\par}
+
+\newdimen\hA \hA=3.03mm
+\newdimen\hB \hB=12.12mm
+\newdimen\hC \hC=1.89mm
+\newdimen\hD \hD=5.95mm
+\newdimen\hE \hE=8.04mm
+\newdimen\hF \hF=5.70mm
+\newdimen\hG \hG=6.35mm
+\newcommand{\jphead}{\hbox to\jpcolw{\sishou\hfill}\nointerlineskip
+  \vskip\hA\jpright{\jtianxie}%
+  \vskip\hB\jpcen{\jjuanming}%
+  \vskip\hC\jpcen{\jjunrule}%
+  \vskip\hD\jpcen{\jfuti}%
+  \vskip\hE\jpcen{\jptime}%
+  \vskip\hF
+  \zuhang{一、选择题}{：本题共7小题，每小题5分，共35分．\ 在每小题给出的四个选项中，只有一项是符合题目要求的．}%
+  \vgt{\hG}}
+
+% ------------------------------------------------------------
+% 件型层 D｜YJ-02 文字行页脚（同测评卷；卷名改滚B）
+% ------------------------------------------------------------
+\newcommand{\jpnum}[1]{{\fontsize{\qpYJbNumSize}{\qpYJbNumSize}\selectfont\numbold #1}}
+\newcommand{\jptxtsize}{7.5pt}
+\newcommand{\jptxt}{\fontsize{\jptxtsize}{\jptxtsize}\selectfont}
+\newcommand{\juanname}{滚动测评卷（B）}
+\newcommand{\pqt}{\ifnum\value{page}<10 0\fi\thepage}
+\setlength{\headwidth}{\textwidth}
+\fancyfoot[RO]{\jptxt\juanname\hspace{3.95mm}{\heitiao 滚动卷}\hspace{3.88mm}卷\hspace{2.25mm}\jpnum{\pqt}}
+\fancyfoot[LE]{\jptxt\jpnum{\pqt}\hspace{1.9mm}卷\hspace{3.95mm}{\heitiao 羿郭工作室}%
+  \hspace{3.0mm}高中数学\hspace{2.75mm}选择性必修第一册\hspace{2.8mm}RJB}
+
+% ------------------------------------------------------------
+% 件型层 E｜三栏排布器＋卷末答案速查表
+% ------------------------------------------------------------
+\newcommand{\jpcol}[1]{\raisebox{0pt}[0pt][0pt]{\vtop{\hsize\jpcolw\parskip0pt\parindent0pt
+  \setlength\linewidth{\jpcolw}\setlength\columnwidth{\jpcolw}   % 换装补钉：qp-m3 括线盒按 \linewidth 取宽
+  \fontsize{10.5pt}{17.7pt}\selectfont\relax#1}}}
+\newcommand{\jpthree}[3]{\nointerlineskip\noindent\jpcol{#1}\hspace{\jpgap}\jpcol{#2}%
+  \hspace{\jpgap}\jpcol{#3}\par}
+\newcommand{\jplead}{\hbox{}\nointerlineskip}
+
+\newcommand{\datu}[1]{{\fontsize{9pt}{12pt}\selectfont #1}}
+\newcommand{\dabiao}{%
+  \par\vgt{\hG}\noindent{\fontsize{10.5pt}{17.7pt}\selectfont\heitiao 答案速查}\par\nopagebreak
+  \vskip 1.2mm\noindent\datu{\setlength{\tabcolsep}{1.4pt}%
+  \begin{tabular}{|c|*{16}{c|}}
+  \hline
+  题号 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\ \hline
+  答案 & B & B & A & C & A & A & C & ACD & AD & \(x^{2}\!-\!\frac{y^{2}}{4}\!=\!1\) & \(y^{2}\!=\!2x/12x/6x\) & \(4\) & 略 & 略 & 略 & 略 \\ \hline
+  \end{tabular}}\par}
+
+\begin{document}
+% ===================== 第 1 页：栏1 卷头＋Q1–Q3；栏2 Q4–Q6；栏3 组行二＋Q7–Q9 =====================
+\jpthree{\jphead
+  \ti{1}{若不同两点 \(P\)、\(Q\) 的坐标分别为 \((a,b)\)，\((3-b,3-a)\)，则线段 \(PQ\) 的垂直平分线的斜率为\kw}
+  \optline{\optIV{A．\(1\)；}{B．\(-1\)；}{C．\(3\)；}{D．\(-3\)．}}
+  \ti{2}{已知直线 \(l\) 的倾斜角为 \(30^{\circ}\)，点 \(P(2,1)\) 在直线 \(l\) 上，将直线 \(l\) 绕点 \(P(2,1)\) 按逆时针方向旋转 \(30^{\circ}\) 后到达直线 \(l_{1}\) 的位置，此时直线 \(l_{1}\) 与 \(l_{2}\) 平行或重合，且 \(l_{2}\) 是线段 \(AB\) 的垂直平分线，其中 \(A(1,m-1)\)，\(B(m,2)\)，则 \(m\) 的值为\kw}
+  \optline{\optII{A．\(4-\sqrt{3}\)；}{B．\(4+\sqrt{3}\)；}}
+  \optline{\optII{C．\(2+\sqrt{3}\)；}{D．\(4+2\sqrt{3}\)．}}
+}{\jplead
+  \ti{3}{已知 \(\triangle ABC\) 的顶点为 \(A(-1,5)\)，\(B(5,5)\)，\(C(6,-2)\)，则 \(\triangle ABC\) 的外接圆的方程为\kw}
+  \optline{\optII{A．\(x^{2}+y^{2}-4x-2y-20=0\)；}{B．\(x^{2}+y^{2}+4x+2y-20=0\)；}}
+  \optline{\optII{C．\(x^{2}+y^{2}-4x+2y-20=0\)；}{D．\(x^{2}+y^{2}-4x-2y+20=0\)．}}
+  \ti{4}{已知曲线 \(C\) 的方程为 \(F(x,y)=0\)，则下列说法正确的是\kw}
+  \optline{A．若曲线 \(C\) 上点的坐标都是方程 \(F(x,y)=0\) 的解，则以方程 \(F(x,y)=0\) 的解为坐标的点也都在曲线 \(C\) 上；}
+  \optline{B．若以方程 \(F(x,y)=0\) 的解为坐标的点都在曲线 \(C\) 上，则方程 \(F(x,y)=0\) 是曲线 \(C\) 的方程；}
+  \optline{C．若曲线 \(C\) 上点的坐标都是方程 \(F(x,y)=0\) 的解，且以方程 \(F(x,y)=0\) 的解为坐标的点都在曲线 \(C\) 上，则方程 \(F(x,y)=0\) 是曲线 \(C\) 的方程；}
+  \optline{D．若曲线 \(C\) 关于 \(y\) 轴对称，则 \(F(-x,y)=-F(x,y)\) 对一切实数 \(x\)、\(y\) 成立．}
+  \ti{5}{若 \(M\) 是抛物线 \(y^{2}=2x\) 上一动点，点 \(P\left(3,\dfrac{10}{3}\right)\)，设 \(d\) 是点 \(M\) 到准线的距离，要使 \(d+|MP|\) 最小，则点 \(M\) 的坐标为\kw}
+  \optline{\optII{A．\((2,2)\)；}{B．\((-2,2)\)；}}
+  \optline{\optII{C．\((2,-2)\)；}{D．\((3,2)\)．}}
+}{\jplead
+  \ti{6}{北京时间2022年4月16日9时56分，神舟十三号载人飞船返回舱在东风着陆场成功着陆，全国人民都为我国的科技水平感到自豪．某学校科技小组在计算机上模拟航天器变轨返回试验．航天器按顺时针方向运行的轨迹方程为 \(\dfrac{x^{2}}{100}+\dfrac{y^{2}}{25}=1\)，变轨（即航天器运行轨迹由椭圆变为抛物线）后返回的轨迹是以 \(y\) 轴为对称轴，\(\left(0,\dfrac{36}{5}\right)\) 为顶点的抛物线的一部分．已知观测点 \(A\) 的坐标 \((6,0)\)，当航天器与点 \(A\) 距离为 \(4\) 时，向航天器发出变轨指令，则航天器降落点 \(B\) 与观测点 \(A\) 之间的距离为\kw}
+  \optline{\optIV{A．\(3\)；}{B．\(2.5\)；}{C．\(2\)；}{D．\(1\)．}}
+  \ti{7}{若椭圆上存在点 \(P\)，使得点 \(P\) 到椭圆的两个焦点的距离之比为 \(2:1\)，则称该椭圆为“倍径椭圆”，则下列椭圆中为“倍径椭圆”的是\kw}
+  \optline{\optII{A．\(\dfrac{x^{2}}{16}+\dfrac{y^{2}}{15}=1\)；}{B．\(\dfrac{x^{2}}{9}+\dfrac{y^{2}}{10}=1\)；}}
+  \optline{\optII{C．\(\dfrac{x^{2}}{25}+\dfrac{y^{2}}{21}=1\)；}{D．\(\dfrac{x^{2}}{33}+\dfrac{y^{2}}{36}=1\)．}}
+  \vgt{\hG}
+  \zuhang{二、选择题}{：本题共2小题，每小题5分，共10分．\ 在每小题给出的选项中，有多项符合题目要求．（全部选对得5分，部分选对得2分，有选错的得0分）}%
+  \vgt{\hG}
+  \ti{8}{已知 \(F_{1}\)、\(F_{2}\) 分别为双曲线 \(C\colon \dfrac{x^{2}}{4}-\dfrac{y^{2}}{b^{2}}=1\)（\(b>0\)）的左、右焦点，点 \(M(-4,0)\) 在直线 \(l\) 上，过点 \(F_{2}\) 的直线与双曲线的右支交于 \(A\)、\(B\) 两点，下列说法正确的是\kw}
+  \optline{A．若直线 \(l\) 与双曲线左右两支各一个交点，则直线 \(l\) 的斜率范围为 \(\left(-\dfrac{b}{2},\dfrac{b}{2}\right)\)；}
+  \optline{B．点 \(F_{2}\) 到双曲线渐近线的距离为 \(\sqrt{b^{2}+4}\)；}
+  \optline{C．若直线 \(AB\) 垂直于 \(x\) 轴，且 \(\triangle ABM\) 为锐角三角形，则双曲线的离心率取值范围为 \(\left(1,\dfrac{1+\sqrt{13}}{2}\right)\)；}
+  \optline{D．记 \(\triangle AF_{1}F_{2}\) 的内切圆 \(I_{1}\) 的半径为 \(r_{1}\)，\(\triangle BF_{1}F_{2}\) 的内切圆 \(I_{2}\) 的半径为 \(r_{2}\)，若 \(r_{1}r_{2}=4\)，则 \(b=2\sqrt{3}\)．}
+  \ti{9}{已知椭圆 \(C\colon \dfrac{x^{2}}{12}+\dfrac{y^{2}}{8}=1\)，则下列结论正确的是\kw}
+  \optline{A．\(C\) 的焦点坐标为 \((\pm 2,0)\)；}
+  \optline{B．\(C\) 的离心率为 \(\dfrac{\sqrt{6}}{3}\)；}
+  \optline{C．\(C\) 的长轴长为 \(2\sqrt{3}\)；}
+  \optline{D．若 \(P\) 为 \(C\) 上任意一点，则 \(P\) 到两焦点的距离之和为 \(4\sqrt{3}\)．}
+}
+\newpage
+% ===================== 第 2 页：栏1 组行三＋Q10–Q12；栏2 组行四＋Q13–Q15；栏3 Q16＋速查表 =====================
+\jpthree{\jplead
+  \zuhang{三、填空题}{：本题共3小题，每小题5分，共15分．}%
+  \vgt{\hG}
+  \ti{10}{已知双曲线 \(\dfrac{x^{2}}{a^{2}}-\dfrac{y^{2}}{b^{2}}=1\)（\(a>0\)，\(b>0\)）的焦距为 \(2\sqrt{5}\)，且双曲线的一条渐近线与直线 \(2x+y+1=0\) 平行，则双曲线的方程为\kongbai}
+  \ti{11}{根据下列条件，求抛物线的标准方程：(1)焦点坐标为 \(\left(\dfrac{1}{2},0\right)\)；(2)准线方程为 \(x+3=0\)；(3)焦点在 \(x\) 轴的正半轴，且到准线的距离为 \(3\)．}
+  \ti{12}{若经过双曲线 \(\dfrac{y^{2}}{16}-\dfrac{x^{2}}{8}=1\) 的一个焦点，且垂直于实轴的直线 \(l\) 与双曲线交于 \(A\)，\(B\) 两点，则线段 \(AB\) 的长为\kongbai}
+}{\jplead
+  \zuhang{四、解答题}{：本题共4小题，共40分．\ 解答应写出文字说明、证明过程或演算步骤．}%
+  \vgt{\hG}
+  \ti{13}{\fenzhi{8}已知点 \(P\) 与点 \(F(2,0)\) 的距离比它到直线 \(x+4=0\) 的距离小 \(2\)，若记点 \(P\) 的轨迹为曲线 \(C\)．}
+  \qpart{（1）求曲线 \(C\) 的方程；}
+  \qpart{（2）若直线 \(l\) 与曲线 \(C\) 相交于 \(A\)，\(B\) 两点，且 \(OA\perp OB\)．求证直线 \(l\) 过定点，并求出该定点的坐标．}
+  \ti{14}{\fenzhi{10}过 \(M(2,-2p)\) 引抛物线 \(x^{2}=2py\)（\(p>0\)）的切线，切点分别为 \(A\)，\(B\)．若 \(AB\) 的斜率等于 \(2\)，求 \(p\) 的值．}
+}{\jplead
+  \ti{15}{\fenzhi{10}已知椭圆 \(C\colon x^{2}+2y^{2}=2\)，左右焦点分别为 \(F_{1}\)、\(F_{2}\)，过点 \(F_{1}\)，倾斜角为 \(\dfrac{\pi}{4}\) 的直线 \(l\) 交椭圆于 \(A\)、\(B\) 两点．}
+  \qpart{（1）求椭圆 \(C\) 的离心率；}
+  \qpart{（2）求 \(\triangle ABF_{2}\) 的面积．}
+  \ti{16}{\fenzhi{12}已知直线 \(l\colon y=x+m\) 与抛物线 \(C\colon x^{2}=4y\)．}
+  \qpart{（1）按 \(m\) 的取值讨论 \(l\) 与 \(C\) 的公共点个数；}
+  \qpart{（2）若 \(l\) 与 \(C\) 相交于 \(A(x_{1},y_{1})\)、\(B(x_{2},y_{2})\) 两点，且 \(x_{1}^{2}+x_{2}^{2}=24\)，求 \(m\) 的值与线段 \(|AB|\) 的长．}
+  \ifshowans\dabiao\fi   % 换装案B：速查表＝答案承载件，纯题档随开关吞（防漏答案）
+  \ifshowans\else % 案B双锚补丁：附卷页整页跳过，纯题档在此补偿发射 16 键（两档 M3-ANSKEY 恒等，对号门两档可跑）
+  \anskey{2章-滚B-1}\anskey{2章-滚B-2}\anskey{2章-滚B-3}\anskey{2章-滚B-4}\anskey{2章-滚B-5}\anskey{2章-滚B-6}\anskey{2章-滚B-7}\anskey{2章-滚B-8}\anskey{2章-滚B-9}\anskey{2章-滚B-10}\anskey{2章-滚B-11}\anskey{2章-滚B-12}\anskey{2章-滚B-13}\anskey{2章-滚B-14}\anskey{2章-滚B-15}\anskey{2章-滚B-16}
+  \fi
+}
+% ===================== 卷末附卷：参考答案（案B 附卷制：仅含详解档成页；纯题档整页跳过） =====================
+\ifshowans
+\newpage
+\jpthree{\jplead
+  \par\vskip 2.0mm\noindent{\fontsize{\qpJTfSize}{17.7pt}\selectfont\heitiao 参考答案}\hspace{0.6em}{\fontsize{\qpJTeSize}{17.7pt}\selectfont（滚动测评卷（B）·含详解档）}\par\nopagebreak
+  \begin{ansblock}[2章-滚B-1]
+  % ans:2章-滚B-1
+  \ansitem{1}{B（\(-1\)）}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-2]
+  % ans:2章-滚B-2
+  \ansitem{2}{B（\(4+\sqrt{3}\)）}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-3]
+  % ans:2章-滚B-3
+  \ansitem{3}{A（\(x^{2}+y^{2}-4x-2y-20=0\)）}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-4]
+  % ans:2章-滚B-4
+  \ansitem{4}{C}
+  \ansnote{解析}{曲线与方程须同时满足纯粹性（曲线上的点的坐标都是方程的解）与完备性（以方程的解为坐标的点都在曲线上）。A 只有纯粹性，反例：\(C\) 为直线 \(y=x\)，\(F=y^{2}-x^{2}\)，解 \((1,-1)\) 不在 \(C\) 上；B 只有完备性，反例：\(C\) 为两直线 \(y=\pm x\)，\(F=y-x\)，\(C\) 上点 \((1,-1)\) 的坐标不是解；C 两翼兼备，由定义知 \(F(x,y)=0\) 是曲线 \(C\) 的方程，正确；D 对称性不强制奇形式，反例：单位圆 \(F=x^{2}+y^{2}-1\) 关于 \(y\) 轴对称，而 \(F(-2,0)=3\neq-3\)。故选 C。}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-5]
+  % ans:2章-滚B-5
+  \ansitem{5}{A（\((2,2)\)）}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-6]
+  % ans:2章-滚B-6
+  \ansitem{6}{A（\(3\)）}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-7]
+  % ans:2章-滚B-7
+  \ansitem{7}{C}
+  \end{ansblock}
+}{\jplead
+  \begin{ansblock}[2章-滚B-8]
+  % ans:2章-滚B-8
+  \ansitem{8}{ACD}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-9]
+  % ans:2章-滚B-9
+  \ansitem{9}{AD}
+  \ansnote{解析}{\(a^{2}=12\)，\(b^{2}=8\)，\(c^{2}=4\)，\(c=2\)。A：焦点 \((\pm 2,0)\)，正确；B：\(e=\dfrac{2}{2\sqrt{3}}=\dfrac{\sqrt{3}}{3}\neq\dfrac{\sqrt{6}}{3}\)，错误；C：长轴长 \(2a=4\sqrt{3}\neq 2\sqrt{3}\)（\(2\sqrt{3}\) 恰为 \(a\)），错误；D：由椭圆定义 \(|PF_{1}|+|PF_{2}|=2a=4\sqrt{3}\)，正确。故选 AD。}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-10]
+  % ans:2章-滚B-10
+  \ansitem{10}{\(x^{2}-\dfrac{y^{2}}{4}=1\)}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-11]
+  % ans:2章-滚B-11
+  \ansitem{11}{(1)\(y^{2}=2x\)；(2)\(y^{2}=12x\)；(3)\(y^{2}=6x\)}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-12]
+  % ans:2章-滚B-12
+  \ansitem{12}{\(4\)}
+  \end{ansblock}
+}{\jplead
+  \begin{ansblock}[2章-滚B-13]
+  % ans:2章-滚B-13
+  \ansitem{13}{(1)\(y^{2}=8x\)；(2)直线 \(l\) 恒过定点 \((8,0)\)}
+  \ansnote{解析}{(1) 点 \(P\) 与 \(F(2,0)\) 的距离等于它到 \(x+2=0\) 的距离，由抛物线定义，轨迹为以 \(F\) 为焦点、\(x+2=0\) 为准线的抛物线，\(y^{2}=8x\)。(2) 设 \(l\)：\(x=ty+m\)（\(m\neq 0\)），联立得 \(y^{2}-8ty-8m=0\)（\(\Delta=64t^{2}+32m>0\)，\(m>-2t^{2}\)），\(y_{1}y_{2}=-8m\)，\(x_{1}x_{2}=m^{2}\)；由 \(OA\perp OB\) 得 \(x_{1}x_{2}+y_{1}y_{2}=m^{2}-8m=0\)，\(m=8\)，\(l\)：\(x=ty+8\) 恒过 \((8,0)\)。}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-14]
+  % ans:2章-滚B-14
+  \ansitem{14}{\(p=1\)}
+  \ansnote{解析}{\(y=\dfrac{x^{2}}{2p}\)，\(y'=\dfrac{x}{p}\)，过切点 \((x_{1},y_{1})\) 的切线 \(y=\dfrac{x_{1}}{p}x-y_{1}\)。两切线均过 \(M(2,-2p)\)：\(-2p=\dfrac{2x_{i}}{p}-y_{i}\)，即 \(y_{i}=\dfrac{2}{p}x_{i}+2p\)，故 \(A\)、\(B\) 均在直线 \(y=\dfrac{2}{p}x+2p\) 上，\(k_{AB}=\dfrac{2}{p}=2\)，\(p=1\)。}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-15]
+  % ans:2章-滚B-15
+  \ansitem{15}{(1)\(e=\dfrac{\sqrt{2}}{2}\)；(2)\(S_{\triangle ABF_{2}}=\dfrac{4}{3}\)}
+  \ansnote{解析}{(1) \(a^{2}=2\)，\(b^{2}=1\)，\(c^{2}=1\)，\(e=\dfrac{\sqrt{2}}{2}\)。(2) \(F_{1}(-1,0)\)，\(l\)：\(y=x+1\)，联立 \(x^{2}+2y^{2}=2\) 解得 \(A(0,1)\)、\(B\left(-\dfrac{4}{3},-\dfrac{1}{3}\right)\)，\(S_{\triangle ABF_{2}}=S_{\triangle AF_{1}F_{2}}+S_{\triangle BF_{1}F_{2}}=\dfrac{1}{2}\times 2\times 1+\dfrac{1}{2}\times 2\times\dfrac{1}{3}=\dfrac{4}{3}\)。}
+  \end{ansblock}
+  \begin{ansblock}[2章-滚B-16]
+  % ans:2章-滚B-16
+  \ansitem{16}{(1)\(m>-1\) 两个公共点；\(m=-1\) 一个公共点（相切，切点 \((2,1)\)）；\(m<-1\) 没有公共点；(2)\(m=1\)，\(|AB|=8\)}
+  \ansnote{解析}{(1) 联立 \(\begin{cases}x^{2}=4y\\ y=x+m\end{cases}\) 消元得 \(x^{2}-4x-4m=0\)，\(\Delta=16(1+m)\)：\(m>-1\) 时 \(\Delta>0\) 两个公共点；\(m=-1\) 时 \(\Delta=0\) 一个公共点（相切，切点 \((2,1)\)）；\(m<-1\) 时无公共点。(2) 相交即 \(m>-1\)，\(x_{1}+x_{2}=4\)，\(x_{1}x_{2}=-4m\)，\(x_{1}^{2}+x_{2}^{2}=(x_{1}+x_{2})^{2}-2x_{1}x_{2}=16+8m=24\)，\(m=1\)；\(|AB|=\sqrt{1+1^{2}}\cdot\sqrt{(x_{1}+x_{2})^{2}-4x_{1}x_{2}}=\sqrt{2}\times\sqrt{32}=8\)。}
+  \end{ansblock}
+}
+\fi
+\end{document}

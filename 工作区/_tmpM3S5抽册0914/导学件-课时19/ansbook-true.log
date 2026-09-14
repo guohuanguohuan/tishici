@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 12:28
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1246,27 +1246,6 @@ M3-ANSKEY: 2章-练-课时19-13
 M3-ANSKEY: 2章-练-课时19-14
 M3-ANSKEY: 2章-练-课时19-15
 M3-ANSKEY: 2章-练-课时19-16
-! Missing $ inserted.
-<inserted text> 
-                $
-l.162 ...) p₁=2；(2) x_A=p/(p+1)，斜率范围 (−1,0)∪(0,1)}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.162 ...) p₁=2；(2) x_A=p/(p+1)，斜率范围 (−1,0)∪(0,1)}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-Missing character: There is no ， (U+FF0C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 斜 (U+659C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 率 (U+7387) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 范 (U+8303) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 围 (U+56F4) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
 M3-ANSKEY: 2章-导-课时19-G1
 M3-ANSKEY: 2章-导-课时19-G2
 M3-ANSKEY: 2章-导-课时19-G3

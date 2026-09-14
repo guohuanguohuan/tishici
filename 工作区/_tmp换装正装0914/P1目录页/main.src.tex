@@ -1,0 +1,140 @@
+% ============================================================
+% P1 第9章 套装册目录页（装配轮 2026-09-12，件型层适配件）
+% 工艺承数学 M2 装配轮先例（工作区/M2-第1章量产0911/成卷/装配/册目录页/main.tex）照移，物理线五本制适配：
+%   ①分节单元＝五本（本一导学本／本二练习本／本三拓展本〔拍板增设〕／本四测评本／本五答案本），
+%     \tocchapter 章带扩至 01~05（BOOK ONE~FIVE）；
+%   ②页码列＝我方跨本连续页码实数（G7 方案B·义5-4/义5-3 装配轮执行值），非全品原书页码（G12）；
+%   ③行距压缩档 21.06pt＝7.401mm（M2 同档照移；本件 13 行＋5 带单页可容，仍取 M2 装配档从紧——行距适配登记）；
+%   ④页眉小字＝「第9章套装」（M2「套装目录」位，章级套装措辞）；册题行＝高中物理 必修第三册（人教版）；
+%   ⑤新增局部宏 \tocjie（节号行＝「9.N＋题名」，与 \toclesson 同构去「第N课时」装饰）、\tocpart（册末
+%     部分行＝深灰方块图标＋加粗名＋小注，承 PL1 配页套 \mupartrow 视觉语言）；其余六宏与 \toclink/
+%     \toczong/\tocans 照 M2 原样拷入；
+%   ⑥学史切片行＝独立薄本（装配轮定案：不占跨本连续链，自成页码制起 1，行尾「P1 ·本1页」实数）；
+%   ⑦\pagestyle{empty} 配页件不计页，置本一前（公共规则§11）。
+% 页码链：导学本 1-16／练习本 17-30／拓展本 31-40／测评本 41-43／答案本 44-48，合计 48 页。
+% 编译：xelatex main.tex 两遍；目验：python 工作区/物理样张0911/骨架/render.py . main 150 → png/
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+
+% ================= 套装目录页专用层（仅本件使用；不动公共模块语义） =================
+\pagestyle{empty}
+\setlength{\parskip}{0pt}
+% ---- 目录页灰阶（照 M2 件＝全品目录页实测灰值） ----
+\definecolor{tocA6}{HTML}{A6A6A6}
+\definecolor{tocC7}{HTML}{C7C7C7}
+\definecolor{toc144}{HTML}{909090}
+\definecolor{toc9D}{HTML}{9D9D9D}
+\definecolor{tocB0}{HTML}{B0B0B0}
+\definecolor{tocCC}{HTML}{CCCCCC}
+\definecolor{toc63}{HTML}{636363}
+\definecolor{toc20}{HTML}{202020}
+
+% ---- 专用字族（全部指向 variantF/fonts 字面量绝对路径，不复制二进制） ----
+\newfontfamily{\toccont}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{NSC-w850.ttf}
+\newfontfamily{\tocnum}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.905,Depth=0.212]{NSC-w600.ttf}
+\newfontfamily{\tocreglat}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.905,Depth=0.212]{NotoSansSC-Regular.otf}
+\newfontfamily{\tocpg}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,Height=0.705,Depth=0.212]{NotoSansSC-Regular.otf}
+\setCJKfamilyfont{tocreg}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{NotoSansSC-Regular.otf}
+\setCJKfamilyfont{tocbig}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/]{NotoSansSC-Black.otf}
+\newcommand{\toczs}{\CJKfamily{tocreg}}
+\newcommand{\tocmu}{\CJKfamily{tocbig}}
+
+% ---- 行零件（照 M2 件原样） ----
+\newcommand{\tocdots}{\leaders\hbox to 0.99mm{\hss\textcolor{tocCC}{\rule[1.05mm]{0.4mm}{0.4mm}}\hss}\hfill}
+\newcommand{\tocrow}[3]{\noindent\hbox to \dimexpr\textwidth-4.7mm\relax{%
+  \hskip#1#2\hspace{1.6mm}\tocdots\hspace{1.6mm}\makebox[7.5mm][r]{{\tocpg\fontsize{7.6pt}{8.4pt}\selectfont#3}}}\par}
+% 【新增局部宏 \tocjie】节号行：#1＝教材节号（9.N）#2＝题名 #3＝页码（与 \toclesson 同构、去「第N课时」装饰）
+\newcommand{\tocjie}[3]{\tocrow{29.45mm}{{\toczs\tocreglat\fontsize{7.7pt}{9pt}\selectfont#1}\hspace{1.45em}{\toczs\fontsize{7.7pt}{9pt}\selectfont#2}}{#3}}
+% 【承 M2 \toclink】非课时件行：#1=件标 #2=题名 #3=页码
+\newcommand{\toclink}[3]{\tocrow{29.45mm}{{\toczs\tocreglat\fontsize{7.7pt}{9pt}\selectfont#1}\hspace{1.45em}{\toczs\fontsize{7.7pt}{9pt}\selectfont#2}}{#3}}
+\newcommand{\toczongicon}{\begin{tikzpicture}[x=1mm,y=1mm,overlay]
+  \fill (0,1.41) circle (1.41mm);
+  \fill[white] (-0.55,2.13) -- (-0.55,0.69) -- (0.72,1.41) -- cycle;
+\end{tikzpicture}}
+\newcommand{\toczongbox}{\hbox to 3.3mm{\hss\toczongicon\hss}}
+\newcommand{\toczong}[2]{\tocrow{15.70mm}{\toczongbox{\heizhang\fontsize{8.8pt}{10pt}\selectfont#1}}{#2}}
+\newcommand{\tocans}[2]{\tocrow{5.18mm}{{\heizhang\fontsize{8.8pt}{10pt}\selectfont ◆\hspace{0.9em}#1}}{#2}}
+% 【新增局部宏 \tocpart】册末部分行（学史切片·独立薄本）：深灰 3.1mm 方块图标承 PL1 配页套 \mupartrow
+\newcommand{\tocpart}[2]{\noindent\hbox to \dimexpr\textwidth-4.7mm\relax{%
+  \hskip5.18mm{\raisebox{-0.5mm}{\color{gray122}\rule{3.1mm}{3.1mm}}}\hspace{2.2mm}{\heizhang\fontsize{8.8pt}{10pt}\selectfont#1}\hspace{1.6mm}\tocdots\hspace{1.6mm}%
+  \makebox[7.5mm][r]{{\tocpg\fontsize{7.6pt}{8.4pt}\selectfont#2}}}\par}
+
+% ---- 本带（承 M2 章带，序号 01~05） ----
+\newcommand{\tocchapter}[3]{\par\nopagebreak\noindent
+  \begin{tikzpicture}[x=1mm,y=1mm,overlay]
+    \fill[gray122] (5.23,0) rectangle ++(7.4,7.4);
+    \node[anchor=center,inner sep=0pt] at (8.93,3.62)
+      {\textcolor{white}{\toccont\fontsize{13.5pt}{14pt}\selectfont#1}};
+    \node[anchor=base west,inner sep=0pt] at (15.75,3.3)
+      {\color{toc20}\heijie\fontsize{11.8pt}{14pt}\selectfont#2};
+    \node[anchor=base west,inner sep=0pt] at (15.08,-0.38)
+      {\color{toc63}\numpnum\fontsize{6.4pt}{7pt}\selectfont#3};
+    \draw[tocB0,line width=0.15mm,dash pattern=on 0.42mm off 0.29mm] (40.64,1.0) -- (170.9,1.0);
+  \end{tikzpicture}\par}
+
+% ---- 页眉（承 M2；小字＝「第9章套装」） ----
+\newcommand{\tocheader}{\par\noindent
+  \begin{tikzpicture}[x=1mm,y=1mm,overlay]
+    \node[anchor=base west,inner sep=0pt] at (4.45,-1.26)
+      {\scalebox{0.710}[1.0]{\toccont\fontsize{70.5pt}{70.5pt}\selectfont{\color{tocA6}CO}{\color{tocC7}NTENTS}}};
+    \fill[toc144] (108.29,13.2) rectangle ++(6.3,6.8);
+    \fill[tocC7] (100.81,5.4) rectangle ++(8.2,8.5);
+    \fill[tocA6] (103.65,3.0) rectangle ++(2.5,2.4);
+    \node[anchor=base west,inner sep=0pt] at (113.3,1.3)
+      {\color{toc63}\tocmu\fontsize{27.8pt}{30pt}\selectfont 目录};
+    \fill[toc9D] (136.3,4.9) rectangle ++(1.7,3.0);
+    \node[anchor=base west,inner sep=0pt] at (137.8,4.6)
+      {\color{toc144}\heibian\fontsize{9pt}{10pt}\selectfont 第9章套装};
+  \end{tikzpicture}\par}
+
+\begin{document}
+% 行距压缩档：21.06pt＝7.401mm（M2 装配档照移；13 行＋5 带本可回 23.26pt 样张档，
+%   从紧取 21.06 保持套装册目录页族一致——行距适配登记见头注③）
+\baselineskip=21.06pt
+\lineskiplimit=-1pt
+\lineskip=0pt
+\vspace*{13.58mm}
+\tocheader
+\vspace{17.86mm}
+\vspace{-1.2mm}
+\noindent{\fontsize{11pt}{15pt}\selectfont\heitiao 高中物理\quad 必修第三册（人教版）\quad 第9章\quad 静电场及其应用\par}
+\vspace{1.0mm}
+\noindent{\fontsize{8pt}{12pt}\selectfont\fangsong 页码＝套装跨本连续页码（本一起 1·五本一串 1~48；我方装订页码，非全品原书页码——G7 方案B）}\par
+\vspace{2.2mm}
+
+\tocchapter{01}{本一\quad 导学本}{B\hspace{0.93em}O\hspace{0.93em}O\hspace{0.93em}K\hspace{1.50em}O\hspace{0.93em}N\hspace{0.93em}E}
+\vspace{-3.29mm}
+\tocjie{9.1}{电荷}{1}
+\tocjie{9.2}{库仑定律}{4}
+\tocjie{9.3}{电场\quad 电场强度}{7}
+\tocjie{9.4}{静电的防止与利用}{11}
+\toczong{本章易错过关（章末）}{15}
+\vspace{4.8mm}
+\tocchapter{02}{本二\quad 练习本}{B\hspace{0.93em}O\hspace{0.93em}O\hspace{0.93em}K\hspace{1.50em}T\hspace{0.93em}W\hspace{0.93em}O}
+\vspace{-3.29mm}
+\tocjie{9.1}{配套练习}{17}
+\tocjie{9.2}{配套练习}{20}
+\tocjie{9.3}{配套练习}{24}
+\tocjie{9.4}{配套练习}{28}
+\vspace{4.8mm}
+\tocchapter{03}{本三\quad 拓展本}{B\hspace{0.93em}O\hspace{0.93em}O\hspace{0.93em}K\hspace{1.50em}T\hspace{0.93em}H\hspace{0.93em}R\hspace{0.93em}E\hspace{0.93em}E}
+\vspace{-3.29mm}
+\toclink{拓展册}{静电场拓展（46 题·题号与答案册同册对号）}{31}
+\vspace{4.8mm}
+\tocchapter{04}{本四\quad 测评本}{B\hspace{0.93em}O\hspace{0.93em}O\hspace{0.93em}K\hspace{1.50em}F\hspace{0.93em}O\hspace{0.93em}U\hspace{0.93em}R}
+\vspace{-3.29mm}
+\toclink{测评卷}{单元素养测评卷（一）·第9章（19 题·100 分·90 分钟）}{41}
+\vspace{4.8mm}
+\tocchapter{05}{本五\quad 答案本}{B\hspace{0.93em}O\hspace{0.93em}O\hspace{0.93em}K\hspace{1.50em}F\hspace{0.93em}I\hspace{0.93em}V\hspace{0.93em}E}
+\vspace{-3.29mm}
+\tocans{参考答案册（导学·练习·拓展·测评全含·208 键）}{44}
+\vspace{3.2mm}
+\tocpart{物理学史切片}{P1}
+{\fontsize{7.4pt}{10pt}\selectfont\fangsong\textcolor{midgray}\noindent\hskip11.4mm（第9章·5 条·独立薄本·散页配页件——自成页码制起 1，不入 1~48 跨本链；置套装册末）\par}
+\end{document}

@@ -1,0 +1,29 @@
+[true] true/M2导学本.pdf          51页 期望1~51      页码全连续 ✓ recto/verso 形制 ✓
+[true] true/M2练习本.pdf          50页 期望52~101    页码全连续 ✓ recto/verso 形制 ✓
+[true] true/P1导学本.pdf          19页 期望1~19      页码全连续 ✓ recto/verso 形制 ✓
+[true] true/P1练习本.pdf          20页 期望20~39     页码全连续 ✓ recto/verso 形制 ✓
+[true] true/P1拓展本.pdf          11页 期望40~50     页码全连续 ✓ recto/verso 形制 ✓
+[false] false/M2导学本.pdf         40页 期望1~40      页码全连续 ✓ recto/verso 形制 ✓
+[false] false/M2练习本.pdf         41页 期望41~81     页码全连续 ✓ recto/verso 形制 ✓
+[false] false/P1导学本.pdf         15页 期望1~15      页码全连续 ✓ recto/verso 形制 ✓
+[false] false/P1练习本.pdf         14页 期望16~29     页码全连续 ✓ recto/verso 形制 ✓
+[false] false/P1拓展本.pdf         10页 期望30~39     页码全连续 ✓ recto/verso 形制 ✓
+[true] 书签 M2导学本: 12/12 ✓
+[true] 书签 M2练习本: 12/12 ✓
+[true] 书签 P1导学本: 5/5 ✓
+[true] 书签 P1练习本: 4/4 ✓
+[true] 书签 P1拓展本: 1/1 ✓
+[false] 书签 M2导学本: 12/12 ✓
+[false] 书签 M2练习本: 12/12 ✓
+[false] 书签 P1导学本: 5/5 ✓
+[false] 书签 P1练习本: 4/4 ✓
+[false] 书签 P1拓展本: 1/1 ✓
+—— 键账逐件 34 件：全 PASS ✓；册丁合计 769（期望 769＝839 全账−卷件 70）｜件面合计 770（期望 770＝册丁＋补键 1）
+—— 验收④ 抽样 6 页：
+   M2导学本 p1（true 含答案印面）→ pure 零泄答 ✓
+   M2练习本 p1（true 含答案印面）→ pure 零泄答 ✓
+   P1导学本 p1（true 含答案印面）→ pure 零泄答 ✓
+   P1练习本 p1（true 含答案印面）→ pure 零泄答 ✓
+   P1拓展本 p1（true 含答案印面）→ pure 零泄答 ✓
+   M2导学本 p2（true 含答案印面）→ pure 零泄答 ✓
+断言：终验全过 ✓｜true 双链 M2 1~101／P1 1~50｜pure 双链 M2 1~81／P1 1~39

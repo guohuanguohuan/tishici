@@ -1,0 +1,202 @@
+% ============================================================
+% M2 轮4 S3 · 练习件 第9课时（1.2.4 二面角）
+% 题面：照题面库 成卷/题面库/课时09-1.2.4.md 全 16 题冻结入卷（卷面题号＝库序 1~16，组名已正名照登）；
+%       组名/难度照库头第 3/4 字段（题4＝中档偏上照库）。
+% 模板基线＝练习线样张（六宏零改动拷入，qp-blocks 21327B）；版式＝练习线 p2 课时训练
+%       （\keshi＋multicols＋花形三档 基础巩固1~10／综合提升11~14／思维探索15~16）。
+% 图源：题3＝讲练上 image88 → figs/js_image88.png（30mm，题干后）；
+%       题5＝讲练上 image103 → figs/js_image103.png（25mm，题干后）；
+%       题6＝单元6 image47 → figs/dy6_image47.png（32mm，题干后）。
+%       题14 命制件【图】占位不配图（三维禁绘、无源位图；题面删「如图，」二字防悬空指代）——见 ../批3值台账.md。
+%       题7/8 教材 C 组题面库冻结无【图】占位（照冻结态入卷）。
+% 组装病预防（承批1修复法）：双位题号选项网格 0.5\linewidth-0.5\lxhang-0.25em／四连排
+%       0.25\linewidth-0.25\lxhang-0.25em；\xiexwei 全体 minus 3mm 弹性；图行 penalty 链按批1 §五-9。
+% 取值/组名照登对照/图位/登记事项：见 ../批3值台账.md 课时09 节。
+% 编译：xelatex main.tex（两遍）→ python render.py → png/pageN.png
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3} % 换装：六宏→qp-m3 单包（钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，两补钉随版）
+
+% ============================================================
+% 练习件局部宏（照练习线样张页2形制搬入；本段只加件，不改件）
+% ============================================================
+\renewcommand{\qpjianming}{练习件}
+\renewcommand{\qpceming}{高中数学\quad 选择性必修第一册(人教B版)} % 换装回钉：qp-m3 默认册名＝选必二，防页脚漂移（试迁规约·试迁报告§四 B3 实证必改）
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+
+% ---------- YJ-01 灰块页脚·练习册档（块 31.0×7.8mm，照练习线样张 31.0mm 修正版） ----------
+\newcommand{\qpxsyema}{\ifnum\value{page}<10 00\fi\ifnum\value{page}>9 \ifnum\value{page}<100 0\fi\fi\arabic{page}}
+\newcommand{\lxshuziL}{\hbox to 13.8mm{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][l]{\rule[-3.145mm]{0pt}{7.8mm}\hspace{2.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema}}\hss}}
+\newcommand{\lxshuziR}{\hbox to 13.8mm{\kern-17.2mm\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][r]{\rule[-3.145mm]{0pt}{7.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema\hspace{2.75mm}}}}}
+\fancyfoot[RO]{\raisebox{-1.24mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}\hspace{3mm}\lxshuziL}}
+\fancyfoot[LE]{\raisebox{-1.24mm}[0pt][0pt]{\lxshuziR\hspace{3mm}\qphuitext\qpceming}}
+
+% ---------- HX-01 花形·三档名（练习册版 25.5×6.8mm，重叠 o＝5.1mm） ----------
+% 局部宏 \huadianOverlapLx 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 局部宏 \dangbadge 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+
+% ---------- TJ-02 练习册悬挂题号（单号 5.75mm／双位 7.6mm） ----------
+% 长度 \lxhang 已由 qp-m3 分配，预删防重复定义
+% 局部宏 \tihao 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 局部宏 \lxopt 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 局部宏 \xiexwei 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 局部宏 \zu 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+
+\begin{document}
+%成书重装五本跨本连续页码（G7方案B，承M2/M3装配先例）setcounter 注入位
+\setcounter{page}{75}
+
+% ============================================================
+% 课时训练（三档 10＋4＋2＝16 题）
+% ============================================================
+\keshi{第9课时\quad 二面角}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\zu{J1 射影面积法二面角×直算填空〔代表〕} \tieside{简单}已知二面角\(P\text{-}\penalty100 AB\text{-}\penalty100 P'\)的大小为\(\frac{\pi}{6}\)，且\(PP'\perp\)平面\(ABP'\)，\(\triangle ABP\)的面积为\(3\)，求\(\triangle ABP'\)的面积．
+\xiexwei{16mm}
+\begin{ansblock}[练-课时09-1]
+% ans:练-课时09-1
+\ansitem{1}{\(\dfrac{3\sqrt{3}}{2}\)}
+\end{ansblock}
+
+\tihao{2}\zu{J2 直二面角·勾股链\(CD^{2}\)源头×填空} \tieside{简单}已知直二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)的棱上有\(A\)，\(B\)两个点，\(AC\subset\alpha\)，\(AC\perp l\)，\(BD\subset\beta\)，\(BD\perp l\)，若\(AB=5\)，\(AC=3\)，\(BD=8\)，求\(CD\)的长．
+\xiexwei{16mm}
+\begin{ansblock}[练-课时09-2]
+% ans:练-课时09-2
+\ansitem{2}{\(7\sqrt{2}\)}
+\end{ansblock}
+
+\tihao{3}\zu{J3 建系向量法·先垂直后建系×双问〔代表〕（取锐）} \tieside{中档}如图所示的几何体中，\(BE\perp BC\)，\(EA\perp AC\)，\(BC=2\)，\(AC=2\sqrt{2}\)，\(\angle ACB=45^\circ\)，\(AD\parallel BC\)，\(BC=2AD\)．
+\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=30mm]{figs/js_image88.png}}\par\vspace{-1.0mm}\penalty10000
+\lxopt{(1)求证：\(AE\perp\)平面\(ABCD\)；}
+\lxopt{(2)若\(\angle ABE=60^\circ\)，点\(F\)在\(EC\)上，且满足\(EF=2FC\)，求平面\(FAD\)与平面\(ADC\)的夹角的余弦值．}
+\xiexwei{20mm}
+\begin{ansblock}[练-课时09-3]
+% ans:练-课时09-3
+\ansitem{3}{(1)证明见解析；(2)\(\dfrac{2\sqrt{7}}{7}\)}
+\end{ansblock}
+
+\tihao{4}\zu{J3〔第2题〕锐钝判定「同负异补」×双问（取钝）} \tieside{中档偏上}在四棱锥\(P\text{-}\penalty100 ABCD\)中，\(AB\parallel CD\)，且\(\angle BAP=\angle CDP=90^\circ\)．
+\lxopt{(1)证明：平面\(PAB\perp\)面\(PAD\)；}
+\lxopt{(2)若\(PA=PD=AB=DC\)，\(\angle APD=90^\circ\)，求二面角\(A\text{-}\penalty100 PB\text{-}\penalty100 C\)的余弦值．}
+\xiexwei{20mm}
+\begin{ansblock}[练-课时09-4]
+% ans:练-课时09-4
+\ansitem{4}{(1)证明见解析；(2)\(-\dfrac{\sqrt{3}}{3}\)}
+\end{ansblock}
+
+\tihao{5}\zu{J4 圆锥载体·四法三法方法总览×双问} \tieside{中档}如图，\(D\)为圆锥的顶点，\(O\)是圆锥底面的圆心，\(AE\)为底面直径，\(AE=AD\)．\(\triangle ABC\)是底面的内接正三角形，\(P\)为\(DO\)上一点，\(PO=\frac{\sqrt{6}}{6}DO\)．
+\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=25mm]{figs/js_image103.png}}\par\vspace{-1.0mm}\penalty10000
+\lxopt{(1)证明：\(PA\perp\)平面\(PBC\)；}
+\lxopt{(2)求二面角\(B\text{-}\penalty100 PC\text{-}\penalty100 E\)的余弦值．}
+\xiexwei{24mm}
+\begin{ansblock}[练-课时09-5]
+% ans:练-课时09-5
+\ansitem{5}{(1)证明见解析；(2)\(\dfrac{2\sqrt{5}}{5}\)}
+\end{ansblock}
+
+\tihao{6}\zu{J5 二面角含参存在性×菱形底两问〔代表〕} \tieside{中档}如图，在四棱锥\(P\text{-}\penalty100 ABCD\)中，底面\(ABCD\)是边长为\(2\)的菱形，\(\angle ABC=60^\circ\)，\(\triangle PAB\)为正三角形，且侧面\(PAB\perp\)底面\(ABCD\)，\(E\)为线段\(AB\)的中点，\(M\)在线段\(PD\)上．
+\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=32mm]{figs/dy6_image47.png}}\par\vspace{-1.0mm}\penalty10000
+\lxopt{(1)求证：\(PE\perp AC\)；}
+\lxopt{(2)是否存在点\(M\)，使二面角\(M\text{-}\penalty100 EC\text{-}\penalty100 D\)的大小为\(60^\circ\)，若存在，求出\(\frac{PM}{PD}\)的值；若不存在，请说明理由．}
+\xiexwei{26mm}
+\begin{ansblock}[练-课时09-6]
+% ans:练-课时09-6
+\ansitem{6}{(1)证明见解析；(2)存在，\(\dfrac{PM}{PD}=\dfrac{1}{3}\)}
+\end{ansblock}
+
+\tihao{7}\zu{J6 距离＋二面角综合×菱形底大题〔代表·C组难槽〕} \tieside{难}已知四棱锥\(P\text{-}\penalty100 ABCD\)中，\(PB\perp AD\)，侧面\(PAD\)为边长等于\(2\)的正三角形，底面\(ABCD\)为菱形，侧面\(PAD\)与底面\(ABCD\)所成的二面角为\(120^\circ\)．
+\lxopt{(1)求点\(P\)到平面\(ABCD\)的距离；}
+\lxopt{(2)求二面角\(A\text{-}\penalty100 PB\text{-}\penalty100 C\)的余弦值．}
+\xiexwei{40mm}
+\begin{ansblock}[练-课时09-7]
+% ans:练-课时09-7
+\ansitem{7}{(1)\(\dfrac{3}{2}\)；(2)\(-\dfrac{2\sqrt{7}}{7}\)}
+\ansnote{解析}{(2) 钝制 \(-\dfrac{2\sqrt{7}}{7}\)（取锐 \(\dfrac{2\sqrt{7}}{7}\)，两制并存）。}
+\end{ansblock}
+
+\tihao{8}\zu{J7 垂直＋二面角＋存在性三问×正四棱锥〔C组难槽·自1.2.2移交〕} \tieside{难}四棱锥\(S\text{-}\penalty100 ABCD\)的底面是正方形，每条侧棱的长都是底面边长的\(\sqrt{2}\)倍，\(P\)为侧棱\(SD\)上的点．
+\lxopt{(1)求证：\(AC\perp SD\)；}
+\lxopt{(2)若\(SD\perp\)平面\(PAC\)，求二面角\(P\text{-}\penalty100 AC\text{-}\penalty100 D\)的大小；}
+\lxopt{(3)在(2)的条件下，侧棱\(SC\)上是否存在一点\(E\)，使得\(BE\parallel\)平面\(PAC\)．若存在，求\(SE:EC\)的值；若不存在，试说明理由．}
+\xiexwei{48mm}
+\begin{ansblock}[练-课时09-8]
+% ans:练-课时09-8
+\ansitem{8}{(1)证明见解析；(2)\(30^{\circ}\)；(3)\(SE:EC=2:1\)}
+\end{ansblock}
+
+\tihao{9}\zu{二面角平面角·定义辨认×选择〔代表〕} \tieside{简单}已知\(P\)是二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)的棱\(l\)上一点，\(M\)是半平面\(\alpha\)内一点，\(N\)是半平面\(\beta\)内一点（\(M\)，\(N\)均与\(P\)不重合）．则下列条件中，能使\(\angle MPN\)成为二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)的平面角的是\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(MP\perp l\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(NP\perp l\)；}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(MP\perp l\)且\(NP\perp l\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(MP\perp NP\)}}
+\begin{ansblock}[练-课时09-9]
+% ans:练-课时09-9
+\ansitem{9}{C（\(MP\perp l\) 且 \(NP\perp l\)）}
+\end{ansblock}
+
+\tihao{10}\zu{勾股链·平面角直读×填空〔代表〕} \tieside{简单}在二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)中，棱\(l\)上取一点\(A\)，\(AB\subset\alpha\)且\(AB\perp l\)于点\(A\)，\(AC\subset\beta\)且\(AC\perp l\)于点\(A\)．若\(AB=AC=1\)，\(BC=\sqrt{2}\)，则二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)的大小为\kongbai{}．
+\begin{ansblock}[练-课时09-10]
+% ans:练-课时09-10
+\setlength{\anshang}{7.6mm}% 题10 起双位档（照答案册同值，块内局部）
+\ansitem{10}{\(90^{\circ}\)}
+\end{ansblock}
+
+\dangbadge{综}{合}{提}{升}
+
+\tihao{11}\zu{直二面角·性质垂直链×填空〔代表〕} \tieside{简单}在直二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)中，点\(B\)在棱\(l\)上，\(BA\subset\alpha\)且\(BA\perp l\)于点\(B\)，\(BA=3\)．点\(D\)在半平面\(\beta\)内，\(BD=4\)，且\(BD\)与棱\(l\)所成的角为\(60^\circ\)．则\(AD=\)\kongbai{}．
+\begin{ansblock}[练-课时09-11]
+% ans:练-课时09-11
+\setlength{\anshang}{7.6mm}% 题11 起双位档（照答案册同值，块内局部）
+\ansitem{11}{5}
+\end{ansblock}
+
+\tihao{12}\zu{射影面积公式一步直取×选择〔代表〕} \tieside{简单}已知一个边长为\(2\)的正三角形位于二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)的半平面\(\alpha\)内，它在半平面\(\beta\)内的射影图形的面积为\(\frac{\sqrt{3}}{2}\)．则二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)的大小为\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A．\(30^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B．\(45^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C．\(60^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D．\(90^\circ\)}}
+\begin{ansblock}[练-课时09-12]
+% ans:练-课时09-12
+\setlength{\anshang}{7.6mm}% 题12 起双位档（照答案册同值，块内局部）
+\ansitem{12}{C（\(60^{\circ}\)）}
+\end{ansblock}
+
+\tihao{13}\zu{射影面积公式一步直取〔第2题〕×填空} \tieside{简单}二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)的大小为\(60^\circ\)，半平面\(\alpha\)内一个图形的面积记为\(S\)．若\(S\)在半平面\(\beta\)内的射影图形恰为两条直角边长分别为\(3\)和\(4\)的直角三角形，则\(S=\)\kongbai{}．
+\begin{ansblock}[练-课时09-13]
+% ans:练-课时09-13
+\setlength{\anshang}{7.6mm}% 题13 起双位档（照答案册同值，块内局部）
+\ansitem{13}{12}
+\end{ansblock}
+
+\tihao{14}\zu{勾股链·平面角直读〔第2题〕×填空} \tieside{简单}在三棱锥\(P\text{-}\penalty100 ABC\)中，\(PA\perp\)平面\(ABC\)，\(\triangle ABC\)是边长为\(2\)的正三角形，\(D\)为\(BC\)的中点，连接\(AD\)，\(PD\)．若\(PA=3\)，则二面角\(P\text{-}\penalty100 BC\text{-}\penalty100 A\)的大小为\kongbai{}．
+\begin{ansblock}[练-课时09-14]
+% ans:练-课时09-14
+\setlength{\anshang}{7.6mm}% 题14 起双位档（照答案册同值，块内局部）
+\ansitem{14}{\(60^{\circ}\)}
+\end{ansblock}
+
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\zu{直二面角·性质垂直链〔第2题〕×解答} \tieside{简单}已知直二面角\(\alpha\text{-}\penalty100 l\text{-}\penalty100 \beta\)，点\(A\)在棱\(l\)上，点\(B\)在半平面\(\alpha\)内，点\(C\)在半平面\(\beta\)内，且\(BA\perp l\)于点\(A\)，\(CA\perp l\)于点\(A\)．
+\lxopt{(1)求证：\(AB\perp\)平面\(\beta\)；}
+\lxopt{(2)若\(AB=1\)，\(BC=2\)，求\(\angle ACB\)的大小．}
+\xiexwei{70mm}
+\begin{ansblock}[练-课时09-15]
+% ans:练-课时09-15
+\setlength{\anshang}{7.6mm}% 题15 起双位档（照答案册同值，块内局部）
+\ansitem{15}{(1)证明见解析；(2)\(30^{\circ}\)}
+\end{ansblock}
+
+\tihao{16}\zu{二面角平面角·定义辨认〔第2题〕×选择} \tieside{简单}在正方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，二面角\(C_1\text{-}\penalty100 AB\text{-}\penalty100 C\)的大小为\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A．\(30^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B．\(45^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C．\(60^\circ\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D．\(90^\circ\)}}
+\begin{ansblock}[练-课时09-16]
+% ans:练-课时09-16
+\setlength{\anshang}{7.6mm}% 题16 起双位档（照答案册同值，块内局部）
+\ansitem{16}{B（\(45^{\circ}\)）}
+\end{ansblock}
+
+\end{multicols}
+
+\tailfill
+\end{document}

@@ -1,0 +1,340 @@
+% ============================================================
+% M3 S2 导学件·波1 片件 —— 课时09 圆与圆的位置关系（2.3.4）（母版照抄制·臂4）
+% 生成：M3 成卷轮 S2 波1 臂4｜2026-09-14｜编译 cwd＝本目录（中文路径禁 \input 绝对路径）
+%   xelatex main-true.tex ×2 → 含详解印本；xelatex main-false.tex ×2 → 纯题版（单源双本）
+% 输入链（全只读）：题面库 课时09-圆与圆的位置关系.md（题面逐字装配）＋ -答案侧.md（值逐字回嵌）
+%   ＋ 定稿/批B-课时09-圆与圆的位置关系.md（详解回嵌源＝各块【亲算】格）；
+%   toolchain＝qp-m3.sty（钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，本地挂载副本，破损即停）。
+% 母版体例：详见 成卷/导学件/课时01-坐标法/母版体例说明.md（骨架/宏用法/门谱/坑）。
+% 键账：件内 ansblock 键集 ≡ 题面库片键集 ≡ manifest 键序（21 键，零缺漏零多余）；
+%   预习位零键零答案；印面号 1—21＝探究 1—16＋课堂评价 17—21，键↔号映射见 值台账-课时09.json。
+% 多选门：本片多选 4 道（T7~T10，源件12多选富集）＝题面库/manifest 明注触顶合规（≤4），成卷未增。
+% 括线判据（承重墙禁放宽）：估高＞8 行（chars/23 栏宽口径）→ 括线模，逐键读数入值台账；
+%   其余灰底。本片括线键：T9、T14、T15、T16（门谱首轮读数 T16 估高10＞8 补入，估高读数见台账）。
+% 门谱读数：见 过程件 工作区/_tmpM3S2波1臂4_0914/（编译 log、门谱输出、台账）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（探针实证 0914：书宋缺 U+2212，▱ 诸字库皆缺→NSC 子块；
+%     禁改 sty 本体保 md5；无 ▱/− 用件的片可整块照抄，零副作用） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（纯题档/详解档三零门：CJK 胶收缩；Underfull 治理读数见过程件） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 页脚件名（qp-headfoot 复用入口） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件}%
+
+\begin{document}
+%装配轮S6三本跨本连续页码（G7方案B）setcounter 注入位
+\setcounter{page}{30}
+
+\zhangtitle{第二章\quad 平面解析几何}
+\jietitle{2.3.4 圆与圆的位置关系}
+\mubiaoline
+\mubiaomu{1}{理解圆与圆的五种位置关系，掌握用圆心距与半径的和差判定两圆位置关系的方法，能判定两圆的位置关系；}
+\mubiaomu{2}{会求两圆的公共弦所在直线的方程与公切线的条数，能用两圆位置关系解决公共弦长、切点弦、轨迹等综合问题；}
+\mubiaomu{3}{体会圆与圆位置关系中“几何条件代数化、代数结果几何化”的转化思想，会处理存在性与参数范围问题.}
+
+\vspace{1.7mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 课前预习（知识点导学填空；零键零答案——预习键位按检查口令④裁定前口径，
+% \kongbai 空线＋\zhentib 判断题面形，两档等形不泄答）
+% ============================================================
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{圆与圆位置关系的判定}
+
+\tiaomu{1}{设两圆圆心距为\(d\)，半径分别为\(r_1\)，\(r_2\)（\(r_1\geqslant r_2\)），则\(d>r_1+r_2\)\kongbai{}；\(d=r_1+r_2\)\kongbai{}；\(|r_1-r_2|<d<r_1+r_2\)\kongbai{}；\(d=|r_1-r_2|\)\kongbai{}；\(0\leqslant d<|r_1-r_2|\)\kongbai{}．\zhuzhu{五类位置关系对应公切线条数：外离4条、外切3条、相交2条、内切1条、内含0条；判定前先把方程化成标准形，读准圆心与半径.}}
+
+\tiaomu{2}{代数法：两圆方程联立消元后，由判别式可判断公共点个数；但要区分\kongbai{}与\kongbai{}（相切、外离/内含），必须回到圆心距与半径的比较．\zhuzhu{判别式\(\Delta>0\)只保证相交，两圆相切时\(\Delta=0\)而两圆外离、内含时也可能无公共点，代数法须与几何法互校.}}
+
+\zsd{二}{两圆的公共弦与公切线}
+
+\tiaomu{1}{两圆相交时，把两圆的方程\kongbai{}（相减消去二次项），所得一次方程就是公共弦所在直线的方程；公共弦长可把该直线放回其中一个圆，用\kongbai{}（弦心距、半径）求得．\zhuzhu{相减所得直线必过两交点；相交时连心线垂直平分公共弦，公共弦长常用\(r^{2}=d^{2}+(\dfrac{l}{2})^{2}\)型勾股关系.}}
+
+\tiaomu{2}{过圆外一点作圆的两条切线，两切点间的弦（切点弦）所在直线，可由以\kongbai{}为直径的圆与原圆的公共弦求得．\zhuzhu{切点弦问题的核心转化：圆心与该定点为直径两端构造辅助圆，切点对两圆各张直角.}}
+
+\zsd{三}{转化与存在性}
+
+\tiaomu{1}{与圆有关的存在性问题，常把几何条件转化为\kongbai{}（两圆的位置关系），再由圆心距与半径的和差列出参数的不等式（组）求解．\zhuzhu{如\(PA\perp PB\)即\(P\)在以\(AB\)为直径的圆上；“恰有两条公切线”即两圆相交；“公切线恰有4条”即两圆外离.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{两圆相交时，公共弦所在直线的方程可由两圆方程相减直接得到．}
+
+\zhentib{(2)}{若两圆没有公共点，则两圆外离．}
+
+\liubai[9mm]{此处书写}
+
+% ============================================================
+% 课中探究（考点探究〔例+变式〕＝练槽 16 键；题后紧跟答案＝ansblock 内嵌，
+% 值照答案侧逐字，详解承批B【亲算】回嵌＋印面清洗）
+% ============================================================
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+% ---------- 探究点一 位置关系的判定与公切线 ----------
+\tjdnr{一}{位置关系的判定与公切线}{例\textbf{1}}{简单(知识点一)}{若点\(A(1,0)\)和点\(B(4,0)\)到直线\(l\)的距离依次为1和2，则这样的直线有\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．0条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．1条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．2条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．3条}\par}
+
+\begin{ansblock}[2章-练-课时09-T4]
+% ans:2章-练-课时09-T4
+\ansitem{1}{D}
+\ansnote{详解}{满足条件的直线\(l\)即分别以\(A\)、\(B\)为圆心，1、2为半径的两圆的公切线．\(d=|AB|=3=1+2\)，两圆外切，公切线有3条（2外1内），选D．}
+\end{ansblock}
+
+\liB{变式\textbf{2}}{简单(知识点一)}{}{已知圆\(C_1\): \(x^{2}+(y+m)^{2}=2\)与圆\(C_2\): \((x-m)^{2}+y^{2}=8\)恰有两条公切线，则实数\(m\)的取值范围是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(1<m<3\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(-1<m<1\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(m>3\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr\linewidth-1em\relax][l]{D．\(-3<m<-1\)或\(1<m<3\)}\par}
+
+\begin{ansblock}[2章-练-课时09-T1]
+% ans:2章-练-课时09-T1
+\ansitem{2}{D}
+\ansnote{详解}{恰有两条公切线\(\iff\)两圆相交．圆心\((0,-m)\)、\((m,0)\)，半径\(\sqrt{2}\)、\(2\sqrt{2}\)，圆心距\(d=\sqrt{2}|m|\)．\par\noindent 相交\(\iff 2\sqrt{2}-\sqrt{2}<\sqrt{2}|m|<2\sqrt{2}+\sqrt{2}\)，即\(1<|m|<3\)，选D．}
+\end{ansblock}
+
+\liB{变式\textbf{3}}{简单(知识点一)}{}{集合\(M=\{(x,y)\mid x^{2}+y^{2}\leqslant 4\}\)，\(N=\{(x,y)\mid(x-1)^{2}+(y-1)^{2}\leqslant r^{2},\ r>0\}\)，且\(M\cap N=N\)，则\(r\)的取值范围是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\((0,\sqrt{2}-1)\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\((0,1]\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\((0,2-\sqrt{2}]\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\((0,2]\)}\par}
+
+\begin{ansblock}[2章-练-课时09-T2]
+% ans:2章-练-课时09-T2
+\ansitem{3}{C}
+\ansnote{详解}{\(M\cap N=N\iff N\subseteq M\)，即圆\(N\)内含或内切于圆\(M\)：\(d+r\leqslant 2\)，其中\(d=\sqrt{2}\)．故\(\sqrt{2}+r\leqslant 2\)，得\(0<r\leqslant 2-\sqrt{2}\)，选C．}
+\end{ansblock}
+
+\liB{变式\textbf{4}}{简单(知识点一)}{\duoxuan\hspace{0.6em}}{已知圆\(M\): \((x-2)^{2}+(y-1)^{2}=1\)，圆\(N\): \((x+2)^{2}+(y+1)^{2}=1\)，则下列是\(M\)，\(N\)两圆公切线的直线方程为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(y=0\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(3x-4y=0\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(x-2y+\sqrt{5}=0\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(x-2y-\sqrt{5}=0\)}\par}
+
+\begin{ansblock}[2章-练-课时09-T7]
+% ans:2章-练-课时09-T7
+\ansitem{4}{ACD}
+\ansnote{详解}{圆心\(M(2,1)\)、\(N(-2,-1)\)，\(d=2\sqrt{5}>2\)，两圆相离，公切线4条．逐项验圆心到直线的距离是否等于1：\par\noindent A：\(y=0\)到\(M\)距1，到\(N\)距1，是；B：\(3x-4y=0\)到\(M\)距\(|6-4|/5=2/5\neq 1\)，不是；\par\noindent C：\(x-2y+\sqrt{5}=0\)到\(M\)距\(\sqrt{5}/\sqrt{5}=1\)，到\(N\)距1，是；D：同理距离均为1，是．故选ACD．}
+\end{ansblock}
+
+\tjdnr{一}{位置关系的判定与公切线}{例\textbf{5}}{简单(知识点一)}{\duoxuan\hspace{0.6em}已知圆\(C_1\): \(x^{2}+(y-a)^{2}=9\)与圆\(C_2\): \((x-a)^{2}+y^{2}=1\)有四条公切线，则实数\(a\)的取值可能是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(-4\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(-2\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(2\sqrt{2}\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(3\)}\par}
+
+\begin{ansblock}[2章-练-课时09-T10]
+% ans:2章-练-课时09-T10
+\ansitem{5}{AD}
+\ansnote{详解}{四条公切线\(\iff\)两圆外离．圆心\((0,a)\)、\((a,0)\)，\(d=\sqrt{2}|a|\)，半径3、1．外离\(\iff\sqrt{2}|a|>4\)，即\(|a|>2\sqrt{2}\)．\(-4\)合，\(3>2\sqrt{2}\)合，\(-2\)与\(2\sqrt{2}\)均不合．选AD．}
+\end{ansblock}
+
+\liB{变式\textbf{6}}{中档(知识点一)}{\duoxuan\hspace{0.6em}}{已知\(C\): \(x^{2}+y^{2}-6x=0\)，则下述正确的是\nobreak(\kongwei)}
+
+\lxopt{A．圆\(C\)的半径\(r=3\)}
+
+\lxopt{B．点\((1,2\sqrt{2})\)在圆\(C\)的内部}
+
+\lxopt{C．直线\(l\): \(x+\sqrt{3}y+3=0\)与圆\(C\)相切}
+
+\lxopt{D．圆\(C'\): \((x+1)^{2}+y^{2}=4\)与圆\(C\)相交}
+
+\begin{ansblock}[2章-练-课时09-T8]
+% ans:2章-练-课时09-T8
+\ansitem{6}{ACD}
+\ansnote{详解}{\(C\): \((x-3)^{2}+y^{2}=9\)，圆心\((3,0)\)，\(r=3\)．\par\noindent A：\(r=3\)，对；B：点\((1,2\sqrt{2})\)到圆心距离\(\sqrt{4+8}=2\sqrt{3}>3\)，在圆外，错；\par\noindent C：\(d=|3+0+3|/2=3=r\)，相切，对；D：圆心距\(4\)，半径3、2，\(1<4<5\)，相交，对．故选ACD．}
+\end{ansblock}
+
+\xiaojie{①识别：以公切线条数、两圆位置关系判定、集合包含语言或“恰有几条公切线”逆求参数为目标的题，判归本题型；先把方程化标准形，读准圆心与半径.}
+\bindp {\kaishu ②操作：几何法比较\(d\)与\(r_1+r_2\)、\(|r_1-r_2|\)；多选题逐项验证，公切线问题验证圆心到直线的距离是否等于半径.}
+\bindp {\kaishu ③收束：公切线条数与位置关系互相对应：外离4、外切3、相交2、内切1、内含0；逆求参数时按位置关系列不等式（组）.}
+
+% ---------- 探究点二 存在性·对称·综合判定 ----------
+\tjdnr{二}{存在性·对称·综合判定}{例\textbf{7}}{中档(知识点三)}{已知点\(A(-2,0)\)，\(B(2,0)\)，若圆\((x-3)^{2}+y^{2}=r^{2}\)（\(r>0\)）上存在点\(P\)（不同于点\(A\)，\(B\)），使得\(\overrightarrow{PA}\cdot\overrightarrow{PB}=0\)，则实数\(r\)的取值范围是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\((1,5)\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\([1,5]\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\((1,3]\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\([3,5)\)}\par}
+
+\begin{ansblock}[2章-练-课时09-T3]
+% ans:2章-练-课时09-T3
+\ansitem{7}{A}
+\ansnote{详解}{\(\overrightarrow{PA}\cdot\overrightarrow{PB}=0\iff\angle APB=90^{\circ}\)，即\(P\)在以\(AB\)为直径的圆\(x^{2}+y^{2}=4\)上（除\(A\)、\(B\)）．存在这样的\(P\iff\)两圆相交：\(|r-2|<3<r+2\)，得\(r>1\)且\(r<5\)，选A．（恰过\(A\)、\(B\)的情形对应相切\(r=1\)或\(r=5\)，已由“不同于\(A\)，\(B\)”排除．）}
+\end{ansblock}
+
+\liB{变式\textbf{8}}{简单(知识点三)}{}{已知圆\(C\): \((x-3)^{2}+(y-\sqrt{7})^{2}=1\)和两点\(A(-m,0)\)，\(B(m,0)\)（\(m>0\)），若圆\(C\)上存在点\(P\)，使得\(\angle APB=90^{\circ}\)，则\(m\)的最大值为\kongbai{}．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-练-课时09-T12]
+% ans:2章-练-课时09-T12
+\ansitem{8}{5}
+\ansnote{详解}{\(\angle APB=90^{\circ}\iff P\)在以\(AB\)为直径的圆\(x^{2}+y^{2}=m^{2}\)上．存在这样的\(P\iff\)两圆有公共点：\(|m-1|\leqslant|OC|\leqslant m+1\)，而\(|OC|=\sqrt{9+7}=4\)．由\(4\geqslant m-1\)得\(m\leqslant 5\)（另一侧\(4\leqslant m+1\)给\(m\geqslant 3\)），故\(m\)的最大值为5．}
+\end{ansblock}
+
+\liB{变式\textbf{9}}{中档(知识点一)}{}{已知圆\(C_1\)的标准方程是\((x-4)^{2}+(y-4)^{2}=25\)，圆\(C_2\): \(x^{2}+y^{2}-4x+my+3=0\)关于直线\(x+\sqrt{3}y+1=0\)对称，则圆\(C_1\)与圆\(C_2\)的位置关系为\kongbai{}．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-练-课时09-T13]
+% ans:2章-练-课时09-T13
+\ansitem{9}{相交}
+\ansnote{详解}{\(C_2\)的圆心\((2,-m/2)\)在对称轴上：\(2-(\sqrt{3}/2)m+1=0\)，得\(m=2\sqrt{3}\)．\(r_2^{2}=4+(m/2)^{2}-3=4\)，\(r_2=2\)，圆心\(C_2(2,-\sqrt{3})\)；圆\(C_1\)圆心\((4,4)\)，\(r_1=5\)．\par\noindent \(d^{2}=(4-2)^{2}+(4+\sqrt{3})^{2}=23+8\sqrt{3}\approx 36.9\)，而\((r_1-r_2)^{2}=9\)，\((r_1+r_2)^{2}=49\)，\(9<23+8\sqrt{3}<49\)，即\(3<d<7\)，两圆相交．}
+\end{ansblock}
+
+\liB{变式\textbf{10}}{简单(知识点一)}{\duoxuan\hspace{0.6em}}{已知圆\(O\): \(x^{2}+y^{2}=4\)和圆\(C\): \((x-2)^{2}+(y-3)^{2}=1\)．现给出如下结论，其中正确的是\nobreak(\kongwei)}
+
+\lxopt{A．圆\(O\)与圆\(C\)有四条公切线}
+
+\lxopt{B．过\(C\)且在两坐标轴上截距相等的直线方程为\(x+y=5\)或\(x-y+1=0\)}
+
+\lxopt{C．过\(C\)且与圆\(O\)相切的直线方程为\(9x-16y+30=0\)}
+
+\lxopt{D．\(P\)、\(Q\)分别为圆\(O\)和圆\(C\)上的动点，则\(|PQ|\)的最大值为\(\sqrt{13}+3\)，最小值为\(\sqrt{13}-3\)}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时09-T9]
+% ans:2章-练-课时09-T9
+\ansitem{10}{AD}
+\ansnote{详解}{\(|OC|=\sqrt{4+9}=\sqrt{13}>2+1=3\)，两圆外离，公切线4条，A对．\par\noindent B：\(x+y=5\)过\(C(2,3)\)且两截距均为5，合；但\(x-y+1=0\)过\(C\)，两截距为\(-1\)与\(1\)，不相等，B的表述错误，B不对．\par\noindent C：\(C(2,3)\)在圆\(O\)外，过\(C\)与圆\(O\)相切的切线应有两条，选项只给一条且按唯一解表述，不成立（\(9x-16y+30=0\)过\(C\)但只是其中一条），C不对．\par\noindent D：\(|PQ|_{\max}=|OC|+2+1=\sqrt{13}+3\)，\(|PQ|_{\min}=|OC|-2-1=\sqrt{13}-3\)，D对．故选AD．}
+\end{ansblock}}
+
+\xiaojie{①识别：以存在性（动点垂直、直角条件）、对称性、位置关系综合判断为目标的题，判归本题型；先把文字条件翻译成两圆位置关系或圆心距方程.}
+\bindp {\kaishu ②操作：垂直（直角）条件转“以定线段为直径的圆”，存在性落为两圆有公共点；对称条件转“圆心在对称轴上”；多选题逐项独立验证，警惕“唯一表述”陷阱.}
+\bindp {\kaishu ③收束：参数范围由不等式（组）解出后，按“存在”“不同于”等字眼检验端点是否可取；对称求参先定圆心再定半径.}
+
+% ---------- 探究点三 公共弦·切点弦·定圆与证明 ----------
+\tjdnr{三}{公共弦·切点弦·定圆与证明}{例\textbf{11}}{简单(知识点二)}{已知圆\(O_1\): \(x^{2}+y^{2}=4\)与圆\(O_2\): \(x^{2}+6x+y^{2}=0\)相交于点\(A\)，\(B\)，则四边形\(AO_1BO_2\)的面积是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(4\sqrt{2}/3\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(2\sqrt{2}\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(4\sqrt{2}\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(8\sqrt{2}/3\)}\par}
+
+\begin{ansblock}[2章-练-课时09-T5]
+% ans:2章-练-课时09-T5
+\ansitem{11}{C}
+\ansnote{详解}{两圆方程相减得公共弦\(AB\)所在直线：\(x=-2/3\)．\(|AB|=2\sqrt{r_1^{2}-d_1^{2}}=2\sqrt{4-4/9}=8\sqrt{2}/3\)，\(|O_1O_2|=3\)．连心线垂直平分公共弦，四边形\(AO_1BO_2\)的对角线互相垂直，其面积\(=(1/2)\times(8\sqrt{2}/3)\times 3=4\sqrt{2}\)，选C．}
+\end{ansblock}
+
+\liB{变式\textbf{12}}{简单(知识点二)}{}{若圆\(x^{2}+y^{2}=4\)与圆\(x^{2}+y^{2}+2ay-6=0\)（\(a>0\)）的公共弦长为\(2\sqrt{3}\)，则\(a=\)\kongbai{}．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-练-课时09-T11]
+% ans:2章-练-课时09-T11
+\ansitem{12}{1}
+\ansnote{详解}{两圆方程相减得公共弦所在直线：\(2ay-2=0\)，即\(y=1/a\)，圆心到它的距离\(d=1/a\)．由勾股关系\((\sqrt{3})^{2}+d^{2}=r^{2}\)：\(3+1/a^{2}=4\)，得\(a^{2}=1\)，又\(a>0\)，故\(a=1\)．}
+\end{ansblock}
+
+\tjdnr{三}{公共弦·切点弦·定圆与证明}{例\textbf{13}}{简单(知识点二)}{过圆\(M\): \((x-1)^{2}+y^{2}=4\)内一点\(A(2,1)\)作一弦交圆于\(B\)、\(C\)两点，过点\(B\)、\(C\)分别作圆的切线\(PB\)、\(PC\)，两切线交于点\(P\)，则点\(P\)的轨迹方程为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(y-5=0\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(x+y+5=0\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(x+y-5=0\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(x-y-5=0\)}\par}
+
+\begin{ansblock}[2章-练-课时09-T6]
+% ans:2章-练-课时09-T6
+\ansitem{13}{C}
+\ansnote{详解}{设\(P(x_0,y_0)\)．以\(MP\)为直径的圆过切点\(B\)、\(C\)（\(MB\perp PB\)），其方程为\((x-1)(x-x_0)+y(y-y_0)=0\)．与圆\(M\): \(x^{2}+y^{2}-2x-3=0\)展开相减，得公共弦（即切点弦）\(BC\)所在直线：\((x_0-1)x+y_0y-x_0-3=0\)．\par\noindent \(A(2,1)\)在\(BC\)上：\(2(x_0-1)+y_0-x_0-3=0\)，即\(x_0+y_0=5\)．故点\(P\)的轨迹方程为\(x+y-5=0\)，选C．}
+\end{ansblock}
+
+\liB{变式\textbf{14}}{中档(知识点二)}{}{已知圆\(C\): \(x^{2}+y^{2}-2x-2y-2=0\)，直线\(l\): \(x+2y+2=0\)，\(M\)为直线\(l\)上的动点，过点\(M\)作圆\(C\)的切线\(MA\)，\(MB\)，切点为\(A\)，\(B\)，当四边形\(MACB\)的面积取最小值时，直线\(AB\)的方程为\kongbai{}．}
+\xiexwei{7mm}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时09-T14]
+% ans:2章-练-课时09-T14
+\ansitem{14}{x+2y+1=0}
+\ansnote{详解}{圆\(C\): \((x-1)^{2}+(y-1)^{2}=4\)，圆心\((1,1)\)，\(r=2\)．\(S=2\times(1/2)r\cdot|MA|=2\sqrt{|MC|^{2}-4}\)，最小\(\iff|MC|\)最小，即\(C\)到\(l\)的距离\(|1+2+2|/\sqrt{5}=\sqrt{5}\)．\par\noindent 此时\(M\)为垂足：\(CM\)的方向\((1,2)\)，直线\(CM\): \(y-1=2(x-1)\)，与\(l\)联立\(x+2(2x-1)+2=0\)，得\(x=0\)，\(M(0,-1)\)．以\(CM\)为直径的圆圆心\((1/2,0)\)、半径\(\sqrt{5}/2\)，方程为\(x^{2}+y^{2}-x-1=0\)，与圆\(C\): \(x^{2}+y^{2}-2x-2y-2=0\)相减，得切点弦\(AB\)所在直线：\(x+2y+1=0\)．}
+\end{ansblock}}
+
+\tjdnr{三}{公共弦·切点弦·定圆与证明}{例\textbf{15}}{简单(知识点二)}{某同学发现了一个现象：在求圆的公共弦\(AB\)（即两个圆相交时，两个交点的连线）所在直线的方程恰好与两个圆的方程相减消掉二次项\(x^{2}\)，\(y^{2}\)后所得的方程一样．由此，他提出了一个猜想：对于两个圆\(C_1\): \(x^{2}+y^{2}+D_1x+E_1y+F_1=0\)与\(C_2\): \(x^{2}+y^{2}+D_2x+E_2y+F_2=0\)，直线\((D_1-D_2)x+(E_1-E_2)y+(F_1-F_2)=0\)就是两个圆的公共弦所在直线的方程．你认为他的猜想对吗？请说明理由．}
+\xiexwei{14mm}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时09-T15]
+% ans:2章-练-课时09-T15
+\ansitem{15}{猜想正确，理由见解析}
+\ansnote{详解}{设交点\(A(x_1,y_1)\)、\(B(x_2,y_2)\)，则两交点坐标同时满足两圆方程：\(x_i^{2}+y_i^{2}+D_1x_i+E_1y_i+F_1=0\)且\(x_i^{2}+y_i^{2}+D_2x_i+E_2y_i+F_2=0\)（\(i=1,2\)）．\par\noindent 两式相减：\((D_1-D_2)x_i+(E_1-E_2)y_i+(F_1-F_2)=0\)，即\(A\)、\(B\)都在直线\((D_1-D_2)x+(E_1-E_2)y+(F_1-F_2)=0\)上．又\(D_1\neq D_2\)或\(E_1\neq E_2\)（否则两圆方程相同），该直线系数不全为零，而过两个不同交点的直线有且仅有一条，故它就是公共弦\(AB\)所在直线的方程，猜想正确．}
+\end{ansblock}}
+
+\liB{变式\textbf{16}}{简单(知识点二)}{}{求过点\(A(1,-1)\)且与圆\(C\): \(x^{2}+y^{2}=100\)相切于点\(B(8,6)\)的圆的方程．}
+\xiexwei{18mm}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时09-T16]
+% ans:2章-练-课时09-T16
+\ansitem{16}{(x−4)²+(y−3)²=25}
+\ansnote{详解}{设所求圆的圆心\(D(a,b)\)．切点\(B\)在两圆连心线上（连心线过切点且与公切线垂直）：\(k_{CB}=k_{DB}\)，即\(b/a=6/8=3/4\)，得\(b=3a/4\)．又\(|DA|=|DB|\)：\((a-1)^{2}+(b+1)^{2}=(a-8)^{2}+(b-6)^{2}\)，展开整理得\(14a+14b=98\)，即\(a+b=7\)．\par\noindent 联立\(b=3a/4\)得\(a=4\)，\(b=3\)，\(r=|DB|=\sqrt{16+9}=5\)．故所求圆的方程为\((x-4)^{2}+(y-3)^{2}=25\)（验：\(|DA|=5\)合；\(|DC|=5=R-r\)（大圆半径\(10\)减所求圆半径\(5\)），所求圆与大圆内切于\(B\)）．}
+\end{ansblock}}
+
+\xiaojie{①识别：以求公共弦（方程、弦长、面积）、切点弦（方程、轨迹）、过切点定圆、公共弦猜想证明为目标的题，判归本题型；核心动作是“两圆（或辅助圆）方程相减消去二次项”.}
+\bindp {\kaishu ②操作：公共弦直接相减两圆方程，弦长放回一个圆用勾股关系；切点弦先作以圆心与定点连线段为直径的辅助圆再相减；定圆问题抓“连心线过切点”“到定点与切点距离相等”两条.}
+\bindp {\kaishu ③收束：相减所得直线仅当两圆相交时才是公共弦；证明题按“设点—代入—化简—回译几何结论”表述，所求根与端点逐一检验.}
+
+% ============================================================
+% 课堂评价 G5（恒5＝3单选+2填空＝导槽 G1~G5；ketang 新制顺排可跨栏，禁 \vbox 装栏）
+% 印面号 17—21；多选门：本片多选 4 道（T7~T10）＝题面库/manifest 明注触顶合规，成卷未增
+% ============================================================
+\begin{ketang}{本组共5题（第17—21题），17—19为单选，20—21为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 17}．}\hspace{4.1mm}\tieside{中档(知识点一)}\hspace{2.2mm}设圆\(C_1\): \(x^{2}+y^{2}-2x+4y=4\)，圆\(C_2\): \(x^{2}+y^{2}+6x-8y=0\)，则圆\(C_1\)，\(C_2\)的公切线有\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．1条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．2条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．3条}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．4条}\par}
+
+\begin{ansblock}[2章-导-课时09-G1]
+% ans:2章-导-课时09-G1
+\ansitem{17}{B}
+\ansnote{详解}{\(C_1\): \((x-1)^{2}+(y+2)^{2}=9\)，圆心\((1,-2)\)，\(r_1=3\)；\(C_2\): \((x+3)^{2}+(y-4)^{2}=25\)，圆心\((-3,4)\)，\(r_2=5\)．\(d=\sqrt{16+36}=2\sqrt{13}\approx 7.2\)，\(5-3<2\sqrt{13}<5+3\)，两圆相交，公切线2条，故选：B．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 18}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}已知圆\(C_1\): \(x^{2}+y^{2}-2x+my+1=0\)（\(m\in\mathrm{R}\)）的面积被直线\(x+2y+1=0\)平分，圆\(C_2\): \((x+2)^{2}+(y-3)^{2}=25\)，则圆\(C_1\)与圆\(C_2\)的位置关系是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．外离}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．相交}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．内切}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．外切}\par}
+
+\begin{ansblock}[2章-导-课时09-G2]
+% ans:2章-导-课时09-G2
+\ansitem{18}{B}
+\ansnote{详解}{面积被直线平分\(\iff\)直线过圆心：\(1-m+1=0\)，得\(m=2\)．\(C_1\): \((x-1)^{2}+(y+1)^{2}=1\)，圆心\((1,-1)\)，\(r_1=1\)；\(C_2\)圆心\((-2,3)\)，\(r_2=5\)．\(d=\sqrt{9+16}=5\)，\(4<5<6\)，两圆相交，故选：B．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 19}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}圆心为\(C(2,0)\)的圆\(C\)与圆\(x^{2}+y^{2}+4x-6y+4=0\)相外切，则圆\(C\)的方程为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(x^{2}+y^{2}-4x=0\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(x^{2}+y^{2}-4x+2=0\)}\par}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(x^{2}+y^{2}+4x+2=0\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(x^{2}+y^{2}+4x=0\)}\par}
+
+\begin{ansblock}[2章-导-课时09-G3]
+% ans:2章-导-课时09-G3
+\ansitem{19}{A}
+\ansnote{详解}{已知圆：\((x+2)^{2}+(y-3)^{2}=9\)，圆心\((-2,3)\)，\(r=3\)．\(|AC|=\sqrt{16+9}=5=r+R\)，得\(R=2\)．圆\(C\): \((x-2)^{2}+y^{2}=4\)，即\(x^{2}+y^{2}-4x=0\)，故选：A．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 20}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}圆\(C_1\): \(x^{2}+y^{2}=1\)与圆\(C_2\): \(x^{2}+y^{2}+2x+2y+1=0\)的交点坐标为\kongbai{}．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-导-课时09-G4]
+% ans:2章-导-课时09-G4
+\ansitem{20}{(0,−1)、(−1,0)}
+\ansnote{详解}{两圆方程相减得公共弦所在直线：\(x+y+1=0\)．代入\(x^{2}+y^{2}=1\)：\(x^{2}+(-x-1)^{2}=1\)，即\(2x^{2}+2x=0\)，解得\(x=0\)或\(x=-1\)，交点为\((0,-1)\)、\((-1,0)\)．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 21}．}\hspace{4.1mm}\tieside{中档(知识点二)}\hspace{2.2mm}判断下列各组中两个圆的位置关系：(1)\((x+3)^{2}+(y-2)^{2}=1\)与\(x^{2}+(y+2)^{2}=36\)；(2)\((x-1)^{2}+(y+2)^{2}=4\)与\((x+3)^{2}+(y-1)^{2}=9\)；(3)\(x^{2}+y^{2}+2x-4y=4\)与\(x^{2}+y^{2}-2x=0\)．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-导-课时09-G5]
+% ans:2章-导-课时09-G5
+\ansitem{21}{(1) 内切；(2) 外切；(3) 相交}
+\ansnote{详解}{(1)圆心距\(\sqrt{9+16}=5=6-1\)，内切；(2)\(d=\sqrt{16+9}=5=2+3\)，外切；(3)化标准形：圆心\((-1,2)\)、\((1,0)\)，\(d=\sqrt{4+4}=2\sqrt{2}\)，半径3与1，\(1<2\sqrt{2}<4\)，相交．}
+\end{ansblock}
+
+\end{ketang}
+
+% ---- 尾块（\tailfill 置 \end{multicols} 前；无参＝内容尾随框，件侧不擅自定高） ----
+\tailfill
+
+\end{multicols}
+\end{document}

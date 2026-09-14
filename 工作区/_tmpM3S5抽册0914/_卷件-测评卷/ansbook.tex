@@ -1,0 +1,175 @@
+% ============================================================
+% 纯答案册·测评卷 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：工作区/M3-第2章量产0913/成卷/测评卷/main.tex（md5 fe9628bd94473d485829333fd64dff6b）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..19 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{}%
+\renewcommand{\qpjianming}{答案册答案册}%
+
+\begin{document}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-测-1]
+% ans:2章-测-1
+\ansitem{1}{A}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-2]
+% ans:2章-测-2
+\ansitem{2}{C}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-3]
+% ans:2章-测-3
+\ansitem{3}{A}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-4]
+% ans:2章-测-4
+\ansitem{4}{C（两圆并取）}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-5]
+% ans:2章-测-5
+\ansitem{5}{A}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-6]
+% ans:2章-测-6
+\ansitem{6}{B（两条射线）}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-7]
+% ans:2章-测-7
+\ansitem{7}{A（\(m=-\dfrac{1}{2}\)）}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-8]
+% ans:2章-测-8
+\ansitem{8}{A（\([2\sqrt{3},4)\)）}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-9]
+% ans:2章-测-9
+\ansitem{9}{AB}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-10]
+% ans:2章-测-10
+\ansitem{10}{BCD}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-11]
+% ans:2章-测-11
+\ansitem{11}{BCD}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-12]
+% ans:2章-测-12
+\ansitem{12}{\(y=1\)}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-13]
+% ans:2章-测-13
+\ansitem{13}{\((x-1)^{2}+y^{2}=4\)}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-14]
+% ans:2章-测-14
+\ansitem{14}{\(1+\sqrt{3}\)}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-15]
+% ans:2章-测-15
+\ansitem{15}{(1)\(y^{2}=4x\)；(2)直线 \(AB\) 恒过定点 \((-1,0)\)}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-16]
+% ans:2章-测-16
+\ansitem{16}{(1)\(\dfrac{x^{2}}{6}+\dfrac{y^{2}}{3}=1\)；(2)\(x-\sqrt{7}y+\sqrt{3}=0\) 或 \(x+\sqrt{7}y+\sqrt{3}=0\)}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-17]
+% ans:2章-测-17
+\ansitem{17}{\(-\dfrac{4}{3}\)}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-18]
+% ans:2章-测-18
+\ansitem{18}{\(\dfrac{2\sqrt{3}}{3}\)}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-测-19]
+% ans:2章-测-19
+\ansitem{19}{\(a=1\)}
+\ifansbookdetail
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

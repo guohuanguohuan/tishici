@@ -1,0 +1,228 @@
+% ============================================================
+% 纯答案册·课时01-坐标法 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：工作区/M3-第2章量产0913/成卷/导学件/课时01-坐标法/main.tex（md5 54eaf641b3a5737881b282e32ad619ae）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..23 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件答案册}%
+
+\begin{document}
+\zhangtitle{第二章\quad 平面解析几何}
+\jietitle{2.1 坐标法}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-练-课时01-E4]
+% ans:2章-练-课时01-E4
+\ansitem{1}{|AB|＝5；中点坐标为(3/2,−2)．}
+\ifansbookdetail
+\ansnote{详解}{\(|AB|=\sqrt{(0-3)^{2}+(-4-0)^{2}}=\sqrt{9+16}=5\)；中点坐标为\(((3+0)/2,(0-4)/2)=(3/2,-2)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E1]
+% ans:2章-练-课时01-E1
+\ansitem{2}{D}
+\ifansbookdetail
+\ansnote{详解}{四边形\(MNPQ\)的对角线为\(MP\)与\(NQ\)．\(MP\)的中点为\(((1+4)/2,(1+0)/2)=(5/2,1/2)\)，\(NQ\)的中点为\(((3+2)/2,(-1+2)/2)=(5/2,1/2)\)，两对角线互相平分，故\(MNPQ\)是平行四边形．又 \(|MP|^{2}=(4-1)^{2}+(0-1)^{2}=10\)，\(|NQ|^{2}=(2-3)^{2}+(2+1)^{2}=10\)，对角线相等，故\pxparallelogram\(MNPQ\)为矩形．（若担心为正方形：\(|MN|^{2}=(3-1)^{2}+(-1-1)^{2}=8\)，\(|NP|^{2}=(4-3)^{2}+(0+1)^{2}=2\)，邻边不等，非正方形．）故选：D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E5]
+% ans:2章-练-课时01-E5
+\ansitem{3}{C的坐标为5．}
+\ifansbookdetail
+\ansnote{详解}{\(B\)是线段\(AC\)的中点，设\(C(x)\)，则 \((-1+x)/2=2\)，解得\(x=5\)，即\(C\)的坐标为5．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E6]
+% ans:2章-练-课时01-E6
+\ansitem{4}{P的坐标为3或−5．}
+\ifansbookdetail
+\ansnote{详解}{设\(P(x)\)，依题意 \(|x+9|=2|x+3|\)．两边均非负，平方得 \((x+9)^{2}=4(x+3)^{2}\)，即 \(x^{2}+18x+81=4x^{2}+24x+36\)，整理得 \(3x^{2}+6x-45=0\)，即 \(x^{2}+2x-15=0\)，解得\(x=3\)或\(x=-5\)．检验：\(x=3\)时\(|3+9|=12=2|3+3|\)；\(x=-5\)时\(|-5+9|=4=2|-5+3|\)．所以点\(P\)的坐标为3或\(-5\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E9]
+% ans:2章-练-课时01-E9
+\ansitem{5}{AB边上的中线长3；BC边上的中线长3；CA边上的中线长3√2．}
+\ifansbookdetail
+\ansnote{详解}{设\(AB\)、\(BC\)、\(CA\)的中点分别为\(M\)、\(N\)、\(P\)．\(M((2-2)/2,(1+3)/2)=M(0,2)\)，中线\(|CM|=\sqrt{(0-0)^{2}+(2+1)^{2}}=3\)；\(N((-2+0)/2,(3-1)/2)=N(-1,1)\)，中线\(|AN|=\sqrt{(-1-2)^{2}+(1-1)^{2}}=3\)；\(P((0+2)/2,(-1+1)/2)=P(1,0)\)，中线\(|BP|=\sqrt{(1+2)^{2}+(0-3)^{2}}=\sqrt{18}=3\sqrt{2}\)．所以三条中线的长分别为3、3、\(3\sqrt{2}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E8]
+% ans:2章-练-课时01-E8
+\ansitem{6}{证明见详解．}
+\ifansbookdetail
+\ansnote{详解}{由两点间距离公式：\par\noindent\(|AB|=\sqrt{(3+1)^{2}+(3-3)^{2}}=\sqrt{16}=4\)；\par\noindent\(|AC|=\sqrt{(1+1)^{2}+(2\sqrt{3}+3-3)^{2}}=\sqrt{4+12}=4\)；\par\noindent\(|BC|=\sqrt{(1-3)^{2}+(2\sqrt{3}+3-3)^{2}}=\sqrt{4+12}=4\)．\par\noindent 所以\(|AB|=|AC|=|BC|\)，故\(\triangle ABC\)是等边三角形．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E7]
+% ans:2章-练-课时01-E7
+\ansitem{7}{2}
+\ifansbookdetail
+\ansnote{详解}{曲线方程中\(x=0\)时\(2=0\)不成立，故\(x\neq 0\)，且 \(y=1+2/x\)．设曲线上任意一点\(A(x,1+2/x)\)，则\(|AP|=\sqrt{x^{2}+(1+2/x-1)^{2}}=\sqrt{x^{2}+4/x^{2}}\)．由基本不等式 \(x^{2}+4/x^{2}\geqslant 2\sqrt{x^{2}\cdot 4/x^{2}}=4\)，当且仅当 \(x^{2}=4/x^{2}\)，即\(x=\pm\sqrt{2}\) 时等号成立，此时\(|AP|\)最小值为\(\sqrt{4}=2\)．故所求距离为2．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E2]
+% ans:2章-练-课时01-E2
+\ansitem{8}{BCD}
+\ifansbookdetail
+\ansnote{详解}{设\(P_1(x_1,y_1)\)，\(P_2(x_2,y_2)\)．A：\(d_1=d_2=1\)，则 \(ax_1+by_1+c=ax_2+by_2+c=\sqrt{a^{2}+b^{2}}\)，即 \(P_1\)、\(P_2\) 都在直线 \(ax+by+c-\sqrt{a^{2}+b^{2}}=0\) 上，该直线与\(l\)平行，故直线\(P_1P_2\parallel l\)，A正确；B：\(d_1=1\)，\(d_2=-1\) 只说明\(P_1\)、\(P_2\)在\(l\)的两侧且到\(l\)的距离相等，线段\(P_1P_2\)的中点落在\(l\)上，但\(P_1P_2\)与\(l\)不一定垂直，B错误；C：\(d_1+d_2=0\) 包含\(d_1=d_2=0\)的情形，此时\(P_1\)、\(P_2\)都在\(l\)上，直线\(P_1P_2\)与\(l\)重合，谈不上垂直，C错误；D：\(d_1\cdot d_2\leqslant 0\) 表示\(P_1\)、\(P_2\)分居\(l\)两侧或至少一点在\(l\)上，此时直线\(P_1P_2\)与\(l\)相交或重合，D把“重合”漏掉，D错误．故选：BCD．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E3]
+% ans:2章-练-课时01-E3
+\ansitem{9}{ABD}
+\ifansbookdetail
+\ansnote{详解}{A：\((|x_1-x_2|+|y_1-y_2|)^{2}=(x_1-x_2)^{2}+2|x_1-x_2||y_1-y_2|+(y_1-y_2)^{2}\geqslant(x_1-x_2)^{2}+(y_1-y_2)^{2}\)，开方即得 \(d(A,B)\geqslant|AB|\)，A正确；B：由绝对值三角不等式，\(|x_1-x_2|+|x_2-x_3|\geqslant|x_1-x_3|\)，\(|y_1-y_2|+|y_2-y_3|\geqslant|y_1-y_3|\)，两式相加即得 \(d(A,B)+d(B,C)\geqslant d(A,C)\)（将\(A\)、\(B\)、\(C\)重排即题设形式），B正确；C：设\(Q(x,2x-1)\)是\(l\)上任一点，\(d(P,Q)=|x-3|+|2x-2|=|x-3|+|x-1|+|x-1|\geqslant|(x-3)-(x-1)|+0=2\)，当且仅当\(x=1\)时等号成立，故 \(d(P,l)=2\neq 4\sqrt{5}/5\)，C错误；D：\(d(P,O)=|x|+|y|=1\) 的图象是以\((1,0)\)、\((0,1)\)、\((-1,0)\)、\((0,-1)\)为顶点的正方形，对角线长均为2，面积\(=(1/2)\times 2\times 2=2\)，D正确．故选：ABD．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E11]
+% ans:2章-练-课时01-E11
+\ansitem{10}{证明见详解．}
+\ifansbookdetail
+\ansnote{详解}{以长方形的顶点\(A\)为原点、\(AB\)所在直线为\(x\)轴建立平面直角坐标系．设\(AB=a\)，\(AD=b\)，则\(A(0,0)\)，\(B(a,0)\)，\(C(a,b)\)，\(D(0,b)\)．再设\(M(x,y)\)．\(|AM|^{2}+|CM|^{2}=x^{2}+y^{2}+(x-a)^{2}+(y-b)^{2}\)；\(|BM|^{2}+|DM|^{2}=(x-a)^{2}+y^{2}+x^{2}+(y-b)^{2}\)．两式展开后均为 \(x^{2}+y^{2}+(x-a)^{2}+(y-b)^{2}\)，恒相等．所以 \(|AM|^{2}+|CM|^{2}=|BM|^{2}+|DM|^{2}\)，即对平面上任意一点\(M\)结论都成立．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E14]
+% ans:2章-练-课时01-E14
+\ansitem{11}{证明见详解．}
+\ifansbookdetail
+\ansnote{详解}{以平行四边形相邻两边为坐标轴方向建立平面直角坐标系：取顶点\(A\)为原点、\(AB\)所在直线为\(x\)轴．设\(B(a,0)\)，\(D(b,c)\)，则由平行四边形性质知 \(C(a+b,c)\)．两条对角线：\(|AC|^{2}=(a+b)^{2}+c^{2}\)，\(|BD|^{2}=(b-a)^{2}+c^{2}\)，所以 \(|AC|^{2}+|BD|^{2}=\left(a^{2}+2ab+b^{2}+c^{2}\right)+\left(a^{2}-2ab+b^{2}+c^{2}\right)=2a^{2}+2b^{2}+2c^{2}\)．四条边：\(|AB|^{2}=a^{2}\)，\(|CD|^{2}=a^{2}\)，\(|AD|^{2}=b^{2}+c^{2}\)，\(|BC|^{2}=b^{2}+c^{2}\)，所以 \(|AB|^{2}+|BC|^{2}+|CD|^{2}+|DA|^{2}=2a^{2}+2b^{2}+2c^{2}\)．两式相同，故平行四边形两条对角线的平方和等于四条边的平方和．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E13]
+% ans:2章-练-课时01-E13
+\ansitem{12}{证明见详解．}
+\ifansbookdetail
+\ansnote{详解}{以\(A\)为原点、\(AB\)所在直线为\(x\)轴建立平面直角坐标系，则\(A(0,0)\)，\(B(4,0)\)，\(C(4,4)\)，\(D(0,4)\)；由\(E\)、\(F\)分别是\(BC\)、\(CD\)的中点得 \(E(4,2)\)，\(F(2,4)\)．于是 \(\overrightarrow{AE}=(4,2)\)，\(\overrightarrow{BF}=(2-4,4-0)=(-2,4)\)．\(\overrightarrow{AE}\cdot\overrightarrow{BF}=4\times(-2)+2\times 4=-8+8=0\)，所以 \(\overrightarrow{AE}\perp\overrightarrow{BF}\)，即 \(BF\perp AE\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E10]
+% ans:2章-练-课时01-E10
+\ansitem{13}{P(0,4)或P(0,−1)．}
+\ifansbookdetail
+\ansnote{详解}{设\(P(0,y)\)．\(PA\perp PB\) 即\(\triangle PAB\)是以\(AB\)为斜边的直角三角形，\(|PA|^{2}+|PB|^{2}=|AB|^{2}\)．\(|PA|^{2}=9+(y-1)^{2}\)，\(|PB|^{2}=4+(y-2)^{2}\)，\(|AB|^{2}=(-2-3)^{2}+(2-1)^{2}=26\)，代入：\(9+y^{2}-2y+1+4+y^{2}-4y+4=26\)，整理得 \(2y^{2}-6y-8=0\)，即 \(y^{2}-3y-4=0\)，解得\(y=4\)或\(y=-1\)．所以点\(P\)的坐标为\((0,4)\)或\((0,-1)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E12]
+% ans:2章-练-课时01-E12
+\ansitem{14}{f(x)＝−(x−4)²−1．}
+\ifansbookdetail
+\ansnote{详解}{在\(y=f(x)\)的图象上任取一点\(P(x,y)\)，它关于点\(M(2,0)\)的对称点为 \(P'(4-x,-y)\)．由对称性，\(P'\)在函数\(y=x^{2}+1\)的图象上，所以 \(-y=(4-x)^{2}+1\)，即 \(y=-(x-4)^{2}-1\)．故 \(f(x)=-(x-4)^{2}-1\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E15]
+% ans:2章-练-课时01-E15
+\ansitem{15}{B}
+\ifansbookdetail
+\ansnote{详解}{由中点坐标公式，\(M((b+0)/2,(0+a)/2)\)，即 \(M(b/2,a/2)\)。由两点间距离公式：\(|CM|=\sqrt{(b/2)^{2}+(a/2)^{2}}=\sqrt{a^{2}+b^{2}}/2\)；\(|AB|=\sqrt{(b-0)^{2}+(0-a)^{2}}=\sqrt{a^{2}+b^{2}}\)。故 \(|CM|=|AB|/2\)，选 B。这就用坐标法证明了：直角三角形斜边上的中线等于斜边的一半。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时01-E16]
+% ans:2章-练-课时01-E16
+\ansitem{16}{B}
+\ifansbookdetail
+\ansnote{详解}{由中点坐标公式，\(M(b/2,c/2)\)，\(N((a+b)/2,c/2)\)。两点纵坐标相等且 \(|MN|=a/2>0\)（\(M\neq N\)），故 \(MN\parallel x\) 轴；而 \(BC\) 在 \(x\) 轴上，所以 \(MN\parallel BC\)。又 \(|MN|=|(a+b)/2-b/2|=a/2\)，\(|BC|=a\)，故 \(|MN|=|BC|/2\)。选 B。这就用坐标法证明了：三角形中位线平行于第三边，且等于第三边的一半。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-拓-课时01-T1]
+% ans:2章-拓-课时01-T1
+\ansitem{17}{(1)见详解；(2) 等号成立$\iff$C的坐标x∈[−3,2]；等号不成立$\iff$x<−3或x>2．}
+\ifansbookdetail
+\ansnote{详解}{(1) 设\(C\)的坐标为\(x_3\)．因为 \(x_1-x_2=(x_1-x_3)+(x_3-x_2)\)，由绝对值三角不等式\(d(A,B)=|x_1-x_2|=|(x_1-x_3)+(x_3-x_2)|\leqslant|x_1-x_3|+|x_3-x_2|=d(A,C)+d(B,C)\)，得证．(2) \(|x_1-x_2|=|(x_1-x_3)+(x_3-x_2)|\)取等号\(\iff(x_1-x_3)(x_3-x_2)\geqslant 0\)，即\(x_3\)介于\(x_1\)与\(x_2\)之间（含端点）．此处\(x_1=-3\)，\(x_2=2\)，故等号成立\(\iff -3\leqslant x\leqslant 2\)；等号不成立（即\(d(A,B)<d(A,C)+d(B,C)\)）\(\iff x<-3\)或\(x>2\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-拓-课时01-T2]
+% ans:2章-拓-课时01-T2
+\ansitem{18}{(1)见详解；(2) 等号成立$\iff$C在以AB为对角线的矩形内（含边界），即$(x_C-x_1)(x_C-x_2)\leqslant 0$且$(y_C-y_1)(y_C-y_2)\leqslant 0$；等号不成立$\iff$C在该矩形外．}
+\ifansbookdetail
+\ansnote{详解}{(1) 设\(C(x_3,y_3)\)．\(x_1-x_2=(x_1-x_3)+(x_3-x_2)\)，\(y_1-y_2=(y_1-y_3)+(y_3-y_2)\)，两次用绝对值三角不等式：\(d(A,B)=|x_1-x_2|+|y_1-y_2|\leqslant(|x_1-x_3|+|x_3-x_2|)+(|y_1-y_3|+|y_3-y_2|)=d(A,C)+d(B,C)\)，得证．(2) 横、纵两个方向分别取等：第一个不等式取等\(\iff(x_1-x_3)(x_3-x_2)\geqslant 0\)，第二个取等\(\iff(y_1-y_3)(y_3-y_2)\geqslant 0\)，故总等号成立\(\iff x_3\)介于\(x_1\)、\(x_2\)之间且\(y_3\)介于\(y_1\)、\(y_2\)之间，即\(C\)落在以\(AB\)为对角线（边平行于坐标轴）的矩形内部或边界上；只要有一个方向不取等，就有\(d(A,B)<d(A,C)+d(B,C)\)，即\(C\)在该矩形外．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时01-G1]
+% ans:2章-导-课时01-G1
+\ansitem{19}{B}
+\ifansbookdetail
+\ansnote{详解}{设\(M(x,y)\)，由中点坐标公式得 \((x-2)/2=1\)，\((y+5)/2=0\)，解得\(x=4\)，\(y=-5\)，所以点\(M(4,-5)\)．则 \(|OM|=\sqrt{4^{2}+(-5)^{2}}=\sqrt{41}\)．故选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时01-G2]
+% ans:2章-导-课时01-G2
+\ansitem{20}{A}
+\ifansbookdetail
+\ansnote{详解}{由两点间距离公式：\(|AB|^{2}=(2+1)^{2}+(-1-1)^{2}=9+4=13\)；\(|AC|^{2}=(1+1)^{2}+(4-1)^{2}=4+9=13\)；\(|BC|^{2}=(1-2)^{2}+(4+1)^{2}=1+25=26\)．因为\(|AB|^{2}+|AC|^{2}=13+13=26=|BC|^{2}\)，由勾股定理逆定理知\(\triangle ABC\)是以\(A\)为直角顶点的直角三角形（且\(|AB|=|AC|\)，还是等腰直角三角形）．故选：A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时01-G3]
+% ans:2章-导-课时01-G3
+\ansitem{21}{D}
+\ifansbookdetail
+\ansnote{详解}{设\(C(x_0,0)\)．\(\angle ACB=\pi/2\) 即\(\triangle ACB\)是以\(AB\)为斜边的直角三角形，故 \(|CA|^{2}+|CB|^{2}=|AB|^{2}\)．\(|CA|^{2}=(x_0-4)^{2}+4\)，\(|CB|^{2}=(x_0-1)^{2}+4\)，\(|AB|^{2}=(4-1)^{2}+(2+2)^{2}=9+16=25\)，代入得 \((x_0-4)^{2}+(x_0-1)^{2}+8=25\)，展开整理得 \(x_0^{2}-5x_0=0\)，解得\(x_0=0\)或\(x_0=5\)，经检验均使\(A\)、\(B\)、\(C\)构成三角形．所以点\(C\)的坐标为\((0,0)\)或\((5,0)\)．故选：D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时01-G4]
+% ans:2章-导-课时01-G4
+\ansitem{22}{距离为12；中点坐标为4．}
+\ifansbookdetail
+\ansnote{详解}{数轴上两点距离 \(d(A,B)=|10-(-2)|=12\)；中点坐标为 \((-2+10)/2=4\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时01-G5]
+% ans:2章-导-课时01-G5
+\ansitem{23}{a＝±3√21．}
+\ifansbookdetail
+\ansnote{详解}{由两点间距离公式 \(|AB|=\sqrt{a^{2}+10^{2}}=17\)，故 \(a^{2}+100=289\)，\(a^{2}=189\)，\(a=\pm\sqrt{189}=\pm 3\sqrt{21}\)．}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

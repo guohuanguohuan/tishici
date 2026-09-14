@@ -1,0 +1,202 @@
+% ============================================================
+% S2 导学件量产·批2 件1 —— 1.1.3 第1课时 空间直角坐标系与空间向量的坐标（课时4 导学件）
+% 轮4 成卷·S2 批2（glm 单臂重派·九十二协议）｜2026-09-12｜生成链：xelatex main.tex（两遍）→ python render.py（150dpi → png/pageN.png）
+%
+% 模板承 v11 样张族 `工作区/字替对照-0909/靠齐样张-0910/导学增量/`：六宏＝原样拷贝（L1 冻结参数零改动），
+%   课时页形制与局部宏（\pingtou/\liubai/\zhankong）照抄 课时02 首件（首件五步之「组装」＝直接拷贝结构改内容）。
+% 图＝源图位图（禁绘三维，公共规则§5）：figs/sub3_B_5.png（坐标系图）、figs/sub3_B_6.png（右手系图）、
+%   figs/image9.png（T1 三棱锥图）自 讲练件（上）定稿 docx word/media/ 原件复制（md5 与 docx 逐字节一致，未改绘），
+%   源 UUID 不在手＝alt 缺失风险照 S2就绪报告§四-5 登记，图位台账源＝元素330 rId358／元素336 rId359／元素354 rId16（见批2值台账）。
+%
+% 取材链登记（首件五步之「盘点」结论，详见 成卷/导学件/批2值台账.md）：
+%   ① 讲练件（上）§1.1.3 讲部实态（dump_docx --slice 198:321 取证＝工作区/_tmp批2S2量产0912/讲上-1.1.3全文.txt）：
+%      知识讲解〔基〕条目 7 条（1.1.3-1～-7）；题型例题 10 题（1.1.3.2～1.1.3.8 七段）。课1 域（建系与点的坐标）
+%      讲部可承题＝1.1.3.2-1（T1）、1.1.3.2-2（T2）＋并入的中点距离基础题 1.1.3.5-6（T6）→ 探究点数＝3（随域内可承题实态）。
+%   ② 课中探究 例1×3＝讲部同文搬运（题面逐字，记号 LaTeX 化）：探究一←1.1.3.2-1｜探究二←1.1.3.2-2｜探究三←1.1.3.5-6；
+%      T1/T2 与课时04 练习轴第11/7题同文（练习轴题源即讲部池）＝A-2「照用」双印登记；T6 与两轴 32 题零同文。
+%   ③ 变式×5（探究一变1/变2、探究二变1、探究三变1/变2；变式2×2＝尾页平衡补位）＋素养小结×3＋课前预习判断 5
+%      ＋课堂评价恒 5＝本轮新命制/化用（1.1.3 无 v11 冻结件可回收），
+%      逐题亲算登批2值台账；ZSD一/二/三条目＝讲部 1.1.3-1～-4/-5/-7 同文化用（中点公式＝白名单编注化用）。
+%   ④ 课堂评价恒 5（3 单选＋2 填空＝4 简单＋1 中档≤例题中档；填空带提示词＝G5 内构）＝全命制。
+%   ⑤ 与练习轴（题面库/课时04-1.1.3课1.md 16 题）互斥口径：命制位（判断5＋变式5＋评价5 共 15 题）零同文
+%      （逐题比对断言见批2值台账）；例1×3 照用同文属 A-2 计数口径内（同题双印、题数不并计）。
+%   ⑥ 句末标点：同文段承源「.」，新命制句用「．」（G8 成卷轮统一清扫，本件不单点改）。
+% 编译门：三 0（error＝0／Overfull＝0／Missing character＝0，Underfull 仅计数）——读数见批2值台账。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{qp-fonts.tex}
+\input{qp-layout.tex}
+\input{qp-parts.tex}
+\input{qp-headfoot.tex}
+\input{qp-titles.tex}
+\input{qp-blocks.tex}
+
+% ================= 页脚参数宏（qp-headfoot 文件头明示的复用入口，非模块语义改动） =================
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+\renewcommand{\qpjianming}{导学件}
+
+% ================= 局部宏（照抄 v11 导学增量/main.tex 冻结定义；不动公共模块） =================
+% 课堂评价组头（XB-02 \zhenhead 同构：\biaoqian 1.3× 标签＋仿宋说明行；恒 5 题说明）
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+% 书写留白＋斜置浅灰水印（导学案正文属性：答案另册→正文留书写位；斜置 25°／black!12）
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+% 纯书写占位留白（无水印）
+\newcommand{\zhankong}[1]{\par\nobreak\addvspace{#1}\nopagebreak\noindent}
+
+\begin{document}
+
+% ============================================================
+% 课时页（第4课时；五段闭环，承 v11 导学增量课时页样板形制）
+% ============================================================
+\keshi{第4课时\quad 空间直角坐标系与空间向量的坐标}
+\mubiaoline
+\mubiaomu{1}{了解空间直角坐标系的构成与右手系规定，会在几何体中恰当选原点、建立坐标系；}
+\mubiaomu{2}{理解空间点与向量的坐标的意义，会写出点(含对称点、中点、线上动点)与向量的坐标；}
+\mubiaomu{3}{掌握空间向量的坐标运算法则与两点间距离公式、中点坐标公式，体会坐标法「几何问题代数化」的思想.}
+
+\vspace{1.7mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ---------- 课前预习（知识导学填空＋诊断分析；ZSD一/二/三＝讲部 1.1.3-1～-4/-5/-7 同文化用，中点公式＝编注化用） ----------
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{空间直角坐标系}
+
+\tiaomu{1}{建系：在空间选定一点\(O\)和一个\kongbai{}，以点\(O\)为原点，分别以\(\overrightarrow{i}\)，\(\overrightarrow{j}\)，\(\overrightarrow{k}\)的方向为正方向、以它们的长为单位长度建立三条数轴：\(x\)轴、\(y\)轴、\(z\)轴，它们都叫做坐标轴．这时就建立了一个\kongbai{}，\(O\)叫做\kongbai{}，\(\overrightarrow{i}\)，\(\overrightarrow{j}\)，\(\overrightarrow{k}\)都叫做\kongbai{}，通过每两条坐标轴的平面叫做\kongbai{}，分别称为\(Oxy\)平面，\(Oyz\)平面，\(Ozx\)平面，它们把空间分成\kongbai{}个部分.\zhuzhu{建系是坐标法的起点、向量法解立体几何的第一步；通常选两两垂直的三条棱的公共端点为原点建系，便于直接读出坐标.}}
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=44.0mm]{figs/sub3_B_5.png}}\par\vspace{-1.0mm}\penalty10000
+
+\tiaomu{2}{画法：画空间直角坐标系\(Oxyz\)时，一般使\(\angle xOy=\)\kongbai{}，\(\angle yOz=\)\kongbai{}.\zhuzhu{规范画系保证坐标读数与图形直观一致；\(45^\circ\)或\(135^\circ\)只是画在纸面上的直观角，三条轴实际仍两两垂直.}}
+
+\tiaomu{3}{右手直角坐标系：让右手拇指指向\kongbai{}，食指指向\kongbai{}，中指指向\kongbai{}，则称这个坐标系为右手直角坐标系.\zhuzhu{建系后用右手系自检，防止三条轴的正方向整体弄反.}}
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=30.0mm]{figs/sub3_B_6.png}}\par\vspace{-1.0mm}\penalty10000
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{三条坐标轴中的任意两条都能确定一个坐标平面，三个坐标平面把空间分成八个部分．}
+
+\zhentib{(2)}{画空间直角坐标系\(Oxyz\)时，\(\angle xOy\)只能画成\(90^{\circ}\)．}
+
+\zsd{二}{空间直角坐标系中的坐标}
+
+\tiaomu{1}{点的坐标：在单位正交基底\(\{\overrightarrow{i},\overrightarrow{j},\overrightarrow{k}\}\)下与向量\(\overrightarrow{OA}\)对应的\kongbai{}，叫做点\(A\)在空间直角坐标系中的坐标，记作\kongbai{}，其中\(x\)叫做点\(A\)的\kongbai{}，\(y\)叫做点\(A\)的纵坐标，\(z\)叫做点\(A\)的竖坐标.\zhuzhu{点的坐标即其位置向量\(\overrightarrow{OA}\)的坐标，是坐标运算的入口；读点坐标按「横、纵、竖」的次序，勿串位.}}
+
+\tiaomu{2}{向量的坐标：在空间直角坐标系\(Oxyz\)中，给定向量\(\overrightarrow{a}\)，作\(\overrightarrow{OA}=\overrightarrow{a}\)．由空间向量基本定理，存在\kongbai{}的有序实数组\((x,y,z)\)，使\(\overrightarrow{a}=x\overrightarrow{i}+y\overrightarrow{j}+z\overrightarrow{k}\)．有序实数组\((x,y,z)\)叫做\(\overrightarrow{a}\)在空间直角坐标系\(Oxyz\)之中的坐标，上式可简记作\kongbai{}.\zhuzhu{向量的坐标与起点的位置无关(向量可自由平移)；两点定向量：\(\overrightarrow{AB}=\overrightarrow{OB}-\overrightarrow{OA}\)，即终点坐标减起点坐标.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{在空间直角坐标系中，点\(A(x,y,z)\)关于坐标平面\(xOy\)的对称点的坐标为\((x,y,-z)\)．}
+
+\zhentib{(2)}{若点\(A(x_{1},y_{1},z_{1})\)，\(B(x_{2},y_{2},z_{2})\)，则\(\overrightarrow{AB}=(x_{1}-x_{2},\,y_{1}-y_{2},\,z_{1}-z_{2})\)．}
+
+\zsd{三}{坐标运算与两点间的距离、中点}
+
+\tiaomu{1}{坐标运算：设\(\overrightarrow{a}=(a_{1},a_{2},a_{3})\)，\(\overrightarrow{b}=(b_{1},b_{2},b_{3})\)，则\(\overrightarrow{a}+\overrightarrow{b}=\)\kongbai{}，\(\overrightarrow{a}-\overrightarrow{b}=\)\kongbai{}，\(\lambda\overrightarrow{a}=\)\kongbai{}，\(\overrightarrow{a}\cdot\overrightarrow{b}=\)\kongbai{}.\zhuzhu{坐标法的主要计算引擎，加减、数乘、数量积集中于此；运算前先核对两端点或两向量坐标抄写无误.}}
+
+\tiaomu{2}{两点间的距离公式：设\(P_{1}(a_{1},b_{1},c_{1})\)，\(P_{2}(a_{2},b_{2},c_{2})\)，则\(|\overrightarrow{P_{1}P_{2}}|=\)\kongbai{}.\zhuzhu{与平面内两点间距离公式同形、多一个竖坐标；求线段长度的终点工具.}}
+
+\tiaomu{3}{中点坐标公式：线段\(P_{1}P_{2}\)的中点\(M\)的坐标为\kongbai{}.\zhuzhu{由\(\overrightarrow{OM}=\frac{1}{2}(\overrightarrow{OP_{1}}+\overrightarrow{OP_{2}})\)推得；对称点、定比分点问题的基础.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{设\(\overrightarrow{a}=(2,-1,2)\)，则\(|\overrightarrow{a}|=3\)．}
+
+\liubai[9mm]{此处书写}
+
+% ---------- 课中探究（探究点一~三随课1域可承题实态；例1×3＝讲部同文照用，变式×5＋小结＝本轮命制/化用） ----------
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{建立坐标系与求点的坐标}{例\textbf{1}}{中档(知识点二)}{已知三棱锥\(P\text{-}\penalty100 ABC\)中，\(PA\perp\)平面\(ABC\)，\(AB\perp AC\)，若\(PA=3\)，\(AB=2\)，\(AC=2\)，建立空间直角坐标系.}
+
+\bindp \par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=40.0mm]{figs/image9.png}}\par\vspace{-1.0mm}\penalty10000
+
+\bindp (1)求各顶点的坐标；(2)若点\(Q\)是\(PC\)的中点，求点\(Q\)坐标；(3)若点\(M\)在线段\(PC\)上移动，写出点\(M\)坐标.
+
+\liubai[12mm]{解答书写区}
+
+\liB{变式\textbf{1}}{简单(知识点二)}{}{在长方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，\(AB=2\)，\(AD=3\)，\(AA_1=2\)，以\(A\)为原点，射线\(AB\)，\(AD\)，\(AA_1\)分别为\(x\)轴、\(y\)轴、\(z\)轴的非负半轴建立空间直角坐标系，则顶点\(C_1\)的坐标为\kongbai{}；若\(M\)为\(BD_1\)的中点，则点\(M\)的坐标为\kongbai{}.}
+
+\liB{变式\textbf{2}}{简单(知识点二)}{}{在四棱锥\(P\text{-}\penalty100 ABCD\)中，底面\(ABCD\)是边长为\(2\)的正方形，\(PA\perp\)底面\(ABCD\)，\(PA=2\)，以\(A\)为原点，射线\(AB\)，\(AD\)，\(AP\)分别为\(x\)轴、\(y\)轴、\(z\)轴的非负半轴建立空间直角坐标系，写出各顶点的坐标.}
+
+\xiaojie{①识别：题干给出含两两垂直关系的几何体并要求建系、写点(定点、中点、线上动点)坐标时，判归本题型.}
+
+\bindp {\kaishu ②操作：第一步选两两垂直的三条棱的公共端点为原点、棱向为轴正向建系；再按棱长逐一读出定点坐标，中点用中点公式，线上动点设参数表示.}
+
+\bindp {\kaishu ③收束：最后核对各点分量与棱长、比例关系的对应，防止读错轴、串错位.}
+
+\tjdnr{二}{对称点的坐标}{例\textbf{1}}{简单(知识点二)}{已知\(A(1,2,-1)\)关于面\(xOy\)的对称点为\(B\)，而\(B\)关于\(x\)轴的对称点为\(C\)，则\(\overrightarrow{BC}\)等于(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\((0,4,2)\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\((-2,0,0)\)；}\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\((0,-4,-2)\)；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\((2,0,-2)\)}\par}
+
+\liubai[6mm]{解答书写区}
+
+\liB{变式\textbf{1}}{简单(知识点二)}{}{已知点\(P(2,-1,3)\)，则点\(P\)关于坐标平面\(yOz\)的对称点\(P_{1}\)的坐标为\kongbai{}；\(P_{1}\)关于原点的对称点\(P_{2}\)的坐标为\kongbai{}.}
+
+\xiaojie{①识别：题干求点关于坐标平面、坐标轴或原点的对称点，或以此考查坐标意义时，判归本题型.}
+
+\bindp {\kaishu ②操作：认准口诀——关于谁对称谁不变、其余坐标变号；关于原点对称则三个坐标全变号.}
+
+\bindp {\kaishu ③收束：连续对称按次序逐步进行，最后可用向量坐标\(\overrightarrow{PP_{1}}\)验证两点关系.}
+
+\tjdnr{三}{中点坐标与两点间的距离}{例\textbf{1}}{简单(知识点三)}{在空间直角坐标系中，已知\(M(-1,0,2)\)，\(N(3,2,-4)\)，则\(MN\)的中点\(P\)到坐标原点\(O\)的距离为(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(\sqrt{3}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(\sqrt{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(2\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(3\)}\par}
+
+\liubai[20mm]{解答书写区}
+
+\liB{变式\textbf{1}}{简单(知识点三)}{}{已知点\(A(2,0,4)\)，\(B(0,6,0)\)，\(M\)为线段\(AB\)的中点，则点\(M\)的坐标为\kongbai{}；\(|\overrightarrow{OM}|=\)\kongbai{}.}
+
+\liB{变式\textbf{2}}{简单(知识点三)}{}{在空间直角坐标系中，点\(P(2,-1,2)\)到坐标平面\(xOy\)的距离为\kongbai{}；到\(z\)轴的距离为\kongbai{}.}
+
+\xiaojie{①识别：题干在坐标系中求中点坐标、两点间距离(含点到坐标轴、坐标平面的距离)时，判归本题型.}
+
+\bindp {\kaishu ②操作：第一步由中点公式(各分量取平均)或距离公式(分量平方和开方)列式；涉及动点先设出参数坐标.}
+
+\bindp {\kaishu ③收束：求最值时配方定对称轴，最后回到图形检验位置.}
+
+\liubai[20mm]{解答书写区}
+
+% ---------- 课堂评价（恒 5 题＝3 单选＋2 填空；4 简单＋1 中档≤例题；提示词形制；全命制——逐题亲算登批2值台账） ----------
+\vbox{
+
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}在空间直角坐标系中，下列说法正确的是(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．坐标平面\(xOy\)内的点的竖坐标均为\(0\)；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．三个坐标平面把空间分成六个部分；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．建立空间直角坐标系时，原点必须选在几何体的顶点处；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．画空间直角坐标系时，\(\angle yOz\)一般画成\(135^{\circ}\)}\par
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}在空间直角坐标系中，点\(A(1,1,0)\)与点\(B(3,3,2)\)间的距离为(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(2\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(2\sqrt{2}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(2\sqrt{3}\)；}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(4\sqrt{3}\)}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}在空间直角坐标系\(Oxyz\)中，点\(P(0,3,-2)\)位于(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(y\)轴上；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(zOx\)坐标平面内；}\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(yOz\)坐标平面内；}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(x\)轴上}\par}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}已知点\(M(1,-2,3)\)，则点\(M\)关于\(z\)轴的对称点\(M'\)的坐标为\kongbai{}．{\zhushi{(提示：关于\(z\)轴对称，竖坐标不变，横、纵坐标均变为相反数)}}}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{中档(知识点三)}\hspace{2.2mm}已知点\(A(1,2,2)\)，点\(P\)在\(x\)轴上，则\(PA\)的最小值为\kongbai{}．{\zhushi{(提示：设\(P(x,0,0)\)，由两点间距离公式写出\(PA\)的平方，配方求最小值)}}}
+
+}
+
+\end{multicols}
+\end{document}

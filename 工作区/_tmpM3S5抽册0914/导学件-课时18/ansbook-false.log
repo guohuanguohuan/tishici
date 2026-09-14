@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 12:28
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,40 +1215,6 @@ M3-ANSKEY: 2章-练-课时18-10
 M3-ANSKEY: 2章-练-课时18-11
 M3-ANSKEY: 2章-练-课时18-09
 M3-ANSKEY: 2章-练-课时18-03
-! Missing $ inserted.
-<inserted text> 
-                $
-l.90 ...{7}{(1) y²=4x、x²/4+y²/3=1；(2) S_max=2√3/3}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.29182pt on input line 90.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.559pt on input line 90.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 4.6308pt on input line 90.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.29276pt on input line 90.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.55951pt on input line 90.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.63123pt on input line 90.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.29076pt on input line 90.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.55843pt on input line 90.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.63033pt on input line 90.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.90 ...{7}{(1) y²=4x、x²/4+y²/3=1；(2) S_max=2√3/3}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 M3-ANSKEY: 2章-练-课时18-04
 M3-ANSKEY: 2章-练-课时18-05
 M3-ANSKEY: 2章-练-课时18-06
@@ -1272,11 +1238,11 @@ L3 programming layer <2026/08/11>
  ***********
  ) ) 
 Here is how much of TeX's memory you used:
- 25195 strings out of 469768
- 586657 string characters out of 5466040
+ 25173 strings out of 469768
+ 585698 string characters out of 5466040
  1089170 words of memory out of 5000000
- 53775 multiletter control sequences out of 15000+600000
- 631907 words of font info for 137 fonts, out of 8000000 for 9000
+ 53763 multiletter control sequences out of 15000+600000
+ 630255 words of font info for 125 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  112i,16n,124p,1374b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

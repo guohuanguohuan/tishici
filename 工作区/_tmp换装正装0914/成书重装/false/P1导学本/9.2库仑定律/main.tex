@@ -1,0 +1,349 @@
+% ============================================================
+% 导学件/9.2库仑定律/main.tex —— P1 轮4 成卷·批2（9.2 库仑定律 导学件，答案制A·正文侧）
+% 取材（中间件＝工作区/_tmpP1成卷0912/批2/）：
+%   课前预习知识梳理＝《简单卷》9.2 讲部要点（库仑力大小方向／三电荷平衡规律）＋47讲讲3 口诀（两同夹异/两大夹小/
+%     近小远大）＋教材序列（点电荷书7→库仑扭秤书7~8→定律与k书8）；
+%   课中探究 例1（探究点二）＝定稿「中4（源Q16）」照用件（定稿-9.2 §1.3：中4 转导学件例/变式位备选案留成卷轮——
+%     本轮落定执行，练习件第 2 题位留空、防双收维持；题面照《中档卷》[41]-[51] 逐字）；
+%   课中探究 例1（探究点三）＝教材例2 照用（书9，教材共槽 5 处「中7↔教材例2：导学例题位＝例2、练习位＝中7
+%     变式」口径落地；题面照教材原文逐字；配图＝教材 PDF 矢量图 300dpi 裁切 figs/例3-教材例2受力图.png）；
+%   其余例/变式/评价/判断＝本件命制（16 条＝判断 6＋例/变式 4＋拓展延伸 1＋评价 5；逐题亲算见 成卷/批2值台账.md）。
+% 学习目标→课前预习（知识梳理填空＋诊断分析判断）→课中探究（3 探究点：例＋变式＋素养小结）→课堂评价（恒 5）。
+% 五组件全见件：素养标签 5 枚举（教材链接/科学探究/物理观念/科学推理/科学思维）／[反思感悟]×2／规范答题区自评表
+%   （6 分档，挂教材例2 后）／[拓展延伸]／限时总量行＋小题分值说明行（15 分钟/20 分·课堂组档，承批1 实态）。
+% 答案制A：正文 0 答案宏；全部答案值与判断答案入 成卷/批2值台账.md（答案册轮取值依据），本件不印。
+% 互斥口径：本件例/变式/评价/判断与新命制均与练习件 9.2 题面零同文设计（中4、教材例2 系指定「照用」件：中4 已按
+%   防双收移出练习件第 2 题位；教材例2 与练习件中7 为「例2/变式」分工，非同文）。
+% 件型层宏登记（承 9.1 导学件件型层，原样）：\sylabel／\fanxi／\tuoZhan／\guifanbiao（6 分档）／\xszl／\xzsm／
+%   \pingtou／\liubai。
+% 页脚＝形制 A 默认（灰块·导学档 26.2mm；素面）。
+% 编译：xelatex ×2（三 0）；目验：python 工作区/物理样张0911/骨架/render.py . main 150。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% —— 换装 overlay 挂接（换装正装波4a；七模块后、\begin{document} 前，承 sty 头用法）——
+\usepackage{qp-m3p-overlay}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+\renewcommand{\qpjianming}{导学件}
+% 品牌位：导学件＝素面（\ifqpbrand 默认 false，勿开）
+
+% ---------- 件型层宏①：素养标签 ----------
+\newcommand{\sylabel}[2]{\par\glueguard{1}%
+  \noindent{\heiti [#1]}\hspace{0.4em}#2\par\addvspace{0.8mm}}
+
+% ---------- 件型层宏②：[反思感悟]块 ----------
+\newcount\FXN
+\newcommand{\fanxi}[1]{\par\glueguard{1}\addvspace{1.2mm}%
+  \vbox{%
+    \noindent{\heiti [反思感悟]}\par\vskip 2.4mm
+    \FXN=#1\relax
+    \loop \noindent\textcolor{gray122}{\rule{\linewidth}{0.4pt}}\par\vskip 6.2mm
+      \advance\FXN by -1 \ifnum\FXN>0\repeat
+    \vskip -1.2mm}}
+
+% ---------- 件型层宏④：拓展延伸块 ----------
+\newcommand{\tuoZhan}[1]{\par\glueguard{2}\addvspace{1.6mm}%
+  \noindent{\heiti [拓展延伸]}\hspace{0.4em}#1\par\addvspace{1mm}}
+
+% ---------- 件型层宏③：规范答题区自评表（6 分档） ----------
+\newcommand{\guifanbiao}[1]{\par\addvspace{2.2mm}\glueguard{2}%
+  \begingroup\arrayrulecolor{gray122}\setlength{\tabcolsep}{2pt}%
+  \noindent\begin{tabular}{|p{27mm}|p{29.6mm}|p{19.6mm}|}
+    \thickhline
+    {\heiti 规范答题区}\par\vspace*{40mm} &
+    \multicolumn{1}{|c|}{自评项目（共#1分）\rule{0pt}{7mm}} &
+    \multicolumn{1}{c|}{自评+得分\rule{0pt}{7mm}} \\
+    \cline{2-3}
+    & 书写工整无涂抹（是否加分项） & （√或×） \\
+    \cline{2-3}
+    & 有必要的文字说明（1分） & \\
+    \cline{2-3}
+    & 有解题关键公式（3分） & \\
+    \cline{2-3}
+    & 结果为数字的带有单位（2分） & \\
+    \thickhline
+  \end{tabular}\endgroup\par\addvspace{1mm}}
+
+% ---------- 件型层宏⑤：限时总量行＋小题分值说明行 ----------
+\newcommand{\xszl}[2]{\par\addvspace{1.6mm}\centerline{(#1)\quad (#2)}\par}
+\newcommand{\xzsm}[1]{\par\addvspace{0.4mm}\centerline{(#1)}\par\addvspace{1.2mm}}
+
+% ---------- 件型层宏：课堂评价组头／书写留白＋水印 ----------
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+
+\begin{document}
+%成书重装五本跨本连续页码（G7方案B，承M2/M3装配先例）setcounter 注入位
+\setcounter{page}{4}
+% ===== 通栏标题区（multicols 外） =====
+\zhangtitle{第9章\quad 静电场及其应用}
+\jietitle{9.2\quad 库仑定律}
+\keshi{第1课时\quad 库仑定律}
+\mubiaoline
+\mubiaomu{1}{知道点电荷是一种理想化模型，理解库仑定律的适用条件；能用 $F=k\frac{q_1q_2}{r^2}$ 计算两个点电荷间的静电力；}
+\mubiaomu{2}{知道静电力常量 $k$ 的意义与数值，会用比例法分析静电力随电荷量、距离的变化；}
+\mubiaomu{3}{会求多个点电荷对某一电荷的库仑力的矢量和，能处理库仑力作用下的简单平衡问题．}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 一、课前预习（知识梳理填空＋诊断分析判断挂每个知识点之后）
+% ============================================================
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\sylabel{教材链接}{阅读教材，完成下列填空．}
+
+\zsd{一}{点电荷与库仑定律}
+
+\tiaomu{1}{点电荷：当带电体间的距离比它们自身的大小大得多，以致带电体的形状、大小及电荷分布状况对它们之间作用力的影响可以忽略时，这样的带电体就叫作\kongbai{}；它是一种\kongbai{}（选填“理想化模型”或“实际存在的物体”）．}
+
+\tiaomu{2}{库仑定律：真空中两个静止点电荷之间的相互作用力，与它们的电荷量的乘积成\kongbai{}比，与它们的距离的二次方成\kongbai{}比，作用力的方向在它们的\kongbai{}上；表达式 $F=$\kongbai{}．}
+
+\sylabel{科学探究}{库仑用扭秤实验研究了真空中两个静止点电荷之间的相互作用，得出了静电力与距离的二次方成反比的规律——物理规律的建立离不开巧妙的实验设计与微小量的测量．}
+
+\tiaomu{3}{静电力常量：$k=$\kongbai{} $\unit{N\cdot m^2/C^2}$（计算中取 $9.0\times10^9$）．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{体积很大的带电体一定不能看作点电荷．}
+\begin{ansblock}[导-课时92-判1]
+% ans:导-课时92-判1
+\ansitem{(1)}{$\times$}
+\end{ansblock}
+
+\zhentib{(2)}{两个点电荷之间的静电力，随它们之间距离的增大而减小．}
+\begin{ansblock}[导-课时92-判2]
+% ans:导-课时92-判2
+\ansitem{(2)}{\(\surd\)}
+\end{ansblock}
+
+\zsd{二}{库仑力的方向与适用条件}
+
+\tiaomu{1}{库仑力的方向：同种电荷相互\kongbai{}，异种电荷相互\kongbai{}；两个点电荷之间的静电力方向沿它们的连线．}
+
+\tiaomu{2}{适用条件：库仑定律适用于\kongbai{}中的\kongbai{}点电荷；当带电体间的距离比它们自身的大小大得多时，可以把它们看作点电荷．}
+
+\tiaomu{3}{计算注意：用公式计算静电力的大小时，$q_1$、$q_2$ 取电荷量的\kongbai{}；方向由电荷的电性另行判断．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{两个点电荷之间的作用力不因第三个点电荷的存在而改变．}
+\begin{ansblock}[导-课时92-判3]
+% ans:导-课时92-判3
+\ansitem{(1)}{\(\surd\)}
+\end{ansblock}
+
+\zhentib{(2)}{两个半径为 $r$ 的金属球带等量同种电荷 $Q$，球心相距 $3r$，它们之间的静电力等于 $\frac{kQ^2}{(3r)^2}$．}
+\begin{ansblock}[导-课时92-判4]
+% ans:导-课时92-判4
+\ansitem{(2)}{$\times$}
+\end{ansblock}
+
+\zsd{三}{库仑力的合成与平衡}
+
+\tiaomu{1}{多个点电荷对某一个点电荷的作用力，等于各点电荷单独对这个点电荷作用力的\kongbai{}．}
+
+\tiaomu{2}{三个自由点电荷共线平衡的规律：「两同夹异」（两侧电荷带同种电荷、中间电荷与它们带异种电荷）、「两大夹小」（中间电荷的电荷量最小）、「近小远大」（中间电荷离电荷量较小的外侧电荷较近）．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{三个自由点电荷在同一直线上平衡时，中间的电荷与两侧的电荷带异种电荷．}
+\begin{ansblock}[导-课时92-判5]
+% ans:导-课时92-判5
+\ansitem{(1)}{\(\surd\)}
+\end{ansblock}
+
+\zhentib{(2)}{三个共线平衡的自由点电荷中，中间电荷的电荷量一定最大．}
+\begin{ansblock}[导-课时92-判6]
+% ans:导-课时92-判6
+\ansitem{(2)}{$\times$}
+\end{ansblock}
+
+\liubai[9mm]{此处书写}
+\begin{ansblock}[导-课时92-预习填空]
+% ans:导-课时92-预习填空
+\ansitem{预习填空}{知识点一：点电荷；理想化模型；正；反；连线；$k\dfrac{q_1q_2}{r^2}$；$9.0\times10^{9}$。知识点二：排斥；吸引；真空；静止；绝对值。知识点三：矢量和。}
+\end{ansblock}
+
+% ============================================================
+% 二、课中探究（探究点×3：例＋变式＋素养小结）
+% ============================================================
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{点电荷模型与库仑定律的适用条件}{例\textbf{1}}{简单(知识点一)}{关于点电荷和库仑定律，下列说法正确的是\nobreak(\kongwei)}
+
+\sylabel{物理观念}{点电荷是一种理想化的物理模型：能否把带电体看作点电荷，取决于带电体间的距离与自身大小的相对关系，而不是带电体本身的大小；库仑定律只适用于真空中的静止点电荷．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．任何带电体都可以看作点电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．当带电体间的距离比它们自身的大小大得多时，可以把它们看作点电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．库仑定律只适用于电荷量很小的带电体；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．两个点电荷间的距离趋近于零时，它们之间的库仑力趋近于无穷大\par}
+\begin{ansblock}[导-课时92-探1-例1]
+% ans:导-课时92-探1-例1
+\ansitem{例1}{B}
+\end{ansblock}
+
+\fanxi{2}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{真空中两个点电荷相距 $r$，它们之间的静电力为 $F$．若仅将两个电荷的电荷量都增大为原来的 2 倍（电性不变），则它们之间的静电力变为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．$\frac{F}{4}$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．$\frac{F}{2}$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．$2F$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．$4F$\par}
+\begin{ansblock}[导-课时92-探1-变式1]
+% ans:导-课时92-探1-变式1
+\ansitem{变式1}{D（$4F$）}
+\end{ansblock}
+
+\xiaojie{①识别：题干围绕点电荷模型、库仑定律的适用条件或比例关系设问时，判归本题型；②操作：先辨“能否看作点电荷”（看距离与自身大小的关系），再按 $F=k\frac{q_1q_2}{r^2}$ 判断力随电荷量、距离的变化——电荷量乘积变几倍、力就变几倍，距离平方变几倍、力就反变几倍．}
+
+\tjdnr{二}{库仑定律的计算与比例}{例\textbf{1}}{简单(知识点二)}{两个相同的金属小球分别带上 $-2Q$ 和 $+6Q$ 的电荷后固定在相距为 $r$ 的两处（距离 $r$ 远大于球的半径，故两球均可视为点电荷），它们之间库仑力的大小为 $F$．使两小球相互接触后再放回相距 $\frac{r}{2}$ 处，则两球之间库仑力的大小变为\nobreak(\kongwei)}
+
+\sylabel{科学推理}{接触起电的电荷再分配（先中和、后平分）是 9.1 已学的工具，与库仑定律联用时要分两步走：先算接触后各球的电荷量，再按新的电荷量与距离代入 $F=k\frac{q_1q_2}{r^2}$．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．$\frac{F}{3}$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．$\frac{F}{12}$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．$\frac{4F}{3}$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．$\frac{3F}{4}$\par}
+\begin{ansblock}[导-课时92-探2-例1]
+% ans:导-课时92-探2-例1
+\ansitem{例1}{C（$\dfrac{4F}{3}$）}
+\end{ansblock}
+
+\fanxi{2}
+
+\liB{变式\textbf{1}}{简单(知识点二)}{}{两个完全相同的金属球A、B（可视为点电荷）带等量异种电荷，电荷量大小均为 $q$，相距 $r$，它们之间的静电力大小为 $F$．使两球接触后再分开，放回原处（仍相距 $r$），则它们之间的静电力大小为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．$\frac{F}{4}$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．$\frac{F}{2}$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．$F$；}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．0\par}
+\begin{ansblock}[导-课时92-探2-变式1]
+% ans:导-课时92-探2-变式1
+\ansitem{变式1}{D（$0$）}
+\end{ansblock}
+
+\xiaojie{①识别：题干给出球间接触、电荷再分配的信息，要求计算再分配后的静电力时，判归本题型；②操作：第一步“先中和、后平分”求接触后各球电荷量（等量异种接触后电荷量归零）；第二步按新的电荷量与距离重算库仑力——比例法比代入数值更快．}
+
+\tjdnr{三}{库仑力的合成}{例\textbf{1}}{中档(知识点三)}{真空中有三个带正电的点电荷，它们固定在边长为 $50\,\unit{cm}$ 的等边三角形的三个顶点上，每个点电荷的电荷量都是 $2.0\times10^{-6}\,\unit{C}$，求它们各自所受的静电力．}
+
+\qpfig[46]{例3-教材例2受力图}
+
+\guifanbiao{6}
+\begin{ansblock}[导-课时92-探3-例1]
+% ans:导-课时92-探3-例1
+\ansitem{例1}{$0.25\,\unit{N}$，方向沿另外两个点电荷连线的垂直平分线向外（教材例2 照用）}
+\end{ansblock}
+
+\tuoZhan{若把例1中等边三角形的边长变为原来的 2 倍，其他条件不变，每个点电荷所受的静电力变为原来的多少？}
+\begin{ansblock}[导-课时92-拓展]
+% ans:导-课时92-拓展
+\ansitem{拓展延伸}{$\dfrac{1}{4}$（$F\propto\dfrac{1}{r^{2}}$）}
+\end{ansblock}
+
+\sylabel{科学思维}{求某一个点电荷受到的多个库仑力时，先用 $F=k\frac{q_1q_2}{r^2}$ 分别算出其他每个电荷对它的力，再按平行四边形定则求矢量和；各点电荷受力大小相等、方向均沿另外两个点电荷连线的垂直平分线向外．}
+
+\liB{变式\textbf{1}}{中档(知识点三)}{}{两个点电荷A、B相距 $L$，电荷量分别为 $+4q$ 和 $-q$，固定在绝缘水平面上．在A、B连线的中点O处放一个电荷量为 $+q$ 的点电荷，它受到的静电力大小为\kongbai{}，方向为\kongbai{}．}
+\begin{ansblock}[导-课时92-探3-变式1]
+% ans:导-课时92-探3-变式1
+\ansitem{变式1}{大小 $\dfrac{20kq^{2}}{L^{2}}$，方向沿 AB 连线指向 B}
+\end{ansblock}
+
+\xiaojie{①识别：题干中多个点电荷同时作用于一个电荷、要求合成结果时，判归本题型；②操作：逐个算力（注意引/斥定方向）→ 判断各力方向关系（同向相加、反向相减、成角用平行四边形）→ 得出合力大小与方向；共线情形先定方向再代数相加减．}
+
+% ============================================================
+% 三、课堂评价（恒 5 题＝3 单选＋2 填空）
+% ============================================================
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\xszl{时间:15分钟}{总分:20分}
+\xzsm{选择题每小题4分}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}关于库仑定律，下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．两个带电体无论相距多远、体积多大，都可以用库仑定律计算它们之间的作用力；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．库仑定律适用于真空中的点电荷，当带电体间的距离远大于自身大小时，可把它们视为点电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．两个点电荷之间的静电力，电荷量大的受到的力更大；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．点电荷的电荷量一定很小\par}
+\begin{ansblock}[导-课时92-评1]
+% ans:导-课时92-评1
+\ansitem{1}{B}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}真空中两个点电荷，电荷量分别为 $+2.0\times10^{-8}\,\unit{C}$ 和 $+4.0\times10^{-8}\,\unit{C}$，相距 $0.1\,\unit{m}$，它们之间的静电力大小为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．$7.2\times10^{-4}\,\unit{N}$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．$3.6\times10^{-4}\,\unit{N}$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．$1.8\times10^{-4}\,\unit{N}$；}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．$7.2\times10^{-3}\,\unit{N}$\par}
+\begin{ansblock}[导-课时92-评2]
+% ans:导-课时92-评2
+\ansitem{2}{A（$7.2\times10^{-4}\,\unit{N}$）}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{中档(知识点三)}\hspace{2.2mm}两个点电荷A、B带同种电荷，电荷量分别为 $Q$ 和 $4Q$，相距 $d$，固定在绝缘水平面上．在A、B连线上放第三个点电荷C，使它恰好处于平衡状态，则C应放在\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．A、B连线的中点；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．A、B之间，靠近A的一侧；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．A、B之间，靠近B的一侧；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．A、B连线之外\par}
+\begin{ansblock}[导-课时92-评3]
+% ans:导-课时92-评3
+\ansitem{3}{B（靠近 A 一侧）}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}两个点电荷之间的静电力为 $F$．若保持它们的电荷量不变，使它们之间的距离变为原来的 2 倍，则它们之间的静电力变为\kongbai{}．}
+\begin{ansblock}[导-课时92-评4]
+% ans:导-课时92-评4
+\ansitem{4}{$\dfrac{F}{4}$}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{中档(知识点二)}\hspace{2.2mm}两个完全相同的金属球甲、乙（可视为点电荷），甲带电荷量 $+4q$，乙带电荷量 $-2q$，相距 $r$，它们之间的静电力为 $F$．使两球接触后再分开，放回原处（仍相距 $r$），则它们之间的静电力变为\kongbai{}．}
+\begin{ansblock}[导-课时92-评5]
+% ans:导-课时92-评5
+\ansitem{5}{$\dfrac{F}{8}$}
+\end{ansblock}
+
+\end{multicols}
+
+\tailfill
+\end{document}

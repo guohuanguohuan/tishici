@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 12:28
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1227,39 +1227,6 @@ LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.55843pt on input line 44.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.63033pt on input line 44.
-! Undefined control sequence.
-<argument> ... {5}\)．（回验：\(2=-2\times 1+4\) \ding 
-                                                  {51}；\(-4=-2\times 4+4\) \...
-l.44 ...{51}；\(1=1\)、\(16=4\times 4\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...ding {51}；\(-4=-2\times 4+4\) \ding 
-                                                  {51}；\(1=1\)、\(16=4\times ...
-l.44 ...{51}；\(1=1\)、\(16=4\times 4\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{51}；\(1=1\)、\(16=4\times 4\) \ding 
-                                                  {51}．）
-l.44 ...{51}；\(1=1\)、\(16=4\times 4\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-练-课时17-04
 M3-ANSKEY: 2章-练-课时17-02
 M3-ANSKEY: 2章-练-课时17-05
@@ -1273,329 +1240,32 @@ M3-ANSKEY: 2章-练-课时17-12
 M3-ANSKEY: 2章-练-课时17-14
 M3-ANSKEY: 2章-练-课时17-10
 [2]
-! Undefined control sequence.
-<argument> ...es 5/(2\sqrt {5})=\sqrt {5}\) \ding 
-                                                  {51}．\par \noindent ③ \(m^...
-l.116 ...于 \(\sqrt{5}\) 的直线只有通径 \(x=5\) 这一条，故填 1．}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-练-课时17-03
 M3-ANSKEY: 2章-练-课时17-09
 M3-ANSKEY: 2章-练-课时17-06
 M3-ANSKEY: 2章-练-课时17-16
-! Undefined control sequence.
-<argument> ...(x^{2}=p^{2}/3=2p\times p/6\) \ding 
-                                                  {51}；\(B(\sqrt {3}p,3p/2)\...
-l.148 ...}}=\sqrt{64p^{2}/9}=8p/3\) 合 \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...^{2}=3p^{2}=2p\times (3p/2)\) \ding 
-                                                  {51}．互核二（焦点弦坐标积）：本题抛物线开口向上...
-l.148 ...}}=\sqrt{64p^{2}/9}=8p/3\) 合 \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...3})\times \sqrt {3}p=-p^{2}\) \ding 
-                                                  {51}．互核三（弦长）：\(|AF|+|FB|=2...
-l.148 ...}}=\sqrt{64p^{2}/9}=8p/3\) 合 \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \ding 
-                      
-l.148 ...}}=\sqrt{64p^{2}/9}=8p/3\) 合 \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [3]
 M3-ANSKEY: 2章-练-课时17-08
 M3-ANSKEY: 2章-练-课时17-15
-! Undefined control sequence.
-<argument> ...-2)/2,(5/3-1)/2)=(-2/3,1/3)\) \ding 
-                                                  {51}，\(|AB|=\sqrt {(2/3+2)...
-l.164 ...(5/3+1)^{2}}=(8/3)\sqrt{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...(5/3+1)^{2}}=(8/3)\sqrt {2}\) \ding 
-                                                  {51}．）
-l.164 ...(5/3+1)^{2}}=(8/3)\sqrt{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-03
 M3-ANSKEY: 2章-拓-课时17-17
-! Undefined control sequence.
-<argument> ... 时 \(3-4k^{2}=3-12=-9\neq 0\) \ding 
-                                                  {51} 两类不重；\(k=\pm \sqrt {3...
-l.180 ...) 与 \(\pm\sqrt{3}\) 互异 \ding{51} 四类无重复．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \ding 
-                      
-l.180 ...) 与 \(\pm\sqrt{3}\) 互异 \ding{51} 四类无重复．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-18
-M3-ANSKEY: 2章-拓-课时17-19
 [4]
+M3-ANSKEY: 2章-拓-课时17-19
 M3-ANSKEY: 2章-拓-课时17-01
-! Undefined control sequence.
-<argument> ...es 32/25=64/25\)，\(|AB|=8/5\) \ding 
-                                                  {51}．）故选 C．
-l.204 ...25=64/25\)，\(|AB|=8/5\) \ding{51}．）故选 C．}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-05
-! Undefined control sequence.
-<argument> ...2}-4y-4=0\)，\(y_{1}y_{2}=-4\) \ding 
-                                                  {51}；\(x_{1}x_{2}=(y_{1}+1...
-l.212 ...y_{1}+1)(y_{2}+1)=-4+4+1=1\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...(y_{1}+1)(y_{2}+1)=-4+4+1=1\) \ding 
-                                                  {51}．）
-l.212 ...y_{1}+1)(y_{2}+1)=-4+4+1=1\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-07
-! Undefined control sequence.
-<argument> ... {5}/2)\times 4\sqrt {5}=10\) \ding 
-                                                  {51}．）
-l.220 ...t{5}/2)\times 4\sqrt{5}=10\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-12
-! Undefined control sequence.
-<argument> ...（梯形中位线），得 \((10+5/2)/2=25/4\) \ding 
-                                                  {51}．\par \noindent （校：\(y...
-l.228 ...(-2)=-16=-p^{2}\) \ding{51}，与焦点弦纵积定值相符．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...{2}=8\times (-2)=-16=-p^{2}\) \ding 
-                                                  {51}，与焦点弦纵积定值相符．）
-l.228 ...(-2)=-16=-p^{2}\) \ding{51}，与焦点弦纵积定值相符．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-13
-! Undefined control sequence.
-<argument> ...qrt {3}\)、\(|AB|=4\sqrt {3}\) \ding 
-                                                  {51}；此即通径型垂直弦，长 \(4\sqrt {...
-l.236 ...点 \((3,\pm 2\sqrt{3})\) 在曲线上 \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \ding 
-                      
-l.236 ...点 \((3,\pm 2\sqrt{3})\) 在曲线上 \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [5]
 M3-ANSKEY: 2章-拓-课时17-08
-! Undefined control sequence.
-<argument> ...rt {10})=56\mp 16\sqrt {10}\) \ding 
-                                                  {51}．）\par \noindent (2) \...
-l.244 ...(x_{1}x_{2})=9/(-24)=-3/8\neq -1\)，同得否．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-11
-! Undefined control sequence.
-<argument> ...4-8m=20\)，故 \(m=-2\)（\(<1/2\) \ding 
-                                                  {51} 合相交条件）．\par \noindent...
-l.252 ...\sqrt{1+4}\times\sqrt{5}=5\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...qrt {1+4}\times \sqrt {5}=5\) \ding 
-                                                  {51}．）
-l.252 ...\sqrt{1+4}\times\sqrt{5}=5\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-04
-! Undefined control sequence.
-<argument> ...,1)\) 在抛物线上 \(1=2\times 1/2\) \ding 
-                                                  {51}；到 \(x\) 轴距离 \(1=r\) \...
-l.260 ...ng{51}；到准线距离 \(1/2+1/2=1=r\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...ding {51}；到 \(x\) 轴距离 \(1=r\) \ding 
-                                                  {51}；到准线距离 \(1/2+1/2=1=r\)...
-l.260 ...ng{51}；到准线距离 \(1/2+1/2=1=r\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...ng {51}；到准线距离 \(1/2+1/2=1=r\) \ding 
-                                                  {51}．）
-l.260 ...ng{51}；到准线距离 \(1/2+1/2=1=r\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-06
-! Undefined control sequence.
-<argument> ...2}\)、\(y=\pm p\)、积 \(-p^{2}\) \ding 
-                                                  {51}；\(m=1\)、\(p=2\) 时 \(y...
-l.268 ... \ding{51}，与例 13 之 \(y_{1}y_{2}=-4\) 同．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...^{2}-4y-4=0\)、积 \(-4=-p^{2}\) \ding 
-                                                  {51}，与例 13 之 \(y_{1}y_{2}=...
-l.268 ... \ding{51}，与例 13 之 \(y_{1}y_{2}=-4\) 同．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-09
 [6]
 M3-ANSKEY: 2章-拓-课时17-10
-! Undefined control sequence.
-<argument> ...(2p)^{2}=4p^{2}=2p\times 2p\) \ding 
-                                                  {51}）．\par \noindent 综上满足条...
-l.284 ...两条分别由「与对称轴平行」「过顶点的竖直割线」两个退化方向提供，条数与读数合．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-14
-! Undefined control sequence.
-<argument> ...}=-p^{2}/y_{1}=-y_{1}=y_{2}\) \ding 
-                                                  {51} 证法不变；焦点在 \(y\) 轴、开口向左...
-l.292 ...等其他标准形同法（换元即可），结论为「\(MQ\) 平行于该抛物线的对称轴」．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-15
 M3-ANSKEY: 2章-拓-课时17-16
 
@@ -1604,314 +1274,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 306--306
  []
 
 [7]
-! Undefined control sequence.
-<argument> ...) 或 \(t=11\)（均使 \(r=|t+1|>0\) \ding 
-                                                  {51}，两解皆合）．\par \noindent ...
-l.308 ...ng{51}；圆心到准线距离 \(11+1=12=r\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...8-2\sqrt {2})^{2}=144=r^{2}\) \ding 
-                                                  {51}；圆心到准线距离 \(11+1=12=r\)...
-l.308 ...ng{51}；圆心到准线距离 \(11+1=12=r\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...ng {51}；圆心到准线距离 \(11+1=12=r\) \ding 
-                                                  {51}．）
-l.308 ...ng{51}；圆心到准线距离 \(11+1=12=r\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-20
-! Undefined control sequence.
-<argument> ...w k=1\)（合 \(2-k^{2}=1\neq 0\) \ding 
-                                                  {51}）．\par \noindent 此时方程为...
-l.316 ...{4+12}=\sqrt{2}\times 4=4\sqrt{2}\)，选 D．}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...、\(-1\)，\(\Delta =4+12=16>0\) \ding 
-                                                  {51} 两交点 \(M(3,4)\)、\(N(-1...
-l.316 ...{4+12}=\sqrt{2}\times 4=4\sqrt{2}\)，选 D．}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...(-1,0)\)（校：\(2\times 9-16=2\) \ding 
-                                                  {51}；\(2\times 1-0=2\) \di...
-l.316 ...{4+12}=\sqrt{2}\times 4=4\sqrt{2}\)，选 D．}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ... \ding {51}；\(2\times 1-0=2\) \ding 
-                                                  {51}）．\par \noindent \(|MN...
-l.316 ...{4+12}=\sqrt{2}\times 4=4\sqrt{2}\)，选 D．}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-21
-! Undefined control sequence.
-<argument> ...故 \(k=1\)（\(2-k^{2}=1\neq 0\) \ding 
-                                                  {51}）．\par \noindent 于是 \(...
-l.324 ...1+1)^{2}+(0+2)^{2}=8=r^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...0)\)、\(B(-3,-4)\)（校：\(1-0=1\) \ding 
-                                                  {51}；\(9-16/2=1\) \ding {5...
-l.324 ...1+1)^{2}+(0+2)^{2}=8=r^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...0=1\) \ding {51}；\(9-16/2=1\) \ding 
-                                                  {51}），\(|AB|=\sqrt {4^{2}+...
-l.324 ...1+1)^{2}+(0+2)^{2}=8=r^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...32=20-4m\)，解得 \(m=-3\)（\(<5\) \ding 
-                                                  {51} 圆确存在）．故选 A．（互核：\(r=|A...
-l.324 ...1+1)^{2}+(0+2)^{2}=8=r^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...r^{2}=8=5-m\Rightarrow m=-3\) \ding 
-                                                  {51}；又 \(|CA|^{2}=(1+1)^{2...
-l.324 ...1+1)^{2}+(0+2)^{2}=8=r^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...(1+1)^{2}+(0+2)^{2}=8=r^{2}\) \ding 
-                                                  {51}．）
-l.324 ...1+1)^{2}+(0+2)^{2}=8=r^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-拓-课时17-02
-! Undefined control sequence.
-<argument> ... {2}\times 4/3=4\sqrt {2}/3\) \ding 
-                                                  {51}．）
-l.332 ...t{2}\times 4/3=4\sqrt{2}/3\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-导-课时17-G1
-! Undefined control sequence.
-<argument> ...B(3/2,-3)\)，\(x_{1}+x_{2}=3\) \ding 
-                                                  {51}（此即通径位置）．）
-l.340 ...\)，\(x_{1}+x_{2}=3\) \ding{51}（此即通径位置）．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-M3-ANSKEY: 2章-导-课时17-G2
 [8]
-! Undefined control sequence.
-<argument> ...)：\(|AF_{1}|=4-2\sqrt {2}>0\) \ding 
-                                                  {51}；\(|AB|=|BF_{1}|-|AF_{...
-l.348 ...s 4^{2}=32=(4\sqrt{2})^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...)-(4-2\sqrt {2})=4\sqrt {2}\) \ding 
-                                                  {51}；勾股 \(2\times 4^{2}=32...
-l.348 ...s 4^{2}=32=(4\sqrt{2})^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...s 4^{2}=32=(4\sqrt {2})^{2}\) \ding 
-                                                  {51}．）
-l.348 ...s 4^{2}=32=(4\sqrt{2})^{2}\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+M3-ANSKEY: 2章-导-课时17-G2
 M3-ANSKEY: 2章-导-课时17-G3
-! Undefined control sequence.
-<recently read> \ding 
-                      
-l.356 ...ng{51}；周长恒等 \(4a\) 不依赖过焦弦的方向 \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \ding 
-                      
-l.356 ...ng{51}；周长恒等 \(4a\) 不依赖过焦弦的方向 \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-导-课时17-G4
-! Undefined control sequence.
-<argument> ...、\(y_{1}=\sqrt {2}p=-2y_{2}\) \ding 
-                                                  {51}）．\(C(-p/2,0)\)、\(F(p/...
-l.364 ...(8+16)/8=3\)，\(6=2\times 3\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...times 2\sqrt {2}=4\sqrt {2}\) \ding 
-                                                  {51}；\(|AF|=(32+16)/8=6\)、...
-l.364 ...(8+16)/8=3\)，\(6=2\times 3\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...=(8+16)/8=3\)，\(6=2\times 3\) \ding 
-                                                  {51}．）
-l.364 ...(8+16)/8=3\)，\(6=2\times 3\) \ding{51}．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 M3-ANSKEY: 2章-导-课时17-G5
-! Undefined control sequence.
-<argument> \(P(2,1)\)：\(4/2-1=1\) \ding 
-                                        {51}，\(P\) 在 \(C\) 上．设切线 \(l\)：\(y-1...
-l.372 ...源解以导数求斜率系后置工具，本解改走联立 \(\Delta=0\)，读数一致．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-<recently read> \ding 
-                      
-l.372 ...源解以导数求斜率系后置工具，本解改走联立 \(\Delta=0\)，读数一致．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \vbox (41.51688pt too high) has occurred while \output is active []
 
-! Undefined control sequence.
-<argument> ...0\)，重根 \(x=2\)，切点即 \(P(2,1)\) \ding 
-                                                  {51}——恰一公共点且不平行渐近线，为真切线；源解...
-l.372 ...源解以导数求斜率系后置工具，本解改走联立 \(\Delta=0\)，读数一致．）}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[9] (./ansbook-true.aux)
+ [9] [10] (./ansbook-true.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
  ***********
  ) ) 
 Here is how much of TeX's memory you used:
- 25405 strings out of 469768
- 602356 string characters out of 5466040
- 1169167 words of memory out of 5000000
- 53983 multiletter control sequences out of 15000+600000
+ 25404 strings out of 469768
+ 602352 string characters out of 5466040
+ 1175169 words of memory out of 5000000
+ 53982 multiletter control sequences out of 15000+600000
  631923 words of font info for 139 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 112i,17n,124p,1560b,783s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 112i,17n,124p,1534b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ansbook-true.pdf (9 pages).
+Output written on ansbook-true.pdf (10 pages).

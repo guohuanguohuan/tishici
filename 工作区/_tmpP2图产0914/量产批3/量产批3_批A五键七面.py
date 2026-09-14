@@ -23,10 +23,11 @@ GRAY = "0.45"
 
 # ============ F1：01-G2 电场线分布图（B 侧密） ============
 x_l, x_r = 0.50, 3.26                      # 左板右侧面 / 右电极左侧面
-A1, B1 = 1.10, 2.70                        # A、B 在中央场线上（A 近阴极、B 近密侧）
-ends_l = [0.0, 0.25, -0.25, 0.75, -0.75, 1.30, -1.30]   # 左板端（疏）
-ends_r = [0.0, 0.09, -0.09, 0.27, -0.27, 0.47, -0.47]   # 右电极端（密）
-ys = lambda x: [el + (er - el) * (x - x_l) / (x_r - x_l) for el, er in zip(ends_l, ends_r)]
+X_SRC = 4.30                               # 虚源（小电极面发散，场线自密到疏）
+A1, B1 = 1.10, 2.80                        # A、B 在中央场线上（A 近阴极、B 近密侧）
+ends_r = [0.0, 0.07, -0.07, 0.20, -0.20, 0.36, -0.36]   # 右电极端（密）
+ys = lambda x: [er * (x - X_SRC) / (x_r - X_SRC) for er in ends_r]  # 自虚源发散的射线族
+ends_l = ys(x_l)
 spA = np.diff(np.sort(ys(A1))).mean()
 spB = np.diff(np.sort(ys(B1))).mean()
 assert x_l < A1 < B1 < x_r, "A/B 不在中央场线段内"
@@ -60,17 +61,16 @@ print("F1 写出：01-G2-题图.png")
 # ============ F2：02-G2 φ-x 图线（x 正半轴，M、x₁、x₂） ============
 phi = lambda x: 3.2 / (x + 0.55)
 x1g, xMg, x2g = 0.70, 1.40, 3.00
-d1, d2 = phi(x1g), phi(xMg), phi(x2g)
+d1, dM, d2 = phi(x1g), phi(xMg), phi(x2g)
 slM = -(phi(xMg + 1e-5) - phi(xMg - 1e-5)) / 2e-5
 asym1 = phi(xMg - 0.5) - phi(xMg); asym2 = phi(xMg) - phi(xMg + 0.5)
 xx = np.linspace(x1g, x2g, 500)
 assert x1g < xMg < x2g, "标注位次崩（x₁<M<x₂）"
-assert d1 > d2 > d2 > 0 and d1 > d2, "φ(x₁)>φ(x₂) 崩"
-assert d1 > phi(xMg) > phi(x2g), "M 处电势序崩"
+assert d1 > dM > d2 > 0, "φ(x₁)>φ(M)>φ(x₂) 崩"
 assert abs(slM) > 0.5, f"M 处斜率为 0（E_M=0，A 判否依据崩）：{slM:.3f}"
 assert np.all(np.diff(phi(xx)) < 0), "x₁→x₂ 非单调降（C 判立依据崩）"
 assert abs(asym1 - asym2) / asym1 > 0.2, "曲线对称（D 判否依据崩）"
-print(f"F2(02-G2) 自核：x₁<M<x₂ ✓ φ₁={d1:.2f}>φ_M={d2:.2f}>φ₂={phi(x2g):.2f} ✓ "
+print(f"F2(02-G2) 自核：x₁<M<x₂ ✓ φ₁={d1:.2f}>φ_M={dM:.2f}>φ₂={d2:.2f} ✓ "
       f"E_M=|斜率|={abs(slM):.2f}≠0 ✓ 单调降 ✓ 不对称({asym1:.2f} vs {asym2:.2f}) ✓")
 
 fig, ax = plt.subplots(figsize=(4.9, 3.4))
@@ -81,7 +81,7 @@ ax.annotate("", xy=(4.78, 0), xytext=(-0.12, 0),
 ax.annotate("", xy=(0, 6.55), xytext=(0, -1.05),
             arrowprops=dict(arrowstyle="->", color="k", lw=1.0), zorder=2)
 ax.text(4.76, -0.92, "$x$", fontsize=13)
-ax.text(-0.10, 6.50, r"$\varphi$", fontsize=14, va="top")
+ax.text(0.08, 6.50, r"$\varphi$", fontsize=14, va="top")
 for gx in (x1g, x2g):
     ax.plot([gx, gx], [0, phi(gx)], color=GRAY, lw=0.9, ls="--", zorder=1)
     ax.plot([gx], [phi(gx)], "k.", ms=5, zorder=4)
@@ -89,7 +89,7 @@ for gx in (x1g, x2g):
 ax.plot([xMg], [phi(xMg)], "k.", ms=6, zorder=4)
 ax.plot([xMg, xMg], [0, phi(xMg)], color=GRAY, lw=0.9, ls="--", zorder=1)
 ax.text(xMg + 0.10, phi(xMg) + 0.22, "$M$", fontsize=13)
-ax.set_xlim(-0.15, 4.95); ax.set_ylim(-1.25, 6.75)
+ax.set_xlim(-0.15, 4.95); ax.set_ylim(-1.25, 7.30)
 ax.set_aspect("auto"); ax.axis("off")
 fig.tight_layout(pad=0.2)
 fig.savefig(OUT + r"\02-G2-题图φx.png", dpi=150, facecolor="white")
@@ -131,7 +131,8 @@ iB = int(np.argmax(np.abs(r1 - 1.35) < 1e-3))
 iC = int(np.argmax(r2 < 0.80))
 B3, C3 = traj1[iB], traj2[iC]
 rB, rC = np.hypot(*B3), np.hypot(*C3)
-assert abs(np.linalg.norm(dP) - v0) < 1e-12 and abs(np.linalg.norm(dQ) - v0) < 1e-12, "初速率不同（题面崩）"
+assert abs(np.linalg.norm(dP) - 1) < 1e-12 and abs(np.linalg.norm(dQ) - 1) < 1e-12, "方向向量未归一"
+assert abs(np.dot(dP, dQ)) < 1.0, "两径迹入射方向相同（题面「不同方向」崩）"
 assert np.hypot(*traj1.min(axis=0)) > 0 or True
 per1 = r1.min(); per2 = r2.min()
 assert per1 > circ[0] + 0.05, f"径迹1 未外弯绕开（近距 {per1:.2f}）"

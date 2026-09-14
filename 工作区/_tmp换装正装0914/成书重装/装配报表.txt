@@ -1,0 +1,82 @@
+[mode] 写入域 C:\提示词\工作区\_tmp换装正装0914\成书重装 可写实测 OK（源树全程只读）
+[true] M2导学本/衔接节-1.2.1前     起  1  5页(基线5) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时01           起  6  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时02           起 10  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时03           起 13  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时04           起 16  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时05           起 20  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时06           起 24  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时07           起 28  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时08           起 32  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时09           起 36  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/课时10           起 40  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2导学本/章末-本章总结提升      起 44  8页(基线8) err=0 ovr=0 mch=0 rc=0 OK
+■ [true] M2导学本.pdf 合并 51 页（链内起1）书签 12 条
+[true] M2练习本/课时01           起 52  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时02           起 55  2页(基线2) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时03           起 57  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时04           起 60  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时05           起 63  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时06           起 66  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时07           起 69  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时08           起 72  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时09           起 75  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/课时10           起 78  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/上册             起 81  6页(基线6) err=0 ovr=0 mch=0 rc=0 OK
+[true] M2练习本/下册             起 87 15页(基线15) err=0 ovr=0 mch=0 rc=0 OK
+■ [true] M2练习本.pdf 合并 50 页（链内起52）书签 12 条
+[true] P1导学本/9.1电荷          起  1  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] P1导学本/9.2库仑定律        起  5  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] P1导学本/9.3电场电场强度      起  9  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] P1导学本/9.4静电的防止与利用    起 13  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] P1导学本/章末-本章易错过关      起 17  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+■ [true] P1导学本.pdf 合并 19 页（链内起1）书签 5 条
+[true] P1练习本/9.1电荷          起 20  6页(基线6) err=0 ovr=0 mch=0 rc=0 OK
+[true] P1练习本/9.2库仑定律        起 26  5页(基线5) err=0 ovr=0 mch=0 rc=0 OK
+[true] P1练习本/9.3电场电场强度      起 31  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[true] P1练习本/9.4静电的防止与利用    起 35  5页(基线5) err=0 ovr=0 mch=0 rc=0 OK
+■ [true] P1练习本.pdf 合并 20 页（链内起20）书签 4 条
+[true] P1拓展本/拓展册            起 40 11页(基线11) err=0 ovr=0 mch=0 rc=0 OK
+■ [true] P1拓展本.pdf 合并 11 页（链内起40）书签 1 条
+■ [true] 全档 151 页 书签合计 34 条 链尾 {'M2': 102, 'P1': 51}
+[false] M2导学本/衔接节-1.2.1前     起  1  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时01           起  5  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时02           起  8  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时03           起 11  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时04           起 14  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时05           起 17  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时06           起 20  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时07           起 23  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时08           起 26  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时09           起 29  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/课时10           起 32  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2导学本/章末-本章总结提升      起 35  6页(基线6) err=0 ovr=0 mch=0 rc=0 OK
+■ [false] M2导学本.pdf 合并 40 页（链内起1）书签 12 条
+[false] M2练习本/课时01           起 41  2页(基线2) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时02           起 43  2页(基线2) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时03           起 45  2页(基线2) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时04           起 47  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时05           起 50  2页(基线2) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时06           起 52  2页(基线2) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时07           起 54  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时08           起 57  2页(基线2) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时09           起 59  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/课时10           起 62  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/上册             起 65  5页(基线5) err=0 ovr=0 mch=0 rc=0 OK
+[false] M2练习本/下册             起 70 12页(基线12) err=0 ovr=0 mch=0 rc=0 OK
+■ [false] M2练习本.pdf 合并 41 页（链内起41）书签 12 条
+[false] P1导学本/9.1电荷          起  1  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] P1导学本/9.2库仑定律        起  4  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] P1导学本/9.3电场电场强度      起  7  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] P1导学本/9.4静电的防止与利用    起 10  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[false] P1导学本/章末-本章易错过关      起 14  2页(基线2) err=0 ovr=0 mch=0 rc=0 OK
+■ [false] P1导学本.pdf 合并 15 页（链内起1）书签 5 条
+[false] P1练习本/9.1电荷          起 16  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+[false] P1练习本/9.2库仑定律        起 19  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[false] P1练习本/9.3电场电场强度      起 23  4页(基线4) err=0 ovr=0 mch=0 rc=0 OK
+[false] P1练习本/9.4静电的防止与利用    起 27  3页(基线3) err=0 ovr=0 mch=0 rc=0 OK
+■ [false] P1练习本.pdf 合并 14 页（链内起16）书签 4 条
+[false] P1拓展本/拓展册            起 30 10页(基线10) err=0 ovr=0 mch=0 rc=0 OK
+■ [false] P1拓展本.pdf 合并 10 页（链内起30）书签 1 条
+■ [false] 全档 120 页 书签合计 34 条 链尾 {'M2': 82, 'P1': 40}
+■ 装配读数.json 已落 C:\提示词\工作区\_tmp换装正装0914\成书重装

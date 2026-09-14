@@ -1,0 +1,350 @@
+% ============================================================
+% 导学件/9.1电荷/main.tex —— P1 成卷轮·物理导学件首件（必修3 第9章 9.1 电荷，答案制A·正文侧）
+% 取材（docx 源抽切，中间件＝工作区/_tmpP1成卷0912/）：
+%   课前预习知识梳理＝《必修3 第9章·简单卷》9.1 讲部（元素[3]–[24]，dump_docx --slice 1:27，
+%     提取件 简单卷-9.1讲部.txt）：摩擦起电／接触起电／静电感应四步实验／感应起电本质／元电荷／守恒；
+%   课中探究 例1（探究点二）＝定稿「中3（源Q10）」设计件（定稿-9.1+9.4 §三-3.1 归置注：转导学件课中探究
+%     「辨析位」＋拓展册）——题面取《中档卷》元素[25]–[30]（提取件 中档卷-Q10.txt）；源位图
+%     word/media/image3.png（901×563）原样提取仅改名 figs/例1-导体AB与C球.png，零加工；
+%   其余课中探究例/变式＋诊断判断＋课堂评价＝本件命制（17 条＝判断 6＋例/变式 5＋拓展延伸 1＋评价 5，
+%     亲算账见 成卷/就绪报告.md 附录A）。
+% 结构＝PL1 导学件样张五段闭环（工作区/物理样张0911/导学件/main.tex 为形制基准；骨架宏与冻结参数全承，
+%   件型层宏自样张原样拷贝）：学习目标→课前预习（知识梳理填空＋诊断分析判断）→课中探究（3 探究点：
+%   例＋变式＋素养小结）→课堂评价（恒 5 题＝3 单选＋2 填空）。
+% 物理导学案五组件（全见件）：素养标签 5 枚举（教材链接/物理观念/科学探究/科学推理/科学思维）／
+%   [反思感悟] 书写留白（探究一、探究二 例1 后）／规范答题区自评表（探究三 例1 后·6 分档）／
+%   拓展延伸（探究三 例1 后）／限时总量行＋小题分值说明行（课堂评价组头：15 分钟/20 分·课堂组档）。
+% 答案制A：正文 0 答案宏（\ansline/\jiexi/\kongda 禁入；判断题走 \zhentib 空括号形）；
+%   全部答案值与判断答案入 就绪报告 附录A（答案册轮取值依据），本件不印。
+% 互斥口径：本件例/变式/评价/判断与新命制件均与练习件 9.1 正文 16 题＋拓展 2 题零同文；
+%   探究点二 例1 系定稿指定「导学位」件（练习件侧以「中3 让位」处置，成卷轮防双印待登）。
+% 件型层宏登记（承 PL1 导学件样张原样拷贝，骨架 §五「试点件按需在 main 自建并登记」）：
+%   \sylabel／\fanxi／\tuoZhan／\guifanbiao（6 分档）／\xszl／\xzsm／\pingtou／\liubai。
+% 页脚＝形制 A 默认（灰块·导学档 26.2mm；素面——品牌位不开，《全品基准总表》§三）。
+% 编译：xelatex ×2（三 0 判据＝error/Overfull/缺字 全 0）；目验：python 骨架/render.py . main 150。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% —— 换装 overlay 挂接（换装正装波4a；七模块后、\begin{document} 前，承 sty 头用法）——
+\usepackage{qp-m3p-overlay}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+\renewcommand{\qpbuce}{必修第三册}
+\renewcommand{\qpjianming}{导学件}
+% 品牌位：导学件＝素面（\ifqpbrand 默认 false，勿开）
+
+% ---------- 件型层宏①：素养标签（5 枚举标签件，承 PL1 导学件样张同位） ----------
+\newcommand{\sylabel}[2]{\par\glueguard{1}%
+  \noindent{\heiti [#1]}\hspace{0.4em}#2\par\addvspace{0.8mm}}
+
+% ---------- 件型层宏②：[反思感悟]块（例后书写留白行，承 PL1 样张） ----------
+\newcount\FXN
+\newcommand{\fanxi}[1]{\par\glueguard{1}\addvspace{1.2mm}%
+  \vbox{%
+    \noindent{\heiti [反思感悟]}\par\vskip 2.4mm
+    \FXN=#1\relax
+    \loop \noindent\textcolor{gray122}{\rule{\linewidth}{0.4pt}}\par\vskip 6.2mm
+      \advance\FXN by -1 \ifnum\FXN>0\repeat
+    \vskip -1.2mm}}
+
+% ---------- 件型层宏④：拓展延伸块（例后追问，承 PL1 样张） ----------
+\newcommand{\tuoZhan}[1]{\par\glueguard{2}\addvspace{1.6mm}%
+  \noindent{\heiti [拓展延伸]}\hspace{0.4em}#1\par\addvspace{1mm}}
+
+% ---------- 件型层宏③：规范答题区自评表（承 PL1 样张；本件 6 分档：说明 1＋公式 3＋单位 2） ----------
+\newcommand{\guifanbiao}[1]{\par\addvspace{2.2mm}\glueguard{2}%
+  \begingroup\arrayrulecolor{gray122}\setlength{\tabcolsep}{2pt}%
+  \noindent\begin{tabular}{|p{27mm}|p{29.6mm}|p{19.6mm}|}
+    \thickhline
+    {\heiti 规范答题区}\par\vspace*{40mm} &
+    \multicolumn{1}{|c|}{自评项目（共#1分）\rule{0pt}{7mm}} &
+    \multicolumn{1}{c|}{自评+得分\rule{0pt}{7mm}} \\
+    \cline{2-3}
+    & 书写工整无涂抹（是否加分项） & （√或×） \\
+    \cline{2-3}
+    & 有必要的文字说明（1分） & \\
+    \cline{2-3}
+    & 有解题关键公式（3分） & \\
+    \cline{2-3}
+    & 结果为数字的带有单位（2分） & \\
+    \thickhline
+  \end{tabular}\endgroup\par\addvspace{1mm}}
+
+% ---------- 件型层宏⑤：限时总量行＋小题分值说明行（承 PL1 样张） ----------
+\newcommand{\xszl}[2]{\par\addvspace{1.6mm}\centerline{(#1)\quad (#2)}\par}
+\newcommand{\xzsm}[1]{\par\addvspace{0.4mm}\centerline{(#1)}\par\addvspace{1.2mm}}
+
+% ---------- 件型层宏：课堂评价组头／书写留白＋水印（承 PL1 样张） ----------
+\newcommand{\pingtou}[1]{\par\glueguard{2}\addvspace{2pt}%
+  \noindent\biaoqian{【课堂评价】}{\fangsong #1}\par\addvspace{2pt}}
+\newlength{\liubaoh}
+\newcommand{\liubai}[2][16mm]{\par\nobreak\vskip 2.4mm
+  \setlength{\liubaoh}{#1}%
+  \noindent\smash{\rlap{\kern 12mm\rotatebox{25}{\textcolor{black!12}{\fontsize{10.5pt}{10.5pt}\selectfont\heiti #2}}}}\par
+  \nointerlineskip\vskip \liubaoh\nobreak}
+
+\begin{document}
+%成书重装五本跨本连续页码（G7方案B，承M2/M3装配先例）setcounter 注入位
+\setcounter{page}{1}
+% ===== 通栏标题区（multicols 外） =====
+\zhangtitle{第9章\quad 静电场及其应用}
+\jietitle{9.1\quad 电荷}
+\keshi{第1课时\quad 电荷的起电方式与电荷守恒定律}
+\mubiaoline
+\mubiaomu{1}{知道摩擦起电、接触起电和感应起电，理解起电的实质是电子的转移，知道电荷守恒定律；}
+\mubiaomu{2}{能分析静电感应中导体两端感应电荷的电性，会判断不同操作顺序下导体的最终带电情况；}
+\mubiaomu{3}{知道元电荷，理解电荷量的量子化，会计算完全相同的金属球接触后的电荷分配．}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 一、课前预习（知识梳理填空＋诊断分析判断挂每个知识点之后）
+% ============================================================
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\sylabel{教材链接}{阅读教材，完成下列填空．}
+
+\zsd{一}{两种电荷与起电方式}
+
+\tiaomu{1}{自然界中只存在两种电荷：用丝绸摩擦过的玻璃棒带\kongbai{}电荷，用毛皮摩擦过的橡胶棒带\kongbai{}电荷；同种电荷相互\kongbai{}，异种电荷相互\kongbai{}．}
+
+\tiaomu{2}{摩擦起电的实质是\kongbai{}（填“电子”或“质子”）的转移：得到电子的物体带\kongbai{}电，失去电子的物体带\kongbai{}电．}
+
+\tiaomu{3}{接触起电：两个完全相同的金属球接触后再分开，若带同种电荷，则把总电荷量\kongbai{}；若带异种电荷，则先\kongbai{}，再把剩余电荷量\kongbai{}．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{用丝绸摩擦过的玻璃棒带正电，说明摩擦过程中创造了正电荷．}
+\begin{ansblock}[导-课时91-判1]
+% ans:导-课时91-判1
+\ansitem{(1)}{$\times$}
+\end{ansblock}
+
+\zhentib{(2)}{摩擦起电的实质是电子从一个物体转移到另一个物体，得到电子的物体带负电．}
+\begin{ansblock}[导-课时91-判2]
+% ans:导-课时91-判2
+\ansitem{(2)}{\(\surd\)}
+\end{ansblock}
+
+\zsd{二}{静电感应与感应起电}
+
+\tiaomu{1}{取一对用绝缘支柱支持的金属导体A、B，使它们彼此接触（起初均不带电，下面的金属箔闭合）．把带正电的球C移近导体A，可以看到A、B上的金属箔都\kongbai{}（填“张开”或“闭合”）；若先把A、B分开，再移走C，A、B仍\kongbai{}（填“带”或“不带”）电；若让分开后的A、B重新接触，金属箔\kongbai{}，说明等量异种电荷发生了\kongbai{}．}
+
+\tiaomu{2}{感应起电的实质：在带电体C的电荷作用下，导体A、B上的\kongbai{}发生定向移动，使A端带\kongbai{}电、B端带\kongbai{}电（C带正电，置于A的左侧时）．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{把带正电的球C移近相互接触的导体A、B时，导体内的自由电子发生了定向移动．}
+\begin{ansblock}[导-课时91-判3]
+% ans:导-课时91-判3
+\ansitem{(1)}{\(\surd\)}
+\end{ansblock}
+
+\zhentib{(2)}{移走带电体后，导体上的感应电荷一定立即全部消失．}
+\begin{ansblock}[导-课时91-判4]
+% ans:导-课时91-判4
+\ansitem{(2)}{$\times$}
+\end{ansblock}
+
+\zsd{三}{电荷守恒定律与元电荷}
+
+\tiaomu{1}{电荷守恒定律：电荷既不会\kongbai{}，也不会消灭，它只能从一个物体转移到另一个物体，或者从物体的一部分转移到另一部分；在转移过程中，电荷的总量\kongbai{}．}
+
+\tiaomu{2}{元电荷：\kongbai{}的电荷量叫作元电荷，用 $e$ 表示，$e=$\kongbai{} $\unit{C}$；所有带电体的电荷量都是 $e$ 的\kongbai{}．}
+
+\tiaomu{3}{比荷：电子的电荷量与其质量之比叫作比荷，$e/m_{\text{e}}\approx1.76\times10^{11}\,\unit{C/kg}$．}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{所有带电体的电荷量都等于元电荷 $e$ 的整数倍．}
+\begin{ansblock}[导-课时91-判5]
+% ans:导-课时91-判5
+\ansitem{(1)}{\(\surd\)}
+\end{ansblock}
+
+\zhentib{(2)}{某带电体的电荷量可能是 $2.4\times10^{-19}\,\unit{C}$．}
+\begin{ansblock}[导-课时91-判6]
+% ans:导-课时91-判6
+\ansitem{(2)}{$\times$}
+\end{ansblock}
+
+\liubai[9mm]{此处书写}
+\begin{ansblock}[导-课时91-预习填空]
+% ans:导-课时91-预习填空
+\ansitem{预习填空}{知识点一：正；负；排斥；吸引；电子；负；正；平分；中和；平分。知识点二：张开；带；闭合；中和；自由电子；负；正。知识点三：创生；保持不变；最小；$1.60\times10^{-19}$；整数倍。}
+\end{ansblock}
+
+% ============================================================
+% 二、课中探究（探究点×3：例＋变式＋素养小结）
+% ============================================================
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+\tjdnr{一}{电荷的相互作用}{例\textbf{1}}{简单(知识点一)}{甲、乙、丙是三个完全相同的金属小球，甲带正电，乙带负电，丙原来不带电（用绝缘支架支持）．关于三个球之间的相互作用，下列说法正确的是\nobreak(\kongwei)}
+
+\sylabel{物理观念}{同种电荷相互排斥，异种电荷相互吸引；带电体不仅能吸引异种电荷，也能吸引不带电的轻小物体．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．甲、乙相互排斥；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．甲、丙相互吸引，乙、丙相互排斥；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．甲、丙相互吸引，乙、丙也相互吸引；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．甲、丙之间没有力的作用\par}
+\begin{ansblock}[导-课时91-探1-例1]
+% ans:导-课时91-探1-例1
+\ansitem{例1}{C}
+\end{ansblock}
+
+\fanxi{2}
+
+\sylabel{科学思维}{“排斥”与“吸引”不对称：相互排斥的两球一定带同种电荷；只凭“相互吸引”不能断定电性——可能是异种电荷，也可能其中一个不带电．}
+
+\liB{变式\textbf{1}}{简单(知识点一)}{}{甲、乙、丙是三个用丝线悬挂的轻质小球．已知甲与乙相互排斥，乙与丙相互吸引．关于丙球，下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．丙一定带正电；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．丙一定带负电；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．丙一定不带电；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．丙可能不带电\par}
+\begin{ansblock}[导-课时91-探1-变式1]
+% ans:导-课时91-探1-变式1
+\ansitem{变式1}{D}
+\end{ansblock}
+
+\xiaojie{①识别：题干给出几个小球的带电情况或相互作用现象、要求判断相互作用方向或反推电性时，判归本题型；②操作：先判电性——同种相斥、异种相吸；“吸引”不能反推电性（异种或一者不带电均可能）；带电体还能吸引不带电的轻小物体．}
+
+\tjdnr{二}{静电感应与感应起电}{例\textbf{1}}{中档(知识点二)}{不带电的金属导体A和B放在绝缘支柱上并相互接触，带正电的小球C放置在导体A的左侧．下列操作能让导体B最终带正电的是\nobreak(\kongwei)}
+
+\qpfig[55]{例1-导体AB与C球}
+
+\sylabel{科学探究}{静电感应中判断电荷去向的要害是“电子被排斥远离还是被吸引靠近”：C带正电时，导体中的自由电子被吸引向A端移动；操作顺序不同（先分后移／接触／接地），导体最终带电的结果完全不同．}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont A．移走小球C后分开导体A、B；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont B．移动小球C与导体A、B接触后移走小球C，再分开导体A、B；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont C．将导体A接地后移走小球C，再分开导体A、B；\par}
+
+\bindopt {\fontsize{10.5pt}{19pt}\selectfont D．将导体B接地后移走小球C，再分开导体A、B\par}
+\begin{ansblock}[导-课时91-探2-例1]
+% ans:导-课时91-探2-例1
+\ansitem{例1}{B}\ansnote{详解}{中3（定稿指定「导学位」取材件）详解 CD 段接地时序按主脑回执②展开：移 C 前先不断地线，电荷流回大地，导体不带电；若先断地线再移 C，则导体得异号净电荷（就绪报告 §七-2）。}
+\end{ansblock}
+
+\fanxi{2}
+
+\liB{变式\textbf{1}}{中档(知识点二)}{}{A、B是两个原来均不带电的金属球，用绝缘支架固定并使它们相互接触．把带负电的橡胶棒靠近A球（不接触），则A球带\kongbai{}电，B球带\kongbai{}电；若先将A、B分开，再移走橡胶棒，分开后A球带\kongbai{}电；若先移走橡胶棒，再分开A、B，则分开后A、B都\kongbai{}（填“带”或“不带”）电．}
+\begin{ansblock}[导-课时91-探2-变式1]
+% ans:导-课时91-探2-变式1
+\ansitem{变式1}{A 正／B 负；分开后 A 正；先移棒后分＝不带}
+\end{ansblock}
+
+\xiaojie{①识别：题干围绕感应起电中导体两端电荷的电性、操作顺序对结果的影响设问时，判归本题型；②操作：先定施感电荷的电性→判自由电子的移动方向→定两端电性；再按“先分后移则保留、接触或先移则复原”核对最终结果．}
+
+\tjdnr{三}{电荷守恒定律与接触分配的计算}{例\textbf{1}}{中档(知识点三)}{完全相同的金属球甲、乙，甲带电荷量 $+6.0\times10^{-9}\,\unit{C}$，乙带电荷量 $-2.0\times10^{-9}\,\unit{C}$．}
+
+\bindp （1）使甲、乙接触后再分开，求甲、乙各自所带的电荷量；\par
+
+\bindp （2）另取一个原来不带电、与甲完全相同的金属球丙，让甲与丙接触后再分开，求最终甲、丙各自所带的电荷量．\par
+
+\guifanbiao{6}
+\begin{ansblock}[导-课时91-探3-例1]
+% ans:导-课时91-探3-例1
+\ansitem{例1}{(1) 各 $+2.0\times10^{-9}\,\unit{C}$；(2) 甲、丙各 $+1.0\times10^{-9}\,\unit{C}$}\ansnote{详解}{（(2) 中甲承 (1) 之结果）甲带 $+2.0\times10^{-9}\,\unit{C}$ 与不带电丙接触再分开、电荷平分，故甲、丙各 $+1.0\times10^{-9}\,\unit{C}$（非取题干原值 $+6.0\times10^{-9}\,\unit{C}$ 独立分配）。}
+\end{ansblock}
+
+\tuoZhan{若两个完全相同的金属球分别带电荷量 $+q$ 和 $-3q$，接触后再分开，各自所带的电荷量是多少？由此说明：异种电荷接触后，两球最终带何种电荷由什么决定？}
+\begin{ansblock}[导-课时91-拓展]
+% ans:导-课时91-拓展
+\ansitem{拓展延伸}{各 $-q$（$\dfrac{+q-3q}{2}=-q$；异种电荷接触后电性由代数和正负决定）}
+\end{ansblock}
+
+\sylabel{科学推理}{接触分配的算法：先求两球电荷量的代数和（中和），再平分；异种电荷接触后最终的电性由电荷量代数和的正负决定．}
+
+\liB{变式\textbf{1}}{简单(知识点三)}{}{完全相同的金属球甲、乙，甲带电荷量 $+7.0\times10^{-9}\,\unit{C}$，乙带电荷量 $-1.0\times10^{-9}\,\unit{C}$．使两球接触后再分开，则甲带电荷量\kongbai{}．}
+\begin{ansblock}[导-课时91-探3-变式1]
+% ans:导-课时91-探3-变式1
+\ansitem{变式1}{$+3.0\times10^{-9}\,\unit{C}$}
+\end{ansblock}
+
+\xiaojie{①识别：题干给出几个完全相同的金属球的电荷量、要求接触后再分开的分配结果时，判归本题型；②操作：每接触一次就做一次“代数和除以二”，多步操作按顺序逐次计算，中途出现新球时将其电荷量并入下一步．}
+
+% ============================================================
+% 三、课堂评价（恒 5 题＝3 单选＋2 填空；限时总量行＋小题分值说明行）
+% ============================================================
+\huaxing{课}{堂}{评}{价}{知识评价\quad 素养形成}
+
+\xszl{时间:15分钟}{总分:20分}
+\xzsm{选择题每小题4分}
+
+\pingtou{本组共5题，1—3为单选，4—5为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 1}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}用干燥的塑料梳子梳头后，梳子能吸引碎纸屑．下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．梳子与头发摩擦的过程中创造了电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．梳子带电后，能吸引轻小的不带电物体；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．梳子吸引碎纸屑，说明碎纸屑一定带了与梳子异种的电荷；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．摩擦过程中，质子从头发转移到梳子上，使梳子带了电\par}
+\begin{ansblock}[导-课时91-评1]
+% ans:导-课时91-评1
+\ansitem{1}{B}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 2}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}把一个带正电的金属球A（用绝缘柱支持）靠近另一个原来不带电、用绝缘柱支持的金属球B（不接触），下列说法正确的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．B球靠近A的一端带正电；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．B球上的自由电子向靠近A的一端移动；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．B球两端出现的感应电荷电性相同；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．B球的电荷量因感应而变大了\par}
+\begin{ansblock}[导-课时91-评2]
+% ans:导-课时91-评2
+\ansitem{2}{B}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 3}．}\hspace{4.1mm}\tieside{简单(知识点三)}\hspace{2.2mm}已知元电荷 $e=1.60\times10^{-19}\,\unit{C}$，下列电荷量的数值中，不可能是某一带电体的电荷量的是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont A．$1.6\times10^{-18}\,\unit{C}$；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont B．$3.2\times10^{-19}\,\unit{C}$；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont C．$5.6\times10^{-19}\,\unit{C}$；\par}
+
+\bindopt {\fontsize{10.5pt}{21pt}\selectfont D．$8.0\times10^{-19}\,\unit{C}$\par}
+\begin{ansblock}[导-课时91-评3]
+% ans:导-课时91-评3
+\ansitem{3}{C}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 4}．}\hspace{4.1mm}\tieside{中档(知识点三)}\hspace{2.2mm}完全相同的金属球甲、乙、丙，甲带电荷量 $+12\times10^{-9}\,\unit{C}$，乙带电荷量 $-4.0\times10^{-9}\,\unit{C}$，丙不带电．先让甲、乙接触后再分开，再让甲、丙接触后再分开，则最终甲带电荷量\kongbai{}，丙带电荷量\kongbai{}．}
+\begin{ansblock}[导-课时91-评4]
+% ans:导-课时91-评4
+\ansitem{4}{甲、丙各 $+2.0\times10^{-9}\,\unit{C}$}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 5}．}\hspace{4.1mm}\tieside{中档(知识点三)}\hspace{2.2mm}某带电体所带电荷量为 $-4.8\times10^{-9}\,\unit{C}$，则该带电体比中性状态多了\kongbai{}个电子（电子的电荷量大小取 $1.60\times10^{-19}\,\unit{C}$，结果保留两位有效数字）．}
+\begin{ansblock}[导-课时91-评5]
+% ans:导-课时91-评5
+\ansitem{5}{$3.0\times10^{10}$ 个}
+\end{ansblock}
+
+\end{multicols}
+
+\tailfill
+\end{document}

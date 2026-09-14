@@ -1,0 +1,171 @@
+[源] 答案册pair=键账对平门-selftest-dhkyxa_x：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 键账json=键账：4 键（[E] --keys 同制式）
+[件] 键账对平门-selftest-dhkyxa_x/ok.tex：行首锚 4｜编译锚 4｜实题 4（naive 含注释 5·剔假命中 1）
+    [假命中·不计] \ti 注释行 ok.tex:2｜% \ti{9} 注释行假命中（P1 核销同款）
+    [假命中·不计] 非行首 ans: ok.tex:3｜% % ans:测-77 双注释假锚（不计）
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[PASS] 键账三源集合对平（对集合不对数）
+[selftest PASS] P0 健康件（含注释行/行尾注/双注释假命中·全剔后真放行）：退出码 0（期望 0）
+
+[源] 答案册pair=键账对平门-selftest-dhkyxa_x：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 键账json=键账：4 键（[E] --keys 同制式）
+[件] 键账对平门-selftest-dhkyxa_x/miss.tex：行首锚 3｜编译锚 3｜实题 3（naive 含注释 4·剔假命中 1）
+    [假命中·不计] \ti 注释行 miss.tex:2｜% \ti{9} 注释行假命中（P1 核销同款）
+    [假命中·不计] 非行首 ans: miss.tex:3｜% % ans:测-77 双注释假锚（不计）
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(3)：答案册pair=键账对平门-selftest-dhkyxa_x有件面锚(% ans:)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-3'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(3)：答案册pair=键账对平门-selftest-dhkyxa_x有编译锚(ansblock)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-3'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(3)：答案册pair=键账对平门-selftest-dhkyxa_x有实题(\ti)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-3'] → FAIL
+[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(3)：键账json=键账有件面锚(% ans:)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-3'] → FAIL
+[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(3)：键账json=键账有编译锚(ansblock)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-3'] → FAIL
+[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(3)：键账json=键账有实题(\ti)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-3'] → FAIL
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(3)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(3)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(3)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[FAIL] 6 对集合不平，须定位键名回查
+[selftest PASS] N1 缺键（锚+块+实题缺 测-3）真拦：退出码 1（期望 1）
+
+[源] 答案册pair=键账对平门-selftest-dhkyxa_x：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 键账json=键账：4 键（[E] --keys 同制式）
+[件] 键账对平门-selftest-dhkyxa_x/ghost.tex：行首锚 5｜编译锚 5｜实题 6（naive 含注释 7·剔假命中 1）
+    [假命中·不计] \ti 注释行 ghost.tex:2｜% \ti{9} 注释行假命中（P1 核销同款）
+    [假命中·不计] 非行首 ans: ghost.tex:3｜% % ans:测-77 双注释假锚（不计）
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(5)：件面锚(% ans:)=键账对平门-selftest-dhkyxa_x有答案册pair=键账对平门-selftest-dhkyxa_x无（浮 1）['测-99'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(5)：编译锚(ansblock)=键账对平门-selftest-dhkyxa_x有答案册pair=键账对平门-selftest-dhkyxa_x无（浮 1）['测-99'] → FAIL
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(6)：实题(\ti)=键账对平门-selftest-dhkyxa_x有答案册pair=键账对平门-selftest-dhkyxa_x无（浮 2）['测-88', '测-99'] → FAIL
+[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(5)：件面锚(% ans:)=键账对平门-selftest-dhkyxa_x有键账json=键账无（浮 1）['测-99'] → FAIL
+[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(5)：编译锚(ansblock)=键账对平门-selftest-dhkyxa_x有键账json=键账无（浮 1）['测-99'] → FAIL
+[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(6)：实题(\ti)=键账对平门-selftest-dhkyxa_x有键账json=键账无（浮 2）['测-88', '测-99'] → FAIL
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(5)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(5)：集合相等 5↔5 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(5)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(6)：实题(\ti)=键账对平门-selftest-dhkyxa_x有件面锚(% ans:)=键账对平门-selftest-dhkyxa_x无（浮 1）['测-88'] → FAIL
+[对账] 编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(5)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(6)：实题(\ti)=键账对平门-selftest-dhkyxa_x有编译锚(ansblock)=键账对平门-selftest-dhkyxa_x无（浮 1）['测-88'] → FAIL
+[FAIL] 8 对集合不平，须定位键名回查
+[selftest PASS] N2 浮键（件面多 测-99 锚＋实题浮 88）真拦：退出码 1（期望 1）
+
+[源] 答案册pair=键账对平门-selftest-dhkyxa_x：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 键账json=键账：4 键（[E] --keys 同制式）
+[件] 键账对平门-selftest-dhkyxa_x/shift.tex：行首锚 4｜编译锚 4｜实题 4（naive 含注释 4·剔假命中 0）
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔键账json=键账(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(4)：答案册pair=键账对平门-selftest-dhkyxa_x有实题(\ti)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-dhkyxa_x有答案册pair=键账对平门-selftest-dhkyxa_x无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
+[对账] 键账json=键账(4)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 键账json=键账(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(4)：键账json=键账有实题(\ti)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-dhkyxa_x有键账json=键账无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(4)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(4)：集合相等 4↔4 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(4)：件面锚(% ans:)=键账对平门-selftest-dhkyxa_x有实题(\ti)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-dhkyxa_x有件面锚(% ans:)=键账对平门-selftest-dhkyxa_x无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
+[对账] 编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(4)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(4)：编译锚(ansblock)=键账对平门-selftest-dhkyxa_x有实题(\ti)=键账对平门-selftest-dhkyxa_x无（缺 1）['测-1']｜实题(\ti)=键账对平门-selftest-dhkyxa_x有编译锚(ansblock)=键账对平门-selftest-dhkyxa_x无（浮 1）['测-5']｜！计数相等而集合不等＝挪号假对平 → FAIL
+[FAIL] 4 对集合不平，须定位键名回查
+[selftest PASS] N3 挪号假对平（锚/块齐·实题号挪成 2..5·计数等集合不等）真拦：退出码 1（期望 1）
+
+[源] 答案册pair=键账对平门-selftest-dhkyxa_x：4 键（`% pair:` 行首契约；剔行首外 pair: 假命中 1 行：[(1, '% 头注：对号契约 `%% pair:键` 一行一键（此 pair: 系口径说明非标记）')]）
+[源] 键账json=键账：4 键（[E] --keys 同制式）
+[件] 键账对平门-selftest-dhkyxa_x/miss2.tex：行首锚 3｜编译锚 3｜实题 3（naive 含注释 4·剔假命中 1）
+    [假命中·不计] \ti 注释行 miss2.tex:2｜% \ti{9} 注释行假命中（P1 核销同款）
+    [假命中·不计] 非行首 ans: miss2.tex:3｜% % ans:测-77 双注释假锚（不计）
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(3)↔键账json=键账(3)：集合相等 3↔3 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(3)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(3)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 答案册pair=键账对平门-selftest-dhkyxa_x(3)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 键账json=键账(3)↔件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 键账json=键账(3)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 键账json=键账(3)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(3)↔编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 件面锚(% ans:)=键账对平门-selftest-dhkyxa_x(3)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[对账] 编译锚(ansblock)=键账对平门-selftest-dhkyxa_x(3)↔实题(\ti)=键账对平门-selftest-dhkyxa_x(3)：集合相等 3↔3 → PASS
+[核销] --waive 测-3@（设计内差·挂哨放行）
+[PASS] 键账三源集合对平（对集合不对数）
+[selftest PASS] P4 核销（N1 缺键 --waive 测-3@ 全源摘除挂哨后转绿）：退出码 0（期望 0）
+
+键账对平门.py — 键账对平门（军师收口轮0913 §九钉②：「对集合不对数」三源对平）。
+
+三源键集合（各源＝键的多重表，判定取集合）：
+  ①答案册/键账侧：--book 答案册 body.tex（`% pair:键` 对号契约行＝M2/P1 口径；
+    `\ansitem{N}{…}`＝M3/[E] 口径，--ansitem 开腿、配 --pair-prefix 拼前缀成 测-N 键，
+    默认不开——M2 册式 ansitem 系版式裸号非账钥）；--ledger 键账
+    json（[E] --keys 同制式：{"keys":N,"vals":{键:值}}｜{"keys":[…]}｜平铺 {键:值}，
+    切丁区喂单件子集亦同制式）；--expect 外部键表（一行一键，`-`＝stdin——M2 四本侧
+    632 档即由 check_pairs.collect_expected() 出临时清单承接）。
+  ②件面锚侧：--piece 件 tex（含 \input/\include 链展平）之行首注释锚 `% ans:键`；
+    编译锚 `\begin{ansblock}[键]` 另腿对平（锚↔块＝[E] 锚账2 同款）。
+  ③实题侧：同件 tex 剔注释后 `\ti{N}`/`\tihao{N}` 实题数号，经 --keyfmt（或 --prefix）
+    成键（如 测-{n}、拓-{n:03d}、练-{dir}-{n}，{dir}＝件所在目录名）。
+
+判定（军师钉「对集合不对数」）：
+  两两源**集合双向 diff**（缺＝下游丢键，浮＝幻影键）；计数相等**不构成**对平——
+  号集不同亦红（防 1..19 挪成 2..20 式假对平，红语标注「挪号假对平」）；
+  重号/计数差只登记不判死（集合裁决）。
+  剔注释行规则（P1「差1键」核销同款）：`\ti` 计数前先逐行剥未转义 `%` 至行尾（[D]
+  RE_INLINE 同制）——注释行/行尾注里的 `\ti{` 假命中**不入账**，只作「假命中剔除登记」
+  列行号；契约锚只认行首单 `%` 形（`^%[ \t]*pair:`／`^[ \t]*%[ \t]*ans:`），`%%` 双注释、
+  行间散提（含正文注释里提及 `% ans:`/`pair:`）一律计作假命中不计入集合。
+  已知设计内差（如 M2 四本侧 160 档浮键 拓-057＝义A-1 撤下、M2 键账 json 中文别名 2 键
+  ＝钉-1/钉-3 直查哨）用 --waive 键@源标签子串 挂哨核销＝从标签匹配的**含该键诸源**摘除
+  该键（子串留空＝全源）；至少命中一源，否则用法错。核销后仍逐条印出，退出码转绿。
+
+用法: python 工具/键账对平门.py [--book [标签=]body.tex]… [--ledger [标签=]键账.json]…
+        [--expect [标签=]键表.txt|-]… [--piece [标签=]件.tex]…
+        [--keyfmt '拓-{n:03d}' | --prefix 测] [--slice 测,滚A] [--ansitem] [--pair-prefix 测]
+        [--waive '拓-057@四本']… [--quiet] [--out 报告.txt] [--selftest]
+  例（P1 测评本三源）: python 工具/键账对平门.py --book 答案册/body.tex --ledger 试迁键账.json
+        --slice 测 --piece 原件=测评卷/main.tex --piece 换装B=测评卷/main-换装B.tex --prefix 测
+  例（M2 全册三源）: python 工具/键账对平门.py --book 册原=成卷/答案册/body.tex
+        --ledger 快照=成卷/答案册/值快照.json --expect 四本160档=临时键表.txt
+退出码: 0＝全对平（含核销后对平）；1＝有红（缺键/浮键/挪号）；2＝用法/输入错（含 --waive
+  未命中任何源、可对比腿不足两条）。
+负测自测: --selftest 系统临时目录合成 健康正例（含注释假命中）＋缺键/浮键/挪号假对平
+  三负例＋核销转绿例＋无腿用法错例，断言真拦真放行，跑毕即删不落项目树。
+红线: 全部输入只读；本脚本不写 tex/件树；--out 报告与 selftest 临时件除外。
+
+[selftest] 无对账腿应回 2：退出码 2（期望 2）
+键账对平门.py — 键账对平门（军师收口轮0913 §九钉②：「对集合不对数」三源对平）。
+
+三源键集合（各源＝键的多重表，判定取集合）：
+  ①答案册/键账侧：--book 答案册 body.tex（`% pair:键` 对号契约行＝M2/P1 口径；
+    `\ansitem{N}{…}`＝M3/[E] 口径，--ansitem 开腿、配 --pair-prefix 拼前缀成 测-N 键，
+    默认不开——M2 册式 ansitem 系版式裸号非账钥）；--ledger 键账
+    json（[E] --keys 同制式：{"keys":N,"vals":{键:值}}｜{"keys":[…]}｜平铺 {键:值}，
+    切丁区喂单件子集亦同制式）；--expect 外部键表（一行一键，`-`＝stdin——M2 四本侧
+    632 档即由 check_pairs.collect_expected() 出临时清单承接）。
+  ②件面锚侧：--piece 件 tex（含 \input/\include 链展平）之行首注释锚 `% ans:键`；
+    编译锚 `\begin{ansblock}[键]` 另腿对平（锚↔块＝[E] 锚账2 同款）。
+  ③实题侧：同件 tex 剔注释后 `\ti{N}`/`\tihao{N}` 实题数号，经 --keyfmt（或 --prefix）
+    成键（如 测-{n}、拓-{n:03d}、练-{dir}-{n}，{dir}＝件所在目录名）。
+
+判定（军师钉「对集合不对数」）：
+  两两源**集合双向 diff**（缺＝下游丢键，浮＝幻影键）；计数相等**不构成**对平——
+  号集不同亦红（防 1..19 挪成 2..20 式假对平，红语标注「挪号假对平」）；
+  重号/计数差只登记不判死（集合裁决）。
+  剔注释行规则（P1「差1键」核销同款）：`\ti` 计数前先逐行剥未转义 `%` 至行尾（[D]
+  RE_INLINE 同制）——注释行/行尾注里的 `\ti{` 假命中**不入账**，只作「假命中剔除登记」
+  列行号；契约锚只认行首单 `%` 形（`^%[ \t]*pair:`／`^[ \t]*%[ \t]*ans:`），`%%` 双注释、
+  行间散提（含正文注释里提及 `% ans:`/`pair:`）一律计作假命中不计入集合。
+  已知设计内差（如 M2 四本侧 160 档浮键 拓-057＝义A-1 撤下、M2 键账 json 中文别名 2 键
+  ＝钉-1/钉-3 直查哨）用 --waive 键@源标签子串 挂哨核销＝从标签匹配的**含该键诸源**摘除
+  该键（子串留空＝全源）；至少命中一源，否则用法错。核销后仍逐条印出，退出码转绿。
+
+用法: python 工具/键账对平门.py [--book [标签=]body.tex]… [--ledger [标签=]键账.json]…
+        [--expect [标签=]键表.txt|-]… [--piece [标签=]件.tex]…
+        [--keyfmt '拓-{n:03d}' | --prefix 测] [--slice 测,滚A] [--ansitem] [--pair-prefix 测]
+        [--waive '拓-057@四本']… [--quiet] [--out 报告.txt] [--selftest]
+  例（P1 测评本三源）: python 工具/键账对平门.py --book 答案册/body.tex --ledger 试迁键账.json
+        --slice 测 --piece 原件=测评卷/main.tex --piece 换装B=测评卷/main-换装B.tex --prefix 测
+  例（M2 全册三源）: python 工具/键账对平门.py --book 册原=成卷/答案册/body.tex
+        --ledger 快照=成卷/答案册/值快照.json --expect 四本160档=临时键表.txt
+退出码: 0＝全对平（含核销后对平）；1＝有红（缺键/浮键/挪号）；2＝用法/输入错（含 --waive
+  未命中任何源、可对比腿不足两条）。
+负测自测: --selftest 系统临时目录合成 健康正例（含注释假命中）＋缺键/浮键/挪号假对平
+  三负例＋核销转绿例＋无腿用法错例，断言真拦真放行，跑毕即删不落项目树。
+红线: 全部输入只读；本脚本不写 tex/件树；--out 报告与 selftest 临时件除外。
+
+[selftest PASS 负测真拦·正测真放行]

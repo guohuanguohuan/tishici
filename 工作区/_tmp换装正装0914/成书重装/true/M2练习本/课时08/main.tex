@@ -1,0 +1,213 @@
+% ============================================================
+% M2 轮4 S3 · 练习件 第8课时（§1.2.3 直线与平面的夹角）
+% 题面：照题面库 成卷/题面库/课时08-1.2.3.md 全 16 题冻结入卷（卷面题号＝库序 1~16）；
+%       组名/难度照库头第 3/4 字段（组名批替换后正名照录，去〔代表〕〔第2题〕簿记标；
+%       第2题「（存疑③转正）」系库头流程标，随〔代表〕同类剥离，登记）。
+%       第12~16题＝命制件，题面内半角空格（抽取残留）按排版口径清理，不改字（登记）。
+%       数学对象抽取丢向量记号处（#7 PE=λPC）按亲算口径补 \overrightarrow{}（同课时06#6 口径）。
+%       第6题（1.2.3练习B·3）题面「如图所示」而库无【图】＝S1 冻结态、题面自足→不裁教材图，登记。
+%       【装配轮0912】已删#6「如图所示，」语销债（题面自足、删语后无悬空指代；同拓册批6先例）。
+% 图源（6 张，全部 figs/ 源位图，三维禁绘）：
+%   #4  js_image60.png 36mm（讲上 image60·平行六面体）
+%   #7  js_image57.png 34mm（讲上 image57·等腰三角形＋正方形）
+%   #8  js_image66.png 26mm＋js_image68.png 52mm（讲上双图行·刍甍图1/图2）
+%   #9  dy6_image33.png 38mm（单元6 image33·三棱柱）
+%   #10 js_image70.png 34mm（讲上 image70·四棱锥 P-ABCD）
+% 【清稿注】两件（#8 二面角定义法前序合法判例、#10 方法二「平面QOC」应作「平面QDC」）＝答案册轮执行，
+%   练习件卷面不印；#16 义-1①措辞修正已在题面库落地（「以 A 为端点、与 BC 同方向的射线为 y 轴正方向」）照录。
+% 取值/组名照登对照/图位/登记事项：见 ../批2值台账.md 课时08 节。
+% 编译：xelatex main.tex（两遍）→ python render.py → png/pageN.png
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3} % 换装：六宏→qp-m3 单包（钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，两补钉随版）
+
+% ============================================================
+% 练习件局部宏（照练习线样张页2形制搬入；本段只加件，不改件）
+% ============================================================
+\renewcommand{\qpjianming}{练习件}
+\renewcommand{\qpceming}{高中数学\quad 选择性必修第一册(人教B版)} % 换装回钉：qp-m3 默认册名＝选必二，防页脚漂移（试迁规约·试迁报告§四 B3 实证必改）
+\renewcommand{\qpzhangming}{第一章\quad 空间向量与立体几何}
+
+% ---------- YJ-01 灰块页脚·练习册档（块 31.0×7.8mm，照练习线样张 31.0mm 修正版） ----------
+\newcommand{\qpxsyema}{\ifnum\value{page}<10 00\fi\ifnum\value{page}>9 \ifnum\value{page}<100 0\fi\fi\arabic{page}}
+\newcommand{\lxshuziL}{\hbox to 13.8mm{\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][l]{\rule[-3.145mm]{0pt}{7.8mm}\hspace{2.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema}}\hss}}
+\newcommand{\lxshuziR}{\hbox to 13.8mm{\kern-17.2mm\setlength{\fboxsep}{0pt}\colorbox{pnumbg}{%
+  \makebox[31.0mm][r]{\rule[-3.145mm]{0pt}{7.8mm}\fontsize{10.7pt}{13pt}\selectfont\color{black}\numpnum\qpxsyema\hspace{2.75mm}}}}}
+\fancyfoot[RO]{\raisebox{-1.24mm}[0pt][0pt]{\qphuitext\qpzhangming\quad{\heiti\qpjianming}\hspace{3mm}\lxshuziL}}
+\fancyfoot[LE]{\raisebox{-1.24mm}[0pt][0pt]{\lxshuziR\hspace{3mm}\qphuitext\qpceming}}
+
+% ---------- HX-01 花形·三档名（练习册版 25.5×6.8mm，重叠 o＝5.1mm，照练习线样张裁定值） ----------
+% 局部宏 \huadianOverlapLx 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 局部宏 \dangbadge 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+
+% ---------- TJ-02 练习册悬挂题号（单号 5.75mm／双位 7.6mm，题号 \textbf 加重） ----------
+% 长度 \lxhang 已由 qp-m3 分配，预删防重复定义
+% 局部宏 \tihao 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 选项段（TJ-07 行距档；左缘随题号悬挂）
+% 局部宏 \lxopt 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 解答题书写位留白
+% 局部宏 \xiexwei 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+% 组名栏宏（组名照题面库头第 3 字段照登，去〔代表〕〔第N题〕簿记标）
+% 局部宏 \zu 已由 qp-m3 收编（等值定义），依换装方案§1.4 预删防撞名
+
+\begin{document}
+%成书重装五本跨本连续页码（G7方案B，承M2/M3装配先例）setcounter 注入位
+\setcounter{page}{72}
+
+% ============================================================
+% 课时训练（三档 10＋4＋2＝16 题）
+% ============================================================
+\keshi{第8课时\quad 直线与平面的夹角}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\zu{K1 射影长·定义计算（正求）} \tieside{简单}已知直线\(l\)与平面\(\alpha\)所成的角为\(\theta\)，且\(A\)，\(B\)是直线\(l\)上两点，分别根据以下条件，求线段\(AB\)在平面\(\alpha\)内的射影的长：
+\lxopt{(1)\(AB=6\)，\(\theta=\frac{\pi}{6}\)；}
+\lxopt{(2)\(AB=10\)，\(\theta=\frac{\pi}{4}\)．}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-1]
+% ans:练-课时08-1
+\ansitem{1}{(1)\(3\sqrt{3}\)；(2)\(5\sqrt{2}\)}
+\end{ansblock}
+
+\tihao{2}\zu{K1 已知射影反求 AB} \tieside{简单}设\(l\)是平面\(\alpha\)的一条斜线，直线\(l\)与平面\(\alpha\)所成角的大小为\(\theta\)．如果\(\overrightarrow{v_1}\)是直线\(l\)的一个方向向量，\(\overrightarrow{v_2}\)是直线\(l\)在平面\(\alpha\)内的射影的一个方向向量，通过作图讨论\(\theta\)与\(\langle\overrightarrow{v_1},\overrightarrow{v_2}\rangle\)的关系．
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-2]
+% ans:练-课时08-2
+\ansitem{2}{\(\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle=\theta\) 或 \(\pi-\theta\)，即 \(\cos\theta=\left|\cos\langle\overrightarrow{v_{1}},\overrightarrow{v_{2}}\rangle\right|\)}
+\end{ansblock}
+
+\tihao{3}\zu{K2 射影比求线面角·分组计算} \tieside{简单}已知线段\(AB\)在平面\(\alpha\)内的射影是\(A'B'\)，分别根据下列条件求直线\(AB\)与平面\(\alpha\)所成角的大小：
+\lxopt{(1)\(AB=6\)，\(A'B'=3\)；\quad (2)\(AB=\sqrt{2}\)，\(A'B'=1\)；}
+\lxopt{(3)\(AB=2\)，\(A'B'=2\)；\quad (4)\(AB=2\)，\(A'B'=0\)．}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-3]
+% ans:练-课时08-3
+\ansitem{3}{(1)\(60^{\circ}\)；(2)\(45^{\circ}\)；(3)\(0^{\circ}\)；(4)\(90^{\circ}\)}
+\end{ansblock}
+
+\tihao{4}\zu{K3 三余弦·等斜线角定射影方向（平行六面体）} \tieside{简单}如下图所示，在平行六面体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，底面\(ABCD\)为矩形，侧棱\(AA_1\)与\(AD\)、\(AB\)均成\(60^{\circ}\)角，则侧棱\(AA_1\)与底面\(ABCD\)所成的角为\kongbai{}．
+\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=36mm]{figs/js_image60.png}}\par\vspace{-1.0mm}\penalty-50
+\begin{ansblock}[练-课时08-4]
+% ans:练-课时08-4
+\ansitem{4}{\(45^{\circ}\)}
+\end{ansblock}
+
+\tihao{5}\zu{K4 三余弦·斜线—射影最小模型（正四面体）} \tieside{简单}正四面体\(ABCD\)中，\(O\)为\(\triangle BCD\)的重心，则\(\cos\angle ABO=\)\kongbai{}．
+\begin{ansblock}[练-课时08-5]
+% ans:练-课时08-5
+\ansitem{5}{\(\dfrac{\sqrt{3}}{3}\)}
+\end{ansblock}
+
+\tihao{6}\zu{K5 线面角·建系法向量标准流程} \tieside{中档}已知正方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)中，\(M\)是\(BB_1\)的中点，求直线\(A_1M\)与平面\(AMC_1\)所成角的正弦值．
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-6]
+% ans:练-课时08-6
+\ansitem{6}{\(\dfrac{2\sqrt{30}}{15}\)}
+\end{ansblock}
+
+\tihao{7}\zu{K6 线面角已知·求参数存在性选型} \tieside{中档}在①\(\angle PAB=60^{\circ}\)；②\(PA\perp PB\)；③\(\angle PAB=120^{\circ}\)这三个条件中任选一个，补充在下面问题中，若问题中的\(\lambda\)存在，求出\(\lambda\)的值；若\(\lambda\)不存在，请说明理由．
+\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=34mm]{figs/js_image57.png}}\par\vspace{-1.0mm}\penalty10000
+\lxopt{已知等腰三角形\(PAB\)和正方形\(ABCD\)，}
+\lxopt{\kongbai{}，\(AB=1\)，平面\(PAB\perp\)平面\(ABCD\)，是否存在点\(E\)，满足\(\overrightarrow{PE}=\lambda\overrightarrow{PC}\)，使直线\(DE\)与平面\(PBC\)所成角为\(60^{\circ}\)？}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-7]
+% ans:练-课时08-7
+\ansitem{7}{选①：\(\lambda=\dfrac{1}{2}\) 或 \(1\)；选②③：\(\lambda\) 不存在}
+\end{ansblock}
+
+\tihao{8}\zu{K7 折叠＋线面平行·刍甍文化载体} \tieside{中档}某校积极开展社团活动，在一次社团活动过程中，一个数学兴趣小组发现《九章算术》中提到了“刍甍”这个五面体，于是他们仿照该模型设计了一道数学探究题，如图1，\(E\)、\(F\)、\(G\)分别是正方形的三边\(AB\)、\(CD\)、\(AD\)的中点，先沿着虚线段\(FG\)将等腰直角三角形\(FDG\)裁掉，再将剩下的五边形\(ABCFG\)沿着线段\(EF\)折起，连接\(AB\)、\(CG\)就得到了一个“刍甍”（如图2）．
+\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=26mm]{figs/js_image66.png}\hspace{4mm}\includegraphics[width=52mm]{figs/js_image68.png}}\par\vspace{-1.0mm}\penalty10000
+\lxopt{(1)若\(O\)是四边形\(EBCF\)对角线的交点，求证：\(AO\parallel\)平面\(GCF\)；}
+\lxopt{(2)若二面角\(A\text{-}\penalty100 EF\text{-}\penalty100 B\)的大小为\(\frac{2}{3}\pi\)，求直线\(AB\)与平面\(GCF\)所成角的正弦值．}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-8]
+% ans:练-课时08-8
+\ansitem{8}{(1)证明见解析；(2)\(\dfrac{\sqrt{7}}{7}\)}
+\ansnote{解析}{二面角定义法可行。}
+\end{ansblock}
+
+\tihao{9}\zu{K8 三棱柱·开放条件选型＋线面角} \tieside{中档}如图，在三棱柱\(ABC\text{-}\penalty100 A_1B_1C_1\)中，侧面\(BCC_1B_1\)为正方形，平面\(BCC_1B_1\perp\)平面\(ABB_1A_1\)，\(AB=BC=2\)，\(M\)，\(N\)分别为\(A_1B_1\)，\(AC\)的中点．
+\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=38mm]{figs/dy6_image33.png}}\par\vspace{-1.0mm}\penalty10000
+\lxopt{(1)求证：\(MN\parallel\)平面\(BCC_1B_1\)；}
+\lxopt{(2)再从条件①、条件②这两个条件中选择一个作为已知，求直线\(AB\)与平面\(BMN\)所成角的正弦值．}
+\lxopt{条件①：\(AB\perp MN\)；\quad 条件②：\(BM=MN\)．}
+\lxopt{注：如果选择条件①和条件②分别解答，按第一个解答计分．}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-9]
+% ans:练-课时08-9
+\ansitem{9}{(1)证明见解析；(2)\(\dfrac{2}{3}\)（选①②同值）}
+\end{ansblock}
+
+\tihao{10}\zu{K9 线面角最值·交线动点＋基本不等式} \tieside{难}如图，四棱锥\(P\text{-}\penalty100 ABCD\)的底面为正方形，\(PD\perp\)底面\(ABCD\)．设平面\(PAD\)与平面\(PBC\)的交线为\(l\)．
+\par\vspace{1.9mm}\penalty10000\noindent\makebox[\linewidth][c]{\includegraphics[width=34mm]{figs/js_image70.png}}\par\vspace{-1.0mm}\penalty10000
+\lxopt{(1)证明：\(l\perp\)平面\(PDC\)；}
+\lxopt{(2)已知\(PD=AD=1\)，\(Q\)为\(l\)上的点，求\(PB\)与平面\(QCD\)所成角的正弦值的最大值．}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-10]
+% ans:练-课时08-10
+\setlength{\anshang}{7.6mm}% 题10 起双位档（照答案册同值，块内局部）
+\ansitem{10}{(1)证明见解析；(2)最大值 \(\dfrac{\sqrt{6}}{3}\)}
+\ansnote{解析}{方法二「平面 \(QDC\)」。}
+\end{ansblock}
+
+\dangbadge{综}{合}{提}{升}
+
+\tihao{11}\zu{K10 射影垂直·分类讨论求线段} \tieside{难}已知\(A\in\alpha\)，直线\(AB\)与平面\(\alpha\)所成的角为\(30^{\circ}\)，直线\(AC\)与平面\(\alpha\)所成的角为\(60^{\circ}\)，\(AB=6\,\mathrm{cm}\)，\(AC=8\,\mathrm{cm}\)，且斜线段\(AB\)，\(AC\)在平面\(\alpha\)内的射影相互垂直，求\(BC\)的长．
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-11]
+% ans:练-课时08-11
+\setlength{\anshang}{7.6mm}% 题11 起双位档（照答案册同值，块内局部）
+\ansitem{11}{\(BC=\sqrt{100-24\sqrt{3}}\) 或 \(\sqrt{100+24\sqrt{3}}\) cm}
+\end{ansblock}
+
+\tihao{12}\zu{线面角定义基础组·定义指认×选择} \tieside{简单}已知\(PA\perp\)平面\(ABC\)，且在\(\triangle ABC\)中\(AB\perp BC\)，则直线\(PC\)与平面\(ABC\)所成的角是\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(\angle PCA\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(\angle PCB\)}}
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(\angle APC\)；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(\angle PAC\)}}
+\begin{ansblock}[练-课时08-12]
+% ans:练-课时08-12
+\setlength{\anshang}{7.6mm}% 题12 起双位档（照答案册同值，块内局部）
+\ansitem{12}{A（\(\angle PCA\)）}
+\end{ansblock}
+
+\tihao{13}\zu{线面角定义基础组 斜线段＋垂线段求角×填空} \tieside{简单}\(AB\)是平面\(\alpha\)的斜线段，\(B\)为斜足，\(AA'\perp\alpha\)，垂足为\(A'\)．若\(AB=4\)，\(AA'=2\)，则直线\(AB\)与平面\(\alpha\)所成角的大小为\kongbai{}．
+\begin{ansblock}[练-课时08-13]
+% ans:练-课时08-13
+\setlength{\anshang}{7.6mm}% 题13 起双位档（照答案册同值，块内局部）
+\ansitem{13}{\(30^{\circ}\)}
+\end{ansblock}
+
+\tihao{14}\zu{线面角·公式直套（法向量直给）×选择} \tieside{简单}已知直线\(l\)的一个方向向量为\(\overrightarrow{a}=(0,1,\sqrt{3})\)，平面\(\alpha\)的一个法向量为\(\overrightarrow{n}=(0,0,1)\)，则\(l\)与\(\alpha\)所成的角为\nobreak(\kongwei)
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A．\(30^{\circ}\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B．\(45^{\circ}\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C．\(60^{\circ}\)；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D．\(90^{\circ}\)}}
+\begin{ansblock}[练-课时08-14]
+% ans:练-课时08-14
+\setlength{\anshang}{7.6mm}% 题14 起双位档（照答案册同值，块内局部）
+\ansitem{14}{C（\(60^{\circ}\)）}
+\end{ansblock}
+
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\zu{线面角·给系直算基础组 正方体面对中点斜线×填空} \tieside{简单}正方体\(ABCD\text{-}\penalty100 A_1B_1C_1D_1\)的棱长为\(2\)．以\(D\)为原点，射线\(DA\)、\(DC\)、\(DD_1\)分别为\(x\)轴、\(y\)轴、\(z\)轴正方向建立空间直角坐标系\(D\text{-}\penalty100 xyz\)．若\(E\)为棱\(B_1C_1\)的中点，则直线\(DE\)与平面\(ABCD\)所成角的正弦值为\kongbai{}．
+\begin{ansblock}[练-课时08-15]
+% ans:练-课时08-15
+\setlength{\anshang}{7.6mm}% 题15 起双位档（照答案册同值，块内局部）
+\ansitem{15}{\(\dfrac{2}{3}\)}
+\end{ansblock}
+
+\tihao{16}\zu{线面角·给系直算基础组 三棱锥给系·线与侧面×解答} \tieside{简单}三棱锥\(P\text{-}\penalty100 ABC\)中，\(PA\perp\)平面\(ABC\)，\(AB\perp BC\)，\(PA=AB=BC=2\)．以\(A\)为原点，射线\(AB\)为\(x\)轴正方向，以\(A\)为端点、与\(BC\)同方向的射线为\(y\)轴正方向，射线\(AP\)为\(z\)轴正方向，建立空间直角坐标系\(A\text{-}\penalty100 xyz\)．
+\lxopt{(1)写出点\(C\)、\(P\)的坐标；}
+\lxopt{(2)求直线\(PC\)与平面\(PAB\)所成角的正弦值．}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时08-16]
+% ans:练-课时08-16
+\setlength{\anshang}{7.6mm}% 题16 起双位档（照答案册同值，块内局部）
+\ansitem{16}{(1)\(C(2,2,0)\)、\(P(0,0,2)\)；(2)\(\dfrac{\sqrt{3}}{3}\)}
+\end{ansblock}
+
+\end{multicols}
+
+\tailfill
+\end{document}

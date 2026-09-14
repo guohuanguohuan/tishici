@@ -1,0 +1,273 @@
+% ============================================================
+% M3 S3 练习件·W1 臂B 片件 —— 课时05 两点式与一般式（2.2.2下）＝母版照抄件
+% 生成：M3 成卷轮 S3 W1 臂B｜2026-09-14｜编译 cwd＝本目录（中文路径禁 \input 绝对路径）
+%   xelatex main-true.tex ×2 → 含详解印本；xelatex main-false.tex ×2 → 纯题版（单源双本）
+% 输入链（全只读）：成卷/导学件/课时05-两点式与一般式/main.tex 行87~357（题面/选项/详解
+%   LaTeX 形逐字照抄冻面；【注】行＝装配层注记不印）＋ 题面库 课时05-两点式与一般式-答案侧.md
+%   （值逐字回嵌）；toolchain＝qp-m3.sty（钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，
+%   本地挂载副本，破损即停）。
+% 母版体例：照抄 成卷/练习件/课时01-坐标法/《练习件母版体例说明.md》；骨架与门谱原样，只换内容层。
+% 键账：件内 ansblock 键集 ≡ 题面库片练键集 ≡ manifest 练键序 16 键（零缺漏零多余）；
+%   前移6席（E1/E4/E8/E12/E13/E14）留空号非键，其键面已入课时04 答案侧；
+%   拓区隔离：回编六键 E17~E22 自拓槽 T2/T4/T9/T10/T3/T5 落练键面（T2/T4 改形循02-E5先例·
+%   定稿§六.8，选项组补写注随详解冻面照录）；05-T1 占位行不入件；导学键 G1~G5 属导学件域，亦不入。
+% 卷式例外案B：练习件不属卷式——答案块物理落点恒为题后 ansblock，禁卷末附卷制；
+%   全线括线模（导言 \ansblockgrayfalse 一次置定，件内不切换；灰底盒不可跨栏断，练习件禁用）。
+% 题序＝manifest 键序（跳号对号档零重排）；印面题号 1~16 连号＝键序位（\tihao 号＝\ansitem 号同键）；
+%   三档切位 1~7／8~14／15~16（照库序切位，非难度重排）。
+% 槽配实录：单选9（E2/E3/E5/E6/E7/E9/E10/E17/E18）＋填空3（E11/E19/E20）＋解答4（E15/E16/E21/E22）；
+%   多选0＝manifest 期望值；9选3填4解 为本片实配照题面侧头标（批A §四 满足度表同口径）。
+% 选项槽位：默认四连排（0.25\linewidth−0.25\lxhang），超宽降档梯 四连排→两连排
+%   （0.5\linewidth−0.5\lxhang−0.25em）→单列 \lxopt；禁缩字号/负 kern/删标点凑宽。
+%   本片预设：题1(E2)/题12(E18) 四连排、题5(E7) 两连排、余六道单列（实测读数登记值台账＋回执）。
+% 解答书写区：题9(E15) 无小问 \liubai[16mm]；题10(E16) 六问 \liubai[32mm]；题15(E21) 无小问
+%   \liubai[16mm]；题16(E22) 两问 \liubai[24mm]（默认16mm·两问24mm·三问以上32mm·cap 40mm；
+%   纯题档吞 ansblock 不吞 \liubai）。
+% 填空印答：E11/E19/E20 空位 \kongda{值}（详解版印答、纯题版退定宽空线，两档等形）。
+% 印面照录：E19/E20 题首（提示：…）行属印面照录；E17/E18 详解尾选项组补写注、E22 课时03
+%   法向量括注均照导学件05 冻面保留。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承导学件母版；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承导学件母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 练习件全线括线模（S3 波次方案 §四.3：导言一次置定、件内不切换） ——
+\ansblockgrayfalse
+% —— 页脚件名（qp-headfoot 复用入口） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{练习件}%
+
+\begin{document}
+%装配轮S6三本跨本连续页码（G7方案B）setcounter 注入位
+\setcounter{page}{86}
+
+\keshi{第5课时\quad 两点式与一般式}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 基础巩固（题1~7＝E2/E3/E5/E6/E7/E9/E10：单选7；题后紧跟答案制，全线括线 ansblock）
+% ============================================================
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\zu{直线方程形式与互化×单选} \tieside{中档(知识点一)}若直线\(l\)过点\((-1,-1)\)和\((2,5)\)，且点\((1009,b)\)在直线\(l\)上，则\(b\)的值为\nobreak(\kongwei)
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．2019}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．2018}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．2017}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．2016}\par}
+
+\begin{ansblock}[2章-练-课时05-E2]
+% ans:2章-练-课时05-E2
+\ansitem{1}{A}
+\ansnote{详解}{两点式：\((y+1)/(5+1)=(x+1)/(2+1)\)，即\((y+1)/6=(x+1)/3\)，化简得\(y=2x+1\)．\par\noindent 代入\((1009,b)\)：\(b=2\times 1009+1=2019\)．选：A．}
+\end{ansblock}
+
+\tihao{2}\zu{直线方程形式与互化×单选} \tieside{简单(知识点一)}过\(A(x_1,y_1)\)和\(B(x_2,y_2)\)两点的直线方程是\nobreak(\kongwei)
+
+\lxopt{A．\((y-y_1)/(y_2-y_1)=(x-x_1)/(x_2-x_1)\)}
+
+\lxopt{B．\((y-y_1)/(x-x_1)=(y_2-y_1)/(x_2-x_1)\)}
+
+\lxopt{C．\((y_2-y_1)(x-x_1)-(x_2-x_1)(y-y_1)=0\)}
+
+\lxopt{D．\((x_2-x_1)(x-x_1)-(y_2-y_1)(y-y_1)=0\)}
+
+\begin{ansblock}[2章-练-课时05-E3]
+% ans:2章-练-课时05-E3
+\ansitem{2}{C}
+\ansnote{详解}{A、B要求\(x_1\neq x_2\)且\(y_1\neq y_2\)（或至少分母不为0），不能表示与坐标轴平行（或重合）的直线；\par\noindent C式即\((y_2-y_1)(x-x_1)=(x_2-x_1)(y-y_1)\)：当\(x_1\neq x_2\)时化为点斜式，当\(x_1=x_2\)时得\(x=x_1\)（竖直线）也成立，\(y_1=y_2\)时得\(y=y_1\)同样成立，对任意两点均恰当表示直线；D是把两坐标“同向”组合，一般不表示过A、B的直线（它表示到A、B横、纵坐标差相等点的轨迹型式子）．选：C．}
+\end{ansblock}
+
+\tihao{3}\zu{直线方程形式与互化×单选} \tieside{中档(知识点三)}若方程\((2m^{2}+m-3)x+(m^{2}-m)y-4m+1=0\)表示一条直线，则实数\(m\)满足\nobreak(\kongwei)
+
+\lxopt{A．\(m\neq0\)}
+
+\lxopt{B．\(m\neq-3/2\)}
+
+\lxopt{C．\(m\neq1\)}
+
+\lxopt{D．\(m\neq1\)且\(m\neq-3/2\)且\(m\neq0\)}
+
+\begin{ansblock}[2章-练-课时05-E5]
+% ans:2章-练-课时05-E5
+\ansitem{3}{C}
+\ansnote{详解}{二元一次方程表示直线\(\iff\)x、y系数不全为0．令\(2m^{2}+m-3=(2m+3)(m-1)=0\)且\(m^{2}-m=m(m-1)=0\)同时成立，公共解只有\(m=1\)；\par\noindent 故方程表示直线\(\iff m\neq1\)（\(m=-3/2\)时仅\(x\)系数为0、\(y\)系数\(15/4\neq0\)，仍表示直线；\(m=0\)时\(x\)系数\(-3\neq0\)）．选：C．}
+\end{ansblock}
+
+\tihao{4}\zu{直线方程形式与互化×单选} \tieside{简单(知识点三)}若点\(P(x_0,y_0)\)是直线\(l\)：\(Ax+By+C=0\)外一点，则方程\(Ax+By+C+(Ax_0+By_0+C)=0\)表示\nobreak(\kongwei)
+
+\lxopt{A．过点\(P\)且与\(l\)平行的直线}
+
+\lxopt{B．过点\(P\)且与\(l\)垂直的直线}
+
+\lxopt{C．不过点\(P\)且与\(l\)平行的直线}
+
+\lxopt{D．不过点\(P\)且与\(l\)垂直的直线}
+
+\begin{ansblock}[2章-练-课时05-E6]
+% ans:2章-练-课时05-E6
+\ansitem{4}{C}
+\ansnote{详解}{\(P\)在\(l\)外\(\Rightarrow Ax_0+By_0+C\neq0\)．新方程即\(Ax+By+2C+Ax_0+By_0=0\)，\(x\)、\(y\)系数与\(l\)完全相同而常数项不同，故新直线与\(l\)平行（不重合）；\par\noindent 将\(P\)代入新方程左边得\((Ax_0+By_0+C)+(Ax_0+By_0+C)=2(Ax_0+By_0+C)\neq0\)，故新直线不过\(P\)．选：C．}
+\end{ansblock}
+
+\tihao{5}\zu{直线方程形式与互化×单选} \tieside{简单(知识点一)}已知直线\(a_1x+b_1y+1=0\)和直线\(a_2x+b_2y+1=0\)都过点\(A(2,1)\)，则过点\(P_1(a_1,b_1)\)和点\(P_2(a_2,b_2)\)的直线方程是\nobreak(\kongwei)
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．\(2x+y+1=0\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．\(2x-y+1=0\)}\par}
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．\(2x+y-1=0\)}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．\(x+2y+1=0\)}\par}
+
+\begin{ansblock}[2章-练-课时05-E7]
+% ans:2章-练-课时05-E7
+\ansitem{5}{A}
+\ansnote{详解}{把\(A(2,1)\)代入两线方程：\(2a_1+b_1+1=0\)且\(2a_2+b_2+1=0\)，\par\noindent 即\(P_1\)、\(P_2\)两点都满足方程\(2x+y+1=0\)．又两已知直线不同（否则\(a_1:a_2=b_1:b_2=1:1\)，题中\(P_1\)、\(P_2\)为两点确定直线），所以\(2x+y+1=0\)即所求直线．选：A．}
+\end{ansblock}
+
+\tihao{6}\zu{直线方程形式与互化×单选} \tieside{简单(知识点三)}点\(M(x_0,y_0)\)是直线\(Ax+By+C=0\)上的点，则直线方程可表示为\nobreak(\kongwei)
+
+\lxopt{A．\(A(x-x_0)+B(y-y_0)=0\)}
+
+\lxopt{B．\(A(x-x_0)-B(y-y_0)=0\)}
+
+\lxopt{C．\(B(x-x_0)+A(y-y_0)=0\)}
+
+\lxopt{D．\(B(x-x_0)-A(y-y_0)=0\)}
+
+\begin{ansblock}[2章-练-课时05-E9]
+% ans:2章-练-课时05-E9
+\ansitem{6}{A}
+\ansnote{详解}{\(M\)在直线上：\(Ax_0+By_0+C=0\)，故\(C=-Ax_0-By_0\)，代入\(Ax+By+C=0\)得\(A(x-x_0)+B(y-y_0)=0\)．选：A．}
+\end{ansblock}
+
+\tihao{7}\zu{直线方程形式与互化×单选} \tieside{简单(知识点三)}已知直线\(l\)：\((a-1)x+(b+2)y+c=0\)，若\(l\parallel y\)轴，但不重合，则下列结论正确的是\nobreak(\kongwei)
+
+\lxopt{A．\(a\neq1\)，\(b\neq2\)，\(c\neq0\)}
+
+\lxopt{B．\(a\neq1\)，\(b=-2\)，\(c\neq0\)}
+
+\lxopt{C．\(a=1\)，\(b\neq-2\)，\(c\neq0\)}
+
+\lxopt{D．\(a\neq1\)，\(b\neq-2\)，\(c\neq0\)}
+
+\begin{ansblock}[2章-练-课时05-E10]
+% ans:2章-练-课时05-E10
+\ansitem{7}{B}
+\ansnote{详解}{\(l\parallel y\)轴\(\iff\)\(y\)的系数为0且\(x\)的系数不为0：\(b+2=0\)且\(a-1\neq0\)，即\(b=-2\)、\(a\neq1\)；\par\noindent \(l\)与\(y\)轴（方程\(x=0\)）不重合\(\iff c\neq0\)（\(b+2=0\)时\(l\)为\((a-1)x+c=0\)即\(x=-c/(a-1)\)，与\(y\)轴重合\(\iff c=0\)）．\par\noindent 所以\(a\neq1\)，\(b=-2\)，\(c\neq0\)．选：B．}
+\end{ansblock}
+
+% ============================================================
+% 综合提升（题8~14＝E11/E15/E16/E17/E18/E19/E20：填空3＋解答2＋单选2，照库序切位；题后紧跟答案制）
+% ============================================================
+\dangbadge{综}{合}{提}{升}
+
+\tihao{8}\zu{直线方程形式与互化×填空} \tieside{简单(知识点一)}已知点\(A(3,2)\)，\(B(-1,4)\)，则过点\(C(2,5)\)且过线段AB的中点的直线方程为\kongda{2x−y＋1＝0}．
+
+\begin{ansblock}[2章-练-课时05-E11]
+% ans:2章-练-课时05-E11
+\ansitem{8}{2x−y＋1＝0}
+\ansnote{详解}{AB中点\(D((3-1)/2,(2+4)/2)=(1,3)\)．\(C\)、\(D\)横坐标不等（\(2\neq1\)）、纵坐标不等（\(5\neq3\)），用两点式：\((y-5)/(3-5)=(x-2)/(1-2)\)，即\((y-5)/(-2)=(x-2)/(-1)\)，\par\noindent 去分母：\(y-5=2(x-2)\)，化简得\(2x-y+1=0\)．}
+\end{ansblock}
+
+\tihao{9}\zu{直线方程形式与互化×解答} \tieside{中档(知识点三)}判断\((y-2)/(x-3)=1\)是否是某条直线的方程．
+\liubai[16mm]{解答书写区}
+
+\begin{ansblock}[2章-练-课时05-E15]
+% ans:2章-练-课时05-E15
+\ansitem{9}{不是（见详解）}
+\ansnote{详解}{方程\((y-2)/(x-3)=1\)要求\(x\neq3\)，其解集对应的点集是直线\(y-2=x-3\)（即\(y=x-1\)）上去掉点\((3,2)\)后的全体；\par\noindent 而“直线\(y=x-1\)的方程”应使以该直线上的点的坐标为解、且以方程的解为坐标的点都在这条直线上——点\((3,2)\)在直线\(y=x-1\)上却不是该方程的解，两集合不同．\par\noindent 所以\((y-2)/(x-3)=1\)不是（这条）直线的方程，它表示去掉一个点的“直线型”曲线；应改写成\((y-2)=(x-3)\)即\(x-y-1=0\)．}
+\end{ansblock}
+
+\tihao{10}\zu{直线方程形式与互化×解答} \tieside{中档(知识点三)}直线的方程\(Ax+By+C=0\)（\(A^{2}+B^{2}\neq0\)）中的\(A\)，\(B\)，\(C\)满足什么条件时，直线分别具有如下性质？
+
+\bindp (1) 过坐标原点； (2) 与两条坐标轴都相交； (3) 与\(x\)轴无交点；
+
+\bindp (4) 与\(y\)轴无交点； (5) 与\(x\)轴垂直； (6) 与\(y\)轴垂直．
+\liubai[32mm]{解答书写区}
+
+\begin{ansblock}[2章-练-课时05-E16]
+% ans:2章-练-课时05-E16
+\ansitem{10}{(1) C＝0；(2) A≠0且B≠0；(3) A＝0且C≠0；(4) B＝0且C≠0；(5) B＝0（且A≠0）；(6) A＝0（且B≠0）}
+\ansnote{详解}{(1) 原点坐标满足方程：\(C=0\)（\(A\)、\(B\)不同时为0由前提保证）；\par\noindent (2) 与两坐标轴都相交\(\iff\)既不与\(x\)轴平行也不与\(y\)轴平行\(\iff A\neq0\)且\(B\neq0\)；\par\noindent (3) 与\(x\)轴无交点\(\iff\)\(l\)为水平线\(y=m\)（\(A=0\)，\(B\neq0\)）且\(m=-C/B\neq0\)，即\(A=0\)且\(C\neq0\)；\par\noindent (4) 与\(y\)轴无交点\(\iff\)\(l\)为竖直线\(x=n\)（\(B=0\)，\(A\neq0\)）且\(n=-C/A\neq0\)，即\(B=0\)且\(C\neq0\)；\par\noindent (5) 与\(x\)轴垂直\(\iff\)\(l\)为竖直线\(x=n\)（\(n\)可为0）：\(B=0\)且\(A\neq0\)；\par\noindent (6) 与\(y\)轴垂直\(\iff\)\(l\)为水平线\(y=m\)（\(m\)可为0）：\(A=0\)且\(B\neq0\)．\par\noindent （说明：(3)(4)是(5)(6)中去掉与坐标轴重合情形的细分——(3)即(6)中\(C\neq0\)（排除\(y=0\)），(4)即(5)中\(C\neq0\)（排除\(x=0\)）．）}
+\end{ansblock}
+
+\tihao{11}\zu{直线方程形式与互化×单选} \tieside{中档(知识点三)}方程\(y-1=k(x+1)\)在\(k\)取遍所有实数时，可对应无数条直线，这无数条直线的共同点是\nobreak(\kongwei)
+
+\lxopt{A．都经过定点\((-1,1)\)}
+
+\lxopt{B．都经过定点\((1,-1)\)}
+
+\lxopt{C．斜率都为正}
+
+\lxopt{D．都与\(x\)轴平行}
+
+\begin{ansblock}[2章-练-课时05-E17]
+% ans:2章-练-课时05-E17
+\ansitem{11}{A（它们都经过定点(−1,1)；且除直线x＝−1外，过(−1,1)的直线都在其中）}
+\ansnote{详解}{对任意实数\(k\)，把\(x=-1\)、\(y=1\)代入方程两边：左\(=1-1=0\)，右\(=k(-1+1)=0\)恒成立，故每条直线都过点\((-1,1)\)；\par\noindent 反之，过\((-1,1)\)且斜率存在（设为\(k\)）的直线方程即\(y-1=k(x+1)\)；斜率不存在的直线\(x=-1\)无法由该方程表示．选：A．（注：本选项组为本卷补写——源题为问答题，为入单选槽按原题数据配四选项，结论为A项不变．）}
+\end{ansblock}
+
+\tihao{12}\zu{直线方程形式与互化×单选} \tieside{中档(知识点三)}不论\(m\)为何实数，直线\(l\)：\((m-1)x+(2m-1)y=m-5\)恒过一定点，则该定点为\nobreak(\kongwei)
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{A．\((9,-4)\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{B．\((-9,4)\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{C．\((4,-9)\)}\makebox[\dimexpr0.25\linewidth-0.25\lxhang\relax][l]{D．\((-4,9)\)}\par}
+
+\begin{ansblock}[2章-练-课时05-E18]
+% ans:2章-练-课时05-E18
+\ansitem{12}{A（定点(9,−4)，证明见详解）}
+\ansnote{详解}{将方程按\(m\)整理：\(m(x+2y-1)+(-x-y+5)=0\)对一切实数\(m\)恒成立，\par\noindent 须\(x+2y-1=0\)且\(-x-y+5=0\)，联立解得\(x=9\)，\(y=-4\)．\par\noindent 即点\((9,-4)\)使方程对任意\(m\)都成立，故直线\(l\)恒过定点\((9,-4)\)．\par\noindent （取\(m=1\)得\(y=-4\)、取\(m=1/2\)得\(x=9\)，交点\((9,-4)\)代回原方程恒成立，亦可验证．）选：A．（注：本选项组为本卷补写——源题为「求证恒过定点并求坐标」解答形，为入单选槽按原题数据配四选项，定点结论为A项不变，证明详解全保留．）}
+\end{ansblock}
+
+\tihao{13}\zu{直线方程形式与互化×填空} \tieside{难(知识点三)}（提示：本题详解使用§2.2.4点到直线的距离公式，供已提前选学该条线的学生使用；未学时可只研究题面结构并跳读详解．）
+
+\bindp 在平面直角坐标系\(xOy\)中，设满足条件\((x-1)\cos\theta+y\sin\theta=1\)（\(0\leqslant\theta<2\pi\)）的所有直线构成集合\(M\)，对于下列四个命题：
+
+\bindp ①\(M\)中所有直线经过一个定点；②存在定点\(P\)不在\(M\)中的任意一条直线上；③\(M\)中的直线所能围成的正三角形的面积都相等；④存在正六边形，使其所在边均在\(M\)中的直线上．其中真命题的序号是\kongda{②④}．
+
+\begin{ansblock}[2章-练-课时05-E19]
+% ans:2章-练-课时05-E19
+\ansitem{13}{②④}
+\ansnote{详解}{根据点到直线距离公式可得点\((1,0)\)到直线\((x-1)\cos\theta+y\sin\theta=1\)的距离\par\noindent \(d=|0\times\cos\theta+0\times\sin\theta-1|/\sqrt{\cos^{2}\theta+\sin^{2}\theta}=1\)，即点\((1,0)\)到直线的距离为定值1，\par\noindent 因此直线\((x-1)\cos\theta+y\sin\theta=1\)是圆\((x-1)^{2}+y^{2}=1\)的切线（\(\theta\)取遍\([0,2\pi)\)恰给出该圆全体切线）．\par\noindent 对于①，\(M\)中所有直线到点\((1,0)\)的距离为定值1，但并不满足经过一个定点，错误；\par\noindent 对于②，当定点\(P\)在该圆内部（不含圆周）时，\(P\)不在\(M\)中的任意一条直线上，正确；\par\noindent 对于③，\(M\)中的直线所能围成的正三角形，既可以是该圆的内接方向的外切正三角形（每边都与圆相切、圆心即内心），也可以让圆恰为三角形的旁切圆型位置（三边仍为切线但圆在三角形外一侧），二者面积不等，错误；\par\noindent 对于④，当正六边形为该圆的外切正六边形时，其六条边所在直线均在\(M\)中，符合要求，正确．\par\noindent 综上所述，真命题的序号是②④．}
+\end{ansblock}
+
+\tihao{14}\zu{直线方程形式与互化×填空} \tieside{难(知识点三)}（提示：同05-E19，用到点到直线距离公式．）
+
+\bindp 直线系\(A\)：\((x-3)\cos\alpha+y\sin\alpha=2\)，直线系\(A\)中能组成正三角形的面积等于\kongda{4√3/3或12√3}．
+
+\begin{ansblock}[2章-练-课时05-E20]
+% ans:2章-练-课时05-E20
+\ansitem{14}{4√3/3或12√3}
+\ansnote{详解}{直线系\(A\)：\((x-3)\cos\alpha+y\sin\alpha=2\)可变形为\(\sqrt{(x-3)^{2}+y^{2}}\cdot\sin(\alpha+\varphi)=2\)（辅助角公式，\(\tan\varphi=(x-3)/y\)），\par\noindent 故\(\sin(\alpha+\varphi)=2/\sqrt{(x-3)^{2}+y^{2}}\)，而\(|\sin(\alpha+\varphi)|\leqslant1\)，得\((x-3)^{2}+y^{2}\geqslant4\)，\par\noindent 其几何意义为：直线系\(A\)是圆\((x-3)^{2}+y^{2}=4\)的切线的包络（圆上所有点的切线集合）．\par\noindent 把圆心平移至原点，圆\(x^{2}+y^{2}=r^{2}\)上一点\(P(x_0,y_0)\)的切线为\(x_0x+y_0y=r^{2}\)；令\(x_0=r\cos\alpha\)、\(y_0=r\sin\alpha\)，切线即\(x\cos\alpha+y\sin\alpha=r\)，\par\noindent 圆心\((0,0)\)到此直线距离恰为\(r\)，\par\noindent （\(|-r|/\sqrt{\cos^{2}\alpha+\sin^{2}\alpha}=r\)）故\(\alpha\in[0,2\pi)\)时该直线系为圆的全体切线．\par\noindent 直线系中的直线构成正三角形有无数个，但面积的值只有两个．取\(r=2\)：\par\noindent 设一边所在切线为\(y=2\)（上切点水平切线），另两边取斜率\(\pm\sqrt{3}\)的切线\(y=\sqrt{3}x+b\)，圆心到其距离\(|b|/\sqrt{3+1}=2\)，\(b=\pm4\)．\par\noindent ①取\(b\)使三边围成含圆心的正三角形：由\(y=2\)与\(y=\sqrt{3}x-4\)、\(y=-\sqrt{3}x-4\)（即顶点在下方）围成，此时底边\(y=2\)、\(B(-2/\sqrt{3},2)\)，边长\(|BC|=4/\sqrt{3}\)，\(S=(\sqrt{3}/4)\times(4/\sqrt{3})^{2}=4\sqrt{3}/3\)；\par\noindent ②取\(y=-2\)为底、两斜切线为\(y=\sqrt{3}x+4\)、\(y=-\sqrt{3}x+4\)围成另一正三角形：\(B'(-6/\sqrt{3},-2)\)，边长\(|B'C'|=12/\sqrt{3}=4\sqrt{3}\)，\(S=(\sqrt{3}/4)\times(12/\sqrt{3})^{2}=12\sqrt{3}\)．\par\noindent 将圆\(x^{2}+y^{2}=4\)向右平移3个单位即为\((x-3)^{2}+y^{2}=4\)，平移不改变正三角形面积，\par\noindent 故直线系\(A\)中能组成的正三角形面积为\(4\sqrt{3}/3\)或\(12\sqrt{3}\)．}
+\end{ansblock}
+
+% ============================================================
+% 思维探索（题15~16＝E21/E22：解答2，居末档照库序）
+% ============================================================
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\zu{直线方程形式与互化×解答} \tieside{中档(知识点二)}已知菱形的两条对角线分别在\(x\)轴和\(y\)轴上，并且它们的长分别等于8和6，求菱形各边所在直线的方程．
+\liubai[16mm]{解答书写区}
+
+\begin{ansblock}[2章-练-课时05-E21]
+% ans:2章-练-课时05-E21
+\ansitem{15}{3x＋4y−12＝0，3x−4y＋12＝0，3x−4y−12＝0，3x＋4y＋12＝0（即3x±4y±12＝0的四种符号组合）}
+\ansnote{详解}{对角线在坐标轴上且长分别为8、6，则四个顶点为\((\pm4,0)\)、\((0,\pm3)\)．\par\noindent 四边即依次连接\((4,0)\)、\((0,3)\)、\((-4,0)\)、\((0,-3)\)的回字斜方形，各用截距式：\par\noindent \((4,0)\)-\((0,3)\)：\(x/4+y/3=1\)\(\rightarrow\)\(3x+4y-12=0\)；\((0,3)\)-\((-4,0)\)：\(x/(-4)+y/3=1\)\(\rightarrow\)\(3x-4y+12=0\)；\par\noindent \((-4,0)\)-\((0,-3)\)：\(x/(-4)+y/(-3)=1\)\(\rightarrow\)\(3x+4y+12=0\)；\((0,-3)\)-\((4,0)\)：\(x/4+y/(-3)=1\)\(\rightarrow\)\(3x-4y-12=0\)．}
+\end{ansblock}
+
+\tihao{16}\zu{直线方程形式与互化×解答} \tieside{中档(知识点二)}已知直线\(l\)过点\(P(2,-1)\)．
+
+\bindp (1) 若直线\(l\)与直线\(2x+y+3=0\)垂直，求直线\(l\)的方程；
+
+\bindp (2) 若直线\(l\)在两坐标轴的截距互为相反数，求直线\(l\)的方程．
+\liubai[24mm]{解答书写区}
+
+\begin{ansblock}[2章-练-课时05-E22]
+% ans:2章-练-课时05-E22
+\ansitem{16}{(1) x−2y−4＝0；(2) x＋2y＝0或x−y−3＝0}
+\ansnote{详解}{(1) 与\(2x+y+3=0\)（法向量\((2,1)\)）垂直的直线，其法向量与该直线方向共线，可设\(l\)：\(x-2y+m=0\)（即以\((1,-2)\)为法向量，\((1,-2)\perp(2,1)\)……由课时03点法式知识合法）；\par\noindent 代入\(P(2,-1)\)：\(2+2+m=0\)，\(m=-4\)，故\(l\)：\(x-2y-4=0\)．\par\noindent (2) 当\(l\)过原点时，设\(y=kx\)，代\(P(2,-1)\)得\(k=-1/2\)，即\(x+2y=0\)，此时两截距都是0，互为相反数；\par\noindent 当\(l\)不过原点时，设两截距为\(a\)、\(-a\)（\(a\neq0\)），\(x/a+y/(-a)=1\)，即\(x-y=a\)，代\(P(2,-1)\)：\(a=3\)，\(l\)：\(x-y-3=0\)．\par\noindent 综上，所求直线为\(x+2y=0\)或\(x-y-3=0\)．}
+\end{ansblock}
+
+% ---- 尾块（\tailfill 置 \end{multicols} 前；无参＝内容尾随框，每件恰 1 处） ----
+\tailfill
+
+\end{multicols}
+\end{document}

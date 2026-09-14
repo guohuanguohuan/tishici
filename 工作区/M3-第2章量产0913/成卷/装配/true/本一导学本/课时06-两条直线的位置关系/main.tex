@@ -1,0 +1,366 @@
+% ============================================================
+% M3 S2 导学件·波1 片件 —— 课时06 两条直线的位置关系（2.2.3）
+% 生成：M3 成卷轮 S2 波1 补位臂2(glm)｜2026-09-14｜编译 cwd＝本目录（中文路径禁 \input 绝对路径）
+%   xelatex main-true.tex ×2 → 含详解印本；xelatex main-false.tex ×2 → 纯题版（单源双本）
+% 输入链（全只读）：题面库 课时06-两条直线的位置关系.md（题面逐字装配；【注】行＝装配层注记不印，
+%   题首「（提示：…）」行＝印面照录，T16 提示内 ½·x_B 式段以数学模印出＝印面清洗注记在案）
+%   ＋ -答案侧.md（值逐字回嵌）＋ 定稿/批B-课时06-两条直线的位置关系.md（详解回嵌源＝【亲算】格，
+%   亲算库不覆盖 2.2.3，详解全自撰逐题亲算核对在定稿侧在案）；
+%   toolchain＝qp-m3.sty（钉后版 md5 7c3930362be8a0a2bdf21bbf8ac16573，本地挂载副本，破损即停）。
+% 母版体例：承 成卷/导学件/课时01-坐标法/母版体例说明.md（骨架/宏用法/门谱跑法原样照抄）。
+% 键账：件内 ansblock 键集 ≡ 题面库片键集 ≡ manifest 键序（21 键，零缺漏零多余）；
+%   预习位零键零答案（口令④前口径）；印面号 1—21＝探究 1—16＋课堂评价 17—21，
+%   键↔号映射见 值台账-课时06.json。
+% 片特记：§2.2.4 点到直线距离已另册 06B（补位件），本片 T13/T16 需选学§2.2.4 前置注在题面
+%   「（提示：…）」行照录（04-E4 预习注、05-T9/T10 同族先例在案）；装配层不补号、不重编号。
+% 装配裁定（补位臂2 在案）：①评价 G4/G5 同填空互序，括线键 G5 居 20、灰底 G4 收尾 21
+%   （末位括线块与尾块共页致底线贴线，结构病在 05 片已证）；②单选题干直排选项不设
+%   \xiexwei 书写位（承 04 制；误设曾挤尾块底线截断，已拔 4 处）；③T16 提示式段以数学模
+%   印出（½·x_B 字体缺字规避）、▱ABCD 详解提法用文本模 \pxparallelogram（math 字体缺 25B1）。
+% 括线判据（承重墙禁放宽，toolchain钉档§三.1）：估高＞8 行（chars/23 栏宽口径）→ 括线模，
+%   逐键读数入值台账；其余灰底。
+% 门谱读数：见 过程件 工作区/_tmpM3S2补位2glm_0914/（编译 log、门谱输出）。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（探针实证 0914：书宋缺 U+2212，▱ 诸字库皆缺→NSC 子块；
+%     禁改 sty 本体保 md5；无 ▱/− 用件的片可整块照抄，零副作用） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（纯题档/详解档三零门：CJK 胶微调；\emergencystretch 不设，
+%     母版实测撤行回落 sty 默认 1em 三零仍守——补丁最少化） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 页脚件名（qp-headfoot 复用入口） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件}%
+
+\begin{document}
+%装配轮S6三本跨本连续页码（G7方案B）setcounter 注入位
+\setcounter{page}{36}
+
+\zhangtitle{第二章\quad 平面解析几何}
+\jietitle{2.2.3 两条直线的位置关系}
+\mubiaoline
+\mubiaomu{1}{掌握两条直线平行与垂直的判定条件（一般式系数判与斜率判），能熟练判定两直线的位置关系，并会由位置关系求参数的取值；}
+\mubiaomu{2}{理解两直线交点与二元一次方程组解的对应关系，会用交点处理三条直线共点、中点分线段、垂心与多边形等位置综合问题；}
+\mubiaomu{3}{会用含参直线系恒过定点的方法处理综合问题，体会“数形结合、以算代证”与“分类讨论、检验收口”的解析几何基本方法.}
+
+\vspace{1.7mm}
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============================================================
+% 课前预习（知识点导学填空；零键零答案——预习键位按检查口令④裁定前口径，
+% \kongbai 空线＋\zhentib 题面形，两档等形不泄答；条目为本片自撰非源件逐字）
+% ============================================================
+\huaxing{课}{前}{预}{习}{知识导学\quad 素养初识}
+
+\zsd{一}{平行与垂直的判定}
+
+\tiaomu{1}{一般式判：两直线\(l_1:A_1x+B_1y+C_1=0\)与\(l_2:A_2x+B_2y+C_2=0\)，则\(l_1\parallel l_2\)当且仅当\(A_1B_2-A_2B_1=\)\kongbai{}且\(B_1C_2-B_2C_1\neq0\)（不重合）；\(l_1\perp l_2\)当且仅当\kongbai{}．\zhuzhu{系数判对铅直线同样适用，勿须讨论斜率是否存在；“平行”必带“不重合”检验一道工序.}}
+
+\tiaomu{2}{斜率判：斜率都存在时，\(k_1=k_2\)且截距不等当且仅当两直线\kongbai{}；\(k_1\cdot k_2=-1\)当且仅当两直线\kongbai{}．\zhuzhu{斜率相等只保证“平行或重合”，须再验一点是否公共；一条铅直时另一条水平才垂直，此时乘积判式失效.}}
+
+\zsd{二}{交点与位置关系}
+
+\tiaomu{1}{联立两条直线的方程：方程组有唯一解当且仅当两直线\kongbai{}；无解当且仅当两直线平行；有无穷多解当且仅当两直线\kongbai{}．\zhuzhu{“解的个数”与“位置关系”一一对应，是交点法的底座；三条直线共点，先取两条求交点，再代入第三条验之.}}
+
+\tiaomu{2}{把含参直线方程按参数\(\lambda\)整理为\(A(x,y)+\lambda B(x,y)=0\) 型，令\(A\)、\(B\)同时为0，解得的点就是直线系恒过的\kongbai{}．\zhuzhu{定点是直线系的“旋转中心”；过定点直线处理距离最值、象限判定时，先钉住定点再画图.}}
+
+\zhenhead{判断正误(正确的打\gou{},错误的打\cha{})}
+
+\zhentib{(1)}{若两条直线的斜率相等，则这两条直线平行．}
+
+\zhentib{(2)}{若直线\(l_1\perp l_2\)，则它们的斜率之积为\(-1\)．}
+
+\liubai[9mm]{此处书写}
+
+% ============================================================
+% 课中探究（考点探究〔例+变式〕＝练/拓槽 16 键；题后紧跟答案＝ansblock 内嵌，
+% 值照答案侧逐字，详解承批B【亲算】回嵌）
+% ============================================================
+\huaxing{课}{中}{探}{究}{考点探究\quad 素养小结}
+
+% ---------- 探究点一 平行与垂直的判定及求参 ----------
+\tjdnr{一}{平行与垂直的判定及求参}{例\textbf{1}}{中档(知识点一)}{满足下列条件的直线\(l_1\)与\(l_2\)，其中\(l_1\parallel l_2\)的是\nobreak(\kongwei)}
+
+\bindp ①\(l_1\)的斜率为2，\(l_2\)过点\(A(1,2)\)、\(B(4,8)\)；
+
+\bindp ②\(l_1\)经过点\(P(3,3)\)、\(Q(-5,3)\)，\(l_2\)平行于\(x\)轴，但不经过\(P\)点；
+
+\bindp ③\(l_1\)经过点\(M(-1,0)\)、\(N(-5,-2)\)，\(l_2\)经过点\(R(-4,3)\)、\(S(0,5)\)．
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．①②}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．②③}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．①③}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．①②③}}\par
+
+\begin{ansblock}[2章-练-课时06-T2]
+% ans:2章-练-课时06-T2
+\ansitem{1}{B}
+\ansnote{详解}{①\(k_{AB}=(8-2)/(4-1)=2=k_1\)，但只知斜率相等，\(l_1\)与\(l_2\)可能重合，①不入选；\par\noindent ②\(k_{PQ}=0\)，\(l_1\)为水平线；\(l_2\)平行于\(x\)轴且不过\(P\)，两水平线不重合，平行，②入选；\par\noindent ③\(k_1=(-2-0)/(-5+1)=1/2\)，\(k_2=(5-3)/(0+4)=1/2\)；检验\(M(-1,0)\)不在\(l_2\)（\(l_2: y=x/2+5\)，\(x=-1\)时\(y=9/2\)）上，故平行，③入选．选：B．}
+\end{ansblock}
+
+\liB{变式\textbf{2}}{中档(知识点一)}{}{已知直线\(l_1\)过\((0,0)\)、\((1,-3)\)两点，直线\(l_2\)的方程为\(ax+y-2=0\)，如果\(l_1\parallel l_2\)，则\(a\)的值为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(-3\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(1/3\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(-1/3\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(3\)}}\par
+
+\begin{ansblock}[2章-练-课时06-T3]
+% ans:2章-练-课时06-T3
+\ansitem{2}{D}
+\ansnote{详解}{\(k_1=(-3-0)/(1-0)=-3\)；\(l_2: ax+y-2=0\)的斜率\(k_2=-a\)．\(l_1\parallel l_2\iff k_1=k_2\)，得\(-a=-3\)，\(a=3\)．重合检验：\(a=3\)时\(l_2: 3x+y-2=0\)，取\(l_1\)上点\((0,0)\)代入得\(-2\neq0\)，\((0,0)\)不在\(l_2\)上，两直线不重合，平行成立．选：D．}
+\end{ansblock}
+
+\liB{变式\textbf{3}}{中档(知识点一)}{}{已知直线\(l_1\)的倾斜角为\(60^\circ\)，直线\(l_2\)经过点\(A(1,\sqrt{3})\)、\(B(-2,2\sqrt{3})\)，则直线\(l_1\)与\(l_2\)的位置关系是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．平行或重合}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．平行}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．垂直}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．重合}}\par
+
+\begin{ansblock}[2章-练-课时06-T4]
+% ans:2章-练-课时06-T4
+\ansitem{3}{C}
+\ansnote{详解}{\(k_1=\tan60^\circ=\sqrt{3}\)；\(k_2=(2\sqrt{3}-\sqrt{3})/(-2-1)=-\sqrt{3}/3\)．\(k_1\cdot k_2=\sqrt{3}\times(-\sqrt{3}/3)=-1\)，且\(k_1\neq k_2\)（两线不平行、更不重合），故\(l_1\perp l_2\)．选：C．}
+\end{ansblock}
+
+\liB{变式\textbf{4}}{中档(知识点一)}{}{若直线\(kx+(1-k)y-3=0\)和直线\((k-1)x+(2k+3)y-2=0\)互相垂直，则\(k=\)\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(-3\)或\(-1\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(3\)或\(1\)}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(-3\)或\(1\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(-1\)或\(3\)}}\par
+
+\begin{ansblock}[2章-练-课时06-T6]
+% ans:2章-练-课时06-T6
+\ansitem{4}{C}
+\ansnote{详解}{垂直\(\iff k(k-1)+(1-k)(2k+3)=0\)．展开：\(k^2-k+2k+3-2k^2-3k=-k^2-2k+3=0\)，即\(k^2+2k-3=0\)，解得\(k=1\)或\(k=-3\)．选：C．}
+\end{ansblock}
+
+\liB{变式\textbf{5}}{简单(知识点一)}{}{已知三条直线\(l_1: 2x+my+2=0\)（\(m\in\mathbf{R}\)），\(l_2: 2x+y-1=0\)，\(l_3: x+ny+1=0\)（\(n\in\mathbf{R}\)），若\(l_1\parallel l_2\)，\(l_1\perp l_3\)，则\(m+n\)的值为\kongbai{}．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-练-课时06-T11]
+% ans:2章-练-课时06-T11
+\ansitem{5}{−1}
+\ansnote{详解}{\(l_1\parallel l_2\iff 2\times1-2m=0\)，得\(m=1\)（此时\(l_1: 2x+y+2=0\)与\(l_2\)不重合）；\(l_1\perp l_3\iff 2\times1+n=0\)，得\(n=-2\)．故\(m+n=-1\)．}
+\end{ansblock}
+
+\liB{变式\textbf{6}}{中偏难(知识点一)}{}{已知直线\(l_1\)经过点\(A(3,m)\)，\(B(m-1,2)\)，直线\(l_2\)经过点\(C(1,2)\)，\(D(-2,m+2)\)．}
+
+\bindp (1) 若\(l_1\parallel l_2\)，求实数\(m\)的值；
+
+\bindp (2) 若\(l_1\perp l_2\)，求实数\(m\)的值．
+\xiexwei{10mm}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时06-T14]
+% ans:2章-练-课时06-T14
+\ansitem{6}{(1) m=1 或 6；(2) m=3 或 −4}
+\ansnote{详解}{\(k_1=(2-m)/(m-4)\)，\(k_2=(m+2-2)/(-2-1)=-m/3\)．\par\noindent (1) \(k_1=k_2\)：\((2-m)/(m-4)=-m/3\)，即\(3(2-m)=-m(m-4)\)，\(m^2-7m+6=0\)，\(m=1\)或\(6\)．检验不重合：\(m=1\)时\(l_1\)过\((3,1)\)、\((0,2)\)，斜率为\(-1/3\)，\(C(1,2)\)不在\(l_1\)上；\(m=6\)时\(l_1: y=-2x+12\)，\(C(1,2)\)不在其上，均不重合，故\(m=1\)或\(6\)；\par\noindent (2) \(m=0\)时\(k_2=0\)（水平），需\(l_1\)铅直，但\(A(3,0)\)、\(B(-1,2)\)横坐标不同，斜率存在，舍；\(k_2\neq0\)时\(k_1\cdot k_2=-1\)：\((2-m)/(m-4)\cdot(-m/3)=-1\)，即\(m(2-m)=-3(m-4)\)，\(m^2-m-12=0\)，\(m=3\)或\(-4\)．验：\(m=3\)时\(k_1=1\)，\(k_2=-1\)；\(m=-4\)时\(k_1=-3/4\)，\(k_2=4/3\)，乘积均为\(-1\)，故\(m=3\)或\(-4\)．}
+\end{ansblock}}
+
+\xiaojie{①识别：以“由方程或点条件判定平行、垂直并逆求参数”为目标的题，判归本题型；斜率相等到平行，中间隔一道重合检验.}
+\bindp {\kaishu ②操作：系数判\(A_1B_2-A_2B_1=0\)（平行）与\(A_1A_2+B_1B_2=0\)（垂直）免讨论斜率存在性；点条件先算斜率再立等式，含参解后逐值回代验重合.}
+\bindp {\kaishu ③收束：平行结论＝“斜率等＋不重合”双条件收口；垂直结论回代乘积验\(-1\)；两问型分别作答，勿以(1)的参数取值带偏(2)的分类.}
+
+% ---------- 探究点二 位置关系的综合应用 ----------
+\tjdnr{二}{位置关系的综合应用}{例\textbf{7}}{中档(知识点二)}{直线\(l_1: 2ax+y-2=0\)与直线\(l_2: x-(a+1)y+2=0\)互相垂直，则这两条直线的交点坐标为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\((-2/5, -6/5)\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\((2/5, 6/5)\)}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\((2/5, -6/5)\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\((-2/5, 6/5)\)}}\par
+
+\begin{ansblock}[2章-练-课时06-T1]
+% ans:2章-练-课时06-T1
+\ansitem{7}{B}
+\ansnote{详解}{\(A_1A_2+B_1B_2=2a\times1+1\times[-(a+1)]=a-1=0\)，得\(a=1\)（\(a=-1\)时\(l_2: x+2=0\)铅直而\(l_1\)斜率为2，不垂直，已排除）．此时\(l_1: 2x+y-2=0\)，\(l_2: x-2y+2=0\)．由\(y=2-2x\)代入：\(x-2(2-2x)+2=0\)，\(5x=2\)，\(x=2/5\)，\(y=6/5\)．交点\((2/5, 6/5)\)，选：B．}
+\end{ansblock}
+
+\liB{变式\textbf{8}}{中档(知识点二)}{}{已知\(\triangle ABC\)的顶点\(B(2,1)\)，\(C(-6,3)\)，其垂心为\(H(-3,2)\)，则其顶点\(A\)的坐标为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\((-19,-62)\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\((19,-62)\)}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\((-19,62)\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\((19,62)\)}}\par
+
+\begin{ansblock}[2章-练-课时06-T5]
+% ans:2章-练-课时06-T5
+\ansitem{8}{A}
+\ansnote{详解}{\(k_{BC}=2/(-8)=-1/4\)，则\(k_{AH}=4\)；\(k_{BH}=1/(-5)=-1/5\)，则\(k_{AC}=5\)．设\(A(x,y)\)：\((y-2)/(x+3)=4\)且\((y-3)/(x+6)=5\)，即\(y=4x+14\)且\(y=5x+33\)，解得\(x=-19\)，\(y=-62\)．验第三组垂直：\(k_{CH}=(2-3)/(-3+6)=-1/3\)，而\(k_{AB}=(1+62)/(2+19)=3\)，乘积为\(-1\)，成立．选：A．}
+\end{ansblock}
+
+\liB{变式\textbf{9}}{中偏难(知识点二)}{}{已知\(a\neq0\)，直线\(ax+(b+2)y+4=0\)与直线\(ax+(b-2)y-3=0\)互相垂直，则\(ab\)的最大值为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(0\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(2\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(4\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(\sqrt{2}\)}}\par
+
+\begin{ansblock}[2章-练-课时06-T7]
+% ans:2章-练-课时06-T7
+\ansitem{9}{B}
+\ansnote{详解}{垂直\(\iff a\cdot a+(b+2)(b-2)=0\)，即\(a^2+b^2=4\)．由\(a^2+b^2\geqslant2|ab|\)得\(|ab|\leqslant2\)；取\(a=b=\sqrt{2}\)（满足\(a^2+b^2=4\)，此时两直线为\(\sqrt{2}x+(2+\sqrt{2})y+4=0\)与\(\sqrt{2}x+(\sqrt{2}-2)y-3=0\)，\(A_1A_2+B_1B_2=2+(2+\sqrt{2})(\sqrt{2}-2)=2+(2-4)=0\)，垂直成立），\(ab=2\)．故\(ab\)的最大值为2，选：B．}
+\end{ansblock}
+
+\liB{变式\textbf{10}}{中档(知识点二)}{}{过直线\(l_1: 2x+y-3=0\)与\(l_2: x-3y+2=0\)的交点，并与\(l_1\)垂直的直线的方程为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(x-2y-1=0\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(x-2y+1=0\)}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(x+2y-1=0\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(x+2y+1=0\)}}\par
+
+\begin{ansblock}[2章-练-课时06-T9]
+% ans:2章-练-课时06-T9
+\ansitem{10}{B}
+\ansnote{详解}{联立\(2x+y-3=0\)与\(x-3y+2=0\)：由第一式\(y=3-2x\)代入第二式：\(x-3(3-2x)+2=0\)，得\(x=1\)，\(y=1\)，交点\((1,1)\)．\(k_1=-2\)，所求直线斜率\(k=1/2\)．\(y-1=(1/2)(x-1)\)，即\(x-2y+1=0\)，选：B．}
+\end{ansblock}
+
+\liB{变式\textbf{11}}{中偏难(知识点二)}{}{已知直线\(l_1: x+3y-5=0\)，\(l_2: 3kx-y+1=0\)．若\(l_1\)，\(l_2\)与两坐标轴围成的四边形有一个外接圆，则\(k=\)\kongbai{}．}
+\xiexwei{7mm}
+
+\begin{ansblock}[2章-练-课时06-T12]
+% ans:2章-练-课时06-T12
+\ansitem{11}{1}
+\ansnote{详解}{四边形由\(l_1\)、\(l_2\)与\(x\)轴、\(y\)轴围成，坐标轴交点处的内角为\(90^\circ\)，四边形有外接圆\(\iff\)对角互补\(\iff l_1\)与\(l_2\)的交角为\(90^\circ\)，即\(l_1\perp l_2\)．\(k_1=-1/3\)，\(k_2=3k\)，垂直\(\iff(-1/3)\times3k=-1\)，得\(k=1\)．（检验：\(l_1\)不过原点、不平行于坐标轴；\(k=1\)时\(l_2: 3x-y+1=0\)同样，四边形存在且对角互补，有外接圆．）}
+\end{ansblock}
+
+\liB{变式\textbf{12}}{中偏难(知识点二)}{}{已知在\pxparallelogram{}ABCD 中，\(A(1,2)\)，\(B(5,0)\)，\(C(3,4)\)．}
+
+\bindp (1) 求点\(D\)的坐标；
+
+\bindp (2) 试判定\pxparallelogram{}ABCD 是否为菱形？
+\xiexwei{12mm}
+
+\begin{ansblock}[2章-练-课时06-T15]
+% ans:2章-练-课时06-T15
+\ansitem{12}{(1) D(−1,6)；(2) 是菱形}
+\ansnote{详解}{(1) 平行四边形对角线互相平分：\(AC\)中点与\(BD\)中点重合．设\(D(x,y)\)：\(((1+3)/2, (2+4)/2)=((5+x)/2, (0+y)/2)\)，得\(x=-1\)，\(y=6\)，即\(D(-1,6)\)；\par\noindent (2) 邻边相等即菱形：\(|AB|^2=16+4=20\)，\(|BC|^2=4+16=20\)，\(|AB|=|BC|\)，故\pxparallelogram{}ABCD 为菱形．（或对角线：\(k_{AC}=1\)，\(k_{BD}=6/(-6)=-1\)，\(AC\perp BD\)且互相平分，也为菱形．）}
+\end{ansblock}
+
+\xiaojie{①识别：以垂直（平行）关系为桥梁求交点、顶点、最值、方程，或以多边形形状判定为目标的题，判归本题型；垂心、外接圆等问题先译成“哪两组直线垂直（垂直平行）”.}
+\bindp {\kaishu ②操作：垂直求参用\(A_1A_2+B_1B_2=0\)展开解方程；交点用联立；垂心逆求用“顶点连垂心的线垂直对边”逐条立式；菱形判定抓“邻边相等”或“对角线垂直且平分”其一收口.}
+\bindp {\kaishu ③收束：垂直条件解出多解时逐值检验铅直、水平特例；面积、最值结论回看图形定符号；判定型结论须答“是”或“否”并给依据.}
+
+% ---------- 探究点三 含参直线系与综合问题 ----------
+\tjdnr{三}{含参直线系与综合问题}{例\textbf{13}}{中偏难(知识点三)}{（提示：本题第②空距离最大值用到§2.2.4点到直线的距离公式（06B 课时内容，位于本课时之后），供已提前选学该内容的学生使用；未学时可先做第①空，第②空待学完 06B 后回做。）已知点\(P(-2,0)\)和直线\(l: (1+3\lambda)x+(1+2\lambda)y-(2+5\lambda)=0\)（\(\lambda\in\mathbf{R}\)），该直线\(l\)过定点\kongbai{}，点\(P\)到直线\(l\)的距离\(d\)的最大值为\kongbai{}．}
+\xiexwei{8mm}
+
+\begin{ansblock}[2章-练-课时06-T13]
+% ans:2章-练-课时06-T13
+\ansitem{13}{(1,1)；√10}
+\ansnote{详解}{按\(\lambda\)整理：\((x+y-2)+\lambda(3x+2y-5)=0\)，令两因式同时为零：\(x+y-2=0\)且\(3x+2y-5=0\)，解得\(x=y=1\)，定点\(Q(1,1)\)．\(\lambda\)变化时\(l\)绕\(Q\)转动（斜率可取除\(-3/2\)外的一切值，且\(\lambda=-1/2\)时为铅直线\(x=1\)，方向覆盖齐全）．\(d\)最大\(\iff l\perp PQ\)，最大距离\(|PQ|=\sqrt{(-2-1)^2+(0-1)^2}=\sqrt{10}\)．}
+\end{ansblock}
+
+\liB{变式\textbf{14}}{中档(知识点三)}{\duoxuan\hspace{0.6em}}{已知直线\(l_1: x+ay-a=0\)和直线\(l_2: ax-(2a-3)y-1=0\)，下列说法正确的是\nobreak(\kongwei)}
+
+\lxopt{A．\(l_2\)始终过定点\((2/3, 1/3)\)}
+
+\lxopt{B．若\(l_1\parallel l_2\)，则\(a=1\)或\(-3\)}
+
+\lxopt{C．若\(l_1\perp l_2\)，则\(a=0\)或\(2\)}
+
+\lxopt{D．当\(a>0\)时，\(l_1\)始终不过第三象限}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时06-T8]
+% ans:2章-练-课时06-T8
+\ansitem{14}{ACD}
+\ansnote{详解}{A：\(l_2\)按\(a\)整理：\(a(x-2y)+(3y-1)=0\)，令\(x-2y=0\)且\(3y-1=0\)，得\((2/3, 1/3)\)，恒过，A对；\par\noindent B：\(a=1\)时\(l_1: x+y-1=0\)，\(l_2: x+y-1=0\)，重合非平行；\(a=-3\)时\(k_1=-1/3\)，\(l_2: -3x+9y-1=0\)的斜率为\(1/3\)，不平行，B错；\par\noindent C：\(A_1A_2+B_1B_2=a+a(3-2a)=2a(2-a)=0\)，得\(a=0\)或\(2\)，C对；\par\noindent D：\(a>0\)时\(l_1: y=-x/a+1\)，斜率为负、纵截距\(1>0\)、横截距\(a>0\)，图象过一、二、四象限，不过第三象限，D对．选：ACD．}
+\end{ansblock}}
+
+\liB{变式\textbf{15}}{中偏难(知识点三)}{\duoxuan\hspace{0.6em}}{瑞士数学家欧拉1765年提出：任意三角形的外心、重心、垂心在同一条直线上，后人称这条直线为欧拉线．若已知\(\triangle ABC\)的顶点\(A(-4,0)\)，\(B(0,4)\)，其欧拉线方程为\(x-y+2=0\)，则下列正确的是\nobreak(\kongwei)}
+
+\lxopt{A．\(\triangle ABC\)重心的坐标为\((-1/3, 2/3)\)或\((-2/3, 1/3)\)}
+
+\lxopt{B．\(\triangle ABC\)垂心的坐标为\((0,2)\)或\((-2,0)\)}
+
+\lxopt{C．\(\triangle ABC\)顶点\(C\)的坐标为\((2,0)\)或\((0,-2)\)}
+
+\lxopt{D．欧拉线将\(\triangle ABC\)分成的两部分的面积之比为\(4/5\)}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-练-课时06-T10]
+% ans:2章-练-课时06-T10
+\ansitem{15}{BCD}
+\ansnote{详解}{\(AB\)中点\((-2,2)\)，\(k_{AB}=1\)，中垂线\(y-2=-(x+2)\)，即\(x+y=0\)．与欧拉线联立：\(x=-1\)，\(y=1\)，外心\(O'(-1,1)\)，\(R^2=9+1=10\)．\par\noindent 设\(C(m,n)\)：重心\(((m-4)/3, (n+4)/3)\)在欧拉线上，得\(m-n-2=0\)；\(|O'C|^2=10\)，即\((m+1)^2+(n-1)^2=10\)，展开\(m^2+n^2+2m-2n=8\)．代入\(n=m-2\)：\(2m^2-4m=0\)，\(m=0\)或\(2\)，\(C(2,0)\)或\((0,-2)\)，C对；\par\noindent 重心为\((-2/3, 4/3)\)或\((-4/3, 2/3)\)，A所给数值错，A错；\par\noindent 垂心：由欧拉关系\(H=3G-2O'\)（\(G\)为重心）：\(C(2,0)\)时\(H=3(-2/3, 4/3)-2(-1,1)=(0,2)\)；\(C(0,-2)\)时\(H=3(-4/3, 2/3)-2(-1,1)=(-2,0)\)．（直接验证\(C(2,0)\)情形：\(AC\)水平，过\(B\)的高为\(x=0\)；过\(C\)垂直\(AB\)的高为\(y=-x+2\)，交点\((0,2)\)．）B对；\par\noindent 面积比：\(AB\)即\(x-y+4=0\)与欧拉线平行，\(C(2,0)\)到欧拉线距离\(4/\sqrt{2}\)，到\(AB\)距离\(6/\sqrt{2}\)，相似比\(2/3\)，小三角形与大三角形面积比\(4/9\)，故两部分之比\(4:5\)，即\(4/5\)，D对．选：BCD．}
+\end{ansblock}}
+
+\liB{变式\textbf{16}}{中偏难(知识点三)}{}{（提示：本题第(2)问求高（点到直线的距离）用到§2.2.4点到直线的距离公式（06B 课时内容，位于本课时之后），供已提前选学该内容的学生使用；未学时可用「等积法」（\(S=(1/2)|BC|\cdot h\)，\(h\)为\(BC\)边上的高，由顶点坐标直接算得）求面积，或待学完 06B 后回做．）已知\(\triangle ABC\)的三个顶点的坐标是\(A(1,1)\)，\(B(2,3)\)，\(C(3,-2)\)．}
+
+\bindp (1) 求\(BC\)边所在直线的方程；
+
+\bindp (2) 求\(\triangle ABC\)的面积．
+\xiexwei{10mm}
+
+\begin{ansblock}[2章-练-课时06-T16]
+% ans:2章-练-课时06-T16
+\ansitem{16}{(1) 5x+y−13=0；(2) 7/2}
+\ansnote{详解}{(1) \(k_{BC}=(-2-3)/(3-2)=-5\)，\(y-3=-5(x-2)\)，即\(5x+y-13=0\)；\par\noindent (2) \(|BC|=\sqrt{1+25}=\sqrt{26}\)，\(A\)到\(BC\)的距离\(d=|5\times1+1-13|/\sqrt{26}=7/\sqrt{26}\)，故\(S=(1/2)\times\sqrt{26}\times(7/\sqrt{26})=7/2\)．}
+\end{ansblock}
+
+\xiaojie{①识别：以含参直线恒过定点、直线系方向全覆盖、距离（面积）最值为目标的问题，判归本题型；距离公式属§2.2.4（06B 课时），未学者按题首提示先行第①空或用等积法.}
+\bindp {\kaishu ②操作：含参直线按参数整理为\(A(x,y)+\lambda B(x,y)=0\)令两因式同零解定点；定点钉住后画旋转线束，垂线段即最远距离；多选逐项独立判定再汇总.}
+\bindp {\kaishu ③收束：定点（定值）结论回代原式验算；两空（两问）分别作答；需选学内容按提示分步完成，学完 06B 后回做第②空收口.}
+
+% ============================================================
+% 课堂评价 G5（恒5＝3单选+2填空＝导槽 G1~G5；ketang 新制顺排可跨栏，禁 \vbox 装栏）
+% 印面号 17—21；多选门：本片正文多选 2（T8/T10＝变式14/15）≤2 合规
+% ============================================================
+\begin{ketang}{本组共5题（第17—21题），17—19为单选，20—21为填空．}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 17}．}\hspace{4.1mm}\tieside{中档(知识点一)}\hspace{2.2mm}直线\(l_1\)的倾斜角为\(135^\circ\)，直线\(l_2\)经过点\(P(-2,-1)\)，\(Q(3,-6)\)，则直线\(l_1\)与\(l_2\)的位置关系是\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．垂直}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．平行}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．重合}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．平行或重合}}\par
+
+\begin{ansblock}[2章-导-课时06-G1]
+% ans:2章-导-课时06-G1
+\ansitem{17}{D}
+\ansnote{详解}{\(k_1=\tan135^\circ=-1\)；\(k_2=(-6-(-1))/(3-(-2))=-5/5=-1\)．两斜率相等，但仅凭斜率相等不能排除重合（题面未给两点异于\(l_1\)的信息），故\(l_1\)与\(l_2\)平行或重合．选：D．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 18}．}\hspace{4.1mm}\tieside{中档(知识点一)}\hspace{2.2mm}直线\(l_1: ax+2y-1=0\)与\(l_2: x+(a-1)y+a^2=0\)平行，则\(a=\)\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{A．\(-1\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{B．\(2\)}}\par
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.5\linewidth-1em\relax][l]{C．\(-1\)或\(2\)}\makebox[\dimexpr0.5\linewidth-1em\relax][l]{D．\(0\)或\(1\)}}\par
+
+\begin{ansblock}[2章-导-课时06-G2]
+% ans:2章-导-课时06-G2
+\ansitem{18}{B}
+\ansnote{详解}{平行\(\iff a(a-1)-2\times1=0\)，即\(a^2-a-2=0\)，\(a=2\)或\(a=-1\)．检验：\(a=-1\)时两直线分别为\(-x+2y-1=0\)与\(x-2y+1=0\)，系数成比例，重合，舍；\(a=2\)时两直线\(2x+2y-1=0\)与\(x+y+4=0\)平行不重合．故\(a=2\)，选：B．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 19}．}\hspace{4.1mm}\tieside{简单(知识点二)}\hspace{2.2mm}若直线\(y=2x+10\)，\(y=x+1\)，\(y=ax-2\)交于一点，则\(a\)的值为\nobreak(\kongwei)}
+
+\bindopt {\fontsize{10.5pt}{\qpTJgLeadPingjia}\selectfont \makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{A．\(1/2\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{B．\(-1/2\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{C．\(2/3\)}\makebox[\dimexpr0.25\linewidth-0.5em\relax][l]{D．\(-2/3\)}}\par
+
+\begin{ansblock}[2章-导-课时06-G3]
+% ans:2章-导-课时06-G3
+\ansitem{19}{C}
+\ansnote{详解}{联立\(y=2x+10\)与\(y=x+1\)：\(x=-9\)，\(y=-8\)，交点\((-9,-8)\)．代入\(y=ax-2\)：\(-8=-9a-2\)，得\(a=2/3\)，选：C．}
+\end{ansblock}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 20}．}\hspace{4.1mm}\tieside{中档(知识点二)}\hspace{2.2mm}已知直线\(l\)被两条直线\(l_1: 4x+y+3=0\)与\(l_2: 3x-5y-5=0\)截得的线段的中点为\(P(-1,2)\)，则直线\(l\)的一般式方程为\kongbai{}．}
+\xiexwei{7mm}
+
+{\ansblockgrayfalse
+\begin{ansblock}[2章-导-课时06-G5]
+% ans:2章-导-课时06-G5
+\ansitem{20}{3x+y+1=0}
+\ansnote{详解}{设\(l\)与\(l_1\)、\(l_2\)分别交于\(A\)、\(B\)，\(P(-1,2)\)为\(AB\)中点．设\(A=P+(u,v)\)，则\(B=P-(u,v)\)．\(A\in l_1\)：\(4(-1+u)+(2+v)+3=0\)，即\(4u+v+1=0\)；\(B\in l_2\)：\(3(-1-u)-5(2-v)-5=0\)，即\(-3u+5v-18=0\)．由\(v=-4u-1\)代入第二式：\(-23u-23=0\)，\(u=-1\)，\(v=3\)．故\(l\)的斜率\(k=v/u=-3\)，过\(P\)：\(y-2=-3(x+1)\)，即\(3x+y+1=0\)．（验：\(A(-2,5)\)代入\(l_1\)：\(-8+5+3=0\)，\(B(0,-1)\)代入\(l_2\)：\(0+5-5=0\)，中点为\((-1,2)=P\)，且\(A\)、\(B\)均在\(l\)上．）}
+\end{ansblock}}
+
+\jiancestem{{\fontsize{11.4pt}{14pt}\selectfont\heihao {\numboldjian 21}．}\hspace{4.1mm}\tieside{简单(知识点一)}\hspace{2.2mm}若直线\(x=1-2y\)与\(2x+4y+m=0\)重合，则\(m=\)\kongbai{}．}
+% 注：末题书写位压缩 7→3mm（真档末栏紧态，尾块底线曾被截；探针对照 05 片同类处置）
+\xiexwei{3mm}
+
+\begin{ansblock}[2章-导-课时06-G4]
+% ans:2章-导-课时06-G4
+\ansitem{21}{−2}
+\ansnote{详解}{\(x=1-2y\)即\(x+2y-1=0\)；\(2x+4y+m=0\)即\(x+2y+m/2=0\)．重合\(\iff\)两方程完全相同，故\(m/2=-1\)，\(m=-2\)．}
+\end{ansblock}
+
+\end{ketang}
+
+% ---- 尾块（\tailfill 置 \end{multicols} 前；无参＝内容尾随框，件侧不擅自定高） ----
+\tailfill
+
+\end{multicols}
+\end{document}

@@ -1,0 +1,12 @@
+
+----stderr----
+Traceback (most recent call last):
+  File "C:\提示词\工具\答案抽册器.py", line 920, in <module>
+    main()
+  File "C:\提示词\工具\答案抽册器.py", line 847, in main
+    led_vals, led_nums, led_path, led_kind = load_ledger(piece_dir)
+                                             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\提示词\工具\答案抽册器.py", line 253, in load_ledger
+    vt = {it['键']: it.get('值tex') for it in items}
+          ~~^^^^^^
+KeyError: '键'

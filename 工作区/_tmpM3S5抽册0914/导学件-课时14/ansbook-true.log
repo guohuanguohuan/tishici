@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 12:28
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1298,33 +1298,6 @@ M3-ANSKEY: 2章-拓-课时14-33-4
 M3-ANSKEY: 2章-拓-课时14-33-5
 M3-ANSKEY: 2章-拓-课时14-33-6
 M3-ANSKEY: 2章-拓-课时14-33-7
-! Missing $ inserted.
-<inserted text> 
-                $
-l.530 ...15/4；(2) 双曲线中 k_AB·k_OM=b²/a²（定值），证明见解析。}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.530 ...15/4；(2) 双曲线中 k_AB·k_OM=b²/a²（定值），证明见解析。}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-Missing character: There is no （ (U+FF08) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 定 (U+5B9A) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 值 (U+503C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ） (U+FF09) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no ， (U+FF0C) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 证 (U+8BC1) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 明 (U+660E) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 见 (U+89C1) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 解 (U+89E3) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 析 (U+6790) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
-Missing character: There is no 。 (U+3002) in font [texgyretermes-math.otf]/OT:script=math;language=dflt;!
 [9]
 M3-ANSKEY: 2章-拓-课时14-33-8
 M3-ANSKEY: 2章-拓-课时14-33-9

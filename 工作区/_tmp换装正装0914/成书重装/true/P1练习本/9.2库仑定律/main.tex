@@ -1,0 +1,279 @@
+% —— 换装正装波4b 件（由 main.src.tex 机器迁移生成；正件只读对照；拓-31 改制仅本件）——
+% ============================================================
+% 练习件/9.2库仑定律/main.tex —— P1 轮4 成卷·批2（9.2 库仑定律 练习件，答案制A·正文侧）
+% 题源＝定稿-9.2 §1.2 槽位表 16 槽，卷面题号 1~16 照槽序：
+%   题1←简1（简4·源Q14）｜题2＝【空槽】原中4（源Q16）转 9.2 导学件例位照用（防双收维持·主脑提醒口径），
+%     版式留空不凑题｜题3←简3（简5·源Q22·多选）｜题4←简4（中5·源Q17）｜题5←简5（中7·源Q20）
+%   题6←简6（简6·源Q32）｜题7←简7（47题15·块18）｜题8←简8（中9·源Q24）｜题9←简9（中14·源Q29）
+%   题10←简10（命制-P1-9.2-简-1）｜题11←中1（中8·源Q23）｜题12←中2（中11·源Q26）｜题13←中3（中13·源Q34·多选）
+%   题14←中4（中16·源Q35）｜题15←难1（47题10·块13）｜题16←难2（47题11·块14）。
+% 题面抽切＝dump_docx --slice（简单卷 104:153／中档卷 39:158＋159:302／47讲 206:263＋328:335；
+%   中间件 工作区/_tmpP1成卷0912/批2/）；命制题面照 命制-9.2+9.3-三题-题面.md；答案制A——【答案/难度/知识点/详解】全撤出正文。
+% 用题必办执行（定稿-9.2 §六）：①中5 符号统一 kq²/16r²→kQ²/16r²（题4）②中11 构型核项＝题面补注「P与Q带异种电荷」（题12，
+%   吸力构型锁读法）③中14 选项脱符修复 m₁²/m₂²（题9）；中13「出于→处于」属详解侧（答案册轮）；中16 环C在B正下方
+%   构型＝题图[元280] 已示（题14）。
+% 图源（word/media 原样提取仅改名，零加工）：题1←简单卷[元107]｜题3←[元119]｜题4←中档卷[元55]｜题5←[元83]｜
+%   题6←简单卷[元138]｜题7←47讲[元329]｜题8←中档卷[元116]｜题9←[元232]｜题11←[元96]｜题12←[元160]｜
+%   题13←[元209]｜题14←[元280]｜题15←47讲[元207]｜题16←47讲[元226]。中5/中6 间[67]【图】页核结论＝源件「易错警示」
+%   栏目卡（非题图），不入件；详解辅图（中11[元167]、47题10[元214]）为答案册轮备料（_tmp …/批2/）。
+% 版式＝PL1 练习件样张（三档 基础巩固1~10／综合提升11~14／思维探索15~16；形制 B 练习册档页脚；件型词＝练习）；
+%   限时行照批1 试值档（40 分钟档，选择 4 分/计算 8 分），总分＝12×4＋3×8＝72（本件题型构成 12选＋3计算，总额随构成）。
+% 件型层宏登记：\dangbadge／\tihao／\lxopt／\tielue（略题行，承 PL1 样张）／\xiexwei／\xszongline。
+% 编译：xelatex ×2（三 0）；目验：python 工作区/物理样张0911/骨架/render.py . main 150。
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-fonts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-layout.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-parts.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-headfoot.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-titles.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-blocks.tex}
+\input{C:/提示词/工作区/物理样张0911/骨架/qp-figs.tex}
+
+% —— 换装 overlay 挂接（换装正装波4b；七模块后、\begin{document} 前；sty 本地挂载 md5 da54d841）——
+\usepackage{qp-m3p-overlay}
+
+% ---------- 件型层参数（单点件默认值按需覆盖） ----------
+\renewcommand{\qpzhangming}{第9章\quad 静电场及其应用}
+\renewcommand{\qpjianming}{练习}
+\qpFooterBlockLX   % 形制 B＝练习册档 31.0mm 灰块页脚（批1 及 PL1 样张同款）
+
+% ---------- HX-01 花形·三档名（练习册版，无底线无右词） ----------
+\newcommand{\huadianOverlapLx}{-5.1mm}
+\newcommand{\dangbadge}[4]{\par\glueguard{0}\addvspace{2.4mm}\noindent
+  \huadia{#1}\hspace{\huadianOverlapLx}\huadia{#2}\hspace{\huadianOverlapLx}\huadia{#3}\hspace{\huadianOverlapLx}\huadia{#4}%
+  \par\addvspace{2.6mm}}
+
+% ---------- TJ-02 练习册悬挂题号（单号 5.75mm／双位 7.6mm） ----------
+\newlength{\lxhang}
+\newcommand{\tihao}[1]{\par\glueguard{1}%
+  \ifnum#1>9\setlength{\lxhang}{7.6mm}\else\setlength{\lxhang}{5.75mm}\fi
+  \noindent\hangindent=\lxhang\hangafter=0
+  \llap{\hbox to\lxhang{\textbf{#1.}\hss}}}
+\newcommand{\lxopt}[1]{\par\noindent\hangindent=\lxhang\hangafter=0
+  {\fontsize{10.5pt}{\qpTJgLeadLiti}\selectfont #1\par}}
+% ---------- 略题行（承 PL1 练习件样张 \tielue） ----------
+\newcommand{\tielue}[1]{\par\glueguard{1}{\noindent\fontsize{10.5pt}{18pt}\selectfont（#1）\par}}
+% ---------- 书写位（承 M2 批产口径） ----------
+\newcommand{\xiexwei}[1]{\par\nobreak\vspace{#1 minus 3mm}}
+% ---------- 限时总量行＋小题分值说明行（沿 PL1 练习件样张） ----------
+\newcommand{\xszongline}[3]{\par\addvspace{0.9mm}%
+  {\centering
+   {\fontsize{10.5pt}{16pt}\selectfont（时间：#1\quad 总分：#2）\par}%
+   \vspace{0.3mm}%
+   {\fontsize{10.5pt}{16pt}\selectfont（#3）\par}%
+   \vspace{1.6mm}}}
+
+\begin{document}
+%成书重装五本跨本连续页码（G7方案B，承M2/M3装配先例）setcounter 注入位
+\setcounter{page}{26}
+
+% ===== 课时标题＋限时总量行（通栏，multicols 外） =====
+\keshi{第1课时\quad 库仑定律}
+\xszongline{40 分钟}{72 分}{选择题每小题 4 分\quad 计算题每小题 8 分}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+% ============ 基础巩固（简单档 1~10） ============
+\dangbadge{基}{础}{巩}{固}
+
+\tihao{1}\tieside{简单(选择题)}A、B、C三点在同一直线上，$AB:BC=1:1$，B点位于A、C之间，在A处固定一电荷量为$Q$的点电荷。当在B处放一电荷量为$-q$的点电荷时，$Q$所受的静电力为$F$；移去B处电荷，在C处放一电荷量为$-2q$的点电荷，则$Q$所受的静电力为\nobreak(\kongwei)
+
+\qpfig[62]{题1-共线三点ABC}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．$\frac{F}{8}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．$\frac{F}{4}$；}}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．$\frac{F}{2}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．$F$}}
+\begin{ansblock}[练-课时92-1]
+% ans:练-课时92-1
+\ansitem{1}{C（$\dfrac{F}{2}$）}
+\end{ansblock}
+
+\tielue{第 2 题略}
+
+\tihao{3}\duoxuan\tieside{简单(选择题)}如图所示，光滑绝缘水平面上有三个带电小球A、B、C（均可视为点电荷），三球沿一条直线摆放，仅受它们相互之间的静电力，三球均处于静止状态，$AB$和$BC$小球间的距离分别是$r_1$、$r_2$，则以下判断正确的是\nobreak(\kongwei)
+
+\qpfig[62]{题3-三球直线布置}
+
+\lxopt{A．A、C两个小球可能带异种电荷；}
+\lxopt{B．三个小球的电荷量大小为$Q_C>Q_A>Q_B$；}
+\lxopt{C．摆放这三个小球时，可以先固定C球，摆放A、B使其能处于静止状态，再释放C球；}
+\lxopt{D．$\frac{r_1}{r_2}=\frac{Q_A}{Q_C}$}
+\begin{ansblock}[练-课时92-3]
+% ans:练-课时92-3
+\ansitem{3}{BC}
+\end{ansblock}
+
+\tihao{4}\tieside{简单(选择题)}如图所示，真空中两个带电金属球半径均为$r$，两球心间距离为$4r$，所带电荷量大小相等，均为$Q$。关于它们之间电荷的相互作用力大小$F$，下列说法正确的是\nobreak(\kongwei)
+
+\qpfig[45]{题4-两球心距4r}
+
+\lxopt{A．若带同种电荷，$F>\frac{kQ^2}{16r^2}$；}
+\lxopt{B．若带异种电荷，$F<\frac{kQ^2}{16r^2}$；}
+\lxopt{C．若带同种电荷，$F<\frac{kQ^2}{16r^2}$；}
+\lxopt{D．无论带何种电荷，$F<\frac{kQ^2}{16r^2}$}
+\begin{ansblock}[练-课时92-4]
+% ans:练-课时92-4
+\ansitem{4}{C}
+\end{ansblock}
+
+\tihao{5}\tieside{简单(选择题)}如图所示，三个完全相同的金属小球$a$、$b$、$c$位于等边三角形的三个顶点上。$a$和$c$带正电，$b$带负电，$a$所带的电荷量比$b$所带的电荷量小。已知$c$受到$a$和$b$的静电力的合力可用图中四条有向线段中的一条来表示，它应是\nobreak(\kongwei)
+
+\qpfig[42]{题5-等边三角合力四线}
+
+\lxopt{\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{A．$F_1$；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{B．$F_2$；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{C．$F_3$；}\makebox[\dimexpr0.25\linewidth-0.25\lxhang-0.25em\relax][l]{D．$F_4$}}
+\begin{ansblock}[练-课时92-5]
+% ans:练-课时92-5
+\ansitem{5}{B（$F_{2}$）}
+\end{ansblock}
+
+\tihao{6}\tieside{简单(选择题)}如图所示，把一个带电小球A固定在光滑的绝缘水平桌面上，在桌面的另一处放置带电小球B，现给小球B一个垂直A、B连线方向的速度$v_0$，使其在水平桌面上运动，则下列说法中正确的是\nobreak(\kongwei)
+
+\qpfig[45]{题6-固定球与垂直初速}
+
+\lxopt{A．若A、B带同种电荷，B球可能做速度减小的曲线运动；}
+\lxopt{B．若A、B带同种电荷，B球一定做加速度增大的曲线运动；}
+\lxopt{C．若A、B带异种电荷，B球一定做匀变速曲线运动；}
+\lxopt{D．若A、B带异种电荷，B球可能做速度大小和加速度大小都不变的曲线运动}
+\begin{ansblock}[练-课时92-6]
+% ans:练-课时92-6
+\ansitem{6}{D}
+\end{ansblock}
+
+\tihao{7}\tieside{简单(选择题)}“顿牟缀芥”是东汉王充在《论衡·乱龙篇》中记载的摩擦起电现象，意指摩擦后的带电琥珀能吸引轻小物体。现做如下简化：在某处固定一个电荷量为$Q$的带正电的点电荷，在其正下方$h$处有一个原子。在点电荷的电场的作用下原子的负电荷中心与正电荷中心会分开很小的距离$l$。点电荷与原子之间产生作用力$F$。你可能不会求解$F$，但是你可以通过物理分析进行判断，关于$F$的表达式，可能正确的是（式中$k$为静电力常量）\nobreak(\kongwei)
+
+\qpfig[18]{题7-点电荷与原子极化}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．$F=0$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．$F=\frac{kQq}{l^2}$；}}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．$F=\frac{2kQq}{h^2}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．$F=\frac{2kQql}{h^3}$}}
+\begin{ansblock}[练-课时92-7]
+% ans:练-课时92-7
+\ansitem{7}{D（$\dfrac{2kQql}{h^{3}}$）}
+\end{ansblock}
+
+\tihao{8}\tieside{中档(计算题)}如图所示，把电荷量$q_1=2\times10^{-6}\,\unit{C}$、质量$m_1=0.9\,\unit{kg}$的带正电小球用绝缘细线悬挂在水平天花板上，带正电的物块放置在倾角$\theta=37^\circ$的光滑固定斜面上。当小球与物块间的连线水平且细线与水平方向的夹角为$37^\circ$时，小球与物块均静止，此时两者之间的距离$d=0.3\,\unit{m}$。已知静电力常量$k=9.0\times10^{9}\,\unit{N\cdot m^2/C^2}$，小球及物块均可视为点电荷，重力加速度大小$g=10\,\unit{m/s^2}$，$\sin37^\circ=0.6$，$\cos37^\circ=0.8$。求：
+\lxopt{（1）小球与物块间的库仑力大小$F_1$；}
+\lxopt{（2）物块的电荷量大小$q_2$；}
+\lxopt{（3）物块的质量$m_2$。}
+\qpfig[55]{题8-悬球与斜面块}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时92-8]
+% ans:练-课时92-8
+\ansitem{8}{(1) $F_{1}=12\,\unit{N}$；(2) $q_{2}=6\times10^{-5}\,\unit{C}$；(3) $m_{2}=1.6\,\unit{kg}$}
+\end{ansblock}
+
+\tihao{9}\tieside{中档(选择题)}如图所示，在绝缘且光滑水平地面上有两个带异种电荷的小球A、B，质量分别为$m_1$、$m_2$，带电量分别为$q_1$、$q_2$，当用力$F$向右拉着A时，A、B小球共同运动，两小球之间的间距为$x_1$。当用力$F$向左拉着B时，A、B小球共同运动，两小球之间的间距为$x_2$，则$x_1$和$x_2$的比值为\nobreak(\kongwei)
+
+\qpfig[48]{题9-双球双向拖拽}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．$\frac{m_1^2}{m_2^2}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．$\frac{m_1}{m_2}$；}}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．$\sqrt{\frac{m_1}{m_2}}$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．$\frac{q_1}{q_2}$}}
+\begin{ansblock}[练-课时92-9]
+% ans:练-课时92-9
+\ansitem{9}{C（$\sqrt{\dfrac{m_{1}}{m_{2}}}$）}
+\end{ansblock}
+
+\tihao{10}\tieside{简单(选择题)}真空中两个完全相同的金属小球A、B（可视为点电荷），分别带有电荷量$+2.0\times10^{-8}\,\unit{C}$和$+4.0\times10^{-8}\,\unit{C}$，两球相距$r$。先使两球相互接触，再分开并放回原处。设接触前两球间静电力的大小为$F$，接触后为$F'$，则$F':F$等于\nobreak(\kongwei)
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{A．$8:9$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{B．$1:1$；}}
+
+\lxopt{\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{C．$9:8$；}\makebox[\dimexpr0.5\linewidth-0.5\lxhang-0.25em\relax][l]{D．$9:4$}}
+\ansblockgrayfalse % 括线模：长详解块（判据 草案§1.2.5，估高 22 行）
+\begin{ansblock}[练-课时92-10]
+% ans:练-课时92-10
+\setlength{\anshang}{7.6mm}% 题10 起双位档（body.tex 册载同值，块内局部）
+\ansitem{10}{C（$9:8$）}\ansnote{详解}{\textbf{第一步（接触均分，9.1 前序工具）}：A、B 为两个完全相同的金属球，接触后电荷重新分配并均分。接触前两球带\textbf{同种}电荷，不发生中和，总电荷量＝$(+2.0\times10^{-8}\,\unit{C})+(+4.0\times10^{-8}\,\unit{C})=+6.0\times10^{-8}\,\unit{C}$；分开后每球带 $+3.0\times10^{-8}\,\unit{C}$。\par \textbf{第二步（库仑定律两次代入取比，教材第8页）}：放回原处，间距仍为 $r$，故接触前 $F=kq_{1}q_{2}/r^{2}=k\times(2.0\times10^{-8})\times(4.0\times10^{-8})/r^{2}=k\times8.0\times10^{-16}/r^{2}$；接触后 $F'=kq'^{2}/r^{2}=k\times(3.0\times10^{-8})^{2}/r^{2}=k\times9.0\times10^{-16}/r^{2}$。\par $k$、$r$ 均不变，故 $\mathbf{F':F=9.0:8.0=9:8}$——接触均分不改变电荷\textbf{总量}（$+6.0\times10^{-8}\,\unit{C}$ 不变），但把两球电荷量的\textbf{乘积}从 8.0 个（$10^{-8}\,\unit{C}$）$^{2}$ 变为 9.0 个（$10^{-8}\,\unit{C}$）$^{2}$，静电力变大。\par 逐项判伪：A（$8:9$）把比值取反（算成 $F:F'$）；B（$1:1$）落入「接触只使电荷总量不变、误以为电荷量乘积也不变因而力不变」的迷思——总量守恒与乘积守恒是两回事；D（$9:4$）把接触前的力误取为只与小球 A 的电荷量比较（$3^{2}/2^{2}$），漏掉了乘积 $q_{1}q_{2}$ 中的 $q_{2}$。故选 C。}
+\end{ansblock}
+\ansblockgraytrue %% ─ 括线模束
+
+% ============ 综合提升（中档档 11~14） ============
+\dangbadge{综}{合}{提}{升}
+
+\tihao{11}\tieside{中档(计算题)}在真空中的某直线上依次固定三个点电荷A、B、C，所带电荷量分别为$-q$、$2q$、$-3q$（$q>0$），A、B两点电荷之间的距离为$d$，B、C两点电荷之间的距离为$2d$。静电力常量为$k$。
+\lxopt{（1）求点电荷B所受库仑力的大小与方向；}
+\lxopt{（2）若点电荷B不固定，仅改变点电荷B的位置，结果点电荷B在点电荷A、C的库仑力作用下保持静止，求点电荷B静止时与点电荷A之间的距离$L$。}
+\qpfig[60]{题11-共线三电荷距离图}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时92-11]
+% ans:练-课时92-11
+\setlength{\anshang}{7.6mm}% 题11 起双位档（body.tex 册载同值，块内局部）
+\ansitem{11}{(1) $F=\dfrac{kq^{2}}{2d^{2}}$，方向由 B 指向 A；(2) $L=\dfrac{3(\sqrt{3}-1)d}{2}$}
+\end{ansblock}
+
+\tihao{12}\tieside{中档(选择题)}如图所示，带电小球P（与Q带异种电荷）固定在绝缘竖直墙壁上，绝缘轻绳将带电小球Q悬挂于O点，Q静止时，轻绳与竖直方向成$\theta$角（$\theta<45^\circ$），且P、Q在同一水平线上，此时轻绳的拉力为$F_1$。现将P沿竖直墙壁缓慢向上移动，并调整P的电荷量，保持Q的位置不动，当P、Q连线与水平方向成$\theta$角时，轻绳的拉力变为$F_2$。则\nobreak(\kongwei)
+
+\qpfig[42]{题12-墙球与悬球两态}
+
+\lxopt{A．P对Q的作用力一直增大；}
+\lxopt{B．轻绳的拉力始终大于球的重力；}
+\lxopt{C．移动P的同时应减小P的电荷量；}
+\lxopt{D．轻绳的拉力$F_2=F_1\cos^2\theta$}
+\begin{ansblock}[练-课时92-12]
+% ans:练-课时92-12
+\setlength{\anshang}{7.6mm}% 题12 起双位档（body.tex 册载同值，块内局部）
+\ansitem{12}{D（$F_{2}=F_{1}\cos^{2}\theta$）}
+\end{ansblock}
+
+\tihao{13}\duoxuan\tieside{中档(选择题)}如图所示，光滑绝缘细杆竖直固定放置，与以电荷量为$+Q$的点电荷为圆心、半径为$\sqrt{3}L$的圆交于B、C两点，质量为$m$、带电荷量也为$+Q$的有孔小球，从杆上的A点无初速度滑下，一直加速向下运动。已知$AB=BC=3L$，BC的中点为D，静电力常量为$k$，重力加速度为$g$，下列说法正确的是\nobreak(\kongwei)
+
+\qpfig[32]{题13-竖杆割圆}
+
+\lxopt{A．小球在A、D两点均处于完全失重状态；}
+\lxopt{B．小球在B点受到的库仑力与竖直杆的夹角为$30^\circ$；}
+\lxopt{C．在B点杆对小球的弹力大小为$\frac{kQ^2}{3L^2}$；}
+\lxopt{D．小球在C点的加速度大小为$g+\frac{\sqrt{3}kQ^2}{6mL^2}$}
+\begin{ansblock}[练-课时92-13]
+% ans:练-课时92-13
+\setlength{\anshang}{7.6mm}% 题13 起双位档（body.tex 册载同值，块内局部）
+\ansitem{13}{BD}\ansnote{详解}{中13 详解侧勘正：错字「出于」→「处于」（用题必改义务，答案值不涉）。}
+\end{ansblock}
+
+\tihao{14}\tieside{中档(计算题)}如图所示，两个带正电小球A、B固定在同一水平线上，长为$3L$的光滑绝缘细线穿过带正电的小环C，两端分别连接在A、B球上，小环C静止时BC竖直，AC与AB的夹角为$30^\circ$，已知A、B、C的带电量分别为$8q$、$q$、$q$，静电力常量为$k$，重力加速度为$g$，忽略小球和环的大小，求：
+\lxopt{（1）小环C的质量；}
+\lxopt{（2）剪断细线的一瞬间，小环C的加速度多大。}
+\qpfig[50]{题14-活结绳三角构型}
+\xiexwei{16mm}
+\begin{ansblock}[练-课时92-14]
+% ans:练-课时92-14
+\setlength{\anshang}{7.6mm}% 题14 起双位档（body.tex 册载同值，块内局部）
+\ansitem{14}{(1) $m=\dfrac{kq^{2}}{gL^{2}}$；(2) $a=2\sqrt{3}g$}
+\end{ansblock}
+
+% ============ 思维探索（难档 15~16） ============
+\dangbadge{思}{维}{探}{索}
+
+\tihao{15}\tieside{难(选择题)}如图所示，质量分别为$m_1$、$m_2$的两个带同种电荷的小球A、B，分别用长为$l$的绝缘细线悬挂在同一点O，两细线与竖直方向各成一定的角度$\alpha$、$\beta$，两小球用一绝缘轻质弹簧相接，A、B球连线与过O点竖直线交于C点，初始时刻弹簧处在压缩状态，现增加A球的电荷量，下列说法中正确的是\nobreak(\kongwei)
+
+\qpfig[48]{题15-同点双线弹簧}
+
+\lxopt{A．两细线的拉力之比变大；}
+\lxopt{B．两细线的夹角不变；}
+\lxopt{C．$AC$与$BC$的长度之比不变；}
+\lxopt{D．$OC$长度一定变大}
+\begin{ansblock}[练-课时92-15]
+% ans:练-课时92-15
+\setlength{\anshang}{7.6mm}% 题15 起双位档（body.tex 册载同值，块内局部）
+\ansitem{15}{C（AC:BC＝$m_{2}:m_{1}$ 不变）}
+\end{ansblock}
+
+\tihao{16}\tieside{难(选择题)}如图所示，质量$m_b=2\,\unit{kg}$的小物块b置于倾角为$\theta=30^\circ$的斜面体c上，通过绝缘细绳跨过光滑的定滑轮与带正电荷$Q_M=1\times10^{-6}\,\unit{C}$的小球M连接，左侧细绳与斜面平行，带负电荷$Q_N=-\frac{\sqrt{3}}{2}\times10^{-6}\,\unit{C}$的小球N用绝缘细绳悬挂于P点，两小球的质量相等。初始时刻，连接小球M的一段细绳与竖直方向的夹角$\alpha=60^\circ$且两小球之间的距离$d=3\,\unit{cm}$。设两带电小球在缓慢漏电的过程中，两球心始终处于同一水平面，且b、c都静止，放电结束后滑块b恰好没滑动，最大静摩擦力等于滑动摩擦力。静电力常量$k=9.0\times10^{9}\,\unit{N\cdot m^2/C^2}$。下列说法正确的是\nobreak(\kongwei)
+
+\qpfig[55]{题16-滑轮斜面双球链}
+
+\lxopt{A．初始状态，地面对斜面体c的摩擦力大小为$5\sqrt{3}\,\unit{N}$；}
+\lxopt{B．放电过程中，小物块b对斜面体c的摩擦力不一定变大；}
+\lxopt{C．地面对斜面体c的支持力先变小后变大；}
+\lxopt{D．小物块b和斜面体c之间的动摩擦因数为$\frac{\sqrt{3}}{3}$}
+\begin{ansblock}[练-课时92-16]
+% ans:练-课时92-16
+\setlength{\anshang}{7.6mm}% 题16 起双位档（body.tex 册载同值，块内局部）
+\ansitem{16}{A（$f_{\text{地}}=5\sqrt{3}\,\unit{N}$）}\ansnote{详解}{47题11 详解侧摩擦理据已按钉值门抽验重写（$F=5\sqrt{3}\,\unit{N}\to T=10\,\unit{N}\to\mu=\dfrac{\sqrt{3}}{6}$ 四级链全复算在案，批2值台账 §四）；答案值不涉。}
+\end{ansblock}
+
+\tailfill
+
+\end{multicols}
+\end{document}
