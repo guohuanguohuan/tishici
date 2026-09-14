@@ -340,8 +340,10 @@ def migrate_tuo(kmap, notes):
 # ========== ⑤ 拓-31 窄栏改制 4 处（仅迁后 main.tex；main.src.tex 保持原样） ==========
 RE_Z31 = re.compile(r'^\\lxopt\{[A-D]．\$E=\\left\|')
 # 断点原方＝负号后插 \allowbreak；首跑实证：\left|…\right| 系 inner atom 不可断（压测 Overfull 29.1~71.4pt 四行原样）。
-# 升级＝\right.-\allowbreak\left. 中裂式：两 \frac 分属两个 inner atom、负号升为真 bin 断点（可断）；
-# 84mm 不触发断行＋定界符按半式取径＝整式同高（两半结构对称）→ 印面零漂由页级对勘 pure 像素门机械证。
+# v2＝\right.-\allowbreak\left. 中裂式；二跑实证：空定界符各吃 \nulldelimiterspace 1.2pt → 84mm 面 X 向 +1.2/+2.4pt 漂。
+# v3（终）＝行内 $ 后局部 \nulldelimiterspace=0pt ＋中裂式：真 bin 断点（窄栏得断）＋空定界零宽（印面零漂，
+#   像素门机械证）。定界符尺寸两半＝整式同高（结构对称），Y 向实证零漂（负号 y 坐标逐字相同）。
+Z31_PRE = ('$E=\\left|', '$\\nulldelimiterspace=0pt E=\\left|')
 Z31_OLD, Z31_NEW = '}-\\frac', '}\\right.-\\allowbreak\\left.\\frac'
 
 
@@ -352,11 +354,11 @@ def reform_z31(out):
     reg = []
     for i in hits:
         old = lines[i]
-        assert old.count(Z31_OLD) == 1, '拓-31 行 %d 负号位≠1' % (i + 1)
-        lines[i] = old.replace(Z31_OLD, Z31_NEW, 1)
+        assert old.count(Z31_OLD) == 1 and old.count(Z31_PRE[0]) == 1, '拓-31 行 %d 锚位≠1' % (i + 1)
+        lines[i] = old.replace(Z31_PRE[0], Z31_PRE[1], 1).replace(Z31_OLD, Z31_NEW, 1)
         reg.append((i + 1, old.strip(), lines[i].strip()))
     out2 = ''.join(lines)
-    assert out2.replace(Z31_NEW, Z31_OLD) == out, '改制不可逆核验失败'
+    assert out2.replace(Z31_NEW, Z31_OLD).replace(Z31_PRE[1], Z31_PRE[0]) == out, '改制不可逆核验失败'
     return out2, reg
 
 
