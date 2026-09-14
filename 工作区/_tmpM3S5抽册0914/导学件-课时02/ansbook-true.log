@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 12:27
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,6 +1156,20 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
+(fontspec)             Font family 'NSC-w315.ttf(0)' created for font
+(fontspec)             'NSC-w315.ttf' with options
+(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},BoldFont={NSC-w315.ttf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w315.ttf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w315.ttf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
 (fontspec)             Font family 'NotoSansSC-Medium.otf(1)' created for font
 (fontspec)             'NotoSansSC-Medium.otf' with options
 (fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},BoldFont={NotoSansSC-Bold.otf}].
@@ -1234,8 +1248,8 @@ M3-ANSKEY: 2章-练-课时02-E13
 M3-ANSKEY: 2章-拓-课时02-T1
 M3-ANSKEY: 2章-拓-课时02-T2
 M3-ANSKEY: 2章-拓-课时02-T3
-M3-ANSKEY: 2章-拓-课时02-T4
 [2]
+M3-ANSKEY: 2章-拓-课时02-T4
 M3-ANSKEY: 2章-导-课时02-G1
 M3-ANSKEY: 2章-导-课时02-G2
 M3-ANSKEY: 2章-导-课时02-G3
@@ -1248,11 +1262,11 @@ L3 programming layer <2026/08/11>
  ***********
  ) ) 
 Here is how much of TeX's memory you used:
- 25286 strings out of 469768
- 593661 string characters out of 5466040
- 1126167 words of memory out of 5000000
- 53866 multiletter control sequences out of 15000+600000
- 631915 words of font info for 138 fonts, out of 8000000 for 9000
+ 25296 strings out of 469768
+ 594158 string characters out of 5466040
+ 1131167 words of memory out of 5000000
+ 53874 multiletter control sequences out of 15000+600000
+ 631923 words of font info for 139 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  112i,16n,124p,1279b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

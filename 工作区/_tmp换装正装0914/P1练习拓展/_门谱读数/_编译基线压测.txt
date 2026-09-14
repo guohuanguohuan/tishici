@@ -3,17 +3,7 @@
 9.3电场电场强度 main.src exit=0,0 err=0 overfull=0 misschar=0
 9.4静电的防止与利用 main.src exit=0,0 err=0 overfull=0 misschar=0
 拓展册 main.src exit=0,0 err=0 overfull=0 misschar=0
-拓展册 压测A-三栏灰底 exit=0,0 err=0 overfull=4 misschar=0
+拓展册 压测A-三栏灰底 exit=0,0 err=0 overfull=0 misschar=0
 拓展册 压测B-两栏括线 exit=0,0 err=0 overfull=0 misschar=0
-拓展册 压测C-三栏括线 exit=0,0 err=0 overfull=4 misschar=0
+拓展册 压测C-三栏括线 exit=0,0 err=0 overfull=0 misschar=0
 BATCH_DONE
-9.1电荷 main-true err=0 overfull=0 misschar=0
-9.1电荷 main-pure err=0 overfull=0 misschar=0
-9.2库仑定律 main-true err=0 overfull=0 misschar=0
-9.2库仑定律 main-pure err=0 overfull=0 misschar=0
-9.3电场电场强度 main-true err=0 overfull=0 misschar=0
-9.3电场电场强度 main-pure err=0 overfull=0 misschar=0
-9.4静电的防止与利用 main-true err=0 overfull=0 misschar=0
-9.4静电的防止与利用 main-pure err=0 overfull=0 misschar=0
-拓展册 main-true err=0 overfull=0 misschar=0
-拓展册 main-pure err=0 overfull=0 misschar=0

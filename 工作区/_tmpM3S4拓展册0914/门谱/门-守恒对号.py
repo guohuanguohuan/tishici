@@ -7,8 +7,9 @@ r"""门-守恒对号.py — M3 S4 拓展册·答案块守恒断言（双档双�
   ①tex 层：行首注释锚 % ans:键 ≡ ansblock[键] ≡ 台账键序（序列逐位，非仅集合）；
       \ansitem 席号序列 ≡ 台账键末段席号（逐字串）；\tailfill 恰 1/册；
       键全为 2章-拓- 前缀；撤席跳号核对（10缺1、11缺2、12缺27、14缺13/31、16缺18）；
-      manifest 交叉：批A（课时01/02/04/05）与批D（课时14~17）台账逐课时键序 ≡ manifest 拓键序，
-      批C（课时10~13）manifest 拓键＝0（自构键未入库·残余项在案）；
+      manifest 交叉：批A（课时01/02/04/05）与批D（课时14~17）拓键入片，台账逐课时键序 ≡ manifest 拓键序；
+      批C（课时10~13）片拓键=0 保持；77 键＝canonical 另账（锚＝定稿§9.5＋拓展册值台账）；
+      总闸计数链＝572 冻＋77 另账（572＝S1 21 片 manifest 并集冻结键；77 另账不入并集，0914 键务约束补丁改注）；
       \ansnote{详解} 计数＝席数/册。
   ②log 层：M3-ANSKEY 键序 true ≡ false ≡ 台账键序（逐位相等）。
   ③PDF 层（fitz 文本抽取）：true 印面号序 ≡ 台账席号序列（逐位）；[答案] 总计＝席数；
@@ -80,7 +81,7 @@ for vol, nseat in VOLS.items():
     # 撤席跳号核对移至「双册汇总」全局做（CHEXI 跨两册）
 
 
-    # manifest 交叉（批A/批D 入库键序；批C 自构键未入库=残余项在案）
+    # manifest 交叉（批A/批D 拓键入片；批C 片拓键=0 保持，77 键＝canonical 另账（锚＝定稿§9.5＋拓展册值台账）不入并集——0914 键务补丁改注）
     for les in LESSONS_MANI[vol]:
         mani = json.load(open(os.path.join(MANI, f'课时{les}.manifest.json'), encoding='utf-8'))
         mtk = [k for k in mani['键序'] if k.startswith('2章-拓-')]
@@ -90,7 +91,7 @@ for vol, nseat in VOLS.items():
     for les in LESSONS_SELF[vol]:
         mani = json.load(open(os.path.join(MANI, f'课时{les}.manifest.json'), encoding='utf-8'))
         mtk = [k for k in mani['键序'] if k.startswith('2章-拓-')]
-        check(f'课时{les}（批C 自构键）manifest拓键=0', not mtk, f'{len(mtk)}')
+        check(f'课时{les} 片拓键=0 保持；77 键＝canonical 另账（锚＝定稿§9.5＋拓展册值台账）', not mtk, f'{len(mtk)}')
 
     note_cnt = len(RE_NOTE.findall(src))
     check(f'ansnote{{详解}} 计数={nseat}（键键有详解）', note_cnt == nseat, f'{note_cnt}')
@@ -135,7 +136,7 @@ for vol, nseat in VOLS.items():
     print()
 
 print('======== 双册汇总 ========')
-check('两册键数合计=202（批A10＋批C77＋批D115）', sum(len(k) for k in ledger_all) == 202,
+check('两册键数合计=202（批A10＋批C77＋批D115）；总闸计数链＝572 冻＋77 另账（572＝S1 21 片 manifest 并集冻结键；77＝canonical 另账不入并集）', sum(len(k) for k in ledger_all) == 202,
       f'{[len(k) for k in ledger_all]}')
 check('两册键集无交（上/下互斥）', not (set(ledger_all[0]) & set(ledger_all[1])), '')
 # 撤席跳号全局核对（按母席号算：数字席＋子席母号；子席 32-1 形的 32 为母席）

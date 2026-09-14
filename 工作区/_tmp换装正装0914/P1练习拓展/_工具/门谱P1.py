@@ -77,7 +77,8 @@ def is_artifact(s, cnt_diff, n0, np_):
 
 
 def needles_of(piece):
-    """题面锚串：main.src.tex 各 \tihao 行去宏后首 12 字（序贯命中＝true 面题序零漂）。"""
+    """题面锚串：main.src.tex 各 \\tihao 行去宏后取最长纯 CJK 连串（≥8 字；数学串经 PDF 提取不走，
+    纯 CJK 连串提取保序可靠）。返回 [(题号, 针串)]。"""
     tex = io.open(os.path.join(TREE, piece, 'main.src.tex'), encoding='utf-8').read()
     out = []
     for l in tex.splitlines():
@@ -86,12 +87,10 @@ def needles_of(piece):
             continue
         t = m.group(2)
         t = re.sub(r'\\(tieside|xuankong)\{[^}]*\}', '', t)
-        t = re.sub(r'\\(duoxuan|nobreak|tihao)\b', '', t)
-        t = t.replace('\\kongwei', '').replace('\\obreak', '')
         t = re.sub(r'\\[a-zA-Z]+', '', t)
-        t = re.sub(r'[{}~]', '', t)
-        t = norm(t)
-        out.append((int(m.group(1)), t[:12]))
+        t = re.sub(r'[^\u4e00-\u9fff]', ' ', t)
+        runs = sorted((r for r in t.split() if len(r) >= 8), key=len, reverse=True)
+        out.append((int(m.group(1)), runs[0][:12] if runs else ''))
     return out
 
 
@@ -223,10 +222,13 @@ def main():
                 real_add.append(s)
         if real_add:
             reds.append('pure 新增出尾块族 %s' % real_add[:4])
-        # true 题面锚串单调（序贯命中）
-        pos, seq = 0, []
+        # true 题面锚串单调（序贯命中；无 ≥8 字 CJK 连串的题计弱锚豁免）
+        pos, seq, weak = 0, [], 0
         tt = norm(''.join(pg.get_text() for pg in pdf(os.path.join(d, 'main-true.pdf'))))
         for n, nd in needles_of(piece):
+            if not nd:
+                weak += 1
+                continue
             i = tt.find(nd, pos)
             if i < 0:
                 seq.append(n)
@@ -238,8 +240,8 @@ def main():
             bad += 1
             say('[页勘] %s：FAIL｜%s' % (piece, '｜'.join(reds)[:220]))
         say('[页勘] %s：页 %d→基线 %d/true %d/pure %d｜pure 逐页 md5（除末页）漂移 %d｜'
-            'pure 新增＝尾块族 %d 段＋伪段 %d｜true 锚串单调 %d/%d'
-            % (piece, n0, nb, nt, np_, len(md5diff), tail_add, art_add, len(nums) - len(seq), len(nums)))
+            'pure 新增＝尾块族 %d 段＋伪段 %d｜true 锚串单调 %d/%d（弱锚 %d）'
+            % (piece, n0, nb, nt, np_, len(md5diff), tail_add, art_add, len(nums) - weak - len(seq), len(nums) - weak, weak))
     # ⑦ 拓 压测复跑读数（三栏探针）
     if PIECE_TUO[0] in [x[0] for x in PIECES_LX + [PIECE_TUO]]:
         log = io.open(os.path.join(TREE, '拓展册', '压测A-三栏灰底-true.log'), encoding='utf-8', errors='replace').read()

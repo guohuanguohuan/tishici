@@ -343,8 +343,11 @@ RE_Z31 = re.compile(r'^\\lxopt\{[A-D]．\$E=\\left\|')
 # v2＝\right.-\allowbreak\left. 中裂式；二跑实证：空定界符各吃 \nulldelimiterspace 1.2pt → 84mm 面 X 向 +1.2/+2.4pt 漂。
 # v3（终）＝行内 $ 后局部 \nulldelimiterspace=0pt ＋中裂式：真 bin 断点（窄栏得断）＋空定界零宽（印面零漂，
 #   像素门机械证）。定界符尺寸两半＝整式同高（结构对称），Y 向实证零漂（负号 y 坐标逐字相同）。
-Z31_PRE = ('$E=\\left|', '$\\nulldelimiterspace=0pt E=\\left|')
-Z31_OLD, Z31_NEW = '}-\\frac', '}\\right.-\\allowbreak\\left.\\frac'
+Z31_PRE = None
+# v5（终）＝v2 中裂式＋两枚 \kern-1.2pt 对冲空定界符垫宽（\nulldelimiterspace 默认 1.2pt，
+#   骨架未改；本引擎对 \left/\right 逐定界符垫付）：frac1 [右界:垫+1.2][kern−1.2] −（bin 断点）
+#   [kern−1.2][左界:垫+1.2] frac2 —— 逐 junction 代数抵消＝84mm 印面零漂；窄栏负号后真断点消 Overfull。
+Z31_OLD, Z31_NEW = '}-\\frac', '}\\right.\\kern-1.2pt-\\allowbreak\\kern-1.2pt\\left.\\frac'
 
 
 def reform_z31(out):
@@ -354,11 +357,11 @@ def reform_z31(out):
     reg = []
     for i in hits:
         old = lines[i]
-        assert old.count(Z31_OLD) == 1 and old.count(Z31_PRE[0]) == 1, '拓-31 行 %d 锚位≠1' % (i + 1)
-        lines[i] = old.replace(Z31_PRE[0], Z31_PRE[1], 1).replace(Z31_OLD, Z31_NEW, 1)
+        assert old.count(Z31_OLD) == 1, '拓-31 行 %d 锚位≠1' % (i + 1)
+        lines[i] = old.replace(Z31_OLD, Z31_NEW, 1)
         reg.append((i + 1, old.strip(), lines[i].strip()))
     out2 = ''.join(lines)
-    assert out2.replace(Z31_NEW, Z31_OLD).replace(Z31_PRE[1], Z31_PRE[0]) == out, '改制不可逆核验失败'
+    assert out2.replace(Z31_NEW, Z31_OLD) == out, '改制不可逆核验失败'
     return out2, reg
 
 
