@@ -40,9 +40,9 @@
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "件指纹": {
-  "main.tex.md5": "619f0aab2bf43ea2f038f30301b9c5a9",
-  "main-true.pdf.md5": "38c0c44077e8fe650abfd161a68fcc69",
-  "main-false.pdf.md5": "6ef862cc31d395fbf1dd70837b4de949",
+  "main.tex.md5": "74a96e886c0ce9dd419df7aea61f2a13",
+  "main-true.pdf.md5": "0c117e9e58e19c4e786208ea4ffbeabd",
+  "main-false.pdf.md5": "18eb9a197d6cb2dc33a0261a8392d20a",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
   "双档读数": "true 错0溢0under0缺字0 ANSKEY=25 5页；false 错0溢0under0缺字0 ANSKEY=25 3页"
  },
@@ -73,5 +73,5 @@
   "2章-拓-课时02-T3": 19,
   "2章-拓-课时02-T4": 20
  },
- "变更注记": "S4 印前处置（0914）：图债插桩回冲（\\ansfig，题面「如图」处）；件指纹刷新（本字段）；复编译三零承证见 工作区/_tmpM3印前处置0914/复编读数S4.json。"
+ "变更注记": "S6 印前销案（0914，承军师三案）：S2-A1 组头宏 \\xjkeshi→\\jietitle（1 处，衔接节用例未动）；S2-A2 补【学习目标】位 \\mubiaoline＋\\mubiaomu×3（照母版 01 行36-39 制式；文案来源 zsd 分册一倾斜角→条1／分册二斜率的定义与两点斜率公式→条2／分册三倾斜角与斜率的关系→条3）；页数实测 true 5→6（增行预期漂移，装配 A1 基线回填）、false 3 零漂；复编三零，门谱复跑全绿（_tmpM3S6预备0914/门谱S6/）。"
 }

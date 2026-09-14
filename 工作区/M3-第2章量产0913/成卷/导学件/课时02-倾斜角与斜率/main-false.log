@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 08:12
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,50 +1156,18 @@ Package fontspec Info:
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'NotoSansSC-Bold.otf(0)' created for font
-(fontspec)             'NotoSansSC-Bold.otf' with options
-(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},FakeSlant={0.18},BoldFont={NotoSansSC-Black.otf}].
+(fontspec)             Font family 'NSC-w315.ttf(0)' created for font
+(fontspec)             'NSC-w315.ttf' with options
+(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},BoldFont={NSC-w315.ttf}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;slant=0.18;"
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w315.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Black.otf]/OT:script=hani;language=dflt;slant=0.18;"
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w315.ttf]/OT:script=hani;language=dflt;"
 
-
-Package fontspec Info: 
-(fontspec)             Font family 'NotoSansSC-Bold.otf(1)' created for font
-(fontspec)             'NotoSansSC-Bold.otf' with options
-(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},BoldFont={NotoSansSC-Bold.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
-
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.29182pt on input line 51.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.559pt on input line 51.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 4.6308pt on input line 51.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.29276pt on input line 51.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.55951pt on input line 51.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.63123pt on input line 51.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.29076pt on input line 51.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.55843pt on input line 51.
-LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.63033pt on input line 51.
 
 Package fontspec Info: 
 (fontspec)             Font family 'NotoSansSC-Medium.otf(1)' created for font
@@ -1214,6 +1182,64 @@ Package fontspec Info:
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
 
+
+Package fontspec Info: 
+(fontspec)             Font family 'FZKTK.TTF(0)' created for font 'FZKTK.TTF'
+(fontspec)             with options
+(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/FZKTK.TTF]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NotoSansSC-Bold.otf(0)' created for font
+(fontspec)             'NotoSansSC-Bold.otf' with options
+(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},BoldFont={NotoSansSC-Bold.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'NotoSansSC-Bold.otf(1)' created for font
+(fontspec)             'NotoSansSC-Bold.otf' with options
+(fontspec)             [Script={CJK},Path={C:/提示词/工作区/字替对照-0909/variantF/fonts/},FakeSlant={0.18},BoldFont={NotoSansSC-Black.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Bold.otf]/OT:script=hani;language=dflt;slant=0.18;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NotoSansSC-Black.otf]/OT:script=hani;language=dflt;slant=0.18;"
+
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.29182pt on input line 55.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.559pt on input line 55.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
+(Font)              scaled to size 4.6308pt on input line 55.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.29276pt on input line 55.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.55951pt on input line 55.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
+(Font)              scaled to size 4.63123pt on input line 55.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.29076pt on input line 55.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.55843pt on input line 55.
+LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.63033pt on input line 55.
 
 Package fontspec Info: 
 (fontspec)             Font family 'FZFSK.TTF(1)' created for font 'FZFSK.TTF'
@@ -1249,29 +1275,29 @@ Package fontspec Info:
 
 
 LaTeX Font Warning: Font shape `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/b/n' undefined
-(Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 85.
+(Font)              using `TU/FangYuanTi-w600圆-BEVL100.ttf(0)/m/n' instead on input line 89.
 
 File: figs/02-E1.png Graphic file (type bmp)
 <figs/02-E1.png>
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 88.
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.71004pt on input line 88.
+(Font)              scaled to size 10.71004pt on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.49698pt on input line 88.
+(Font)              scaled to size 7.49698pt on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.35501pt on input line 88.
+(Font)              scaled to size 5.35501pt on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.711pt on input line 88.
+(Font)              scaled to size 10.711pt on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.49765pt on input line 88.
+(Font)              scaled to size 7.49765pt on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.3555pt on input line 88.
+(Font)              scaled to size 5.3555pt on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.70892pt on input line 88.
+(Font)              scaled to size 10.70892pt on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.4962pt on input line 88.
+(Font)              scaled to size 7.4962pt on input line 92.
 LaTeX Font Info:    Font shape `TU/texgyretermes-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.35446pt on input line 88.
+(Font)              scaled to size 5.35446pt on input line 92.
 M3-ANSKEY: 2章-练-课时02-E1
 
 Package fontspec Info: 
@@ -1317,14 +1343,14 @@ Package fontspec Info:
 
 
 LaTeX Font Warning: Font shape `TU/FY-w450BEVL100.ttf(0)/b/n' undefined
-(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 97.
+(Font)              using `TU/FY-w450BEVL100.ttf(0)/m/n' instead on input line 101.
 
 M3-ANSKEY: 2章-练-课时02-E9
-M3-ANSKEY: 2章-练-课时02-E15
-M3-ANSKEY: 2章-练-课时02-E16
 [1
 
 ]
+M3-ANSKEY: 2章-练-课时02-E15
+M3-ANSKEY: 2章-练-课时02-E16
 M3-ANSKEY: 2章-练-课时02-E7
 M3-ANSKEY: 2章-练-课时02-E14
 M3-ANSKEY: 2章-练-课时02-E10
@@ -1339,9 +1365,9 @@ M3-ANSKEY: 2章-练-课时02-E12
 M3-ANSKEY: 2章-练-课时02-E13
 M3-ANSKEY: 2章-拓-课时02-T1
 M3-ANSKEY: 2章-拓-课时02-T2
+[2]
 M3-ANSKEY: 2章-拓-课时02-T3
 M3-ANSKEY: 2章-拓-课时02-T4
-[2]
 
 Package fontspec Info: 
 (fontspec)             Font family 'NSC-w500.ttf(0)' created for font
@@ -1355,7 +1381,6 @@ Package fontspec Info:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w500.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[C:/提示词/工作区/字替对照-0909/variantF/fonts/NSC-w700.ttf]/OT:script=hani;language=dflt;"
-
 
 M3-ANSKEY: 2章-导-课时02-G1
 M3-ANSKEY: 2章-导-课时02-G2
@@ -1373,11 +1398,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 25615 strings out of 469768
- 610910 string characters out of 5466040
- 1128784 words of memory out of 5000000
- 54144 multiletter control sequences out of 15000+600000
- 633844 words of font info for 184 fonts, out of 8000000 for 9000
+ 25687 strings out of 469768
+ 615246 string characters out of 5466040
+ 1131849 words of memory out of 5000000
+ 54208 multiletter control sequences out of 15000+600000
+ 633892 words of font info for 190 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  112i,16n,124p,1274b,996s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
