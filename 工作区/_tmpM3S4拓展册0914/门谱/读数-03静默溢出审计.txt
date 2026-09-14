@@ -1,0 +1,20 @@
+[件] 上册/main-true.tex
+  承件族判定：multicol 可回流栏（非静默族：出栏 TeX 报 Overfull \vbox）｜证据 main.tex:37；main.tex:908
+  锚账：键 87 集合 % ans:↔ansblock 对平 ✓（档向源=tex明记 true）
+  印面：页数 28｜纸面 210.0×297.0mm（纸边硬线 297.0｜脚带线 289.8）｜[答案]×87（无限裁剪层×87）｜键档向=true
+  判定：PASS（警告 0）
+[件] 上册/main-false.tex
+  承件族判定：multicol 可回流栏（非静默族：出栏 TeX 报 Overfull \vbox）｜证据 main.tex:37；main.tex:908
+  锚账：键 87 集合 % ans:↔ansblock 对平 ✓（档向源=tex明记 false）
+  印面：页数 11｜纸面 210.0×297.0mm（纸边硬线 297.0｜脚带线 289.8）｜[答案]×0（无限裁剪层×0）｜键档向=false
+  判定：PASS（警告 0）
+[件] 下册/main-true.tex
+  承件族判定：multicol 可回流栏（非静默族：出栏 TeX 报 Overfull \vbox）｜证据 main.tex:37；main.tex:1157
+  锚账：键 115 集合 % ans:↔ansblock 对平 ✓（档向源=tex明记 true）
+  印面：页数 34｜纸面 210.0×297.0mm（纸边硬线 297.0｜脚带线 289.8）｜[答案]×115（无限裁剪层×115）｜键档向=true
+  判定：PASS（警告 0）
+[件] 下册/main-false.tex
+  承件族判定：multicol 可回流栏（非静默族：出栏 TeX 报 Overfull \vbox）｜证据 main.tex:37；main.tex:1157
+  锚账：键 115 集合 % ans:↔ansblock 对平 ✓（档向源=tex明记 false）
+  印面：页数 12｜纸面 210.0×297.0mm（纸边硬线 297.0｜脚带线 289.8）｜[答案]×0（无限裁剪层×0）｜键档向=false
+  判定：PASS（警告 0）
