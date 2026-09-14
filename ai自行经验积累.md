@@ -124,3 +124,4 @@
 - TeX 悬挂/缩进参数只在组首设一次会被后续段吞（续行掉回栏左缘）——走 \everypar 重申；断点紧邻 fil 胶会丢胶致左对齐，须 \hbox{}\nobreak 封支路；\tolerance 对 CJK 均摊拉伸无效，拉伸病只能治断点/胶结构或文案｜LaTeX排版
 - 行号重映射脚本必须连区间尾号与点列尾项一起移（Lx-y 的 y、L2·4·10 的点列项无 L 前缀）——首版漏移已踩实返工｜规则维护
 - 传 Windows 路径给 python 一律 cygpath -w（Bash 吞一层反斜杠阻断变量展开，发信曾 exit=1）；整行居中长标题会折出居中孤尾，应显式分段各居中｜工具坑
+- 2026-09-14 ZCode 通道打通轮——独有教训：①Electron 桌面软件内嵌 CLI 调用法＝ELECTRON_RUN_AS_NODE=1＋主程序 exe 当 Node 直跑 resources 内 .cjs 入口（ZCode 实证；GUI 在跑时裸调 exe 被单实例吞参 exit 0 假成功）②minified 包配置静默拒＝zod strict 校验失败时 loaded:false 不抛错，报错文案与真实原因脱钩——排查先削到最小配置形再逐字段加回③headless 任务完成感知＝后台任务进程退出自动通知（automatic_notification），勿 TaskOutput 轮等④headless 会话与 GUI 各立存储根（cli/ vs v2/），桌面端不可见≠没跑成
