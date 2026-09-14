@@ -1,0 +1,67 @@
+R4K-01（01-E13）Ep-q 两组数据读 phi ＋ 负电荷第三态（独立路线：比值双路＋比例外推）
+  PASS  比值路1 Ep1/q1(V): -8.0
+  PASS  比值路2 Ep2/q2(V): -8.0
+  PASS  两路同值(线性成立): -8.0
+  PASS  Ep3=q3*phi(J): 8e-09
+  PASS  比例路线 Ep3=Ep1*(q3/q1): 8e-09
+R4K-02（01-E14）电子 M→N 动能增反推链（独立路线：eV 档核＋符号穷举）
+  PASS  ΔEk(eV档): 15.0
+  PASS  W=+ΔEk(J): 2.4e-18
+  PASS  ΔEp=-W(J): -2.4e-18
+  PASS  EpN=EpM+ΔEp(J): -5.4e-18
+  PASS  EpM>EpN(布尔): True
+  PASS  ⇒phiM<phiN(q<0): phiM<phiN
+R4K-03（01-E15）题给 phi=kQ/r 径向两点（独立路线：kQ 积还原＋比例式）
+  PASS  kQ=phiA*rA(V·m): 9.0
+  PASS  phiB=kQ/rB(V): 30.0
+  PASS  比例路 phiB=phiA*rA/rB: 30.0
+  PASS  EpA(J): 1.8000000000000001e-06
+  PASS  EpB(J): 6e-07
+  PASS  W=EpA-EpB(J): 1.2000000000000002e-06
+  PASS  第二路 W=q(phiA-phiB): 1.2e-06
+R4K-04（01-E16）零点平移不变性（独立路线：电势能直除＋平移重算）
+  PASS  phiA(V): 500.00000000000006
+  PASS  phiB(V): 200.00000000000003
+  PASS  W=EpA-EpB(J): 9e-06
+  PASS  第二路 W=q(phiA-phiB): 8.999999999999999e-06
+  PASS  phiA'(V)=phiA-phiB: 300.0
+  PASS  phiB'(V): 0.0
+  PASS  W'=q*phiA'(J): 8.999999999999999e-06
+  PASS  W'=W(不变): 8.999999999999999e-06
+R4K-05（04-E12）U-Q 数据读 C＋外推（独立路线：两组各自求 C＋斜率倒数）
+  PASS  C1(F): 5e-06
+  PASS  C2(F): 5e-06
+  PASS  斜率=1/C(V/C): 199999.99999999997
+  PASS  斜率*C=1: 0.9999999999999999
+  PASS  外推 Q(15V)(C): 7.500000000000001e-05
+  PASS  线性核 Q2/Q1=U2/U1: 3.0
+R4K-06（04-E13）决定式静态双容器对比（独立路线：设值代入）
+  PASS  C甲(F,约化): 1.0
+  PASS  C乙(F,约化): 1.0
+  PASS  C甲:C乙=1:1: 1.0
+  PASS  干扰(只看S)≠1: 2.0
+  PASS  干扰(只看d反比)≠1: 2.0
+R4K-07（04-E14）闪光灯储能（独立路线：C=Q/U 反推＋比例核）
+  PASS  Q=CU(C): 0.3
+  PASS  E=½CU²(J): 45.0
+  PASS  E=Q²/(2C)(J): 45.0
+  PASS  E=½QU(J): 45.0
+R4K-08（04-E15）等电荷量双容器异能（独立路线：E=Q²/(2C) 第二公式）
+  PASS  Q1(C): 1.2e-05
+  PASS  Q2(C): 1.2e-05
+  PASS  Q1=Q2(相等): 1.2e-05
+  PASS  E1(J): 3.6e-05
+  PASS  E2(J): 2.4e-05
+  PASS  E1>E2(等Q异能): True
+  PASS  第二式 E1=Q²/2C1: 3.600000000000001e-05
+  PASS  第二式 E2=Q²/2C2: 2.4000000000000004e-05
+  PASS  半放电 U'(V): 3.0
+  PASS  半放电 E'(J): 9e-06
+  PASS  E'=E1/4: 9e-06
+R4K-09（04-E16）U-Q 面积法储能＋定义式互证（独立路线：三路）
+  PASS  C=Q/U(F): 0.0002
+  PASS  面积法 E(J): 0.01
+  PASS  互证 ½CU²(J): 0.01
+  PASS  互证 Q²/2C(J): 0.009999999999999998
+========================================================================
+亲算校验总读数：PASS 56 ／ FAIL 0
