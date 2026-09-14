@@ -57,9 +57,9 @@
   "注记": "本地挂载副本（钉后版 7c3930362be8a0a2bdf21bbf8ac16573），禁改保 md5；破损即停"
  },
  "件指纹": {
-  "main.tex.md5": "353d1c24c37ccea18929d3b7d3cfa9c3",
-  "main-true.pdf.md5": "642a7aea226b4e6f190fd29145878b99",
-  "main-false.pdf.md5": "b513adffb740b62ee46cbe94459b6afe",
+  "main.tex.md5": "96f33222c3382b1dcfdfcdecc532da5b",
+  "main-true.pdf.md5": "6ab2b792725a49732dd710fbac81fd4b",
+  "main-false.pdf.md5": "efdc0ca6cce9c1c3cb7f7941ff084a0e",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
   "双档读数": "true 0错0溢0under0缺字 ANSKEY=42 14页；false 同 4页"
  },
@@ -107,5 +107,5 @@
   "2章-拓-课时17-20": 35,
   "2章-拓-课时17-21": 36
  },
- "变更注记": "S4 印前处置（0914）：拓17-01 三行 \\lxopt 数值回源（A 4/5、B 6/5、C 8/5）＋详解尾括注摘除；件指纹刷新（本字段）；复编译三零承证见 工作区/_tmpM3印前处置0914/复编读数S4.json。"
+ "变更注记": "S6 印前销案（0914）：S2-A6 承军师案一文句化销案：\\ding{51}×56 改「成立/相符/回验相符」文语、⇒×8/⟺×26 改「得/即/故/等价于/推出」文语，印面与注释头 raw 符号双清零；页数 14/4 零漂；复编三零，门谱复跑全绿。"
 }

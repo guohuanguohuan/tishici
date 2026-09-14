@@ -36,9 +36,9 @@
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "件指纹": {
-  "main.tex.md5": "63ea3670ea2d7f4ce61134aa7c88b1c1",
-  "main-true.pdf.md5": "ff98cdeb398286bdbca4eaa54859a299",
-  "main-false.pdf.md5": "ceaf373731a0aa6c6bca97864d1594f8",
+  "main.tex.md5": "1b038d8f31d9f8f482a855378f82a109",
+  "main-true.pdf.md5": "9f14c873b895a4155e8821f6a8f3ae80",
+  "main-false.pdf.md5": "5738bcc0fff48b45932b115d11d314e4",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
   "双档读数": "true 错0溢0under0缺字0 ANSKEY=21 5页；false 错0溢0under0缺字0 ANSKEY=21 2页"
  },
@@ -64,5 +64,6 @@
   "2章-练-课时03-E14": 10,
   "2章-练-课时03-E15": 7,
   "2章-练-课时03-E16": 16
- }
+ },
+ "变更注记": "S6 印前销案（0914）：S2-A1 组头宏 \\xjkeshi→\\jietitle（1 处）；S2-A2 补目标位 \\mubiaoline＋\\mubiaomu×3（来源 zsd 分册一直线的方向向量→条1／分册二直线的法向量→条2／条3 军师定夺走综合应用贯通两分册）；页数 5/2 零漂；复编三零，门谱复跑全绿。"
 }

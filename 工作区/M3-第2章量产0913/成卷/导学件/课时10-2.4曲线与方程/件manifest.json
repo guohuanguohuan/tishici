@@ -36,9 +36,9 @@
   "注记": "本地挂载副本，禁改保 md5；破损即停"
  },
  "件指纹": {
-  "main.tex.md5": "13cc4af64b704bad54e0ec41a76ca661",
-  "main-true.pdf.md5": "078b92f0cb00ca5ec6c82ef8383a74cd",
-  "main-false.pdf.md5": "0e3eeec884528afcb9643cf739d1cfc8",
+  "main.tex.md5": "b2b141766eecb3f05a5f67fc2da4ed3e",
+  "main-true.pdf.md5": "5d3f8dca0e49ca65b95b1dce975a164b",
+  "main-false.pdf.md5": "e66ab728b0230e82496ade8fdef33a3b",
   "编译": "xelatex -interaction=nonstopmode main-true.tex ×2 / main-false.tex ×2（cwd＝片目录）",
   "双档读数": "true 0错0溢0under0缺字 ANSKEY=21 6页；false 同 3页"
  },
@@ -70,5 +70,6 @@
   "来源": "军师令·补产批CA 核账 §C.4（_tmpM3补产批CA0913/核账.md L20）随片下发",
   "2章-导-课时10-G2": "已落实：装配层加「定义提示卡」\\zhuzhu（椭圆定义·折叠垂直平分线口径，2.5.1 前引）于题干后，两档等形不泄答；落实数 1",
   "拓2/拓3/拓8/拓10/中7": "非本件键域（拓展册席/置换移出席），本件落实数 0；观察注随档移交拓展册工位"
- }
+ },
+ "变更注记": "S6 印前销案（0914）：S2-A5 残键 10-G2 插桩销案（图资源/10-G2.png md5 93f091ba9a5b…，\\ansfig 36mm 插题面「如图」处；题面〔图注：折叠示意图，照录自源〕收短注〔照录自源〕）；页数 6/3 零漂；复编三零，门谱复跑全绿。"
 }

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 03:18
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1379,9 +1379,11 @@ M3-ANSKEY: 2章-练-课时10-难1
 [4]
 M3-ANSKEY: 2章-练-课时10-难2
 M3-ANSKEY: 2章-导-课时10-G1
+File: figs/10-G2.png Graphic file (type bmp)
+<figs/10-G2.png>
 M3-ANSKEY: 2章-导-课时10-G2
-M3-ANSKEY: 2章-导-课时10-G3
 [5]
+M3-ANSKEY: 2章-导-课时10-G3
 M3-ANSKEY: 2章-导-课时10-G4
 M3-ANSKEY: 2章-导-课时10-G5
 [6] (./main-true.aux)
@@ -1395,10 +1397,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 26058 strings out of 469768
- 641826 string characters out of 5466040
- 1166341 words of memory out of 5000000
- 54581 multiletter control sequences out of 15000+600000
+ 26069 strings out of 469768
+ 642004 string characters out of 5466040
+ 1166342 words of memory out of 5000000
+ 54589 multiletter control sequences out of 15000+600000
  633900 words of font info for 191 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  112i,17n,124p,1287b,1002s stack positions out of 10000i,1000n,20000p,200000b,200000s
