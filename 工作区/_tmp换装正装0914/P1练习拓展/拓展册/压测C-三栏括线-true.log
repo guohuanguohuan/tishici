@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 12:08
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1340,23 +1340,13 @@ M3-ANSKEY: 拓-030
 File: figs/拓31-双共轴圆环.png Graphic file (type bmp)
 <figs/拓31-双共轴圆环.png>
 
-Overfull \hbox (29.63481pt too wide) in paragraph at lines 546--546
-\TU/TimesNewRoman(0)/m/n/10.5 A\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+\TU/TimesNewRoman(0)/m/n/10.5 A\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] [] []
  []
 
 
-Overfull \hbox (71.40038pt too wide) in paragraph at lines 547--547
-\TU/TimesNewRoman(0)/m/n/10.5 B\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
- []
-
-
-Overfull \hbox (29.05547pt too wide) in paragraph at lines 548--548
-\TU/TimesNewRoman(0)/m/n/10.5 C\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
- []
-
-
-Overfull \hbox (68.45238pt too wide) in paragraph at lines 549--549
-\TU/TimesNewRoman(0)/m/n/10.5 D\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$ 
+Underfull \hbox (badness 10000) in paragraph at lines 548--548
+\TU/TimesNewRoman(0)/m/n/10.5 C\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] [] []
  []
 
 M3-ANSKEY: 拓-031
@@ -1365,11 +1355,10 @@ File: figs/拓32-半球壳加轴上点荷.png Graphic file (type bmp)
 M3-ANSKEY: 拓-032
 File: figs/拓33-四种电场图.png Graphic file (type bmp)
 <figs/拓33-四种电场图.png>
-M3-ANSKEY: 拓-033
 [7]
+M3-ANSKEY: 拓-033
 File: figs/拓34-双正四面体.png Graphic file (type bmp)
 <figs/拓34-双正四面体.png>
-
 M3-ANSKEY: 拓-034
 File: figs/拓35-ABO三点P球.png Graphic file (type bmp)
 <figs/拓35-ABO三点P球.png>
@@ -1380,9 +1369,10 @@ M3-ANSKEY: 拓-036
 File: figs/拓37-场线轨迹无向ab.png Graphic file (type bmp)
 <figs/拓37-场线轨迹无向ab.png>
 M3-ANSKEY: 拓-037
+[8]
 File: figs/拓38-圆环14电荷镶嵌.jpeg Graphic file (type bmp)
 <figs/拓38-圆环14电荷镶嵌.jpeg>
-[8]
+
 M3-ANSKEY: 拓-038
 File: figs/拓39-接地导体板正方形四点.png Graphic file (type bmp)
 <figs/拓39-接地导体板正方形四点.png>
@@ -1401,11 +1391,10 @@ File: figs/拓41E-球壳场线.png Graphic file (type bmp)
 M3-ANSKEY: 拓-041
 File: figs/拓42-四图说法甲乙丙丁.png Graphic file (type bmp)
 <figs/拓42-四图说法甲乙丙丁.png>
-M3-ANSKEY: 拓-042
 [9]
+M3-ANSKEY: 拓-042
 File: figs/拓43-金属网罩验电器.png Graphic file (type bmp)
 <figs/拓43-金属网罩验电器.png>
-
 M3-ANSKEY: 拓-043
 File: figs/拓44-避雷针场线分布.png Graphic file (type bmp)
 <figs/拓44-避雷针场线分布.png>
@@ -1416,7 +1405,7 @@ M3-ANSKEY: 拓-045
 File: figs/拓46-球壳入匀强场.png Graphic file (type bmp)
 <figs/拓46-球壳入匀强场.png>
 M3-ANSKEY: 拓-046
-[10] (./压测C-三栏括线-true.aux)
+[10] [11] (./压测C-三栏括线-true.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
@@ -1425,10 +1414,10 @@ L3 programming layer <2026/08/11>
 Here is how much of TeX's memory you used:
  26550 strings out of 469768
  635364 string characters out of 5466040
- 1125037 words of memory out of 5000000
+ 1114037 words of memory out of 5000000
  55078 multiletter control sequences out of 15000+600000
  633660 words of font info for 161 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  102i,17n,130p,1316b,865s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 压测C-三栏括线-true.pdf (10 pages).
+Output written on 压测C-三栏括线-true.pdf (11 pages).

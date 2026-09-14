@@ -55,17 +55,11 @@ M3-ANSKEY: 拓-028
 M3-ANSKEY: 拓-029
 M3-ANSKEY: 拓-030
 [6]
-Overfull \hbox (29.63481pt too wide) in paragraph at lines 545--545
-\TU/TimesNewRoman(0)/m/n/10.5 A\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
+\TU/TimesNewRoman(0)/m/n/10.5 A\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] [] []
 
-Overfull \hbox (71.40038pt too wide) in paragraph at lines 546--546
-\TU/TimesNewRoman(0)/m/n/10.5 B\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
-
-Overfull \hbox (29.05547pt too wide) in paragraph at lines 547--547
-\TU/TimesNewRoman(0)/m/n/10.5 C\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
-
-Overfull \hbox (68.45238pt too wide) in paragraph at lines 548--548
-\TU/TimesNewRoman(0)/m/n/10.5 D\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$ 
+Underfull \hbox (badness 10000) in paragraph at lines 547--547
+\TU/TimesNewRoman(0)/m/n/10.5 C\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] [] []
 M3-ANSKEY: 拓-031
 M3-ANSKEY: 拓-032
 M3-ANSKEY: 拓-033

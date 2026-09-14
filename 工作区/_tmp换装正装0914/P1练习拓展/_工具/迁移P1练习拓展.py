@@ -339,7 +339,10 @@ def migrate_tuo(kmap, notes):
 
 # ========== ⑤ 拓-31 窄栏改制 4 处（仅迁后 main.tex；main.src.tex 保持原样） ==========
 RE_Z31 = re.compile(r'^\\lxopt\{[A-D]．\$E=\\left\|')
-Z31_OLD, Z31_NEW = '}-\\frac', '}-\\allowbreak\\frac'
+# 断点原方＝负号后插 \allowbreak；首跑实证：\left|…\right| 系 inner atom 不可断（压测 Overfull 29.1~71.4pt 四行原样）。
+# 升级＝\right.-\allowbreak\left. 中裂式：两 \frac 分属两个 inner atom、负号升为真 bin 断点（可断）；
+# 84mm 不触发断行＋定界符按半式取径＝整式同高（两半结构对称）→ 印面零漂由页级对勘 pure 像素门机械证。
+Z31_OLD, Z31_NEW = '}-\\frac', '}\\right.-\\allowbreak\\left.\\frac'
 
 
 def reform_z31(out):
@@ -416,8 +419,9 @@ def main(argv):
         if piece == PIECE_TUO[0]:
             out, zreg = reform_z31(out)
             for ln, old, new in zreg:
-                log.append(('拓-31窄栏改制', 'L%d（53.5mm 三栏压测探针 4 Overfull 位）\\allowbreak 插于两 \\frac 项负号后' % ln,
-                            old[:60] + ' ⇒ ' + new[:72]))
+                log.append(('拓-31窄栏改制', 'L%d（53.5mm 三栏压测探针 4 Overfull 位）\\right.-\\allowbreak\\left. 中裂式'
+                            '（断点原方 \\allowbreak inner atom 不可断·首跑实证升级，见件头注）' % ln,
+                            old[:56] + ' ⇒ ' + new[:80]))
         d = os.path.join(TREE, piece)
         with io.open(os.path.join(d, 'main.tex'), 'w', encoding='utf-8', newline='\n') as f:
             f.write('% —— 换装正装波4b 件（由 main.src.tex 机器迁移生成；正件只读对照；拓-31 改制仅本件）——\n' + out)

@@ -55,21 +55,15 @@ M3-ANSKEY: 拓-028
 M3-ANSKEY: 拓-029
 M3-ANSKEY: 拓-030
 
-Overfull \hbox (29.63481pt too wide) in paragraph at lines 546--546
-\TU/TimesNewRoman(0)/m/n/10.5 A\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+\TU/TimesNewRoman(0)/m/n/10.5 A\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] [] []
 
-Overfull \hbox (71.40038pt too wide) in paragraph at lines 547--547
-\TU/TimesNewRoman(0)/m/n/10.5 B\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
-
-Overfull \hbox (29.05547pt too wide) in paragraph at lines 548--548
-\TU/TimesNewRoman(0)/m/n/10.5 C\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$；| 
-
-Overfull \hbox (68.45238pt too wide) in paragraph at lines 549--549
-\TU/TimesNewRoman(0)/m/n/10.5 D\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] []$ 
+Underfull \hbox (badness 10000) in paragraph at lines 548--548
+\TU/TimesNewRoman(0)/m/n/10.5 C\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 ．| $[] [] [] []
 M3-ANSKEY: 拓-031
 M3-ANSKEY: 拓-032
-M3-ANSKEY: 拓-033
 [7]
+M3-ANSKEY: 拓-033
 M3-ANSKEY: 拓-034
 M3-ANSKEY: 拓-035
 M3-ANSKEY: 拓-036
@@ -79,13 +73,13 @@ M3-ANSKEY: 拓-038
 M3-ANSKEY: 拓-039
 M3-ANSKEY: 拓-040
 M3-ANSKEY: 拓-041
-M3-ANSKEY: 拓-042
 [9]
+M3-ANSKEY: 拓-042
 M3-ANSKEY: 拓-043
 M3-ANSKEY: 拓-044
 M3-ANSKEY: 拓-045
 M3-ANSKEY: 拓-046
-[10] (./压测C-三栏括线-true.aux) ) )
+[10] [11] (./压测C-三栏括线-true.aux) ) )
 (see the transcript file for additional information)
-Output written on 压测C-三栏括线-true.pdf (10 pages).
+Output written on 压测C-三栏括线-true.pdf (11 pages).
 Transcript written on 压测C-三栏括线-true.log.

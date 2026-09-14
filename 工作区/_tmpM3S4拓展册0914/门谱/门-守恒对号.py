@@ -77,26 +77,8 @@ for vol, nseat in VOLS.items():
     bad = [k for k in keyseq if not k.startswith('2章-拓-')]
     check('键全为 2章-拓- 前缀', not bad, f'{bad[:3]}')
 
-    # 撤席跳号核对（按母席号算：数字席＋子席母号；子席 32-1 形的 32 为母席）
-    from collections import defaultdict
-    parents = defaultdict(set)
-    for k in keyseq:
-        m = re.fullmatch(r'2章-拓-课时(\d+)-(\d+)(?:-(\d+))?', k)
-        if m:
-            parents[m.group(1)].add(int(m.group(2)))
-    okcx, cxmsg = True, []
-    for les in sorted(parents):
-        seats = parents[les]
-        absent = [n for n in range(1, max(seats) + 1) if n not in seats]
-        exp = CHEXI.get(les, [])
-        if absent != exp:
-            okcx = False
-            cxmsg.append(f'课时{les} 缺{absent}≠裁断{exp}')
-    covered = sorted(set(parents) | set(CHEXI))
-    if sorted(parents) != sorted(CHEXI):
-        okcx = False
-        cxmsg.append(f'数字席课时覆盖{sorted(parents)}≠裁断{sorted(CHEXI)}')
-    check('撤席跳号≡裁断口径（10缺1/11缺2/12缺27/14缺13·31/16缺18）', okcx, '；'.join(cxmsg))
+    # 撤席跳号核对移至「双册汇总」全局做（CHEXI 跨两册）
+
 
     # manifest 交叉（批A/批D 入库键序；批C 自构键未入库=残余项在案）
     for les in LESSONS_MANI[vol]:
@@ -127,7 +109,9 @@ for vol, nseat in VOLS.items():
     pdf = {}
     for tag in ('true', 'false'):
         doc = fitz.open(os.path.join(d, f'main-{tag}.pdf'))
-        pdf[tag] = {'n': len(doc), 'text': '\n'.join(p.get_text() for p in doc)}
+        txt = '\n'.join(p.get_text() for p in doc)
+        txt = re.sub('[\u2010\u2011]', '-', txt)  # 印面连字符 U+2010/2011 归一 ASCII（子席 32-1 形）
+        pdf[tag] = {'n': len(doc), 'text': txt}
         doc.close()
 
     tnums = RE_PDF_NUM.findall(pdf['true']['text'])
@@ -154,6 +138,27 @@ print('======== 双册汇总 ========')
 check('两册键数合计=202（批A10＋批C77＋批D115）', sum(len(k) for k in ledger_all) == 202,
       f'{[len(k) for k in ledger_all]}')
 check('两册键集无交（上/下互斥）', not (set(ledger_all[0]) & set(ledger_all[1])), '')
+# 撤席跳号全局核对（按母席号算：数字席＋子席母号；子席 32-1 形的 32 为母席）
+from collections import defaultdict
+parents = defaultdict(set)
+for ks in ledger_all:
+    for k in ks:
+        m = re.fullmatch(r'2章-拓-课时(\d+)-(\d+)(?:-(\d+))?', k)
+        if m:
+            parents[m.group(1)].add(int(m.group(2)))
+okcx, cxmsg = True, []
+for les in sorted(set(parents) | set(CHEXI)):
+    seats = parents.get(les, set())
+    if not seats:
+        okcx = False
+        cxmsg.append(f'课时{les} 台账无数字席')
+        continue
+    absent = [n for n in range(1, max(seats) + 1) if n not in seats]
+    exp = CHEXI.get(les, [])
+    if absent != exp:
+        okcx = False
+        cxmsg.append(f'课时{les} 缺{absent}≠裁断{exp}')
+check('撤席跳号≡裁断口径（10缺1/11缺2/12缺27/14缺13·31/16缺18）', okcx, '；'.join(cxmsg))
 print()
 print('守恒对号门：', '全绿' if not reds else f'红 {len(reds)} 项：{reds}')
 sys.exit(0 if not reds else 1)
