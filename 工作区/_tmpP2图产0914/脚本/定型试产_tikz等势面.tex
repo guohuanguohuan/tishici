@@ -1,0 +1,23 @@
+% P2 图产试产臂·工艺定型试产（TikZ 链）——等势面图样张（ctex 中文＋同心圆等势面＋标值＋场线）
+% 编译：xelatex；栅格化：gswin64c -r150
+\documentclass[border=4pt]{standalone}
+\usepackage{ctex}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}[scale=1.0]
+  % 等势面（青虚线同心圆＋标值）
+  \foreach \r/\lab in {0.75/15\,V, 1.2/10\,V, 1.65/5\,V}{
+    \draw[cyan!70!blue, dashed, thin] (0,0) circle (\r);
+    \node[anchor=south west, inner sep=1pt] at (38:\r) {\lab};
+  }
+  % 电场线（8 条辐射线＋箭头）
+  \foreach \a in {90,135,...,360}{
+    \draw[thin] (\a:0.18) -- (\a:2.05);
+    \draw[->, thin] (\a:0.46) -- (\a:0.64);
+  }
+  % 电荷
+  \draw[fill=yellow!30, thick] (0,0) circle (0.13);
+  \node at (0,0) {$+$};
+  \node[anchor=north west] at (0.09,-0.22) {$q$};
+\end{tikzpicture}
+\end{document}

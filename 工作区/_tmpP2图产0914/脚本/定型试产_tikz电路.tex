@@ -1,0 +1,12 @@
+% P2 图产试产臂·工艺定型试产（TikZ 链·circuitikz）——电路图样张（E、S、R、电容 AB）
+\documentclass[border=4pt]{standalone}
+\usepackage{ctex}
+\usepackage{circuitikz}
+\begin{document}
+\begin{circuitikz}[american, scale=1.0]
+  \draw (0,0) to[battery1, l=$E$, v>=$+$] (0,2.6)
+        to[nos, l=$S$] (2.3,2.6) -- (4.2,2.6)
+        to[capacitor, l_=$A$, l=$B$] (4.2,0)
+        to[generic, l=$R$] (0,0);
+\end{circuitikz}
+\end{document}
