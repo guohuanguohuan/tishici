@@ -1,0 +1,171 @@
+% ============================================================
+% 纯答案册·课时04-点斜式与斜截式 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：C:/提示词/工作区/M3-第2章量产0913/成卷/练习件/课时04-点斜式与斜截式/main.tex（md5 9402793c96e2febdffb457d455fdce32）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..16 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{练习件答案册}%
+
+\begin{document}
+\keshi{第4课时\quad 点斜式与斜截式}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-练-课时04-E1]
+% ans:2章-练-课时04-E1
+\ansitem{1}{C}
+\ifansbookdetail
+\ansnote{详解}{将\(y-b=2(x-a)\)化为斜截式：\(y=2x-2a+b\)，故直线在\(y\)轴上的截距为\(b-2a\)（\(x=0\)时的纵坐标值，可正可负，不加绝对值）．选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E2]
+% ans:2章-练-课时04-E2
+\ansitem{2}{A}
+\ifansbookdetail
+\ansnote{详解}{设\(l\)与\(x\)轴交于\(M_0(t,0)\)，则\(t\in(-1,3)\)且\(t\neq2\)（\(t=2\)时直线过\(P\)与\(x\)轴交点同横坐标，即\(x=2\)，斜率不存在，截距为\(2\in(-1,3)\)——此情形\(k\)不存在，题设“斜率\(k\)”已默认存在，排除）．\(k=(3-0)/(2-t)=3/(2-t)\)．当\(t\in(-1,2)\)时\(2-t\in(0,3)\)，\(k=3/(2-t)\in(1,+\infty)\)；当\(t\in(2,3)\)时\(2-t\in(-1,0)\)，\(k\in(-\infty,-3)\)．故\(k\in(-\infty,-3)\cup(1,+\infty)\)．选：A．（临界图法同件源：取\(x\)轴上两端点\(M(-1,0)\)、\(N(3,0)\)，\(k_{PM}=3/3=1\)，\(k_{PN}=3/(-1)=-3\)，\(l\)与开线段\(MN\)（挖去\((2,0)\)上方对应竖线）相交即\(k>1\)或\(k<-3\)．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E3]
+% ans:2章-练-课时04-E3
+\ansitem{3}{D}
+\ifansbookdetail
+\ansnote{详解}{直线\(\sqrt{3}x-y-\sqrt{3}=0\)的斜率为\(\sqrt{3}\)，倾斜角\(\alpha\)满足\(\tan\alpha=\sqrt{3}\)，\(\alpha=60^\circ\)；所求直线倾斜角\(\beta=2\alpha=120^\circ\)，斜率\(k=\tan120^\circ=-\sqrt{3}\)；又在\(y\)轴上的截距为\(-1\)，故斜截式方程为\(y=-\sqrt{3}x-1\)，即\(\sqrt{3}x+y+1=0\)，比对\(ax+by-1=0\)的常数项须为\(-1\)，须将\(\sqrt{3}x+y+1=0\)两边乘\(-1\)得\(-\sqrt{3}x-y-1=0\)，所以\(a=-\sqrt{3}\)，\(b=-1\)．选：D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E4]
+% ans:2章-练-课时04-E4
+\ansitem{4}{x＋2y−2＝0或2x＋3y−6＝0}
+\ifansbookdetail
+\ansnote{详解}{设直线在\(x\)轴上的截距为\(a\)（\(a\neq0\)且\(a-1\neq0\)），则在\(y\)轴上的截距为\(a-1\)，由截距式：\(x/a+y/(a-1)=1\)．\par\noindent 将\((6,-2)\)代入：\(6/a-2/(a-1)=1\)，去分母：\(6(a-1)-2a=a(a-1)\)，即\(4a-6=a^{2}-a\)，\(a^{2}-5a+6=0\)，解得\(a=2\)或\(a=3\)．\par\noindent \(a=2\)时：\(x/2+y/1=1\)，即\(x+2y-2=0\)；\(a=3\)时：\(x/3+y/2=1\)，即\(2x+3y-6=0\)．\par\noindent （另须检验截距为0的情形：若过原点，设\(y=mx\)，代\((6,-2)\)得\(m=-1/3\)，此时两截距都为0，差为\(0\neq1\)，不合．）所以直线\(l\)的方程为\(x+2y-2=0\)或\(2x+3y-6=0\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E5]
+% ans:2章-练-课时04-E5
+\ansitem{5}{A在，B不在，C在．}
+\ifansbookdetail
+\ansnote{详解}{\(x=0\)时\(y=-6\times0+7=7\)，故\(A(0,7)\)在直线上；\par\noindent\(x=2\)时\(y=-12+7=-5\neq5\)，故\(B(2,5)\)不在直线上；\par\noindent\(x=1\)时\(y=-6+7=1\)，故\(C(1,1)\)在直线上．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E6]
+% ans:2章-练-课时04-E6
+\ansitem{6}{a＝0；b＝4}
+\ifansbookdetail
+\ansnote{详解}{两点都满足直线方程：\(1=-3a+1\)，得\(a=0\)；\(b=-3\times(-1)+1=4\)．\par\noindent（检验：\(a=0\)时两点为\((0,1)\)、\((-1,4)\)，确为\(y=-3x+1\)上两点，两点横坐标不等，直线唯一．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E7]
+% ans:2章-练-课时04-E7
+\ansitem{7}{(1) y−5＝4(x−2)；(2) y−2＝(√3/3)(x＋2)}
+\ifansbookdetail
+\ansnote{详解}{(1) 由点斜式\(y-y_0=k(x-x_0)\)，得\(y-5=4(x-2)\)．\par\noindent (2) 斜率\(k=\tan30^\circ=\sqrt{3}/3\)，故\(y-2=(\sqrt{3}/3)[x-(-2)]=(\sqrt{3}/3)(x+2)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E8]
+% ans:2章-练-课时04-E8
+\ansitem{8}{(1) y＝(√3/2)x−2；(2) y＝−x＋3}
+\ifansbookdetail
+\ansnote{详解}{(1) \(k=\sqrt{3}/2\)，\(b=-2\)，由斜截式\(y=kx+b\)得\(y=(\sqrt{3}/2)x-2\)．\par\noindent (2) \(k=\tan135^\circ=-1\)，\(b=3\)，故\(y=-x+3\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E9]
+% ans:2章-练-课时04-E9
+\ansitem{9}{(1) k＝1，b＝3；(2) k＝√3，b＝−2√3−4；(3) k＝−4，b＝3}
+\ifansbookdetail
+\ansnote{详解}{(1) \(y-2=x+1\)化为\(y=x+3\)，故\(k=1\)，截距\(b=3\)（定点\((-1,2)\)）；\par\noindent (2) 化为\(y=\sqrt{3}x-2\sqrt{3}-4\)，故\(k=\sqrt{3}\)，截距\(b=-2\sqrt{3}-4\)；\par\noindent (3) 化为\(y=-4x+3\)，故\(k=-4\)，截距\(b=3\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E10]
+% ans:2章-练-课时04-E10
+\ansitem{10}{(1) 真；(2) 假；(3) 真}
+\ifansbookdetail
+\ansnote{详解}{(1) 斜率不存在时\(l\)为竖直线\(x=m\)，它与\(x\)轴恰有一个交点\((m,0)\)，\(x\)轴截距为\(m\)，唯一，真命题；\par\noindent (2) 斜率存在时\(l\)与\(y\)轴必只有一个交点（\(y\)轴截距唯一），但与\(x\)轴未必相交：水平直线\(y=b\)（\(b\neq0\)，如\(y=1\)）与\(x\)轴无交点，\(x\)轴截距不存在，故“截距唯一”为假命题；\par\noindent (3) 过原点的直线（如\(y=x\)）与两轴交点都为原点\((0,0)\)，两截距都为0，真命题．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E11]
+% ans:2章-练-课时04-E11
+\ansitem{11}{B}
+\ifansbookdetail
+\ansnote{详解}{\(M\)、\(N\)纵坐标相等（都为2），直线\(MN\)与\(x\)轴平行，斜率为0，方程为\(y=2\)（同纵坐标的两点连线与\(x\)轴平行）．选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E12]
+% ans:2章-练-课时04-E12
+\ansitem{12}{C}
+\ifansbookdetail
+\ansnote{详解}{分类：①过原点（两截距均为0）：\(y=4x\)，1条；\par\noindent ②不过原点，设\(x/a+y/b=1\)，\(|a|=|b|\neq0\)：代入\((1,4)\)得\(1/a+4/b=1\)．\(b=a\)时\(5/a=1\)，\(a=5\)（\(x+y=5\)）；\(b=-a\)时\(1/a-4/a=1\)，\(a=-3\)（\(-x/3+y/3=1\)，即\(y-x=3\)）．共2条．\par\noindent 合计3条．选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E13]
+% ans:2章-练-课时04-E13
+\ansitem{13}{B}
+\ifansbookdetail
+\ansnote{详解}{令\(y=0\)得\(x=2\)；令\(x=0\)得\(y=-5\)．即\(a=2\)，\(b=-5\)（化截距式\(x/2+y/(-5)=1\)同判）．选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E14]
+% ans:2章-练-课时04-E14
+\ansitem{14}{x＋2y−6＝0}
+\ifansbookdetail
+\ansnote{详解}{设\(l:x/a+y/b=1\)（\(a>0\)，\(b>0\)），代入\(P(4,1)\)：\(4/a+1/b=1\)．\par\noindent\(|OA|+|OB|=a+b=(a+b)(4/a+1/b)=5+4b/a+a/b\geqslant5+2\sqrt{(4b/a)\cdot(a/b)}=9\)，当且仅当\(4b/a=a/b\)即\(a=2b\)时取等；联立\(4/a+1/b=1\)代入\(a=2b\)：\(4/(2b)+1/b=1\)\(\Rightarrow3/b=1\)\(\Rightarrow b=3\)，\(a=6\)．\par\noindent 此时\(l\)为\(x/6+y/3=1\)，即\(x+2y-6=0\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E15]
+% ans:2章-练-课时04-E15
+\ansitem{15}{(1) y＝−2x−1；(2) y＝−1；(3) x＝1}
+\ifansbookdetail
+\ansnote{详解}{(1) 两点横、纵坐标均不等，斜率\(k=(1+1)/(-1-0)=-2\)，点斜式（用\(A\)）：\(y+1=-2(x-0)\)，即\(y=-2x-1\)；\par\noindent (2) \(C\)、\(D\)纵坐标同为\(-1\)，\(l_2\parallel x\)轴，方程为\(y=-1\)（纵坐标相同，与\(x\)轴平行）；\par\noindent (3) \(E\)、\(F\)横坐标同为1，\(l_3\perp x\)轴，方程为\(x=1\)（横坐标相同，为竖直线\(x=1\)）．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时04-E16]
+% ans:2章-练-课时04-E16
+\ansitem{16}{(1) y＝−(4/3)x−2；(2) x/3＋y/2＝1（即2x＋3y−6＝0）}
+\ifansbookdetail
+\ansnote{详解}{(1) 截距\(b=-2\)，直线过\((0,-2)\)与\((-3,2)\)，斜率\(k=(2+2)/(-3-0)=-4/3\)，斜截式\(y=-(4/3)x-2\)；\par\noindent (2) 直线过\((3,0)\)，故\(x\)轴截距\(a=3\)（非零），\(y\)轴截距\(b=5-3=2\)（非零），由截距式\(x/3+y/2=1\)，即\(2x+3y-6=0\)．}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

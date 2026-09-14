@@ -1,0 +1,12 @@
+
+----stderr----
+Traceback (most recent call last):
+  File "C:\提示词\工具\答案抽册器.py", line 678, in <module>
+    main()
+  File "C:\提示词\工具\答案抽册器.py", line 619, in main
+    ordered, ordernote = order_blocks(piece, canonical, args.order)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\提示词\工具\答案抽册器.py", line 236, in order_blocks
+    if nums != sorted(nums) or sorted(set(nums)) != list(range(1, len(blocks) + 1)):
+               ^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'int'

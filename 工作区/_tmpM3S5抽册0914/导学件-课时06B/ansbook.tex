@@ -1,0 +1,212 @@
+% ============================================================
+% 纯答案册·课时06B-2.2.4点到直线距离 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：C:/提示词/工作区/M3-第2章量产0913/成卷/导学件/课时06B-2.2.4点到直线距离/main.tex（md5 d589dcae12face67c46a899ca6f7ada8）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..21 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件答案册}%
+
+\begin{document}
+\zhangtitle{第二章\quad 平面解析几何}
+\jietitle{2.2.4 点到直线距离与平行线距离（选学）}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-练-课时06B-T1]
+% ans:2章-练-课时06B-T1
+\ansitem{1}{C}
+\ifansbookdetail
+\ansnote{详解}{设点\((0,t)\)，\(d=|4t+5|/\sqrt{3^{2}+4^{2}}=|4t+5|/5=5\)，即\(|4t+5|=25\)，解得\(t=5\)或\(t=-15/2\)。所求点为\((0,5)\)或\((0,-15/2)\)，故选：C．（D 中\((5,0)\)、\((-5,0)\)到直线的距离分别为4与2，不合，系轴别混淆干扰项．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T3]
+% ans:2章-练-课时06B-T3
+\ansitem{2}{D}
+\ifansbookdetail
+\ansnote{详解}{以\(BC\)为底：\(|BC|=\sqrt{(-1-2)^{2}+(0-1)^{2}}=\sqrt{10}\)；直线\(BC\)过\(B(2,1)\)、\(C(-1,0)\)，斜率为\(1/3\)，方程\(x-3y+1=0\)。\(A(1,3)\)到\(BC\)的高\(h=|1-9+1|/\sqrt{1^{2}+(-3)^{2}}=7/\sqrt{10}\)。故\(S=(1/2)\times\sqrt{10}\times 7/\sqrt{10}=7/2\)，选：D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T9]
+% ans:2章-练-课时06B-T9
+\ansitem{3}{C}
+\ifansbookdetail
+\ansnote{详解}{\(k=\tan 120^\circ=-\sqrt{3}\)，直线\(l\)：\(y-\sqrt{3}=-\sqrt{3}(x-2)\)，即\(\sqrt{3}x+y-3\sqrt{3}=0\)。\(d=|\sqrt{3}\times 1-\sqrt{3}-3\sqrt{3}|/\sqrt{(\sqrt{3})^{2}+1^{2}}=3\sqrt{3}/2\)，故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T12]
+% ans:2章-练-课时06B-T12
+\ansitem{4}{4/25}
+\ifansbookdetail
+\ansnote{详解}{\(m^{2}+n^{2}=|OM|^{2}\)，其最小值在\(OM\)垂直于\(l\)时取得，即原点到\(l\)的距离：\(d=|0+0+2|/\sqrt{3^{2}+4^{2}}=2/5\)。故\(m^{2}+n^{2}\)的最小值为\(d^{2}=4/25\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T13]
+% ans:2章-练-课时06B-T13
+\ansitem{5}{2+√2}
+\ifansbookdetail
+\ansnote{详解}{\(d=|\cos\theta+\sin\theta-2|/\sqrt{\cos^{2}\theta+\sin^{2}\theta}\)\par\noindent \(=|\sqrt{2}\sin(\theta+\pi/4)-2|\)。\par\noindent 因\(\sqrt{2}\sin(\theta+\pi/4)\leqslant\sqrt{2}<2\)，绝对值内恒为负。\par\noindent 故\(d=2-\sqrt{2}\sin(\theta+\pi/4)\)，当\(\sin(\theta+\pi/4)=-1\)时取最大值\(2+\sqrt{2}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T5]
+% ans:2章-练-课时06B-T5
+\ansitem{6}{C}
+\ifansbookdetail
+\ansnote{详解}{两线过\(P\)、\(Q\)且始终平行。当两线均与\(PQ\)垂直时距离最大，最大值\(=|PQ|=\sqrt{(2+1)^{2}+(-1-3)^{2}}=5\)；当两线向重合方向旋转时距离趋于0，但重合时不能分别过两不同点，0取不到。故\(d\in(0,5]\)，故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T6]
+% ans:2章-练-课时06B-T6
+\ansitem{7}{C}
+\ifansbookdetail
+\ansnote{详解}{两线平行，\(d=|a-b|/\sqrt{2}\)。由韦达定理\(a+b=-1\)，\(ab=c\)，故\(|a-b|=\sqrt{(a+b)^{2}-4ab}=\sqrt{1-4c}\)。由\(0\leqslant c\leqslant 1/8\)得\(1/2\leqslant 1-4c\leqslant 1\)，故\(\sqrt{2}/2\leqslant|a-b|\leqslant 1\)。于是\(d\in[1/2,\ \sqrt{2}/2]\)：最大值\(\sqrt{2}/2\)，最小值\(1/2\)，故选：C．（实根存在性：\(\Delta=1-4c\geqslant 0\)由\(c\leqslant 1/8\)保证．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T8]
+% ans:2章-练-课时06B-T8
+\ansitem{8}{B}
+\ifansbookdetail
+\ansnote{详解}{两线平行，\(|PQ|\)等于平行线间的距离，为定值\(=|2-(-1)|/\sqrt{2}=3\sqrt{2}/2\)；且向量\(\overrightarrow{QP}\)恒为\(l_1\)指向\(l_2\)的法向位移\((3/2,\ 3/2)\)。作平移\(A'=A+(3/2,\ 3/2)=(-3/2,\ -3/2)\)，则\(AA'\parallel QP\)且\(|AA'|=|QP|\)，四边形\(AA'QP\)为平行四边形，故\(|AP|=|A'Q|\)。于是\(|AP|+|PQ|+|QB|=|A'Q|+3\sqrt{2}/2+|QB|\geqslant|A'B|+3\sqrt{2}/2\)，当\(A'\)、\(Q\)、\(B\)共线（\(Q\)在线段上）时取等。\(|A'B|=\sqrt{(3/2+3/2)^{2}+(1/2+3/2)^{2}}=\sqrt{13}\)；取等点验证：线段\(A'B\)上参数\(t=4/5\)处的点\((9/10,\ 1/10)\)满足\(9/10+1/10-1=0\)，确在\(l_2\)上，等号可取。故最小值\(=\sqrt{13}+3\sqrt{2}/2\)，故选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T10]
+% ans:2章-练-课时06B-T10
+\ansitem{9}{AB}
+\ifansbookdetail
+\ansnote{详解}{平行\(\iff 1/2=(-2)/n\)（\(n\neq 0\)），得\(n=-4\)。\(l_2\)：\(2x-4y-6=0\)，即\(x-2y-3=0\)。\(d=|m-(-3)|/\sqrt{1^{2}+(-2)^{2}}=|m+3|/\sqrt{5}=2\sqrt{5}\)，得\(|m+3|=10\)，\(m=7\)或\(m=-13\)。故\(m+n=3\)或\(-17\)，故选：AB．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T11]
+% ans:2章-练-课时06B-T11
+\ansitem{10}{2x+3y−8=0 或 6x+9y−10=0}
+\ifansbookdetail
+\ansnote{详解}{\(l_1\)化为\(4x+6y-2=0\)。\(l\)与两线均平行，设\(l\)：\(4x+6y+C=0\)（\(C\neq -2\)且\(C\neq -9\)）。由\(|C+2|/\sqrt{52}=2\times|C+9|/\sqrt{52}\)，即\(|C+2|=2|C+9|\)：\(C+2=2(C+9)\)得\(C=-16\)；\(C+2=-2(C+9)\)得\(C=-20/3\)。故\(l\)：\(4x+6y-16=0\)即\(2x+3y-8=0\)（带域外侧），或\(4x+6y-20/3=0\)即\(6x+9y-10=0\)（带域内侧，此时到\(l_1\)、\(l_2\)的距离分别为\(14/3\)与\(7/3\)，比值确为\(2:1\)）。两解均保留．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T14]
+% ans:2章-练-课时06B-T14
+\ansitem{11}{1}
+\ifansbookdetail
+\ansnote{详解}{设\(A(m,n)\)，\(B(a,b)\)，则\(A\)在直线\(3x+4y-6=0\)上，\(B\)在直线\(3x+4y-1=0\)上，所求即\(|AB|\)。两线平行，当\(AB\)沿公垂方向时最短，最小值为平行线间的距离：\(d=|-6-(-1)|/\sqrt{3^{2}+4^{2}}=5/5=1\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T2]
+% ans:2章-练-课时06B-T2
+\ansitem{12}{C}
+\ifansbookdetail
+\ansnote{详解}{\(A\)关于反射面\(x\)轴的对称点为\(A'(-3,-5)\)。由反射角等于入射角，光路\(A\to M\to B\)的总长等于直线段\(|A'B|\)的最短值\(|A'B|=\sqrt{(2+3)^{2}+(10+5)^{2}}=\sqrt{250}=5\sqrt{10}\)，故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T4]
+% ans:2章-练-课时06B-T4
+\ansitem{13}{B}
+\ifansbookdetail
+\ansnote{详解}{\(A(3,1)\)关于\(y=x\)的对称点\(A_1(1,3)\)（对称式\((x,y)\to(y,x)\)），关于\(x\)轴的对称点\(A_2(3,-1)\)。则\(|AC|=|A_1C|\)，\(|AB|=|A_2B|\)，周长\(=|A_1C|+|CB|+|BA_2|\geqslant|A_1A_2|\)。取等检验：直线\(A_1A_2\)为\(y=-2x+5\)，与\(y=x\)交于\((5/3,\ 5/3)\)、与\(x\)轴交于\((5/2,\ 0)\)，均落在允许动点范围内，等号可取。最小值\(=|A_1A_2|=\sqrt{(3-1)^{2}+(-1-3)^{2}}=\sqrt{20}=2\sqrt{5}\)，故选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T7]
+% ans:2章-练-课时06B-T7
+\ansitem{14}{D}
+\ifansbookdetail
+\ansnote{详解}{对称\(\iff AB\perp l\)且\(AB\)的中点在\(l\)上。\(k_{AB}=(-b-(b+2))/((b-a)-(a+2))=(-2b-2)/(b-2a-2)=3/4\)，整理得\(-8b-8=3b-6a-6\)，即\(6a-11b-2=0\)①。中点坐标\(((b+2)/2,\ 1)\)，代入\(4x+3y-11=0\)：\(2(b+2)+3-11=0\)，得\(b=2\)；代回①：\(6a-22-2=0\)，\(a=4\)。故\(a=4\)，\(b=2\)，故选：D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T15]
+% ans:2章-练-课时06B-T15
+\ansitem{15}{（1）3√5/5；（2）C(−13/5, 31/5)。}
+\ifansbookdetail
+\ansnote{详解}{（1）\(d=|2\times 1+2-1|/\sqrt{2^{2}+1^{2}}=3/\sqrt{5}=3\sqrt{5}/5\)。\par\noindent （2）内角平分线性质：\(A\)关于\(CD\)的对称点\(A'\)落在边\(BC\)所在直线上。设\(A'(x,y)\)：中点\(((x+1)/2,\ (y+2)/2)\)在\(CD\)上，得\((x+1)+(y+2)/2-1=0\)，即\(2x+y+2=0\)；\(AA'\perp CD\)，\(k_{CD}=-2\)，故\(k_{AA'}=1/2\)，得\((y-2)/(x-1)=1/2\)，即\(x-2y+3=0\)。\par\noindent 联立解得\(x=-7/5\)，\(y=4/5\)，即\(A'(-7/5,\ 4/5)\)。直线\(BC\)过\(B(-1,-1)\)与\(A'\)，斜率\(=(4/5+1)/(-7/5+1)=(9/5)/(-2/5)=-9/2\)，方程\(y+1=-(9/2)(x+1)\)，即\(9x+2y+11=0\)。\par\noindent \(C\)为\(BC\)与\(CD\)的交点：把\(y=1-2x\)代入，\(9x+2(1-2x)+11=0\)，\(5x+13=0\)，\(x=-13/5\)，\(y=1-2\times(-13/5)=31/5\)。故\(C(-13/5,\ 31/5)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时06B-T16]
+% ans:2章-练-课时06B-T16
+\ansitem{16}{能，P(1/9, 37/18)。}
+\ifansbookdetail
+\ansnote{详解}{设\(P(x_0,\ y_0)\)，记\(u=2x_0-y_0\)。\par\noindent 条件（3）：\(|u+3|/\sqrt{5}=(\sqrt{2}/\sqrt{5})\cdot|x_0+y_0-1|/\sqrt{2}\)，即\(|u+3|=|x_0+y_0-1|\)，平方去绝对值：\((u+3)^{2}-(x_0+y_0-1)^{2}=(3x_0+2)(x_0-2y_0+4)=0\)。\(x_0=-2/3<0\)与第一象限矛盾，舍；故\(x_0-2y_0+4=0\)①。\par\noindent 条件（2）：\(d_1=|u+3|/\sqrt{5}\)，\(d_2=|-2u+1|/(2\sqrt{5})\)，由\(d_1=(1/2)d_2\)得\(4|u+3|=|1-2u|\)，平方：\((6u+11)(2u+13)=0\)，\(u=-11/6\)或\(u=-13/2\)，即\(2x_0-y_0+11/6=0\)②或\(2x_0-y_0+13/2=0\)③。\par\noindent 联立逐一检验：②与①：\(y_0=2x_0+11/6\)，代入①：\(x_0-4x_0-11/3+4=0\)，\(x_0=1/9>0\)，\(y_0=2/9+11/6=37/18>0\)，在第一象限；③与①：\(y_0=2x_0+13/2\)，代入①：\(x_0-4x_0-13+4=0\)，\(x_0=-3<0\)，舍。\par\noindent 终检\(P(1/9,\ 37/18)\)：\(d_1=(21/18)/\sqrt{5}=7/(6\sqrt{5})\)，\(d_2=(14/3)/(2\sqrt{5})=7/(3\sqrt{5})\)，\(d_1=(1/2)d_2\)成立；\(d_3=(21/18)/\sqrt{2}=7/(6\sqrt{2})\)，\(d_1:d_3=\sqrt{2}:\sqrt{5}\)成立。故存在满足三条件的点\(P(1/9,\ 37/18)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时06B-G1]
+% ans:2章-导-课时06B-G1
+\ansitem{17}{D}
+\ifansbookdetail
+\ansnote{详解}{\(d=|m\cdot 1+4-1|/\sqrt{m^{2}+1}=|m+3|/\sqrt{m^{2}+1}=3\)，两边非负可平方：\(m^{2}+6m+9=9m^{2}+9\)，即\(8m^{2}-6m=0\)，\(m=0\)或\(m=3/4\)。检验：\(m=0\)时直线为\(y-1=0\)，\(d=|4-1|=3\)成立；\(m=3/4\)时\(d=(15/4)/(5/4)=3\)成立。两根均保留，故选：D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时06B-G2]
+% ans:2章-导-课时06B-G2
+\ansitem{18}{A}
+\ifansbookdetail
+\ansnote{详解}{\(d=|3\times 0+4\times 0-5|/\sqrt{3^{2}+4^{2}}=5/5=1\)，故选：A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时06B-G3]
+% ans:2章-导-课时06B-G3
+\ansitem{19}{B}
+\ifansbookdetail
+\ansnote{详解}{平行\(\iff 1\times 3-a(a-2)=0\)且系数不成比例（排除重合），由\(a^{2}-2a-3=0\)得\(a=3\)或\(a=-1\)；\(a=3\)时两方程同为\(x+3y+6=0\)（重合），舍，故\(a=-1\)。此时\(l_1\)：\(x-y+6=0\)，\(l_2\)：\(-3x+3y-2=0\)即\(x-y+2/3=0\)，\(d=|6-2/3|/\sqrt{1^{2}+(-1)^{2}}=(16/3)/\sqrt{2}=8\sqrt{2}/3\)，故选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时06B-G4]
+% ans:2章-导-课时06B-G4
+\ansitem{20}{√13}
+\ifansbookdetail
+\ansnote{详解}{两线\(x\)、\(y\)系数已相同，直接套平行线间的距离公式：\(d=|5-(-8)|/\sqrt{2^{2}+(-3)^{2}}=13/\sqrt{13}=\sqrt{13}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时06B-G5]
+% ans:2章-导-课时06B-G5
+\ansitem{21}{m＝±√10}
+\ifansbookdetail
+\ansnote{详解}{\(y=3x+6\)化为一般式\(3x-y+6=0\)，\(d=|3m-6+6|/\sqrt{3^{2}+(-1)^{2}}=3|m|/\sqrt{10}=3\)，得\(|m|=\sqrt{10}\)，即\(m=\pm\sqrt{10}\)．}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

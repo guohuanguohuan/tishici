@@ -1,0 +1,171 @@
+% ============================================================
+% 纯答案册·衔接节 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：C:/提示词/工作区/M3-第2章量产0913/成卷/练习件/衔接节/main.tex（md5 da6c9dc98b36387182a0f6b65d8b6e9d）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..16 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{练习件答案册}%
+
+\begin{document}
+\xjkeshi{2.8 直线与圆锥曲线的位置关系}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-练-衔接-1]
+% ans:2章-练-衔接-1
+\ansitem{1}{(1) 3；(2) √2；(3) 3+2√2；(4) 1/2}
+\ifansbookdetail
+\ansnote{详解}{韦达定理：\(x_1+x_2=2\)、\(x_1x_2=1/2\)．(1) \(x_1^{2}+x_2^{2}=(x_1+x_2)^{2}-2x_1x_2=4-1=3\)．\par\noindent (2) \(|x_1-x_2|=\sqrt{(x_1+x_2)^{2}-4x_1x_2}=\sqrt{2}\)．\par\noindent (3) 由求根公式定序：\(x_1=(2+\sqrt{2})/2\)、\(x_2=(2-\sqrt{2})/2\)，故\(x_1/x_2=(2+\sqrt{2})/(2-\sqrt{2})=(2+\sqrt{2})^{2}/2=3+2\sqrt{2}\)．\par\noindent (4) 由\(x_1x_2=1/2\)得\(1/x_1=2x_2\)；又\(x_2\)是原方程的根，\(x_2^{2}=2x_2-1/2\)，故\(1/x_1-x_2^{2}=2x_2-(2x_2-1/2)=1/2\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-2]
+% ans:2章-练-衔接-2
+\ansitem{2}{21}
+\ifansbookdetail
+\ansnote{详解}{由方程得\(x^{2}=x+1\)，即\(x_1^{2}=x_1+1\)、\(x_2^{2}=x_2+1\)，且\(x_1+x_2=1\)．\(2x_1^{5}=2x_1(x_1^{2})^{2}=2x_1(x_1+1)^{2}=2x_1(3x_1+2)=6x_1^{2}+4x_1=10x_1+6\)；\(5x_2^{3}=5x_2(x_2+1)=5x_2^{2}+5x_2=10x_2+5\)．合计\(10(x_1+x_2)+11=10+11=21\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-3]
+% ans:2章-练-衔接-3
+\ansitem{3}{另一根 2−√3；c=1}
+\ifansbookdetail
+\ansnote{详解}{两根之和为4，故另一根\(x_2=4-(2+\sqrt{3})=2-\sqrt{3}\)；两根之积为\(c\)，故\(c=(2+\sqrt{3})(2-\sqrt{3})=4-3=1\)．双路验算：把\(2+\sqrt{3}\)代入方程得\(7+4\sqrt{3}-8-4\sqrt{3}+c=0\)，亦得\(c=1\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-4]
+% ans:2章-练-衔接-4
+\ansitem{4}{(1) 1；(2) k=2/(c−1)，k>0 或 k<−2}
+\ifansbookdetail
+\ansnote{详解}{(1) 两根之积\(=-ck/k=-c\)，故另一根\((-c)/(-c)=1\)．(2) 两根之和\(1-c=-2/k\)，故\(k=2/(c-1)\)．由\(c>0\)且\(c\neq 1\)：\(c>1\)时\(c-1>0\)，\(k>0\)；\(0<c<1\)时\(-1<c-1<0\)，\(k=2/(c-1)<2/(-1)=-2\)，即\(k<-2\)．故\(k>0\)或\(k<-2\)．（另“两不等实根”前提恒相容：\(\Delta=4+4ck^{2}>0\)恒成立．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-5]
+% ans:2章-练-衔接-5
+\ansitem{5}{(1) 证毕（Δ=4m²+9>0）；(2) m=8}
+\ifansbookdetail
+\ansnote{详解}{(1) \(\Delta=(2m+1)^{2}-4(m-2)=4m^{2}+4m+1-4m+8=4m^{2}+9\geqslant 9>0\)，故无论\(m\)取何值，方程总有两个不相等的实数根．\par\noindent (2) 韦达定理：\(x_1+x_2=-(2m+1)\)、\(x_1x_2=m-2\)，代入\(x_1+x_2+3x_1x_2=1\)得\(-(2m+1)+3(m-2)=1\)，即\(m-7=1\)，解得\(m=8\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-6]
+% ans:2章-练-衔接-6
+\ansitem{6}{(1) 不存在；(2) k=−2，−3，−5}
+\ifansbookdetail
+\ansnote{详解}{两实根须\(4k\neq 0\)且\(\Delta=(-4k)^{2}-4\cdot 4k\cdot(k+1)=-16k\geqslant 0\)，故\(k<0\)；韦达定理：\(x_1+x_2=1\)、\(x_1x_2=(k+1)/(4k)\)．\par\noindent (1) \((2x_1-x_2)(x_1-2x_2)=2x_1^{2}+2x_2^{2}-5x_1x_2=2[(x_1+x_2)^{2}-2x_1x_2]-5x_1x_2=2-9x_1x_2=2-9(k+1)/(4k)\)．令其等于\(-3/2\)：\(18(k+1)=28k\)，得\(10k=18\)，\(k=9/5>0\)，与实根前提\(k<0\)矛盾，故不存在．\par\noindent (2) \(x_1/x_2+x_2/x_1-2=(x_1+x_2)^{2}/(x_1x_2)-4=4k/(k+1)-4=-4/(k+1)\)．\(k\)为负整数且\(k\neq -1\)，需\(k+1\)整除4，\(k+1\in\{-1,-2,-4\}\)，即\(k\in\{-2,-3,-5\}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-7]
+% ans:2章-练-衔接-7
+\ansitem{7}{30}
+\ifansbookdetail
+\ansnote{详解}{设两直角边为\(a\)、\(b\)：\(a+b=2m+7\)、\(ab=4m(m-2)\)．勾股定理：\(169=a^{2}+b^{2}=(a+b)^{2}-2ab=(2m+7)^{2}-8m(m-2)\)，展开得\(4m^{2}+28m+49-8m^{2}+16m=169\)，整理得\(m^{2}-11m+30=0\)，解得\(m=5\)或\(m=6\)．\par\noindent 实根检验：\(\Delta=(2m+7)^{2}-16m(m-2)\)，\(m=6\)时\(\Delta=361-384=-23<0\)，舍；\(m=5\)时\(\Delta=289-240=49>0\)，且\(a+b=17>0\)、\(ab=60>0\)均正，符合．故\(S_{\triangle ABC}=ab/2=30\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-8]
+% ans:2章-练-衔接-8
+\ansitem{8}{(1) x=0,y=−1 或 x=1,y=2；(2) x=1,y=2 或 x=−1,y=0；(3) x=2,y=1}
+\ifansbookdetail
+\ansnote{详解}{(1) 由\(3x-y=1\)得\(y=3x-1\)，代入得\(9x^{2}-6x+1=3x+1\)，即\(9x^{2}-9x=0\)，解得\(x=0\)或\(x=1\)，回代得\(y=-1\)或\(y=2\)．\par\noindent (2) 整体设元\(t=x+y\)：\(t^{2}-2t-3=0\)，得\(t=3\)或\(t=-1\)；配\(x-y=-1\)：\(t=3\)时\(x=1\)、\(y=2\)；\(t=-1\)时\(x=-1\)、\(y=0\)．\par\noindent (3) 平方差：\(9x^{2}-4y^{2}=(3x-2y)(3x+2y)=32\)，而\(3x-2y=4\)，故\(3x+2y=8\)；与\(3x-2y=4\)联立得\(x=2\)、\(y=1\)．（注意：消元所得根必须回代求另一未知数，防丢解．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-9]
+% ans:2章-练-衔接-9
+\ansitem{9}{x=−2,y=2 或 x=2,y=−2}
+\ifansbookdetail
+\ansnote{详解}{\(xy\neq 0\)，第一式同乘\(xy\)：\(x+y=0\)，即\(x=-y\)．代入\(xy=-4\)：\(-y^{2}=-4\)，\(y=\pm 2\)，故\((x,y)=(-2,2)\)或\((2,-2)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-10]
+% ans:2章-练-衔接-10
+\ansitem{10}{x=(25+√601)/2,y=(−25+√601)/2 或 x=(25−√601)/2,y=(−25−√601)/2}
+\ifansbookdetail
+\ansnote{详解}{设\(A=\sqrt{x-y}\geqslant 0\)：\(A^{2}-3A-10=0\)，\((A-5)(A+2)=0\)，得\(A=5\)（负根舍），故\(x-y=25\)．配\(xy=-6\)：\(x(x-25)=-6\)，即\(x^{2}-25x+6=0\)，解得\(x=(25\pm\sqrt{625-24})/2=(25\pm\sqrt{601})/2\)；\(y=x-25=(-25\pm\sqrt{601})/2\)（\(\pm\)号对应取同号）．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-11]
+% ans:2章-练-衔接-11
+\ansitem{11}{x=2,y=3 或 x=3,y=2}
+\ifansbookdetail
+\ansnote{详解}{法一（代入）：\(y=5-x\)代入\(xy=6\)得\(x^{2}-5x+6=0\)，\(x=2\)或\(x=3\)，对应\(y=3\)或\(y=2\)．法二（对称构造）：\(x\)、\(y\)是\(t^{2}-5t+6=0\)的两根，同解．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-12]
+% ans:2章-练-衔接-12
+\ansitem{12}{−√5<m<√5}
+\ifansbookdetail
+\ansnote{详解}{把\(y=x+m\)代入\(x^{2}/4+y^{2}=1\)：\(x^{2}/4+(x+m)^{2}=1\)，整理得\(5x^{2}+8mx+4m^{2}-4=0\)．方程组有两解\(\iff\)该二次方程有两不等实根\(\iff\Delta=64m^{2}-20(4m^{2}-4)=80-16m^{2}>0\)，即\(m^{2}<5\)，故\(-\sqrt{5}<m<\sqrt{5}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-13]
+% ans:2章-练-衔接-13
+\ansitem{13}{√5（此时 x=−4√5/5、y=√5/5）}
+\ifansbookdetail
+\ansnote{详解}{设\(m=y-x\)，即\(y=x+m\)，代入\(x^{2}/4+y^{2}=1\)：\(5x^{2}+8mx+4(m^{2}-1)=0\)．实数解存在\(\iff\Delta=64m^{2}-80(m^{2}-1)\geqslant 0\)，即\(m^{2}\leqslant 5\)，故\(m\)的最大值为\(\sqrt{5}\)．取等时关于\(x\)的方程为\(5x^{2}+8\sqrt{5}x+16=0\)，解得\(x=-8\sqrt{5}/10=-4\sqrt{5}/5\)，\(y=x+\sqrt{5}=\sqrt{5}/5\)，点在椭圆上，符合．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-14]
+% ans:2章-练-衔接-14
+\ansitem{14}{B（x²−y²=9）}
+\ifansbookdetail
+\ansnote{详解}{设双曲线方程为\(x^{2}-y^{2}=\lambda\)（\(\lambda>0\)，焦点在\(x\)轴的等轴双曲线）．与\(y=x/2\)联立：\((3/4)x^{2}=\lambda\)，\(x=\pm 2\sqrt{\lambda/3}\)，\(|\Delta x|=4\sqrt{\lambda/3}\)；\(|AB|=\sqrt{1+k^{2}}\,|\Delta x|=(\sqrt{5}/2)\cdot 4\sqrt{\lambda/3}=2\sqrt{5\lambda/3}=2\sqrt{15}\)，得\(5\lambda/3=15\)，\(\lambda=9\)，方程为\(x^{2}-y^{2}=9\)，选B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-15]
+% ans:2章-练-衔接-15
+\ansitem{15}{D（2x−y−1=0）}
+\ifansbookdetail
+\ansnote{详解}{设切线为\(2x-y+m=0\)，即\(y=2x+m\)，代入\(y=x^{2}\)：\(x^{2}-2x-m=0\)．相切\(\iff\Delta=4+4m=0\)，得\(m=-1\)，切线为\(2x-y-1=0\)（切点\((1,1)\)），选D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-16]
+% ans:2章-练-衔接-16
+\ansitem{16}{选①②：2<t<3；选①③：1<t<2}
+\ifansbookdetail
+\ansnote{详解}{条件①表示椭圆\(\iff\)两分母同正且不等：\(3-t>0\)、\(t-1>0\)、\(3-t\neq t-1\)，即\(1<t<3\)且\(t\neq 2\)．选①②（长轴在\(y\)轴）：\(t-1>3-t>0\)，解得\(2<t<3\)；选①③（长轴在\(x\)轴）：\(3-t>t-1>0\)，解得\(1<t<2\)．}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

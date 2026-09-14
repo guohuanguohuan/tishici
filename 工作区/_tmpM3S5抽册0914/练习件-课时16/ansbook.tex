@@ -1,0 +1,171 @@
+% ============================================================
+% 纯答案册·课时16-2.7.2抛物线性质 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：C:/提示词/工作区/M3-第2章量产0913/成卷/练习件/课时16-2.7.2抛物线性质/main.tex（md5 19ee3e6f52f93d14425998db00984721）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..16 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{练习件答案册}%
+
+\begin{document}
+\keshi{第16课时\quad 2.7.2抛物线性质}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-练-课时16-01]
+% ans:2章-练-课时16-01
+\ansitem{1}{AD}
+\ifansbookdetail
+\ansnote{详解}{对照标准形 \(y^{2}=-2px\)（\(p>0\)）：\(2p=2\)、\(p=1\)，一次项系数为负，开口向左，A 正确；焦点为 \((-p/2,0)=(-1/2,0)\)，B 所给 \((-1,0)\) 错（把 \(p\) 误作 \(p/2\)）；准线为 \(x=p/2=1/2\)，C 所给 \(x=1\) 错；对称轴为 \(x\) 轴，D 正确．故选：AD．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-02]
+% ans:2章-练-课时16-02
+\ansitem{2}{17/16}
+\ifansbookdetail
+\ansnote{详解}{化标准形：\(y=4x^{2}\) 即 \(x^{2}=(1/4)y\)，故 \(2p=1/4\)、\(p=1/8\)，焦点 \(F(0,1/16)\)，准线 \(y=-1/16\)．由抛物线定义，点 \(M\) 到焦点的距离等于它到准线的距离，\(|MF|=y_{M}+p/2=1+1/16=17/16\)．（回代校验：\(x_{M}^{2}=1/4\)、\(M(\pm 1/2,1)\)，\(|MF|^{2}=x_{M}^{2}+(y_{M}-1/16)^{2}=1/4+225/256=289/256\)，\(|MF|=17/16\)．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-03]
+% ans:2章-练-课时16-03
+\ansitem{3}{(1) 焦点(3/2,0)，准线 x=−3/2；(2) 焦点(0,−5/2)，准线 y=5/2；(3) 焦点(0,2/3)，准线 y=−2/3；(4) 焦点(−a/4,0)，准线 x=a/4}
+\ifansbookdetail
+\ansnote{详解}{(1) \(y^{2}=6x\)：\(2p=6\)、\(p=3\)，开口向右，焦点 \((p/2,0)=(3/2,0)\)，准线 \(x=-3/2\)．(2) \(x^{2}=-10y\)：\(2p=10\)、\(p=5\)，开口向下，焦点 \((0,-5/2)\)，准线 \(y=5/2\)．(3) \(x^{2}=(8/3)y\)：\(2p=8/3\)、\(p=4/3\)，开口向上，焦点 \((0,2/3)\)，准线 \(y=-2/3\)．(4) \(y^{2}=-ax\)（\(a\neq 0\)）：一次项系数为 \(-a\)，无论 \(a>0\)（开口向左）或 \(a<0\)（开口向右），焦点均为 \((-a/4,0)\)、准线均为 \(x=a/4\)（\(a>0\) 时焦点在 \(x\) 轴负半轴，\(a<0\) 时在正半轴，公式统一）．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-04]
+% ans:2章-练-课时16-04
+\ansitem{4}{1}
+\ifansbookdetail
+\ansnote{详解}{\(2p=8\)、\(p=4\)，焦点 \(F(2,0)\)．由点到直线的距离公式，\(d=|2-\sqrt{3}\times 0|/\sqrt{1^{2}+(\sqrt{3})^{2}}=2/\sqrt{4}=1\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-05]
+% ans:2章-练-课时16-05
+\ansitem{5}{6}
+\ifansbookdetail
+\ansnote{详解}{\(y^{2}=8x\) 中 \(2p=8\)、\(p=4\)，准线 \(x=-2\)．点 \(P\) 到 \(y\) 轴距离为 4，而抛物线上点横坐标 \(x\geqslant 0\)，故 \(x_{P}=4\)．由定义，\(P\) 到焦点的距离等于 \(P\) 到准线的距离：\(|PF|=x_{P}+p/2=4+2=6\)．（校验：\(P(4,\pm 4\sqrt{2})\)，\(|PF|=\sqrt{(4-2)^{2}+32}=\sqrt{36}=6\)．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-06]
+% ans:2章-练-课时16-06
+\ansitem{6}{M(3p/2, ±√3 p)}
+\ifansbookdetail
+\ansnote{详解}{设 \(M(x_{0},y_{0})\)，\(x_{0}\geqslant 0\)．由定义，\(|MF|\) 等于 \(M\) 到准线 \(x=-p/2\) 的距离，即 \(x_{0}+p/2=2p\)，得 \(x_{0}=3p/2\)．代入方程：\(y_{0}^{2}=2p\cdot(3p/2)=3p^{2}\)，\(y_{0}=\pm\sqrt{3}p\)．故 \(M(3p/2,\sqrt{3}p)\) 或 \(M(3p/2,-\sqrt{3}p)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-07]
+% ans:2章-练-课时16-07
+\ansitem{7}{y²=−4x 或 x²=√2 y}
+\ifansbookdetail
+\ansnote{详解}{\(P(-2,2\sqrt{2})\) 在第二象限，开口只可能向左或向上．情形一，对称轴为 \(x\) 轴：设 \(y^{2}=-2px\)（\(p>0\)），代入得 \((2\sqrt{2})^{2}=-2p\cdot(-2)=4p\)、\(p=2\)，即 \(y^{2}=-4x\)．情形二，对称轴为 \(y\) 轴：设 \(x^{2}=2py\)（\(p>0\)），代入得 \(4=2p\cdot 2\sqrt{2}\)、\(2p=\sqrt{2}\)，即 \(x^{2}=\sqrt{2}y\)．（回验：\(8=-4\times(-2)\)；\(4=\sqrt{2}\times 2\sqrt{2}\)．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-08]
+% ans:2章-练-课时16-08
+\ansitem{8}{p=4}
+\ifansbookdetail
+\ansnote{详解}{椭圆中 \(c^{2}=6-2=4\)，右焦点 \((2,0)\)．抛物线焦点 \((p/2,0)\)，由 \(p/2=2\) 得 \(p=4\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-09]
+% ans:2章-练-课时16-09
+\ansitem{9}{A（1/3）}
+\ifansbookdetail
+\ansnote{详解}{\(y^{2}=x\) 中 \(2p=1\)，焦点 \(F(1/4,0)\)，准线 \(x=-1/4\)．直线 \(l\)：\(y=\sqrt{3}(x-1/4)\)．代入 \(y^{2}=x\) 得 \(3(x-1/4)^{2}=x\)，整理为 \(48x^{2}-40x+3=0\)，故 \(x_{1}+x_{2}=40/48=5/6\)，\(x_{1}x_{2}=3/48=1/16\)．由定义，\(|AF|=x_{1}+1/4\)、\(|BF|=x_{2}+1/4\)，\(|AF|\cdot|BF|=x_{1}x_{2}+(1/4)(x_{1}+x_{2})+1/16=1/16+5/24+1/16=16/48=1/3\)．故选 A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-10]
+% ans:2章-练-课时16-10
+\ansitem{10}{C}
+\ifansbookdetail
+\ansnote{详解}{顶点在原点、对称轴为 \(x\) 轴，方程形如 \(y^{2}=\pm 2px\)（\(p>0\)）．通径（过焦点且垂直于对称轴的弦）长为 \(2p\)，由 \(2p=8\) 得 \(p=4\)，故方程为 \(y^{2}=8x\)（焦点在 \(x\) 轴正半轴）或 \(y^{2}=-8x\)（焦点在负半轴），两向各一，选 C．（排除 D：其对称轴为 \(y\) 轴．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-11]
+% ans:2章-练-课时16-11
+\ansitem{11}{B}
+\ifansbookdetail
+\ansnote{详解}{\(y^{2}=4x\) 的焦点 \(F(1,0)\)，准线 \(x=-1\)，即直线 \(x+1=0\)．分别过 \(A\)、\(B\)、\(M\) 作准线的垂线，垂足为 \(C\)、\(D\)、\(N\)．由定义，\(|AC|=|AF|\)、\(|BD|=|BF|\)，故 \(|AC|+|BD|=|AF|+|BF|=|AB|=8\)．又 \(AC\parallel MN\parallel BD\) 且 \(M\) 为 \(AB\) 中点，\(MN\) 为直角梯形 \(ABDC\) 的中位线，\(|MN|=(|AC|+|BD|)/2=4\)，即点 \(M\) 到准线 \(x=-1\) 的距离为 4．故选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-12]
+% ans:2章-练-课时16-12
+\ansitem{12}{P(−2,1/2)（最小值 6）}
+\ifansbookdetail
+\ansnote{详解}{\(x^{2}=8y\) 的准线为 \(l\)：\(y=-2\)．设 \(P\) 在 \(l\) 上的射影为 \(Q\)，过 \(A\) 作 \(AB\perp l\) 于 \(B\)，则 \(|AB|=y_{A}-(-2)=4+2=6\)．由定义 \(|PF|=|PQ|\)，故 \(|PF|+|PA|=|PQ|+|PA|\geqslant|AQ|\geqslant|AB|=6\)：第一个不等号当 \(A\)、\(P\)、\(Q\) 共线（\(P\) 与 \(A\) 同取横坐标 \(-2\)）时取等，第二个不等号当 \(Q\) 与 \(B\) 重合时取等，两条件同时满足．把 \(x=-2\) 代入 \(x^{2}=8y\) 得 \(y=1/2\)，故所求点 \(P(-2,1/2)\)，此时 \((|PF|+|PA|)_{\min}=|AB|=y_{A}+2=6\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-13]
+% ans:2章-练-课时16-13
+\ansitem{13}{|MA| 的最小值为 4，此时 M(0,0)}
+\ifansbookdetail
+\ansnote{详解}{设 \(M(x,y)\)，则 \(x\geqslant 0\)，\(y^{2}=16x\)．\par\noindent \(|MA|^{2}=(x-4)^{2}+y^{2}=(x-4)^{2}+16x=x^{2}+8x+16=(x+4)^{2}\)．\par\noindent 由 \(x\geqslant 0\) 得 \((x+4)^{2}\geqslant 16\)，当且仅当 \(x=0\) 时等号成立，此时 \(y=0\)，\(|MA|_{\min}=4\)，\(M(0,0)\)．（注：\(2p=16\)、\(p/2=4\)，\(A(4,0)\) 恰为该抛物线的焦点，\(|MA|=|MF|=x+4\geqslant 4\) 与配方路径互证．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-14]
+% ans:2章-练-课时16-14
+\ansitem{14}{4√3 p}
+\ifansbookdetail
+\ansnote{详解}{设正三角形 \(OAB\) 的顶点 \(A(x_{1},y_{1})\)、\(B(x_{2},y_{2})\) 在抛物线上，则 \(y_{1}^{2}=2px_{1}\)、\(y_{2}^{2}=2px_{2}\)．由 \(|OA|=|OB|\) 得 \(x_{1}^{2}+y_{1}^{2}=x_{2}^{2}+y_{2}^{2}\)，即 \((x_{1}^{2}-x_{2}^{2})+2p(x_{1}-x_{2})=0\)，\((x_{1}-x_{2})(x_{1}+x_{2}+2p)=0\)．因 \(x_{1}\geqslant 0\)、\(x_{2}\geqslant 0\) 且 \(2p>0\)（若 \(x_{1}\)、\(x_{2}\) 之一为 0 则三角形退化），括号第二因子为正，故 \(x_{1}=x_{2}\)，从而 \(y_{2}=-y_{1}\neq 0\)，线段 \(AB\) 关于 \(x\) 轴对称．\(x\) 轴垂直平分 \(AB\) 且平分 \(\angle AOB\)，\(\angle AOx=30^{\circ}\)，故 \(y_{1}/x_{1}=\tan 30^{\circ}=\sqrt{3}/3\)、\(x_{1}=\sqrt{3}y_{1}\)．代入 \(y_{1}^{2}=2p\cdot\sqrt{3}y_{1}\) 得 \(y_{1}=2\sqrt{3}p\)，边长 \(|AB|=2y_{1}=4\sqrt{3}p\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-15]
+% ans:2章-练-课时16-15
+\ansitem{15}{(1) |AB|=4p；(2) 定值 cos∠AOB=−3√41/41（与 p 无关）}
+\ifansbookdetail
+\ansnote{详解}{(1) 过 \(F(p/2,0)\)、倾斜角 \(\pi/4\) 的直线为 \(y=x-p/2\)．代入 \(y^{2}=2px\)：\((x-p/2)^{2}=2px\)，即 \(x^{2}-3px+p^{2}/4=0\)（\(\Delta=9p^{2}-p^{2}=8p^{2}>0\)）．设 \(A(x_{A},y_{A})\)、\(B(x_{B},y_{B})\)，则 \(x_{A}+x_{B}=3p\)，\(x_{A}x_{B}=p^{2}/4\)．由定义（焦半径），\par\noindent \(|AB|=|AF|+|BF|=(x_{A}+p/2)+(x_{B}+p/2)=x_{A}+x_{B}+p=4p\)．\par\noindent (2) 该弦所在直线与 \(x\) 轴交于 \(F\)，两端点 \(A\)、\(B\) 分居 \(x\) 轴两侧，纵坐标一正一负，其积为负：\par\noindent \(y_{A}y_{B}=(x_{A}-p/2)(x_{B}-p/2)=x_{A}x_{B}-(p/2)(x_{A}+x_{B})+p^{2}/4=p^{2}/4-3p^{2}/2+p^{2}/4=-p^{2}\)（与焦点弦结论 \(y_{1}y_{2}=-p^{2}\) 相符，此即符号判据）．\par\noindent 于是 \(x_{A}x_{B}+y_{A}y_{B}=p^{2}/4-p^{2}=-3p^{2}/4\)．又 \(|OA|^{2}=x_{A}^{2}+y_{A}^{2}=x_{A}^{2}+2px_{A}=x_{A}(x_{A}+2p)\)，同理 \(|OB|^{2}=x_{B}(x_{B}+2p)\)．\par\noindent 故 \(|OA|\cdot|OB|=\sqrt{x_{A}x_{B}}\cdot\sqrt{x_{A}x_{B}+2p(x_{A}+x_{B})+4p^{2}}=(p/2)\cdot\sqrt{p^{2}/4+6p^{2}+4p^{2}}=(p/2)\cdot(\sqrt{41}/2)p=\sqrt{41}p^{2}/4\)．\par\noindent 在 \(\triangle AOB\) 中由余弦定理，\(\cos\angle AOB=(|OA|^{2}+|OB|^{2}-|AB|^{2})/(2|OA|\cdot|OB|)\)．\par\noindent 而 \(|OA|^{2}+|OB|^{2}-|AB|^{2}=(x_{A}-x_{B})^{2}+(y_{A}-y_{B})^{2}=2(x_{A}x_{B}+y_{A}y_{B})=-3p^{2}/2\)，\par\noindent 故 \(\cos\angle AOB=(-3p^{2}/4)/(\sqrt{41}p^{2}/4)=-3/\sqrt{41}\)，分母有理化得 \(-3\sqrt{41}/41\)，\(p^{2}\) 全部约去，与 \(p\) 无关．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时16-16]
+% ans:2章-练-课时16-16
+\ansitem{16}{24}
+\ifansbookdetail
+\ansnote{详解}{\(x^{2}=4y\) 的焦点 \(F(0,1)\)，准线 \(y=-1\)，抛物线上点之焦半径 \(|AF|=y_{A}+1\)（即到准线的距离）．\(l_{1}\)：\(y=k_{1}x+1\) 代入 \(x^{2}=4y\) 得 \(x^{2}-4k_{1}x-4=0\)（\(\Delta=16k_{1}^{2}+16>0\) 恒成立）．设 \(A(x_{1},y_{1})\)、\(B(x_{2},y_{2})\)，则 \(x_{1}+x_{2}=4k_{1}\)，\(y_{1}+y_{2}=k_{1}(x_{1}+x_{2})+2=4k_{1}^{2}+2\)．于是 \par\noindent \(|AB|=|AF|+|BF|=(y_{1}+1)+(y_{2}+1)=y_{1}+y_{2}+2=4k_{1}^{2}+4\)．\par\noindent 同理 \(|DE|=4k_{2}^{2}+4\)．故 \par\noindent \(|AB|+|DE|=4(k_{1}^{2}+k_{2}^{2})+8\geqslant 8|k_{1}k_{2}|+8=8\times 2+8=24\)，\par\noindent 当且仅当 \(|k_{1}|=|k_{2}|\) 且 \(k_{1}k_{2}=-2\)，即 \((k_{1},k_{2})=(\sqrt{2},-\sqrt{2})\) 或 \((-\sqrt{2},\sqrt{2})\) 时等号成立．所求最小值为 24．}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

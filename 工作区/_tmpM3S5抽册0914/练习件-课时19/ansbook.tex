@@ -1,0 +1,171 @@
+% ============================================================
+% 纯答案册·课时19-章末总结与复习 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：C:/提示词/工作区/M3-第2章量产0913/成卷/练习件/课时19-章末总结与复习/main.tex（md5 c8eabb9eba261652d3ae08a4744817ec）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..16 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{练习件答案册}%
+
+\begin{document}
+\keshi{第19课时\quad 章末总结与复习}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-练-课时19-01]
+% ans:2章-练-课时19-01
+\ansitem{1}{A}
+\ifansbookdetail
+\ansnote{详解}{求根公式：\(x=2\pm\sqrt{3}\)，其中\(2-\sqrt{3}\approx 0.27\in(0,1)\)可作椭圆离心率，\(2+\sqrt{3}\approx 3.73\in(1,+\infty)\)可作双曲线离心率。抛物线离心率恒等于1，两根均不为1，排除B、C；两椭圆离心率都须在\((0,1)\)内，而\(2+\sqrt{3}>1\)，排除D。故选：A。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-02]
+% ans:2章-练-课时19-02
+\ansitem{2}{B}
+\ifansbookdetail
+\ansnote{详解}{\(k<9\Rightarrow 25-k>9-k>0\)，第二曲线为椭圆，其\(c^{2}=(25-k)-(9-k)=16\)，与\(k\)无关；第一曲线\(c^{2}=25-9=16\)。故两曲线半焦距均为4、焦距均为8，选B。长轴\(10\)与\(2\sqrt{25-k}\)、短轴\(6\)与\(2\sqrt{9-k}\)、离心率\(e^{2}=16/25\)与\(16/(25-k)\)均随\(k\)变动，排除A、C、D。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-03]
+% ans:2章-练-课时19-03
+\ansitem{3}{x²/4+y²/3=1（x>0，y≠0），椭圆 x²/4+y²/3=1 的右半部分（不含与 x 轴的交点）}
+\ifansbookdetail
+\ansnote{详解}{\(|BC|=2\Rightarrow|AB|+|CA|=2|BC|=4>|BC|=2\)，由椭圆定义，\(A\)的轨迹是以\(B\)、\(C\)为焦点、长半轴\(a=2\)、半焦距\(c=1\)、短半轴\(b^{2}=a^{2}-c^{2}=3\)的椭圆\(x^{2}/4+y^{2}/3=1\)（去掉长轴端点，因\(4>|BC|\)严格成立）。在该椭圆上\(|AB|=a+ex\)、\(|CA|=a-ex\)（\(e=1/2\)），\(|AB|>|CA|\Leftrightarrow x>0\)。又\(A\)为三角形顶点，不能与\(B\)、\(C\)共线\(\Rightarrow y\neq 0\)（舍去点\((2,0)\)）。故轨迹为\(x^{2}/4+y^{2}/3=1\)（\(x>0\)，\(y\neq 0\)），是椭圆的右半（不含顶点）。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-04]
+% ans:2章-练-课时19-04
+\ansitem{4}{a<−1 或 a>3}
+\ifansbookdetail
+\ansnote{详解}{双曲线型须二次项系数异号：\((3-a)(a+1)<0\Leftrightarrow a<-1\)或\(a>3\)。此时常数项\(a^{2}-2a-3=(a-3)(a+1)>0\)自动相容，方程确为双曲线：\(a>3\)时移项配方得\(x^{2}/(a+1)-y^{2}/(a-3)=1\)；\(a<-1\)时同法得\(x^{2}/(a+1)-y^{2}/(a-3)=1\)（分子分母同乘\(-1\)后仍为平方差形式）。即\(-1<a<3\)时为椭圆型或虚轨迹/退化，不取。故\(a\in(-\infty,-1)\cup(3,+\infty)\)。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-05]
+% ans:2章-练-课时19-05
+\ansitem{5}{k<−√6/2 或 k>√6/2}
+\ifansbookdetail
+\ansnote{详解}{联立消\(y\)：\((1+2k^{2})x^{2}+8kx+6=0\)。相交于不同两点\(\Leftrightarrow\Delta>0\)：\(\Delta=64k^{2}-24(1+2k^{2})=16k^{2}-24=8(2k^{2}-3)>0\Leftrightarrow k^{2}>3/2\Leftrightarrow|k|>\sqrt{6}/2\)。故\(k<-\sqrt{6}/2\)或\(k>\sqrt{6}/2\)。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-06]
+% ans:2章-练-课时19-06
+\ansitem{6}{y=4 或 y=x+2}
+\ifansbookdetail
+\ansnote{详解}{①斜率不存在：\(x=2\)代入\(y^{2}=16\)得两点\((2,\pm 4)\)，不合，舍。②斜率\(k=0\)：\(y=4\)，与抛物线恰一公共点\((2,4)\)，合。③\(k\neq 0\)：设\(y-4=k(x-2)\)，以\(x=y^{2}/8\)代入并整理：\(ky^{2}-8y+32-16k=0\)，恰一公共点\(\Leftrightarrow\Delta=64-4k(32-16k)=64(k-1)^{2}=0\Rightarrow k=1\Rightarrow y=x+2\)。综上共两条：\(y=4\)与\(y=x+2\)。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-07]
+% ans:2章-练-课时19-07
+\ansitem{7}{C}
+\ifansbookdetail
+\ansnote{详解}{\(e=\sqrt{2}\Rightarrow a=b\Rightarrow\)等轴双曲线\(\Rightarrow\)渐近线\(y=\pm x\)。准线\(x=-p/2\)，交渐近线于\(A(-p/2,p/2)\)、\(B(-p/2,-p/2)\)，\(|AB|=p\)，\(O\)到\(AB\)距离\(p/2\)，故\(S=(1/2)\cdot p\cdot p/2=p^{2}/4=4\Rightarrow p=4\Rightarrow y^{2}=8x\)。故选：C。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-08]
+% ans:2章-练-课时19-08
+\ansitem{8}{(1) 2√2；(2) y=[(2√2+√5)/3]x−(2√10+2)/3；(3) 证毕（O 到 AB 距离恒为 √2）}
+\ifansbookdetail
+\ansnote{详解}{\(c^{2}=4+4=8\)，即\(F(2\sqrt{2},0)\)。圆心\((0,m)\)（\(m>0\)）、过\(O\)，即半径\(m\)：\(x^{2}+y^{2}-2my=0\)。\par\noindent (1) \(AF\perp OF\)（\(x\)轴），即\(x_A=2\sqrt{2}\)，得\(y_A^{2}=8-4=4\)，取\(A(2\sqrt{2},2)\)，\(S=(1/2)\cdot|OF|\cdot|y_A|=(1/2)\cdot 2\sqrt{2}\cdot 2=2\sqrt{2}\)。\par\noindent (2) 代\(A(\sqrt{5},1)\)：\(5+1-2m=0\)，得\(m=3\)。圆与\(\Gamma\)联立（\(x^{2}-y^{2}=4\)、\(x^{2}+y^{2}-6y=0\)相减）得\(y^{2}-3y+2=0\)，即\(y=1\)（\(A\)）或\(y=2\)，得\(B(2\sqrt{2},2)\)。\(k_{AB}=(2-1)/(2\sqrt{2}-\sqrt{5})=(2\sqrt{2}+\sqrt{5})/3\)（分母有理化，\((2\sqrt{2})^{2}-(\sqrt{5})^{2}=3\)）；截距\(=1-k\sqrt{5}=1-(2\sqrt{10}+5)/3=-(2\sqrt{10}+2)/3\)，直线\(AB\)同值。\par\noindent (3) 一般情形：圆\(x^{2}+y^{2}-2my=0\)与\(\Gamma\)消\(x\)得\(y^{2}-my+2=0\)，即\(y_1y_2=2\)、\(y_1^{2}+y_2^{2}=m^{2}-4\)；右支\(x_i=\sqrt{y_i^{2}+4}\)，得\(x_1x_2=\sqrt{(y_1y_2)^{2}+4(y_1^{2}+y_2^{2})+16}=2\sqrt{m^{2}+1}\)、\(x_1^{2}+x_2^{2}=m^{2}+4\)。原点到\(AB\)的距离\(d=|x_1y_2-x_2y_1|/|AB|\)，其中分子平方\(=x_1^{2}y_2^{2}+x_2^{2}y_1^{2}-2x_1x_2y_1y_2=y_2^{2}(y_1^{2}+4)+y_1^{2}(y_2^{2}+4)-4\sqrt{m^{2}+1}\cdot 2=2(y_1y_2)^{2}+4(y_1^{2}+y_2^{2})-8\sqrt{m^{2}+1}=4m^{2}-8-8\sqrt{m^{2}+1}\)；分母平方\(=(x_1^{2}+x_2^{2}-2x_1x_2)+(y_1^{2}+y_2^{2}-2y_1y_2)=(m^{2}+4-4\sqrt{m^{2}+1})+(m^{2}-4-4)=2m^{2}-4-4\sqrt{m^{2}+1}\)。分子平方\(=2\times\)分母平方恒成立（\(m>2\sqrt{2}\)时分母\(>0\)），即\(d^{2}\equiv 2\)，\(d=\sqrt{2}=\)圆\(x^{2}+y^{2}=2\)的半径，故相切，证毕。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-09]
+% ans:2章-练-课时19-09
+\ansitem{9}{A}
+\ifansbookdetail
+\ansnote{详解}{设\(|MF_1|>|MF_2|\)，则\(|MF_1|+|MF_2|=2a_1\)、\(|MF_1|-|MF_2|=2a_2\)，得\(|MF_1|=a_1+a_2\)、\(|MF_2|=a_1-a_2\)。\(\angle F_1MF_2=90^{\circ}\Rightarrow|MF_1|^{2}+|MF_2|^{2}=4c^{2}\)，即\((a_1+a_2)^{2}+(a_1-a_2)^{2}=4c^{2}\)，得\(a_1^{2}+a_2^{2}=2c^{2}\)，同除\(c^{2}\)：\(1/e_1^{2}+1/e_2^{2}=2\)。\(e_1\in[\sqrt{6}/3,1)\)，即\(1/e_1^{2}\in(1,3/2]\)，得\(1/e_2^{2}=2-1/e_1^{2}\in[1/2,1)\)，即\(e_2^{2}\in(1,2]\)，\(e_2\in(1,\sqrt{2}]\)。故选：A。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-10]
+% ans:2章-练-课时19-10
+\ansitem{10}{2}
+\ifansbookdetail
+\ansnote{详解}{两曲线关于原点对称，即\(O\)为\(AB\)中点，四边形\(AF_1BF_2\)为平行四边形，其对角线\(|AB|=2|OF_1|=2c\)与\(|F_1F_2|=2c\)相等，故四边形为矩形，\(\angle F_1AF_2=\angle F_1BF_2=90^{\circ}\)。\(\triangle OF_1B\)中\(|OF_1|=|OB|=c\)，\(\angle OF_1B=\pi/6\)，顶角\(\angle F_1OB=2\pi/3\)；由\(A=-B\)得\(\angle F_1OA=\pi-2\pi/3=\pi/3\)，而\(|OA|=|OF_1|=c\)，\(\triangle AOF_1\)等边，即\(|AF_1|=c\)且\(\angle AF_1O=\pi/3\)，\(\angle AF_1B=\pi/3+\pi/6=\pi/2\)（与矩形一致）。于是\(|BF_1|=\sqrt{|AB|^{2}-|AF_1|^{2}}=\sqrt{4c^{2}-c^{2}}=\sqrt{3}c\)，且平行四边形对边\(|AF_2|=|BF_1|=\sqrt{3}c\)。椭圆定义：\(c+\sqrt{3}c=2a_1\)，即\(e_1=2/(\sqrt{3}+1)\)；双曲线定义：\(\sqrt{3}c-c=2a_2\)，即\(e_2=2/(\sqrt{3}-1)\)。\(e_1e_2=4/[(\sqrt{3}+1)(\sqrt{3}-1)]=4/2=2\)。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-11]
+% ans:2章-练-课时19-11
+\ansitem{11}{BCD}
+\ifansbookdetail
+\ansnote{详解}{A：圆须\(16+\lambda=9+\lambda\)，矛盾，不存在，A错。B：\(\lambda>-9\)时\(16+\lambda>9+\lambda>0\)，方程表示焦点在\(x\)轴的椭圆，B对。C：\(-16<\lambda<-9\)时\((16+\lambda)(9+\lambda)<0\)，表示焦点在\(x\)轴的双曲线，C对。D：\(\lambda>-9\)时椭圆\(c^{2}=(16+\lambda)-(9+\lambda)=7\)；\(-16<\lambda<-9\)时双曲线\(c^{2}=(16+\lambda)+[-(9+\lambda)]=7\)，焦距恒为\(2\sqrt{7}\)，D对。故选：BCD。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-12]
+% ans:2章-练-课时19-12
+\ansitem{12}{BD}
+\ifansbookdetail
+\ansnote{详解}{\(\overrightarrow{MF_1}\cdot\overrightarrow{MF_2}=0\)且\(|MF_1|=|MF_2|=\sqrt{b^{2}+c^{2}}\)，即\(\triangle MF_1F_2\)等腰直角，得\(b=c\)，\(e_1^{2}=b^{2}/(b^{2}+c^{2})=1/2\)，\(e_1=\sqrt{2}/2\)，且\(a=\sqrt{2}c\)。在焦点三角形\(\triangle PF_1F_2\)中\(\angle F_1PF_2=\pi/3\)，设\(|PF_1|=m\)、\(|PF_2|=n\)（\(m>n\)，\(P\)取双曲线右支），则\(m+n=2a_1=2\sqrt{2}c\)、\(m-n=2a_2\)。余弦定理：\(4c^{2}=m^{2}+n^{2}-2mn\cos(\pi/3)=(m+n)^{2}-3mn\)，得\(mn=(8c^{2}-4c^{2})/3=4c^{2}/3\)。故\((m-n)^{2}=(m+n)^{2}-4mn=8c^{2}-16c^{2}/3=8c^{2}/3\)，即\(4a_2^{2}=8c^{2}/3\)，\(a_2^{2}=2c^{2}/3\)，\(e_2^{2}=3/2\)，\(e_2=\sqrt{6}/2\)。逐项：\(e_1e_2=(\sqrt{2}/2)\cdot(\sqrt{6}/2)=\sqrt{3}/2\)，B对；\(e_2^{2}-e_1^{2}=3/2-1/2=1\)，D对；\(e_2/e_1=\sqrt{3}\neq 2\)，A错；\(e_1^{2}+e_2^{2}=2\neq 5/2\)，C错。故选：BD。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-13]
+% ans:2章-练-课时19-13
+\ansitem{13}{(1) x²/2−y²/2=1、y=±x；(2) x−2y+3=0}
+\ifansbookdetail
+\ansnote{详解}{(1) 椭圆\(c^{2}=18-14=4\)，即双曲线\(c=2\)、\(a^{2}+b^{2}=4\)；\(A\)代入：\(9/a^{2}-7/b^{2}=1\)。令\(u=a^{2}\)：\(9/u-7/(4-u)=1\)，即\(9(4-u)-7u=u(4-u)\)，\(u^{2}-20u+36=0\)，得\(u=2\)或\(u=18\)（\(>c^{2}\)舍），故\(a^{2}=b^{2}=2\)，\(x^{2}/2-y^{2}/2=1\)，渐近线\(y=\pm x\)（等轴双曲线）。\par\noindent (2) 点差法：\(x_1^{2}-y_1^{2}=2\)、\(x_2^{2}-y_2^{2}=2\)相减得\((x_1+x_2)(x_1-x_2)=(y_1+y_2)(y_1-y_2)\)，即\(k_{AB}=(y_1-y_2)/(x_1-x_2)=(x_1+x_2)/(y_1+y_2)=2/4=1/2\)，直线\(y-2=(1/2)(x-1)\)，即\(x-2y+3=0\)。回验：联立消\(y\)得\(3x^{2}-6x-17=0\)，\(\Delta=36+204=240>0\)，为真弦。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-14]
+% ans:2章-练-课时19-14
+\ansitem{14}{A}
+\ifansbookdetail
+\ansnote{详解}{\(a^{2}=(\sqrt{5}-1)^{2}=6-2\sqrt{5}\)。\(a/c=(\sqrt{5}-1)/2\)，即\(c=2a/(\sqrt{5}-1)=a(\sqrt{5}+1)/2\)，得\(c^{2}=a^{2}(3+\sqrt{5})/2\)。\(m=c^{2}-a^{2}=a^{2}[(3+\sqrt{5})/2-1]=a^{2}(1+\sqrt{5})/2=(6-2\sqrt{5})(\sqrt{5}+1)/2=(3-\sqrt{5})(\sqrt{5}+1)=3\sqrt{5}+3-5-\sqrt{5}=2\sqrt{5}-2\)。故选：A。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-15]
+% ans:2章-练-课时19-15
+\ansitem{15}{(1) 三条件均得 x²/9−y²/16=1；(2) |PF₂|=2 或 14}
+\ifansbookdetail
+\ansnote{详解}{(1) \(c^{2}=49-24=25\)，即\(c=5\)。选①：左顶点\((-3,0)\)，即\(a=3\)。选②：\(18/a^{2}-16/b^{2}=1\)配\(a^{2}+b^{2}=25\)，即\(18(25-a^{2})-16a^{2}=a^{2}(25-a^{2})\)，\(a^{4}-59a^{2}+450=0\)，得\(a^{2}=9\)或\(50\)（\(>25\)舍），即\(a^{2}=9\)。选③：\(e=c/a=5/3\)，即\(5/a=5/3\)，\(a=3\)。三路均得\(b^{2}=25-9=16\)，双曲线\(x^{2}/9-y^{2}/16=1\)。\par\noindent (2) \(||PF_1|-|PF_2||=2a=6\)，即\(|PF_2|=2\)或\(14\)，均须回验：\(|PF_2|=2\)时\(P\)为右顶点\((3,0)\)（\(|PF_1|=3+5=8\)，\(8-2=6\)合定义——\(P\)、\(F\)成线段，退化但合法）；\(|PF_2|=14\)时\(P\)在左支（\(x=-33/5\)，\(|PF_1|=8\)、\(14-8=6\)，且\(8+14=22>2c=20\)三角形存在）。故\(|PF_2|=2\)或\(14\)。}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时19-16]
+% ans:2章-练-课时19-16
+\ansitem{16}{(1) p₁=2；(2) x_A=p/(p+1)，斜率范围 (−1,0)∪(0,1)}
+\ifansbookdetail
+\ansnote{详解}{(1) \(C_1\)的准线\(x=-p_1/2=-1\)，得\(p_1=2\)，即\(C_1\)：\(y^{2}=4x\)。\par\noindent (2) 设\(B(-t^{2}/(2p),t)\)（\(C_2\)上的参数点），\(B\)为\(AC\)中点、\(C(-1,0)\)，则\(A=2B-C=(1-t^{2}/p,2t)\)。\(A\)在\(C_1\)上：\(4t^{2}=4(1-t^{2}/p)\)，得\(t^{2}=p/(p+1)\in(0,1)\)（\(p>0\)），\(A\)的横坐标\(x_A=1-t^{2}/p=1-1/(p+1)=p/(p+1)\)（\(0<x_A<1\)）。斜率：\(k_{AC}=k_{BC}=t/[-t^{2}/(2p)+1]\)；由\(t^{2}=p/(p+1)\)得\(1/p=1/t^{2}-1\)，故分母\(=-(t^{2}/2)(1/t^{2}-1)+1=(1+t^{2})/2\)，即\(k=2t/(1+t^{2})\)（\(t\neq 0\)，否则\(A=C\)不成弦）。\(k^{2}=4t^{2}/(1+t^{2})^{2}\)，由\(0<t^{2}<1\)得\(0<k^{2}<1\)（等号\(t^{2}=1\)不可达），即\(k\in(-1,0)\cup(0,1)\)，证毕。}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

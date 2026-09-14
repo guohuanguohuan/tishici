@@ -1,0 +1,171 @@
+% ============================================================
+% 纯答案册·课时08-直线与圆的位置关系 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：C:/提示词/工作区/M3-第2章量产0913/成卷/练习件/课时08-直线与圆的位置关系/main.tex（md5 1cfc844ff6df2600cdda6d064d38259b）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..16 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{练习件答案册}%
+
+\begin{document}
+\keshi{第8课时\quad 直线与圆的位置关系}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-练-课时08-T1]
+% ans:2章-练-课时08-T1
+\ansitem{1}{A}
+\ifansbookdetail
+\ansnote{详解}{圆\(C\)即\((x-1)^{2}+(y-2)^{2}=9\)，圆心\((1,2)\)，\(r=3\)．圆心到直线\(l\)的距离\(d=|3+8-1|/5=2\)．由弦长公式，弦长\(=2\sqrt{9-4}=2\sqrt{5}\)．故选：A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T2]
+% ans:2章-练-课时08-T2
+\ansitem{2}{A}
+\ifansbookdetail
+\ansnote{详解}{过圆内点的弦以垂直于\(OP\)的弦最短．\(k_{OP}=2\)，故所求直线斜率为\(-1/2\)：\(y-2=-(1/2)(x-1)\)，即\(x+2y-5=0\)．故选：A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T3]
+% ans:2章-练-课时08-T3
+\ansitem{3}{C}
+\ifansbookdetail
+\ansnote{详解}{圆心\((1,-2)\)，\(r^{2}=5-m\)．圆心到直线的距离\(d=|1-2-3|/\sqrt{2}=2\sqrt{2}\)．由半弦长平方\(1=r^{2}-d^{2}\)，得\(1=5-m-8\)，解得\(m=-4\)．故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T4]
+% ans:2章-练-课时08-T4
+\ansitem{4}{B}
+\ifansbookdetail
+\ansnote{详解}{\(|AB|\geqslant 2\sqrt{3}\)，则半弦长\(\geqslant\sqrt{3}\)，弦心距\(d\leqslant\sqrt{4-3}=1\)．又\(d=|m|/\sqrt{2}\)，故\(|m|\leqslant\sqrt{2}\)，即\(m\in[-\sqrt{2},\sqrt{2}]\)．故选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T5]
+% ans:2章-练-课时08-T5
+\ansitem{5}{A}
+\ifansbookdetail
+\ansnote{详解}{圆即\(x^{2}+(y-1)^{2}=1\)，圆心\((0,1)\)．直线\(y=k(x-1)+1\)过定点\((1,1)\)（\(x=1\)时\(y=1\)），恰为圆心，故圆心到直线的距离\(d=0<r\)，直线与圆恒相交．故选：A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T6]
+% ans:2章-练-课时08-T6
+\ansitem{6}{D}
+\ifansbookdetail
+\ansnote{详解}{圆即\((x-2)^{2}+y^{2}=1\)，圆心\((2,0)\)，\(r=1\)．①过原点（两截距同为0）：设\(y=kx\)，\(d=|2k|/\sqrt{1+k^{2}}=1\)，得\(k^{2}=1/3\)，有2条；②不过原点：设\(x+y=a\)，\(d=|2-a|/\sqrt{2}=1\)，得\(a=2\pm\sqrt{2}\)（均非0），有2条．共4条，故选：D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T7]
+% ans:2章-练-课时08-T7
+\ansitem{7}{B}
+\ifansbookdetail
+\ansnote{详解}{圆与两轴都相切且过点\((2,1)\)（第一象限），则圆心\((a,a)\)，半径\(a\)（\(a>0\)）．由\((2-a)^{2}+(1-a)^{2}=a^{2}\)得\(a^{2}-6a+5=0\)，\(a=1\)或\(a=5\)．\(a=1\)：圆心\((1,1)\)，\(d=|2-1-3|/\sqrt{5}=2\sqrt{5}/5\)；\(a=5\)：圆心\((5,5)\)，\(d=|10-5-3|/\sqrt{5}=2\sqrt{5}/5\)．两者相同，故\(d=2\sqrt{5}/5\)，故选：B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T8]
+% ans:2章-练-课时08-T8
+\ansitem{8}{C}
+\ifansbookdetail
+\ansnote{详解}{\(x\geqslant 0\)时，\(y=x-1\)，代入圆方程：\(2x^{2}-2x=0\)，得\(x=0\)（\(y=-1\)）或\(x=1\)（\(y=0\)）；\(x<0\)时，\(y=-x-1\)，代入：\(2x^{2}+2x=0\)，得\(x=-1\)（\(y=0\)）（\(x=0\)不在此段）．交点\((0,-1)\)，\((1,0)\)，\((-1,0)\)共3个，真子集\(2^{3}-1=7\)个．故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T9]
+% ans:2章-练-课时08-T9
+\ansitem{9}{A}
+\ifansbookdetail
+\ansnote{详解}{圆\(C\)即\((x-2)^{2}+(y+3)^{2}=1\)，圆心\(C(2,-3)\)，\(r=1\)．切线长\(=\sqrt{|PC|^{2}-r^{2}}\)，最小当且仅当\(|PC|\)最小，即\(C\)到直线的距离\(|4+3-3|/\sqrt{5}=4/\sqrt{5}\)．最小切线长\(=\sqrt{16/5-1}=\sqrt{11/5}=\sqrt{55}/5\)．故选：A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T10]
+% ans:2章-练-课时08-T10
+\ansitem{10}{C}
+\ifansbookdetail
+\ansnote{详解}{圆\(C\)即\((x-3)^{2}+(y-1)^{2}=9\)，圆心\((3,1)\)，\(r=3\)．对称轴过圆心：\(3+a-1=0\)，得\(a=-2\)，故\(A(-1,-2)\)．\(|AC|=\sqrt{16+9}=5\)，切线长\(|AB|=\sqrt{25-9}=4\)．故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T11]
+% ans:2章-练-课时08-T11
+\ansitem{11}{相切}
+\ifansbookdetail
+\ansnote{详解}{圆心\((0,0)\)，半径\(r\)．圆心到直线的距离\(d=|-r|/\sqrt{\cos^{2}\theta+\sin^{2}\theta}=r\)，恒等于半径，故直线与圆恒相切．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T12]
+% ans:2章-练-课时08-T12
+\ansitem{12}{[√2, +∞)}
+\ifansbookdetail
+\ansnote{详解}{表为圆需\(\sqrt{m}\)有意义，故\(m\geqslant 0\)，且\(r^{2}=m^{2}+m-2>0\)，在\(m\geqslant 0\)下即\(m>1\)．与\(x\)轴有公共点\(\Longleftrightarrow|\sqrt{m}|\leqslant r\)，即\(m\leqslant m^{2}+m-2\)，得\(m^{2}\geqslant 2\)，故\(m\geqslant\sqrt{2}\)．所求取值范围为\([\sqrt{2},+\infty)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T13]
+% ans:2章-练-课时08-T13
+\ansitem{13}{(−∞, −5√2/4)∪(5√2/4, +∞)}
+\ifansbookdetail
+\ansnote{详解}{视线不被挡住\(\Longleftrightarrow\)直线\(AB\)与圆\(C\)相离．\(k_{AB}=a/5\)，直线\(AB\)：\(ax-5y+2a=0\)．圆心\((1,0)\)到直线\(AB\)的距离\(d=|3a|/\sqrt{a^{2}+25}>1\)，即\(9a^{2}>a^{2}+25\)，\(8a^{2}>25\)，\(|a|>5/(2\sqrt{2})=5\sqrt{2}/4\)．故\(a\)的取值范围为\((-\infty,-5\sqrt{2}/4)\cup(5\sqrt{2}/4,+\infty)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T14]
+% ans:2章-练-课时08-T14
+\ansitem{14}{√3}
+\ifansbookdetail
+\ansnote{详解}{设直线\(y=\sqrt{3}x+b\)，则\(A(0,b)\)．相切时圆心\((0,1)\)到直线的距离\(|b-1|/2=1\)，得\(b=3\)或\(b=-1\)，\(|AC|=2\)（\(C(0,1)\)）．切线长\(|AB|=\sqrt{|AC|^{2}-r^{2}}=\sqrt{4-1}=\sqrt{3}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T15]
+% ans:2章-练-课时08-T15
+\ansitem{15}{(1) x=3 或 3x−4y−5=0；(2) a=0 或 a=4/3；(3) a=−3/4}
+\ifansbookdetail
+\ansnote{详解}{\(C(1,2)\)，\(r=2\)；\(|MC|=\sqrt{4+1}=\sqrt{5}>2\)，\(M\)在圆外．\par\noindent (1) 斜率不存在时\(x=3\)：圆心到直线的距离\(|3-1|=2=r\)，是切线．斜率存在时设\(y-1=k(x-3)\)，即\(kx-y-3k+1=0\)：\(d=|2k+1|/\sqrt{k^{2}+1}=2\)，得\(4k^{2}+4k+1=4k^{2}+4\)，\(k=3/4\)，切线为\(3x-4y-5=0\)．故切线方程为\(x=3\)或\(3x-4y-5=0\)．\par\noindent (2) \(d=|a+2|/\sqrt{a^{2}+1}=2\)，得\(a^{2}+4a+4=4a^{2}+4\)，即\(3a^{2}-4a=0\)，解得\(a=0\)或\(a=4/3\)．\par\noindent (3) 弦长\(2\sqrt{3}\)，则半弦长\(\sqrt{3}\)，\(d=\sqrt{4-3}=1\)：\(|a+2|/\sqrt{a^{2}+1}=1\)，得\(a^{2}+4a+4=a^{2}+1\)，解得\(a=-3/4\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时08-T16]
+% ans:2章-练-课时08-T16
+\ansitem{16}{(1) x²+y²=36；(2) 一定进入，航行时间 1 小时}
+\ifansbookdetail
+\ansnote{详解}{(1) 以\(O\)为原点，则\(A(3,0)\)，\(B(12,0)\)．由\(|PA|/|PB|=1/2\)得\(4[(x-3)^{2}+y^{2}]=(x-12)^{2}+y^{2}\)，即\(4x^{2}-24x+36+4y^{2}=x^{2}-24x+144+y^{2}\)，整理得\(3x^{2}+3y^{2}=108\)，故曲线\(E\)的方程为\(x^{2}+y^{2}=36\)．\par\noindent (2) \(C(0,-2\sqrt{11})\)．北偏东\(30^\circ\)方向即航线倾角\(60^\circ\)，斜率\(\sqrt{3}\)，航线：\(y+2\sqrt{11}=\sqrt{3}x\)，即\(\sqrt{3}x-y-2\sqrt{11}=0\)．圆心\(O\)到航线的距离\(d=|2\sqrt{11}|/\sqrt{3+1}=\sqrt{11}<6\)，直线与圆相交，故轮船一定进入安全预警区．弦长\(=2\sqrt{36-11}=10\)，航行时间\(t=10/10=1\)（小时）．}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

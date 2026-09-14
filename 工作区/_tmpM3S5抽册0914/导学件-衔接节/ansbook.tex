@@ -1,0 +1,260 @@
+% ============================================================
+% 纯答案册·衔接节 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：C:/提示词/工作区/M3-第2章量产0913/成卷/导学件/衔接节/main.tex（md5 7a8329298559d34e5a0a8121f7c4adb8）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..27 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件答案册}%
+
+\begin{document}
+\zhangtitle{第二章\quad 平面解析几何}
+\xjkeshi{2.8 直线与圆锥曲线的位置关系}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-导-衔接-探1]
+% ans:2章-导-衔接-探1
+\ansitem{1}{C}
+\ifansbookdetail
+\ansnote{详解}{将\(y=2x+m\)代入\(4x^{2}-y^{2}=1\)，整理得\(4mx=-(m^{2}+1)\)．当\(m=0\)时方程无解，此时直线即为双曲线的渐近线\(y=2x\)，与双曲线无公共点；当\(m\neq 0\)时方程有唯一解\(x=-(m^{2}+1)/(4m)\)，恰有一个交点．故对任意\(m\)，直线与双曲线至多有一个交点，选C．（注意：此处"恰一个交点"源于直线与渐近线平行，并非相切．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-探2]
+% ans:2章-导-衔接-探2
+\ansitem{2}{3 条}
+\ifansbookdetail
+\ansnote{详解}{分类讨论：①斜率不存在：直线\(x=0\)与抛物线相切于顶点\((0,0)\)，符合；②斜率\(k=0\)：直线\(y=1\)与抛物线的对称轴平行，恰有一个公共点，符合；③斜率\(k\neq 0\)存在：将\(y=kx+1\)代入\(y^{2}=2x\)得\(k^{2}x^{2}+2(k-1)x+1=0\)，由\(\Delta=4(k-1)^{2}-4k^{2}=4-8k=0\)解得\(k=1/2\)，此时直线\(y=x/2+1\)与抛物线相切，符合．共3条．易错：漏①②两类．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-探3]
+% ans:2章-导-衔接-探3
+\ansitem{3}{2√10}
+\ifansbookdetail
+\ansnote{详解}{由\(x-2y+1=0\)得\(x=2y-1\)，代入\(y^{2}=2x\)得\(y^{2}-4y+2=0\)，\(\Delta=16-8=8>0\)；由韦达定理\(y_1+y_2=4\)、\(y_1y_2=2\)，故\(|y_1-y_2|=\sqrt{(y_1+y_2)^{2}-4y_1y_2}=2\sqrt{2}\)．直线的斜率\(k=1/2\)，所以\(|AB|=\sqrt{1+1/k^{2}}\,|y_1-y_2|=\sqrt{5}\times 2\sqrt{2}=2\sqrt{10}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-探4]
+% ans:2章-导-衔接-探4
+\ansitem{4}{12}
+\ifansbookdetail
+\ansnote{详解}{消元\(y\)：将\(y=x+2\)代入\(x^{2}/m+y^{2}/4=1\)，整理得\((4+m)x^{2}+4mx=0\)，一根\(x_A=0\)（直线恰过椭圆的上顶点\((0,2)\)），另一根\(x_B=-4m/(4+m)\)．\(|AB|=\sqrt{1+k^{2}}\,|x_B-x_A|=\sqrt{2}\cdot|4m/(4+m)|=3\sqrt{2}\)，又\(m>0\)，故\(4m/(4+m)=3\)，解得\(m=12\)．回验：\(m=12\)时\(B(-3,-1)\)，\(9/12+1/4=1\)，点\(B\)在椭圆上，符合．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-探5]
+% ans:2章-导-衔接-探5
+\ansitem{5}{4x−y−7=0}
+\ifansbookdetail
+\ansnote{详解}{点差法：设弦端点\(P_1(x_1,y_1)\)、\(P_2(x_2,y_2)\)，则\(x_1+x_2=4\)、\(y_1+y_2=2\)．两点坐标代入方程相减：\(2(x_1+x_2)(x_1-x_2)-(y_1+y_2)(y_1-y_2)=0\)，故\(k=(y_1-y_2)/(x_1-x_2)=2(x_1+x_2)/(y_1+y_2)=4\)，直线为\(y-1=4(x-2)\)，即\(4x-y-7=0\)．回验\(\Delta\)：联立消\(y\)得\(14x^{2}-56x+51=0\)，\(\Delta=56^{2}-4\times 14\times 51=280>0\)，方为真弦．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-探6]
+% ans:2章-导-衔接-探6
+\ansitem{6}{C}
+\ifansbookdetail
+\ansnote{详解}{将\(l\colon y=kx+2\)代入\(x^{2}/2+y^{2}=1\)：\((1+2k^{2})x^{2}+8kx+6=0\)，则\(x_1+x_2=-8k/(1+2k^{2})\)、\(x_1x_2=6/(1+2k^{2})\)；\(y_1y_2=k^{2}x_1x_2+2k(x_1+x_2)+4=(4-2k^{2})/(1+2k^{2})\)．\(\angle AOB=90^{\circ}\iff\overrightarrow{OA}\cdot\overrightarrow{OB}=0\iff x_1x_2+y_1y_2=(6+4-2k^{2})/(1+2k^{2})=0\)，解得\(k^{2}=5\)，又\(k>0\)，故\(k=\sqrt{5}\)，选C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-G1]
+% ans:2章-导-衔接-G1
+\ansitem{7}{A}
+\ifansbookdetail
+\ansnote{详解}{直线恒过定点\((1,2)\)．由\(1^{2}=1<4\times 2=8\)，点\((1,2)\)在抛物线\(x^{2}=4y\)的内部（\(x^{2}<4y\)一侧）．过抛物线内部点的任意直线必与抛物线相交、不可能相离，故位置关系为相交，选A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-G2]
+% ans:2章-导-衔接-G2
+\ansitem{8}{B}
+\ifansbookdetail
+\ansnote{详解}{联立消\(y\)：\(x^{2}/4-((3/2)x+2)^{2}/9=1\)，同乘36：\(9x^{2}-4(9x^{2}/4+6x+4)=36\)，得\(-24x-16=36\)，解得\(x=-13/6\)，唯一解，直线与双曲线恰有一个公共点．而该直线与渐近线\(y=(3/2)x\)平行且不重合，双曲线的切线不可能平行于渐近线，故"恰一个公共点"是平行于渐近线的截断而非相切，判定为\textbf{相交}，选B．（渐近线陷阱：恰一交点\(\neq\)相切．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-G3]
+% ans:2章-导-衔接-G3
+\ansitem{9}{D}
+\ifansbookdetail
+\ansnote{详解}{无交点即\(d(O,l)=4/\sqrt{m^{2}+n^{2}}>2\)，得\(m^{2}+n^{2}<4\)，点\(P(m,n)\)在圆\(x^{2}+y^{2}=4\)内．该圆与椭圆\(x^{2}/9+y^{2}/4=1\)内切（\(b=2\)、\(a=3\)），圆内每一点都在椭圆内部，故\(P\)是椭圆内点，过\(P\)的任一直线与椭圆恰有2个公共点，选D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-G4]
+% ans:2章-导-衔接-G4
+\ansitem{10}{(4,2)}
+\ifansbookdetail
+\ansnote{详解}{将\(x=y+2\)代入\(y^{2}=4x\)：\(y^{2}-4y-8=0\)，则\(y_1+y_2=4\)，中点纵坐标\(y_0=2\)，横坐标\(x_0=y_0+2=4\)．中点坐标为\((4,2)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-衔接-G5]
+% ans:2章-导-衔接-G5
+\ansitem{11}{3}
+\ifansbookdetail
+\ansnote{详解}{\(a=2\)、\(b=\sqrt{3}\)、\(c=1\)．通径为过焦点且垂直于长轴的弦：令\(x=1\)得\(y^{2}=3(1-1/4)=9/4\)，\(y=\pm 3/2\)，故通径长\(=2b^{2}/a=3\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-1]
+% ans:2章-练-衔接-1
+\ansitem{12}{(1) 3；(2) √2；(3) 3+2√2；(4) 1/2}
+\ifansbookdetail
+\ansnote{详解}{韦达定理：\(x_1+x_2=2\)、\(x_1x_2=1/2\)．(1) \(x_1^{2}+x_2^{2}=(x_1+x_2)^{2}-2x_1x_2=4-1=3\)．\par\noindent (2) \(|x_1-x_2|=\sqrt{(x_1+x_2)^{2}-4x_1x_2}=\sqrt{2}\)．\par\noindent (3) 由求根公式定序：\(x_1=(2+\sqrt{2})/2\)、\(x_2=(2-\sqrt{2})/2\)，故\(x_1/x_2=(2+\sqrt{2})/(2-\sqrt{2})=(2+\sqrt{2})^{2}/2=3+2\sqrt{2}\)．\par\noindent (4) 由\(x_1x_2=1/2\)得\(1/x_1=2x_2\)；又\(x_2\)是原方程的根，\(x_2^{2}=2x_2-1/2\)，故\(1/x_1-x_2^{2}=2x_2-(2x_2-1/2)=1/2\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-2]
+% ans:2章-练-衔接-2
+\ansitem{13}{21}
+\ifansbookdetail
+\ansnote{详解}{由方程得\(x^{2}=x+1\)，即\(x_1^{2}=x_1+1\)、\(x_2^{2}=x_2+1\)，且\(x_1+x_2=1\)．\(2x_1^{5}=2x_1(x_1^{2})^{2}=2x_1(x_1+1)^{2}=2x_1(3x_1+2)=6x_1^{2}+4x_1=10x_1+6\)；\(5x_2^{3}=5x_2(x_2+1)=5x_2^{2}+5x_2=10x_2+5\)．合计\(10(x_1+x_2)+11=10+11=21\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-3]
+% ans:2章-练-衔接-3
+\ansitem{14}{另一根 2−√3；c=1}
+\ifansbookdetail
+\ansnote{详解}{两根之和为4，故另一根\(x_2=4-(2+\sqrt{3})=2-\sqrt{3}\)；两根之积为\(c\)，故\(c=(2+\sqrt{3})(2-\sqrt{3})=4-3=1\)．双路验算：把\(2+\sqrt{3}\)代入方程得\(7+4\sqrt{3}-8-4\sqrt{3}+c=0\)，亦得\(c=1\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-4]
+% ans:2章-练-衔接-4
+\ansitem{15}{(1) 1；(2) k=2/(c−1)，k>0 或 k<−2}
+\ifansbookdetail
+\ansnote{详解}{(1) 两根之积\(=-ck/k=-c\)，故另一根\((-c)/(-c)=1\)．(2) 两根之和\(1-c=-2/k\)，故\(k=2/(c-1)\)．由\(c>0\)且\(c\neq 1\)：\(c>1\)时\(c-1>0\)，\(k>0\)；\(0<c<1\)时\(-1<c-1<0\)，\(k=2/(c-1)<2/(-1)=-2\)，即\(k<-2\)．故\(k>0\)或\(k<-2\)．（另"两不等实根"前提恒相容：\(\Delta=4+4ck^{2}>0\)恒成立．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-5]
+% ans:2章-练-衔接-5
+\ansitem{16}{(1) 证毕（Δ=4m²+9>0）；(2) m=8}
+\ifansbookdetail
+\ansnote{详解}{(1) \(\Delta=(2m+1)^{2}-4(m-2)=4m^{2}+4m+1-4m+8=4m^{2}+9\geqslant 9>0\)，故无论\(m\)取何值，方程总有两个不相等的实数根．\par\noindent (2) 韦达定理：\(x_1+x_2=-(2m+1)\)、\(x_1x_2=m-2\)，代入\(x_1+x_2+3x_1x_2=1\)得\(-(2m+1)+3(m-2)=1\)，即\(m-7=1\)，解得\(m=8\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-6]
+% ans:2章-练-衔接-6
+\ansitem{17}{(1) 不存在；(2) k=−2，−3，−5}
+\ifansbookdetail
+\ansnote{详解}{两实根须\(4k\neq 0\)且\(\Delta=(-4k)^{2}-4\cdot 4k\cdot(k+1)=-16k\geqslant 0\)，故\(k<0\)；韦达定理：\(x_1+x_2=1\)、\(x_1x_2=(k+1)/(4k)\)．\par\noindent (1) \((2x_1-x_2)(x_1-2x_2)=2x_1^{2}+2x_2^{2}-5x_1x_2=2[(x_1+x_2)^{2}-2x_1x_2]-5x_1x_2=2-9x_1x_2=2-9(k+1)/(4k)\)．令其等于\(-3/2\)：\(18(k+1)=28k\)，得\(10k=18\)，\(k=9/5>0\)，与实根前提\(k<0\)矛盾，故不存在．\par\noindent (2) \(x_1/x_2+x_2/x_1-2=(x_1+x_2)^{2}/(x_1x_2)-4=4k/(k+1)-4=-4/(k+1)\)．\(k\)为负整数且\(k\neq -1\)，需\(k+1\)整除4，\(k+1\in\{-1,-2,-4\}\)，即\(k\in\{-2,-3,-5\}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-7]
+% ans:2章-练-衔接-7
+\ansitem{18}{30}
+\ifansbookdetail
+\ansnote{详解}{设两直角边为\(a\)、\(b\)：\(a+b=2m+7\)、\(ab=4m(m-2)\)．勾股定理：\(169=a^{2}+b^{2}=(a+b)^{2}-2ab=(2m+7)^{2}-8m(m-2)\)，展开得\(4m^{2}+28m+49-8m^{2}+16m=169\)，整理得\(m^{2}-11m+30=0\)，解得\(m=5\)或\(m=6\)．\par\noindent 实根检验：\(\Delta=(2m+7)^{2}-16m(m-2)\)，\(m=6\)时\(\Delta=361-384=-23<0\)，舍；\(m=5\)时\(\Delta=289-240=49>0\)，且\(a+b=17>0\)、\(ab=60>0\)均正，符合．故\(S_{\triangle ABC}=ab/2=30\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-8]
+% ans:2章-练-衔接-8
+\ansitem{19}{(1) x=0,y=−1 或 x=1,y=2；(2) x=1,y=2 或 x=−1,y=0；(3) x=2,y=1}
+\ifansbookdetail
+\ansnote{详解}{(1) 由\(3x-y=1\)得\(y=3x-1\)，代入得\(9x^{2}-6x+1=3x+1\)，即\(9x^{2}-9x=0\)，解得\(x=0\)或\(x=1\)，回代得\(y=-1\)或\(y=2\)．\par\noindent (2) 整体设元\(t=x+y\)：\(t^{2}-2t-3=0\)，得\(t=3\)或\(t=-1\)；配\(x-y=-1\)：\(t=3\)时\(x=1\)、\(y=2\)；\(t=-1\)时\(x=-1\)、\(y=0\)．\par\noindent (3) 平方差：\(9x^{2}-4y^{2}=(3x-2y)(3x+2y)=32\)，而\(3x-2y=4\)，故\(3x+2y=8\)；与\(3x-2y=4\)联立得\(x=2\)、\(y=1\)．（注意：消元所得根必须回代求另一未知数，防丢解．）}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-9]
+% ans:2章-练-衔接-9
+\ansitem{20}{x=−2,y=2 或 x=2,y=−2}
+\ifansbookdetail
+\ansnote{详解}{\(xy\neq 0\)，第一式同乘\(xy\)：\(x+y=0\)，即\(x=-y\)．代入\(xy=-4\)：\(-y^{2}=-4\)，\(y=\pm 2\)，故\((x,y)=(-2,2)\)或\((2,-2)\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-10]
+% ans:2章-练-衔接-10
+\ansitem{21}{x=(25+√601)/2,\allowbreak y=(−25+√601)/2 或 x=(25−√601)/2,\allowbreak y=(−25−√601)/2}
+\ifansbookdetail
+\ansnote{详解}{设\(A=\sqrt{x-y}\geqslant 0\)：\(A^{2}-3A-10=0\)，\((A-5)(A+2)=0\)，得\(A=5\)（负根舍），故\(x-y=25\)．配\(xy=-6\)：\(x(x-25)=-6\)，即\(x^{2}-25x+6=0\)，解得\(x=(25\pm\sqrt{625-24})/2=(25\pm\sqrt{601})/2\)；\(y=x-25=(-25\pm\sqrt{601})/2\)（\(\pm\)号对应取同号）．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-11]
+% ans:2章-练-衔接-11
+\ansitem{22}{x=2,y=3 或 x=3,y=2}
+\ifansbookdetail
+\ansnote{详解}{法一（代入）：\(y=5-x\)代入\(xy=6\)得\(x^{2}-5x+6=0\)，\(x=2\)或\(x=3\)，对应\(y=3\)或\(y=2\)．法二（对称构造）：\(x\)、\(y\)是\(t^{2}-5t+6=0\)的两根，同解．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-12]
+% ans:2章-练-衔接-12
+\ansitem{23}{−√5<m<√5}
+\ifansbookdetail
+\ansnote{详解}{把\(y=x+m\)代入\(x^{2}/4+y^{2}=1\)：\(x^{2}/4+(x+m)^{2}=1\)，整理得\(5x^{2}+8mx+4m^{2}-4=0\)．方程组有两解\(\iff\)该二次方程有两不等实根\(\iff\Delta=64m^{2}-20(4m^{2}-4)=80-16m^{2}>0\)，即\(m^{2}<5\)，故\(-\sqrt{5}<m<\sqrt{5}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-13]
+% ans:2章-练-衔接-13
+\ansitem{24}{√5（此时 x=−4√5/5、y=√5/5）}
+\ifansbookdetail
+\ansnote{详解}{设\(m=y-x\)，即\(y=x+m\)，代入\(x^{2}/4+y^{2}=1\)：\(5x^{2}+8mx+4(m^{2}-1)=0\)．实数解存在\(\iff\Delta=64m^{2}-80(m^{2}-1)\geqslant 0\)，即\(m^{2}\leqslant 5\)，故\(m\)的最大值为\(\sqrt{5}\)．取等时关于\(x\)的方程为\(5x^{2}+8\sqrt{5}x+16=0\)，解得\(x=-8\sqrt{5}/10=-4\sqrt{5}/5\)，\(y=x+\sqrt{5}=\sqrt{5}/5\)，点在椭圆上，符合．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-14]
+% ans:2章-练-衔接-14
+\ansitem{25}{B（x²−y²=9）}
+\ifansbookdetail
+\ansnote{详解}{设双曲线方程为\(x^{2}-y^{2}=\lambda\)（\(\lambda>0\)，焦点在\(x\)轴的等轴双曲线）．与\(y=x/2\)联立：\((3/4)x^{2}=\lambda\)，\(x=\pm 2\sqrt{\lambda/3}\)，\(|\Delta x|=4\sqrt{\lambda/3}\)；\(|AB|=\sqrt{1+k^{2}}\,|\Delta x|=(\sqrt{5}/2)\cdot 4\sqrt{\lambda/3}=2\sqrt{5\lambda/3}=2\sqrt{15}\)，得\(5\lambda/3=15\)，\(\lambda=9\)，方程为\(x^{2}-y^{2}=9\)，选B．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-15]
+% ans:2章-练-衔接-15
+\ansitem{26}{D（2x−y−1=0）}
+\ifansbookdetail
+\ansnote{详解}{设切线为\(2x-y+m=0\)，即\(y=2x+m\)，代入\(y=x^{2}\)：\(x^{2}-2x-m=0\)．相切\(\iff\Delta=4+4m=0\)，得\(m=-1\)，切线为\(2x-y-1=0\)（切点\((1,1)\)），选D．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-衔接-16]
+% ans:2章-练-衔接-16
+\ansitem{27}{选①②：2<t<3；选①③：1<t<2}
+\ifansbookdetail
+\ansnote{详解}{条件①表示椭圆\(\iff\)两分母同正且不等：\(3-t>0\)、\(t-1>0\)、\(3-t\neq t-1\)，即\(1<t<3\)且\(t\neq 2\)．选①②（长轴在\(y\)轴）：\(t-1>3-t>0\)，解得\(2<t<3\)；选①③（长轴在\(x\)轴）：\(3-t>t-1>0\)，解得\(1<t<2\)．}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}

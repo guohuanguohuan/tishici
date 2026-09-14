@@ -1,0 +1,212 @@
+% ============================================================
+% 纯答案册·课时11-2.5.1椭圆的标准方程 —— 工具/答案抽册器.py 抽册生成件（勿手改；第三档＝纯答案单独成册）
+% 源件（只读）：C:/提示词/工作区/M3-第2章量产0913/成卷/导学件/课时11-2.5.1椭圆的标准方程/main.tex（md5 33cbecad0ceb0d07fb68bf0c6ea7ba89）
+%% 口径：题面不重印；逐题＝题号(印面号同正册)＋[答案]＋[详解]，值/详解照源件逐字
+%       （钉值门硬断言：册值≡正册件内值≡值台账值tex，逐字全等）。册序＝正册装配序＝印面号 1..21 升序（同序同号）；键序断言基准＝题面库冻结 manifest canonical 键序。
+%% 三档导出：整体 main-true／纯题 main-false（在产）｜本册＝纯答案册（本件）
+%% 双档：ansbook-true.tex＝详解印本；ansbook-false.tex＝纯值速查本（详解不印）
+% 编译：xelatex <壳> ×2，cwd＝本目录；sty＝qp-m3.sty 本地挂载（md5 7c3930362be8a0a2bdf21bbf8ac16573，锁校验）
+% ============================================================
+\documentclass[fontset=none]{ctexart}
+\usepackage{qp-m3}
+% —— 印面逐字符号路由补钉（承源件；− 走 TNR、▱ NSC 子块；禁改 sty 保 md5） ——
+\xeCJKDeclareCharClass{Default}{"2212}%
+\setCJKfamilyfont{nscblk}[Path=C:/提示词/工作区/字替对照-0909/variantF/fonts/,BoldFont=NSC-w600.ttf]{NSC-w500.ttf}%
+\xeCJKDeclareSubCJKBlock{nscblk}{"25B1}%
+\newcommand{\pxparallelogram}{{\CJKfamily{nscblk}▱}}%
+% —— 断行微调（承母版实测档，三零门承重；\emergencystretch 不另设） ——
+\xeCJKsetup{CJKglue={\hskip 0.10em plus 0.08em minus 0.05em}}%
+% —— 纯答案册全线括线（长详解可跨栏断，承练习件全线括线口径；灰底盒不可跨栏断） ——
+\ansblockgrayfalse
+% —— 双档开关（false 档＝纯值速查：答案印、详解不印；件面开关，不动 sty 本体） ——
+\newif\ifansbookdetail
+\ifdefined\ansbookdetail
+  \ifnum\ansbookdetail=0 \ansbookdetailfalse\else\ansbookdetailtrue\fi
+\else
+  \ansbookdetailtrue
+\fi
+% —— 页脚件名（承源件章名；件名＝<件型>答案册） ——
+\renewcommand{\qpzhangming}{第二章\quad 平面解析几何}%
+\renewcommand{\qpjianming}{导学件答案册}%
+
+\begin{document}
+\zhangtitle{第二章\quad 平面解析几何}
+\jietitle{2.5.1 椭圆的标准方程}
+\par\glueguard{1}\addvspace{2pt}\noindent\biaoqian{【纯答案册】}{\fangsong 题面不重印\quad 印面号与正册同号同序}\par\addvspace{2pt}
+
+\begin{multicols}{2}
+\emergencystretch=1em
+
+\begin{ansblock}[2章-练-课时11-简7]
+% ans:2章-练-课时11-简7
+\ansitem{1}{(1)选①：椭圆x²/36+y²/20=1；选②：线段F₁F₂，方程y=0（−4≤x≤4）；(2)0＜a＜4无轨迹；a=4线段y=0（−4≤x≤4）；a＞4椭圆x²/a²+y²/(a²−16)=1}
+\ifansbookdetail
+\ansnote{详解}{(1)选①：\(12>|F_1F_2|=8\)，轨迹是以\(F_1\)、\(F_2\)为焦点的椭圆，\(c=4\)、\(a=6\)、\(b^{2}=36-16=20\)：\(x^{2}/36+y^{2}/20=1\)．选②：\(8=|F_1F_2|\)，距离和等于焦距，\(M\)只能在线段\(F_1F_2\)上（三角形不等式取等），轨迹为线段，方程\(y=0(-4\leqslant x\leqslant 4)\)．(2)按\(2a\)与\(|F_1F_2|=8\)比较三段：\(0<a<4\)时距离和小于焦距，无点满足，无轨迹；\(a=4\)同上为线段；\(a>4\)为椭圆，\(c=4\)、\(b^{2}=a^{2}-16\)：\(x^{2}/a^{2}+y^{2}/(a^{2}-16)=1\)．综上如答案．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简8]
+% ans:2章-练-课时11-简8
+\ansitem{2}{x²/9＋y²/5＝1}
+\ifansbookdetail
+\ansnote{详解}{\(|F_1F_2|=4<6\)，由椭圆定义：\(2a=6\)，\(a=3\)；\(c=2\)；\(b^{2}=a^{2}-c^{2}=9-4=5\)．焦点在\(x\)轴，方程\(x^{2}/9+y^{2}/5=1\)．验算：取顶点\((3,0)\)：\(|PF_1|+|PF_2|=5+1=6\)成立；取\((0,\sqrt{5})\)：\(2\times\sqrt{4+5}=6\)成立．辨析：若和\(=4\)为线段\(F_1F_2\)，若和\(<4\)无轨迹（定义辨析位已讲，本题为\(>4\)基础位）．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简2]
+% ans:2章-练-课时11-简2
+\ansitem{3}{10+2√10}
+\ifansbookdetail
+\ansnote{详解}{\(a=5\)、\(b=3\)、\(c=4\)，\(A(4,0)\)恰为右焦点，记左焦点\(C(-4,0)\)．由定义\(|MA|=2a-|MC|=10-|MC|\)，故\(|MA|+|MB|=10+(|MB|-|MC|)\leqslant 10+|BC|=10+\sqrt{(2+4)^{2}+(2-0)^{2}}=10+\sqrt{40}=10+2\sqrt{10}\)．等号当\(M\)在射线\(BC\)（自\(B\)过\(C\)延长方向）与椭圆的交点处取得（\(C\)在椭圆内，射线必与椭圆交于一点），可取．最大值\(10+2\sqrt{10}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简3]
+% ans:2章-练-课时11-简3
+\ansitem{4}{A}
+\ifansbookdetail
+\ansnote{详解}{\(a=4\)、\(b=2\)．定义：\(|AF_1|+|AF_2|=|BF_1|+|BF_2|=8\)，两式相加并注意\(|AB|=|AF_1|+|BF_1|\)（\(A\)、\(F_1\)、\(B\)共线）：\(\triangle ABF_2\)周长\(|AF_2|+|BF_2|+|AB|=16=4a\)．故\(|AF_2|+|BF_2|=16-|AB|\)，要最大须过焦点的弦\(|AB|\)最小．竖直位置：\(l\)：\(x=-c=-2\sqrt{3}\)，\(y^{2}=4(1-12/16)=1\)，\(|AB|=2\)（通径\(2b^{2}/a=2\)）；水平位置：长轴弦\(|AB|=2a=8\)．通径为最短焦点弦（一般证明需弦长联立，2.5.3后；此处按两位置比较简验）．最大值\(=16-2=14\)，故选：A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简4]
+% ans:2章-练-课时11-简4
+\ansitem{5}{(m/4)√(n²−m²)}
+\ifansbookdetail
+\ansnote{详解}{\(n>m\)：\(A\)到两定点\(B\)、\(C\)距离和为常数\(n\)且大于\(|BC|\)，由定义\(A\)在以\(B\)、\(C\)为焦点的椭圆上（\(2a=n\)、\(2c=m\)，\(A\)不在直线\(BC\)上故去长轴端点）．以\(BC\)为底，底长\(m\)固定，面积最大即高最大；椭圆上点到焦点连线所在直线的最大距离为短半轴长\(b=\sqrt{a^{2}-c^{2}}=\sqrt{(n/2)^{2}-(m/2)^{2}}=\frac{1}{2}\sqrt{n^{2}-m^{2}}\)（短轴端点取得，该点不与\(B\)、\(C\)共线，合法）．\(S_{\max}=\frac{1}{2}\cdot m\cdot\frac{1}{2}\sqrt{n^{2}-m^{2}}=(m/4)\sqrt{n^{2}-m^{2}}\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简1]
+% ans:2章-练-课时11-简1
+\ansitem{6}{x²/12+y²/4=1}
+\ifansbookdetail
+\ansnote{详解}{定义：\(2a=4\sqrt{3}\)，即\(a=2\sqrt{3}\)、\(a^{2}=12\)．设\(A(c,y_0)\)：\(c^{2}/a^{2}+y_0^{2}/b^{2}=1\)，即\(y_0^{2}=b^{2}(1-c^{2}/a^{2})=b^{4}/a^{2}\)，\(|y_0|=b^{2}/a\)；通径\(|AB|=2b^{2}/a=4\sqrt{3}/3\)，即\(b^{2}=a\cdot(2\sqrt{3})/3=2\sqrt{3}\cdot(2\sqrt{3})/3=4\)．椭圆方程\(x^{2}/12+y^{2}/4=1\)．验算：\(c^{2}=12-4=8\)，\(x=c=2\sqrt{2}\)代入得\(y^{2}=4(1-8/12)=4/3\)，\(|AB|=2\times(2/\sqrt{3})=4\sqrt{3}/3\)成立；顶点\((\sqrt{12},0)\)到两焦点\((\pm 2\sqrt{2},0)\)距离和\(=(2\sqrt{2}+\sqrt{12})+(\sqrt{12}-2\sqrt{2})=2\sqrt{12}=4\sqrt{3}\)成立．方程正确．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简9]
+% ans:2章-练-课时11-简9
+\ansitem{7}{2＜m＜4}
+\ifansbookdetail
+\ansnote{详解}{椭圆成立需\(m-2>0\)且\(6-m>0\)，即\(2<m<6\)；焦点在\(y\)轴需\(y^{2}\)分母较大：\(6-m>m-2\)，即\(m<4\)．综上\(2<m<4\)．验算：\(m=3\)：\(x^{2}/1+y^{2}/3=1\)，\(a^{2}=3>b^{2}=1\)，焦点\((0,\pm\sqrt{2})\)在\(y\)轴成立；\(m=5\)：\(x^{2}/3+y^{2}/1=1\)焦点在\(x\)轴（排除端外值实证）成立．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简10]
+% ans:2章-练-课时11-简10
+\ansitem{8}{x²/(16/3)＋y²/4＝1}
+\ifansbookdetail
+\ansnote{详解}{\(e=c/a=1/2\)，即\(a=2c\)，\(b^{2}=a^{2}-c^{2}=3c^{2}\)．设\(x^{2}/a^{2}+y^{2}/b^{2}=1\)，过\(P\)：\(4/a^{2}+1/b^{2}=1\)．代\(a^{2}=4c^{2}\)、\(b^{2}=3c^{2}\)：\(4/(4c^{2})+1/(3c^{2})=1\)，即\(\frac{1}{c^{2}}+\frac{1}{3c^{2}}=1\)，得\(\frac{4}{3c^{2}}=1\)，\(c^{2}=4/3\)．故\(a^{2}=16/3\)，\(b^{2}=4\)．方程\(x^{2}/(16/3)+y^{2}/4=1\)．验算：\(P(2,1)\)：\(4/(16/3)+1/4=12/16+4/16=1\)成立；\(e\)：\(c=2/\sqrt{3}\)，\(a=4/\sqrt{3}\)，\(e=1/2\)成立．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简5]
+% ans:2章-练-课时11-简5
+\ansitem{9}{C}
+\ifansbookdetail
+\ansnote{详解}{定义\(|MF_1|+|MF_2|=2a\)，均值不等式\(|MF_1|\cdot|MF_2|\leqslant((|MF_1|+|MF_2|)/2)^{2}=a^{2}\)，等号当\(|MF_1|=|MF_2|\)（\(M\)为短轴端点，可取）．最大值\(a^{2}=8\)，即\(a=2\sqrt{2}\)（\(a>0\)）．故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-简6]
+% ans:2章-练-课时11-简6
+\ansitem{10}{ACD}
+\ifansbookdetail
+\ansnote{详解}{\(\angle F_1PF_2=90^{\circ}\)当且仅当\(P\)在以\(F_1F_2\)为直径的圆\(x^{2}+y^{2}=c^{2}\)上（圆周角定理，\(P\neq F_1\)、\(F_2\)自动满足）．设\(P(x,y)\)在椭圆上，则\(|OP|^{2}=x^{2}+y^{2}=x^{2}+b^{2}(1-x^{2}/a^{2})=b^{2}+x^{2}(1-b^{2}/a^{2})\)，\(x^{2}\in[0,a^{2}]\)且\(1-b^{2}/a^{2}>0\)，故\(|OP|^{2}\in[b^{2},a^{2}]\)，即椭圆上点到原点距离介于\(b\)与\(a\)之间．圆与椭圆有公共点当且仅当\(b^{2}\leqslant c^{2}\leqslant a^{2}\)，右半恒真，条件即\(b\leqslant c\)，即\(b^{2}\leqslant a^{2}-b^{2}\)，即\(a^{2}\geqslant 2b^{2}\)（存在性与上顶点处张角\(\angle F_1BF_2\geqslant 90^{\circ}\)同述）．逐项：A \(25\geqslant 18\)成立；B \(25\geqslant 32\)不成立；C \(18\geqslant 18\)成立；D \(16\geqslant 16\)成立．故选：ACD．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-中1]
+% ans:2章-练-课时11-中1
+\ansitem{11}{2}
+\ifansbookdetail
+\ansnote{详解}{向量\(PF_1\cdot\)向量\(PF_2=0\)即\(\angle F_1PF_2=90^{\circ}\)，则\(|PF_1|^{2}+|PF_2|^{2}=|F_1F_2|^{2}=4c^{2}\)．记\(m=|PF_1|\cdot|PF_2|\)：面积\(\frac{1}{2}m=4\)，即\(m=8\)．定义：\((|PF_1|+|PF_2|)^{2}=4a^{2}=|PF_1|^{2}+|PF_2|^{2}+2|PF_1||PF_2|=4c^{2}+16\)，即\(a^{2}-c^{2}=4\)，\(b^{2}=4\)，\(b>0\)得\(b=2\)．验算相容性：\(|PF_1|\)、\(|PF_2|\)是\(t^{2}-2at+8=0\)的正根，判别式\(4a^{2}-32\geqslant 0\)即\(a^{2}\geqslant 8\)（题设“存在\(P\)”即椭圆满足此，必要条件下\(b\)恒为2）．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-中2]
+% ans:2章-练-课时11-中2
+\ansitem{12}{√3/3}
+\ifansbookdetail
+\ansnote{详解}{记左焦点\(F_1\)．\(O\)既是\(PQ\)中点（\(l\)过中心、椭圆关于\(O\)对称）又是\(FF_1\)中点，故四边形\(PF_1QF\)对角线互相平分，为平行四边形．于是\(S_{\triangle PFQ}=S_{\triangle PF_1F}\)（对角线\(F_1F\)所分另一半等积）．平行四边形邻角互补：顶点\(P\)处内角\(\angle F_1PF=\pi-\angle PFQ=\pi/3\)．在\(\triangle PF_1F\)中：\(a=\sqrt{2}\)、\(b=1\)、\(c=1\)，\(|PF_1|+|PF|=2\sqrt{2}\)，\(|F_1F|=2\)，\(\angle F_1PF=\pi/3\)．余弦定理：\(4=|PF_1|^{2}+|PF|^{2}-2|PF_1||PF|\cos(\pi/3)=(2\sqrt{2})^{2}-3|PF_1||PF|\)，即\(|PF_1||PF|=4/3\)．\(S_{\triangle PF_1F}=\frac{1}{2}\cdot\frac{4}{3}\cdot\sin(\pi/3)=\sqrt{3}/3\)，即\(\triangle PFQ\)的面积．验算：积\(4/3\leqslant((2\sqrt{2})/2)^{2}=4\)成立，两半径可正实存在．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-中3]
+% ans:2章-练-课时11-中3
+\ansitem{13}{C}
+\ifansbookdetail
+\ansnote{详解}{\(A\)、\(C\)恰为椭圆两焦点（\(c=1\)，\(a=2\)）．\(B\)在椭圆上且\(\triangle ABC\)非退化（\(B\)不为长轴端点，\(\sin B\neq 0\)）．正弦定理：\(|BC|=2R'\sin A\)、\(|AB|=2R'\sin C\)、\(|AC|=2R'\sin B\)（\(R'\)为\(\triangle ABC\)外接圆半径），故\((\sin A+\sin C)/\sin B=(|BC|+|AB|)/|AC|\)．由定义\(|AB|+|BC|=2a=4\)，\(|AC|=2c=2\)，比值\(=4/2=2\)，与\(B\)位置无关．故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-中4]
+% ans:2章-练-课时11-中4
+\ansitem{14}{(0,±1)}
+\ifansbookdetail
+\ansnote{详解}{\(a^{2}=3\)、\(b^{2}=1\)、\(c^{2}=2\)：\(F_1(-\sqrt{2},0)\)、\(F_2(\sqrt{2},0)\)．设\(A(x_1,y_1)\)、\(B(x_2,y_2)\)．由向量等式：\((x_1+\sqrt{2},y_1)=5(x_2-\sqrt{2},y_2)\)，即\(x_2=(x_1+6\sqrt{2})/5\)、\(y_2=y_1/5\)．两点均在椭圆上：\(x_1^{2}/3+y_1^{2}=1\)且\((x_1+6\sqrt{2})^{2}/75+y_1^{2}/25=1\)．后者乘75：\((x_1+6\sqrt{2})^{2}+3y_1^{2}=75\)；由前者\(3y_1^{2}=3-x_1^{2}\)，代入：\(x_1^{2}+12\sqrt{2}x_1+72+3-x_1^{2}=75\)，即\(12\sqrt{2}x_1=0\)，\(x_1=0\)，\(y_1^{2}=1\)，\(y_1=\pm 1\)．\(A(0,\pm 1)\)．验算：此时\(B=(6\sqrt{2}/5,\pm 1/5)\)：\((72/25)/3+1/25=24/25+1/25=1\)成立，\(B\)确在椭圆上；\(|F_1A|=\sqrt{2+1}=\sqrt{3}\)，\(6\sqrt{2}/5-\sqrt{2}=\sqrt{2}/5\)，\(|F_2B|=\sqrt{2/25+1/25}=\sqrt{3}/5\)，比值\(\sqrt{3}/(\sqrt{3}/5)=5\)成立．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-难1]
+% ans:2章-练-课时11-难1
+\ansitem{15}{2π}
+\ifansbookdetail
+\ansnote{详解}{\(a=2\)、\(b=\sqrt{3}\)、\(c=1\)，\(|F_1F_2|=2\)．设\(\angle F_1PF_2=\theta\)．①\(\theta\)范围：\(P\)在短轴端点时\(\theta\)最大，此时\(|PF_1|=|PF_2|=2\)、\(|F_1F_2|=2\)为等边三角形，\(\theta_{\max}=\pi/3\)，故\(0<\theta\leqslant\pi/3\)．②外接圆：\(2R=|F_1F_2|/\sin\theta=2/\sin\theta\)，即\(R=1/\sin\theta\)．③内切圆：\(S_{\triangle F_1PF_2}=\frac{1}{2}|PF_1||PF_2|\sin\theta=b^{2}\tan(\theta/2)=3\tan(\theta/2)\)；又\(r=2S/\)周长\(=2\cdot 3\tan(\theta/2)/(2a+2c)=6\tan(\theta/2)/6=\tan(\theta/2)\)．④\(S_1+2S_2=\pi(R^{2}+2r^{2})=\pi[1/\sin^{2}\theta+2\tan^{2}(\theta/2)]\)．记\(t=\tan(\theta/2)\in(0,\sqrt{3}/3]\)（\(\theta\in(0,\pi/3]\)），\(\sin\theta=2t/(1+t^{2})\)：\(1/\sin^{2}\theta=(1+t^{2})^{2}/(4t^{2})\)，\(S_1+2S_2=\pi[(1+t^{2})^{2}/(4t^{2})+2t^{2}]=\pi[1/(4t^{2})+1/2+9t^{2}/4]\geqslant\pi\left[1/2+2\sqrt{\frac{1}{4t^{2}}\cdot\frac{9t^{2}}{4}}\right]=\pi(1/2+3/2)=2\pi\)，等号当\(1/(4t^{2})=9t^{2}/4\)，即\(t^{2}=1/3\)，\(t=\sqrt{3}/3\)为上限\(\theta=\pi/3\)（\(P\)为短轴端点）可取．最小值\(2\pi\)．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-练-课时11-难2]
+% ans:2章-练-课时11-难2
+\ansitem{16}{A}
+\ifansbookdetail
+\ansnote{详解}{\(O\)为\(F_1F_2\)中点，重心\(G\)在中线\(PO\)上且\(PG:GO=2:1\)．延长\(PI\)交\(x\)轴于\(Q\)（\(IQ\)在\(x\)轴内）．\(IG\parallel x\)轴，则在\(\triangle PQO\)中\(PI:IQ=PG:GO=2:1\)，即\(PQ:IQ=3\)．两三角形\(\triangle PF_1F_2\)与\(\triangle IF_1F_2\)同底\(F_1F_2\)，面积比\(=PQ:IQ=3\)．用内切圆半径\(r\)表示：\(S_{\triangle PF_1F_2}=\frac{1}{2}r(|PF_1|+|PF_2|+|F_1F_2|)\)（内心分三块）、\(S_{\triangle IF_1F_2}=\frac{1}{2}r|F_1F_2|\)，比\(=(|PF_1|+|PF_2|+|F_1F_2|)/|F_1F_2|=3\)，即\((|PF_1|+|PF_2|)/|F_1F_2|=2\)，即\(2a/2c=2\)，\(c/a=1/2\)．离心率为\(1/2\)，故选：A．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时11-G1]
+% ans:2章-导-课时11-G1
+\ansitem{17}{C}
+\ifansbookdetail
+\ansnote{详解}{A：\(|F_1F_2|=8\)，距离和\(=8=|F_1F_2|\)，轨迹是线段\(F_1F_2\)，错；B：和\(6<8=|F_1F_2|\)，满足条件的点不存在，错；C：\(M(5,3)\)到两定点距离和\(=\sqrt{9^{2}+3^{2}}+\sqrt{1^{2}+3^{2}}=3\sqrt{10}+\sqrt{10}=4\sqrt{10}>8\)，和为常数且大于\(|F_1F_2|\)，轨迹是椭圆，对；D：到两点距离相等的点轨迹是线段\(F_1F_2\)的垂直平分线（\(y\)轴），错．故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时11-G2]
+% ans:2章-导-课时11-G2
+\ansitem{18}{C}
+\ifansbookdetail
+\ansnote{详解}{比较定值\(a^{2}+1\)与焦距\(2a\)：\(a^{2}+1-2a=(a-1)^{2}\geqslant 0\)，故\(a^{2}+1\geqslant 2a\)恒成立．当\(a>0\)且\(a\neq 1\)时\((a-1)^{2}>0\)，\(|PF_1|+|PF_2|>|F_1F_2|\)，轨迹为椭圆；当\(a=1\)时等号成立，\(|PF_1|+|PF_2|=|F_1F_2|\)，轨迹为线段\(F_1F_2\)．合起来：椭圆或线段，故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时11-G3]
+% ans:2章-导-课时11-G3
+\ansitem{19}{C}
+\ifansbookdetail
+\ansnote{详解}{由定义\(|AF_1|+|AF_2|=2a=10\)，\(|BF_1|+|BF_2|=10\)；\(A\)、\(F_1\)、\(B\)共线故\(|AB|=|AF_1|+|BF_1|\)．周长\(=|AB|+|AF_2|+|BF_2|=|AF_1|+|BF_1|+|AF_2|+|BF_2|=20\)（\(=4a\)，与直线位置无关）．故选：C．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时11-G4]
+% ans:2章-导-课时11-G4
+\ansitem{20}{25}
+\ifansbookdetail
+\ansnote{详解}{\(a=5\)，由定义\(|PF_1|+|PF_2|=2a=10\)．均值不等式：\(m=|PF_1|\cdot|PF_2|\leqslant((|PF_1|+|PF_2|)/2)^{2}=25\)，等号当\(|PF_1|=|PF_2|=5\)．存在性验证：短轴端点\(P(0,\pm 3)\)到焦点\((\pm 4,0)\)的距离\(=\sqrt{16+9}=5\)，两边皆5，等号可取．\(m\)最大值为25．}
+\fi
+\end{ansblock}
+
+\begin{ansblock}[2章-导-课时11-G5]
+% ans:2章-导-课时11-G5
+\ansitem{21}{±√3/4}
+\ifansbookdetail
+\ansnote{详解}{\(c^{2}=12-3=9\)，焦点\((\pm 3,0)\)．设另一定点为\(F_2\)．\(M\)为\(PF_1\)中点、\(O\)为\(F_1F_2\)中点，则\(OM\)为\(\triangle PF_1F_2\)的中位线，\(OM\parallel PF_2\)且\(OM\)在\(y\)轴上，故\(PF_2\perp x\)轴，\(P\)横坐标为\(\pm 3\)．代入：\(9/12+y^{2}/3=1\)，即\(y^{2}=3/4\)，\(y_P=\pm\sqrt{3}/2\)．\(M\)纵坐标\(=y_P/2=\pm\sqrt{3}/4\)．}
+\fi
+\end{ansblock}
+
+% ---- 尾块（\tailfill[30mm] 定高参——钉档 §三.3：无参在平衡栏呈「内容尾随框」，贴栏底须定高参；实测无参致末页平衡 Overfull\vbox 12.99pt，定高 30mm 三零） ----
+\tailfill[30mm]
+
+\end{multicols}
+\end{document}
