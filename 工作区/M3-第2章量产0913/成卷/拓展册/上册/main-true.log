@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 08:47
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,12 +1273,12 @@ M3-ANSKEY: 2章-拓-课时11-04
 [8]
 M3-ANSKEY: 2章-拓-课时11-05
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 [] \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 点 $[]$ 在 椭 圆 $[][][][][] [] [][][][] []
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 346--347
+Underfull \hbox (badness 6204) in paragraph at lines 347--348
 []$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 上 运 动，|  点 $[]$ 在 圆 $[][] [] [][] [] [][][] []
  []
 
@@ -1307,17 +1307,17 @@ M3-ANSKEY: 2章-拓-课时11-13
 M3-ANSKEY: 2章-拓-课时11-14
 M3-ANSKEY: 2章-拓-课时11-15
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
+Underfull \hbox (badness 10000) in paragraph at lines 449--449
 [][][][][][][][][][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--446
+Underfull \hbox (badness 10000) in paragraph at lines 449--449
 []$\TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 ，|  解 出 $[][][][][][][][][][] [] [][][][][][] [] [][][][][]$。|
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 446--446
+Underfull \hbox (badness 5460) in paragraph at lines 449--449
 [] []$\TU/TimesNewRoman(0)/m/n/10.09 ½$[][][][][][][][][][][][][][] [] [][] [] [][][][][][][] [] [][][][][] [] [][] []
  []
 
@@ -1395,7 +1395,7 @@ L3 programming layer <2026/08/11>
 Here is how much of TeX's memory you used:
  25795 strings out of 469768
  628406 string characters out of 5466040
- 1171486 words of memory out of 5000000
+ 1170486 words of memory out of 5000000
  54358 multiletter control sequences out of 15000+600000
  633620 words of font info for 156 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

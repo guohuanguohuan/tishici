@@ -268,7 +268,7 @@
    "seat": "04",
    "num": "04",
    "form": "单选",
-   "tier": "4",
+   "tier": "2",
    "值": "D",
    "nline_detail": 10
   },
@@ -790,7 +790,7 @@
    "seat": "12",
    "num": "12",
    "form": "单选",
-   "tier": "2",
+   "tier": "1",
    "值": "D",
    "nline_detail": 3
   },
@@ -799,7 +799,7 @@
    "seat": "13",
    "num": "13",
    "form": "单选",
-   "tier": "2",
+   "tier": "1",
    "值": "D",
    "nline_detail": 4
   },
@@ -1258,7 +1258,7 @@
    "seat": "20",
    "num": "20",
    "form": "单选",
-   "tier": "4",
+   "tier": "2",
    "值": "D",
    "nline_detail": 4
   },
@@ -1267,7 +1267,7 @@
    "seat": "21",
    "num": "21",
    "form": "单选",
-   "tier": "4",
+   "tier": "2",
    "值": "A（m=−3）",
    "nline_detail": 4
   }

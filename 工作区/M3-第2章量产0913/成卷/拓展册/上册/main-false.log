@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 08:48
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.30)  14 SEP 2026 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1254,12 +1254,12 @@ M3-ANSKEY: 2章-拓-课时11-03
 M3-ANSKEY: 2章-拓-课时11-04
 M3-ANSKEY: 2章-拓-课时11-05
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 [] \TU/TimesNewRoman(0)/m/n/10.5 [\TU/FZShuSong-Z01S.ttf(0)/m/n/10.5 中\TU/TimesNewRoman(0)/m/n/10.5 ] \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 已 知 点 $[]$ 在 椭 圆 $[][][][][] [] [][][][] []
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 346--347
+Underfull \hbox (badness 6204) in paragraph at lines 347--348
 []$ \TU/FZShuSong-Z01S.ttf(0)/m/n/10.09 上 运 动，|  点 $[]$ 在 圆 $[][] [] [][] [] [][][] []
  []
 
@@ -1287,8 +1287,8 @@ M3-ANSKEY: 2章-拓-课时11-13
 M3-ANSKEY: 2章-拓-课时11-14
 M3-ANSKEY: 2章-拓-课时11-15
 M3-ANSKEY: 2章-拓-课时11-16
-M3-ANSKEY: 2章-拓-课时11-17
 [5]
+M3-ANSKEY: 2章-拓-课时11-17
 M3-ANSKEY: 2章-拓-课时12-01
 M3-ANSKEY: 2章-拓-课时12-02
 M3-ANSKEY: 2章-拓-课时12-03
@@ -1308,9 +1308,9 @@ M3-ANSKEY: 2章-拓-课时12-15
 M3-ANSKEY: 2章-拓-课时12-16
 M3-ANSKEY: 2章-拓-课时12-17
 M3-ANSKEY: 2章-拓-课时12-18
+[7]
 M3-ANSKEY: 2章-拓-课时12-19
 M3-ANSKEY: 2章-拓-课时12-20
-[7]
 M3-ANSKEY: 2章-拓-课时12-21
 M3-ANSKEY: 2章-拓-课时12-22
 M3-ANSKEY: 2章-拓-课时12-23
@@ -1321,8 +1321,8 @@ M3-ANSKEY: 2章-拓-课时12-28
 M3-ANSKEY: 2章-拓-课时12-29
 M3-ANSKEY: 2章-拓-课时12-30
 M3-ANSKEY: 2章-拓-课时12-31
-M3-ANSKEY: 2章-拓-课时12-32
 [8]
+M3-ANSKEY: 2章-拓-课时12-32
 M3-ANSKEY: 2章-拓-课时12-33
 M3-ANSKEY: 2章-拓-课时12-34
 M3-ANSKEY: 2章-拓-课时12-35
@@ -1340,7 +1340,7 @@ M3-ANSKEY: 2章-拓-课时13-03
 M3-ANSKEY: 2章-拓-课时13-04
 M3-ANSKEY: 2章-拓-课时13-05
 M3-ANSKEY: 2章-拓-课时13-06
-[10] (./main-false.aux)
+[10] [11] (./main-false.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026/08/11>
@@ -1349,10 +1349,10 @@ L3 programming layer <2026/08/11>
 Here is how much of TeX's memory you used:
  25637 strings out of 469768
  618087 string characters out of 5466040
- 1146028 words of memory out of 5000000
+ 1123730 words of memory out of 5000000
  54207 multiletter control sequences out of 15000+600000
  633572 words of font info for 150 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 112i,17n,124p,2052b,864s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 112i,16n,124p,2052b,864s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main-false.pdf (10 pages).
+Output written on main-false.pdf (11 pages).

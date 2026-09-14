@@ -347,7 +347,7 @@
    "seat": "10",
    "num": "10",
    "form": "单选",
-   "tier": "4",
+   "tier": "2",
    "值": "D",
    "nline_detail": 1
   },
@@ -437,7 +437,7 @@
    "seat": "06",
    "num": "06",
    "form": "单选",
-   "tier": "4",
+   "tier": "2",
    "值": "B",
    "nline_detail": 1
   },
@@ -482,7 +482,7 @@
    "seat": "11",
    "num": "11",
    "form": "单选",
-   "tier": "4",
+   "tier": "2",
    "值": "C",
    "nline_detail": 1
   },
@@ -527,7 +527,7 @@
    "seat": "16",
    "num": "16",
    "form": "单选",
-   "tier": "4",
+   "tier": "2",
    "值": "B",
    "nline_detail": 1
   },
