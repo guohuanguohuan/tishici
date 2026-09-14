@@ -1,0 +1,44 @@
+＝＝ S4 印前处置·门谱复跑汇总 ＝＝
+（ansitem 号序/值快照/CJK/死律 尾fill/sty锁/ANSKEY 见 审计S4.json）
+[PASS] exit=0｜对号门--strict｜合计：21 片｜572 键｜全集断言：相等零缺漏 ✓（strict）
+[PASS] exit=0｜槽宽门-zero-fp-课时01｜[PASS] 槽宽门全过（零误报档｜槽8／旗0）
+[PASS] exit=0｜槽宽门-strict-课时01｜[PASS] 槽宽门全过（严格档｜槽8／旗0）
+[PASS] exit=0｜对平门-课时01｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时01｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时02｜[PASS] 槽宽门全过（零误报档｜槽28／旗0）
+[PASS] exit=0｜槽宽门-strict-课时02｜[PASS] 槽宽门全过（严格档｜槽28／旗0）
+[PASS] exit=0｜对平门-课时02｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时02｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时06｜[PASS] 槽宽门全过（零误报档｜槽32／旗0）
+[PASS] exit=0｜槽宽门-strict-课时06｜[PASS] 槽宽门全过（严格档｜槽32／旗0）
+[PASS] exit=0｜对平门-课时06｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时06｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时07｜[PASS] 槽宽门全过（零误报档｜槽32／旗0）
+[PASS] exit=0｜槽宽门-strict-课时07｜[PASS] 槽宽门全过（严格档｜槽32／旗0）
+[PASS] exit=0｜对平门-课时07｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时07｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时08｜[PASS] 槽宽门全过（零误报档｜槽40／旗0）
+[PASS] exit=0｜槽宽门-strict-课时08｜[PASS] 槽宽门全过（严格档｜槽40／旗0）
+[PASS] exit=0｜对平门-课时08｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时08｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时12｜[PASS] 槽宽门全过（零误报档｜槽12／旗0）
+[PASS] exit=0｜槽宽门-strict-课时12｜[PASS] 槽宽门全过（严格档｜槽12／旗0）
+[PASS] exit=0｜对平门-课时12｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时12｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时13｜[PASS] 槽宽门全过（零误报档｜槽24／旗0）
+[PASS] exit=0｜槽宽门-strict-课时13｜[PASS] 槽宽门全过（严格档｜槽24／旗0）
+[PASS] exit=0｜对平门-课时13｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时13｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时15｜[PASS] 槽宽门全过（零误报档｜槽8／旗0）
+[PASS] exit=0｜槽宽门-strict-课时15｜[PASS] 槽宽门全过（严格档｜槽8／旗0）
+[PASS] exit=0｜对平门-课时15｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时15｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时18｜[PASS] 槽宽门全过（零误报档｜槽8／旗0）
+[PASS] exit=0｜槽宽门-strict-课时18｜[PASS] 槽宽门全过（严格档｜槽8／旗0）
+[PASS] exit=0｜对平门-课时18｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时18｜全绿
+[PASS] exit=0｜槽宽门-zero-fp-课时19｜[PASS] 槽宽门全过（零误报档｜槽20／旗0）
+[PASS] exit=0｜槽宽门-strict-课时19｜[PASS] 槽宽门全过（严格档｜槽20／旗0）
+[PASS] exit=0｜对平门-课时19｜[PASS] 键账三源集合对平（对集合不对数）
+[PASS] exit=0｜审计-课时19｜全绿
+合计：41 项门跑，0 项非零/有旗
